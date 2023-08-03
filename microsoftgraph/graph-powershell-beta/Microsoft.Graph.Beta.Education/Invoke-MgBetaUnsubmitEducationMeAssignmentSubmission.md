@@ -16,7 +16,7 @@ The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnsubmitEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationMeAssignmentSubmission?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnsubmitEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationMeAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -166,4 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgUnsubmitEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationMeAssignmentSubmission?view=graph-powershell-v1.0)
+[Invoke-MgUnsubmitEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationMeAssignmentSubmission?view=graph-powershell-1.0)

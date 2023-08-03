@@ -11,7 +11,7 @@ schema: 2.0.0
 Add new entity to contracts
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -234,4 +234,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's display name changes.
 
 ## RELATED LINKS
-[New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-v1.0)
+[New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-1.0)

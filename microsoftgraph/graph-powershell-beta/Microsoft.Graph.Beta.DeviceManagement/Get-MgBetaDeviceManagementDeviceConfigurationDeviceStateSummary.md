@@ -11,7 +11,7 @@ schema: 2.0.0
 The device configuration device state summary for this account.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -68,5 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-1.0)
 

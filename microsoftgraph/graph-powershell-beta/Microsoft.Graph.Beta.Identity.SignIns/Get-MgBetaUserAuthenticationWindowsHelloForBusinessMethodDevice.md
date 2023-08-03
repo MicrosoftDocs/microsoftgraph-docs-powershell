@@ -14,7 +14,7 @@ When you get a user's Windows Hello for Business registration information, this 
 For example, GET /users/admin@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationWindowsHelloForBusinessMethodDevice](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationWindowsHelloForBusinessMethodDevice?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationWindowsHelloForBusinessMethodDevice](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationWindowsHelloForBusinessMethodDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -210,5 +210,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgUserAuthenticationWindowsHelloForBusinessMethodDevice](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationWindowsHelloForBusinessMethodDevice?view=graph-powershell-v1.0)
+[Get-MgUserAuthenticationWindowsHelloForBusinessMethodDevice](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationWindowsHelloForBusinessMethodDevice?view=graph-powershell-1.0)
 

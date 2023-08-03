@@ -13,7 +13,7 @@ Among the types of providers derived from identityProviderBase, you can currentl
 In Azure AD B2C, this operation can currently create a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityProvider?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityProvider?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -217,4 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS
-[New-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityProvider?view=graph-powershell-v1.0)
+[New-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityProvider?view=graph-powershell-1.0)

@@ -13,7 +13,7 @@ This method along with addKey can be used by an application to automate rolling 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationKey?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationKey?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -257,4 +257,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationKey?view=graph-powershell-v1.0)
+[Remove-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationKey?view=graph-powershell-1.0)

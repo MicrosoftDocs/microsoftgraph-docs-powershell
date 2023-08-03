@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action updateWindowsDeviceAccount
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -275,5 +275,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SessionInitiationProtocalAddress <String>]`: Not yet documented
 
 ## RELATED LINKS
-[Update-MgUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-v1.0)
+[Update-MgUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-1.0)
 

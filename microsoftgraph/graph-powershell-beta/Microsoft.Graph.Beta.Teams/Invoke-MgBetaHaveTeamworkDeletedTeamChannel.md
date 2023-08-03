@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function doesUserHaveAccess
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgHaveTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamworkDeletedTeamChannel?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgHaveTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamworkDeletedTeamChannel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -182,5 +182,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgHaveTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamworkDeletedTeamChannel?view=graph-powershell-v1.0)
+[Invoke-MgHaveTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamworkDeletedTeamChannel?view=graph-powershell-1.0)
 

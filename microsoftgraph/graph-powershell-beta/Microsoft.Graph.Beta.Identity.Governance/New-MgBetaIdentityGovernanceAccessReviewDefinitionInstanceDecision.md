@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to decisions for identityGovernance
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -879,8 +879,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-v1.0)
+[New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-v1.0)
+[New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
 

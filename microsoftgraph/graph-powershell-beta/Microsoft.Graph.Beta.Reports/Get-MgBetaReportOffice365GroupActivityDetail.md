@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getOffice365GroupsActivityDetail
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportOffice365GroupActivityDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365GroupActivityDetail?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgReportOffice365GroupActivityDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365GroupActivityDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -248,5 +248,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportOffice365GroupActivityDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365GroupActivityDetail?view=graph-powershell-v1.0)
+[Get-MgReportOffice365GroupActivityDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365GroupActivityDetail?view=graph-powershell-1.0)
 

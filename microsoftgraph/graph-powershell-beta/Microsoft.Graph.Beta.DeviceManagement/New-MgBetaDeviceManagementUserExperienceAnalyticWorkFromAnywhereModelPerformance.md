@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to userExperienceAnalyticsWorkFromAnywhereModelPerformance for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -313,5 +313,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkFromAnywhereScore <Double?>]`: The work from anywhere score of the device model. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance?view=graph-powershell-v1.0)
+[New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance?view=graph-powershell-1.0)
 

@@ -13,14 +13,14 @@ The job is created in a disabled state.
 Call Start job to start synchronization.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJob?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaApplicationSynchronizationJob -ApplicationId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Schedule <IMicrosoftGraphSynchronizationSchedule>]
+ [-BulkUpload <Hashtable>] [-Id <String>] [-Schedule <IMicrosoftGraphSynchronizationSchedule>]
  [-Schema <IMicrosoftGraphSynchronizationSchema>] [-Status <IMicrosoftGraphSynchronizationStatus>]
  [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>] [-TemplateId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -35,10 +35,10 @@ New-MgBetaApplicationSynchronizationJob -ApplicationId <String>
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Schedule <IMicrosoftGraphSynchronizationSchedule>]
- [-Schema <IMicrosoftGraphSynchronizationSchema>] [-Status <IMicrosoftGraphSynchronizationStatus>]
- [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>] [-TemplateId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-BulkUpload <Hashtable>] [-Id <String>]
+ [-Schedule <IMicrosoftGraphSynchronizationSchedule>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
+ [-Status <IMicrosoftGraphSynchronizationStatus>] [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]
+ [-TemplateId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -97,6 +97,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BulkUpload
+bulkUpload
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -586,8 +601,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
-[New-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJob?view=graph-powershell-v1.0)
+[New-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJob?view=graph-powershell-v1.0)
+[New-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 

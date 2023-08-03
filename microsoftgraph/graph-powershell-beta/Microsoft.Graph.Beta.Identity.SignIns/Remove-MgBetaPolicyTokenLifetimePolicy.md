@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a tokenLifetimePolicy object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyTokenLifetimePolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -232,4 +232,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyTokenLifetimePolicy?view=graph-powershell-v1.0)
+[Remove-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)

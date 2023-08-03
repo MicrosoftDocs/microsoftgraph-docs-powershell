@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of an alert object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlert?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlert?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -325,4 +325,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlert?view=graph-powershell-v1.0)
+[Get-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlert?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Add new entity to bookingCurrencies
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingCurrency?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingCurrency?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -150,5 +150,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Symbol <String>]`: The currency symbol. For example, the currency symbol for the US dollar and for the Australian dollar is $.
 
 ## RELATED LINKS
-[New-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingCurrency?view=graph-powershell-v1.0)
+[New-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingCurrency?view=graph-powershell-1.0)
 

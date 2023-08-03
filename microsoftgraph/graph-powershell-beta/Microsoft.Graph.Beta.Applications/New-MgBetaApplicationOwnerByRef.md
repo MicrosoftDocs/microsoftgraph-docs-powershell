@@ -11,7 +11,7 @@ schema: 2.0.0
 Use this API to add an owner to an application by posting to the owners collection.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -236,4 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-v1.0)
+[New-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-1.0)

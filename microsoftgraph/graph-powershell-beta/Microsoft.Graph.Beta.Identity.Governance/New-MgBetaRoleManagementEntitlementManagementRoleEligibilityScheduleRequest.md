@@ -12,7 +12,7 @@ Create a new unifiedRoleEligibilityScheduleRequest object.
 This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -725,8 +725,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
-[New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+[New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+[New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
 

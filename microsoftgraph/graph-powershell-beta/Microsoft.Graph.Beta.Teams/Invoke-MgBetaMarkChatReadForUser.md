@@ -11,7 +11,7 @@ schema: 2.0.0
 Mark a chat as read for a user.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkChatReadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatReadForUser?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkChatReadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatReadForUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -276,4 +276,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
-[Invoke-MgMarkChatReadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatReadForUser?view=graph-powershell-v1.0)
+[Invoke-MgMarkChatReadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatReadForUser?view=graph-powershell-1.0)

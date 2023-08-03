@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function delta
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelMessageReplyDelta?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelMessageReplyDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -304,5 +304,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelMessageReplyDelta?view=graph-powershell-v1.0)
+[Get-MgTeamChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelMessageReplyDelta?view=graph-powershell-1.0)
 

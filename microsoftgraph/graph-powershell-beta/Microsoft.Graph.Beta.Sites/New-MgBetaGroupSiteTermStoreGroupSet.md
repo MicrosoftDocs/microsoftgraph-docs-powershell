@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to sets for groups
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSet?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -610,8 +610,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
-[New-MgGroupSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSet?view=graph-powershell-v1.0)
+[New-MgGroupSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSet?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgGroupSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSet?view=graph-powershell-v1.0)
+[New-MgGroupSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSet?view=graph-powershell-1.0)
 

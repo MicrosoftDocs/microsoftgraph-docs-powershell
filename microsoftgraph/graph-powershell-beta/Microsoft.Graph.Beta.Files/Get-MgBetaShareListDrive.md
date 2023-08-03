@@ -12,7 +12,7 @@ Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgShareListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgShareListDrive?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgShareListDrive?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -140,5 +140,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgShareListDrive?view=graph-powershell-v1.0)
+[Get-MgShareListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgShareListDrive?view=graph-powershell-1.0)
 

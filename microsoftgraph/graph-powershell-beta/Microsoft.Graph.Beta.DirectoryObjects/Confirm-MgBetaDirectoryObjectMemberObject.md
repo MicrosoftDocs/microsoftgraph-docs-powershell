@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action checkMemberObjects
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Confirm-MgDirectoryObjectMemberObject?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Confirm-MgDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Confirm-MgDirectoryObjectMemberObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -181,5 +181,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS
-[Confirm-MgDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Confirm-MgDirectoryObjectMemberObject?view=graph-powershell-v1.0)
+[Confirm-MgDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Confirm-MgDirectoryObjectMemberObject?view=graph-powershell-1.0)
 

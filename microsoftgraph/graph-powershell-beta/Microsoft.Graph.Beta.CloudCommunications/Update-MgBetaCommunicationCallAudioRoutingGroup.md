@@ -11,7 +11,7 @@ schema: 2.0.0
 Modify sources and receivers of an audioRoutingGroup.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -282,4 +282,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-v1.0)
+[Update-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)

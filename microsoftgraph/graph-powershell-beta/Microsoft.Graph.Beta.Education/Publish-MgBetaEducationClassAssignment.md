@@ -18,7 +18,7 @@ To update the properties of a published **assignment**, see update an assignment
 To update the properties of a published assignment, see update an assignment.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationClassAssignment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Publish-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationClassAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -166,4 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Publish-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationClassAssignment?view=graph-powershell-v1.0)
+[Publish-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationClassAssignment?view=graph-powershell-1.0)

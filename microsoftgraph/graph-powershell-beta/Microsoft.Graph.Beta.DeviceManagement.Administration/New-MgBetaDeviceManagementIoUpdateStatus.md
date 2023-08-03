@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to iosUpdateStatuses for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementIoUpdateStatus?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementIoUpdateStatus?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -328,5 +328,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
-[New-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementIoUpdateStatus?view=graph-powershell-v1.0)
+[New-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementIoUpdateStatus?view=graph-powershell-1.0)
 

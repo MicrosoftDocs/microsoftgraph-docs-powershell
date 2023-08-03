@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to versions for identityGovernance
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceTermsOfUseAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceTermsOfUseAgreementFileVersion?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceTermsOfUseAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceTermsOfUseAgreementFileVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -409,5 +409,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceTermsOfUseAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceTermsOfUseAgreementFileVersion?view=graph-powershell-v1.0)
+[New-MgIdentityGovernanceTermsOfUseAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceTermsOfUseAgreementFileVersion?view=graph-powershell-1.0)
 

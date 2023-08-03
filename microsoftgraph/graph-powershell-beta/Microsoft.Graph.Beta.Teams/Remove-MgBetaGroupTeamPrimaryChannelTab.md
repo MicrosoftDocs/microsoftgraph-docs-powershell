@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property tabs for groups
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelTab?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelTab?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -198,5 +198,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelTab?view=graph-powershell-v1.0)
+[Remove-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelTab?view=graph-powershell-1.0)
 

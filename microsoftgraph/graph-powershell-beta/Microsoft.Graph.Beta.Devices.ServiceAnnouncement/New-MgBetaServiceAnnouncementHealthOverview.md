@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to healthOverviews for admin
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/New-MgServiceAnnouncementHealthOverview?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/New-MgServiceAnnouncementHealthOverview?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -256,4 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: serviceHealthStatus
 
 ## RELATED LINKS
-[New-MgServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/New-MgServiceAnnouncementHealthOverview?view=graph-powershell-v1.0)
+[New-MgServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/New-MgServiceAnnouncementHealthOverview?view=graph-powershell-1.0)

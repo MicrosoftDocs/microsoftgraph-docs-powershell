@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new siteSource object associated with an eDiscovery custodian.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -9676,7 +9676,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
-[New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-v1.0)
+[New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-v1.0)
+[New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-1.0)

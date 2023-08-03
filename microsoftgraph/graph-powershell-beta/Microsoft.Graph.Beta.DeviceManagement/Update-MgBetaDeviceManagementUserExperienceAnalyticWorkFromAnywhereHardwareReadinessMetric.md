@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric in deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -359,5 +359,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpgradeEligibleDeviceCount <Int32?>]`: The count of devices in an organization eligible for windows upgrade. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-1.0)
 

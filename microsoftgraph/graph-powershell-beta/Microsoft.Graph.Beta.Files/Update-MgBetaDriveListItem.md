@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property items in drives
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListItem?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28537,8 +28537,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
-[Update-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListItem?view=graph-powershell-v1.0)
+[Update-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListItem?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListItem?view=graph-powershell-v1.0)
+[Update-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListItem?view=graph-powershell-1.0)
 

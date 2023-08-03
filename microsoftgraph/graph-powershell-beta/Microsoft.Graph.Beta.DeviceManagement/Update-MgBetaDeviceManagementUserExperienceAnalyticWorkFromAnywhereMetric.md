@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property userExperienceAnalyticsWorkFromAnywhereMetrics in deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -414,8 +414,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkFromAnywhereScore <Double?>]`: Indicates work from anywhere per device overall score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-1.0)
 

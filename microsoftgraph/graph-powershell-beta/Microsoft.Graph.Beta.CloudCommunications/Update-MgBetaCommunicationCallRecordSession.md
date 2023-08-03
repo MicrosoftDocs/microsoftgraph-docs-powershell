@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property sessions in communications
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordSession?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -586,8 +586,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
-[Update-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordSession?view=graph-powershell-v1.0)
+[Update-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordSession?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordSession?view=graph-powershell-v1.0)
+[Update-MgCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallRecordSession?view=graph-powershell-1.0)
 

@@ -19,7 +19,7 @@ If one or more properties fail multiple validations, only the property with the 
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgGroupPermissionGrantProperty](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupPermissionGrantProperty?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupPermissionGrantProperty](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupPermissionGrantProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -301,5 +301,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgGroupPermissionGrantProperty](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupPermissionGrantProperty?view=graph-powershell-v1.0)
+[Test-MgGroupPermissionGrantProperty](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupPermissionGrantProperty?view=graph-powershell-1.0)
 

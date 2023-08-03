@@ -12,7 +12,7 @@ Access a shared DriveItem or a collection of shared items by using a **shareId**
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -281,4 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-v1.0)
+[Get-MgShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-1.0)

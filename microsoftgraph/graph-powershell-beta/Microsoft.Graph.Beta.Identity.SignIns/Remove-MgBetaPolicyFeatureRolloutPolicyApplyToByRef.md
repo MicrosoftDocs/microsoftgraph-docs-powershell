@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -263,4 +263,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-v1.0)
+[Remove-MgPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-1.0)

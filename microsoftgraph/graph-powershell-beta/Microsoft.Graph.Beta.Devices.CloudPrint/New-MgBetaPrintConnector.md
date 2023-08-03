@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to connectors for print
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -326,4 +326,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subunit <String[]>]`: 
 
 ## RELATED LINKS
-[New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-v1.0)
+[New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-1.0)

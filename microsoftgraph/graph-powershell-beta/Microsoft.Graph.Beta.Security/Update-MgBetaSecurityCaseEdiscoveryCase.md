@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an ediscoveryCase object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24409,7 +24409,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
-[Update-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)
+[Update-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)
+[Update-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)

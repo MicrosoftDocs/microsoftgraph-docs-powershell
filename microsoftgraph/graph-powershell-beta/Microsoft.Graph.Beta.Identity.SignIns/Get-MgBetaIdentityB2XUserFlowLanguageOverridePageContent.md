@@ -11,7 +11,7 @@ schema: 2.0.0
 Get media content for the navigation property overridesPages from identity
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -221,4 +221,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-v1.0)
+[Get-MgIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-1.0)

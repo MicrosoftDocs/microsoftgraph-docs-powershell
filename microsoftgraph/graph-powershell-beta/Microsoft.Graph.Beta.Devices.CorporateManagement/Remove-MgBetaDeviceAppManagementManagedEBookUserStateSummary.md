@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property userStateSummary for deviceAppManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -226,5 +226,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Remove-MgDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-v1.0)
+[Remove-MgDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-1.0)
 

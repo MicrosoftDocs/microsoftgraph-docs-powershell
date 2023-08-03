@@ -12,7 +12,7 @@ Delete the default organizational branding object.
 To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationBranding?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationBranding?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -189,5 +189,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationBranding?view=graph-powershell-v1.0)
+[Remove-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationBranding?view=graph-powershell-1.0)
 

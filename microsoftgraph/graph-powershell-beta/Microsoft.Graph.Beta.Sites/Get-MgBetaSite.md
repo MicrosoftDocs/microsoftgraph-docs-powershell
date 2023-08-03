@@ -11,14 +11,15 @@ schema: 2.0.0
 Retrieve properties and relationships for a [site][] resource.\nA **site** resource represents a team site in SharePoint.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSite?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
-### Get2 (Default)
+### List (Default)
 ```
-Get-MgBetaSite [-Property <String[]>] [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgBetaSite [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -29,13 +30,6 @@ Get-MgBetaSite -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[
 ### GetViaIdentity
 ```
 Get-MgBetaSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### List
-```
-Get-MgBetaSite [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
 
@@ -72,21 +66,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Count
-Include count of items
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: Get2
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
@@ -108,7 +87,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: Get, GetViaIdentity, List
+Parameter Sets: (All)
 Aliases: Expand
 
 Required: False
@@ -123,7 +102,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: Get2, List
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -184,7 +163,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: Get2, List
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -214,7 +193,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: Get2, List
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -229,7 +208,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: Get2, List
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -244,7 +223,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: Get2, List
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -322,4 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSite?view=graph-powershell-v1.0)
+[Get-MgSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSite?view=graph-powershell-1.0)

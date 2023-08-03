@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an activityBasedTimeoutPolicy object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -375,4 +375,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-v1.0)
+[Update-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-1.0)

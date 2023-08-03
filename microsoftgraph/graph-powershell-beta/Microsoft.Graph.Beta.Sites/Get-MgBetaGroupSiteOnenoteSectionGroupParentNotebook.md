@@ -12,7 +12,7 @@ The notebook that contains the section group.
 Read-only.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteSectionGroupParentNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupParentNotebook?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteSectionGroupParentNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupParentNotebook?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -193,5 +193,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSiteOnenoteSectionGroupParentNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupParentNotebook?view=graph-powershell-v1.0)
+[Get-MgGroupSiteOnenoteSectionGroupParentNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupParentNotebook?view=graph-powershell-1.0)
 

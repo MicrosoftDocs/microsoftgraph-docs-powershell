@@ -11,7 +11,7 @@ schema: 2.0.0
 The collection of content types that are ancestors of this content type.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeBaseType?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeBaseType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -353,5 +353,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeBaseType?view=graph-powershell-v1.0)
+[Get-MgSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeBaseType?view=graph-powershell-1.0)
 

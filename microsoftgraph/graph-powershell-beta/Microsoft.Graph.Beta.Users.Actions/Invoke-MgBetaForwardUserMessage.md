@@ -17,7 +17,7 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to forward a message, and send it later.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -488,7 +488,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-[Invoke-MgForwardUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-v1.0)
+[Invoke-MgForwardUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Invoke-MgForwardUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-v1.0)
+[Invoke-MgForwardUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-1.0)

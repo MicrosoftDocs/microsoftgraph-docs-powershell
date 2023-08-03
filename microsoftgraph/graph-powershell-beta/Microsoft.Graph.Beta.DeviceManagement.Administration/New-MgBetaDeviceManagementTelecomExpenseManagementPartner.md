@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to telecomExpenseManagementPartners for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -217,4 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
 
 ## RELATED LINKS
-[New-MgDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-v1.0)
+[New-MgDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-1.0)

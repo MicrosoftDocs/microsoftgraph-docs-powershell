@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new educationRubric object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserRubric?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserRubric?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -382,4 +382,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
 ## RELATED LINKS
-[New-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserRubric?view=graph-powershell-v1.0)
+[New-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserRubric?view=graph-powershell-1.0)

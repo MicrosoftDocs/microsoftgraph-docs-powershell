@@ -11,7 +11,7 @@ schema: 2.0.0
 Exposes the itemActivities represented in this itemActivityStat resource.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -236,5 +236,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgGroupDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-v1.0)
+[Get-MgGroupDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
 

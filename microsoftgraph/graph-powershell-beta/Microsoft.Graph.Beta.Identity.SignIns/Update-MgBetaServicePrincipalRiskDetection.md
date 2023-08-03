@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property servicePrincipalRiskDetections in identityProtection
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgServicePrincipalRiskDetection?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -617,8 +617,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
-[Update-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgServicePrincipalRiskDetection?view=graph-powershell-v1.0)
+[Update-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgServicePrincipalRiskDetection?view=graph-powershell-v1.0)
+[Update-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 

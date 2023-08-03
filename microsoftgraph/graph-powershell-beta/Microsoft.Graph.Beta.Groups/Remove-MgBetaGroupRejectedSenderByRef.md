@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove a user or group from the rejected-senders list of the specified group.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupRejectedSenderByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupRejectedSenderByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -215,5 +215,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupRejectedSenderByRef?view=graph-powershell-v1.0)
+[Remove-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupRejectedSenderByRef?view=graph-powershell-1.0)
 

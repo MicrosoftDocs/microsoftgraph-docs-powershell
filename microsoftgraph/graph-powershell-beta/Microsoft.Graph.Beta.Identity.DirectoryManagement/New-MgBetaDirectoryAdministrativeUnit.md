@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to administrativeUnits for directory
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -324,4 +324,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The identifier of the identity. This property is read-only.
 
 ## RELATED LINKS
-[New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit?view=graph-powershell-v1.0)
+[New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit?view=graph-powershell-1.0)

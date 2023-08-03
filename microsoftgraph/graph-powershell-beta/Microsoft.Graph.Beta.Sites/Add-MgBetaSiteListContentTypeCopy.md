@@ -11,7 +11,7 @@ schema: 2.0.0
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteListContentTypeCopy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Add-MgSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteListContentTypeCopy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -254,4 +254,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteListContentTypeCopy?view=graph-powershell-v1.0)
+[Add-MgSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteListContentTypeCopy?view=graph-powershell-1.0)

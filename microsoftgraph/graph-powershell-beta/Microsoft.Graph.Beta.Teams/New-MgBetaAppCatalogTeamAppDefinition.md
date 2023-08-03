@@ -13,7 +13,7 @@ To update an app, the **distributionMethod** property for the app must be set to
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -547,4 +547,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
 
 ## RELATED LINKS
-[New-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-v1.0)
+[New-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)

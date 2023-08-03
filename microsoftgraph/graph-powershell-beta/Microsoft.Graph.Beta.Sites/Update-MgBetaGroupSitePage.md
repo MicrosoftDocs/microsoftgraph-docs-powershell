@@ -14,42 +14,35 @@ Update the navigation property pages in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaGroupSitePage -GroupId <String> -SiteId <String> -SitePageId <String>
- [-AdditionalProperties <Hashtable>] [-CanvasLayout <IMicrosoftGraphCanvasLayout>]
- [-ContentType <IMicrosoftGraphContentTypeInfo>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
+Update-MgBetaGroupSitePage -BaseSitePageId <String> -GroupId <String> -SiteId <String>
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>] [-ETag <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser>]
  [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PageLayout <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-PromotionKind <String>]
- [-PublishingState <IMicrosoftGraphPublicationFacet>] [-Reactions <IMicrosoftGraphReactionsFacet>]
- [-ShowComments] [-ShowRecommendedPages] [-ThumbnailWebUrl <String>] [-Title <String>]
- [-TitleArea <IMicrosoftGraphTitleArea>] [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ParentReference <IMicrosoftGraphItemReference>] [-PublishingState <IMicrosoftGraphPublicationFacet>]
+ [-Title <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaGroupSitePage -GroupId <String> -SiteId <String> -SitePageId <String>
- -BodyParameter <IMicrosoftGraphSitePage> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupSitePage -BaseSitePageId <String> -GroupId <String> -SiteId <String>
+ -BodyParameter <IMicrosoftGraphBaseSitePage> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaGroupSitePage -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-CanvasLayout <IMicrosoftGraphCanvasLayout>] [-ContentType <IMicrosoftGraphContentTypeInfo>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-ETag <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>] [-Name <String>]
- [-PageLayout <String>] [-ParentReference <IMicrosoftGraphItemReference>] [-PromotionKind <String>]
- [-PublishingState <IMicrosoftGraphPublicationFacet>] [-Reactions <IMicrosoftGraphReactionsFacet>]
- [-ShowComments] [-ShowRecommendedPages] [-ThumbnailWebUrl <String>] [-Title <String>]
- [-TitleArea <IMicrosoftGraphTitleArea>] [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PageLayout <String>] [-ParentReference <IMicrosoftGraphItemReference>]
+ [-PublishingState <IMicrosoftGraphPublicationFacet>] [-Title <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgBetaGroupSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphSitePage> [-WhatIf]
+Update-MgBetaGroupSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphBaseSitePage> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -73,12 +66,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -BaseSitePageId
+The unique identifier of baseSitePage
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
 baseSitePage
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSitePage
+Type: IMicrosoftGraphBaseSitePage
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,38 +94,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -CanvasLayout
-canvasLayout
-To construct, see NOTES section for CANVASLAYOUT properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphCanvasLayout
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ContentType
-contentTypeInfo
-To construct, see NOTES section for CONTENTTYPE properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphContentTypeInfo
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -342,21 +318,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PromotionKind
-pagePromotionType
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PublishingState
 publicationFacet
 To construct, see NOTES section for PUBLISHINGSTATE properties and create a hash table.
@@ -369,52 +330,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Reactions
-reactionsFacet
-To construct, see NOTES section for REACTIONS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphReactionsFacet
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ShowComments
-Determines whether or not to show comments at the bottom of the page.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ShowRecommendedPages
-Determines whether or not to show recommended pages at the bottom of the page.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -434,73 +349,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SitePageId
-The unique identifier of sitePage
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ThumbnailWebUrl
-Url of the sitePage's thumbnail image
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Title
 Title of the sitePage.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TitleArea
-titleArea
-To construct, see NOTES section for TITLEAREA properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphTitleArea
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WebParts
-Collection of webparts on the SharePoint page
-To construct, see NOTES section for WEBPARTS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWebPart[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -563,11 +416,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSitePage
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBaseSitePage
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSitePage
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBaseSitePage
 ## NOTES
 
 ALIASES

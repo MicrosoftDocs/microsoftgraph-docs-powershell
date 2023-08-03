@@ -13,7 +13,7 @@ This returns all properties of the instance except for the associated accessRevi
 To retrieve the decisions on the instance, use List accessReviewInstanceDecisionItem.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -371,4 +371,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-v1.0)
+[Get-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)

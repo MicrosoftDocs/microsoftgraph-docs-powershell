@@ -12,7 +12,7 @@ Create a delegated permission grant, represented by an oAuth2PermissionGrant obj
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOauth2PermissionGrant?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOauth2PermissionGrant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -288,4 +288,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartTime <DateTime?>]`: Currently, the start time value is ignored, but a value is required when creating an oAuth2PermissionGrant. Required.
 
 ## RELATED LINKS
-[New-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOauth2PermissionGrant?view=graph-powershell-v1.0)
+[New-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOauth2PermissionGrant?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property instances for identityGovernance
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -257,5 +257,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-v1.0)
+[Remove-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property deviceManagementPartners in deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementPartner?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementPartner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -400,5 +400,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Update-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementPartner?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementPartner?view=graph-powershell-1.0)
 

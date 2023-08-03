@@ -12,7 +12,7 @@ Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -223,4 +223,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerByRef?view=graph-powershell-v1.0)
+[Remove-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerByRef?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Column order information in a content type.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumnPosition?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumnPosition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -351,5 +351,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumnPosition?view=graph-powershell-v1.0)
+[Get-MgGroupSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentTypeColumnPosition?view=graph-powershell-1.0)
 

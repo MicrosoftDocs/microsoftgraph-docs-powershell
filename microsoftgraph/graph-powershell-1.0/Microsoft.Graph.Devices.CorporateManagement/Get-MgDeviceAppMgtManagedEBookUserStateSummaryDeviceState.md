@@ -40,8 +40,6 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-
-
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebookuserstatesummarydevicestate](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebookuserstatesummarydevicestate)
 
 

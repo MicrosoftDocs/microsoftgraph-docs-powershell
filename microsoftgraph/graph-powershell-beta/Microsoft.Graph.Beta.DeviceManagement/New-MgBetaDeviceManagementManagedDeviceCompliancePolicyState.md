@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to deviceCompliancePolicyStates for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceCompliancePolicyState?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -485,8 +485,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
-[New-MgDeviceManagementManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceCompliancePolicyState?view=graph-powershell-v1.0)
+[New-MgDeviceManagementManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgDeviceManagementManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceCompliancePolicyState?view=graph-powershell-v1.0)
+[New-MgDeviceManagementManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 

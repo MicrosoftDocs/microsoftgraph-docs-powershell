@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property tabs in groups
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannelTab?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannelTab?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -454,8 +454,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[Update-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannelTab?view=graph-powershell-v1.0)
+[Update-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannelTab?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannelTab?view=graph-powershell-v1.0)
+[Update-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannelTab?view=graph-powershell-1.0)
 

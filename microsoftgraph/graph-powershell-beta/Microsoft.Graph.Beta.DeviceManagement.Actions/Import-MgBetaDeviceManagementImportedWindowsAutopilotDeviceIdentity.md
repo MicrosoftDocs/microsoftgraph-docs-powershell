@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action import
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -163,5 +163,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
 ## RELATED LINKS
-[Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-v1.0)
+[Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-1.0)
 

@@ -17,7 +17,7 @@ Returned only on $select.
 
 ### Get (Default)
 ```
-Get-MgBetaGroupSitePageCreatedByUserMailboxSetting -GroupId <String> -SiteId <String> -SitePageId <String>
+Get-MgBetaGroupSitePageCreatedByUserMailboxSetting -BaseSitePageId <String> -GroupId <String> -SiteId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -34,6 +34,21 @@ For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
 ## PARAMETERS
+
+### -BaseSitePageId
+The unique identifier of baseSitePage
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -ExpandProperty
 Expand related entities
@@ -98,21 +113,6 @@ Accept wildcard characters: False
 
 ### -SiteId
 The unique identifier of site
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SitePageId
-The unique identifier of sitePage
 
 ```yaml
 Type: String

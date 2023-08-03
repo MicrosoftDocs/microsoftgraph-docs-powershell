@@ -11,7 +11,7 @@ schema: 2.0.0
 Windows information protection for apps running on devices which are not MDM enrolled.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -309,5 +309,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-v1.0)
+[Get-MgDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property children in sites
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetChild?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetChild?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -622,8 +622,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
 ## RELATED LINKS
-[Update-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetChild?view=graph-powershell-v1.0)
+[Update-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetChild?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetChild?view=graph-powershell-v1.0)
+[Update-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetChild?view=graph-powershell-1.0)
 

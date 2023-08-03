@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminCustomerCount](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomerCount?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminCustomerCount](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomerCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -68,5 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgTenantRelationshipDelegatedAdminCustomerCount](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomerCount?view=graph-powershell-v1.0)
+[Get-MgTenantRelationshipDelegatedAdminCustomerCount](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomerCount?view=graph-powershell-1.0)
 

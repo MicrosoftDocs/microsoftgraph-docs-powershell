@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getAttackSimulationRepeatOffenders
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -122,4 +122,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-v1.0)
+[Get-MgReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-1.0)

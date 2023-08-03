@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property servicePrincipalRiskDetections for identityProtection
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgServicePrincipalRiskDetection?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -219,5 +219,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgServicePrincipalRiskDetection?view=graph-powershell-v1.0)
+[Remove-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -198,5 +198,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete?view=graph-powershell-v1.0)
+[Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete?view=graph-powershell-1.0)
 

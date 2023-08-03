@@ -12,7 +12,7 @@ Detailed information for the unifiedRoleDefinition object that is referenced thr
 Supports $expand.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -214,5 +214,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition?view=graph-powershell-v1.0)
+[Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the presence information for multiple users.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresenceByUserId?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresenceByUserId?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -148,4 +148,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Ids <String[]>]`: 
 
 ## RELATED LINKS
-[Get-MgCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresenceByUserId?view=graph-powershell-v1.0)
+[Get-MgCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresenceByUserId?view=graph-powershell-1.0)

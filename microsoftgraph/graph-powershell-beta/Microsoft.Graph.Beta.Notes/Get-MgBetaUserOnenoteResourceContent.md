@@ -11,7 +11,7 @@ schema: 2.0.0
 Get content for the navigation property resources from users
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteResourceContent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteResourceContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -138,5 +138,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteResourceContent?view=graph-powershell-v1.0)
+[Get-MgUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteResourceContent?view=graph-powershell-1.0)
 

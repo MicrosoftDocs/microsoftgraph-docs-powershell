@@ -11,7 +11,7 @@ schema: 2.0.0
 The attachment content.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -191,4 +191,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Set-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-v1.0)
+[Set-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-1.0)

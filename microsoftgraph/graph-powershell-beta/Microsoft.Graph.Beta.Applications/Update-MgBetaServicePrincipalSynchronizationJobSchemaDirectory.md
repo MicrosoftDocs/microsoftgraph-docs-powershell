@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property directories in servicePrincipals
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -395,5 +395,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedApis <String[]>]`: The API that the provisioning service queries to retrieve data for synchronization.
 
 ## RELATED LINKS
-[Update-MgServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-v1.0)
+[Update-MgServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
 

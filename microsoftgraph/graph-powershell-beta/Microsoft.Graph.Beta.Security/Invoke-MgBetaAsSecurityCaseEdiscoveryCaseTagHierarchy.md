@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function asHierarchy
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Security/Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Security/Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -270,4 +270,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Security/Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-v1.0)
+[Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Security/Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-1.0)

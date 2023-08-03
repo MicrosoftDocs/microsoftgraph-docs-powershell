@@ -13,7 +13,7 @@ The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 19
 A smaller image will reduce bandwidth requirements and make the page load faster.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgOrganizationBrandingBackgroundImage](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingBackgroundImage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgOrganizationBrandingBackgroundImage](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingBackgroundImage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -255,4 +255,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgOrganizationBrandingBackgroundImage](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingBackgroundImage?view=graph-powershell-v1.0)
+[Set-MgOrganizationBrandingBackgroundImage](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingBackgroundImage?view=graph-powershell-1.0)

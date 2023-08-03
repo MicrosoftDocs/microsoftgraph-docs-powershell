@@ -13,7 +13,7 @@ A **delta** function call for mail folders in a mailbox is similar to a GET requ
 This allows you to maintain and synchronize \na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderDelta?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -277,5 +277,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderDelta?view=graph-powershell-v1.0)
+[Get-MgUserMailFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderDelta?view=graph-powershell-1.0)
 

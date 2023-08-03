@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new timeOffReason.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -330,4 +330,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-v1.0)
+[New-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)

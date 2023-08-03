@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to metricValues for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -167,5 +167,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-v1.0)
+[New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-1.0)
 

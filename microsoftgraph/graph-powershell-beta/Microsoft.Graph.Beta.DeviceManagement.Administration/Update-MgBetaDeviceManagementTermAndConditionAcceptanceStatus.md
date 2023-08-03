@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property acceptanceStatuses in deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -395,8 +395,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-1.0)
 

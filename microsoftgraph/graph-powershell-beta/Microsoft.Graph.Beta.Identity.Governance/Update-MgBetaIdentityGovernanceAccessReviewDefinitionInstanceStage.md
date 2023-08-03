@@ -14,7 +14,7 @@ You can only add reviewers to the **fallbackReviewers** property but can't remov
 To update an **accessReviewStage**, its **status** must be `NotStarted`, `Initializing`, or `InProgress`.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -722,7 +722,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
-[Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-v1.0)
+[Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-v1.0)
+[Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-1.0)

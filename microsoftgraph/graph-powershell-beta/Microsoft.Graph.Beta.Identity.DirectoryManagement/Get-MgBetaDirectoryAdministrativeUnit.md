@@ -11,7 +11,7 @@ schema: 2.0.0
 Conceptual container for user and group directory objects.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnit?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -297,4 +297,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnit?view=graph-powershell-v1.0)
+[Get-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnit?view=graph-powershell-1.0)

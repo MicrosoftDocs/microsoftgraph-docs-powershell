@@ -12,7 +12,7 @@ The main logo for the application.
 Not nullable.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationMemberGroup?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationMemberGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -177,4 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationMemberGroup?view=graph-powershell-v1.0)
+[Get-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationMemberGroup?view=graph-powershell-1.0)

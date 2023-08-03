@@ -12,7 +12,7 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You will need to register the calling bot and go through the list of permissions needed.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1481,7 +1481,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: callTranscriptionState
 
 ## RELATED LINKS
-[New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-v1.0)
+[New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-v1.0)
+[New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-1.0)

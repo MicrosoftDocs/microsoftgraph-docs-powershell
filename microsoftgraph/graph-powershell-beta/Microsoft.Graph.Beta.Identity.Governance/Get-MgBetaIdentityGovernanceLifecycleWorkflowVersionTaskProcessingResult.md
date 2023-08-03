@@ -11,7 +11,7 @@ schema: 2.0.0
 The result of processing the task.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -386,5 +386,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult?view=graph-powershell-v1.0)
+[Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult?view=graph-powershell-1.0)
 

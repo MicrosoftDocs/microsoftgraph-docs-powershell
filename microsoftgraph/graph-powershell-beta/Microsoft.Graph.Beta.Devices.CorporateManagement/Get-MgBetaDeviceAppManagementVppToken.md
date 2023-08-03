@@ -11,7 +11,7 @@ schema: 2.0.0
 List of Vpp tokens for this organization.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppToken?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppToken?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -308,5 +308,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppToken?view=graph-powershell-v1.0)
+[Get-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppToken?view=graph-powershell-1.0)
 

@@ -12,7 +12,7 @@ Reply to a post and add a new post to the specified thread in a group conversati
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -458,7 +458,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-v1.0)
+[Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-v1.0)
+[Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-1.0)

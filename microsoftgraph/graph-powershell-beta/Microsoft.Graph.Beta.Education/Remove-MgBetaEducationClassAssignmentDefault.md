@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property assignmentDefaults for education
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentDefault?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -158,5 +158,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentDefault?view=graph-powershell-v1.0)
+[Remove-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
 

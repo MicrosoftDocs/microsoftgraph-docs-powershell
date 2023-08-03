@@ -394,6 +394,3 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState\[]>: .
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
-
-
-

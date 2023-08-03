@@ -12,7 +12,7 @@ Run a specified search query.
 Search results are provided in the response.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -252,7 +252,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TrimDuplicates <Boolean?>]`: Indicates whether to trim away the duplicate SharePoint files from search results. Default value is false. Optional.
 
 ## RELATED LINKS
-[Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-v1.0)
+[Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-v1.0)
+[Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-1.0)

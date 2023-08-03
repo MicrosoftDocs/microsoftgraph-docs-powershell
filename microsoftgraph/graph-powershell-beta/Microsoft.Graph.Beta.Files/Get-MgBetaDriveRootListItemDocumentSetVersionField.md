@@ -11,7 +11,7 @@ schema: 2.0.0
 A collection of the fields and values for this version of the list item.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootListItemDocumentSetVersionField?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -153,5 +153,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootListItemDocumentSetVersionField?view=graph-powershell-v1.0)
+[Get-MgDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootListItemDocumentSetVersionField?view=graph-powershell-1.0)
 

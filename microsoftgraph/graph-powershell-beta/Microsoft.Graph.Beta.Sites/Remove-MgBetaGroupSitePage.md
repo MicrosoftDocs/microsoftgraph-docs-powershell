@@ -14,7 +14,7 @@ Delete navigation property pages for groups
 
 ### Delete (Default)
 ```
-Remove-MgBetaGroupSitePage -GroupId <String> -SiteId <String> -SitePageId <String> [-IfMatch <String>]
+Remove-MgBetaGroupSitePage -BaseSitePageId <String> -GroupId <String> -SiteId <String> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,6 +28,21 @@ Remove-MgBetaGroupSitePage -InputObject <ISitesIdentity> [-IfMatch <String>] [-P
 Delete navigation property pages for groups
 
 ## PARAMETERS
+
+### -BaseSitePageId
+The unique identifier of baseSitePage
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -GroupId
 The unique identifier of group
@@ -92,21 +107,6 @@ Accept wildcard characters: False
 
 ### -SiteId
 The unique identifier of site
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SitePageId
-The unique identifier of sitePage
 
 ```yaml
 Type: String

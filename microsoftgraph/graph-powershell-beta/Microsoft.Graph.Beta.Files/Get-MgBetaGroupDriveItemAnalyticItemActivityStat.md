@@ -11,7 +11,7 @@ schema: 2.0.0
 Get itemActivityStats from groups
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -311,5 +311,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)
+[Get-MgGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 

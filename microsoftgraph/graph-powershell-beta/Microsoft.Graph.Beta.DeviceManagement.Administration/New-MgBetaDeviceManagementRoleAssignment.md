@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to roleAssignments for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementRoleAssignment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -341,5 +341,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display or friendly name of the Role Scope Tag.
 
 ## RELATED LINKS
-[New-MgDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementRoleAssignment?view=graph-powershell-v1.0)
+[New-MgDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementRoleAssignment?view=graph-powershell-1.0)
 

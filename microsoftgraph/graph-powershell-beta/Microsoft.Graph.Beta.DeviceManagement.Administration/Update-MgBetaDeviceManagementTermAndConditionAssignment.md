@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property assignments in deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementTermAndConditionAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAssignment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementTermAndConditionAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -279,5 +279,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementTermAndConditionAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAssignment?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementTermAndConditionAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAssignment?view=graph-powershell-1.0)
 

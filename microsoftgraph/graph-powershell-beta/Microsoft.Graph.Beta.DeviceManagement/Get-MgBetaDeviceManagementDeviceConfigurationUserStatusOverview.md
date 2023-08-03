@@ -11,7 +11,7 @@ schema: 2.0.0
 Device Configuration users status overview
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -251,8 +251,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getSkypeForBusinessParticipantActivityMinuteCounts
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessParticipantActivityMinuteCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessParticipantActivityMinuteCount?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessParticipantActivityMinuteCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessParticipantActivityMinuteCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -142,5 +142,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportSkypeForBusinessParticipantActivityMinuteCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessParticipantActivityMinuteCount?view=graph-powershell-v1.0)
+[Get-MgReportSkypeForBusinessParticipantActivityMinuteCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessParticipantActivityMinuteCount?view=graph-powershell-1.0)
 

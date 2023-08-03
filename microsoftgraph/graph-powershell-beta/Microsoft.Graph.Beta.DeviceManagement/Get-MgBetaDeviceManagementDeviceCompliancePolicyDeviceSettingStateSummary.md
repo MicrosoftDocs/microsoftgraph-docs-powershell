@@ -11,7 +11,7 @@ schema: 2.0.0
 Compliance Setting State Device Summary
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -395,8 +395,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-1.0)
 

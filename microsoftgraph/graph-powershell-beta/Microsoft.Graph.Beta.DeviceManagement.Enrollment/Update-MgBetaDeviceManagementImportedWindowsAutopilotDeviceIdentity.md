@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property importedWindowsAutopilotDeviceIdentities in deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -341,5 +341,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
 ## RELATED LINKS
-[Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-1.0)
 

@@ -13,7 +13,7 @@ This is a special case of the Update method.nYour app can combine moving an item
 Items cannot be moved between Drives using this request.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34217,7 +34217,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
-[Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-v1.0)
+[Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-v1.0)
+[Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-1.0)

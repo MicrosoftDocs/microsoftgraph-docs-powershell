@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to mentions for users
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -436,4 +436,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-[New-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessage?view=graph-powershell-v1.0)
+[New-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessage?view=graph-powershell-1.0)

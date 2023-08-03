@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -276,5 +276,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsMostUsedVersion <Boolean?>]`: When TRUE, indicates the version of application is the most used version for that application. When FALSE, indicates the version is not the most used version. FALSE by default. Supports: $select, $OrderBy. Read-only.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail?view=graph-powershell-v1.0)
+[New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail?view=graph-powershell-1.0)
 

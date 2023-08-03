@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property assignments for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -297,8 +297,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-v1.0)
+[Remove-MgDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-v1.0)
+[Remove-MgDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-1.0)
 

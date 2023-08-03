@@ -11,7 +11,7 @@ schema: 2.0.0
 The scores and insights for the battery health metrics.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -253,8 +253,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-1.0)
 

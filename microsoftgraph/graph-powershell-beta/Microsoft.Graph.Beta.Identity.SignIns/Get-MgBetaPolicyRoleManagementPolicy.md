@@ -11,7 +11,7 @@ schema: 2.0.0
 Represents the role management policies.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -340,4 +340,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicy?view=graph-powershell-v1.0)
+[Get-MgPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicy?view=graph-powershell-1.0)

@@ -12,7 +12,7 @@ Activate a custodian that has been released from a case to make them part of the
 For details, see Manage custodians in an eDiscovery (Premium) case.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Initialize-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Initialize-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Initialize-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Initialize-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -226,4 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Initialize-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Initialize-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
+[Initialize-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Initialize-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-1.0)

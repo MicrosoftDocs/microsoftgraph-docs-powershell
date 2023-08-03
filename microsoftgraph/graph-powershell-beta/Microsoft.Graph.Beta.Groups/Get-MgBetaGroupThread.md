@@ -11,7 +11,7 @@ schema: 2.0.0
 Get a thread object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -278,4 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-v1.0)
+[Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 The principal that's getting a role assignment or role eligibility through the request.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -212,5 +212,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal?view=graph-powershell-v1.0)
+[Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal?view=graph-powershell-1.0)
 

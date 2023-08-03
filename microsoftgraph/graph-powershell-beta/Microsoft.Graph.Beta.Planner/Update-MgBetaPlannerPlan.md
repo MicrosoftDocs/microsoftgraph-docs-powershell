@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a **plannerPlan** object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -815,7 +815,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-[Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-v1.0)
+[Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-v1.0)
+[Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-1.0)

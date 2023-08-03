@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to serviceManagementDetails for tenantRelationships
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -223,5 +223,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-v1.0)
+[New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRoot?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Restore-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -257,5 +257,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Restore-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRoot?view=graph-powershell-v1.0)
+[Restore-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRoot?view=graph-powershell-1.0)
 

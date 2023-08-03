@@ -13,7 +13,7 @@ Otherwise, it is null.
 Supports $expand.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -216,5 +216,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing?view=graph-powershell-v1.0)
+[Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing?view=graph-powershell-1.0)
 

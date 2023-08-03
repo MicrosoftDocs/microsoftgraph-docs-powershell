@@ -11,7 +11,7 @@ schema: 2.0.0
 Another way to input exempt apps through xml files
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -326,5 +326,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-v1.0)
+[Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-1.0)
 

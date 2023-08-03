@@ -11,7 +11,7 @@ schema: 2.0.0
 A collection of simulation automation runs.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -336,4 +336,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-v1.0)
+[Get-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-1.0)

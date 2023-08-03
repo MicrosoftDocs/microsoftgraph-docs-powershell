@@ -11,7 +11,7 @@ schema: 2.0.0
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -212,5 +212,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition?view=graph-powershell-v1.0)
+[Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition?view=graph-powershell-1.0)
 

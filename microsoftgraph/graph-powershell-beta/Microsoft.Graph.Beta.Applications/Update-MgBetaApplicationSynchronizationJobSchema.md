@@ -14,7 +14,7 @@ To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJobSchema?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -449,8 +449,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetDirectoryName <String>]`: Name of the target directory. Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
-[Update-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJobSchema?view=graph-powershell-v1.0)
+[Update-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJobSchema?view=graph-powershell-v1.0)
+[Update-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
 

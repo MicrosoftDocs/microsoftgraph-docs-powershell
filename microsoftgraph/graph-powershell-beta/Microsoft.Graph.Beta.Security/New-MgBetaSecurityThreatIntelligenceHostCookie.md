@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to hostCookies for security
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -317,8 +317,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: The identification value for the hostTracker.
 
 ## RELATED LINKS
-[New-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-v1.0)
+[New-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-v1.0)
+[New-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-1.0)
 

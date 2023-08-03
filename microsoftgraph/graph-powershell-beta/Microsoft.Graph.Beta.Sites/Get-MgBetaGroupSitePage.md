@@ -21,8 +21,8 @@ Get-MgBetaGroupSitePage -GroupId <String> -SiteId <String> [-ExpandProperty <Str
 
 ### Get
 ```
-Get-MgBetaGroupSitePage -GroupId <String> -SiteId <String> -SitePageId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaGroupSitePage -BaseSitePageId <String> -GroupId <String> -SiteId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -45,6 +45,21 @@ Parameter Sets: List
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BaseSitePageId
+The unique identifier of baseSitePage
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -188,21 +203,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SitePageId
-The unique identifier of sitePage
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -256,7 +256,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSitePage
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBaseSitePage
 ## NOTES
 
 ALIASES

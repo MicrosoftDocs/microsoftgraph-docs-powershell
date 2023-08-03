@@ -13,9 +13,6 @@ Read-only.
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
-
-> [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)
 
 ## SYNTAX
@@ -195,5 +192,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 [New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)
-
-[New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)

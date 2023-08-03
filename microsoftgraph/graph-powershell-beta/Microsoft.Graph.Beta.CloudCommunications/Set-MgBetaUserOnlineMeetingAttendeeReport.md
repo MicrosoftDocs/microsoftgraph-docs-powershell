@@ -12,7 +12,7 @@ The content stream of the attendee report of a Teams live event.
 Read-only.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingAttendeeReport?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingAttendeeReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -198,5 +198,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingAttendeeReport?view=graph-powershell-v1.0)
+[Set-MgUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingAttendeeReport?view=graph-powershell-1.0)
 

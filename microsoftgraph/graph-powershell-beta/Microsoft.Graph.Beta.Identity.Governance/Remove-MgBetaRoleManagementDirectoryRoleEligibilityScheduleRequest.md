@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property roleEligibilityScheduleRequests for roleManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -242,5 +242,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+[Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
 

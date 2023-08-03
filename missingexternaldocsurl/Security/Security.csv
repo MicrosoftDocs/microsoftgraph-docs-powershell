@@ -951,3 +951,5 @@ v1.0, Get-MgSecurityThreatIntelligenceVulnerabilityComponentCount, /security/thr
 v1.0, Get-MgSecurityThreatIntelligenceVulnerabilityCount, /security/threatIntelligence/vulnerabilities/$count
 v1.0, Get-MgSecurityTriggerRetentionEventCount, /security/triggers/retentionEvents/$count
 v1.0, Get-MgSecurityTriggerTypeRetentionEventTypeCount, /security/triggerTypes/retentionEventTypes/$count
+v1.0, Export-MgSecurityCaseEdiscoveryCaseReviewSet, /security/cases/ediscoveryCases/{ediscoveryCase-id}/reviewSets/{ediscoveryReviewSet-id}/export
+v1.0, Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery, /security/cases/ediscoveryCases/{ediscoveryCase-id}/reviewSets/{ediscoveryReviewSet-id}/queries/{ediscoveryReviewSetQuery-id}/export

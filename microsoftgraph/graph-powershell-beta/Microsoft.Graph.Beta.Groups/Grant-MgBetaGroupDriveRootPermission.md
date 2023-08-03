@@ -11,7 +11,7 @@ schema: 2.0.0
 Grant users access to a link represented by a [permission][].
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Grant-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveRootPermission?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Grant-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveRootPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -303,4 +303,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Grant-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveRootPermission?view=graph-powershell-v1.0)
+[Grant-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveRootPermission?view=graph-powershell-1.0)

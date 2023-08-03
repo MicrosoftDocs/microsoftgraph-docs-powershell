@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a school.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -15181,7 +15181,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as 'Member' and 'Guest'. Supports /$filter.
 
 ## RELATED LINKS
-[New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-v1.0)
+[New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-v1.0)
+[New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)

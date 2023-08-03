@@ -12,7 +12,7 @@ The to [term] of the relation.
 The term to which the relationship is defined.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetTermChildRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChildRelationToTerm?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetTermChildRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChildRelationToTerm?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -223,5 +223,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetTermChildRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChildRelationToTerm?view=graph-powershell-v1.0)
+[Get-MgSiteTermStoreSetTermChildRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChildRelationToTerm?view=graph-powershell-1.0)
 

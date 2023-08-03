@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function delta
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -333,5 +333,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta?view=graph-powershell-v1.0)
+[Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta?view=graph-powershell-1.0)
 

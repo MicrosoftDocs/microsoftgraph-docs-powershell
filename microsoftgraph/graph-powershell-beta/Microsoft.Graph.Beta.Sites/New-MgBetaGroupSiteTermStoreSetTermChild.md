@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to children for groups
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetTermChild?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetTermChild?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -590,8 +590,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
 ## RELATED LINKS
-[New-MgGroupSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetTermChild?view=graph-powershell-v1.0)
+[New-MgGroupSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetTermChild?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgGroupSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetTermChild?view=graph-powershell-v1.0)
+[New-MgGroupSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetTermChild?view=graph-powershell-1.0)
 

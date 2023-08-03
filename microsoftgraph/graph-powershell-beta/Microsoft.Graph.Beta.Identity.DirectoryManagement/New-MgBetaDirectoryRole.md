@@ -14,7 +14,7 @@ The Company Administrators and the implicit user directory roles (**User**, **Gu
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRole?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRole?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -291,4 +291,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The identifier of the identity. This property is read-only.
 
 ## RELATED LINKS
-[New-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRole?view=graph-powershell-v1.0)
+[New-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRole?view=graph-powershell-1.0)

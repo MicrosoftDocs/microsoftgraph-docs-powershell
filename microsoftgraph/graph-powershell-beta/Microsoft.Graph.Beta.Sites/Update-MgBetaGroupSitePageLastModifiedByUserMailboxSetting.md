@@ -14,8 +14,8 @@ Update property mailboxSettings value.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -GroupId <String> -SiteId <String>
- -SitePageId <String> [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
+Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -GroupId <String>
+ -SiteId <String> [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
@@ -24,8 +24,8 @@ Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -GroupId <String> -Si
 
 ### Update
 ```
-Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -GroupId <String> -SiteId <String>
- -SitePageId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -GroupId <String>
+ -SiteId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -90,6 +90,21 @@ Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BaseSitePageId
+The unique identifier of baseSitePage
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -191,21 +206,6 @@ Accept wildcard characters: False
 
 ### -SiteId
 The unique identifier of site
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SitePageId
-The unique identifier of sitePage
 
 ```yaml
 Type: String

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgContactMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberOfAsAdministrativeUnit?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgContactMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberOfAsAdministrativeUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -315,5 +315,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgContactMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberOfAsAdministrativeUnit?view=graph-powershell-v1.0)
+[Get-MgContactMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberOfAsAdministrativeUnit?view=graph-powershell-1.0)
 

@@ -105,6 +105,9 @@ Get sharepoint from admin
 ### [Get-MgBetaAdminSharepointSetting](Get-MgBetaAdminSharepointSetting.md)
 Get the tenant-level settings for SharePoint and OneDrive.
 
+### [Get-MgBetaAllSite](Get-MgBetaAllSite.md)
+Invoke function getAllSites
+
 ### [Get-MgBetaGroupSite](Get-MgBetaGroupSite.md)
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.

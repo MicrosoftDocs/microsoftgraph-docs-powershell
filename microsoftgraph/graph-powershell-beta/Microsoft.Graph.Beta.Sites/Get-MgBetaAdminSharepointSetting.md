@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the tenant-level settings for SharePoint and OneDrive.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgAdminSharepointSetting?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgAdminSharepointSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgAdminSharepointSetting?view=graph-powershell-v1.0)
+[Get-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgAdminSharepointSetting?view=graph-powershell-1.0)
 

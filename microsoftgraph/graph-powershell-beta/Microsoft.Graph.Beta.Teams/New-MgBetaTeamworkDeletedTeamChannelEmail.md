@@ -14,7 +14,7 @@ To have Teams provision an email address, you can call **provisionEmail**, or th
 To remove the email address of a **channel**, use the removeEmail method.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelEmail?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelEmail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgTeamworkDeletedTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelEmail?view=graph-powershell-v1.0)
+[New-MgTeamworkDeletedTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelEmail?view=graph-powershell-1.0)
 

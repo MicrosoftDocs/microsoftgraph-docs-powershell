@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -188,4 +188,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-v1.0)
+[Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-1.0)

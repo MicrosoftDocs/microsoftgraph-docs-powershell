@@ -11,7 +11,7 @@ schema: 2.0.0
 The team associated with this group.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeam?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -151,5 +151,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeam?view=graph-powershell-v1.0)
+[Get-MgGroupTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeam?view=graph-powershell-1.0)
 

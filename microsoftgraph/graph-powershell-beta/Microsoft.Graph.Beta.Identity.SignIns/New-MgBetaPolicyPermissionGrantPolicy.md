@@ -13,7 +13,7 @@ A permission grant policy is used to describe the conditions under which permiss
 After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyPermissionGrantPolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -279,4 +279,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g. the API) for which a permission is being granted, or any to match with any resource application or API. Default is any.
 
 ## RELATED LINKS
-[New-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyPermissionGrantPolicy?view=graph-powershell-v1.0)
+[New-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)

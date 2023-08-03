@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to hostComponents for security
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostComponent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostComponent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -333,8 +333,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: The identification value for the hostTracker.
 
 ## RELATED LINKS
-[New-MgSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostComponent?view=graph-powershell-v1.0)
+[New-MgSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostComponent?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostComponent?view=graph-powershell-v1.0)
+[New-MgSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostComponent?view=graph-powershell-1.0)
 

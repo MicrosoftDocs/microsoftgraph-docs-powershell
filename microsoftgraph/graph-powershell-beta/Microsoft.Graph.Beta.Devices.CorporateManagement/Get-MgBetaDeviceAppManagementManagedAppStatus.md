@@ -11,7 +11,7 @@ schema: 2.0.0
 The managed app statuses.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppStatus?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppStatus?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -308,5 +308,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementManagedAppStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppStatus?view=graph-powershell-v1.0)
+[Get-MgDeviceAppManagementManagedAppStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppStatus?view=graph-powershell-1.0)
 

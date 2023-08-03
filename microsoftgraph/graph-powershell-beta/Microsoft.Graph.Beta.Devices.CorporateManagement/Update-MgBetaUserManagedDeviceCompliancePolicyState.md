@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property deviceCompliancePolicyStates in users
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -455,5 +455,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
-[Update-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-v1.0)
+[Update-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 

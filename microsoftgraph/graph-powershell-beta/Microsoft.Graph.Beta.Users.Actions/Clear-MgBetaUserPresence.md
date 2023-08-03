@@ -13,7 +13,7 @@ If it is the user's only presence session, a successful **clearPresence** change
 Read more about presence sessions and their time-out and expiration.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Clear-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresence?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Clear-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -251,4 +251,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Clear-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresence?view=graph-powershell-v1.0)
+[Clear-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresence?view=graph-powershell-1.0)

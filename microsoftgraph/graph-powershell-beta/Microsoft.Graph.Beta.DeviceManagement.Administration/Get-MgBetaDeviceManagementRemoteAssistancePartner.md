@@ -11,7 +11,7 @@ schema: 2.0.0
 The remote assist partners.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -298,5 +298,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Get-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property pages in groups
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -749,8 +749,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
-[Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-v1.0)
+[Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-v1.0)
+[Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-1.0)
 

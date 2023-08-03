@@ -11,7 +11,7 @@ schema: 2.0.0
 Add a teacher to a class.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassTeacherByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassTeacherByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -224,4 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassTeacherByRef?view=graph-powershell-v1.0)
+[New-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassTeacherByRef?view=graph-powershell-1.0)

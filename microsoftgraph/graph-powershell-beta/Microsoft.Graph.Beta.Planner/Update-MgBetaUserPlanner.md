@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property planner in users
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1291,7 +1291,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-[Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-v1.0)
+[Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-v1.0)
+[Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-1.0)

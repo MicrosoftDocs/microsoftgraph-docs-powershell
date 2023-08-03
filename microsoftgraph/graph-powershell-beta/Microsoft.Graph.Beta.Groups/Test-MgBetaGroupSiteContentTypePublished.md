@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function isPublished
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteContentTypePublished?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteContentTypePublished?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -153,5 +153,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteContentTypePublished?view=graph-powershell-v1.0)
+[Test-MgGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteContentTypePublished?view=graph-powershell-1.0)
 

@@ -13,7 +13,7 @@ After the operation is created, you can get the status by retrieving the `Locati
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -312,4 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold?view=graph-powershell-v1.0)
+[Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold?view=graph-powershell-1.0)

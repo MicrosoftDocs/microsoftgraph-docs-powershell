@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to hostedContents for teams
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessageReplyHostedContent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -327,4 +327,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessageReplyHostedContent?view=graph-powershell-v1.0)
+[New-MgTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property deviceManagementPartners for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementPartner?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementPartner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -201,5 +201,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementPartner?view=graph-powershell-v1.0)
+[Remove-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementPartner?view=graph-powershell-1.0)
 

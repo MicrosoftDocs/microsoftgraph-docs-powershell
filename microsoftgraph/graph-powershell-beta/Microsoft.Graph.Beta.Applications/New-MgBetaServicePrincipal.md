@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new servicePrincipal object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1882,7 +1882,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
 
 ## RELATED LINKS
-[New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-v1.0)
+[New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-v1.0)
+[New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-1.0)

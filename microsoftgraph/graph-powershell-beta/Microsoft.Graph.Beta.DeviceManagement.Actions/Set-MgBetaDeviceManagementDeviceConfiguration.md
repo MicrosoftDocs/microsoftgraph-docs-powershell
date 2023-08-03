@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action assign
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDeviceConfiguration?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDeviceConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -440,8 +440,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Set-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDeviceConfiguration?view=graph-powershell-v1.0)
+[Set-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDeviceConfiguration?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Set-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDeviceConfiguration?view=graph-powershell-v1.0)
+[Set-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDeviceConfiguration?view=graph-powershell-1.0)
 

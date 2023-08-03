@@ -15,7 +15,7 @@ This operation also creates a copy of the corresponding group.\nYou can specify 
 \nThe recommended delay between GETs is 5 seconds.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgTeam](/powershell/module/Microsoft.Graph.Teams/Copy-MgTeam?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Copy-MgTeam](/powershell/module/Microsoft.Graph.Teams/Copy-MgTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -339,4 +339,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Copy-MgTeam](/powershell/module/Microsoft.Graph.Teams/Copy-MgTeam?view=graph-powershell-v1.0)
+[Copy-MgTeam](/powershell/module/Microsoft.Graph.Teams/Copy-MgTeam?view=graph-powershell-1.0)

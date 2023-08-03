@@ -11,7 +11,7 @@ schema: 2.0.0
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeShareListSubscription](/powershell/module/Microsoft.Graph.Files/Invoke-MgReauthorizeShareListSubscription?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeShareListSubscription](/powershell/module/Microsoft.Graph.Files/Invoke-MgReauthorizeShareListSubscription?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -169,5 +169,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgReauthorizeShareListSubscription](/powershell/module/Microsoft.Graph.Files/Invoke-MgReauthorizeShareListSubscription?view=graph-powershell-v1.0)
+[Invoke-MgReauthorizeShareListSubscription](/powershell/module/Microsoft.Graph.Files/Invoke-MgReauthorizeShareListSubscription?view=graph-powershell-1.0)
 

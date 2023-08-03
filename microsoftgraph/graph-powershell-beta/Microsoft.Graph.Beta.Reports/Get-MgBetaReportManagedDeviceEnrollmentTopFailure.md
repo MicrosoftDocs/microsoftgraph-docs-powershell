@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function managedDeviceEnrollmentTopFailures
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -147,5 +147,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-v1.0)
+[Get-MgReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-1.0)
 

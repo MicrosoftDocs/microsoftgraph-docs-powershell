@@ -11,7 +11,7 @@ schema: 2.0.0
 The collection property of AppLogUploadRequest.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -397,8 +397,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-1.0)
 

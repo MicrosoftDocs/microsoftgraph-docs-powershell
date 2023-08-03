@@ -13,7 +13,7 @@ Users in the accepted senders list can post to conversations of the group (ident
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSenderByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -176,4 +176,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSenderByRef?view=graph-powershell-v1.0)
+[Get-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)

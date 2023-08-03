@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to contentTypes for groups
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListContentType?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1576,8 +1576,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[New-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListContentType?view=graph-powershell-v1.0)
+[New-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListContentType?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListContentType?view=graph-powershell-v1.0)
+[New-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListContentType?view=graph-powershell-1.0)
 

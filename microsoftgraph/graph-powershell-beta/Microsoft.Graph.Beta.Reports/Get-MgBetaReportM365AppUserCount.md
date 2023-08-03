@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getM365AppUserCounts
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportM365AppUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserCount?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgReportM365AppUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -141,5 +141,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportM365AppUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserCount?view=graph-powershell-v1.0)
+[Get-MgReportM365AppUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserCount?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a documentSetVersion object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemDocumentSetVersion?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -296,5 +296,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemDocumentSetVersion?view=graph-powershell-v1.0)
+[Get-MgDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemDocumentSetVersion?view=graph-powershell-1.0)
 

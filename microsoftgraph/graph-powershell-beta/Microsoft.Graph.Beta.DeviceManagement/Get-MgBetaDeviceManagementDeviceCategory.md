@@ -11,7 +11,7 @@ schema: 2.0.0
 The list of device categories with the tenant.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCategory?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -379,8 +379,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCategory?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCategory?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCategory?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCategory?view=graph-powershell-1.0)
 

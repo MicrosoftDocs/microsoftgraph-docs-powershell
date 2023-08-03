@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property root in drives
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRoot?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34178,8 +34178,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
-[Update-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRoot?view=graph-powershell-v1.0)
+[Update-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRoot?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRoot?view=graph-powershell-v1.0)
+[Update-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRoot?view=graph-powershell-1.0)
 

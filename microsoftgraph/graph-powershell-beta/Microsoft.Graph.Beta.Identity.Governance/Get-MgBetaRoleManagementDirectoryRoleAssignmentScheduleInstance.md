@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the instance of an active role assignment.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -339,5 +339,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)
+[Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
 

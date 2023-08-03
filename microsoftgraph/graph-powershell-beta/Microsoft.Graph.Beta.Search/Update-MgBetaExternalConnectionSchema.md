@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a schema for an externalConnection.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -273,4 +273,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: propertyType
 
 ## RELATED LINKS
-[Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-v1.0)
+[Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-1.0)

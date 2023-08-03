@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to assignments for deviceAppManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -307,5 +307,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment?view=graph-powershell-v1.0)
+[New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementAndroidManagedAppProtectionAssignment?view=graph-powershell-1.0)
 

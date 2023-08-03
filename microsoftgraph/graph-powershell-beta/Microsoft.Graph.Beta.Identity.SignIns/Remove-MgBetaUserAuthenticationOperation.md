@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property operations for users
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationOperation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -234,5 +234,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationOperation?view=graph-powershell-v1.0)
+[Remove-MgUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationOperation?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Mobile App Install Summary.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -180,5 +180,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-v1.0)
+[Get-MgDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-1.0)
 

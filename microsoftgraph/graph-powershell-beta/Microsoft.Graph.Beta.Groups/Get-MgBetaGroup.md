@@ -15,7 +15,7 @@ The **hasMembersWithLicenseErrors** and **isArchived** properties are an excepti
 Because the **group** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroup?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -410,4 +410,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroup?view=graph-powershell-v1.0)
+[Get-MgGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroup?view=graph-powershell-1.0)

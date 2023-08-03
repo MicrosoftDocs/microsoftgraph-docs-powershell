@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a staff member in the specified bookingbusiness.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessStaffMember?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -189,4 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessStaffMember?view=graph-powershell-v1.0)
+[Remove-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessStaffMember?view=graph-powershell-1.0)

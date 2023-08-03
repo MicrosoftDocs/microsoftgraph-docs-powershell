@@ -11,7 +11,7 @@ schema: 2.0.0
 The list of Exchange Connectors configured by the tenant.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementExchangeConnector?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementExchangeConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -298,5 +298,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Get-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementExchangeConnector?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementExchangeConnector?view=graph-powershell-1.0)
 

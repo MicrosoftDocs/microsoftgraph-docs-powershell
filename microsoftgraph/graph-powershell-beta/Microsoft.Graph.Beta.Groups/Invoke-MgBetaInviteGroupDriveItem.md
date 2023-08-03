@@ -11,7 +11,7 @@ schema: 2.0.0
 Sends a sharing invitation for a **DriveItem**.nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgInviteGroupDriveItem?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgInviteGroupDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -375,5 +375,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Invoke-MgInviteGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgInviteGroupDriveItem?view=graph-powershell-v1.0)
+[Invoke-MgInviteGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgInviteGroupDriveItem?view=graph-powershell-1.0)
 

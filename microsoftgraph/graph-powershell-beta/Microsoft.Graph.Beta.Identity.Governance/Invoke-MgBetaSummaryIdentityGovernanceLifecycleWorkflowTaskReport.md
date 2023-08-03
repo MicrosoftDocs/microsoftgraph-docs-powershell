@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function summary
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -210,5 +210,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport?view=graph-powershell-v1.0)
+[Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport?view=graph-powershell-1.0)
 

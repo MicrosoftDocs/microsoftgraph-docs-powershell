@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to userStatuses for deviceAppManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppConfigurationUserStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppConfigurationUserStatus?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileAppConfigurationUserStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppConfigurationUserStatus?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -332,5 +332,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementMobileAppConfigurationUserStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppConfigurationUserStatus?view=graph-powershell-v1.0)
+[New-MgDeviceAppManagementMobileAppConfigurationUserStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppConfigurationUserStatus?view=graph-powershell-1.0)
 

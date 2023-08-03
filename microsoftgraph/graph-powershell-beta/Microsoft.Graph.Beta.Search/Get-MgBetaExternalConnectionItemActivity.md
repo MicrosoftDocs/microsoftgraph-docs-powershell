@@ -12,7 +12,7 @@ Returns a list of activities performed on the item.
 Write-only.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivity?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -292,5 +292,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Get-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivity?view=graph-powershell-v1.0)
+[Get-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
 

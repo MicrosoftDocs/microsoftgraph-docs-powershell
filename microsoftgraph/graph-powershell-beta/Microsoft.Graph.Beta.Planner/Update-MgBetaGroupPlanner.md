@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property planner in groups
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgGroupPlanner?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgGroupPlanner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -543,8 +543,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Required. Title of the plan.
 
 ## RELATED LINKS
-[Update-MgGroupPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgGroupPlanner?view=graph-powershell-v1.0)
+[Update-MgGroupPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgGroupPlanner?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgGroupPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgGroupPlanner?view=graph-powershell-v1.0)
+[Update-MgGroupPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgGroupPlanner?view=graph-powershell-1.0)
 

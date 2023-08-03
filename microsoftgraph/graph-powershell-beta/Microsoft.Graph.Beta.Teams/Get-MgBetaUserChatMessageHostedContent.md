@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMessageHostedContent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMessageHostedContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -371,4 +371,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMessageHostedContent?view=graph-powershell-v1.0)
+[Get-MgUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMessageHostedContent?view=graph-powershell-1.0)

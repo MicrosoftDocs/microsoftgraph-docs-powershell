@@ -14,7 +14,7 @@ Use reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThread?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThread?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -530,7 +530,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-[New-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThread?view=graph-powershell-v1.0)
+[New-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThread?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThread?view=graph-powershell-v1.0)
+[New-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThread?view=graph-powershell-1.0)

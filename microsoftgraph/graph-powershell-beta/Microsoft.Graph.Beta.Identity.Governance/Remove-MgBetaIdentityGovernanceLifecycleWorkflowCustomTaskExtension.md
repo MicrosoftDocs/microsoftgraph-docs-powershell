@@ -12,7 +12,7 @@ Delete a customTaskExtension object.
 A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -252,4 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-v1.0)
+[Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-1.0)

@@ -12,7 +12,7 @@ Read the properties, relationships, or raw contents of an attachment that is att
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageAttachment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageAttachment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -256,4 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageAttachment?view=graph-powershell-v1.0)
+[Get-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageAttachment?view=graph-powershell-1.0)

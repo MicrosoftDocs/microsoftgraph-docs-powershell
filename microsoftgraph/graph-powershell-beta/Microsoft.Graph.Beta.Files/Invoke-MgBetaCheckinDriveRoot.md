@@ -11,7 +11,7 @@ schema: 2.0.0
 Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgCheckinDriveRoot?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgCheckinDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -256,5 +256,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgCheckinDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgCheckinDriveRoot?view=graph-powershell-v1.0)
+[Invoke-MgCheckinDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgCheckinDriveRoot?view=graph-powershell-1.0)
 

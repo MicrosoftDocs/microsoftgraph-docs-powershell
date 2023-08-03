@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to items for external
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionItem?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -306,5 +306,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[New-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionItem?view=graph-powershell-v1.0)
+[New-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionItem?view=graph-powershell-1.0)
 

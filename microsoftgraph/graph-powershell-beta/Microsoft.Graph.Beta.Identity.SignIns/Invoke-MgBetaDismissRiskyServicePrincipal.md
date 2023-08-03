@@ -13,7 +13,7 @@ This action sets the targeted service principal account's risk level to `none`.
 You can dismiss up to 60 service principal accounts in one request.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyServicePrincipal?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyServicePrincipal?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -166,4 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalIds <String[]>]`: 
 
 ## RELATED LINKS
-[Invoke-MgDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyServicePrincipal?view=graph-powershell-v1.0)
+[Invoke-MgDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgDismissRiskyServicePrincipal?view=graph-powershell-1.0)

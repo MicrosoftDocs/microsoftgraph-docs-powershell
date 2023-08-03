@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete entity from chats
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgChat](/powershell/module/Microsoft.Graph.Teams/Remove-MgChat?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgChat](/powershell/module/Microsoft.Graph.Teams/Remove-MgChat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -199,4 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgChat](/powershell/module/Microsoft.Graph.Teams/Remove-MgChat?view=graph-powershell-v1.0)
+[Remove-MgChat](/powershell/module/Microsoft.Graph.Teams/Remove-MgChat?view=graph-powershell-1.0)

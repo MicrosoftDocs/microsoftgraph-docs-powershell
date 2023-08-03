@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new accessReviewScheduleDefinition object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1052,7 +1052,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StageId <String>]`: Unique identifier of the accessReviewStageSettings. The stageId will be used in dependsOn property to indicate the stage relationship. Required.
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-v1.0)
+[New-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-v1.0)
+[New-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)

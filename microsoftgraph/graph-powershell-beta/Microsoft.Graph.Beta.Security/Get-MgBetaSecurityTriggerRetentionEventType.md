@@ -11,7 +11,7 @@ schema: 2.0.0
 Specifies the event that will start the retention period for labels that use this event type when an event is created.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerRetentionEventType?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerRetentionEventType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -184,5 +184,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerRetentionEventType?view=graph-powershell-v1.0)
+[Get-MgSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerRetentionEventType?view=graph-powershell-1.0)
 

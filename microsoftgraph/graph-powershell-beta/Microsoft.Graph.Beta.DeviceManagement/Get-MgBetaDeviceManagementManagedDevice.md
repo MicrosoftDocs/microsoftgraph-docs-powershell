@@ -11,7 +11,7 @@ schema: 2.0.0
 The list of managed devices.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDevice?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -379,8 +379,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDevice?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDevice?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
 

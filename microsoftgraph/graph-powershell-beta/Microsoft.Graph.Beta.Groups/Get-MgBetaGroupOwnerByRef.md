@@ -15,7 +15,7 @@ Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Suppo
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -212,4 +212,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerByRef?view=graph-powershell-v1.0)
+[Get-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerByRef?view=graph-powershell-1.0)

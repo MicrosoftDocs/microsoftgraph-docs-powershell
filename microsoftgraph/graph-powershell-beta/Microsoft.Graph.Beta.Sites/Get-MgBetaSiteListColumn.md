@@ -11,7 +11,7 @@ schema: 2.0.0
 Get columns from sites
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteListColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListColumn?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -328,4 +328,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteListColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListColumn?view=graph-powershell-v1.0)
+[Get-MgSiteListColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListColumn?view=graph-powershell-1.0)

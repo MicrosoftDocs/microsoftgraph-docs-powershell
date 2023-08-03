@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getYammerDeviceUsageUserDetail
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportYammerDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerDeviceUsageUserDetail?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgReportYammerDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerDeviceUsageUserDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -167,5 +167,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportYammerDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerDeviceUsageUserDetail?view=graph-powershell-v1.0)
+[Get-MgReportYammerDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerDeviceUsageUserDetail?view=graph-powershell-1.0)
 

@@ -14,7 +14,7 @@ Users in the accepted senders list can post to conversations of the group .
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupAcceptedSenderByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -257,4 +257,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupAcceptedSenderByRef?view=graph-powershell-v1.0)
+[New-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)

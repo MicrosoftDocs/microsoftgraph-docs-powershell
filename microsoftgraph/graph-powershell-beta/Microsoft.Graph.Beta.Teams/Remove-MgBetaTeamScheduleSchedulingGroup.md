@@ -12,7 +12,7 @@ Mark a schedulingGroup as inactive by setting its **isActive** property.\nThis m
 Existing shift instances assigned to the scheduling group remain part of the group.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -213,4 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)
+[Remove-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleSchedulingGroup?view=graph-powershell-1.0)

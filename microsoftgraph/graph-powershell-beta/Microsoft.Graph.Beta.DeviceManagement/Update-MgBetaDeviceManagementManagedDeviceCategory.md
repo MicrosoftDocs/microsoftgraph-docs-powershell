@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property deviceCategory in deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceCategory?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceCategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -369,8 +369,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceCategory?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceCategory?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceCategory?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceCategory?view=graph-powershell-1.0)
 

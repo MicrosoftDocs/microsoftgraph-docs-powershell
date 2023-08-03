@@ -17,7 +17,7 @@ Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -473,7 +473,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-v1.0)
+[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-v1.0)
+[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)

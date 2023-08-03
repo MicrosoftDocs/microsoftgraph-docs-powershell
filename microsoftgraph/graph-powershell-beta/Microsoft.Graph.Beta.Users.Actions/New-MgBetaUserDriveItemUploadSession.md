@@ -13,7 +13,7 @@ An upload session allows your app to upload ranges of the file in sequential API
 To upload a file using an upload session:
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserDriveItemUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveItemUploadSession?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveItemUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveItemUploadSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -276,5 +276,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
-[New-MgUserDriveItemUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveItemUploadSession?view=graph-powershell-v1.0)
+[New-MgUserDriveItemUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveItemUploadSession?view=graph-powershell-1.0)
 

@@ -14,7 +14,7 @@ To delete the access package, first query if there are any assignments with a fi
 For more information on how to remove assignments that are still in the delivered state, see Remove an assignment.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -257,4 +257,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackage?view=graph-powershell-v1.0)
+[Remove-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)

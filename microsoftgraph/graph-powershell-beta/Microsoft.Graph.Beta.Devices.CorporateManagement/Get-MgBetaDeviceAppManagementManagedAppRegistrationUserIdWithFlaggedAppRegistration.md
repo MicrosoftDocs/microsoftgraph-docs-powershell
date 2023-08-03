@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getUserIdsWithFlaggedAppRegistration
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -115,5 +115,5 @@ ALIASES
 Get-MgBetaDeviceAppMgtManagedAppRegistrationUserIdGraphWPreFlaggedAppRegistration
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration?view=graph-powershell-v1.0)
+[Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration?view=graph-powershell-1.0)
 

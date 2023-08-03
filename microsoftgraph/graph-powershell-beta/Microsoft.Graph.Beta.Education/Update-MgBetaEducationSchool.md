@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a school object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchool?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchool?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -15227,7 +15227,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as 'Member' and 'Guest'. Supports /$filter.
 
 ## RELATED LINKS
-[Update-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchool?view=graph-powershell-v1.0)
+[Update-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchool?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchool?view=graph-powershell-v1.0)
+[Update-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchool?view=graph-powershell-1.0)

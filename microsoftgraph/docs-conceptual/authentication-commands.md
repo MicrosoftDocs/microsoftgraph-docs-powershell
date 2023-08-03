@@ -95,7 +95,7 @@ To use app-only access, you can load the certificate from either *Cert:\CurrentU
 If you need interactions in the background, without a user to sign in, this type of grant will help you. Support for client secret credentials was added by adding **-ClientSecretCredential** parameter to **Connect-MgGraph**. See [Get-Credential](/powershell/module/microsoft.powershell.security/get-credential) on how to get or create credentials.
 
 ```powershell
-$ClientSecretCredential = Get-Credential -Username "Client_Id"
+$ClientSecretCredential = Get-Credential -Credential "Client_Id"
 # Enter client_secret in the password prompt.
 Connect-MgGraph -TenantId "Tenant_Id" -ClientSecretCredential $ClientSecretCredential
 ```

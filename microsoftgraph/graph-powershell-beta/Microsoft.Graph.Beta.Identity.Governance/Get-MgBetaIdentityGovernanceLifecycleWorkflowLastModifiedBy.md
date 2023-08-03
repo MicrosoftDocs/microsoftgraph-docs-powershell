@@ -11,7 +11,7 @@ schema: 2.0.0
 The user who last modified the workflow.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -210,5 +210,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy?view=graph-powershell-v1.0)
+[Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy?view=graph-powershell-1.0)
 

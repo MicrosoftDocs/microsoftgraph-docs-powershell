@@ -13,7 +13,7 @@ A **delta** function call for contact folders in a mailbox is similar to a GET r
 This allows you to maintain and synchronize \na local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderChildFolderDelta?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderChildFolderDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -293,5 +293,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserContactFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderChildFolderDelta?view=graph-powershell-v1.0)
+[Get-MgUserContactFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderChildFolderDelta?view=graph-powershell-1.0)
 

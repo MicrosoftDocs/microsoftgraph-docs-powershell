@@ -190,6 +190,3 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-
-

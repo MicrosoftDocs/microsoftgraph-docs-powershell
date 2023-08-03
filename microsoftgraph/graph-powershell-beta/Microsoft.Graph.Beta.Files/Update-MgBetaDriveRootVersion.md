@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property versions in drives
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootVersion?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -329,5 +329,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
-[Update-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootVersion?view=graph-powershell-v1.0)
+[Update-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootVersion?view=graph-powershell-1.0)
 

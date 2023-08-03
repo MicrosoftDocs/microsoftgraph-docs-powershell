@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property cases for security
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCase](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCase?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCase](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCase?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -98,5 +98,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgSecurityCase](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCase?view=graph-powershell-v1.0)
+[Remove-MgSecurityCase](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCase?view=graph-powershell-1.0)
 

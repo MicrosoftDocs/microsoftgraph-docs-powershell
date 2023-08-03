@@ -11,7 +11,7 @@ schema: 2.0.0
 Mark a list of serviceUpdateMessages as **read** for the signed in user.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageRead?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageRead?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -148,4 +148,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MessageIds <String[]>]`: 
 
 ## RELATED LINKS
-[Invoke-MgMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageRead?view=graph-powershell-v1.0)
+[Invoke-MgMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageRead?view=graph-powershell-1.0)

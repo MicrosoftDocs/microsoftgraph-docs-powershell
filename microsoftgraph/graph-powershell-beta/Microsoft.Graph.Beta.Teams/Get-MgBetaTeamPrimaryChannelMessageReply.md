@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve a single message or a message reply in a channel or a chat.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessageReply?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -312,4 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessageReply?view=graph-powershell-v1.0)
+[Get-MgTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessageReply?view=graph-powershell-1.0)

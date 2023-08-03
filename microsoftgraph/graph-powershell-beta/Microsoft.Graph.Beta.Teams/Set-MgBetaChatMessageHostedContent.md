@@ -11,7 +11,7 @@ schema: 2.0.0
 Update media content for the navigation property hostedContents in chats
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgChatMessageHostedContent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgChatMessageHostedContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -232,5 +232,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Set-MgChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgChatMessageHostedContent?view=graph-powershell-v1.0)
+[Set-MgChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgChatMessageHostedContent?view=graph-powershell-1.0)
 

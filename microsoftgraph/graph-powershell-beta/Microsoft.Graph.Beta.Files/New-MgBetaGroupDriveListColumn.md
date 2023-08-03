@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListColumn?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1122,8 +1122,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
-[New-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListColumn?view=graph-powershell-v1.0)
+[New-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListColumn?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListColumn?view=graph-powershell-v1.0)
+[New-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListColumn?view=graph-powershell-1.0)
 

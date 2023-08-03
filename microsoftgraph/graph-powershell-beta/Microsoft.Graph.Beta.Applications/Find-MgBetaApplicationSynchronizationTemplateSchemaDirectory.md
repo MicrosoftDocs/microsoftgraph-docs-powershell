@@ -11,7 +11,7 @@ schema: 2.0.0
 Discover the latest schema definition for provisioning to an application.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Find-MgApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Find-MgApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Find-MgApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Find-MgApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Find-MgApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Find-MgApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-v1.0)
+[Find-MgApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Find-MgApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
 

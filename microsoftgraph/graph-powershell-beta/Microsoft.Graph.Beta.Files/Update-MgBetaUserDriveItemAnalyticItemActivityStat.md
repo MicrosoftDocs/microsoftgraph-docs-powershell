@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property itemActivityStats in users
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -9739,8 +9739,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
 ## RELATED LINKS
-[Update-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)
+[Update-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)
+[Update-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 

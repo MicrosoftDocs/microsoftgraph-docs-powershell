@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property photo in teams
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPhoto?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPhoto?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -251,5 +251,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPhoto?view=graph-powershell-v1.0)
+[Update-MgTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamPhoto?view=graph-powershell-1.0)
 

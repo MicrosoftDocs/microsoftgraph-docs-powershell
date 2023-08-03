@@ -11,7 +11,7 @@ schema: 2.0.0
 Send a new reply to a chatMessage in a specified channel.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMessageReply?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -938,7 +938,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[New-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMessageReply?view=graph-powershell-v1.0)
+[New-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMessageReply?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMessageReply?view=graph-powershell-v1.0)
+[New-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMessageReply?view=graph-powershell-1.0)

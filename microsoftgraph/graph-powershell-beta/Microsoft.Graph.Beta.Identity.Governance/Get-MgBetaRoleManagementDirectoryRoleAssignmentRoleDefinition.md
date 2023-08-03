@@ -14,7 +14,7 @@ roleDefinition.id will be auto expanded.
 Supports $expand.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -216,5 +216,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
+[Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition?view=graph-powershell-1.0)
 

@@ -12,7 +12,7 @@ Update the allowedCombinations property of an authenticationStrengthPolicy objec
 To update other properties of an authenticationStrengthPolicy object, use the Update authenticationStrengthPolicy method.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -258,5 +258,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination?view=graph-powershell-v1.0)
+[Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete the specified bookingCustomer object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomer?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomer?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -189,4 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomer?view=graph-powershell-v1.0)
+[Remove-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomer?view=graph-powershell-1.0)

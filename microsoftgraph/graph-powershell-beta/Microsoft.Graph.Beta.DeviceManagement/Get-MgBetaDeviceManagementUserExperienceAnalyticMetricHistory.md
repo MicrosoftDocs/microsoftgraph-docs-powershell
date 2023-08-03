@@ -11,7 +11,7 @@ schema: 2.0.0
 User experience analytics metric history
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticMetricHistory?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticMetricHistory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -379,8 +379,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticMetricHistory?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticMetricHistory?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticMetricHistory?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticMetricHistory?view=graph-powershell-1.0)
 

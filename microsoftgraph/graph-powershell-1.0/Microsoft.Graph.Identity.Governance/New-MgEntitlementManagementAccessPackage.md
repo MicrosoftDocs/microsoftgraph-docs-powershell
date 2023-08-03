@@ -22,7 +22,8 @@ New-MgEntitlementManagementAccessPackage [-AccessPackagesIncompatibleWith <IMicr
  [-AdditionalProperties <Hashtable>] [-AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy[]>]
  [-Catalog <IMicrosoftGraphAccessPackageCatalog>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IncompatibleAccessPackages <IMicrosoftGraphAccessPackage[]>]
- [-IncompatibleGroups <IMicrosoftGraphGroup[]>] [-IsHidden] [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [-IncompatibleGroups <IMicrosoftGraphGroup[]>] [-IsHidden] [-ModifiedDateTime <DateTime>]
+ [-ResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -258,6 +259,22 @@ Read-only.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceRoleScopes
+.
+To construct, see NOTES section for RESOURCEROLESCOPES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageResourceRoleScope[]
 Parameter Sets: CreateExpanded
 Aliases:
 

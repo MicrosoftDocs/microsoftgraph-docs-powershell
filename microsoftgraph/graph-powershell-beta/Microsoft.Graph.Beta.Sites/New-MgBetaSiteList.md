@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new [list][] in a [site][].
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteList?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28924,7 +28924,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[New-MgSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteList?view=graph-powershell-v1.0)
+[New-MgSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteList?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteList?view=graph-powershell-v1.0)
+[New-MgSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgSiteList?view=graph-powershell-1.0)

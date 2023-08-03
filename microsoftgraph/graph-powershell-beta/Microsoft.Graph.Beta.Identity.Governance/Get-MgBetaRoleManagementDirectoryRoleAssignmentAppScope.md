@@ -12,7 +12,7 @@ Details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -212,5 +212,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-v1.0)
+[Get-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-1.0)
 

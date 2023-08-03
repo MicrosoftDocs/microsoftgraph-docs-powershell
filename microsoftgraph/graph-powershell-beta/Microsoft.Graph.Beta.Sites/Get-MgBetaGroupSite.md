@@ -12,7 +12,7 @@ The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSite?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -306,5 +306,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSite?view=graph-powershell-v1.0)
+[Get-MgGroupSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSite?view=graph-powershell-1.0)
 

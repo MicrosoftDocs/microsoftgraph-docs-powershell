@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to operations for tenantRelationships
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -272,5 +272,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[New-MgTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-v1.0)
+[New-MgTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-1.0)
 

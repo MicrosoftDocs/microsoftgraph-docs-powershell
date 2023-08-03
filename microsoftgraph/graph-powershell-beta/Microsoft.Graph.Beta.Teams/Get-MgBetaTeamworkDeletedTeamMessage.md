@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getAllMessages
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamMessage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -158,5 +158,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamMessage?view=graph-powershell-v1.0)
+[Get-MgTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamMessage?view=graph-powershell-1.0)
 

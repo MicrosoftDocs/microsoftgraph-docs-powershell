@@ -11,7 +11,7 @@ schema: 2.0.0
 User experience analytics appHealth Application Performance by App Version Device Id
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -381,8 +381,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId?view=graph-powershell-1.0)
 

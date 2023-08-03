@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve a list of classes owned by a school.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolClassByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolClassByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -188,4 +188,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolClassByRef?view=graph-powershell-v1.0)
+[Get-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolClassByRef?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to targetedManagedAppConfigurations for deviceAppManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -514,8 +514,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-v1.0)
+[New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-v1.0)
+[New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-1.0)
 

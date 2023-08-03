@@ -13,7 +13,7 @@ Each URI can be used to retrieve the instance's review history data.
 Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the accessReviewHistoryInstance object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -240,4 +240,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri?view=graph-powershell-v1.0)
+[New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri?view=graph-powershell-1.0)

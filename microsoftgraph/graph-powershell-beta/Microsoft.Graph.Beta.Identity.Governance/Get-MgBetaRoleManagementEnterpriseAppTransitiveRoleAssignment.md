@@ -16,19 +16,21 @@ Get transitiveRoleAssignments from roleManagement
 ```
 Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment -RbacApplicationId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment -RbacApplicationId <String>
- -UnifiedRoleAssignmentId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ -UnifiedRoleAssignmentId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-ConsistencyLevel <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment -InputObject <IIdentityGovernanceIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,6 +44,22 @@ List all pages.
 ```yaml
 Type: SwitchParameter
 Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ConsistencyLevel
+Indicates the requested consistency level.
+Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+
+```yaml
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: False

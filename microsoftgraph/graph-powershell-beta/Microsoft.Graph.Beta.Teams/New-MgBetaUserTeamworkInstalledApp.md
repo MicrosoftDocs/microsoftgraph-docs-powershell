@@ -11,7 +11,7 @@ schema: 2.0.0
 Install an app in the personal scope of the specified user.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkInstalledApp?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkInstalledApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -815,7 +815,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS
-[New-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkInstalledApp?view=graph-powershell-v1.0)
+[New-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkInstalledApp?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkInstalledApp?view=graph-powershell-v1.0)
+[New-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkInstalledApp?view=graph-powershell-1.0)

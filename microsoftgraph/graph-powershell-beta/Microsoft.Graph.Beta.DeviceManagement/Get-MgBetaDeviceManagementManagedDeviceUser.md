@@ -11,7 +11,7 @@ schema: 2.0.0
 The primary users associated with the managed device.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceUser](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceUser?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceUser](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -205,5 +205,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgDeviceManagementManagedDeviceUser](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceUser?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementManagedDeviceUser](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceUser?view=graph-powershell-1.0)
 

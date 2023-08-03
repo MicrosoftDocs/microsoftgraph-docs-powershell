@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -446,5 +446,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMobileApplicationManagementEnabled <Boolean?>]`: When TRUE, app protection policies using the Device Threat Level rule will evaluate devices including data from this connector for Windows. When FALSE, Intune will not use device risk details sent over this connector during app protection policies calculation for policies with a Device Threat Level configured. Existing devices that are not compliant due to risk levels obtained from this connector will also become compliant.
 
 ## RELATED LINKS
-[New-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-v1.0)
+[New-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-1.0)
 

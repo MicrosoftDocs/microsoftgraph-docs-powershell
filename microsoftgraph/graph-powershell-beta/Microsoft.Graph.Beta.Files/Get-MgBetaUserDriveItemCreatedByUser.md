@@ -11,7 +11,7 @@ schema: 2.0.0
 Get createdByUser from users
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemCreatedByUser?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemCreatedByUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -168,5 +168,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDriveItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemCreatedByUser?view=graph-powershell-v1.0)
+[Get-MgUserDriveItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemCreatedByUser?view=graph-powershell-1.0)
 

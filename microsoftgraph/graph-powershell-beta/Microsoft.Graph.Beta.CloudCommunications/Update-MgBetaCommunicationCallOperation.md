@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property operations in communications
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallOperation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -274,5 +274,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subcode <Int32?>]`: The result sub-code.
 
 ## RELATED LINKS
-[Update-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallOperation?view=graph-powershell-v1.0)
+[Update-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallOperation?view=graph-powershell-1.0)
 

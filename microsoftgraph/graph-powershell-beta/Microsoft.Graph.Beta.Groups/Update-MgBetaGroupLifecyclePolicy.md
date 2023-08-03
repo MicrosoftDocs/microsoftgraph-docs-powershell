@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupLifecyclePolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -332,4 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupLifecyclePolicy?view=graph-powershell-v1.0)
+[Update-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupLifecyclePolicy?view=graph-powershell-1.0)

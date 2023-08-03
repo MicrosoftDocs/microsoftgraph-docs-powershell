@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -408,7 +408,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: The value that is set when this item is selected.
 
 ## RELATED LINKS
-[New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)
+[New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)
+[New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-1.0)

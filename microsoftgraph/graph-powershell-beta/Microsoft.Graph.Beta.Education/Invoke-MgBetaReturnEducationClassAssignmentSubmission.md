@@ -13,7 +13,7 @@ This will change the status of the submission from 'submitted' to 'returned' and
 This action can only be done by the teacher.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReturnEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationClassAssignmentSubmission?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReturnEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationClassAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -171,4 +171,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgReturnEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationClassAssignmentSubmission?view=graph-powershell-v1.0)
+[Invoke-MgReturnEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationClassAssignmentSubmission?view=graph-powershell-1.0)

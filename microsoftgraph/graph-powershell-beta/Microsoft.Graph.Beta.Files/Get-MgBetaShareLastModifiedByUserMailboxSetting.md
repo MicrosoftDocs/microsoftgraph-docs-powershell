@@ -14,7 +14,7 @@ For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgShareLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Get-MgShareLastModifiedByUserMailboxSetting?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgShareLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Get-MgShareLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -156,5 +156,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Get-MgShareLastModifiedByUserMailboxSetting?view=graph-powershell-v1.0)
+[Get-MgShareLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Get-MgShareLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
 

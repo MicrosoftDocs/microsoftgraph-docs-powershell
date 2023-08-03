@@ -14,7 +14,7 @@ After a **completeMigration** request is made, you cannot import additional mess
 You can add members to the team after the request returns a successful response.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Complete-MgTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamPrimaryChannelMigration?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Complete-MgTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamPrimaryChannelMigration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -187,4 +187,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Complete-MgTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamPrimaryChannelMigration?view=graph-powershell-v1.0)
+[Complete-MgTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamPrimaryChannelMigration?view=graph-powershell-1.0)

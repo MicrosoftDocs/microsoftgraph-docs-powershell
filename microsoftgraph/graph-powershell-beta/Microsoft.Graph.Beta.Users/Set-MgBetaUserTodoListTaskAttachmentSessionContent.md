@@ -11,7 +11,7 @@ schema: 2.0.0
 The content streams that are uploaded.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserTodoListTaskAttachmentSessionContent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserTodoListTaskAttachmentSessionContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -216,5 +216,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserTodoListTaskAttachmentSessionContent?view=graph-powershell-v1.0)
+[Set-MgUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserTodoListTaskAttachmentSessionContent?view=graph-powershell-1.0)
 

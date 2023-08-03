@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property roleEligibilityScheduleRequests in roleManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -876,8 +876,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
-[Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+[Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+[Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
 

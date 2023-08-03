@@ -12,7 +12,7 @@ Get a signIn object that contains a specific user sign-in event for your tenant.
 This includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -285,4 +285,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-v1.0)
+[Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-1.0)

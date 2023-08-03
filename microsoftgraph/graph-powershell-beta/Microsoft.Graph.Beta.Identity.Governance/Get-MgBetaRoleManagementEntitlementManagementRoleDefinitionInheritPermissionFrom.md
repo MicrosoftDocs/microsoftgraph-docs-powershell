@@ -12,7 +12,7 @@ Read-only collection of role definitions that the given role definition inherits
 Only Azure AD built-in roles support this attribute.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -358,5 +358,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+[Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-1.0)
 

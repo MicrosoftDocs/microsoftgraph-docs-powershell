@@ -11,7 +11,7 @@ schema: 2.0.0
 Parent contentType from which this content type is derived.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveContentTypeBase?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveContentTypeBase?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -168,5 +168,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveContentTypeBase?view=graph-powershell-v1.0)
+[Get-MgUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveContentTypeBase?view=graph-powershell-1.0)
 

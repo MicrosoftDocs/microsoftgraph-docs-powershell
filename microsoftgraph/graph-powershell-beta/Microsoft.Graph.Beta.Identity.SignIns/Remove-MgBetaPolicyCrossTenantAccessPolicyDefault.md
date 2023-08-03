@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property default for policies
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -135,4 +135,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-v1.0)
+[Remove-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-1.0)

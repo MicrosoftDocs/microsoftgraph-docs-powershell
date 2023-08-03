@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAgreementFileVersionCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileVersionCount?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgAgreementFileVersionCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileVersionCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -225,5 +225,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgAgreementFileVersionCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileVersionCount?view=graph-powershell-v1.0)
+[Get-MgAgreementFileVersionCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileVersionCount?view=graph-powershell-1.0)
 

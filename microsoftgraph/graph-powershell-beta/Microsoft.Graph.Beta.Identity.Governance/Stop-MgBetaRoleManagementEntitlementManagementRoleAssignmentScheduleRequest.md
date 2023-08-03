@@ -12,7 +12,7 @@ Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a `G
 After calling this action, the **status** of the canceled **unifiedRoleAssignmentScheduleRequest** changes to `Canceled`.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -228,5 +228,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
+[Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-1.0)
 

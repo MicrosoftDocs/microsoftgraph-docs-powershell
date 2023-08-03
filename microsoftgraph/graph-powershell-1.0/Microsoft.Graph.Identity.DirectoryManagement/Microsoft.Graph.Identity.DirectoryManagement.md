@@ -113,9 +113,6 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
 Invoke action getMemberObjects
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaContactMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactMemberOfByRef?view=graph-powershell-beta)
-
 ### [Get-MgContactMemberOfCount](Get-MgContactMemberOfCount.md)
 Get the number of the resource
 
@@ -138,9 +135,6 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
 Invoke action getMemberObjects
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaContactTransitiveMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactTransitiveMemberOfByRef?view=graph-powershell-beta)
 
 ### [Get-MgContactTransitiveMemberOfCount](Get-MgContactTransitiveMemberOfCount.md)
 Get the number of the resource
@@ -173,6 +167,9 @@ This function is transitive.
 **Note:** Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDevice](Get-MgDevice.md)
+Get the properties and relationships of a device object.
+
+### [Get-MgDeviceByDeviceId](Get-MgDeviceByDeviceId.md)
 Get the properties and relationships of a device object.
 
 ### [Get-MgDeviceById](Get-MgDeviceById.md)
@@ -215,9 +212,6 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
 Invoke action getMemberObjects
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceMemberOfByRef?view=graph-powershell-beta)
 
 ### [Get-MgDeviceMemberOfCount](Get-MgDeviceMemberOfCount.md)
 Get the number of the resource
@@ -494,6 +488,13 @@ For details, see Role template IDs.
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+### [Get-MgDirectoryRoleByRoleTemplateId](Get-MgDirectoryRoleByRoleTemplateId.md)
+Retrieve the properties of a directoryRole object.
+The role must be activated in tenant for a successful response.
+You can use both the object ID and template ID of the **directoryRole** with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
+For details, see Role template IDs.
+
 ### [Get-MgDirectoryRoleCount](Get-MgDirectoryRoleCount.md)
 Get the number of the resource
 
@@ -761,9 +762,6 @@ The collection of open extensions defined for the device.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDeviceMemberOfByRef?view=graph-powershell-beta)
-
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
 Add a user as a registered owner of the device.
 
@@ -868,6 +866,9 @@ Delete entity from contracts
 ### [Remove-MgDevice](Remove-MgDevice.md)
 Delete a registered device.
 
+### [Remove-MgDeviceByDeviceId](Remove-MgDeviceByDeviceId.md)
+Delete a registered device.
+
 ### [Remove-MgDeviceExtension](Remove-MgDeviceExtension.md)
 Delete navigation property extensions for devices
 
@@ -912,6 +913,9 @@ Delete navigation property onPremisesSynchronization for directory
 
 ### [Remove-MgDirectoryRole](Remove-MgDirectoryRole.md)
 Delete entity from directoryRoles
+
+### [Remove-MgDirectoryRoleByRoleTemplateId](Remove-MgDirectoryRoleByRoleTemplateId.md)
+Delete entity from directoryRoles by roleTemplateId
 
 ### [Remove-MgDirectoryRoleMemberByRef](Remove-MgDirectoryRoleMemberByRef.md)
 Remove a member from a directoryRole.
@@ -1115,6 +1119,10 @@ Update entity in contracts
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
+### [Update-MgDeviceByDeviceId](Update-MgDeviceByDeviceId.md)
+Update the properties of a registered device.
+Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
+
 ### [Update-MgDeviceExtension](Update-MgDeviceExtension.md)
 Update the navigation property extensions in devices
 
@@ -1150,6 +1158,9 @@ Update the properties of an onPremisesDirectorySynchronization object.
 
 ### [Update-MgDirectoryRole](Update-MgDirectoryRole.md)
 Update entity in directoryRoles
+
+### [Update-MgDirectoryRoleByRoleTemplateId](Update-MgDirectoryRoleByRoleTemplateId.md)
+Update entity in directoryRoles by roleTemplateId
 
 ### [Update-MgDirectoryRoleScopedMember](Update-MgDirectoryRoleScopedMember.md)
 Update the navigation property scopedMembers in directoryRoles

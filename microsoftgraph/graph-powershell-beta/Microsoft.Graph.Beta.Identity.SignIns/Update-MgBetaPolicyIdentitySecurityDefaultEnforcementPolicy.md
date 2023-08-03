@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -219,4 +219,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabled <Boolean?>]`: If set to true, Azure Active Directory security defaults is enabled for the tenant.
 
 ## RELATED LINKS
-[Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-v1.0)
+[Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-1.0)

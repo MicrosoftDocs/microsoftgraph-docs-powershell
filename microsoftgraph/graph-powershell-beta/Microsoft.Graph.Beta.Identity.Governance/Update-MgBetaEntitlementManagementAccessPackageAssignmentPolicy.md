@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property accessPackageAssignmentPolicies in identityGovernance
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -15185,8 +15185,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Issuers <String[]>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
 
 ## RELATED LINKS
-[Update-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)
+[Update-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)
+[Update-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
 
