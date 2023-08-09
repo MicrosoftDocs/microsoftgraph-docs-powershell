@@ -27,7 +27,7 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 | [-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
 | [-OrderBy](#orderby-parameter)| Orders results|`Get-MgUser -OrderBy DisplayName`|
 | [-Search](#search-parameter)| Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
-| [-Select](#select-parameter)| Filters properties (columns)|<code>Get-MgUser &#124; Select DisplayName, Id</code>|
+| [-Select](#select-parameter)| Filters properties (columns)|<code>Get-MgUser -Property Id, DisplayName &#124; Select Id, DisplayName</code>|
 | [-Top](#top-parameter)| Sets the page size of results. |`Get-MgUser -Top 10`|
 
 ## Count parameter
@@ -168,7 +168,7 @@ Use the `-Select` query parameter to return a set of properties that are differe
 For example, when retrieving a list of all the users, you can specify that only the **Id** and **DisplayName** properties be returned:
 
 ```powershell
-Get-MgUser | Select Id, DisplayName
+Get-MgUser -Property Id, DisplayName | Select Id, DisplayName
 ```
 
 ```Output
