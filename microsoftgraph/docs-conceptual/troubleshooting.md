@@ -62,7 +62,7 @@ For more info, see [App-only authentication](app-only.md).
 
 `Unverified publisher` error message occurs during Microsoft Graph PowerShell app consent.
 
-To remove this error, you can use an app registration of your own, on which you can set yourself as the verified publisher. You'll need to go through the [publisher verification process](/azure/active-directory/develop/publisher-verification-overview), and use the app registration to consent to the permissions required by Microsoft Graph PowerShell as shown below:
+To remove this error, you can use an app registration of your own, on which you can set yourself as the verified publisher. You'll need to go through the [publisher verification process](/azure/active-directory/develop/publisher-verification-overview), and use the app registration to consent to the permissions required by Microsoft Graph PowerShell, as shown below:
 
 ```powershell
 Connect-MgGraph -AppId "{your-own-app-id}" -Scopes "scope"
