@@ -58,6 +58,16 @@ Alternatively, use [New-MgServicePrincipalAppRoleAssignment](/powershell/module/
 
 For more info, see [App-only authentication](app-only.md).
 
+## Unverified publisher known issue
+
+`Unverified publisher` error message occurs during Microsoft Graph PowerShell app consent.
+
+To remove this error, you can use an app registration of your own, on which you can set yourself as the verified publisher. You'll need to go through the [publisher verification process](/azure/active-directory/develop/publisher-verification-overview), and use the app registration to consent to the permissions required by Microsoft Graph PowerShell as shown below:
+
+```powershell
+Connect-MgGraph -AppId "{your-own-app-id}" -Scopes "scope"
+```
+
 ## Using -Debug
 
 The **-Debug** parameter provides a powerful way to examine a script while it's running in order to identify and correct errors in the script. The following are the important parts of a **-Debug** output:
