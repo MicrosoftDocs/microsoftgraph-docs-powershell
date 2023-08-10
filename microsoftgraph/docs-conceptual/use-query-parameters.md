@@ -27,7 +27,7 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 | [-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
 | [-OrderBy](#orderby-parameter)| Orders results|`Get-MgUser -OrderBy DisplayName`|
 | [-Search](#search-parameter)| Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
-| [-Select](#select-parameter)| Filters properties (columns)|<code>Get-MgUser -Property Id, DisplayName &#124; Select Id, DisplayName</code>|
+| [-Property](#property-parameter)| Filters properties (columns)|<code>Get-MgUser -Property Id, DisplayName &#124; Select Id, DisplayName</code>|
 | [-Top](#top-parameter)| Sets the page size of results. |`Get-MgUser -Top 10`|
 
 ## Count parameter
