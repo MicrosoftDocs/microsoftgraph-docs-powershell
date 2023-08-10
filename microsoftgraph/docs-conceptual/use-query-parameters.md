@@ -161,9 +161,9 @@ Id                                   DisplayName   Mail               UserPrinci
 >[!Note]
 >Support for `-Search` varies by module and some properties support `-Search` only in [advanced queries](/graph/aad-advanced-queries?tabs=powershell).
 
-## Select parameter
+## Property parameter
 
-Use the `-Select` query parameter to return a set of properties that are different from the default set for an individual resource or a collection of resources. With `-Select`, you can specify a subset or a superset of the default properties.
+Use the `-Property` query parameter to return a set of properties that are different from the default set for an individual resource or a collection of resources. With `-Property`, you can specify a subset or a superset of the default properties.
 
 For example, when retrieving a list of all the users, you can specify that only the **Id** and **DisplayName** properties be returned:
 
@@ -182,9 +182,9 @@ daf80309-1a1f-459d-91b6-7ae5673bc2f2 MOD Administrator
 f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani
 ```
 
-We recommend that you use `-Select` to limit the properties returned by a query to those properties needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
+We recommend that you use `-Property` to limit the properties returned by a query to those properties needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 
- Some Azure AD resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Select` to return properties outside of the default set.  
+ Some Azure AD resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Property` to return properties outside of the default set.  
 
 ## Top parameter
 
