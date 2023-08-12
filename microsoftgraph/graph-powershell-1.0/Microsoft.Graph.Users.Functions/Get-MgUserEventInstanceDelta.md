@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusereventinstancedelta
 schema: 2.0.0
@@ -8,35 +8,48 @@ schema: 2.0.0
 # Get-MgUserEventInstanceDelta
 
 ## SYNOPSIS
-Get a set of event resources that have been added, deleted, or updated in a **calendarView** (a range of events defined by start and end dates) of the user's primary calendar.
-Typically, synchronizing events in a **calendarView** in a local store entails a round of multiple **delta** function calls.
-The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
-This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserEventInstanceDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserEventInstanceDelta?view=graph-powershell-beta)
+Get a set of event resources that have been added, deleted, or updated in a calendarView (a range of events defined by start and end dates) of the user's primary calendar.
+Typically, synchronizing events in a calendarView in a local store entails a round of multiple delta function calls.
+The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
+This allows you to maintain and synchronize a local store of events in the specified calendarView, without having to fetch all the events of that calendar from the server every time.
 
 ## SYNTAX
 
 ### Delta (Default)
 ```
 Get-MgUserEventInstanceDelta -EventId <String> -UserId <String> -EndDateTime <String> -StartDateTime <String>
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
 ```
 Get-MgUserEventInstanceDelta -InputObject <IUsersFunctionsIdentity> -EndDateTime <String>
- -StartDateTime <String> [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
+ -StartDateTime <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a set of event resources that have been added, deleted, or updated in a **calendarView** (a range of events defined by start and end dates) of the user's primary calendar.
-Typically, synchronizing events in a **calendarView** in a local store entails a round of multiple **delta** function calls.
-The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
-This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
+Get a set of event resources that have been added, deleted, or updated in a calendarView (a range of events defined by start and end dates) of the user's primary calendar.
+Typically, synchronizing events in a calendarView in a local store entails a round of multiple delta function calls.
+The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
+This allows you to maintain and synchronize a local store of events in the specified calendarView, without having to fetch all the events of that calendar from the server every time.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -44,7 +57,7 @@ This allows you to maintain and synchronize a local store of events in the speci
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: Delta
 Aliases:
 
@@ -59,7 +72,7 @@ Accept wildcard characters: False
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: DeltaViaIdentity
 Aliases:
 
@@ -75,7 +88,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta
 Aliases: CV
 
@@ -91,7 +104,7 @@ The end date and time of the time range in the function, represented in ISO 8601
 For example, 2019-11-08T20:00:00-08:00
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -106,7 +119,7 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta
 Aliases:
 
@@ -121,7 +134,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -137,7 +150,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
 Parameter Sets: DeltaViaIdentity
 Aliases:
 
@@ -152,7 +165,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: Delta
 Aliases:
 
@@ -167,7 +180,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -182,7 +195,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -197,7 +225,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -213,7 +241,7 @@ The start date and time of the time range in the function, represented in ISO 86
 For example, 2019-11-08T20:00:00-08:00
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -228,7 +256,7 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
 
@@ -243,26 +271,11 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -275,9 +288,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
+
 ## NOTES
 
 ALIASES
@@ -316,5 +331,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserEventInstanceDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserEventInstanceDelta?view=graph-powershell-beta)
 

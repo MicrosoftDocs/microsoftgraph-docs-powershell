@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentdefault
 schema: 2.0.0
@@ -10,11 +10,8 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an educationAssignmentDefaults object.
 These are the class-level assignment defaults respected by new assignments created in the class.
-Callers can continue to specify custom values on each **assignment** creation if they don't want the default behaviors.
+Callers can continue to specify custom values on each assignment creation if they don't want the default behaviors.
 Only teachers can perform this operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,21 +30,17 @@ Get-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of an educationAssignmentDefaults object.
 These are the class-level assignment defaults respected by new assignments created in the class.
-Callers can continue to specify custom values on each **assignment** creation if they don't want the default behaviors.
+Callers can continue to specify custom values on each assignment creation if they don't want the default behaviors.
 Only teachers can perform this operation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationClassAssignmentDefault -EducationClassId $educationClassId
-```
-This example shows how to use the Get-MgBetaEducationClassAssignmentDefault Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -55,7 +48,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationClass
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -70,7 +63,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -86,7 +79,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -101,7 +94,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -118,9 +111,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignmentDefaults
+
 ## NOTES
 
 ALIASES
@@ -136,6 +131,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
   - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationModuleId <String>]`: The unique identifier of educationModule
+  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
@@ -146,4 +143,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
+

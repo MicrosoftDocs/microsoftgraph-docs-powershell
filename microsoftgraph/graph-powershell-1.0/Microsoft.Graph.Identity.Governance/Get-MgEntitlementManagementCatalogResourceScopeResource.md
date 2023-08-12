@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresourcescoperesource
 schema: 2.0.0
@@ -26,13 +26,13 @@ Get-MgEntitlementManagementCatalogResourceScopeResource -AccessPackageCatalogId 
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgEntitlementManagementCatalogResourceScopeResource -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgEntitlementManagementCatalogResourceScopeResource -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
@@ -41,14 +41,30 @@ Get-MgEntitlementManagementCatalogResourceScopeResource -InputObject <IIdentityG
 ## DESCRIPTION
 Get resource from identityGovernance
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
 The unique identifier of accessPackageCatalog
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get
+Type: System.String
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -62,7 +78,7 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -77,8 +93,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceScope
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get
+Type: System.String
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -92,7 +108,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -108,8 +124,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -123,7 +139,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -140,9 +156,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
+
 ## NOTES
 
 ALIASES

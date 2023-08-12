@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunsubmiteducationuserassignmentsubmission
 schema: 2.0.0
@@ -10,47 +10,47 @@ schema: 2.0.0
 ## SYNOPSIS
 Indicate that a student wants to work on the submission of the assignment after it was turned in.
 Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from `submitted` to `working`.
-During the submit process, all the resources are copied from **submittedResources** to  **workingResources**.
+This method changes the status of the submission from submitted to working.
+During the submit process, all the resources are copied from submittedResources to  workingResources.
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUnsubmitEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaUnsubmitEducationUserAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Unsubmit (Default)
 ```
 Invoke-MgUnsubmitEducationUserAssignmentSubmission -EducationAssignmentId <String>
- -EducationSubmissionId <String> -EducationUserId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -EducationSubmissionId <String> -EducationUserId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UnsubmitViaIdentity
 ```
-Invoke-MgUnsubmitEducationUserAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Invoke-MgUnsubmitEducationUserAssignmentSubmission -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Indicate that a student wants to work on the submission of the assignment after it was turned in.
 Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from `submitted` to `working`.
-During the submit process, all the resources are copied from **submittedResources** to  **workingResources**.
+This method changes the status of the submission from submitted to working.
+During the submit process, all the resources are copied from submittedResources to  workingResources.
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Education
-
-Invoke-MgUnsubmitEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+{{ Add code here }}
 ```
-This example shows how to use the Invoke-MgUnsubmitEducationUserAssignmentSubmission Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
 
 
 ## PARAMETERS
@@ -59,7 +59,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unsubmit
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 The unique identifier of educationSubmission
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unsubmit
 Aliases:
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 The unique identifier of educationUser
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unsubmit
 Aliases:
 
@@ -105,7 +105,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
 Parameter Sets: UnsubmitViaIdentity
 Aliases:
 
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -136,7 +136,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -153,9 +153,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
+
 ## NOTES
 
 ALIASES
@@ -178,4 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgBetaUnsubmitEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaUnsubmitEducationUserAssignmentSubmission?view=graph-powershell-beta)
+

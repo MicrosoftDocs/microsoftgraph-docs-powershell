@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinitionroleassignment
 schema: 2.0.0
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementRoleDefinitionRoleAssignment
 
 ## SYNOPSIS
-Update the navigation property roleAssignments in deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
+Update the properties of a roleAssignment object.
 
 ## SYNTAX
 
@@ -19,32 +16,48 @@ Update the navigation property roleAssignments in deviceManagement
 ```
 Update-MgDeviceManagementRoleDefinitionRoleAssignment -RoleAssignmentId <String> -RoleDefinitionId <String>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-ResourceScopes <String[]>] [-RoleDefinition <IMicrosoftGraphRoleDefinition>] [-WhatIf] [-Confirm]
+ [-ResourceScopes <String[]>] [-RoleDefinition <IMicrosoftGraphRoleDefinition>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementRoleDefinitionRoleAssignment -RoleAssignmentId <String> -RoleDefinitionId <String>
- -BodyParameter <IMicrosoftGraphRoleAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRoleAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphRoleAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-ResourceScopes <String[]>] [-RoleDefinition <IMicrosoftGraphRoleDefinition>] [-WhatIf] [-Confirm]
+ [-ResourceScopes <String[]>] [-RoleDefinition <IMicrosoftGraphRoleDefinition>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphRoleAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+## DESCRIPTION
+Update the properties of a roleAssignment object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
 ```
 
-## DESCRIPTION
-Update the navigation property roleAssignments in deviceManagement
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ Update the navigation property roleAssignments in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +84,7 @@ This applies to custom and built-in roles.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleAssignment
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleAssignment
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,7 +99,7 @@ Accept wildcard characters: False
 Description of the Role Assignment.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +114,7 @@ Accept wildcard characters: False
 The display or friendly name of the role Assignment.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +130,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,8 +146,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -149,7 +162,7 @@ List of ids of role scope member security groups.
 These are IDs from Azure Active Directory.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,8 +177,8 @@ Accept wildcard characters: False
 The unique identifier of roleAssignment
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -186,7 +199,7 @@ Create custom roles if you want to define a role that allows any of the availabl
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -201,8 +214,8 @@ Accept wildcard characters: False
 The unique identifier of roleDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -216,7 +229,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -232,7 +245,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -249,10 +262,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleAssignment
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleAssignment
+
 ## NOTES
 
 ALIASES
@@ -315,5 +331,4 @@ To create the parameters described below, construct a hash table containing the 
       - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
 

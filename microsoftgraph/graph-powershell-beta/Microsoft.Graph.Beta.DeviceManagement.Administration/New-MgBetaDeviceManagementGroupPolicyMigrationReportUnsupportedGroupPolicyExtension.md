@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicymigrationreportunsupportedgrouppolicyextension
 schema: 2.0.0
@@ -17,14 +17,21 @@ Create new navigation property to unsupportedGroupPolicyExtensions for deviceMan
 New-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -GroupPolicyMigrationReportId <String> [-AdditionalProperties <Hashtable>] [-ExtensionType <String>]
  [-Id <String>] [-NamespaceUrl <String>] [-NodeName <String>] [-SettingScope <GroupPolicySettingScope>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -GroupPolicyMigrationReportId <String> -BodyParameter <IMicrosoftGraphUnsupportedGroupPolicyExtension>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
+ -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphUnsupportedGroupPolicyExtension> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -32,18 +39,27 @@ New-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtens
 New-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
  [-ExtensionType <String>] [-Id <String>] [-NamespaceUrl <String>] [-NodeName <String>]
- [-SettingScope <GroupPolicySettingScope>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
- -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphUnsupportedGroupPolicyExtension> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SettingScope <GroupPolicySettingScope>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to unsupportedGroupPolicyExtensions for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Create new navigation property to unsupportedGroupPolicyExtensions for deviceMan
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ Unsupported Group Policy Extension.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnsupportedGroupPolicyExtension
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnsupportedGroupPolicyExtension
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,7 +98,7 @@ Accept wildcard characters: False
 ExtensionType of the unsupported extension.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -97,8 +113,8 @@ Accept wildcard characters: False
 The unique identifier of groupPolicyMigrationReport
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -113,7 +129,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -129,8 +145,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,7 +160,7 @@ Accept wildcard characters: False
 Namespace Url of the unsupported extension.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +175,7 @@ Accept wildcard characters: False
 Node name of the unsupported extension.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +190,7 @@ Accept wildcard characters: False
 Scope of the group policy setting.
 
 ```yaml
-Type: GroupPolicySettingScope
+Type: Microsoft.Graph.Beta.PowerShell.Support.GroupPolicySettingScope
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,10 +238,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnsupportedGroupPolicyExtension
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnsupportedGroupPolicyExtension
+
 ## NOTES
 
 ALIASES
@@ -251,6 +270,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
   - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
   - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
+  - `[CloudPcFrontLineServicePlanId <String>]`: The unique identifier of cloudPcFrontLineServicePlan
   - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection

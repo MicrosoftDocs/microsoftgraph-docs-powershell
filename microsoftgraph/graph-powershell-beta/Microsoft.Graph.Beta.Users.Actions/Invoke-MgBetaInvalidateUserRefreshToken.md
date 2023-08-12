@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidateuserrefreshtoken
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaInvalidateUserRefreshToken
 
 ## SYNOPSIS
-Invalidates all of the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **refreshTokensValidFromDateTime** user property to the current date-time.
+Invalidates all of the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the refreshTokensValidFromDateTime user property to the current date-time.
 Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device.
 This operation would prevent access to any of the organization's data accessed through applications on the device without the user first being required to sign in again.
 In fact, this operation would force the user to sign in again for all applications that they have previously consented to, independent of device.
@@ -19,17 +19,17 @@ If this happens, the application will need to acquire a new refresh token by mak
 
 ### Invalidate (Default)
 ```
-Invoke-MgBetaInvalidateUserRefreshToken -UserId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaInvalidateUserRefreshToken -UserId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### InvalidateViaIdentity
 ```
-Invoke-MgBetaInvalidateUserRefreshToken -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm]
+Invoke-MgBetaInvalidateUserRefreshToken -InputObject <IUsersActionsIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invalidates all of the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the **refreshTokensValidFromDateTime** user property to the current date-time.
+Invalidates all of the user's refresh tokens issued to applications (as well as session cookies in a user's browser), by resetting the refreshTokensValidFromDateTime user property to the current date-time.
 Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device.
 This operation would prevent access to any of the organization's data accessed through applications on the device without the user first being required to sign in again.
 In fact, this operation would force the user to sign in again for all applications that they have previously consented to, independent of device.
@@ -37,14 +37,15 @@ For developers, if the application attempts to redeem a delegated access token f
 If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaInvalidateUserRefreshToken Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Invoke-MgBetaInvalidateUserRefreshToken -UserId $userId
 ```
-This example shows how to use the Invoke-MgBetaInvalidateUserRefreshToken Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -53,7 +54,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: InvalidateViaIdentity
 Aliases:
 
@@ -68,7 +69,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Invalidate
 Aliases:
 
@@ -83,7 +84,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +100,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -116,9 +117,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -171,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

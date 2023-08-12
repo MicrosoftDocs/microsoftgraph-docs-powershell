@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality
 schema: 2.0.0
@@ -16,22 +16,19 @@ The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### LogExpanded (Default)
 ```
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality [-AdditionalProperties <Hashtable>]
- [-Quality <IMicrosoftGraphTeleconferenceDeviceQuality>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Quality <IMicrosoftGraphTeleconferenceDeviceQuality>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Log
 ```
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
  -Body <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,7 +41,8 @@ The third-party partners own the VTC media leg and the Teams infrastructure cann
 This method is only for the CVI partners to provide their media quality data.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -133,8 +131,8 @@ $params = @{
 }
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -142,7 +140,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: LogExpanded
 Aliases:
 
@@ -158,7 +156,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Log
 Aliases:
 
@@ -173,7 +171,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -189,7 +187,7 @@ teleconferenceDeviceQuality
 To construct, see NOTES section for QUALITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeleconferenceDeviceQuality
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeleconferenceDeviceQuality
 Parameter Sets: LogExpanded
 Aliases:
 
@@ -204,7 +202,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +218,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,9 +235,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -256,7 +256,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[CallChainId <String>]`: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call. This needs to be copied over from Microsoft.Graph.Call.CallChainId.
     - `[CloudServiceDeploymentEnvironment <String>]`: A geo-region where the service is deployed, such as ProdNoam.
     - `[CloudServiceDeploymentId <String>]`: A unique deployment identifier assigned by Azure.
-    - `[CloudServiceInstanceName <String>]`: The Azure deployed cloud service instance name, such as FrontEnd_IN_3.
+    - `[CloudServiceInstanceName <String>]`: The Azure deployed cloud service instance name, such as FrontEndIN3.
     - `[CloudServiceName <String>]`: The Azure deployed cloud service name, such as contoso.cloudapp.net.
     - `[DeviceDescription <String>]`: Any additional description, such as VTC Bldg 30/21.
     - `[DeviceName <String>]`: The user media agent name, such as Cisco SX80.
@@ -290,7 +290,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CallChainId <String>]`: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call. This needs to be copied over from Microsoft.Graph.Call.CallChainId.
   - `[CloudServiceDeploymentEnvironment <String>]`: A geo-region where the service is deployed, such as ProdNoam.
   - `[CloudServiceDeploymentId <String>]`: A unique deployment identifier assigned by Azure.
-  - `[CloudServiceInstanceName <String>]`: The Azure deployed cloud service instance name, such as FrontEnd_IN_3.
+  - `[CloudServiceInstanceName <String>]`: The Azure deployed cloud service instance name, such as FrontEndIN3.
   - `[CloudServiceName <String>]`: The Azure deployed cloud service name, such as contoso.cloudapp.net.
   - `[DeviceDescription <String>]`: Any additional description, such as VTC Bldg 30/21.
   - `[DeviceName <String>]`: The user media agent name, such as Cisco SX80.
@@ -320,4 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParticipantId <String>]`: A unique identifier for a specific participant in a conference. The CVI partner needs to copy over Call.MyParticipantId to this property.
 
 ## RELATED LINKS
-[Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-beta)
+

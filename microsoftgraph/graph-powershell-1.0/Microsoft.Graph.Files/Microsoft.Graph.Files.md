@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Files
-Module Guid: 8bf2a973-3565-4dca-abda-5415f9229f28
+Module Guid: 07623572-fed0-4a36-8a54-6f6f1ab9beaa
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.files
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,7 +18,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgShareListContentTypeCopy](Add-MgShareListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -27,7 +27,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Copy-MgDriveItem](Copy-MgDriveItem.md)
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
@@ -105,7 +105,7 @@ Get the number of the resource
 Get lastSevenDays from drives
 
 ### [Get-MgDriveItemAnalyticTime](Get-MgDriveItemAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgDriveItemChild](Get-MgDriveItemChild.md)
 Collection containing Item objects for the immediate children of Item.
@@ -205,7 +205,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgDriveItemPermission](Get-MgDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgDriveItemPermissionCount](Get-MgDriveItemPermissionCount.md)
 Get the number of the resource
@@ -362,7 +362,7 @@ The set of subscriptions on the list.
 Get the number of the resource
 
 ### [Get-MgDriveRoot](Get-MgDriveRoot.md)
-Retrieve the metadata for a driveItem in a drive by file system path or ID.\n`item-id` is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
 ### [Get-MgDriveRootActivityByInterval](Get-MgDriveRootActivityByInterval.md)
@@ -384,7 +384,7 @@ Get the number of the resource
 Get lastSevenDays from drives
 
 ### [Get-MgDriveRootAnalyticTime](Get-MgDriveRootAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgDriveRootChild](Get-MgDriveRootChild.md)
 Collection containing Item objects for the immediate children of Item.
@@ -481,7 +481,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgDriveRootPermission](Get-MgDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgDriveRootPermissionCount](Get-MgDriveRootPermissionCount.md)
 Get the number of the resource
@@ -591,7 +591,7 @@ Get the number of the resource
 Get lastSevenDays from groups
 
 ### [Get-MgGroupDriveItemAnalyticTime](Get-MgGroupDriveItemAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgGroupDriveItemChild](Get-MgGroupDriveItemChild.md)
 Collection containing Item objects for the immediate children of Item.
@@ -685,7 +685,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgGroupDriveItemPermission](Get-MgGroupDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgGroupDriveItemPermissionCount](Get-MgGroupDriveItemPermissionCount.md)
 Get the number of the resource
@@ -833,7 +833,7 @@ The set of subscriptions on the list.
 Get the number of the resource
 
 ### [Get-MgGroupDriveRoot](Get-MgGroupDriveRoot.md)
-Retrieve the metadata for a driveItem in a drive by file system path or ID.\n`item-id` is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
 ### [Get-MgGroupDriveRootAnalytic](Get-MgGroupDriveRootAnalytic.md)
@@ -852,7 +852,7 @@ Get the number of the resource
 Get lastSevenDays from groups
 
 ### [Get-MgGroupDriveRootAnalyticTime](Get-MgGroupDriveRootAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgGroupDriveRootChild](Get-MgGroupDriveRootChild.md)
 Collection containing Item objects for the immediate children of Item.
@@ -943,7 +943,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgGroupDriveRootPermission](Get-MgGroupDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgGroupDriveRootPermissionCount](Get-MgGroupDriveRootPermissionCount.md)
 Get the number of the resource
@@ -1008,7 +1008,7 @@ You can get or update settings for sending automatic replies to incoming message
 Returned only on $select.
 
 ### [Get-MgShareDriveItem](Get-MgShareDriveItem.md)
-Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
+Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 ### [Get-MgShareDriveItemContent](Get-MgShareDriveItemContent.md)
@@ -1165,17 +1165,19 @@ Deprecated -- use driveItem instead.
 The content stream, if the item represents a file.
 
 ### [Get-MgShareSharedDriveItemSharedDriveItem](Get-MgShareSharedDriveItemSharedDriveItem.md)
-Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
+Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
 ### [Get-MgShareSite](Get-MgShareSite.md)
 Used to access the underlying site
 
-### [Get-MgShareSite](Get-MgShareSite.md)
-Used to access the underlying site
+### [Get-MgUserDefaultDrive](Get-MgUserDefaultDrive.md)
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
-### [Get-MgShareSite](Get-MgShareSite.md)
-Used to access the underlying site
+### [Get-MgUserDrive](Get-MgUserDrive.md)
+A collection of drives available for this user.
+Read-only.
 
 ### [Get-MgUserDriveBundle](Get-MgUserDriveBundle.md)
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
@@ -1236,7 +1238,7 @@ Get the number of the resource
 Get lastSevenDays from users
 
 ### [Get-MgUserDriveItemAnalyticTime](Get-MgUserDriveItemAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgUserDriveItemChild](Get-MgUserDriveItemChild.md)
 Collection containing Item objects for the immediate children of Item.
@@ -1330,7 +1332,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgUserDriveItemPermission](Get-MgUserDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgUserDriveItemPermissionCount](Get-MgUserDriveItemPermissionCount.md)
 Get the number of the resource
@@ -1478,7 +1480,7 @@ The set of subscriptions on the list.
 Get the number of the resource
 
 ### [Get-MgUserDriveRoot](Get-MgUserDriveRoot.md)
-Retrieve the metadata for a driveItem in a drive by file system path or ID.\n`item-id` is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
 ### [Get-MgUserDriveRootAnalytic](Get-MgUserDriveRootAnalytic.md)
@@ -1497,7 +1499,7 @@ Get the number of the resource
 Get lastSevenDays from users
 
 ### [Get-MgUserDriveRootAnalyticTime](Get-MgUserDriveRootAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgUserDriveRootChild](Get-MgUserDriveRootChild.md)
 Collection containing Item objects for the immediate children of Item.
@@ -1588,7 +1590,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgUserDriveRootPermission](Get-MgUserDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgUserDriveRootPermissionCount](Get-MgUserDriveRootPermissionCount.md)
 Get the number of the resource
@@ -1641,16 +1643,16 @@ Grant users access to a link represented by a [permission][].
 Grant users access to a link represented by a [permission][].
 
 ### [Invoke-MgCheckinDriveItem](Invoke-MgCheckinDriveItem.md)
-Check in a checked out **driveItem** resource, which makes the version of the document available to others.
+Check in a checked out driveItem resource, which makes the version of the document available to others.
 
 ### [Invoke-MgCheckinDriveRoot](Invoke-MgCheckinDriveRoot.md)
-Check in a checked out **driveItem** resource, which makes the version of the document available to others.
+Check in a checked out driveItem resource, which makes the version of the document available to others.
 
 ### [Invoke-MgCheckoutDriveItem](Invoke-MgCheckoutDriveItem.md)
-Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ### [Invoke-MgCheckoutDriveRoot](Invoke-MgCheckoutDriveRoot.md)
-Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ### [Invoke-MgExtractDriveItemSensitivityLabel](Invoke-MgExtractDriveItemSensitivityLabel.md)
 Invoke action extractSensitivityLabels
@@ -1668,10 +1670,10 @@ Follow a driveItem.
 Invoke function sharedWithMe
 
 ### [Invoke-MgInviteDriveItem](Invoke-MgInviteDriveItem.md)
-Sends a sharing invitation for a **driveItem**.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 
 ### [Invoke-MgInviteDriveRoot](Invoke-MgInviteDriveRoot.md)
-Sends a sharing invitation for a **driveItem**.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 
 ### [Invoke-MgPreviewDriveItem](Invoke-MgPreviewDriveItem.md)
 Invoke action preview
@@ -1680,16 +1682,16 @@ Invoke action preview
 Invoke action preview
 
 ### [Invoke-MgReauthorizeDriveItemSubscription](Invoke-MgReauthorizeDriveItemSubscription.md)
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ### [Invoke-MgReauthorizeDriveListSubscription](Invoke-MgReauthorizeDriveListSubscription.md)
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ### [Invoke-MgReauthorizeDriveRootSubscription](Invoke-MgReauthorizeDriveRootSubscription.md)
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ### [Invoke-MgReauthorizeShareListSubscription](Invoke-MgReauthorizeShareListSubscription.md)
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ### [Invoke-MgRecentDrive](Invoke-MgRecentDrive.md)
 Invoke function recent
@@ -1722,8 +1724,8 @@ Create new navigation property to itemActivityStats for drives
 Create new navigation property to children for drives
 
 ### [New-MgDriveItemLink](New-MgDriveItemLink.md)
-You can use **createLink** action to share a DriveItem via a sharing link.
-The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+You can use createLink action to share a DriveItem via a sharing link.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ### [New-MgDriveItemListItemDocumentSetVersion](New-MgDriveItemListItemDocumentSetVersion.md)
@@ -1742,8 +1744,7 @@ Create new navigation property to subscriptions for drives
 Create new navigation property to thumbnails for drives
 
 ### [New-MgDriveItemUploadSession](New-MgDriveItemUploadSession.md)
-Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
-To upload a file using an upload session, there are two steps:
+Invoke action createUploadSession
 
 ### [New-MgDriveItemVersion](New-MgDriveItemVersion.md)
 Create new navigation property to versions for drives
@@ -1782,8 +1783,8 @@ Create new navigation property to itemActivityStats for drives
 Create new navigation property to children for drives
 
 ### [New-MgDriveRootLink](New-MgDriveRootLink.md)
-You can use **createLink** action to share a DriveItem via a sharing link.
-The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+You can use createLink action to share a DriveItem via a sharing link.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ### [New-MgDriveRootListItemDocumentSetVersion](New-MgDriveRootListItemDocumentSetVersion.md)
@@ -1802,14 +1803,13 @@ Create new navigation property to subscriptions for drives
 Create new navigation property to thumbnails for drives
 
 ### [New-MgDriveRootUploadSession](New-MgDriveRootUploadSession.md)
-Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
-To upload a file using an upload session, there are two steps:
+Invoke action createUploadSession
 
 ### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
-Create new navigation property to versions for drives
+### [New-MgGroupDrive](New-MgGroupDrive.md)
+Create new navigation property to drives for groups
 
 ### [New-MgGroupDriveBundle](New-MgGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -1922,8 +1922,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
-Add new entity to shares
+### [New-MgUserDrive](New-MgUserDrive.md)
+Create new navigation property to drives for users
 
 ### [New-MgUserDriveBundle](New-MgUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -2012,8 +2012,8 @@ Publishes a [contentType][] present in the content type hub site.
 ### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
 Publishes a [contentType][] present in the content type hub site.
 
-### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
-Publishes a [contentType][] present in the content type hub site.
+### [Remove-MgDrive](Remove-MgDrive.md)
+Delete entity from drives
 
 ### [Remove-MgDriveItem](Remove-MgDriveItem.md)
 Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
@@ -2050,7 +2050,7 @@ Invoke action permanentDelete
 
 ### [Remove-MgDriveItemPermission](Remove-MgDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgDriveItemSubscription](Remove-MgDriveItemSubscription.md)
 Delete navigation property subscriptions for drives
@@ -2135,7 +2135,7 @@ Invoke action permanentDelete
 
 ### [Remove-MgDriveRootPermission](Remove-MgDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgDriveRootSubscription](Remove-MgDriveRootSubscription.md)
 Delete navigation property subscriptions for drives
@@ -2181,7 +2181,7 @@ Delete navigation property fields for groups
 
 ### [Remove-MgGroupDriveItemPermission](Remove-MgGroupDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgGroupDriveItemSubscription](Remove-MgGroupDriveItemSubscription.md)
 Delete navigation property subscriptions for groups
@@ -2263,7 +2263,7 @@ Delete navigation property fields for groups
 
 ### [Remove-MgGroupDriveRootPermission](Remove-MgGroupDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgGroupDriveRootSubscription](Remove-MgGroupDriveRootSubscription.md)
 Delete navigation property subscriptions for groups
@@ -2354,7 +2354,7 @@ Delete navigation property fields for users
 
 ### [Remove-MgUserDriveItemPermission](Remove-MgUserDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgUserDriveItemSubscription](Remove-MgUserDriveItemSubscription.md)
 Delete navigation property subscriptions for users
@@ -2436,7 +2436,7 @@ Delete navigation property fields for users
 
 ### [Remove-MgUserDriveRootPermission](Remove-MgUserDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgUserDriveRootSubscription](Remove-MgUserDriveRootSubscription.md)
 Delete navigation property subscriptions for users
@@ -2449,7 +2449,7 @@ Delete navigation property versions for users
 
 ### [Restore-MgDriveItem](Restore-MgDriveItem.md)
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-**NOTE**: This functionality is currently only available for OneDrive Personal.
+NOTE: This functionality is currently only available for OneDrive Personal.
 
 ### [Restore-MgDriveItemListItemDocumentSetVersion](Restore-MgDriveItemListItemDocumentSetVersion.md)
 Restore a document set version.
@@ -2471,7 +2471,7 @@ This will create a new version with the contents of the previous version, but pr
 
 ### [Restore-MgDriveRoot](Restore-MgDriveRoot.md)
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-**NOTE**: This functionality is currently only available for OneDrive Personal.
+NOTE: This functionality is currently only available for OneDrive Personal.
 
 ### [Restore-MgDriveRootListItemDocumentSetVersion](Restore-MgDriveRootListItemDocumentSetVersion.md)
 Restore a document set version.
@@ -2644,16 +2644,15 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
-### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
-Unpublish a [contentType][] from a content type hub site.
+### [Update-MgDrive](Update-MgDrive.md)
+Update entity in drives
 
 ### [Update-MgDriveCreatedByUserMailboxSetting](Update-MgDriveCreatedByUserMailboxSetting.md)
 Update property mailboxSettings value.
 
 ### [Update-MgDriveItem](Update-MgDriveItem.md)
-To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
-Items cannot be moved between Drives using this request.
+Update the metadata for a driveItem by ID or path.
+You can also use update to move an item to another parent by updating the item's parentReference property.
 
 ### [Update-MgDriveItemAnalytic](Update-MgDriveItemAnalytic.md)
 Update the navigation property analytics in drives
@@ -2680,7 +2679,7 @@ Update the navigation property documentSetVersions in drives
 Update the navigation property fields in drives
 
 ### [Update-MgDriveItemListItemField](Update-MgDriveItemListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgDriveItemListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -2693,7 +2692,7 @@ Update the navigation property fields in drives
 
 ### [Update-MgDriveItemPermission](Update-MgDriveItemPermission.md)
 Update the properties of a sharing permission by patching the permission resource.
-Only the **roles** property can be modified this way.
+Only the roles property can be modified this way.
 
 ### [Update-MgDriveItemSubscription](Update-MgDriveItemSubscription.md)
 Update the navigation property subscriptions in drives
@@ -2738,7 +2737,7 @@ Update the navigation property documentSetVersions in drives
 Update the navigation property fields in drives
 
 ### [Update-MgDriveListItemField](Update-MgDriveListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgDriveListItemLastModifiedByUserMailboxSetting](Update-MgDriveListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -2786,7 +2785,7 @@ Update the navigation property documentSetVersions in drives
 Update the navigation property fields in drives
 
 ### [Update-MgDriveRootListItemField](Update-MgDriveRootListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgDriveRootListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -2799,7 +2798,7 @@ Update the navigation property fields in drives
 
 ### [Update-MgDriveRootPermission](Update-MgDriveRootPermission.md)
 Update the properties of a sharing permission by patching the permission resource.
-Only the **roles** property can be modified this way.
+Only the roles property can be modified this way.
 
 ### [Update-MgDriveRootSubscription](Update-MgDriveRootSubscription.md)
 Update the navigation property subscriptions in drives
@@ -2817,9 +2816,8 @@ Update the navigation property drives in groups
 Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveItem](Update-MgGroupDriveItem.md)
-To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
-Items cannot be moved between Drives using this request.
+Update the metadata for a driveItem by ID or path.
+You can also use update to move an item to another parent by updating the item's parentReference property.
 
 ### [Update-MgGroupDriveItemAnalytic](Update-MgGroupDriveItemAnalytic.md)
 Update the navigation property analytics in groups
@@ -2846,7 +2844,7 @@ Update the navigation property documentSetVersions in groups
 Update the navigation property fields in groups
 
 ### [Update-MgGroupDriveItemListItemField](Update-MgGroupDriveItemListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgGroupDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgGroupDriveItemListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -2859,7 +2857,7 @@ Update the navigation property fields in groups
 
 ### [Update-MgGroupDriveItemPermission](Update-MgGroupDriveItemPermission.md)
 Update the properties of a sharing permission by patching the permission resource.
-Only the **roles** property can be modified this way.
+Only the roles property can be modified this way.
 
 ### [Update-MgGroupDriveItemSubscription](Update-MgGroupDriveItemSubscription.md)
 Update the navigation property subscriptions in groups
@@ -2904,7 +2902,7 @@ Update the navigation property documentSetVersions in groups
 Update the navigation property fields in groups
 
 ### [Update-MgGroupDriveListItemField](Update-MgGroupDriveListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgGroupDriveListItemLastModifiedByUserMailboxSetting](Update-MgGroupDriveListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -2952,7 +2950,7 @@ Update the navigation property documentSetVersions in groups
 Update the navigation property fields in groups
 
 ### [Update-MgGroupDriveRootListItemField](Update-MgGroupDriveRootListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgGroupDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgGroupDriveRootListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -2965,7 +2963,7 @@ Update the navigation property fields in groups
 
 ### [Update-MgGroupDriveRootPermission](Update-MgGroupDriveRootPermission.md)
 Update the properties of a sharing permission by patching the permission resource.
-Only the **roles** property can be modified this way.
+Only the roles property can be modified this way.
 
 ### [Update-MgGroupDriveRootSubscription](Update-MgGroupDriveRootSubscription.md)
 Update the navigation property subscriptions in groups
@@ -3013,7 +3011,7 @@ Update the navigation property documentSetVersions in shares
 Update the navigation property fields in shares
 
 ### [Update-MgShareListItemField](Update-MgShareListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgShareListItemLastModifiedByUserMailboxSetting](Update-MgShareListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -3046,9 +3044,8 @@ Update the navigation property drives in users
 Update property mailboxSettings value.
 
 ### [Update-MgUserDriveItem](Update-MgUserDriveItem.md)
-To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
-Items cannot be moved between Drives using this request.
+Update the metadata for a driveItem by ID or path.
+You can also use update to move an item to another parent by updating the item's parentReference property.
 
 ### [Update-MgUserDriveItemAnalytic](Update-MgUserDriveItemAnalytic.md)
 Update the navigation property analytics in users
@@ -3075,7 +3072,7 @@ Update the navigation property documentSetVersions in users
 Update the navigation property fields in users
 
 ### [Update-MgUserDriveItemListItemField](Update-MgUserDriveItemListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgUserDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgUserDriveItemListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -3088,7 +3085,7 @@ Update the navigation property fields in users
 
 ### [Update-MgUserDriveItemPermission](Update-MgUserDriveItemPermission.md)
 Update the properties of a sharing permission by patching the permission resource.
-Only the **roles** property can be modified this way.
+Only the roles property can be modified this way.
 
 ### [Update-MgUserDriveItemSubscription](Update-MgUserDriveItemSubscription.md)
 Update the navigation property subscriptions in users
@@ -3133,7 +3130,7 @@ Update the navigation property documentSetVersions in users
 Update the navigation property fields in users
 
 ### [Update-MgUserDriveListItemField](Update-MgUserDriveListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgUserDriveListItemLastModifiedByUserMailboxSetting](Update-MgUserDriveListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -3181,7 +3178,7 @@ Update the navigation property documentSetVersions in users
 Update the navigation property fields in users
 
 ### [Update-MgUserDriveRootListItemField](Update-MgUserDriveRootListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgUserDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgUserDriveRootListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -3194,7 +3191,7 @@ Update the navigation property fields in users
 
 ### [Update-MgUserDriveRootPermission](Update-MgUserDriveRootPermission.md)
 Update the properties of a sharing permission by patching the permission resource.
-Only the **roles** property can be modified this way.
+Only the roles property can be modified this way.
 
 ### [Update-MgUserDriveRootSubscription](Update-MgUserDriveRootSubscription.md)
 Update the navigation property subscriptions in users

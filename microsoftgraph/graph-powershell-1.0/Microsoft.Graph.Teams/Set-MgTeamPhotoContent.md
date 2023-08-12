@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamphotocontent
 schema: 2.0.0
@@ -10,25 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property photo in teams
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamPhotoContent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
 ```
-Set-MgTeamPhotoContent -TeamId <String> [-Data <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm]
+Set-MgTeamPhotoContent -TeamId <String> -InFile <String> [-Data <Stream>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgTeamPhotoContent -InputObject <ITeamsIdentity> [-Data <Stream>] -InFile <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgTeamPhotoContent -InputObject <ITeamsIdentity> -InFile <String> [-Data <Stream>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update media content for the navigation property photo in teams
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +49,7 @@ Update media content for the navigation property photo in teams
 .
 
 ```yaml
-Type: Stream
+Type: System.IO.Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -53,7 +66,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -69,7 +82,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -84,7 +97,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -99,7 +112,7 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -114,7 +127,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -130,7 +143,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -147,10 +160,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ### System.IO.Stream
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -174,6 +190,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
@@ -194,5 +211,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Set-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamPhotoContent?view=graph-powershell-beta)
 

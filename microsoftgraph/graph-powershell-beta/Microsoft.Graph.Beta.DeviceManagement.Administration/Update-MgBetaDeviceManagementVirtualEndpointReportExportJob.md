@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointreportexportjob
 schema: 2.0.0
@@ -17,13 +17,20 @@ Update the navigation property exportJobs in deviceManagement
 Update-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId <String>
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-ExportJobStatus <String>]
  [-ExportUrl <String>] [-Filter <String>] [-Format <String>] [-Id <String>] [-Property <String[]>]
- [-ReportName <String>] [-RequestDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ReportName <String>] [-RequestDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId <String>
- -BodyParameter <IMicrosoftGraphCloudPcExportJob> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcExportJob> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementVirtualEndpointReportExportJob
+ -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphCloudPcExportJob>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -32,18 +39,27 @@ Update-MgBetaDeviceManagementVirtualEndpointReportExportJob
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <DateTime>] [-ExportJobStatus <String>] [-ExportUrl <String>] [-Filter <String>]
  [-Format <String>] [-Id <String>] [-Property <String[]>] [-ReportName <String>] [-RequestDateTime <DateTime>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementVirtualEndpointReportExportJob
- -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphCloudPcExportJob>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property exportJobs in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Update the navigation property exportJobs in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ cloudPcExportJob
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcExportJob
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of cloudPcExportJob
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -97,7 +113,7 @@ Accept wildcard characters: False
 The date and time when the export job expires.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +128,7 @@ Accept wildcard characters: False
 cloudPcExportJobStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +144,7 @@ The storage account URL of the exported report.
 It can be used to download the file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +159,7 @@ Accept wildcard characters: False
 The filter applied on the report.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +174,7 @@ Accept wildcard characters: False
 The format of the exported report.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +190,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -190,8 +206,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -205,7 +221,7 @@ Accept wildcard characters: False
 The selected columns of the report.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases: Select
 
@@ -220,7 +236,7 @@ Accept wildcard characters: False
 cloudPcReportName
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -235,7 +251,7 @@ Accept wildcard characters: False
 The date and time when the export job was requested.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +266,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -266,7 +282,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -283,10 +299,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
+
 ## NOTES
 
 ALIASES
@@ -316,6 +335,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
   - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
   - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
+  - `[CloudPcFrontLineServicePlanId <String>]`: The unique identifier of cloudPcFrontLineServicePlan
   - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection

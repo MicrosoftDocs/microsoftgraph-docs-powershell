@@ -1,67 +1,129 @@
 ---
-external help file: Microsoft.Graph.Beta.Mail-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassificationoverridecount
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolder
 schema: 2.0.0
 ---
 
-# Get-MgBetaUserInferenceClassificationOverrideCount
+# Get-MgBetaUserMailFolder
 
 ## SYNOPSIS
-Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolder?view=graph-powershell-1.0)
+The user's mail folders.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 ```
-Get-MgBetaUserInferenceClassificationOverrideCount -UserId <String> [-Filter <String>] [<CommonParameters>]
+Get-MgBetaUserMailFolder -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-IncludeHiddenFolders <String>] [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaUserMailFolder -MailFolderId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-IncludeHiddenFolders <String>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserInferenceClassificationOverrideCount -InputObject <IMailIdentity> [-Filter <String>]
- [<CommonParameters>]
+Get-MgBetaUserMailFolder -InputObject <IMailIdentity> [-ExpandProperty <String[]>]
+ [-IncludeHiddenFolders <String>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the number of the resource
+The user's mail folders.
+Read-only.
+Nullable.
 
 ## EXAMPLES
-### Example 1: Get a mail folder
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
-```
-This example shows how to use the Get-MgBetaUserMailFolder Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get a mail search folder
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
-```
-This example shows how to use the Get-MgBetaUserMailFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
+
+### -All
+List all pages.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: System.String
+Parameter Sets: List
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Filter
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludeHiddenFolders
+Include Hidden Folders
+
+```yaml
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -77,7 +139,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -88,12 +150,102 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -MailFolderId
+The unique identifier of mailFolder
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+Select properties to be returned
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: System.String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -109,9 +261,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailFolder
+
 ## NOTES
 
 ALIASES
@@ -134,4 +288,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolder?view=graph-powershell-1.0)
+

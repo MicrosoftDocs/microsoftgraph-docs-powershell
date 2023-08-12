@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicyapplytobyid
 schema: 2.0.0
@@ -9,17 +9,15 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyFeatureRolloutPolicyApplyToById](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyToById?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
 Get-MgPolicyFeatureRolloutPolicyApplyToById -FeatureRolloutPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -27,32 +25,34 @@ Get-MgPolicyFeatureRolloutPolicyApplyToById -FeatureRolloutPolicyId <String>
 ```
 Get-MgPolicyFeatureRolloutPolicyApplyToById -FeatureRolloutPolicyId <String>
  -BodyParameter <IPaths1Yzm167PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgPolicyFeatureRolloutPolicyApplyToById -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgPolicyFeatureRolloutPolicyApplyToById -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPaths1Yzm167PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgPolicyFeatureRolloutPolicyApplyToById -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 $params = @{
 	Ids = @(
@@ -69,11 +69,6 @@ $params = @{
 }
 
 Get-MgDirectoryObjectById -BodyParameter $params
-```
-This example shows how to use the Get-MgPolicyFeatureRolloutPolicyApplyToById Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -81,7 +76,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -97,7 +92,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Yzm167PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Yzm167PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -112,8 +107,8 @@ Accept wildcard characters: False
 The unique identifier of featureRolloutPolicy
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -127,7 +122,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -143,8 +138,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -158,7 +153,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -173,7 +168,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +184,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +201,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1Yzm167PoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+
 ## NOTES
 
 ALIASES
@@ -282,4 +280,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaPolicyFeatureRolloutPolicyApplyToById](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyToById?view=graph-powershell-beta)
+

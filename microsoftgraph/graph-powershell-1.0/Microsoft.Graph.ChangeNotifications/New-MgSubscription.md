@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.ChangeNotifications-help.xml
+external help file:
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/new-mgsubscription
 schema: 2.0.0
@@ -13,9 +13,6 @@ To identify the resources for which you can create subscriptions and the limitat
 Some resources support rich notifications, that is, notifications that include resource data.
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/New-MgBetaSubscription?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -25,12 +22,12 @@ New-MgSubscription [-AdditionalProperties <Hashtable>] [-ApplicationId <String>]
  [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-IncludeResourceData]
  [-LatestSupportedTlsVersion <String>] [-LifecycleNotificationUrl <String>]
  [-NotificationQueryOptions <String>] [-NotificationUrl <String>] [-NotificationUrlAppId <String>]
- [-Resource <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resource <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSubscription -BodyParameter <IMicrosoftGraphSubscription> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSubscription -BodyParameter <IMicrosoftGraphSubscription> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,10 +37,11 @@ Some resources support rich notifications, that is, notifications that include r
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.ChangeNotifications
+```
 
 $params = @{
 	changeType = "created"
@@ -55,11 +53,6 @@ $params = @{
 }
 
 New-MgSubscription -BodyParameter $params
-```
-This example shows how to use the New-MgSubscription Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -67,7 +60,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +77,7 @@ Identifier of the application used to create the subscription.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +93,7 @@ subscription
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSubscription
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
 Parameter Sets: Create
 Aliases:
 
@@ -122,7 +115,7 @@ Use updated to receive notifications when user or group is created, updated or s
 Use deleted to receive notifications when user or group is permanently deleted.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -140,7 +133,7 @@ The maximum length is 128 characters.
 The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +152,7 @@ If the app used application permissions, this field contains the id of the servi
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +169,7 @@ A base64-encoded representation of a certificate with a public key used to encry
 Optional but required when includeResourceData is true.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,7 +185,7 @@ Optional.
 A custom app-provided identifier to help identify the certificate needed to decrypt resource data.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +203,7 @@ The time is in UTC, and can be an amount of time from subscription creation that
 For the maximum supported subscription length of time, see the table below.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +219,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +235,7 @@ Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -256,14 +249,14 @@ Accept wildcard characters: False
 ### -LatestSupportedTlsVersion
 Optional.
 Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports.
-The possible values are: v1_0, v1_1, v1_2, v1_3.
+The possible values are: v10, v11, v12, v13.
 For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2.
 For these subscribers, not setting this property per the timeline would result in subscription operations failing.
 For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional.
 In such cases, Microsoft Graph defaults the property to v1_2.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -275,12 +268,13 @@ Accept wildcard characters: False
 ```
 
 ### -LifecycleNotificationUrl
-Optional.
+Required for Teams resources if the expirationDateTime value is more than 1 hour from now; optional otherwise.
 The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications.
 This URL must make use of the HTTPS protocol.
+For more information, see Reduce missing subscriptions and change notifications.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -301,7 +295,7 @@ Supported only for Universal Print Service.
 For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -319,7 +313,7 @@ This URL must make use of the HTTPS protocol.
 Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -336,7 +330,7 @@ The app ID that the subscription service can use to generate the validation toke
 This allows the client to validate the authenticity of the notification received.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -354,7 +348,7 @@ Do not include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -369,7 +363,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -385,7 +379,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -402,9 +396,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+
 ## NOTES
 
 ALIASES
@@ -425,12 +421,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[EncryptionCertificateId <String>]`: Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data.
   - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
   - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
-  - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-  - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
+  - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v10, v11, v12, v13. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
+  - `[LifecycleNotificationUrl <String>]`: Required for Teams resources if  the expirationDateTime value is more than 1 hour from now; optional otherwise. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol. For more information, see Reduce missing subscriptions and change notifications.
   - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
   - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
   - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
   - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[New-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/New-MgBetaSubscription?view=graph-powershell-beta)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Planner-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property planner in users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,14 +18,20 @@ Update-MgBetaUserPlanner -UserId <String> -IfMatch <String> [-AdditionalProperti
  [-All <IMicrosoftGraphPlannerDelta[]>] [-FavoritePlanReferences <Hashtable>]
  [-FavoritePlans <IMicrosoftGraphPlannerPlan[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan[]>]
  [-RecentPlanReferences <Hashtable>] [-RecentPlans <IMicrosoftGraphPlannerPlan[]>]
- [-RosterPlans <IMicrosoftGraphPlannerPlan[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-WhatIf] [-Confirm]
+ [-RosterPlans <IMicrosoftGraphPlannerPlan[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserPlanner -UserId <String> -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerUser>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaUserPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerUser> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,21 +40,16 @@ Update-MgBetaUserPlanner -InputObject <IPlannerIdentity> -IfMatch <String> [-Add
  [-All <IMicrosoftGraphPlannerDelta[]>] [-FavoritePlanReferences <Hashtable>]
  [-FavoritePlans <IMicrosoftGraphPlannerPlan[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan[]>]
  [-RecentPlanReferences <Hashtable>] [-RecentPlans <IMicrosoftGraphPlannerPlan[]>]
- [-RosterPlans <IMicrosoftGraphPlannerPlan[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-WhatIf] [-Confirm]
+ [-RosterPlans <IMicrosoftGraphPlannerPlan[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaUserPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerUser> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property planner in users
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserPlanner Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 $params = @{
@@ -74,8 +72,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserPlanner -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserPlanner Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -83,7 +81,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +97,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ALL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerDelta[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerDelta[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +113,7 @@ plannerUser
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerUser
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerUser
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -130,7 +128,7 @@ Accept wildcard characters: False
 plannerFavoritePlanReferenceCollection
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +146,7 @@ Returns the plannerPlans that the user marked as favorites.
 To construct, see NOTES section for FAVORITEPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,7 +162,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +177,7 @@ Accept wildcard characters: False
 ETag value.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -195,8 +193,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPlannerIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -211,7 +209,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +224,7 @@ Accept wildcard characters: False
 plannerRecentPlanReferenceCollection
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +242,7 @@ Returns the plannerPlans that have been recently viewed by the user in apps that
 To construct, see NOTES section for RECENTPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +260,7 @@ Returns the plannerPlans contained by the plannerRosters the user is a member.
 To construct, see NOTES section for ROSTERPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,7 +278,7 @@ Returns the plannerTasks assigned to the user.
 To construct, see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -295,8 +293,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -310,7 +308,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -326,7 +324,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -343,10 +341,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerUser
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerUser
+
 ## NOTES
 
 ALIASES
@@ -400,8 +401,8 @@ To create the parameters described below, construct a hash table containing the 
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-            - `[Id <String>]`: The identifier of the identity. This property is read-only.
+            - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity.
           - `[Device <IMicrosoftGraphIdentity>]`: identity
           - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -568,8 +569,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -740,8 +741,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -902,8 +903,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -1064,8 +1065,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -1216,8 +1217,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -1291,7 +1292,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-[Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-1.0)
 
-## RELATED LINKS
-[Update-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgUserPlanner?view=graph-powershell-1.0)

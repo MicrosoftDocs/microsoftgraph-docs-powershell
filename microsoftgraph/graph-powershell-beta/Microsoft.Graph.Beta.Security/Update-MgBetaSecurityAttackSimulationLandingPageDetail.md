@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationlandingpagedetail
 schema: 2.0.0
@@ -16,30 +16,46 @@ Update the navigation property details in security
 ```
 Update-MgBetaSecurityAttackSimulationLandingPageDetail -LandingPageDetailId <String> -LandingPageId <String>
  [-AdditionalProperties <Hashtable>] [-Content <String>] [-Id <String>] [-IsDefaultLangauge]
- [-Language <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Language <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityAttackSimulationLandingPageDetail -LandingPageDetailId <String> -LandingPageId <String>
- -BodyParameter <IMicrosoftGraphLandingPageDetail> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphLandingPageDetail> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphLandingPageDetail> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Content <String>] [-Id <String>] [-IsDefaultLangauge]
- [-Language <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphLandingPageDetail> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Language <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property details in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -47,7 +63,7 @@ Update the navigation property details in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -63,7 +79,7 @@ landingPageDetail
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLandingPageDetail
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLandingPageDetail
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -78,7 +94,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -94,7 +110,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -125,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -140,8 +156,8 @@ Accept wildcard characters: False
 The unique identifier of landingPageDetail
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -155,8 +171,8 @@ Accept wildcard characters: False
 The unique identifier of landingPage
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -170,7 +186,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +201,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -201,7 +217,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -218,10 +234,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLandingPageDetail
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLandingPageDetail
+
 ## NOTES
 
 ALIASES
@@ -273,7 +292,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
   - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
   - `[IncidentId <String>]`: The unique identifier of incident
@@ -296,6 +317,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
   - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
@@ -309,6 +331,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
 

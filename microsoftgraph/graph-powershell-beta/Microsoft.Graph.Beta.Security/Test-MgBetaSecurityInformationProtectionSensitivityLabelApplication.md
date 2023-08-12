@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelapplication
 schema: 2.0.0
@@ -18,14 +18,14 @@ Given contentInfo, which includes existing content metadata key-value pairs, and
 ```
 Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication [-AdditionalProperties <Hashtable>]
  [-ContentInfo <IMicrosoftGraphSecurityContentInfo>]
- [-LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication
  -BodyParameter <IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,13 +33,29 @@ Compute the sensitivity label that should be applied and return the set of actio
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -55,7 +71,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate
 Aliases:
 
@@ -71,7 +87,7 @@ contentInfo
 To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityContentInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityContentInfo
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -87,7 +103,7 @@ labelingOptions
 To construct, see NOTES section for LABELINGOPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityLabelingOptions
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelingOptions
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -102,7 +118,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -118,7 +134,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -135,9 +151,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionAction
+
 ## NOTES
 
 ALIASES
@@ -153,7 +171,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
     - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
       - `[Name <String>]`: Name for this key-value pair.
       - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
@@ -171,7 +189,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
     - `[Name <String>]`: Name for this key-value pair.
     - `[Value <String>]`: Value for this key-value pair.
   - `[State <String>]`: contentState

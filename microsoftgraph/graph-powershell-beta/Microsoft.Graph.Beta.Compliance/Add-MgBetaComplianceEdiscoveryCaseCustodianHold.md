@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/add-mgbetacomplianceediscoverycasecustodianhold
 schema: 2.0.0
@@ -15,43 +15,59 @@ Invoke action applyHold
 ### ApplyExpanded (Default)
 ```
 Add-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Ids <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Apply
+```
+Add-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> -CustodianId <String> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Apply1
 ```
 Add-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String>
  -BodyParameter <IPathsWwm7HsComplianceEdiscoveryCasesCaseIdCustodiansMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Apply
+### ApplyViaIdentity
 ```
-Add-MgBetaComplianceEdiscoveryCaseCustodianHold -CaseId <String> -CustodianId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### ApplyViaIdentityExpanded
-```
-Add-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity1
 ```
 Add-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity>
  -BodyParameter <IPathsWwm7HsComplianceEdiscoveryCasesCaseIdCustodiansMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ApplyViaIdentity
+### ApplyViaIdentityExpanded
 ```
-Add-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Add-MgBetaComplianceEdiscoveryCaseCustodianHold -InputObject <IComplianceIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action applyHold
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -59,7 +75,7 @@ Invoke action applyHold
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -75,7 +91,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsWwm7HsComplianceEdiscoveryCasesCaseIdCustodiansMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsWwm7HsComplianceEdiscoveryCasesCaseIdCustodiansMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Apply1, ApplyViaIdentity1
 Aliases:
 
@@ -90,8 +106,8 @@ Accept wildcard characters: False
 The unique identifier of case
 
 ```yaml
-Type: String
-Parameter Sets: ApplyExpanded, Apply1, Apply
+Type: System.String
+Parameter Sets: Apply, Apply1, ApplyExpanded
 Aliases:
 
 Required: True
@@ -105,7 +121,7 @@ Accept wildcard characters: False
 The unique identifier of custodian
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Apply
 Aliases:
 
@@ -120,7 +136,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -136,8 +152,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
-Parameter Sets: ApplyViaIdentityExpanded, ApplyViaIdentity1, ApplyViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+Parameter Sets: ApplyViaIdentity, ApplyViaIdentity1, ApplyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -151,7 +167,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -166,7 +182,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -182,7 +198,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -199,10 +215,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsWwm7HsComplianceEdiscoveryCasesCaseIdCustodiansMicrosoftGraphEdiscoveryApplyholdPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

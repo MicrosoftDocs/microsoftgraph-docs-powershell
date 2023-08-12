@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytrigger
 schema: 2.0.0
@@ -10,25 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property triggers in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTrigger?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityTrigger [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RetentionEvents <IMicrosoftGraphSecurityRetentionEvent[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RetentionEvents <IMicrosoftGraphSecurityRetentionEvent[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSecurityTrigger -BodyParameter <IMicrosoftGraphSecurityTriggersRoot> [-WhatIf] [-Confirm]
+Update-MgBetaSecurityTrigger -BodyParameter <IMicrosoftGraphSecurityTriggersRoot> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property triggers in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +49,7 @@ Update the navigation property triggers in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,7 +65,7 @@ triggersRoot
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityTriggersRoot
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggersRoot
 Parameter Sets: Update
 Aliases:
 
@@ -68,7 +81,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -84,7 +97,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for RETENTIONEVENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionEvent[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionEvent[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -115,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -132,9 +145,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggersRoot
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggersRoot
+
 ## NOTES
 
 ALIASES
@@ -153,8 +168,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEvent was created.
@@ -206,8 +221,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEvent was created.
@@ -254,5 +269,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
-[Update-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTrigger?view=graph-powershell-1.0)
 

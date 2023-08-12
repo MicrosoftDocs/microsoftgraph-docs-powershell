@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse
 schema: 2.0.0
@@ -14,24 +14,28 @@ The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRecordCommunicationCallResponse?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### RecordExpanded (Default)
 ```
-Invoke-MgRecordCommunicationCallResponse -CallId <String> [-AdditionalProperties <Hashtable>] [-BargeInAllowed]
- [-ClientContext <String>] [-InitialSilenceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
- [-MaxSilenceTimeoutInSeconds <Int32>] [-PlayBeep] [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgRecordCommunicationCallResponse -CallId <String> [-AdditionalProperties <Hashtable>]
+ [-BargeInAllowed] [-ClientContext <String>] [-InitialSilenceTimeoutInSeconds <Int32>]
+ [-MaxRecordDurationInSeconds <Int32>] [-MaxSilenceTimeoutInSeconds <Int32>] [-PlayBeep]
+ [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Record
 ```
 Invoke-MgRecordCommunicationCallResponse -CallId <String>
  -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RecordViaIdentity
+```
+Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RecordViaIdentityExpanded
@@ -39,15 +43,8 @@ Invoke-MgRecordCommunicationCallResponse -CallId <String>
 Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-BargeInAllowed] [-ClientContext <String>]
  [-InitialSilenceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
- [-MaxSilenceTimeoutInSeconds <Int32>] [-PlayBeep] [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RecordViaIdentity
-```
-Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MaxSilenceTimeoutInSeconds <Int32>] [-PlayBeep] [-Prompts <IMicrosoftGraphPrompt[]>]
+ [-StopTones <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,31 +55,32 @@ The recording is not saved permanently by the Cloud Communications Platform and 
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgRecordCommunicationCallResponse Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
+
 $params = @{
-	BargeInAllowed = $true
-	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
-	Prompts = @(
+	bargeInAllowed = $true
+	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+	prompts = @(
 		@{
 			"@odata.type" = "#microsoft.graph.mediaPrompt"
 		}
 	)
-	MaxRecordDurationInSeconds = 10
-	InitialSilenceTimeoutInSeconds = 5
-	MaxSilenceTimeoutInSeconds = 2
-	PlayBeep = $true
-	StopTones = @(
+	maxRecordDurationInSeconds = 10
+	initialSilenceTimeoutInSeconds = 5
+	maxSilenceTimeoutInSeconds = 2
+	playBeep = $true
+	stopTones = @(
 		"#"
 		"1"
 		"*"
 	)
 }
+
 Invoke-MgRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgRecordCommunicationCallResponse Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -90,7 +88,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -105,7 +103,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -121,7 +119,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Record, RecordViaIdentity
 Aliases:
 
@@ -136,8 +134,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: RecordExpanded, Record
+Type: System.String
+Parameter Sets: Record, RecordExpanded
 Aliases:
 
 Required: True
@@ -151,7 +149,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -166,7 +164,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -182,8 +180,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: RecordViaIdentityExpanded, RecordViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: RecordViaIdentity, RecordViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -197,7 +195,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -212,7 +210,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -227,7 +225,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -242,7 +240,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: IMicrosoftGraphPrompt[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrompt[]
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -257,7 +255,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -272,7 +270,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -288,7 +286,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -305,10 +303,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecordOperation
+
 ## NOTES
 
 ALIASES
@@ -344,4 +345,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRecordCommunicationCallResponse?view=graph-powershell-beta)
+

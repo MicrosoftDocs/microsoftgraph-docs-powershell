@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthdeviceappimpact
 schema: 2.0.0
@@ -16,19 +16,35 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceAppI
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>]
- [-BatteryUsagePercentage <Double>] [-DeviceId <String>] [-Id <String>] [-IsForegroundApp] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-BatteryUsagePercentage <Double>] [-DeviceId <String>] [-Id <String>] [-IsForegroundApp] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceAppImpact for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +52,7 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceAppI
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +68,7 @@ User friendly display name for the app.
 Eg: Outlook
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +84,7 @@ App name.
 Eg: oltk.exe
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +100,7 @@ App publisher.
 Eg: Microsoft Corporation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +117,7 @@ Unit in percentage.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +133,7 @@ The user experience analytics battery health device app impact entity contains b
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
 Parameter Sets: Create
 Aliases:
 
@@ -132,7 +148,7 @@ Accept wildcard characters: False
 The unique identifier of the device, Intune DeviceID or SCCM device id.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +164,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +179,7 @@ Accept wildcard characters: False
 true if the user had active interaction with the app.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +194,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -194,7 +210,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -211,9 +227,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDeviceAppImpact
+
 ## NOTES
 
 ALIASES

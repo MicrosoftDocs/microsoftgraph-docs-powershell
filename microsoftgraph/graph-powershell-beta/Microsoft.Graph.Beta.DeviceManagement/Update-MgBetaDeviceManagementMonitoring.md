@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring
 schema: 2.0.0
@@ -16,18 +16,34 @@ Update the navigation property monitoring in deviceManagement
 ```
 Update-MgBetaDeviceManagementMonitoring [-AdditionalProperties <Hashtable>]
  [-AlertRecords <IMicrosoftGraphDeviceManagementAlertRecord[]>]
- [-AlertRules <IMicrosoftGraphDeviceManagementAlertRule[]>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-AlertRules <IMicrosoftGraphDeviceManagementAlertRule[]>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaDeviceManagementMonitoring -BodyParameter <IMicrosoftGraphDeviceManagementMonitoring> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementMonitoring -BodyParameter <IMicrosoftGraphDeviceManagementMonitoring> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property monitoring in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,7 +51,7 @@ Update the navigation property monitoring in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +67,7 @@ The collection of records of alert events.
 To construct, see NOTES section for ALERTRECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementAlertRecord[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRecord[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ The collection of alert rules.
 To construct, see NOTES section for ALERTRULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementAlertRule[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +99,7 @@ monitoring
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementMonitoring
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementMonitoring
 Parameter Sets: Update
 Aliases:
 
@@ -99,7 +115,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -114,7 +130,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -130,7 +146,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -147,9 +163,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementMonitoring
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementMonitoring
+
 ## NOTES
 
 ALIASES
@@ -164,6 +182,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[AlertImpact <IMicrosoftGraphDeviceManagementAlertImpact>]`: alertImpact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AggregationType <String>]`: aggregationType
+    - `[AlertImpactDetails <IMicrosoftGraphKeyValuePair[]>]`: The detail information of the impact. For example, if the Frontline Cloud PCs near concurrency limit alert is triggered, the details contain the impacted Frontline license SKU name, such as Windows 365 Frontline 2 vCPU/8GB/128GB, and the corresponding impacted value.
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
     - `[Value <Int32?>]`: The number value of the impact. For the aggregation types of count and affectedCloudPcCount, the value indicates the number of affected instances. For example, 6 affectedCloudPcCount means that 6 Cloud PCs are affected. For the aggregation types of percentage and affectedCloudPcPercentage, the value indicates the percent of affected instances. For example, 12 affectedCloudPcPercentage means that 12% of Cloud PCs are affected.
   - `[AlertRuleId <String>]`: The corresponding ID of the alert rule.
   - `[AlertRuleTemplate <String>]`: alertRuleTemplate
@@ -202,6 +223,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[AlertImpact <IMicrosoftGraphDeviceManagementAlertImpact>]`: alertImpact
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AggregationType <String>]`: aggregationType
+      - `[AlertImpactDetails <IMicrosoftGraphKeyValuePair[]>]`: The detail information of the impact. For example, if the Frontline Cloud PCs near concurrency limit alert is triggered, the details contain the impacted Frontline license SKU name, such as Windows 365 Frontline 2 vCPU/8GB/128GB, and the corresponding impacted value.
+        - `[Name <String>]`: Name for this key-value pair
+        - `[Value <String>]`: Value for this key-value pair
       - `[Value <Int32?>]`: The number value of the impact. For the aggregation types of count and affectedCloudPcCount, the value indicates the number of affected instances. For example, 6 affectedCloudPcCount means that 6 Cloud PCs are affected. For the aggregation types of percentage and affectedCloudPcPercentage, the value indicates the percent of affected instances. For example, 12 affectedCloudPcPercentage means that 12% of Cloud PCs are affected.
     - `[AlertRuleId <String>]`: The corresponding ID of the alert rule.
     - `[AlertRuleTemplate <String>]`: alertRuleTemplate

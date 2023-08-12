@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmicrosofttunnelhealththreshold
 schema: 2.0.0
@@ -16,32 +16,48 @@ Update the navigation property microsoftTunnelHealthThresholds in deviceManageme
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold -MicrosoftTunnelHealthThresholdId <String>
  [-AdditionalProperties <Hashtable>] [-DefaultHealthyThreshold <Int64>] [-DefaultUnhealthyThreshold <Int64>]
- [-HealthyThreshold <Int64>] [-Id <String>] [-UnhealthyThreshold <Int64>] [-WhatIf] [-Confirm]
+ [-HealthyThreshold <Int64>] [-Id <String>] [-UnhealthyThreshold <Int64>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold -MicrosoftTunnelHealthThresholdId <String>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DefaultHealthyThreshold <Int64>] [-DefaultUnhealthyThreshold <Int64>]
- [-HealthyThreshold <Int64>] [-Id <String>] [-UnhealthyThreshold <Int64>] [-WhatIf] [-Confirm]
+ [-HealthyThreshold <Int64>] [-Id <String>] [-UnhealthyThreshold <Int64>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property microsoftTunnelHealthThresholds in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Update the navigation property microsoftTunnelHealthThresholds in deviceManageme
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +81,7 @@ Entity that represents the health thresholds of a health metric
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMicrosoftTunnelHealthThreshold
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -81,7 +97,7 @@ The threshold for being healthy based on default health status metrics: CPU usag
 Read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +113,7 @@ The threshold for being unhealthy based on default health status metrics: CPU us
 Read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +128,7 @@ Accept wildcard characters: False
 The threshold for being healthy based on default health status metrics: CPU usage healthy \< 50%, Memory usage healthy \< 50%, Disk space healthy \> 5GB, Latency healthy \< 10ms, health metrics can be customized.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +144,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +160,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -159,8 +175,8 @@ Accept wildcard characters: False
 The unique identifier of microsoftTunnelHealthThreshold
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -174,7 +190,7 @@ Accept wildcard characters: False
 The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy \> 75%, Memory usage unhealthy \> 75%, Disk space \< 3GB, Latency Unhealthy \> 20ms, health metrics can be customized.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,10 +238,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
+
 ## NOTES
 
 ALIASES
@@ -381,8 +400,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

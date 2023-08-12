@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageresourcerolescope
 schema: 2.0.0
@@ -8,10 +8,9 @@ schema: 2.0.0
 # New-MgEntitlementManagementAccessPackageResourceRoleScope
 
 ## SYNOPSIS
-Create new navigation property to resourceRoleScopes for identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
+Create a new accessPackageResourceRoleScope for adding a resource role to an access package.
+The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
+Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
 ## SYNTAX
 
@@ -20,13 +19,19 @@ Create new navigation property to resourceRoleScopes for identityGovernance
 New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-Role <IMicrosoftGraphAccessPackageResourceRole>] [-Scope <IMicrosoftGraphAccessPackageResourceScope>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,17 +39,29 @@ New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <Stri
 New-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-Role <IMicrosoftGraphAccessPackageResourceRole>] [-Scope <IMicrosoftGraphAccessPackageResourceScope>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to resourceRoleScopes for identityGovernance
+Create a new accessPackageResourceRoleScope for adding a resource role to an access package.
+The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
+Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -52,8 +69,8 @@ Create new navigation property to resourceRoleScopes for identityGovernance
 The unique identifier of accessPackage
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -67,7 +84,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +100,7 @@ accessPackageResourceRoleScope
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceRoleScope
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -95,10 +112,11 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +132,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,8 +148,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -146,7 +164,7 @@ accessPackageResourceRole
 To construct, see NOTES section for ROLE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceRole
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +180,7 @@ accessPackageResourceScope
 To construct, see NOTES section for SCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceScope
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +195,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -193,7 +211,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -210,10 +228,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+
 ## NOTES
 
 ALIASES
@@ -226,42 +247,42 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphAccessPackageResourceRoleScope>`: accessPackageResourceRoleScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Role <IMicrosoftGraphAccessPackageResourceRole>]`: accessPackageResourceRole
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[OriginId <String>]`: 
-    - `[OriginSystem <String>]`: 
+    - `[Description <String>]`: A description for the resource role.
+    - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
+    - `[OriginId <String>]`: The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+    - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
     - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
+      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+      - `[Description <String>]`: A description for the resource.
+      - `[DisplayName <String>]`: The display name of the resource, such as the application name, group name or site name.
       - `[Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[Description <String>]`: 
-        - `[DisplayName <String>]`: 
-        - `[IsDefaultEnvironment <Boolean?>]`: 
-        - `[ModifiedDateTime <DateTime?>]`: 
-        - `[OriginId <String>]`: 
-        - `[OriginSystem <String>]`: 
-        - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
-      - `[ModifiedDateTime <DateTime?>]`: 
-      - `[OriginId <String>]`: 
-      - `[OriginSystem <String>]`: 
-      - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
-      - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+        - `[CreatedDateTime <DateTime?>]`: The date and time that this object was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Description <String>]`: The description of this object.
+        - `[DisplayName <String>]`: The display name of this object.
+        - `[IsDefaultEnvironment <Boolean?>]`: Determines whether this is default environment or not. It is set to true for all static origin systems, such as Azure AD groups and Azure AD Applications.
+        - `[ModifiedDateTime <DateTime?>]`: The date and time that this object was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[OriginId <String>]`: The unique identifier of this environment in the origin system.
+        - `[OriginSystem <String>]`: The type of the resource in the origin system, that is, SharePointOnline. Requires $filter (eq).
+        - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: Read-only. Required.
+      - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+      - `[OriginId <String>]`: The unique identifier of the resource in the origin system. In the case of an Azure AD group, this is the identifier of the group.
+      - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+      - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: Read-only. Nullable. Supports $expand.
+      - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: Read-only. Nullable. Supports $expand.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[Description <String>]`: 
-        - `[DisplayName <String>]`: 
-        - `[IsRootScope <Boolean?>]`: 
-        - `[OriginId <String>]`: 
-        - `[OriginSystem <String>]`: 
+        - `[Description <String>]`: The description of the scope.
+        - `[DisplayName <String>]`: The display name of the scope.
+        - `[IsRootScope <Boolean?>]`: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
+        - `[OriginId <String>]`: The unique identifier for the scope in the resource as defined in the origin system.
+        - `[OriginSystem <String>]`: The origin system for the scope.
         - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
   - `[Scope <IMicrosoftGraphAccessPackageResourceScope>]`: accessPackageResourceScope
 
@@ -332,80 +353,76 @@ To create the parameters described below, construct a hash table containing the 
 `ROLE <IMicrosoftGraphAccessPackageResourceRole>`: accessPackageResourceRole
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[OriginId <String>]`: 
-  - `[OriginSystem <String>]`: 
+  - `[Description <String>]`: A description for the resource role.
+  - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
+  - `[OriginId <String>]`: The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+  - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
   - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[Description <String>]`: A description for the resource.
+    - `[DisplayName <String>]`: The display name of the resource, such as the application name, group name or site name.
     - `[Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[IsDefaultEnvironment <Boolean?>]`: 
-      - `[ModifiedDateTime <DateTime?>]`: 
-      - `[OriginId <String>]`: 
-      - `[OriginSystem <String>]`: 
-      - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
-    - `[ModifiedDateTime <DateTime?>]`: 
-    - `[OriginId <String>]`: 
-    - `[OriginSystem <String>]`: 
-    - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
-    - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+      - `[CreatedDateTime <DateTime?>]`: The date and time that this object was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Description <String>]`: The description of this object.
+      - `[DisplayName <String>]`: The display name of this object.
+      - `[IsDefaultEnvironment <Boolean?>]`: Determines whether this is default environment or not. It is set to true for all static origin systems, such as Azure AD groups and Azure AD Applications.
+      - `[ModifiedDateTime <DateTime?>]`: The date and time that this object was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[OriginId <String>]`: The unique identifier of this environment in the origin system.
+      - `[OriginSystem <String>]`: The type of the resource in the origin system, that is, SharePointOnline. Requires $filter (eq).
+      - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: Read-only. Required.
+    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[OriginId <String>]`: The unique identifier of the resource in the origin system. In the case of an Azure AD group, this is the identifier of the group.
+    - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+    - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: Read-only. Nullable. Supports $expand.
+    - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: Read-only. Nullable. Supports $expand.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[IsRootScope <Boolean?>]`: 
-      - `[OriginId <String>]`: 
-      - `[OriginSystem <String>]`: 
+      - `[Description <String>]`: The description of the scope.
+      - `[DisplayName <String>]`: The display name of the scope.
+      - `[IsRootScope <Boolean?>]`: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
+      - `[OriginId <String>]`: The unique identifier for the scope in the resource as defined in the origin system.
+      - `[OriginSystem <String>]`: The origin system for the scope.
       - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
 
 `SCOPE <IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[IsRootScope <Boolean?>]`: 
-  - `[OriginId <String>]`: 
-  - `[OriginSystem <String>]`: 
+  - `[Description <String>]`: The description of the scope.
+  - `[DisplayName <String>]`: The display name of the scope.
+  - `[IsRootScope <Boolean?>]`: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
+  - `[OriginId <String>]`: The unique identifier for the scope in the resource as defined in the origin system.
+  - `[OriginSystem <String>]`: The origin system for the scope.
   - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[Description <String>]`: A description for the resource.
+    - `[DisplayName <String>]`: The display name of the resource, such as the application name, group name or site name.
     - `[Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[IsDefaultEnvironment <Boolean?>]`: 
-      - `[ModifiedDateTime <DateTime?>]`: 
-      - `[OriginId <String>]`: 
-      - `[OriginSystem <String>]`: 
-      - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
-    - `[ModifiedDateTime <DateTime?>]`: 
-    - `[OriginId <String>]`: 
-    - `[OriginSystem <String>]`: 
-    - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
+      - `[CreatedDateTime <DateTime?>]`: The date and time that this object was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Description <String>]`: The description of this object.
+      - `[DisplayName <String>]`: The display name of this object.
+      - `[IsDefaultEnvironment <Boolean?>]`: Determines whether this is default environment or not. It is set to true for all static origin systems, such as Azure AD groups and Azure AD Applications.
+      - `[ModifiedDateTime <DateTime?>]`: The date and time that this object was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[OriginId <String>]`: The unique identifier of this environment in the origin system.
+      - `[OriginSystem <String>]`: The type of the resource in the origin system, that is, SharePointOnline. Requires $filter (eq).
+      - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: Read-only. Required.
+    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[OriginId <String>]`: The unique identifier of the resource in the origin system. In the case of an Azure AD group, this is the identifier of the group.
+    - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+    - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: Read-only. Nullable. Supports $expand.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[OriginId <String>]`: 
-      - `[OriginSystem <String>]`: 
+      - `[Description <String>]`: A description for the resource role.
+      - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
+      - `[OriginId <String>]`: The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+      - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
       - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
-    - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+    - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: Read-only. Nullable. Supports $expand.
 
 ## RELATED LINKS
-[New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
-
-## RELATED LINKS
-[New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapproleeligibilityscheduleinstance
 schema: 2.0.0
@@ -19,35 +19,53 @@ New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -RbacApplic
  [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-EndDateTime <DateTime>]
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
- [-RoleEligibilityScheduleId <String>] [-StartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleEligibilityScheduleId <String>] [-StartDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -RbacApplicationId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance
+ -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
+New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
+ [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
  [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-EndDateTime <DateTime>]
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
- [-RoleEligibilityScheduleId <String>] [-StartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RoleEligibilityScheduleId <String>] [-StartDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to roleEligibilityScheduleInstances for roleManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -55,7 +73,7 @@ Create new navigation property to roleEligibilityScheduleInstances for roleManag
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +89,7 @@ appScope
 To construct, see NOTES section for APPSCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppScope
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppScope
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -90,7 +108,7 @@ Use / for tenant-wide app scopes.
 Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +124,7 @@ unifiedRoleEligibilityScheduleInstance
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -122,7 +140,7 @@ directoryObject
 To construct, see NOTES section for DIRECTORYSCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +159,7 @@ Use / for tenant-wide scope.
 Use appScopeId to limit the scope to an application only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +174,7 @@ Accept wildcard characters: False
 Time that the roleEligibilityScheduleInstance will expire.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +190,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -188,8 +206,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -204,7 +222,7 @@ Membership type of the assignment.
 It can either be Inherited, Direct, or Group.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +238,7 @@ directoryObject
 To construct, see NOTES section for PRINCIPAL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -235,7 +253,7 @@ Accept wildcard characters: False
 Identifier of the principal that has been granted the role assignment or that's eligible for a role.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -250,8 +268,8 @@ Accept wildcard characters: False
 The unique identifier of rbacApplication
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -266,7 +284,7 @@ unifiedRoleDefinition
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -281,7 +299,7 @@ Accept wildcard characters: False
 Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that the principal is eligible for.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -296,7 +314,7 @@ Accept wildcard characters: False
 Identifier of the parent roleEligibilitySchedule for this instance.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -311,7 +329,7 @@ Accept wildcard characters: False
 Time that the roleEligibilityScheduleInstance will start.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -326,7 +344,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -342,7 +360,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -359,10 +377,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
+
 ## NOTES
 
 ALIASES
@@ -398,18 +419,18 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
     - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-    - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
+    - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith).
     - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-    - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
+    - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq).
     - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
     - `[IsPrivileged <Boolean?>]`: 
-    - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
+    - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
     - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
       - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
       - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
       - `[ExcludedResourceActions <String[]>]`: 
     - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-    - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+    - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object. Read-only when isBuiltIn is true.
   - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that the principal is eligible for.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EndDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will expire.
@@ -530,20 +551,18 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
+  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith).
   - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-  - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
+  - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq).
   - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
   - `[IsPrivileged <Boolean?>]`: 
-  - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
+  - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
   - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
     - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
     - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
     - `[ExcludedResourceActions <String[]>]`: 
   - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-  - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-
-## RELATED LINKS
+  - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 

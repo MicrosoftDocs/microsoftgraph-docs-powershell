@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidmanagedstoreappconfigurationschema
 schema: 2.0.0
@@ -17,19 +17,35 @@ Create new navigation property to androidManagedStoreAppConfigurationSchemas for
 New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema [-AdditionalProperties <Hashtable>]
  [-ExampleJsonInputFile <String>] [-Id <String>]
  [-NestedSchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]
- [-SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>] [-WhatIf] [-Confirm]
+ [-SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema
- -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to androidManagedStoreAppConfigurationSchemas for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +53,7 @@ Create new navigation property to androidManagedStoreAppConfigurationSchemas for
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +69,7 @@ Schema describing an Android application's custom configurations.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +84,7 @@ Accept wildcard characters: False
 Input File for ExampleJson (UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +100,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +117,7 @@ It contains a flat list of all configuration.
 To construct, see NOTES section for NESTEDSCHEMAITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +134,7 @@ It only contains the root-level configuration.
 To construct, see NOTES section for SCHEMAITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +149,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -149,7 +165,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -166,9 +182,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema
+
 ## NOTES
 
 ALIASES

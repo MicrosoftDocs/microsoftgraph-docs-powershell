@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminperson
 schema: 2.0.0
@@ -16,17 +16,33 @@ Update the navigation property people in admin
 ```
 Update-MgBetaAdminPerson [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaAdminPerson -BodyParameter <IMicrosoftGraphPeopleAdminSettings> [-WhatIf] [-Confirm]
+Update-MgBetaAdminPerson -BodyParameter <IMicrosoftGraphPeopleAdminSettings> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property people in admin
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -34,7 +50,7 @@ Update the navigation property people in admin
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -50,7 +66,7 @@ peopleAdminSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPeopleAdminSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPeopleAdminSettings
 Parameter Sets: Update
 Aliases:
 
@@ -66,7 +82,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -82,7 +98,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PROFILECARDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProfileCardProperty[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProfileCardProperty[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -98,7 +114,7 @@ pronounsSettings
 To construct, see NOTES section for PRONOUNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPronounsSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPronounsSettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -113,7 +129,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +145,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,9 +162,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPeopleAdminSettings
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPeopleAdminSettings
+
 ## NOTES
 
 ALIASES

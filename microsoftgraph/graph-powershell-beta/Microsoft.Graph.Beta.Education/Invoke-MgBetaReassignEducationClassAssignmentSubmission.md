@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationclassassignmentsubmission
 schema: 2.0.0
@@ -10,51 +10,50 @@ schema: 2.0.0
 ## SYNOPSIS
 Reassign the submission to the student with feedback for review.
 Only teachers can perform this action.
-Include the `Prefer: include-unknown-enum-members` header when you call this method; otherwise, a reassigned submission will be treated as a returned submission.
-This means that the `reassigned` status will be mapped to the `returned` status, and **reassignedDateTime** and **reassignedBy** properties will be mapped to **returnedDateTime** and **returnedBy** respectively.
-If the header `Prefer: include-unknown-enum-members` is provided, a reassigned submission retains the `reassigned` status.
+Include the Prefer: include-unknown-enum-members header when you call this method; otherwise, a reassigned submission will be treated as a returned submission.
+This means that the reassigned status will be mapped to the returned status, and reassignedDateTime and reassignedBy properties will be mapped to returnedDateTime and returnedBy respectively.
+If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReassignEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationClassAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### Reassign (Default)
 ```
 Invoke-MgBetaReassignEducationClassAssignmentSubmission -EducationAssignmentId <String>
- -EducationClassId <String> -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -EducationClassId <String> -EducationSubmissionId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReassignViaIdentity
 ```
-Invoke-MgBetaReassignEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Invoke-MgBetaReassignEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reassign the submission to the student with feedback for review.
 Only teachers can perform this action.
-Include the `Prefer: include-unknown-enum-members` header when you call this method; otherwise, a reassigned submission will be treated as a returned submission.
-This means that the `reassigned` status will be mapped to the `returned` status, and **reassignedDateTime** and **reassignedBy** properties will be mapped to **returnedDateTime** and **returnedBy** respectively.
-If the header `Prefer: include-unknown-enum-members` is provided, a reassigned submission retains the `reassigned` status.
+Include the Prefer: include-unknown-enum-members header when you call this method; otherwise, a reassigned submission will be treated as a returned submission.
+This means that the reassigned status will be mapped to the returned status, and reassignedDateTime and reassignedBy properties will be mapped to returnedDateTime and returnedBy respectively.
+If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaReassignEducationClassAssignmentSubmission Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Invoke-MgBetaReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 ```
-This example shows how to use the Invoke-MgBetaReassignEducationClassAssignmentSubmission Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Invoke-MgBetaReassignEducationClassAssignmentSubmission Cmdlet
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Invoke-MgBetaReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 ```
-This example shows how to use the Invoke-MgBetaReassignEducationClassAssignmentSubmission Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -62,7 +61,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reassign
 Aliases:
 
@@ -77,7 +76,7 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reassign
 Aliases:
 
@@ -92,7 +91,7 @@ Accept wildcard characters: False
 The unique identifier of educationSubmission
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reassign
 Aliases:
 
@@ -108,7 +107,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: ReassignViaIdentity
 Aliases:
 
@@ -123,7 +122,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -139,7 +138,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -156,9 +155,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission
+
 ## NOTES
 
 ALIASES
@@ -174,6 +175,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
   - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationModuleId <String>]`: The unique identifier of educationModule
+  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
@@ -184,4 +187,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgReassignEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationClassAssignmentSubmission?view=graph-powershell-1.0)
+

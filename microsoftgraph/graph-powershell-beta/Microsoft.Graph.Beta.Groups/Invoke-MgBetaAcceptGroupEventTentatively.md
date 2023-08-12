@@ -1,58 +1,62 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupsitepermission
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupeventtentatively
 schema: 2.0.0
 ---
 
-# Grant-MgBetaGroupSitePermission
+# Invoke-MgBetaAcceptGroupEventTentatively
 
 ## SYNOPSIS
-Grant users access to a link represented by a [permission][].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptGroupEventTentatively](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupEventTentatively?view=graph-powershell-1.0)
+Tentatively accept the specified event in a user calendar.
+If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## SYNTAX
 
-### GrantExpanded (Default)
+### AcceptExpanded (Default)
 ```
-Grant-MgBetaGroupSitePermission -GroupId <String> -PermissionId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Grant
-```
-Grant-MgBetaGroupSitePermission -GroupId <String> -PermissionId <String> -SiteId <String>
- -BodyParameter <IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaAcceptGroupEventTentatively -EventId <String> -GroupId <String>
+ [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>]
+ [-SendResponse] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### GrantViaIdentityExpanded
+### Accept
 ```
-Grant-MgBetaGroupSitePermission -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaAcceptGroupEventTentatively -EventId <String> -GroupId <String>
+ -BodyParameter <IPaths1In5HfGroupsGroupIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### GrantViaIdentity
+### AcceptViaIdentity
 ```
-Grant-MgBetaGroupSitePermission -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaAcceptGroupEventTentatively -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths1In5HfGroupsGroupIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AcceptViaIdentityExpanded
+```
+Invoke-MgBetaAcceptGroupEventTentatively -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a [permission][].
+Tentatively accept the specified event in a user calendar.
+If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
-	Comment = "I may not be able to make this week. How about next week?"
+	Comment = "I may not be able to make this week.
+How about next week?"
 	SendResponse = $true
 	ProposedNewTime = @{
 		Start = @{
@@ -68,11 +72,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaAcceptUserEventTentatively -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaAcceptGroupEventTentatively Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -80,8 +79,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -96,8 +95,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Grant, GrantViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1In5HfGroupsGroupIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Accept, AcceptViaIdentity
 Aliases:
 
 Required: True
@@ -107,12 +106,42 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Comment
+.
+
+```yaml
+Type: System.String
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EventId
+The unique identifier of event
+
+```yaml
+Type: System.String
+Parameter Sets: Accept, AcceptExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -GroupId
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: GrantExpanded, Grant
+Type: System.String
+Parameter Sets: Accept, AcceptExpanded
 Aliases:
 
 Required: True
@@ -127,8 +156,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: AcceptViaIdentity, AcceptViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -138,28 +167,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PermissionId
-The unique identifier of permission
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: String
-Parameter Sets: GrantExpanded, Grant
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Recipients
-.
-To construct, see NOTES section for RECIPIENTS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphDriveRecipient[]
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -169,12 +182,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Roles
-.
+### -ProposedNewTime
+timeSlot
+To construct, see NOTES section for PROPOSEDNEWTIME properties and create a hash table.
 
 ```yaml
-Type: String[]
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeSlot
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -184,15 +198,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SiteId
-The unique identifier of site
+### -SendResponse
+.
 
 ```yaml
-Type: String
-Parameter Sets: GrantExpanded, Grant
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -203,7 +217,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -219,7 +233,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -236,10 +250,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1In5HfGroupsGroupIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
+### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -249,13 +266,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths1Bir9OcGroupsGroupIdSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1In5HfGroupsGroupIdEventsEventIdMicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Recipients <IMicrosoftGraphDriveRecipient[]>]`: 
-    - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
-    - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
-    - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
-  - `[Roles <String[]>]`: 
+  - `[Comment <String>]`: 
+  - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+    - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[SendResponse <Boolean?>]`: 
 
 `INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -299,10 +320,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: The unique identifier of user
 
-`RECIPIENTS <IMicrosoftGraphDriveRecipient[]>`: .
-  - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
-  - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
-  - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
+`PROPOSEDNEWTIME <IMicrosoftGraphTimeSlot>`: timeSlot
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+  - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
-[Invoke-MgAcceptGroupEventTentatively](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupEventTentatively?view=graph-powershell-1.0)
+

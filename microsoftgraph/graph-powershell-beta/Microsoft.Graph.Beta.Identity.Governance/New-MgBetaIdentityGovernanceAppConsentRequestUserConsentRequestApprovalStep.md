@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceappconsentrequestuserconsentrequestapprovalstep
 schema: 2.0.0
@@ -16,14 +16,22 @@ Create new navigation property to steps for identityGovernance
 ```
 New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep -AppConsentRequestId <String>
  -UserConsentRequestId <String> [-AdditionalProperties <Hashtable>] [-AssignedToMe] [-DisplayName <String>]
- [-Id <String>] [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
- [-ReviewedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Justification <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
+ [-ReviewedDateTime <DateTime>] [-ReviewResult <String>] [-Status <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep -AppConsentRequestId <String>
- -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphApprovalStep> [-WhatIf] [-Confirm]
+ -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphApprovalStep> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphApprovalStep> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -31,20 +39,29 @@ New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep -App
 ```
 New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-AssignedToMe]
- [-DisplayName <String>] [-Id <String>] [-Justification <String>] [-ReviewResult <String>]
- [-ReviewedBy <IMicrosoftGraphIdentity>] [-ReviewedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphApprovalStep> [-WhatIf] [-Confirm]
+ [-DisplayName <String>] [-Id <String>] [-Justification <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
+ [-ReviewedDateTime <DateTime>] [-ReviewResult <String>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to steps for identityGovernance
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +69,7 @@ Create new navigation property to steps for identityGovernance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,8 +84,8 @@ Accept wildcard characters: False
 The unique identifier of appConsentRequest
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -83,7 +100,7 @@ Indicates whether the step is assigned to the calling user to review.
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +116,7 @@ approvalStep
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApprovalStep
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApprovalStep
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -115,7 +132,7 @@ The label provided by the policy creator to identify an approval step.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +148,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,8 +164,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -162,7 +179,7 @@ Accept wildcard characters: False
 The justification associated with the approval step decision.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +195,7 @@ identity
 To construct, see NOTES section for REVIEWEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +213,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +229,7 @@ The result of this approval record.
 Possible values include: NotReviewed, Approved, Denied.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +246,7 @@ Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -244,8 +261,8 @@ Accept wildcard characters: False
 The unique identifier of userConsentRequest
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -259,7 +276,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -275,7 +292,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -292,10 +309,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApprovalStep
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApprovalStep
+
 ## NOTES
 
 ALIASES
@@ -314,8 +334,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
   - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 
@@ -419,10 +439,8 @@ To create the parameters described below, construct a hash table containing the 
 
 `REVIEWEDBY <IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
-
-## RELATED LINKS
+  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
 

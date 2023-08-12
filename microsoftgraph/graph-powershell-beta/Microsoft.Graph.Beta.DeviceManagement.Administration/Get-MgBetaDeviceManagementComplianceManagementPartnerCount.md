@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementcompliancemanagementpartnercount
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementComplianceManagementPartnerCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementComplianceManagementPartnerCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -23,13 +20,29 @@ Get-MgBetaDeviceManagementComplianceManagementPartnerCount [-Filter <String>] [-
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -Filter
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -44,7 +57,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -63,10 +76,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgDeviceManagementComplianceManagementPartnerCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementComplianceManagementPartnerCount?view=graph-powershell-1.0)
 

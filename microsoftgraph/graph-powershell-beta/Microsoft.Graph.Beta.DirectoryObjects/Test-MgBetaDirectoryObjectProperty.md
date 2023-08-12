@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty
 schema: 2.0.0
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -18,15 +18,12 @@ Validate the mail nickname is unique This API returns with the first failure enc
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDirectoryObjectProperty](/powershell/module/Microsoft.Graph.DirectoryObjects/Test-MgDirectoryObjectProperty?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### ValidateExpanded (Default)
 ```
 Test-MgBetaDirectoryObjectProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-EntityType <String>] [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-EntityType <String>] [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -34,12 +31,12 @@ Test-MgBetaDirectoryObjectProperty [-AdditionalProperties <Hashtable>] [-Display
 ```
 Test-MgBetaDirectoryObjectProperty
  -BodyParameter <IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -49,7 +46,8 @@ If one or more properties fail multiple validations, only the property with the 
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaDirectoryObjectProperty Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 $params = @{
@@ -60,8 +58,8 @@ $params = @{
 }
 Test-MgBetaDirectoryObjectProperty -BodyParameter $params
 ```
-This example shows how to use the Test-MgBetaDirectoryObjectProperty Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -69,7 +67,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -85,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate
 Aliases:
 
@@ -100,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -115,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -130,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -145,7 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -160,7 +158,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -175,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,9 +206,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -228,4 +228,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnBehalfOfUserId <String>]`: 
 
 ## RELATED LINKS
-[Test-MgDirectoryObjectProperty](/powershell/module/Microsoft.Graph.DirectoryObjects/Test-MgDirectoryObjectProperty?view=graph-powershell-1.0)
+

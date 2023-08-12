@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyserviceprincipalcompromised
 schema: 2.0.0
@@ -9,29 +9,42 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Confirm one or more riskyServicePrincipal objects as compromised.
-This action sets the targeted service principal account's risk level to `high`.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaRiskyServicePrincipalCompromised](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaRiskyServicePrincipalCompromised?view=graph-powershell-beta)
+This action sets the targeted service principal account's risk level to high.
 
 ## SYNTAX
 
 ### ConfirmExpanded (Default)
 ```
 Confirm-MgRiskyServicePrincipalCompromised [-AdditionalProperties <Hashtable>]
- [-ServicePrincipalIds <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ServicePrincipalIds <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Confirm
 ```
 Confirm-MgRiskyServicePrincipalCompromised
  -BodyParameter <IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Confirm one or more riskyServicePrincipal objects as compromised.
-This action sets the targeted service principal account's risk level to `high`.
+This action sets the targeted service principal account's risk level to high.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -39,7 +52,7 @@ This action sets the targeted service principal account's risk level to `high`.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ConfirmExpanded
 Aliases:
 
@@ -55,7 +68,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Confirm
 Aliases:
 
@@ -70,7 +83,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: ConfirmExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -116,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -133,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -150,5 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalIds <String[]>]`: 
 
 ## RELATED LINKS
-[Confirm-MgBetaRiskyServicePrincipalCompromised](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaRiskyServicePrincipalCompromised?view=graph-powershell-beta)
 

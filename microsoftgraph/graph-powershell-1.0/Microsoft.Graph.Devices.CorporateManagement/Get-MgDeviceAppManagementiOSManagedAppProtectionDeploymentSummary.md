@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary
 schema: 2.0.0
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 
 ## SYNOPSIS
-Navigation property to deployment summary of the configuration.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
+Read properties and relationships of the managedAppPolicyDeploymentSummary object.
 
 ## SYNTAX
 
@@ -29,7 +26,23 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 ```
 
 ## DESCRIPTION
-Navigation property to deployment summary of the configuration.
+Read properties and relationships of the managedAppPolicyDeploymentSummary object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Navigation property to deployment summary of the configuration.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -53,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -68,7 +81,7 @@ Accept wildcard characters: False
 The unique identifier of iosManagedAppProtection
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -83,7 +96,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -100,9 +113,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicyDeploymentSummary
+
 ## NOTES
 
 ALIASES
@@ -149,5 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
 

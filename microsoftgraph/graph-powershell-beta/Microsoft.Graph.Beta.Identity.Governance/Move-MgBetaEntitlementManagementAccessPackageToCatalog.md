@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/move-mgbetaentitlementmanagementaccesspackagetocatalog
 schema: 2.0.0
@@ -16,7 +16,7 @@ The resources in the access package must be present in the target catalog.
 ### MoveExpanded (Default)
 ```
 Move-MgBetaEntitlementManagementAccessPackageToCatalog -AccessPackageId <String>
- [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -24,26 +24,42 @@ Move-MgBetaEntitlementManagementAccessPackageToCatalog -AccessPackageId <String>
 ```
 Move-MgBetaEntitlementManagementAccessPackageToCatalog -AccessPackageId <String>
  -BodyParameter <IPaths1A7Wr23IdentitygovernanceEntitlementmanagementAccesspackagesAccesspackageIdMicrosoftGraphMovetocatalogPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MoveViaIdentityExpanded
-```
-Move-MgBetaEntitlementManagementAccessPackageToCatalog -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### MoveViaIdentity
 ```
 Move-MgBetaEntitlementManagementAccessPackageToCatalog -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths1A7Wr23IdentitygovernanceEntitlementmanagementAccesspackagesAccesspackageIdMicrosoftGraphMovetocatalogPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### MoveViaIdentityExpanded
+```
+Move-MgBetaEntitlementManagementAccessPackageToCatalog -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 In Azure AD entitlement management, this action moves the accessPackage to a specified target accessPackageCatalog.
 The resources in the access package must be present in the target catalog.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,8 +67,8 @@ The resources in the access package must be present in the target catalog.
 The unique identifier of accessPackage
 
 ```yaml
-Type: String
-Parameter Sets: MoveExpanded, Move
+Type: System.String
+Parameter Sets: Move, MoveExpanded
 Aliases:
 
 Required: True
@@ -66,7 +82,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
 Aliases:
 
@@ -82,7 +98,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1A7Wr23IdentitygovernanceEntitlementmanagementAccesspackagesAccesspackageIdMicrosoftGraphMovetocatalogPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1A7Wr23IdentitygovernanceEntitlementmanagementAccesspackagesAccesspackageIdMicrosoftGraphMovetocatalogPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Move, MoveViaIdentity
 Aliases:
 
@@ -97,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
 Aliases:
 
@@ -113,8 +129,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: MoveViaIdentityExpanded, MoveViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: MoveViaIdentity, MoveViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -128,7 +144,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -143,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -159,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -176,10 +192,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1A7Wr23IdentitygovernanceEntitlementmanagementAccesspackagesAccesspackageIdMicrosoftGraphMovetocatalogPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

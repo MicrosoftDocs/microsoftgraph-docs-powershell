@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachat
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new chat object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,22 +23,23 @@ New-MgBetaChat [-AdditionalProperties <Hashtable>] [-ChatType <String>] [-Create
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]
  [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
  [-TenantId <String>] [-Topic <String>] [-Viewpoint <IMicrosoftGraphChatViewpoint>] [-WebUrl <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new chat object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -64,15 +62,11 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
-```
-This example shows how to use the New-MgBetaChat Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "group"
@@ -103,15 +97,11 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
-```
-This example shows how to use the New-MgBetaChat Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -134,15 +124,11 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
-```
-This example shows how to use the New-MgBetaChat Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
-
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	chatType = "group"
@@ -173,11 +159,6 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
-```
-This example shows how to use the New-MgBetaChat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -185,7 +166,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -201,7 +182,7 @@ chat
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChat
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChat
 Parameter Sets: Create
 Aliases:
 
@@ -216,7 +197,7 @@ Accept wildcard characters: False
 chatType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -232,7 +213,7 @@ Date and time at which the chat was created.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -248,7 +229,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -265,7 +246,7 @@ Nullable.
 To construct, see NOTES section for INSTALLEDAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppInstallation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -281,7 +262,7 @@ chatMessageInfo
 To construct, see NOTES section for LASTMESSAGEPREVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -297,7 +278,7 @@ Date and time at which the chat was renamed or list of members were last changed
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -314,7 +295,7 @@ Nullable.
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationMember[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -331,7 +312,7 @@ Nullable.
 To construct, see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -347,7 +328,7 @@ teamworkOnlineMeetingInfo
 To construct, see NOTES section for ONLINEMEETINGINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkOnlineMeetingInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkOnlineMeetingInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -364,7 +345,7 @@ Nullable.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAsyncOperation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -380,7 +361,7 @@ A collection of permissions granted to apps for the chat.
 To construct, see NOTES section for PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceSpecificPermissionGrant[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -397,7 +378,7 @@ Nullable.
 To construct, see NOTES section for PINNEDMESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPinnedChatMessageInfo[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPinnedChatMessageInfo[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -414,7 +395,7 @@ Nullable.
 To construct, see NOTES section for TABS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsTab[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsTab[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -430,7 +411,7 @@ The identifier of the tenant in which the chat was created.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -446,7 +427,7 @@ Accept wildcard characters: False
 Only available for group chats.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -462,7 +443,7 @@ chatViewpoint
 To construct, see NOTES section for VIEWPOINT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatViewpoint
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatViewpoint
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -479,7 +460,7 @@ The URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -494,7 +475,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -510,7 +491,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -527,9 +508,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChat
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChat
+
 ## NOTES
 
 ALIASES
@@ -577,8 +560,8 @@ To create the parameters described below, construct a hash table containing the 
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-            - `[Id <String>]`: The identifier of the identity. This property is read-only.
+            - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity.
           - `[Device <IMicrosoftGraphIdentity>]`: identity
           - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[Description <String>]`: 
@@ -646,7 +629,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
     - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
       - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -655,13 +638,13 @@ To create the parameters described below, construct a hash table containing the 
         - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
           - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
         - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
     - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
       - `[Actions <String>]`: chatMessageActions
       - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -699,8 +682,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
     - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
       - `[UserIdentityType <String>]`: teamworkUserIdentityType
   - `[Operations <IMicrosoftGraphTeamsAsyncOperation[]>]`: A collection of all the Teams async operations that ran or are running on the chat. Nullable.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -781,8 +764,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Description <String>]`: 
@@ -812,8 +795,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[IsDeleted <Boolean?>]`: If set to true, the original message has been deleted.
@@ -853,8 +836,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
@@ -866,7 +849,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -875,13 +858,13 @@ To create the parameters described below, construct a hash table containing the 
       - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
         - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
       - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
   - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
     - `[Actions <String>]`: chatMessageActions
     - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -920,8 +903,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[JoinWebUrl <String>]`: The URL which can be clicked on to join or uniquely identify the meeting.
   - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 `OPERATIONS <IMicrosoftGraphTeamsAsyncOperation[]>`: A collection of all the Teams async operations that ran or are running on the chat. Nullable.
@@ -978,8 +961,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
@@ -991,7 +974,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
     - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
       - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1000,13 +983,13 @@ To create the parameters described below, construct a hash table containing the 
         - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
           - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
         - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
     - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
       - `[Actions <String>]`: chatMessageActions
       - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -1080,8 +1063,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Description <String>]`: 
@@ -1104,7 +1087,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastMessageReadDateTime <DateTime?>]`: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
-[New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-1.0)
 
-## RELATED LINKS
-[New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-1.0)

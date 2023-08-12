@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskprogresstaskboardformat
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
+Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
 
 ## SYNTAX
 
@@ -25,7 +25,23 @@ Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat -InputObject <IBook
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
+Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -33,7 +49,7 @@ Retrieve the properties and relationships of **plannerProgressTaskBoardTaskForma
 The unique identifier of businessScenario
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -48,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of businessScenarioTask
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -63,7 +79,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -79,7 +95,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -94,7 +110,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -111,9 +127,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
+
 ## NOTES
 
 ALIASES

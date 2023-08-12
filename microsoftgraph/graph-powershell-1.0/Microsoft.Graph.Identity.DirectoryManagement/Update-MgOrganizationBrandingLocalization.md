@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbrandinglocalization
 schema: 2.0.0
@@ -10,15 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgOrganizationBrandingLocalization -OrganizationId <String>
- -OrganizationalBrandingLocalizationId <String> [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>]
+Update-MgOrganizationBrandingLocalization -OrganizationalBrandingLocalizationId <String>
+ -OrganizationId <String> [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>]
  [-BackgroundImageInputFile <String>] [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>]
  [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>] [-CustomAccountResetCredentialsUrl <String>]
  [-CustomCannotAccessYourAccountText <String>] [-CustomCannotAccessYourAccountUrl <String>]
@@ -28,16 +25,22 @@ Update-MgOrganizationBrandingLocalization -OrganizationId <String>
  [-FaviconInputFile <String>] [-FaviconRelativeUrl <String>] [-HeaderBackgroundColor <String>]
  [-HeaderLogoInputFile <String>] [-HeaderLogoRelativeUrl <String>] [-Id <String>]
  [-LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]
- [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>] [-SignInPageText <String>]
- [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>] [-SquareLogoInputFile <String>]
- [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>]
+ [-SignInPageText <String>] [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>]
+ [-SquareLogoInputFile <String>] [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgOrganizationBrandingLocalization -OrganizationId <String>
- -OrganizationalBrandingLocalizationId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgOrganizationBrandingLocalization -OrganizationalBrandingLocalizationId <String>
+ -OrganizationId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,25 +56,21 @@ Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManage
  [-FaviconInputFile <String>] [-FaviconRelativeUrl <String>] [-HeaderBackgroundColor <String>]
  [-HeaderLogoInputFile <String>] [-HeaderLogoRelativeUrl <String>] [-Id <String>]
  [-LoginPageLayoutConfiguration <IMicrosoftGraphLoginPageLayoutConfiguration>]
- [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>] [-SignInPageText <String>]
- [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>] [-SquareLogoInputFile <String>]
- [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LoginPageTextVisibilitySettings <IMicrosoftGraphLoginPageTextVisibilitySettings>]
+ [-SignInPageText <String>] [-SquareLogoDarkInputFile <String>] [-SquareLogoDarkRelativeUrl <String>]
+ [-SquareLogoInputFile <String>] [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## EXAMPLES
-### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -79,15 +78,11 @@ $params = @{
 }
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
-```
-This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Override a default branding value with a blank string
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	signInPageText = "Welcome to Contoso France."
@@ -95,11 +90,6 @@ $params = @{
 }
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
-```
-This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -107,7 +97,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,12 +109,12 @@ Accept wildcard characters: False
 ```
 
 ### -BackgroundColor
-Color that will appear in place of the background image in low-bandwidth connections.
+Color that appears in place of the background image in low-bandwidth connections.
 We recommend that you use the primary color of your banner logo or your organization color.
 Specify this in hexadecimal format, for example, white is #FFFFFF.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +131,7 @@ The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 19
 A smaller image will reduce bandwidth requirements and make the page load faster.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +147,7 @@ A relative URL for the backgroundImage property that is combined with a CDN base
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -170,11 +160,11 @@ Accept wildcard characters: False
 
 ### -BannerLogoInputFile
 Input File for BannerLogo (A banner version of your company logo that appears on the sign-in page.
-The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -186,11 +176,11 @@ Accept wildcard characters: False
 ```
 
 ### -BannerLogoRelativeUrl
-A relative url for the bannerLogo property that is combined with a CDN base URL from the cdnList to provide the read-only version served by a CDN.
+A relative URL for the bannerLogo property that is combined with a CDN base URL from the cdnList to provide the read-only version served by a CDN.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +195,7 @@ Accept wildcard characters: False
 organizationalBrandingLocalization
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -222,7 +212,7 @@ Several CDN providers are used at the same time for high availability of read re
 Read-only.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -234,10 +224,11 @@ Accept wildcard characters: False
 ```
 
 ### -CustomAccountResetCredentialsUrl
-.
+A custom URL for resetting account credentials.
+This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -249,10 +240,11 @@ Accept wildcard characters: False
 ```
 
 ### -CustomCannotAccessYourAccountText
-.
+A string to replace the default 'Can't access your account' self-service password reset (SSPR) hyperlink text on the sign-in page.
+This text must be in Unicode format and not exceed 256 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -264,10 +256,13 @@ Accept wildcard characters: False
 ```
 
 ### -CustomCannotAccessYourAccountUrl
-.
+A custom URL to replace the default URL of the self-service password reset (SSPR) 'Can't access your account' hyperlink on the sign-in page.
+This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
+DO NOT USE.
+Use customAccountResetCredentialsUrl instead.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -279,10 +274,11 @@ Accept wildcard characters: False
 ```
 
 ### -CustomCssInputFile
-Input File for CustomCss (.)
+Input File for CustomCss (CSS styling that appears on the sign-in page.
+The allowed format is .css format only and not larger than 25 KB.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -294,10 +290,11 @@ Accept wildcard characters: False
 ```
 
 ### -CustomCssRelativeUrl
-.
+A relative URL for the customCSS property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -309,10 +306,11 @@ Accept wildcard characters: False
 ```
 
 ### -CustomForgotMyPasswordText
-.
+A string to replace the default 'Forgot my password' hyperlink text on the sign-in form.
+This text must be in Unicode format and not exceed 256 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -324,10 +322,11 @@ Accept wildcard characters: False
 ```
 
 ### -CustomPrivacyAndCookiesText
-.
+A string to replace the default 'Privacy and Cookies' hyperlink text in the footer.
+This text must be in Unicode format and not exceed 256 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -339,10 +338,11 @@ Accept wildcard characters: False
 ```
 
 ### -CustomPrivacyAndCookiesUrl
-.
+A custom URL to replace the default URL of the 'Privacy and Cookies' hyperlink in the footer.
+This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -354,10 +354,12 @@ Accept wildcard characters: False
 ```
 
 ### -CustomResetItNowText
-.
+A string to replace the default 'reset it now' hyperlink text on the sign-in form.
+This text must be in Unicode format and not exceed 256 characters.
+DO NOT USE: Customization of the 'reset it now' hyperlink text is currently not supported.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -369,10 +371,11 @@ Accept wildcard characters: False
 ```
 
 ### -CustomTermsOfUseText
-.
+A string to replace the the default 'Terms of Use' hyperlink text in the footer.
+This text must be in Unicode format and not exceed 256 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -384,10 +387,11 @@ Accept wildcard characters: False
 ```
 
 ### -CustomTermsOfUseUrl
-.
+A custom URL to replace the default URL of the 'Terms of Use' hyperlink in the footer.
+This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -399,10 +403,10 @@ Accept wildcard characters: False
 ```
 
 ### -FaviconInputFile
-Input File for Favicon (.)
+Input File for Favicon (A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -414,10 +418,11 @@ Accept wildcard characters: False
 ```
 
 ### -FaviconRelativeUrl
-.
+A relative url for the favicon above that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -429,10 +434,10 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderBackgroundColor
-.
+The RGB color to apply to customize the color of the header.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -444,10 +449,12 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderLogoInputFile
-Input File for HeaderLogo (.)
+Input File for HeaderLogo (A company logo that appears in the header of the sign-in page.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -459,10 +466,11 @@ Accept wildcard characters: False
 ```
 
 ### -HeaderLogoRelativeUrl
-.
+A relative URL for the headerLogo property that is combined with a CDN base URL from the cdnList to provide the read-only version served by a CDN.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -478,7 +486,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -494,8 +502,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -510,7 +518,7 @@ loginPageLayoutConfiguration
 To construct, see NOTES section for LOGINPAGELAYOUTCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLoginPageLayoutConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLoginPageLayoutConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -526,7 +534,7 @@ loginPageTextVisibilitySettings
 To construct, see NOTES section for LOGINPAGETEXTVISIBILITYSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLoginPageTextVisibilitySettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLoginPageTextVisibilitySettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -541,8 +549,8 @@ Accept wildcard characters: False
 The unique identifier of organizationalBrandingLocalization
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -556,8 +564,8 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -569,11 +577,11 @@ Accept wildcard characters: False
 
 ### -SignInPageText
 Text that appears at the bottom of the sign-in box.
-You can use this to communicate additional information, such as the phone number to your help desk or a legal statement.
-This text must be Unicode and not exceed 1024 characters.
+Use this to communicate additional information, such as the phone number to your help desk or a legal statement.
+This text must be in Unicode format and not exceed 1024 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -585,10 +593,12 @@ Accept wildcard characters: False
 ```
 
 ### -SquareLogoDarkInputFile
-Input File for SquareLogoDark (.)
+Input File for SquareLogoDark (A square dark version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -600,10 +610,11 @@ Accept wildcard characters: False
 ```
 
 ### -SquareLogoDarkRelativeUrl
-.
+A relative URL for the squareLogoDark property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -616,11 +627,11 @@ Accept wildcard characters: False
 
 ### -SquareLogoInputFile
 Input File for SquareLogo (A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
-Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -632,11 +643,11 @@ Accept wildcard characters: False
 ```
 
 ### -SquareLogoRelativeUrl
-A relative url for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+A relative URL for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -648,11 +659,11 @@ Accept wildcard characters: False
 ```
 
 ### -UsernameHintText
-String that shows as the hint in the username textbox on the sign-in screen.
+A string that shows as the hint in the username textbox on the sign-in screen.
 This text must be a Unicode, without links or code, and can't exceed 64 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -667,7 +678,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -683,7 +694,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -700,10 +711,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationalBrandingLocalization
+
 ## NOTES
 
 ALIASES
@@ -739,18 +753,18 @@ To create the parameters described below, construct a hash table containing the 
 
 `LOGINPAGELAYOUTCONFIGURATION <IMicrosoftGraphLoginPageLayoutConfiguration>`: loginPageLayoutConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsFooterShown <Boolean?>]`: 
-  - `[IsHeaderShown <Boolean?>]`: 
+  - `[IsFooterShown <Boolean?>]`: Option to show the footer on the sign-in page.
+  - `[IsHeaderShown <Boolean?>]`: Option to show the header on the sign-in page.
   - `[LayoutTemplateType <String>]`: layoutTemplateType
 
 `LOGINPAGETEXTVISIBILITYSETTINGS <IMicrosoftGraphLoginPageTextVisibilitySettings>`: loginPageTextVisibilitySettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[HideAccountResetCredentials <Boolean?>]`: 
-  - `[HideCannotAccessYourAccount <Boolean?>]`: 
-  - `[HideForgotMyPassword <Boolean?>]`: 
-  - `[HidePrivacyAndCookies <Boolean?>]`: 
-  - `[HideResetItNow <Boolean?>]`: 
-  - `[HideTermsOfUse <Boolean?>]`: 
+  - `[HideAccountResetCredentials <Boolean?>]`: Option to hide the self-service password reset (SSPR) hyperlinks such as 'Can't access your account?', 'Forgot my password' and 'Reset it now' on the sign-in form.
+  - `[HideCannotAccessYourAccount <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Can't access your account?' hyperlink on the sign-in form.
+  - `[HideForgotMyPassword <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'Forgot my password' hyperlink on the sign-in form.
+  - `[HidePrivacyAndCookies <Boolean?>]`: Option to hide the 'Privacy & Cookies' hyperlink in the footer.
+  - `[HideResetItNow <Boolean?>]`: Option to hide the self-service password reset (SSPR) 'reset it now' hyperlink on the sign-in form.
+  - `[HideTermsOfUse <Boolean?>]`: Option to hide the 'Terms of Use' hyperlink in the footer.
 
 ## RELATED LINKS
-[Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
+

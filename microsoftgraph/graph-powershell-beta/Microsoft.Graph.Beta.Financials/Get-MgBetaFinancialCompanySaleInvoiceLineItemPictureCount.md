@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleinvoicelineitempicturecount
 schema: 2.0.0
@@ -20,24 +20,40 @@ Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureCount -CompanyId <String> -S
 
 ### Get1
 ```
-Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureCount -CompanyId <String> -SalesInvoiceLineId <String>
- -SalesInvoiceId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureCount -InputObject <IFinancialsIdentity> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
+Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureCount -CompanyId <String> -SalesInvoiceId <String>
+ -SalesInvoiceLineId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureCount -InputObject <IFinancialsIdentity> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
+Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureCount -InputObject <IFinancialsIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgBetaFinancialCompanySaleInvoiceLineItemPictureCount -InputObject <IFinancialsIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -45,7 +61,7 @@ Get the number of the resource
 The unique identifier of company
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -60,7 +76,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -76,8 +92,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -91,7 +107,7 @@ Accept wildcard characters: False
 The unique identifier of salesInvoice
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -106,7 +122,7 @@ Accept wildcard characters: False
 The unique identifier of salesInvoiceLine
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -121,7 +137,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -138,9 +154,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES

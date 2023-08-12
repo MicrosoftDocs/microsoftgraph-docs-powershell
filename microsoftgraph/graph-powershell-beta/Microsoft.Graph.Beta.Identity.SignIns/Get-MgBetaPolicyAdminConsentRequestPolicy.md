@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyadminconsentrequestpolicy
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Read the properties and relationships of an adminConsentRequestPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAdminConsentRequestPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,17 +21,13 @@ Get-MgBetaPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Propert
 Read the properties and relationships of an adminConsentRequestPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyAdminConsentRequestPolicy
-```
-This example shows how to use the Get-MgBetaPolicyAdminConsentRequestPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -42,7 +35,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -57,7 +50,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -76,9 +69,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdminConsentRequestPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAdminConsentRequestPolicy?view=graph-powershell-1.0)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaabortprintsharejob
 schema: 2.0.0
@@ -10,45 +10,58 @@ schema: 2.0.0
 ## SYNOPSIS
 Abort a print job.
 Only applications using application permissions can abort a print job.
-Aborting a print job will only succeed if there is a printTask in a `processing` state on the associated print job, started by a trigger that the requesting app created.
+Aborting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAbortPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Invoke-MgAbortPrintShareJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### AbortExpanded (Default)
 ```
-Invoke-MgBetaAbortPrintShareJob -PrintJobId <String> -PrinterShareId <String>
- [-AdditionalProperties <Hashtable>] [-Reason <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaAbortPrintShareJob -PrinterShareId <String> -PrintJobId <String>
+ [-AdditionalProperties <Hashtable>] [-Reason <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Abort
 ```
-Invoke-MgBetaAbortPrintShareJob -PrintJobId <String> -PrinterShareId <String>
+Invoke-MgBetaAbortPrintShareJob -PrinterShareId <String> -PrintJobId <String>
  -BodyParameter <IPathsP8CwgsPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AbortViaIdentityExpanded
-```
-Invoke-MgBetaAbortPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Reason <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AbortViaIdentity
 ```
 Invoke-MgBetaAbortPrintShareJob -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IPathsP8CwgsPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AbortViaIdentityExpanded
+```
+Invoke-MgBetaAbortPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
+ [-Reason <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Abort a print job.
 Only applications using application permissions can abort a print job.
-Aborting a print job will only succeed if there is a printTask in a `processing` state on the associated print job, started by a trigger that the requesting app created.
+Aborting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -56,7 +69,7 @@ For details about how to register a task trigger, see Extending Universal Print 
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AbortExpanded, AbortViaIdentityExpanded
 Aliases:
 
@@ -72,7 +85,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsP8CwgsPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsP8CwgsPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Abort, AbortViaIdentity
 Aliases:
 
@@ -88,8 +101,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
-Parameter Sets: AbortViaIdentityExpanded, AbortViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+Parameter Sets: AbortViaIdentity, AbortViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -103,7 +116,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -118,8 +131,8 @@ Accept wildcard characters: False
 The unique identifier of printerShare
 
 ```yaml
-Type: String
-Parameter Sets: AbortExpanded, Abort
+Type: System.String
+Parameter Sets: Abort, AbortExpanded
 Aliases:
 
 Required: True
@@ -133,8 +146,8 @@ Accept wildcard characters: False
 The unique identifier of printJob
 
 ```yaml
-Type: String
-Parameter Sets: AbortExpanded, Abort
+Type: System.String
+Parameter Sets: Abort, AbortExpanded
 Aliases:
 
 Required: True
@@ -148,7 +161,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: AbortExpanded, AbortViaIdentityExpanded
 Aliases:
 
@@ -163,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -179,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -196,10 +209,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsP8CwgsPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -229,5 +245,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgAbortPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Invoke-MgAbortPrintShareJob?view=graph-powershell-1.0)
 

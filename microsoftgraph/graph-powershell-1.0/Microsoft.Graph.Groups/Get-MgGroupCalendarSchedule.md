@@ -1,81 +1,72 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendareventdelta
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendarschedule
 schema: 2.0.0
 ---
 
-# Get-MgGroupCalendarEventDelta
+# Get-MgGroupCalendarSchedule
 
 ## SYNOPSIS
-Get a set of event resources that have been added, deleted, or updated in a **calendarView** (a range of events defined by start and end dates) of the user's primary calendar.
-Typically, synchronizing events in a **calendarView** in a local store entails a round of multiple **delta** function calls.
-The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
-This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCalendarSchedule?view=graph-powershell-beta)
+Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ## SYNTAX
 
-### Delta (Default)
+### GetExpanded (Default)
 ```
-Get-MgGroupCalendarEventDelta -GroupId <String> -EndDateTime <String> -StartDateTime <String>
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgGroupCalendarSchedule -GroupId <String> [-AdditionalProperties <Hashtable>]
+ [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
+ [-StartTime <IMicrosoftGraphDateTimeZone>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeltaViaIdentity
+### Get
 ```
-Get-MgGroupCalendarEventDelta -InputObject <IGroupsIdentity> -EndDateTime <String> -StartDateTime <String>
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-Count] [<CommonParameters>]
+Get-MgGroupCalendarSchedule -GroupId <String>
+ -BodyParameter <IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgGroupCalendarSchedule -InputObject <IGroupsIdentity>
+ -BodyParameter <IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgGroupCalendarSchedule -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
+ [-StartTime <IMicrosoftGraphDateTimeZone>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get a set of event resources that have been added, deleted, or updated in a **calendarView** (a range of events defined by start and end dates) of the user's primary calendar.
-Typically, synchronizing events in a **calendarView** in a local store entails a round of multiple **delta** function calls.
-The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
-This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
+Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	Schedules = @(
-		"adelev@contoso.onmicrosoft.com"
-		"meganb@contoso.onmicrosoft.com"
-	)
-	StartTime = @{
-		DateTime = "2019-03-15T09:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	EndTime = @{
-		DateTime = "2019-03-15T18:00:00"
-		TimeZone = "Pacific Standard Time"
-	}
-	AvailabilityViewInterval = 60
-}
-
-# A UPN can also be used as -UserId.
-Get-MgUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
+{{ Add code here }}
 ```
-This example shows how to use the Get-MgGroupCalendarSchedule Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
 
 
 ## PARAMETERS
 
-### -All
-List all pages.
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: Delta
+Type: System.Collections.Hashtable
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -85,12 +76,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Count
-Include count of items
+### -AvailabilityViewInterval
+.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: DeltaViaIdentity
+Type: System.Int32
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -100,44 +91,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: Delta
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EndDateTime
-The end date and time of the time range in the function, represented in ISO 8601 format.
-For example, 2019-11-08T20:00:00-08:00
-
-```yaml
-Type: String
-Parameter Sets: (All)
+Type: Microsoft.Graph.PowerShell.Models.IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Get, GetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Filter
-Filter items by property values
+### -EndTime
+dateTimeTimeZone
+To construct, see NOTES section for ENDTIME properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -151,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: Delta
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -167,8 +143,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: DeltaViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -178,12 +154,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
+### -Schedules
+.
 
 ```yaml
-Type: Int32
-Parameter Sets: Delta
+Type: System.String[]
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -193,27 +169,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
+### -StartTime
+dateTimeTimeZone
+To construct, see NOTES section for STARTTIME properties and create a hash table.
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
-
-```yaml
-Type: String
-Parameter Sets: (All)
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -223,13 +185,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sort
-Order items by property values
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: String[]
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
-Aliases: OrderBy
+Aliases: cf
 
 Required: False
 Position: Named
@@ -238,44 +200,14 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -StartDateTime
-The start date and time of the time range in the function, represented in ISO 8601 format.
-For example, 2019-11-08T20:00:00-08:00
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
 
 ```yaml
-Type: String
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
+Aliases: wi
 
 Required: False
 Position: Named
@@ -290,9 +222,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
+### Microsoft.Graph.PowerShell.Models.IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScheduleInformation
+
 ## NOTES
 
 ALIASES
@@ -301,6 +237,21 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+`BODYPARAMETER <IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AvailabilityViewInterval <Int32?>]`: 
+  - `[EndTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+  - `[Schedules <String[]>]`: 
+  - `[StartTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+
+`ENDTIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 `INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -339,5 +290,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[Token <String>]`: Usage: token='{token}'
   - `[User <String>]`: Usage: User='{User}'
 
+`STARTTIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+
 ## RELATED LINKS
-[Get-MgBetaGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCalendarSchedule?view=graph-powershell-beta)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausersigninsession
 schema: 2.0.0
@@ -8,25 +8,46 @@ schema: 2.0.0
 # Revoke-MgBetaUserSignInSession
 
 ## SYNOPSIS
-Invoke action revokeSignInSessions
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Revoke-MgUserSignInSession](/powershell/module/Microsoft.Graph.Users.Actions/Revoke-MgUserSignInSession?view=graph-powershell-1.0)
+Invalidates all the refresh tokens issued to applications for a user (as well as session cookies in a user's browser), by resetting the signInSessionsValidFromDateTime user property to the current date-time.
+Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device.
+This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they have previously consented to, independent of device.
+If the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.
+If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
 ## SYNTAX
 
 ### Revoke (Default)
 ```
-Revoke-MgBetaUserSignInSession -UserId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Revoke-MgBetaUserSignInSession -UserId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RevokeViaIdentity
 ```
-Revoke-MgBetaUserSignInSession -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Revoke-MgBetaUserSignInSession -InputObject <IUsersActionsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action revokeSignInSessions
+Invalidates all the refresh tokens issued to applications for a user (as well as session cookies in a user's browser), by resetting the signInSessionsValidFromDateTime user property to the current date-time.
+Typically, this operation is performed (by the user or an administrator) if the user has a lost or stolen device.
+This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they have previously consented to, independent of device.
+If the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.
+If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -35,7 +56,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: RevokeViaIdentity
 Aliases:
 
@@ -50,7 +71,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Revoke
 Aliases:
 
@@ -65,7 +86,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -81,7 +102,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -98,9 +119,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -153,5 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Revoke-MgUserSignInSession](/powershell/module/Microsoft.Graph.Users.Actions/Revoke-MgUserSignInSession?view=graph-powershell-1.0)
 

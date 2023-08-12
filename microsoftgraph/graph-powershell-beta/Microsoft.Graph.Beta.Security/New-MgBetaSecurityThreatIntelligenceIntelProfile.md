@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligenceintelprofile
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to intelProfiles for security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceIntelProfile?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,17 +19,33 @@ New-MgBetaSecurityThreatIntelligenceIntelProfile [-AdditionalProperties <Hashtab
  [-Description <IMicrosoftGraphSecurityFormattedContent>] [-FirstActiveDateTime <DateTime>] [-Id <String>]
  [-Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>] [-Kind <String>]
  [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Targets <String[]>] [-Title <String>]
- [-Tradecraft <IMicrosoftGraphSecurityFormattedContent>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tradecraft <IMicrosoftGraphSecurityFormattedContent>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityThreatIntelligenceIntelProfile -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfile>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to intelProfiles for security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -40,7 +53,7 @@ Create new navigation property to intelProfiles for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +68,7 @@ Accept wildcard characters: False
 A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +84,7 @@ intelligenceProfile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
 Parameter Sets: Create
 Aliases:
 
@@ -83,11 +96,11 @@ Accept wildcard characters: False
 ```
 
 ### -CountriesOrRegionsOfOrigin
-.
+The country/region of origin for the given actor or threat associated with this intelligenceProfile.
 To construct, see NOTES section for COUNTRIESORREGIONSOFORIGIN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +116,7 @@ formattedContent
 To construct, see NOTES section for DESCRIPTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFormattedContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFormattedContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +133,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -136,7 +149,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +165,7 @@ Includes an assemblage of high-fidelity network indicators of compromise.
 To construct, see NOTES section for INDICATORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfileIndicator[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +180,7 @@ Accept wildcard characters: False
 intelligenceProfileKind
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -183,7 +196,7 @@ formattedContent
 To construct, see NOTES section for SUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFormattedContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFormattedContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -198,7 +211,7 @@ Accept wildcard characters: False
 Known targets related to this intelligenceProfile.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -213,7 +226,7 @@ Accept wildcard characters: False
 The title of this intelligenceProfile.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -229,7 +242,7 @@ formattedContent
 To construct, see NOTES section for TRADECRAFT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFormattedContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFormattedContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -244,7 +257,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -260,7 +273,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -277,9 +290,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile
+
 ## NOTES
 
 ALIASES
@@ -293,9 +308,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Aliases <String[]>]`: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
-  - `[CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]`: 
-    - `[Code <String>]`: 
-    - `[Label <String>]`: 
+  - `[CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]`: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+    - `[Code <String>]`: A codified representation for this country/region of origin.
+    - `[Label <String>]`: A display label for this ountry/region of origin.
   - `[Description <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of this formattedContent.
@@ -315,9 +330,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: The title of this intelligenceProfile.
   - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
 
-`COUNTRIESORREGIONSOFORIGIN <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>`: .
-  - `[Code <String>]`: 
-  - `[Label <String>]`: 
+`COUNTRIESORREGIONSOFORIGIN <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>`: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+  - `[Code <String>]`: A codified representation for this country/region of origin.
+  - `[Label <String>]`: A display label for this ountry/region of origin.
 
 `DESCRIPTION <IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -344,5 +359,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
-[New-MgSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceIntelProfile?view=graph-powershell-1.0)
 

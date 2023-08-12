@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityprovider
 schema: 2.0.0
@@ -8,44 +8,37 @@ schema: 2.0.0
 # Remove-MgBetaIdentityProvider
 
 ## SYNOPSIS
-Delete an identity provider resource that is of the type specified by the **id** in the request.
+Delete an identity provider resource that is of the type specified by the id in the request.
 Among the types of providers derived from identityProviderBase, you can currently delete a socialIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently delete a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityProvider?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaIdentityProvider -IdentityProviderBaseId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaIdentityProvider -IdentityProviderBaseId <String> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaIdentityProvider -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaIdentityProvider -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete an identity provider resource that is of the type specified by the **id** in the request.
+Delete an identity provider resource that is of the type specified by the id in the request.
 Among the types of providers derived from identityProviderBase, you can currently delete a socialIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently delete a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Remove-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
-```
-This example shows how to use the Remove-MgBetaIdentityProvider Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -53,7 +46,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of identityProviderBase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -68,7 +61,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -84,7 +77,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -99,7 +92,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -114,7 +107,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -130,7 +123,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -147,9 +140,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -236,4 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityProvider?view=graph-powershell-1.0)
+

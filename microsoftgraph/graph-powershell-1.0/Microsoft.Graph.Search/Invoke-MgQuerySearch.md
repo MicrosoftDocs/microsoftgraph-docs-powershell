@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch
 schema: 2.0.0
@@ -11,26 +11,77 @@ schema: 2.0.0
 Runs the query specified in the request body.
 Search results are provided in the response.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### QueryExpanded (Default)
 ```
-Invoke-MgQuerySearch [-AdditionalProperties <Hashtable>] [-Requests <IMicrosoftGraphSearchRequest[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgQuerySearch [-AdditionalProperties <Hashtable>] [-Requests <IMicrosoftGraphSearchRequest[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Query
 ```
 Invoke-MgQuerySearch -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Runs the query specified in the request body.
 Search results are provided in the response.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Search
+```
+
+$params = @{
+	requests = @(
+		@{
+			entityTypes = @(
+				"externalItem"
+			)
+			contentSources = @(
+				"/external/connections/connectionfriendlyname"
+			)
+			query = @{
+				queryString = "contoso product"
+			}
+			from = 0
+			size = 25
+			fields = @(
+				"title"
+				"description"
+			)
+		}
+	)
+}
+
+Invoke-MgQuerySearch -BodyParameter $params
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Search
+```
+
+$params = @{
+	requests = @(
+		@{
+			entityTypes = @(
+				"listItem"
+			)
+			query = @{
+				queryString = "contoso"
+				queryTemplate = '{searchTerms} CreatedBy:Bob"
+			}
+			from = 0
+			size = 25
+		}
+	)
+}
+
+Invoke-MgQuerySearch -BodyParameter $params
 
 ## PARAMETERS
 
@@ -38,7 +89,7 @@ Search results are provided in the response.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: QueryExpanded
 Aliases:
 
@@ -54,7 +105,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Query
 Aliases:
 
@@ -70,7 +121,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for REQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchRequest[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchRequest[]
 Parameter Sets: QueryExpanded
 Aliases:
 
@@ -85,7 +136,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -101,7 +152,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -118,9 +169,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchResponse
+
 ## NOTES
 
 ALIASES
@@ -217,8 +270,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The name of the property to sort on. Required.
 
 ## RELATED LINKS
-[Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
 

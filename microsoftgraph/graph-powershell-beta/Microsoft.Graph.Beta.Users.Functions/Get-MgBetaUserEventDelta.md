@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausereventdelta
 schema: 2.0.0
@@ -9,42 +9,55 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a set of event resources that have been added, deleted, or updated in one or more calendars.
-You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar.
+You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a calendarView (range of events defined by start and end dates) of a calendar.
 The calendar can be the default calendar or some other specified calendar of the user's.
-In the case of getting incremental changes on **calendarView**, the calendar can be a group calendar as well.
-Typically, synchronizing events in a calendar or **calendarView** in a local store entails a round of multiple **delta** function calls.
-The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
+In the case of getting incremental changes on calendarView, the calendar can be a group calendar as well.
+Typically, synchronizing events in a calendar or calendarView in a local store entails a round of multiple delta function calls.
+The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified calendar, without having to fetch all the events of that calendar from the server every time.
-The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserEventDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserEventDelta?view=graph-powershell-1.0)
+The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
 
 ## SYNTAX
 
 ### Delta (Default)
 ```
 Get-MgBetaUserEventDelta -UserId <String> -EndDateTime <String> -StartDateTime <String> [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
 ```
 Get-MgBetaUserEventDelta -InputObject <IUsersFunctionsIdentity> -EndDateTime <String> -StartDateTime <String>
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-Count] [<CommonParameters>]
+ [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get a set of event resources that have been added, deleted, or updated in one or more calendars.
-You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar.
+You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a calendarView (range of events defined by start and end dates) of a calendar.
 The calendar can be the default calendar or some other specified calendar of the user's.
-In the case of getting incremental changes on **calendarView**, the calendar can be a group calendar as well.
-Typically, synchronizing events in a calendar or **calendarView** in a local store entails a round of multiple **delta** function calls.
-The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
+In the case of getting incremental changes on calendarView, the calendar can be a group calendar as well.
+Typically, synchronizing events in a calendar or calendarView in a local store entails a round of multiple delta function calls.
+The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified calendar, without having to fetch all the events of that calendar from the server every time.
-The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
+The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ The following table lists the differences between the **delta** function on even
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: Delta
 Aliases:
 
@@ -67,7 +80,7 @@ Accept wildcard characters: False
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: DeltaViaIdentity
 Aliases:
 
@@ -83,7 +96,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta
 Aliases: CV
 
@@ -99,7 +112,7 @@ The end date and time of the time range in the function, represented in ISO 8601
 For example, 2019-11-08T20:00:00-08:00
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -114,7 +127,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -130,7 +143,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
 Parameter Sets: DeltaViaIdentity
 Aliases:
 
@@ -145,7 +158,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: Delta
 Aliases:
 
@@ -160,7 +173,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -175,7 +188,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -190,7 +218,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -206,7 +234,7 @@ The start date and time of the time range in the function, represented in ISO 86
 For example, 2019-11-08T20:00:00-08:00
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -221,7 +249,7 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
 
@@ -236,26 +264,11 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -268,9 +281,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent
+
 ## NOTES
 
 ALIASES
@@ -320,5 +335,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserEventDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserEventDelta?view=graph-powershell-1.0)
 

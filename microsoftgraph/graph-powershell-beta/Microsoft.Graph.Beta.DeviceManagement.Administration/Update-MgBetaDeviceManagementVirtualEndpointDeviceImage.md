@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointdeviceimage
 schema: 2.0.0
@@ -16,34 +16,50 @@ Update the navigation property deviceImages in deviceManagement
 ```
 Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ExpirationDate <DateTime>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>] [-OSStatus <String>] [-OperatingSystem <String>]
- [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>] [-Version <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-OperatingSystem <String>] [-OSBuildNumber <String>] [-OSStatus <String>]
+ [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>] [-Version <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId <String>
- -BodyParameter <IMicrosoftGraphCloudPcDeviceImage> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcDeviceImage> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphCloudPcDeviceImage> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ExpirationDate <DateTime>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>] [-OSStatus <String>] [-OperatingSystem <String>]
- [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>] [-Version <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCloudPcDeviceImage> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-OperatingSystem <String>] [-OSBuildNumber <String>] [-OSStatus <String>]
+ [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>] [-Version <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceImages in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Update the navigation property deviceImages in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ cloudPcDeviceImage
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcDeviceImage
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcDeviceImage
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of cloudPcDeviceImage
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -97,7 +113,7 @@ Accept wildcard characters: False
 The display name of the image.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +128,7 @@ Accept wildcard characters: False
 The date the image became unavailable.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +144,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +160,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -161,7 +177,7 @@ The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time.
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +193,7 @@ The operating system of the image.
 For example, Windows 10 Enterprise.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +209,7 @@ The OS build version of the image.
 For example, 1909.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +224,7 @@ Accept wildcard characters: False
 cloudPcDeviceImageOsStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +240,7 @@ The ID of the source image resource on Azure.
 Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +255,7 @@ Accept wildcard characters: False
 cloudPcDeviceImageStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -254,7 +270,7 @@ Accept wildcard characters: False
 cloudPcDeviceImageStatusDetails
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,7 +286,7 @@ The image version.
 For example, 0.0.1 and 1.5.13.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +301,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -301,7 +317,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -318,10 +334,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcDeviceImage
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcDeviceImage
+
 ## NOTES
 
 ALIASES
@@ -353,6 +372,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
   - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
   - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
+  - `[CloudPcFrontLineServicePlanId <String>]`: The unique identifier of cloudPcFrontLineServicePlan
   - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection

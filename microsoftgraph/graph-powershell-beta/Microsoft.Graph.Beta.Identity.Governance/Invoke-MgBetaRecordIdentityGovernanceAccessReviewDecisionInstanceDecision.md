@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetarecordidentitygovernanceaccessreviewdecisioninstancedecision
 schema: 2.0.0
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 As a reviewer of an access review, record a decision for an accessReviewInstanceDecisionItem that is assigned to you and that matches the principal or resource IDs specified.
-If no IDs are specified, the decisions will apply to every **accessReviewInstanceDecisionItem** for which you are the reviewer.
+If no IDs are specified, the decisions will apply to every accessReviewInstanceDecisionItem for which you are the reviewer.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ If no IDs are specified, the decisions will apply to every **accessReviewInstanc
 ```
 Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecisionInstanceDecision
  -AccessReviewInstanceDecisionItemId <String> [-AdditionalProperties <Hashtable>] [-Decision <String>]
- [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -26,15 +26,7 @@ Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecisionInstanceDecision
 Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecisionInstanceDecision
  -AccessReviewInstanceDecisionItemId <String>
  -BodyParameter <IPathsDkccumIdentitygovernanceAccessreviewsDecisionsAccessreviewinstancedecisionitemIdInstanceDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RecordViaIdentityExpanded
-```
-Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecisionInstanceDecision
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Decision <String>]
- [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RecordViaIdentity
@@ -42,12 +34,36 @@ Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecisionInstanceDecision
 Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecisionInstanceDecision
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPathsDkccumIdentitygovernanceAccessreviewsDecisionsAccessreviewinstancedecisionitemIdInstanceDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RecordViaIdentityExpanded
+```
+Invoke-MgBetaRecordIdentityGovernanceAccessReviewDecisionInstanceDecision
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Decision <String>]
+ [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 As a reviewer of an access review, record a decision for an accessReviewInstanceDecisionItem that is assigned to you and that matches the principal or resource IDs specified.
-If no IDs are specified, the decisions will apply to every **accessReviewInstanceDecisionItem** for which you are the reviewer.
+If no IDs are specified, the decisions will apply to every accessReviewInstanceDecisionItem for which you are the reviewer.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -55,8 +71,8 @@ If no IDs are specified, the decisions will apply to every **accessReviewInstanc
 The unique identifier of accessReviewInstanceDecisionItem
 
 ```yaml
-Type: String
-Parameter Sets: RecordExpanded, Record
+Type: System.String
+Parameter Sets: Record, RecordExpanded
 Aliases:
 
 Required: True
@@ -70,7 +86,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -86,7 +102,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsDkccumIdentitygovernanceAccessreviewsDecisionsAccessreviewinstancedecisionitemIdInstanceDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsDkccumIdentitygovernanceAccessreviewsDecisionsAccessreviewinstancedecisionitemIdInstanceDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Record, RecordViaIdentity
 Aliases:
 
@@ -101,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -117,8 +133,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: RecordViaIdentityExpanded, RecordViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: RecordViaIdentity, RecordViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,7 +148,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -147,7 +163,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -162,7 +178,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -177,7 +193,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -192,7 +208,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +224,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -225,10 +241,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsDkccumIdentitygovernanceAccessreviewsDecisionsAccessreviewinstancedecisionitemIdInstanceDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

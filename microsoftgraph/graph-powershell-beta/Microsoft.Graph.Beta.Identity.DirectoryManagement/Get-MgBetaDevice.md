@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevice
 schema: 2.0.0
@@ -9,18 +9,15 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the properties and relationships of a device object.
-Since the **device** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **device** instance.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDevice?view=graph-powershell-1.0)
+Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBetaDevice [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaDevice [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
@@ -36,31 +33,23 @@ Get-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Get the properties and relationships of a device object.
-Since the **device** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **device** instance.
+Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
 
 ## EXAMPLES
-### Example 1: Get a device
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaDevice -DeviceId $deviceId
-```
-This example shows how to use the Get-MgBetaDevice Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get a device and return only its id and extensionAttributes properties
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaDevice -DeviceId $deviceId -Property "id,extensionAttributes"
-```
-This example shows how to use the Get-MgBetaDevice Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -68,7 +57,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -84,7 +73,7 @@ Indicates the requested consistency level.
 Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -100,7 +89,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -115,7 +104,7 @@ Accept wildcard characters: False
 The unique identifier of device
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -130,7 +119,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -145,7 +134,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -161,7 +150,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -176,7 +165,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -191,7 +180,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -206,7 +195,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -221,7 +225,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -236,24 +240,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -268,9 +257,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
+
 ## NOTES
 
 ALIASES
@@ -325,4 +316,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDevice?view=graph-powershell-1.0)
+

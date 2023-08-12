@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetainstantiateapplicationtemplate
 schema: 2.0.0
@@ -10,46 +10,44 @@ schema: 2.0.0
 ## SYNOPSIS
 Add an instance of an application from the Azure AD application gallery into your directory.
 You can also use this API to instantiate non-gallery apps.
-Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Invoke-MgInstantiateApplicationTemplate?view=graph-powershell-1.0)
+Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
 
 ## SYNTAX
 
 ### InstantiateExpanded (Default)
 ```
-Invoke-MgBetaInstantiateApplicationTemplate -ApplicationTemplateId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaInstantiateApplicationTemplate -ApplicationTemplateId <String>
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Instantiate
 ```
 Invoke-MgBetaInstantiateApplicationTemplate -ApplicationTemplateId <String>
  -BodyParameter <IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### InstantiateViaIdentityExpanded
-```
-Invoke-MgBetaInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### InstantiateViaIdentity
 ```
 Invoke-MgBetaInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### InstantiateViaIdentityExpanded
+```
+Invoke-MgBetaInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add an instance of an application from the Azure AD application gallery into your directory.
 You can also use this API to instantiate non-gallery apps.
-Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaInstantiateApplicationTemplate Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -57,8 +55,8 @@ $params = @{
 }
 Invoke-MgBetaInstantiateApplicationTemplate -ApplicationTemplateId $applicationTemplateId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaInstantiateApplicationTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -66,7 +64,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: InstantiateExpanded, InstantiateViaIdentityExpanded
 Aliases:
 
@@ -81,8 +79,8 @@ Accept wildcard characters: False
 The unique identifier of applicationTemplate
 
 ```yaml
-Type: String
-Parameter Sets: InstantiateExpanded, Instantiate
+Type: System.String
+Parameter Sets: Instantiate, InstantiateExpanded
 Aliases:
 
 Required: True
@@ -97,7 +95,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Instantiate, InstantiateViaIdentity
 Aliases:
 
@@ -112,7 +110,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: InstantiateExpanded, InstantiateViaIdentityExpanded
 Aliases:
 
@@ -128,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: InstantiateViaIdentityExpanded, InstantiateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: InstantiateViaIdentity, InstantiateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,7 +141,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -159,7 +157,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -176,10 +174,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplicationServicePrincipal
+
 ## NOTES
 
 ALIASES
@@ -225,4 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Invoke-MgInstantiateApplicationTemplate?view=graph-powershell-1.0)
+

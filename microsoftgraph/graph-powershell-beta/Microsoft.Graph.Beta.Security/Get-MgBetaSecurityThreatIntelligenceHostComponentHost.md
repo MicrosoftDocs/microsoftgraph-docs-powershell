@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostcomponenthost
 schema: 2.0.0
@@ -11,9 +11,6 @@ schema: 2.0.0
 The host related to this component.
 This is a reverse navigation property.
 When navigating to components from a host, this should be assumed to be a return reference.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,13 +31,29 @@ The host related to this component.
 This is a reverse navigation property.
 When navigating to components from a host, this should be assumed to be a return reference.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -55,7 +68,7 @@ Accept wildcard characters: False
 The unique identifier of hostComponent
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -71,7 +84,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -86,7 +99,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -103,9 +116,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHost
+
 ## NOTES
 
 ALIASES
@@ -150,7 +165,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
   - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
   - `[IncidentId <String>]`: The unique identifier of incident
@@ -173,6 +190,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
   - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
@@ -186,7 +204,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-1.0)
 

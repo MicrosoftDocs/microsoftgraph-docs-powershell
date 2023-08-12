@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicestartupprocessperformance
 schema: 2.0.0
@@ -16,19 +16,35 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPer
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
  [-AdditionalProperties <Hashtable>] [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int64>]
- [-MedianImpactInMs2 <Int64>] [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>]
- [-TotalImpactInMS <Int64>] [-TotalImpactInMs2 <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int64>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPerformance for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +52,7 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPer
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +68,7 @@ The user experience analytics device startup process performance.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +85,7 @@ Supports: $filter, $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +101,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,24 +118,7 @@ Supports: $filter, $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: Int64
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MedianImpactInMs2
-The median impact of startup process on device boot time in milliseconds.
-Supports: $filter, $select, $OrderBy.
-Read-only.
-
-```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +136,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -155,7 +154,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -173,7 +172,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,24 +189,7 @@ Supports: $filter, $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: Int64
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TotalImpactInMs2
-The total impact of startup process on device boot time in milliseconds.
-Supports: $filter, $select, $OrderBy.
-Read-only.
-
-```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -238,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -255,9 +237,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
+
 ## NOTES
 
 ALIASES
@@ -272,12 +256,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeviceCount <Int64?>]`: The count of devices which initiated this process on startup. Supports: $filter, $select, $OrderBy. Read-only.
   - `[MedianImpactInMS <Int64?>]`: The median impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.
-  - `[MedianImpactInMs2 <Int64?>]`: The median impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.
   - `[ProcessName <String>]`: The name of the startup process. Examples: outlook, excel. Supports: $select, $OrderBy. Read-only.
   - `[ProductName <String>]`: The product name of the startup process. Examples: Microsoft Outlook, Microsoft Excel. Supports: $select, $OrderBy. Read-only.
   - `[Publisher <String>]`: The publisher of the startup process. Examples: Microsoft Corporation, Contoso Corp. Supports: $select, $OrderBy. Read-only.
   - `[TotalImpactInMS <Int64?>]`: The total impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.
-  - `[TotalImpactInMs2 <Int64?>]`: The total impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.
 
 ## RELATED LINKS
 

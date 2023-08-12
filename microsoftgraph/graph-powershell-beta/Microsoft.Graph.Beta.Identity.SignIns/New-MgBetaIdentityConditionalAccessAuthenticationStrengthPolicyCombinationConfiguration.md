@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration
 schema: 2.0.0
@@ -11,57 +11,72 @@ schema: 2.0.0
 Create a new authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
 ```
 New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
  -AuthenticationStrengthPolicyId <String> [-AdditionalProperties <Hashtable>]
- [-AppliesToCombinations <String[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AppliesToCombinations <String[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
  -AuthenticationStrengthPolicyId <String>
- -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentity
 ```
 New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
- -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-AppliesToCombinations <String[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
+ -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
  -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-AppliesToCombinations <String[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AppliesToCombinations <String[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentityExpanded1
 ```
 New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
- -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
- -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AppliesToCombinations <String[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -69,8 +84,8 @@ In use, only fido2combinationConfigurations may be created, and these may only b
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -86,8 +101,8 @@ Must be an allowedCombinations object that's defined for the authenticationStren
 The only possible value for fido2combinationConfigurations is 'fido2'.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -101,8 +116,8 @@ Accept wildcard characters: False
 The unique identifier of authenticationStrengthPolicy
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -117,8 +132,8 @@ authenticationCombinationConfiguration
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationCombinationConfiguration
-Parameter Sets: Create1, CreateViaIdentity1, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
+Parameter Sets: Create1, CreateViaIdentity, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -133,8 +148,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -149,8 +164,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateViaIdentity1, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentity1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -164,7 +179,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -180,7 +195,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -197,10 +212,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
+
 ## NOTES
 
 ALIASES
@@ -292,5 +310,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-1.0)
 

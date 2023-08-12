@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflow
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new b2xIdentityUserFlow object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlow?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -23,17 +20,33 @@ New-MgBetaIdentityB2XUserFlow [-AdditionalProperties <Hashtable>]
  [-Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]
  [-UserAttributeAssignments <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>]
  [-UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase[]>] [-UserFlowType <String>]
- [-UserFlowTypeVersion <Single>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserFlowTypeVersion <Single>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow> [-WhatIf] [-Confirm]
+New-MgBetaIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new b2xIdentityUserFlow object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -41,7 +54,7 @@ Create a new b2xIdentityUserFlow object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -57,7 +70,7 @@ userFlowApiConnectorConfiguration
 To construct, see NOTES section for APICONNECTORCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserFlowApiConnectorConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserFlowApiConnectorConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +86,7 @@ b2xIdentityUserFlow
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphB2XIdentityUserFlow
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2XIdentityUserFlow
 Parameter Sets: Create
 Aliases:
 
@@ -89,7 +102,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -105,7 +118,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for IDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityProvider[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProvider[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -123,7 +136,7 @@ You cannot create custom languages in self-service sign up user flows.
 To construct, see NOTES section for LANGUAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserFlowLanguageConfiguration[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserFlowLanguageConfiguration[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -139,7 +152,7 @@ The user attribute assignments included in the user flow.
 To construct, see NOTES section for USERATTRIBUTEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -155,7 +168,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for USERFLOWIDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityProviderBase[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProviderBase[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -170,7 +183,7 @@ Accept wildcard characters: False
 userFlowType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -185,7 +198,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Single
+Type: System.Single
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -200,7 +213,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -216,7 +229,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -233,9 +246,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2XIdentityUserFlow
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2XIdentityUserFlow
+
 ## NOTES
 
 ALIASES
@@ -276,7 +291,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityProviders <IMicrosoftGraphIdentityProvider[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider. This is a required field.  Required. Not nullable.
-    - `[ClientSecret <String>]`: The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return ****. This is a required field. Required. Not nullable.
+    - `[ClientSecret <String>]`: The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return . This is a required field. Required. Not nullable.
     - `[Name <String>]`: The display name of the identity provider. Not nullable.
     - `[Type <String>]`: The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo,QQ, WeChat, OpenIDConnect. Not nullable.
   - `[Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]`: The languages supported for customization within the user flow. Language customization is enabled by default in self-service sign up user flow. You cannot create custom languages in self-service sign up user flows.
@@ -310,7 +325,7 @@ To create the parameters described below, construct a hash table containing the 
 `IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider[]>`: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ClientId <String>]`: The client ID for the application obtained when registering the application with the identity provider. This is a required field.  Required. Not nullable.
-  - `[ClientSecret <String>]`: The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return ****. This is a required field. Required. Not nullable.
+  - `[ClientSecret <String>]`: The client secret for the application obtained when registering the application with the identity provider. This is write-only. A read operation will return . This is a required field. Required. Not nullable.
   - `[Name <String>]`: The display name of the identity provider. Not nullable.
   - `[Type <String>]`: The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo,QQ, WeChat, OpenIDConnect. Not nullable.
 
@@ -345,8 +360,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS
-[New-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlow?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[New-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlow?view=graph-powershell-1.0)
 

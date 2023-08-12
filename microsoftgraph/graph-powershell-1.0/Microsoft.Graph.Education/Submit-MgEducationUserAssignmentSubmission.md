@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/submit-mgeducationuserassignmentsubmission
 schema: 2.0.0
@@ -10,48 +10,41 @@ schema: 2.0.0
 ## SYNOPSIS
 Indicate that a student is done with the work and is ready to hand in the assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from `working` to `submitted`.
-During the submit process, all the resources are copied to the **submittedResources** bucket.
+This method changes the status of the submission from working to submitted.
+During the submit process, all the resources are copied to the submittedResources bucket.
 The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Submit-MgBetaEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationUserAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Submit (Default)
 ```
 Submit-MgEducationUserAssignmentSubmission -EducationAssignmentId <String> -EducationSubmissionId <String>
- -EducationUserId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -EducationUserId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SubmitViaIdentity
 ```
-Submit-MgEducationUserAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Submit-MgEducationUserAssignmentSubmission -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Indicate that a student is done with the work and is ready to hand in the assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from `working` to `submitted`.
-During the submit process, all the resources are copied to the **submittedResources** bucket.
+This method changes the status of the submission from working to submitted.
+During the submit process, all the resources are copied to the submittedResources bucket.
 The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Education
+```
 
 Submit-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-```
-This example shows how to use the Submit-MgEducationUserAssignmentSubmission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -59,7 +52,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Submit
 Aliases:
 
@@ -74,7 +67,7 @@ Accept wildcard characters: False
 The unique identifier of educationSubmission
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Submit
 Aliases:
 
@@ -89,7 +82,7 @@ Accept wildcard characters: False
 The unique identifier of educationUser
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Submit
 Aliases:
 
@@ -105,7 +98,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
 Parameter Sets: SubmitViaIdentity
 Aliases:
 
@@ -120,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -136,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -153,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
+
 ## NOTES
 
 ALIASES
@@ -178,4 +173,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Submit-MgBetaEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationUserAssignmentSubmission?view=graph-powershell-beta)
+

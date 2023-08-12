@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/export-mgbetacomplianceediscoverycasereviewset
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Export-MgBetaComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Initiate an export from a **reviewSet**.
+Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
 
 ## SYNTAX
@@ -18,14 +18,21 @@ For details, see Export documents from a review set in Advanced eDiscovery.
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> -ReviewSetId <String>
  [-AdditionalProperties <Hashtable>] [-AzureBlobContainer <String>] [-AzureBlobToken <String>]
  [-Description <String>] [-ExportOptions <String>] [-ExportStructure <String>] [-OutputName <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Export
 ```
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> -ReviewSetId <String>
  -BodyParameter <IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ExportViaIdentity
+```
+Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
+ -BodyParameter <IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ExportViaIdentityExpanded
@@ -33,22 +40,16 @@ Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId <String> -ReviewSetId <St
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
  [-AdditionalProperties <Hashtable>] [-AzureBlobContainer <String>] [-AzureBlobToken <String>]
  [-Description <String>] [-ExportOptions <String>] [-ExportStructure <String>] [-OutputName <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ExportViaIdentity
-```
-Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
- -BodyParameter <IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Initiate an export from a **reviewSet**.
+Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
 
 ## EXAMPLES
-### Example 1: Using the Export-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -59,8 +60,8 @@ $params = @{
 }
 Export-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
 ```
-This example shows how to use the Export-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -68,7 +69,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -83,7 +84,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -98,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -114,7 +115,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Export, ExportViaIdentity
 Aliases:
 
@@ -129,8 +130,8 @@ Accept wildcard characters: False
 The unique identifier of case
 
 ```yaml
-Type: String
-Parameter Sets: ExportExpanded, Export
+Type: System.String
+Parameter Sets: Export, ExportExpanded
 Aliases:
 
 Required: True
@@ -144,7 +145,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -159,7 +160,7 @@ Accept wildcard characters: False
 exportOptions
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -174,7 +175,7 @@ Accept wildcard characters: False
 exportFileStructure
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -190,8 +191,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
-Parameter Sets: ExportViaIdentityExpanded, ExportViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+Parameter Sets: ExportViaIdentity, ExportViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -205,7 +206,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -220,7 +221,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -235,8 +236,8 @@ Accept wildcard characters: False
 The unique identifier of reviewSet
 
 ```yaml
-Type: String
-Parameter Sets: ExportExpanded, Export
+Type: System.String
+Parameter Sets: Export, ExportExpanded
 Aliases:
 
 Required: True
@@ -250,7 +251,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -266,7 +267,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -283,10 +284,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -325,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+

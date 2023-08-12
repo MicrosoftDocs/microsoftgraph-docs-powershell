@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewdecisioninstancestage
 schema: 2.0.0
@@ -8,8 +8,8 @@ schema: 2.0.0
 # Stop-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage
 
 ## SYNOPSIS
-Stop an access review stage that is `inProgress`.
-After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input.
+Stop an access review stage that is inProgress.
+After the access review stage stops, the stage status will be Completed and the reviewers can no longer give input.
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
@@ -18,20 +18,36 @@ The accessReviewInstanceDecisionItem objects will always reflect the last decisi
 ### Stop (Default)
 ```
 Stop-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -AccessReviewInstanceDecisionItemId <String>
- -AccessReviewStageId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AccessReviewStageId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### StopViaIdentity
 ```
 Stop-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <IIdentityGovernanceIdentity>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Stop an access review stage that is `inProgress`.
-After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input.
+Stop an access review stage that is inProgress.
+After the access review stage stops, the stage status will be Completed and the reviewers can no longer give input.
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -39,7 +55,7 @@ The accessReviewInstanceDecisionItem objects will always reflect the last decisi
 The unique identifier of accessReviewInstanceDecisionItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Stop
 Aliases:
 
@@ -54,7 +70,7 @@ Accept wildcard characters: False
 The unique identifier of accessReviewStage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Stop
 Aliases:
 
@@ -70,7 +86,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: StopViaIdentity
 Aliases:
 
@@ -85,7 +101,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -100,7 +116,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -116,7 +132,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -133,9 +149,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall
 schema: 2.0.0
@@ -14,16 +14,13 @@ If an invite to a group call is received, the notification will contain the chat
 The bot is expected to answer, reject, or redirect the call before the call times out.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### AnswerExpanded (Default)
 ```
 Invoke-MgAnswerCommunicationCall -CallId <String> [-AcceptedModalities <String[]>]
- [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>] [-CallbackUri <String>]
- [-MediaConfig <Hashtable>] [-ParticipantCapacity <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-CallbackUri <String>] [-CallOptions <Hashtable>]
+ [-MediaConfig <Hashtable>] [-ParticipantCapacity <Int32>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -31,22 +28,22 @@ Invoke-MgAnswerCommunicationCall -CallId <String> [-AcceptedModalities <String[]
 ```
 Invoke-MgAnswerCommunicationCall -CallId <String>
  -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AnswerViaIdentityExpanded
-```
-Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AcceptedModalities <String[]>]
- [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>] [-CallbackUri <String>]
- [-MediaConfig <Hashtable>] [-ParticipantCapacity <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AnswerViaIdentity
 ```
 Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AnswerViaIdentityExpanded
+```
+Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AcceptedModalities <String[]>]
+ [-AdditionalProperties <Hashtable>] [-CallbackUri <String>] [-CallOptions <Hashtable>]
+ [-MediaConfig <Hashtable>] [-ParticipantCapacity <Int32>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,59 +54,66 @@ The bot is expected to answer, reject, or redirect the call before the call time
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgAnswerCommunicationCall Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-$params = @{
-	CallbackUri = "https://bot.contoso.com/api/calls"
-	AcceptedModalities = @(
-		"audio"
-	)
-	MediaConfig = @{
-		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		Blob = "<Media Session Configuration Blob>"
-	}
-}
-Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Invoke-MgAnswerCommunicationCall Cmdlet
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+
 $params = @{
-	CallbackUri = "callbackUri-value"
-	MediaConfig = @{
+	callbackUri = "callbackUri-value"
+	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		Blob = "<Media Session Configuration Blob>"
+		blob = "\<Media Session Configuration Blob\>"
 	}
-	AcceptedModalities = @(
+	acceptedModalities = @(
 		"audio"
 	)
-	ParticipantCapacity = 200
+	callOptions = @{
+		"@odata.type" = "#microsoft.graph.incomingCallOptions"
+		isContentSharingNotificationEnabled = $true
+	}
+	participantCapacity = 200
 }
+
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Invoke-MgAnswerCommunicationCall Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
+
 $params = @{
-	CallbackUri = "https://bot.contoso.com/api/calls"
-	AcceptedModalities = @(
+	callbackUri = "https://bot.contoso.com/api/calls"
+	acceptedModalities = @(
 		"audio"
 	)
-	MediaConfig = @{
+	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-		PreFetchMedia = @(
+		preFetchMedia = @(
 		)
 	}
 }
+
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
+
+### -------------------------- EXAMPLE 3 --------------------------
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
 ```
-This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+$params = @{
+	callbackUri = "https://bot.contoso.com/api/calls"
+	acceptedModalities = @(
+		"audio"
+	)
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+		blob = "\<Media Session Configuration Blob\>"
+	}
+}
+
+Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -117,7 +121,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -132,7 +136,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -148,7 +152,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Answer, AnswerViaIdentity
 Aliases:
 
@@ -163,7 +167,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -178,8 +182,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: AnswerExpanded, Answer
+Type: System.String
+Parameter Sets: Answer, AnswerExpanded
 Aliases:
 
 Required: True
@@ -193,7 +197,7 @@ Accept wildcard characters: False
 incomingCallOptions
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -209,8 +213,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: AnswerViaIdentityExpanded, AnswerViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: AnswerViaIdentity, AnswerViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -224,7 +228,7 @@ Accept wildcard characters: False
 mediaConfig
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -239,7 +243,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -254,7 +258,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -269,7 +273,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -285,7 +289,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -302,10 +306,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -342,4 +349,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
+

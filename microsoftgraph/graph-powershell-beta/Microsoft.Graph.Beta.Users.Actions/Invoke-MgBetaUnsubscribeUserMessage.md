@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunsubscribeusermessage
 schema: 2.0.0
@@ -9,49 +9,50 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Submits a email request on behalf of the signed-in user to unsubscribe from an email distribution list.
-Uses the information in the `List-Unsubscribe` header.
+Uses the information in the List-Unsubscribe header.
 Message senders can use mailing lists in a user-friendly way by including an option for recipients to opt out.
-They can do so by specifying the `List-Unsubscribe` header in each message following RFC-2369.
-**Note** In particular, for the **unsubscribe** action to work, the sender must specify `mailto:` and not URL-based unsubscribe information.
-Setting that header would also set the **unsubscribeEnabled** property of the message instance to `true`, and the **unsubscribeData** property to the header data.
-If the **unsubscribeEnabled** property of a message is `true`, you can use the **unsubscribe** action to unsubscribe the user from similar future messages as managed by the message sender.
-A successful **unsubscribe** action moves the message to the **Deleted Items** folder.
+They can do so by specifying the List-Unsubscribe header in each message following RFC-2369.
+Note In particular, for the unsubscribe action to work, the sender must specify mailto: and not URL-based unsubscribe information.
+Setting that header would also set the unsubscribeEnabled property of the message instance to true, and the unsubscribeData property to the header data.
+If the unsubscribeEnabled property of a message is true, you can use the unsubscribe action to unsubscribe the user from similar future messages as managed by the message sender.
+A successful unsubscribe action moves the message to the Deleted Items folder.
 The actual exclusion of the user from future mail distribution is managed by the sender.
 
 ## SYNTAX
 
 ### Unsubscribe (Default)
 ```
-Invoke-MgBetaUnsubscribeUserMessage -MessageId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaUnsubscribeUserMessage -MessageId <String> -UserId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UnsubscribeViaIdentity
 ```
-Invoke-MgBetaUnsubscribeUserMessage -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaUnsubscribeUserMessage -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Submits a email request on behalf of the signed-in user to unsubscribe from an email distribution list.
-Uses the information in the `List-Unsubscribe` header.
+Uses the information in the List-Unsubscribe header.
 Message senders can use mailing lists in a user-friendly way by including an option for recipients to opt out.
-They can do so by specifying the `List-Unsubscribe` header in each message following RFC-2369.
-**Note** In particular, for the **unsubscribe** action to work, the sender must specify `mailto:` and not URL-based unsubscribe information.
-Setting that header would also set the **unsubscribeEnabled** property of the message instance to `true`, and the **unsubscribeData** property to the header data.
-If the **unsubscribeEnabled** property of a message is `true`, you can use the **unsubscribe** action to unsubscribe the user from similar future messages as managed by the message sender.
-A successful **unsubscribe** action moves the message to the **Deleted Items** folder.
+They can do so by specifying the List-Unsubscribe header in each message following RFC-2369.
+Note In particular, for the unsubscribe action to work, the sender must specify mailto: and not URL-based unsubscribe information.
+Setting that header would also set the unsubscribeEnabled property of the message instance to true, and the unsubscribeData property to the header data.
+If the unsubscribeEnabled property of a message is true, you can use the unsubscribe action to unsubscribe the user from similar future messages as managed by the message sender.
+A successful unsubscribe action moves the message to the Deleted Items folder.
 The actual exclusion of the user from future mail distribution is managed by the sender.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaUnsubscribeUserMessage Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Invoke-MgBetaUnsubscribeUserMessage -UserId $userId -MessageId $messageId
 ```
-This example shows how to use the Invoke-MgBetaUnsubscribeUserMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -60,7 +61,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: UnsubscribeViaIdentity
 Aliases:
 
@@ -75,7 +76,7 @@ Accept wildcard characters: False
 The unique identifier of message
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unsubscribe
 Aliases:
 
@@ -90,7 +91,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -105,7 +106,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unsubscribe
 Aliases:
 
@@ -120,7 +121,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -136,7 +137,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -153,9 +154,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -208,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

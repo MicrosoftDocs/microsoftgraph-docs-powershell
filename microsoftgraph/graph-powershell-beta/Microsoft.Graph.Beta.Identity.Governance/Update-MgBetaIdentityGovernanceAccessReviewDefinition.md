@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewdefinition
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,14 +23,20 @@ Update-MgBetaIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefin
  [-InstanceEnumerationScope <Hashtable>] [-Instances <IMicrosoftGraphAccessReviewInstance[]>]
  [-LastModifiedDateTime <DateTime>] [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]
  [-Scope <Hashtable>] [-Settings <IMicrosoftGraphAccessReviewScheduleSettings>]
- [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-WhatIf] [-Confirm]
+ [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId <String>
- -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,18 +50,28 @@ Update-MgBetaIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGov
  [-InstanceEnumerationScope <Hashtable>] [-Instances <IMicrosoftGraphAccessReviewInstance[]>]
  [-LastModifiedDateTime <DateTime>] [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]
  [-Scope <Hashtable>] [-Settings <IMicrosoftGraphAccessReviewScheduleSettings>]
- [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-WhatIf] [-Confirm]
+ [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,8 +79,8 @@ Update an existing accessReviewScheduleDefinition object to change one or more o
 The unique identifier of accessReviewScheduleDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -82,7 +95,7 @@ Defines the list of additional users or group members to be notified of the acce
 To construct, see NOTES section for ADDITIONALNOTIFICATIONRECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewNotificationRecipientItem[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewNotificationRecipientItem[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +110,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,7 +126,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BACKUPREVIEWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewReviewerScope[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewReviewerScope[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +142,7 @@ accessReviewScheduleDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewScheduleDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -145,7 +158,7 @@ userIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserIdentity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +175,7 @@ Supports $select.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +191,7 @@ Description provided by review creators to provide more context of the review to
 Supports $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +209,7 @@ Email notifications support up to 256 characters.
 Supports $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +226,7 @@ Supports $select and $orderBy.
 Required on create.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -235,7 +248,7 @@ NOTE: The value of this property will be ignored if fallback reviewers are assig
 To construct, see NOTES section for FALLBACKREVIEWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewReviewerScope[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewReviewerScope[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -251,7 +264,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -267,8 +280,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -282,7 +295,7 @@ Accept wildcard characters: False
 accessReviewScope
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -299,7 +312,7 @@ Access reviews that do not recur will only have one instance; otherwise, there i
 To construct, see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewInstance[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewInstance[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -316,7 +329,7 @@ Supports $select.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -337,7 +350,7 @@ NOTE: The value of this property will be ignored if reviewers are assigned throu
 To construct, see NOTES section for REVIEWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewReviewerScope[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewReviewerScope[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -352,7 +365,7 @@ Accept wildcard characters: False
 accessReviewScope
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -368,7 +381,7 @@ accessReviewScheduleSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewScheduleSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -388,7 +401,7 @@ When this property is defined, its settings are used instead of the correspondin
 To construct, see NOTES section for STAGESETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewStageSettings[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewStageSettings[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -406,7 +419,7 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -421,7 +434,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -437,7 +450,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -454,10 +467,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
+
 ## NOTES
 
 ALIASES
@@ -490,8 +506,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: Timestamp when the access review series was created. Supports $select. Read-only.
@@ -522,8 +538,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
       - `[Principal <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[PrincipalLink <String>]`: Link to the principal object. For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9. Read-only.
       - `[PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]`: decisionItemPrincipalResourceMembership
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -606,8 +622,8 @@ To create the parameters described below, construct a hash table containing the 
 
 `CREATEDBY <IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
@@ -726,8 +742,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[AccessReviewId <String>]`: The identifier of the accessReviewInstance parent. Supports $select. Read-only.
     - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
       - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Supports $select. Read-only.
@@ -740,8 +756,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
     - `[Principal <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[PrincipalLink <String>]`: Link to the principal object. For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9. Read-only.
     - `[PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]`: decisionItemPrincipalResourceMembership
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -894,8 +910,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StageId <String>]`: Unique identifier of the accessReviewStageSettings. The stageId will be used in dependsOn property to indicate the stage relationship. Required.
 
 ## RELATED LINKS
-[Update-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Update-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 

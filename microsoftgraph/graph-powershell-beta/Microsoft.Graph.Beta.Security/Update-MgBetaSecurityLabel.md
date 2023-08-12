@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabel
 schema: 2.0.0
@@ -20,17 +20,33 @@ Update-MgBetaSecurityLabel [-AdditionalProperties <Hashtable>]
  [-Citations <IMicrosoftGraphSecurityCitationTemplate[]>]
  [-Departments <IMicrosoftGraphSecurityDepartmentTemplate[]>]
  [-FilePlanReferences <IMicrosoftGraphSecurityFilePlanReferenceTemplate[]>] [-Id <String>]
- [-RetentionLabels <IMicrosoftGraphSecurityRetentionLabel[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RetentionLabels <IMicrosoftGraphSecurityRetentionLabel[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot> [-WhatIf] [-Confirm]
+Update-MgBetaSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property labels in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38,7 +54,7 @@ Update the navigation property labels in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -54,7 +70,7 @@ Specifies the underlying authority that describes the type of content to be reta
 To construct, see NOTES section for AUTHORITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAuthorityTemplate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuthorityTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -70,7 +86,7 @@ labelsRoot
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityLabelsRoot
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelsRoot
 Parameter Sets: Update
 Aliases:
 
@@ -86,7 +102,7 @@ Specifies a group of similar types of content in a particular department.
 To construct, see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityCategoryTemplate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityCategoryTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -102,7 +118,7 @@ The specific rule or regulation created by a jurisdiction used to determine whet
 To construct, see NOTES section for CITATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityCitationTemplate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityCitationTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -118,7 +134,7 @@ Specifies the department or business unit of an organization to which a label be
 To construct, see NOTES section for DEPARTMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityDepartmentTemplate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityDepartmentTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -130,11 +146,11 @@ Accept wildcard characters: False
 ```
 
 ### -FilePlanReferences
-Specifies a unique alpha-numeric identifier for an organization's retention schedule.
+Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
 To construct, see NOTES section for FILEPLANREFERENCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFilePlanReferenceTemplate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFilePlanReferenceTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -150,7 +166,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -166,7 +182,7 @@ Represents how customers can manage their data, whether and for how long to reta
 To construct, see NOTES section for RETENTIONLABELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionLabel[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionLabel[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -181,7 +197,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -197,7 +213,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -214,9 +230,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelsRoot
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelsRoot
+
 ## NOTES
 
 ALIASES
@@ -231,8 +249,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
@@ -247,8 +265,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
@@ -276,7 +294,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[FilePlanReferences <IMicrosoftGraphSecurityFilePlanReferenceTemplate[]>]`: Specifies a unique alpha-numeric identifier for an organization's retention schedule.
+  - `[FilePlanReferences <IMicrosoftGraphSecurityFilePlanReferenceTemplate[]>]`: Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
@@ -346,8 +364,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
@@ -364,8 +382,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
@@ -379,21 +397,21 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
   - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-`FILEPLANREFERENCES <IMicrosoftGraphSecurityFilePlanReferenceTemplate[]>`: Specifies a unique alpha-numeric identifier for an organization's retention schedule.
+`FILEPLANREFERENCES <IMicrosoftGraphSecurityFilePlanReferenceTemplate[]>`: Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
@@ -408,8 +426,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the retentionLabel is created.
@@ -498,8 +516,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
   - `[RetentionTrigger <String>]`: retentionTrigger
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

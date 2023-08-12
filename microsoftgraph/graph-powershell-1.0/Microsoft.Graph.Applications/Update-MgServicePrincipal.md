@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipal
 schema: 2.0.0
@@ -10,26 +10,23 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in servicePrincipals
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgServicePrincipal -ServicePrincipalId <String> [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>]
  [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>] [-AppDescription <String>]
- [-AppDisplayName <String>] [-AppId <String>] [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
- [-AppOwnerOrganizationId <String>] [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>]
- [-AppRoleAssignmentRequired] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
- [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <String>]
+ [-AppDisplayName <String>] [-AppId <String>] [-ApplicationTemplateId <String>]
+ [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
+ [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
+ [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
  [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
- [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>]
+ [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CustomSecurityAttributes <Hashtable>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
  [-DisplayName <String>] [-Endpoints <IMicrosoftGraphEndpoint[]>]
- [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
- [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <String>] [-Id <String>]
+ [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>] [-Homepage <String>]
+ [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Id <String>]
  [-Info <IMicrosoftGraphInformationalUrl>] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
  [-LoginUrl <String>] [-LogoutUrl <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <String>]
  [-NotificationEmailAddresses <String[]>] [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
@@ -44,30 +41,36 @@ Update-MgServicePrincipal -ServicePrincipalId <String> [-AccountEnabled] [-AddIn
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgServicePrincipal -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgServicePrincipal -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphServicePrincipal> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-AccountEnabled]
  [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>]
- [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>]
+ [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>] [-ApplicationTemplateId <String>]
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
  [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
  [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
- [-ApplicationTemplateId <String>] [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
- [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>]
+ [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
+ [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CustomSecurityAttributes <Hashtable>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
  [-DisplayName <String>] [-Endpoints <IMicrosoftGraphEndpoint[]>]
- [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
- [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <String>] [-Id <String>]
+ [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>] [-Homepage <String>]
+ [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Id <String>]
  [-Info <IMicrosoftGraphInformationalUrl>] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
  [-LoginUrl <String>] [-LogoutUrl <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <String>]
  [-NotificationEmailAddresses <String[]>] [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
@@ -82,31 +85,23 @@ Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-AccountEnabled]
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgServicePrincipal -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in servicePrincipals
 
 ## EXAMPLES
-### Example 1: Update the properties of a service principal
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
   "appRoleAssignmentRequired" = "true"
   }
-
-Update-MgServicePrincipal -ServicePrincipalId '000e4269-1923-4c8c-9c27-1206e114d421' -BodyParameter $ServicePrincipalUpdate
 ```
 
-This is example, the first command defines the properties and their values in a hashtable under the variable $ServicePrincipalUpdate. The second command updates the specified service principal.
+Update-MgServicePrincipal -ServicePrincipalId '000e4269-1923-4c8c-9c27-1206e114d421' -BodyParameter $ServicePrincipalUpdate
 
 ## PARAMETERS
 
@@ -116,7 +111,7 @@ If set to false, then no users will be able to sign in to this app, even if they
 Supports $filter (eq, ne, not, in).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +129,7 @@ This will let services like Microsoft 365 call the application in the context of
 To construct, see NOTES section for ADDINS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAddIn[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAddIn[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +144,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +160,7 @@ Used to retrieve service principals by subscription, identify resource group and
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -180,7 +175,7 @@ Accept wildcard characters: False
 The description exposed by the associated application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +190,7 @@ Accept wildcard characters: False
 The display name exposed by the associated application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -211,7 +206,7 @@ The unique identifier for the associated application (its appId property).
 Supports $filter (eq, ne, not, in, startsWith).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -228,7 +223,7 @@ Read-only.
 Supports $filter (eq, ne, NOT, startsWith).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +239,7 @@ The appManagementPolicy applied to this application.
 To construct, see NOTES section for APPMANAGEMENTPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppManagementPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -261,7 +256,7 @@ This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -278,7 +273,7 @@ Supports $expand.
 To construct, see NOTES section for APPROLEASSIGNEDTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRoleAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -296,7 +291,7 @@ Not nullable.
 Supports $filter (eq, ne, NOT).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -313,7 +308,7 @@ Supports $expand.
 To construct, see NOTES section for APPROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRoleAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -331,7 +326,7 @@ Not nullable.
 To construct, see NOTES section for APPROLES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRole[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRole[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -347,7 +342,7 @@ servicePrincipal
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServicePrincipal
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -364,7 +359,7 @@ Supports $expand.
 To construct, see NOTES section for CLAIMSMAPPINGPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphClaimsMappingPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphClaimsMappingPolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -382,7 +377,22 @@ Nullable.
 To construct, see NOTES section for CREATEDOBJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomSecurityAttributes
+customSecurityAttributeValue
+
+```yaml
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -398,7 +408,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DELEGATEDPERMISSIONCLASSIFICATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDelegatedPermissionClassification[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedPermissionClassification[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -414,7 +424,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -432,7 +442,7 @@ The maximum allowed size is 1024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -449,7 +459,7 @@ Possible values are: null (default value), NotDisabled, and DisabledDueToViolati
 Supports $filter (eq, ne, not).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -465,7 +475,7 @@ The display name for the service principal.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -481,7 +491,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEndpoint[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -498,7 +508,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0).
 To construct, see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFederatedIdentityCredential[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -513,7 +523,7 @@ Accept wildcard characters: False
 Home page or landing page of the application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -530,7 +540,7 @@ Supports $expand.
 To construct, see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphHomeRealmDiscoveryPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHomeRealmDiscoveryPolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -546,7 +556,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -562,7 +572,7 @@ informationalUrl
 To construct, see NOTES section for INFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationalUrl
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationalUrl
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -578,8 +588,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -596,7 +606,7 @@ Supports $filter (eq, not, ge, le).
 To construct, see NOTES section for KEYCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyCredential[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -614,7 +624,7 @@ When blank, Azure AD performs IdP-initiated sign-on for applications configured 
 The user launches the application from Microsoft 365, the Azure AD My Apps, or the Azure AD SSO URL.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -629,7 +639,7 @@ Accept wildcard characters: False
 Specifies the URL that will be used by Microsoft's authorization service to logout an user using OpenId Connect front-channel, back-channel or SAML logout protocols.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -648,7 +658,7 @@ Supports $expand.
 To construct, see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -664,7 +674,7 @@ Free text field to capture information about the service principal, typically us
 Maximum allowed size is 1024 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -680,7 +690,7 @@ Specifies the list of email addresses where Azure AD sends a notification when t
 This is only for the certificates used to sign the SAML token issued for Azure AD Gallery applications.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -698,7 +708,7 @@ Nullable.
 To construct, see NOTES section for OAUTH2PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOAuth2PermissionGrant[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -716,7 +726,7 @@ Not nullable.
 To construct, see NOTES section for OAUTH2PERMISSIONSCOPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPermissionScope[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionScope[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -735,7 +745,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 To construct, see NOTES section for OWNEDOBJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -755,7 +765,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 To construct, see NOTES section for OWNERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -772,7 +782,7 @@ Not nullable.
 To construct, see NOTES section for PASSWORDCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPasswordCredential[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPasswordCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -789,7 +799,7 @@ Azure AD uses the preferred single sign-on mode to launch the application from M
 The supported values are password, saml, notSupported, and oidc.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -805,7 +815,7 @@ This property can be used on SAML applications (apps that have preferredSingleSi
 For applications that are not SAML, do not write or otherwise rely on this property.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -821,7 +831,7 @@ The URLs that user tokens are sent to for sign in with the associated applicatio
 Not nullable.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -839,7 +849,7 @@ Read-only.
 To construct, see NOTES section for RESOURCESPECIFICAPPLICATIONPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceSpecificPermission[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermission[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -855,7 +865,7 @@ samlSingleSignOnSettings
 To construct, see NOTES section for SAMLSINGLESIGNONSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSamlSingleSignOnSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSamlSingleSignOnSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -870,8 +880,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -890,7 +900,7 @@ Not nullable.
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -904,16 +914,16 @@ Accept wildcard characters: False
 ### -ServicePrincipalType
 Identifies whether the service principal represents an application, a managed identity, or a legacy application.
 This is set by Azure AD internally.
-The servicePrincipalType property can be set to three different values: __Application - A service principal that represents an application or service.
+The servicePrincipalType property can be set to three different values: Application - A service principal that represents an application or service.
 The appId property identifies the associated app registration, and matches the appId of an application, possibly from a different tenant.
-If the associated app registration is missing, tokens are not issued for the service principal.__ManagedIdentity - A service principal that represents a managed identity.
-Service principals representing managed identities can be granted access and permissions, but cannot be updated or modified directly.__Legacy - A service principal that represents an app created before app registrations, or through legacy experiences.
+If the associated app registration is missing, tokens are not issued for the service principal.ManagedIdentity - A service principal that represents a managed identity.
+Service principals representing managed identities can be granted access and permissions, but cannot be updated or modified directly.Legacy - A service principal that represents an app created before app registrations, or through legacy experiences.
 Legacy service principal can have credentials, service principal names, reply URLs, and other properties which are editable by an authorized user, but does not have an associated app registration.
 The appId value does not associate the service principal with an app registration.
-The service principal can only be used in the tenant where it was created.__SocialIdp - For internal use.
+The service principal can only be used in the tenant where it was created.SocialIdp - For internal use.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -930,7 +940,7 @@ Read-only.
 Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Azure AD tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Azure AD tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -946,7 +956,7 @@ synchronization
 To construct, see NOTES section for SYNCHRONIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronization
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronization
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -963,7 +973,7 @@ Not nullable.
 The value is the union of strings set here and on the associated application entity's tags property.Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -980,7 +990,7 @@ When configured, Azure AD issues tokens for this application encrypted using the
 The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -996,7 +1006,7 @@ The tokenIssuancePolicies assigned to this service principal.
 To construct, see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTokenIssuancePolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenIssuancePolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1012,7 +1022,7 @@ The tokenLifetimePolicies assigned to this service principal.
 To construct, see NOTES section for TOKENLIFETIMEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTokenLifetimePolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenLifetimePolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1028,7 +1038,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1044,7 +1054,7 @@ verifiedPublisher
 To construct, see NOTES section for VERIFIEDPUBLISHER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVerifiedPublisher
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVerifiedPublisher
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1059,7 +1069,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -1075,7 +1085,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1092,10 +1102,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
+
 ## NOTES
 
 ALIASES
@@ -1228,6 +1241,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects created by this service principal. Read-only. Nullable.
+  - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeValue>]`: customSecurityAttributeValue
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Classification <String>]`: permissionClassificationType
@@ -1283,7 +1298,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[NotificationEmailAddresses <String[]>]`: Specifies the list of email addresses where Azure AD sends a notification when the active certificate is near the expiration date. This is only for the certificates used to sign the SAML token issued for Azure AD Gallery applications.
   - `[Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]`: Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[ClientId <String>]`: The id of the client service principal for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required. Supports $filter (eq only).
+    - `[ClientId <String>]`: The object id (not appId) of the client service principal for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required. Supports $filter (eq only).
     - `[ConsentType <String>]`: Indicates if authorization is granted for the client application to impersonate all users or only a specific user. AllPrincipals indicates authorization to impersonate all users. Principal indicates authorization to impersonate a specific user. Consent on behalf of all users can be granted by an administrator. Non-admin users may be authorized to consent on behalf of themselves in some cases, for some delegated permissions. Required. Supports $filter (eq only).
     - `[PrincipalId <String>]`: The id of the user on behalf of whom the client is authorized to access the resource, when consentType is Principal. If consentType is AllPrincipals this value is null. Required when consentType is Principal. Supports $filter (eq only).
     - `[ResourceId <String>]`: The id of the resource service principal to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user. Supports $filter (eq only).
@@ -1321,7 +1336,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[RelayState <String>]`: The relative URI the service provider would redirect to after completion of the single sign-on flow.
   - `[ServicePrincipalNames <String[]>]`: Contains the list of identifiersUris, copied over from the associated application. Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Azure AD. For example,Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued properties. Not nullable.  Supports $filter (eq, not, ge, le, startsWith).
-  - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an application, a managed identity, or a legacy application. This is set by Azure AD internally. The servicePrincipalType property can be set to three different values: __Application - A service principal that represents an application or service. The appId property identifies the associated app registration, and matches the appId of an application, possibly from a different tenant. If the associated app registration is missing, tokens are not issued for the service principal.__ManagedIdentity - A service principal that represents a managed identity. Service principals representing managed identities can be granted access and permissions, but cannot be updated or modified directly.__Legacy - A service principal that represents an app created before app registrations, or through legacy experiences. Legacy service principal can have credentials, service principal names, reply URLs, and other properties which are editable by an authorized user, but does not have an associated app registration. The appId value does not associate the service principal with an app registration. The service principal can only be used in the tenant where it was created.__SocialIdp - For internal use.
+  - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an application, a managed identity, or a legacy application. This is set by Azure AD internally. The servicePrincipalType property can be set to three different values: Application - A service principal that represents an application or service. The appId property identifies the associated app registration, and matches the appId of an application, possibly from a different tenant. If the associated app registration is missing, tokens are not issued for the service principal.ManagedIdentity - A service principal that represents a managed identity. Service principals representing managed identities can be granted access and permissions, but cannot be updated or modified directly.Legacy - A service principal that represents an app created before app registrations, or through legacy experiences. Legacy service principal can have credentials, service principal names, reply URLs, and other properties which are editable by an authorized user, but does not have an associated app registration. The appId value does not associate the service principal with an app registration. The service principal can only be used in the tenant where it was created.SocialIdp - For internal use.
   - `[SignInAudience <String>]`: Specifies the Microsoft accounts that are supported for the current application. Read-only. Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Azure AD tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Azure AD tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
   - `[Synchronization <IMicrosoftGraphSynchronization>]`: synchronization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1604,7 +1619,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `OAUTH2PERMISSIONGRANTS <IMicrosoftGraphOAuth2PermissionGrant[]>`: Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ClientId <String>]`: The id of the client service principal for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required. Supports $filter (eq only).
+  - `[ClientId <String>]`: The object id (not appId) of the client service principal for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required. Supports $filter (eq only).
   - `[ConsentType <String>]`: Indicates if authorization is granted for the client application to impersonate all users or only a specific user. AllPrincipals indicates authorization to impersonate all users. Principal indicates authorization to impersonate a specific user. Consent on behalf of all users can be granted by an administrator. Non-admin users may be authorized to consent on behalf of themselves in some cases, for some delegated permissions. Required. Supports $filter (eq only).
   - `[PrincipalId <String>]`: The id of the user on behalf of whom the client is authorized to access the resource, when consentType is Principal. If consentType is AllPrincipals this value is null. Required when consentType is Principal. Supports $filter (eq only).
   - `[ResourceId <String>]`: The id of the resource service principal to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user. Supports $filter (eq only).
@@ -1843,7 +1858,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
 
 ## RELATED LINKS
-[Update-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)
 
-## RELATED LINKS
-[Update-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitelistcontenttypecopy
 schema: 2.0.0
@@ -10,55 +10,51 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaGroupSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSiteListContentTypeCopy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### AddExpanded (Default)
 ```
 Add-MgGroupSiteListContentTypeCopy -GroupId <String> -ListId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgGroupSiteListContentTypeCopy -GroupId <String> -ListId <String> -SiteId <String>
  -BodyParameter <IPathsEgdmnfGroupsGroupIdSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentityExpanded
-```
-Add-MgGroupSiteListContentTypeCopy -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgGroupSiteListContentTypeCopy -InputObject <IGroupsIdentity>
  -BodyParameter <IPathsEgdmnfGroupsGroupIdSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgGroupSiteListContentTypeCopy -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Sites
-
-$params = @{
-	ContentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
-}
-
-Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
+{{ Add code here }}
 ```
-This example shows how to use the Add-MgGroupSiteListContentTypeCopy Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
 
 
 ## PARAMETERS
@@ -67,7 +63,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -83,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsEgdmnfGroupsGroupIdSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsEgdmnfGroupsGroupIdSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Add, AddViaIdentity
 Aliases:
 
@@ -98,7 +94,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -113,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -129,8 +125,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,8 +140,8 @@ Accept wildcard characters: False
 The unique identifier of list
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -159,8 +155,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -174,7 +170,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +186,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,10 +203,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsEgdmnfGroupsGroupIdSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
+
 ## NOTES
 
 ALIASES
@@ -262,4 +261,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Add-MgBetaGroupSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSiteListContentTypeCopy?view=graph-powershell-beta)
+

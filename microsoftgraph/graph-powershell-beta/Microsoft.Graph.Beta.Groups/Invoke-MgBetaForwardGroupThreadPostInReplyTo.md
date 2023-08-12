@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto
 schema: 2.0.0
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupThreadPostInReplyTo?view=graph-powershell-1.0)
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
 ## SYNTAX
 
@@ -20,39 +17,40 @@ You can specify both the parent conversation and thread in the request, nor, you
 ```
 Invoke-MgBetaForwardGroupThreadPostInReplyTo -ConversationThreadId <String> -GroupId <String> -PostId <String>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Forward
 ```
 Invoke-MgBetaForwardGroupThreadPostInReplyTo -ConversationThreadId <String> -GroupId <String> -PostId <String>
  -BodyParameter <IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ForwardViaIdentityExpanded
-```
-Invoke-MgBetaForwardGroupThreadPostInReplyTo -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ForwardViaIdentity
 ```
 Invoke-MgBetaForwardGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ForwardViaIdentityExpanded
+```
+Invoke-MgBetaForwardGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	Comment = "comment-value"
@@ -67,11 +65,6 @@ $params = @{
 }
 
 Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaForwardGroupThreadPostInReplyTo Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -79,7 +72,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
@@ -95,7 +88,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Forward, ForwardViaIdentity
 Aliases:
 
@@ -110,7 +103,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
@@ -125,8 +118,8 @@ Accept wildcard characters: False
 The unique identifier of conversationThread
 
 ```yaml
-Type: String
-Parameter Sets: ForwardExpanded, Forward
+Type: System.String
+Parameter Sets: Forward, ForwardExpanded
 Aliases:
 
 Required: True
@@ -140,8 +133,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: ForwardExpanded, Forward
+Type: System.String
+Parameter Sets: Forward, ForwardExpanded
 Aliases:
 
 Required: True
@@ -156,8 +149,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: ForwardViaIdentityExpanded, ForwardViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: ForwardViaIdentity, ForwardViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -171,7 +164,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -186,8 +179,8 @@ Accept wildcard characters: False
 The unique identifier of post
 
 ```yaml
-Type: String
-Parameter Sets: ForwardExpanded, Forward
+Type: System.String
+Parameter Sets: Forward, ForwardExpanded
 Aliases:
 
 Required: True
@@ -202,7 +195,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecipient[]
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
@@ -217,7 +210,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -233,7 +226,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -250,10 +243,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1J2I8RdGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -321,4 +317,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-[Invoke-MgForwardGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupThreadPostInReplyTo?view=graph-powershell-1.0)
+

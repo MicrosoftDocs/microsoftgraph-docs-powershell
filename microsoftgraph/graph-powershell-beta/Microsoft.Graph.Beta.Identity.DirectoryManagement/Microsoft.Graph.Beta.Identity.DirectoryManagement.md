@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-Module Guid: 99ab62c6-8907-4885-81b4-6a3ada67cf9c
+Module Guid: 3b99c490-2a86-4348-b0cd-7a5e5690b67f
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -20,13 +20,13 @@ By performing this operation the appropriate configurations will be made and pol
 As example when applying the require multi-factor authentication for admins management action will create an Azure Active Directory conditional access policy that requires multi-factor authentication for all users that have been assigned an administrative directory role.
 
 ### [Complete-MgBetaDirectoryImpactedResource](Complete-MgBetaDirectoryImpactedResource.md)
-Complete an impactedResource object and update its **status** to `completedByUser`.
+Complete an impactedResource object and update its status to completedByUser.
 
 ### [Complete-MgBetaDirectoryRecommendation](Complete-MgBetaDirectoryRecommendation.md)
-Complete a recommendation object and update its **status** to `completedByUser`.
+Complete a recommendation object and update its status to completedByUser.
 
 ### [Complete-MgBetaDirectoryRecommendationImpactedResource](Complete-MgBetaDirectoryRecommendationImpactedResource.md)
-Complete an impactedResource object and update its **status** to `completedByUser`.
+Complete an impactedResource object and update its status to completedByUser.
 
 ### [Confirm-MgBetaAdministrativeUnitMemberGroup](Confirm-MgBetaAdministrativeUnitMemberGroup.md)
 Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
@@ -38,20 +38,32 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 ### [Confirm-MgBetaAdministrativeUnitMemberObject](Confirm-MgBetaAdministrativeUnitMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaAdministrativeUnitMemberObject](Confirm-MgBetaAdministrativeUnitMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaContactMemberGroup](Confirm-MgBetaContactMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaContactMemberObject](Confirm-MgBetaContactMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaContactMemberObject](Confirm-MgBetaContactMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaContractMemberGroup](Confirm-MgBetaContractMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaContractMemberObject](Confirm-MgBetaContractMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaContractMemberObject](Confirm-MgBetaContractMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDeviceMemberGroup](Confirm-MgBetaDeviceMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDeviceMemberObject](Confirm-MgBetaDeviceMemberObject.md)
 Invoke action checkMemberObjects
@@ -66,20 +78,32 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 ### [Confirm-MgBetaDirectoryAdministrativeUnitMemberObject](Confirm-MgBetaDirectoryAdministrativeUnitMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaDirectoryAdministrativeUnitMemberObject](Confirm-MgBetaDirectoryAdministrativeUnitMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDirectoryDeletedItemMemberGroup](Confirm-MgBetaDirectoryDeletedItemMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDirectoryDeletedItemMemberObject](Confirm-MgBetaDirectoryDeletedItemMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaDirectoryDeletedItemMemberObject](Confirm-MgBetaDirectoryDeletedItemMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDirectoryRoleMemberGroup](Confirm-MgBetaDirectoryRoleMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDirectoryRoleMemberObject](Confirm-MgBetaDirectoryRoleMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaDirectoryRoleMemberObject](Confirm-MgBetaDirectoryRoleMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDirectoryRoleTemplateMemberGroup](Confirm-MgBetaDirectoryRoleTemplateMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDirectoryRoleTemplateMemberObject](Confirm-MgBetaDirectoryRoleTemplateMemberObject.md)
 Invoke action checkMemberObjects
@@ -97,8 +121,12 @@ Invoke action checkMemberObjects
 ### [Confirm-MgBetaDomain](Confirm-MgBetaDomain.md)
 Validates the ownership of the domain.
 
-### [Confirm-MgBetaDomain](Confirm-MgBetaDomain.md)
-Validates the ownership of the domain.
+### [Confirm-MgBetaOrganizationMemberGroup](Confirm-MgBetaOrganizationMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaOrganizationMemberObject](Confirm-MgBetaOrganizationMemberObject.md)
 Invoke action checkMemberObjects
@@ -108,7 +136,7 @@ Create a request to export the personal data for an inboundSharedUserProfile.
 
 ### [Get-MgBetaAdministrativeUnit](Get-MgBetaAdministrativeUnit.md)
 Retrieve the properties and relationships of an administrativeUnit object.
-Since the **administrativeUnit** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **administrativeUnit** instance.
+Since the administrativeUnit resource supports extensions, you can also use the GET operation to get custom properties and extension data in an administrativeUnit instance.
 
 ### [Get-MgBetaAdministrativeUnitById](Get-MgBetaAdministrativeUnitById.md)
 Return the directory objects specified in a list of IDs.
@@ -241,8 +269,9 @@ Get the number of the resource
 ### [Get-MgBetaContactManager](Get-MgBetaContactManager.md)
 Get the contact's manager
 
-### [Get-MgBetaContactManager](Get-MgBetaContactManager.md)
-Get the contact's manager
+### [Get-MgBetaContactMemberGroup](Get-MgBetaContactMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaContactMemberObject](Get-MgBetaContactMemberObject.md)
 Invoke action getMemberObjects
@@ -310,8 +339,9 @@ Get the number of the resource
 ### [Get-MgBetaContractDelta](Get-MgBetaContractDelta.md)
 Invoke function delta
 
-### [Get-MgBetaContractDelta](Get-MgBetaContractDelta.md)
-Invoke function delta
+### [Get-MgBetaContractMemberGroup](Get-MgBetaContractMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaContractMemberObject](Get-MgBetaContractMemberObject.md)
 Invoke action getMemberObjects
@@ -322,11 +352,11 @@ This API returns up to 1,000 deleted objects owned by the user, sorted by ID, an
 
 ### [Get-MgBetaDevice](Get-MgBetaDevice.md)
 Get the properties and relationships of a device object.
-Since the **device** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **device** instance.
+Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
 
 ### [Get-MgBetaDeviceByDeviceId](Get-MgBetaDeviceByDeviceId.md)
 Get the properties and relationships of a device object.
-Since the **device** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **device** instance.
+Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
 
 ### [Get-MgBetaDeviceById](Get-MgBetaDeviceById.md)
 Return the directory objects specified in a list of IDs.
@@ -355,8 +385,9 @@ Nullable.
 ### [Get-MgBetaDeviceExtensionCount](Get-MgBetaDeviceExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceExtensionCount](Get-MgBetaDeviceExtensionCount.md)
-Get the number of the resource
+### [Get-MgBetaDeviceMemberGroup](Get-MgBetaDeviceMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDeviceMemberObject](Get-MgBetaDeviceMemberObject.md)
 Invoke action getMemberObjects
@@ -645,8 +676,9 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryDeletedItemCountAsUser](Get-MgBetaDirectoryDeletedItemCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryDeletedItemCountAsUser](Get-MgBetaDirectoryDeletedItemCountAsUser.md)
-Get the number of the resource
+### [Get-MgBetaDirectoryDeletedItemMemberGroup](Get-MgBetaDirectoryDeletedItemMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryDeletedItemMemberObject](Get-MgBetaDirectoryDeletedItemMemberObject.md)
 Invoke action getMemberObjects
@@ -734,7 +766,7 @@ Get the number of the resource
 
 ### [Get-MgBetaDirectoryRole](Get-MgBetaDirectoryRole.md)
 Retrieve the properties of a directoryRole object.
-You can use both the object ID and template ID of the **directoryRole** with this API.
+You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
@@ -744,7 +776,7 @@ Some common uses for this function are to:
 
 ### [Get-MgBetaDirectoryRoleByRoleTemplateId](Get-MgBetaDirectoryRoleByRoleTemplateId.md)
 Retrieve the properties of a directoryRole object.
-You can use both the object ID and template ID of the **directoryRole** with this API.
+You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
@@ -807,8 +839,9 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryRoleMemberCountAsUser](Get-MgBetaDirectoryRoleMemberCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryRoleMemberCountAsUser](Get-MgBetaDirectoryRoleMemberCountAsUser.md)
-Get the number of the resource
+### [Get-MgBetaDirectoryRoleMemberGroup](Get-MgBetaDirectoryRoleMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryRoleMemberObject](Get-MgBetaDirectoryRoleMemberObject.md)
 Invoke action getMemberObjects
@@ -834,8 +867,9 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryRoleTemplateDelta](Get-MgBetaDirectoryRoleTemplateDelta.md)
 Invoke function delta
 
-### [Get-MgBetaDirectoryRoleTemplateDelta](Get-MgBetaDirectoryRoleTemplateDelta.md)
-Invoke function delta
+### [Get-MgBetaDirectoryRoleTemplateMemberGroup](Get-MgBetaDirectoryRoleTemplateMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryRoleTemplateMemberObject](Get-MgBetaDirectoryRoleTemplateMemberObject.md)
 Invoke action getMemberObjects
@@ -853,7 +887,7 @@ Retrieve the properties of a specific directory setting object.
 
 ### [Get-MgBetaDirectorySettingTemplate](Get-MgBetaDirectorySettingTemplate.md)
 A directory setting template represents a template of settings from which settings may be created within a tenant.
-This operation allows retrieval of the properties of the **directorySettingTemplate** object, including the available settings and their defaults.
+This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.
 
 ### [Get-MgBetaDirectorySettingTemplateById](Get-MgBetaDirectorySettingTemplateById.md)
 Return the directory objects specified in a list of IDs.
@@ -933,14 +967,14 @@ Get the number of the resource
 
 ### [Get-MgBetaOrganization](Get-MgBetaOrganization.md)
 Get the properties and relationships of the currently authenticated organization.
-Since the **organization** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
+Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
 
 ### [Get-MgBetaOrganizationBranding](Get-MgBetaOrganizationBranding.md)
-Retrieve the default organizational branding object, if the **Accept-Language** header is set to `0` or `default`.
-If no default organizational branding object exists, this method returns a `404 Not Found` error.
-If the **Accept-Language** header is set to an existing locale identified by the value of its **id**, this method retrieves the branding for the specified locale.
-This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**.
-To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the GET organizationalBrandingLocalization method.
+Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
+If no default organizational branding object exists, this method returns a 404 Not Found error.
+If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
+This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
+To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
 
 ### [Get-MgBetaOrganizationBrandingBackgroundImage](Get-MgBetaOrganizationBrandingBackgroundImage.md)
 Image that appears as the background of the sign-in page.
@@ -966,7 +1000,7 @@ We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgBetaOrganizationBrandingLocalization](Get-MgBetaOrganizationBrandingLocalization.md)
 Read the properties and relationships of an organizationalBrandingLocalization object.
-To retrieve a localization branding object, specify the value of **id** in the URL.
+To retrieve a localization branding object, specify the value of id in the URL.
 
 ### [Get-MgBetaOrganizationBrandingLocalizationBackgroundImage](Get-MgBetaOrganizationBrandingLocalizationBackgroundImage.md)
 Image that appears as the background of the sign-in page.
@@ -1027,14 +1061,15 @@ Nullable.
 ### [Get-MgBetaOrganizationExtensionCount](Get-MgBetaOrganizationExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaOrganizationExtensionCount](Get-MgBetaOrganizationExtensionCount.md)
-Get the number of the resource
+### [Get-MgBetaOrganizationMemberGroup](Get-MgBetaOrganizationMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaOrganizationMemberObject](Get-MgBetaOrganizationMemberObject.md)
 Invoke action getMemberObjects
 
 ### [Get-MgBetaOrganizationSetting](Get-MgBetaOrganizationSetting.md)
-Retrieve the properties and relationships of an organizationSettings object, including **profileCardProperties**.
+Retrieve the properties and relationships of an organizationSettings object, including profileCardProperties.
 This operation does not return insightsSettings.
 Depending on the type of insights, you can get their settings by using list itemInsights or list peopleInsights.
 This operation does not return microsoftApplicationDataAccessSettings.
@@ -1048,7 +1083,7 @@ Get the properties of an insightsSettings object for displaying or returning ite
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
 
 ### [Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess](Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess.md)
-Get the _settings_ in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
+Get the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
 ### [Get-MgBetaOrganizationSettingPersonInsight](Get-MgBetaOrganizationSettingPersonInsight.md)
 Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
@@ -1056,7 +1091,7 @@ To learn how to customize privacy for people insights in an organization, see Cu
 
 ### [Get-MgBetaOrganizationSettingProfileCardProperty](Get-MgBetaOrganizationSettingProfileCardProperty.md)
 Retrieve the properties and relationships of a profileCardProperty entity, which contains the profile card customizations that exist in your Microsoft 365 organization for a given field.
-The profileCardProperty is identified by its **directoryPropertyName** property.
+The profileCardProperty is identified by its directoryPropertyName property.
 
 ### [Get-MgBetaOrganizationSettingProfileCardPropertyCount](Get-MgBetaOrganizationSettingProfileCardPropertyCount.md)
 Get the number of the resource
@@ -1086,51 +1121,51 @@ Get the number of the resource
 Invoke function availableProviderTypes
 
 ### [Invoke-MgBetaDismissDirectoryImpactedResource](Invoke-MgBetaDismissDirectoryImpactedResource.md)
-Dismiss an impactedResources object and update its status to `dismissed`.
+Dismiss an impactedResources object and update its status to dismissed.
 
 ### [Invoke-MgBetaDismissDirectoryRecommendation](Invoke-MgBetaDismissDirectoryRecommendation.md)
-Dismiss a recommendation object that you consider to be inapplicable to your tenant and update its **status** to `dismissed` .
+Dismiss a recommendation object that you consider to be inapplicable to your tenant and update its status to dismissed .
 
 ### [Invoke-MgBetaDismissDirectoryRecommendationImpactedResource](Invoke-MgBetaDismissDirectoryRecommendationImpactedResource.md)
-Dismiss an impactedResources object and update its status to `dismissed`.
+Dismiss an impactedResources object and update its status to dismissed.
 
 ### [Invoke-MgBetaForceDomainDelete](Invoke-MgBetaForceDomainDelete.md)
 Deletes a domain using an asynchronous operation.
-Prior to calling forceDelete, you must update or remove any references to **Exchange** as the provisioning service.
+Prior to calling forceDelete, you must update or remove any references to Exchange as the provisioning service.
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code.
 To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 
 ### [Invoke-MgBetaPostponeDirectoryImpactedResource](Invoke-MgBetaPostponeDirectoryImpactedResource.md)
-Postpone action on an impactedResource object to a specified future date and time by marking its **status** as `postponed`.
-On the specified date and time, Azure AD will automatically mark the status of the **impactedResource** object to `active`.
+Postpone action on an impactedResource object to a specified future date and time by marking its status as postponed.
+On the specified date and time, Azure AD will automatically mark the status of the impactedResource object to active.
 
 ### [Invoke-MgBetaPostponeDirectoryRecommendation](Invoke-MgBetaPostponeDirectoryRecommendation.md)
-Postpone action on a recommendation object to a specified future date and time by marking its **status** as `postponed`.
-On the date and time provided, Azure AD will automatically update the **status** of the **recommendation** object to `active` again.
+Postpone action on a recommendation object to a specified future date and time by marking its status as postponed.
+On the date and time provided, Azure AD will automatically update the status of the recommendation object to active again.
 
 ### [Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource](Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource.md)
-Postpone action on an impactedResource object to a specified future date and time by marking its **status** as `postponed`.
-On the specified date and time, Azure AD will automatically mark the status of the **impactedResource** object to `active`.
+Postpone action on an impactedResource object to a specified future date and time by marking its status as postponed.
+On the specified date and time, Azure AD will automatically mark the status of the impactedResource object to active.
 
 ### [Invoke-MgBetaPromoteDomain](Invoke-MgBetaPromoteDomain.md)
 Promote a verified subdomain to the root domain.
-A verified domain has its **isVerified** property set to `true`.
+A verified domain has its isVerified property set to true.
 
 ### [Invoke-MgBetaReactivateDirectoryImpactedResource](Invoke-MgBetaReactivateDirectoryImpactedResource.md)
-Reactivate an accidentally dismissed, completed, or postponed **impactedResource** object.
-This action updates the **status** of the resource to `active`.
-This method is relevant only if the status of the **impactedResource** object is `dismissed`, `postponed`, or `completedByUser`.
+Reactivate an accidentally dismissed, completed, or postponed impactedResource object.
+This action updates the status of the resource to active.
+This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
 
 ### [Invoke-MgBetaReactivateDirectoryRecommendation](Invoke-MgBetaReactivateDirectoryRecommendation.md)
 Reactivate a completed, dismissed, or postponed recommendation object.
-This action updates the **status** of the recommendation to `active`.
-This method only works when the **status** of the recommendation is `completedByUser`, `dismissed`, or `postponed`.
+This action updates the status of the recommendation to active.
+This method only works when the status of the recommendation is completedByUser, dismissed, or postponed.
 
 ### [Invoke-MgBetaReactivateDirectoryRecommendationImpactedResource](Invoke-MgBetaReactivateDirectoryRecommendationImpactedResource.md)
-Reactivate an accidentally dismissed, completed, or postponed **impactedResource** object.
-This action updates the **status** of the resource to `active`.
-This method is relevant only if the status of the **impactedResource** object is `dismissed`, `postponed`, or `completedByUser`.
+Reactivate an accidentally dismissed, completed, or postponed impactedResource object.
+This action updates the status of the resource to active.
+This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
 
 ### [Invoke-MgBetaRetryContactServiceProvisioning](Invoke-MgBetaRetryContactServiceProvisioning.md)
 Invoke action retryServiceProvisioning
@@ -1259,12 +1294,12 @@ Create new navigation property to impactedResources for directory
 ### [New-MgBetaDirectoryRole](New-MgBetaDirectoryRole.md)
 Activate a directory role.
 To read a directory role or update its members, it must first be activated in the tenant.
-The Company Administrators and the implicit user directory roles (**User**, **Guest User**, and **Restricted Guest User** roles) are activated by default.
+The Company Administrators and the implicit user directory roles (User, Guest User, and Restricted Guest User roles) are activated by default.
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
 ### [New-MgBetaDirectoryRoleMemberByRef](New-MgBetaDirectoryRoleMemberByRef.md)
 Create a new directory role member.
-You can use both the object ID and template ID of the **directoryRole** with this API.
+You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
@@ -1278,7 +1313,7 @@ Add new entity to directoryRoleTemplates
 Create a new setting based on the templates available in directorySettingTemplates.
 These settings can be at the tenant-level or at the group level.
 Group settings apply to only Microsoft 365 groups.
-The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.
+The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
 
 ### [New-MgBetaDirectorySettingTemplate](New-MgBetaDirectorySettingTemplate.md)
 Add new entity to directorySettingTemplates
@@ -1291,7 +1326,7 @@ Create new navigation property to subscriptions for directory
 
 ### [New-MgBetaDomain](New-MgBetaDomain.md)
 Adds a domain to the tenant.
-**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified.
+Important: You cannot use an associated domain with your Azure AD tenant until ownership is verified.
 See List verificationDnsRecords for details.
 Root domains require verification.
 For example, contoso.com requires verification.
@@ -1325,7 +1360,7 @@ Create new navigation property to extensions for organization
 
 ### [New-MgBetaOrganizationSettingProfileCardProperty](New-MgBetaOrganizationSettingProfileCardProperty.md)
 Create a new profileCardProperty for an organization.
-The new property is identified by its **directoryPropertyName** property.
+The new property is identified by its directoryPropertyName property.
 For more information on adding properties to the profile card for an organization, see customize the profile card.
 
 ### [New-MgBetaSubscribedSku](New-MgBetaSubscribedSku.md)
@@ -1459,7 +1494,7 @@ Delete entity from directoryRoles by roleTemplateId
 
 ### [Remove-MgBetaDirectoryRoleMemberByRef](Remove-MgBetaDirectoryRoleMemberByRef.md)
 Remove a member from a directoryRole.
-You can use both the object ID and template ID of the **directoryRole** with this API.
+You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
@@ -1623,7 +1658,7 @@ Assign the tenant tag to the specified managed tenants.
 
 ### [Test-MgBetaAdministrativeUnitProperty](Test-MgBetaAdministrativeUnitProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1634,7 +1669,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgBetaContactProperty](Test-MgBetaContactProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1645,7 +1680,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgBetaContractProperty](Test-MgBetaContractProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1656,7 +1691,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgBetaDeviceProperty](Test-MgBetaDeviceProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1667,7 +1702,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgBetaDirectoryAdministrativeUnitProperty](Test-MgBetaDirectoryAdministrativeUnitProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1678,7 +1713,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgBetaDirectoryDeletedItemProperty](Test-MgBetaDirectoryDeletedItemProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1689,7 +1724,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgBetaDirectoryFeatureRolloutPolicyApplyToProperty](Test-MgBetaDirectoryFeatureRolloutPolicyApplyToProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1700,7 +1735,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgBetaDirectoryRoleProperty](Test-MgBetaDirectoryRoleProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1711,7 +1746,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgBetaDirectoryRoleTemplateProperty](Test-MgBetaDirectoryRoleTemplateProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1722,7 +1757,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgBetaDirectorySettingTemplateProperty](Test-MgBetaDirectorySettingTemplateProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1733,7 +1768,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgBetaOrganizationProperty](Test-MgBetaOrganizationProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1885,8 +1920,8 @@ Update the navigation property verificationDnsRecords in domains
 
 ### [Update-MgBetaOrganization](Update-MgBetaOrganization.md)
 Update the properties of the currently authenticated organization.
-In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.
-The **ID** is also known as the **tenantId** of the organization.
+In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
+The ID is also known as the tenantId of the organization.
 
 ### [Update-MgBetaOrganizationBranding](Update-MgBetaOrganizationBranding.md)
 Update the properties of the default branding object specified by the organizationalBranding resource.

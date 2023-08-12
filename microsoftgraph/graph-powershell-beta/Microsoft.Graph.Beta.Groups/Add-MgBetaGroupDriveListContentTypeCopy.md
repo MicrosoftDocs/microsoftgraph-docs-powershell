@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupdrivelistcontenttypecopy
 schema: 2.0.0
@@ -10,55 +10,51 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgGroupDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupDriveListContentTypeCopy?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### AddExpanded (Default)
 ```
-Add-MgBetaGroupDriveListContentTypeCopy -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaGroupDriveListContentTypeCopy -DriveId <String> -GroupId <String>
+ [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgBetaGroupDriveListContentTypeCopy -DriveId <String> -GroupId <String>
  -BodyParameter <IPaths7X0XtdGroupsGroupIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentityExpanded
-```
-Add-MgBetaGroupDriveListContentTypeCopy -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgBetaGroupDriveListContentTypeCopy -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths7X0XtdGroupsGroupIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgBetaGroupDriveListContentTypeCopy -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Beta.Sites
-
-$params = @{
-	ContentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
-}
-
-Add-MgBetaSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
+{{ Add code here }}
 ```
-This example shows how to use the Add-MgBetaGroupDriveListContentTypeCopy Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
 
 
 ## PARAMETERS
@@ -67,7 +63,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -83,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths7X0XtdGroupsGroupIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths7X0XtdGroupsGroupIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Add, AddViaIdentity
 Aliases:
 
@@ -98,7 +94,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -113,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -128,8 +124,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -144,8 +140,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -159,7 +155,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +171,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,10 +188,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths7X0XtdGroupsGroupIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentType
+
 ## NOTES
 
 ALIASES
@@ -252,4 +251,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgGroupDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupDriveListContentTypeCopy?view=graph-powershell-1.0)
+

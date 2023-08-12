@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallaudioroutinggroup
 schema: 2.0.0
@@ -8,41 +8,54 @@ schema: 2.0.0
 # New-MgCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Create new navigation property to audioRoutingGroups for communications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
+Create a new audioRoutingGroup.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgCommunicationCallAudioRoutingGroup -CallId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Receivers <String[]>] [-RoutingMode <String>] [-Sources <String[]>] [-WhatIf] [-Confirm]
+ [-Receivers <String[]>] [-RoutingMode <String>] [-Sources <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgCommunicationCallAudioRoutingGroup -CallId <String> -BodyParameter <IMicrosoftGraphAudioRoutingGroup>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphAudioRoutingGroup> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Receivers <String[]>] [-RoutingMode <String>]
- [-Sources <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphAudioRoutingGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sources <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to audioRoutingGroups for communications
+Create a new audioRoutingGroup.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +63,7 @@ Create new navigation property to audioRoutingGroups for communications
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +79,7 @@ audioRoutingGroup
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAudioRoutingGroup
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -81,8 +94,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -97,7 +110,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -113,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -125,10 +138,10 @@ Accept wildcard characters: False
 ```
 
 ### -Receivers
-.
+List of receiving participant ids.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +156,7 @@ Accept wildcard characters: False
 routingMode
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -155,10 +168,10 @@ Accept wildcard characters: False
 ```
 
 ### -Sources
-.
+List of source participant ids.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +186,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +202,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +219,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup
+
 ## NOTES
 
 ALIASES
@@ -222,9 +238,9 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphAudioRoutingGroup>`: audioRoutingGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Receivers <String[]>]`: 
+  - `[Receivers <String[]>]`: List of receiving participant ids.
   - `[RoutingMode <String>]`: routingMode
-  - `[Sources <String[]>]`: 
+  - `[Sources <String[]>]`: List of source participant ids.
 
 `INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
@@ -241,5 +257,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
 

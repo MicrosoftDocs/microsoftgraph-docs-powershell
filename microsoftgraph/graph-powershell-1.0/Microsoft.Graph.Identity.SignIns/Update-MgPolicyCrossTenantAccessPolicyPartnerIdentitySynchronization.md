@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicypartneridentitysynchronization
 schema: 2.0.0
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 
 ## SYNOPSIS
-Update the user synchronization policy of a partner-specific configuration.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
+Create a cross-tenant user synchronization policy for a partner-specific configuration.
 
 ## SYNTAX
 
@@ -20,31 +17,49 @@ Update the user synchronization policy of a partner-specific configuration.
 Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
  -CrossTenantAccessPolicyConfigurationPartnerTenantId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-TenantId <String>] [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
  -CrossTenantAccessPolicyConfigurationPartnerTenantId <String>
- -BodyParameter <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-TenantId <String>]
- [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the user synchronization policy of a partner-specific configuration.
+Create a cross-tenant user synchronization policy for a partner-specific configuration.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -52,7 +67,7 @@ Update the user synchronization policy of a partner-specific configuration.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +83,7 @@ crossTenantIdentitySyncPolicyPartner
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -83,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of crossTenantAccessPolicyConfigurationPartner
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -100,7 +115,7 @@ Use the name of the partner Azure AD (Azure Active Directory) tenant to easily i
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,8 +131,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,7 +147,7 @@ Tenant identifier for the partner Azure AD organization.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +163,7 @@ crossTenantUserSyncInbound
 To construct, see NOTES section for USERSYNCINBOUND properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantUserSyncInbound
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantUserSyncInbound
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +178,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -179,7 +194,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -196,10 +211,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner
+
 ## NOTES
 
 ALIASES
@@ -279,5 +297,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsSyncAllowed <Boolean?>]`: Defines whether user objects should be synchronized from the partner tenant. false causes any current user synchronization from the source tenant to the target tenant to stop. This property has no impact on existing users who have already been synchronized.
 
 ## RELATED LINKS
-[Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
 

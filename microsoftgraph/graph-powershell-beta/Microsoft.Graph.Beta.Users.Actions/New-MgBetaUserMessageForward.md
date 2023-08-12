@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessageforward
 schema: 2.0.0
@@ -9,57 +9,55 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can: n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.n- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.n- Update the draft later to add content to the **body** or change other message properties.
-When using MIME format:n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can: \n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.\n- Update the draft later to add content to the body or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaUserMessageForward -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserMessageForward -MessageId <String> -UserId <String>
  -BodyParameter <IPaths16W4HmtUsersUserIdMessagesMessageIdMicrosoftGraphCreateforwardPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaUserMessageForward -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserMessageForward -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths16W4HmtUsersUserIdMessagesMessageIdMicrosoftGraphCreateforwardPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserMessageForward -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can: n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.n- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.n- Update the draft later to add content to the **body** or change other message properties.
-When using MIME format:n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can: \n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.\n- Update the draft later to add content to the body or change other message properties.
+When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserMessageForward Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -79,8 +77,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageForward -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserMessageForward Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -88,7 +86,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +102,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths16W4HmtUsersUserIdMessagesMessageIdMicrosoftGraphCreateforwardPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths16W4HmtUsersUserIdMessagesMessageIdMicrosoftGraphCreateforwardPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -119,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -135,8 +133,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -151,7 +149,7 @@ message
 To construct, see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessage
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -166,8 +164,8 @@ Accept wildcard characters: False
 The unique identifier of message
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -182,7 +180,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecipient[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -197,8 +195,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -212,7 +210,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -228,7 +226,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -245,10 +243,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths16W4HmtUsersUserIdMessagesMessageIdMicrosoftGraphCreateforwardPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
+
 ## NOTES
 
 ALIASES
@@ -473,7 +474,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
 
-## RELATED LINKS
-[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)

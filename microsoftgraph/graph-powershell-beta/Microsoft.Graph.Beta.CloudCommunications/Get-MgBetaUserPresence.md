@@ -1,59 +1,50 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingvirtualappointment
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauserpresence
 schema: 2.0.0
 ---
 
-# Get-MgBetaUserOnlineMeetingVirtualAppointment
+# Get-MgBetaUserPresence
 
 ## SYNOPSIS
-Read the properties and relationships of a virtualAppointment object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserPresence?view=graph-powershell-1.0)
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaUserOnlineMeetingVirtualAppointment -OnlineMeetingId <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPresence -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicationsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a virtualAppointment object.
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
 
 ## EXAMPLES
-### Example 1: Get your own presence information
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPresence -UserId $userId
-```
-This example shows how to use the Get-MgBetaUserPresence Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get the presence information of another user
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 Get-MgBetaUserPresence -UserId $userId
-```
-This example shows how to use the Get-MgBetaUserPresence Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -61,7 +52,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -77,7 +68,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -88,26 +79,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OnlineMeetingId
-The unique identifier of onlineMeeting
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -122,7 +98,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -139,9 +115,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualAppointment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPresence
+
 ## NOTES
 
 ALIASES
@@ -172,4 +150,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserPresence?view=graph-powershell-1.0)
+

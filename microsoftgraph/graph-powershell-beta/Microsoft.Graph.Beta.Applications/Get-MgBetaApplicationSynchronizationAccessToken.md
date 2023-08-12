@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationaccesstoken
 schema: 2.0.0
@@ -10,15 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationAccessToken?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### AcquireExpanded (Default)
 ```
 Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId <String> [-AdditionalProperties <Hashtable>]
- [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -26,41 +23,42 @@ Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId <String> [-Additi
 ```
 Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId <String>
  -BodyParameter <IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AcquireViaIdentityExpanded
-```
-Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AcquireViaIdentity
 ```
 Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AcquireViaIdentityExpanded
+```
+Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaApplicationSynchronizationAccessToken Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
+```
+
 $params = @{
-	Credentials = @(
+	credentials = @(
 		@{
 			"@odata.type" = "microsoft.graph.synchronizationSecretKeyStringValuePair"
 		}
 	)
 }
+
 Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId $applicationId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaApplicationSynchronizationAccessToken Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -68,7 +66,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AcquireExpanded, AcquireViaIdentityExpanded
 Aliases:
 
@@ -83,8 +81,8 @@ Accept wildcard characters: False
 The unique identifier of application
 
 ```yaml
-Type: String
-Parameter Sets: AcquireExpanded, Acquire
+Type: System.String
+Parameter Sets: Acquire, AcquireExpanded
 Aliases:
 
 Required: True
@@ -99,7 +97,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Acquire, AcquireViaIdentity
 Aliases:
 
@@ -115,7 +113,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
 Parameter Sets: AcquireExpanded, AcquireViaIdentityExpanded
 Aliases:
 
@@ -131,8 +129,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: AcquireViaIdentityExpanded, AcquireViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: AcquireViaIdentity, AcquireViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -146,7 +144,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -161,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -177,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,10 +192,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1RpqowmApplicationsApplicationIdSynchronizationMicrosoftGraphAcquireaccesstokenPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -249,4 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgApplicationSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationAccessToken?view=graph-powershell-1.0)
+

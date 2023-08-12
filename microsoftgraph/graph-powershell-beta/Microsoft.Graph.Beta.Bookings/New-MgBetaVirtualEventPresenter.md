@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventpresenter
 schema: 2.0.0
@@ -16,30 +16,46 @@ Create new navigation property to presenters for solutions
 ```
 New-MgBetaVirtualEventPresenter -VirtualEventId <String> [-AdditionalProperties <Hashtable>] [-Email <String>]
  [-Id <String>] [-Identity <IMicrosoftGraphCommunicationsUserIdentity>]
- [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaVirtualEventPresenter -VirtualEventId <String> -BodyParameter <IMicrosoftGraphVirtualEventPresenter>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaVirtualEventPresenter -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphVirtualEventPresenter> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaVirtualEventPresenter -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
  [-Email <String>] [-Id <String>] [-Identity <IMicrosoftGraphCommunicationsUserIdentity>]
- [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaVirtualEventPresenter -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventPresenter> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to presenters for solutions
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -47,7 +63,7 @@ Create new navigation property to presenters for solutions
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -63,7 +79,7 @@ virtualEventPresenter
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventPresenter
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventPresenter
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -78,7 +94,7 @@ Accept wildcard characters: False
 Email address of the presenter.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -94,7 +110,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -110,7 +126,7 @@ communicationsUserIdentity
 To construct, see NOTES section for IDENTITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommunicationsUserIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommunicationsUserIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -126,8 +142,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -142,7 +158,7 @@ virtualEventPresenterDetails
 To construct, see NOTES section for PRESENTERDETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventPresenterDetails
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventPresenterDetails
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -157,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of virtualEvent
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -172,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,10 +221,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventPresenter
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventPresenter
+
 ## NOTES
 
 ALIASES
@@ -224,8 +243,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the presenter.
   - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[TenantId <String>]`: The user's tenant ID.
   - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -241,8 +260,8 @@ To create the parameters described below, construct a hash table containing the 
 
 `IDENTITY <IMicrosoftGraphCommunicationsUserIdentity>`: communicationsUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[TenantId <String>]`: The user's tenant ID.
 
 `INPUTOBJECT <IBookingsIdentity>`: Identity Parameter

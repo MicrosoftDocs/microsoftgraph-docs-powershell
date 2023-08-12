@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a shiftPreferences object by ID.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,17 +28,13 @@ Get-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandProperty 
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Users
+```
 
 Get-MgUserSettingShiftPreference -UserId $userId
-```
-This example shows how to use the Get-MgUserSettingShiftPreference Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -49,7 +42,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -65,7 +58,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -80,7 +73,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -95,7 +88,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -112,9 +105,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftPreferences
+
 ## NOTES
 
 ALIASES
@@ -140,4 +135,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
+

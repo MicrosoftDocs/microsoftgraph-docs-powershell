@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatinstalledapp
 schema: 2.0.0
@@ -10,37 +10,34 @@ schema: 2.0.0
 ## SYNOPSIS
 Install a teamsApp to the specified chat.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgUserChatInstalledApp -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserChatInstalledApp -ChatId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphTeamsAppInstallation> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsAppInstallation> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,13 +45,27 @@ Install a teamsApp to the specified chat.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +81,7 @@ teamsAppInstallation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppInstallation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -85,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -101,7 +112,7 @@ teamsAppPermissionSet
 To construct, see NOTES section for CONSENTEDPERMISSIONSET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppPermissionSet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppPermissionSet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +128,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -133,8 +144,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -149,7 +160,7 @@ teamsApp
 To construct, see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsApp
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +176,7 @@ teamsAppDefinition
 To construct, see NOTES section for TEAMSAPPDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -180,8 +191,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -195,7 +206,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -211,7 +222,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -228,10 +239,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
+
 ## NOTES
 
 ALIASES
@@ -300,6 +314,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
@@ -383,7 +398,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS
-[New-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
 
-## RELATED LINKS
-[New-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatInstalledApp?view=graph-powershell-beta)

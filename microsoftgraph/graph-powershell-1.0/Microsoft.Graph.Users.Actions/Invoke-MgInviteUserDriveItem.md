@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mginviteuserdriveitem
 schema: 2.0.0
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Invoke-MgInviteUserDriveItem
 
 ## SYNOPSIS
-Sends a sharing invitation for a **driveItem**.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaInviteUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveItem?view=graph-powershell-beta)
+Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 
 ## SYNTAX
 
@@ -20,14 +17,21 @@ Sends a sharing invitation for a **driveItem**.nA sharing invitation provides pe
 Invoke-MgInviteUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
- [-Roles <String[]>] [-SendInvitation] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Roles <String[]>] [-SendInvitation] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Invite
 ```
 Invoke-MgInviteUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  -BodyParameter <IPaths1F3Q2E6UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### InviteViaIdentity
+```
+Invoke-MgInviteUserDriveItem -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths1F3Q2E6UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### InviteViaIdentityExpanded
@@ -35,18 +39,27 @@ Invoke-MgInviteUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <St
 Invoke-MgInviteUserDriveItem -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
- [-Roles <String[]>] [-SendInvitation] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### InviteViaIdentity
-```
-Invoke-MgInviteUserDriveItem -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1F3Q2E6UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Roles <String[]>] [-SendInvitation] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Sends a sharing invitation for a **driveItem**.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Sends a sharing invitation for a **driveItem**.nA sharing invitation provides pe
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1F3Q2E6UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1F3Q2E6UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Invite, InviteViaIdentity
 Aliases:
 
@@ -85,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: InviteExpanded, Invite
+Type: System.String
+Parameter Sets: Invite, InviteExpanded
 Aliases:
 
 Required: True
@@ -100,8 +113,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: InviteExpanded, Invite
+Type: System.String
+Parameter Sets: Invite, InviteExpanded
 Aliases:
 
 Required: True
@@ -115,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -131,8 +144,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: InviteViaIdentityExpanded, InviteViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: InviteViaIdentity, InviteViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -146,7 +159,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -161,7 +174,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -177,7 +190,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDriveRecipient[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveRecipient[]
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -192,7 +205,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -207,7 +220,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -222,7 +235,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -237,7 +250,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -252,8 +265,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: InviteExpanded, Invite
+Type: System.String
+Parameter Sets: Invite, InviteExpanded
 Aliases:
 
 Required: True
@@ -267,7 +280,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -283,7 +296,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -300,10 +313,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1F3Q2E6UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
+
 ## NOTES
 
 ALIASES
@@ -352,6 +368,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
@@ -364,5 +381,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Invoke-MgBetaInviteUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveItem?view=graph-powershell-beta)
 

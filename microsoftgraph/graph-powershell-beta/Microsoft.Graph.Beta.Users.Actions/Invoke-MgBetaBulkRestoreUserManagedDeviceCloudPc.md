@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkrestoreusermanageddevicecloudpc
 schema: 2.0.0
@@ -15,7 +15,7 @@ Restore multiple Cloud PC devices with a single request that includes the IDs of
 ### BulkExpanded (Default)
 ```
 Invoke-MgBetaBulkRestoreUserManagedDeviceCloudPc -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ManagedDeviceIds <String[]>] [-RestorePointDateTime <DateTime>] [-TimeRange <String>] [-WhatIf] [-Confirm]
+ [-ManagedDeviceIds <String[]>] [-RestorePointDateTime <DateTime>] [-TimeRange <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -23,25 +23,41 @@ Invoke-MgBetaBulkRestoreUserManagedDeviceCloudPc -UserId <String> [-AdditionalPr
 ```
 Invoke-MgBetaBulkRestoreUserManagedDeviceCloudPc -UserId <String>
  -BodyParameter <IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### BulkViaIdentityExpanded
-```
-Invoke-MgBetaBulkRestoreUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ManagedDeviceIds <String[]>] [-RestorePointDateTime <DateTime>]
- [-TimeRange <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### BulkViaIdentity
 ```
 Invoke-MgBetaBulkRestoreUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### BulkViaIdentityExpanded
+```
+Invoke-MgBetaBulkRestoreUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ManagedDeviceIds <String[]>] [-RestorePointDateTime <DateTime>]
+ [-TimeRange <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Restore multiple Cloud PC devices with a single request that includes the IDs of
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
 
@@ -65,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Bulk, BulkViaIdentity
 Aliases:
 
@@ -81,8 +97,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: BulkViaIdentityExpanded, BulkViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: BulkViaIdentity, BulkViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -96,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
 
@@ -111,7 +127,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
 
@@ -126,7 +142,7 @@ Accept wildcard characters: False
 restoreTimeRange
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
 
@@ -141,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: BulkExpanded, Bulk
+Type: System.String
+Parameter Sets: Bulk, BulkExpanded
 Aliases:
 
 Required: True
@@ -156,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,10 +205,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcBulkRemoteActionResult
+
 ## NOTES
 
 ALIASES

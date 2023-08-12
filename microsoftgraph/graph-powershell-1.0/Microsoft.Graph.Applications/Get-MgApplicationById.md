@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyid
 schema: 2.0.0
@@ -9,55 +9,43 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationById?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
-Get-MgApplicationById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Get-MgApplicationById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgApplicationById
  -BodyParameter <IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
-
-$params = @{
-	Ids = @(
-		"84b80893-8749-40a3-97b7-68513b600544"
-		"5d6059b6-368d-45f8-91e1-8e07d485f1d0"
-		"0b944de3-e0fc-4774-a49a-b135213725ef"
-		"b75a5ab2-fe55-4463-bd31-d21ad555c6e0"
-	)
-	Types = @(
-		"user"
-		"group"
-		"device"
-	)
-}
-
-Get-MgDirectoryObjectById -BodyParameter $params
+{{ Add code here }}
 ```
-This example shows how to use the Get-MgApplicationById Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
 
 
 ## PARAMETERS
@@ -66,7 +54,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -82,7 +70,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
@@ -97,7 +85,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -112,7 +100,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -127,7 +115,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -143,7 +131,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -160,9 +148,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+
 ## NOTES
 
 ALIASES
@@ -178,4 +168,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
-[Get-MgBetaApplicationById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationById?view=graph-powershell-beta)
+

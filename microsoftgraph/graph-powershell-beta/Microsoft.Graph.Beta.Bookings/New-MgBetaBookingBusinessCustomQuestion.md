@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomquestion
 schema: 2.0.0
@@ -10,39 +10,52 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new bookingCustomQuestion object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <String> [-AdditionalProperties <Hashtable>]
- [-AnswerInputType <String>] [-AnswerOptions <String[]>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AnswerInputType <String>] [-AnswerOptions <String[]>] [-DisplayName <String>] [-Id <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaBookingBusinessCustomQuestion -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-AnswerInputType <String>] [-AnswerOptions <String[]>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBookingCustomQuestion> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AnswerInputType <String>] [-AnswerOptions <String[]>] [-DisplayName <String>] [-Id <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new bookingCustomQuestion object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +63,7 @@ Create a new bookingCustomQuestion object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +78,7 @@ Accept wildcard characters: False
 answerInputType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +93,7 @@ Accept wildcard characters: False
 List of possible answer values.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +109,7 @@ Represents a custom question of the business.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBookingCustomQuestion
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCustomQuestion
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -111,8 +124,8 @@ Accept wildcard characters: False
 The unique identifier of bookingBusiness
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -126,7 +139,7 @@ Accept wildcard characters: False
 Display name of this entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +155,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,8 +171,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -173,7 +186,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +202,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +219,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCustomQuestion
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCustomQuestion
+
 ## NOTES
 
 ALIASES
@@ -249,5 +265,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[New-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
 

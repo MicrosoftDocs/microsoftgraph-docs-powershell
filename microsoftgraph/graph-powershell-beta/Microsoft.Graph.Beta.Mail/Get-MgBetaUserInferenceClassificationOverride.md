@@ -1,59 +1,122 @@
 ---
-external help file: Microsoft.Graph.Beta.Mail-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassification
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassificationoverride
 schema: 2.0.0
 ---
 
-# Get-MgBetaUserInferenceClassification
+# Get-MgBetaUserInferenceClassificationOverride
 
 ## SYNOPSIS
-Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Get-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
+A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 ```
-Get-MgBetaUserInferenceClassification -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserInferenceClassificationOverride -UserId <String> [-Filter <String>] [-Property <String[]>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>]
+ [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaUserInferenceClassificationOverride -InferenceClassificationOverrideId <String> -UserId <String>
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserInferenceClassification -InputObject <IMailIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity> [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
+A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+Read-only.
+Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-
-$params = @{
-	classifyAs = "focused"
-}
+```
 
 # A UPN can also be used as -UserId.
-Update-MgBetaUserInferenceClassificationOverride -UserId $userId -InferenceClassificationOverrideId $inferenceClassificationOverrideId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaBetaUserInferenceClassificationOverride Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
+Get-MgBetaUserInferenceClassificationOverride -UserId $userId
 
 ## PARAMETERS
+
+### -All
+List all pages.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: System.String
+Parameter Sets: List
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InferenceClassificationOverrideId
+The unique identifier of inferenceClassificationOverride
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -64,13 +127,73 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: System.String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases: Limit
 
 Required: False
 Position: Named
@@ -83,8 +206,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -100,9 +223,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInferenceClassification
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInferenceClassificationOverride
+
 ## NOTES
 
 ALIASES
@@ -125,4 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Get-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
+

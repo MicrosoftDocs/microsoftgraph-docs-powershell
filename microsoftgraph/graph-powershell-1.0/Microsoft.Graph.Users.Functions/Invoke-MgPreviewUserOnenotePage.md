@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgpreviewuseronenotepage
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function preview
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaPreviewUserOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +25,22 @@ Invoke-MgPreviewUserOnenotePage -InputObject <IUsersFunctionsIdentity> [<CommonP
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -InputObject
@@ -35,7 +48,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
 Parameter Sets: PreviewViaIdentity
 Aliases:
 
@@ -50,7 +63,7 @@ Accept wildcard characters: False
 The unique identifier of onenotePage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Preview
 Aliases:
 
@@ -65,7 +78,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Preview
 Aliases:
 
@@ -82,9 +95,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePagePreview
+
 ## NOTES
 
 ALIASES
@@ -123,5 +138,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaPreviewUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaPreviewUserOnenotePage?view=graph-powershell-beta)
 

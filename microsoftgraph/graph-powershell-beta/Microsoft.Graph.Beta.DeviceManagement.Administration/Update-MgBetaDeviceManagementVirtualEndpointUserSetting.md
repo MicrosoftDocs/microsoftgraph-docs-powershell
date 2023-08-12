@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting
 schema: 2.0.0
@@ -17,14 +17,20 @@ Update the properties of a cloudPcUserSetting object.
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId <String>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-LocalAdminEnabled] [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LocalAdminEnabled] [-ResetEnabled] [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>]
+ [-SelfServiceEnabled] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId <String>
- -BodyParameter <IMicrosoftGraphCloudPcUserSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcUserSetting> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphCloudPcUserSetting> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -32,21 +38,16 @@ Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId <S
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-LocalAdminEnabled] [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCloudPcUserSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LocalAdminEnabled] [-ResetEnabled] [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>]
+ [-SelfServiceEnabled] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a cloudPcUserSetting object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
@@ -61,8 +62,8 @@ $params = @{
 }
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -70,7 +71,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -88,7 +89,7 @@ For an example, see Get cloudPcUserSettingample.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcUserSettingAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcUserSettingAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +105,7 @@ cloudPcUserSetting
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcUserSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcUserSetting
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -119,8 +120,8 @@ Accept wildcard characters: False
 The unique identifier of cloudPcUserSetting
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -136,7 +137,7 @@ The Timestamp type represents the date and time information using ISO 8601 forma
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -151,7 +152,7 @@ Accept wildcard characters: False
 The setting name displayed in the user interface.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +168,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -183,8 +184,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -200,7 +201,7 @@ The Timestamp type represents the date and time information using ISO 8601 forma
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -218,7 +219,25 @@ To enable the local admin option, change the setting to true.
 If the local admin option is enabled, the end user can be an admin of the Cloud PC device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResetEnabled
+Indicates whether an end user is allowed to reset their Cloud PC.
+When true, the user is allowed to reset their Cloud PC.
+When false, end-user initiated reset is not allowed.
+The default value is false.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -234,7 +253,7 @@ cloudPcRestorePointSetting
 To construct, see NOTES section for RESTOREPOINTSETTING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcRestorePointSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcRestorePointSetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -251,7 +270,7 @@ Default value is false.
 To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -266,7 +285,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -282,7 +301,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -299,10 +318,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcUserSetting
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcUserSetting
+
 ## NOTES
 
 ALIASES
@@ -330,6 +352,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The setting name displayed in the user interface.
   - `[LastModifiedDateTime <DateTime?>]`: The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
   - `[LocalAdminEnabled <Boolean?>]`: Indicates whether the local admin option is enabled. Default value is false. To enable the local admin option, change the setting to true. If the local admin option is enabled, the end user can be an admin of the Cloud PC device.
+  - `[ResetEnabled <Boolean?>]`: Indicates whether an end user is allowed to reset their Cloud PC. When true, the user is allowed to reset their Cloud PC. When false, end-user initiated reset is not allowed. The default value is false.
   - `[RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>]`: cloudPcRestorePointSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[FrequencyInHours <Int32?>]`: The time interval in hours to take snapshots (restore points) of a Cloud PC automatically. Possible values are 4, 6, 12, 16, and 24. The default frequency is 12 hours.
@@ -344,6 +367,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
   - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
   - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
+  - `[CloudPcFrontLineServicePlanId <String>]`: The unique identifier of cloudPcFrontLineServicePlan
   - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
@@ -400,3 +424,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRestoreEnabled <Boolean?>]`: If true, the user has the ability to use snapshots to restore Cloud PCs. If false, non-admin users cannot use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
+

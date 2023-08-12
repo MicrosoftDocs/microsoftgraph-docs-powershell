@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Applications
-Module Guid: dfd1c793-2e48-4b76-a9e0-cf6b8bf012dc
+Module Guid: 9bca8add-9fc2-470b-b0ec-5c6ec504e430
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,7 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 Add a key credential to an application.
 This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
+Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
 ### [Add-MgBetaApplicationPassword](Add-MgBetaApplicationPassword.md)
@@ -23,27 +23,34 @@ Adds a strong password to an application.
 
 ### [Add-MgBetaServicePrincipalTokenSigningCertificate](Add-MgBetaServicePrincipalTokenSigningCertificate.md)
 Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \n+ The keyCredentials object with the following objects:\n    + A private key object with **usage** set to `Sign`.\n    + A public key object with **usage** set to `Verify`.\n+ The passwordCredentials object.
-All the objects have the same value of **customKeyIdentifier**.
-The **passwordCredential** is used to open the PFX file (private key).
-It and the associated private key object have the same value of **keyId**.
-Once set during creation through the **displayName** property, the subject of the certificate cannot be updated.
-The **startDateTime** is set to the same time the certificate is created using the action.
-The **endDateTime** can be up to three years after the certificate is created.
+The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \n+ The keyCredentials object with the following objects:\n    + A private key object with usage set to Sign.\n    + A public key object with usage set to Verify.\n+ The passwordCredentials object.
+All the objects have the same value of customKeyIdentifier.
+The passwordCredential is used to open the PFX file (private key).
+It and the associated private key object have the same value of keyId.
+Once set during creation through the displayName property, the subject of the certificate cannot be updated.
+The startDateTime is set to the same time the certificate is created using the action.
+The endDateTime can be up to three years after the certificate is created.
 
 ### [Clear-MgBetaApplicationVerifiedPublisher](Clear-MgBetaApplicationVerifiedPublisher.md)
 Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
 
-### [Clear-MgBetaApplicationVerifiedPublisher](Clear-MgBetaApplicationVerifiedPublisher.md)
-Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
-For more information, see Publisher verification.
+### [Confirm-MgBetaApplicationMemberGroup](Confirm-MgBetaApplicationMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaApplicationMemberObject](Confirm-MgBetaApplicationMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaApplicationMemberObject](Confirm-MgBetaApplicationMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaServicePrincipalMemberGroup](Confirm-MgBetaServicePrincipalMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaServicePrincipalMemberObject](Confirm-MgBetaServicePrincipalMemberObject.md)
 Invoke action checkMemberObjects
@@ -119,9 +126,9 @@ Get the number of the resource
 The main logo for the application.
 Not nullable.
 
-### [Get-MgBetaApplicationLogo](Get-MgBetaApplicationLogo.md)
-The main logo for the application.
-Not nullable.
+### [Get-MgBetaApplicationMemberGroup](Get-MgBetaApplicationMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaApplicationMemberObject](Get-MgBetaApplicationMemberObject.md)
 Invoke action getMemberObjects
@@ -441,8 +448,9 @@ Get licenseDetails from servicePrincipals
 ### [Get-MgBetaServicePrincipalLicenseDetailCount](Get-MgBetaServicePrincipalLicenseDetailCount.md)
 Get the number of the resource
 
-### [Get-MgBetaServicePrincipalLicenseDetailCount](Get-MgBetaServicePrincipalLicenseDetailCount.md)
-Get the number of the resource
+### [Get-MgBetaServicePrincipalMemberGroup](Get-MgBetaServicePrincipalMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaServicePrincipalMemberObject](Get-MgBetaServicePrincipalMemberObject.md)
 Invoke action getMemberObjects
@@ -674,7 +682,7 @@ Invoke function functions
 ### [Invoke-MgBetaInstantiateApplicationTemplate](Invoke-MgBetaInstantiateApplicationTemplate.md)
 Add an instance of an application from the Azure AD application gallery into your directory.
 You can also use this API to instantiate non-gallery apps.
-Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
 
 ### [Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression](Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression.md)
 Parse a given string expression into an attributeMappingSource object.
@@ -771,7 +779,7 @@ Create new navigation property ref to agentGroups for onPremisesPublishingProfil
 Create new navigation property to connectors for onPremisesPublishingProfiles
 
 ### [New-MgBetaOnPremisePublishingProfileConnectorGroup](New-MgBetaOnPremisePublishingProfileConnectorGroup.md)
-Create a new connectorGroup.
+Create a connectorGroup object.
 
 ### [New-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef](New-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef.md)
 Create new navigation property ref to members for onPremisesPublishingProfiles
@@ -1097,7 +1105,7 @@ All the progress, including job state, is persisted, and the job will continue f
 
 ### [Test-MgBetaApplicationProperty](Test-MgBetaApplicationProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -1111,7 +1119,7 @@ Validate that the credentials are valid in the tenant.
 
 ### [Test-MgBetaServicePrincipalProperty](Test-MgBetaServicePrincipalProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostinreplytoattachmentuploadsession
 schema: 2.0.0
@@ -11,14 +11,11 @@ schema: 2.0.0
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to an Outlook item.
 The item can be a message or event.
 Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
+To attach a file that's smaller than 3 MB, do a POST operation on the attachments navigation property of the Outlook item; see how to do this for a message or for an event.
+As part of the response, this action returns an upload URL that you can use in subsequent sequential PUT queries.
+Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupThreadPostInReplyToAttachmentUploadSession](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThreadPostInReplyToAttachmentUploadSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,7 +23,7 @@ The following are the steps to attach a file to an Outlook item using an upload 
 ```
 New-MgBetaGroupThreadPostInReplyToAttachmentUploadSession -ConversationThreadId <String> -GroupId <String>
  -PostId <String> [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
@@ -34,32 +31,48 @@ New-MgBetaGroupThreadPostInReplyToAttachmentUploadSession -ConversationThreadId 
 New-MgBetaGroupThreadPostInReplyToAttachmentUploadSession -ConversationThreadId <String> -GroupId <String>
  -PostId <String>
  -BodyParameter <IPathsC777YoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaGroupThreadPostInReplyToAttachmentUploadSession -InputObject <IGroupsIdentity>
- [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupThreadPostInReplyToAttachmentUploadSession -InputObject <IGroupsIdentity>
  -BodyParameter <IPathsC777YoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaGroupThreadPostInReplyToAttachmentUploadSession -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to an Outlook item.
 The item can be a message or event.
 Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
-Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
+To attach a file that's smaller than 3 MB, do a POST operation on the attachments navigation property of the Outlook item; see how to do this for a message or for an event.
+As part of the response, this action returns an upload URL that you can use in subsequent sequential PUT queries.
+Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -67,7 +80,7 @@ The following are the steps to attach a file to an Outlook item using an upload 
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +96,7 @@ attachmentItem
 To construct, see NOTES section for ATTACHMENTITEM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachmentItem
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachmentItem
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +112,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsC777YoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsC777YoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -114,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of conversationThread
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -129,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -145,8 +158,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -160,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of post
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -175,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,10 +221,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsC777YoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUploadSession
+
 ## NOTES
 
 ALIASES
@@ -284,5 +300,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgGroupThreadPostInReplyToAttachmentUploadSession](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThreadPostInReplyToAttachmentUploadSession?view=graph-powershell-1.0)
 

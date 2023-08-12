@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogresourcescope
 schema: 2.0.0
@@ -17,7 +17,37 @@ Update the navigation property resourceScopes in identityGovernance
 Update-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
  -AccessPackageResourceScopeId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
+ -AccessPackageResourceScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
+ -AccessPackageResourceId <String> -AccessPackageResourceScopeId <String>
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Update2
+```
+Update-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
+ -AccessPackageResourceScopeId <String> -AccessPackageResourceScopeId1 <String>
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateExpanded1
+```
+Update-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
+ -AccessPackageResourceId <String> -AccessPackageResourceScopeId <String> [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>]
+ [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### UpdateExpanded2
@@ -26,53 +56,25 @@ Update-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <Stri
  -AccessPackageResourceScopeId <String> -AccessPackageResourceScopeId1 <String>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateExpanded1
-```
-Update-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -AccessPackageResourceScopeId <String> -AccessPackageResourceId <String> [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>]
- [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update2
-```
-Update-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -AccessPackageResourceScopeId <String> -AccessPackageResourceScopeId1 <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -AccessPackageResourceScopeId <String> -AccessPackageResourceId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -AccessPackageResourceScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded2
+### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity1
 ```
 Update-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity2
+```
+Update-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -80,29 +82,43 @@ Update-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovern
 Update-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity2
+### UpdateViaIdentityExpanded1
 ```
 Update-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentityExpanded2
 ```
 Update-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property resourceScopes in identityGovernance
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -110,8 +126,8 @@ Update the navigation property resourceScopes in identityGovernance
 The unique identifier of accessPackageCatalog
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, Update2, Update1, Update
+Type: System.String
+Parameter Sets: Update, Update1, Update2, UpdateExpanded, UpdateExpanded1, UpdateExpanded2
 Aliases:
 
 Required: True
@@ -125,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResource
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -140,8 +156,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceScope
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, Update2, Update1, Update
+Type: System.String
+Parameter Sets: Update, Update1, Update2, UpdateExpanded, UpdateExpanded1, UpdateExpanded2
 Aliases:
 
 Required: True
@@ -155,8 +171,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceScope
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, Update2
+Type: System.String
+Parameter Sets: Update2, UpdateExpanded2
 Aliases:
 
 Required: True
@@ -170,8 +186,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -186,8 +202,8 @@ accessPackageResourceScope
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceScope
-Parameter Sets: Update2, Update1, Update, UpdateViaIdentity2, UpdateViaIdentity1, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
+Parameter Sets: Update, Update1, Update2, UpdateViaIdentity, UpdateViaIdentity1, UpdateViaIdentity2
 Aliases:
 
 Required: True
@@ -198,11 +214,11 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+The description of the scope.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -213,11 +229,11 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The display name of the scope.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -232,8 +248,8 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -248,8 +264,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity2, UpdateViaIdentity1, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentity1, UpdateViaIdentity2, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: True
@@ -260,11 +276,11 @@ Accept wildcard characters: False
 ```
 
 ### -IsRootScope
-.
+True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -275,11 +291,11 @@ Accept wildcard characters: False
 ```
 
 ### -OriginId
-.
+The unique identifier for the scope in the resource as defined in the origin system.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -290,11 +306,11 @@ Accept wildcard characters: False
 ```
 
 ### -OriginSystem
-.
+The origin system for the scope.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -309,8 +325,8 @@ accessPackageResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResource
-Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -324,7 +340,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -340,7 +356,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -357,10 +373,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
+
 ## NOTES
 
 ALIASES
@@ -373,39 +392,39 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[IsRootScope <Boolean?>]`: 
-  - `[OriginId <String>]`: 
-  - `[OriginSystem <String>]`: 
+  - `[Description <String>]`: The description of the scope.
+  - `[DisplayName <String>]`: The display name of the scope.
+  - `[IsRootScope <Boolean?>]`: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
+  - `[OriginId <String>]`: The unique identifier for the scope in the resource as defined in the origin system.
+  - `[OriginSystem <String>]`: The origin system for the scope.
   - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[Description <String>]`: A description for the resource.
+    - `[DisplayName <String>]`: The display name of the resource, such as the application name, group name or site name.
     - `[Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[IsDefaultEnvironment <Boolean?>]`: 
-      - `[ModifiedDateTime <DateTime?>]`: 
-      - `[OriginId <String>]`: 
-      - `[OriginSystem <String>]`: 
-      - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
-    - `[ModifiedDateTime <DateTime?>]`: 
-    - `[OriginId <String>]`: 
-    - `[OriginSystem <String>]`: 
-    - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
+      - `[CreatedDateTime <DateTime?>]`: The date and time that this object was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Description <String>]`: The description of this object.
+      - `[DisplayName <String>]`: The display name of this object.
+      - `[IsDefaultEnvironment <Boolean?>]`: Determines whether this is default environment or not. It is set to true for all static origin systems, such as Azure AD groups and Azure AD Applications.
+      - `[ModifiedDateTime <DateTime?>]`: The date and time that this object was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[OriginId <String>]`: The unique identifier of this environment in the origin system.
+      - `[OriginSystem <String>]`: The type of the resource in the origin system, that is, SharePointOnline. Requires $filter (eq).
+      - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: Read-only. Required.
+    - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[OriginId <String>]`: The unique identifier of the resource in the origin system. In the case of an Azure AD group, this is the identifier of the group.
+    - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+    - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: Read-only. Nullable. Supports $expand.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
-      - `[OriginId <String>]`: 
-      - `[OriginSystem <String>]`: 
+      - `[Description <String>]`: A description for the resource role.
+      - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
+      - `[OriginId <String>]`: The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+      - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
       - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
-    - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+    - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: Read-only. Nullable. Supports $expand.
 
 `INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
@@ -474,37 +493,37 @@ To create the parameters described below, construct a hash table containing the 
 `RESOURCE <IMicrosoftGraphAccessPackageResource>`: accessPackageResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[Description <String>]`: A description for the resource.
+  - `[DisplayName <String>]`: The display name of the resource, such as the application name, group name or site name.
   - `[Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[IsDefaultEnvironment <Boolean?>]`: 
-    - `[ModifiedDateTime <DateTime?>]`: 
-    - `[OriginId <String>]`: 
-    - `[OriginSystem <String>]`: 
-    - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
-  - `[ModifiedDateTime <DateTime?>]`: 
-  - `[OriginId <String>]`: 
-  - `[OriginSystem <String>]`: 
-  - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The date and time that this object was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Description <String>]`: The description of this object.
+    - `[DisplayName <String>]`: The display name of this object.
+    - `[IsDefaultEnvironment <Boolean?>]`: Determines whether this is default environment or not. It is set to true for all static origin systems, such as Azure AD groups and Azure AD Applications.
+    - `[ModifiedDateTime <DateTime?>]`: The date and time that this object was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[OriginId <String>]`: The unique identifier of this environment in the origin system.
+    - `[OriginSystem <String>]`: The type of the resource in the origin system, that is, SharePointOnline. Requires $filter (eq).
+    - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: Read-only. Required.
+  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[OriginId <String>]`: The unique identifier of the resource in the origin system. In the case of an Azure AD group, this is the identifier of the group.
+  - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
+  - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: Read-only. Nullable. Supports $expand.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[OriginId <String>]`: 
-    - `[OriginSystem <String>]`: 
+    - `[Description <String>]`: A description for the resource role.
+    - `[DisplayName <String>]`: The display name of the resource role such as the role defined by the application.
+    - `[OriginId <String>]`: The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
+    - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
     - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
-  - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+  - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: Read-only. Nullable. Supports $expand.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[IsRootScope <Boolean?>]`: 
-    - `[OriginId <String>]`: 
-    - `[OriginSystem <String>]`: 
+    - `[Description <String>]`: The description of the scope.
+    - `[DisplayName <String>]`: The display name of the scope.
+    - `[IsRootScope <Boolean?>]`: True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
+    - `[OriginId <String>]`: The unique identifier for the scope in the resource as defined in the origin system.
+    - `[OriginSystem <String>]`: The origin system for the scope.
     - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
 
 ## RELATED LINKS

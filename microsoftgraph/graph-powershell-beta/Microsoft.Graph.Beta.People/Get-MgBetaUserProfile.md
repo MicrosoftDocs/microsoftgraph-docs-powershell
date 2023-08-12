@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.People-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofile
 schema: 2.0.0
@@ -9,15 +9,16 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a profile object for a given user.
-The **profile** resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
+The profile resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
 To get one of these navigation properties, use the corresponding GET method on that property.
-See the methods exposed by **profile**.
+See the methods exposed by profile.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaUserProfile -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserProfile -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -28,27 +29,29 @@ Get-MgBetaUserProfile -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a profile object for a given user.
-The **profile** resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
+The profile resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
 To get one of these navigation properties, use the corresponding GET method on that property.
-See the methods exposed by **profile**.
+See the methods exposed by profile.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserProfile Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfile -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaUserProfile Cmdlet
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
-Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)" 
+Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)"
 ```
-This example shows how to use the Get-MgBetaUserProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -56,7 +59,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -72,7 +75,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -119,9 +122,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProfile
+
 ## NOTES
 
 ALIASES
@@ -156,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+

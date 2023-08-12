@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancerolemanagementalertdefinition
 schema: 2.0.0
@@ -17,14 +17,22 @@ Update the navigation property alertDefinitions in identityGovernance
 Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -UnifiedRoleManagementAlertDefinitionId <String>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-HowToPrevent <String>]
  [-Id <String>] [-IsConfigurable] [-IsRemediatable] [-MitigationSteps <String>] [-ScopeId <String>]
- [-ScopeType <String>] [-SecurityImpact <String>] [-SeverityLevel <String>] [-WhatIf] [-Confirm]
+ [-ScopeType <String>] [-SecurityImpact <String>] [-SeverityLevel <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -UnifiedRoleManagementAlertDefinitionId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertDefinition> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertDefinition> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -32,18 +40,28 @@ Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -UnifiedRoleManagem
 Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-HowToPrevent <String>]
  [-Id <String>] [-IsConfigurable] [-IsRemediatable] [-MitigationSteps <String>] [-ScopeId <String>]
- [-ScopeType <String>] [-SecurityImpact <String>] [-SeverityLevel <String>] [-WhatIf] [-Confirm]
+ [-ScopeType <String>] [-SecurityImpact <String>] [-SeverityLevel <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property alertDefinitions in identityGovernance
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +69,7 @@ Update the navigation property alertDefinitions in identityGovernance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +85,7 @@ unifiedRoleManagementAlertDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleManagementAlertDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,7 +100,7 @@ Accept wildcard characters: False
 The description of the alert.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +115,7 @@ Accept wildcard characters: False
 The friendly display name that renders in Privileged Identity Management (PIM) alerts in the Azure portal.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +130,7 @@ Accept wildcard characters: False
 Long-form text that indicates the ways to prevent the alert from being triggered in your tenant.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +146,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +162,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -160,7 +178,7 @@ true if the alert configuration can be customized in the tenant, and false other
 For example, the number and percentage thresholds of the 'There are too many global administrators' alert can be configured by users, while the 'This organization does not have Azure AD Premium P2' cannot be configured, because the criteria is restricted.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +193,7 @@ Accept wildcard characters: False
 true if the alert can be remediated, and false otherwise.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +209,7 @@ The methods to mitigate the alert when it's triggered in the tenant.
 For example, to mitigate the 'There are too many global administrators', you could remove redundant privileged role assignments.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +226,7 @@ The identifier of the scope where the alert is related.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +242,7 @@ The type of scope where the alert is created.
 DirectoryRole is the only currently supported scope type for Azure AD Roles.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +258,7 @@ Security impact of the alert.
 For example, it could be information leaks or unauthorized access.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -255,7 +273,7 @@ Accept wildcard characters: False
 alertSeverity
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,8 +288,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleManagementAlertDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -285,7 +303,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -301,7 +319,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -318,10 +336,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
+
 ## NOTES
 
 ALIASES
@@ -442,8 +463,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowId <String>]`: The unique identifier of workflow
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgscanusermanageddevicewindowsdefender
 schema: 2.0.0
@@ -10,39 +10,52 @@ schema: 2.0.0
 ## SYNOPSIS
 Not yet documented
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaScanUserManagedDeviceWindowsDefender?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### ScanExpanded (Default)
 ```
 Invoke-MgScanUserManagedDeviceWindowsDefender -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Scan
 ```
 Invoke-MgScanUserManagedDeviceWindowsDefender -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ScanViaIdentityExpanded
-```
-Invoke-MgScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ScanViaIdentity
 ```
 Invoke-MgScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ScanViaIdentityExpanded
+```
+Invoke-MgScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -50,7 +63,7 @@ Not yet documented
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ScanExpanded, ScanViaIdentityExpanded
 Aliases:
 
@@ -66,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Scan, ScanViaIdentity
 Aliases:
 
@@ -82,8 +95,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: ScanViaIdentityExpanded, ScanViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: ScanViaIdentity, ScanViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -97,8 +110,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: ScanExpanded, Scan
+Type: System.String
+Parameter Sets: Scan, ScanExpanded
 Aliases:
 
 Required: True
@@ -112,7 +125,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -127,7 +140,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: ScanExpanded, ScanViaIdentityExpanded
 Aliases:
 
@@ -142,8 +155,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: ScanExpanded, Scan
+Type: System.String
+Parameter Sets: Scan, ScanExpanded
 Aliases:
 
 Required: True
@@ -157,7 +170,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +186,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,10 +203,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1FegpkwUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -232,6 +248,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
@@ -239,5 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaScanUserManagedDeviceWindowsDefender?view=graph-powershell-beta)
 

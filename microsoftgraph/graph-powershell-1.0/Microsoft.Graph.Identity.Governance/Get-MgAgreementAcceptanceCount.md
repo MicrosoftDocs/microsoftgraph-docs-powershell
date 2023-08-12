@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementacceptancecount
 schema: 2.0.0
@@ -10,24 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAgreementAcceptanceCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementAcceptanceCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgAgreementAcceptanceCount -AgreementId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+Get-MgAgreementAcceptanceCount -AgreementId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgAgreementAcceptanceCount -InputObject <IIdentityGovernanceIdentity> [-Filter <String>] [-Search <String>]
- [<CommonParameters>]
+Get-MgAgreementAcceptanceCount -InputObject <IIdentityGovernanceIdentity> [-Filter <String>]
+ [-Search <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,7 +49,7 @@ Get the number of the resource
 The unique identifier of agreement
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -66,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -98,9 +112,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
@@ -175,5 +191,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaAgreementAcceptanceCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementAcceptanceCount?view=graph-powershell-beta)
 

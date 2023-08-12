@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationdevicestatus
 schema: 2.0.0
@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfigurationDeviceStatus
 
 ## SYNOPSIS
-Create new navigation property to deviceStatuses for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
+Create a new deviceConfigurationDeviceStatus object.
 
 ## SYNTAX
 
@@ -20,14 +17,20 @@ Create new navigation property to deviceStatuses for deviceManagement
 New-MgDeviceManagementDeviceConfigurationDeviceStatus -DeviceConfigurationId <String>
  [-AdditionalProperties <Hashtable>] [-ComplianceGracePeriodExpirationDateTime <DateTime>]
  [-DeviceDisplayName <String>] [-DeviceModel <String>] [-Id <String>] [-LastReportedDateTime <DateTime>]
- [-Status <String>] [-UserName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-UserName <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementDeviceConfigurationDeviceStatus -DeviceConfigurationId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStatus> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStatus> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementDeviceConfigurationDeviceStatus -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStatus> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,18 +38,28 @@ New-MgDeviceManagementDeviceConfigurationDeviceStatus -DeviceConfigurationId <St
 New-MgDeviceManagementDeviceConfigurationDeviceStatus -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ComplianceGracePeriodExpirationDateTime <DateTime>]
  [-DeviceDisplayName <String>] [-DeviceModel <String>] [-Id <String>] [-LastReportedDateTime <DateTime>]
- [-Status <String>] [-UserName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-UserName <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity
-```
-New-MgDeviceManagementDeviceConfigurationDeviceStatus -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStatus> [-WhatIf] [-Confirm] [<CommonParameters>]
+## DESCRIPTION
+Create a new deviceConfigurationDeviceStatus object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
 ```
 
-## DESCRIPTION
-Create new navigation property to deviceStatuses for deviceManagement
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Create new navigation property to deviceStatuses for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ deviceConfigurationDeviceStatus
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationDeviceStatus
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStatus
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 The DateTime when device compliance grace period expires
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -100,8 +113,8 @@ Accept wildcard characters: False
 The unique identifier of deviceConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -115,7 +128,7 @@ Accept wildcard characters: False
 Device name of the DevicePolicyStatus.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +143,7 @@ Accept wildcard characters: False
 The device model that is being reported
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +159,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +175,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -177,7 +190,7 @@ Accept wildcard characters: False
 Last modified date time of the policy report.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +205,7 @@ Accept wildcard characters: False
 complianceStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +220,7 @@ Accept wildcard characters: False
 The User Name that is being reported
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +235,7 @@ Accept wildcard characters: False
 UserPrincipalName.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +250,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +266,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,10 +283,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStatus
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStatus
+
 ## NOTES
 
 ALIASES
@@ -350,5 +366,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
 

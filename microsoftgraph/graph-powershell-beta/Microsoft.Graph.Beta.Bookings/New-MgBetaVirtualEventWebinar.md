@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinar
 schema: 2.0.0
@@ -20,17 +20,33 @@ New-MgBetaVirtualEventWebinar [-AdditionalProperties <Hashtable>] [-Audience <St
  [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
  [-Registration <IMicrosoftGraphVirtualEventRegistration>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaVirtualEventWebinar -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-WhatIf] [-Confirm]
+New-MgBetaVirtualEventWebinar -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to webinars for solutions
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -38,7 +54,7 @@ Create new navigation property to webinars for solutions
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +69,7 @@ Accept wildcard characters: False
 meetingAudience
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +85,7 @@ virtualEventWebinar
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventWebinar
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +101,7 @@ Identity information of co-organizers of the webinar.
 To construct, see NOTES section for COORGANIZERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommunicationsUserIdentity[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommunicationsUserIdentity[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +117,7 @@ communicationsIdentitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommunicationsIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommunicationsIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +132,7 @@ Accept wildcard characters: False
 Description of the virtual event.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +147,7 @@ Accept wildcard characters: False
 Display name of the virtual event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +163,7 @@ dateTimeTimeZone
 To construct, see NOTES section for ENDDATETIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +179,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +195,7 @@ Presenters' information of the virtual event.
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventPresenter[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventPresenter[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -195,7 +211,7 @@ virtualEventRegistration
 To construct, see NOTES section for REGISTRATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventRegistration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventRegistration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -211,7 +227,7 @@ Sessions of the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventSession[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventSession[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -227,7 +243,7 @@ dateTimeTimeZone
 To construct, see NOTES section for STARTDATETIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +258,7 @@ Accept wildcard characters: False
 virtualEventStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -257,7 +273,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -273,7 +289,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -290,9 +306,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
+
 ## NOTES
 
 ALIASES
@@ -308,8 +326,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[ApplicationInstance <IMicrosoftGraphIdentity>]`: identity
@@ -331,8 +349,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Email <String>]`: Email address of the presenter.
     - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
       - `[TenantId <String>]`: The user's tenant ID.
     - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -433,10 +451,10 @@ To create the parameters described below, construct a hash table containing the 
       - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
     - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
     - `[Recording <Byte[]>]`: The content stream of the recording of a Teams live event. Read-only.
-    - `[Recordings <IMicrosoftGraphCallRecording[]>]`: 
+    - `[Recordings <IMicrosoftGraphCallRecording[]>]`: The recordings of an online meeting. Read-only.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[Content <Byte[]>]`: 
-      - `[CreatedDateTime <DateTime?>]`: 
+      - `[Content <Byte[]>]`: The content of the recording. Read-only.
+      - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowedRegistrant <String>]`: meetingAudience
@@ -464,9 +482,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[Subject <String>]`: The subject of the online meeting.
     - `[Transcripts <IMicrosoftGraphCallTranscript[]>]`: The transcripts of an online meeting. Read-only.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[Content <Byte[]>]`: A field that represents the content of the transcript. Read-only.
+      - `[Content <Byte[]>]`: The content of the transcript. Read-only.
       - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-      - `[MetadataContent <Byte[]>]`: A field that represents the time-aligned metadata of the utterances in the transcript. Read-only.
+      - `[MetadataContent <Byte[]>]`: The time-aligned metadata of the utterances in the transcript. Read-only.
     - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
     - `[VirtualAppointment <IMicrosoftGraphVirtualAppointment>]`: virtualAppointment
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -519,16 +537,16 @@ To create the parameters described below, construct a hash table containing the 
     - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
 
 `COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity[]>`: Identity information of co-organizers of the webinar.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[TenantId <String>]`: The user's tenant ID.
 
 `CREATEDBY <IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[ApplicationInstance <IMicrosoftGraphIdentity>]`: identity
@@ -550,8 +568,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the presenter.
   - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[TenantId <String>]`: The user's tenant ID.
   - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -614,8 +632,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant. Presents when the participant has registered for the meeting.
       - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
       - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -686,10 +704,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
   - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
   - `[Recording <Byte[]>]`: The content stream of the recording of a Teams live event. Read-only.
-  - `[Recordings <IMicrosoftGraphCallRecording[]>]`: 
+  - `[Recordings <IMicrosoftGraphCallRecording[]>]`: The recordings of an online meeting. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Content <Byte[]>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Content <Byte[]>]`: The content of the recording. Read-only.
+    - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowedRegistrant <String>]`: meetingAudience
@@ -717,9 +735,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subject <String>]`: The subject of the online meeting.
   - `[Transcripts <IMicrosoftGraphCallTranscript[]>]`: The transcripts of an online meeting. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Content <Byte[]>]`: A field that represents the content of the transcript. Read-only.
+    - `[Content <Byte[]>]`: The content of the transcript. Read-only.
     - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[MetadataContent <Byte[]>]`: A field that represents the time-aligned metadata of the utterances in the transcript. Read-only.
+    - `[MetadataContent <Byte[]>]`: The time-aligned metadata of the utterances in the transcript. Read-only.
   - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
   - `[VirtualAppointment <IMicrosoftGraphVirtualAppointment>]`: virtualAppointment
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -744,8 +762,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

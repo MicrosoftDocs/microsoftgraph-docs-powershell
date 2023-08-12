@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementroledefinition
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleDefinitions in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementRoleDefinition?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,14 +17,20 @@ Update the navigation property roleDefinitions in deviceManagement
 Update-MgBetaDeviceManagementRoleDefinition -RoleDefinitionId <String> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsBuiltIn] [-IsBuiltInRoleDefinition]
  [-Permissions <IMicrosoftGraphRolePermission[]>] [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>]
- [-RolePermissions <IMicrosoftGraphRolePermission[]>] [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm]
+ [-RolePermissions <IMicrosoftGraphRolePermission[]>] [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementRoleDefinition -RoleDefinitionId <String>
- -BodyParameter <IMicrosoftGraphRoleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRoleDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphRoleDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,17 +39,27 @@ Update-MgBetaDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdmin
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsBuiltIn] [-IsBuiltInRoleDefinition] [-Permissions <IMicrosoftGraphRolePermission[]>]
  [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>] [-RolePermissions <IMicrosoftGraphRolePermission[]>]
- [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphRoleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property roleDefinitions in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Update the navigation property roleDefinitions in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,7 +89,7 @@ Create custom roles if you want to define a role that allows any of the availabl
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -91,7 +104,7 @@ Accept wildcard characters: False
 Description of the Role definition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +119,7 @@ Accept wildcard characters: False
 Display Name of the Role definition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +135,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -138,8 +151,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -154,7 +167,7 @@ Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -170,7 +183,7 @@ Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -187,7 +200,7 @@ These must match the actionName that is defined as part of the rolePermission.
 To construct, see NOTES section for PERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRolePermission[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRolePermission[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +216,7 @@ List of Role assignments for this role definition.
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -218,8 +231,8 @@ Accept wildcard characters: False
 The unique identifier of roleDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -235,7 +248,7 @@ These must match the actionName that is defined as part of the rolePermission.
 To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRolePermission[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRolePermission[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +263,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -265,7 +278,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -281,7 +294,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -298,10 +311,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleDefinition
+
 ## NOTES
 
 ALIASES
@@ -342,6 +358,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
   - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
   - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
+  - `[CloudPcFrontLineServicePlanId <String>]`: The unique identifier of cloudPcFrontLineServicePlan
   - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
@@ -428,8 +445,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementRoleDefinition?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Update-MgDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementRoleDefinition?view=graph-powershell-1.0)
 

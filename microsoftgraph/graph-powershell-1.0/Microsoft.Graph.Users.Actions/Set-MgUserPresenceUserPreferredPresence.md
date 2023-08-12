@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresenceuserpreferredpresence
 schema: 2.0.0
@@ -11,12 +11,9 @@ schema: 2.0.0
 Set the preferred availability and activity status for a user.
 If the preferred presence of a user is set, the user's presence shows as the preferred status.
 Preferred presence takes effect only when at least one presence session exists for the user.
-Otherwise, the user's presence shows as `Offline`.
+Otherwise, the user's presence shows as Offline.
 A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
 For more details, see presence sessions and time-out and expiration.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceUserPreferredPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,40 +21,41 @@ For more details, see presence sessions and time-out and expiration.
 ```
 Set-MgUserPresenceUserPreferredPresence -UserId <String> [-Activity <String>]
  [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgUserPresenceUserPreferredPresence -UserId <String>
  -BodyParameter <IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded
-```
-Set-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity> [-Activity <String>]
+ [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Set the preferred availability and activity status for a user.
 If the preferred presence of a user is set, the user's presence shows as the preferred status.
 Preferred presence takes effect only when at least one presence session exists for the user.
-Otherwise, the user's presence shows as `Offline`.
+Otherwise, the user's presence shows as Offline.
 A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
 For more details, see presence sessions and time-out and expiration.
 
 ## EXAMPLES
-### Example 1: Using the Set-MgUserPresenceUserPreferredPresence Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -67,8 +65,8 @@ $params = @{
 }
 Set-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Set-MgUserPresenceUserPreferredPresence Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -76,7 +74,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -91,7 +89,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -106,7 +104,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -122,7 +120,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -137,7 +135,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -153,8 +151,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -168,7 +166,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -183,8 +181,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded, Set
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -198,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -214,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -231,10 +229,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -275,6 +276,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
@@ -282,4 +284,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceUserPreferredPresence?view=graph-powershell-beta)
+

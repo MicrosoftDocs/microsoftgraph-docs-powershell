@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgentitlementmanagementassignmentrequest
 schema: 2.0.0
@@ -8,33 +8,34 @@ schema: 2.0.0
 # Stop-MgEntitlementManagementAssignmentRequest
 
 ## SYNOPSIS
-In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
+In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
 
 ## SYNTAX
 
 ### Cancel (Default)
 ```
-Stop-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Stop-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
 ```
-Stop-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Stop-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
+In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: accepted, pendingApproval, pendingNotBefore, pendingApprovalEscalated.
 
 ## EXAMPLES
-### Example 1: Using the Stop-MgEntitlementManagementAssignmentRequest Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Stop-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
 ```
-This example shows how to use the Stop-MgEntitlementManagementAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -42,7 +43,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of accessPackageAssignmentRequest
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Cancel
 Aliases:
 
@@ -58,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: CancelViaIdentity
 Aliases:
 
@@ -73,7 +74,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -88,7 +89,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -104,7 +105,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -121,9 +122,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -198,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

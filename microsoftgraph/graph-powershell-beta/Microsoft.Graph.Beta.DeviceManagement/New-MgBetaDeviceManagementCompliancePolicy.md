@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcompliancepolicy
 schema: 2.0.0
@@ -20,17 +20,33 @@ New-MgBetaDeviceManagementCompliancePolicy [-AdditionalProperties <Hashtable>]
  [-RoleScopeTagIds <String[]>]
  [-ScheduledActionsForRule <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>]
  [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
- [-Technologies <DeviceManagementConfigurationTechnologies>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Technologies <DeviceManagementConfigurationTechnologies>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementCompliancePolicy -BodyParameter <IMicrosoftGraphDeviceManagementCompliancePolicy>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to compliancePolicies for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38,7 +54,7 @@ Create new navigation property to compliancePolicies for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +70,7 @@ Policy assignments
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +86,7 @@ Device Management Compliance Policy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementCompliancePolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementCompliancePolicy
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +101,7 @@ Accept wildcard characters: False
 Policy creation source
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +116,7 @@ Accept wildcard characters: False
 Policy description
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +132,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +147,7 @@ Accept wildcard characters: False
 Policy name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +162,7 @@ Accept wildcard characters: False
 Supported platform types.
 
 ```yaml
-Type: DeviceManagementConfigurationPlatforms
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementConfigurationPlatforms
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +177,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +193,7 @@ The list of scheduled action for this rule
 To construct, see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +209,7 @@ Policy settings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSetting[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +224,7 @@ Accept wildcard characters: False
 Describes which technology this setting can be deployed with
 
 ```yaml
-Type: DeviceManagementConfigurationTechnologies
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementConfigurationTechnologies
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +239,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -239,7 +255,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -256,9 +272,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementCompliancePolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementCompliancePolicy
+
 ## NOTES
 
 ALIASES
@@ -327,7 +345,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[MinDeviceOccurrence <Int32?>]`: Minimum times setting can be set on device. A MinDeviceOccurrence of 0 means setting is optional
       - `[OffsetUri <String>]`: Offset CSP Path from Base
       - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]`: List of referred setting information.
-        - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting
+        - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting.
       - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
       - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
       - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
@@ -376,7 +394,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[MinDeviceOccurrence <Int32?>]`: Minimum times setting can be set on device. A MinDeviceOccurrence of 0 means setting is optional
     - `[OffsetUri <String>]`: Offset CSP Path from Base
     - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]`: List of referred setting information.
-      - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting
+      - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting.
     - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
     - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
     - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
@@ -388,8 +406,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[SettingInstanceTemplateReference <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplateReference>]`: Setting instance template reference information
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[SettingInstanceTemplateId <String>]`: Setting instance template id
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

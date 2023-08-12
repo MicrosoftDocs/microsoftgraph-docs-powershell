@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationfavicon
 schema: 2.0.0
@@ -8,17 +8,14 @@ schema: 2.0.0
 # Get-MgOrganizationBrandingLocalizationFavicon
 
 ## SYNOPSIS
-Get favicon for the navigation property localizations from organization
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationFavicon?view=graph-powershell-beta)
+A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgOrganizationBrandingLocalizationFavicon -OrganizationId <String>
- -OrganizationalBrandingLocalizationId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgOrganizationBrandingLocalizationFavicon -OrganizationalBrandingLocalizationId <String>
+ -OrganizationId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -28,7 +25,23 @@ Get-MgOrganizationBrandingLocalizationFavicon -InputObject <IIdentityDirectoryMa
 ```
 
 ## DESCRIPTION
-Get favicon for the navigation property localizations from organization
+A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -52,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of organizationalBrandingLocalization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -67,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -82,7 +95,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +110,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -114,9 +127,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -151,5 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationFavicon?view=graph-powershell-beta)
 

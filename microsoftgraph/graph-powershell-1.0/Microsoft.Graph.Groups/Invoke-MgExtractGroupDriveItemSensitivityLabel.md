@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgextractgroupdriveitemsensitivitylabel
 schema: 2.0.0
@@ -10,25 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action extractSensitivityLabels
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaExtractGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaExtractGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Extract (Default)
 ```
 Invoke-MgExtractGroupDriveItemSensitivityLabel -DriveId <String> -DriveItemId <String> -GroupId <String>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ExtractViaIdentity
 ```
-Invoke-MgExtractGroupDriveItemSensitivityLabel -InputObject <IGroupsIdentity> [-WhatIf] [-Confirm]
+Invoke-MgExtractGroupDriveItemSensitivityLabel -InputObject <IGroupsIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -36,7 +49,7 @@ Invoke action extractSensitivityLabels
 The unique identifier of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Extract
 Aliases:
 
@@ -51,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Extract
 Aliases:
 
@@ -66,7 +79,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Extract
 Aliases:
 
@@ -82,7 +95,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
 Parameter Sets: ExtractViaIdentity
 Aliases:
 
@@ -97,7 +110,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +126,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,9 +143,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityLabelAssignment
+
 ## NOTES
 
 ALIASES
@@ -180,5 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaExtractGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaExtractGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
 

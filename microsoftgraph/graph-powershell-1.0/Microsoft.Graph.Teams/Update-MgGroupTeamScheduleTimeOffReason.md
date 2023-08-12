@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduletimeoffreason
 schema: 2.0.0
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Replace an existing timeOffReason.
-If the specified timeOffReason doesn't exist, this method returns `404 Not found`.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)
+If the specified timeOffReason doesn't exist, this method returns 404 Not found.
 
 ## SYNTAX
 
@@ -20,31 +17,47 @@ If the specified timeOffReason doesn't exist, this method returns `404 Not found
 ```
 Update-MgGroupTeamScheduleTimeOffReason -GroupId <String> -TimeOffReasonId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgGroupTeamScheduleTimeOffReason -GroupId <String> -TimeOffReasonId <String>
- -BodyParameter <IMicrosoftGraphTimeOffReason> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTimeOffReason> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphTimeOffReason> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-IconType <String>] [-Id <String>] [-IsActive]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTimeOffReason> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Replace an existing timeOffReason.
-If the specified timeOffReason doesn't exist, this method returns `404 Not found`.
+If the specified timeOffReason doesn't exist, this method returns 404 Not found.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ If the specified timeOffReason doesn't exist, this method returns `404 Not found
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +81,7 @@ timeOffReason
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTimeOffReason
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffReason
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -84,7 +97,7 @@ The name of the timeOffReason.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -114,7 +127,7 @@ Accept wildcard characters: False
 timeOffReasonIconType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +143,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,8 +159,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -162,7 +175,7 @@ Indicates whether the timeOffReason can be used when creating new entities or up
 Required.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +191,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,8 +206,8 @@ Accept wildcard characters: False
 The unique identifier of timeOffReason
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -208,7 +221,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +237,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -241,10 +254,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffReason
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffReason
+
 ## NOTES
 
 ALIASES
@@ -283,6 +299,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
@@ -312,5 +329,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[Update-MgBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)
 

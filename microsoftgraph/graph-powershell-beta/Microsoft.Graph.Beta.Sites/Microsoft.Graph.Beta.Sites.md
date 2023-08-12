@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Sites
-Module Guid: 54a1316c-d473-409a-8bef-9d966f74ae67
+Module Guid: 92b56dca-3267-4d68-a31b-b2436f186252
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -21,7 +21,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgBetaSiteListContentTypeCopy](Add-MgBetaSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -30,7 +30,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Confirm-MgBetaSiteInformationProtectionSignature](Confirm-MgBetaSiteInformationProtectionSignature.md)
 Invoke action verifySignature
@@ -43,9 +43,10 @@ The file can then be added as a default file or template via a POST operation.
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
-### [Copy-MgBetaSiteListContentTypeToDefaultContentLocation](Copy-MgBetaSiteListContentTypeToDefaultContentLocation.md)
-Copy a file to a default content location in a [content type][contentType].
-The file can then be added as a default file or template via a POST operation.
+### [Copy-MgBetaSiteOnenoteNotebook](Copy-MgBetaSiteOnenoteNotebook.md)
+Copies a notebook to the Notebooks folder in the destination Documents library.
+The folder is created if it doesn't exist.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionPageToSection](Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -71,9 +72,9 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup](Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup.md)
-Copies a section to a specific section group.
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenotePageToSection](Copy-MgBetaSiteOnenotePageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection](Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -91,13 +92,13 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteSectionPageToSection](Copy-MgBetaSiteOnenoteSectionPageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenoteSectionToNotebook](Copy-MgBetaSiteOnenoteSectionToNotebook.md)
+Copies a section to a specific notebook.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteSectionPageToSection](Copy-MgBetaSiteOnenoteSectionPageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenoteSectionToSectionGroup](Copy-MgBetaSiteOnenoteSectionToSectionGroup.md)
+Copies a section to a specific section group.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Get-MgBetaAdminSharepoint](Get-MgBetaAdminSharepoint.md)
 Get sharepoint from admin
@@ -219,9 +220,9 @@ Get bitlocker from groups
 
 ### [Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKey](Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKey.md)
 Retrieve the properties and relationships of a bitlockerRecoveryKey object.
-By default, this operation does not return the **key** property that represents the actual recovery key.
-To include the **key** property in the response, use the `$select` OData query parameter.
-Including the `$select` query parameter triggers an Azure AD audit of the operation and generates an audit log.
+By default, this operation does not return the key property that represents the actual recovery key.
+To include the key property in the response, use the $select OData query parameter.
+Including the $select query parameter triggers an Azure AD audit of the operation and generates an audit log.
 You can find the log in Azure AD audit logs under the KeyManagement category.
 
 ### [Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKeyCount](Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKeyCount.md)
@@ -298,7 +299,7 @@ For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
 ### [Get-MgBetaGroupSiteList](Get-MgBetaGroupSiteList.md)
-Get the list of richLongRunningOperations associated with a list.
+Return the metadata for a [list][].
 
 ### [Get-MgBetaGroupSiteListActivity](Get-MgBetaGroupSiteListActivity.md)
 The recent activities that took place within this list.
@@ -521,10 +522,10 @@ Read-only.
 
 ### [Get-MgBetaGroupSiteOnenoteOperation](Get-MgBetaGroupSiteOnenoteOperation.md)
 Get the status of a long-running OneNote operation.
-This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.
-  You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
-If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
-If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
+This applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
+  You can poll the Operation-Location endpoint until the status property returns completed or failed.
+If the status is completed, the resourceLocation property contains the resource endpoint URI.
+If the status is failed, the error and @api.diagnostics properties provide error information.
 
 ### [Get-MgBetaGroupSiteOnenoteOperationCount](Get-MgBetaGroupSiteOnenoteOperationCount.md)
 Get the number of the resource
@@ -1015,7 +1016,7 @@ The collection of the sub-sites under this site.
 Get the number of the resource
 
 ### [Get-MgBetaSite](Get-MgBetaSite.md)
-Retrieve properties and relationships for a [site][] resource.\nA **site** resource represents a team site in SharePoint.
+Retrieve properties and relationships for a [site][] resource.\nA site resource represents a team site in SharePoint.
 
 ### [Get-MgBetaSiteActivityByInterval](Get-MgBetaSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -1141,7 +1142,7 @@ For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
 ### [Get-MgBetaSiteList](Get-MgBetaSiteList.md)
-Get the list of richLongRunningOperations associated with a list.
+Return the metadata for a [list][].
 
 ### [Get-MgBetaSiteListActivity](Get-MgBetaSiteListActivity.md)
 The recent activities that took place within this list.
@@ -1276,8 +1277,9 @@ The set of subscriptions on the list.
 ### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteOnenoteNotebookFromWebUrl](Get-MgBetaSiteOnenoteNotebookFromWebUrl.md)
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
 ### [Get-MgBetaSiteOperation](Get-MgBetaSiteOperation.md)
 Read the properties of a richLongRunningOperation object.
@@ -1665,7 +1667,7 @@ Invoke function preview
 Invoke function preview
 
 ### [Invoke-MgBetaReauthorizeSiteListSubscription](Invoke-MgBetaReauthorizeSiteListSubscription.md)
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ### [Invoke-MgBetaSignSiteInformationProtectionDigest](Invoke-MgBetaSignSiteInformationProtectionDigest.md)
 Invoke action signDigest
@@ -1922,8 +1924,8 @@ Create a new version of a document set item in a list.
 
 ### [New-MgBetaSiteListItemLink](New-MgBetaSiteListItemLink.md)
 Create a sharing link for a listItem.
-The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
-**listItem** resources inherit sharing permissions from the list the item resides in.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+listItem resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaSiteListItemVersion](New-MgBetaSiteListItemVersion.md)
 Create new navigation property to versions for sites
@@ -2586,7 +2588,7 @@ Update the navigation property documentSetVersions in groups
 Update the navigation property fields in groups
 
 ### [Update-MgBetaGroupSiteListItemField](Update-MgBetaGroupSiteListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting](Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.
@@ -2808,7 +2810,7 @@ Update the navigation property documentSetVersions in sites
 Update the navigation property fields in sites
 
 ### [Update-MgBetaSiteListItemField](Update-MgBetaSiteListItemField.md)
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ### [Update-MgBetaSiteListItemLastModifiedByUserMailboxSetting](Update-MgBetaSiteListItemLastModifiedByUserMailboxSetting.md)
 Update property mailboxSettings value.

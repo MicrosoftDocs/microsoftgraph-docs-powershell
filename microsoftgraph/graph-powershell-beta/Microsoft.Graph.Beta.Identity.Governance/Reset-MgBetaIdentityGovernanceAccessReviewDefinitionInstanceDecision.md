@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/reset-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecision
 schema: 2.0.0
@@ -8,36 +8,34 @@ schema: 2.0.0
 # Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
 
 ## SYNOPSIS
-Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
+Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 
 ## SYNTAX
 
 ### Reset (Default)
 ```
 Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewInstanceId <String>
- -AccessReviewScheduleDefinitionId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AccessReviewScheduleDefinitionId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ResetViaIdentity
 ```
-Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <IIdentityGovernanceIdentity>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
+ -InputObject <IIdentityGovernanceIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
+Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 
 ## EXAMPLES
-### Example 1: Using the Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
 ```
-This example shows how to use the Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -45,7 +43,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of accessReviewInstance
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reset
 Aliases:
 
@@ -60,7 +58,7 @@ Accept wildcard characters: False
 The unique identifier of accessReviewScheduleDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reset
 Aliases:
 
@@ -76,7 +74,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: ResetViaIdentity
 Aliases:
 
@@ -91,7 +89,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -106,7 +104,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -122,7 +120,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -139,9 +137,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -250,4 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
+

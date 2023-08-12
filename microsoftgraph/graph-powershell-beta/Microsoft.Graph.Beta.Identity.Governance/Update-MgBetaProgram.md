@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprogram
 schema: 2.0.0
@@ -16,33 +16,34 @@ In the Azure AD access reviews feature, update an existing program object.
 ```
 Update-MgBetaProgram -ProgramId <String> [-AdditionalProperties <Hashtable>]
  [-Controls <IMicrosoftGraphProgramControl[]>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaProgram -ProgramId <String> -BodyParameter <IMicrosoftGraphProgram> [-WhatIf] [-Confirm]
+Update-MgBetaProgram -ProgramId <String> -BodyParameter <IMicrosoftGraphProgram> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphProgram>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
  [-Controls <IMicrosoftGraphProgramControl[]>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphProgram>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 In the Azure AD access reviews feature, update an existing program object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaProgram Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -50,8 +51,8 @@ $params = @{
 }
 Update-MgBetaProgram -ProgramId $programId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaProgram Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -59,7 +60,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -75,7 +76,7 @@ program
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProgram
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProgram
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -91,7 +92,7 @@ Controls associated with the program.
 To construct, see NOTES section for CONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProgramControl[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProgramControl[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +107,7 @@ Accept wildcard characters: False
 The description of the program.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +123,7 @@ The name of the program.
 Required on create.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -138,7 +139,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -154,8 +155,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -169,8 +170,8 @@ Accept wildcard characters: False
 The unique identifier of program
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -184,7 +185,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -200,7 +201,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -217,10 +218,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProgram
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProgram
+
 ## NOTES
 
 ALIASES
@@ -241,16 +245,16 @@ To create the parameters described below, construct a hash table containing the 
     - `[DisplayName <String>]`: The name of the control.
     - `[Owner <IMicrosoftGraphUserIdentity>]`: userIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
       - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[Program <IMicrosoftGraphProgram>]`: program
     - `[ProgramId <String>]`: The programId of the program this control is a part of. Required on create.
     - `[Resource <IMicrosoftGraphProgramResource>]`: programResource
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
       - `[Type <String>]`: Type of the resource, indicating whether it is a group or an app.
     - `[Status <String>]`: The life cycle status of the control.
   - `[Description <String>]`: The description of the program.
@@ -264,8 +268,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The name of the control.
   - `[Owner <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Program <IMicrosoftGraphProgram>]`: program
@@ -277,8 +281,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ProgramId <String>]`: The programId of the program this control is a part of. Required on create.
   - `[Resource <IMicrosoftGraphProgramResource>]`: programResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Type <String>]`: Type of the resource, indicating whether it is a group or an app.
   - `[Status <String>]`: The life cycle status of the control.
 
@@ -382,4 +386,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
-## RELATED LINKS

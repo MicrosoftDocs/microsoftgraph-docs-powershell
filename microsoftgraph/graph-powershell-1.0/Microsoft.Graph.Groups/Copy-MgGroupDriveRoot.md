@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdriveroot
 schema: 2.0.0
@@ -10,39 +10,52 @@ schema: 2.0.0
 ## SYNOPSIS
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupDriveRoot?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CopyExpanded (Default)
 ```
 Copy-MgGroupDriveRoot -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>] [-Name <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ParentReference <IMicrosoftGraphItemReference>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Copy
 ```
 Copy-MgGroupDriveRoot -DriveId <String> -GroupId <String>
  -BodyParameter <IPaths1Yti2G4GroupsGroupIdDrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CopyViaIdentityExpanded
-```
-Copy-MgGroupDriveRoot -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Name <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgGroupDriveRoot -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1Yti2G4GroupsGroupIdDrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CopyViaIdentityExpanded
+```
+Copy-MgGroupDriveRoot -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Name <String>]
+ [-ParentReference <IMicrosoftGraphItemReference>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -50,7 +63,7 @@ Asynchronously creates a copy of an [driveItem][item-resource] (including any ch
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -66,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Yti2G4GroupsGroupIdDrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Yti2G4GroupsGroupIdDrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Copy, CopyViaIdentity
 Aliases:
 
@@ -81,8 +94,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
+Type: System.String
+Parameter Sets: Copy, CopyExpanded
 Aliases:
 
 Required: True
@@ -96,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
+Type: System.String
+Parameter Sets: Copy, CopyExpanded
 Aliases:
 
 Required: True
@@ -112,8 +125,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CopyViaIdentity, CopyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -127,7 +140,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -143,7 +156,7 @@ itemReference
 To construct, see NOTES section for PARENTREFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemReference
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -158,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,10 +204,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1Yti2G4GroupsGroupIdDrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
+
 ## NOTES
 
 ALIASES
@@ -283,5 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Copy-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupDriveRoot?view=graph-powershell-beta)
 

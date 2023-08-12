@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: 506bbc76-5fb6-40c0-b35e-7b935ceb361b
+Module Guid: 1c062252-6036-4ad7-83cb-d27968a1b55e
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,7 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 Add a key credential to an application.
 This method, along with removeKey can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
+Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
 ### [Add-MgApplicationPassword](Add-MgApplicationPassword.md)
@@ -25,7 +25,7 @@ Adds a strong password or secret to an application.
 Adds a key credential to a servicePrincipal.
 This method along with removeKey can be used by a servicePrincipal to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-ServicePrincipals that don't have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
+ServicePrincipals that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
 Update servicePrincipal can be used to perform an update instead.
 
 ### [Add-MgServicePrincipalPassword](Add-MgServicePrincipalPassword.md)
@@ -33,27 +33,34 @@ Add a strong password or secret to a servicePrincipal object.
 
 ### [Add-MgServicePrincipalTokenSigningCertificate](Add-MgServicePrincipalTokenSigningCertificate.md)
 Create a self-signed signing certificate and return a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects, which are added to the servicePrincipal: \n+ The keyCredentials object with the following objects:\n    + A private key object with **usage** set to `Sign`.\n    + A public key object with **usage** set to `Verify`.\n+ The passwordCredentials object.
-All the objects have the same value of **customKeyIdentifier**.
-The **passwordCredential** is used to open the PFX file (private key).
-It and the associated private key object have the same value of **keyId**.
-When set during creation through the **displayName** property, the subject of the certificate cannot be updated.
-The **startDateTime** is set to the same time the certificate is created using the action.
-The **endDateTime** can be up to three years after the certificate is created.
+The self-signed signing certificate is composed of the following objects, which are added to the servicePrincipal: \n+ The keyCredentials object with the following objects:\n    + A private key object with usage set to Sign.\n    + A public key object with usage set to Verify.\n+ The passwordCredentials object.
+All the objects have the same value of customKeyIdentifier.
+The passwordCredential is used to open the PFX file (private key).
+It and the associated private key object have the same value of keyId.
+When set during creation through the displayName property, the subject of the certificate cannot be updated.
+The startDateTime is set to the same time the certificate is created using the action.
+The endDateTime can be up to three years after the certificate is created.
 
 ### [Clear-MgApplicationVerifiedPublisher](Clear-MgApplicationVerifiedPublisher.md)
 Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
 
-### [Clear-MgApplicationVerifiedPublisher](Clear-MgApplicationVerifiedPublisher.md)
-Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
-For more information, see Publisher verification.
+### [Confirm-MgApplicationMemberGroup](Confirm-MgApplicationMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgApplicationMemberObject](Confirm-MgApplicationMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgApplicationMemberObject](Confirm-MgApplicationMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgServicePrincipalMemberGroup](Confirm-MgServicePrincipalMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgServicePrincipalMemberObject](Confirm-MgServicePrincipalMemberObject.md)
 Invoke action checkMemberObjects
@@ -87,6 +94,7 @@ Get the properties and relationships of an application object.
 
 ### [Get-MgApplicationById](Get-MgApplicationById.md)
 Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
 ### [Get-MgApplicationCount](Get-MgApplicationCount.md)
@@ -95,9 +103,6 @@ Get the number of the resource
 ### [Get-MgApplicationCreatedOnBehalfOf](Get-MgApplicationCreatedOnBehalfOf.md)
 Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
-
-### [Get-MgApplicationById](Get-MgApplicationById.md)
-Invoke action getByIds
 
 ### [Get-MgApplicationDelta](Get-MgApplicationDelta.md)
 Invoke function delta
@@ -124,14 +129,14 @@ Get the number of the resource
 The main logo for the application.
 Not nullable.
 
-### [Get-MgApplicationLogo](Get-MgApplicationLogo.md)
-The main logo for the application.
-Not nullable.
+### [Get-MgApplicationMemberGroup](Get-MgApplicationMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgApplicationMemberObject](Get-MgApplicationMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgApplicationOwner](Get-MgApplicationOwner.md)
 Directory objects that are owners of the application.
@@ -272,6 +277,7 @@ Retrieve the properties and relationships of a servicePrincipal object.
 
 ### [Get-MgServicePrincipalById](Get-MgServicePrincipalById.md)
 Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
 ### [Get-MgServicePrincipalClaimMappingPolicy](Get-MgServicePrincipalClaimMappingPolicy.md)
@@ -324,13 +330,14 @@ List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipa
 ### [Get-MgServicePrincipalHomeRealmDiscoveryPolicyCount](Get-MgServicePrincipalHomeRealmDiscoveryPolicyCount.md)
 Get the number of the resource
 
-### [Get-MgServicePrincipalHomeRealmDiscoveryPolicyCount](Get-MgServicePrincipalHomeRealmDiscoveryPolicyCount.md)
-Get the number of the resource
+### [Get-MgServicePrincipalMemberGroup](Get-MgServicePrincipalMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgServicePrincipalMemberOf](Get-MgServicePrincipalMemberOf.md)
 Roles that this service principal is a member of.
@@ -346,9 +353,6 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.director
 
 ### [Get-MgServicePrincipalMemberOfAsGroup](Get-MgServicePrincipalMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
-Invoke action getMemberObjects
 
 ### [Get-MgServicePrincipalMemberOfCount](Get-MgServicePrincipalMemberOfCount.md)
 Get the number of the resource
@@ -559,7 +563,7 @@ Invoke function functions
 ### [Invoke-MgInstantiateApplicationTemplate](Invoke-MgInstantiateApplicationTemplate.md)
 Add an instance of an application from the Azure AD application gallery into your directory.
 You can also use this API to instantiate non-gallery apps.
-Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
 
 ### [Invoke-MgParseApplicationSynchronizationJobSchemaExpression](Invoke-MgParseApplicationSynchronizationJobSchemaExpression.md)
 Parse a given string expression into an attributeMappingSource object.
@@ -654,10 +658,6 @@ Create new navigation property to endpoints for servicePrincipals
 ### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 
-### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
-The homeRealmDiscoveryPolicies assigned to this service principal.
-Supports $expand.
-
 ### [New-MgServicePrincipalOwnerByRef](New-MgServicePrincipalOwnerByRef.md)
 Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
@@ -697,9 +697,6 @@ When you remove the appManagementPolicy, the application or service principal ad
 Delete an application object.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
-
-### [Remove-MgApplication](Remove-MgApplication.md)
-Delete entity from applications
 
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Delete a directory extension definition represented by an extensionProperty object.

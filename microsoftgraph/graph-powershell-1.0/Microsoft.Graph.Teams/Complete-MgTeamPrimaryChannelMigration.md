@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamprimarychannelmigration
 schema: 2.0.0
@@ -8,44 +8,44 @@ schema: 2.0.0
 # Complete-MgTeamPrimaryChannelMigration
 
 ## SYNOPSIS
-Complete the message migration process by removing `migration mode` from a channel in a team.
-`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a **completeMigration** request is made, you cannot import additional messages into the team.
+Complete the message migration process by removing migration mode from a channel in a team.
+Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a completeMigration request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Complete-MgBetaTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamPrimaryChannelMigration?view=graph-powershell-beta)
 
 ## SYNTAX
 
 ### Complete (Default)
 ```
-Complete-MgTeamPrimaryChannelMigration -TeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Complete-MgTeamPrimaryChannelMigration -TeamId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CompleteViaIdentity
 ```
-Complete-MgTeamPrimaryChannelMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Complete-MgTeamPrimaryChannelMigration -InputObject <ITeamsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Complete the message migration process by removing `migration mode` from a channel in a team.
-`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a **completeMigration** request is made, you cannot import additional messages into the team.
+Complete the message migration process by removing migration mode from a channel in a team.
+Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a completeMigration request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+{{ Add code here }}
 ```
-This example shows how to use the Complete-MgTeamPrimaryChannelMigration Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
 
 
 ## PARAMETERS
@@ -55,7 +55,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 Parameter Sets: CompleteViaIdentity
 Aliases:
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Complete
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -116,7 +116,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -133,9 +133,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -159,6 +161,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
@@ -179,4 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Complete-MgBetaTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamPrimaryChannelMigration?view=graph-powershell-beta)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementintentcategory
 schema: 2.0.0
@@ -14,16 +14,23 @@ Create new navigation property to categories for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementIntentCategory -DeviceManagementIntentId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
+New-MgBetaDeviceManagementIntentCategory -DeviceManagementIntentId <String>
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]
- [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementIntentCategory -DeviceManagementIntentId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,18 +39,27 @@ New-MgBetaDeviceManagementIntentCategory -DeviceManagementIntentId <String>
 New-MgBetaDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]
- [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementIntentSettingCategory> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to categories for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Create new navigation property to categories for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ Entity representing an intent setting category
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementIntentSettingCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentSettingCategory
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementIntent
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -97,7 +113,7 @@ Accept wildcard characters: False
 The category name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +128,7 @@ Accept wildcard characters: False
 The category contains top level required setting
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +144,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +160,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -160,7 +176,7 @@ The setting definitions this category contains
 To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettingDefinition[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +192,7 @@ The settings this category contains
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettingInstance[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingInstance[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +207,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +223,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -224,10 +240,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentSettingCategory
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntentSettingCategory
+
 ## NOTES
 
 ALIASES
@@ -421,8 +440,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
   - `[ValueJson <String>]`: JSON representation of the value
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

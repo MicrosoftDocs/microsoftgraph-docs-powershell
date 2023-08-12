@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractusersecurityinformationprotectionsensitivitylabelcontentlabel
 schema: 2.0.0
@@ -16,7 +16,7 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 ### ExtractExpanded (Default)
 ```
 Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -24,14 +24,7 @@ Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabe
 ```
 Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId <String>
  -BodyParameter <IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ExtractViaIdentityExpanded
-```
-Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
- -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ExtractViaIdentity
@@ -39,7 +32,14 @@ Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabe
 Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
  -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ExtractViaIdentityExpanded
+```
+Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
+ -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,8 @@ Use the metadata that exists on an already-labeled piece of information to resol
 The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -89,8 +90,8 @@ $params = @{
 }
 Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -98,7 +99,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ExtractExpanded, ExtractViaIdentityExpanded
 Aliases:
 
@@ -114,7 +115,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Extract, ExtractViaIdentity
 Aliases:
 
@@ -130,7 +131,7 @@ contentInfo
 To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityContentInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityContentInfo
 Parameter Sets: ExtractExpanded, ExtractViaIdentityExpanded
 Aliases:
 
@@ -146,8 +147,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: ExtractViaIdentityExpanded, ExtractViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: ExtractViaIdentity, ExtractViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -161,8 +162,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: ExtractExpanded, Extract
+Type: System.String
+Parameter Sets: Extract, ExtractExpanded
 Aliases:
 
 Required: True
@@ -176,7 +177,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +193,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,10 +210,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityContentLabel
+
 ## NOTES
 
 ALIASES
@@ -228,7 +232,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
     - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
       - `[Name <String>]`: Name for this key-value pair.
       - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
@@ -237,7 +241,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
     - `[Name <String>]`: Name for this key-value pair.
     - `[Value <String>]`: Value for this key-value pair.
   - `[State <String>]`: contentState
@@ -285,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,72 +1,52 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingattendancereportcount
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingattendeereport
 schema: 2.0.0
 ---
 
-# Get-MgBetaUserOnlineMeetingAttendanceReportCount
+# Get-MgBetaUserOnlineMeetingAttendeeReport
 
 ## SYNOPSIS
-Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendeeReport?view=graph-powershell-1.0)
+The content stream of the attendee report of a Teams live event.
+Read-only.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaUserOnlineMeetingAttendanceReportCount -OnlineMeetingId <String> -UserId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
+Get-MgBetaUserOnlineMeetingAttendeeReport -OnlineMeetingId <String> -UserId <String> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserOnlineMeetingAttendanceReportCount -InputObject <ICloudCommunicationsIdentity> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
+Get-MgBetaUserOnlineMeetingAttendeeReport -InputObject <ICloudCommunicationsIdentity> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the number of the resource
+The content stream of the attendee report of a Teams live event.
+Read-only.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingAttendeeReport -UserId $userId -OnlineMeetingId $onlineMeetingId
-```
-This example shows how to use the Get-MgBetaUserOnlineMeetingAttendeeReport Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
-
-### -Filter
-Filter items by property values
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -81,7 +61,7 @@ Accept wildcard characters: False
 The unique identifier of onlineMeeting
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -92,11 +72,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Search
-Search items by search phrases
+### -OutFile
+Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -111,7 +106,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -128,9 +123,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ## OUTPUTS
 
-### System.Int32
+### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -161,4 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendeeReport?view=graph-powershell-1.0)
+

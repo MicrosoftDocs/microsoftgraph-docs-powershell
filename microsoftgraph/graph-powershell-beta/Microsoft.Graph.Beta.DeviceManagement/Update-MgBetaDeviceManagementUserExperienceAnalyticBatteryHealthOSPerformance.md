@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthosperformance
 schema: 2.0.0
@@ -18,14 +18,25 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance
  -UserExperienceAnalyticsBatteryHealthOSPerformanceId <String> [-ActiveDevices <Int32>]
  [-AdditionalProperties <Hashtable>] [-AverageBatteryAgeInDays <Int32>]
  [-AverageEstimatedRuntimeInMinutes <Int32>] [-AverageMaxCapacityPercentage <Int32>] [-Id <String>]
- [-OSBuildNumber <String>] [-OSVersion <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MeanFullBatteryDrainCount <Int32>] [-MedianEstimatedRuntimeInMinutes <Int32>]
+ [-MedianFullBatteryDrainCount <Int32>] [-MedianMaxCapacityPercentage <Int32>] [-OSBatteryHealthScore <Int32>]
+ [-OSBuildNumber <String>] [-OSHealthStatus <UserExperienceAnalyticsHealthState>] [-OSVersion <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance
  -UserExperienceAnalyticsBatteryHealthOSPerformanceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -34,20 +45,31 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance
  -InputObject <IDeviceManagementIdentity> [-ActiveDevices <Int32>] [-AdditionalProperties <Hashtable>]
  [-AverageBatteryAgeInDays <Int32>] [-AverageEstimatedRuntimeInMinutes <Int32>]
- [-AverageMaxCapacityPercentage <Int32>] [-Id <String>] [-OSBuildNumber <String>] [-OSVersion <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance
- -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance> [-WhatIf] [-Confirm]
+ [-AverageMaxCapacityPercentage <Int32>] [-Id <String>] [-MeanFullBatteryDrainCount <Int32>]
+ [-MedianEstimatedRuntimeInMinutes <Int32>] [-MedianFullBatteryDrainCount <Int32>]
+ [-MedianMaxCapacityPercentage <Int32>] [-OSBatteryHealthScore <Int32>] [-OSBuildNumber <String>]
+ [-OSHealthStatus <UserExperienceAnalyticsHealthState>] [-OSVersion <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsBatteryHealthOsPerformance in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -56,7 +78,7 @@ Number of active devices for that os version.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +93,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -88,7 +110,7 @@ Unit in days.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -105,7 +127,7 @@ Unit in minutes.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,11 +141,11 @@ Accept wildcard characters: False
 ### -AverageMaxCapacityPercentage
 The mean of the maximum capacity for all devices running a particular operating system version.
 Maximum capacity measures the full charge vs.
-design capacity for a device's batteries..
+design capacity for a device’s batteries..
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -139,7 +161,7 @@ The user experience analytics battery health os performance entity contains batt
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -155,7 +177,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,8 +193,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -182,11 +204,110 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -MeanFullBatteryDrainCount
+The mean of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices running a particular operating system version in a tenant.
+Valid values 0 to 2147483647
+
+```yaml
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MedianEstimatedRuntimeInMinutes
+The median of the estimated runtimes on full charge for all devices running a particular operating system version.
+Unit in minutes.
+Valid values 0 to 2147483647
+
+```yaml
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MedianFullBatteryDrainCount
+The median of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices running a particular operating system version in a tenant.
+Valid values 0 to 2147483647
+
+```yaml
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MedianMaxCapacityPercentage
+The median of the maximum capacity for all devices running a particular operating system version.
+Maximum capacity measures the full charge vs.
+design capacity for a device’s batteries..
+Valid values 0 to 2147483647
+
+```yaml
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OSBatteryHealthScore
+A weighted average of battery health score across all devices running a particular operating system version.
+Values range from 0-100.
+Valid values 0 to 2147483647
+
+```yaml
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OSBuildNumber
 Build number of the operating system.
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OSHealthStatus
+userExperienceAnalyticsHealthState
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Support.UserExperienceAnalyticsHealthState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -201,7 +322,7 @@ Accept wildcard characters: False
 Version of the operating system.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,8 +337,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsBatteryHealthOsPerformance
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -231,7 +352,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -247,7 +368,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -264,10 +385,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthOSPerformance
+
 ## NOTES
 
 ALIASES
@@ -283,8 +407,14 @@ To create the parameters described below, construct a hash table containing the 
   - `[ActiveDevices <Int32?>]`: Number of active devices for that os version. Valid values -2147483648 to 2147483647
   - `[AverageBatteryAgeInDays <Int32?>]`: The mean of the battery age for all devices running a particular operating system version in a tenant. Unit in days. Valid values -2147483648 to 2147483647
   - `[AverageEstimatedRuntimeInMinutes <Int32?>]`: The mean of the estimated runtimes on full charge for all devices running a particular operating system version. Unit in minutes. Valid values -2147483648 to 2147483647
-  - `[AverageMaxCapacityPercentage <Int32?>]`: The mean of the maximum capacity for all devices running a particular operating system version. Maximum capacity measures the full charge vs. design capacity for a device's batteries.. Valid values -2147483648 to 2147483647
+  - `[AverageMaxCapacityPercentage <Int32?>]`: The mean of the maximum capacity for all devices running a particular operating system version. Maximum capacity measures the full charge vs. design capacity for a device’s batteries.. Valid values -2147483648 to 2147483647
+  - `[MeanFullBatteryDrainCount <Int32?>]`: The mean of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices running a particular operating system version in a tenant. Valid values 0 to 2147483647
+  - `[MedianEstimatedRuntimeInMinutes <Int32?>]`: The median of the estimated runtimes on full charge for all devices running a particular operating system version. Unit in minutes. Valid values 0 to 2147483647
+  - `[MedianFullBatteryDrainCount <Int32?>]`: The median of number of times the battery has been discharged an amount that equals 100% of its capacity for all devices running a particular operating system version in a tenant. Valid values 0 to 2147483647
+  - `[MedianMaxCapacityPercentage <Int32?>]`: The median of the maximum capacity for all devices running a particular operating system version. Maximum capacity measures the full charge vs. design capacity for a device’s batteries.. Valid values 0 to 2147483647
+  - `[OSBatteryHealthScore <Int32?>]`: A weighted average of battery health score across all devices running a particular operating system version. Values range from 0-100. Valid values 0 to 2147483647
   - `[OSBuildNumber <String>]`: Build number of the operating system.
+  - `[OSHealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
   - `[OSVersion <String>]`: Version of the operating system.
 
 `INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
@@ -425,8 +555,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
-
-## RELATED LINKS
 
 ## RELATED LINKS
 
