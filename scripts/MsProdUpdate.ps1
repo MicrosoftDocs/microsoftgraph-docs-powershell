@@ -75,13 +75,8 @@ function Get-Files {
         [string] $ModulePrefix = "Microsoft.Graph",
         [Hashtable] $OpenApiContent 
     )
-    $ModuleManifestFile = (Join-Path $SDKDocsPath $Module $GraphProfile "$ModulePrefix.$Module.psd1")
-    $ModuleManifestFileContent = Get-Content -Path $ModuleManifestFile
-    $ProfileGraph = "v1.0"
-    if ($GraphProfile -eq "beta") {
-        $ProfileGraph = "beta"
-    }
-    $NonAllowedCommand = $GraphProfilePath.Split("\")
+
+
     try {
         if (Test-Path $GraphProfilePath) {
            
@@ -95,7 +90,7 @@ function Get-Files {
                     foreach ($CommandDetail in $CommandDetails) {
                         $ApiPath = $CommandDetail.URI
                         $Method = $CommandDetails.Method
-                        Get-ExternalDocsUrl -GraphProfile $GraphProfile -UriPath $ApiPath -Command $Command -OpenApiContent $OpenApiContent -GraphProfilePath $GraphProfilePath -Method $Method.Trim() -Module $Module
+                        Get-ExternalDocsUrl -GraphProfile $GraphProfile -UriPath $ApiPath -Command $Command -OpenApiContent $OpenApiContent -GraphProfilePath $GraphProfilePath -Method $Method.Trim() -Module $Module -File $File
                     }
                 }
 
@@ -172,6 +167,7 @@ function Get-ExternalDocsUrl {
                     }
 
                 }
+
                 if (-not([string]::IsNullOrEmpty($ExternalDocUrl))) {
                     WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $File
                 }
@@ -214,26 +210,7 @@ function Append-GraphPrefix {
     $UriPath = $UriPath.Replace($LastUriPathSegment, "microsoft.graph." + $LastUriPathSegment)
     return $UriPath
 }
-function Extract-PathFromListVariant {
-    param(
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0", 
-        [string] $Command = "Get-MgUser"
-    )
-    $ListApiPath = $null
-    $ListCommandValue = $null
-    if ($GraphProfile -eq "beta") {
-        $ListCommandValue = $BetaCommandListVariantList[$Command]
-    }
-    else {
-        $ListCommandValue = $V1CommandListVariantList[$Command]
-    } 
-    if (-not([string]::IsNullOrEmpty($ListCommandValue))) {
-        $ListCommandValueParams = $ListCommandValue.Split(",")
-        $ListApiPath = $ListCommandValueParams[0]
-    }
-    return $ListApiPath
-}
+
 function WebScrapping {
     param(
         [ValidateSet("beta", "v1.0")]
@@ -244,45 +221,55 @@ function WebScrapping {
         [string] $Command = "Get-MgUser",
         [string] $File = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md")
     ) 
-    $WebResponse = Invoke-WebRequest -Uri $ExternalDocUrl
-    $HtmlDom = ConvertFrom-Html $WebResponse
-    $Nodes = $HtmlDom.SelectNodes('//a')
-    $Result = ""
-    foreach ($Node in $Nodes) {
-        $OuterHtml = $Node.OuterHtml
-            
-        if ($OuterHtml.Contains('data-original_content_git_url')) {
 
-            $Result = $OuterHtml
-        }
-    }
-    $SplitedResult = $Result.Split(" ")
-    $MdFile = ""
-    foreach ($Val in $SplitedResult) {
-        if ($val.Contains('href=')) {
-            $SplittedVal = $Val.Split('=')
-            $MdFile = $SplittedVal[1]
-        }
-    }
-    $MdFile = $MdFile.Replace('"', '')
-    $MdFile = $MdFile.Substring(64)
-    $MdFile = $MdFile.Replace('/', '\')
-    $FilePath = $GraphDocsPath + $MdFile
+    
+
+    $ExternalDocUrlPaths = $ExternalDocUrl.Split("://")[1].Split("/")
+    $LastExternalDocUrlPathSegmentWithQueryParam = $ExternalDocUrlPaths[$ExternalDocUrlPaths.Length - 1]
+    $LastExternalDocUrlPathSegmentWithoutQueryParam = $LastExternalDocUrlPathSegmentWithQueryParam.Split("?")[0]
+
+    $GraphDocsUrl = "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/main/api-reference/$GraphProfile/api/$LastExternalDocUrlPathSegmentWithoutQueryParam.md"
     $MsprodContent = ""
+    Write-Host "Downloading $GraphDocsUrl"
+    ($readStream, $HttpWebResponse) = FetchStream -GraphDocsUrl $GraphDocsUrl
 
-    $Text = Get-Content -Path $FilePath
-    foreach ($Content in $Text) {
-        if ($Content -match 'ms.prod') {
-            $MsprodContent = $Content  
-        } 
+    while (-not $readStream.EndOfStream) {
+        $Line = $readStream.ReadLine()
+        if ($Line -match "ms.prod") {
+            $MsprodContent = $Line
+        }
     }
-    #Remove single and double qoutes from ms prod
-    $MsprodContent = $MsprodContent.Replace("`"", "")
-    $MsprodContent = $MsprodContent.Replace("'", "")
-    $MetaDataText = "schema: 2.0.0`r`n$MsprodContent"
-    (Get-Content $File) | 
-    Foreach-Object { $_ -replace 'schema: 2.0.0', $MetaDataText }  | 
-    Out-File $File
+    $HttpWebResponse.Close() 
+    $readStream.Close()
+    
+    if ([string]::IsNullOrEmpty($MsprodContent)) {
+        Write-Host "Ms Prod content is null or empty"
+    }
+    else {
+        #Remove single and double qoutes from ms prod
+        $MsprodContent = $MsprodContent.Replace("`"", "")
+        $MsprodContent = $MsprodContent.Replace("'", "")
+        $MetaDataText = "schema: 2.0.0`r`n$MsprodContent"
+        (Get-Content $File) | 
+        Foreach-Object { 
+            if ($_ -notcontains $MetaDataText) {
+                $_ -replace 'schema: 2.0.0', $MetaDataText
+            }
+        }  | 
+        Out-File $File
+    }
+}
+
+function FetchStream {
+    param(
+        [string]$GraphDocsUrl
+    )
+    $HttpWebRequest = [System.Net.WebRequest]::Create($GraphDocsUrl)
+    $HttpWebResponse = $HttpWebRequest.GetResponse()
+    $ReceiveStream = $HttpWebResponse.GetResponseStream()
+    $Encode = [System.Text.Encoding]::GetEncoding("utf-8")
+    $ReadStream = [System.IO.StreamReader]::new($ReceiveStream, $Encode)
+    return ($ReadStream, $HttpWebResponse)
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
@@ -311,7 +298,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Generator -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
