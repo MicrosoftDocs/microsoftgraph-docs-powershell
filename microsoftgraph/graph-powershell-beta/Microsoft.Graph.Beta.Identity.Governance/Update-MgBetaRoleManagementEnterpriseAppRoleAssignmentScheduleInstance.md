@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapproleassignmentscheduleinstance
 schema: 2.0.0
@@ -22,14 +22,22 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacAppl
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleAssignmentOriginId <String>] [-RoleAssignmentScheduleId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
- [-StartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -RbacApplicationId <String>
  -UnifiedRoleAssignmentScheduleInstanceId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance
+ -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -43,19 +51,27 @@ Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleAssignmentOriginId <String>] [-RoleAssignmentScheduleId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
- [-StartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance
- -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-StartDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -64,7 +80,7 @@ unifiedRoleEligibilityScheduleInstance
 To construct, see NOTES section for ACTIVATEDUSING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +95,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +111,7 @@ appScope
 To construct, see NOTES section for APPSCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppScope
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppScope
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +130,7 @@ Use / for tenant-wide app scopes.
 Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +146,7 @@ Type of the assignment which can either be Assigned or Activated.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +162,7 @@ unifiedRoleAssignmentScheduleInstance
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -162,7 +178,7 @@ directoryObject
 To construct, see NOTES section for DIRECTORYSCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,7 +197,7 @@ Use / for tenant-wide scope.
 Use appScopeId to limit the scope to an application only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +212,7 @@ Accept wildcard characters: False
 The end date of the schedule instance.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +228,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -228,8 +244,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -246,7 +262,7 @@ It can further imply whether the unifiedRoleAssignmentSchedule can be managed by
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +278,7 @@ directoryObject
 To construct, see NOTES section for PRINCIPAL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -277,7 +293,7 @@ Accept wildcard characters: False
 Identifier of the principal that has been granted the role assignment or that's eligible for a role.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -292,8 +308,8 @@ Accept wildcard characters: False
 The unique identifier of rbacApplication
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -307,7 +323,7 @@ Accept wildcard characters: False
 The identifier of the role assignment in Azure AD.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -322,7 +338,7 @@ Accept wildcard characters: False
 The identifier of the unifiedRoleAssignmentSchedule object from which this instance was created.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -338,7 +354,7 @@ unifiedRoleDefinition
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -353,7 +369,7 @@ Accept wildcard characters: False
 Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that the principal is eligible for.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -368,7 +384,7 @@ Accept wildcard characters: False
 When this instance starts.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -383,8 +399,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleAssignmentScheduleInstance
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -398,7 +414,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -414,7 +430,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -431,10 +447,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
+
 ## NOTES
 
 ALIASES
@@ -670,8 +689,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[ExcludedResourceActions <String[]>]`: 
   - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
   - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object. Read-only when isBuiltIn is true.
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

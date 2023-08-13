@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignment
 schema: 2.0.0
@@ -12,15 +12,12 @@ Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignment?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaEducationClassAssignment -EducationClassId <String> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-AllowLateSubmissions]
+New-MgBetaEducationClassAssignment -EducationClassId <String> [-AddedStudentAction <String>]
+ [-AdditionalProperties <Hashtable>] [-AddToCalendarAction <String>] [-AllowLateSubmissions]
  [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
  [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>] [-CloseDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
@@ -28,20 +25,26 @@ New-MgBetaEducationClassAssignment -EducationClassId <String> [-AddToCalendarAct
  [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
- [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEducationClassAssignment -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaEducationClassAssignment -InputObject <IEducationIdentity>
+ -BodyParameter <IMicrosoftGraphEducationAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaEducationClassAssignment -InputObject <IEducationIdentity> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-AllowLateSubmissions]
+New-MgBetaEducationClassAssignment -InputObject <IEducationIdentity> [-AddedStudentAction <String>]
+ [-AdditionalProperties <Hashtable>] [-AddToCalendarAction <String>] [-AllowLateSubmissions]
  [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
  [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>] [-CloseDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
@@ -49,14 +52,8 @@ New-MgBetaEducationClassAssignment -InputObject <IEducationIdentity> [-AddToCale
  [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
- [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaEducationClassAssignment -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,10 +62,11 @@ Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
@@ -89,11 +87,6 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaEducationClassAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -101,7 +94,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 educationAddedStudentAction
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +109,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +124,7 @@ Accept wildcard characters: False
 educationAddToCalendarOptions
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +140,7 @@ Identifies whether students can submit after the due date.
 If this property is not specified during create, it defaults to true.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +155,7 @@ Accept wildcard characters: False
 Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +170,7 @@ Accept wildcard characters: False
 educationAssignmentRecipient
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +186,7 @@ educationAssignment
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationAssignment
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -211,7 +204,7 @@ Nullable.
 To construct, see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationCategory[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationCategory[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +219,7 @@ Accept wildcard characters: False
 Class which this assignment belongs.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -245,7 +238,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -261,7 +254,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -276,7 +269,7 @@ Accept wildcard characters: False
 Name of the assignment.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -293,7 +286,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -308,8 +301,8 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -323,7 +316,7 @@ Accept wildcard characters: False
 educationAssignmentGradeType
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -339,7 +332,7 @@ educationGradingCategory
 To construct, see NOTES section for GRADINGCATEGORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationGradingCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationGradingCategory
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -355,7 +348,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -371,8 +364,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -387,7 +380,7 @@ educationItemBody
 To construct, see NOTES section for INSTRUCTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationItemBody
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -403,7 +396,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -418,7 +411,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -436,7 +429,7 @@ This field only applies to assignments where the assignTo value is educationAssi
 Updating the notificationChannelUrl is not allowed after the assignment has been published.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -454,7 +447,7 @@ Nullable.
 To construct, see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationAssignmentResource[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -470,7 +463,7 @@ educationRubric
 To construct, see NOTES section for RUBRIC properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationRubric
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationRubric
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -485,7 +478,7 @@ Accept wildcard characters: False
 educationAssignmentStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -503,7 +496,7 @@ Nullable.
 To construct, see NOTES section for SUBMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSubmission[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -518,7 +511,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -534,7 +527,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -551,10 +544,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignment
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignment
+
 ## NOTES
 
 ALIASES
@@ -779,7 +775,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[New-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignment?view=graph-powershell-1.0)
 
-## RELATED LINKS
-[New-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignment?view=graph-powershell-1.0)

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageresourcerolescope
 schema: 2.0.0
@@ -12,9 +12,6 @@ Create a new accessPackageResourceRoleScope for adding a resource role to an acc
 The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,13 +19,19 @@ Once you add the resource role scope to the access package, the user will receiv
 New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-Role <IMicrosoftGraphAccessPackageResourceRole>] [-Scope <IMicrosoftGraphAccessPackageResourceScope>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,13 +39,7 @@ New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <Stri
 New-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-Role <IMicrosoftGraphAccessPackageResourceRole>] [-Scope <IMicrosoftGraphAccessPackageResourceScope>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,14 +47,30 @@ Create a new accessPackageResourceRoleScope for adding a resource role to an acc
 The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AccessPackageId
 The unique identifier of accessPackage
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -71,7 +84,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +100,7 @@ accessPackageResourceRoleScope
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceRoleScope
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -103,7 +116,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +132,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -135,8 +148,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -151,7 +164,7 @@ accessPackageResourceRole
 To construct, see NOTES section for ROLE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceRole
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +180,7 @@ accessPackageResourceScope
 To construct, see NOTES section for SCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceScope
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -182,7 +195,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -198,7 +211,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -215,10 +228,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+
 ## NOTES
 
 ALIASES
@@ -409,8 +425,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: Read-only. Nullable. Supports $expand.
 
 ## RELATED LINKS
-[New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
-
-## RELATED LINKS
-[New-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
 

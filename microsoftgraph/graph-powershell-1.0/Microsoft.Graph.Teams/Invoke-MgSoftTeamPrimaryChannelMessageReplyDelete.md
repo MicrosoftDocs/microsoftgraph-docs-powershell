@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgsoftteamprimarychannelmessagereplydelete
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete
@@ -11,25 +10,38 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSoftTeamPrimaryChannelMessageReplyDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaSoftTeamPrimaryChannelMessageReplyDelete?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Soft (Default)
 ```
 Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete -ChatMessageId <String> -ChatMessageId1 <String>
- -TeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -TeamId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SoftViaIdentity
 ```
-Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete -InputObject <ITeamsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +49,7 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 The unique identifier of chatMessage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Soft
 Aliases:
 
@@ -52,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of chatMessage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Soft
 Aliases:
 
@@ -68,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 Parameter Sets: SoftViaIdentity
 Aliases:
 
@@ -83,7 +95,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -98,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Soft
 Aliases:
 
@@ -113,7 +125,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +141,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,9 +158,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -193,5 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgBetaSoftTeamPrimaryChannelMessageReplyDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaSoftTeamPrimaryChannelMessageReplyDelete?view=graph-powershell-beta)
 

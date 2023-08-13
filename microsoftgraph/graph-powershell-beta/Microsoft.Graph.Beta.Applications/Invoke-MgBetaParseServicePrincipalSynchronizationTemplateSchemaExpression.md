@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationtemplateschemaexpression
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression
@@ -12,9 +11,6 @@ ms.prod: applications
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### ParseExpanded (Default)
@@ -22,7 +18,7 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression -ServicePrincipalId <String>
  -SynchronizationTemplateId <String> [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
- [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Parse
@@ -30,7 +26,14 @@ Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression -Servi
 Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression -ServicePrincipalId <String>
  -SynchronizationTemplateId <String>
  -BodyParameter <IPaths1Ia9XfcServiceprincipalsServiceprincipalIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ParseViaIdentity
+```
+Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression -InputObject <IApplicationsIdentity>
+ -BodyParameter <IPaths1Ia9XfcServiceprincipalsServiceprincipalIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ParseViaIdentityExpanded
@@ -38,19 +41,28 @@ Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression -Servi
 Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
- [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ParseViaIdentity
-```
-Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression -InputObject <IApplicationsIdentity>
- -BodyParameter <IPaths1Ia9XfcServiceprincipalsServiceprincipalIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -58,7 +70,7 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -74,7 +86,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Ia9XfcServiceprincipalsServiceprincipalIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ia9XfcServiceprincipalsServiceprincipalIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Parse, ParseViaIdentity
 Aliases:
 
@@ -89,7 +101,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -105,8 +117,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: ParseViaIdentityExpanded, ParseViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: ParseViaIdentity, ParseViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -120,8 +132,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: ParseExpanded, Parse
+Type: System.String
+Parameter Sets: Parse, ParseExpanded
 Aliases:
 
 Required: True
@@ -135,8 +147,8 @@ Accept wildcard characters: False
 The unique identifier of synchronizationTemplate
 
 ```yaml
-Type: String
-Parameter Sets: ParseExpanded, Parse
+Type: System.String
+Parameter Sets: Parse, ParseExpanded
 Aliases:
 
 Required: True
@@ -151,7 +163,7 @@ attributeDefinition
 To construct, see NOTES section for TARGETATTRIBUTEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttributeDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeDefinition
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -167,7 +179,7 @@ expressionInputObject
 To construct, see NOTES section for TESTINPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExpressionInputObject
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExpressionInputObject
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -182,7 +194,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -198,7 +210,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -215,10 +227,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ia9XfcServiceprincipalsServiceprincipalIdSynchronizationTemplatesSynchronizationtemplateIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParseExpressionResponse
+
 ## NOTES
 
 ALIASES
@@ -348,8 +363,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Key <String>]`: Key.
 
 ## RELATED LINKS
-[Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-1.0)
 

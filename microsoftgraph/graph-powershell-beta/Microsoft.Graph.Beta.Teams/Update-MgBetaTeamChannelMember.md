@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmember
 schema: 2.0.0
@@ -11,35 +11,32 @@ schema: 2.0.0
 Update the role of a conversationMember in a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMember?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -TeamId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Roles <String[]>]
- [-VisibleHistoryStartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VisibleHistoryStartDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTeamChannelMember -ChannelId <String> -ConversationMemberId <String> -TeamId <String>
- -BodyParameter <IMicrosoftGraphConversationMember> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConversationMember> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaTeamChannelMember -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphConversationMember> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphConversationMember>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,10 +44,11 @@ Update the role of a conversationMember in a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -60,11 +58,6 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaTeamChannelMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -72,7 +65,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -88,7 +81,7 @@ conversationMember
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationMember
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -103,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of channel
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -118,8 +111,8 @@ Accept wildcard characters: False
 The unique identifier of conversationMember
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -133,7 +126,7 @@ Accept wildcard characters: False
 The display name of the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +142,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,8 +158,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -184,7 +177,7 @@ A basic member should not have any values specified in the roles property.
 An Out-of-tenant external member is assigned the owner role.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,8 +192,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -215,7 +208,7 @@ The timestamp denoting how far back a conversation's history is shared with the 
 This property is settable only for members of a chat.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -230,7 +223,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -246,7 +239,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -263,10 +256,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember
+
 ## NOTES
 
 ALIASES
@@ -324,4 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMember?view=graph-powershell-1.0)
+

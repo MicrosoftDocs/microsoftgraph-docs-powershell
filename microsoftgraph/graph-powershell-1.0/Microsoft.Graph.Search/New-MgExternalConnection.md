@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new externalConnection object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,25 +20,25 @@ New-MgExternalConnection [-ActivitySettings <IMicrosoftGraphExternalConnectorsAc
  [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
- [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-WhatIf] [-Confirm]
+ [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new externalConnection object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Search
+```
 
 $params = @{
 	id = "contosohr"
@@ -51,10 +48,6 @@ $params = @{
 
 New-MgExternalConnection -BodyParameter $params
 
-```
-This example shows how to use the New-MgExternalConnection Cmdlet.
-
-
 ## PARAMETERS
 
 ### -ActivitySettings
@@ -62,7 +55,7 @@ activitySettings
 To construct, see NOTES section for ACTIVITYSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsActivitySettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsActivitySettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -77,7 +70,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -93,7 +86,7 @@ externalConnection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalConnection
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
 Parameter Sets: Create
 Aliases:
 
@@ -109,7 +102,7 @@ configuration
 To construct, see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -125,7 +118,7 @@ Description of the connection displayed in the Microsoft 365 admin center.
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -141,7 +134,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalGroup[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +150,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -173,7 +166,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalItem[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +183,7 @@ Maximum length of 128 characters.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +199,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsConnectionOperation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +215,7 @@ schema
 To construct, see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsSchema
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSchema
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +231,7 @@ searchSettings
 To construct, see NOTES section for SEARCHSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsSearchSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSearchSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +246,7 @@ Accept wildcard characters: False
 connectionState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -268,7 +261,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -284,7 +277,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -301,9 +294,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
+
 ## NOTES
 
 ALIASES
@@ -479,7 +474,4 @@ To create the parameters described below, construct a hash table containing the 
       - `[ValuesJoinedBy <String>]`: binaryOperator
 
 ## RELATED LINKS
-[New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnection?view=graph-powershell-beta)
 
-## RELATED LINKS
-[New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnection?view=graph-powershell-beta)

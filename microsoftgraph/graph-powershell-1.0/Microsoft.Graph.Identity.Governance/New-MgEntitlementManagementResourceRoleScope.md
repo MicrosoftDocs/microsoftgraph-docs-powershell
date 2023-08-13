@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerolescope
 schema: 2.0.0
@@ -16,17 +16,33 @@ Create new navigation property to resourceRoleScopes for identityGovernance
 ```
 New-MgEntitlementManagementResourceRoleScope [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-Role <IMicrosoftGraphAccessPackageResourceRole>]
- [-Scope <IMicrosoftGraphAccessPackageResourceScope>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Scope <IMicrosoftGraphAccessPackageResourceScope>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementResourceRoleScope -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to resourceRoleScopes for identityGovernance
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -34,7 +50,7 @@ Create new navigation property to resourceRoleScopes for identityGovernance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +66,7 @@ accessPackageResourceRoleScope
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceRoleScope
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
 Parameter Sets: Create
 Aliases:
 
@@ -66,7 +82,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +98,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +114,7 @@ accessPackageResourceRole
 To construct, see NOTES section for ROLE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceRole
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +130,7 @@ accessPackageResourceScope
 To construct, see NOTES section for SCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceScope
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,9 +178,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+
 ## NOTES
 
 ALIASES
@@ -289,8 +307,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
       - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
     - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: Read-only. Nullable. Supports $expand.
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

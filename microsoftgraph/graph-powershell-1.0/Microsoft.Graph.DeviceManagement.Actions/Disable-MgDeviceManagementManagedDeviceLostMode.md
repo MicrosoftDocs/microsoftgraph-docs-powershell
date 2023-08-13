@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/disable-mgdevicemanagementmanageddevicelostmode
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Disable-MgDeviceManagementManagedDeviceLostMode
@@ -11,25 +10,38 @@ ms.prod: intune
 ## SYNOPSIS
 Disable lost mode
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Disable-MgBetaDeviceManagementManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disable-MgBetaDeviceManagementManagedDeviceLostMode?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Disable (Default)
 ```
-Disable-MgDeviceManagementManagedDeviceLostMode -ManagedDeviceId <String> [-PassThru] [-WhatIf] [-Confirm]
+Disable-MgDeviceManagementManagedDeviceLostMode -ManagedDeviceId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### DisableViaIdentity
 ```
 Disable-MgDeviceManagementManagedDeviceLostMode -InputObject <IDeviceManagementActionsIdentity> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Disable lost mode
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38,7 +50,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
 Parameter Sets: DisableViaIdentity
 Aliases:
 
@@ -53,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Disable
 Aliases:
 
@@ -68,7 +80,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -83,7 +95,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +111,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -116,9 +128,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -143,5 +157,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Disable-MgBetaDeviceManagementManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disable-MgBetaDeviceManagementManagedDeviceLostMode?view=graph-powershell-beta)
 

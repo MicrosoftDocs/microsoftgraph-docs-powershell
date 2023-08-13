@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary
 schema: 2.0.0
@@ -19,18 +19,34 @@ New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary [-Add
  [-MfaConditionalAccessPolicyState <String>] [-MfaExcludedUserCount <Int32>] [-MfaRegisteredUserCount <Int32>]
  [-SecurityDefaultsEnabled] [-SsprEnabledUserCount <Int32>] [-SsprRegisteredUserCount <Int32>]
  [-TenantDisplayName <String>] [-TenantId <String>] [-TenantLicenseType <String>] [-TotalUserCount <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
- -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to credentialUserRegistrationsSummaries for tenantRelationships
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38,7 +54,7 @@ Create new navigation property to credentialUserRegistrationsSummaries for tenan
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +70,7 @@ credentialUserRegistrationsSummary
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
 Parameter Sets: Create
 Aliases:
 
@@ -70,7 +86,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +103,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +120,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +137,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -138,7 +154,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -155,7 +171,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,7 +188,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +205,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +222,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +239,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -240,7 +256,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -255,7 +271,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -272,7 +288,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -287,7 +303,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -303,7 +319,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -320,9 +336,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
+
 ## NOTES
 
 ALIASES

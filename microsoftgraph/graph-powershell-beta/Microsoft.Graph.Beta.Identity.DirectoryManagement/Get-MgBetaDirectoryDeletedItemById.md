@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorydeleteditembyid
 schema: 2.0.0
@@ -11,27 +11,40 @@ schema: 2.0.0
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryDeletedItemById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemById?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
 Get-MgBetaDirectoryDeletedItemById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaDirectoryDeletedItemById
  -BodyParameter <IPaths1I5T24RDirectoryDeleteditemsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -39,7 +52,7 @@ Some common uses for this function are to:
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -55,7 +68,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1I5T24RDirectoryDeleteditemsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1I5T24RDirectoryDeleteditemsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
@@ -70,7 +83,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -116,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -133,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1I5T24RDirectoryDeleteditemsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+
 ## NOTES
 
 ALIASES
@@ -151,5 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
-[Get-MgDirectoryDeletedItemById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemById?view=graph-powershell-1.0)
 

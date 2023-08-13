@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Mail-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessagemention
 schema: 2.0.0
@@ -16,19 +16,35 @@ For example, you can delete a specific @-mention of the specified user in the me
 ### Delete (Default)
 ```
 Remove-MgBetaUserMailFolderChildFolderMessageMention -MailFolderId <String> -MailFolderId1 <String>
- -MentionId <String> -MessageId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ -MentionId <String> -MessageId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaUserMailFolderChildFolderMessageMention -InputObject <IMailIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
 For example, you can delete a specific @-mention of the specified user in the message.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +52,7 @@ For example, you can delete a specific @-mention of the specified user in the me
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -52,7 +68,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -67,7 +83,7 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -82,7 +98,7 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -97,7 +113,7 @@ Accept wildcard characters: False
 The unique identifier of mention
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -112,7 +128,7 @@ Accept wildcard characters: False
 The unique identifier of message
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -127,7 +143,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -142,7 +158,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -157,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,9 +206,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

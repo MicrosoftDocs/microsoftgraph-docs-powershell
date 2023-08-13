@@ -1503,8 +1503,10 @@ Supports $expand.
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition.md)
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition.md)
-Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+### [Get-MgUserAgreementAcceptance](Get-MgUserAgreementAcceptance.md)
+The user's terms of use acceptance statuses.
+Read-only.
+Nullable.
 
 ### [Get-MgUserAgreementAcceptanceCount](Get-MgUserAgreementAcceptanceCount.md)
 Get the number of the resource
@@ -2529,7 +2531,7 @@ Update the navigation property assignmentPolicies in identityGovernance
 Update the navigation property resourceRoleScopes in identityGovernance
 
 ### [Update-MgEntitlementManagementAssignment](Update-MgEntitlementManagementAssignment.md)
-In Azure AD entitlement management, callers can automatically reevaluate and enforce an accessPackageAssignment object of a user's assignments for a specific access package.
+In Azure AD entitlement management, callers can automatically reevaluate and enforce an accessPackageAssignment object of a user’s assignments for a specific access package.
 The state of the access package assignment must be Delivered for the administrator to reprocess the user's assignment.
 Only admins with the Access Package Assignment Manager role, or higher, in Azure AD entitlement management can perform this action.
 

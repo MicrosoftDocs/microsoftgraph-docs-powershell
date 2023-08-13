@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementconditionalaccesssetting
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The Exchange on premises conditional access settings.
 On premises conditional access will require devices to be both enrolled and compliant for mail access
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,13 +22,29 @@ Get-MgBetaDeviceManagementConditionalAccessSetting [-ExpandProperty <String[]>] 
 The Exchange on premises conditional access settings.
 On premises conditional access will require devices to be both enrolled and compliant for mail access
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -46,7 +59,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -65,10 +78,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-1.0)
 

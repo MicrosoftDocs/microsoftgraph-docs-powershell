@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwindowsmanagementapp
 schema: 2.0.0
@@ -20,13 +20,29 @@ Get-MgBetaDeviceAppManagementWindowsManagementApp [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Windows management app.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -41,7 +57,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -60,6 +76,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagementApp
+
 ## NOTES
 
 ALIASES

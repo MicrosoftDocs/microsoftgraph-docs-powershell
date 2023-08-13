@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamactivitynotification
 schema: 2.0.0
@@ -9,10 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Send an activity feed notification in the scope of a team.
-For more details about sending notifications and the requirements for doing so, seensending Teams activity notifications.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
+For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
 
 ## SYNTAX
 
@@ -21,14 +18,21 @@ For more details about sending notifications and the requirements for doing so, 
 Send-MgTeamActivityNotification -TeamId <String> [-ActivityType <String>] [-AdditionalProperties <Hashtable>]
  [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgTeamActivityNotification -TeamId <String>
  -BodyParameter <IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SendViaIdentity
+```
+Send-MgTeamActivityNotification -InputObject <ITeamsIdentity>
+ -BodyParameter <IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
@@ -36,22 +40,16 @@ Send-MgTeamActivityNotification -TeamId <String>
 Send-MgTeamActivityNotification -InputObject <ITeamsIdentity> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
  [-Recipient <Hashtable>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
- [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SendViaIdentity
-```
-Send-MgTeamActivityNotification -InputObject <ITeamsIdentity>
- -BodyParameter <IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Send an activity feed notification in the scope of a team.
-For more details about sending notifications and the requirements for doing so, seensending Teams activity notifications.
+For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
 
 ## EXAMPLES
-### Example 1: Using the Send-MgTeamActivityNotification Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -77,9 +75,10 @@ $params = @{
 }
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
-This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Send-MgTeamActivityNotification Cmdlet
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -104,9 +103,10 @@ $params = @{
 }
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
-This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Send-MgTeamActivityNotification Cmdlet
+
+
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -135,9 +135,10 @@ $params = @{
 }
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
-This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Send-MgTeamActivityNotification Cmdlet
+
+
+
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -166,8 +167,8 @@ $params = @{
 }
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
-This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -175,7 +176,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -190,7 +191,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -206,7 +207,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Send, SendViaIdentity
 Aliases:
 
@@ -221,7 +222,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -237,8 +238,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: SendViaIdentityExpanded, SendViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: SendViaIdentity, SendViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -252,7 +253,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -268,7 +269,7 @@ itemBody
 To construct, see NOTES section for PREVIEWTEXT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemBody
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -283,7 +284,7 @@ Accept wildcard characters: False
 teamworkNotificationRecipient
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -298,8 +299,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: SendExpanded, Send
+Type: System.String
+Parameter Sets: Send, SendExpanded
 Aliases:
 
 Required: True
@@ -314,7 +315,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -330,7 +331,7 @@ teamworkActivityTopic
 To construct, see NOTES section for TOPIC properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkActivityTopic
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkActivityTopic
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -345,7 +346,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -361,7 +362,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -378,10 +379,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Bflym4TeamsTeamIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -460,4 +464,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
+

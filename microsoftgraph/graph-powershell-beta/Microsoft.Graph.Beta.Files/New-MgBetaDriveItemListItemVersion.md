@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlistitemversion
 schema: 2.0.0
@@ -10,41 +10,54 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to versions for drives
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemListItemVersion?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDriveItemListItemVersion -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
  [-Fields <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-WhatIf] [-Confirm]
+ [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDriveItemListItemVersion -DriveId <String> -DriveItemId <String>
- -BodyParameter <IMicrosoftGraphListItemVersion> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphListItemVersion> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDriveItemListItemVersion -InputObject <IFilesIdentity>
+ -BodyParameter <IMicrosoftGraphListItemVersion> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaDriveItemListItemVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-Fields <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-WhatIf] [-Confirm]
+ [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDriveItemListItemVersion -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphListItemVersion> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to versions for drives
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ Create new navigation property to versions for drives
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +81,7 @@ listItemVersion
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphListItemVersion
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphListItemVersion
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -83,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -98,8 +111,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -113,7 +126,7 @@ Accept wildcard characters: False
 fieldValueSet
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +142,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,8 +158,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -161,7 +174,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +190,7 @@ Date and time when the version was last modified.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +206,7 @@ publicationFacet
 To construct, see NOTES section for PUBLICATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPublicationFacet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublicationFacet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +221,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +237,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -241,10 +254,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphListItemVersion
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphListItemVersion
+
 ## NOTES
 
 ALIASES
@@ -315,5 +331,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
-[New-MgDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemListItemVersion?view=graph-powershell-1.0)
 

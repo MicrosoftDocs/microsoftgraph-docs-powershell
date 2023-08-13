@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatayear
 schema: 2.0.0
@@ -16,30 +16,48 @@ Update the properties of a yearTimePeriodDefinition object.
 ```
 Update-MgBetaExternalIndustryDataYear -YearTimePeriodDefinitionId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-EndDate <DateTime>] [-Id <String>] [-StartDate <DateTime>] [-Year <Hashtable>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaExternalIndustryDataYear -YearTimePeriodDefinitionId <String>
- -BodyParameter <IMicrosoftGraphIndustryDataYearTimePeriodDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIndustryDataYearTimePeriodDefinition> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphIndustryDataYearTimePeriodDefinition> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-EndDate <DateTime>] [-Id <String>] [-StartDate <DateTime>] [-Year <Hashtable>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphIndustryDataYearTimePeriodDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a yearTimePeriodDefinition object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -47,7 +65,7 @@ Update the properties of a yearTimePeriodDefinition object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -63,7 +81,7 @@ yearTimePeriodDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIndustryDataYearTimePeriodDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataYearTimePeriodDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -79,7 +97,7 @@ The name of the year.
 Maximum supported length is 100 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -94,7 +112,7 @@ Accept wildcard characters: False
 The last day of the year using ISO 8601 format for date.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,7 +128,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,8 +144,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -141,7 +159,7 @@ Accept wildcard characters: False
 The first day of the year using ISO 8601 format for date.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +174,7 @@ Accept wildcard characters: False
 yearReferenceValue
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,8 +189,8 @@ Accept wildcard characters: False
 The unique identifier of yearTimePeriodDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -186,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -202,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -219,10 +237,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataYearTimePeriodDefinition
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataYearTimePeriodDefinition
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectory
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update directory
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,16 +27,32 @@ Update-MgBetaDirectory [-AdditionalProperties <Hashtable>]
  [-OutboundSharedUserProfiles <IMicrosoftGraphOutboundSharedUserProfile[]>]
  [-Recommendations <IMicrosoftGraphRecommendation[]>]
  [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>]
- [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update directory
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -47,7 +60,7 @@ Update directory
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -63,7 +76,7 @@ Conceptual container for user and group directory objects.
 To construct, see NOTES section for ADMINISTRATIVEUNITS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAdministrativeUnit[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdministrativeUnit[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -79,7 +92,7 @@ Group of related custom security attribute definitions.
 To construct, see NOTES section for ATTRIBUTESETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttributeSet[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeSet[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -95,7 +108,7 @@ directory
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectory
 Parameter Sets: Update
 Aliases:
 
@@ -111,7 +124,7 @@ certificateAuthorityPath
 To construct, see NOTES section for CERTIFICATEAUTHORITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCertificateAuthorityPath
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateAuthorityPath
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -127,7 +140,7 @@ Schema of a custom security attributes (key-value pairs).
 To construct, see NOTES section for CUSTOMSECURITYATTRIBUTEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomSecurityAttributeDefinition[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomSecurityAttributeDefinition[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -143,7 +156,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DELETEDITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -159,7 +172,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for FEATUREROLLOUTPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFeatureRolloutPolicy[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -175,7 +188,7 @@ Configure domain federation with organizations whose identity provider (IdP) sup
 To construct, see NOTES section for FEDERATIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityProviderBase[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProviderBase[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -191,7 +204,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -207,7 +220,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for IMPACTEDRESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphImpactedResource[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -224,7 +237,7 @@ Nullable.
 To construct, see NOTES section for INBOUNDSHAREDUSERPROFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInboundSharedUserProfile[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInboundSharedUserProfile[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -240,7 +253,7 @@ A container for on-premises directory synchronization functionalities that are a
 To construct, see NOTES section for ONPREMISESSYNCHRONIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesDirectorySynchronization[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -256,7 +269,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for OUTBOUNDSHAREDUSERPROFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOutboundSharedUserProfile[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutboundSharedUserProfile[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -272,7 +285,7 @@ List of recommended improvements to improve tenant posture.
 To construct, see NOTES section for RECOMMENDATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecommendation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendation[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -288,7 +301,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SHAREDEMAILDOMAINS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharedEmailDomain[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedEmailDomain[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -304,7 +317,7 @@ List of commercial subscriptions that an organization has acquired.
 To construct, see NOTES section for SUBSCRIPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCompanySubscription[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompanySubscription[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -319,7 +332,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -335,7 +348,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -352,9 +365,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectory
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectory
+
 ## NOTES
 
 ALIASES
@@ -780,8 +795,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TotalLicenses <Int32?>]`: The number of seats included in this subscription.
 
 ## RELATED LINKS
-[Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-1.0)
 

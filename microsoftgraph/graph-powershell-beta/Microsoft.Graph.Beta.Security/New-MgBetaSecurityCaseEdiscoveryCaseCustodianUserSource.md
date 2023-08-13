@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodianusersource
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new userSource object associated with an eDiscovery custodian.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,14 +17,20 @@ Create a new userSource object associated with an eDiscovery custodian.
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId <String>
  -EdiscoveryCustodianId <String> [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
- [-IncludedSources <String>] [-SiteWebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IncludedSources <String>] [-SiteWebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId <String>
- -EdiscoveryCustodianId <String> -BodyParameter <IMicrosoftGraphSecurityUserSource> [-WhatIf] [-Confirm]
+ -EdiscoveryCustodianId <String> -BodyParameter <IMicrosoftGraphSecurityUserSource> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityUserSource> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,17 +38,27 @@ New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId <Strin
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>]
- [-SiteWebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityUserSource> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SiteWebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new userSource object associated with an eDiscovery custodian.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53,7 +66,7 @@ Create a new userSource object associated with an eDiscovery custodian.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +82,7 @@ userSource
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityUserSource
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityUserSource
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -85,7 +98,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 The date and time the dataSource was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +129,7 @@ The display name of the dataSource.
 This will be the name of the SharePoint site.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,8 +144,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -146,8 +159,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCustodian
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -161,7 +174,7 @@ Accept wildcard characters: False
 Email address of the user's mailbox.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +189,7 @@ Accept wildcard characters: False
 dataSourceHoldStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +205,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +220,7 @@ Accept wildcard characters: False
 sourceType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -223,8 +236,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -239,7 +252,7 @@ The URL of the user's OneDrive for Business site.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -254,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -270,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -287,10 +300,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityUserSource
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityUserSource
+
 ## NOTES
 
 ALIASES
@@ -404,5 +420,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[New-MgSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-1.0)
 

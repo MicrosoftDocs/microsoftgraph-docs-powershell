@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoisrecord
 schema: 2.0.0
@@ -23,13 +23,19 @@ Update-MgBetaSecurityThreatIntelligenceWhoisRecord -WhoisRecordId <String>
  [-Noc <IMicrosoftGraphSecurityWhoisContact>] [-RawWhoisText <String>]
  [-Registrant <IMicrosoftGraphSecurityWhoisContact>] [-Registrar <IMicrosoftGraphSecurityWhoisContact>]
  [-RegistrationDateTime <DateTime>] [-Technical <IMicrosoftGraphSecurityWhoisContact>] [-WhoisServer <String>]
- [-Zone <IMicrosoftGraphSecurityWhoisContact>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Zone <IMicrosoftGraphSecurityWhoisContact>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityThreatIntelligenceWhoisRecord -WhoisRecordId <String>
- -BodyParameter <IMicrosoftGraphSecurityWhoisRecord> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityWhoisRecord> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityWhoisRecord> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,17 +49,27 @@ Update-MgBetaSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdenti
  [-Noc <IMicrosoftGraphSecurityWhoisContact>] [-RawWhoisText <String>]
  [-Registrant <IMicrosoftGraphSecurityWhoisContact>] [-Registrar <IMicrosoftGraphSecurityWhoisContact>]
  [-RegistrationDateTime <DateTime>] [-Technical <IMicrosoftGraphSecurityWhoisContact>] [-WhoisServer <String>]
- [-Zone <IMicrosoftGraphSecurityWhoisContact>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityWhoisRecord> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Zone <IMicrosoftGraphSecurityWhoisContact>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property whoisRecords in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -62,7 +78,7 @@ whoisContact
 To construct, see NOTES section for ABUSE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisContact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -77,7 +93,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -93,7 +109,7 @@ whoisContact
 To construct, see NOTES section for ADMIN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisContact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -109,7 +125,7 @@ whoisContact
 To construct, see NOTES section for BILLING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisContact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -125,7 +141,7 @@ whoisRecord
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisRecord
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisRecord
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -140,7 +156,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -155,7 +171,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -170,7 +186,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -186,7 +202,7 @@ host
 To construct, see NOTES section for HOST1 properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHost
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHost
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -202,7 +218,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -218,8 +234,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -233,7 +249,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -248,7 +264,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -264,7 +280,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for NAMESERVERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisNameserver[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisNameserver[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,7 +296,7 @@ whoisContact
 To construct, see NOTES section for NOC properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisContact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -295,7 +311,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -311,7 +327,7 @@ whoisContact
 To construct, see NOTES section for REGISTRANT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisContact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -327,7 +343,7 @@ whoisContact
 To construct, see NOTES section for REGISTRAR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisContact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -342,7 +358,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -358,7 +374,7 @@ whoisContact
 To construct, see NOTES section for TECHNICAL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisContact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -373,8 +389,8 @@ Accept wildcard characters: False
 The unique identifier of whoisRecord
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -388,7 +404,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -404,7 +420,7 @@ whoisContact
 To construct, see NOTES section for ZONE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisContact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -419,7 +435,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -435,7 +451,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -452,10 +468,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisRecord
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisRecord
+
 ## NOTES
 
 ALIASES
@@ -1075,8 +1094,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: 
   - `[Organization <String>]`: 
   - `[Telephone <String>]`: 
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

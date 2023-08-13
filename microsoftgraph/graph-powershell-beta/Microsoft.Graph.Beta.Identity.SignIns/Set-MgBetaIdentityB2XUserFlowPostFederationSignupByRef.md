@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowpostfederationsignupbyref
 schema: 2.0.0
@@ -10,39 +10,52 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the ref of navigation property postFederationSignup in identity
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgIdentityB2XUserFlowPostFederationSignupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowPostFederationSignupByRef?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### SetExpanded (Default)
 ```
 Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -B2XIdentityUserFlowId <String> -OdataId <String>
- [-AdditionalProperties <Hashtable>] [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-OdataType <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -B2XIdentityUserFlowId <String>
- -BodyParameter <IReferenceUpdate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded
-```
-Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySignInsIdentity>
- -OdataId <String> [-AdditionalProperties <Hashtable>] [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IReferenceUpdate> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IReferenceUpdate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IReferenceUpdate> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySignInsIdentity>
+ -OdataId <String> [-AdditionalProperties <Hashtable>] [-OdataType <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the ref of navigation property postFederationSignup in identity
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -50,7 +63,7 @@ Update the ref of navigation property postFederationSignup in identity
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -65,8 +78,8 @@ Accept wildcard characters: False
 The unique identifier of b2xIdentityUserFlow
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded, Set
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -81,7 +94,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IReferenceUpdate
+Type: Microsoft.Graph.Beta.PowerShell.Models.IReferenceUpdate
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -97,8 +110,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -113,7 +126,7 @@ The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -128,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -143,7 +156,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -158,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,10 +204,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IReferenceUpdate
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -286,5 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Set-MgIdentityB2XUserFlowPostFederationSignupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowPostFederationSignupByRef?view=graph-powershell-1.0)
 

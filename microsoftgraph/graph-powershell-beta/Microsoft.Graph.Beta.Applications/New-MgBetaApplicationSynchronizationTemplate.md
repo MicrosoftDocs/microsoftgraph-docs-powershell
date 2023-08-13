@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationsynchronizationtemplate
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to templates for applications
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,34 +17,35 @@ Create new navigation property to templates for applications
 New-MgBetaApplicationSynchronizationTemplate -ApplicationId <String> [-AdditionalProperties <Hashtable>]
  [-ApplicationId1 <String>] [-Default] [-Description <String>] [-Discoverable] [-FactoryTag <String>]
  [-Id <String>] [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>]
- [-Schema <IMicrosoftGraphSynchronizationSchema>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaApplicationSynchronizationTemplate [-ApplicationId <String>] -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Default] [-Description <String>] [-Discoverable] [-FactoryTag <String>]
- [-Id <String>] [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>]
- [-Schema <IMicrosoftGraphSynchronizationSchema>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Schema <IMicrosoftGraphSynchronizationSchema>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaApplicationSynchronizationTemplate -ApplicationId <String>
- -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity> [-ApplicationId <String>]
+ [-AdditionalProperties <Hashtable>] [-Default] [-Description <String>] [-Discoverable] [-FactoryTag <String>]
+ [-Id <String>] [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>]
+ [-Schema <IMicrosoftGraphSynchronizationSchema>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to templates for applications
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaApplicationSynchronizationTemplate Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -57,8 +55,8 @@ $params = @{
 }
 New-MgBetaApplicationSynchronizationTemplate -ApplicationId $applicationId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaApplicationSynchronizationTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -66,7 +64,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -81,23 +79,11 @@ Accept wildcard characters: False
 The unique identifier of application
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: CreateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -108,7 +94,7 @@ Accept wildcard characters: False
 Identifier of the application this template belongs to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +110,7 @@ synchronizationTemplate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationTemplate
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -139,7 +125,7 @@ Accept wildcard characters: False
 true if this template is recommended to be the default for the application.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -154,7 +140,7 @@ Accept wildcard characters: False
 Description of the template.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -169,7 +155,7 @@ Accept wildcard characters: False
 true if this template should appear in the collection of templates available for the application instance (service principal).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +171,7 @@ One of the well-known factory tags supported by the synchronization engine.
 The factoryTag tells the synchronization engine which implementation to use when processing jobs based on this template.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -201,7 +187,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -217,8 +203,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -234,7 +220,7 @@ Unless mentioned explicitly, metadata values should not be changed.
 To construct, see NOTES section for METADATA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationMetadataEntry[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationMetadataEntry[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +236,7 @@ synchronizationSchema
 To construct, see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -265,7 +251,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -281,7 +267,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -298,10 +284,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
+
 ## NOTES
 
 ALIASES
@@ -532,7 +521,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
-[New-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-1.0)
 
-## RELATED LINKS
-[New-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-1.0)

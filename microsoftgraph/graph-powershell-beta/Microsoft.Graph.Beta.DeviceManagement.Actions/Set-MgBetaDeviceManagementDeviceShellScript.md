@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdeviceshellscript
 schema: 2.0.0
@@ -16,15 +16,22 @@ Invoke action assign
 ```
 Set-MgBetaDeviceManagementDeviceShellScript -DeviceShellScriptId <String> [-AdditionalProperties <Hashtable>]
  [-DeviceManagementScriptAssignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]
- [-DeviceManagementScriptGroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceManagementScriptGroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Assign
 ```
 Set-MgBetaDeviceManagementDeviceShellScript -DeviceShellScriptId <String>
  -BodyParameter <IPaths13Yln21DevicemanagementDeviceshellscriptsDeviceshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssignViaIdentity
+```
+Set-MgBetaDeviceManagementDeviceShellScript -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPaths13Yln21DevicemanagementDeviceshellscriptsDeviceshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
@@ -32,19 +39,28 @@ Set-MgBetaDeviceManagementDeviceShellScript -DeviceShellScriptId <String>
 Set-MgBetaDeviceManagementDeviceShellScript -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>]
  [-DeviceManagementScriptAssignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]
- [-DeviceManagementScriptGroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssignViaIdentity
-```
-Set-MgBetaDeviceManagementDeviceShellScript -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPaths13Yln21DevicemanagementDeviceshellscriptsDeviceshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceManagementScriptGroupAssignments <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action assign
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +68,7 @@ Invoke action assign
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -68,7 +84,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths13Yln21DevicemanagementDeviceshellscriptsDeviceshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths13Yln21DevicemanagementDeviceshellscriptsDeviceshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
@@ -84,7 +100,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DEVICEMANAGEMENTSCRIPTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementScriptAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -100,7 +116,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DEVICEMANAGEMENTSCRIPTGROUPASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementScriptGroupAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptGroupAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -115,8 +131,8 @@ Accept wildcard characters: False
 The unique identifier of deviceShellScript
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
 Aliases:
 
 Required: True
@@ -131,8 +147,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -146,7 +162,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -161,7 +177,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -177,7 +193,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,10 +210,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths13Yln21DevicemanagementDeviceshellscriptsDeviceshellscriptIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

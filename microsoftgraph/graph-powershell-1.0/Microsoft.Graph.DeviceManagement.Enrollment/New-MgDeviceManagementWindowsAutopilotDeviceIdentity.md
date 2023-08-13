@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementwindowsautopilotdeviceidentity
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new windowsAutopilotDeviceIdentity object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,17 +19,33 @@ New-MgDeviceManagementWindowsAutopilotDeviceIdentity [-AdditionalProperties <Has
  [-EnrollmentState <EnrollmentState>] [-GroupTag <String>] [-Id <String>] [-LastContactedDateTime <DateTime>]
  [-ManagedDeviceId <String>] [-Manufacturer <String>] [-Model <String>] [-ProductKey <String>]
  [-PurchaseOrderIdentifier <String>] [-ResourceName <String>] [-SerialNumber <String>] [-SkuNumber <String>]
- [-SystemFamily <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SystemFamily <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementWindowsAutopilotDeviceIdentity
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new windowsAutopilotDeviceIdentity object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -40,7 +53,7 @@ Create a new windowsAutopilotDeviceIdentity object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +68,7 @@ Accept wildcard characters: False
 Addressable user name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ Accept wildcard characters: False
 AAD Device ID - to be deprecated
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +99,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsAutopilotDeviceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity
 Parameter Sets: Create
 Aliases:
 
@@ -101,7 +114,7 @@ Accept wildcard characters: False
 Display Name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +129,7 @@ Accept wildcard characters: False
 enrollmentState
 
 ```yaml
-Type: EnrollmentState
+Type: Microsoft.Graph.PowerShell.Support.EnrollmentState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +144,7 @@ Accept wildcard characters: False
 Group Tag of the Windows autopilot device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +160,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +175,7 @@ Accept wildcard characters: False
 Intune Last Contacted Date Time of the Windows autopilot device.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +190,7 @@ Accept wildcard characters: False
 Managed Device ID
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,7 +205,7 @@ Accept wildcard characters: False
 Oem manufacturer of the Windows autopilot device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +220,7 @@ Accept wildcard characters: False
 Model name of the Windows autopilot device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +235,7 @@ Accept wildcard characters: False
 Product Key of the Windows autopilot device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +250,7 @@ Accept wildcard characters: False
 Purchase Order Identifier of the Windows autopilot device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -252,7 +265,7 @@ Accept wildcard characters: False
 Resource Name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -267,7 +280,7 @@ Accept wildcard characters: False
 Serial number of the Windows autopilot device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -282,7 +295,7 @@ Accept wildcard characters: False
 SKU Number
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -297,7 +310,7 @@ Accept wildcard characters: False
 System Family
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -312,7 +325,7 @@ Accept wildcard characters: False
 User Principal Name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -327,7 +340,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -343,7 +356,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -360,9 +373,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity
+
 ## NOTES
 
 ALIASES
@@ -393,5 +408,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: User Principal Name.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
 

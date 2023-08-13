@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdevicehealthscriptremediationhistory
 schema: 2.0.0
@@ -27,13 +27,29 @@ Get-MgBetaDeviceManagementDeviceHealthScriptRemediationHistory
 ## DESCRIPTION
 Function to get the number of remediations by a device health scripts
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -DeviceHealthScriptId
 The unique identifier of deviceHealthScript
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -49,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -66,9 +82,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRemediationHistory
+
 ## NOTES
 
 ALIASES

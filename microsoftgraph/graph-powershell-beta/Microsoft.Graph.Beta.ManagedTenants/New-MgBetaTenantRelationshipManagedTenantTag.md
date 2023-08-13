@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag
 schema: 2.0.0
@@ -17,20 +17,21 @@ Create a new tenantTag object.
 New-MgBetaTenantRelationshipManagedTenantTag [-AdditionalProperties <Hashtable>] [-CreatedByUserId <String>]
  [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
- [-Tenants <IMicrosoftGraphManagedTenantsTenantInfo[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tenants <IMicrosoftGraphManagedTenantsTenantInfo[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter <IMicrosoftGraphManagedTenantsTenantTag> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter <IMicrosoftGraphManagedTenantsTenantTag>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new tenantTag object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 $params = @{
@@ -39,8 +40,8 @@ $params = @{
 }
 New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -48,7 +49,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -64,7 +65,7 @@ tenantTag
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsTenantTag
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantTag
 Parameter Sets: Create
 Aliases:
 
@@ -81,7 +82,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +99,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +116,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +133,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +150,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +166,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +183,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -199,7 +200,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -216,7 +217,7 @@ Optional.
 To construct, see NOTES section for TENANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsTenantInfo[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantInfo[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -231,7 +232,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -247,7 +248,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -264,9 +265,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantTag
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantTag
+
 ## NOTES
 
 ALIASES
@@ -293,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: The Azure Active Directory tenant identifier for the managed tenant. Optional.
 
 ## RELATED LINKS
+

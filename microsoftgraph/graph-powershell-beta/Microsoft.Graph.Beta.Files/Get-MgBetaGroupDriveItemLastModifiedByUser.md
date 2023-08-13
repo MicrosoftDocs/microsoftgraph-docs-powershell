@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemlastmodifiedbyuser
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get lastModifiedByUser from groups
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemLastModifiedByUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,13 +24,13 @@ Get-MgBetaGroupDriveItemLastModifiedByUser -DriveId <String> -GroupId <String> -
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgBetaGroupDriveItemLastModifiedByUser -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgBetaGroupDriveItemLastModifiedByUser -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -42,13 +39,29 @@ Get-MgBetaGroupDriveItemLastModifiedByUser -InputObject <IFilesIdentity> [-Expan
 ## DESCRIPTION
 Get lastModifiedByUser from groups
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -DriveId
 The unique identifier of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -63,7 +76,7 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -78,7 +91,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -93,7 +106,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -109,8 +122,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -124,7 +137,7 @@ Accept wildcard characters: False
 The unique identifier of listItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -139,7 +152,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -156,9 +169,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUser
+
 ## NOTES
 
 ALIASES
@@ -195,5 +210,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupDriveItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemLastModifiedByUser?view=graph-powershell-1.0)
 

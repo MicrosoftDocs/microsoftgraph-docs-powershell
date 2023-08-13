@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthappimpact
 schema: 2.0.0
@@ -16,18 +16,35 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthAppImpact 
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact [-ActiveDevices <Int32>]
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>]
- [-BatteryUsagePercentage <Double>] [-Id <String>] [-IsForegroundApp] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-BatteryUsagePercentage <Double>] [-Id <String>] [-IsForegroundApp] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsBatteryHealthAppImpact for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +53,7 @@ Number of active devices for using that app over a 14-day period.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +68,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -67,7 +84,7 @@ User friendly display name for the app.
 Eg: Outlook
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +100,7 @@ App name.
 Eg: oltk.exe
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +116,7 @@ App publisher.
 Eg: Microsoft Corporation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +133,7 @@ Unit in percentage.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +149,7 @@ The user experience analytics battery health app impact entity contains battery 
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact
 Parameter Sets: Create
 Aliases:
 
@@ -148,7 +165,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +180,7 @@ Accept wildcard characters: False
 true if the user had active interaction with the app.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +195,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -194,7 +211,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -211,9 +228,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact
+
 ## NOTES
 
 ALIASES

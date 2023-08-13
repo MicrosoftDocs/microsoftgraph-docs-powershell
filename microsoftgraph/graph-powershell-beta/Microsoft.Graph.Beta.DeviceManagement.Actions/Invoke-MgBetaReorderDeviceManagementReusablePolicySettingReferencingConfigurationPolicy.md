@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareorderdevicemanagementreusablepolicysettingreferencingconfigurationpolicy
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action reorder
 ```
 Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfigurationPolicy
  -DeviceManagementConfigurationPolicyId <String> -DeviceManagementReusablePolicySettingId <String>
- [-AdditionalProperties <Hashtable>] [-Priority <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Priority <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Reorder
@@ -24,14 +24,7 @@ Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfiguratio
 Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfigurationPolicy
  -DeviceManagementConfigurationPolicyId <String> -DeviceManagementReusablePolicySettingId <String>
  -Body <IPaths1Vd5DghDevicemanagementReusablepolicysettingsDevicemanagementreusablepolicysettingIdReferencingconfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ReorderViaIdentityExpanded
-```
-Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfigurationPolicy
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-Priority <Int32>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReorderViaIdentity
@@ -39,11 +32,34 @@ Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfiguratio
 Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfigurationPolicy
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Vd5DghDevicemanagementReusablepolicysettingsDevicemanagementreusablepolicysettingIdReferencingconfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ReorderViaIdentityExpanded
+```
+Invoke-MgBetaReorderDeviceManagementReusablePolicySettingReferencingConfigurationPolicy
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-Priority <Int32>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action reorder
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Invoke action reorder
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ReorderExpanded, ReorderViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPaths1Vd5DghDevicemanagementReusablepolicysettingsDevicemanagementreusablepolicysettingIdReferencingconfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Vd5DghDevicemanagementReusablepolicysettingsDevicemanagementreusablepolicysettingIdReferencingconfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Reorder
 Aliases:
 
@@ -83,7 +99,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Vd5DghDevicemanagementReusablepolicysettingsDevicemanagementreusablepolicysettingIdReferencingconfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Vd5DghDevicemanagementReusablepolicysettingsDevicemanagementreusablepolicysettingIdReferencingconfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: ReorderViaIdentity
 Aliases:
 
@@ -98,8 +114,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementConfigurationPolicy
 
 ```yaml
-Type: String
-Parameter Sets: ReorderExpanded, Reorder
+Type: System.String
+Parameter Sets: Reorder, ReorderExpanded
 Aliases:
 
 Required: True
@@ -113,8 +129,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementReusablePolicySetting
 
 ```yaml
-Type: String
-Parameter Sets: ReorderExpanded, Reorder
+Type: System.String
+Parameter Sets: Reorder, ReorderExpanded
 Aliases:
 
 Required: True
@@ -129,8 +145,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: ReorderViaIdentityExpanded, ReorderViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: ReorderViaIdentity, ReorderViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,7 +160,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -159,7 +175,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: ReorderExpanded, ReorderViaIdentityExpanded
 Aliases:
 
@@ -174,7 +190,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +206,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,10 +223,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Vd5DghDevicemanagementReusablepolicysettingsDevicemanagementreusablepolicysettingIdReferencingconfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthorizationpolicydefaultuserroleoverride
 schema: 2.0.0
@@ -16,30 +16,46 @@ Create new navigation property to defaultUserRoleOverrides for policies
 ```
 New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -AuthorizationPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDefault]
- [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -AuthorizationPolicyId <String>
- -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDefault]
- [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaPolicyAuthorizationPolicyDefaultUserRoleOverride -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphDefaultUserRoleOverride> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to defaultUserRoleOverrides for policies
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -47,7 +63,7 @@ Create new navigation property to defaultUserRoleOverrides for policies
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -62,8 +78,8 @@ Accept wildcard characters: False
 The unique identifier of authorizationPolicy
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -78,7 +94,7 @@ defaultUserRoleOverride
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDefaultUserRoleOverride
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDefaultUserRoleOverride
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -94,7 +110,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -110,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -125,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +157,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRolePermission[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRolePermission[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,10 +205,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDefaultUserRoleOverride
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDefaultUserRoleOverride
+
 ## NOTES
 
 ALIASES

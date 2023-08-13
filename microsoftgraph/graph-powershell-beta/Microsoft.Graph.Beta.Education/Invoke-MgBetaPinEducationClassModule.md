@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetapineducationclassmodule
 schema: 2.0.0
@@ -14,18 +14,34 @@ Invoke action pin
 
 ### Pin (Default)
 ```
-Invoke-MgBetaPinEducationClassModule -EducationClassId <String> -EducationModuleId <String> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgBetaPinEducationClassModule -EducationClassId <String> -EducationModuleId <String> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### PinViaIdentity
 ```
-Invoke-MgBetaPinEducationClassModule -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Invoke-MgBetaPinEducationClassModule -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action pin
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -33,7 +49,7 @@ Invoke action pin
 The unique identifier of educationClass
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Pin
 Aliases:
 
@@ -48,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of educationModule
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Pin
 Aliases:
 
@@ -64,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: PinViaIdentity
 Aliases:
 
@@ -79,7 +95,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -95,7 +111,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -112,9 +128,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationModule
+
 ## NOTES
 
 ALIASES

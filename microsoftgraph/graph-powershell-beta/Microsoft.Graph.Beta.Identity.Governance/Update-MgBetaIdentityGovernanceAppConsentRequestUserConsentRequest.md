@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequestuserconsentrequest
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property userConsentRequests in identityGovernance
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,14 +18,20 @@ Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRe
  -UserConsentRequestId <String> [-AdditionalProperties <Hashtable>] [-Approval <IMicrosoftGraphApproval>]
  [-ApprovalId <String>] [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-CustomData <String>] [-Id <String>] [-Reason <String>] [-Status <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId <String>
- -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphUserConsentRequest> [-WhatIf] [-Confirm]
+ -UserConsentRequestId <String> -BodyParameter <IMicrosoftGraphUserConsentRequest> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphUserConsentRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,18 +39,28 @@ Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRe
 Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-Approval <IMicrosoftGraphApproval>] [-ApprovalId <String>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-CustomData <String>] [-Id <String>] [-Reason <String>] [-Status <String>] [-WhatIf] [-Confirm]
+ [-CustomData <String>] [-Id <String>] [-Reason <String>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUserConsentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userConsentRequests in identityGovernance
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -55,7 +68,7 @@ Update the navigation property userConsentRequests in identityGovernance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,8 +83,8 @@ Accept wildcard characters: False
 The unique identifier of appConsentRequest
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -86,7 +99,7 @@ approval
 To construct, see NOTES section for APPROVAL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApproval
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApproval
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +114,7 @@ Accept wildcard characters: False
 The identifier of the approval of the request.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +130,7 @@ userConsentRequest
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserConsentRequest
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserConsentRequest
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -132,7 +145,7 @@ Accept wildcard characters: False
 The request completion date time.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +161,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +176,7 @@ Accept wildcard characters: False
 The request creation date time.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +192,7 @@ Free text field to define any custom data for the request.
 Not used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +208,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -211,8 +224,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -227,7 +240,7 @@ The user's justification for requiring access to the app.
 Supports $filter (eq only) and $orderby.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -245,7 +258,7 @@ The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision
 Not nullable.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -260,8 +273,8 @@ Accept wildcard characters: False
 The unique identifier of userConsentRequest
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -275,7 +288,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -291,7 +304,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -308,10 +321,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserConsentRequest
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserConsentRequest
+
 ## NOTES
 
 ALIASES
@@ -475,8 +491,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-1.0)
 

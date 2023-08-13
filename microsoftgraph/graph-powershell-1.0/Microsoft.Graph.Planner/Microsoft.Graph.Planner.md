@@ -83,8 +83,8 @@ Read-only.
 ### [Get-MgUserPlannerPlan](Get-MgUserPlannerPlan.md)
 Retrieve a list of plannerplan objects shared with a user object.
 
-### [Get-MgUserPlannerPlan](Get-MgUserPlannerPlan.md)
-Retrieve a list of plannerplan objects shared with a user object.
+### [Get-MgUserPlannerTask](Get-MgUserPlannerTask.md)
+Retrieve a list of plannertask objects assigned to a User.
 
 ### [New-MgPlannerBucket](New-MgPlannerBucket.md)
 Create a new plannerBucket object.

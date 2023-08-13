@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryoutboundshareduserprofiletenant
 schema: 2.0.0
@@ -15,31 +15,47 @@ Update the navigation property tenants in directory
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDirectoryOutboundSharedUserProfileTenant -OutboundSharedUserProfileUserId <String>
- -TenantReferenceTenantId <String> [-AdditionalProperties <Hashtable>] [-TenantId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -TenantReferenceTenantId <String> [-AdditionalProperties <Hashtable>] [-TenantId <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDirectoryOutboundSharedUserProfileTenant -OutboundSharedUserProfileUserId <String>
- -TenantReferenceTenantId <String> -BodyParameter <IMicrosoftGraphTenantReference> [-WhatIf] [-Confirm]
+ -TenantReferenceTenantId <String> -BodyParameter <IMicrosoftGraphTenantReference> [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphTenantReference> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTenantReference> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-TenantId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property tenants in directory
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -47,7 +63,7 @@ Update the navigation property tenants in directory
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -63,7 +79,7 @@ tenantReference
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTenantReference
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantReference
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -79,8 +95,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -94,8 +110,8 @@ Accept wildcard characters: False
 The unique identifier of outboundSharedUserProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -111,7 +127,7 @@ Read-only.
 Key.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of tenantReference
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -141,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,10 +190,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantReference
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES

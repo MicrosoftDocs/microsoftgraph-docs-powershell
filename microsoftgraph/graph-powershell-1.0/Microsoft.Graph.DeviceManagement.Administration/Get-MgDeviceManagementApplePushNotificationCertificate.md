@@ -1,18 +1,14 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementapplepushnotificationcertificate
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Get-MgDeviceManagementApplePushNotificationCertificate
 
 ## SYNOPSIS
 Read properties and relationships of the applePushNotificationCertificate object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,13 +20,29 @@ Get-MgDeviceManagementApplePushNotificationCertificate [-ExpandProperty <String[
 ## DESCRIPTION
 Read properties and relationships of the applePushNotificationCertificate object.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -45,7 +57,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -64,10 +76,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
 

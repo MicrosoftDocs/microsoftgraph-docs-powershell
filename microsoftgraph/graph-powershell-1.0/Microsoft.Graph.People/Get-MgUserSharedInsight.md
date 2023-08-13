@@ -1,54 +1,109 @@
 ---
-external help file: Microsoft.Graph.People-help.xml
+external help file:
 Module Name: Microsoft.Graph.People
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusersharedcountinsight
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusersharedinsight
 schema: 2.0.0
-ms.prod: insights
 ---
 
-# Get-MgUserSharedCountInsight
+# Get-MgUserSharedInsight
 
 ## SYNOPSIS
-Get the number of the resource
+Calculated relationship identifying documents shared with or by the user.
+This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings.
+This also includes URLs and reference attachments to Teams conversations.
+Ordered by recency of share.
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 ```
-Get-MgUserSharedCountInsight -UserId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+Get-MgUserSharedInsight -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgUserSharedInsight -SharedInsightId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserSharedCountInsight -InputObject <IPeopleIdentity> [-Filter <String>] [-Search <String>]
+Get-MgUserSharedInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the number of the resource
+Calculated relationship identifying documents shared with or by the user.
+This includes URLs, file attachments, and reference attachments to OneDrive for Business and SharePoint files found in Outlook messages and meetings.
+This also includes URLs and reference attachments to Teams conversations.
+Ordered by recency of share.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.People
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserSharedInsight -UserId $userId
-```
-This example shows how to use the Get-MgUserSharedInsight Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
+
+### -All
+List all pages.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: System.String
+Parameter Sets: List
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Filter
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -63,7 +118,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPeopleIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -74,13 +129,103 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+Select properties to be returned
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: List
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SharedInsightId
+The unique identifier of sharedInsight
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: System.String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases: Limit
 
 Required: False
 Position: Named
@@ -93,8 +238,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -110,9 +255,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharedInsight
+
 ## NOTES
 
 ALIASES
@@ -130,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

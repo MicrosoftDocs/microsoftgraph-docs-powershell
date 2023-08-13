@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsfeatureupdateprofile
 schema: 2.0.0
@@ -19,17 +19,33 @@ New-MgBetaDeviceManagementWindowsFeatureUpdateProfile [-AdditionalProperties <Ha
  [-DeployableContentDisplayName <String>] [-Description <String>] [-DisplayName <String>]
  [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
- [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementWindowsFeatureUpdateProfile
- -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to windowsFeatureUpdateProfiles for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +53,7 @@ Create new navigation property to windowsFeatureUpdateProfiles for deviceManagem
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +69,7 @@ The list of group assignments of the profile.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +85,7 @@ Windows Feature Update Profile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsFeatureUpdateProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfile
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +100,7 @@ Accept wildcard characters: False
 The date time that the profile was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +115,7 @@ Accept wildcard characters: False
 Friendly display name of the quality update profile deployable content
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +130,7 @@ Accept wildcard characters: False
 The description of the profile which is specified by the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +145,7 @@ Accept wildcard characters: False
 The display name of the profile.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +160,7 @@ Accept wildcard characters: False
 The last supported date for a feature update
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +176,7 @@ The feature update version that will be deployed to the devices targeted by this
 The version could be any supported version for example 1709, 1803 or 1809 and so on.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +192,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +207,7 @@ Accept wildcard characters: False
 The date time that the profile was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +222,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Feature Update entity.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +238,7 @@ A complex type to store the windows update rollout settings including offer star
 To construct, see NOTES section for ROLLOUTSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdateRolloutSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdateRolloutSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +253,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +269,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,9 +286,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfile
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfile
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserinformationprotectionsensitivitylabel
 schema: 2.0.0
@@ -19,13 +19,19 @@ New-MgBetaUserInformationProtectionSensitivityLabel -UserId <String> [-Additiona
  [-AutoLabeling <IMicrosoftGraphAutoLabeling>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsDefault] [-IsEndpointProtectionEnabled] [-LabelActions <IMicrosoftGraphLabelActionBase[]>]
  [-Name <String>] [-Priority <Int32>] [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserInformationProtectionSensitivityLabel -UserId <String>
- -BodyParameter <IMicrosoftGraphSensitivityLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSensitivityLabel> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaUserInformationProtectionSensitivityLabel -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphSensitivityLabel> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,17 +41,28 @@ New-MgBetaUserInformationProtectionSensitivityLabel -InputObject <IIdentitySignI
  [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>] [-AutoLabeling <IMicrosoftGraphAutoLabeling>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsDefault] [-IsEndpointProtectionEnabled]
  [-LabelActions <IMicrosoftGraphLabelActionBase[]>] [-Name <String>] [-Priority <Int32>]
- [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaUserInformationProtectionSensitivityLabel -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphSensitivityLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to sensitivityLabels for users
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53,7 +70,7 @@ Create new navigation property to sensitivityLabels for users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +85,7 @@ Accept wildcard characters: False
 sensitivityLabelTarget
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +100,7 @@ Accept wildcard characters: False
 applicationMode
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +116,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ASSIGNEDPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLabelPolicy[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLabelPolicy[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +132,7 @@ autoLabeling
 To construct, see NOTES section for AUTOLABELING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAutoLabeling
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAutoLabeling
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +148,7 @@ sensitivityLabel
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSensitivityLabel
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabel
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -146,7 +163,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +178,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +194,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -193,8 +210,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -208,7 +225,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +240,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +256,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for LABELACTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLabelActionBase[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLabelActionBase[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -254,7 +271,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -269,7 +286,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +302,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SUBLABELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSensitivityLabel[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabel[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +317,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -315,8 +332,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -330,7 +347,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -346,7 +363,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -363,10 +380,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabel
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabel
+
 ## NOTES
 
 ALIASES

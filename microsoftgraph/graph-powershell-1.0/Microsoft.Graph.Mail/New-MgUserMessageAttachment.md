@@ -1,56 +1,58 @@
 ---
-external help file: Microsoft.Graph.Mail-help.xml
+external help file:
 Module Name: Microsoft.Graph.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessageextension
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageattachment
 schema: 2.0.0
 ---
 
-# New-MgUserMailFolderMessageExtension
+# New-MgUserMessageAttachment
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageAttachment?view=graph-powershell-beta)
+Use this API to add an attachment to a message.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+You can add an attachment to an existing message by posting to its attachments collection, or you can \nadd an attachment to a message that is being created and sent on the fly.
+This operation limits the size of the attachment you can add to under 3 MB.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgUserMailFolderMessageExtension -MailFolderId <String> -MessageId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserMessageAttachment -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
+ [-Size <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserMailFolderMessageExtension -MailFolderId <String> -MessageId <String> -UserId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserMailFolderMessageExtension -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserMessageAttachment -MessageId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachment>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserMailFolderMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hashtable> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserMessageAttachment -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphAttachment> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgUserMessageAttachment -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
+ [-Size <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Use this API to add an attachment to a message.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+You can add an attachment to an existing message by posting to its attachments collection, or you can \nadd an attachment to a message that is being created and sent on the fly.
+This operation limits the size of the attachment you can add to under 3 MB.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Mail
+```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.fileAttachment"
@@ -63,11 +65,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the New-MgUserMessageAttachment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -75,7 +72,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -87,10 +84,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-extension
+attachment
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Hashtable
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -101,12 +99,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ContentType
+The MIME type.
+
+```yaml
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -122,8 +135,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMailIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -133,15 +146,31 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -MailFolderId
-The unique identifier of mailFolder
+### -IsInline
+true if the attachment is an inline attachment; otherwise, false.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastModifiedDateTime
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+
+```yaml
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -152,11 +181,41 @@ Accept wildcard characters: False
 The unique identifier of message
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+The attachment's file name.
+
+```yaml
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Size
+The length of the attachment in bytes.
+
+```yaml
+Type: System.Int32
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -167,8 +226,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -182,7 +241,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -198,7 +257,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -215,10 +274,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-### System.Collections.Hashtable
+
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+
 ## OUTPUTS
 
-### System.String
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+
 ## NOTES
 
 ALIASES
@@ -227,6 +289,15 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+`BODYPARAMETER <IMicrosoftGraphAttachment>`: attachment
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[ContentType <String>]`: The MIME type.
+  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
+  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Name <String>]`: The attachment's file name.
+  - `[Size <Int32?>]`: The length of the attachment in bytes.
 
 `INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -239,4 +310,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageAttachment?view=graph-powershell-beta)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeusermailboxsetting
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update property mailboxSettings value.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeUserMailboxSetting?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,17 +18,33 @@ Update-MgEducationMeUserMailboxSetting [-AdditionalProperties <Hashtable>] [-Arc
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgEducationMeUserMailboxSetting -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm]
+Update-MgEducationMeUserMailboxSetting -BodyParameter <IMicrosoftGraphMailboxSettings> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update property mailboxSettings value.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -39,7 +52,7 @@ Update property mailboxSettings value.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -54,7 +67,7 @@ Accept wildcard characters: False
 Folder ID of an archive folder for the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ automaticRepliesSetting
 To construct, see NOTES section for AUTOMATICREPLIESSETTING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAutomaticRepliesSetting
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAutomaticRepliesSetting
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -86,7 +99,7 @@ mailboxSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMailboxSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
 Parameter Sets: Update
 Aliases:
 
@@ -101,7 +114,7 @@ Accept wildcard characters: False
 The date format for the user's mailbox.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -116,7 +129,7 @@ Accept wildcard characters: False
 delegateMeetingMessageDeliveryOptions
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -132,7 +145,7 @@ localeInfo
 To construct, see NOTES section for LANGUAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocaleInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLocaleInfo
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -147,7 +160,7 @@ Accept wildcard characters: False
 The time format for the user's mailbox.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -162,7 +175,7 @@ Accept wildcard characters: False
 The default time zone for the user's mailbox.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -177,7 +190,7 @@ Accept wildcard characters: False
 userPurpose
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -193,7 +206,7 @@ workingHours
 To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWorkingHours
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkingHours
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -208,7 +221,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +237,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -241,9 +254,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
+
 ## NOTES
 
 ALIASES
@@ -312,5 +327,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
-[Update-MgBetaEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeUserMailboxSetting?view=graph-powershell-beta)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamownercount
 schema: 2.0.0
@@ -26,13 +26,29 @@ Get-MgBetaGroupTeamOwnerCount -InputObject <ITeamsIdentity> [-Filter <String>] [
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -Filter
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -47,7 +63,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -63,7 +79,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -78,7 +94,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -95,9 +111,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES

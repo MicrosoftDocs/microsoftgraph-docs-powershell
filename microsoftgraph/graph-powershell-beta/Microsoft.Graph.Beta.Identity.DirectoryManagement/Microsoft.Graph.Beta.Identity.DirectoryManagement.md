@@ -219,6 +219,19 @@ Get the number of the resource
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
+### [Get-MgBetaAdminPerson](Get-MgBetaAdminPerson.md)
+Get people from admin
+
+### [Get-MgBetaAdminPersonProfileCardProperty](Get-MgBetaAdminPersonProfileCardProperty.md)
+Get profileCardProperties from admin
+
+### [Get-MgBetaAdminPersonProfileCardPropertyCount](Get-MgBetaAdminPersonProfileCardPropertyCount.md)
+Get the number of the resource
+
+### [Get-MgBetaAdminPersonPronoun](Get-MgBetaAdminPersonPronoun.md)
+Get the properties of the pronounsSettings resource for an organization.
+For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+
 ### [Get-MgBetaContact](Get-MgBetaContact.md)
 Get the properties and relationships of an organizational contact object.
 
@@ -326,8 +339,9 @@ Get the number of the resource
 ### [Get-MgBetaContractDelta](Get-MgBetaContractDelta.md)
 Invoke function delta
 
-### [Get-MgBetaContractDelta](Get-MgBetaContractDelta.md)
-Invoke function delta
+### [Get-MgBetaContractMemberGroup](Get-MgBetaContractMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaContractMemberObject](Get-MgBetaContractMemberObject.md)
 Invoke action getMemberObjects
@@ -371,8 +385,9 @@ Nullable.
 ### [Get-MgBetaDeviceExtensionCount](Get-MgBetaDeviceExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceExtensionCount](Get-MgBetaDeviceExtensionCount.md)
-Get the number of the resource
+### [Get-MgBetaDeviceMemberGroup](Get-MgBetaDeviceMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDeviceMemberObject](Get-MgBetaDeviceMemberObject.md)
 Invoke action getMemberObjects
@@ -661,8 +676,9 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryDeletedItemCountAsUser](Get-MgBetaDirectoryDeletedItemCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryDeletedItemCountAsUser](Get-MgBetaDirectoryDeletedItemCountAsUser.md)
-Get the number of the resource
+### [Get-MgBetaDirectoryDeletedItemMemberGroup](Get-MgBetaDirectoryDeletedItemMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryDeletedItemMemberObject](Get-MgBetaDirectoryDeletedItemMemberObject.md)
 Invoke action getMemberObjects
@@ -823,8 +839,9 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryRoleMemberCountAsUser](Get-MgBetaDirectoryRoleMemberCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryRoleMemberCountAsUser](Get-MgBetaDirectoryRoleMemberCountAsUser.md)
-Get the number of the resource
+### [Get-MgBetaDirectoryRoleMemberGroup](Get-MgBetaDirectoryRoleMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryRoleMemberObject](Get-MgBetaDirectoryRoleMemberObject.md)
 Invoke action getMemberObjects
@@ -850,8 +867,9 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryRoleTemplateDelta](Get-MgBetaDirectoryRoleTemplateDelta.md)
 Invoke function delta
 
-### [Get-MgBetaDirectoryRoleTemplateDelta](Get-MgBetaDirectoryRoleTemplateDelta.md)
-Invoke function delta
+### [Get-MgBetaDirectoryRoleTemplateMemberGroup](Get-MgBetaDirectoryRoleTemplateMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryRoleTemplateMemberObject](Get-MgBetaDirectoryRoleTemplateMemberObject.md)
 Invoke action getMemberObjects
@@ -1043,8 +1061,9 @@ Nullable.
 ### [Get-MgBetaOrganizationExtensionCount](Get-MgBetaOrganizationExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaOrganizationExtensionCount](Get-MgBetaOrganizationExtensionCount.md)
-Get the number of the resource
+### [Get-MgBetaOrganizationMemberGroup](Get-MgBetaOrganizationMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaOrganizationMemberObject](Get-MgBetaOrganizationMemberObject.md)
 Invoke action getMemberObjects
@@ -1177,6 +1196,9 @@ Create new navigation property ref to members for administrativeUnits
 ### [New-MgBetaAdministrativeUnitScopedRoleMember](New-MgBetaAdministrativeUnitScopedRoleMember.md)
 Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
+
+### [New-MgBetaAdminPersonProfileCardProperty](New-MgBetaAdminPersonProfileCardProperty.md)
+Create new navigation property to profileCardProperties for admin
 
 ### [New-MgBetaContact](New-MgBetaContact.md)
 Add new entity to contacts
@@ -1358,6 +1380,15 @@ Delete ref of navigation property members for administrativeUnits
 
 ### [Remove-MgBetaAdministrativeUnitScopedRoleMember](Remove-MgBetaAdministrativeUnitScopedRoleMember.md)
 Remove an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+
+### [Remove-MgBetaAdminPerson](Remove-MgBetaAdminPerson.md)
+Delete navigation property people for admin
+
+### [Remove-MgBetaAdminPersonProfileCardProperty](Remove-MgBetaAdminPersonProfileCardProperty.md)
+Delete navigation property profileCardProperties for admin
+
+### [Remove-MgBetaAdminPersonPronoun](Remove-MgBetaAdminPersonPronoun.md)
+Delete navigation property pronouns for admin
 
 ### [Remove-MgBetaContact](Remove-MgBetaContact.md)
 Delete entity from contacts
@@ -1754,6 +1785,16 @@ Update the navigation property extensions in administrativeUnits
 
 ### [Update-MgBetaAdministrativeUnitScopedRoleMember](Update-MgBetaAdministrativeUnitScopedRoleMember.md)
 Update the navigation property scopedRoleMembers in administrativeUnits
+
+### [Update-MgBetaAdminPerson](Update-MgBetaAdminPerson.md)
+Update the navigation property people in admin
+
+### [Update-MgBetaAdminPersonProfileCardProperty](Update-MgBetaAdminPersonProfileCardProperty.md)
+Update the navigation property profileCardProperties in admin
+
+### [Update-MgBetaAdminPersonPronoun](Update-MgBetaAdminPersonPronoun.md)
+Update the properties of a pronounsSettings in an organization.
+For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
 ### [Update-MgBetaContact](Update-MgBetaContact.md)
 Update entity in contacts

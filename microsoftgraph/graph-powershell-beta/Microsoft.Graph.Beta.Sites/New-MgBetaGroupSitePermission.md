@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepermission
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new permission object on a site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -23,14 +20,20 @@ New-MgBetaGroupSitePermission -GroupId <String> -SiteId <String> [-AdditionalPro
  [-GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]
  [-GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>] [-HasPassword] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-Invitation <IMicrosoftGraphSharingInvitation>]
- [-Link <IMicrosoftGraphSharingLink>] [-Roles <String[]>] [-ShareId <String>] [-WhatIf] [-Confirm]
+ [-Link <IMicrosoftGraphSharingLink>] [-Roles <String[]>] [-ShareId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupSitePermission -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphPermission>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphPermission>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -41,18 +44,28 @@ New-MgBetaGroupSitePermission -InputObject <ISitesIdentity> [-AdditionalProperti
  [-GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]
  [-GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>] [-HasPassword] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-Invitation <IMicrosoftGraphSharingInvitation>]
- [-Link <IMicrosoftGraphSharingLink>] [-Roles <String[]>] [-ShareId <String>] [-WhatIf] [-Confirm]
+ [-Link <IMicrosoftGraphSharingLink>] [-Roles <String[]>] [-ShareId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphPermission>
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new permission object on a site.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -60,7 +73,7 @@ Create a new permission object on a site.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -76,7 +89,7 @@ permission
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPermission
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -93,7 +106,7 @@ DateTime.MinValue indicates there is no expiration set for this permission.
 Optional.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -109,7 +122,7 @@ identitySet
 To construct, see NOTES section for GRANTEDTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -125,7 +138,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for GRANTEDTOIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +155,7 @@ Read-only.
 To construct, see NOTES section for GRANTEDTOIDENTITIESV2 properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharePointIdentitySet[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharePointIdentitySet[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +171,7 @@ sharePointIdentitySet
 To construct, see NOTES section for GRANTEDTOV2 properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharePointIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharePointIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -173,8 +186,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -192,7 +205,7 @@ Read-only.
 For OneDrive Personal only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +221,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +237,7 @@ itemReference
 To construct, see NOTES section for INHERITEDFROM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemReference
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -240,8 +253,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -256,7 +269,7 @@ sharingInvitation
 To construct, see NOTES section for INVITATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharingInvitation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharingInvitation
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +285,7 @@ sharingLink
 To construct, see NOTES section for LINK properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharingLink
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharingLink
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +302,7 @@ See below for the full list of roles.
 Read-only.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -305,7 +318,7 @@ A unique token that can be used to access this shared item via the [shares API][
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -320,8 +333,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -335,7 +348,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -351,7 +364,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -368,10 +381,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
+
 ## NOTES
 
 ALIASES
@@ -587,8 +603,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[New-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePermission?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[New-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePermission?view=graph-powershell-1.0)
 

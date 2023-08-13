@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallcontentsharingsession
 schema: 2.0.0
@@ -10,37 +10,50 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property contentSharingSessions in communications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgCommunicationCallContentSharingSession -CallId <String> -ContentSharingSessionId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgCommunicationCallContentSharingSession -CallId <String> -ContentSharingSessionId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property contentSharingSessions in communications
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +61,7 @@ Update the navigation property contentSharingSessions in communications
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -63,7 +76,7 @@ Accept wildcard characters: False
 contentSharingSession
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -78,8 +91,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -93,8 +106,8 @@ Accept wildcard characters: False
 The unique identifier of contentSharingSession
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -109,7 +122,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -125,8 +138,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -140,7 +153,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -156,7 +169,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -173,10 +186,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -201,5 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
 

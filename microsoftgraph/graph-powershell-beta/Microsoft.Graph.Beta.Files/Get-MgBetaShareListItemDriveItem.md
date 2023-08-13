@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdriveitem
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgShareListItemDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemDriveItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,13 +24,13 @@ Get-MgBetaShareListItemDriveItem -ListItemId <String> -SharedDriveItemId <String
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgBetaShareListItemDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgBetaShareListItemDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -42,13 +39,29 @@ Get-MgBetaShareListItemDriveItem -InputObject <IFilesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -64,8 +77,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -79,7 +92,7 @@ Accept wildcard characters: False
 The unique identifier of listItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -94,7 +107,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -109,8 +122,8 @@ Accept wildcard characters: False
 The unique identifier of sharedDriveItem
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get
+Type: System.String
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -126,9 +139,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
+
 ## NOTES
 
 ALIASES
@@ -165,5 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareListItemDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemDriveItem?view=graph-powershell-1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementtermandconditiongroupassignmenttermandcondition
 schema: 2.0.0
@@ -29,13 +29,29 @@ Get-MgBetaDeviceManagementTermAndConditionGroupAssignmentTermAndCondition
 ## DESCRIPTION
 Navigation link to the terms and conditions that are assigned.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -51,7 +67,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -66,7 +82,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -81,7 +97,7 @@ Accept wildcard characters: False
 The unique identifier of termsAndConditionsGroupAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -96,7 +112,7 @@ Accept wildcard characters: False
 The unique identifier of termsAndConditions
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -113,9 +129,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermsAndConditions
+
 ## NOTES
 
 ALIASES

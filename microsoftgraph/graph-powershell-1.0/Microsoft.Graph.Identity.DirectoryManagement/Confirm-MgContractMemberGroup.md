@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgcontractmembergroup
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Confirm-MgContractMemberGroup
@@ -15,35 +14,32 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaContractMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaContractMemberGroup?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CheckExpanded (Default)
 ```
 Confirm-MgContractMemberGroup -ContractId <String> [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Check
 ```
 Confirm-MgContractMemberGroup -ContractId <String>
  -BodyParameter <IPaths30M7S8ContractsContractIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CheckViaIdentityExpanded
-```
-Confirm-MgContractMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
 Confirm-MgContractMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths30M7S8ContractsContractIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CheckViaIdentityExpanded
+```
+Confirm-MgContractMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,13 +51,27 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -77,7 +87,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths30M7S8ContractsContractIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths30M7S8ContractsContractIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Check, CheckViaIdentity
 Aliases:
 
@@ -92,8 +102,8 @@ Accept wildcard characters: False
 The unique identifier of contract
 
 ```yaml
-Type: String
-Parameter Sets: CheckExpanded, Check
+Type: System.String
+Parameter Sets: Check, CheckExpanded
 Aliases:
 
 Required: True
@@ -107,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -123,8 +133,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: CheckViaIdentityExpanded, CheckViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: CheckViaIdentity, CheckViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -138,7 +148,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -154,7 +164,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -171,10 +181,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths30M7S8ContractsContractIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -213,4 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgBetaContractMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaContractMemberGroup?view=graph-powershell-beta)
+

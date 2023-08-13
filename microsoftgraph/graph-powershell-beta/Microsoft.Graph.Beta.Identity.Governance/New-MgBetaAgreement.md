@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreement
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to agreements
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreement?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,16 +18,32 @@ New-MgBetaAgreement [-Acceptances <IMicrosoftGraphAgreementAcceptance[]>] [-Addi
  [-DisplayName <String>] [-File <IMicrosoftGraphAgreementFile>]
  [-Files <IMicrosoftGraphAgreementFileLocalization[]>] [-Id <String>] [-IsPerDeviceAcceptanceRequired]
  [-IsViewingBeforeAcceptanceRequired] [-TermsExpiration <IMicrosoftGraphTermsExpiration>]
- [-UserReacceptRequiredFrequency <TimeSpan>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserReacceptRequiredFrequency <TimeSpan>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaAgreement -BodyParameter <IMicrosoftGraphAgreement> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaAgreement -BodyParameter <IMicrosoftGraphAgreement> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to agreements
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -40,7 +53,7 @@ Information about acceptances of this agreement.
 To construct, see NOTES section for ACCEPTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementAcceptance[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAgreementAcceptance[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +68,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +84,7 @@ agreement
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreement
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAgreement
 Parameter Sets: Create
 Aliases:
 
@@ -88,7 +101,7 @@ The display name is used for internal tracking of the agreement but is not shown
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +117,7 @@ agreementFile
 To construct, see NOTES section for FILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementFile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAgreementFile
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -122,7 +135,7 @@ Use the file property instead.
 To construct, see NOTES section for FILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementFileLocalization[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAgreementFileLocalization[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -138,7 +151,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -155,7 +168,7 @@ The end user will be required to register their device in Azure AD, if they have
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -171,7 +184,7 @@ Indicates whether the user has to expand the agreement before accepting.
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -187,7 +200,7 @@ termsExpiration
 To construct, see NOTES section for TERMSEXPIRATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermsExpiration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermsExpiration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +216,7 @@ The duration after which the user must re-accept the terms of use.
 The value is represented in ISO 8601 format for durations.
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +231,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -234,7 +247,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -251,9 +264,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAgreement
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAgreement
+
 ## NOTES
 
 ALIASES
@@ -395,8 +410,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: The DateTime when the agreement is set to expire for all users. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[New-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreement?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[New-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreement?view=graph-powershell-1.0)
 

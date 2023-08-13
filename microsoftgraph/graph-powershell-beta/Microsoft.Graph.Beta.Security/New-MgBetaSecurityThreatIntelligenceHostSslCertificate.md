@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostsslcertificate
 schema: 2.0.0
@@ -17,17 +17,33 @@ Create new navigation property to hostSslCertificates for security
 New-MgBetaSecurityThreatIntelligenceHostSslCertificate [-AdditionalProperties <Hashtable>]
  [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
  [-LastSeenDateTime <DateTime>] [-Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]
- [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityThreatIntelligenceHostSslCertificate
- -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to hostSslCertificates for security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,7 +51,7 @@ Create new navigation property to hostSslCertificates for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +67,7 @@ hostSslCertificate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostSslCertificate
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
 Parameter Sets: Create
 Aliases:
 
@@ -66,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +98,7 @@ host
 To construct, see NOTES section for HOST1 properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHost
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHost
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +114,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +145,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PORTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostSslCertificatePort[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificatePort[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +161,7 @@ sslCertificate
 To construct, see NOTES section for SSLCERTIFICATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySslCertificate
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySslCertificate
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -176,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -193,9 +209,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
+
 ## NOTES
 
 ALIASES
@@ -608,8 +626,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[SerialNumber <String>]`: 
   - `[Sha1 <String>]`: 
   - `[Subject <IMicrosoftGraphSecuritySslCertificateEntity>]`: sslCertificateEntity
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

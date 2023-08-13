@@ -1,58 +1,50 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckoutgroupdriveroot
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupcalendareventreminder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
-# Invoke-MgBetaCheckoutGroupDriveRoot
+# Invoke-MgBetaDismissGroupCalendarEventReminder
 
 ## SYNOPSIS
-Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDismissGroupCalendarEventReminder?view=graph-powershell-1.0)
+Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## SYNTAX
 
-### Checkout (Default)
+### Dismiss (Default)
 ```
-Invoke-MgBetaCheckoutGroupDriveRoot -DriveId <String> -GroupId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgBetaDismissGroupCalendarEventReminder -EventId <String> -GroupId <String> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### CheckoutViaIdentity
+### DismissViaIdentity
 ```
-Invoke-MgBetaCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaDismissGroupCalendarEventReminder -InputObject <IGroupsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDismissUserEventReminder -UserId $userId -EventId $eventId
-```
-This example shows how to use the Invoke-MgBetaDismissGroupCalendarEventReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
-### -DriveId
-The unique identifier of drive
+### -EventId
+The unique identifier of event
 
 ```yaml
-Type: String
-Parameter Sets: Checkout
+Type: System.String
+Parameter Sets: Dismiss
 Aliases:
 
 Required: True
@@ -66,8 +58,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: Checkout
+Type: System.String
+Parameter Sets: Dismiss
 Aliases:
 
 Required: True
@@ -82,8 +74,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CheckoutViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: DismissViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +89,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -112,7 +104,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +120,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,9 +137,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -200,4 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDismissGroupCalendarEventReminder?view=graph-powershell-1.0)
+

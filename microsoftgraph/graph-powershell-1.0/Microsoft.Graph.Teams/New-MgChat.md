@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchat
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new chat object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,22 +22,23 @@ New-MgChat [-AdditionalProperties <Hashtable>] [-ChatType <String>] [-CreatedDat
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]
  [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
  [-TenantId <String>] [-Topic <String>] [-Viewpoint <IMicrosoftGraphChatViewpoint>] [-WebUrl <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgChat -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgChat -BodyParameter <IMicrosoftGraphChat> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new chat object.
 
 ## EXAMPLES
-### Example 1: Create a one-on-one chat
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -63,15 +61,11 @@ $params = @{
 }
 
 New-MgChat -BodyParameter $params
-```
-This example shows how to use the New-MgChat Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create a group chat
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	chatType = "group"
@@ -102,15 +96,11 @@ $params = @{
 }
 
 New-MgChat -BodyParameter $params
-```
-This example shows how to use the New-MgChat Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Create a one-on-one chat using user principal name
-
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -133,15 +123,11 @@ $params = @{
 }
 
 New-MgChat -BodyParameter $params
-```
-This example shows how to use the New-MgChat Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Create a group chat with tenant guest user
-
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	chatType = "group"
@@ -172,15 +158,11 @@ $params = @{
 }
 
 New-MgChat -BodyParameter $params
-```
-This example shows how to use the New-MgChat Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Create a one-on-one chat with a federated user (outside of own organization)
-
+### -------------------------- EXAMPLE 5 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
+```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -204,11 +186,6 @@ $params = @{
 }
 
 New-MgChat -BodyParameter $params
-```
-This example shows how to use the New-MgChat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -216,7 +193,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -232,7 +209,7 @@ chat
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChat
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
 Parameter Sets: Create
 Aliases:
 
@@ -247,7 +224,7 @@ Accept wildcard characters: False
 chatType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -263,7 +240,7 @@ Date and time at which the chat was created.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -279,7 +256,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -296,7 +273,7 @@ Nullable.
 To construct, see NOTES section for INSTALLEDAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppInstallation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -312,7 +289,7 @@ chatMessageInfo
 To construct, see NOTES section for LASTMESSAGEPREVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -328,7 +305,7 @@ Date and time at which the chat was renamed or list of members were last changed
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -345,7 +322,7 @@ Nullable.
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationMember[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -362,7 +339,7 @@ Nullable.
 To construct, see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -378,7 +355,7 @@ teamworkOnlineMeetingInfo
 To construct, see NOTES section for ONLINEMEETINGINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkOnlineMeetingInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkOnlineMeetingInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -394,7 +371,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceSpecificPermissionGrant[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -411,7 +388,7 @@ Nullable.
 To construct, see NOTES section for PINNEDMESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPinnedChatMessageInfo[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPinnedChatMessageInfo[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -428,7 +405,7 @@ Nullable.
 To construct, see NOTES section for TABS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsTab[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -444,7 +421,7 @@ The identifier of the tenant in which the chat was created.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -460,7 +437,7 @@ Accept wildcard characters: False
 Only available for group chats.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -476,7 +453,7 @@ chatViewpoint
 To construct, see NOTES section for VIEWPOINT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatViewpoint
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatViewpoint
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -493,7 +470,7 @@ The URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -508,7 +485,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -524,7 +501,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -541,9 +518,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
+
 ## NOTES
 
 ALIASES
@@ -648,7 +627,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
     - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
       - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -835,7 +814,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -941,7 +920,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
     - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
       - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1034,7 +1013,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastMessageReadDateTime <DateTime?>]`: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
-[New-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChat?view=graph-powershell-beta)
 
-## RELATED LINKS
-[New-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChat?view=graph-powershell-beta)

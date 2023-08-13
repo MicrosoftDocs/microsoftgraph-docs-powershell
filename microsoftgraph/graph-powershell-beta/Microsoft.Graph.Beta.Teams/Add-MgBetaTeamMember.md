@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateammember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Add-MgBetaTeamMember
@@ -12,35 +11,32 @@ ms.prod: microsoft-teams
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamMember?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### AddExpanded (Default)
 ```
 Add-MgBetaTeamMember -TeamId <String> [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgBetaTeamMember -TeamId <String>
  -BodyParameter <IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentityExpanded
-```
-Add-MgBetaTeamMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgBetaTeamMember -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgBetaTeamMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,11 +44,11 @@ Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	values = @(
@@ -74,14 +70,10 @@ $params = @{
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 
-```
-This example shows how to use the Add-MgBetaTeamMember Cmdlet.
-
-### Example 2: Code snippet
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 $params = @{
 	values = @(
@@ -102,10 +94,6 @@ $params = @{
 }
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
-
-```
-This example shows how to use the Add-MgBetaTeamMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -113,7 +101,7 @@ This example shows how to use the Add-MgBetaTeamMember Cmdlet.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -129,7 +117,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Add, AddViaIdentity
 Aliases:
 
@@ -145,8 +133,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -160,8 +148,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -176,7 +164,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationMember[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember[]
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -191,7 +179,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +195,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -224,10 +212,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphActionResultPart
+
 ## NOTES
 
 ALIASES
@@ -292,4 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
 ## RELATED LINKS
-[Add-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamMember?view=graph-powershell-1.0)
+

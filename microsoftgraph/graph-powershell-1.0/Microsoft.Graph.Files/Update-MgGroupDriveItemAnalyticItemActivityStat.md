@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemanalyticitemactivitystat
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property itemActivityStats in groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,14 +20,20 @@ Update-MgGroupDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItemId <
  [-Create <IMicrosoftGraphItemActionStat>] [-Delete <IMicrosoftGraphItemActionStat>]
  [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>] [-Id <String>]
  [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending] [-Move <IMicrosoftGraphItemActionStat>]
- [-StartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgGroupDriveItemAnalyticItemActivityStat -DriveId <String> -DriveItemId <String> -GroupId <String>
- -ItemActivityStatId <String> -BodyParameter <IMicrosoftGraphItemActivityStat> [-WhatIf] [-Confirm]
+ -ItemActivityStatId <String> -BodyParameter <IMicrosoftGraphItemActivityStat> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
+ -BodyParameter <IMicrosoftGraphItemActivityStat> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,17 +43,27 @@ Update-MgGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
  [-AdditionalProperties <Hashtable>] [-Create <IMicrosoftGraphItemActionStat>]
  [-Delete <IMicrosoftGraphItemActionStat>] [-Edit <IMicrosoftGraphItemActionStat>] [-EndDateTime <DateTime>]
  [-Id <String>] [-IncompleteData <IMicrosoftGraphIncompleteData>] [-IsTrending]
- [-Move <IMicrosoftGraphItemActionStat>] [-StartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphItemActivityStat> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Move <IMicrosoftGraphItemActionStat>] [-StartDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property itemActivityStats in groups
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -59,7 +72,7 @@ itemActionStat
 To construct, see NOTES section for ACCESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemActionStat
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActionStat
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -75,7 +88,7 @@ Exposes the itemActivities represented in this itemActivityStat resource.
 To construct, see NOTES section for ACTIVITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemActivity[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivity[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -90,7 +103,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +119,7 @@ itemActivityStat
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemActivityStat
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -122,7 +135,7 @@ itemActionStat
 To construct, see NOTES section for CREATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemActionStat
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActionStat
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -138,7 +151,7 @@ itemActionStat
 To construct, see NOTES section for DELETE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemActionStat
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActionStat
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,8 +166,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -168,8 +181,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -184,7 +197,7 @@ itemActionStat
 To construct, see NOTES section for EDIT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemActionStat
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActionStat
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +213,7 @@ When the interval ends.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,8 +228,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -231,7 +244,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -247,7 +260,7 @@ incompleteData
 To construct, see NOTES section for INCOMPLETEDATA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIncompleteData
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIncompleteData
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -263,8 +276,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -278,7 +291,7 @@ Accept wildcard characters: False
 Indicates whether the item is 'trending.' Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -293,8 +306,8 @@ Accept wildcard characters: False
 The unique identifier of itemActivityStat
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -309,7 +322,7 @@ itemActionStat
 To construct, see NOTES section for MOVE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemActionStat
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActionStat
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -325,7 +338,7 @@ When the interval starts.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -340,7 +353,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -356,7 +369,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -373,10 +386,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat
+
 ## NOTES
 
 ALIASES
@@ -418,7 +434,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
         - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
         - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
         - `[ContentInfo <IMicrosoftGraphJson>]`: Json
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -443,7 +459,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
             - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
             - `[AlternativeText <String>]`: 
             - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -830,7 +846,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1604,7 +1620,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-      - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+      - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
       - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
       - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -2230,7 +2246,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
           - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
           - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+        - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[Description <String>]`: Optional description for the device category.
@@ -2502,7 +2518,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
         - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
       - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
       - `[People <IMicrosoftGraphPerson[]>]`: People that are relevant to the user. Read-only. Nullable.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -2526,7 +2542,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
           - `[Address <String>]`: The email address.
           - `[ItemId <String>]`: 
-          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
           - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
         - `[Surname <String>]`: The person's surname.
         - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -3278,7 +3294,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
           - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
           - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
           - `[ContentInfo <IMicrosoftGraphJson>]`: Json
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -3303,7 +3319,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
               - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
               - `[AlternativeText <String>]`: 
               - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -3690,7 +3706,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4446,7 +4462,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-        - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+        - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
         - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -5072,7 +5088,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
             - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
             - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[Description <String>]`: Optional description for the device category.
@@ -5344,7 +5360,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
           - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
         - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
         - `[People <IMicrosoftGraphPerson[]>]`: People that are relevant to the user. Read-only. Nullable.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -5368,7 +5384,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
             - `[Address <String>]`: The email address.
             - `[ItemId <String>]`: 
-            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
             - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
           - `[Surname <String>]`: The person's surname.
           - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -6149,8 +6165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 

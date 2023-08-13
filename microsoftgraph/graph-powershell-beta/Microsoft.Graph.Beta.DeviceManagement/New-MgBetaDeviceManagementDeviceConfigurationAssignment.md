@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceconfigurationassignment
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to assignments for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,13 +17,19 @@ Create new navigation property to assignments for deviceManagement
 New-MgBetaDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <DeviceConfigAssignmentIntent>]
  [-Source <DeviceAndAppManagementAssignmentSource>]
- [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,17 +37,27 @@ New-MgBetaDeviceManagementDeviceConfigurationAssignment -DeviceConfigurationId <
 New-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <DeviceConfigAssignmentIntent>]
  [-Source <DeviceAndAppManagementAssignmentSource>]
- [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to assignments for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ Create new navigation property to assignments for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +81,7 @@ The device configuration assignment entity assigns an AAD group to a specific de
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationAssignment
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationAssignment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -83,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of deviceConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -99,7 +112,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +128,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,7 +143,7 @@ Accept wildcard characters: False
 The administrator intent for the assignment of the profile.
 
 ```yaml
-Type: DeviceConfigAssignmentIntent
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceConfigAssignmentIntent
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +158,7 @@ Accept wildcard characters: False
 Represents source of assignment.
 
 ```yaml
-Type: DeviceAndAppManagementAssignmentSource
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceAndAppManagementAssignmentSource
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +174,7 @@ Base type for assignment targets.
 To construct, see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAndAppManagementAssignmentTarget
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentTarget
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,10 +222,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationAssignment
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationAssignment
+
 ## NOTES
 
 ALIASES
@@ -377,8 +393,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
-[New-MgDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[New-MgDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-1.0)
 

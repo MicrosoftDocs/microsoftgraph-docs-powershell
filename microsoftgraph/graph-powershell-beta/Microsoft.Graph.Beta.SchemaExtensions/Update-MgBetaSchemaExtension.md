@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension
 schema: 2.0.0
@@ -19,9 +19,6 @@ This criteria for the owner property allows a signed-in user to make updates thr
 When using Graph Explorer to update a schemaExtension resource, include the owner property in the PATCH request body.
 For more information, see the Extensions section in Known issues with Microsoft Graph.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Update-MgSchemaExtension?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -29,13 +26,19 @@ For more information, see the Extensions section in Known issues with Microsoft 
 Update-MgBetaSchemaExtension -SchemaExtensionId <String> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-Id <String>] [-Owner <String>]
  [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicrosoftGraphSchemaExtension>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity>
+ -BodyParameter <IMicrosoftGraphSchemaExtension> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -43,13 +46,7 @@ Update-MgBetaSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicros
 Update-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-Id <String>] [-Owner <String>]
  [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity>
- -BodyParameter <IMicrosoftGraphSchemaExtension> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,10 +62,11 @@ When using Graph Explorer to update a schemaExtension resource, include the owne
 For more information, see the Extensions section in Known issues with Microsoft Graph.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
+```
 
 $params = @{
 	owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa"
@@ -93,11 +91,6 @@ $params = @{
 }
 
 Update-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaSchemaExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -105,7 +98,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -121,7 +114,7 @@ schemaExtension
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSchemaExtension
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchemaExtension
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -137,7 +130,7 @@ Description for the schema extension.
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,7 +146,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -169,8 +162,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISchemaExtensionsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISchemaExtensionsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -191,7 +184,7 @@ Once set, this property is read-only and cannot be changed.
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +200,7 @@ The collection of property names and types that make up the schema extension def
 To construct, see NOTES section for PROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtensionSchemaProperty[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExtensionSchemaProperty[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -222,8 +215,8 @@ Accept wildcard characters: False
 The unique identifier of schemaExtension
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -241,7 +234,7 @@ For more information about the possible state transitions and behaviors, see Sch
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +250,7 @@ Set of Microsoft Graph types (that can support extensions) that the schema exten
 Select from administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +265,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -288,7 +281,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -305,10 +298,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchemaExtension
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISchemaExtensionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchemaExtension
+
 ## NOTES
 
 ALIASES
@@ -337,4 +333,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String. See the table below for more details.
 
 ## RELATED LINKS
-[Update-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Update-MgSchemaExtension?view=graph-powershell-1.0)
+

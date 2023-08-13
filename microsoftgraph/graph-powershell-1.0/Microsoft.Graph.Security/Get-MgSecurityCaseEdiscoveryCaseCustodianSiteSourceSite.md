@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodiansitesourcesite
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The SharePoint site associated with the siteSource.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSourceSite](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSourceSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,13 +28,29 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceSite -InputObject <ISecurityI
 ## DESCRIPTION
 The SharePoint site associated with the siteSource.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -52,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCustodian
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -67,7 +80,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -83,7 +96,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -98,7 +111,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -113,7 +126,7 @@ Accept wildcard characters: False
 The unique identifier of siteSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -130,9 +143,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
+
 ## NOTES
 
 ALIASES
@@ -178,5 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSourceSite](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSourceSite?view=graph-powershell-beta)
 

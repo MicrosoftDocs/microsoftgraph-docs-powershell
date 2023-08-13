@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamphoto
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgGroupTeamPhoto
@@ -14,14 +13,12 @@ The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 
 Photos can be any dimension if they are stored in Azure Active Directory.
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.\nIf the size you request is not available, you can still get a smaller size that the user has uploaded and made available.\nFor example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgGroupTeamPhoto -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgGroupTeamPhoto -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -38,13 +35,27 @@ You can get the metadata of the largest available photo, or specify a size to ge
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -59,7 +70,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -75,7 +86,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -90,7 +101,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -107,9 +118,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
+
 ## NOTES
 
 ALIASES
@@ -154,4 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent
 schema: 2.0.0
@@ -10,26 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new mobileAppTroubleshootingEvent object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementMobileAppTroubleshootingEvent [-AdditionalProperties <Hashtable>]
- [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementMobileAppTroubleshootingEvent
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new mobileAppTroubleshootingEvent object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Create a new mobileAppTroubleshootingEvent object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ Indicates collection of App Log Upload Request.
 To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppLogCollectionRequest[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +82,7 @@ mobileAppTroubleshootingEvent
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppTroubleshootingEvent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +98,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -116,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -133,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+
 ## NOTES
 
 ALIASES
@@ -163,5 +178,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
 

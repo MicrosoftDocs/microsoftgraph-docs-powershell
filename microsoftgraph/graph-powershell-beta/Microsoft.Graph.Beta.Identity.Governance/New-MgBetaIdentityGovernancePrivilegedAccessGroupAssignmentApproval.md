@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapproval
 schema: 2.0.0
@@ -15,17 +15,33 @@ Create new navigation property to assignmentApprovals for identityGovernance
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Steps <IMicrosoftGraphApprovalStep[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Steps <IMicrosoftGraphApprovalStep[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval -BodyParameter <IMicrosoftGraphApproval>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to assignmentApprovals for identityGovernance
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -33,7 +49,7 @@ Create new navigation property to assignmentApprovals for identityGovernance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -49,7 +65,7 @@ approval
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApproval
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApproval
 Parameter Sets: Create
 Aliases:
 
@@ -65,7 +81,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -81,7 +97,7 @@ Used to represent the decision associated with a single step in the approval pro
 To construct, see NOTES section for STEPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApprovalStep[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApprovalStep[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,9 +145,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApproval
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApproval
+
 ## NOTES
 
 ALIASES

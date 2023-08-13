@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtraininglanguagedetail
 schema: 2.0.0
@@ -18,13 +18,19 @@ New-MgBetaSecurityAttackSimulationTrainingLanguageDetail -TrainingId <String>
  [-AdditionalProperties <Hashtable>] [-Content <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsDefaultLangauge] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
- [-Locale <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Locale <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityAttackSimulationTrainingLanguageDetail -TrainingId <String>
- -BodyParameter <IMicrosoftGraphTrainingLanguageDetail> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTrainingLanguageDetail> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphTrainingLanguageDetail> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -33,17 +39,27 @@ New-MgBetaSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurity
  [-AdditionalProperties <Hashtable>] [-Content <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsDefaultLangauge] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
- [-Locale <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphTrainingLanguageDetail> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Locale <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to languageDetails for security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Create new navigation property to languageDetails for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ trainingLanguageDetail
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrainingLanguageDetail
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrainingLanguageDetail
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +114,7 @@ emailIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -113,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +159,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +175,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,8 +191,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -190,7 +206,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -206,7 +222,7 @@ emailIdentity
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +237,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +252,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -251,8 +267,8 @@ Accept wildcard characters: False
 The unique identifier of training
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -266,7 +282,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -282,7 +298,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -299,10 +315,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrainingLanguageDetail
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrainingLanguageDetail
+
 ## NOTES
 
 ALIASES
