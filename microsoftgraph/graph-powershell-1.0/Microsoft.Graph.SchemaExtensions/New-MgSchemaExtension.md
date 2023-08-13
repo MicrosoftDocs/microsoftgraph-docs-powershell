@@ -39,11 +39,11 @@ Depending on the nstate of the extension, the owner app, and only the owner app,
 See examples of how to define a schema extension that describes a training course, nuse the schema extension definition to create a new group with training course data, and nadd training course data to an existing group.
 
 ## EXAMPLES
+### Example 1: Creating a schema extension using a verified domain
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.SchemaExtensions
-```
 
 $params = @{
 	id = "graphlearn_courses"
@@ -69,10 +69,14 @@ $params = @{
 
 New-MgSchemaExtension -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.SchemaExtensions
 ```
+This example shows creating a schema extension using a verified domain
+
+### Example 2: Creating a schema extension using just a name
+
+```powershell
+
+Import-Module Microsoft.Graph.SchemaExtensions
 
 $params = @{
 	id = "courses"
@@ -98,10 +102,14 @@ $params = @{
 
 New-MgSchemaExtension -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.SchemaExtensions
 ```
+This example shows creating a schema extension using just a name
+
+### Example 3: Creating a schema extension setting the owner
+
+```powershell
+
+Import-Module Microsoft.Graph.SchemaExtensions
 
 $params = @{
 	id = "courses"
@@ -127,6 +135,10 @@ $params = @{
 }
 
 New-MgSchemaExtension -BodyParameter $params
+
+```
+This example shows creating a schema extension setting the owner
+
 
 ## PARAMETERS
 

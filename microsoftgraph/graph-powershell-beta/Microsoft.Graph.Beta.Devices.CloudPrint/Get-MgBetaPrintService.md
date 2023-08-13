@@ -40,13 +40,17 @@ Get-MgBetaPrintService -InputObject <IDevicesCloudPrintIdentity> [-ExpandPropert
 Retrieve the properties and relationships of a print service.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintService
+
+```
+This example shows how to use the Get-MgBetaPrintService Cmdlet.
+
 
 ## PARAMETERS
 

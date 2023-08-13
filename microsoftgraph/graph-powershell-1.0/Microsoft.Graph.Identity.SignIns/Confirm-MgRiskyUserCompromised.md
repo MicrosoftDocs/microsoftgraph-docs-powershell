@@ -35,11 +35,11 @@ Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	userIds = @(
@@ -49,6 +49,10 @@ $params = @{
 }
 
 Confirm-MgRiskyUserCompromised -BodyParameter $params
+
+```
+This example shows how to use the Confirm-MgRiskyUserCompromised Cmdlet.
+
 
 ## PARAMETERS
 

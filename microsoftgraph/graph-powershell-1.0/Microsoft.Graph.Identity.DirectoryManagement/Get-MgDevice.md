@@ -39,27 +39,41 @@ Get-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPropert
 Get the properties and relationships of a device object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDevice
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
 ```
+This example shows how to use the Get-MgDevice Cmdlet.
 
-Get-MgDevice -Filter "startswith(displayName, 'a')" -CountVariable CountVar -Top 1 -Sort "displayName" -ConsistencyLevel eventual
+### Example 2: Code snippet
 
-### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
-Get-MgDevice -Filter "extensionAttributes/extensionAttribute1 eq 'BYOD-Device'" -CountVariable CountVar -ConsistencyLevel eventual
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDevice -Filter "startswith(displayName, 'a')" -CountVariable CountVar -Top 1 -Sort "displayName" -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgDevice Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgDevice -Filter "extensionAttributes/extensionAttribute1 eq 'BYOD-Device'" -CountVariable CountVar -ConsistencyLevel eventual 
+
+
+```
+This example shows how to use the Get-MgDevice Cmdlet.
+
 
 ## PARAMETERS
 

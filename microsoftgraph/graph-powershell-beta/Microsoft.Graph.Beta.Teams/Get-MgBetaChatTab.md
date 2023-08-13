@@ -38,13 +38,17 @@ Get-MgBetaChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 Retrieve the properties and relationships of the specified tab in a chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaChatTab -ChatId $chatId -TeamsTabId $teamsTabId -ExpandProperty "teamsApp"
+```
+This example shows how to use the Get-MgBetaChatTab Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

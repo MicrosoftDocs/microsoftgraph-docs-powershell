@@ -33,13 +33,17 @@ Unshare a channel with a team by deleting the corresponding sharedWithChannelTea
 This operation is allowed only for channels with a membershipType value of shared.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
+```
+This example shows how to use the Remove-MgTeamChannelSharedWithTeam Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -63,11 +63,10 @@ New-MgBetaChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Send a new chatMessage in the specified channel or a chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	body = @{
@@ -76,6 +75,11 @@ $params = @{
 }
 
 New-MgBetaChatMessage -ChatId $chatId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaChatMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

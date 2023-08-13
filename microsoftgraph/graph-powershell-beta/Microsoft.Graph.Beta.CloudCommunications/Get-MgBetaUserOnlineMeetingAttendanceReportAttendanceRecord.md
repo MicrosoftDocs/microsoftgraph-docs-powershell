@@ -34,20 +34,18 @@ The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingAttendanceReportId $meetingAttendanceReportId
+
 ```
+This example shows how to use the Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord Cmdlet.
 
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

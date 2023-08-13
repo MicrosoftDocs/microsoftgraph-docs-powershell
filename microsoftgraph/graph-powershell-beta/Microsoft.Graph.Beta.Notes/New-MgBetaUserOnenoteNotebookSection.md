@@ -50,20 +50,22 @@ New-MgBetaSiteOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <I
 Create new navigation property to pages for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+
+Import-Module Microsoft.Graph.Beta.Notes
+
+$params = @{
+	displayName = "Section name"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaUserOnenoteNotebookSection Cmdlet.
 
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

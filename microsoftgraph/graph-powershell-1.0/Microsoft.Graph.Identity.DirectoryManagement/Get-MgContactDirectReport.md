@@ -45,13 +45,17 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContactDirectReport -OrgContactId $orgContactId
+
+```
+This example shows how to use the Get-MgContactDirectReport Cmdlet.
+
 
 ## PARAMETERS
 

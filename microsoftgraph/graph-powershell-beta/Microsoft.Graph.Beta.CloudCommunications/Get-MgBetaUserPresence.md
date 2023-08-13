@@ -32,20 +32,29 @@ Get-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunications
 Read the properties and relationships of a virtualAppointment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserPresence -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserPresence Cmdlet.
 
-{{ Add output here }}
+### Example 2: Code snippet
 
-### EXAMPLE 2
 ```powershell
-{{ Add code here }}
-```
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+Get-MgBetaUserPresence -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserPresence Cmdlet.
+
 
 ## PARAMETERS
 

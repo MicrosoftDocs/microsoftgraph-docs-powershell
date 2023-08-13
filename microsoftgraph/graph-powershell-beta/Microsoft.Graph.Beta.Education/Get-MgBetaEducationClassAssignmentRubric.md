@@ -34,13 +34,17 @@ Get the educationRubric object attached to an educationAssignment, if one exists
 Only teachers, students, and applications with application permissions can perform this operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentRubric -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+```
+This example shows how to use the Get-MgBetaEducationClassAssignmentRubric Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

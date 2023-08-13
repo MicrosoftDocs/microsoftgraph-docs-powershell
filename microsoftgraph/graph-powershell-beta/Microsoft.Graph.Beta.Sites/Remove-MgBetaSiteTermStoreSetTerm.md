@@ -31,13 +31,17 @@ Remove-MgBetaSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-IfMatch <Strin
 Delete a term object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteTermStoreSetTerm -SiteId $siteId -SetId $setId -TermId $termId
+```
+This example shows how to use the Remove-MgBetaSiteTermStoreSetTerm Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

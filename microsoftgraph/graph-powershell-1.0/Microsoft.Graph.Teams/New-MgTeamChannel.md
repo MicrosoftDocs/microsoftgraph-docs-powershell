@@ -58,11 +58,10 @@ This is the name that appears to the user in Microsoft Teams.
 If you're creating a private channel, you can add a maximum of 200 members.
 
 ## EXAMPLES
+### Example 1: Create a standard channel
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "Architecture Discussion"
@@ -71,11 +70,15 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the New-MgTeamChannel Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Create private channel on behalf of user
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -94,11 +97,15 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the New-MgTeamChannel Cmdlet.
 
-### EXAMPLE 3
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Create a channel in migration mode
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@microsoft.graph.channelCreationMode" = "migration"
@@ -108,11 +115,15 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the New-MgTeamChannel Cmdlet.
 
-### EXAMPLE 4
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Create private channel on behalf of user using user principal name
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -131,11 +142,15 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the New-MgTeamChannel Cmdlet.
 
-### EXAMPLE 5
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Create a shared channel on behalf of a user
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "My First Shared Channel"
@@ -153,6 +168,11 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the New-MgTeamChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

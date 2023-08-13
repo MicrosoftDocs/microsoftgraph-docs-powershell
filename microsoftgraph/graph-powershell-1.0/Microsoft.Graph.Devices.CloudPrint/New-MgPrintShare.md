@@ -35,11 +35,10 @@ New-MgPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-WhatIf] [-Confir
 Create a new printerShare for the specified printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "ShareName"
@@ -48,6 +47,11 @@ $params = @{
 }
 
 New-MgPrintShare -BodyParameter $params
+```
+This example shows how to use the New-MgPrintShare Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

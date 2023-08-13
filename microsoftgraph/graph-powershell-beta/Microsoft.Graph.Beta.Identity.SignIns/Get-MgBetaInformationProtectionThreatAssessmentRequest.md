@@ -42,41 +42,61 @@ Retrieve the properties and relationships of a specified threatAssessmentRequest
 A threat assessment request can be one of the following types:
 
 ## EXAMPLES
+### Example 1: Get the properties of a mail assessment request
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
+```
+This example shows how to use the Get-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get the properties of an email file assessment request
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
+```
+This example shows how to use the Get-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
-### EXAMPLE 3
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get the properties of a file assessment request
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
+```
+This example shows how to use the Get-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
-### EXAMPLE 4
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Get the properties of an url assessment request
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
+```
+This example shows how to use the Get-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
-### EXAMPLE 5
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Expand threat assessment results for a request
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results"
+```
+This example shows how to use the Get-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

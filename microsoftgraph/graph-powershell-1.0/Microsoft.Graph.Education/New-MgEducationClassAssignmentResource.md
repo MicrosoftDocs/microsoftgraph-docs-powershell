@@ -49,11 +49,11 @@ Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	distributeForStudentWork = $false
@@ -67,10 +67,14 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Education
 ```
+This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
 
 $params = @{
 	distributeForStudentWork = $false
@@ -83,10 +87,14 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Education
 ```
+This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
 
 $params = @{
 	distributeForStudentWork = $false
@@ -98,10 +106,14 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Education
 ```
+This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
 
 $params = @{
 	distributeForStudentWork = $false
@@ -114,10 +126,14 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-### EXAMPLE 5
-```powershell
-Import-Module Microsoft.Graph.Education
 ```
+This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
 
 $params = @{
 	distributeForStudentWork = $false
@@ -130,10 +146,14 @@ $params = @{
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-### EXAMPLE 6
-```powershell
-Import-Module Microsoft.Graph.Education
 ```
+This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
+
+### Example 6: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
 
 $params = @{
 	distributeForStudentWork = $false
@@ -148,6 +168,10 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,11 +49,10 @@ Update-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGr
 Update conversation thread
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
@@ -64,6 +63,11 @@ $params = @{
 }
 
 Update-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
+```
+This example shows how to use the Update-MgGroupThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

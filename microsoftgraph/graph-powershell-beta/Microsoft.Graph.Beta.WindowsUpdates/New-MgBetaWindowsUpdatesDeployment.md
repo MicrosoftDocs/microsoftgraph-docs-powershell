@@ -31,8 +31,7 @@ New-MgBetaWindowsUpdatesDeployment -BodyParameter <IMicrosoftGraphWindowsUpdates
 Create a new deployment object.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaWindowsUpdatesDeployment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -60,6 +59,8 @@ $params = @{
 }
 New-MgBetaWindowsUpdatesDeployment -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaWindowsUpdatesDeployment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -52,8 +52,7 @@ Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -78,8 +77,9 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
-
-### EXAMPLE 2
+This example shows how to use the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -106,6 +106,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaCreateOrGetUserOnlineMeeting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
