@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckinDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckinDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckinExpanded (Default)
@@ -270,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaCheckinDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckinDriveRoot?view=graph-powershell-beta)

@@ -12,6 +12,9 @@ ms.prod: intune
 ## SYNOPSIS
 Read properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -257,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)

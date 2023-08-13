@@ -12,6 +12,9 @@ Create a new federatedIdentityCredential object for an application.
 By configuring a trust relationship between your Azure AD application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -329,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)

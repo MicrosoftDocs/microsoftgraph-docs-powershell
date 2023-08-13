@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new educationSchool object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -9622,5 +9625,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter.
 
 ## RELATED LINKS
+[New-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchool?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchool?view=graph-powershell-beta)

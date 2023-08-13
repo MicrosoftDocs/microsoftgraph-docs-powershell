@@ -12,6 +12,9 @@ ms.prod: directory-management
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrantMemberGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -249,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgChatPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrantMemberGroup?view=graph-powershell-1.0)

@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Postpone a reminder for an event in a user calendar until a new time.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSnoozeUserEventReminder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SnoozeExpanded (Default)
@@ -272,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
+[Invoke-MgSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSnoozeUserEventReminder?view=graph-powershell-1.0)

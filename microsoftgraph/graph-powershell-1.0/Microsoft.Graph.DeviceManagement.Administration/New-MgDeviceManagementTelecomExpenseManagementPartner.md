@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new telecomExpenseManagementPartner object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -230,3 +233,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)

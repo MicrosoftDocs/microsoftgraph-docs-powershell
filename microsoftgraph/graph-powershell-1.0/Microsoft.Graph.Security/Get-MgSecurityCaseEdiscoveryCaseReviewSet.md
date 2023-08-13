@@ -12,6 +12,9 @@ ms.prod: ediscovery
 ## SYNOPSIS
 Read the properties and relationships of an ediscoveryReviewSet object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -298,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgBetaSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-beta)

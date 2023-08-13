@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property issues in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -466,3 +469,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PostType <String>]`: postType
 
 ## RELATED LINKS
+[Update-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-1.0)

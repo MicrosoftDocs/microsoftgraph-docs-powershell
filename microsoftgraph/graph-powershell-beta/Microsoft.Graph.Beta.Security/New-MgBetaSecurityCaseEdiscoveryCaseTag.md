@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new ediscoveryReviewTag object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -438,5 +441,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)

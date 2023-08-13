@@ -12,6 +12,9 @@ ms.prod: cloud-communications
 Create an onlineMeeting object with a custom specified external ID.
 If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCreateOrGetCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgCreateOrGetCommunicationOnlineMeeting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -271,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgCreateOrGetCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgCreateOrGetCommunicationOnlineMeeting?view=graph-powershell-1.0)

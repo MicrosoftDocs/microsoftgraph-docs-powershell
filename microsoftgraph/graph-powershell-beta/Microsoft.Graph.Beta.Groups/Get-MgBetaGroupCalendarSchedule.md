@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCalendarSchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -295,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
+[Get-MgGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCalendarSchedule?view=graph-powershell-1.0)

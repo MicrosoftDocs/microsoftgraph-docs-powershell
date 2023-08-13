@@ -11,6 +11,9 @@ ms.prod: bookings
 ## SYNOPSIS
 Get the availability information of staff members of a Microsoft Bookings calendar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessStaffAvailability](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessStaffAvailability?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -263,3 +266,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
+[Get-MgBookingBusinessStaffAvailability](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessStaffAvailability?view=graph-powershell-1.0)

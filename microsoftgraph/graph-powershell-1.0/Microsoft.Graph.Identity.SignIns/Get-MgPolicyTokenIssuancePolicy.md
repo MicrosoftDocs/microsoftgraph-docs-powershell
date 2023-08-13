@@ -11,6 +11,9 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -304,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)

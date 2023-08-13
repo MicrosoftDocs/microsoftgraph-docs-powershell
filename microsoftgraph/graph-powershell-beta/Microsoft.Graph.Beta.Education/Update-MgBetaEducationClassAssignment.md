@@ -13,6 +13,9 @@ Only teachers in the class can do this.
 Note that you can't use a PATCH request to change the status of an assignment.
 Use the publish action to change the assignment status.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -782,5 +785,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[Update-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignment?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignment?view=graph-powershell-1.0)

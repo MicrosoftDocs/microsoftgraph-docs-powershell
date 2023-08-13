@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to templates for applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -528,5 +531,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
+[New-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-1.0)

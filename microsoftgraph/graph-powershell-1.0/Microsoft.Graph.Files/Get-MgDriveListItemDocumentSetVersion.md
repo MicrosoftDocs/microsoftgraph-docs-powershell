@@ -12,6 +12,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Read the properties and relationships of a documentSetVersion object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItemDocumentSetVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -311,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItemDocumentSetVersion?view=graph-powershell-beta)

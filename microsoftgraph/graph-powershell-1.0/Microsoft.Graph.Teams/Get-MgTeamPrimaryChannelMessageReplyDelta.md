@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelMessageReplyDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -297,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaTeamPrimaryChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelMessageReplyDelta?view=graph-powershell-beta)

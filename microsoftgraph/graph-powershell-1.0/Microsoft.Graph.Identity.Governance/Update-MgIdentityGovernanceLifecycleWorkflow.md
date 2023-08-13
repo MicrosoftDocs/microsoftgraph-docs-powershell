@@ -12,6 +12,9 @@ Update the properties of a workflow object.
 Only the properties listed in the request body table can be updated.
 To update any other workflow properties, see workflow: createNewVersion.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -26558,5 +26561,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionNumber <Int32?>]`: The version of the workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
 
 ## RELATED LINKS
+[Update-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)

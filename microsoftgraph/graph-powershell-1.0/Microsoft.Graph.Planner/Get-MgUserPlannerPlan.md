@@ -11,6 +11,9 @@ ms.prod: planner
 ## SYNOPSIS
 Retrieve a list of plannerplan objects shared with a user object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -212,3 +215,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)

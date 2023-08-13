@@ -12,6 +12,9 @@ ms.prod: onenote
 ## SYNOPSIS
 Retrieve the properties and relationships of a sectionGroup object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -355,3 +358,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroup?view=graph-powershell-beta)

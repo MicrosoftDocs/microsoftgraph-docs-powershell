@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action extractSensitivityLabels
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Groups/Invoke-MgExtractGroupDriveItemSensitivityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Extract (Default)
@@ -198,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgExtractGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Groups/Invoke-MgExtractGroupDriveItemSensitivityLabel?view=graph-powershell-1.0)

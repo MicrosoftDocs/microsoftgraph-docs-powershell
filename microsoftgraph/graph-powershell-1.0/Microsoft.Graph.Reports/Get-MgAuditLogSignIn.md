@@ -13,6 +13,9 @@ ms.prod: identity-and-access-reports
 Retrieve a specific Azure AD user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -279,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)

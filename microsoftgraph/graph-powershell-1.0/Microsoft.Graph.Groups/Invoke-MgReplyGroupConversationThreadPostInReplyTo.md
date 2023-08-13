@@ -12,6 +12,9 @@ ms.prod: groups
 Reply to a post and add a new post to the specified thread in a group conversation.
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)
@@ -419,5 +422,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-beta)

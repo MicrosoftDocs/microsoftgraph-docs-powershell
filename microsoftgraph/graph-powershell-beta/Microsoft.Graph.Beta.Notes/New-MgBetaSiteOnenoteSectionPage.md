@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to pages for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteSectionPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -661,5 +664,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[New-MgSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteSectionPage?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteSectionPage?view=graph-powershell-1.0)

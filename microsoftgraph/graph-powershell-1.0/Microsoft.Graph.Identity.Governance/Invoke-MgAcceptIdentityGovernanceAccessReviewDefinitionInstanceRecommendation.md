@@ -11,6 +11,9 @@ ms.prod: governance
 ## SYNOPSIS
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed on an accessReviewInstance object for which the calling user is a reviewer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Accept (Default)
@@ -213,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-beta)

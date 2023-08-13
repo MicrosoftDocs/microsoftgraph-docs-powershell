@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 The collection of messages in the mailFolder.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -289,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessage?view=graph-powershell-1.0)

@@ -12,6 +12,9 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethod object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -320,3 +323,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-beta)

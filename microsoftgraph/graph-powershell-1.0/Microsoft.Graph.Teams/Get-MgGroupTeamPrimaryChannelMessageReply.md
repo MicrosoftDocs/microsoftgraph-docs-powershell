@@ -12,6 +12,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -315,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelMessageReply?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamwork?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -80,3 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamwork?view=graph-powershell-beta)

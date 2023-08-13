@@ -13,6 +13,9 @@ ms.prod: cloud-printing
 Retrieve a usage summary for a printer for a particular time period.
 For descriptions of each of the endpoints, see printUsageByPrinter.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportDailyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDailyPrintUsageByPrinter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -272,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgBetaReportDailyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDailyPrintUsageByPrinter?view=graph-powershell-beta)

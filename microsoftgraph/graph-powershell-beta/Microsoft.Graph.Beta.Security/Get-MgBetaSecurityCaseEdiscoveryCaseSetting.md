@@ -11,6 +11,9 @@ ms.prod: ediscovery
 ## SYNOPSIS
 Read the properties and relationships of an ediscoveryCaseSettings object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -195,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-1.0)

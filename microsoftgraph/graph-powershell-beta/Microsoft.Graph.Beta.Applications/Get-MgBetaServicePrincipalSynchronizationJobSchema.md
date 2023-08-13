@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 Retrieve the schema for a given synchronization job or template.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -176,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)

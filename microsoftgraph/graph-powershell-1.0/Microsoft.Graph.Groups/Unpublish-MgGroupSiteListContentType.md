@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unpublish a [contentType][] from a content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Unpublish-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unpublish (Default)
@@ -223,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Unpublish-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupSiteListContentType?view=graph-powershell-beta)

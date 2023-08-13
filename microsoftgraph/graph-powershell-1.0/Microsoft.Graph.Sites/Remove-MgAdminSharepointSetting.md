@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property settings for admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -107,3 +110,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
