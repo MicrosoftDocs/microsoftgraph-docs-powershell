@@ -480,3 +480,6 @@ v1.0, Invoke-MgExtractUserDriveRootSensitivityLabel, /users/{user-id}/drives/{dr
 v1.0, New-MgUserManagedDeviceLogCollectionResponseDownloadUrl, /users/{user-id}/managedDevices/{managedDevice-id}/logCollectionRequests/{deviceLogCollectionResponse-id}/createDownloadUrl
 v1.0, Set-MgUserDriveItemSensitivityLabel, /users/{user-id}/drives/{drive-id}/items/{driveItem-id}/assignSensitivityLabel
 v1.0, Set-MgUserDriveRootSensitivityLabel, /users/{user-id}/drives/{drive-id}/root/assignSensitivityLabel
+v1.0, Clear-MgUserChatMessageReaction, /users/{user-id}/chats/{chat-id}/messages/{chatMessage-id}/unsetReaction
+v1.0, Clear-MgUserChatMessageReplyReaction, /users/{user-id}/chats/{chat-id}/messages/{chatMessage-id}/replies/{chatMessage-id1}/unsetReaction
+v1.0, Confirm-MgUserChatPermissionGrantMemberObject, /users/{user-id}/chats/{chat-id}/permissionGrants/{resourceSpecificPermissionGrant-id}/checkMemberObjects

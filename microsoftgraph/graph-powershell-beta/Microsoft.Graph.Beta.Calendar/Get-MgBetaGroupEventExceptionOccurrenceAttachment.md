@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventexceptionoccurrenceattachment
 schema: 2.0.0
+ms.prod: outlook
+ms.prod: outlook
 ---
 
 # Get-MgBetaGroupEventExceptionOccurrenceAttachment
