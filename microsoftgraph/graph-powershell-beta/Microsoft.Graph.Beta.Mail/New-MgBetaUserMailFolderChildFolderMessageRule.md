@@ -50,22 +50,6 @@ New-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Actions
@@ -527,3 +511,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
+

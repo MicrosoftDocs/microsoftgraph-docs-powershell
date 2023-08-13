@@ -44,18 +44,6 @@ Confirm-MgChatPermissionGrantMemberObject -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -240,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Confirm-MgBetaChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaChatPermissionGrantMemberObject?view=graph-powershell-beta)
+

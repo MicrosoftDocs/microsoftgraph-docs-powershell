@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementScriptDeviceRunState -InputObject <IDeviceManagementId
 ## DESCRIPTION
 List of run states for this script across all devices.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -409,3 +393,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

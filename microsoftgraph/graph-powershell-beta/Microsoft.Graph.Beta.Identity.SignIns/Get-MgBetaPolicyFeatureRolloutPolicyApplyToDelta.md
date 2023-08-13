@@ -32,18 +32,6 @@ Get-MgBetaPolicyFeatureRolloutPolicyApplyToDelta -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -324,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyFeatureRolloutPolicyApplyToDelta](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFeatureRolloutPolicyApplyToDelta?view=graph-powershell-1.0)
+

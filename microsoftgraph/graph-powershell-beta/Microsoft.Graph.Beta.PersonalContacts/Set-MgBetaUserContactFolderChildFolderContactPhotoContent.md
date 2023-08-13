@@ -31,22 +31,6 @@ Set-MgBetaUserContactFolderChildFolderContactPhotoContent -InputObject <IPersona
 ## DESCRIPTION
 Update media content for the navigation property photo in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContactFolderId
@@ -231,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgUserContactFolderChildFolderContactPhotoContent](/powershell/module/Microsoft.Graph.PersonalContacts/Set-MgUserContactFolderChildFolderContactPhotoContent?view=graph-powershell-1.0)
+

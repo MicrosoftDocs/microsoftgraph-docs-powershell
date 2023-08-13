@@ -44,18 +44,6 @@ Update-MgDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 Update the properties of a mobileAppCategory object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -260,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
+

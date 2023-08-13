@@ -20,18 +20,6 @@ Get-MgBetaDeviceAppManagementWindowsManagementApp [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Windows management app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -79,3 +67,4 @@ ALIASES
 Get-MgBetaDeviceAppMgtWindowManagementApp
 
 ## RELATED LINKS
+

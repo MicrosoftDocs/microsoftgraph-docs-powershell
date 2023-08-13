@@ -33,18 +33,6 @@ New-MgBetaRoleManagementCloudPcRoleAssignment -BodyParameter <IMicrosoftGraphUni
 Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
 The following RBAC providers are currently supported:n- Cloud PC n- device management (Intune) For other Microsoft 365 applications (like Azure AD), use unifiedRoleAssignment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -397,3 +385,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+

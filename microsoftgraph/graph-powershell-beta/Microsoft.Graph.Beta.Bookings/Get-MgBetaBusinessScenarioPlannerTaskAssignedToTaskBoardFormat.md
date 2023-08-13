@@ -28,18 +28,6 @@ Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -InputObject <IBo
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -159,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+

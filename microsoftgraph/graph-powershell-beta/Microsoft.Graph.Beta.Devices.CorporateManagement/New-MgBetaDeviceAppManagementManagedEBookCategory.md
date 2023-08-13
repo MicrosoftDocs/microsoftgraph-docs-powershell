@@ -27,18 +27,6 @@ New-MgBetaDeviceAppManagementManagedEBookCategory -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to managedEBookCategories for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -176,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the ManagedEBookCategory was last modified.
 
 ## RELATED LINKS
+

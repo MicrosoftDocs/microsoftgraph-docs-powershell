@@ -28,18 +28,6 @@ New-MgBetaAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileC
 ## DESCRIPTION
 Create new navigation property to profileCardProperties for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -194,4 +182,5 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty)
+
 

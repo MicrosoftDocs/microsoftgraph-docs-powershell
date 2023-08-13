@@ -27,22 +27,6 @@ Remove-MgBetaUserMobileAppIntentAndState -InputObject <IDevicesCorporateManageme
 ## DESCRIPTION
 Delete navigation property mobileAppIntentAndStates for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -237,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+

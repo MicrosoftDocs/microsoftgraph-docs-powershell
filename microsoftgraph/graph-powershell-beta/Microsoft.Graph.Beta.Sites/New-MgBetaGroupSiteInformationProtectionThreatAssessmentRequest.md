@@ -47,18 +47,6 @@ New-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject <IS
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -417,3 +405,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResultType <String>]`: threatAssessmentResultType
 
 ## RELATED LINKS
+

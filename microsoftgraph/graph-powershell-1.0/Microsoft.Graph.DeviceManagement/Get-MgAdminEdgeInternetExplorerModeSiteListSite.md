@@ -39,18 +39,6 @@ Get-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagementI
 ## DESCRIPTION
 Get a browserSite that resides on a browserSiteList.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -325,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
+

@@ -31,18 +31,6 @@ Get-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-ExpandP
 ## DESCRIPTION
 Retrieve the properties and relationships of a servicePrincipal object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -157,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalByAppId?view=graph-powershell-1.0)
+

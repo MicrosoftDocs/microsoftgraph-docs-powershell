@@ -39,18 +39,6 @@ Get-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -334,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteNotebook?view=graph-powershell-1.0)
+

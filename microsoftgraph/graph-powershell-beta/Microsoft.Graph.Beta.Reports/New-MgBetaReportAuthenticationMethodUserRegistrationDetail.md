@@ -35,22 +35,6 @@ New-MgBetaReportAuthenticationMethodUserRegistrationDetail
 ## DESCRIPTION
 Create new navigation property to userRegistrationDetails for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -431,3 +415,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/New-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
+

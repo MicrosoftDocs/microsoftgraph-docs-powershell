@@ -22,22 +22,6 @@ Get-MgBetaPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonPa
 ## DESCRIPTION
 Get planner
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgPlanner?view=graph-powershell-1.0)
+

@@ -20,18 +20,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroup [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 A group that's governed through Privileged Identity Management (PIM).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -77,3 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

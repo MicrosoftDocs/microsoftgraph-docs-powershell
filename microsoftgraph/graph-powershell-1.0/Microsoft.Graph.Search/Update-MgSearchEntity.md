@@ -29,22 +29,6 @@ Update-MgSearchEntity -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonPa
 ## DESCRIPTION
 Update search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -139,3 +123,4 @@ ALIASES
 
 ## RELATED LINKS
 [Update-MgBetaSearchEntity](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchEntity?view=graph-powershell-beta)
+

@@ -46,18 +46,6 @@ Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsJunk -InputObject <IUsersActi
 Mark a message as junk.
 This API adds the sender to the list of blocked senders and moves the message to the Junk Email folder, when moveToJunk is true.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

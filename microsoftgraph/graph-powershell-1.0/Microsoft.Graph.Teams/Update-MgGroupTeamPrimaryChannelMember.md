@@ -46,22 +46,6 @@ Update-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 Update the role of a conversationMember in a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -300,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPrimaryChannelMember?view=graph-powershell-beta)
+

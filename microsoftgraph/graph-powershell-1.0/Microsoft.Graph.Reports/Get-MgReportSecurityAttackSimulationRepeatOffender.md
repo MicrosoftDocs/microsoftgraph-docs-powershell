@@ -23,22 +23,6 @@ Get-MgReportSecurityAttackSimulationRepeatOffender [-Count] [-Filter <String>] [
 ## DESCRIPTION
 Invoke function getAttackSimulationRepeatOffenders
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -130,3 +114,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-beta)
+

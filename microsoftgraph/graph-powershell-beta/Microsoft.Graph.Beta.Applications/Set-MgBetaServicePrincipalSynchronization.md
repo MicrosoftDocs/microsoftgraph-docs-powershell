@@ -46,18 +46,6 @@ Set-MgBetaServicePrincipalSynchronization -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property synchronization in servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -684,3 +672,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronization?view=graph-powershell-1.0)
+

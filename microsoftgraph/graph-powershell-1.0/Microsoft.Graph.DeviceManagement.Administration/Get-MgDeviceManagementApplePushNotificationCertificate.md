@@ -24,22 +24,6 @@ Get-MgDeviceManagementApplePushNotificationCertificate [-ExpandProperty <String[
 ## DESCRIPTION
 Read properties and relationships of the applePushNotificationCertificate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -86,3 +70,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
+

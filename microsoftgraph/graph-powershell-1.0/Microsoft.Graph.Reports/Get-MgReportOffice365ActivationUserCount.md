@@ -22,22 +22,6 @@ Get-MgReportOffice365ActivationUserCount -OutFile <String> [-PassThru] [<CommonP
 ## DESCRIPTION
 Invoke function getOffice365ActivationsUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -OutFile
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaReportOffice365ActivationUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationUserCount?view=graph-powershell-beta)
+

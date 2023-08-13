@@ -22,18 +22,6 @@ Get-MgSecurityThreatIntelligence [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Get threatIntelligence from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
+

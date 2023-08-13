@@ -46,18 +46,6 @@ Update-MgBetaVirtualEventWebinarSessionVirtualAppointment -InputObject <IBooking
 ## DESCRIPTION
 Update the properties of a virtualAppointment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -330,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 
 ## RELATED LINKS
+

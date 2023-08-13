@@ -38,18 +38,6 @@ Get-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion -InputObject <IBo
 ## DESCRIPTION
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -305,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+

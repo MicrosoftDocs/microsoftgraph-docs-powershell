@@ -30,22 +30,6 @@ Remove-MgGroupDriveRootSubscription -InputObject <IFilesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property subscriptions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -216,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
+

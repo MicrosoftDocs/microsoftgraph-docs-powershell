@@ -45,18 +45,6 @@ Invoke-MgScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIdentit
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -254,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaScanUserManagedDeviceWindowsDefender?view=graph-powershell-beta)
+

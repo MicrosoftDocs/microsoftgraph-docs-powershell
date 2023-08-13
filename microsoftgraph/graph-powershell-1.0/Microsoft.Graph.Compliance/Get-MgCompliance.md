@@ -22,22 +22,6 @@ Get-MgCompliance [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonPar
 ## DESCRIPTION
 Get compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaCompliance?view=graph-powershell-beta)
+

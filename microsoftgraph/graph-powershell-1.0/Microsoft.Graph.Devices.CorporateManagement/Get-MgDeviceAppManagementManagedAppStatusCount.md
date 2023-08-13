@@ -22,18 +22,6 @@ Get-MgDeviceAppManagementManagedAppStatusCount [-Filter <String>] [-Search <Stri
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -82,3 +70,4 @@ Get-MgDeviceAppMgtManagedAppStatusCount
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementManagedAppStatusCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppStatusCount?view=graph-powershell-beta)
+

@@ -54,22 +54,6 @@ Update-MgBetaSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property retentionEvents in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -585,3 +569,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTriggerRetentionEvent?view=graph-powershell-1.0)
+
