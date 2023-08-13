@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: 9be8caf1-9969-4900-9045-fe47faac8b42
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams
@@ -1520,8 +1520,9 @@ This API cannot create a new chat; you must use the list chats method to retriev
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
-### [New-MgBetaUserTeamworkAssociatedTeam](New-MgBetaUserTeamworkAssociatedTeam.md)
-Create new navigation property to associatedTeams for users
+### [New-MgBetaUserChatTab](New-MgBetaUserChatTab.md)
+Add (pin) a tab to the specified chat.
+\nThe corresponding app must already be installed in the chat.
 
 ### [New-MgBetaUserTeamworkInstalledApp](New-MgBetaUserTeamworkInstalledApp.md)
 Install an app in the personal scope of the specified user.

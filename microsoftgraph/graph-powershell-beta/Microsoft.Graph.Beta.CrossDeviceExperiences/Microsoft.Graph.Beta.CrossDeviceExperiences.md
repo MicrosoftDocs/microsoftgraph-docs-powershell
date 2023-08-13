@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 Module Guid: c1a6918e-9183-499e-a04f-0df1d90027ab
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences
@@ -193,8 +193,8 @@ Add a registered user for the device.
 ### [New-MgBetaUserDeviceUsageRights](New-MgBetaUserDeviceUsageRights.md)
 Create new navigation property to usageRights for users
 
-### [Remove-MgBetaUserActivity](Remove-MgBetaUserActivity.md)
-Delete an existing user activity for your app.
+### [New-MgBetaUserDeviceUsageRights](New-MgBetaUserDeviceUsageRights.md)
+Create new navigation property to usageRights for users
 
 ### [Remove-MgBetaUserActivityHistoryItem](Remove-MgBetaUserActivityHistoryItem.md)
 Delete navigation property historyItems for users

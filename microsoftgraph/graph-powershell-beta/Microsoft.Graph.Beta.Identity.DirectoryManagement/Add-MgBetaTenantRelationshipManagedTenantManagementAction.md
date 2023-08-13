@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/add-mgbetatenantrelationshipmanagedtenantmanagementaction
 schema: 2.0.0
@@ -17,31 +17,31 @@ As example when applying the require multi-factor authentication for admins mana
 ### ApplyExpanded (Default)
 ```
 Add-MgBetaTenantRelationshipManagedTenantManagementAction -ManagementActionId <String>
- [-AdditionalProperties <Hashtable>] [-ExcludeGroups <String[]>] [-IncludeAllUsers]
- [-IncludeGroups <String[]>] [-ManagementTemplateId <String>] [-TenantGroupId <String>] [-TenantId <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ExcludeGroups <String[]>] [-IncludeAllUsers] [-IncludeGroups <String[]>]
+ [-ManagementTemplateId <String>] [-TenantGroupId <String>] [-TenantId <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Apply
 ```
 Add-MgBetaTenantRelationshipManagedTenantManagementAction -ManagementActionId <String>
  -BodyParameter <IPathsYfr4Z1TenantrelationshipsManagedtenantsManagementactionsManagementactionIdMicrosoftGraphManagedtenantsApplyPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ApplyViaIdentityExpanded
+```
+Add-MgBetaTenantRelationshipManagedTenantManagementAction -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-ExcludeGroups <String[]>] [-IncludeAllUsers] [-IncludeGroups <String[]>]
+ [-ManagementTemplateId <String>] [-TenantGroupId <String>] [-TenantId <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
 Add-MgBetaTenantRelationshipManagedTenantManagementAction -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPathsYfr4Z1TenantrelationshipsManagedtenantsManagementactionsManagementactionIdMicrosoftGraphManagedtenantsApplyPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ApplyViaIdentityExpanded
-```
-Add-MgBetaTenantRelationshipManagedTenantManagementAction -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ExcludeGroups <String[]>] [-IncludeAllUsers]
- [-IncludeGroups <String[]>] [-ManagementTemplateId <String>] [-TenantGroupId <String>] [-TenantId <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,19 +51,15 @@ As example when applying the require multi-factor authentication for admins mana
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -71,7 +67,7 @@ As example when applying the require multi-factor authentication for admins mana
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -87,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsYfr4Z1TenantrelationshipsManagedtenantsManagementactionsManagementactionIdMicrosoftGraphManagedtenantsApplyPostRequestbodyContentApplicationJsonSchema
+Type: IPathsYfr4Z1TenantrelationshipsManagedtenantsManagementactionsManagementactionIdMicrosoftGraphManagedtenantsApplyPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Apply, ApplyViaIdentity
 Aliases:
 
@@ -102,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -117,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -132,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -148,8 +144,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: ApplyViaIdentity, ApplyViaIdentityExpanded
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: ApplyViaIdentityExpanded, ApplyViaIdentity
 Aliases:
 
 Required: True
@@ -163,8 +159,8 @@ Accept wildcard characters: False
 The unique identifier of managementAction
 
 ```yaml
-Type: System.String
-Parameter Sets: Apply, ApplyExpanded
+Type: String
+Parameter Sets: ApplyExpanded, Apply
 Aliases:
 
 Required: True
@@ -178,7 +174,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -193,7 +189,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -208,7 +204,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -223,7 +219,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -239,7 +235,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -256,13 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsYfr4Z1TenantrelationshipsManagedtenantsManagementactionsManagementactionIdMicrosoftGraphManagedtenantsApplyPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementActionDeploymentStatus
-
 ## NOTES
 
 ALIASES
@@ -326,4 +319,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

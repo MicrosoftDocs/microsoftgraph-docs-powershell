@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Teams
 Module Guid: 125a540d-8d3d-4b17-924a-2ef5a420e8ca
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.teams
@@ -946,8 +946,10 @@ A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
-### [Get-MgUserTeamworkAssociatedTeam](Get-MgUserTeamworkAssociatedTeam.md)
-The list of associatedTeamInfo objects that a user is associated with.
+### [Get-MgUserTeamwork](Get-MgUserTeamwork.md)
+A container for Microsoft Teams features available for the user.
+Read-only.
+Nullable.
 
 ### [Get-MgUserTeamworkAssociatedTeamCount](Get-MgUserTeamworkAssociatedTeamCount.md)
 Get the number of the resource
@@ -1351,8 +1353,9 @@ This API cannot create a new chat; you must use the list chats method to retriev
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
-### [New-MgUserTeamworkAssociatedTeam](New-MgUserTeamworkAssociatedTeam.md)
-Create new navigation property to associatedTeams for users
+### [New-MgUserChatTab](New-MgUserChatTab.md)
+Add (pin) a tab to the specified chat.
+\nThe corresponding app must already be installed in the chat.
 
 ### [New-MgUserTeamworkInstalledApp](New-MgUserTeamworkInstalledApp.md)
 Install an app in the personal scope of the specified user.

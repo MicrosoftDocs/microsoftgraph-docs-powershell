@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaapplicationsynchronizationtemplateschemadirectory
 schema: 2.0.0
@@ -15,13 +15,13 @@ Discover the latest schema definition for provisioning to an application.
 ### Discover (Default)
 ```
 Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory -ApplicationId <String>
- -DirectoryDefinitionId <String> -SynchronizationTemplateId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -DirectoryDefinitionId <String> -SynchronizationTemplateId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DiscoverViaIdentity
 ```
-Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplicationsIdentity> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplicationsIdentity> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,19 +29,15 @@ Discover the latest schema definition for provisioning to an application.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -49,7 +45,7 @@ Discover the latest schema definition for provisioning to an application.
 The unique identifier of application
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Discover
 Aliases:
 
@@ -64,7 +60,7 @@ Accept wildcard characters: False
 The unique identifier of directoryDefinition
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Discover
 Aliases:
 
@@ -80,7 +76,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Type: IApplicationsIdentity
 Parameter Sets: DiscoverViaIdentity
 Aliases:
 
@@ -95,7 +91,7 @@ Accept wildcard characters: False
 The unique identifier of synchronizationTemplate
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Discover
 Aliases:
 
@@ -110,7 +106,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -126,7 +122,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -143,11 +139,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
-
 ## NOTES
 
 ALIASES
@@ -189,4 +183,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-
