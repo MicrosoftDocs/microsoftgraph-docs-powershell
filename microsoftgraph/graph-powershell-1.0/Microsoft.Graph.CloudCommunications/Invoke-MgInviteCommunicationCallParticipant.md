@@ -50,11 +50,11 @@ Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	participants = @(
@@ -75,6 +75,10 @@ $params = @{
 }
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
+
 
 ## PARAMETERS
 

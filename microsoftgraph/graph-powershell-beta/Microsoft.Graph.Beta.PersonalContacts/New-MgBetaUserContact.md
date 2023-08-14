@@ -31,20 +31,42 @@ Get-MgBetaUserContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutF
 Get media content for the navigation property photo from users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.PersonalContacts
+
+$params = @{
+	givenName = "Pavel"
+	surname = "Bansky"
+	emailAddresses = @(
+		@{
+			address = "pavelb@contoso.onmicrosoft.com"
+			name = "Pavel Bansky"
+			type = "personal"
+		}
+		@{
+			address = "pavelb@fabrikam.onmicrosoft.com"
+			name = "Pavel Bansky"
+			type = "other"
+			otherLabel = "Volunteer work"
+		}
+	)
+	phones = @(
+		@{
+			number = "+1 732 555 0102"
+			type = "business"
+		}
+	)
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserContact -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserContact Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

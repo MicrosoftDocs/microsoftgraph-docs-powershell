@@ -40,13 +40,17 @@ Get-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-Expa
 Get an attack simulation automation for a tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityAttackSimulationAutomation
+
+```
+This example shows how to use the Get-MgSecurityAttackSimulationAutomation Cmdlet.
+
 
 ## PARAMETERS
 

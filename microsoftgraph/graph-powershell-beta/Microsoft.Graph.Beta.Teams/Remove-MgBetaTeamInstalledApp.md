@@ -31,13 +31,17 @@ Remove-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] 
 Uninstalls an app from the specified team.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
+```
+This example shows how to use the Remove-MgBetaTeamInstalledApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

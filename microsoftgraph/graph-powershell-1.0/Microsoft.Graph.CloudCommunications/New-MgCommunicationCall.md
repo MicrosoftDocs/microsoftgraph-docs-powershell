@@ -42,11 +42,11 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You will need to register the calling bot and go through the list of permissions needed as mentioned below.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -88,10 +88,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -144,10 +148,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -200,10 +208,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -239,10 +251,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 5
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -277,10 +293,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 6
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+### Example 6: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -303,10 +323,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 7
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+### Example 7: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -329,10 +353,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 8
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+### Example 8: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -375,10 +403,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 9
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+### Example 9: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -421,6 +453,10 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
+```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

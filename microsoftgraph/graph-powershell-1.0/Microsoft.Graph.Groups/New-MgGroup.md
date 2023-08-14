@@ -61,15 +61,17 @@ These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
 ## EXAMPLES
+### Example 1: Create a new group
 
-### EXAMPLE 1
 ```powershell
 New-MgGroup -DisplayName 'Test Group' -MailEnabled:$False  -MailNickName 'testgroup' -SecurityEnabled
-```
 
 Id                                   DisplayName Description GroupTypes
 --                                   ----------- ----------- ----------
 15bb6c2c-ac32-41a1-b9ec-b6300b8b8e52 Test Group              {}
+```
+
+This example creates a new group.
 
 ## PARAMETERS
 

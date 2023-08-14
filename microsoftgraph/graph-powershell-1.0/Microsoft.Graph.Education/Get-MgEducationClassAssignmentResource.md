@@ -42,13 +42,17 @@ Get the properties of an education assignment resource associated with an assign
 Only teachers, students, and applications with application permissions can perform this operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+```
+This example shows how to use the Get-MgEducationClassAssignmentResource Cmdlet.
+
 
 ## PARAMETERS
 

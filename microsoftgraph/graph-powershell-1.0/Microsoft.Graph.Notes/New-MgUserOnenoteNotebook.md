@@ -49,20 +49,22 @@ New-MgSiteOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <IMicr
 Create a new page in the specified section.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Notes
+
+$params = @{
+	displayName = "My Private notebook"
+}
+
+# A UPN can also be used as -UserId.
+New-MgUserOnenoteNotebook -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgUserOnenoteNotebook Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

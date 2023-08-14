@@ -31,12 +31,14 @@ Remove-MgBetaPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsId
 Deletes a permissionGrantConditionSet from the includes collection of a permissionGrantPolicy.
 
 ## EXAMPLES
+### Example 1: Remove a permission grant policy include
 
-### EXAMPLE 1
 ```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
-Remove-MgBetaPolicyPermissionGrantPolicyInclude -PermissionGrantConditionSetId "084b9abc-cf56-4d84-bdb0-5ad8f3a51038" -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
+Remove-MgBetaPolicyPermissionGrantPolicyInclude -PermissionGrantConditionSetId "084b9abc-cf56-4d84-bdb0-5ad8f3a51038" -PermissionGrantPolicyId "testtenant-sampleapp-permissions"  
 ```
+
+
 
 ## PARAMETERS
 

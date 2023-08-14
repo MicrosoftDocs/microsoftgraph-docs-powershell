@@ -26,13 +26,18 @@ Get-MgUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 Retrieve a list of plannerplan objects shared with a user object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
+
 # A UPN can also be used as -UserId.
-Get-MgUserPlannerPlan -UserId $userId
+Get-MgUserPlannerTask -UserId $userId
+
 ```
+This example shows how to use the Get-MgUserPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 

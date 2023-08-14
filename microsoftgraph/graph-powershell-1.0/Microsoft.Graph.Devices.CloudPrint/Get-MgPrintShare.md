@@ -40,13 +40,17 @@ Get-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <Str
 Retrieve the properties and relationships of a printer share.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
-Get-MgPrintShare -PrinterShareId $printerShareId -Property "id,displayName,capabilities"
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Get-MgPrintShare -PrinterShareId $printerShareId -Property "id,displayName,capabilities" 
+
+```
+This example shows how to use the Get-MgPrintShare Cmdlet.
+
 
 ## PARAMETERS
 

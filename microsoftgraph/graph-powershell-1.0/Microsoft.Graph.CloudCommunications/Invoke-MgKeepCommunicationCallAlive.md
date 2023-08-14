@@ -43,13 +43,17 @@ Attempting to send a request to a call that has already ended will result in a 4
 The resources related to the call should be cleaned up on the application side.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Invoke-MgKeepCommunicationCallAlive -CallId $callId
+
+```
+This example shows how to use the Invoke-MgKeepCommunicationCallAlive Cmdlet.
+
 
 ## PARAMETERS
 

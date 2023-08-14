@@ -37,18 +37,20 @@ Get-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity> [-
 Read the properties and relationships of a fileThreatSubmission object.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSecurityThreatSubmissionFileThreat Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionFileThreat -FileThreatSubmissionId $fileThreatSubmissionId
 ```
-
-### EXAMPLE 2
+This example shows how to use the Get-MgBetaSecurityThreatSubmissionFileThreat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaSecurityThreatSubmissionFileThreat Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionFileThreat
 ```
+This example shows how to use the Get-MgBetaSecurityThreatSubmissionFileThreat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

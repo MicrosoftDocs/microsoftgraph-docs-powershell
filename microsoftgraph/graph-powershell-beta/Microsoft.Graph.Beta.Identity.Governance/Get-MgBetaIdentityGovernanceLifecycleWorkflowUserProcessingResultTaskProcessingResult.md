@@ -42,20 +42,28 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingR
 The associated individual task execution.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult -WorkflowId $workflowId -UserProcessingResultId $userProcessingResultId
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
 ```
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult Cmdlet.
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult -WorkflowId $workflowId -UserProcessingResultId $userProcessingResultId -Property "id,processingStatus,failureReason,subject,task"
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult -WorkflowId $workflowId -UserProcessingResultId $userProcessingResultId -Property "id,processingStatus,failureReason,subject,task" 
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult Cmdlet.
+
 
 ## PARAMETERS
 

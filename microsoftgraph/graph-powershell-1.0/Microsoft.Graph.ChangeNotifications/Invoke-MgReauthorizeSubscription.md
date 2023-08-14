@@ -31,13 +31,17 @@ Invoke-MgReauthorizeSubscription -InputObject <IChangeNotificationsIdentity> [-P
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.ChangeNotifications
-```
 
 Invoke-MgReauthorizeSubscription -SubscriptionId $subscriptionId
+
+```
+This example shows how to use the Invoke-MgReauthorizeSubscription Cmdlet.
+
 
 ## PARAMETERS
 

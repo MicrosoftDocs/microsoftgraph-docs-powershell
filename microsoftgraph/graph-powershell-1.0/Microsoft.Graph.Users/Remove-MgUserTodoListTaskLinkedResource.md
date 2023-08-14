@@ -31,20 +31,18 @@ Remove-MgUserTodoListTaskExtension -InputObject <IUsersIdentity> [-IfMatch <Stri
 Delete navigation property extensions for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Users
+
+# A UPN can also be used as -UserId.
+Remove-MgUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId
 ```
+This example shows how to use the Remove-MgUserTodoListTaskLinkedResource Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

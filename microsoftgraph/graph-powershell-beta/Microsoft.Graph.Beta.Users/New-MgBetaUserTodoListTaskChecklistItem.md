@@ -43,20 +43,22 @@ New-MgBetaUserTodoListExtension -InputObject <IUsersIdentity> -BodyParameter <Ha
 Create new navigation property to extensions for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Users
+
+$params = @{
+	displayName = "Final sign-off from the team"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserTodoListTaskChecklistItem Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
