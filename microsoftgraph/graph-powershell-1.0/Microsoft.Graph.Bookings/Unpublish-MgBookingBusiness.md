@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Make the scheduling page of this business not available to external customers.
-Set the **isPublished** property to `false`, and the **publicUrl** property to `null`.
+Set the isPublished property to false, and the publicUrl property to null.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Unpublish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Unpublish-MgBetaBookingBusiness?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Unpublish-MgBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatI
 
 ## DESCRIPTION
 Make the scheduling page of this business not available to external customers.
-Set the **isPublished** property to `false`, and the **publicUrl** property to `null`.
+Set the isPublished property to false, and the publicUrl property to null.
 
 ## EXAMPLES
 ### Example 1: Using the Unpublish-MgBookingBusiness Cmdlet

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceCategory
 
 ## SYNOPSIS
-Update the navigation property deviceCategories in deviceManagement
+Update the properties of a deviceCategory object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCategory?view=graph-powershell-beta)
@@ -41,7 +41,7 @@ Update-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceCategories in deviceManagement
+Update the properties of a deviceCategory object.
 
 ## PARAMETERS
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unsetReaction
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgTeamPrimaryChannelMessageReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgTeamPrimaryChannelMessageReaction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UnsetExpanded (Default)
@@ -246,4 +249,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Clear-MgTeamPrimaryChannelMessageReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgTeamPrimaryChannelMessageReaction?view=graph-powershell-1.0)
 

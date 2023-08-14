@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgShareListItemField
 
 ## SYNOPSIS
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaShareListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItemField?view=graph-powershell-beta)
@@ -64,7 +64,7 @@ Update-MgShareListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashta
 ```
 
 ## DESCRIPTION
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ## PARAMETERS
 

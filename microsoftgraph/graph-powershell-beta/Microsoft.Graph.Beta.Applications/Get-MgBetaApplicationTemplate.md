@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationtemplate
 schema: 2.0.0
+ms.prod: applications
+ms.prod: applications
 ---
 
 # Get-MgBetaApplicationTemplate
@@ -41,13 +43,13 @@ Retrieve the properties of an applicationTemplate object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgBetaApplicationTemplate -ApplicationTemplateId $applicationTemplateId
+Get-MgBetaApplicationTemplate
+
 ```
 This example shows how to use the Get-MgBetaApplicationTemplate Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

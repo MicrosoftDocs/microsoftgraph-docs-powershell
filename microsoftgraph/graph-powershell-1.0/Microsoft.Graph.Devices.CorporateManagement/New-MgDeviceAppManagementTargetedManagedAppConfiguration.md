@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementTargetedManagedAppConfiguration
 
 ## SYNOPSIS
-Create new navigation property to targetedManagedAppConfigurations for deviceAppManagement
+Create a new targetedManagedAppConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
@@ -33,7 +33,7 @@ New-MgDeviceAppManagementTargetedManagedAppConfiguration
 ```
 
 ## DESCRIPTION
-Create new navigation property to targetedManagedAppConfigurations for deviceAppManagement
+Create a new targetedManagedAppConfiguration object.
 
 ## PARAMETERS
 

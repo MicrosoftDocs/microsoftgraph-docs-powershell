@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementManagedAppRegistration
 
 ## SYNOPSIS
-Create new navigation property to managedAppRegistrations for deviceAppManagement
+Create a new androidManagedAppRegistration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
@@ -33,7 +33,7 @@ New-MgDeviceAppManagementManagedAppRegistration -BodyParameter <IMicrosoftGraphM
 ```
 
 ## DESCRIPTION
-Create new navigation property to managedAppRegistrations for deviceAppManagement
+Create a new androidManagedAppRegistration object.
 
 ## PARAMETERS
 

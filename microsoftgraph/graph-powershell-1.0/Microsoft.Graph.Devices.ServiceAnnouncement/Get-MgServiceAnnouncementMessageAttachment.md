@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachment
 schema: 2.0.0
+ms.prod: service-communications
+ms.prod: service-communications
 ---
 
 # Get-MgServiceAnnouncementMessageAttachment
@@ -41,13 +43,13 @@ Read the properties and relationships of a serviceAnnouncementAttachment object.
 ### Example 1: Get an attachment message ID
 
 ```powershell
+
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
-```
-This example shows how to use the Get-MgServiceAnnouncementMessageAttachment Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get an attachment message id
 
 
 ## PARAMETERS

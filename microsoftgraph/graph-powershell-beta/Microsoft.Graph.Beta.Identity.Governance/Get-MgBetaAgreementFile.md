@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaagreementfile
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaAgreementFile
 
 ## SYNOPSIS
 Retrieve the details of an agreement file, including the language and version information.
-The default file can have multiple versions, each with its own language, that can be retrieved by specifying the **Accept-Language** header.
+The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFile?view=graph-powershell-1.0)
@@ -37,9 +38,20 @@ Get-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the details of an agreement file, including the language and version information.
-The default file can have multiple versions, each with its own language, that can be retrieved by specifying the **Accept-Language** header.
+The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
 
 ## EXAMPLES
+### Example 1: Get the agreement file for a specific language
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaAgreementFile -AgreementId $agreementId
+
+```
+This example will get the agreement file for a specific language
+
 
 ## PARAMETERS
 

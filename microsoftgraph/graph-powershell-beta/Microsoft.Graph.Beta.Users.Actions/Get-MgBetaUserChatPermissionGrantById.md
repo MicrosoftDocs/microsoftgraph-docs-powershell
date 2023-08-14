@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserchatpermissiongrantbyid
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaUserChatPermissionGrantById
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatPermissionGrantById](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserChatPermissionGrantById?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -250,4 +254,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserChatPermissionGrantById](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserChatPermissionGrantById?view=graph-powershell-1.0)
 

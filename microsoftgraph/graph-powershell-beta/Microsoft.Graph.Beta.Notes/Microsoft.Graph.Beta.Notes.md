@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Notes
-Module Guid: 842468b0-da4f-45b2-a0ab-e8dbe766efde
+Module Guid: ec832b7e-ed29-4d2b-80cf-1ae409fd930b
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes
 Help Version: 1.0.0.0
 Locale: en-US
@@ -17,18 +17,18 @@ Retrieve the properties and relationships of a notebook object.
 ### [Get-MgBetaGroupOnenoteNotebookCount](Get-MgBetaGroupOnenoteNotebookCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupOnenoteNotebookCount](Get-MgBetaGroupOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgBetaGroupOnenoteNotebookSection](Get-MgBetaGroupOnenoteNotebookSection.md)
+Retrieve a list of section objects from the specified notebook.
 
-### [Get-MgBetaGroupOnenoteNotebookCount](Get-MgBetaGroupOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgBetaGroupOnenoteNotebookSectionGroup](Get-MgBetaGroupOnenoteNotebookSectionGroup.md)
+Retrieve a list of section groups from the specified notebook.
 
 ### [Get-MgBetaGroupOnenoteOperation](Get-MgBetaGroupOnenoteOperation.md)
 Get the status of a long-running OneNote operation.
-This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.
-  You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
-If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
-If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
+This applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
+  You can poll the Operation-Location endpoint until the status property returns completed or failed.
+If the status is completed, the resourceLocation property contains the resource endpoint URI.
+If the status is failed, the error and @api.diagnostics properties provide error information.
 
 ### [Get-MgBetaGroupOnenoteOperationCount](Get-MgBetaGroupOnenoteOperationCount.md)
 Get the number of the resource
@@ -68,8 +68,8 @@ Retrieve the properties and relationships of a sectionGroup object.
 ### [Get-MgBetaGroupOnenoteSectionGroupCount](Get-MgBetaGroupOnenoteSectionGroupCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupOnenoteSectionGroupCount](Get-MgBetaGroupOnenoteSectionGroupCount.md)
-Get the number of the resource
+### [Get-MgBetaGroupOnenoteSectionGroupSection](Get-MgBetaGroupOnenoteSectionGroupSection.md)
+Retrieve a list of onenoteSection objects from the specified section group.
 
 ### [Get-MgBetaGroupOnenoteSectionPage](Get-MgBetaGroupOnenoteSectionPage.md)
 The collection of pages in the section.
@@ -82,18 +82,18 @@ Retrieve the properties and relationships of a notebook object.
 ### [Get-MgBetaSiteOnenoteNotebookCount](Get-MgBetaSiteOnenoteNotebookCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteOnenoteNotebookCount](Get-MgBetaSiteOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteOnenoteNotebookSection](Get-MgBetaSiteOnenoteNotebookSection.md)
+Retrieve a list of section objects from the specified notebook.
 
-### [Get-MgBetaSiteOnenoteNotebookCount](Get-MgBetaSiteOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteOnenoteNotebookSectionGroup](Get-MgBetaSiteOnenoteNotebookSectionGroup.md)
+Retrieve a list of section groups from the specified notebook.
 
 ### [Get-MgBetaSiteOnenoteOperation](Get-MgBetaSiteOnenoteOperation.md)
 Get the status of a long-running OneNote operation.
-This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.
-  You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
-If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
-If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
+This applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
+  You can poll the Operation-Location endpoint until the status property returns completed or failed.
+If the status is completed, the resourceLocation property contains the resource endpoint URI.
+If the status is failed, the error and @api.diagnostics properties provide error information.
 
 ### [Get-MgBetaSiteOnenoteOperationCount](Get-MgBetaSiteOnenoteOperationCount.md)
 Get the number of the resource
@@ -133,8 +133,8 @@ Retrieve the properties and relationships of a sectionGroup object.
 ### [Get-MgBetaSiteOnenoteSectionGroupCount](Get-MgBetaSiteOnenoteSectionGroupCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteOnenoteSectionGroupCount](Get-MgBetaSiteOnenoteSectionGroupCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteOnenoteSectionGroupSection](Get-MgBetaSiteOnenoteSectionGroupSection.md)
+Retrieve a list of onenoteSection objects from the specified section group.
 
 ### [Get-MgBetaSiteOnenoteSectionPage](Get-MgBetaSiteOnenoteSectionPage.md)
 The collection of pages in the section.
@@ -149,14 +149,14 @@ Nullable.
 ### [Get-MgBetaUserOnenoteNotebookCount](Get-MgBetaUserOnenoteNotebookCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnenoteNotebookSection](Get-MgBetaUserOnenoteNotebookSection.md)
-Retrieve a list of section objects from the specified notebook.
+### [Get-MgBetaUserOnenoteNotebookCount](Get-MgBetaUserOnenoteNotebookCount.md)
+Get the number of the resource
 
-### [Get-MgBetaUserOnenoteNotebookSectionGroup](Get-MgBetaUserOnenoteNotebookSectionGroup.md)
-Retrieve a list of section groups from the specified notebook.
+### [Get-MgBetaUserOnenoteNotebookCount](Get-MgBetaUserOnenoteNotebookCount.md)
+Get the number of the resource
 
-### [Get-MgBetaUserOnenoteNotebookSectionGroup](Get-MgBetaUserOnenoteNotebookSectionGroup.md)
-Retrieve a list of section groups from the specified notebook.
+### [Get-MgBetaUserOnenoteNotebookCount](Get-MgBetaUserOnenoteNotebookCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserOnenoteOperationCount](Get-MgBetaUserOnenoteOperationCount.md)
 Get the number of the resource
@@ -196,8 +196,8 @@ Get the number of the resource
 ### [Get-MgBetaUserOnenoteSectionGroupCount](Get-MgBetaUserOnenoteSectionGroupCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnenoteSectionGroupSection](Get-MgBetaUserOnenoteSectionGroupSection.md)
-Retrieve a list of onenoteSection objects from the specified section group.
+### [Get-MgBetaUserOnenoteSectionGroupCount](Get-MgBetaUserOnenoteSectionGroupCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserOnenoteSectionPage](Get-MgBetaUserOnenoteSectionPage.md)
 The collection of pages in the section.

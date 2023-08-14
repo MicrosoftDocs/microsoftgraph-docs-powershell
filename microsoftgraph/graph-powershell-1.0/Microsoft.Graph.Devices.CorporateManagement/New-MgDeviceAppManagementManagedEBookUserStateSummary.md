@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementManagedEBookUserStateSummary
 
 ## SYNOPSIS
-Create new navigation property to userStateSummary for deviceAppManagement
+Create a new userInstallStateSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesCorp
 ```
 
 ## DESCRIPTION
-Create new navigation property to userStateSummary for deviceAppManagement
+Create a new userInstallStateSummary object.
 
 ## PARAMETERS
 

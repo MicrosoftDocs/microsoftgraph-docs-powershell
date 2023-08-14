@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementIoUpdateStatus
 
 ## SYNOPSIS
-Update the navigation property iosUpdateStatuses in deviceManagement
+Update the properties of a iosUpdateDeviceStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ Update-MgDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Update the navigation property iosUpdateStatuses in deviceManagement
+Update the properties of a iosUpdateDeviceStatus object.
 
 ## PARAMETERS
 

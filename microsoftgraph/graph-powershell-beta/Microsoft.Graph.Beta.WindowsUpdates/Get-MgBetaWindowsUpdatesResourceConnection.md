@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesresourceconnection
 schema: 2.0.0
+ms.prod: w10
+ms.prod: w10
 ---
 
 # Get-MgBetaWindowsUpdatesResourceConnection
 
 ## SYNOPSIS
-Read the properties and relationships of an operationalInsightsConnection object.
+Read the properties and relationships of a resourceConnection object.
 
 ## SYNTAX
 
@@ -32,7 +34,7 @@ Get-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an operationalInsightsConnection object.
+Read the properties and relationships of a resourceConnection object.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet

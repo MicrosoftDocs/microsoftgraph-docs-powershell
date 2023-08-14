@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 
 ## SYNOPSIS
-Create new navigation property to deviceStatuses for deviceAppManagement
+Create a new managedDeviceMobileAppConfigurationDeviceStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ New-MgDeviceAppManagementMobileAppConfigurationDeviceStatus -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceStatuses for deviceAppManagement
+Create a new managedDeviceMobileAppConfigurationDeviceStatus object.
 
 ## PARAMETERS
 

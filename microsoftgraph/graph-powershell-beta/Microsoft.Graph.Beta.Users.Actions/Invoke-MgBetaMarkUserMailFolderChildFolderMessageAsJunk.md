@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetamarkusermailfolderchildfoldermessageasjunk
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsJunk
 
 ## SYNOPSIS
 Mark a message as junk.
-This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.
+This API adds the sender to the list of blocked senders and moves the message to the Junk Email folder, when moveToJunk is true.
 
 ## SYNTAX
 
@@ -43,7 +44,7 @@ Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsJunk -InputObject <IUsersActi
 
 ## DESCRIPTION
 Mark a message as junk.
-This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.
+This API adds the sender to the list of blocked senders and moves the message to the Junk Email folder, when moveToJunk is true.
 
 ## PARAMETERS
 

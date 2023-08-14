@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopyfromcontenttypehub
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Add-MgSiteListContentTypeCopyFromContentTypeHub
@@ -51,36 +52,36 @@ The method allows users to pull content types directly from the content type hub
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ## EXAMPLES
-### Example 1: Using the Add-MgSiteListContentTypeCopyFromContentTypeHub Cmdlet
+### Example 1: Synchronous pull
+
 ```powershell
+
 Import-Module Microsoft.Graph.Sites
+
 $params = @{
-	ContentTypeId = "0x0101"
+	contentTypeId = "0x0101"
 }
+
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
+
 ```
-This example shows how to use the Add-MgSiteListContentTypeCopyFromContentTypeHub Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Add-MgSiteListContentTypeCopyFromContentTypeHub Cmdlet
+This example synchronous pull
+
+### Example 2: Asynchronous pull
+
 ```powershell
+
 Import-Module Microsoft.Graph.Sites
+
 $params = @{
-	ContentTypeId = "0x0101"
+	contentTypeId = "0x0101"
 }
+
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
+
 ```
-This example shows how to use the Add-MgSiteListContentTypeCopyFromContentTypeHub Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Add-MgSiteListContentTypeCopyFromContentTypeHub Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Sites
-$params = @{
-	ContentTypeId = "0x0101"
-}
-Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
-```
-This example shows how to use the Add-MgSiteListContentTypeCopyFromContentTypeHub Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example asynchronous pull
+
 
 ## PARAMETERS
 

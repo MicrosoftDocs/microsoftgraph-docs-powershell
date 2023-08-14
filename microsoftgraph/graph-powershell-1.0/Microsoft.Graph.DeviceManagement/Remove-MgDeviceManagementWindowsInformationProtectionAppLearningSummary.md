@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 
 ## SYNOPSIS
-Delete navigation property windowsInformationProtectionAppLearningSummaries for deviceManagement
+Deletes a windowsInformationProtectionAppLearningSummary.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 ```
 
 ## DESCRIPTION
-Delete navigation property windowsInformationProtectionAppLearningSummaries for deviceManagement
+Deletes a windowsInformationProtectionAppLearningSummary.
 
 ## PARAMETERS
 

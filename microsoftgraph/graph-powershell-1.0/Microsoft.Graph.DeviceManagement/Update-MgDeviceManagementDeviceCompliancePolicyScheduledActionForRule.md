@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule
 
 ## SYNOPSIS
-Update the navigation property scheduledActionsForRule in deviceManagement
+Update the properties of a deviceComplianceScheduledActionForRule object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -InputObje
 ```
 
 ## DESCRIPTION
-Update the navigation property scheduledActionsForRule in deviceManagement
+Update the properties of a deviceComplianceScheduledActionForRule object.
 
 ## PARAMETERS
 

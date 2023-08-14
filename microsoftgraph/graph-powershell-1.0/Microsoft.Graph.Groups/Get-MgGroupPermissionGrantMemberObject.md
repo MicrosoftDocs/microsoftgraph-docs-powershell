@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrantmemberobject
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgGroupPermissionGrantMemberObject
@@ -10,7 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantMemberObject?view=graph-powershell-beta)
@@ -46,7 +47,7 @@ Get-MgGroupPermissionGrantMemberObject -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ## EXAMPLES
 ### Example 1: Code snippet

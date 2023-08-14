@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffavailability
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Get-MgBookingBusinessStaffAvailability
@@ -45,6 +46,33 @@ Get-MgBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Get the availability information of staff members of a Microsoft Bookings calendar.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+$params = @{
+	staffIds = @(
+		"311a5454-08b2-4560-ba1c-f715e938cb79"
+	)
+	startDateTime = @{
+		dateTime = "2022-01-25T00:00:00"
+		timeZone = "India Standard Time"
+	}
+	endDateTime = @{
+		dateTime = "2022-01-26T17:00:00"
+		timeZone = "Pacific Standard Time"
+	}
+}
+
+Get-MgBookingBusinessStaffAvailability -BookingBusinessId $bookingBusinessId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBookingBusinessStaffAvailability Cmdlet.
+
 
 ## PARAMETERS
 
@@ -237,4 +265,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessStaffAvailability](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffAvailability?view=graph-powershell-beta)
-

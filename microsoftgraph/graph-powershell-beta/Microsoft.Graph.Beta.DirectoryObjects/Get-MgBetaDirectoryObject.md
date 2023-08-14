@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/get-mgbetadirectoryobject
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDirectoryObject
@@ -41,13 +42,13 @@ Retrieve the properties and relationships of a directoryObject object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
 Get-MgBetaDirectoryObject -DirectoryObjectId $directoryObjectId
+
 ```
 This example shows how to use the Get-MgBetaDirectoryObject Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

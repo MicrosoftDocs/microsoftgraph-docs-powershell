@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatus
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementDeviceConfigurationDeviceStatus
 
 ## SYNOPSIS
-Device configuration installation status by device.
+Read properties and relationships of the deviceConfigurationDeviceStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceManagementDeviceConfigurationDeviceStatus -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Device configuration installation status by device.
+Read properties and relationships of the deviceConfigurationDeviceStatus object.
 
 ## PARAMETERS
 

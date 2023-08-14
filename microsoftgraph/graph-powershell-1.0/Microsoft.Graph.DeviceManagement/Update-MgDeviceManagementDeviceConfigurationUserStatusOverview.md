@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfigurationUserStatusOverview
 
 ## SYNOPSIS
-Update the navigation property userStatusOverview in deviceManagement
+Update the properties of a deviceConfigurationUserOverview object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Update-MgDeviceManagementDeviceConfigurationUserStatusOverview -InputObject <IDe
 ```
 
 ## DESCRIPTION
-Update the navigation property userStatusOverview in deviceManagement
+Update the properties of a deviceConfigurationUserOverview object.
 
 ## PARAMETERS
 

@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCallRecord
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a callRecord object.
-There are two ways to get the **id** of a **callRecord**:
+There are two ways to get the id of a callRecord:
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecord?view=graph-powershell-beta)
@@ -30,30 +31,30 @@ Get-MgCommunicationCallRecord -InputObject <ICloudCommunicationsIdentity> [-Expa
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a callRecord object.
-There are two ways to get the **id** of a **callRecord**:
+There are two ways to get the id of a callRecord:
 
 ## EXAMPLES
 ### Example 1: Get basic details
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallRecord -CallRecordId $callRecordId
-```
-This example shows how to use the Get-MgCommunicationCallRecord Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get basic details
 
 ### Example 2: Get full details
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)"
-```
-This example shows how to use the Get-MgCommunicationCallRecord Cmdlet.
+Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get full details
 
 
 ## PARAMETERS

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingalternativerecording
 schema: 2.0.0
+ms.prod: cloud-communications
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaUserOnlineMeetingAlternativeRecording
@@ -33,17 +35,17 @@ The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: List attendance reports for an online meeting
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 # A UPN can also be used as -UserId.
-Get-MgBetaUserOnlineMeetingAttendanceReport -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingAttendanceReportId $meetingAttendanceReportId -ExpandProperty "attendanceRecords"
-```
-This example shows how to use the Get-MgBetaUserOnlineMeetingAttendanceReport Cmdlet.
+Get-MgBetaUserOnlineMeetingAttendanceReport -UserId $userId -OnlineMeetingId $onlineMeetingId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will list attendance reports for an online meeting
 
 
 ## PARAMETERS

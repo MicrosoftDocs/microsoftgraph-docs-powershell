@@ -45,6 +45,8 @@ New-MgEducationUserAssignmentCategory -InputObject <IEducationIdentity>
 Add one or more existing educationCategory objects to the specified  educationAssignment.
 Only teachers can perform this operation.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -224,4 +226,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentCategory?view=graph-powershell-beta)
-

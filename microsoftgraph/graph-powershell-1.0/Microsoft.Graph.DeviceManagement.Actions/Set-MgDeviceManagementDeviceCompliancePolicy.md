@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Invoke action assign
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Set-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementActi
 ```
 
 ## DESCRIPTION
-Invoke action assign
+Not yet documented
 
 ## PARAMETERS
 

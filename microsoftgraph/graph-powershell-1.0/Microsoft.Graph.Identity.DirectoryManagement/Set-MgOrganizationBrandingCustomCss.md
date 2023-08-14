@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgOrganizationBrandingCustomCss
 
 ## SYNOPSIS
-Update customCSS for the navigation property branding in organization
+CSS styling that appears on the sign-in page.
+The allowed format is .css format only and not larger than 25 KB.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingCustomCss?view=graph-powershell-beta)
@@ -28,7 +29,8 @@ Set-MgOrganizationBrandingCustomCss -InputObject <IIdentityDirectoryManagementId
 ```
 
 ## DESCRIPTION
-Update customCSS for the navigation property branding in organization
+CSS styling that appears on the sign-in page.
+The allowed format is .css format only and not larger than 25 KB.
 
 ## PARAMETERS
 

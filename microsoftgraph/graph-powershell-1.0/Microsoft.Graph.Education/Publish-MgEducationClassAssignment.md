@@ -9,13 +9,13 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Publish an education assignment.
-Change the state of an educationAssignment from its original `draft` status to the `published` status.
-You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date.
+Change the state of an educationAssignment from its original draft status to the published status.
+You can change the state from draft to scheduled if the assignment is scheduled for a future date.
 Only a teacher in the class can make this call.
 When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.
 Calling this API creates educationSubmission objects and displays the assignment in each student's list.
-The state of the assignment goes back to `draft` if there is any backend failure during publish process.
-To update the properties of a published **assignment**, see update an assignment.
+The state of the assignment goes back to draft if there is any backend failure during publish process.
+To update the properties of a published assignment, see update an assignment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassAssignment?view=graph-powershell-beta)
@@ -35,22 +35,26 @@ Publish-MgEducationClassAssignment -InputObject <IEducationIdentity> [-WhatIf] [
 
 ## DESCRIPTION
 Publish an education assignment.
-Change the state of an educationAssignment from its original `draft` status to the `published` status.
-You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date.
+Change the state of an educationAssignment from its original draft status to the published status.
+You can change the state from draft to scheduled if the assignment is scheduled for a future date.
 Only a teacher in the class can make this call.
 When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.
 Calling this API creates educationSubmission objects and displays the assignment in each student's list.
-The state of the assignment goes back to `draft` if there is any backend failure during publish process.
-To update the properties of a published **assignment**, see update an assignment.
+The state of the assignment goes back to draft if there is any backend failure during publish process.
+To update the properties of a published assignment, see update an assignment.
 
 ## EXAMPLES
-### Example 1: Using the Publish-MgEducationClassAssignment Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Education
+
 Publish-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
 ```
 This example shows how to use the Publish-MgEducationClassAssignment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

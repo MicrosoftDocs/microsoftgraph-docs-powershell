@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgkeepcommunicationcallalive
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgKeepCommunicationCallAlive
@@ -13,7 +14,7 @@ A call that does not receive this request within 45 minutes is considered inacti
 At least one successful request must be made within 45 minutes of the previous request, or the start of the call.
 We recommend that you send a request in shorter time intervals (every 15 minutes).
 Make sure that these requests are successful to prevent the call from timing out and ending.
-Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error.
+Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
 
 > [!NOTE]
@@ -38,17 +39,21 @@ A call that does not receive this request within 45 minutes is considered inacti
 At least one successful request must be made within 45 minutes of the previous request, or the start of the call.
 We recommend that you send a request in shorter time intervals (every 15 minutes).
 Make sure that these requests are successful to prevent the call from timing out and ending.
-Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error.
+Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgKeepCommunicationCallAlive Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
+
 Invoke-MgKeepCommunicationCallAlive -CallId $callId
+
 ```
 This example shows how to use the Invoke-MgKeepCommunicationCallAlive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgPlannerBucketTask
@@ -25,13 +26,17 @@ Get-MgPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]>] [
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgPlannerBucketTask Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
+
 Get-MgPlannerBucketTask -PlannerBucketId $plannerBucketId
+
 ```
 This example shows how to use the Get-MgPlannerBucketTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

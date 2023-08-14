@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSecuritySecureScoreControlProfile
 
 ## SYNOPSIS
-Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
+Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ Update-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
+Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
 ## EXAMPLES
 ### Example 1: Request without Prefer header

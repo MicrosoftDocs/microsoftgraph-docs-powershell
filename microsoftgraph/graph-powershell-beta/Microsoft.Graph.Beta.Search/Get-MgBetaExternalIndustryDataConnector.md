@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataconnector
 schema: 2.0.0
+ms.prod: industry-data-etl
+ms.prod: industry-data-etl
 ---
 
 # Get-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Read the properties and relationships of an industryDataConnector object.
+Read the properties and relationships of an azureDataLakeConnector object.
 
 ## SYNTAX
 
@@ -32,7 +34,7 @@ Get-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an industryDataConnector object.
+Read the properties and relationships of an azureDataLakeConnector object.
 
 ## PARAMETERS
 

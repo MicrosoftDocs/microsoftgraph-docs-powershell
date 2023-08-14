@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementManagedAppRegistrationOperation
 
 ## SYNOPSIS
-Create new navigation property to operations for deviceAppManagement
+Create a new managedAppOperation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedAppRegistrationOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistrationOperation?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ New-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevicesC
 ```
 
 ## DESCRIPTION
-Create new navigation property to operations for deviceAppManagement
+Create a new managedAppOperation object.
 
 ## PARAMETERS
 

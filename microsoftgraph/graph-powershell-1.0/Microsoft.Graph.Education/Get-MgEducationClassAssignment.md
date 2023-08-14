@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignment
 schema: 2.0.0
+ms.prod: education
+ms.prod: education
 ---
 
 # Get-MgEducationClassAssignment
@@ -42,16 +44,27 @@ Only teachers, students, and applications with application permissions can perfo
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get assignments
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
-```
-This example shows how to use the Get-MgEducationClassAssignment Cmdlet.
+Get-MgEducationClassAssignment -EducationClassId $educationClassId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get assignments
+
+### Example 2: Get assignments using $expand options
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassAssignment -EducationClassId $educationClassId -ExpandProperty "resources" 
+
+```
+This example will get assignments using $expand options
 
 
 ## PARAMETERS

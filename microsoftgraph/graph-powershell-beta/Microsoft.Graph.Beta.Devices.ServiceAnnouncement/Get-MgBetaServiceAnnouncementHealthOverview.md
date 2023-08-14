@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementhealthoverview
 schema: 2.0.0
+ms.prod: service-communications
+ms.prod: service-communications
 ---
 
 # Get-MgBetaServiceAnnouncementHealthOverview
@@ -43,24 +45,24 @@ This operation provides the health information of a specified service for a tena
 ### Example 1: Get the properties of a serviceHealth object
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 Get-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId
-```
-This example shows how to use the Get-MgBetaServiceAnnouncementHealthOverview Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get the properties of a servicehealth object
 
 ### Example 2: Include navigation property issues
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
-Get-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues"
-```
-This example shows how to use the Get-MgBetaServiceAnnouncementHealthOverview Cmdlet.
+Get-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will include navigation property issues
 
 
 ## PARAMETERS

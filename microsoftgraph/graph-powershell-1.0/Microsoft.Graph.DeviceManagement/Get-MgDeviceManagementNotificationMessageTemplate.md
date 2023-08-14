@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementnotificationmessagetemplate
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementNotificationMessageTemplate
 
 ## SYNOPSIS
-The Notification Message Templates.
+Read properties and relationships of the notificationMessageTemplate object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManagemen
 ```
 
 ## DESCRIPTION
-The Notification Message Templates.
+Read properties and relationships of the notificationMessageTemplate object.
 
 ## PARAMETERS
 

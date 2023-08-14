@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddevicecategory
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Get-MgUserManagedDeviceCategory
 
 ## SYNOPSIS
-Device category
+Read properties and relationships of the deviceCategory object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceCategory?view=graph-powershell-beta)
@@ -28,7 +29,7 @@ Get-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIdentit
 ```
 
 ## DESCRIPTION
-Device category
+Read properties and relationships of the deviceCategory object.
 
 ## PARAMETERS
 

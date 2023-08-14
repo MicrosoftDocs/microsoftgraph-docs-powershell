@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Update the properties of a countryNamedLocation object.
+Update the properties of an ipNamedLocation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Update-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Update the properties of a countryNamedLocation object.
+Update the properties of an ipNamedLocation object.
 
 ## EXAMPLES
 ### Example 1: Update a country named location by adding to the list of countries

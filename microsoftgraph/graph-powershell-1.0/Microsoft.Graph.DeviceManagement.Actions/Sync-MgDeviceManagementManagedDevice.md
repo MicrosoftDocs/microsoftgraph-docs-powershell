@@ -8,7 +8,7 @@ schema: 2.0.0
 # Sync-MgDeviceManagementManagedDevice
 
 ## SYNOPSIS
-Invoke action syncDevice
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Sync-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Sync-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Sync-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdent
 ```
 
 ## DESCRIPTION
-Invoke action syncDevice
+Not yet documented
 
 ## PARAMETERS
 

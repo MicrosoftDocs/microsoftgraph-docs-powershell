@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserManagedDeviceCategory
 
 ## SYNOPSIS
-Update the navigation property deviceCategory in users
+Update the properties of a deviceCategory object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceCategory?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Update-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceCategory in users
+Update the properties of a deviceCategory object.
 
 ## PARAMETERS
 

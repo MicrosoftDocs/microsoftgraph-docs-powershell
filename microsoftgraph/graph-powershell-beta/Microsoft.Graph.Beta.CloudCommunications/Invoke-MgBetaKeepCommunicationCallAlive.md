@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetakeepcommunicationcallalive
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaKeepCommunicationCallAlive
@@ -13,7 +14,7 @@ A call that does not receive this request within 45 minutes is considered inacti
 At least one successful request must be made within 45 minutes of the previous request, or the start of the call.
 We recommend that you send a request in shorter time intervals (every 15 minutes).
 Make sure that these requests are successful to prevent the call from timing out and ending.
-Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error.
+Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
 
 > [!NOTE]
@@ -38,17 +39,21 @@ A call that does not receive this request within 45 minutes is considered inacti
 At least one successful request must be made within 45 minutes of the previous request, or the start of the call.
 We recommend that you send a request in shorter time intervals (every 15 minutes).
 Make sure that these requests are successful to prevent the call from timing out and ending.
-Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error.
+Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaKeepCommunicationCallAlive Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 Invoke-MgBetaKeepCommunicationCallAlive -CallId $callId
+
 ```
 This example shows how to use the Invoke-MgBetaKeepCommunicationCallAlive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

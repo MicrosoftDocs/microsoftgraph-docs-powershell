@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyFeatureRolloutPolicy
@@ -41,24 +43,24 @@ Retrieve the properties and relationships of a featureRolloutPolicy object.
 ### Example 1: Get a feature rollout policy
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId
-```
-This example shows how to use the Get-MgPolicyFeatureRolloutPolicy Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get a feature rollout policy
 
 ### Example 2: Get a feature rollout policy and expand appliesTo
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -ExpandProperty "appliesTo"
-```
-This example shows how to use the Get-MgPolicyFeatureRolloutPolicy Cmdlet.
+Get-MgPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -ExpandProperty "appliesTo" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get a feature rollout policy and expand appliesto
 
 
 ## PARAMETERS

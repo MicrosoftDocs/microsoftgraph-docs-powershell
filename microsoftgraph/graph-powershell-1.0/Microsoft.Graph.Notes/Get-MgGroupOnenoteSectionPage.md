@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesectionpage
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgGroupOnenoteSectionPage
@@ -23,6 +24,8 @@ Get-MgGroupOnenoteSectionPage -GroupId <String> -OnenoteSectionId <String> [-Exp
 
 ## DESCRIPTION
 Retrieve a list of page objects from the specified section.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -221,4 +224,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteSectionPage?view=graph-powershell-beta)
-

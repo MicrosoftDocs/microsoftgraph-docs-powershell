@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileAppConfiguration
 
 ## SYNOPSIS
-Delete navigation property mobileAppConfigurations for deviceAppManagement
+Deletes a iosMobileAppConfiguration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-Delete navigation property mobileAppConfigurations for deviceAppManagement
+Deletes a iosMobileAppConfiguration.
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementManagedAppRegistrationOperation
 
 ## SYNOPSIS
-Delete navigation property operations for deviceAppManagement
+Deletes a managedAppOperation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Delete navigation property operations for deviceAppManagement
+Deletes a managedAppOperation.
 
 ## PARAMETERS
 

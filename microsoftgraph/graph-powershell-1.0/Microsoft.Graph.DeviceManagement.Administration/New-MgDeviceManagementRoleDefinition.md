@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Create new navigation property to roleDefinitions for deviceManagement
+Create a new deviceAndAppManagementRoleDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefiniti
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleDefinitions for deviceManagement
+Create a new deviceAndAppManagementRoleDefinition object.
 
 ## PARAMETERS
 

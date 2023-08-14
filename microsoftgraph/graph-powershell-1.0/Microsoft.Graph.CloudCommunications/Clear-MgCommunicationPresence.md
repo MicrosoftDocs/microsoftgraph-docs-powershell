@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresence
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Clear-MgCommunicationPresence
 
 ## SYNOPSIS
 Clear the application's presence session for a user.
-If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
+If it is the user's only presence session, the user's presence will change to Offline/Offline.
 For details about presences sessions, see presence: setPresence.
 
 > [!NOTE]
@@ -45,8 +46,10 @@ Clear-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Clear the application's presence session for a user.
-If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
+If it is the user's only presence session, the user's presence will change to Offline/Offline.
 For details about presences sessions, see presence: setPresence.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -212,4 +215,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Clear-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresence?view=graph-powershell-beta)
-

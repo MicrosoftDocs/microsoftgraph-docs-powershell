@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmerubric
 schema: 2.0.0
+ms.prod: education
+ms.prod: education
 ---
 
 # Get-MgEducationMeRubric
@@ -43,13 +45,13 @@ Only teachers and students can perform this operation.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationMeRubric -EducationRubricId $educationRubricId
+
 ```
 This example shows how to use the Get-MgEducationMeRubric Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

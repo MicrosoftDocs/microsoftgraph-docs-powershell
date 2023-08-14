@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/disconnect-mgdevicemanagementremoteassistancepartner
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Disconnect-MgDeviceManagementRemoteAssistancePartner
@@ -29,6 +30,19 @@ Disconnect-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManage
 
 ## DESCRIPTION
 A request to remove the active TeamViewer connector
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Disconnect-MgDeviceManagementRemoteAssistancePartner -RemoteAssistancePartnerId $remoteAssistancePartnerId
+
+```
+This example shows how to use the Disconnect-MgDeviceManagementRemoteAssistancePartner Cmdlet.
+
 
 ## PARAMETERS
 
@@ -143,4 +157,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Disconnect-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disconnect-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
-

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPolicyPermissionGrantPolicyExclude
 
 ## SYNOPSIS
-Deletes a permissionGrantConditionSet from the **excludes** collection of a permissionGrantPolicy.
+Deletes a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdenti
 ```
 
 ## DESCRIPTION
-Deletes a permissionGrantConditionSet from the **excludes** collection of a permissionGrantPolicy.
+Deletes a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
 
 ## EXAMPLES
 ### Example 1: Remove a permission grant policy exclude

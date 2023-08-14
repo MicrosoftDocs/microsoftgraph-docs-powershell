@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add conditions under which a permission grant event is *excluded* in a permission grant policy.
-You do this by adding a permissionGrantConditionSet to the **excludes** collection of a  permissionGrantPolicy.
+You do this by adding a permissionGrantConditionSet to the excludes collection of a  permissionGrantPolicy.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ New-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Add conditions under which a permission grant event is *excluded* in a permission grant policy.
-You do this by adding a permissionGrantConditionSet to the **excludes** collection of a  permissionGrantPolicy.
+You do this by adding a permissionGrantConditionSet to the excludes collection of a  permissionGrantPolicy.
 
 ## EXAMPLES
 ### Example 1: Create a permission grant policy exclude
@@ -236,9 +236,9 @@ Accept wildcard characters: False
 
 ### -Permissions
 The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission.
-The id of delegated permissions can be found in the oauth2PermissionScopes property of the API's **servicePrincipal** object.
-The id of application permissions can be found in the appRoles property of the API's **servicePrincipal** object.
-The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's **servicePrincipal** object.
+The id of delegated permissions can be found in the oauth2PermissionScopes property of the API's servicePrincipal object.
+The id of application permissions can be found in the appRoles property of the API's servicePrincipal object.
+The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's servicePrincipal object.
 Default is the single value all.
 
 ```yaml
@@ -344,7 +344,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ClientApplicationsFromVerifiedPublisherOnly <Boolean?>]`: Set to true to only match on client applications with a verified publisher. Set to false to match on any client app, even if it does not have a verified publisher. Default is false.
   - `[PermissionClassification <String>]`: The permission classification for the permission being granted, or all to match with any permission classification (including permissions which are not classified). Default is all.
   - `[PermissionType <String>]`: permissionType
-  - `[Permissions <String[]>]`: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission. The id of delegated permissions can be found in the oauth2PermissionScopes property of the API's **servicePrincipal** object. The id of application permissions can be found in the appRoles property of the API's **servicePrincipal** object. The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's **servicePrincipal** object. Default is the single value all.
+  - `[Permissions <String[]>]`: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission. The id of delegated permissions can be found in the oauth2PermissionScopes property of the API's servicePrincipal object. The id of application permissions can be found in the appRoles property of the API's servicePrincipal object. The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's servicePrincipal object. Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g. the API) for which a permission is being granted, or any to match with any resource application or API. Default is any.
 
 `INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter

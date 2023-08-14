@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingattendancereportattendancerecord
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
@@ -61,6 +62,8 @@ Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord
 ## DESCRIPTION
 List of attendance records of an attendance report.
 Read-only.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -316,4 +319,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
-

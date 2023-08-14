@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassification
 schema: 2.0.0
+ms.prod: mail
 ---
 
 # Get-MgBetaUserInferenceClassification
@@ -32,18 +33,14 @@ Relevance classification of the user's messages based on explicit designations w
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Mail
 
-$params = @{
-	classifyAs = "focused"
-}
-
 # A UPN can also be used as -UserId.
-Update-MgBetaUserInferenceClassificationOverride -UserId $userId -InferenceClassificationOverrideId $inferenceClassificationOverrideId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaBetaUserInferenceClassificationOverride Cmdlet.
+Get-MgBetaUserInferenceClassificationOverride -UserId $userId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example shows how to use the Get-MgBetaUserInferenceClassificationOverride Cmdlet.
 
 
 ## PARAMETERS

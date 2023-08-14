@@ -46,6 +46,7 @@ Create an identity resource for a new member in an externalGroup.
 ### Example 1: Add an Azure Active Directory user as a member
 
 ```powershell
+
 Import-Module Microsoft.Graph.Search
 
 $params = @{
@@ -54,14 +55,14 @@ $params = @{
 }
 
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-```
-This example shows how to use the New-MgExternalConnectionGroupMember Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will add an azure active directory user as a member
 
 ### Example 2: Add an Azure Active Directory group as a member
 
 ```powershell
+
 Import-Module Microsoft.Graph.Search
 
 $params = @{
@@ -70,14 +71,14 @@ $params = @{
 }
 
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-```
-This example shows how to use the New-MgExternalConnectionGroupMember Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will add an azure active directory group as a member
 
 ### Example 3: Add another external group as a member
 
 ```powershell
+
 Import-Module Microsoft.Graph.Search
 
 $params = @{
@@ -86,10 +87,9 @@ $params = @{
 }
 
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-```
-This example shows how to use the New-MgExternalConnectionGroupMember Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will add another external group as a member
 
 
 ## PARAMETERS

@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingheaderlogo
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgOrganizationBrandingHeaderLogo
 
 ## SYNOPSIS
-Get headerLogo for the navigation property branding from organization
+A company logo that appears in the header of the sign-in page.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingHeaderLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingHeaderLogo?view=graph-powershell-beta)
@@ -28,7 +31,9 @@ Get-MgOrganizationBrandingHeaderLogo -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Get headerLogo for the navigation property branding from organization
+A company logo that appears in the header of the sign-in page.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.
 
 ## PARAMETERS
 

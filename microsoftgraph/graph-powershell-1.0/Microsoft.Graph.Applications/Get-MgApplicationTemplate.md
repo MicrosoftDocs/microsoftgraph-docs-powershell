@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate
 schema: 2.0.0
+ms.prod: applications
+ms.prod: applications
 ---
 
 # Get-MgApplicationTemplate
@@ -41,13 +43,13 @@ Retrieve the properties of an applicationTemplate object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
 
-Get-MgApplicationTemplate -ApplicationTemplateId $applicationTemplateId
+Get-MgApplicationTemplate
+
 ```
 This example shows how to use the Get-MgApplicationTemplate Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

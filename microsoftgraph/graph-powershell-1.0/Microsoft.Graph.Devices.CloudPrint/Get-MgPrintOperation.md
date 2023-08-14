@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintoperation
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Get-MgPrintOperation
@@ -41,13 +42,13 @@ Retrieve the properties and relationships of a printOperation object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintOperation -PrintOperationId $printOperationId
+
 ```
 This example shows how to use the Get-MgPrintOperation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

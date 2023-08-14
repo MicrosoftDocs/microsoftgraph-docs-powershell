@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Create a new **audioRoutingGroup**.
+Create a new audioRoutingGroup.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
@@ -42,7 +42,7 @@ New-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsI
 ```
 
 ## DESCRIPTION
-Create a new **audioRoutingGroup**.
+Create a new audioRoutingGroup.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaCommunicationCallAudioRoutingGroup Cmdlet

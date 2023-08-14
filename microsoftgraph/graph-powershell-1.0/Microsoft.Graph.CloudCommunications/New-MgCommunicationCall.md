@@ -42,48 +42,10 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You will need to register the calling bot and go through the list of permissions needed as mentioned below.
 
 ## EXAMPLES
-### Example 1: Create peer-to-peer VoIP call with service hosted media
+### Example 1: Code snippet
 
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 
-$params = @{
-	"@odata.type" = "#microsoft.graph.call"
-	callbackUri = "https://bot.contoso.com/callback"
-	targets = @(
-		@{
-			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			identity = @{
-				"@odata.type" = "#microsoft.graph.identitySet"
-				user = @{
-					"@odata.type" = "#microsoft.graph.identity"
-					displayName = "John"
-					id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
-				}
-			}
-		}
-	)
-	requestedModalities = @(
-		"audio"
-	)
-	callOptions = @{
-		"@odata.type" = "#microsoft.graph.outgoingCallOptions"
-		isContentSharingNotificationEnabled = $true
-	}
-	mediaConfig = @{
-		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
-	}
-}
-
-New-MgCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgCommunicationCall Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create peer-to-peer VoIP call with application hosted media
-
-```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -120,19 +82,19 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "&lt;Media Session Configuration&gt;"
+		blob = "<Media Session Configuration>"
 	}
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
 ```
 This example shows how to use the New-MgCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Create a group call with service hosted media
+### Example 2: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -185,14 +147,14 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
 ```
 This example shows how to use the New-MgCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Create a group call with application hosted media
+### Example 3: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -245,14 +207,14 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
 ```
 This example shows how to use the New-MgCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Join scheduled meeting with service hosted media
+### Example 4: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -288,14 +250,14 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
 ```
 This example shows how to use the New-MgCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Join scheduled meeting with application hosted media
+### Example 5: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -330,14 +292,14 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
 ```
 This example shows how to use the New-MgCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 7: Join a scheduled meeting with joinMeetingId and passcode
+### Example 6: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -360,14 +322,14 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
 ```
 This example shows how to use the New-MgCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 8: Join a scheduled meeting with joinMeetingId
+### Example 7: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -390,14 +352,14 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
 ```
 This example shows how to use the New-MgCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 9: Create peer-to-peer PSTN call with service hosted media
+### Example 8: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -440,14 +402,14 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
 ```
 This example shows how to use the New-MgCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 10: Create peer-to-peer PSTN call with application hosted media
+### Example 9: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -485,16 +447,15 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "&lt;Media Session Configuration&gt;"
+		blob = "<Media Session Configuration>"
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
 ```
 This example shows how to use the New-MgCommunicationCall Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -976,18 +937,18 @@ To create the parameters described below, construct a hash table containing the 
 
 `AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup[]>`: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Receivers <String[]>]`: 
+  - `[Receivers <String[]>]`: List of receiving participant ids.
   - `[RoutingMode <String>]`: routingMode
-  - `[Sources <String[]>]`: 
+  - `[Sources <String[]>]`: List of source participant ids.
 
 `BODYPARAMETER <IMicrosoftGraphCall>`: call
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Receivers <String[]>]`: 
+    - `[Receivers <String[]>]`: List of receiving participant ids.
     - `[RoutingMode <String>]`: routingMode
-    - `[Sources <String[]>]`: 
+    - `[Sources <String[]>]`: List of source participant ids.
   - `[CallChainId <String>]`: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This needs to be copied over from Microsoft.Graph.Call.CallChainId.
   - `[CallOptions <IMicrosoftGraphCallOptions>]`: callOptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

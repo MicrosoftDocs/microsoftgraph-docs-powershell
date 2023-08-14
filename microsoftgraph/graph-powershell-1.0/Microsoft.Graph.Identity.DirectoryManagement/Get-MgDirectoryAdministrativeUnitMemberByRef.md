@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberbyref
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryAdministrativeUnitMemberByRef
@@ -27,13 +28,17 @@ Users and groups that are members of this administrative unit.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgDirectoryAdministrativeUnitMemberByRef Cmdlet
+### Example 1: List member references
+
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
 Get-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId
+
 ```
-This example shows how to use the Get-MgDirectoryAdministrativeUnitMemberByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will list member references
+
 
 ## PARAMETERS
 

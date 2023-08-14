@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementiOSManagedAppProtection
 
 ## SYNOPSIS
-Create new navigation property to iosManagedAppProtections for deviceAppManagement
+Create a new iosManagedAppProtection object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
@@ -45,7 +45,7 @@ New-MgDeviceAppManagementiOSManagedAppProtection -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create new navigation property to iosManagedAppProtections for deviceAppManagement
+Create a new iosManagedAppProtection object.
 
 ## PARAMETERS
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemversioncontent
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgDriveItemVersionContent
@@ -28,6 +29,8 @@ Get-MgDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String> [-
 
 ## DESCRIPTION
 The content stream for this version of the item.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -168,4 +171,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemVersionContent?view=graph-powershell-beta)
-

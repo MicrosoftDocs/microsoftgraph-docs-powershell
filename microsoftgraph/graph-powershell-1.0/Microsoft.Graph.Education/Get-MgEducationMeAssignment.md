@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignment
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationMeAssignment
@@ -41,13 +42,13 @@ Assignments belonging to the user.
 ### Example 1: Get the assignments of the logged in user
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationMeAssignment
-```
-This example shows how to use the Get-MgEducationMeAssignment Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get the assignments of the logged in user
 
 
 ## PARAMETERS

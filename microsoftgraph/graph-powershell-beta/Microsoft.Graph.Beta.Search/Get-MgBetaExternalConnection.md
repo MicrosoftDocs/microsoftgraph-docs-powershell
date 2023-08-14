@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnection
 schema: 2.0.0
+ms.prod: search
+ms.prod: search
 ---
 
 # Get-MgBetaExternalConnection
@@ -41,13 +43,13 @@ Retrieve the properties and relationships of an externalConnection.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
 
-Get-MgBetaExternalConnection -ExternalConnectionId $externalConnectionId
+Get-MgBetaExternalConnection
+
 ```
 This example shows how to use the Get-MgBetaExternalConnection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingfavicon
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgOrganizationBrandingFavicon
 
 ## SYNOPSIS
-Get favicon for the navigation property branding from organization
+A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingFavicon?view=graph-powershell-beta)
@@ -27,7 +28,7 @@ Get-MgOrganizationBrandingFavicon -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-Get favicon for the navigation property branding from organization
+A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaDismissDirectoryRecommendationImpactedResource
 
 ## SYNOPSIS
-Dismiss an impactedResources object and update its status to `dismissed`.
+Dismiss an impactedResources object and update its status to dismissed.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-Dismiss an impactedResources object and update its status to `dismissed`.
+Dismiss an impactedResources object and update its status to dismissed.
 
 ## PARAMETERS
 

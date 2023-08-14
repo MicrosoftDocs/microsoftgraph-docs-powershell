@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementReport
 
 ## SYNOPSIS
-Update the navigation property reports in deviceManagement
+Update the properties of a deviceManagementReports object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaDeviceManagementReport?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementR
 ```
 
 ## DESCRIPTION
-Update the navigation property reports in deviceManagement
+Update the properties of a deviceManagementReports object.
 
 ## PARAMETERS
 

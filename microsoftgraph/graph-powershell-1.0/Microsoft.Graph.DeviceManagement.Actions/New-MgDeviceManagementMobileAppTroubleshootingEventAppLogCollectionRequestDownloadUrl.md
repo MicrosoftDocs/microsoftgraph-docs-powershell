@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl
 
 ## SYNOPSIS
-Invoke action createDownloadUrl
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownlo
 ```
 
 ## DESCRIPTION
-Invoke action createDownloadUrl
+Not yet documented
 
 ## PARAMETERS
 

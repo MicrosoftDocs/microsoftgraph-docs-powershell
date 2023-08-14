@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobject
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryObject
@@ -41,13 +42,13 @@ Retrieve the properties and relationships of a directoryObject object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
 
 Get-MgDirectoryObject -DirectoryObjectId $directoryObjectId
+
 ```
 This example shows how to use the Get-MgDirectoryObject Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

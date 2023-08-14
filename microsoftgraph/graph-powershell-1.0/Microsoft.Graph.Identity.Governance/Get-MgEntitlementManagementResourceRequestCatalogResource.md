@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerequestcatalogresource
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementResourceRequestCatalogResource
 
 ## SYNOPSIS
-Get resources from identityGovernance
+Access package resources in this catalog.
 
 ## SYNTAX
 
@@ -33,7 +34,7 @@ Get-MgEntitlementManagementResourceRequestCatalogResource -InputObject <IIdentit
 ```
 
 ## DESCRIPTION
-Get resources from identityGovernance
+Access package resources in this catalog.
 
 ## PARAMETERS
 

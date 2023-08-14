@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new task trigger on the specified printer.
-Currently, only **one** task trigger can be specified per printer, but this limit might be removed in the future.
+Currently, only one task trigger can be specified per printer, but this limit might be removed in the future.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
@@ -44,12 +44,13 @@ New-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 
 ## DESCRIPTION
 Create a new task trigger on the specified printer.
-Currently, only **one** task trigger can be specified per printer, but this limit might be removed in the future.
+Currently, only one task trigger can be specified per printer, but this limit might be removed in the future.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 $params = @{
@@ -58,10 +59,9 @@ $params = @{
 }
 
 New-MgPrintPrinterTaskTrigger -PrinterId $printerId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgPrintPrinterTaskTrigger Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementdefaultmanagedappprotection
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementDefaultManagedAppProtection
 
 ## SYNOPSIS
-Default managed app policies.
+Read properties and relationships of the defaultManagedAppProtection object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCorpo
 ```
 
 ## DESCRIPTION
-Default managed app policies.
+Read properties and relationships of the defaultManagedAppProtection object.
 
 ## PARAMETERS
 

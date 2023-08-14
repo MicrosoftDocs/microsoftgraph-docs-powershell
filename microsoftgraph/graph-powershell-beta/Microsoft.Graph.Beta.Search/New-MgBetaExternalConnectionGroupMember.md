@@ -65,7 +65,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
-	id = "e5477431-1038-484e-bf69-1dfedb97a110"
+	id = "1431b9c38ee647f6a"
 	type = "externalGroup"
 }
 

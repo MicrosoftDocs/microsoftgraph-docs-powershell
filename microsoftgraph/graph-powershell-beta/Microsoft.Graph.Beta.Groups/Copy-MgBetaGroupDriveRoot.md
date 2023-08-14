@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupdriveroot
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Copy-MgBetaGroupDriveRoot
@@ -43,6 +44,8 @@ Copy-MgBetaGroupDriveRoot -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -289,4 +292,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupDriveRoot?view=graph-powershell-1.0)
-

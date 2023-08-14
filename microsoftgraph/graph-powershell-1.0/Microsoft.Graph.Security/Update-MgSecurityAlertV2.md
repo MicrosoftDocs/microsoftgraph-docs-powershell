@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSecurityAlertV2
 
 ## SYNOPSIS
-Update the properties of an alert object in an organization based on the specified alert **id** property.
+Update the properties of an alert object in an organization based on the specified alert id property.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Update the properties of an alert object in an organization based on the specified alert **id** property.
+Update the properties of an alert object in an organization based on the specified alert id property.
 
 ## PARAMETERS
 

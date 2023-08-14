@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscalendarview
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # Get-MgBookingBusinessCalendarView
@@ -45,13 +46,13 @@ Nullable.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Bookings
 
-Get-MgBookingBusinessCalendarView -BookingBusinessId $bookingBusinessId -Start "2018-04-30T00:00:00Z" -End "2018-05-10T00:00:00Z"
+Get-MgBookingBusinessCalendarView -BookingBusinessId $bookingBusinessId -Start "2018-04-30T00:00:00Z" -End "2018-05-10T00:00:00Z" 
+
 ```
 This example shows how to use the Get-MgBookingBusinessCalendarView Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

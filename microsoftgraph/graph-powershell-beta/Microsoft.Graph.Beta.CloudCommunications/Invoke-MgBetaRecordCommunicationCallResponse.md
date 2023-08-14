@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarecordcommunicationcallresponse
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaRecordCommunicationCallResponse
@@ -61,31 +62,36 @@ The recording is not saved permanently by the by the Cloud Communications Platfo
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaRecordCommunicationCallResponse Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	BargeInAllowed = $true
-	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
-	Prompts = @(
+	bargeInAllowed = $true
+	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+	prompts = @(
 		@{
 			"@odata.type" = "#microsoft.graph.mediaPrompt"
 		}
 	)
-	MaxRecordDurationInSeconds = 10
-	InitialSilenceTimeoutInSeconds = 5
-	MaxSilenceTimeoutInSeconds = 2
-	PlayBeep = $true
-	StopTones = @(
+	maxRecordDurationInSeconds = 10
+	initialSilenceTimeoutInSeconds = 5
+	maxSilenceTimeoutInSeconds = 2
+	playBeep = $true
+	stopTones = @(
 		"#"
 		"1"
 		"*"
 	)
 }
+
 Invoke-MgBetaRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaRecordCommunicationCallResponse Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

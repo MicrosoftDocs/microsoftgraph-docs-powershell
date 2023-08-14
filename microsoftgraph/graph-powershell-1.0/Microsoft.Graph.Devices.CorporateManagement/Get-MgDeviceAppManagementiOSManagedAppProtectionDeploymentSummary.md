@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 
 ## SYNOPSIS
-Navigation property to deployment summary of the configuration.
+Read properties and relationships of the managedAppPolicyDeploymentSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
@@ -29,7 +30,7 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 ```
 
 ## DESCRIPTION
-Navigation property to deployment summary of the configuration.
+Read properties and relationships of the managedAppPolicyDeploymentSummary object.
 
 ## PARAMETERS
 

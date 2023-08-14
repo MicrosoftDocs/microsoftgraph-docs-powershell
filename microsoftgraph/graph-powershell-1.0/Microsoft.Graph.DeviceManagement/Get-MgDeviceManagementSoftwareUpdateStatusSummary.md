@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementsoftwareupdatestatussummary
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementSoftwareUpdateStatusSummary
 
 ## SYNOPSIS
-The software update status summary.
+Read properties and relationships of the softwareUpdateStatusSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary?view=graph-powershell-beta)
@@ -21,7 +22,7 @@ Get-MgDeviceManagementSoftwareUpdateStatusSummary [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-The software update status summary.
+Read properties and relationships of the softwareUpdateStatusSummary object.
 
 ## PARAMETERS
 

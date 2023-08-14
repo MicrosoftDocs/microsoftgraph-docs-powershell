@@ -66,6 +66,7 @@ Assignments start in the Draft state, which means that students will not see the
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 $params = @{
@@ -87,10 +88,9 @@ $params = @{
 }
 
 New-MgEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgEducationClassAssignment Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

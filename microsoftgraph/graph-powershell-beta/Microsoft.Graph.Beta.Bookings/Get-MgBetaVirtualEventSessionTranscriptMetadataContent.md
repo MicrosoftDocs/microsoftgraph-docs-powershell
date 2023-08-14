@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessiontranscriptmetadatacontent
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaVirtualEventSessionTranscriptMetadataContent
 
 ## SYNOPSIS
-A field that represents the time-aligned metadata of the utterances in the transcript.
+The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
 ## SYNTAX
@@ -26,7 +27,7 @@ Get-MgBetaVirtualEventSessionTranscriptMetadataContent -InputObject <IBookingsId
 ```
 
 ## DESCRIPTION
-A field that represents the time-aligned metadata of the utterances in the transcript.
+The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
 ## PARAMETERS

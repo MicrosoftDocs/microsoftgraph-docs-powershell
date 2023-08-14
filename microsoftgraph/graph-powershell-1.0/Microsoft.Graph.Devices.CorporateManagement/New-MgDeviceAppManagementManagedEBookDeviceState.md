@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementManagedEBookDeviceState
 
 ## SYNOPSIS
-Create new navigation property to deviceStates for deviceAppManagement
+Create a new deviceInstallState object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorporate
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceStates for deviceAppManagement
+Create a new deviceInstallState object.
 
 ## PARAMETERS
 

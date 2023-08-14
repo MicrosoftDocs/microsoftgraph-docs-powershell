@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/copy-mgteam
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Copy-MgTeam
@@ -55,20 +56,25 @@ This operation also creates a copy of the corresponding group.\nYou can specify 
 \nThe recommended delay between GETs is 5 seconds.
 
 ## EXAMPLES
-### Example 1: Using the Copy-MgTeam Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
+
 $params = @{
-	DisplayName = "Library Assist"
-	Description = "Self help community for library"
-	MailNickname = "libassist"
-	PartsToClone = "apps,tabs,settings,channels,members"
-	Visibility = "public"
+	displayName = "Library Assist"
+	description = "Self help community for library"
+	mailNickname = "libassist"
+	partsToClone = "apps,tabs,settings,channels,members"
+	visibility = "public"
 }
+
 Copy-MgTeam -TeamId $teamId -BodyParameter $params
+
 ```
 This example shows how to use the Copy-MgTeam Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -312,6 +318,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift

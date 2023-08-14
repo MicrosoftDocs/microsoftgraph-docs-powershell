@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblegroup
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementAccessPackageIncompatibleGroup
@@ -28,13 +29,13 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
+
 ```
 This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

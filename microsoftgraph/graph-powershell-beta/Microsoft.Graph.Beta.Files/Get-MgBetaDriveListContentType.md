@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttype
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaDriveListContentType
@@ -38,17 +39,6 @@ Get-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-ExpandProperty <S
 Get contentTypes from drives
 
 ## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
-
-Get-MgBetaSiteListContentType -SiteId $siteId -ListId $listId
-```
-This example shows how to use the Get-MgBetaDriveListContentType Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

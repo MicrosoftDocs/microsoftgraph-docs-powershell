@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the properties and relationships of the currently authenticated organization.
-Since the **organization** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
+Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganization?view=graph-powershell-1.0)
@@ -37,7 +37,7 @@ Get-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-Exp
 
 ## DESCRIPTION
 Get the properties and relationships of the currently authenticated organization.
-Since the **organization** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
+Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
 
 ## EXAMPLES
 ### Example 1: Code snippet

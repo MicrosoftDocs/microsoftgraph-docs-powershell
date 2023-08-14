@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTermAndConditionAssignment
 
 ## SYNOPSIS
-Create new navigation property to assignments for deviceManagement
+Create a new termsAndConditionsAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTermAndConditionAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndConditionAssignment?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ New-MgDeviceManagementTermAndConditionAssignment -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Create new navigation property to assignments for deviceManagement
+Create a new termsAndConditionsAssignment object.
 
 ## PARAMETERS
 

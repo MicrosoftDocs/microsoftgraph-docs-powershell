@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaabortprintprintersharejob
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Invoke-MgBetaAbortPrintPrinterShareJob
@@ -10,7 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Abort a print job.
 Only applications using application permissions can abort a print job.
-Aborting a print job will only succeed if there is a printTask in a `processing` state on the associated print job, started by a trigger that the requesting app created.
+Aborting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 
 ## SYNTAX
@@ -44,7 +45,7 @@ Invoke-MgBetaAbortPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Abort a print job.
 Only applications using application permissions can abort a print job.
-Aborting a print job will only succeed if there is a printTask in a `processing` state on the associated print job, started by a trigger that the requesting app created.
+Aborting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 
 ## PARAMETERS

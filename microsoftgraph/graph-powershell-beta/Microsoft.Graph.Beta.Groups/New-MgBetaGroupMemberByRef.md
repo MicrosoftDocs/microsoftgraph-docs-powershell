@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaGroupMemberByRef
 
 ## SYNOPSIS
-Add a member to a security or Microsoft 365 group through the **members** navigation property.
+Add a member to a security or Microsoft 365 group through the members navigation property.
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
 > [!NOTE]
@@ -41,7 +41,7 @@ New-MgBetaGroupMemberByRef -InputObject <IGroupsIdentity> -BodyParameter <IRefer
 ```
 
 ## DESCRIPTION
-Add a member to a security or Microsoft 365 group through the **members** navigation property.
+Add a member to a security or Microsoft 365 group through the members navigation property.
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
 ## EXAMPLES

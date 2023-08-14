@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mgsharelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Copy-MgShareListContentTypeToDefaultContentLocation
@@ -47,6 +48,8 @@ Copy-MgShareListContentTypeToDefaultContentLocation -InputObject <IFilesIdentity
 ## DESCRIPTION
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -292,4 +295,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaShareListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaShareListContentTypeToDefaultContentLocation?view=graph-powershell-beta)
-

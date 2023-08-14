@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Security
-Module Guid: 6a873b96-58e9-44b1-9805-d1c5670a4f73
+Module Guid: b65f538b-392f-46b8-960a-8aa71f6c0efd
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,12 +13,12 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.Beta.Security Cmdlets
 ### [Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold](Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold.md)
 Start the process of applying hold on eDiscovery custodians.
-After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
+After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ### [Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold.md)
 Start the process of applying hold on eDiscovery non-custodial data sources.
-After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
+After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ### [Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag](Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag.md)
@@ -27,14 +27,14 @@ For details, see Tag documents in a review set in eDiscovery.
 
 ### [Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet](Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet.md)
 Start the process of adding a collection from Microsoft 365 services to a review set.
-After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers.
+After the operation is created, you can get the status of the operation by retrieving the Location parameter from the response headers.
 The location provides a URL that will return a Add to review set operation.
 
 ### [Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData](Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData.md)
 Delete Microsoft Teams messages contained in a eDiscovery search.
-You can collect and purge the following categories of Teams content:\n- **Teams 1:1 chats** - Chat messages, posts, and attachments shared in a Teams conversation between two people.
-Teams 1:1 chats are also called *conversations*.\n- **Teams group chats** - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
-Also called *1:N* chats or *group conversations*.\n- **Teams channels** - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\n- **Private channels** - Message posts, replies, and attachments shared in a private Teams channel.\n- **Shared channels** - Message posts, replies, and attachments shared in a shared Teams channel.
+You can collect and purge the following categories of Teams content:\n- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
+Teams 1:1 chats are also called *conversations*.\n- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
+Also called *1:N* chats or *group conversations*.\n- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\n- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\n- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
 For more information about purging Teams messages, see:\n- eDiscovery solution series: Data spillage scenario - Search and purge\n- eDiscovery (Premium) workflow for content in Microsoft Teams
 
 ### [Close-MgBetaSecurityCaseEdiscoveryCase](Close-MgBetaSecurityCaseEdiscoveryCase.md)
@@ -42,7 +42,7 @@ Close an eDiscovery case.
 For details, see Close a case.
 
 ### [Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet](Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet.md)
-Initiate an export from a **reviewSet**.
+Initiate an export from a reviewSet.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
 ### [Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery.md)
@@ -62,7 +62,7 @@ Retrieve the properties and relationships of an alert object.
 Get the number of the resource
 
 ### [Get-MgBetaSecurityAlertV2](Get-MgBetaSecurityAlertV2.md)
-Get the properties and relationships of an alert in an organization based on the specified alert **id** property.
+Get the properties and relationships of an alert in an organization based on the specified alert id property.
 
 ### [Get-MgBetaSecurityAlertV2Count](Get-MgBetaSecurityAlertV2Count.md)
 Get the number of the resource
@@ -326,7 +326,7 @@ Get the number of the resource
 ### [Get-MgBetaSecurityIncident](Get-MgBetaSecurityIncident.md)
 Retrieve the properties and relationships of an incident object.
 Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple alert objects.
-Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an **incident**.
+Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
 
 ### [Get-MgBetaSecurityIncidentAlert](Get-MgBetaSecurityIncidentAlert.md)
 The list of related alerts.
@@ -343,7 +343,7 @@ Get informationProtection from security
 
 ### [Get-MgBetaSecurityInformationProtectionLabelPolicySetting](Get-MgBetaSecurityInformationProtectionLabelPolicySetting.md)
 Read the properties and relationships of an informationProtectionPolicySetting object.
-The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
+The settings exposed by this API should be used in applications to populate the moreInfoUrl property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
 
 ### [Get-MgBetaSecurityInformationProtectionSensitivityLabel](Get-MgBetaSecurityInformationProtectionSensitivityLabel.md)
 Read the Microsoft Purview Information Protection labels for the user or organization.
@@ -519,6 +519,12 @@ Read the properties and relationships of a host object.
 The host resource is the abstract base type that returns an implementation.
 A host can be of one of the following types:
 
+### [Get-MgBetaSecurityThreatIntelligenceHostChildHostPair](Get-MgBetaSecurityThreatIntelligenceHostChildHostPair.md)
+The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+
+### [Get-MgBetaSecurityThreatIntelligenceHostChildHostPairCount](Get-MgBetaSecurityThreatIntelligenceHostChildHostPairCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaSecurityThreatIntelligenceHostComponent](Get-MgBetaSecurityThreatIntelligenceHostComponent.md)
 Read the properties and relationships of a hostComponent object.
 
@@ -542,6 +548,24 @@ Indicates that a cookie of this name and domain was found related to this host.
 ### [Get-MgBetaSecurityThreatIntelligenceHostCount](Get-MgBetaSecurityThreatIntelligenceHostCount.md)
 Get the number of the resource
 
+### [Get-MgBetaSecurityThreatIntelligenceHostPair](Get-MgBetaSecurityThreatIntelligenceHostPair.md)
+Read the properties and relationships of a hostPair object.
+
+### [Get-MgBetaSecurityThreatIntelligenceHostPairChildHost](Get-MgBetaSecurityThreatIntelligenceHostPairChildHost.md)
+Host reached via the parentHost.
+
+### [Get-MgBetaSecurityThreatIntelligenceHostPairCount](Get-MgBetaSecurityThreatIntelligenceHostPairCount.md)
+Get the number of the resource
+
+### [Get-MgBetaSecurityThreatIntelligenceHostPairParentHost](Get-MgBetaSecurityThreatIntelligenceHostPairParentHost.md)
+Host used to reach the childHost.
+
+### [Get-MgBetaSecurityThreatIntelligenceHostParentHostPair](Get-MgBetaSecurityThreatIntelligenceHostParentHostPair.md)
+The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
+
+### [Get-MgBetaSecurityThreatIntelligenceHostParentHostPairCount](Get-MgBetaSecurityThreatIntelligenceHostParentHostPairCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaSecurityThreatIntelligenceHostPassiveDns](Get-MgBetaSecurityThreatIntelligenceHostPassiveDns.md)
 Passive DNS retrieval about this host.
 
@@ -556,6 +580,15 @@ Get the number of the resource
 
 ### [Get-MgBetaSecurityThreatIntelligenceHostReputation](Get-MgBetaSecurityThreatIntelligenceHostReputation.md)
 Get the properties and relationships of a hostReputation object.
+
+### [Get-MgBetaSecurityThreatIntelligenceHostSslCertificate](Get-MgBetaSecurityThreatIntelligenceHostSslCertificate.md)
+Get hostSslCertificates from security
+
+### [Get-MgBetaSecurityThreatIntelligenceHostSslCertificateCount](Get-MgBetaSecurityThreatIntelligenceHostSslCertificateCount.md)
+Get the number of the resource
+
+### [Get-MgBetaSecurityThreatIntelligenceHostSslCertificateHost](Get-MgBetaSecurityThreatIntelligenceHostSslCertificateHost.md)
+Get host from security
 
 ### [Get-MgBetaSecurityThreatIntelligenceHostSubdomain](Get-MgBetaSecurityThreatIntelligenceHostSubdomain.md)
 The subdomains that are associated with this host.
@@ -572,6 +605,9 @@ Get the number of the resource
 ### [Get-MgBetaSecurityThreatIntelligenceHostTrackerHost](Get-MgBetaSecurityThreatIntelligenceHostTrackerHost.md)
 The host related to this hostTracker.
 When navigating to a hostTracker from a host, this should be assumed to be a return reference.
+
+### [Get-MgBetaSecurityThreatIntelligenceHostWhoi](Get-MgBetaSecurityThreatIntelligenceHostWhoi.md)
+Get whois from security
 
 ### [Get-MgBetaSecurityThreatIntelligenceIntelProfile](Get-MgBetaSecurityThreatIntelligenceIntelProfile.md)
 Read the properties and relationships of a intelligenceProfile object.
@@ -607,6 +643,18 @@ The artifact related to this indicator.
 ### [Get-MgBetaSecurityThreatIntelligenceProfileIndicatorCount](Get-MgBetaSecurityThreatIntelligenceProfileIndicatorCount.md)
 Get the number of the resource
 
+### [Get-MgBetaSecurityThreatIntelligenceSslCertificate](Get-MgBetaSecurityThreatIntelligenceSslCertificate.md)
+Get sslCertificates from security
+
+### [Get-MgBetaSecurityThreatIntelligenceSslCertificateCount](Get-MgBetaSecurityThreatIntelligenceSslCertificateCount.md)
+Get the number of the resource
+
+### [Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost](Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost.md)
+Get relatedHosts from security
+
+### [Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHostCount](Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHostCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaSecurityThreatIntelligenceSubdomain](Get-MgBetaSecurityThreatIntelligenceSubdomain.md)
 Read the properties and relationships of a subdomain object.
 
@@ -633,6 +681,15 @@ Get the number of the resource
 
 ### [Get-MgBetaSecurityThreatIntelligenceVulnerabilityCount](Get-MgBetaSecurityThreatIntelligenceVulnerabilityCount.md)
 Get the number of the resource
+
+### [Get-MgBetaSecurityThreatIntelligenceWhoisRecord](Get-MgBetaSecurityThreatIntelligenceWhoisRecord.md)
+Get whoisRecords from security
+
+### [Get-MgBetaSecurityThreatIntelligenceWhoisRecordCount](Get-MgBetaSecurityThreatIntelligenceWhoisRecordCount.md)
+Get the number of the resource
+
+### [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHost](Get-MgBetaSecurityThreatIntelligenceWhoisRecordHost.md)
+Get host from security
 
 ### [Get-MgBetaSecurityThreatSubmission](Get-MgBetaSecurityThreatSubmission.md)
 A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.
@@ -702,7 +759,7 @@ Get informationProtection from users
 
 ### [Get-MgBetaUserSecurityInformationProtectionLabelPolicySetting](Get-MgBetaUserSecurityInformationProtectionLabelPolicySetting.md)
 Read the properties and relationships of an informationProtectionPolicySetting object.
-The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
+The settings exposed by this API should be used in applications to populate the moreInfoUrl property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
 
 ### [Get-MgBetaUserSecurityInformationProtectionSensitivityLabel](Get-MgBetaUserSecurityInformationProtectionSensitivityLabel.md)
 Read the Microsoft Purview Information Protection labels for the user or organization.
@@ -867,7 +924,7 @@ Create a new filePlanReferenceTemplate object.
 
 ### [New-MgBetaSecurityLabelRetentionLabel](New-MgBetaSecurityLabelRetentionLabel.md)
 Create a new retentionLabel object.
-To create a disposition review stage, include the **actionAfterRetentionPeriod** property in the request body with one of the possible values specified.
+To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
 ### [New-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](New-MgBetaSecurityLabelRetentionLabelDispositionReviewStage.md)
 Create new navigation property to dispositionReviewStages for security
@@ -902,6 +959,12 @@ Create new navigation property to hostComponents for security
 ### [New-MgBetaSecurityThreatIntelligenceHostCookie](New-MgBetaSecurityThreatIntelligenceHostCookie.md)
 Create new navigation property to hostCookies for security
 
+### [New-MgBetaSecurityThreatIntelligenceHostPair](New-MgBetaSecurityThreatIntelligenceHostPair.md)
+Create new navigation property to hostPairs for security
+
+### [New-MgBetaSecurityThreatIntelligenceHostSslCertificate](New-MgBetaSecurityThreatIntelligenceHostSslCertificate.md)
+Create new navigation property to hostSslCertificates for security
+
 ### [New-MgBetaSecurityThreatIntelligenceHostTracker](New-MgBetaSecurityThreatIntelligenceHostTracker.md)
 Create new navigation property to hostTrackers for security
 
@@ -914,6 +977,9 @@ Create new navigation property to passiveDnsRecords for security
 ### [New-MgBetaSecurityThreatIntelligenceProfileIndicator](New-MgBetaSecurityThreatIntelligenceProfileIndicator.md)
 Create new navigation property to intelligenceProfileIndicators for security
 
+### [New-MgBetaSecurityThreatIntelligenceSslCertificate](New-MgBetaSecurityThreatIntelligenceSslCertificate.md)
+Create new navigation property to sslCertificates for security
+
 ### [New-MgBetaSecurityThreatIntelligenceSubdomain](New-MgBetaSecurityThreatIntelligenceSubdomain.md)
 Create new navigation property to subdomains for security
 
@@ -922,6 +988,9 @@ Create new navigation property to vulnerabilities for security
 
 ### [New-MgBetaSecurityThreatIntelligenceVulnerabilityComponent](New-MgBetaSecurityThreatIntelligenceVulnerabilityComponent.md)
 Create new navigation property to components for security
+
+### [New-MgBetaSecurityThreatIntelligenceWhoisRecord](New-MgBetaSecurityThreatIntelligenceWhoisRecord.md)
+Create new navigation property to whoisRecords for security
 
 ### [New-MgBetaSecurityThreatSubmissionEmailThreat](New-MgBetaSecurityThreatSubmissionEmailThreat.md)
 Create a new emailThreatSubmission object.
@@ -1010,7 +1079,7 @@ Delete navigation property custodians for security
 
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold](Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold.md)
 Start the process of removing hold from eDiscovery custodians.
-After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
+After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource](Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource.md)
@@ -1036,7 +1105,7 @@ Delete navigation property noncustodialDataSources for security
 
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold.md)
 Start the process of removing hold from eDiscovery non-custodial data sources.
-After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
+After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ### [Remove-MgBetaSecurityCaseEdiscoveryCaseOperation](Remove-MgBetaSecurityCaseEdiscoveryCaseOperation.md)
@@ -1162,8 +1231,14 @@ Delete navigation property hostComponents for security
 ### [Remove-MgBetaSecurityThreatIntelligenceHostCookie](Remove-MgBetaSecurityThreatIntelligenceHostCookie.md)
 Delete navigation property hostCookies for security
 
+### [Remove-MgBetaSecurityThreatIntelligenceHostPair](Remove-MgBetaSecurityThreatIntelligenceHostPair.md)
+Delete navigation property hostPairs for security
+
 ### [Remove-MgBetaSecurityThreatIntelligenceHostReputation](Remove-MgBetaSecurityThreatIntelligenceHostReputation.md)
 Delete navigation property reputation for security
+
+### [Remove-MgBetaSecurityThreatIntelligenceHostSslCertificate](Remove-MgBetaSecurityThreatIntelligenceHostSslCertificate.md)
+Delete navigation property hostSslCertificates for security
 
 ### [Remove-MgBetaSecurityThreatIntelligenceHostTracker](Remove-MgBetaSecurityThreatIntelligenceHostTracker.md)
 Delete navigation property hostTrackers for security
@@ -1177,6 +1252,9 @@ Delete navigation property passiveDnsRecords for security
 ### [Remove-MgBetaSecurityThreatIntelligenceProfileIndicator](Remove-MgBetaSecurityThreatIntelligenceProfileIndicator.md)
 Delete navigation property intelligenceProfileIndicators for security
 
+### [Remove-MgBetaSecurityThreatIntelligenceSslCertificate](Remove-MgBetaSecurityThreatIntelligenceSslCertificate.md)
+Delete navigation property sslCertificates for security
+
 ### [Remove-MgBetaSecurityThreatIntelligenceSubdomain](Remove-MgBetaSecurityThreatIntelligenceSubdomain.md)
 Delete navigation property subdomains for security
 
@@ -1185,6 +1263,9 @@ Delete navigation property vulnerabilities for security
 
 ### [Remove-MgBetaSecurityThreatIntelligenceVulnerabilityComponent](Remove-MgBetaSecurityThreatIntelligenceVulnerabilityComponent.md)
 Delete navigation property components for security
+
+### [Remove-MgBetaSecurityThreatIntelligenceWhoisRecord](Remove-MgBetaSecurityThreatIntelligenceWhoisRecord.md)
+Delete navigation property whoisRecords for security
 
 ### [Remove-MgBetaSecurityThreatSubmission](Remove-MgBetaSecurityThreatSubmission.md)
 Delete navigation property threatSubmission for security
@@ -1280,14 +1361,14 @@ Given contentInfo as an input, which includes existing content metadata key-valu
 Update the navigation property securityActions in security
 
 ### [Update-MgBetaSecurityAlert](Update-MgBetaSecurityAlert.md)
-Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions.
+Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
 
 ### [Update-MgBetaSecurityAlertMultiple](Update-MgBetaSecurityAlertMultiple.md)
 Update multiple alerts in one request instead of multiple requests.
 
 ### [Update-MgBetaSecurityAlertV2](Update-MgBetaSecurityAlertV2.md)
-Update the properties of an alert object in an organization based on the specified alert **id** property.
+Update the properties of an alert object in an organization based on the specified alert id property.
 
 ### [Update-MgBetaSecurityAttackSimulationAutomation](Update-MgBetaSecurityAttackSimulationAutomation.md)
 Update the navigation property simulationAutomations in security
@@ -1435,7 +1516,7 @@ Update the navigation property filePlanReferences in security
 
 ### [Update-MgBetaSecurityLabelRetentionLabel](Update-MgBetaSecurityLabelRetentionLabel.md)
 Update the properties of a retentionLabel object.
-To update a disposition review stage, include the **actionAfterRetentionPeriod** property in the request body with one of the possible values specified.
+To update a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
 ### [Update-MgBetaSecurityLabelRetentionLabelDescriptor](Update-MgBetaSecurityLabelRetentionLabelDescriptor.md)
 Update the navigation property descriptors in security
@@ -1450,7 +1531,7 @@ Update the navigation property providerTenantSettings in security
 Update the navigation property secureScores in security
 
 ### [Update-MgBetaSecuritySecureScoreControlProfile](Update-MgBetaSecuritySecureScoreControlProfile.md)
-Update an editable **secureScoreControlProfiles** property within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
+Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
 ### [Update-MgBetaSecuritySubjectRightsRequest](Update-MgBetaSecuritySubjectRightsRequest.md)
 Update the navigation property subjectRightsRequests in security
@@ -1482,8 +1563,14 @@ Update the navigation property hostComponents in security
 ### [Update-MgBetaSecurityThreatIntelligenceHostCookie](Update-MgBetaSecurityThreatIntelligenceHostCookie.md)
 Update the navigation property hostCookies in security
 
+### [Update-MgBetaSecurityThreatIntelligenceHostPair](Update-MgBetaSecurityThreatIntelligenceHostPair.md)
+Update the navigation property hostPairs in security
+
 ### [Update-MgBetaSecurityThreatIntelligenceHostReputation](Update-MgBetaSecurityThreatIntelligenceHostReputation.md)
 Update the navigation property reputation in security
+
+### [Update-MgBetaSecurityThreatIntelligenceHostSslCertificate](Update-MgBetaSecurityThreatIntelligenceHostSslCertificate.md)
+Update the navigation property hostSslCertificates in security
 
 ### [Update-MgBetaSecurityThreatIntelligenceHostTracker](Update-MgBetaSecurityThreatIntelligenceHostTracker.md)
 Update the navigation property hostTrackers in security
@@ -1497,6 +1584,9 @@ Update the navigation property passiveDnsRecords in security
 ### [Update-MgBetaSecurityThreatIntelligenceProfileIndicator](Update-MgBetaSecurityThreatIntelligenceProfileIndicator.md)
 Update the navigation property intelligenceProfileIndicators in security
 
+### [Update-MgBetaSecurityThreatIntelligenceSslCertificate](Update-MgBetaSecurityThreatIntelligenceSslCertificate.md)
+Update the navigation property sslCertificates in security
+
 ### [Update-MgBetaSecurityThreatIntelligenceSubdomain](Update-MgBetaSecurityThreatIntelligenceSubdomain.md)
 Update the navigation property subdomains in security
 
@@ -1505,6 +1595,9 @@ Update the navigation property vulnerabilities in security
 
 ### [Update-MgBetaSecurityThreatIntelligenceVulnerabilityComponent](Update-MgBetaSecurityThreatIntelligenceVulnerabilityComponent.md)
 Update the navigation property components in security
+
+### [Update-MgBetaSecurityThreatIntelligenceWhoisRecord](Update-MgBetaSecurityThreatIntelligenceWhoisRecord.md)
+Update the navigation property whoisRecords in security
 
 ### [Update-MgBetaSecurityThreatSubmission](Update-MgBetaSecurityThreatSubmission.md)
 Update the navigation property threatSubmission in security

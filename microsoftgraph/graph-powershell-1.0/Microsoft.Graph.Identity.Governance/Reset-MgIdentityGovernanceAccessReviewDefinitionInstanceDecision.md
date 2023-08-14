@@ -8,7 +8,7 @@ schema: 2.0.0
 # Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision
 
 ## SYNOPSIS
-Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
+Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Reset-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <I
 ```
 
 ## DESCRIPTION
-Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
+Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 
 ## EXAMPLES
 ### Example 1: Using the Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet

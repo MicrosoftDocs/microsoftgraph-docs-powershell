@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresence
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationPresence
@@ -38,7 +39,7 @@ Get-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-Ex
 Get a user's presence information.
 
 ## EXAMPLES
-### Example 1: Get the presence information of another user
+### Example 1: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications

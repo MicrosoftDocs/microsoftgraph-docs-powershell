@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 
 ## SYNOPSIS
-Update the navigation property windowsInformationProtectionNetworkLearningSummaries in deviceManagement
+Update the properties of a windowsInformationProtectionNetworkLearningSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 ```
 
 ## DESCRIPTION
-Update the navigation property windowsInformationProtectionNetworkLearningSummaries in deviceManagement
+Update the properties of a windowsInformationProtectionNetworkLearningSummary object.
 
 ## PARAMETERS
 

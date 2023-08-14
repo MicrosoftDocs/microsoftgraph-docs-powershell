@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription
 schema: 2.0.0
+ms.prod: change-notifications
+ms.prod: change-notifications
 ---
 
 # Get-MgBetaSubscription
@@ -40,13 +42,13 @@ See the table in the Permissions section for the list of resources that support 
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
 
-Get-MgBetaSubscription -SubscriptionId $subscriptionId
+Get-MgBetaSubscription
+
 ```
 This example shows how to use the Get-MgBetaSubscription Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

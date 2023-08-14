@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintertasktrigger
 schema: 2.0.0
+ms.prod: cloud-printing
+ms.prod: cloud-printing
 ---
 
 # Get-MgPrintPrinterTaskTrigger
@@ -43,13 +45,13 @@ For details about how to use this API to add pull printing support to Universal 
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
-Get-MgPrintPrinterTaskTrigger -PrinterId $printerId -PrintTaskTriggerId $printTaskTriggerId
+Get-MgPrintPrinterTaskTrigger -PrinterId $printerId
+
 ```
 This example shows how to use the Get-MgPrintPrinterTaskTrigger Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtaskreporttaskprocessingresult
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult
@@ -41,13 +42,28 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult
 The related lifecycle workflow taskProcessingResults.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult Cmdlet
+### Example 1: List the task processing results that are included in a task report for a workflow
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult -WorkflowId $workflowId -TaskReportId $taskReportId
+
 ```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will list the task processing results that are included in a task report for a workflow
+
+### Example 2: List the task processing results that are included in a task report for a workflow, and retrieve specific properties
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult -WorkflowId $workflowId -TaskReportId $taskReportId -Property "id,failureReason,processingStatus,subject,task" 
+
+```
+This example will list the task processing results that are included in a task report for a workflow, and retrieve specific properties
+
 
 ## PARAMETERS
 

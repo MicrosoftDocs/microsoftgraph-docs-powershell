@@ -8,9 +8,9 @@ schema: 2.0.0
 # New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
 
 ## SYNOPSIS
-Generates a URI for an accessReviewHistoryInstance object the **status** for which is `done`.
+Generates a URI for an accessReviewHistoryInstance object the status for which is done.
 Each URI can be used to retrieve the instance's review history data.
-Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the accessReviewHistoryInstance object.
+Each URI is valid for 24 hours and can be retrieved by fetching the downloadUri property from the accessReviewHistoryInstance object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri?view=graph-powershell-1.0)
@@ -31,9 +31,9 @@ New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
 ```
 
 ## DESCRIPTION
-Generates a URI for an accessReviewHistoryInstance object the **status** for which is `done`.
+Generates a URI for an accessReviewHistoryInstance object the status for which is done.
 Each URI can be used to retrieve the instance's review history data.
-Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the accessReviewHistoryInstance object.
+Each URI is valid for 24 hours and can be retrieved by fetching the downloadUri property from the accessReviewHistoryInstance object.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet

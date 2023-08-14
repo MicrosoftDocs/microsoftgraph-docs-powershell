@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtaskdefinition
 schema: 2.0.0
+ms.prod: governance
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition
@@ -38,27 +40,28 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -InputObject <IIdent
 Read the details of a built-in workflow task.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition Cmdlet
+### Example 1: Retrieve all built-in task definitions
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -TaskDefinitionId $taskDefinitionId
-```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -Filter "category eq 'joiner,leaver' OR category eq 'joiner'" 
-```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition
+
 ```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will retrieve all built-in task definitions
+
+### Example 2: Retrieve all built-in tasks supported for "joiner" workflows
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -Filter "category has 'joiner'" 
+
+```
+This example will retrieve all built-in tasks supported for "joiner" workflows
+
 
 ## PARAMETERS
 

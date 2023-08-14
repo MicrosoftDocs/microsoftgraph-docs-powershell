@@ -51,125 +51,150 @@ A consultative transfer means that the transferor can inform the person they wan
 This is opposed to transfering the call directly.
 
 ## EXAMPLES
-### Example 1: Using the Move-MgBetaCommunicationCall Cmdlet
+### Example 1: Call transfer from a peer-to-peer call
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	TransferTarget = @{
-		EndpointType = "default"
-		Identity = @{
-			User = @{
-				Id = "550fae72-d251-43ec-868c-373732c2704f"
-				TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"
-				DisplayName = "Heidi Steen"
+	transferTarget = @{
+		endpointType = "default"
+		identity = @{
+			user = @{
+				id = "550fae72-d251-43ec-868c-373732c2704f"
+				tenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"
+				displayName = "Heidi Steen"
 			}
 		}
-		LanguageId = "languageId-value"
-		Region = "region-value"
+		languageId = "languageId-value"
+		region = "region-value"
 	}
 }
+
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
+
 ```
-This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Move-MgBetaCommunicationCall Cmdlet
+This example will call transfer from a peer-to-peer call
+
+### Example 2: Consultative transfer from a peer-to-peer call
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	TransferTarget = @{
+	transferTarget = @{
 		"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-		EndpointType = "default"
-		Identity = @{
+		endpointType = "default"
+		identity = @{
 			"@odata.type" = "#microsoft.graph.identitySet"
-			User = @{
+			user = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				Id = "550fae72-d251-43ec-868c-373732c2704f"
-				TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"
-				DisplayName = "Heidi Steen"
+				id = "550fae72-d251-43ec-868c-373732c2704f"
+				tenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"
+				displayName = "Heidi Steen"
 			}
 		}
-		LanguageId = "en-us"
-		Region = "amer"
-		ReplacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d"
+		languageId = "en-us"
+		region = "amer"
+		replacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d"
 	}
 }
+
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
+
 ```
-This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Move-MgBetaCommunicationCall Cmdlet
+This example will consultative transfer from a peer-to-peer call
+
+### Example 3: Call transfer from a peer-to-peer call to PSTN number
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	TransferTarget = @{
-		EndpointType = "default"
-		Identity = @{
-			Phone = @{
+	transferTarget = @{
+		endpointType = "default"
+		identity = @{
+			phone = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				Id = "+12345678901"
+				id = "+12345678901"
 			}
 		}
-		LanguageId = "languageId-value"
-		Region = "region-value"
+		languageId = "languageId-value"
+		region = "region-value"
 	}
 }
+
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
+
 ```
-This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Move-MgBetaCommunicationCall Cmdlet
+This example will call transfer from a peer-to-peer call to pstn number
+
+### Example 4: Consultative transfer from a peer-to-peer call to PSTN number
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	TransferTarget = @{
+	transferTarget = @{
 		"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-		EndpointType = "default"
-		Identity = @{
+		endpointType = "default"
+		identity = @{
 			"@odata.type" = "#microsoft.graph.identitySet"
-			Phone = @{
+			phone = @{
 				"@odata.type" = "#microsoft.graph.identity"
-				Id = "+12345678901"
+				id = "+12345678901"
 			}
 		}
-		LanguageId = "en-us"
-		Region = "amer"
-		ReplacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d"
+		languageId = "en-us"
+		region = "amer"
+		replacesCallId = "e5d39592-99bd-4db8-bca8-30fb894ec51d"
 	}
 }
+
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
+
 ```
-This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 5: Using the Move-MgBetaCommunicationCall Cmdlet
+This example will consultative transfer from a peer-to-peer call to pstn number
+
+### Example 5: Call transfer from a group call
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	TransferTarget = @{
-		EndpointType = "default"
-		Identity = @{
-			User = @{
-				Id = "550fae72-d251-43ec-868c-373732c2704f"
-				TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"
-				DisplayName = "Heidi Steen"
+	transferTarget = @{
+		endpointType = "default"
+		identity = @{
+			user = @{
+				id = "550fae72-d251-43ec-868c-373732c2704f"
+				tenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"
+				displayName = "Heidi Steen"
 			}
 		}
 	}
-	Transferee = @{
-		Identity = @{
-			User = @{
-				Id = "751f6800-3180-414d-bd94-333364659951"
-				TenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"
+	transferee = @{
+		identity = @{
+			user = @{
+				id = "751f6800-3180-414d-bd94-333364659951"
+				tenantId = "72f988bf-86f1-41af-91ab-2d7cd011db47"
 			}
 		}
-		ParticipantId = "909c6581-5130-43e9-88f3-fcb3582cde37"
+		participantId = "909c6581-5130-43e9-88f3-fcb3582cde37"
 	}
-	LanguageId = "languageId-value"
-	Region = "region-value"
+	languageId = "languageId-value"
+	region = "region-value"
 }
+
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
+
 ```
-This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will call transfer from a group call
+
 
 ## PARAMETERS
 
@@ -342,8 +367,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[ParticipantId <String>]`: Optional. The ID of the target participant.
@@ -388,8 +413,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LanguageId <String>]`: The language culture string. Read-only.
@@ -406,8 +431,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[ParticipantId <String>]`: Optional. The ID of the target participant.

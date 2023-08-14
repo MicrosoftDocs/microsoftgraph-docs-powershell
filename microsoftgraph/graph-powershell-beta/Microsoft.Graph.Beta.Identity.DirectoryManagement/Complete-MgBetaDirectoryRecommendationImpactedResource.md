@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendationimpactedresource
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Complete-MgBetaDirectoryRecommendationImpactedResource
 
 ## SYNOPSIS
-Complete an impactedResource object and update its **status** to `completedByUser`.
+Complete an impactedResource object and update its status to completedByUser.
 
 ## SYNTAX
 
@@ -25,7 +26,7 @@ Complete-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDi
 ```
 
 ## DESCRIPTION
-Complete an impactedResource object and update its **status** to `completedByUser`.
+Complete an impactedResource object and update its status to completedByUser.
 
 ## PARAMETERS
 

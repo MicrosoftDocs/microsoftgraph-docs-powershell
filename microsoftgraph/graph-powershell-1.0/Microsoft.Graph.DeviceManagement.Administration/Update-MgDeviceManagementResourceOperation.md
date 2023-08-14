@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementResourceOperation
 
 ## SYNOPSIS
-Update the navigation property resourceOperations in deviceManagement
+Update the properties of a resourceOperation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Update-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmini
 ```
 
 ## DESCRIPTION
-Update the navigation property resourceOperations in deviceManagement
+Update the properties of a resourceOperation object.
 
 ## PARAMETERS
 

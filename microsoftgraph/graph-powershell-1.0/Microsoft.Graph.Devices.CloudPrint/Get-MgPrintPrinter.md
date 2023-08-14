@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinter
 schema: 2.0.0
+ms.prod: cloud-printing
+ms.prod: cloud-printing
 ---
 
 # Get-MgPrintPrinter
@@ -40,24 +42,24 @@ Retrieve the properties and relationships of a printer object.
 ### Example 1: Get a printer
 
 ```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintPrinter -PrinterId $printerId
-```
-This example shows how to use the Get-MgPrintPrinter Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get a printer
 
 ### Example 2: Get a printer and its capabilities
 
 ```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
-Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities"
-```
-This example shows how to use the Get-MgPrintPrinter Cmdlet.
+Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get a printer and its capabilities
 
 
 ## PARAMETERS

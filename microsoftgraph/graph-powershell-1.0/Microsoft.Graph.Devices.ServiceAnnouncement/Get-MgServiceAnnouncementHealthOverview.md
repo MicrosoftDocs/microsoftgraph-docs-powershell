@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverview
 schema: 2.0.0
+ms.prod: service-communications
+ms.prod: service-communications
 ---
 
 # Get-MgServiceAnnouncementHealthOverview
@@ -40,27 +42,27 @@ Retrieve the properties and relationships of a serviceHealth object.
 This operation provides the health information of a specified service for a tenant.
 
 ## EXAMPLES
-### Example 1: Get the properties of a serviceHealth object
+### Example 1: Get serviceHealth resources
 
 ```powershell
+
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
-Get-MgServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId
-```
-This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
+Get-MgServiceAnnouncementHealthOverview
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get servicehealth resources
 
 ### Example 2: Include navigation property issues
 
 ```powershell
+
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
-Get-MgServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues"
-```
-This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
+Get-MgServiceAnnouncementHealthOverview -ExpandProperty "issues" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will include navigation property issues
 
 
 ## PARAMETERS

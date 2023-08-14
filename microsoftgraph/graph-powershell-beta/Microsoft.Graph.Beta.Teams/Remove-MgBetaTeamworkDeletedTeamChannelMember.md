@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a conversationMember from a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+This operation is allowed only for channels with a membershipType value of private or shared.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-If
 
 ## DESCRIPTION
 Delete a conversationMember from a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+This operation is allowed only for channels with a membershipType value of private or shared.
 
 ## PARAMETERS
 

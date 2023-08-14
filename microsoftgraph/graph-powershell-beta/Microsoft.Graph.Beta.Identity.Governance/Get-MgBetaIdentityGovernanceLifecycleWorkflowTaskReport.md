@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtaskreport
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport
@@ -38,20 +39,28 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport -InputObject <IIdentityG
 Represents the aggregation of task execution data for tasks within a workflow object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport Cmdlet
+### Example 1: List the task reports for a workflow
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport -WorkflowId $workflowId -TaskReportId $taskReportId
-```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport -WorkflowId $workflowId
+
 ```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will list the task reports for a workflow
+
+### Example 2: List the task reports for a workflow
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport -WorkflowId $workflowId -Property "id,failedUsersCount,processingStatus,successfulUsersCount,totalUsersCount,unprocessedUsersCount,taskDefinition,taskProcessingResults" 
+
+```
+This example will list the task reports for a workflow
+
 
 ## PARAMETERS
 

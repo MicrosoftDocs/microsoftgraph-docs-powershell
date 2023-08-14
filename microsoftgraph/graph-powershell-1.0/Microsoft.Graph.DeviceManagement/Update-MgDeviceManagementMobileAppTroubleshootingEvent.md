@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementMobileAppTroubleshootingEvent
 
 ## SYNOPSIS
-Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
+Update the properties of a mobileAppTroubleshootingEvent object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Update-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
+Update the properties of a mobileAppTroubleshootingEvent object.
 
 ## PARAMETERS
 

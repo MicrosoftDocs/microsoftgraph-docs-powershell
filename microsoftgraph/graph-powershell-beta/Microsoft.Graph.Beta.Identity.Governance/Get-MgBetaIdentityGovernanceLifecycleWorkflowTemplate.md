@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtemplate
 schema: 2.0.0
+ms.prod: governance
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate
@@ -38,27 +40,28 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -InputObject <IIdentityGov
 Read the properties and relationships of a workflowTemplate object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
+### Example 1: Retrieve all Lifecycle Workflows workflow templates
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -WorkflowTemplateId $workflowTemplateId
-```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'" 
-```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate
+
 ```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will retrieve all lifecycle workflows workflow templates
+
+### Example 2: Retrieve workflow templates supported for "leaver" workflows
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'" 
+
+```
+This example will retrieve workflow templates supported for "leaver" workflows
+
 
 ## PARAMETERS
 

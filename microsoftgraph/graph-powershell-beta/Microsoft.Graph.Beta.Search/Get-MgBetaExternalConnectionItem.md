@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitem
 schema: 2.0.0
+ms.prod: search
 ---
 
 # Get-MgBetaExternalConnectionItem
@@ -11,7 +12,7 @@ schema: 2.0.0
 Get the properties and relationships of an externalitem object.
 This API is provided for diagnostic purposes only.
 It is not intended to be used for any other purpose.
-Repeated requests to this API might result in `429` HTTP errors.
+Repeated requests to this API might result in 429 HTTP errors.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItem?view=graph-powershell-1.0)
@@ -41,7 +42,7 @@ Get-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-ExpandProperty
 Get the properties and relationships of an externalitem object.
 This API is provided for diagnostic purposes only.
 It is not intended to be used for any other purpose.
-Repeated requests to this API might result in `429` HTTP errors.
+Repeated requests to this API might result in 429 HTTP errors.
 
 ## EXAMPLES
 ### Example 1: Code snippet

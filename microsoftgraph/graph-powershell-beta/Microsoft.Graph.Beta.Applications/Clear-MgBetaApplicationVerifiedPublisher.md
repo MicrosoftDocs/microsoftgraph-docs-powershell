@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/clear-mgbetaapplicationverifiedpublisher
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Clear-MgBetaApplicationVerifiedPublisher
@@ -33,13 +34,17 @@ Unset the the verifiedPublisher previously set on an application, removing all v
 For more information, see Publisher verification.
 
 ## EXAMPLES
-### Example 1: Using the Clear-MgBetaApplicationVerifiedPublisher Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
+
 Clear-MgBetaApplicationVerifiedPublisher -ApplicationId $applicationId
+
 ```
 This example shows how to use the Clear-MgBetaApplicationVerifiedPublisher Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

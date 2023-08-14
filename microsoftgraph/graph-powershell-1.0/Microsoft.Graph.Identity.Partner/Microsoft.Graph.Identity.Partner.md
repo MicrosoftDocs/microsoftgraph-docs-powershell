@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Partner
-Module Guid: 297b4f25-22c4-487e-bba5-d23e67ba9ee5
+Module Guid: 002ac0cd-4184-47b1-8c4a-f48293f08312
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner
 Help Version: 1.0.0.0
 Locale: en-US
@@ -92,7 +92,7 @@ Update the navigation property serviceManagementDetails in tenantRelationships
 
 ### [Update-MgTenantRelationshipDelegatedAdminRelationship](Update-MgTenantRelationshipDelegatedAdminRelationship.md)
 Update the properties of a delegatedAdminRelationship object.
-A relationship can only be updated if it's in the `created` **status**.
+A relationship can only be updated if it's in the created status.
 
 ### [Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment.md)
 Update the properties of a delegatedAdminAccessAssignment object.

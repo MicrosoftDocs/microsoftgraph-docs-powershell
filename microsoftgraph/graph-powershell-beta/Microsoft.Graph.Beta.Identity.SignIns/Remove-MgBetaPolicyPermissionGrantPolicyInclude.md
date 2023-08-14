@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyPermissionGrantPolicyInclude
 
 ## SYNOPSIS
-Deletes a permissionGrantConditionSet from the **includes** collection of a permissionGrantPolicy.
+Deletes a permissionGrantConditionSet from the includes collection of a permissionGrantPolicy.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicyInclude?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Remove-MgBetaPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Deletes a permissionGrantConditionSet from the **includes** collection of a permissionGrantPolicy.
+Deletes a permissionGrantConditionSet from the includes collection of a permissionGrantPolicy.
 
 ## EXAMPLES
 ### Example 1: Remove a permission grant policy include

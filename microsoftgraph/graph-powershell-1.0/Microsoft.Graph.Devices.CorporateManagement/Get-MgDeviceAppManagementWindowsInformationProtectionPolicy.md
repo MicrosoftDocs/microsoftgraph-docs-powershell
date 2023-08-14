@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementwindowsinformationprotectionpolicy
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementWindowsInformationProtectionPolicy
 
 ## SYNOPSIS
-Windows information protection for apps running on devices which are not MDM enrolled.
+Read properties and relationships of the windowsInformationProtectionPolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceAppManagementWindowsInformationProtectionPolicy -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Windows information protection for apps running on devices which are not MDM enrolled.
+Read properties and relationships of the windowsInformationProtectionPolicy object.
 
 ## PARAMETERS
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentrubric
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationClassAssignmentRubric
@@ -36,13 +37,13 @@ Only teachers, students, and applications with application permissions can perfo
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentRubric -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
 ```
 This example shows how to use the Get-MgEducationClassAssignmentRubric Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

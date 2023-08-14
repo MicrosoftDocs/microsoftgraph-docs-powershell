@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemversion
 schema: 2.0.0
+ms.prod: sharepoint
+ms.prod: sharepoint
 ---
 
 # Get-MgDriveItemListItemVersion
@@ -36,6 +38,8 @@ Get-MgDriveItemListItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -297,4 +301,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemListItemVersion?view=graph-powershell-beta)
-

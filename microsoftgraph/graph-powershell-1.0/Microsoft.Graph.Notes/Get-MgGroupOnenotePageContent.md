@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotepagecontent
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgGroupOnenotePageContent
@@ -28,6 +29,8 @@ Get-MgGroupOnenotePageContent -InputObject <INotesIdentity> -OutFile <String> [-
 
 ## DESCRIPTION
 The page's HTML content.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -138,4 +141,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenotePageContent?view=graph-powershell-beta)
-

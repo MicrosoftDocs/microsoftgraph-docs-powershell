@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcategory
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementMobileAppCategory
 
 ## SYNOPSIS
-The mobile app categories.
+Read properties and relationships of the mobileAppCategory object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
@@ -54,7 +56,7 @@ Get-MgDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateManage
 ```
 
 ## DESCRIPTION
-The mobile app categories.
+Read properties and relationships of the mobileAppCategory object.
 
 ## PARAMETERS
 

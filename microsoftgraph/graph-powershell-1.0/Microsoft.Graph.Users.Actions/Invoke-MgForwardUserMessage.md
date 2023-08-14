@@ -3,17 +3,18 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgForwardUserMessage
 
 ## SYNOPSIS
 Forward a message using either JSON or MIME format.
-When using JSON format, you can:n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.n- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.
+When using JSON format, you can:n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
 Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.n- Add any attachments and S/MIME properties to the MIME content.
-This method saves the message in the **Sent Items** folder.
+When using MIME format:n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.n- Add any attachments and S/MIME properties to the MIME content.
+This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
 
 > [!NOTE]
@@ -51,11 +52,11 @@ Invoke-MgForwardUserMessage -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Forward a message using either JSON or MIME format.
-When using JSON format, you can:n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.n- Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.
+When using JSON format, you can:n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
 Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.n- Add any attachments and S/MIME properties to the MIME content.
-This method saves the message in the **Sent Items** folder.
+When using MIME format:n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.n- Add any attachments and S/MIME properties to the MIME content.
+This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
 
 ## EXAMPLES
@@ -365,6 +366,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

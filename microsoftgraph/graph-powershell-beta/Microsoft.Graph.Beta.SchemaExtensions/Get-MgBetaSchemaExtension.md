@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension
 schema: 2.0.0
+ms.prod: extensions
+ms.prod: extensions
 ---
 
 # Get-MgBetaSchemaExtension
@@ -41,13 +43,13 @@ Get the properties of the specified schemaExtension definition.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
 
-Get-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId
+Get-MgBetaSchemaExtension -Filter "id eq 'graphlearn_test'" 
+
 ```
 This example shows how to use the Get-MgBetaSchemaExtension Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

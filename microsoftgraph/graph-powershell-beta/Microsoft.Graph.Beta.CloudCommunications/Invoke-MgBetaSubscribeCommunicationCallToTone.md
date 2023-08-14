@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetasubscribecommunicationcalltotone
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaSubscribeCommunicationCallToTone
@@ -47,16 +48,21 @@ Subscribe to DTMF (dual-tone multi-frequency signaling).
 This allows you to be notified when the user presses keys on a 'Dialpad'.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaSubscribeCommunicationCallToTone Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	ClientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54"
+	clientContext = "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 }
+
 Invoke-MgBetaSubscribeCommunicationCallToTone -CallId $callId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaSubscribeCommunicationCallToTone Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

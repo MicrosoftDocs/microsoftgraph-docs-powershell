@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingattendancereportcount
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgUserOnlineMeetingAttendanceReportCount
@@ -34,14 +35,14 @@ Get the number of the resource
 ### Example 1: Fetch attendee report of a Teams live event
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnlineMeetingAttendeeReport -UserId $userId -OnlineMeetingId $onlineMeetingId
-```
-This example shows how to use the Get-MgUserOnlineMeetingAttendeeReport Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will fetch attendee report of a teams live event
 
 
 ## PARAMETERS

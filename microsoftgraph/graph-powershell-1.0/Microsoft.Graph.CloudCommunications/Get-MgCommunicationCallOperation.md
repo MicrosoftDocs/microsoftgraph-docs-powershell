@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcalloperation
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCallOperation
@@ -41,13 +42,13 @@ Get the status of an operation that adds the large gallery view to a call.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallOperation -CallId $callId -CommsOperationId $commsOperationId
+
 ```
 This example shows how to use the Get-MgCommunicationCallOperation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

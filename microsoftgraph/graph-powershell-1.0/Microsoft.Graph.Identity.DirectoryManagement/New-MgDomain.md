@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Adds a domain to the tenant.
-**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified.
+Important: You cannot use an associated domain with your Azure AD tenant until ownership is verified.
 See List verificationDnsRecords for details.
 Root domains require verification.
 For example, contoso.com requires verification.
@@ -40,7 +40,7 @@ New-MgDomain -BodyParameter <IMicrosoftGraphDomain> [-WhatIf] [-Confirm] [<Commo
 
 ## DESCRIPTION
 Adds a domain to the tenant.
-**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified.
+Important: You cannot use an associated domain with your Azure AD tenant until ownership is verified.
 See List verificationDnsRecords for details.
 Root domains require verification.
 For example, contoso.com requires verification.

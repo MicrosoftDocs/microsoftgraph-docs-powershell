@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Copy-MgSiteContentTypeToDefaultContentLocation
@@ -49,22 +50,27 @@ Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
 ## EXAMPLES
-### Example 1: Using the Copy-MgSiteContentTypeToDefaultContentLocation Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Sites
+
 $params = @{
-	SourceFile = @{
-		SharepointIds = @{
-			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
-			ListItemId = "2"
+	sourceFile = @{
+		sharepointIds = @{
+			listId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
+			listItemId = "2"
 		}
 	}
-	DestinationFileName = "newname.txt"
+	destinationFileName = "newname.txt"
 }
+
 Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
 ```
 This example shows how to use the Copy-MgSiteContentTypeToDefaultContentLocation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

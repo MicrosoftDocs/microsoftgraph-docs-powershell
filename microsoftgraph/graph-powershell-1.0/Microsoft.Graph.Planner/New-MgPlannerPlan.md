@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerPlan
 
 ## SYNOPSIS
-Use this API to create a new **plannerPlan**.
+Use this API to create a new plannerPlan.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
@@ -29,12 +29,13 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Confir
 ```
 
 ## DESCRIPTION
-Use this API to create a new **plannerPlan**.
+Use this API to create a new plannerPlan.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
 
 $params = @{
@@ -45,10 +46,9 @@ $params = @{
 }
 
 New-MgPlannerPlan -BodyParameter $params
+
 ```
 This example shows how to use the New-MgPlannerPlan Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagement
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagement
@@ -26,13 +27,13 @@ Read properties and relationships of the deviceManagement object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
 
 Get-MgDeviceManagement
+
 ```
 This example shows how to use the Get-MgDeviceManagement Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

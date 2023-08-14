@@ -8,11 +8,11 @@ schema: 2.0.0
 # Get-MgBetaOrganizationBranding
 
 ## SYNOPSIS
-Retrieve the default organizational branding object, if the **Accept-Language** header is set to `0` or `default`.
-If no default organizational branding object exists, this method returns a `404 Not Found` error.
-If the **Accept-Language** header is set to an existing locale identified by the value of its **id**, this method retrieves the branding for the specified locale.
-This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**.
-To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the GET organizationalBrandingLocalization method.
+Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
+If no default organizational branding object exists, this method returns a 404 Not Found error.
+If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
+This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
+To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBranding?view=graph-powershell-1.0)
@@ -32,11 +32,11 @@ Get-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Retrieve the default organizational branding object, if the **Accept-Language** header is set to `0` or `default`.
-If no default organizational branding object exists, this method returns a `404 Not Found` error.
-If the **Accept-Language** header is set to an existing locale identified by the value of its **id**, this method retrieves the branding for the specified locale.
-This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**.
-To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the GET organizationalBrandingLocalization method.
+Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
+If no default organizational branding object exists, this method returns a 404 Not Found error.
+If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
+This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
+To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -51,17 +51,6 @@ This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 2: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-
-Get-MgBetaOrganizationBranding -OrganizationId $organizationId
-```
-This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement

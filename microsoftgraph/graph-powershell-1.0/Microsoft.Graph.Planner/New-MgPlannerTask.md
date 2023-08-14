@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerTask
 
 ## SYNOPSIS
-Create a new **plannerTask**.
+Create a new plannerTask.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
@@ -37,12 +37,13 @@ New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Confir
 ```
 
 ## DESCRIPTION
-Create a new **plannerTask**.
+Create a new plannerTask.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
 
 $params = @{
@@ -58,10 +59,9 @@ $params = @{
 }
 
 New-MgPlannerTask -BodyParameter $params
+
 ```
 This example shows how to use the New-MgPlannerTask Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

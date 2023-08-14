@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingattendeereport
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationOnlineMeetingAttendeeReport
@@ -31,6 +32,8 @@ Get-MgCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunication
 ## DESCRIPTION
 The content stream of the attendee report of a Microsoft Teams live event.
 Read-only.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -129,4 +132,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-beta)
-

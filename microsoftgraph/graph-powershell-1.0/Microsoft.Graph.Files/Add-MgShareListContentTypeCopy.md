@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgsharelistcontenttypecopy
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Add-MgShareListContentTypeCopy
@@ -43,6 +44,8 @@ Add-MgShareListContentTypeCopy -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -205,4 +208,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaShareListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgBetaShareListContentTypeCopy?view=graph-powershell-beta)
-

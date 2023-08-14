@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/get-mgsubscription
 schema: 2.0.0
+ms.prod: change-notifications
+ms.prod: change-notifications
 ---
 
 # Get-MgSubscription
@@ -40,13 +42,13 @@ See the table in the Permissions section for the list of resources that support 
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.ChangeNotifications
 
-Get-MgSubscription -SubscriptionId $subscriptionId
+Get-MgSubscription
+
 ```
 This example shows how to use the Get-MgSubscription Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

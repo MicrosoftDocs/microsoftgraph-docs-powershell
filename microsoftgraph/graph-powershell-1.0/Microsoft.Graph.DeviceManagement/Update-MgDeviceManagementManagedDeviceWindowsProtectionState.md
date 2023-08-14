@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementManagedDeviceWindowsProtectionState
 
 ## SYNOPSIS
-Update the navigation property windowsProtectionState in deviceManagement
+Update the properties of a windowsProtectionState object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ Update-MgDeviceManagementManagedDeviceWindowsProtectionState -InputObject <IDevi
 ```
 
 ## DESCRIPTION
-Update the navigation property windowsProtectionState in deviceManagement
+Update the properties of a windowsProtectionState object.
 
 ## PARAMETERS
 

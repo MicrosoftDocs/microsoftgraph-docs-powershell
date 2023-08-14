@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Invoke action assign
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -43,7 +43,7 @@ Set-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementActions
 ```
 
 ## DESCRIPTION
-Invoke action assign
+Not yet documented
 
 ## PARAMETERS
 

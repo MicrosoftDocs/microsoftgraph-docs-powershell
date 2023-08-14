@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageunread
 schema: 2.0.0
+ms.prod: service-communications
 ---
 
 # Invoke-MgBetaMarkServiceAnnouncementMessageUnread
 
 ## SYNOPSIS
-Mark a list of serviceUpdateMessages as **unread** for the signed in user.
+Mark a list of serviceUpdateMessages as unread for the signed in user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgMarkServiceAnnouncementMessageUnread](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageUnread?view=graph-powershell-1.0)
@@ -29,22 +30,27 @@ Invoke-MgBetaMarkServiceAnnouncementMessageUnread
 ```
 
 ## DESCRIPTION
-Mark a list of serviceUpdateMessages as **unread** for the signed in user.
+Mark a list of serviceUpdateMessages as unread for the signed in user.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaMarkServiceAnnouncementMessageUnread Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+
 $params = @{
-	MessageIds = @(
+	messageIds = @(
 		"MC172851"
 		"MC167983"
 	)
 }
+
 Invoke-MgBetaMarkServiceAnnouncementMessageUnread -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaMarkServiceAnnouncementMessageUnread Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
