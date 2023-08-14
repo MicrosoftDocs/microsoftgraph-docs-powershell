@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementcomanagementeligibledevice
 schema: 2.0.0
@@ -20,13 +20,13 @@ New-MgBetaDeviceManagementComanagementEligibleDevice [-AdditionalProperties <Has
  [-ManagementState <ManagementState>] [-Manufacturer <String>] [-MdmStatus <String>] [-Model <String>]
  [-OSDescription <String>] [-OSVersion <String>] [-OwnerType <OwnerType>] [-ReferenceId <String>]
  [-SerialNumber <String>] [-Status <ComanagementEligibleType>] [-Upn <String>] [-UserEmail <String>]
- [-UserId <String>] [-UserName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserId <String>] [-UserName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementComanagementEligibleDevice
- -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaDeviceManagementComanagementEligibleDevice -BodyParameter <IMicrosoftGraphComanagementEligibleDevice>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,14 +34,14 @@ Create new navigation property to comanagementEligibleDevices for deviceManageme
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -54,7 +54,7 @@ Create new navigation property to comanagementEligibleDevices for deviceManageme
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Device Co-Management eligibility state
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
+Type: IMicrosoftGraphComanagementEligibleDevice
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 Device registration status.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceRegistrationState
+Type: DeviceRegistrationState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 DeviceName
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 Device type.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceType
+Type: DeviceType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 EntitySource
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 Management agent type.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.ManagementAgentType
+Type: ManagementAgentType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 Management state of device in Microsoft Intune.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.ManagementState
+Type: ManagementState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 Manufacturer
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 MDMStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 Model
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 OSDescription
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 OSVersion
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 Owner type of device.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.OwnerType
+Type: OwnerType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 ReferenceId
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 SerialNumber
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -311,7 +311,7 @@ Accept wildcard characters: False
 comanagementEligibleType
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.ComanagementEligibleType
+Type: ComanagementEligibleType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 UPN
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 UserEmail
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -356,7 +356,7 @@ Accept wildcard characters: False
 UserId
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -371,7 +371,7 @@ Accept wildcard characters: False
 UserName
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -386,7 +386,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -402,7 +402,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -419,11 +419,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
-
 ## NOTES
 
 ALIASES
@@ -457,4 +455,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserName <String>]`: UserName
 
 ## RELATED LINKS
-

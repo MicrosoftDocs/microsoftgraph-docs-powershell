@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatesummary
 schema: 2.0.0
@@ -13,8 +13,8 @@ Read properties and relationships of the deviceConfigurationDeviceStateSummary o
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,14 +22,14 @@ Read properties and relationships of the deviceConfigurationDeviceStateSummary o
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -42,7 +42,7 @@ Read properties and relationships of the deviceConfigurationDeviceStateSummary o
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -76,10 +76,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStateSummary
-
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-
