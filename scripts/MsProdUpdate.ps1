@@ -230,33 +230,40 @@ function WebScrapping {
 
     $GraphDocsUrl = "https://raw.githubusercontent.com/microsoftgraph/microsoft-graph-docs-contrib/main/api-reference/$GraphProfile/api/$LastExternalDocUrlPathSegmentWithoutQueryParam.md"
     $MsprodContent = ""
-    Write-Host "Downloading $GraphDocsUrl"
-    ($readStream, $HttpWebResponse) = FetchStream -GraphDocsUrl $GraphDocsUrl
+    try{
+        ($readStream, $HttpWebResponse) = FetchStream -GraphDocsUrl $GraphDocsUrl
 
-    while (-not $readStream.EndOfStream) {
-        $Line = $readStream.ReadLine()
-        if ($Line -match "ms.prod") {
-            $MsprodContent = $Line
-        }
-    }
-    $HttpWebResponse.Close() 
-    $readStream.Close()
-    
-    if ([string]::IsNullOrEmpty($MsprodContent)) {
-        Write-Host "Ms Prod content is null or empty"
-    }
-    else {
-        #Remove single and double qoutes from ms prod
-        $MsprodContent = $MsprodContent.Replace("`"", "")
-        $MsprodContent = $MsprodContent.Replace("'", "")
-        $MetaDataText = "schema: 2.0.0`r`n$MsprodContent"
-        (Get-Content $File) | 
-        Foreach-Object { 
-            if ($_ -notcontains $MetaDataText) {
-                $_ -replace 'schema: 2.0.0', $MetaDataText
+        while (-not $readStream.EndOfStream) {
+            $Line = $readStream.ReadLine()
+            if ($Line -match "ms.prod") {
+                $MsprodContent = $Line
             }
-        }  | 
-        Out-File $File
+        }
+        $HttpWebResponse.Close() 
+        $readStream.Close()
+        
+        if ([string]::IsNullOrEmpty($MsprodContent)) {
+            Write-Host "Ms Prod content is null or empty"
+        }
+        else {
+            #Remove single and double qoutes from ms prod
+            $MsprodContent = $MsprodContent.Replace("`"", "")
+            $MsprodContent = $MsprodContent.Replace("'", "")
+            $MetaDataText = "schema: 2.0.0`r`n$MsprodContent"
+            (Get-Content $File) | 
+            Foreach-Object { 
+                if ($_ -notcontains $MetaDataText) {
+                    $_ -replace 'schema: 2.0.0', $MetaDataText
+                }
+            }  | 
+            Out-File $File
+        }
+    }catch {
+        Write-Host "`nError Message: " $_.Exception.Message
+        Write-Host "`nError in Line: " $_.InvocationInfo.Line
+        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+        Write-Host "`nError Item Name: "$_.Exception.ItemName
+        Write-Host "`nRaw docs url : "  $GraphDocsUrl
     }
 }
 
