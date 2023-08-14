@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementNotificationMessageTemplate
 
 ## SYNOPSIS
-Create new navigation property to notificationMessageTemplates for deviceManagement
+Create a new notificationMessageTemplate object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ New-MgDeviceManagementNotificationMessageTemplate -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Create new navigation property to notificationMessageTemplates for deviceManagement
+Create a new notificationMessageTemplate object.
 
 ## PARAMETERS
 

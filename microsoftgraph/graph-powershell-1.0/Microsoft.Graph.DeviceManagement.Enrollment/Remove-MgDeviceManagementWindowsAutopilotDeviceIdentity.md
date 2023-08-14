@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity
 
 ## SYNOPSIS
-Delete navigation property windowsAutopilotDeviceIdentities for deviceManagement
+Deletes a windowsAutopilotDeviceIdentity.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Delete navigation property windowsAutopilotDeviceIdentities for deviceManagement
+Deletes a windowsAutopilotDeviceIdentity.
 
 ## PARAMETERS
 

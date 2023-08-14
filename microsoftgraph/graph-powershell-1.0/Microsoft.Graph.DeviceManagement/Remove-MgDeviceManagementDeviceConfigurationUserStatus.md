@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceConfigurationUserStatus
 
 ## SYNOPSIS
-Delete navigation property userStatuses for deviceManagement
+Deletes a deviceConfigurationUserStatus.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Remove-MgDeviceManagementDeviceConfigurationUserStatus -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Delete navigation property userStatuses for deviceManagement
+Deletes a deviceConfigurationUserStatus.
 
 ## PARAMETERS
 

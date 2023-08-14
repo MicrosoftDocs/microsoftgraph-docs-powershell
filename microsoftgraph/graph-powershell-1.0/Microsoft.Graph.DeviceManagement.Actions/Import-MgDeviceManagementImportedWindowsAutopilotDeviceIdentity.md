@@ -8,7 +8,7 @@ schema: 2.0.0
 # Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 
 ## SYNOPSIS
-Invoke action import
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
 ```
 
 ## DESCRIPTION
-Invoke action import
+Not yet documented
 
 ## PARAMETERS
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaDriveListColumn
@@ -38,17 +39,6 @@ Get-MgBetaDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String
 Get columns from drives
 
 ## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Sites
-
-Get-MgBetaSiteListColumn -SiteId $siteId -ListId $listId
-```
-This example shows how to use the Get-MgBetaDriveListColumn Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

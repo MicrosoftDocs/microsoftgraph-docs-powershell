@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementIoUpdateStatus
 
 ## SYNOPSIS
-Create new navigation property to iosUpdateStatuses for deviceManagement
+Create a new iosUpdateDeviceStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ New-MgDeviceManagementIoUpdateStatus -BodyParameter <IMicrosoftGraphIosUpdateDev
 ```
 
 ## DESCRIPTION
-Create new navigation property to iosUpdateStatuses for deviceManagement
+Create a new iosUpdateDeviceStatus object.
 
 ## PARAMETERS
 

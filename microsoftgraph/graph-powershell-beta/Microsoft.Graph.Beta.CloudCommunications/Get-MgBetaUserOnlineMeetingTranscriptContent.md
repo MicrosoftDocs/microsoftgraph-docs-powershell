@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaUserOnlineMeetingTranscriptContent
 
 ## SYNOPSIS
-A field that represents the content of the transcript.
+The content of the transcript.
 Read-only.
 
 ## SYNTAX
@@ -26,7 +27,7 @@ Get-MgBetaUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsI
 ```
 
 ## DESCRIPTION
-A field that represents the content of the transcript.
+The content of the transcript.
 Read-only.
 
 ## EXAMPLES

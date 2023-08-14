@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamIncomingChannel
 
 ## SYNOPSIS
-Remove an incoming channel (a **channel** shared with a **team**) from a team.
+Remove an incoming channel (a channel shared with a team) from a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgTeamIncomingChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Remove an incoming channel (a **channel** shared with a **team**) from a team.
+Remove an incoming channel (a channel shared with a team) from a team.
 
 ## PARAMETERS
 
@@ -171,6 +171,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift

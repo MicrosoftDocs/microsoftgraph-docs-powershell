@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadmincustomerservicemanagementdetail
 schema: 2.0.0
+ms.prod: customer-relationship-management
 ---
 
 # Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail

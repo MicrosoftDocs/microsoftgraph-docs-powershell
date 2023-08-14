@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 8487c2f0-0e91-4c9d-9c27-c85e3ce2c7b3
+Module Guid: e69eb122-135b-4923-9624-728370483dcc
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,35 +11,62 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Identity.DirectoryManagement Cmdlets
-### [Confirm-MgContactMemberObject](Confirm-MgContactMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgContactMemberGroup](Confirm-MgContactMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgContactMemberObject](Confirm-MgContactMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgContractMemberObject](Confirm-MgContractMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgContractMemberGroup](Confirm-MgContractMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgContractMemberObject](Confirm-MgContractMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgDeviceMemberObject](Confirm-MgDeviceMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgDeviceMemberGroup](Confirm-MgDeviceMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDeviceMemberObject](Confirm-MgDeviceMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgDirectoryDeletedItemMemberObject](Confirm-MgDirectoryDeletedItemMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgDirectoryDeletedItemMemberGroup](Confirm-MgDirectoryDeletedItemMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectoryDeletedItemMemberObject](Confirm-MgDirectoryDeletedItemMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgDirectoryRoleMemberObject](Confirm-MgDirectoryRoleMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgDirectoryRoleMemberGroup](Confirm-MgDirectoryRoleMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectoryRoleMemberObject](Confirm-MgDirectoryRoleMemberObject.md)
 Invoke action checkMemberObjects
+
+### [Confirm-MgDirectoryRoleTemplateMemberGroup](Confirm-MgDirectoryRoleTemplateMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgDirectoryRoleTemplateMemberObject](Confirm-MgDirectoryRoleTemplateMemberObject.md)
 Invoke action checkMemberObjects
@@ -47,8 +74,12 @@ Invoke action checkMemberObjects
 ### [Confirm-MgDomain](Confirm-MgDomain.md)
 Validates the ownership of the domain.
 
-### [Confirm-MgDomain](Confirm-MgDomain.md)
-Validates the ownership of the domain.
+### [Confirm-MgOrganizationMemberGroup](Confirm-MgOrganizationMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgOrganizationMemberObject](Confirm-MgOrganizationMemberObject.md)
 Invoke action checkMemberObjects
@@ -90,13 +121,14 @@ Get the number of the resource
 ### [Get-MgContactManager](Get-MgContactManager.md)
 Get this organizational contact's manager.
 
-### [Get-MgContactManager](Get-MgContactManager.md)
-Get this organizational contact's manager.
+### [Get-MgContactMemberGroup](Get-MgContactMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgContactMemberOf](Get-MgContactMemberOf.md)
 Groups that this contact is a member of.
@@ -109,9 +141,6 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 
 ### [Get-MgContactMemberOfAsGroup](Get-MgContactMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
-Invoke action getMemberObjects
 
 ### [Get-MgContactMemberOfCount](Get-MgContactMemberOfCount.md)
 Get the number of the resource
@@ -132,9 +161,6 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 
 ### [Get-MgContactTransitiveMemberOfAsGroup](Get-MgContactTransitiveMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
-Invoke action getMemberObjects
 
 ### [Get-MgContactTransitiveMemberOfCount](Get-MgContactTransitiveMemberOfCount.md)
 Get the number of the resource
@@ -158,13 +184,14 @@ Get the number of the resource
 ### [Get-MgContractDelta](Get-MgContractDelta.md)
 Invoke function delta
 
-### [Get-MgContractDelta](Get-MgContractDelta.md)
-Invoke function delta
+### [Get-MgContractMemberGroup](Get-MgContractMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgContractMemberObject](Get-MgContractMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDevice](Get-MgDevice.md)
 Get the properties and relationships of a device object.
@@ -190,13 +217,14 @@ Nullable.
 ### [Get-MgDeviceExtensionCount](Get-MgDeviceExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgDeviceExtensionCount](Get-MgDeviceExtensionCount.md)
-Get the number of the resource
+### [Get-MgDeviceMemberGroup](Get-MgDeviceMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDeviceMemberOf](Get-MgDeviceMemberOf.md)
 Groups and administrative units that this device is a member of.
@@ -209,9 +237,6 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 
 ### [Get-MgDeviceMemberOfAsGroup](Get-MgDeviceMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
-Invoke action getMemberObjects
 
 ### [Get-MgDeviceMemberOfCount](Get-MgDeviceMemberOfCount.md)
 Get the number of the resource
@@ -463,7 +488,7 @@ Get the number of the resource
 ### [Get-MgDirectoryDeletedItemMemberObject](Get-MgDirectoryDeletedItemMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDirectoryFederationConfiguration](Get-MgDirectoryFederationConfiguration.md)
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
@@ -480,7 +505,7 @@ Get the number of the resource
 ### [Get-MgDirectoryRole](Get-MgDirectoryRole.md)
 Retrieve the properties of a directoryRole object.
 The role must be activated in tenant for a successful response.
-You can use both the object ID and template ID of the **directoryRole** with this API.
+You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
@@ -491,7 +516,7 @@ Some common uses for this function are to:
 ### [Get-MgDirectoryRoleByRoleTemplateId](Get-MgDirectoryRoleByRoleTemplateId.md)
 Retrieve the properties of a directoryRole object.
 The role must be activated in tenant for a successful response.
-You can use both the object ID and template ID of the **directoryRole** with this API.
+You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
@@ -560,7 +585,7 @@ Get the number of the resource
 ### [Get-MgDirectoryRoleMemberObject](Get-MgDirectoryRoleMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDirectoryRoleScopedMember](Get-MgDirectoryRoleScopedMember.md)
 Members of this directory role that are scoped to administrative units.
@@ -589,7 +614,7 @@ Invoke function delta
 ### [Get-MgDirectoryRoleTemplateMemberObject](Get-MgDirectoryRoleTemplateMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgDomain](Get-MgDomain.md)
 Retrieve the properties and relationships of domain object.
@@ -630,14 +655,14 @@ Get the number of the resource
 
 ### [Get-MgOrganization](Get-MgOrganization.md)
 Get the properties and relationships of the currently authenticated organization.
-Since the **organization** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
+Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
 
 ### [Get-MgOrganizationBranding](Get-MgOrganizationBranding.md)
-Retrieve the default organizational branding object, if the **Accept-Language** header is set to `0` or `default`.
-If no default organizational branding object exists, this method returns a `404 Not Found` error.
-If the **Accept-Language** header is set to an existing locale identified by the value of its **id**, this method retrieves the branding for the specified locale.
-This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**.
-To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the GET organizationalBrandingLocalization method.
+Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
+If no default organizational branding object exists, this method returns a 404 Not Found error.
+If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
+This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
+To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
 
 ### [Get-MgOrganizationBrandingBackgroundImage](Get-MgOrganizationBrandingBackgroundImage.md)
 Image that appears as the background of the sign-in page.
@@ -646,21 +671,24 @@ A smaller image will reduce bandwidth requirements and make the page load faster
 
 ### [Get-MgOrganizationBrandingBannerLogo](Get-MgOrganizationBrandingBannerLogo.md)
 A banner version of your company logo that appears on the sign-in page.
-The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationBrandingCustomCss](Get-MgOrganizationBrandingCustomCss.md)
-Get customCSS for the navigation property branding from organization
+CSS styling that appears on the sign-in page.
+The allowed format is .css format only and not larger than 25 KB.
 
 ### [Get-MgOrganizationBrandingFavicon](Get-MgOrganizationBrandingFavicon.md)
-Get favicon for the navigation property branding from organization
+A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
 
 ### [Get-MgOrganizationBrandingHeaderLogo](Get-MgOrganizationBrandingHeaderLogo.md)
-Get headerLogo for the navigation property branding from organization
+A company logo that appears in the header of the sign-in page.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationBrandingLocalization](Get-MgOrganizationBrandingLocalization.md)
 Read the properties and relationships of an organizationalBrandingLocalization object.
-To retrieve a localization branding object, specify the value of **id** in the URL.
+To retrieve a localization branding object, specify the value of id in the URL.
 
 ### [Get-MgOrganizationBrandingLocalizationBackgroundImage](Get-MgOrganizationBrandingLocalizationBackgroundImage.md)
 Image that appears as the background of the sign-in page.
@@ -669,36 +697,43 @@ A smaller image will reduce bandwidth requirements and make the page load faster
 
 ### [Get-MgOrganizationBrandingLocalizationBannerLogo](Get-MgOrganizationBrandingLocalizationBannerLogo.md)
 A banner version of your company logo that appears on the sign-in page.
-The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationBrandingLocalizationCount](Get-MgOrganizationBrandingLocalizationCount.md)
 Get the number of the resource
 
 ### [Get-MgOrganizationBrandingLocalizationCustomCss](Get-MgOrganizationBrandingLocalizationCustomCss.md)
-Get customCSS for the navigation property localizations from organization
+CSS styling that appears on the sign-in page.
+The allowed format is .css format only and not larger than 25 KB.
 
 ### [Get-MgOrganizationBrandingLocalizationFavicon](Get-MgOrganizationBrandingLocalizationFavicon.md)
-Get favicon for the navigation property localizations from organization
+A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
 
 ### [Get-MgOrganizationBrandingLocalizationHeaderLogo](Get-MgOrganizationBrandingLocalizationHeaderLogo.md)
-Get headerLogo for the navigation property localizations from organization
+A company logo that appears in the header of the sign-in page.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationBrandingLocalizationSquareLogo](Get-MgOrganizationBrandingLocalizationSquareLogo.md)
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
-Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationBrandingLocalizationSquareLogoDark](Get-MgOrganizationBrandingLocalizationSquareLogoDark.md)
-Get squareLogoDark for the navigation property localizations from organization
+A square dark version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationBrandingSquareLogo](Get-MgOrganizationBrandingSquareLogo.md)
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
-Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationBrandingSquareLogoDark](Get-MgOrganizationBrandingSquareLogoDark.md)
-Get squareLogoDark for the navigation property branding from organization
+A square dark version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Get-MgOrganizationById](Get-MgOrganizationById.md)
 Return the directory objects specified in a list of IDs.
@@ -721,7 +756,7 @@ Get the number of the resource
 ### [Get-MgOrganizationMemberObject](Get-MgOrganizationMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
 Get a specific commercial subscription that an organization has acquired.
@@ -737,13 +772,13 @@ Invoke function availableProviderTypes
 
 ### [Invoke-MgForceDomainDelete](Invoke-MgForceDomainDelete.md)
 Deletes a domain using an asynchronous long-running operation.
-Prior to calling forceDelete, you must update or remove any references to **Exchange** as the provisioning service.
+Prior to calling forceDelete, you must update or remove any references to Exchange as the provisioning service.
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return a HTTP 404 status code.
 To verify deletion of a domain, you can perform a get domain operation.
 
 ### [Invoke-MgPromoteDomain](Invoke-MgPromoteDomain.md)
 Promote a verified subdomain to the root domain.
-A verified domain has its **isVerified** property set to `true`.
+A verified domain has its isVerified property set to true.
 
 ### [New-MgContact](New-MgContact.md)
 Add new entity to contacts
@@ -756,11 +791,6 @@ Create and register a new device in the organization.
 
 ### [New-MgDeviceExtension](New-MgDeviceExtension.md)
 Create new navigation property to extensions for devices
-
-### [New-MgDeviceExtension](New-MgDeviceExtension.md)
-The collection of open extensions defined for the device.
-Read-only.
-Nullable.
 
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
 Add a user as a registered owner of the device.
@@ -805,12 +835,12 @@ Create new navigation property to onPremisesSynchronization for directory
 ### [New-MgDirectoryRole](New-MgDirectoryRole.md)
 Activate a directory role.
 To read a directory role or update its members, it must first be activated in the tenant.
-The Company Administrators and the implicit user directory roles (**User**, **Guest User**, and **Restricted Guest User** roles) are activated by default.
+The Company Administrators and the implicit user directory roles (User, Guest User, and Restricted Guest User roles) are activated by default.
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
 ### [New-MgDirectoryRoleMemberByRef](New-MgDirectoryRoleMemberByRef.md)
 Create a new directory role member.
-You can use both the object ID and template ID of the **directoryRole** with this API.
+You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
@@ -822,7 +852,7 @@ Add new entity to directoryRoleTemplates
 
 ### [New-MgDomain](New-MgDomain.md)
 Adds a domain to the tenant.
-**Important**: You cannot use an associated domain with your Azure AD tenant until ownership is verified.
+Important: You cannot use an associated domain with your Azure AD tenant until ownership is verified.
 See List verificationDnsRecords for details.
 Root domains require verification.
 For example, contoso.com requires verification.
@@ -901,8 +931,8 @@ Delete navigation property allowedValues for directory
 
 ### [Remove-MgDirectoryDeletedItem](Remove-MgDirectoryDeletedItem.md)
 Permanently delete a recently deleted application, group, servicePrincipal, or user object from deleted items.
-After an item is permanently deleted, it **cannot** be restored.
-Administrative units **cannot** be permanently deleted by using the **deletedItems** API.
+After an item is permanently deleted, it cannot be restored.
+Administrative units cannot be permanently deleted by using the deletedItems API.
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
 ### [Remove-MgDirectoryFederationConfiguration](Remove-MgDirectoryFederationConfiguration.md)
@@ -919,7 +949,7 @@ Delete entity from directoryRoles by roleTemplateId
 
 ### [Remove-MgDirectoryRoleMemberByRef](Remove-MgDirectoryRoleMemberByRef.md)
 Remove a member from a directoryRole.
-You can use both the object ID and template ID of the **directoryRole** with this API.
+You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
@@ -975,17 +1005,20 @@ A smaller image will reduce bandwidth requirements and make the page load faster
 
 ### [Set-MgOrganizationBrandingBannerLogo](Set-MgOrganizationBrandingBannerLogo.md)
 A banner version of your company logo that appears on the sign-in page.
-The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationBrandingCustomCss](Set-MgOrganizationBrandingCustomCss.md)
-Update customCSS for the navigation property branding in organization
+CSS styling that appears on the sign-in page.
+The allowed format is .css format only and not larger than 25 KB.
 
 ### [Set-MgOrganizationBrandingFavicon](Set-MgOrganizationBrandingFavicon.md)
-Update favicon for the navigation property branding in organization
+A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
 
 ### [Set-MgOrganizationBrandingHeaderLogo](Set-MgOrganizationBrandingHeaderLogo.md)
-Update headerLogo for the navigation property branding in organization
+A company logo that appears in the header of the sign-in page.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationBrandingLocalizationBackgroundImage](Set-MgOrganizationBrandingLocalizationBackgroundImage.md)
 Image that appears as the background of the sign-in page.
@@ -994,33 +1027,40 @@ A smaller image will reduce bandwidth requirements and make the page load faster
 
 ### [Set-MgOrganizationBrandingLocalizationBannerLogo](Set-MgOrganizationBrandingLocalizationBannerLogo.md)
 A banner version of your company logo that appears on the sign-in page.
-The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationBrandingLocalizationCustomCss](Set-MgOrganizationBrandingLocalizationCustomCss.md)
-Update customCSS for the navigation property localizations in organization
+CSS styling that appears on the sign-in page.
+The allowed format is .css format only and not larger than 25 KB.
 
 ### [Set-MgOrganizationBrandingLocalizationFavicon](Set-MgOrganizationBrandingLocalizationFavicon.md)
-Update favicon for the navigation property localizations in organization
+A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
 
 ### [Set-MgOrganizationBrandingLocalizationHeaderLogo](Set-MgOrganizationBrandingLocalizationHeaderLogo.md)
-Update headerLogo for the navigation property localizations in organization
+A company logo that appears in the header of the sign-in page.
+The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationBrandingLocalizationSquareLogo](Set-MgOrganizationBrandingLocalizationSquareLogo.md)
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
-Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationBrandingLocalizationSquareLogoDark](Set-MgOrganizationBrandingLocalizationSquareLogoDark.md)
-Update squareLogoDark for the navigation property localizations in organization
+A square dark version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationBrandingSquareLogo](Set-MgOrganizationBrandingSquareLogo.md)
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
-Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationBrandingSquareLogoDark](Set-MgOrganizationBrandingSquareLogoDark.md)
-Update squareLogoDark for the navigation property branding in organization
+A square dark version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
+Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
+We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgOrganizationMobileDeviceManagementAuthority](Set-MgOrganizationMobileDeviceManagementAuthority.md)
 Set mobile device management authority

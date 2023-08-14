@@ -40,7 +40,7 @@ New-MgBetaIdentityGovernanceAccessReviewDefinition
 Create a new accessReviewScheduleDefinition object.
 
 ## EXAMPLES
-### Example 1: Create an access review on a group
+### Example 1: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -87,68 +87,7 @@ This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefini
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Create an access review on all teams with inactive guest users
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-$params = @{
-	displayName = "Review inactive guests on teams"
-	descriptionForAdmins = "Control guest user access to our teams."
-	descriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more."
-	instanceEnumerationScope = @{
-		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-		query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
-		queryType = "MicrosoftGraph"
-	}
-	scope = @{
-		"@odata.type" = "#microsoft.graph.accessReviewInactiveUsersQueryScope"
-		query = "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')"
-		queryType = "MicrosoftGraph"
-		inactiveDuration = "P30D"
-	}
-	reviewers = @(
-		@{
-			query = "./owners"
-			queryType = "MicrosoftGraph"
-		}
-	)
-	fallbackReviewers = @(
-		@{
-			query = "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
-			queryType = "MicrosoftGraph"
-		}
-	)
-	settings = @{
-		mailNotificationsEnabled = $true
-		reminderNotificationsEnabled = $true
-		justificationRequiredOnApproval = $true
-		recommendationsEnabled = $true
-		instanceDurationInDays = 3
-		recurrence = @{
-			pattern = @{
-				type = "absoluteMonthly"
-				dayOfMonth = 5
-				interval = 3
-			}
-			range = @{
-				type = "noEnd"
-				startDate = "2020-05-04T00:00:00.000Z"
-			}
-		}
-		defaultDecisionEnabled = $true
-		defaultDecision = "Deny"
-		autoApplyDecisionsEnabled = $true
-	}
-}
-
-New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Create an access review of all users to an application
+### Example 2: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -222,7 +161,7 @@ This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefini
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 4: Create an access review on a group with multiple stages
+### Example 3: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -296,7 +235,7 @@ This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefini
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 5: Create an access review on a group with insights about user-to-group affiliation and user sign in for recommendations
+### Example 4: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -746,8 +685,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: Timestamp when the access review series was created. Supports $select. Read-only.
@@ -778,8 +717,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
       - `[Principal <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[PrincipalLink <String>]`: Link to the principal object. For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9. Read-only.
       - `[PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]`: decisionItemPrincipalResourceMembership
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -862,8 +801,8 @@ To create the parameters described below, construct a hash table containing the 
 
 `CREATEDBY <IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
@@ -884,8 +823,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[AccessReviewId <String>]`: The identifier of the accessReviewInstance parent. Supports $select. Read-only.
     - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
       - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
       - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
     - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Supports $select. Read-only.
@@ -898,8 +837,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
     - `[Principal <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[PrincipalLink <String>]`: Link to the principal object. For example: https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9. Read-only.
     - `[PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]`: decisionItemPrincipalResourceMembership
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

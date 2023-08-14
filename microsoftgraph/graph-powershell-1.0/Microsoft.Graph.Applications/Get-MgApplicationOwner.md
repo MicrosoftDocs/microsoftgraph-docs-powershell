@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationowner
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgApplicationOwner
@@ -31,13 +32,17 @@ Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
-### Example 1: Using the Get-MgApplicationOwner Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
+
 Get-MgApplicationOwner -ApplicationId $applicationId
+
 ```
 This example shows how to use the Get-MgApplicationOwner Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule
 
 ## SYNOPSIS
-Delete navigation property scheduledActionsForRule for deviceManagement
+Deletes a deviceComplianceScheduledActionForRule.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -InputObje
 ```
 
 ## DESCRIPTION
-Delete navigation property scheduledActionsForRule for deviceManagement
+Deletes a deviceComplianceScheduledActionForRule.
 
 ## PARAMETERS
 

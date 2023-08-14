@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetasharelistcontenttypecopyfromcontenttypehub
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Add-MgBetaShareListContentTypeCopyFromContentTypeHub
@@ -49,6 +50,8 @@ Add or sync a copy of a published content type from the content type hub to a ta
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -211,4 +214,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgShareListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Files/Add-MgShareListContentTypeCopyFromContentTypeHub?view=graph-powershell-1.0)
-

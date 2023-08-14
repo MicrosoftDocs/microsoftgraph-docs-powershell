@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementApplePushNotificationCertificate
 
 ## SYNOPSIS
-Update the navigation property applePushNotificationCertificate in deviceManagement
+Update the properties of a applePushNotificationCertificate object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Update-MgDeviceManagementApplePushNotificationCertificate
 ```
 
 ## DESCRIPTION
-Update the navigation property applePushNotificationCertificate in deviceManagement
+Update the properties of a applePushNotificationCertificate object.
 
 ## PARAMETERS
 

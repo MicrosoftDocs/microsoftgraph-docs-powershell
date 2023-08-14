@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementRoleDefinitionRoleAssignment
 
 ## SYNOPSIS
-Delete navigation property roleAssignments for deviceManagement
+Deletes a roleAssignment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Delete navigation property roleAssignments for deviceManagement
+Deletes a roleAssignment.
 
 ## PARAMETERS
 

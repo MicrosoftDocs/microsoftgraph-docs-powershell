@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetauserpresence
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Clear-MgBetaUserPresence
 
 ## SYNOPSIS
 Clear a presence session of an application for a user.
-If it is the user's only presence session, a successful **clearPresence** changes the user's presence to `Offline/Offline`.
+If it is the user's only presence session, a successful clearPresence changes the user's presence to Offline/Offline.
 Read more about presence sessions and their time-out and expiration.
 
 > [!NOTE]
@@ -45,7 +46,7 @@ Clear-MgBetaUserPresence -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Clear a presence session of an application for a user.
-If it is the user's only presence session, a successful **clearPresence** changes the user's presence to `Offline/Offline`.
+If it is the user's only presence session, a successful clearPresence changes the user's presence to Offline/Offline.
 Read more about presence sessions and their time-out and expiration.
 
 ## EXAMPLES

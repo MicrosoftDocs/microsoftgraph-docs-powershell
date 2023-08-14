@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomation
 schema: 2.0.0
+ms.prod: security
+ms.prod: security
 ---
 
 # Get-MgSecurityAttackSimulationAutomation
@@ -41,13 +43,13 @@ Get an attack simulation automation for a tenant.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecurityAttackSimulationAutomation -SimulationAutomationId $simulationAutomationId
+Get-MgSecurityAttackSimulationAutomation
+
 ```
 This example shows how to use the Get-MgSecurityAttackSimulationAutomation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

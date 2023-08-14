@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareauthorizegroupdrivelistsubscription
 schema: 2.0.0
+ms.prod: change-notifications
 ---
 
 # Invoke-MgBetaReauthorizeGroupDriveListSubscription
 
 ## SYNOPSIS
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReauthorizeGroupDriveListSubscription?view=graph-powershell-1.0)
@@ -28,7 +29,7 @@ Invoke-MgBetaReauthorizeGroupDriveListSubscription -InputObject <IGroupsIdentity
 ```
 
 ## DESCRIPTION
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ## PARAMETERS
 

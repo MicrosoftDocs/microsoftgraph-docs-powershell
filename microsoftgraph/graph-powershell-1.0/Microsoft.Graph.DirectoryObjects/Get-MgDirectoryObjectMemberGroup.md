@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmembergroup
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryObjectMemberGroup
@@ -47,16 +48,21 @@ Return all the group IDs for the groups that the specified user, group, service 
 This function is transitive.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgDirectoryObjectMemberGroup Cmdlet
+### Example 1: Check group memberships for a directory object
+
 ```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
+
 $params = @{
-	SecurityEnabledOnly = $false
+	securityEnabledOnly = $false
 }
+
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
 ```
-This example shows how to use the Get-MgDirectoryObjectMemberGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will check group memberships for a directory object
+
 
 ## PARAMETERS
 

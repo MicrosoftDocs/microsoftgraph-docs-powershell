@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgUserPlannerPlan
 
 ## SYNOPSIS
-Retrieve a list of **plannerplan** objects shared with a user object.
+Retrieve a list of plannerplan objects shared with a user object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
@@ -22,7 +23,7 @@ Get-MgUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 ```
 
 ## DESCRIPTION
-Retrieve a list of **plannerplan** objects shared with a user object.
+Retrieve a list of plannerplan objects shared with a user object.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgUserPlannerPlan Cmdlet

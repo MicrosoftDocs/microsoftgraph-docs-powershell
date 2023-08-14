@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenoteresourcecount
 schema: 2.0.0
+ms.prod: onenote
+ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteResourceCount
@@ -33,14 +35,14 @@ Get the number of the resource
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Notes
 
 # A UPN can also be used as -UserId.
-Get-MgUserOnenoteSection -UserId $userId -OnenoteSectionId $onenoteSectionId
+Get-MgUserOnenoteSection -UserId $userId
+
 ```
 This example shows how to use the Get-MgUserOnenoteSection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

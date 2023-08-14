@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMobileAppConfiguration
 
 ## SYNOPSIS
-Create new navigation property to mobileAppConfigurations for deviceAppManagement
+Create a new iosMobileAppConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ New-MgDeviceAppManagementMobileAppConfiguration
 ```
 
 ## DESCRIPTION
-Create new navigation property to mobileAppConfigurations for deviceAppManagement
+Create a new iosMobileAppConfiguration object.
 
 ## PARAMETERS
 

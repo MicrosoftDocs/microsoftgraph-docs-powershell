@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscustomquestion
 schema: 2.0.0
+ms.prod: bookings
+ms.prod: bookings
 ---
 
 # Get-MgBookingBusinessCustomQuestion
@@ -41,13 +43,13 @@ Read the properties and relationships of a bookingCustomQuestion object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Bookings
 
-Get-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
+Get-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId
+
 ```
 This example shows how to use the Get-MgBookingBusinessCustomQuestion Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

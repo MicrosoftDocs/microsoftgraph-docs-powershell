@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Get-MgBetaUserEventExtension
@@ -40,6 +41,8 @@ Get-MgBetaUserEventExtension -InputObject <ICalendarIdentity> [-ExpandProperty <
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -274,4 +277,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserEventExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventExtension?view=graph-powershell-1.0)
-

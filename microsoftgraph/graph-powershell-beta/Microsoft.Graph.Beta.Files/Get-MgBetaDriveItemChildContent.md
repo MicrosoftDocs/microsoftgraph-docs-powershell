@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemchildcontent
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveItemChildContent
@@ -29,6 +30,8 @@ Get-MgBetaDriveItemChildContent -InputObject <IFilesIdentity> -OutFile <String> 
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -169,4 +172,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveItemChildContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemChildContent?view=graph-powershell-1.0)
-

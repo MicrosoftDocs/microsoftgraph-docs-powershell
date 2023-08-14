@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceCompliancePolicyAssignment
 
 ## SYNOPSIS
-Create new navigation property to assignments for deviceManagement
+Create a new deviceCompliancePolicyAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ New-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Create new navigation property to assignments for deviceManagement
+Create a new deviceCompliancePolicyAssignment object.
 
 ## PARAMETERS
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateamworkdeletedteamchannelmember
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Add-MgBetaTeamworkDeletedTeamChannelMember
@@ -46,6 +47,8 @@ Add-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -248,4 +251,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
-

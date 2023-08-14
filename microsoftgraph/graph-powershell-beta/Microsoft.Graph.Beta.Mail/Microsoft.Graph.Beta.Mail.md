@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Mail
-Module Guid: e8f3a996-64a4-4734-863a-b3466d113d83
+Module Guid: 6dd60a72-2052-4e4a-9b23-81281c2d0bf0
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail
 Help Version: 1.0.0.0
 Locale: en-US
@@ -23,8 +23,8 @@ Get the number of the resource
 ### [Get-MgBetaUserInferenceClassificationOverrideCount](Get-MgBetaUserInferenceClassificationOverrideCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserMailFolderChildFolder](Get-MgBetaUserMailFolderChildFolder.md)
-The collection of child folders in the mailFolder.
+### [Get-MgBetaUserInferenceClassificationOverrideCount](Get-MgBetaUserInferenceClassificationOverrideCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserMailFolderChildFolderCount](Get-MgBetaUserMailFolderChildFolderCount.md)
 Get the number of the resource
@@ -165,7 +165,6 @@ An attachment can be one of the following types: All these types of attachment r
 ### [New-MgBetaUserMailFolderChildFolderMessageExtension](New-MgBetaUserMailFolderChildFolderMessageExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgBetaUserMailFolderChildFolderMessageMention](New-MgBetaUserMailFolderChildFolderMessageMention.md)
@@ -186,7 +185,6 @@ An attachment can be one of the following types: All these types of attachment r
 ### [New-MgBetaUserMailFolderMessageExtension](New-MgBetaUserMailFolderMessageExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgBetaUserMailFolderMessageMention](New-MgBetaUserMailFolderMessageMention.md)
@@ -224,7 +222,7 @@ Delete navigation property attachments for users
 
 ### [Remove-MgBetaUserMailFolderChildFolderMessageExtension](Remove-MgBetaUserMailFolderChildFolderMessageExtension.md)
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
-See the table in the Permissions section for the list of resources that support open extensions.
+For the list of resources that support open extensions, see the table in the Permissions section.
 
 ### [Remove-MgBetaUserMailFolderChildFolderMessageMention](Remove-MgBetaUserMailFolderChildFolderMessageMention.md)
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
@@ -241,7 +239,7 @@ Delete navigation property attachments for users
 
 ### [Remove-MgBetaUserMailFolderMessageExtension](Remove-MgBetaUserMailFolderMessageExtension.md)
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
-See the table in the Permissions section for the list of resources that support open extensions.
+For the list of resources that support open extensions, see the table in the Permissions section.
 
 ### [Remove-MgBetaUserMailFolderMessageMention](Remove-MgBetaUserMailFolderMessageMention.md)
 Delete a message in the specified user's mailbox, or delete a relationship of the message.

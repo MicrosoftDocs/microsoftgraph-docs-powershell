@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPlannerBucket
 
 ## SYNOPSIS
-Delete **plannerBucket**.
+Delete plannerBucket.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerBucket?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgPlannerBucket -InputObject <IPlannerIdentity> [-IfMatch <String>] [-Pas
 ```
 
 ## DESCRIPTION
-Delete **plannerBucket**.
+Delete plannerBucket.
 
 ## EXAMPLES
 ### Example 1: Code snippet

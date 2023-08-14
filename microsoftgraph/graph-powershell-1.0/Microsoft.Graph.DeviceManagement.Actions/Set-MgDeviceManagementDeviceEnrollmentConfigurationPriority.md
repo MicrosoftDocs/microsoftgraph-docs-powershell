@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority
 
 ## SYNOPSIS
-Invoke action setPriority
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Invoke action setPriority
+Not yet documented
 
 ## PARAMETERS
 

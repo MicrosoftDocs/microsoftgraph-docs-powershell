@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundle
 schema: 2.0.0
+ms.prod: sharepoint
+ms.prod: sharepoint
 ---
 
 # Get-MgDriveBundle
@@ -41,13 +43,13 @@ Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 ### Example 1: Get a bundle
 
 ```powershell
+
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveBundle -DriveId $driveId -DriveItemId $driveItemId
-```
-This example shows how to use the Get-MgDriveBundle Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get a bundle
 
 
 ## PARAMETERS

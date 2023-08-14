@@ -1,86 +1,51 @@
 ---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertask
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrosterplancount
 schema: 2.0.0
+ms.prod: planner
 ---
 
-# Get-MgBetaUserPlannerTask
+# Get-MgBetaUserPlannerRosterPlanCount
 
 ## SYNOPSIS
-Retrieve a list of **plannertask** objects assigned to a User.
+Get the number of the resource
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerTask?view=graph-powershell-1.0)
 
 ## SYNTAX
 
+### Get (Default)
 ```
-Get-MgBetaUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaUserPlannerRosterPlanCount -UserId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgBetaUserPlannerRosterPlanCount -InputObject <IPlannerIdentity> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve a list of **plannertask** objects assigned to a User.
+Get the number of the resource
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserPlannerTask Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerTask -UserId $userId
+
 ```
 This example shows how to use the Get-MgBetaUserPlannerTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
-
-### -All
-List all pages.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Filter
 Filter items by property values
@@ -97,33 +62,19 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Int32
-Parameter Sets: (All)
+Type: IPlannerIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -142,60 +93,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -UserId
 The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -207,12 +113,28 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask
+### System.Int32
 ## NOTES
 
 ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
+  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgUserPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerTask?view=graph-powershell-1.0)

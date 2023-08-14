@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Create new navigation property to audioRoutingGroups for communications
+Create a new audioRoutingGroup.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ New-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 ```
 
 ## DESCRIPTION
-Create new navigation property to audioRoutingGroups for communications
+Create a new audioRoutingGroup.
 
 ## PARAMETERS
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -Receivers
-.
+List of receiving participant ids.
 
 ```yaml
 Type: String[]
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Sources
-.
+List of source participant ids.
 
 ```yaml
 Type: String[]
@@ -222,9 +222,9 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphAudioRoutingGroup>`: audioRoutingGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Receivers <String[]>]`: 
+  - `[Receivers <String[]>]`: List of receiving participant ids.
   - `[RoutingMode <String>]`: routingMode
-  - `[Sources <String[]>]`: 
+  - `[Sources <String[]>]`: List of source participant ids.
 
 `INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 
 ## SYNOPSIS
-Update the navigation property deviceStatuses in deviceAppManagement
+Update the properties of a managedDeviceMobileAppConfigurationDeviceStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus?view=graph-powershell-beta)
@@ -51,7 +51,7 @@ Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceStatuses in deviceAppManagement
+Update the properties of a managedDeviceMobileAppConfigurationDeviceStatus object.
 
 ## PARAMETERS
 

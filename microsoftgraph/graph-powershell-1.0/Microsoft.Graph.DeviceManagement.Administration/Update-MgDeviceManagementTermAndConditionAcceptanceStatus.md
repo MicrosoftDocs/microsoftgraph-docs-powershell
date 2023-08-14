@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementTermAndConditionAcceptanceStatus
 
 ## SYNOPSIS
-Update the navigation property acceptanceStatuses in deviceManagement
+Update the properties of a termsAndConditionsAcceptanceStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ Update-MgDeviceManagementTermAndConditionAcceptanceStatus
 ```
 
 ## DESCRIPTION
-Update the navigation property acceptanceStatuses in deviceManagement
+Update the properties of a termsAndConditionsAcceptanceStatus object.
 
 ## PARAMETERS
 

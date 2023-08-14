@@ -8,8 +8,8 @@ schema: 2.0.0
 # Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
 
 ## SYNOPSIS
-Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a `Granted` status, and have the system automatically delete the canceled request after 30 days.
-After calling this action, the **status** of the canceled **unifiedRoleAssignmentScheduleRequest** changes to `Canceled`.
+Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a Granted status, and have the system automatically delete the canceled request after 30 days.
+After calling this action, the status of the canceled unifiedRoleAssignmentScheduleRequest changes to Canceled.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
@@ -29,8 +29,8 @@ Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a `Granted` status, and have the system automatically delete the canceled request after 30 days.
-After calling this action, the **status** of the canceled **unifiedRoleAssignmentScheduleRequest** changes to `Canceled`.
+Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a Granted status, and have the system automatically delete the canceled request after 30 days.
+After calling this action, the status of the canceled unifiedRoleAssignmentScheduleRequest changes to Canceled.
 
 ## PARAMETERS
 

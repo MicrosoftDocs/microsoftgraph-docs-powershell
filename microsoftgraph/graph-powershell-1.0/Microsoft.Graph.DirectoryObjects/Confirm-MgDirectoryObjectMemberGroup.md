@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/confirm-mgdirectoryobjectmembergroup
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Confirm-MgDirectoryObjectMemberGroup
@@ -53,11 +54,14 @@ This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ## EXAMPLES
-### Example 1: Using the Confirm-MgDirectoryObjectMemberGroup Cmdlet
+### Example 1: Check group memberships for a directory object
+
 ```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
+
 $params = @{
-	GroupIds = @(
+	groupIds = @(
 		"f448435d-3ca7-4073-8152-a1fd73c0fd09"
 		"bd7c6263-4dd5-4ae8-8c96-556e1c0bece6"
 		"93670da6-d731-4366-94b5-abed40b6016b"
@@ -65,10 +69,12 @@ $params = @{
 		"c9103f26-f3cf-4004-a611-2a14e81b8f79"
 	)
 }
+
 Confirm-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
 ```
-This example shows how to use the Confirm-MgDirectoryObjectMemberGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will check group memberships for a directory object
+
 
 ## PARAMETERS
 

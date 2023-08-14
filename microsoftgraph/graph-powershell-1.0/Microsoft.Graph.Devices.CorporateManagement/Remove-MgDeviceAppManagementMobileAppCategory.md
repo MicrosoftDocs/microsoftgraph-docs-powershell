@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileAppCategory
 
 ## SYNOPSIS
-Delete navigation property mobileAppCategories for deviceAppManagement
+Deletes a mobileAppCategory.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateMan
 ```
 
 ## DESCRIPTION
-Delete navigation property mobileAppCategories for deviceAppManagement
+Deletes a mobileAppCategory.
 
 ## PARAMETERS
 

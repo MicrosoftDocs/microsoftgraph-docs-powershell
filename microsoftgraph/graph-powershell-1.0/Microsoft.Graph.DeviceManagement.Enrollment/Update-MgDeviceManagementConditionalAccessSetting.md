@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementConditionalAccessSetting
 
 ## SYNOPSIS
-Update the navigation property conditionalAccessSettings in deviceManagement
+Update the properties of a onPremisesConditionalAccessSettings object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Update-MgDeviceManagementConditionalAccessSetting
 ```
 
 ## DESCRIPTION
-Update the navigation property conditionalAccessSettings in deviceManagement
+Update the properties of a onPremisesConditionalAccessSettings object.
 
 ## PARAMETERS
 

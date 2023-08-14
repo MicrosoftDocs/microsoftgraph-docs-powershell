@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunfavoriteserviceannouncementmessage
 schema: 2.0.0
+ms.prod: service-communications
 ---
 
 # Invoke-MgBetaUnfavoriteServiceAnnouncementMessage
@@ -32,19 +33,24 @@ Invoke-MgBetaUnfavoriteServiceAnnouncementMessage
 Remove the favorite status of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaUnfavoriteServiceAnnouncementMessage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+
 $params = @{
-	MessageIds = @(
+	messageIds = @(
 		"MC172851"
 		"MC167983"
 	)
 }
+
 Invoke-MgBetaUnfavoriteServiceAnnouncementMessage -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaUnfavoriteServiceAnnouncementMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

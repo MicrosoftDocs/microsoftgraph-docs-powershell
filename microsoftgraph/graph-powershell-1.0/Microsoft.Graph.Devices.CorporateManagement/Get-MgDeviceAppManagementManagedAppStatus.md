@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappstatus
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementManagedAppStatus
 
 ## SYNOPSIS
-The managed app statuses.
+Read properties and relationships of the managedAppStatusRaw object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppStatus?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceAppManagementManagedAppStatus -InputObject <IDevicesCorporateManagem
 ```
 
 ## DESCRIPTION
-The managed app statuses.
+Read properties and relationships of the managedAppStatusRaw object.
 
 ## PARAMETERS
 

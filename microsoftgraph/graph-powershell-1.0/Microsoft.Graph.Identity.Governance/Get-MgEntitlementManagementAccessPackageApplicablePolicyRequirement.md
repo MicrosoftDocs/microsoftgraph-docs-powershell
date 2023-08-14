@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageapplicablepolicyrequirement
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement
@@ -33,13 +34,17 @@ In Azure AD entitlement management, this action retrieves a list of accessPackag
 Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
+
 Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement -AccessPackageId $accessPackageId
+
 ```
 This example shows how to use the Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementResourceOperation
 
 ## SYNOPSIS
-Delete navigation property resourceOperations for deviceManagement
+Deletes a resourceOperation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmini
 ```
 
 ## DESCRIPTION
-Delete navigation property resourceOperations for deviceManagement
+Deletes a resourceOperation.
 
 ## PARAMETERS
 

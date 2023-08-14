@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendation
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Complete-MgBetaDirectoryRecommendation
 
 ## SYNOPSIS
-Complete a recommendation object and update its **status** to `completedByUser`.
+Complete a recommendation object and update its status to completedByUser.
 
 ## SYNTAX
 
@@ -24,7 +25,7 @@ Complete-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Complete a recommendation object and update its **status** to `completedByUser`.
+Complete a recommendation object and update its status to completedByUser.
 
 ## PARAMETERS
 

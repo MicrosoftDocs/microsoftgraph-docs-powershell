@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddevicecategory
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementManagedDeviceCategory
 
 ## SYNOPSIS
-Device category
+Read properties and relationships of the deviceCategory object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDeviceCategory?view=graph-powershell-beta)
@@ -28,7 +29,7 @@ Get-MgDeviceManagementManagedDeviceCategory -InputObject <IDeviceManagementIdent
 ```
 
 ## DESCRIPTION
-Device category
+Read properties and relationships of the deviceCategory object.
 
 ## PARAMETERS
 

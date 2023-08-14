@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskprogresstaskboardformat
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
+Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
 
 ## SYNTAX
 
@@ -25,7 +26,7 @@ Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat -InputObject <IBook
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
+Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
 
 ## PARAMETERS
 

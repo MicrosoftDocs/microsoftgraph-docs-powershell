@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationuserstatusoverview
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementDeviceConfigurationUserStatusOverview
 
 ## SYNOPSIS
-Device Configuration users status overview
+Read properties and relationships of the deviceConfigurationUserOverview object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-beta)
@@ -28,7 +29,7 @@ Get-MgDeviceManagementDeviceConfigurationUserStatusOverview -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Device Configuration users status overview
+Read properties and relationships of the deviceConfigurationUserOverview object.
 
 ## PARAMETERS
 

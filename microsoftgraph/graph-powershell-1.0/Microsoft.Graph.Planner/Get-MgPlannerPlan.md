@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplan
 schema: 2.0.0
+ms.prod: planner
+ms.prod: planner
 ---
 
 # Get-MgPlannerPlan
@@ -41,13 +43,13 @@ Retrieve the properties and relationships of a plannerplan object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
 
-Get-MgPlannerPlan -PlannerPlanId $plannerPlanId
+Get-MgPlannerPlan
+
 ```
 This example shows how to use the Get-MgPlannerPlan Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

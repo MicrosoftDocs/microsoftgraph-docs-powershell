@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolebyroletemplateid
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryRoleByRoleTemplateId
@@ -10,7 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties of a directoryRole object.
 The role must be activated in tenant for a successful response.
-You can use both the object ID and template ID of the **directoryRole** with this API.
+You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
@@ -34,7 +35,7 @@ Get-MgDirectoryRoleByRoleTemplateId -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Retrieve the properties of a directoryRole object.
 The role must be activated in tenant for a successful response.
-You can use both the object ID and template ID of the **directoryRole** with this API.
+You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 

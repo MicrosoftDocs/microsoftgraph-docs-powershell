@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportexportjob
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementReportExportJob
 
 ## SYNOPSIS
-Entity representing a job to export a report
+Read properties and relationships of the deviceManagementExportJob object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportExportJob?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceManagementReportExportJob -InputObject <IReportsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Entity representing a job to export a report
+Read properties and relationships of the deviceManagementExportJob object.
 
 ## PARAMETERS
 

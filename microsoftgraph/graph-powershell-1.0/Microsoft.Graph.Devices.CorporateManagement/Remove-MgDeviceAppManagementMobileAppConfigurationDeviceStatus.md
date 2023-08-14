@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 
 ## SYNOPSIS
-Delete navigation property deviceStatuses for deviceAppManagement
+Deletes a managedDeviceMobileAppConfigurationDeviceStatus.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 ```
 
 ## DESCRIPTION
-Delete navigation property deviceStatuses for deviceAppManagement
+Deletes a managedDeviceMobileAppConfigurationDeviceStatus.
 
 ## PARAMETERS
 

@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementapplepushnotificationcertificate
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementApplePushNotificationCertificate
 
 ## SYNOPSIS
-Apple push notification certificate.
+Read properties and relationships of the applePushNotificationCertificate object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
@@ -21,7 +22,7 @@ Get-MgDeviceManagementApplePushNotificationCertificate [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Apple push notification certificate.
+Read properties and relationships of the applePushNotificationCertificate object.
 
 ## PARAMETERS
 

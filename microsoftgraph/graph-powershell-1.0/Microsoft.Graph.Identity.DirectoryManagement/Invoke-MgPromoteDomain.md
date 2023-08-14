@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpromotedomain
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Invoke-MgPromoteDomain
 
 ## SYNOPSIS
 Promote a verified subdomain to the root domain.
-A verified domain has its **isVerified** property set to `true`.
+A verified domain has its isVerified property set to true.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaPromoteDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaPromoteDomain?view=graph-powershell-beta)
@@ -29,7 +30,7 @@ Invoke-MgPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Wha
 
 ## DESCRIPTION
 Promote a verified subdomain to the root domain.
-A verified domain has its **isVerified** property set to `true`.
+A verified domain has its isVerified property set to true.
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementVppToken
 
 ## SYNOPSIS
-Delete navigation property vppTokens for deviceAppManagement
+Deletes a vppToken.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementId
 ```
 
 ## DESCRIPTION
-Delete navigation property vppTokens for deviceAppManagement
+Deletes a vppToken.
 
 ## PARAMETERS
 

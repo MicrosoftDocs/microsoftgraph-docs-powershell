@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementMobileThreatDefenseConnector
 
 ## SYNOPSIS
-Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
+Create a new mobileThreatDefenseConnector object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
@@ -34,7 +34,7 @@ New-MgDeviceManagementMobileThreatDefenseConnector -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
+Create a new mobileThreatDefenseConnector object.
 
 ## PARAMETERS
 

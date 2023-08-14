@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicesettingstatesummary
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary
 
 ## SYNOPSIS
-Device Configuration Setting State Device Summary
+Read properties and relationships of the settingStateDeviceSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary -InputObject 
 ```
 
 ## DESCRIPTION
-Device Configuration Setting State Device Summary
+Read properties and relationships of the settingStateDeviceSummary object.
 
 ## PARAMETERS
 

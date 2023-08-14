@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementManagedEBookUserStateSummary
 
 ## SYNOPSIS
-Update the navigation property userStateSummary in deviceAppManagement
+Update the properties of a userInstallStateSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesC
 ```
 
 ## DESCRIPTION
-Update the navigation property userStateSummary in deviceAppManagement
+Update the properties of a userInstallStateSummary object.
 
 ## PARAMETERS
 

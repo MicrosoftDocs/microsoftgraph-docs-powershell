@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresenceuserpreferredpresence
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Clear-MgCommunicationPresenceUserPreferredPresence
@@ -29,6 +30,8 @@ Clear-MgCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommunica
 
 ## DESCRIPTION
 Clear the preferred availability and activity status for a user.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -143,4 +146,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Clear-MgBetaCommunicationPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresenceUserPreferredPresence?view=graph-powershell-beta)
-

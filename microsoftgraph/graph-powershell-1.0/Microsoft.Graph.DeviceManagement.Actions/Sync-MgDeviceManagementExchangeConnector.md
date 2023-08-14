@@ -8,7 +8,7 @@ schema: 2.0.0
 # Sync-MgDeviceManagementExchangeConnector
 
 ## SYNOPSIS
-Invoke action sync
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Sync-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Sync-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Sync-MgDeviceManagementExchangeConnector -InputObject <IDeviceManagementActionsI
 ```
 
 ## DESCRIPTION
-Invoke action sync
+Not yet documented
 
 ## PARAMETERS
 

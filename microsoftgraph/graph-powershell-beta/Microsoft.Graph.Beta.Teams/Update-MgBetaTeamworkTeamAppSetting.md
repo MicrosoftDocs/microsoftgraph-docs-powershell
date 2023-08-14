@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a teamsAppSettings object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -29,17 +32,37 @@ Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSetti
 Update the properties of a teamsAppSettings object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaTeamworkTeamAppSetting Cmdlet
+### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings.
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
-	IsChatResourceSpecificConsentEnabled = "true"
+	isChatResourceSpecificConsentEnabled = "true"
 }
+
 Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
+
 ```
-This example shows how to use the Update-MgBetaTeamworkTeamAppSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will enable installation of apps that require resource-specific consent in chats/meetings.
+
+### Example 2: Allow Teams users to request admins for access to certain Teams Apps.
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.teamsAppSettings"
+	allowUserRequestsForAppAccess = "true"
+}
+
+Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
+
+```
+This example will allow teams users to request admins for access to certain teams apps.
 
 ## PARAMETERS
 
@@ -194,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsUserPersonalScopeResourceSpecificConsentEnabled <Boolean?>]`: 
 
 ## RELATED LINKS
+[Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)

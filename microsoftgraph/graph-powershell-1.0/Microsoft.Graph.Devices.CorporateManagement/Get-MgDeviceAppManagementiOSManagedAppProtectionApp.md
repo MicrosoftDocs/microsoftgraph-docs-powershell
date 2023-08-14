@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotectionapp
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementiOSManagedAppProtectionApp
 
 ## SYNOPSIS
-List of apps to which the policy is deployed.
+Read properties and relationships of the managedMobileApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionApp?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevicesCorpor
 ```
 
 ## DESCRIPTION
-List of apps to which the policy is deployed.
+Read properties and relationships of the managedMobileApp object.
 
 ## PARAMETERS
 

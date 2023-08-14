@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmissionoutcome
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationClassAssignmentSubmissionOutcome
@@ -43,24 +44,24 @@ Get outcomes from education
 ### Example 1: Get all outcomes
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-```
-This example shows how to use the Get-MgEducationClassAssignmentSubmissionOutcome Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get all outcomes
 
 ### Example 2: Get outcomes filtered by outcome type
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -Filter "isof('microsoft.graph.educationFeedbackResourceOutcome')"
-```
-This example shows how to use the Get-MgEducationClassAssignmentSubmissionOutcome Cmdlet.
+Get-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -Filter "isof('microsoft.graph.educationFeedbackResourceOutcome')" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get outcomes filtered by outcome type
 
 
 ## PARAMETERS

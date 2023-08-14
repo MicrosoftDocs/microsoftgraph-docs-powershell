@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecord
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaCommunicationCallRecord
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a callRecord object.
-There are two ways to get the **id** of a **callRecord**:
+There are two ways to get the id of a callRecord:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecord?view=graph-powershell-1.0)
@@ -30,30 +31,30 @@ Get-MgBetaCommunicationCallRecord -InputObject <ICloudCommunicationsIdentity> [-
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a callRecord object.
-There are two ways to get the **id** of a **callRecord**:
+There are two ways to get the id of a callRecord:
 
 ## EXAMPLES
 ### Example 1: Get basic details
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationCallRecord -CallRecordId $callRecordId
-```
-This example shows how to use the Get-MgBetaCommunicationCallRecord Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get basic details
 
 ### Example 2: Get full details
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
-Get-MgBetaCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)"
-```
-This example shows how to use the Get-MgBetaCommunicationCallRecord Cmdlet.
+Get-MgBetaCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get full details
 
 
 ## PARAMETERS

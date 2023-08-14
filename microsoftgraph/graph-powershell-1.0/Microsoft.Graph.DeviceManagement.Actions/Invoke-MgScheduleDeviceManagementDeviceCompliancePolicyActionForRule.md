@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgscheduledevicemanagementdevicecompliancepolicyactionforrule
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule
 
 ## SYNOPSIS
-Invoke action scheduleActionsForRules
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule?view=graph-powershell-beta)
@@ -47,7 +48,7 @@ Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule
 ```
 
 ## DESCRIPTION
-Invoke action scheduleActionsForRules
+Not yet documented
 
 ## PARAMETERS
 

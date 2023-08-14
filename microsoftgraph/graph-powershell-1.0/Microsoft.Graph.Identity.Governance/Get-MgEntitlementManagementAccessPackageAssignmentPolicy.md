@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageAssignmentPolicy
 
 ## SYNOPSIS
-Get assignmentPolicies from identityGovernance
+Read-only.
+Nullable.
+Supports $expand.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-beta)
@@ -35,7 +37,9 @@ Get-MgEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdentity
 ```
 
 ## DESCRIPTION
-Get assignmentPolicies from identityGovernance
+Read-only.
+Nullable.
+Supports $expand.
 
 ## PARAMETERS
 

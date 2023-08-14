@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassificationoverridecount
 schema: 2.0.0
+ms.prod: outlook
+ms.prod: outlook
 ---
 
 # Get-MgBetaUserInferenceClassificationOverrideCount
@@ -33,26 +35,26 @@ Get the number of the resource
 ### Example 1: Get a mail folder
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
-```
-This example shows how to use the Get-MgBetaUserMailFolder Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get a mail folder
 
 ### Example 2: Get a mail search folder
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
-```
-This example shows how to use the Get-MgBetaUserMailFolder Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get a mail search folder
 
 
 ## PARAMETERS

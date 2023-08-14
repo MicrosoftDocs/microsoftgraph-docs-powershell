@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelist
 schema: 2.0.0
+ms.prod: sharepoint
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaGroupSiteList
 
 ## SYNOPSIS
-Get the list of richLongRunningOperations associated with a list.
+Return the metadata for a [list][].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteList?view=graph-powershell-1.0)
@@ -35,7 +37,9 @@ Get-MgBetaGroupSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get the list of richLongRunningOperations associated with a list.
+Return the metadata for a [list][].
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -320,4 +324,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteList?view=graph-powershell-1.0)
-

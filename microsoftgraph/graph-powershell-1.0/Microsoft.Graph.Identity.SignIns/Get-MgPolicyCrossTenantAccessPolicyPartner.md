@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicypartner
 schema: 2.0.0
+ms.prod: identity-and-sign-in
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyCrossTenantAccessPolicyPartner
@@ -38,16 +40,27 @@ Get-MgPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIdentit
 Read the properties and relationships of a partner-specific configuration.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: List all partner configurations within a cross-tenant access policy
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
-```
-This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
+Get-MgPolicyCrossTenantAccessPolicyPartner
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will list all partner configurations within a cross-tenant access policy
+
+### Example 2: List the user synchronization policy for all partner configurations
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyCrossTenantAccessPolicyPartner -Property "tenantId" -ExpandProperty "identitySynchronization" 
+
+```
+This example will list the user synchronization policy for all partner configurations
 
 
 ## PARAMETERS

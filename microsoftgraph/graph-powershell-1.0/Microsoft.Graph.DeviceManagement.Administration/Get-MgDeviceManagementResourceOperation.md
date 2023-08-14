@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementresourceoperation
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementResourceOperation
 
 ## SYNOPSIS
-The Resource Operations.
+Read properties and relationships of the resourceOperation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-The Resource Operations.
+Read properties and relationships of the resourceOperation object.
 
 ## PARAMETERS
 

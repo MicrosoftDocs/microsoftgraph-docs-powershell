@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementWindowsInformationProtectionPolicy
 
 ## SYNOPSIS
-Delete navigation property windowsInformationProtectionPolicies for deviceAppManagement
+Deletes a windowsInformationProtectionPolicy.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Remove-MgDeviceAppManagementWindowsInformationProtectionPolicy
 ```
 
 ## DESCRIPTION
-Delete navigation property windowsInformationProtectionPolicies for deviceAppManagement
+Deletes a windowsInformationProtectionPolicy.
 
 ## PARAMETERS
 

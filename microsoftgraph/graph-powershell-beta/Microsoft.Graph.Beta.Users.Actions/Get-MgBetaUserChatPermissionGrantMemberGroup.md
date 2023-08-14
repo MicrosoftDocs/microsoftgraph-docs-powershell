@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserchatpermissiongrantmembergroup
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaUserChatPermissionGrantMemberGroup
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserChatPermissionGrantMemberGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -251,4 +255,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserChatPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserChatPermissionGrantMemberGroup?view=graph-powershell-1.0)
 

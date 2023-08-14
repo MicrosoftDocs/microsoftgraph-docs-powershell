@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcall
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCall
@@ -34,24 +35,24 @@ Retrieve the properties and relationships of a call object.
 ### Example 1: Getting a Peer-to-Peer call
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCall -CallId $callId
-```
-This example shows how to use the Get-MgCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example shows getting a peer-to-peer call
 
 ### Example 2: Getting a group call
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCall -CallId $callId
-```
-This example shows how to use the Get-MgCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example shows getting a group call
 
 
 ## PARAMETERS

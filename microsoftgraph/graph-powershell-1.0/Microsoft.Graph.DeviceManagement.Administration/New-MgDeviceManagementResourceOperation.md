@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementResourceOperation
 
 ## SYNOPSIS
-Create new navigation property to resourceOperations for deviceManagement
+Create a new resourceOperation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ New-MgDeviceManagementResourceOperation -BodyParameter <IMicrosoftGraphResourceO
 ```
 
 ## DESCRIPTION
-Create new navigation property to resourceOperations for deviceManagement
+Create a new resourceOperation object.
 
 ## PARAMETERS
 

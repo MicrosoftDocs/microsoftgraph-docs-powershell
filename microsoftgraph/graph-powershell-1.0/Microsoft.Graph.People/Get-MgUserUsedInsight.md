@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedcountinsight
 schema: 2.0.0
+ms.prod: insights
 ---
 
 # Get-MgUserUsedCountInsight
@@ -30,26 +31,26 @@ Get the number of the resource
 ### Example 1: Return documents that user has modified
 
 ```powershell
+
 Import-Module Microsoft.Graph.People
 
 # A UPN can also be used as -UserId.
 Get-MgUserUsedInsight -UserId $userId
-```
-This example shows how to use the Get-MgUserUsedInsight Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will return documents that user has modified
 
 ### Example 2: Return the most recently viewed documents that the signed-in user might or might not have modified
 
 ```powershell
+
 Import-Module Microsoft.Graph.People
 
 # A UPN can also be used as -UserId.
-Get-MgUserUsedInsight -UserId $userId -Sort "LastUsed/LastAccessedDateTime desc"
-```
-This example shows how to use the Get-MgUserUsedInsight Cmdlet.
+Get-MgUserUsedInsight -UserId $userId -Sort "LastUsed/LastAccessedDateTime desc" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will return the most recently viewed documents that the signed-in user might or might not have modified
 
 
 ## PARAMETERS

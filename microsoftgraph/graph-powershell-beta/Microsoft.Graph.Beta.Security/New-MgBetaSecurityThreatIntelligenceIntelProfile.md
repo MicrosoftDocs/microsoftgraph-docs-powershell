@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -CountriesOrRegionsOfOrigin
-.
+The country/region of origin for the given actor or threat associated with this intelligenceProfile.
 To construct, see NOTES section for COUNTRIESORREGIONSOFORIGIN properties and create a hash table.
 
 ```yaml
@@ -293,9 +293,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Aliases <String[]>]`: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
-  - `[CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]`: 
-    - `[Code <String>]`: 
-    - `[Label <String>]`: 
+  - `[CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]`: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+    - `[Code <String>]`: A codified representation for this country/region of origin.
+    - `[Label <String>]`: A display label for this ountry/region of origin.
   - `[Description <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of this formattedContent.
@@ -315,9 +315,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: The title of this intelligenceProfile.
   - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
 
-`COUNTRIESORREGIONSOFORIGIN <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>`: .
-  - `[Code <String>]`: 
-  - `[Label <String>]`: 
+`COUNTRIESORREGIONSOFORIGIN <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>`: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+  - `[Code <String>]`: A codified representation for this country/region of origin.
+  - `[Label <String>]`: A display label for this ountry/region of origin.
 
 `DESCRIPTION <IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

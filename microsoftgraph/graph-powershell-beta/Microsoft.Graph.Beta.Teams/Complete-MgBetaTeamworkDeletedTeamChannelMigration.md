@@ -3,14 +3,15 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamworkdeletedteamchannelmigration
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Complete-MgBetaTeamworkDeletedTeamChannelMigration
 
 ## SYNOPSIS
-Complete the message migration process by removing `migration mode` from a channel in a team.
-`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a **completeMigration** request is made, you cannot import additional messages into the team.
+Complete the message migration process by removing migration mode from a channel in a team.
+Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a completeMigration request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
 > [!NOTE]
@@ -31,10 +32,12 @@ Complete-MgBetaTeamworkDeletedTeamChannelMigration -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Complete the message migration process by removing `migration mode` from a channel in a team.
-`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a **completeMigration** request is made, you cannot import additional messages into the team.
+Complete the message migration process by removing migration mode from a channel in a team.
+Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a completeMigration request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -190,4 +193,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgTeamworkDeletedTeamChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamworkDeletedTeamChannelMigration?view=graph-powershell-1.0)
-

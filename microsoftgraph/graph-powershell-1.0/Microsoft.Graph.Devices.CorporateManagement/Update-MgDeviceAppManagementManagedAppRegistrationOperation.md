@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementManagedAppRegistrationOperation
 
 ## SYNOPSIS
-Update the navigation property operations in deviceAppManagement
+Update the properties of a managedAppOperation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedAppRegistrationOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppRegistrationOperation?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Update-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Update the navigation property operations in deviceAppManagement
+Update the properties of a managedAppOperation object.
 
 ## PARAMETERS
 

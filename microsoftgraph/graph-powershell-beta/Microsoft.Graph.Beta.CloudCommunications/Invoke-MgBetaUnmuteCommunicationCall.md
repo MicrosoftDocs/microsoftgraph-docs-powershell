@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaunmutecommunicationcall
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaUnmuteCommunicationCall
@@ -49,16 +50,21 @@ This is a server unmute, meaning that the server will start sending audio packet
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaUnmuteCommunicationCall Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+
 $params = @{
-	ClientContext = "clientContext-value"
+	clientContext = "clientContext-value"
 }
+
 Invoke-MgBetaUnmuteCommunicationCall -CallId $callId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaUnmuteCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

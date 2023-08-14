@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPlannerPlan
 
 ## SYNOPSIS
-Update the properties of a **plannerPlan** object.
+Update the properties of a plannerPlan object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlan?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the properties of a **plannerPlan** object.
+Update the properties of a plannerPlan object.
 
 ## EXAMPLES
 ### Example 1: Code snippet

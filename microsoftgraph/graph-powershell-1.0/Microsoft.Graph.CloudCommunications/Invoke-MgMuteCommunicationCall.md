@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcall
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgMuteCommunicationCall
@@ -49,16 +50,21 @@ This is a server mute, meaning that the server will drop all audio packets for t
 For more details about how to handle mute operations, see muteParticipantOperation
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgMuteCommunicationCall Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
+
 $params = @{
-	ClientContext = "clientContext-value"
+	clientContext = "clientContext-value"
 }
+
 Invoke-MgMuteCommunicationCall -CallId $callId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgMuteCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

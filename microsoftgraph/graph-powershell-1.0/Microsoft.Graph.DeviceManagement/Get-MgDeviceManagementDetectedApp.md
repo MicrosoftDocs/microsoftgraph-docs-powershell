@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdetectedapp
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementDetectedApp
 
 ## SYNOPSIS
-The list of detected apps associated with a device.
+Read properties and relationships of the detectedApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceManagementDetectedApp -InputObject <IDeviceManagementIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-The list of detected apps associated with a device.
+Read properties and relationships of the detectedApp object.
 
 ## PARAMETERS
 

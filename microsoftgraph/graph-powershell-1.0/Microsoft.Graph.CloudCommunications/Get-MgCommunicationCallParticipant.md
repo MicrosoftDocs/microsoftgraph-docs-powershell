@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallparticipant
 schema: 2.0.0
+ms.prod: cloud-communications
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCallParticipant
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a **participant** object.
+Retrieve the properties and relationships of a participant object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
@@ -35,19 +37,19 @@ Get-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity> [
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a **participant** object.
+Retrieve the properties and relationships of a participant object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+
 ```
 This example shows how to use the Get-MgCommunicationCallParticipant Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

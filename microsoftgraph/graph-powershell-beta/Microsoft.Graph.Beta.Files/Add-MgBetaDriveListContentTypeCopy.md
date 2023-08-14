@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetadrivelistcontenttypecopy
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Add-MgBetaDriveListContentTypeCopy
@@ -43,6 +44,8 @@ Add-MgBetaDriveListContentTypeCopy -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -205,4 +208,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Files/Add-MgDriveListContentTypeCopy?view=graph-powershell-1.0)
-

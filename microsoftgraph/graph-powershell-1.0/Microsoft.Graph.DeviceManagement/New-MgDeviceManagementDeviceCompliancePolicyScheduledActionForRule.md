@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule
 
 ## SYNOPSIS
-Create new navigation property to scheduledActionsForRule for deviceManagement
+Create a new deviceComplianceScheduledActionForRule object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -InputObject 
 ```
 
 ## DESCRIPTION
-Create new navigation property to scheduledActionsForRule for deviceManagement
+Create a new deviceComplianceScheduledActionForRule object.
 
 ## PARAMETERS
 

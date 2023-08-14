@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachment
 schema: 2.0.0
+ms.prod: service-communications
+ms.prod: service-communications
 ---
 
 # Get-MgBetaServiceAnnouncementMessageAttachment
@@ -41,13 +43,13 @@ Read the properties and relationships of a serviceAnnouncementAttachment object.
 ### Example 1: Get an attachment with message ID
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
-```
-This example shows how to use the Get-MgBetaServiceAnnouncementMessageAttachment Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get an attachment with message id
 
 
 ## PARAMETERS

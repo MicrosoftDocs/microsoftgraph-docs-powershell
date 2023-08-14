@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewhistorydefinition
 schema: 2.0.0
+ms.prod: governance
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
@@ -10,7 +12,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve an accessReviewHistoryDefinition object by its identifier.
 All of the properties of the access review history definition object are returned.
-If the definition is 30 days or older, a `404 Not Found` error is returned.
+If the definition is 30 days or older, a 404 Not Found error is returned.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
@@ -39,19 +41,19 @@ Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentit
 ## DESCRIPTION
 Retrieve an accessReviewHistoryDefinition object by its identifier.
 All of the properties of the access review history definition object are returned.
-If the definition is 30 days or older, a `404 Not Found` error is returned.
+If the definition is 30 days or older, a 404 Not Found error is returned.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
+Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
+
 ```
 This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

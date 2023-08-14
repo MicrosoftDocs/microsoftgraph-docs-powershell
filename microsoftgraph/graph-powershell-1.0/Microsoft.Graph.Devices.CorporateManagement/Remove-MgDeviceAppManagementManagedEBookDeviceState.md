@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementManagedEBookDeviceState
 
 ## SYNOPSIS
-Delete navigation property deviceStates for deviceAppManagement
+Deletes a deviceInstallState.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorpor
 ```
 
 ## DESCRIPTION
-Delete navigation property deviceStates for deviceAppManagement
+Deletes a deviceInstallState.
 
 ## PARAMETERS
 

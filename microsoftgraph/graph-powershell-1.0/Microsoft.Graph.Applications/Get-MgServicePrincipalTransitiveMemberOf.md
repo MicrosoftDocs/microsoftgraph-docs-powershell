@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltransitivememberof
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgServicePrincipalTransitiveMemberOf
@@ -41,13 +42,13 @@ Get transitiveMemberOf from servicePrincipals
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalTransitiveMemberOf -ServicePrincipalId $servicePrincipalId
+
 ```
 This example shows how to use the Get-MgServicePrincipalTransitiveMemberOf Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

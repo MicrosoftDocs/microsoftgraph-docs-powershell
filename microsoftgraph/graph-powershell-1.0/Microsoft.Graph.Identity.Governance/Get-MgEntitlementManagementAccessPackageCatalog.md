@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageCatalog
 
 ## SYNOPSIS
-Get catalog from identityGovernance
+Required when creating the access package.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageCatalog?view=graph-powershell-beta)
@@ -28,7 +30,9 @@ Get-MgEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGovernanc
 ```
 
 ## DESCRIPTION
-Get catalog from identityGovernance
+Required when creating the access package.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 

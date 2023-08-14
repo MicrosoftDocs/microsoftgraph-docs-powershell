@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementTargetedManagedAppConfiguration
 
 ## SYNOPSIS
-Update the navigation property targetedManagedAppConfigurations in deviceAppManagement
+Update the properties of a targetedManagedAppConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ Update-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Update the navigation property targetedManagedAppConfigurations in deviceAppManagement
+Update the properties of a targetedManagedAppConfiguration object.
 
 ## PARAMETERS
 

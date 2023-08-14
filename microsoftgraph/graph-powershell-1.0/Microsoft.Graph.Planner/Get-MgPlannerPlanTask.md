@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgPlannerPlanTask
@@ -25,13 +26,17 @@ Get-MgPlannerPlanTask -PlannerPlanId <String> [-ExpandProperty <String[]>] [-Fil
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgPlannerPlanTask Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
+
 Get-MgPlannerPlanTask -PlannerPlanId $plannerPlanId
+
 ```
 This example shows how to use the Get-MgPlannerPlanTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

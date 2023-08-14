@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Copy-MgBetaDriveItem
@@ -43,6 +44,27 @@ Copy-MgBetaDriveItem -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Files
+
+$params = @{
+	parentReference = @{
+		driveId = "6F7D00BF-FC4D-4E62-9769-6AEA81F3A21B"
+		id = "DCD0D3AD-8989-4F23-A5A2-2C086050513F"
+	}
+	name = "contoso plan (copy).txt"
+}
+
+Copy-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgBetaDriveItem Cmdlet.
+
 
 ## PARAMETERS
 
@@ -273,4 +295,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveItem?view=graph-powershell-1.0)
-

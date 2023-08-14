@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage
 schema: 2.0.0
+ms.prod: service-communications
 ---
 
 # Invoke-MgBetaFavoriteServiceAnnouncementMessage
@@ -32,19 +33,24 @@ Invoke-MgBetaFavoriteServiceAnnouncementMessage
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaFavoriteServiceAnnouncementMessage Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+
 $params = @{
-	MessageIds = @(
+	messageIds = @(
 		"MC172851"
 		"MC167983"
 	)
 }
+
 Invoke-MgBetaFavoriteServiceAnnouncementMessage -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaFavoriteServiceAnnouncementMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

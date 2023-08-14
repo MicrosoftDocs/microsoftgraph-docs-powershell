@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaDriveItemUploadSession
 
 ## SYNOPSIS
-Create an upload session to allow your app to upload files up to the maximum file size.
-An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
-To upload a file using an upload session:
+Invoke action createUploadSession
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDriveItemUploadSession](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemUploadSession?view=graph-powershell-1.0)
@@ -44,9 +42,7 @@ New-MgBetaDriveItemUploadSession -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Create an upload session to allow your app to upload files up to the maximum file size.
-An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
-To upload a file using an upload session:
+Invoke action createUploadSession
 
 ## PARAMETERS
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationtemplate
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgBetaApplicationSynchronizationTemplate
@@ -36,6 +37,8 @@ Get-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity
 
 ## DESCRIPTION
 Pre-configured synchronization settings for a particular application.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -287,4 +290,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationTemplate?view=graph-powershell-1.0)
-

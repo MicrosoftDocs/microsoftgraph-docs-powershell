@@ -262,7 +262,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
   - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
   - `[IncidentId <String>]`: The unique identifier of incident
@@ -285,6 +287,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
   - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
@@ -298,6 +301,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 `LABELPOLICYSETTINGS <IMicrosoftGraphSecurityInformationProtectionPolicySetting>`: informationProtectionPolicySetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -319,6 +323,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
   - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
+
+## RELATED LINKS
 
 ## RELATED LINKS
 

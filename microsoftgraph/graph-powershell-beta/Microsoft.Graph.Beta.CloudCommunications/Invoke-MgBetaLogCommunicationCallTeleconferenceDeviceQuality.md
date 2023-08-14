@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetalogcommunicationcallteleconferencedevicequality
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality
@@ -256,7 +257,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[CallChainId <String>]`: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call. This needs to be copied over from Microsoft.Graph.Call.CallChainId.
     - `[CloudServiceDeploymentEnvironment <String>]`: A geo-region where the service is deployed, such as ProdNoam.
     - `[CloudServiceDeploymentId <String>]`: A unique deployment identifier assigned by Azure.
-    - `[CloudServiceInstanceName <String>]`: The Azure deployed cloud service instance name, such as FrontEnd_IN_3.
+    - `[CloudServiceInstanceName <String>]`: The Azure deployed cloud service instance name, such as FrontEndIN3.
     - `[CloudServiceName <String>]`: The Azure deployed cloud service name, such as contoso.cloudapp.net.
     - `[DeviceDescription <String>]`: Any additional description, such as VTC Bldg 30/21.
     - `[DeviceName <String>]`: The user media agent name, such as Cisco SX80.
@@ -290,7 +291,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CallChainId <String>]`: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call. This needs to be copied over from Microsoft.Graph.Call.CallChainId.
   - `[CloudServiceDeploymentEnvironment <String>]`: A geo-region where the service is deployed, such as ProdNoam.
   - `[CloudServiceDeploymentId <String>]`: A unique deployment identifier assigned by Azure.
-  - `[CloudServiceInstanceName <String>]`: The Azure deployed cloud service instance name, such as FrontEnd_IN_3.
+  - `[CloudServiceInstanceName <String>]`: The Azure deployed cloud service instance name, such as FrontEndIN3.
   - `[CloudServiceName <String>]`: The Azure deployed cloud service name, such as contoso.cloudapp.net.
   - `[DeviceDescription <String>]`: Any additional description, such as VTC Bldg 30/21.
   - `[DeviceName <String>]`: The user media agent name, such as Cisco SX80.

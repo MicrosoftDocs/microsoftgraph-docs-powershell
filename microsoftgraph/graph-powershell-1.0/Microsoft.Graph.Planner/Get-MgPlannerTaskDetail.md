@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskdetail
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgPlannerTaskDetail
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a **plannerTaskDetails** object.
+Retrieve the properties and relationships of a plannerTaskDetails object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlannerTaskDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskDetail?view=graph-powershell-beta)
@@ -28,19 +29,19 @@ Get-MgPlannerTaskDetail -InputObject <IPlannerIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a **plannerTaskDetails** object.
+Retrieve the properties and relationships of a plannerTaskDetails object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId
+
 ```
 This example shows how to use the Get-MgPlannerTaskDetail Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

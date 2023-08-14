@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfigurationUserStatus
 
 ## SYNOPSIS
-Create new navigation property to userStatuses for deviceManagement
+Create a new deviceConfigurationUserStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgDeviceManagementDeviceConfigurationUserStatus -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Create new navigation property to userStatuses for deviceManagement
+Create a new deviceConfigurationUserStatus object.
 
 ## PARAMETERS
 

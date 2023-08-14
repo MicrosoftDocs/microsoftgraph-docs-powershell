@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
-Create new navigation property to auditEvents for deviceManagement
+Create a new auditEvent object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ New-MgDeviceManagementAuditEvent -BodyParameter <IMicrosoftGraphAuditEvent> [-Wh
 ```
 
 ## DESCRIPTION
-Create new navigation property to auditEvents for deviceManagement
+Create a new auditEvent object.
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
 
 ## SYNOPSIS
-Invoke action updateWindowsDeviceAccount
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Invoke action updateWindowsDeviceAccount
+Not yet documented
 
 ## PARAMETERS
 

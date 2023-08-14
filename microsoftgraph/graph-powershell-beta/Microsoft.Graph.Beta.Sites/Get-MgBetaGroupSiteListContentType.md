@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelistcontenttype
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaGroupSiteListContentType
@@ -36,6 +37,8 @@ Get-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Get contentTypes from groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -335,4 +338,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListContentType?view=graph-powershell-1.0)
-

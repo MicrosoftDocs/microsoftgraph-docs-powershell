@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary
 
 ## SYNOPSIS
-Create new navigation property to deviceSettingStateSummaries for deviceManagement
+Create a new settingStateDeviceSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary -InputObject 
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceSettingStateSummaries for deviceManagement
+Create a new settingStateDeviceSummary object.
 
 ## PARAMETERS
 

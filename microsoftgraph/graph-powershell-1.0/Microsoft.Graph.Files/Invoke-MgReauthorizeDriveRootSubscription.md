@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriverootsubscription
 schema: 2.0.0
+ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeDriveRootSubscription
 
 ## SYNOPSIS
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeDriveRootSubscription?view=graph-powershell-beta)
@@ -28,7 +29,7 @@ Invoke-MgReauthorizeDriveRootSubscription -InputObject <IFilesIdentity> [-PassTh
 ```
 
 ## DESCRIPTION
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ## PARAMETERS
 

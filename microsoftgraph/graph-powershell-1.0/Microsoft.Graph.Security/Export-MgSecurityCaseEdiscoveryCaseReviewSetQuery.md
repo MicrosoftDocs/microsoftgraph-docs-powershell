@@ -8,7 +8,7 @@ schema: 2.0.0
 # Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Initiate an export from a microsoft.graph.security.ediscoveryReviewSetQuery.
+Initiate an export from a ediscoveryReviewSetQuery.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
 > [!NOTE]
@@ -47,7 +47,7 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentit
 ```
 
 ## DESCRIPTION
-Initiate an export from a microsoft.graph.security.ediscoveryReviewSetQuery.
+Initiate an export from a ediscoveryReviewSetQuery.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
 ## PARAMETERS

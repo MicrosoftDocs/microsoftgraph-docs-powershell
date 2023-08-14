@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberof
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgServicePrincipalMemberOf
@@ -47,13 +48,13 @@ Supports $expand.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalMemberOf -ServicePrincipalId $servicePrincipalId
+
 ```
 This example shows how to use the Get-MgServicePrincipalMemberOf Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

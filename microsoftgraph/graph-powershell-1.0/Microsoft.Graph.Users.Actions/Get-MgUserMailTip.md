@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermailtip
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgUserMailTip
 
 ## SYNOPSIS
 Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to \nbe returned for more than one recipient at one time.
+Note that by making a POST call to the getMailTips action, you can request specific types of MailTips to \nbe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
 
 > [!NOTE]
@@ -45,7 +46,7 @@ Get-MgUserMailTip -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to \nbe returned for more than one recipient at one time.
+Note that by making a POST call to the getMailTips action, you can request specific types of MailTips to \nbe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
 
 ## EXAMPLES
@@ -239,6 +240,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference
 schema: 2.0.0
+ms.prod: outlook
+ms.prod: outlook
 ---
 
 # Get-MgUserSettingShiftPreference
@@ -34,14 +36,14 @@ Retrieve the properties and relationships of a shiftPreferences object by ID.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
-Get-MgUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId
+Get-MgUserTodoList -UserId $userId
+
 ```
 This example shows how to use the Get-MgUserTodoList Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

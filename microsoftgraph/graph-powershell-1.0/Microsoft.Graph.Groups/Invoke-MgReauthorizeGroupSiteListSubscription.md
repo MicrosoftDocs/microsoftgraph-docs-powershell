@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreauthorizegroupsitelistsubscription
 schema: 2.0.0
+ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeGroupSiteListSubscription
 
 ## SYNOPSIS
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReauthorizeGroupSiteListSubscription?view=graph-powershell-beta)
@@ -28,7 +29,7 @@ Invoke-MgReauthorizeGroupSiteListSubscription -InputObject <IGroupsIdentity> [-P
 ```
 
 ## DESCRIPTION
-Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
 ## PARAMETERS
 

@@ -3,13 +3,15 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelsharedwithteam
 schema: 2.0.0
+ms.prod: microsoft-teams
+ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamworkDeletedTeamChannelSharedWithTeam
 
 ## SYNOPSIS
 Get a team that has been shared with a specified channel.
-This operation is allowed only for channels with a **membershipType** value of `shared`.
+This operation is allowed only for channels with a membershipType value of shared.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-beta)
@@ -49,7 +51,7 @@ Get-MgTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-E
 
 ## DESCRIPTION
 Get a team that has been shared with a specified channel.
-This operation is allowed only for channels with a **membershipType** value of `shared`.
+This operation is allowed only for channels with a membershipType value of shared.
 
 ## PARAMETERS
 
@@ -298,6 +300,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift

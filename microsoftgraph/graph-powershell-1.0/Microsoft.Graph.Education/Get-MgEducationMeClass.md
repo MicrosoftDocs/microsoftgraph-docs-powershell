@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeclass
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationMeClass
@@ -43,13 +44,13 @@ Nullable.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationMeClass
+
 ```
 This example shows how to use the Get-MgEducationMeClass Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

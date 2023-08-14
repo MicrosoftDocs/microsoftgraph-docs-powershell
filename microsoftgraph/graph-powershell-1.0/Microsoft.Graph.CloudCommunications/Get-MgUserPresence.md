@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingcount
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgUserOnlineMeetingCount
@@ -33,25 +34,25 @@ Get the number of the resource
 ### Example 1: Get your own presence information
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 # A UPN can also be used as -UserId.
 Get-MgUserPresence -UserId $userId
-```
-This example shows how to use the Get-MgUserPresence Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get your own presence information
 
 ### Example 2: Get the presence information of another user
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgUserPresence -UserId $userId
-```
-This example shows how to use the Get-MgUserPresence Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get the presence information of another user
 
 
 ## PARAMETERS

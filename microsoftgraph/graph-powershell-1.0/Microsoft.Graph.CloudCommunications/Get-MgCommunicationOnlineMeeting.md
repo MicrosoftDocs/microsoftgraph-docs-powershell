@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationOnlineMeeting
@@ -55,13 +56,13 @@ Get onlineMeetings from communications
 ### Example 1: Retrieve an online meeting by videoTeleconferenceId
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
-```
-This example shows how to use the Get-MgCommunicationOnlineMeeting Cmdlet.
+Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will retrieve an online meeting by videoteleconferenceid
 
 
 ## PARAMETERS

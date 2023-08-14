@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDeviceAppManagementMobileAppConfiguration
 
 ## SYNOPSIS
-Invoke action assign
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Set-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Invoke action assign
+Not yet documented
 
 ## PARAMETERS
 

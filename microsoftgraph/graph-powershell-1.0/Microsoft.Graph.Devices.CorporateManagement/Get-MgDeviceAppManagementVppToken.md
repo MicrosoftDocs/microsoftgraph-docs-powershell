@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementvpptoken
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementVppToken
 
 ## SYNOPSIS
-List of Vpp tokens for this organization.
+Read properties and relationships of the vppToken object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceAppManagementVppToken -InputObject <IDevicesCorporateManagementIdent
 ```
 
 ## DESCRIPTION
-List of Vpp tokens for this organization.
+Read properties and relationships of the vppToken object.
 
 ## PARAMETERS
 

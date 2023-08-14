@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new updatableAssetGroup object.
-The **updatableAssetGroup** resource inherits from updatableAsset.
+The updatableAssetGroup resource inherits from updatableAsset.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgBetaWindowsUpdatesUpdatableAsset -BodyParameter <Hashtable> [-WhatIf] [-Co
 
 ## DESCRIPTION
 Create a new updatableAssetGroup object.
-The **updatableAssetGroup** resource inherits from updatableAsset.
+The updatableAssetGroup resource inherits from updatableAsset.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaWindowsUpdatesUpdatableAsset Cmdlet

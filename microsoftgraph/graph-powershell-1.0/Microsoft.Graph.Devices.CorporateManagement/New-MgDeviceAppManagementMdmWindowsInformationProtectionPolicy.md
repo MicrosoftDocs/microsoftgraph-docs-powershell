@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
 
 ## SYNOPSIS
-Create new navigation property to mdmWindowsInformationProtectionPolicies for deviceAppManagement
+Create a new mdmWindowsInformationProtectionPolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy -BodyParameter <H
 ```
 
 ## DESCRIPTION
-Create new navigation property to mdmWindowsInformationProtectionPolicies for deviceAppManagement
+Create a new mdmWindowsInformationProtectionPolicy object.
 
 ## PARAMETERS
 

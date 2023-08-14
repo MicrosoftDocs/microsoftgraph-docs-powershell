@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
-Delete navigation property auditEvents for deviceManagement
+Deletes a auditEvent.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministratio
 ```
 
 ## DESCRIPTION
-Delete navigation property auditEvents for deviceManagement
+Deletes a auditEvent.
 
 ## PARAMETERS
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclass
 schema: 2.0.0
+ms.prod: education
+ms.prod: education
 ---
 
 # Get-MgEducationClass
@@ -47,13 +49,13 @@ If you're using the delegated token, the user will only see classes in which the
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClass -EducationClassId $educationClassId
+Get-MgEducationClass
+
 ```
 This example shows how to use the Get-MgEducationClass Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

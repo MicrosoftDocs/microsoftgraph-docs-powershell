@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedebookdevicestate
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementManagedEBookDeviceState
 
 ## SYNOPSIS
-The list of installation states for this eBook.
+Read properties and relationships of the deviceInstallState object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorporate
 ```
 
 ## DESCRIPTION
-The list of installation states for this eBook.
+Read properties and relationships of the deviceInstallState object.
 
 ## PARAMETERS
 

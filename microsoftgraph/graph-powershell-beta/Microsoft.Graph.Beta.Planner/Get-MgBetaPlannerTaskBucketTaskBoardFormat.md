@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskbuckettaskboardformat
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Get-MgBetaPlannerTaskBucketTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.
+Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskBucketTaskBoardFormat?view=graph-powershell-1.0)
@@ -28,19 +29,19 @@ Get-MgBetaPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.
+Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerTaskBucketTaskBoardFormat -PlannerTaskId $plannerTaskId
+
 ```
 This example shows how to use the Get-MgBetaPlannerTaskBucketTaskBoardFormat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

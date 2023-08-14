@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementDefaultManagedAppProtection
 
 ## SYNOPSIS
-Update the navigation property defaultManagedAppProtections in deviceAppManagement
+Update the properties of a defaultManagedAppProtection object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-beta)
@@ -78,7 +78,7 @@ Update-MgDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCo
 ```
 
 ## DESCRIPTION
-Update the navigation property defaultManagedAppProtections in deviceAppManagement
+Update the properties of a defaultManagedAppProtection object.
 
 ## PARAMETERS
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemversioncontent
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveItemVersionContent
@@ -29,6 +30,8 @@ Get-MgBetaDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String
 
 ## DESCRIPTION
 Get content for the navigation property versions from drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -169,4 +172,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveItemVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemVersionContent?view=graph-powershell-1.0)
-

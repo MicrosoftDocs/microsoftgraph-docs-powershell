@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceCompliancePolicyUserStatus
 
 ## SYNOPSIS
-Create new navigation property to userStatuses for deviceManagement
+Create a new deviceComplianceUserStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgDeviceManagementDeviceCompliancePolicyUserStatus -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Create new navigation property to userStatuses for deviceManagement
+Create a new deviceComplianceUserStatus object.
 
 ## PARAMETERS
 

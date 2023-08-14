@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -17,6 +17,9 @@ Validate the custom banned words policy\n3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgTeamPermissionGrantProperty](/powershell/module/Microsoft.Graph.Teams/Test-MgTeamPermissionGrantProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -50,7 +53,7 @@ Test-MgBetaTeamPermissionGrantProperty -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
-Clients can use this API to determine whether a display name or mail nickname is valid before trying to **create** a Microsoft 365 group.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
 The following validations are performed for the display name and mail nickname properties: \n1.
 Validate the prefix and suffix naming policy\n2.
@@ -296,4 +299,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Test-MgTeamPermissionGrantProperty](/powershell/module/Microsoft.Graph.Teams/Test-MgTeamPermissionGrantProperty?view=graph-powershell-1.0)
 

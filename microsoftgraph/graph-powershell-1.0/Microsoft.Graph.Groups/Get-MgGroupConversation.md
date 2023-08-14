@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversation
 schema: 2.0.0
+ms.prod: groups
+ms.prod: groups
 ---
 
 # Get-MgGroupConversation
 
 ## SYNOPSIS
-The group's conversations.
+Retrieve the properties and relationships of conversation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversation?view=graph-powershell-beta)
@@ -33,19 +35,19 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>] [<
 ```
 
 ## DESCRIPTION
-The group's conversations.
+Retrieve the properties and relationships of conversation object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroupConversation -GroupId $groupId -ConversationId $conversationId
+Get-MgGroupConversation -GroupId $groupId
+
 ```
 This example shows how to use the Get-MgGroupConversation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

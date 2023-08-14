@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupMemberByRef
 
 ## SYNOPSIS
-Remove a member from a group via the **members** navigation property.
+Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
 
 > [!NOTE]
@@ -29,7 +29,7 @@ Remove-MgGroupMemberByRef -InputObject <IGroupsIdentity> [-Id <String>] [-IfMatc
 ```
 
 ## DESCRIPTION
-Remove a member from a group via the **members** navigation property.
+Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
 
 ## EXAMPLES

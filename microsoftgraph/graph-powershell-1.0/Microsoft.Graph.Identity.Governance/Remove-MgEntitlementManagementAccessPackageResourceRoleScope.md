@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEntitlementManagementAccessPackageResourceRoleScope
 
 ## SYNOPSIS
-Delete navigation property resourceRoleScopes for identityGovernance
+Remove a accessPackageResourceRoleScope from an accessPackage list of resource role scopes.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Remove-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Delete navigation property resourceRoleScopes for identityGovernance
+Remove a accessPackageResourceRoleScope from an accessPackage list of resource role scopes.
 
 ## PARAMETERS
 

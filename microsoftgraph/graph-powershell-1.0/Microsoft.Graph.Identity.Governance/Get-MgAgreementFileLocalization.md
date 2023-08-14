@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalization
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgAgreementFileLocalization
@@ -36,6 +37,19 @@ Get-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity> [-Exp
 
 ## DESCRIPTION
 The localized version of the terms of use agreement files attached to the agreement.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.Governance
+
+Get-MgAgreementFileLocalization -AgreementId $agreementId
+
+```
+This example shows how to use the Get-MgAgreementFileLocalization Cmdlet.
+
 
 ## PARAMETERS
 
@@ -320,4 +334,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
-

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 
 ## SYNOPSIS
-Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
+Create a new windowsInformationProtectionAppLearningSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 ```
 
 ## DESCRIPTION
-Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
+Create a new windowsInformationProtectionAppLearningSummary object.
 
 ## PARAMETERS
 

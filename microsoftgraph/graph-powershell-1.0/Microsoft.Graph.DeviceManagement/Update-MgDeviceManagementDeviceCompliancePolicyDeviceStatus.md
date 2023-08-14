@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus
 
 ## SYNOPSIS
-Update the navigation property deviceStatuses in deviceManagement
+Update the properties of a deviceComplianceDeviceStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceStatuses in deviceManagement
+Update the properties of a deviceComplianceDeviceStatus object.
 
 ## PARAMETERS
 

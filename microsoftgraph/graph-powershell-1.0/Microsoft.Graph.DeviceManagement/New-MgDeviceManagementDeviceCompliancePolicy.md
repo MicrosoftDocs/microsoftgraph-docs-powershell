@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Create new navigation property to deviceCompliancePolicies for deviceManagement
+Create a new iosCompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -36,7 +36,7 @@ New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDevi
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceCompliancePolicies for deviceManagement
+Create a new iosCompliancePolicy object.
 
 ## PARAMETERS
 

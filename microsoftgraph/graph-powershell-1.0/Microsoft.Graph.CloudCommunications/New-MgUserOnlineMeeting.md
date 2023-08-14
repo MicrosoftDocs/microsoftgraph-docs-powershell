@@ -33,6 +33,7 @@ Create new navigation property to presences for communications
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -43,14 +44,14 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgUserOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 2: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -64,14 +65,14 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgUserOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 3: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
@@ -85,10 +86,9 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgUserOnlineMeeting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

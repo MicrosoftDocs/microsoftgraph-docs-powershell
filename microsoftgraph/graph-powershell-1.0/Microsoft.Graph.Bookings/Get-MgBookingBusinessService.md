@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservice
 schema: 2.0.0
+ms.prod: bookings
+ms.prod: bookings
 ---
 
 # Get-MgBookingBusinessService
@@ -36,6 +38,19 @@ Get-MgBookingBusinessService -InputObject <IBookingsIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Bookings
+
+Get-MgBookingBusinessService -BookingBusinessId $bookingBusinessId
+
+```
+This example shows how to use the Get-MgBookingBusinessService Cmdlet.
+
 
 ## PARAMETERS
 
@@ -265,4 +280,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessService?view=graph-powershell-beta)
-

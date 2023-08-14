@@ -44,7 +44,7 @@ Rsc Configuration State.
 Type: MicrosoftGraphRscConfigurationState
 Parameter Sets: (All)
 Aliases:
-Accepted values: DisabledForAllApps, EnabledForPreApprovedAppsOnly, EnabledForAllApps
+Accepted values: DisabledForAllApps, EnabledForPreApprovedAppsOnly, EnabledForAllApps, EnabledForSelectedGroupOfUsers, Custom
 
 Required: True
 Position: Named

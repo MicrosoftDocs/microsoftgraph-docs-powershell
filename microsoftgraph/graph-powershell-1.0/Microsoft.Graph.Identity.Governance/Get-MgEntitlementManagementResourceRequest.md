@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerequest
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementResourceRequest
 
 ## SYNOPSIS
-Get resourceRequests from identityGovernance
+Represents a request to add or remove a resource to or from a catalog respectively.
 
 ## SYNTAX
 
@@ -32,7 +33,7 @@ Get-MgEntitlementManagementResourceRequest -InputObject <IIdentityGovernanceIden
 ```
 
 ## DESCRIPTION
-Get resourceRequests from identityGovernance
+Represents a request to add or remove a resource to or from a catalog respectively.
 
 ## PARAMETERS
 

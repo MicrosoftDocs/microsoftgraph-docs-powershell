@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversation
 schema: 2.0.0
+ms.prod: groups
+ms.prod: groups
 ---
 
 # Get-MgBetaGroupConversation
@@ -40,13 +42,13 @@ Retrieve the properties and relationships of conversation object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Groups
 
-Get-MgBetaGroupConversation -GroupId $groupId -ConversationId $conversationId
+Get-MgBetaGroupConversation -GroupId $groupId
+
 ```
 This example shows how to use the Get-MgBetaGroupConversation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

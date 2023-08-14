@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmobileapptroubleshootingevent
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementMobileAppTroubleshootingEvent
 
 ## SYNOPSIS
-The collection property of MobileAppTroubleshootingEvent.
+Read properties and relationships of the mobileAppTroubleshootingEvent object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-The collection property of MobileAppTroubleshootingEvent.
+Read properties and relationships of the mobileAppTroubleshootingEvent object.
 
 ## PARAMETERS
 

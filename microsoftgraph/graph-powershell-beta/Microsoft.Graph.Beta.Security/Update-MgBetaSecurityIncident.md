@@ -499,11 +499,11 @@ To create the parameters described below, construct a hash table containing the 
   - `[Determination <String>]`: alertDetermination
   - `[Evidence <IMicrosoftGraphSecurityAlertEvidence[]>]`: Collection of evidence related to the alert.
     - `[CreatedDateTime <DateTime?>]`: The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[DetailedRoles <String[]>]`: 
+    - `[DetailedRoles <String[]>]`: Detailed description of the entity role/s in an alert. Values are free-form.
     - `[RemediationStatus <String>]`: evidenceRemediationStatus
     - `[RemediationStatusDetails <String>]`: Details about the remediation status.
-    - `[Roles <String[]>]`: One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role Attacker.
-    - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets.
+    - `[Roles <String[]>]`: The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role Attacker.
+    - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.
     - `[Verdict <String>]`: evidenceVerdict
   - `[FirstActivityDateTime <DateTime?>]`: The earliest activity associated with the alert.
   - `[IncidentId <String>]`: Unique identifier to represent the incident this alert resource is associated with.
@@ -544,11 +544,11 @@ To create the parameters described below, construct a hash table containing the 
     - `[Determination <String>]`: alertDetermination
     - `[Evidence <IMicrosoftGraphSecurityAlertEvidence[]>]`: Collection of evidence related to the alert.
       - `[CreatedDateTime <DateTime?>]`: The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      - `[DetailedRoles <String[]>]`: 
+      - `[DetailedRoles <String[]>]`: Detailed description of the entity role/s in an alert. Values are free-form.
       - `[RemediationStatus <String>]`: evidenceRemediationStatus
       - `[RemediationStatusDetails <String>]`: Details about the remediation status.
-      - `[Roles <String[]>]`: One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role Attacker.
-      - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets.
+      - `[Roles <String[]>]`: The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role Attacker.
+      - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.
       - `[Verdict <String>]`: evidenceVerdict
     - `[FirstActivityDateTime <DateTime?>]`: The earliest activity associated with the alert.
     - `[IncidentId <String>]`: Unique identifier to represent the incident this alert resource is associated with.
@@ -626,7 +626,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
   - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
   - `[IncidentId <String>]`: The unique identifier of incident
@@ -649,6 +651,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
   - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
@@ -662,6 +665,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 `RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>`: .
   - `[KqlText <String>]`: 

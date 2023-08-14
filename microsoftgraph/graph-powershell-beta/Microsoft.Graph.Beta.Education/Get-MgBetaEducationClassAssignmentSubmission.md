@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentsubmission
 schema: 2.0.0
+ms.prod: education
+ms.prod: education
 ---
 
 # Get-MgBetaEducationClassAssignmentSubmission
@@ -10,14 +12,14 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a particular submission.
 Only teachers, students, and applications with application permissions can perform this operation.
-A **submission** object represents a student's work for an assignment.
-Resources associated with the **submission** represent this work.
-Only the **assignedTo** student can see and modify the **submission**.
-A teacher or application with application permissions has full access to all **submissions**.
+A submission object represents a student's work for an assignment.
+Resources associated with the submission represent this work.
+Only the assignedTo student can see and modify the submission.
+A teacher or application with application permissions has full access to all submissions.
 The grade and feedback from a teacher are part of the educationOutcome associated with this object.
 Only teachers or applications with application permissions can add or change grades and feedback.
-Students will not see the grade or feedback until the **assignment** has been released.
-Provide the header `Prefer: include-unknown-enum-members` to properly list **submissions** with the `reassigned` status.
+Students will not see the grade or feedback until the assignment has been released.
+Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
 For details, see the examples section.
 
 > [!NOTE]
@@ -47,18 +49,18 @@ Get-MgBetaEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [
 ## DESCRIPTION
 Retrieve a particular submission.
 Only teachers, students, and applications with application permissions can perform this operation.
-A **submission** object represents a student's work for an assignment.
-Resources associated with the **submission** represent this work.
-Only the **assignedTo** student can see and modify the **submission**.
-A teacher or application with application permissions has full access to all **submissions**.
+A submission object represents a student's work for an assignment.
+Resources associated with the submission represent this work.
+Only the assignedTo student can see and modify the submission.
+A teacher or application with application permissions has full access to all submissions.
 The grade and feedback from a teacher are part of the educationOutcome associated with this object.
 Only teachers or applications with application permissions can add or change grades and feedback.
-Students will not see the grade or feedback until the **assignment** has been released.
-Provide the header `Prefer: include-unknown-enum-members` to properly list **submissions** with the `reassigned` status.
+Students will not see the grade or feedback until the assignment has been released.
+Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
 For details, see the examples section.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Request without optional Prefer header
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
@@ -69,7 +71,18 @@ This example shows how to use the Get-MgBetaEducationClassAssignmentSubmission C
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Code snippet
+### Example 2: Request with optional Prefer header
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+```
+This example shows how to use the Get-MgBetaEducationClassAssignmentSubmission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get submission with $expand options
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
@@ -319,6 +332,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
   - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationModuleId <String>]`: The unique identifier of educationModule
+  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool

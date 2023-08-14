@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a sharing permission by patching the permission resource.
-Only the **roles** property can be modified this way.
+Only the roles property can be modified this way.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemPermission?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the properties of a sharing permission by patching the permission resource.
-Only the **roles** property can be modified this way.
+Only the roles property can be modified this way.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -352,7 +352,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareId
-A unique token that can be used to access this shared item via the **shares** API.
+A unique token that can be used to access this shared item via the shares API.
 Read-only.
 
 ```yaml
@@ -476,7 +476,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[WebHtml <String>]`: For embed links, this property contains the HTML code for an <iframe> element that will embed the item in a webpage.
     - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
   - `[Roles <String[]>]`: The type of permission, for example, read. See below for the full list of roles. Read-only.
-  - `[ShareId <String>]`: A unique token that can be used to access this shared item via the **shares** API. Read-only.
+  - `[ShareId <String>]`: A unique token that can be used to access this shared item via the shares API. Read-only.
 
 `GRANTEDTO <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

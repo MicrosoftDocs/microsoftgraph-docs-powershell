@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitecontenttypecopy
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Add-MgSiteContentTypeCopy
@@ -45,21 +46,6 @@ Add-MgSiteContentTypeCopy -InputObject <ISitesIdentity>
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Sites
-
-$params = @{
-	ContentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
-}
-
-Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
-```
-This example shows how to use the Add-MgSiteContentTypeCopy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

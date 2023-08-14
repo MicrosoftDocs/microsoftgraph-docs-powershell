@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementDefaultManagedAppProtection
 
 ## SYNOPSIS
-Delete navigation property defaultManagedAppProtections for deviceAppManagement
+Deletes a defaultManagedAppProtection.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCo
 ```
 
 ## DESCRIPTION
-Delete navigation property defaultManagedAppProtections for deviceAppManagement
+Deletes a defaultManagedAppProtection.
 
 ## PARAMETERS
 

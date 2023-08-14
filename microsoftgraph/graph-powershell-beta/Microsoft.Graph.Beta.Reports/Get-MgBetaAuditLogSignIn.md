@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin
 schema: 2.0.0
+ms.prod: identity-and-access-reports
+ms.prod: identity-and-access-reports
 ---
 
 # Get-MgBetaAuditLogSignIn
@@ -40,16 +42,38 @@ Get a signIn object that contains a specific user sign-in event for your tenant.
 This includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: List all sign-ins
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaAuditLogSignIn -SignInId $signInId
-```
-This example shows how to use the Get-MgBetaAuditLogSignIn Cmdlet.
+Get-MgBetaAuditLogSignIn
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will list all sign-ins
+
+### Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Azure'
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaAuditLogSignIn -Filter "startsWith(appDisplayName,'Azure')" -Top 10 
+
+```
+This example will retrieve the first 10 sign-ins to apps with the appdisplayname that starts with 'azure'
+
+### Example 3: Retrieve the first 10 sign-ins where the signInEventType is not interactiveUser starting with the latest sign-in
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Reports
+
+Get-MgBetaAuditLogSignIn -Filter "(signInEventTypes/any(t: t ne 'interactiveUser'))" -Sort "createdDateTime DESC" -Top 10 
+
+```
+This example will retrieve the first 10 sign-ins where the signineventtype is not interactiveuser starting with the latest sign-in
 
 
 ## PARAMETERS

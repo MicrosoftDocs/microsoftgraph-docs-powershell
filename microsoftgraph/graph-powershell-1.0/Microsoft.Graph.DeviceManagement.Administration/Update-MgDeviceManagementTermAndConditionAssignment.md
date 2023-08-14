@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementTermAndConditionAssignment
 
 ## SYNOPSIS
-Update the navigation property assignments in deviceManagement
+Update the properties of a termsAndConditionsAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementTermAndConditionAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTermAndConditionAssignment?view=graph-powershell-beta)
@@ -43,7 +43,7 @@ Update-MgDeviceManagementTermAndConditionAssignment -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Update the navigation property assignments in deviceManagement
+Update the properties of a termsAndConditionsAssignment object.
 
 ## PARAMETERS
 

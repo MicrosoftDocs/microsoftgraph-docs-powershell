@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitelistcontenttypecopy
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Add-MgBetaSiteListContentTypeCopy
@@ -45,16 +46,21 @@ Add-MgBetaSiteListContentTypeCopy -InputObject <ISitesIdentity>
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## EXAMPLES
-### Example 1: Using the Add-MgBetaSiteListContentTypeCopy Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
+
 $params = @{
-	ContentType = "https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101"
+	contentType = "https://graph.microsoft.com/beta/sites/id/contentTypes/0x0101"
 }
+
 Add-MgBetaSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
+
 ```
 This example shows how to use the Add-MgBetaSiteListContentTypeCopy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

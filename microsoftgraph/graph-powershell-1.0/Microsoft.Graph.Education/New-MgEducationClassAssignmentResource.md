@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an assignment resource.
 Only teachers can perform this operation.
-You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
+You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
@@ -46,12 +46,13 @@ New-MgEducationClassAssignmentResource -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create an assignment resource.
 Only teachers can perform this operation.
-You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
+You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
 ## EXAMPLES
-### Example 1: Create an educationLinkResource
+### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 $params = @{
@@ -65,14 +66,14 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create an educationWordResource
+### Example 2: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 $params = @{
@@ -85,14 +86,14 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Create an educationFileResource
+### Example 3: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 $params = @{
@@ -104,14 +105,14 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Create an educationExcelResource
+### Example 4: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 $params = @{
@@ -124,34 +125,14 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Create an educationPowerPointResource
+### Example 5: Code snippet
 
 ```powershell
-Import-Module Microsoft.Graph.Education
 
-$params = @{
-	distributeForStudentWork = $false
-	resource = @{
-		"@odata.type" = "microsoft.graph.educationPowerPointResource"
-		displayName = "state diagram.pptx"
-		fileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RN327OXRN6EVFE2Q5FRJZTN5EOJ"
-	}
-}
-
-New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-```
-This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Create an educationMediaResource
-
-```powershell
 Import-Module Microsoft.Graph.Education
 
 $params = @{
@@ -164,14 +145,14 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 7: Create an educationTeamsAppResource
+### Example 6: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Education
 
 $params = @{
@@ -180,17 +161,16 @@ $params = @{
 		displayName = "Template - My Story"
 		appId = "6fbeb90c-3d55-4bd5-82c4-bfe824be4300"
 		appIconWebUrl = "https://statics.teams.cdn.office.net/evergreen-assets/ThirdPartyApps/6fbeb90c-3d55-4bd5-82c4-bfe824be4300_largeImage.png?v=2.0.2"
-		teamsEmbeddedContentUrl = "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&amp;render_slide_panel=1"
+		teamsEmbeddedContentUrl = "https://app.api.edu.buncee.com/player/C7B0866C9B7E485EAE21AE14DBC3FD08?embed=1&render_slide_panel=1"
 		webUrl = "https://app.edu.buncee.com/buncee/C7B0866C9B7E485EAE21AE14DBC3FD08"
 		"@odata.type" = "#microsoft.graph.educationTeamsAppResource"
 	}
 }
 
 New-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgEducationClassAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

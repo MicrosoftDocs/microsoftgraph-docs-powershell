@@ -1,14 +1,15 @@
 ---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan
 schema: 2.0.0
+ms.prod: planner
 ---
 
-# Get-MgUserPlannerTask
+# Get-MgUserPlannerPlan
 
 ## SYNOPSIS
-Retrieve a list of **plannertask** objects assigned to a User.
+Retrieve a list of plannerplan objects shared with a user object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
@@ -16,23 +17,27 @@ Retrieve a list of **plannertask** objects assigned to a User.
 ## SYNTAX
 
 ```
-Get-MgUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+Get-MgUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve a list of **plannertask** objects assigned to a User.
+Retrieve a list of plannerplan objects shared with a user object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgUserPlannerTask Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
+
 # A UPN can also be used as -UserId.
 Get-MgUserPlannerTask -UserId $userId
+
 ```
 This example shows how to use the Get-MgUserPlannerTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -209,7 +214,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan
 ## NOTES
 
 ALIASES

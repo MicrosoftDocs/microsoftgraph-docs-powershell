@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermemberobject
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgUserMemberObject
@@ -10,7 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMemberObject](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMemberObject?view=graph-powershell-beta)
@@ -46,7 +47,7 @@ Get-MgUserMemberObject -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
-**Note:** Only users and role-enabled groups can be members of directory roles.
+Note: Only users and role-enabled groups can be members of directory roles.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -223,6 +224,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

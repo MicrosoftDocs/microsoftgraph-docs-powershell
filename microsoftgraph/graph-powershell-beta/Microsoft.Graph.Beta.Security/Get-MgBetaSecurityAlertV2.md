@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalertv2
 schema: 2.0.0
+ms.prod: security
+ms.prod: security
 ---
 
 # Get-MgBetaSecurityAlertV2
 
 ## SYNOPSIS
-Get the properties and relationships of an alert in an organization based on the specified alert **id** property.
+Get the properties and relationships of an alert in an organization based on the specified alert id property.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlertV2?view=graph-powershell-1.0)
@@ -35,7 +37,7 @@ Get-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of an alert in an organization based on the specified alert **id** property.
+Get the properties and relationships of an alert in an organization based on the specified alert id property.
 
 ## PARAMETERS
 
@@ -274,7 +276,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
   - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
   - `[IncidentId <String>]`: The unique identifier of incident
@@ -297,6 +301,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
   - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
@@ -310,6 +315,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
 [Get-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlertV2?view=graph-powershell-1.0)

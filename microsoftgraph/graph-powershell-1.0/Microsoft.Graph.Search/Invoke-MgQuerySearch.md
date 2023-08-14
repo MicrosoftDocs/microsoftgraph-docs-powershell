@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch
 schema: 2.0.0
+ms.prod: search
 ---
 
 # Invoke-MgQuerySearch
@@ -31,6 +32,68 @@ Invoke-MgQuerySearch -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbod
 ## DESCRIPTION
 Runs the query specified in the request body.
 Search results are provided in the response.
+
+## EXAMPLES
+### Example 1: Basic call to perform a search request
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+$params = @{
+	requests = @(
+		@{
+			entityTypes = @(
+				"externalItem"
+			)
+			contentSources = @(
+				"/external/connections/connectionfriendlyname"
+			)
+			query = @{
+				queryString = "contoso product"
+			}
+			from = 0
+			size = 25
+			fields = @(
+				"title"
+				"description"
+			)
+		}
+	)
+}
+
+Invoke-MgQuerySearch -BodyParameter $params
+
+```
+This example will basic call to perform a search request
+
+### Example 2: Basic call to use queryTemplate
+
+```powershell
+
+Import-Module Microsoft.Graph.Search
+
+$params = @{
+	requests = @(
+		@{
+			entityTypes = @(
+				"listItem"
+			)
+			query = @{
+				queryString = "contoso"
+				queryTemplate = '{searchTerms} CreatedBy:Bob"
+			}
+			from = 0
+			size = 25
+		}
+	)
+}
+
+Invoke-MgQuerySearch -BodyParameter $params
+
+```
+This example will basic call to use querytemplate
+
 
 ## PARAMETERS
 
@@ -221,4 +284,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
-

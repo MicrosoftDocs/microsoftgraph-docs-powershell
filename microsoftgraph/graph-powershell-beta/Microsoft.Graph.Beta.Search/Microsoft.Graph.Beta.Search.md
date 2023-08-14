@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Search
-Module Guid: 2eff311e-6886-485e-b5a5-7bd2bcd93811
+Module Guid: e7ff9602-f88d-4c94-86b6-c6e90f9240a4
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search
 Help Version: 1.0.0.0
 Locale: en-US
@@ -40,7 +40,7 @@ Get the number of the resource
 Get the properties and relationships of an externalitem object.
 This API is provided for diagnostic purposes only.
 It is not intended to be used for any other purpose.
-Repeated requests to this API might result in `429` HTTP errors.
+Repeated requests to this API might result in 429 HTTP errors.
 
 ### [Get-MgBetaExternalConnectionItemActivity](Get-MgBetaExternalConnectionItemActivity.md)
 Returns a list of activities performed on the item.
@@ -71,7 +71,7 @@ Retrieve the properties of a schema for an externalConnection.
 Get industryData from external
 
 ### [Get-MgBetaExternalIndustryDataConnector](Get-MgBetaExternalIndustryDataConnector.md)
-Read the properties and relationships of an industryDataConnector object.
+Read the properties and relationships of an azureDataLakeConnector object.
 
 ### [Get-MgBetaExternalIndustryDataConnectorCount](Get-MgBetaExternalIndustryDataConnectorCount.md)
 Get the number of the resource
@@ -80,7 +80,7 @@ Get the number of the resource
 The sourceSystemDefinition this connector is connected to.
 
 ### [Get-MgBetaExternalIndustryDataInboundFlow](Get-MgBetaExternalIndustryDataInboundFlow.md)
-Read the properties and relationships of an inboundFlow object.
+Read the properties and relationships of an inboundFileFlow object.
 
 ### [Get-MgBetaExternalIndustryDataInboundFlowCount](Get-MgBetaExternalIndustryDataInboundFlowCount.md)
 Get the number of the resource
@@ -180,11 +180,11 @@ Create new navigation property to activities for external
 Create new navigation property to operations for external
 
 ### [New-MgBetaExternalIndustryDataConnector](New-MgBetaExternalIndustryDataConnector.md)
-Create a new azureDataLakeConnector object.
+Create a new industryDataConnector object.
 
 ### [New-MgBetaExternalIndustryDataInboundFlow](New-MgBetaExternalIndustryDataInboundFlow.md)
 Create a new inboundFlow object.
-The following prerequisite resources are required when you create an **inboundFlow**:
+The following prerequisite resources are required when you create an inboundFlow:
 
 ### [New-MgBetaExternalIndustryDataOperation](New-MgBetaExternalIndustryDataOperation.md)
 Create new navigation property to operations for external
@@ -238,7 +238,7 @@ Delete navigation property schema for external
 Delete an industryDataConnector object.
 
 ### [Remove-MgBetaExternalIndustryDataInboundFlow](Remove-MgBetaExternalIndustryDataInboundFlow.md)
-Delete an inboundFlow object.
+Delete an inboundFileFlow object.
 
 ### [Remove-MgBetaExternalIndustryDataOperation](Remove-MgBetaExternalIndustryDataOperation.md)
 Delete navigation property operations for external
@@ -295,7 +295,7 @@ Update the navigation property quota in external
 Update the properties of a schema for an externalConnection.
 
 ### [Update-MgBetaExternalIndustryDataConnector](Update-MgBetaExternalIndustryDataConnector.md)
-Update the properties of an azureDataLakeConnector object.
+Update the properties of an industryDataConnector object.
 
 ### [Update-MgBetaExternalIndustryDataInboundFlow](Update-MgBetaExternalIndustryDataInboundFlow.md)
 Update the properties of an inboundFlow object.

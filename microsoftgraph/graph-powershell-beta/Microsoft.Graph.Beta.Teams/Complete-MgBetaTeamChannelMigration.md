@@ -3,14 +3,15 @@ external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateamchannelmigration
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Complete-MgBetaTeamChannelMigration
 
 ## SYNOPSIS
-Complete the message migration process by removing `migration mode` from a channel in a team.
-`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a **completeMigration** request is made, you cannot import additional messages into the team.
+Complete the message migration process by removing migration mode from a channel in a team.
+Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a completeMigration request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
 > [!NOTE]
@@ -31,19 +32,23 @@ Complete-MgBetaTeamChannelMigration -InputObject <ITeamsIdentity> [-PassThru] [-
 ```
 
 ## DESCRIPTION
-Complete the message migration process by removing `migration mode` from a channel in a team.
-`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a **completeMigration** request is made, you cannot import additional messages into the team.
+Complete the message migration process by removing migration mode from a channel in a team.
+Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a completeMigration request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
-### Example 1: Using the Complete-MgBetaTeamChannelMigration Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 Complete-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
+
 ```
 This example shows how to use the Complete-MgBetaTeamChannelMigration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

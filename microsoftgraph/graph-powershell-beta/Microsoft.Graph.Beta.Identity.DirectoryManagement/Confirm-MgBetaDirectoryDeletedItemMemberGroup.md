@@ -1,14 +1,19 @@
 ---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadirectoryadministrativeunitmemberobject
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadirectorydeleteditemmembergroup
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
-# Confirm-MgBetaDirectoryAdministrativeUnitMemberObject
+# Confirm-MgBetaDirectoryDeletedItemMemberGroup
 
 ## SYNOPSIS
-Invoke action checkMemberObjects
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Confirm-MgDirectoryDeletedItemMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDirectoryDeletedItemMemberGroup?view=graph-powershell-1.0)
@@ -17,74 +22,38 @@ Invoke action checkMemberObjects
 
 ### CheckExpanded (Default)
 ```
-Confirm-MgBetaDirectoryAdministrativeUnitMemberObject -AdministrativeUnitId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaDirectoryDeletedItemMemberGroup -DirectoryObjectId <String> [-AdditionalProperties <Hashtable>]
+ [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Check
 ```
-Confirm-MgBetaDirectoryAdministrativeUnitMemberObject -AdministrativeUnitId <String>
- -BodyParameter <IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
+Confirm-MgBetaDirectoryDeletedItemMemberGroup -DirectoryObjectId <String>
+ -BodyParameter <IPaths741T6WDirectoryDeleteditemsDirectoryobjectIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckViaIdentityExpanded
 ```
-Confirm-MgBetaDirectoryAdministrativeUnitMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaDirectoryDeletedItemMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
-Confirm-MgBetaDirectoryAdministrativeUnitMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
+Confirm-MgBetaDirectoryDeletedItemMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IPaths741T6WDirectoryDeleteditemsDirectoryobjectIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action checkMemberObjects
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ## EXAMPLES
-### Example 1: Check group memberships for a directory object
-
-```powershell
-Import-Module Microsoft.Graph.Beta.DirectoryObjects
-
-$params = @{
-	GroupIds = @(
-		"f448435d-3ca7-4073-8152-a1fd73c0fd09"
-		"bd7c6263-4dd5-4ae8-8c96-556e1c0bece6"
-		"93670da6-d731-4366-94b5-abed40b6016b"
-		"f5484ab1-4d4d-41ec-a9b8-754b3957bfc7"
-		"c9103f26-f3cf-4004-a611-2a14e81b8f79"
-	)
-}
-
-Confirm-MgBetaDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
-```
-This example shows how to use the Confirm-MgBetaDirectoryDeletedItemMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Check group memberships for the signed-in user
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
-
-$params = @{
-	GroupIds = @(
-		"fee2c45b-915a-4a64b130f4eb9e75525e"
-		"4fe90ae065a-478b9400e0a0e1cbd540"
-	)
-}
-
-# A UPN can also be used as -UserId.
-Confirm-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Confirm-MgBetaDirectoryDeletedItemMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -103,8 +72,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AdministrativeUnitId
-The unique identifier of administrativeUnit
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths741T6WDirectoryDeleteditemsDirectoryobjectIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Check, CheckViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DirectoryObjectId
+The unique identifier of directoryObject
 
 ```yaml
 Type: String
@@ -118,23 +103,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Check, CheckViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Ids
+### -GroupIds
 .
 
 ```yaml
@@ -202,7 +171,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths741T6WDirectoryDeleteditemsDirectoryobjectIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.String
@@ -215,9 +184,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths741T6WDirectoryDeleteditemsDirectoryobjectIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String[]>]`: 
+  - `[GroupIds <String[]>]`: 
 
 `INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit

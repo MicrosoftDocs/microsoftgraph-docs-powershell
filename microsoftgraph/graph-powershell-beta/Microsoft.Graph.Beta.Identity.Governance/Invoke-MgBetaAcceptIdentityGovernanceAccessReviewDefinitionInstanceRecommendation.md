@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewdefinitioninstancerecommendation
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation
 
 ## SYNOPSIS
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
-Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
+Recommendations are generated if recommendationsEnabled is true on the accessReviewScheduleDefinition object.
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
 > [!NOTE]
@@ -32,7 +33,7 @@ Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendatio
 
 ## DESCRIPTION
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
-Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
+Recommendations are generated if recommendationsEnabled is true on the accessReviewScheduleDefinition object.
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
 ## EXAMPLES

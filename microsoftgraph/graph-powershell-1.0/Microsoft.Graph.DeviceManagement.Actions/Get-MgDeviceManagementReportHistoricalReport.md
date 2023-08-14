@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreporthistoricalreport
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementReportHistoricalReport
 
 ## SYNOPSIS
-Invoke action getHistoricalReport
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportHistoricalReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportHistoricalReport?view=graph-powershell-beta)
@@ -30,7 +31,7 @@ Get-MgDeviceManagementReportHistoricalReport -OutFile <String>
 ```
 
 ## DESCRIPTION
-Invoke action getHistoricalReport
+Not yet documented
 
 ## PARAMETERS
 

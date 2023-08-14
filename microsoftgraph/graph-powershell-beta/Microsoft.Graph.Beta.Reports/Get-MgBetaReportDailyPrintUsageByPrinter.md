@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyprinter
 schema: 2.0.0
+ms.prod: cloud-printing
+ms.prod: cloud-printing
 ---
 
 # Get-MgBetaReportDailyPrintUsageByPrinter
 
 ## SYNOPSIS
-Retrieve a list of daily print usage summaries, grouped by printer.
+Retrieve a printer's usage summary for a particular time period.
+For descriptions of each of the endpoints, see printUsageByPrinter.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportDailyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByPrinter?view=graph-powershell-1.0)
@@ -35,19 +38,20 @@ Get-MgBetaReportDailyPrintUsageByPrinter -InputObject <IReportsIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Retrieve a list of daily print usage summaries, grouped by printer.
+Retrieve a printer's usage summary for a particular time period.
+For descriptions of each of the endpoints, see printUsageByPrinter.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
 
-Get-MgBetaReportDailyPrintUsageByPrinter -PrintUsageByPrinterId $printUsageByPrinterId
+Get-MgBetaReportDailyPrintUsageByPrinter
+
 ```
 This example shows how to use the Get-MgBetaReportDailyPrintUsageByPrinter Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

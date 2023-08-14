@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Confirm-MgRiskyUserCompromised
@@ -34,19 +35,24 @@ Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 
 ## EXAMPLES
-### Example 1: Using the Confirm-MgRiskyUserCompromised Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
+
 $params = @{
-	UserIds = @(
+	userIds = @(
 		"29f270bb-4d23-4f68-8a57-dc73dc0d4caf"
 		"20f91ec9-d140-4d90-9cd9-f618587a1471"
 	)
 }
+
 Confirm-MgRiskyUserCompromised -BodyParameter $params
+
 ```
 This example shows how to use the Confirm-MgRiskyUserCompromised Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

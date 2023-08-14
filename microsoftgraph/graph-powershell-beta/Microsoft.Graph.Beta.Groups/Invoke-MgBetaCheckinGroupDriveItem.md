@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckingroupdriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaCheckinGroupDriveItem
 
 ## SYNOPSIS
-Check in a checked out **driveItem** resource, which makes the version of the document available to others.
+Check in a checked out driveItem resource, which makes the version of the document available to others.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCheckinGroupDriveItem?view=graph-powershell-1.0)
@@ -43,7 +44,7 @@ Invoke-MgBetaCheckinGroupDriveItem -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Check in a checked out **driveItem** resource, which makes the version of the document available to others.
+Check in a checked out driveItem resource, which makes the version of the document available to others.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an assignment resource.
 Only teachers can perform this operation.
-You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
+You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentResource?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaEducationUserAssignmentResource -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create an assignment resource.
 Only teachers can perform this operation.
-You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
+You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
 ## EXAMPLES
 
@@ -250,6 +250,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
   - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationModuleId <String>]`: The unique identifier of educationModule
+  - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit
 schema: 2.0.0
+ms.prod: directory-management
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryAdministrativeUnit
@@ -41,13 +43,13 @@ Retrieve the properties and relationships of an administrativeUnit object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
+Get-MgDirectoryAdministrativeUnit
+
 ```
 This example shows how to use the Get-MgDirectoryAdministrativeUnit Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

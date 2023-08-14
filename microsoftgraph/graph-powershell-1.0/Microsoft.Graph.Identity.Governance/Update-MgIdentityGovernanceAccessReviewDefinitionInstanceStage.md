@@ -9,9 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of an accessReviewStage object.
-Only the **reviewers** and **fallbackReviewers** properties can be updated.
-You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
-To update an **accessReviewStage**, its **status** must be `NotStarted`, `Initializing`, or `InProgress`.
+Only the reviewers and fallbackReviewers properties can be updated.
+You can only add reviewers to the fallbackReviewers property but can't remove existing fallbackReviewers.
+To update an accessReviewStage, its status must be NotStarted, Initializing, or InProgress.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)
@@ -52,9 +52,9 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <IId
 
 ## DESCRIPTION
 Update the properties of an accessReviewStage object.
-Only the **reviewers** and **fallbackReviewers** properties can be updated.
-You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
-To update an **accessReviewStage**, its **status** must be `NotStarted`, `Initializing`, or `InProgress`.
+Only the reviewers and fallbackReviewers properties can be updated.
+You can only add reviewers to the fallbackReviewers property but can't remove existing fallbackReviewers.
+To update an accessReviewStage, its status must be NotStarted, Initializing, or InProgress.
 
 ## EXAMPLES
 ### Example 1: Code snippet

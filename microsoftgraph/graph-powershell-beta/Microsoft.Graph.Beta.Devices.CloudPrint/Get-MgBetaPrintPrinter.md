@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinter
 schema: 2.0.0
+ms.prod: cloud-printing
+ms.prod: cloud-printing
 ---
 
 # Get-MgBetaPrintPrinter
@@ -41,13 +43,13 @@ Retrieve the properties and relationships of a printer object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
-Get-MgBetaPrintPrinter -PrinterId $printerId
+Get-MgBetaPrintPrinter
+
 ```
 This example shows how to use the Get-MgBetaPrintPrinter Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

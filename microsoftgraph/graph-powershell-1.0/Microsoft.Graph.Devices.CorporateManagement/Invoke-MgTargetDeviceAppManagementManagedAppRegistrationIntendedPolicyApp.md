@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmanagementmanagedappregistrationintendedpolicyapp
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Invoke-MgTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp
 
 ## SYNOPSIS
-Invoke action targetApps
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp?view=graph-powershell-beta)
@@ -46,7 +47,7 @@ Invoke-MgTargetDeviceAppManagementManagedAppRegistrationIntendedPolicyApp
 ```
 
 ## DESCRIPTION
-Invoke action targetApps
+Not yet documented
 
 ## PARAMETERS
 

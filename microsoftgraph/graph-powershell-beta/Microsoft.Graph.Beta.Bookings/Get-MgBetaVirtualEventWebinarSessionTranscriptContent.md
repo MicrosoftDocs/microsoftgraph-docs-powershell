@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessiontranscriptcontent
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaVirtualEventWebinarSessionTranscriptContent
 
 ## SYNOPSIS
-A field that represents the content of the transcript.
+The content of the transcript.
 Read-only.
 
 ## SYNTAX
@@ -27,7 +28,7 @@ Get-MgBetaVirtualEventWebinarSessionTranscriptContent -InputObject <IBookingsIde
 ```
 
 ## DESCRIPTION
-A field that represents the content of the transcript.
+The content of the transcript.
 Read-only.
 
 ## PARAMETERS

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-Module Guid: e46fae06-d0d8-4376-ac74-dc342f31c426
+Module Guid: 9758e127-037a-4c42-948e-7cc4780bd0a3
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -59,10 +59,10 @@ Archive a list of serviceUpdateMessages for the signed in user.
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
 ### [Invoke-MgMarkServiceAnnouncementMessageRead](Invoke-MgMarkServiceAnnouncementMessageRead.md)
-Mark a list of serviceUpdateMessages as **read** for the signed in user.
+Mark a list of serviceUpdateMessages as read for the signed in user.
 
 ### [Invoke-MgMarkServiceAnnouncementMessageUnread](Invoke-MgMarkServiceAnnouncementMessageUnread.md)
-Mark a list of serviceUpdateMessages as **unread** for the signed in user.
+Mark a list of serviceUpdateMessages as unread for the signed in user.
 
 ### [Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident](Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident.md)
 Invoke function incidentReport

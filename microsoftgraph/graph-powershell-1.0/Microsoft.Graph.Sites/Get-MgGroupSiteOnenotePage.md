@@ -3,13 +3,15 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotepage
 schema: 2.0.0
+ms.prod: onenote
+ms.prod: onenote
 ---
 
 # Get-MgGroupSiteOnenotePage
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a page object.
-**Getting page information** Access a page's metadata by page identifier: **Getting page content** You can use the page's `content` endpoint to get the HTML content of a page: The `includeIDs=true` query option is used to update pages.
+Getting page information Access a page's metadata by page identifier: Getting page content You can use the page's content endpoint to get the HTML content of a page: The includeIDs=true query option is used to update pages.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
@@ -37,7 +39,7 @@ Get-MgGroupSiteOnenotePage -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a page object.
-**Getting page information** Access a page's metadata by page identifier: **Getting page content** You can use the page's `content` endpoint to get the HTML content of a page: The `includeIDs=true` query option is used to update pages.
+Getting page information Access a page's metadata by page identifier: Getting page content You can use the page's content endpoint to get the HTML content of a page: The includeIDs=true query option is used to update pages.
 
 ## PARAMETERS
 

@@ -1,14 +1,14 @@
 ---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingshiftpreference
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsor
 schema: 2.0.0
 ---
 
-# Remove-MgBetaUserSettingShiftPreference
+# Remove-MgBetaUserSponsor
 
 ## SYNOPSIS
-Delete navigation property shiftPreferences for users
+Remove a user's sponsor.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoList?view=graph-powershell-1.0)
@@ -17,18 +17,18 @@ Delete navigation property shiftPreferences for users
 
 ### Delete (Default)
 ```
-Remove-MgBetaUserSettingShiftPreference -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaUserSponsor -DirectoryObjectId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaUserSponsor -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property shiftPreferences for users
+Remove a user's sponsor.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -45,6 +45,21 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 
 ## PARAMETERS
+
+### -DirectoryObjectId
+The unique identifier of directoryObject
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag

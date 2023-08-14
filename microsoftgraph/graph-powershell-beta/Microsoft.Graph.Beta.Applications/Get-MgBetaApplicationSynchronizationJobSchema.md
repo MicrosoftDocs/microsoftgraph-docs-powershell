@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationjobschema
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgBetaApplicationSynchronizationJobSchema
@@ -29,6 +30,8 @@ Get-MgBetaApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentit
 
 ## DESCRIPTION
 Retrieve the schema for a given synchronization job or template.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -159,4 +162,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
-

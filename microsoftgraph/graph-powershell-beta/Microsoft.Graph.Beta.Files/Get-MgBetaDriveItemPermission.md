@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitempermission
 schema: 2.0.0
+ms.prod: sharepoint
+ms.prod: sharepoint
 ---
 
 # Get-MgBetaDriveItemPermission
@@ -10,7 +12,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemPermission?view=graph-powershell-1.0)
@@ -39,19 +41,19 @@ Get-MgBetaDriveItemPermission -InputObject <IFilesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Files
 
-Get-MgBetaDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId
+Get-MgBetaDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId
+
 ```
 This example shows how to use the Get-MgBetaDriveItemPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

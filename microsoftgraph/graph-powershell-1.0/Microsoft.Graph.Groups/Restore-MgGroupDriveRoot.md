@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-**NOTE**: This functionality is currently only available for OneDrive Personal.
+NOTE: This functionality is currently only available for OneDrive Personal.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveRoot?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Restore-MgGroupDriveRoot -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
-**NOTE**: This functionality is currently only available for OneDrive Personal.
+NOTE: This functionality is currently only available for OneDrive Personal.
 
 ## PARAMETERS
 

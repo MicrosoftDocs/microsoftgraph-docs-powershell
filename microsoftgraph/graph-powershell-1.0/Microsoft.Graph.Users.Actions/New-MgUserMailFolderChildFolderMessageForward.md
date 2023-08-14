@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgUserDriveRootUploadSession
 
 ## SYNOPSIS
-Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
-To upload a file using an upload session, there are two steps:
+Invoke action createUploadSession
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderChildFolderMessageForward?view=graph-powershell-beta)
@@ -43,8 +42,7 @@ New-MgUserDriveRootUploadSession -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
-To upload a file using an upload session, there are two steps:
+Invoke action createUploadSession
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -243,6 +241,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

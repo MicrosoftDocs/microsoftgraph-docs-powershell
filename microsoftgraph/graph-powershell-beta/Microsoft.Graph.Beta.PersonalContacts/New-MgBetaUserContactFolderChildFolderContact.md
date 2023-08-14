@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserContactFolderChildFolderContact
 
 ## SYNOPSIS
-Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
+Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
@@ -67,7 +67,7 @@ New-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContactsIde
 ```
 
 ## DESCRIPTION
-Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
+Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 
 ## EXAMPLES
 

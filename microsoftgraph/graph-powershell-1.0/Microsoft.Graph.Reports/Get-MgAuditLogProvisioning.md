@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogprovisioning
 schema: 2.0.0
+ms.prod: identity-and-access-reports
 ---
 
 # Get-MgAuditLogProvisioning
@@ -38,27 +39,16 @@ Get-MgAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty <Str
 Get provisioning from auditLogs
 
 ## EXAMPLES
-### Example 1: Successful request
+### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Reports
 
 Get-MgAuditLogProvisioning
+
 ```
 This example shows how to use the Get-MgAuditLogProvisioning Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Error reponse
-
-```powershell
-Import-Module Microsoft.Graph.Reports
-
-Get-MgAuditLogProvisioning
-```
-This example shows how to use the Get-MgAuditLogProvisioning Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

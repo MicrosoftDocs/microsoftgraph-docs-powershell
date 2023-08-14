@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecision
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Add-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision
 
 ## SYNOPSIS
-Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's accessReviewScheduleSettings.
-The status of the accessReviewInstance must be `Completed` to call this method.
+Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is false in the review's accessReviewScheduleSettings.
+The status of the accessReviewInstance must be Completed to call this method.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
@@ -29,8 +30,8 @@ Add-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject 
 ```
 
 ## DESCRIPTION
-Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's accessReviewScheduleSettings.
-The status of the accessReviewInstance must be `Completed` to call this method.
+Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is false in the review's accessReviewScheduleSettings.
+The status of the accessReviewInstance must be Completed to call this method.
 
 ## EXAMPLES
 ### Example 1: Using the Add-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet

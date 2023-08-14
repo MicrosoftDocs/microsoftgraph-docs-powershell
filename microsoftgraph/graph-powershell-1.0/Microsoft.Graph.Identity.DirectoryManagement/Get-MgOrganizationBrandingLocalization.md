@@ -3,13 +3,15 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalization
 schema: 2.0.0
+ms.prod: identity-and-sign-in
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgOrganizationBrandingLocalization
 
 ## SYNOPSIS
 Read the properties and relationships of an organizationalBrandingLocalization object.
-To retrieve a localization branding object, specify the value of **id** in the URL.
+To retrieve a localization branding object, specify the value of id in the URL.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
@@ -37,7 +39,7 @@ Get-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 
 ## DESCRIPTION
 Read the properties and relationships of an organizationalBrandingLocalization object.
-To retrieve a localization branding object, specify the value of **id** in the URL.
+To retrieve a localization branding object, specify the value of id in the URL.
 
 ## EXAMPLES
 ### Example 1: Code snippet

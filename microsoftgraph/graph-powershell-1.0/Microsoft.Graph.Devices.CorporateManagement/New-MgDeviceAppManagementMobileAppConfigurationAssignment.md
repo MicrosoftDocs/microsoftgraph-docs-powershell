@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMobileAppConfigurationAssignment
 
 ## SYNOPSIS
-Create new navigation property to assignments for deviceAppManagement
+Create a new managedDeviceMobileAppConfigurationAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppConfigurationAssignment?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgDeviceAppManagementMobileAppConfigurationAssignment -InputObject <IDevices
 ```
 
 ## DESCRIPTION
-Create new navigation property to assignments for deviceAppManagement
+Create a new managedDeviceMobileAppConfigurationAssignment object.
 
 ## PARAMETERS
 

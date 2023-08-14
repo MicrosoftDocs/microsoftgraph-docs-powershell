@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserDriveItemListItemField
 
 ## SYNOPSIS
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItemField?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Update-MgUserDriveItemListItemField -InputObject <IFilesIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the properties on a **[listItem][]**.
+Update the properties on a [listItem][].
 
 ## PARAMETERS
 

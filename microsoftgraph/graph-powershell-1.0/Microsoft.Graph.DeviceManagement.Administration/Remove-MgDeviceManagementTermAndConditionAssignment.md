@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementTermAndConditionAssignment
 
 ## SYNOPSIS
-Delete navigation property assignments for deviceManagement
+Deletes a termsAndConditionsAssignment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementTermAndConditionAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementTermAndConditionAssignment?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceManagementTermAndConditionAssignment -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Delete navigation property assignments for deviceManagement
+Deletes a termsAndConditionsAssignment.
 
 ## PARAMETERS
 

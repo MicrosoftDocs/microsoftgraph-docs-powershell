@@ -3,15 +3,17 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionbitlockerrecoverykey
 schema: 2.0.0
+ms.prod: directory-management
+ms.prod: directory-management
 ---
 
 # Get-MgBetaInformationProtectionBitlockerRecoveryKey
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a bitlockerRecoveryKey object.
-By default, this operation does not return the **key** property that represents the actual recovery key.
-To include the **key** property in the response, use the `$select` OData query parameter.
-Including the `$select` query parameter triggers an Azure AD audit of the operation and generates an audit log.
+By default, this operation does not return the key property that represents the actual recovery key.
+To include the key property in the response, use the $select OData query parameter.
+Including the $select query parameter triggers an Azure AD audit of the operation and generates an audit log.
 You can find the log in Azure AD audit logs under the KeyManagement category.
 
 > [!NOTE]
@@ -40,9 +42,9 @@ Get-MgBetaInformationProtectionBitlockerRecoveryKey -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a bitlockerRecoveryKey object.
-By default, this operation does not return the **key** property that represents the actual recovery key.
-To include the **key** property in the response, use the `$select` OData query parameter.
-Including the `$select` query parameter triggers an Azure AD audit of the operation and generates an audit log.
+By default, this operation does not return the key property that represents the actual recovery key.
+To include the key property in the response, use the $select OData query parameter.
+Including the $select query parameter triggers an Azure AD audit of the operation and generates an audit log.
 You can find the log in Azure AD audit logs under the KeyManagement category.
 
 ## PARAMETERS

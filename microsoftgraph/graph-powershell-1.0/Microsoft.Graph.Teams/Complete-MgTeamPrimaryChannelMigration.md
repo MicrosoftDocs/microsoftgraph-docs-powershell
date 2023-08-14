@@ -3,14 +3,15 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamprimarychannelmigration
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Complete-MgTeamPrimaryChannelMigration
 
 ## SYNOPSIS
-Complete the message migration process by removing `migration mode` from a channel in a team.
-`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a **completeMigration** request is made, you cannot import additional messages into the team.
+Complete the message migration process by removing migration mode from a channel in a team.
+Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a completeMigration request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
 > [!NOTE]
@@ -30,23 +31,12 @@ Complete-MgTeamPrimaryChannelMigration -InputObject <ITeamsIdentity> [-PassThru]
 ```
 
 ## DESCRIPTION
-Complete the message migration process by removing `migration mode` from a channel in a team.
-`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
-After a **completeMigration** request is made, you cannot import additional messages into the team.
+Complete the message migration process by removing migration mode from a channel in a team.
+Migration mode is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+After a completeMigration request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Teams
-
-Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
-```
-This example shows how to use the Complete-MgTeamPrimaryChannelMigration Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -159,6 +149,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift

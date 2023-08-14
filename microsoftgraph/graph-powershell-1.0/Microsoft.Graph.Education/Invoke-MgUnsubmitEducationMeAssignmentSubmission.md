@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunsubmiteducationmeassignmentsubmission
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Invoke-MgUnsubmitEducationMeAssignmentSubmission
@@ -10,8 +11,8 @@ schema: 2.0.0
 ## SYNOPSIS
 Indicate that a student wants to work on the submission of the assignment after it was turned in.
 Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from `submitted` to `working`.
-During the submit process, all the resources are copied from **submittedResources** to  **workingResources**.
+This method changes the status of the submission from submitted to working.
+During the submit process, all the resources are copied from submittedResources to  workingResources.
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
@@ -35,23 +36,12 @@ Invoke-MgUnsubmitEducationMeAssignmentSubmission -InputObject <IEducationIdentit
 ## DESCRIPTION
 Indicate that a student wants to work on the submission of the assignment after it was turned in.
 Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from `submitted` to `working`.
-During the submit process, all the resources are copied from **submittedResources** to  **workingResources**.
+This method changes the status of the submission from submitted to working.
+During the submit process, all the resources are copied from submittedResources to  workingResources.
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
 ## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Education
-
-Invoke-MgUnsubmitEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-```
-This example shows how to use the Invoke-MgUnsubmitEducationMeAssignmentSubmission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 

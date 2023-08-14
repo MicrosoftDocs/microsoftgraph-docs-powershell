@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/find-mgbetaapplicationsynchronizationjobschemadirectory
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Find-MgBetaApplicationSynchronizationJobSchemaDirectory
@@ -29,6 +30,8 @@ Find-MgBetaApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicati
 
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -175,4 +178,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Find-MgApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Find-MgApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
-

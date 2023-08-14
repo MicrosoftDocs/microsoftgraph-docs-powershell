@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementtermandconditionacceptancestatus
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementTermAndConditionAcceptanceStatus
 
 ## SYNOPSIS
-The list of acceptance statuses for this T&C policy.
+Read properties and relationships of the termsAndConditionsAcceptanceStatus object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceManagementTermAndConditionAcceptanceStatus -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-The list of acceptance statuses for this T&C policy.
+Read properties and relationships of the termsAndConditionsAcceptanceStatus object.
 
 ## PARAMETERS
 

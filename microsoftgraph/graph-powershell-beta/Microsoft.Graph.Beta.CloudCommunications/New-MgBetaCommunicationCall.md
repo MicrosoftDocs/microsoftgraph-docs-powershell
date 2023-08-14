@@ -47,6 +47,7 @@ You will need to register the calling bot and go through the list of permissions
 ### Example 1: Create peer-to-peer VoIP call with service hosted media
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -78,14 +79,14 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create peer-to-peer voip call with service hosted media
 
 ### Example 2: Create peer-to-peer VoIP call with application hosted media
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -122,19 +123,19 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "&lt;Media Session Configuration&gt;"
+		blob = "<Media Session Configuration>"
 	}
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create peer-to-peer voip call with application hosted media
 
 ### Example 3: Create a group call with service hosted media
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -188,14 +189,14 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create a group call with service hosted media
 
 ### Example 4: Create a group call with application hosted media
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -243,21 +244,21 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "&lt;Media Session Configuration&gt;"
+		blob = "<Media Session Configuration>"
 		removeFromDefaultAudioGroup = $false
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create a group call with application hosted media
 
 ### Example 5: Join scheduled meeting with service hosted media
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -293,14 +294,14 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will join scheduled meeting with service hosted media
 
 ### Example 6: Join a scheduled meeting with joinMeetingId and passcode
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -323,14 +324,14 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will join a scheduled meeting with joinmeetingid and passcode
 
 ### Example 7: Join a scheduled meeting with joinMeetingId
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -353,14 +354,14 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will join a scheduled meeting with joinmeetingid
 
 ### Example 8: Join scheduled meeting with app hosted media
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -372,7 +373,7 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "&lt;Media Session Configuration&gt;"
+		blob = "<Media Session Configuration>"
 	}
 	chatInfo = @{
 		"@odata.type" = "#microsoft.graph.chatInfo"
@@ -396,14 +397,14 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will join scheduled meeting with app hosted media
 
 ### Example 9: Join channel meeting with service hosted media
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -438,14 +439,14 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will join channel meeting with service hosted media
 
 ### Example 10: Join channel meeting as a guest with service hosted media
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -491,14 +492,14 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will### example 10: join channel meeting as a guest with service hosted media
 
 ### Example 11: Create peer-to-peer PSTN call with service hosted media
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -541,14 +542,14 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will### example 11: create peer-to-peer pstn call with service hosted media
 
 ### Example 12: Create peer-to-peer PSTN call with application hosted media
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
@@ -586,16 +587,15 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "&lt;Media Session Configuration&gt;"
+		blob = "<Media Session Configuration>"
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will### example 12: create peer-to-peer pstn call with application hosted media
 
 
 ## PARAMETERS
@@ -1177,8 +1177,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LanguageId <String>]`: The language culture string. Read-only.
@@ -1205,8 +1205,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[LanguageId <String>]`: The language culture string. Read-only.
@@ -1329,8 +1329,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1352,8 +1352,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming call. Read-only.
@@ -1397,8 +1397,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[LanguageId <String>]`: The language culture string. Read-only.
@@ -1445,8 +1445,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LanguageId <String>]`: The language culture string. Read-only.
@@ -1462,8 +1462,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[ParticipantId <String>]`: Optional. The ID of the target participant.

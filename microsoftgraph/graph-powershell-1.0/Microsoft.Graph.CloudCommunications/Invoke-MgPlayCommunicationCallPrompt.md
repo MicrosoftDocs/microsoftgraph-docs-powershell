@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgPlayCommunicationCallPrompt
@@ -48,26 +49,31 @@ Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgPlayCommunicationCallPrompt Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
+
 $params = @{
-	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
-	Prompts = @(
+	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
+	prompts = @(
 		@{
 			"@odata.type" = "#microsoft.graph.mediaPrompt"
-			MediaInfo = @{
+			mediaInfo = @{
 				"@odata.type" = "#microsoft.graph.mediaInfo"
-				Uri = "https://cdn.contoso.com/beep.wav"
-				ResourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
+				uri = "https://cdn.contoso.com/beep.wav"
+				resourceId = "1D6DE2D4-CD51-4309-8DAA-70768651088E"
 			}
 		}
 	)
 }
+
 Invoke-MgPlayCommunicationCallPrompt -CallId $callId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgPlayCommunicationCallPrompt Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

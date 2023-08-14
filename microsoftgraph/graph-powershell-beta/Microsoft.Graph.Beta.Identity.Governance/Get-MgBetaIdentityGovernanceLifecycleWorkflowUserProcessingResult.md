@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowuserprocessingresult
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult
@@ -38,20 +39,28 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult -InputObject <
 Per-user workflow execution results.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult Cmdlet
+### Example 1: List the user processing results for a workflow
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+
 Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId
+
 ```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult Cmdlet
+This example will list the user processing results for a workflow
+
+### Example 2: List specific properties of user processing results for a workflow
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId -UserProcessingResultId $userProcessingResultId
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult -WorkflowId $workflowId -Property "id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,workflowExecutionType,subject" 
+
 ```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResult Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will list specific properties of user processing results for a workflow
+
 
 ## PARAMETERS
 

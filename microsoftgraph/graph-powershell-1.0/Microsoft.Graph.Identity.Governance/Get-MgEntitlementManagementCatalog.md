@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalog
 schema: 2.0.0
+ms.prod: governance
+ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementCatalog
@@ -56,13 +58,13 @@ Retrieve the properties and relationships of an accessPackageCatalog object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
-Get-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId
+Get-MgEntitlementManagementCatalog
+
 ```
 This example shows how to use the Get-MgEntitlementManagementCatalog Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

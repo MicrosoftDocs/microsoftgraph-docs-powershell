@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplan
 schema: 2.0.0
+ms.prod: planner
+ms.prod: planner
 ---
 
 # Get-MgBetaPlannerPlan
@@ -41,13 +43,13 @@ Retrieve the properties and relationships of a plannerplan object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
 
-Get-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId
+Get-MgBetaPlannerPlan
+
 ```
 This example shows how to use the Get-MgBetaPlannerPlan Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

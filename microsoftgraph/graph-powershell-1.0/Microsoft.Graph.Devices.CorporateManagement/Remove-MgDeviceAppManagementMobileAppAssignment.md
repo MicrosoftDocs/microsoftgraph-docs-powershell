@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileAppAssignment
 
 ## SYNOPSIS
-Delete navigation property assignments for deviceAppManagement
+Deletes a mobileAppAssignment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppAssignment?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Delete navigation property assignments for deviceAppManagement
+Deletes a mobileAppAssignment.
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 
 ## SYNOPSIS
-Update the navigation property deviceConfigurationDeviceStateSummaries in deviceManagement
+Update the properties of a deviceConfigurationDeviceStateSummary object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceConfigurationDeviceStateSummaries in deviceManagement
+Update the properties of a deviceConfigurationDeviceStateSummary object.
 
 ## PARAMETERS
 

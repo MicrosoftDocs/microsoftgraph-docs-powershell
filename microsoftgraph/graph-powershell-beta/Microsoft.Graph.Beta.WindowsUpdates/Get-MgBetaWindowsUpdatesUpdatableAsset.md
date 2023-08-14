@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesupdatableasset
 schema: 2.0.0
+ms.prod: w10
+ms.prod: w10
 ---
 
 # Get-MgBetaWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Read the properties and relationships of an updatableAssetGroup object.
+Read the properties of an azureADDevice object.
 
 ## SYNTAX
 
@@ -32,7 +34,7 @@ Get-MgBetaWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an updatableAssetGroup object.
+Read the properties of an azureADDevice object.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
