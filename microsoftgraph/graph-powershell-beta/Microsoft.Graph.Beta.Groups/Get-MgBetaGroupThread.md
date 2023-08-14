@@ -13,6 +13,9 @@ ms.prod: groups
 Get a specific thread that belongs to a group.
 You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -275,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)

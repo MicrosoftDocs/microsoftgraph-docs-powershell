@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property hosts in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -2109,5 +2112,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
 
 ## RELATED LINKS
+[Update-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)

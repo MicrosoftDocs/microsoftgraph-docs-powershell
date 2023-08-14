@@ -12,6 +12,9 @@ ms.prod: cloud-communications
 The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -163,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-1.0)

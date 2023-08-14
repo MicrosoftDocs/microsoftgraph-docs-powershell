@@ -12,6 +12,9 @@ ms.prod: groups
 Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
 Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -168,3 +171,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)

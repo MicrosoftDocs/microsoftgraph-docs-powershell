@@ -11,6 +11,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Unhide a chat for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphUserChat](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaGraphUserChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GraphExpanded (Default)
@@ -289,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
+[Invoke-MgBetaGraphUserChat](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaGraphUserChat?view=graph-powershell-beta)

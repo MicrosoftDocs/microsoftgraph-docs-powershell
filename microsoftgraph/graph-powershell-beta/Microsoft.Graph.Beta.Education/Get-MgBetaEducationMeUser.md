@@ -11,6 +11,9 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve the simple directory user that corresponds to this educationUser.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -74,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgEducationMeUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUser?view=graph-powershell-1.0)

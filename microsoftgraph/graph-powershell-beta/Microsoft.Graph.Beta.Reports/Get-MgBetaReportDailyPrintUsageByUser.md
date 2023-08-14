@@ -13,6 +13,9 @@ ms.prod: cloud-printing
 Retrieve a user's usage summary for a particular time period.
 See the printUsageByUser documentation for descriptions of each of the endpoints.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -280,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByUser?view=graph-powershell-1.0)

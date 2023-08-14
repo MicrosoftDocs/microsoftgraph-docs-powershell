@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property replies in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -964,5 +967,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[Update-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatMessageReply?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatMessageReply?view=graph-powershell-1.0)

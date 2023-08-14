@@ -12,6 +12,9 @@ ms.prod: groups
 Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRenewGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRenewGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Renew (Default)
@@ -171,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Invoke-MgBetaRenewGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRenewGroup?view=graph-powershell-beta)

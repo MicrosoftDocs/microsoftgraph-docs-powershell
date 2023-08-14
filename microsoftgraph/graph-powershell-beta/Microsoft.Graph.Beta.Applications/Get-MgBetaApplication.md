@@ -12,6 +12,9 @@ ms.prod: applications
 ## SYNOPSIS
 Get the properties and relationships of an application object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplication](/powershell/module/Microsoft.Graph.Applications/Get-MgApplication?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -349,3 +352,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgApplication](/powershell/module/Microsoft.Graph.Applications/Get-MgApplication?view=graph-powershell-1.0)

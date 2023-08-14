@@ -11,6 +11,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSoftUserChatMessageDelete](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSoftUserChatMessageDelete?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Soft (Default)
@@ -204,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaSoftUserChatMessageDelete](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSoftUserChatMessageDelete?view=graph-powershell-beta)

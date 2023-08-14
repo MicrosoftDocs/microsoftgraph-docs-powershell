@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to hostCookies for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -486,5 +489,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
 
 ## RELATED LINKS
+[New-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-1.0)

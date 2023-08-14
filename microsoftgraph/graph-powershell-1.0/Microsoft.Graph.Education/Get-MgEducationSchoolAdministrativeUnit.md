@@ -11,6 +11,9 @@ ms.prod: education
 ## SYNOPSIS
 Get a list of administrativeUnits associated with an educationSchool object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -138,3 +141,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)

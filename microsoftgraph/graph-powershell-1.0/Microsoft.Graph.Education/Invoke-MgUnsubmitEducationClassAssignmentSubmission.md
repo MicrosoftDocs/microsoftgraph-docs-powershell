@@ -16,6 +16,9 @@ During the submit process, all the resources are copied from submittedResources 
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unsubmit (Default)
@@ -172,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission?view=graph-powershell-beta)

@@ -12,6 +12,9 @@ ms.prod: cloud-printing
 ## SYNOPSIS
 Retrieve the properties and relationships of a print service endpoint.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -278,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)

@@ -12,6 +12,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Read the properties and relationships of a tag object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -297,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTag?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeeting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -77,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeeting?view=graph-powershell-1.0)

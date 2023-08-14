@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to children for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -18697,5 +18700,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaUserDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemChild?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaUserDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemChild?view=graph-powershell-beta)

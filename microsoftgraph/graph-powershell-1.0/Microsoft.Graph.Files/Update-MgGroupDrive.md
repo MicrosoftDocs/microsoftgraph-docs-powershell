@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property drives in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -26343,5 +26346,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDrive?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDrive?view=graph-powershell-beta)

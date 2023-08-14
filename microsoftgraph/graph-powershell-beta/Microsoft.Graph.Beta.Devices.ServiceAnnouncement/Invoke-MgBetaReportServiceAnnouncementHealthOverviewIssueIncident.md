@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function incidentReport
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Report (Default)
@@ -146,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
+[Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident?view=graph-powershell-1.0)

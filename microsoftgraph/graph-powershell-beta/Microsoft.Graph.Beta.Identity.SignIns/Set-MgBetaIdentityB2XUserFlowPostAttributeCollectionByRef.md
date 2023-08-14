@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the ref of navigation property postAttributeCollection in identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgIdentityB2XUserFlowPostAttributeCollectionByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowPostAttributeCollectionByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -295,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Set-MgIdentityB2XUserFlowPostAttributeCollectionByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowPostAttributeCollectionByRef?view=graph-powershell-1.0)

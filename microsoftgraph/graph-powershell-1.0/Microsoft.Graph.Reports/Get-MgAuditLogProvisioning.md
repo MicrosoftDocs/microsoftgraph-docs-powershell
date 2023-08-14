@@ -11,6 +11,9 @@ ms.prod: identity-and-access-reports
 ## SYNOPSIS
 Get provisioning from auditLogs
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogProvisioning](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogProvisioning?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -269,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgBetaAuditLogProvisioning](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogProvisioning?view=graph-powershell-beta)

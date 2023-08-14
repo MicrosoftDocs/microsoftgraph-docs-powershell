@@ -13,6 +13,9 @@ The draft version is viewable by only managers, and the shared version is viewab
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgShareTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Invoke-MgShareTeamSchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ShareExpanded (Default)
@@ -282,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Invoke-MgShareTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Invoke-MgShareTeamSchedule?view=graph-powershell-1.0)

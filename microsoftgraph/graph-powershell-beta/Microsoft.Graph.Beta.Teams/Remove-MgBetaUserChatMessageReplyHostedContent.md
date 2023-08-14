@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property hostedContents for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatMessageReplyHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -257,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgUserChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatMessageReplyHostedContent?view=graph-powershell-1.0)

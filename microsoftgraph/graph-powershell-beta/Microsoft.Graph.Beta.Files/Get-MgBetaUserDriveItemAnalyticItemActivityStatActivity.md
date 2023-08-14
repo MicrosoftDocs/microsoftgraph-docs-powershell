@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -260,3 +263,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgUserDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-1.0)

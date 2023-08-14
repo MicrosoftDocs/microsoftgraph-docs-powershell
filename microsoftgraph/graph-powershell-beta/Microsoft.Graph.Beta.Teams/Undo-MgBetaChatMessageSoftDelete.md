@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Undo-MgChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Teams/Undo-MgChatMessageSoftDelete?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Undo (Default)
@@ -196,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Undo-MgChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Teams/Undo-MgChatMessageSoftDelete?view=graph-powershell-1.0)

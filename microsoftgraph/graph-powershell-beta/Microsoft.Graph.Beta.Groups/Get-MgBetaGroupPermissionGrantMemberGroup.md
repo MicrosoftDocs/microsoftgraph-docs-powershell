@@ -11,6 +11,9 @@ ms.prod: directory-management
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPermissionGrantMemberGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -286,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPermissionGrantMemberGroup?view=graph-powershell-1.0)

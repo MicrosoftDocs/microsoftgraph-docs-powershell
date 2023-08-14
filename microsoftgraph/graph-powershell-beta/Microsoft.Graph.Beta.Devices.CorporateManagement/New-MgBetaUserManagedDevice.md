@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to managedDevices for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -15299,5 +15302,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
 
 ## RELATED LINKS
+[New-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserManagedDevice?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserManagedDevice?view=graph-powershell-1.0)
