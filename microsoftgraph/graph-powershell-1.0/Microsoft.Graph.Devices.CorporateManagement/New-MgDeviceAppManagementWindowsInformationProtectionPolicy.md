@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementwindowsinformationprotectionpolicy
@@ -501,7 +501,7 @@ Accept wildcard characters: False
 
 ### -MinutesOfInactivityBeforeDeviceLock
 Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.
-Range is an integer X where 0 \<= X \<= 999.
+Range is an integer X where 0 <= X <= 999.
 
 ```yaml
 Type: Int32
@@ -554,7 +554,7 @@ Accept wildcard characters: False
 ### -PasswordMaximumAttemptCount
 The number of authentication failures allowed before the device will be wiped.
 A value of 0 disables device wipe functionality.
-Range is an integer X where 4 \<= X \<= 16 for desktop and 0 \<= X \<= 999 for mobile devices.
+Range is an integer X where 4 <= X <= 16 for desktop and 0 <= X <= 999 for mobile devices.
 
 ```yaml
 Type: Int32
