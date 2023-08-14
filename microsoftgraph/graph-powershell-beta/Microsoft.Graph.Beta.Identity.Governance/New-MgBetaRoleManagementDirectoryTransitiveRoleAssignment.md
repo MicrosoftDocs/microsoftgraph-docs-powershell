@@ -31,18 +31,6 @@ New-MgBetaRoleManagementDirectoryTransitiveRoleAssignment -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to transitiveRoleAssignments for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -397,3 +385,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+

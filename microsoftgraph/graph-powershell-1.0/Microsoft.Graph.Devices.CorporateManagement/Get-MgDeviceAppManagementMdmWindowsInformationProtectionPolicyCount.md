@@ -23,18 +23,6 @@ Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyCount [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -83,3 +71,4 @@ Get-MgDeviceAppMgtMdmWindowInformationProtectionPolicyCount
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyCount?view=graph-powershell-beta)
+

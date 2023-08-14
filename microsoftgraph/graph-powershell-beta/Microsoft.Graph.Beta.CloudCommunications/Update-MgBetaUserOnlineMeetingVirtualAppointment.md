@@ -45,22 +45,6 @@ Update-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Create a new virtualAppointment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -331,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 
 ## RELATED LINKS
+

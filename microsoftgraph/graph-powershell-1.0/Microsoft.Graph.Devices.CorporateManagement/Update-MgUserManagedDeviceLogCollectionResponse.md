@@ -49,18 +49,6 @@ Update-MgUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Update the navigation property logCollectionRequests in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -402,3 +390,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceLogCollectionResponse?view=graph-powershell-beta)
+

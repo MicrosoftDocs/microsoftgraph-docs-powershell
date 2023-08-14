@@ -31,22 +31,6 @@ Get-MgBetaUserTodoListDelta -InputObject <IUsersFunctionsIdentity> [-Filter <Str
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -290,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTodoListDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoListDelta?view=graph-powershell-1.0)
+

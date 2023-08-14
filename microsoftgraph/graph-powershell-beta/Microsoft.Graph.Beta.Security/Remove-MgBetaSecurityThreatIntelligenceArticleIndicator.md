@@ -30,18 +30,6 @@ Remove-MgBetaSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityI
 ## DESCRIPTION
 Delete navigation property articleIndicators for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ArticleIndicatorId
@@ -232,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-1.0)
+

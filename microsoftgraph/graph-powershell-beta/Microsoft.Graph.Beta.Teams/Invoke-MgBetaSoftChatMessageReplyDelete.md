@@ -30,22 +30,6 @@ Invoke-MgBetaSoftChatMessageReplyDelete -InputObject <ITeamsIdentity> [-PassThru
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgSoftChatMessageReplyDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftChatMessageReplyDelete?view=graph-powershell-1.0)
+

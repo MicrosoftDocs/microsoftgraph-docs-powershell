@@ -30,18 +30,6 @@ Remove-MgIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySig
 ## DESCRIPTION
 Delete ref of navigation property postFederationSignup for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -213,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityB2XUserFlowPostFederationSignupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowPostFederationSignupByRef?view=graph-powershell-beta)
+

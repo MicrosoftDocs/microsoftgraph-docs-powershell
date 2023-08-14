@@ -41,18 +41,6 @@ Export-MgUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentity> -
 ## DESCRIPTION
 Invoke function exportDeviceAndAppManagementData
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -194,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Export-MgBetaUserDeviceAndAppManagementData](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Export-MgBetaUserDeviceAndAppManagementData?view=graph-powershell-beta)
+

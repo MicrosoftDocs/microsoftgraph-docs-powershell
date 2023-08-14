@@ -30,22 +30,6 @@ Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRun -InputObject <IIdenti
 ## DESCRIPTION
 Invoke function summary
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EndDateTime
@@ -227,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-1.0)
+

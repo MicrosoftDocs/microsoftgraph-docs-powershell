@@ -32,18 +32,6 @@ Get-MgBetaUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporat
 The device protection status.
 This property is read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -208,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceWindowsProtectionState?view=graph-powershell-1.0)
+

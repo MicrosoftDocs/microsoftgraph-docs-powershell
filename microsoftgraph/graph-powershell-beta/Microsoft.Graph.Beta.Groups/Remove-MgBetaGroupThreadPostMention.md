@@ -27,22 +27,6 @@ Remove-MgBetaGroupThreadPostMention -InputObject <IGroupsIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property mentions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConversationThreadId
@@ -243,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

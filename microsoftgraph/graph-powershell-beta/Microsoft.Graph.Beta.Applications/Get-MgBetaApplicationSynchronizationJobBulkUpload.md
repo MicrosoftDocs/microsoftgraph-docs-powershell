@@ -27,18 +27,6 @@ Get-MgBetaApplicationSynchronizationJobBulkUpload -InputObject <IApplicationsIde
 ## DESCRIPTION
 The bulk upload operation for the job.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -167,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

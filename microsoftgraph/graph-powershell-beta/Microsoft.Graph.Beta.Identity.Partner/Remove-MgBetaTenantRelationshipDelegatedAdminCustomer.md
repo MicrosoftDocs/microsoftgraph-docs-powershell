@@ -30,18 +30,6 @@ Remove-MgBetaTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPar
 ## DESCRIPTION
 Delete navigation property delegatedAdminCustomers for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DelegatedAdminCustomerId
@@ -164,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-1.0)
+

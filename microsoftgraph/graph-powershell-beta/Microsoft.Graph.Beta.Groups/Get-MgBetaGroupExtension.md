@@ -41,22 +41,6 @@ The collection of open extensions defined for the group.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -319,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupExtension](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupExtension?view=graph-powershell-1.0)
+

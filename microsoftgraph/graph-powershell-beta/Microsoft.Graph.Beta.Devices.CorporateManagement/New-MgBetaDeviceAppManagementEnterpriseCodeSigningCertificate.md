@@ -29,18 +29,6 @@ New-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate
 ## DESCRIPTION
 Create new navigation property to enterpriseCodeSigningCertificates for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -297,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UploadDateTime <DateTime?>]`: The date time of CodeSigning Cert when it is uploaded (using ISO 8601 format, in UTC time). Uploading a valid cert file through the Intune admin console will automatically populate this value in the HTTP response. Supports: $filter, $select, $top, $OrderBy, $skip. $Search is not supported.
 
 ## RELATED LINKS
+

@@ -39,22 +39,6 @@ Get-MgDeviceManagementReportExportJob -InputObject <IReportsIdentity> [-ExpandPr
 ## DESCRIPTION
 Read properties and relationships of the deviceManagementExportJob object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -281,3 +265,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportExportJob?view=graph-powershell-beta)
+

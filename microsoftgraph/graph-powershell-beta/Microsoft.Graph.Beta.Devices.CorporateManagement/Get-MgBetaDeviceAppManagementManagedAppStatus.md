@@ -37,18 +37,6 @@ Get-MgBetaDeviceAppManagementManagedAppStatus -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 The managed app statuses.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -321,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementManagedAppStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppStatus?view=graph-powershell-1.0)
+

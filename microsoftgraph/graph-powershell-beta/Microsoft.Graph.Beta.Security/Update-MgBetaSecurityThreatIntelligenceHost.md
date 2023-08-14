@@ -60,18 +60,6 @@ Update-MgBetaSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property hosts in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -2116,3 +2104,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
+

@@ -37,18 +37,6 @@ Get-MgGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get permissionGrants from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -302,3 +290,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPermissionGrant?view=graph-powershell-beta)
+

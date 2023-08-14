@@ -45,22 +45,6 @@ Update-MgBetaGroupThreadPostInReplyToExtension -InputObject <IGroupsIdentity> -B
 Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
 See the table in the Permissions section for the list of resources that support open extensions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostInReplyToExtension?view=graph-powershell-1.0)
+

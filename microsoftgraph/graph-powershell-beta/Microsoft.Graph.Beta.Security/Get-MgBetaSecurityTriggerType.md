@@ -22,22 +22,6 @@ Get-MgBetaSecurityTriggerType [-ExpandProperty <String[]>] [-Property <String[]>
 ## DESCRIPTION
 Get triggerTypes from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerType?view=graph-powershell-1.0)
+

@@ -28,22 +28,6 @@ Test-MgBetaDriveListContentTypePublished -InputObject <IFilesIdentity> [<CommonP
 ## DESCRIPTION
 Invoke function isPublished
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -138,3 +122,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Files/Test-MgDriveListContentTypePublished?view=graph-powershell-1.0)
+

@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementReportDeviceStatusBySettingReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getDevicesStatusBySettingReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -286,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+

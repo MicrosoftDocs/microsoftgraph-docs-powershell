@@ -45,18 +45,6 @@ Update-MgBetaDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevice
 ## DESCRIPTION
 Update the navigation property apps in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceAppManagementiOSManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSManagedAppProtectionApp?view=graph-powershell-1.0)
+

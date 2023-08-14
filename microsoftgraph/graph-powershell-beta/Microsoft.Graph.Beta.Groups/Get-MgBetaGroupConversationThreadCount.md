@@ -29,18 +29,6 @@ Get-MgBetaGroupConversationThreadCount -InputObject <IGroupsIdentity> [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConversationId
@@ -166,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupConversationThreadCount](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadCount?view=graph-powershell-1.0)
+

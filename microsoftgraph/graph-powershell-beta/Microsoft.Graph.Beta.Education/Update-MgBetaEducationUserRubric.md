@@ -56,22 +56,6 @@ Updating a rubric attached to an assignment (PATCH /education/classes/{id}/assig
 After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
 That rubric can be retrieved using GET /education/classes/{id}/assignments/{id}/rubric, but it cannot be updated.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -422,3 +406,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserRubric?view=graph-powershell-1.0)
+

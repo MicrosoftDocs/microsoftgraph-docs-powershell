@@ -78,18 +78,6 @@ Update-MgBetaGroupSiteTermStoreSetChildRelation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property relations in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -588,3 +576,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetChildRelation?view=graph-powershell-1.0)
+

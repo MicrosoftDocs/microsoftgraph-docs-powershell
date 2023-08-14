@@ -30,22 +30,6 @@ New-MgBetaDeviceManagementRemoteActionAudit -BodyParameter <IMicrosoftGraphRemot
 ## DESCRIPTION
 Create new navigation property to remoteActionAudits for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Action
@@ -293,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserName <String>]`: [deprecated] Please use InitiatedByUserPrincipalName instead.
 
 ## RELATED LINKS
+

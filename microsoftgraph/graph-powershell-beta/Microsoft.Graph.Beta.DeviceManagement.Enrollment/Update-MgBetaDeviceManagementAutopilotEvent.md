@@ -63,18 +63,6 @@ Update-MgBetaDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrol
 ## DESCRIPTION
 Update the navigation property autopilotEvents in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountSetupDuration
@@ -686,3 +674,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
 
 ## RELATED LINKS
+

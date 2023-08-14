@@ -29,18 +29,6 @@ Set-MgBetaVirtualEventSessionAttendeeReport -InputObject <IBookingsIdentity> [-D
 The content stream of the attendee report of a Teams live event.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -209,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+

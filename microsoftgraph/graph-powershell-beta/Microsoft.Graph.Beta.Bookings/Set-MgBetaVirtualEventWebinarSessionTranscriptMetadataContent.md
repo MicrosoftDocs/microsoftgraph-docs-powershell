@@ -30,18 +30,6 @@ Set-MgBetaVirtualEventWebinarSessionTranscriptMetadataContent -InputObject <IBoo
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallTranscriptId
@@ -225,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+

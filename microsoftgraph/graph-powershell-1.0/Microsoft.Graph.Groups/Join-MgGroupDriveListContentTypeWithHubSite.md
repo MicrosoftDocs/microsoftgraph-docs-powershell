@@ -46,22 +46,6 @@ Join-MgGroupDriveListContentTypeWithHubSite -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -295,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Join-MgBetaGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Groups/Join-MgBetaGroupDriveListContentTypeWithHubSite?view=graph-powershell-beta)
+
