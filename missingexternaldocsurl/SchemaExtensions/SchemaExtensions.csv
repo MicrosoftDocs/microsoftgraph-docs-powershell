@@ -9,3 +9,5 @@ beta, Get-MgBetaSchemaExtensionCount, /schemaExtensions/$count
 v1.0, Get-MgSchemaExtensionCount, /schemaExtensions/$count
 v1.0, Get-MgSchemaExtensionCount, /schemaExtensions/$count
 beta, Get-MgBetaSchemaExtensionCount, /schemaExtensions/$count
+beta, Get-MgBetaSchemaExtensionCount, /schemaExtensions/$count
+v1.0, Get-MgSchemaExtensionCount, /schemaExtensions/$count
