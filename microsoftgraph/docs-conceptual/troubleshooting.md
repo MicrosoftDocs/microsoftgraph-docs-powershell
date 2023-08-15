@@ -3,11 +3,11 @@ title: "Error handling and troubleshooting cmdlets"
 description: "Learn how to diagnose common errors in Microsoft Graph PowerShell"
 
 ms.topic: troubleshooting
-ms.date: 05/22/2023
+ms.date: 08/08/2023
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
-reviewer: maisarissi,peombwa
+reviewer: carolkigoonya,peombwa
 ---
 
 # Troubleshooting common errors in Microsoft Graph PowerShell
@@ -57,6 +57,16 @@ For app-only access, pre-configure the application permissions your app needs wh
 Alternatively, use [New-MgServicePrincipalAppRoleAssignment](/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment) to assign app roles to your app.
 
 For more info, see [App-only authentication](app-only.md).
+
+## Unverified publisher known issue
+
+`Unverified publisher` error message occurs during Microsoft Graph PowerShell app consent.
+
+To remove this error, you can use an app registration of your own, on which you can set yourself as the verified publisher. You'll need to go through the [publisher verification process](/azure/active-directory/develop/publisher-verification-overview), and use the app registration to consent to the permissions required by Microsoft Graph PowerShell, as shown below:
+
+```powershell
+Connect-MgGraph -AppId "{your-own-app-id}" -Scopes "scope"
+```
 
 ## Using -Debug
 
