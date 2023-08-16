@@ -74,7 +74,7 @@ Id                                   DeletedDateTime
 e6d486c1-20f3-426d-bc5d-736c8f467254
 ```
 
-With some resource collections, you can also specify the properties to be returned in the expanded resources by adding the `-Select` parameter. The following example performs the same query as the previous example but uses a ['Select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **Id** only.
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding the `Select` statement. The following example performs the same query as the previous example but uses a `Select` statement to limit the properties returned for the expanded child items to the **Id** only.
 
 ```powershell
 Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members | 
