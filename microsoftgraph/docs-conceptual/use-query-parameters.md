@@ -20,15 +20,8 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 >[!TIP]
 >OData query options in the Microsoft Graph API use lowercase names and specify the dollar ($) prefix while in Microsoft Graph PowerShell SDK, their names are Pascal-cased and prefixed with a hyphen (-). For example, `$count` and `$orderBy` are to Microsoft Graph API while `-Count` and `-OrderBy`, respectively, are to Microsoft Graph PowerShell SDK.
 
-<!---(Disable wrapping the first column of the table.)--->
-<style>
-     td:first-child {
-        white-space: nowrap;
-    }
-</style>
-
-|Name|Description|Example|
-|-------------|----|-----|
+|OData query option|Description|Example|
+|-----------------|--------|----------|
 |[-Count](#count-parameter)|Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
 |[-Expand](#expand-parameter)| Retrieves related resources|<code>Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members &#124; Select -ExpandProperty members</code>|
 |[-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
