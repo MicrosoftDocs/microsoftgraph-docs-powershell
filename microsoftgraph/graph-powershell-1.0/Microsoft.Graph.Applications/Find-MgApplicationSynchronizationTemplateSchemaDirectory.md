@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 Discover the latest schema definition for provisioning to an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Discover (Default)
@@ -176,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)

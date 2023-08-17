@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property permissionGrants for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -208,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Remove-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupPermissionGrant?view=graph-powershell-beta)

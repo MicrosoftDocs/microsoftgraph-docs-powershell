@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to contentTypes for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1580,5 +1583,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListContentType?view=graph-powershell-beta)

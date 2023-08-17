@@ -12,6 +12,9 @@ ms.prod: governance
 ## SYNOPSIS
 Read the properties and relationships of a run object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -368,3 +371,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property analytics in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteAnalytic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -19010,5 +19013,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
 
 ## RELATED LINKS
+[Update-MgSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteAnalytic?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteAnalytic?view=graph-powershell-1.0)

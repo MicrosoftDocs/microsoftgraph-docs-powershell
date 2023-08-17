@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new attributeSet object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAttributeSet?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -180,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MaxAttributesPerSet <Int32?>]`: Maximum number of custom security attributes that can be defined in this attribute set. Default value is null. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Can be changed later.
 
 ## RELATED LINKS
+[New-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAttributeSet?view=graph-powershell-1.0)

@@ -12,6 +12,9 @@ Deletes an appRoleAssignment that a service principal has been granted.
 App roles which are assigned to service principals are also known as application permissions.
 Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -198,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppRoleAssignment?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property contentTypes in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1566,5 +1569,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListContentType?view=graph-powershell-beta)

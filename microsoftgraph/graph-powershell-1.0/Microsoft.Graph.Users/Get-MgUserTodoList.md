@@ -12,6 +12,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -135,3 +138,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoList?view=graph-powershell-beta)

@@ -12,6 +12,9 @@ ms.prod: directory-management
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserChatPermissionGrantMemberGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -254,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserChatPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserChatPermissionGrantMemberGroup?view=graph-powershell-beta)

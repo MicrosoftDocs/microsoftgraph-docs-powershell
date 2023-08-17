@@ -12,6 +12,9 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -343,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-1.0)

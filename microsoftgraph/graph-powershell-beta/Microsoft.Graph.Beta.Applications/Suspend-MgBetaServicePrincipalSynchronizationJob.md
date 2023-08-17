@@ -11,6 +11,9 @@ schema: 2.0.0
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Suspend-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Suspend-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Pause (Default)
@@ -182,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Suspend-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Suspend-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)

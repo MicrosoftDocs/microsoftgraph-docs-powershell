@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to extensions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -224,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)

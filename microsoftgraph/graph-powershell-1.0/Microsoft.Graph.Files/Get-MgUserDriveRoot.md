@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -169,3 +172,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRoot?view=graph-powershell-beta)

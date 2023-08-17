@@ -11,6 +11,9 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Retrieve the properties of the dataPolicyOperation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgDataPolicyOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -323,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgDataPolicyOperation?view=graph-powershell-1.0)

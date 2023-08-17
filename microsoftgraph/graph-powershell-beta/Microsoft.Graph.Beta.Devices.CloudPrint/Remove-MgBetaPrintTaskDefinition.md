@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a taskDefinition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintTaskDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -166,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintTaskDefinition?view=graph-powershell-1.0)

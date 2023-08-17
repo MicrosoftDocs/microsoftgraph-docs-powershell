@@ -15,6 +15,9 @@ If a special folder is renamed or moved to another location within the drive, th
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecial?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -296,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecial?view=graph-powershell-1.0)

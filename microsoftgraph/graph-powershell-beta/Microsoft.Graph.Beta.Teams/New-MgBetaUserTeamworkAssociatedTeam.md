@@ -11,6 +11,9 @@ schema: 2.0.0
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -464,5 +467,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+[New-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam?view=graph-powershell-1.0)

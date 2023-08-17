@@ -11,6 +11,9 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve the Microsoft 365 group that corresponds to this educationClass.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassGroup](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -135,3 +138,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationClassGroup](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassGroup?view=graph-powershell-1.0)

@@ -11,6 +11,9 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve a list of users at a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -182,3 +185,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-1.0)
