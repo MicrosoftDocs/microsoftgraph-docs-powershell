@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-Module Guid: a002e90d-cb2e-4e38-b997-b1d2d44a306e
+Module Guid: acfbd10f-17f6-4700-82a3-d16df963c7ff
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,6 +11,11 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.CrossDeviceExperiences Cmdlets
+### [Get-MgUserActivity](Get-MgUserActivity.md)
+The user's activities across devices.
+Read-only.
+Nullable.
+
 ### [Get-MgUserActivityCount](Get-MgUserActivityCount.md)
 Get the number of the resource
 
@@ -31,8 +36,8 @@ Create new navigation property to activities for users
 ### [New-MgUserActivityHistoryItem](New-MgUserActivityHistoryItem.md)
 Create new navigation property to historyItems for users
 
-### [New-MgUserActivityHistoryItem](New-MgUserActivityHistoryItem.md)
-Create new navigation property to historyItems for users
+### [Remove-MgUserActivity](Remove-MgUserActivity.md)
+Delete an existing user activity for your app.
 
 ### [Remove-MgUserActivityHistoryItem](Remove-MgUserActivityHistoryItem.md)
 Delete navigation property historyItems for users

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Security
-Module Guid: b65f538b-392f-46b8-960a-8aa71f6c0efd
+Module Guid: 9561e265-7ec1-4da9-b36b-c859a8e52d94
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -425,7 +425,7 @@ The specific rule or regulation created by a jurisdiction used to determine whet
 Specifies the  department or business unit of an organization to which a label belongs.
 
 ### [Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate](Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate.md)
-Specifies a unique alpha-numeric identifier for an organization's retention schedule.
+Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
 
 ### [Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage.md)
 When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.
@@ -440,7 +440,7 @@ Get providerTenantSettings from security
 Get the number of the resource
 
 ### [Get-MgBetaSecuritySecureScore](Get-MgBetaSecuritySecureScore.md)
-Measurements of tenants' security posture to help protect them from threats.
+Measurements of tenants’ security posture to help protect them from threats.
 
 ### [Get-MgBetaSecuritySecureScoreControlProfile](Get-MgBetaSecuritySecureScoreControlProfile.md)
 Get secureScoreControlProfiles from security
@@ -686,6 +686,12 @@ Get the number of the resource
 Get whoisRecords from security
 
 ### [Get-MgBetaSecurityThreatIntelligenceWhoisRecordCount](Get-MgBetaSecurityThreatIntelligenceWhoisRecordCount.md)
+Get the number of the resource
+
+### [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory](Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory.md)
+Get history from security
+
+### [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistoryCount](Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistoryCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHost](Get-MgBetaSecurityThreatIntelligenceWhoisRecordHost.md)
