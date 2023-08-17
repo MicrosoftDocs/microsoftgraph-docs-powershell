@@ -40,3 +40,5 @@ v1.0, Get-MgDirectoryObjectCount, /directoryObjects/$count
 v1.0, Get-MgDirectoryObjectCount, /directoryObjects/$count
 beta, Get-MgBetaDirectoryObject, /directoryObjects
 beta, Get-MgBetaDirectoryObjectCount, /directoryObjects/$count
+v1.0, Get-MgDirectoryObjectCount, /directoryObjects/$count
+beta, Get-MgBetaDirectoryObjectCount, /directoryObjects/$count
