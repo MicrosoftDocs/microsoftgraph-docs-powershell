@@ -49,18 +49,6 @@ Create a new module in a class.
 Only teachers in a class can create a module.
 Modules start in the draft state, which means that students will not see the modules until publication.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -376,3 +364,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+

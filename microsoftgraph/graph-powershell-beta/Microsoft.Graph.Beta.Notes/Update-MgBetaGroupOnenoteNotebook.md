@@ -50,22 +50,6 @@ Update-MgBetaGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property notebooks in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -704,3 +688,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Update-MgGroupOnenoteNotebook?view=graph-powershell-1.0)
+

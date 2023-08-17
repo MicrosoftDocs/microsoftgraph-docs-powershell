@@ -43,22 +43,6 @@ New-MgBetaEducationUserAssignmentCategory -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to categories for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -243,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentCategory?view=graph-powershell-1.0)
+

@@ -34,22 +34,6 @@ Selective Planner services available to the group.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -143,3 +127,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlanner?view=graph-powershell-1.0)
+

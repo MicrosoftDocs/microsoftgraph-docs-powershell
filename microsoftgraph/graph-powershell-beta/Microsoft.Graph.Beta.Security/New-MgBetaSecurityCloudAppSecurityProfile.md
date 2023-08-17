@@ -31,22 +31,6 @@ New-MgBetaSecurityCloudAppSecurityProfile -BodyParameter <IMicrosoftGraphCloudAp
 ## DESCRIPTION
 Create new navigation property to cloudAppSecurityProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -435,3 +419,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
+

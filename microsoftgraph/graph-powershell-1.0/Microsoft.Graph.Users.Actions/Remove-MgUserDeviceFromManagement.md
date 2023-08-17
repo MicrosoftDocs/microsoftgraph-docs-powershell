@@ -29,22 +29,6 @@ Remove-MgUserDeviceFromManagement -InputObject <IUsersActionsIdentity> [-PassThr
 ## DESCRIPTION
 Retire all devices from management for this user
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -176,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgBetaUserDeviceFromManagement?view=graph-powershell-beta)
+

@@ -35,18 +35,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsAnomalyCorrelationGroupOverview for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -327,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Values <String[]>]`: Specific metric values that describe the features of the given device feature type.
 
 ## RELATED LINKS
+

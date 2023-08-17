@@ -80,22 +80,6 @@ Update-MgBetaGroupDriveRoot -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property root in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -34494,3 +34478,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRoot?view=graph-powershell-1.0)
+

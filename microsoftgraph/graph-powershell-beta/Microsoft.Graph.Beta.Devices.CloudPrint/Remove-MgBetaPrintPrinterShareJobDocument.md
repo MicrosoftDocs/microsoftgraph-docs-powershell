@@ -27,18 +27,6 @@ Remove-MgBetaPrintPrinterShareJobDocument -InputObject <IDevicesCloudPrintIdenti
 ## DESCRIPTION
 Delete navigation property documents for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -197,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

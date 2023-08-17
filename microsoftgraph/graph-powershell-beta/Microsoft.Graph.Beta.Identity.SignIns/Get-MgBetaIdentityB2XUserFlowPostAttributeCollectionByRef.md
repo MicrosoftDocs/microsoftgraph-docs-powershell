@@ -29,18 +29,6 @@ Get-MgBetaIdentityB2XUserFlowPostAttributeCollectionByRef -InputObject <IIdentit
 ## DESCRIPTION
 Get ref of postAttributeCollection from identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -170,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2XUserFlowPostAttributeCollectionByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowPostAttributeCollectionByRef?view=graph-powershell-1.0)
+

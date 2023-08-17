@@ -30,22 +30,6 @@ Reset-MgDeviceManagementManagedDevicePasscode -InputObject <IDeviceManagementAct
 ## DESCRIPTION
 Reset passcode
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -159,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Reset-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Reset-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
+

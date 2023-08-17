@@ -47,18 +47,6 @@ Get-MgTeamPermissionGrantMemberGroup -InputObject <ITeamsIdentity>
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -243,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantMemberGroup?view=graph-powershell-beta)
+

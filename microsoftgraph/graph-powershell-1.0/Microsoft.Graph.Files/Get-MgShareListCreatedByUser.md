@@ -32,18 +32,6 @@ Get-MgShareListCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <Str
 Identity of the user who created the item.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -153,3 +141,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaShareListCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListCreatedByUser?view=graph-powershell-beta)
+

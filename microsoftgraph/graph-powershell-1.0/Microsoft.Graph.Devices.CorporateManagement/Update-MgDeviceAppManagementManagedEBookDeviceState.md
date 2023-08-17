@@ -46,18 +46,6 @@ Update-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Update the properties of a deviceInstallState object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -373,3 +361,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
+

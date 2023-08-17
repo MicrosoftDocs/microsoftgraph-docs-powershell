@@ -30,18 +30,6 @@ Get-MgBetaDeviceManagementReportAutopilotDeploymentStatus -OutFile <String>
 ## DESCRIPTION
 Invoke action getAutopilotDeploymentStatus
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -301,4 +289,5 @@ BODYPARAMETER \<IPaths10Q8BuqDevicemanagementReportsMicrosoftGraphGetautopilotde
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportautopilotdeploymentstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportautopilotdeploymentstatus)
+
 

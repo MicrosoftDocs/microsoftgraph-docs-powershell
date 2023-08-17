@@ -37,18 +37,6 @@ Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Get appliesTo from policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivityBasedTimeoutPolicyId
@@ -344,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyActivityBasedTimeoutPolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyActivityBasedTimeoutPolicyApplyTo?view=graph-powershell-1.0)
+

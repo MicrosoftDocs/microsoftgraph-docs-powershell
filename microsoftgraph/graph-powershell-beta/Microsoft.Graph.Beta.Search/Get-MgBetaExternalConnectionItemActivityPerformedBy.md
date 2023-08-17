@@ -30,22 +30,6 @@ Get-MgBetaExternalConnectionItemActivityPerformedBy -InputObject <ISearchIdentit
 ## DESCRIPTION
 Represents an identity used to identify who is responsible for the activity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -179,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalConnectionItemActivityPerformedBy](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivityPerformedBy?view=graph-powershell-1.0)
+

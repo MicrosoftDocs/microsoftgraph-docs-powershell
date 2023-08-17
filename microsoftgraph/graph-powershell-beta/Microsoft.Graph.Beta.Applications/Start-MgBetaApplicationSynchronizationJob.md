@@ -38,22 +38,6 @@ If the job is in quarantine, the quarantine status will be cleared.
 Do not create scripts to call the start job continuously while it's running because that can cause the service to stop running.
 Use the start job only when the job is currently paused or in quarantine.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -200,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Start-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Start-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
+

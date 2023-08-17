@@ -43,18 +43,6 @@ New-MgBetaSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecur
 ## DESCRIPTION
 Create new navigation property to details for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -374,3 +362,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+

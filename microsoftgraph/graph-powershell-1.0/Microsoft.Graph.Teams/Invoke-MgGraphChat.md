@@ -45,18 +45,6 @@ Invoke-MgGraphChat -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Unhide a chat for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -276,3 +264,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaGraphChat](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaGraphChat?view=graph-powershell-beta)
+

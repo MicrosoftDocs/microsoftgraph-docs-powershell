@@ -26,22 +26,6 @@ New-MgBetaTrustFrameworkPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [
 ## DESCRIPTION
 Create new navigation property to policies for trustFramework
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -135,3 +119,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

@@ -27,18 +27,6 @@ Get-MgBetaSecurityLabelRetentionLabelDescriptorCategoryTemplate -InputObject <IS
 ## DESCRIPTION
 Specifies a group of similar types of content in a particular department.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -198,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
