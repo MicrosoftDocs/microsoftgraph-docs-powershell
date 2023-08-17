@@ -48,13 +48,17 @@ This resource is in the 'working' resource list and should be considered work in
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
+```
+This example shows how to use the Get-MgEducationClassAssignmentSubmissionResource Cmdlet.
+
 
 ## PARAMETERS
 

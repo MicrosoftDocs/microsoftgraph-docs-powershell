@@ -43,20 +43,28 @@ This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaChat -ExpandProperty "lastMessagePreview" 
+
 ```
+This example shows how to use the Get-MgBetaChat Cmdlet.
 
-Get-MgBetaChat -ExpandProperty "lastMessagePreview"
+### Example 2: Code snippet
 
-### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-```
 
-Get-MgBetaChat -Sort "lastMessagePreview/createdDateTime desc"
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaChat -Sort "lastMessagePreview/createdDateTime desc" 
+
+```
+This example shows how to use the Get-MgBetaChat Cmdlet.
+
 
 ## PARAMETERS
 

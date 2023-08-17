@@ -45,11 +45,11 @@ New-MgExternalConnectionGroup -InputObject <ISearchIdentity>
 Create a new externalGroup object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	id = "31bea3d537902000"
@@ -58,6 +58,10 @@ $params = @{
 }
 
 New-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -BodyParameter $params
+
+```
+This example shows how to use the New-MgExternalConnectionGroup Cmdlet.
+
 
 ## PARAMETERS
 

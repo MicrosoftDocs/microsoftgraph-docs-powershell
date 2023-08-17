@@ -46,11 +46,11 @@ Copy-MgDriveItem -InputObject <IFilesIdentity>
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -61,6 +61,10 @@ $params = @{
 }
 
 Copy-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

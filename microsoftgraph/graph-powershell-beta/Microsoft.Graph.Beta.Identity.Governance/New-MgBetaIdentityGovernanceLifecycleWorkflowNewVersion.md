@@ -47,8 +47,7 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion -InputObject <IIdentityG
 Create a new version of the workflow object.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -93,6 +92,8 @@ $params = @{
 }
 New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

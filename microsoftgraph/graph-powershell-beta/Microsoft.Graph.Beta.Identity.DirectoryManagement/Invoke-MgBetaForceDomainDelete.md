@@ -54,8 +54,7 @@ To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaForceDomainDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -63,6 +62,8 @@ $params = @{
 }
 Invoke-MgBetaForceDomainDelete -DomainId $domainId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaForceDomainDelete Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

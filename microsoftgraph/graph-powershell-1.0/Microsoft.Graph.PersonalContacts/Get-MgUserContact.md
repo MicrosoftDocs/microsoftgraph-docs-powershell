@@ -41,16 +41,6 @@ Get-MgUserContact -InputObject <IPersonalContactsIdentity> [-ExpandProperty <Str
 Retrieve the properties and relationships of a contact object.
 There are two scenarios where an app can get a contact in another user's contact folder:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.PersonalContacts
-```
-
-# A UPN can also be used as -UserId.
-Get-MgUserContact -UserId $userId
-
 ## PARAMETERS
 
 ### -All

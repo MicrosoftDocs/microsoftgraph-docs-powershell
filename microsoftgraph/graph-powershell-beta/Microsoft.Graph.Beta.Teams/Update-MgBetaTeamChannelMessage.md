@@ -75,11 +75,11 @@ This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 ## EXAMPLES
+### Example 1: Update policyViolation using application permissions
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	policyViolation = @{
@@ -97,10 +97,14 @@ $params = @{
 
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example will update policyviolation using application permissions
+
+### Example 2: Update any property of a message using delegated permissions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	messageType = "message"
@@ -134,10 +138,14 @@ $params = @{
 
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example will update any property of a message using delegated permissions
+
+### Example 3: Update the mentions of a message using delegated permissions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	messageType = "message"
@@ -204,10 +212,14 @@ $params = @{
 
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example will update the mentions of a message using delegated permissions
+
+### Example 4: Update the content with attachments of a message using delegated permissions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	messageType = "message"
@@ -237,7 +249,7 @@ $params = @{
 			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.",
   "images": [
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
@@ -252,8 +264,8 @@ $params = @{
     },
     {
       "type": "imback",
-      "title": "&i am back& <>= "",
-      "value": "&i am back& <>= ""
+      "title": "&i am back& <>= \"",
+      "value": "&i am back& <>= \""
     },
     {
       "type": "openUrl",
@@ -272,7 +284,7 @@ $params = @{
 			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.",
   "images": [
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
@@ -281,9 +293,9 @@ $params = @{
   "buttons": [
     {
       "type": "messageBack",
-      "title": "&message back& <>= "",
-      "text": "text = &message back& <>= "",
-      "displayText": "displayText = &message back& <>= "",
+      "title": "&message back& <>= \"",
+      "text": "text = &message back& <>= \"",
+      "displayText": "displayText = &message back& <>= \"",
       "value": {
         "text": "some text 2"
       }
@@ -304,10 +316,14 @@ $params = @{
 
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 5
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example will update the content with attachments of a message using delegated permissions
+
+### Example 5: Update the reactions in a message using delegated permissions
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	messageType = "message"
@@ -337,7 +353,7 @@ $params = @{
 			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.",
   "images": [
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
@@ -352,8 +368,8 @@ $params = @{
     },
     {
       "type": "imback",
-      "title": "&i am back& <>= "",
-      "value": "&i am back& <>= ""
+      "title": "&i am back& <>= \"",
+      "value": "&i am back& <>= \""
     },
     {
       "type": "openUrl",
@@ -372,7 +388,7 @@ $params = @{
 			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here’s a small sample of some recipes to whet your appetite.",
   "images": [
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
@@ -381,9 +397,9 @@ $params = @{
   "buttons": [
     {
       "type": "messageBack",
-      "title": "&message back& <>= "",
-      "text": "text = &message back& <>= "",
-      "displayText": "displayText = &message back& <>= "",
+      "title": "&message back& <>= \"",
+      "text": "text = &message back& <>= \"",
+      "displayText": "displayText = &message back& <>= \"",
       "value": {
         "text": "some text 2"
       }
@@ -635,6 +651,10 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+```
+This example will update the reactions in a message using delegated permissions
+
 
 ## PARAMETERS
 

@@ -44,20 +44,28 @@ Attacks are typically inflicted on different types of entities, such as devices,
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
 
 ## EXAMPLES
+### Example 1: List all incidents
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityIncident
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Security
 ```
+This example will list all incidents
 
-Get-MgBetaSecurityIncident -ExpandProperty "alerts"
+### Example 2: List all incidents with their alerts
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityIncident -ExpandProperty "alerts" 
+
+```
+This example will list all incidents with their alerts
+
 
 ## PARAMETERS
 

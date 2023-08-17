@@ -39,13 +39,17 @@ Get-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandPrope
 Retrieve the properties and relationships of a directoryObject object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
 
 Get-MgBetaDirectoryObject -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Get-MgBetaDirectoryObject Cmdlet.
+
 
 ## PARAMETERS
 

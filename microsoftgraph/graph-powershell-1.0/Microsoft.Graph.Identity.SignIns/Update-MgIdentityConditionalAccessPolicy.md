@@ -51,8 +51,8 @@ Update-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
 Update the properties of a conditionalAccessPolicy object.
 
 ## EXAMPLES
+### Example 1: Add sign in risk levels to an existing conditional access policy
 
-### EXAMPLE 1
 ```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
   
@@ -65,9 +65,11 @@ $params = @{
     )
   }
 }
-```
 
 Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '61c7530f-5c1d-44b2-a972-4ae658b7a9ac' -BodyParameter $params
+```
+
+This example updates and existing access policy to add the sign in risk levels.
 
 ## PARAMETERS
 

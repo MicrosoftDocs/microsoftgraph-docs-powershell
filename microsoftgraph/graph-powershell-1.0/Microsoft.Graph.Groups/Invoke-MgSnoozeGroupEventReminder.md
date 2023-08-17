@@ -51,66 +51,25 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Groups
-```
+Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	Post = @{
-		Body = @{
-			ContentType = ""
-			Content = "content-value"
-		}
-		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
-		HasAttachments = $true
-		From = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
-			}
-		}
-		Sender = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
-			}
-		}
-		ConversationThreadId = "conversationThreadId-value"
-		NewParticipants = @(
-			@{
-				EmailAddress = @{
-					Name = "name-value"
-					Address = "address-value"
-				}
-			}
-		)
-		ConversationId = "conversationId-value"
-		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
-		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
-		ChangeKey = "changeKey-value"
-		Categories = @(
-			"categories-value"
-		)
-		Id = "id-value"
-		InReplyTo = @{
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
-				Name = "name-value"
-				ContentType = "contentType-value"
-				Size = 99
-				IsInline = $true
-				Id = "id-value"
-			}
-		)
+	NewReminderTime = @{
+		DateTime = "dateTime-value"
+		TimeZone = "timeZone-value"
 	}
 }
 
-Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+# A UPN can also be used as -UserId.
+Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgSnoozeGroupEventReminder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
