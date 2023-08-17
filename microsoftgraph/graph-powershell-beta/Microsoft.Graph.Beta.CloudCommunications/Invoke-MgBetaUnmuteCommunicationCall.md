@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaunmutecommunicationcall
 schema: 2.0.0
@@ -17,27 +17,27 @@ For more information about how to handle unmute operations, see unmuteParticipan
 ### UnmuteExpanded (Default)
 ```
 Invoke-MgBetaUnmuteCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>]
- [-ClientContext <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Unmute
 ```
 Invoke-MgBetaUnmuteCommunicationCall -CallId <String>
  -BodyParameter <IPaths1X7BvttCommunicationsCallsCallIdMicrosoftGraphUnmutePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UnmuteViaIdentityExpanded
+```
+Invoke-MgBetaUnmuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UnmuteViaIdentity
 ```
 Invoke-MgBetaUnmuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1X7BvttCommunicationsCallsCallIdMicrosoftGraphUnmutePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UnmuteViaIdentityExpanded
-```
-Invoke-MgBetaUnmuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,7 @@ For more information about how to handle unmute operations, see unmuteParticipan
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
@@ -64,7 +64,7 @@ Invoke-MgBetaUnmuteCommunicationCall -CallId $callId -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UnmuteExpanded, UnmuteViaIdentityExpanded
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1X7BvttCommunicationsCallsCallIdMicrosoftGraphUnmutePostRequestbodyContentApplicationJsonSchema
+Type: IPaths1X7BvttCommunicationsCallsCallIdMicrosoftGraphUnmutePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Unmute, UnmuteViaIdentity
 Aliases:
 
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: System.String
-Parameter Sets: Unmute, UnmuteExpanded
+Type: String
+Parameter Sets: UnmuteExpanded, Unmute
 Aliases:
 
 Required: True
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UnmuteExpanded, UnmuteViaIdentityExpanded
 Aliases:
 
@@ -126,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: UnmuteViaIdentity, UnmuteViaIdentityExpanded
+Type: ICloudCommunicationsIdentity
+Parameter Sets: UnmuteViaIdentityExpanded, UnmuteViaIdentity
 Aliases:
 
 Required: True
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +157,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,13 +174,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1X7BvttCommunicationsCallsCallIdMicrosoftGraphUnmutePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnmuteParticipantOperation
-
 ## NOTES
 
 ALIASES
@@ -215,4 +212,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

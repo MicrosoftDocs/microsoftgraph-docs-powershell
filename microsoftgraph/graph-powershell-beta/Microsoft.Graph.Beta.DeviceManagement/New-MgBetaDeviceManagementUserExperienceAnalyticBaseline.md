@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbaseline
 schema: 2.0.0
@@ -21,14 +21,14 @@ New-MgBetaDeviceManagementUserExperienceAnalyticBaseline [-AdditionalProperties 
  [-DeviceBootPerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-DisplayName <String>]
  [-Id <String>] [-IsBuiltIn] [-RebootAnalyticsMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
  [-ResourcePerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
- [-WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-Confirm] [-WhatIf]
+ [-WorkFromAnywhereMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBaseline
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBaseline> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,14 +36,14 @@ Create new navigation property to userExperienceAnalyticsBaselines for deviceMan
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -56,7 +56,7 @@ Create new navigation property to userExperienceAnalyticsBaselines for deviceMan
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for APPHEALTHMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +88,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for BATTERYHEALTHMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for BESTPRACTICESMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +120,7 @@ The user experience analytics baseline entity contains baseline values against w
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
+Type: IMicrosoftGraphUserExperienceAnalyticsBaseline
 Parameter Sets: Create
 Aliases:
 
@@ -139,7 +139,7 @@ For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00
 Returned by default.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -155,7 +155,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for DEVICEBOOTPERFORMANCEMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 The name of the baseline.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -186,7 +186,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +203,7 @@ When FALSE, indicates it is a custom baseline.
 FALSE by default.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +219,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for REBOOTANALYTICSMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -235,7 +235,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for RESOURCEPERFORMANCEMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +251,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for WORKFROMANYWHEREMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -266,7 +266,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -282,7 +282,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -299,11 +299,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
-
 ## NOTES
 
 ALIASES
@@ -431,3 +429,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

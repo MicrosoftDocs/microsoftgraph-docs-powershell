@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantapinotification
 schema: 2.0.0
@@ -17,14 +17,14 @@ Create new navigation property to managedTenantApiNotifications for tenantRelati
 New-MgBetaTenantRelationshipManagedTenantApiNotification [-AdditionalProperties <Hashtable>]
  [-Alert <IMicrosoftGraphManagedTenantsManagedTenantAlert>] [-CreatedByUserId <String>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-IsAcknowledged] [-LastActionByUserId <String>]
- [-LastActionDateTime <DateTime>] [-Message <String>] [-Title <String>] [-UserId <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-LastActionDateTime <DateTime>] [-Message <String>] [-Title <String>] [-UserId <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantApiNotification
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantApiNotification> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantApiNotification> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,19 +33,15 @@ Create new navigation property to managedTenantApiNotifications for tenantRelati
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -53,7 +49,7 @@ Create new navigation property to managedTenantApiNotifications for tenantRelati
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +65,7 @@ managedTenantAlert
 To construct, see NOTES section for ALERT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlert
+Type: IMicrosoftGraphManagedTenantsManagedTenantAlert
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +81,7 @@ managedTenantApiNotification
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantApiNotification
+Type: IMicrosoftGraphManagedTenantsManagedTenantApiNotification
 Parameter Sets: Create
 Aliases:
 
@@ -100,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +127,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +157,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +172,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +187,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +202,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,7 +217,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +232,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +248,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,11 +265,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantApiNotification
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantApiNotification
-
 ## NOTES
 
 ALIASES
@@ -455,4 +449,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: 
 
 ## RELATED LINKS
-

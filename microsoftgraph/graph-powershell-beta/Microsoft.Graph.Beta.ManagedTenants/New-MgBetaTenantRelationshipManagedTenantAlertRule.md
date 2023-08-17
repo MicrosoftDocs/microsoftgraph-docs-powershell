@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantalertrule
 schema: 2.0.0
@@ -15,20 +15,19 @@ Create new navigation property to managedTenantAlertRules for tenantRelationship
 ### CreateExpanded (Default)
 ```
 New-MgBetaTenantRelationshipManagedTenantAlertRule [-AdditionalProperties <Hashtable>]
- [-AlertDisplayName <String>] [-Alerts <IMicrosoftGraphManagedTenantsManagedTenantAlert[]>]
- [-AlertTtl <Int32>] [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
- [-LastRunDateTime <DateTime>] [-NotificationFinalDestinations <String>]
+ [-AlertDisplayName <String>] [-AlertTtl <Int32>] [-Alerts <IMicrosoftGraphManagedTenantsManagedTenantAlert[]>]
+ [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-LastRunDateTime <DateTime>]
+ [-NotificationFinalDestinations <String>]
  [-RuleDefinition <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition>] [-Severity <String>]
  [-Targets <IMicrosoftGraphManagedTenantsNotificationTarget[]>]
- [-TenantIds <IMicrosoftGraphManagedTenantsTenantInfo[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TenantIds <IMicrosoftGraphManagedTenantsTenantInfo[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantAlertRule
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlertRule> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlertRule> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,19 +35,15 @@ Create new navigation property to managedTenantAlertRules for tenantRelationship
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -56,7 +51,7 @@ Create new navigation property to managedTenantAlertRules for tenantRelationship
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +66,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +82,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ALERTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlert[]
+Type: IMicrosoftGraphManagedTenantsManagedTenantAlert[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +97,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +113,7 @@ managedTenantAlertRule
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlertRule
+Type: IMicrosoftGraphManagedTenantsManagedTenantAlertRule
 Parameter Sets: Create
 Aliases:
 
@@ -133,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +158,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +173,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +189,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +204,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -224,7 +219,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +234,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -254,7 +249,7 @@ Accept wildcard characters: False
 notificationDestination
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -270,7 +265,7 @@ managedTenantAlertRuleDefinition
 To construct, see NOTES section for RULEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition
+Type: IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -285,7 +280,7 @@ Accept wildcard characters: False
 alertSeverity
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -301,7 +296,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsNotificationTarget[]
+Type: IMicrosoftGraphManagedTenantsNotificationTarget[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -317,7 +312,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TENANTIDS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantInfo[]
+Type: IMicrosoftGraphManagedTenantsTenantInfo[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -332,7 +327,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -348,7 +343,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -365,11 +360,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlertRule
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlertRule
-
 ## NOTES
 
 ALIASES
@@ -638,3 +631,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

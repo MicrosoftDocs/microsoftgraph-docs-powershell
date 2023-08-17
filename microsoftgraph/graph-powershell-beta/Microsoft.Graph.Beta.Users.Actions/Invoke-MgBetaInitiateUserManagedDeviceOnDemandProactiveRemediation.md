@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainitiateusermanageddeviceondemandproactiveremediation
 schema: 2.0.0
@@ -15,7 +15,7 @@ Perform On Demand Proactive Remediation
 ### InitiateExpanded (Default)
 ```
 Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,21 +23,21 @@ Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -ManagedDevic
 ```
 Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -ManagedDeviceId <String> -UserId <String>
  -Body <IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### InitiateViaIdentityExpanded
+```
+Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### InitiateViaIdentity
 ```
 Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### InitiateViaIdentityExpanded
-```
-Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ Perform On Demand Proactive Remediation
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ Perform On Demand Proactive Remediation
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: InitiateExpanded, InitiateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +77,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
+Type: IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Initiate
 Aliases:
 
@@ -97,7 +93,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
+Type: IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: InitiateViaIdentity
 Aliases:
 
@@ -113,8 +109,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: InitiateViaIdentity, InitiateViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: InitiateViaIdentityExpanded, InitiateViaIdentity
 Aliases:
 
 Required: True
@@ -128,8 +124,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: System.String
-Parameter Sets: Initiate, InitiateExpanded
+Type: String
+Parameter Sets: InitiateExpanded, Initiate
 Aliases:
 
 Required: True
@@ -143,7 +139,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -158,7 +154,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: InitiateExpanded, InitiateViaIdentityExpanded
 Aliases:
 
@@ -173,8 +169,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Initiate, InitiateExpanded
+Type: String
+Parameter Sets: InitiateExpanded, Initiate
 Aliases:
 
 Required: True
@@ -188,7 +184,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -204,7 +200,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -221,13 +217,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -288,4 +281,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

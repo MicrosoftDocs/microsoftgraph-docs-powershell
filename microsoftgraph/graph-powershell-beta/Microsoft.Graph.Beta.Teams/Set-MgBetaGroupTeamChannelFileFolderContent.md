@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamchannelfilefoldercontent
 schema: 2.0.0
@@ -14,14 +14,14 @@ The content stream, if the item represents a file.
 
 ### Set (Default)
 ```
-Set-MgBetaGroupTeamChannelFileFolderContent -ChannelId <String> -GroupId <String> -InFile <String>
- [-Data <Stream>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-MgBetaGroupTeamChannelFileFolderContent -ChannelId <String> -GroupId <String> [-Data <Stream>]
+ -InFile <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgBetaGroupTeamChannelFileFolderContent -InputObject <ITeamsIdentity> -InFile <String> [-Data <Stream>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-MgBetaGroupTeamChannelFileFolderContent -InputObject <ITeamsIdentity> [-Data <Stream>] -InFile <String>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,7 +29,7 @@ The content stream, if the item represents a file.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 ```
@@ -42,7 +42,7 @@ Get-MgBetaTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
 The unique identifier of channel
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.IO.Stream
+Type: Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -89,7 +89,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -105,7 +105,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -136,7 +136,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -153,13 +153,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
-
 ### System.IO.Stream
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
-
 ## NOTES
 
 ALIASES
@@ -210,4 +207,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-

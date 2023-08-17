@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication
 schema: 2.0.0
@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an azureADAuthentication object to find the level of Azure AD authentication availability for your tenant.
 The Azure AD Service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Azure Active Directory SLA performance.
-This object provides you with your tenant’s actual performance against this commitment.
+This object provides you with your tenant's actual performance against this commitment.
 
 ## SYNTAX
 
@@ -22,23 +22,19 @@ Get-MgBetaReportSlaAzureAdAuthentication [-ExpandProperty <String[]>] [-Property
 ## DESCRIPTION
 Read the properties and relationships of an azureADAuthentication object to find the level of Azure AD authentication availability for your tenant.
 The Azure AD Service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Azure Active Directory SLA performance.
-This object provides you with your tenant’s actual performance against this commitment.
+This object provides you with your tenant's actual performance against this commitment.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -46,7 +42,7 @@ This object provides you with your tenant’s actual performance against this co
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -61,7 +57,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -80,10 +76,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAzureAdAuthentication
-
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule
 schema: 2.0.0
@@ -17,20 +17,14 @@ Update the properties of an alertRule object.
 Update-MgBetaDeviceManagementMonitoringAlertRule -AlertRuleId <String> [-AdditionalProperties <Hashtable>]
  [-AlertRuleTemplate <String>] [-Description <String>] [-DisplayName <String>] [-Enabled] [-Id <String>]
  [-IsSystemRule] [-NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>]
- [-Severity <String>] [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-Confirm] [-WhatIf]
+ [-Severity <String>] [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementMonitoringAlertRule -AlertRuleId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,7 +33,13 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
  [-AdditionalProperties <Hashtable>] [-AlertRuleTemplate <String>] [-Description <String>]
  [-DisplayName <String>] [-Enabled] [-Id <String>] [-IsSystemRule]
  [-NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>] [-Severity <String>]
- [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,19 +47,15 @@ Update the properties of an alertRule object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -67,7 +63,7 @@ Update the properties of an alertRule object.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -82,8 +78,8 @@ Accept wildcard characters: False
 The unique identifier of alertRule
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -97,7 +93,7 @@ Accept wildcard characters: False
 alertRuleTemplate
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,7 +109,7 @@ alertRule
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule
+Type: IMicrosoftGraphDeviceManagementAlertRule
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -128,7 +124,7 @@ Accept wildcard characters: False
 The rule description.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +139,7 @@ Accept wildcard characters: False
 The display name of the rule.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +155,7 @@ The status of the rule that indicates whether the rule is enabled or disabled.
 If true, the rule is enabled; otherwise, the rule is disabled.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +171,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,8 +187,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -208,7 +204,7 @@ If true, the rule is a system rule; otherwise, the rule is a custom defined rule
 System rules are built-in and only a few properties can be edited.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +220,7 @@ The notification channels of the rule selected by the user.
 To construct, see NOTES section for NOTIFICATIONCHANNELS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementNotificationChannel[]
+Type: IMicrosoftGraphDeviceManagementNotificationChannel[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +235,7 @@ Accept wildcard characters: False
 ruleSeverityType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -255,7 +251,7 @@ ruleThreshold
 To construct, see NOTES section for THRESHOLD properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementRuleThreshold
+Type: IMicrosoftGraphDeviceManagementRuleThreshold
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,7 +266,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -286,7 +282,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -303,13 +299,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule
-
 ## NOTES
 
 ALIASES
@@ -494,3 +487,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS
