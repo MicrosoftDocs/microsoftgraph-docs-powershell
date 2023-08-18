@@ -45,6 +45,23 @@ Update-MgTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	displayName = "My Contoso Tab - updated"
+}
+
+Update-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -TeamsTabId $teamsTabId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTeamChannelTab Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,4 +407,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelTab?view=graph-powershell-beta)
-

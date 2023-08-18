@@ -1,14 +1,14 @@
 ---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingvirtualappointment
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingtranscript
 schema: 2.0.0
 ---
 
-# Remove-MgBetaUserOnlineMeetingVirtualAppointment
+# Remove-MgBetaUserOnlineMeetingTranscript
 
 ## SYNOPSIS
-Delete a virtualAppointment object.
+Delete navigation property transcripts for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserPresence?view=graph-powershell-1.0)
@@ -17,18 +17,18 @@ Delete a virtualAppointment object.
 
 ### Delete (Default)
 ```
-Remove-MgBetaUserOnlineMeetingVirtualAppointment -OnlineMeetingId <String> -UserId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaUserOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicationsIdentity>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete a virtualAppointment object.
+Delete navigation property transcripts for users
 
 ## EXAMPLES
 ### Example 1: Get your own presence information
@@ -67,6 +67,21 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 
 ## PARAMETERS
+
+### -CallTranscriptId
+The unique identifier of callTranscript
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState
 
 ## SYNOPSIS
-Not yet documented
+Get deviceComplianceSettingStates from deviceManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplia
 ```
 
 ## DESCRIPTION
-Not yet documented
+Get deviceComplianceSettingStates from deviceManagement
 
 ## PARAMETERS
 

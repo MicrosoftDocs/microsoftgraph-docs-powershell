@@ -30,6 +30,19 @@ Remove-MgTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pass
 ## DESCRIPTION
 Removes (unpins) a tab from the specified channel within a team.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Remove-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -TeamsTabId $teamsTabId
+
+```
+This example shows how to use the Remove-MgTeamChannelTab Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -208,4 +221,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelTab?view=graph-powershell-beta)
-

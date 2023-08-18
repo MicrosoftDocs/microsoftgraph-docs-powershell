@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Files
-Module Guid: bb3a4524-4169-403a-9f0a-2c9e29705053
+Module Guid: 19e92567-11b7-4174-9ba3-27dc859732ce
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files
 Help Version: 1.0.0.0
 Locale: en-US
@@ -2775,9 +2775,8 @@ Unpublish a [contentType][] from a content type hub site.
 Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveItem](Update-MgBetaDriveItem.md)
-To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
-Items cannot be moved between Drives using this request.
+Update the metadata for a DriveItem by ID or path.
+You can also use update to move an item to another parent by updating the item's parentReference property.
 
 ### [Update-MgBetaDriveItemAnalytic](Update-MgBetaDriveItemAnalytic.md)
 Update the navigation property analytics in drives
@@ -2947,9 +2946,8 @@ Update the navigation property drives in groups
 Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveItem](Update-MgBetaGroupDriveItem.md)
-To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
-Items cannot be moved between Drives using this request.
+Update the metadata for a DriveItem by ID or path.
+You can also use update to move an item to another parent by updating the item's parentReference property.
 
 ### [Update-MgBetaGroupDriveItemAnalytic](Update-MgBetaGroupDriveItemAnalytic.md)
 Update the navigation property analytics in groups
@@ -3182,9 +3180,8 @@ Update the navigation property drives in users
 Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveItem](Update-MgBetaUserDriveItem.md)
-To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
-Items cannot be moved between Drives using this request.
+Update the metadata for a DriveItem by ID or path.
+You can also use update to move an item to another parent by updating the item's parentReference property.
 
 ### [Update-MgBetaUserDriveItemAnalytic](Update-MgBetaUserDriveItemAnalytic.md)
 Update the navigation property analytics in users

@@ -10,7 +10,7 @@ ms.prod: microsoft-teams
 # Get-MgChatMember
 
 ## SYNOPSIS
-Retrieve a conversationMember from a chat or channel.
+Retrieve a conversationMember from a chat.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMember?view=graph-powershell-beta)
@@ -37,19 +37,19 @@ Get-MgChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Retrieve a conversationMember from a chat or channel.
+Retrieve a conversationMember from a chat.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
-Get-MgChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
+Get-MgChatMember -ChatId $chatId
+
 ```
 This example shows how to use the Get-MgChatMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

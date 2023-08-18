@@ -484,6 +484,9 @@ To create the parameters described below, construct a hash table containing the 
 `ALERTS <IMicrosoftGraphSecurityAlert[]>`: The list of related alerts. Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
+  - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AlertPolicyId <String>]`: 
   - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
   - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
   - `[Category <String>]`: The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.
@@ -529,6 +532,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Alerts <IMicrosoftGraphSecurityAlert[]>]`: The list of related alerts. Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
+    - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AlertPolicyId <String>]`: 
     - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
     - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
     - `[Category <String>]`: The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.
@@ -576,6 +582,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Determination <String>]`: alertDetermination
   - `[DisplayName <String>]`: The incident name.
   - `[IncidentWebUrl <String>]`: The URL for the incident page in the Microsoft 365 Defender portal.
+  - `[LastModifiedBy <String>]`: 
   - `[LastUpdateDateTime <DateTime?>]`: Time when the incident was last updated.
   - `[RecommendedActions <String>]`: 
   - `[RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]`: 
@@ -665,6 +672,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 `RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>`: .

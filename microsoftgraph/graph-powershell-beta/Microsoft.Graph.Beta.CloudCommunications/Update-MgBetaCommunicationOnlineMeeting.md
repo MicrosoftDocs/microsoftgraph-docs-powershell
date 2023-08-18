@@ -639,7 +639,8 @@ Accept wildcard characters: False
 ```
 
 ### -Recordings
-.
+The recordings of an online meeting.
+Read-only.
 To construct, see NOTES section for RECORDINGS properties and create a hash table.
 
 ```yaml
@@ -919,6 +920,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
     - `[ReplyChainMessageId <String>]`: The ID of the reply message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+  - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AllowTextOnly <Boolean?>]`: 
   - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
   - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
   - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
@@ -955,10 +959,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
   - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
   - `[Recording <Byte[]>]`: The content stream of the recording of a Teams live event. Read-only.
-  - `[Recordings <IMicrosoftGraphCallRecording[]>]`: 
+  - `[Recordings <IMicrosoftGraphCallRecording[]>]`: The recordings of an online meeting. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Content <Byte[]>]`: 
-    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Content <Byte[]>]`: The content of the recording. Read-only.
+    - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowedRegistrant <String>]`: meetingAudience
@@ -990,19 +994,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[MetadataContent <Byte[]>]`: The time-aligned metadata of the utterances in the transcript. Read-only.
   - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
-  - `[VirtualAppointment <IMicrosoftGraphVirtualAppointment>]`: virtualAppointment
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AppointmentClientJoinWebUrl <String>]`: The join web URL of the virtual appointment for clients with waiting room and browser join. Optional.
-    - `[AppointmentClients <IMicrosoftGraphVirtualAppointmentUser[]>]`: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
-      - `[DisplayName <String>]`: The display name of the user who participates in a virtual appointment. Optional.
-      - `[EmailAddress <String>]`: The email address of the user who participates in a virtual appointment. Optional.
-      - `[SmsCapablePhoneNumber <String>]`: The phone number for sending SMS texts for the user who participates in a virtual appointment. Optional.
-    - `[ExternalAppointmentId <String>]`: The identifier of the appointment from the scheduling system, associated with the current virtual appointment. Optional.
-    - `[ExternalAppointmentUrl <String>]`: The URL of the appointment resource from the scheduling system, associated with the current virtual appointment. Optional.
-    - `[Settings <IMicrosoftGraphVirtualAppointmentSettings>]`: virtualAppointmentSettings
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
   - `[WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]`: watermarkProtectionValues
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsEnabledForContentSharing <Boolean?>]`: Indicates whether to apply a watermark to any shared content.
@@ -1026,6 +1017,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+
+`CHATRESTRICTIONS <IMicrosoftGraphChatRestrictions>`: chatRestrictions
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AllowTextOnly <Boolean?>]`: 
 
 `INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
@@ -1101,10 +1096,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
   - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
 
-`RECORDINGS <IMicrosoftGraphCallRecording[]>`: .
+`RECORDINGS <IMicrosoftGraphCallRecording[]>`: The recordings of an online meeting. Read-only.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Content <Byte[]>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
+  - `[Content <Byte[]>]`: The content of the recording. Read-only.
+  - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
 `REGISTRATION <IMicrosoftGraphMeetingRegistration>`: meetingRegistration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1134,20 +1129,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Content <Byte[]>]`: The content of the transcript. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[MetadataContent <Byte[]>]`: The time-aligned metadata of the utterances in the transcript. Read-only.
-
-`VIRTUALAPPOINTMENT <IMicrosoftGraphVirtualAppointment>`: virtualAppointment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AppointmentClientJoinWebUrl <String>]`: The join web URL of the virtual appointment for clients with waiting room and browser join. Optional.
-  - `[AppointmentClients <IMicrosoftGraphVirtualAppointmentUser[]>]`: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
-    - `[DisplayName <String>]`: The display name of the user who participates in a virtual appointment. Optional.
-    - `[EmailAddress <String>]`: The email address of the user who participates in a virtual appointment. Optional.
-    - `[SmsCapablePhoneNumber <String>]`: The phone number for sending SMS texts for the user who participates in a virtual appointment. Optional.
-  - `[ExternalAppointmentId <String>]`: The identifier of the appointment from the scheduling system, associated with the current virtual appointment. Optional.
-  - `[ExternalAppointmentUrl <String>]`: The URL of the appointment resource from the scheduling system, associated with the current virtual appointment. Optional.
-  - `[Settings <IMicrosoftGraphVirtualAppointmentSettings>]`: virtualAppointmentSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 
 `WATERMARKPROTECTION <IMicrosoftGraphWatermarkProtectionValues>`: watermarkProtectionValues
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

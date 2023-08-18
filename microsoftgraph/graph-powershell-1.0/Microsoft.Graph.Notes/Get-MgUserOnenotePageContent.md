@@ -30,6 +30,8 @@ Get-MgUserOnenotePageContent -InputObject <INotesIdentity> -OutFile <String> [-P
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -139,4 +141,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePageContent?view=graph-powershell-beta)
-

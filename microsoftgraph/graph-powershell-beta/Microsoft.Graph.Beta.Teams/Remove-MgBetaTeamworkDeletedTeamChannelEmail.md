@@ -32,6 +32,8 @@ Remove-MgBetaTeamworkDeletedTeamChannelEmail -InputObject <ITeamsIdentity> [-Pas
 Remove the email address of a channel.
 You can remove an email address only if it was provisioned using the provisionEmail method or through the Microsoft Teams client.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -186,4 +188,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamworkDeletedTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedTeamChannelEmail?view=graph-powershell-1.0)
-

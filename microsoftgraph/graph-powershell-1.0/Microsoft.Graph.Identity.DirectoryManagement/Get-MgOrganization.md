@@ -3,15 +3,14 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization
 schema: 2.0.0
-ms.prod: directory-management
-ms.prod: directory-management
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgOrganization
 
 ## SYNOPSIS
-Get the properties and relationships of the currently authenticated organization.
-Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
+Read properties and relationships of the organization object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganization?view=graph-powershell-beta)
@@ -38,8 +37,7 @@ Get-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of the currently authenticated organization.
-Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
+Read properties and relationships of the organization object.
 
 ## EXAMPLES
 ### Example 1: Code snippet

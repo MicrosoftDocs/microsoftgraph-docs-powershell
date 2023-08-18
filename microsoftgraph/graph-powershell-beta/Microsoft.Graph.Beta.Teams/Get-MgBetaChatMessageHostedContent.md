@@ -52,16 +52,16 @@ Get-MgBetaChatMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandPropert
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: List hosted content for message in a chat
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId -ChatMessageHostedContentId $chatMessageHostedContentId
-```
-This example shows how to use the Get-MgBetaChatMessageHostedContent Cmdlet.
+Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will list hosted content for message in a chat
 
 
 ## PARAMETERS

@@ -50,6 +50,7 @@ Install an app in the personal scope of the specified user.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -57,10 +58,9 @@ $params = @{
 }
 
 New-MgUserTeamworkInstalledApp -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgUserTeamworkInstalledApp Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

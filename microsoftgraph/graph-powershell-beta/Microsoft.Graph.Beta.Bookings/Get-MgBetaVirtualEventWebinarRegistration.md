@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventWebinarRegistration
 
 ## SYNOPSIS
-Registration configuration of the webinar.
+Get registrations from solutions
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Registration configuration of the webinar.
+Get registrations from solutions
 
 ## PARAMETERS
 
@@ -127,6 +127,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
+  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
   - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 

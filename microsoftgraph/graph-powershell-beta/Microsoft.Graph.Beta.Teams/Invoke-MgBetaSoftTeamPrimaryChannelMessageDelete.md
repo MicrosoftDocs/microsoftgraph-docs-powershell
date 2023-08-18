@@ -30,6 +30,8 @@ Invoke-MgBetaSoftTeamPrimaryChannelMessageDelete -InputObject <ITeamsIdentity> [
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatMessageId
@@ -184,4 +186,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgSoftTeamPrimaryChannelMessageDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftTeamPrimaryChannelMessageDelete?view=graph-powershell-1.0)
-

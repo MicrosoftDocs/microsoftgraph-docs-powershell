@@ -29,6 +29,19 @@ Get-MgTeamPhotoContent -InputObject <ITeamsIdentity> -OutFile <String> [-PassThr
 ## DESCRIPTION
 Get media content for the navigation property photo from teams
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamPhotoContent -TeamId $teamId -OutFile $outFileId
+
+```
+This example shows how to use the Get-MgTeamPhotoContent Cmdlet.
+
+
 ## PARAMETERS
 
 ### -InputObject
@@ -146,4 +159,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPhotoContent?view=graph-powershell-beta)
-

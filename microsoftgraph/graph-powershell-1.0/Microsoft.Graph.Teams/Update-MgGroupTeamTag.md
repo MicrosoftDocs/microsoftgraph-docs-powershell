@@ -45,6 +45,8 @@ Update-MgGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the properties of a tag object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -338,4 +340,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamTag?view=graph-powershell-beta)
-

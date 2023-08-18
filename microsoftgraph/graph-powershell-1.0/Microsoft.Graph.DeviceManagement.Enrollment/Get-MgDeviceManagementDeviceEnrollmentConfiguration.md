@@ -10,7 +10,7 @@ ms.prod: intune
 # Get-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Read properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+Read properties and relationships of the deviceEnrollmentConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration object.
+Read properties and relationships of the deviceEnrollmentConfiguration object.
 
 ## PARAMETERS
 

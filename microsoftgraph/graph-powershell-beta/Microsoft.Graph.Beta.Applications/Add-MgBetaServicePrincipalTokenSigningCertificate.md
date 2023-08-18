@@ -62,17 +62,22 @@ The startDateTime is set to the same time the certificate is created using the a
 The endDateTime can be up to three years after the certificate is created.
 
 ## EXAMPLES
-### Example 1: Using the Add-MgBetaServicePrincipalTokenSigningCertificate Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
+
 $params = @{
-	DisplayName = "CN=customDisplayName"
-	EndDateTime = [System.DateTime]::Parse("2024-01-25T00:00:00Z")
+	displayName = "CN=customDisplayName"
+	endDateTime = [System.DateTime]::Parse("2024-01-25T00:00:00Z")
 }
+
 Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
 ```
 This example shows how to use the Add-MgBetaServicePrincipalTokenSigningCertificate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -252,6 +257,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
+  - `[UniqueName <String>]`: Alternate key of application
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

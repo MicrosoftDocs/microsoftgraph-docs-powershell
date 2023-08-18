@@ -30,6 +30,8 @@ Remove-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete an openShift object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -193,4 +195,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleOpenShift?view=graph-powershell-beta)
-

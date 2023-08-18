@@ -1765,6 +1765,7 @@ To create the parameters described below, construct a hash table containing the 
                   - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
                   - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                    - `[CheckedOutBy <IMicrosoftGraphIdentitySet>]`: identitySet
                     - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
                     - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -2928,7 +2929,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
             - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
             - `[AllowMeetingChat <String>]`: meetingChatMode
-            - `[AllowParticipantsToChangeName <Boolean?>]`: 
+            - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
             - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
             - `[AllowedPresenters <String>]`: onlineMeetingPresenters
             - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -2996,6 +2997,7 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Upn <String>]`: User principal name of the participant.
               - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
             - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+            - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
             - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
             - `[Subject <String>]`: The subject of the online meeting.
             - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
@@ -4650,6 +4652,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
             - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[CheckedOutBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
               - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -5813,7 +5816,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowMeetingChat <String>]`: meetingChatMode
-      - `[AllowParticipantsToChangeName <Boolean?>]`: 
+      - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -5881,6 +5884,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[Upn <String>]`: User principal name of the participant.
         - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
       - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+      - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the online meeting.
       - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
@@ -7509,6 +7513,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
             - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[CheckedOutBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
               - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -8672,7 +8677,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowMeetingChat <String>]`: meetingChatMode
-      - `[AllowParticipantsToChangeName <Boolean?>]`: 
+      - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -8740,6 +8745,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[Upn <String>]`: User principal name of the participant.
         - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
       - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+      - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the online meeting.
       - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
@@ -10253,6 +10259,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
           - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CheckedOutBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
             - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -11930,7 +11937,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
-    - `[AllowParticipantsToChangeName <Boolean?>]`: 
+    - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -11998,6 +12005,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[Upn <String>]`: User principal name of the participant.
       - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
     - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+    - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
     - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
     - `[Subject <String>]`: The subject of the online meeting.
     - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
@@ -13176,6 +13184,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
           - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CheckedOutBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
             - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -14853,7 +14862,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
-    - `[AllowParticipantsToChangeName <Boolean?>]`: 
+    - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -14921,6 +14930,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[Upn <String>]`: User principal name of the participant.
       - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
     - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+    - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
     - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
     - `[Subject <String>]`: The subject of the online meeting.
     - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
@@ -16070,6 +16080,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[TakenDateTime <DateTime?>]`: Represents the date and time the photo was taken. Read-only.
         - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[CheckedOutBy <IMicrosoftGraphIdentitySet>]`: identitySet
           - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
           - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
         - `[RemoteItem <IMicrosoftGraphRemoteItem>]`: remoteItem
@@ -17669,7 +17680,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowMeetingChat <String>]`: meetingChatMode
-      - `[AllowParticipantsToChangeName <Boolean?>]`: 
+      - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -17737,6 +17748,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[Upn <String>]`: User principal name of the participant.
         - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
       - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+      - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the online meeting.
       - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
@@ -18255,6 +18267,14 @@ To create the parameters described below, construct a hash table containing the 
 
 `PUBLICATION <IMicrosoftGraphPublicationFacet>`: publicationFacet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CheckedOutBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
@@ -18421,6 +18441,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: Date and time the version was last modified. Read-only.
   - `[Publication <IMicrosoftGraphPublicationFacet>]`: publicationFacet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CheckedOutBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
     - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.

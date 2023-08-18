@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a membershipType value of private or shared.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannelMember?view=graph-powershell-beta)
@@ -43,6 +44,7 @@ New-MgGroupTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a membershipType value of private or shared.
 
 ## EXAMPLES
 

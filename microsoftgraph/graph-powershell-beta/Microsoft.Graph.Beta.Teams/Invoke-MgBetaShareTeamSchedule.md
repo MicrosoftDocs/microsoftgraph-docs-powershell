@@ -52,18 +52,23 @@ For each shift, openshift and timeOff instance in the specified time range, the 
 The notifyTeam parameter further specifies which employees can view the item.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaShareTeamSchedule Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
 $params = @{
-	NotifyTeam = $true
-	StartDateTime = [System.DateTime]::Parse("2018-10-08T00:00:00.000Z")
-	EndDateTime = [System.DateTime]::Parse("2018-10-15T00:00:00.000Z")
+	notifyTeam = $true
+	startDateTime = [System.DateTime]::Parse("2018-10-08T00:00:00.000Z")
+	endDateTime = [System.DateTime]::Parse("2018-10-15T00:00:00.000Z")
 }
+
 Invoke-MgBetaShareTeamSchedule -TeamId $teamId -BodyParameter $params
+
 ```
 This example shows how to use the Invoke-MgBetaShareTeamSchedule Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

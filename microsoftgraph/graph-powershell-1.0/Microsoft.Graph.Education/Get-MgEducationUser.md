@@ -58,7 +58,7 @@ Read the properties and relationships of an educationUser object.
 
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationUser -EducationUserId $educationUserId
+Get-MgEducationUser
 
 ```
 This example shows how to use the Get-MgEducationUser Cmdlet.

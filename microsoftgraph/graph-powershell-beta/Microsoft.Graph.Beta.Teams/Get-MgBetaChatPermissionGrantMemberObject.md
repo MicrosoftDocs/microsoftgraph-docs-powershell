@@ -44,6 +44,8 @@ Get-MgBetaChatPermissionGrantMemberObject -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action getMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -234,4 +236,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrantMemberObject?view=graph-powershell-1.0)
-

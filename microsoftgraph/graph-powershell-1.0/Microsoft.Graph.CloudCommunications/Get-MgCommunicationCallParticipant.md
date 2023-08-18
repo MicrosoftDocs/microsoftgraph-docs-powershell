@@ -46,7 +46,7 @@ Retrieve the properties and relationships of a participant object.
 
 Import-Module Microsoft.Graph.CloudCommunications
 
-Get-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+Get-MgCommunicationCallParticipant -CallId $callId
 
 ```
 This example shows how to use the Get-MgCommunicationCallParticipant Cmdlet.

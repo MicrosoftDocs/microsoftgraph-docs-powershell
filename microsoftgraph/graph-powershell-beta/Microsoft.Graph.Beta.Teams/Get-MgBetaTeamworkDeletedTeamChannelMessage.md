@@ -51,6 +51,8 @@ Get-MgBetaTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-Expa
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -355,4 +357,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessage?view=graph-powershell-1.0)
-

@@ -44,6 +44,8 @@ Update-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -374,4 +376,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
-

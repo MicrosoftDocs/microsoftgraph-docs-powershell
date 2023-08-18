@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunpineducationclassmodule
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Invoke-MgBetaUnpinEducationClassModule
 
 ## SYNOPSIS
-Invoke action unpin
+Unpin an educationModule in the classwork list.
+This action sets the isPinned property to false for an educationModule.
+Only teachers in the class can perform this operation.
 
 ## SYNTAX
 
@@ -25,7 +28,9 @@ Invoke-MgBetaUnpinEducationClassModule -InputObject <IEducationIdentity> [-WhatI
 ```
 
 ## DESCRIPTION
-Invoke action unpin
+Unpin an educationModule in the classwork list.
+This action sets the isPinned property to false for an educationModule.
+Only teachers in the class can perform this operation.
 
 ## PARAMETERS
 

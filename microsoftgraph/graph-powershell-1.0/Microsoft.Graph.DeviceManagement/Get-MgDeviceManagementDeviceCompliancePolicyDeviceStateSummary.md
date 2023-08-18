@@ -24,6 +24,19 @@ Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-ExpandProperty 
 ## DESCRIPTION
 Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary Cmdlet.
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -70,4 +83,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary?view=graph-powershell-beta)
-

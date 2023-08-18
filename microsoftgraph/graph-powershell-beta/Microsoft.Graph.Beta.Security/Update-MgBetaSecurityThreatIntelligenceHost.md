@@ -519,7 +519,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: The identification value for the hostTracker.
   - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -548,6 +547,27 @@ To create the parameters described below, construct a hash table containing the 
     - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[WhoisServer <String>]`: 
     - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+      - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[DomainStatus <String>]`: 
+      - `[ExpirationDateTime <DateTime?>]`: 
+      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[Host <IMicrosoftGraphSecurityHost>]`: host
+      - `[LastSeenDateTime <DateTime?>]`: 
+      - `[LastUpdateDateTime <DateTime?>]`: 
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+      - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[RawWhoisText <String>]`: 
+      - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[WhoisServer <String>]`: 
+      - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 `CHILDHOSTPAIRS <IMicrosoftGraphSecurityHostPair[]>`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -648,7 +668,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: The identification value for the hostTracker.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -677,6 +696,27 @@ To create the parameters described below, construct a hash table containing the 
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[WhoisServer <String>]`: 
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[DomainStatus <String>]`: 
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[Host <IMicrosoftGraphSecurityHost>]`: host
+        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastUpdateDateTime <DateTime?>]`: 
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RawWhoisText <String>]`: 
+        - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[WhoisServer <String>]`: 
+        - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[LastSeenDateTime <DateTime?>]`: The last date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[LinkKind <String>]`: The reason the two hosts are identified as hostPairs.
@@ -782,7 +822,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: The identification value for the hostTracker.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -811,6 +850,27 @@ To create the parameters described below, construct a hash table containing the 
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[WhoisServer <String>]`: 
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[DomainStatus <String>]`: 
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[Host <IMicrosoftGraphSecurityHost>]`: host
+        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastUpdateDateTime <DateTime?>]`: 
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RawWhoisText <String>]`: 
+        - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[WhoisServer <String>]`: 
+        - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Name <String>]`: A name running on the artifact, for example, Microsoft IIS.
   - `[Version <String>]`: The component version running on the artifact, for example, v8.5. This should not be assumed to be strictly numerical.
@@ -916,7 +976,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: The identification value for the hostTracker.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -945,6 +1004,27 @@ To create the parameters described below, construct a hash table containing the 
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[WhoisServer <String>]`: 
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[DomainStatus <String>]`: 
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[Host <IMicrosoftGraphSecurityHost>]`: host
+        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastUpdateDateTime <DateTime?>]`: 
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RawWhoisText <String>]`: 
+        - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[WhoisServer <String>]`: 
+        - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this hostCookie was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Name <String>]`: The name of the cookie, for example, JSESSIONID or SEARCH_NAMESITE.
 
@@ -1047,7 +1127,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: The identification value for the hostTracker.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1076,6 +1155,27 @@ To create the parameters described below, construct a hash table containing the 
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[WhoisServer <String>]`: 
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[DomainStatus <String>]`: 
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[Host <IMicrosoftGraphSecurityHost>]`: host
+        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastUpdateDateTime <DateTime?>]`: 
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RawWhoisText <String>]`: 
+        - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[WhoisServer <String>]`: 
+        - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[LastSeenDateTime <DateTime?>]`: The last date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[LinkKind <String>]`: The reason the two hosts are identified as hostPairs.
@@ -1155,6 +1255,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 `PARENTHOSTPAIRS <IMicrosoftGraphSecurityHostPair[]>`: The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
@@ -1256,7 +1357,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: The identification value for the hostTracker.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1285,6 +1385,27 @@ To create the parameters described below, construct a hash table containing the 
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[WhoisServer <String>]`: 
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[DomainStatus <String>]`: 
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[Host <IMicrosoftGraphSecurityHost>]`: host
+        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastUpdateDateTime <DateTime?>]`: 
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RawWhoisText <String>]`: 
+        - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[WhoisServer <String>]`: 
+        - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[LastSeenDateTime <DateTime?>]`: The last date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[LinkKind <String>]`: The reason the two hosts are identified as hostPairs.
@@ -1392,7 +1513,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: The identification value for the hostTracker.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1421,6 +1541,27 @@ To create the parameters described below, construct a hash table containing the 
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[WhoisServer <String>]`: 
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[DomainStatus <String>]`: 
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[Host <IMicrosoftGraphSecurityHost>]`: host
+        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastUpdateDateTime <DateTime?>]`: 
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RawWhoisText <String>]`: 
+        - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[WhoisServer <String>]`: 
+        - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RecordType <String>]`: The DNS record type for this passiveDnsRecord entry.
 
 `PASSIVEDNSREVERSE <IMicrosoftGraphSecurityPassiveDnsRecord[]>`: Reverse passive DNS retrieval about this host.
@@ -1525,7 +1666,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: The identification value for the hostTracker.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1554,6 +1694,27 @@ To create the parameters described below, construct a hash table containing the 
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[WhoisServer <String>]`: 
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[DomainStatus <String>]`: 
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[Host <IMicrosoftGraphSecurityHost>]`: host
+        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastUpdateDateTime <DateTime?>]`: 
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RawWhoisText <String>]`: 
+        - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[WhoisServer <String>]`: 
+        - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RecordType <String>]`: The DNS record type for this passiveDnsRecord entry.
 
 `REPUTATION <IMicrosoftGraphSecurityHostReputation>`: hostReputation
@@ -1634,7 +1795,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: The identification value for the hostTracker.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1671,6 +1831,27 @@ To create the parameters described below, construct a hash table containing the 
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[WhoisServer <String>]`: 
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[DomainStatus <String>]`: 
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[Host <IMicrosoftGraphSecurityHost>]`: host
+        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastUpdateDateTime <DateTime?>]`: 
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RawWhoisText <String>]`: 
+        - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[WhoisServer <String>]`: 
+        - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[LastSeenDateTime <DateTime?>]`: 
   - `[Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]`: 
     - `[FirstSeenDateTime <DateTime?>]`: 
@@ -1803,7 +1984,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: The identification value for the hostTracker.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1832,6 +2012,27 @@ To create the parameters described below, construct a hash table containing the 
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[WhoisServer <String>]`: 
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[DomainStatus <String>]`: 
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[Host <IMicrosoftGraphSecurityHost>]`: host
+        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastUpdateDateTime <DateTime?>]`: 
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RawWhoisText <String>]`: 
+        - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[WhoisServer <String>]`: 
+        - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 `TRACKERS <IMicrosoftGraphSecurityHostTracker[]>`: The hostTrackers that are associated with this host.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -1933,7 +2134,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[Trackers <IMicrosoftGraphSecurityHostTracker[]>]`: The hostTrackers that are associated with this host.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1962,13 +2162,33 @@ To create the parameters described below, construct a hash table containing the 
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[WhoisServer <String>]`: 
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[DomainStatus <String>]`: 
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[Host <IMicrosoftGraphSecurityHost>]`: host
+        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastUpdateDateTime <DateTime?>]`: 
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RawWhoisText <String>]`: 
+        - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[WhoisServer <String>]`: 
+        - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Kind <String>]`: The kind of hostTracker that was detected. For example, GoogleAnalyticsID or JarmHash.
   - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Value <String>]`: The identification value for the hostTracker.
 
 `WHOIS <IMicrosoftGraphSecurityWhoisRecord>`: whoisRecord
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -2098,6 +2318,27 @@ To create the parameters described below, construct a hash table containing the 
   - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
   - `[WhoisServer <String>]`: 
   - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+    - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+    - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+    - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+    - `[DomainStatus <String>]`: 
+    - `[ExpirationDateTime <DateTime?>]`: 
+    - `[FirstSeenDateTime <DateTime?>]`: 
+    - `[Host <IMicrosoftGraphSecurityHost>]`: host
+    - `[LastSeenDateTime <DateTime?>]`: 
+    - `[LastUpdateDateTime <DateTime?>]`: 
+    - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+    - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+    - `[RawWhoisText <String>]`: 
+    - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+    - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+    - `[RegistrationDateTime <DateTime?>]`: 
+    - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+    - `[WhoisServer <String>]`: 
+    - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
 [Update-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)

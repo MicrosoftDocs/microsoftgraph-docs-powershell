@@ -41,13 +41,13 @@ Retrieve the properties and relationships of an offerShiftRequest object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
-Get-MgBetaTeamScheduleOfferShiftRequest -TeamId $teamId -OfferShiftRequestId $offerShiftRequestId
+Get-MgBetaTeamScheduleOfferShiftRequest -TeamId $teamId
+
 ```
 This example shows how to use the Get-MgBetaTeamScheduleOfferShiftRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

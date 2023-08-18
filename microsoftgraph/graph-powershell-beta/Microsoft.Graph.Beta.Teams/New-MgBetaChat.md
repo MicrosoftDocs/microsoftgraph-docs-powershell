@@ -41,6 +41,7 @@ Create a new chat object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
@@ -64,14 +65,14 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaChat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 2: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
@@ -103,14 +104,14 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaChat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 3: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
@@ -121,27 +122,32 @@ $params = @{
 			roles = @(
 				"owner"
 			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
+			"user@odata.bind" = "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 		}
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 			roles = @(
 				"owner"
 			)
-			"user@odata.bind" = "https://graph.microsoft.com/beta/users('alex@contoso.com')"
+			"user@odata.bind" = "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+		}
+	)
+	installedApps = @(
+		@{
+			"teamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/05F59CEC-A742-4A50-A62E-202A57E478A4"
 		}
 	)
 }
 
 New-MgBetaChat -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaChat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 4: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
@@ -173,10 +179,9 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaChat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

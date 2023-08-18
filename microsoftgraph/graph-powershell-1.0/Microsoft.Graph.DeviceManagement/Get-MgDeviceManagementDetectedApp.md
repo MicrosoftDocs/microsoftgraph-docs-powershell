@@ -39,6 +39,19 @@ Get-MgDeviceManagementDetectedApp -InputObject <IDeviceManagementIdentity> [-Exp
 ## DESCRIPTION
 Read properties and relationships of the detectedApp object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementDetectedApp
+
+```
+This example shows how to use the Get-MgDeviceManagementDetectedApp Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -298,4 +311,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
-

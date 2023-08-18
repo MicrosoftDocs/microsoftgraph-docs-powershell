@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupThread
 
 ## SYNOPSIS
-Delete conversationThread.
+Delete a thread object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Remove-MgBetaGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Pa
 ```
 
 ## DESCRIPTION
-Delete conversationThread.
+Delete a thread object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -209,6 +209,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[Token <String>]`: Usage: token='{token}'
+  - `[UniqueName <String>]`: Alternate key of group
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: The unique identifier of user
 

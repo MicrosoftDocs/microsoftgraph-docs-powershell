@@ -52,6 +52,8 @@ Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <ITea
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -387,4 +389,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)
-

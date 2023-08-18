@@ -36,6 +36,7 @@ Create a new workforceIntegration object.\nYou can set up which entities you wan
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -51,10 +52,9 @@ $params = @{
 }
 
 New-MgTeamworkWorkforceIntegration -BodyParameter $params
+
 ```
 This example shows how to use the New-MgTeamworkWorkforceIntegration Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

@@ -30,6 +30,8 @@ Remove-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete a shift from the schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -199,4 +201,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleShift?view=graph-powershell-1.0)
-

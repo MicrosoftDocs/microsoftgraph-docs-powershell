@@ -30,6 +30,8 @@ Remove-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete a timeOff instance from a schedule.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -199,4 +201,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleTimeOff?view=graph-powershell-1.0)
-

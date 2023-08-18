@@ -36,6 +36,8 @@ Every team must include at least one timeOffReason.
 This method does not remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -205,4 +207,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)
-

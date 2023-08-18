@@ -10,7 +10,7 @@ ms.prod: groups
 # Get-MgGroupConversation
 
 ## SYNOPSIS
-Retrieve the properties and relationships of conversation object.
+The group's conversations.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversation?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>] [<
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of conversation object.
+The group's conversations.
 
 ## EXAMPLES
 ### Example 1: Code snippet

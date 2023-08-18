@@ -4,13 +4,13 @@ Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist
 schema: 2.0.0
 ms.prod: sharepoint
-ms.prod: sites-and-lists
+ms.prod: sharepoint
 ---
 
 # Get-MgSiteList
 
 ## SYNOPSIS
-Get a list of rich long-running operations associated with a list.
+Returns the metadata for a [list][].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteList?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Get a list of rich long-running operations associated with a list.
+Returns the metadata for a [list][].
 
 ## EXAMPLES
 ### Example 1: Code snippet
