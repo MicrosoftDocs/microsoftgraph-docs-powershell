@@ -31,6 +31,19 @@ Disable-MgDeviceManagementManagedDeviceLostMode -InputObject <IDeviceManagementA
 ## DESCRIPTION
 Disable lost mode
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Disable-MgDeviceManagementManagedDeviceLostMode -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the Disable-MgDeviceManagementManagedDeviceLostMode Cmdlet.
+
+
 ## PARAMETERS
 
 ### -InputObject
@@ -144,4 +157,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Disable-MgBetaDeviceManagementManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disable-MgBetaDeviceManagementManagedDeviceLostMode?view=graph-powershell-beta)
-

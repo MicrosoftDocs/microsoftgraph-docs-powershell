@@ -1,15 +1,16 @@
 ---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingvirtualappointment
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptmetadatacontent
 schema: 2.0.0
 ms.prod: cloud-communications
 ---
 
-# Get-MgBetaUserOnlineMeetingVirtualAppointment
+# Get-MgBetaUserOnlineMeetingTranscriptMetadataContent
 
 ## SYNOPSIS
-Read the properties and relationships of a virtualAppointment object.
+The time-aligned metadata of the utterances in the transcript.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserPresence?view=graph-powershell-1.0)
@@ -18,21 +19,22 @@ Read the properties and relationships of a virtualAppointment object.
 
 ### Get (Default)
 ```
-Get-MgBetaUserOnlineMeetingVirtualAppointment -OnlineMeetingId <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserOnlineMeetingTranscriptMetadataContent -CallTranscriptId <String> -OnlineMeetingId <String>
+ -UserId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicationsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserOnlineMeetingTranscriptMetadataContent -InputObject <ICloudCommunicationsIdentity>
+ -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a virtualAppointment object.
+The time-aligned metadata of the utterances in the transcript.
+Read-only.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get your own presence information
 
 ```powershell
 
@@ -42,9 +44,9 @@ Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserPresence -UserId $userId
 
 ```
-This example shows how to use the Get-MgBetaUserPresence Cmdlet.
+This example will get your own presence information
 
-### Example 2: Code snippet
+### Example 2: Get the presence information of another user
 
 ```powershell
 
@@ -53,20 +55,20 @@ Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserPresence -UserId $userId
 
 ```
-This example shows how to use the Get-MgBetaUserPresence Cmdlet.
+This example will get the presence information of another user
 
 
 ## PARAMETERS
 
-### -ExpandProperty
-Expand related entities
+### -CallTranscriptId
+The unique identifier of callTranscript
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
+Type: String
+Parameter Sets: Get
+Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -104,13 +106,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
+### -OutFile
+Path to write output file to
 
 ```yaml
-Type: String[]
+Type: String
 Parameter Sets: (All)
-Aliases: Select
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -142,7 +159,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualAppointment
+### System.Boolean
 ## NOTES
 
 ALIASES

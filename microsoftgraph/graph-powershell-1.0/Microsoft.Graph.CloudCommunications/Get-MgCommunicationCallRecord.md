@@ -10,7 +10,8 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a callRecord object.
-There are two ways to get the id of a callRecord:
+There are two ways to get the id of a callRecord: You can use the $expand query parameter to optionally include session and segment details, as shown in the Get full details example.
+When you expand session details, the maximum page size is 60 sessions.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecord?view=graph-powershell-beta)
@@ -31,7 +32,8 @@ Get-MgCommunicationCallRecord -InputObject <ICloudCommunicationsIdentity> [-Expa
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a callRecord object.
-There are two ways to get the id of a callRecord:
+There are two ways to get the id of a callRecord: You can use the $expand query parameter to optionally include session and segment details, as shown in the Get full details example.
+When you expand session details, the maximum page size is 60 sessions.
 
 ## EXAMPLES
 ### Example 1: Get basic details

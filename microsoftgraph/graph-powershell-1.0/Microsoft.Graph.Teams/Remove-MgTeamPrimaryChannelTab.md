@@ -30,6 +30,8 @@ Remove-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Removes (unpins) a tab from the specified channel within a team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -193,4 +195,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
-

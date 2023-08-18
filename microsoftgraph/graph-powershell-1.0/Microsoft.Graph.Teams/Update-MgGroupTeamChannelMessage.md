@@ -70,6 +70,8 @@ If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -901,4 +903,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamChannelMessage?view=graph-powershell-beta)
-

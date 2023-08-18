@@ -2,7 +2,7 @@
 title: "Use query parameters to customize PowerShell query outputs"
 description: "Learn how to use optional query parameters in Microsoft Graph PowerShell SDK to customize the output"
 ms.topic: conceptual
-ms.date: 05/26/2023
+ms.date: 08/16/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -20,15 +20,15 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 >[!TIP]
 >OData query options in the Microsoft Graph API use lowercase names and specify the dollar ($) prefix while in Microsoft Graph PowerShell SDK, their names are Pascal-cased and prefixed with a hyphen (-). For example, `$count` and `$orderBy` are to Microsoft Graph API while `-Count` and `-OrderBy`, respectively, are to Microsoft Graph PowerShell SDK.
 
-|Name|Description|Example|
-|--------|----|-----|
-| [-Count](#count-parameter) |Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
-| [-Expand](#expand-parameter)| Retrieves related resources|<code>Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members &#124; Select -ExpandProperty members</code>|
-| [-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
-| [-OrderBy](#orderby-parameter)| Orders results|`Get-MgUser -OrderBy DisplayName`|
-| [-Search](#search-parameter)| Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
-| [-Select](#select-parameter)| Filters properties (columns)|<code>Get-MgUser &#124; Select DisplayName, Id</code>|
-| [-Top](#top-parameter)| Sets the page size of results. |`Get-MgUser -Top 10`|
+|OData query option|Description|Example|
+|-----------------|--------|----------|
+|[-Count](#count-parameter)|Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
+|[-Expand](#expand-parameter)| Retrieves related resources|<code>Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members &#124; Select -ExpandProperty members</code>|
+|[-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
+|[-OrderBy](#orderby-parameter)| Orders results|`Get-MgUser -OrderBy DisplayName`|
+|[-Search](#search-parameter)| Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
+|[-Property](#property-parameter)| Filters properties (columns)|<code>Get-MgUser -Property Id, DisplayName &#124; Select Id, DisplayName</code>|
+|[-Top](#top-parameter)| Sets the page size of results. |`Get-MgUser -Top 10`|
 
 ## Count parameter
 
@@ -74,7 +74,7 @@ Id                                   DeletedDateTime
 e6d486c1-20f3-426d-bc5d-736c8f467254
 ```
 
-With some resource collections, you can also specify the properties to be returned in the expanded resources by adding the `-Select` parameter. The following example performs the same query as the previous example but uses a ['Select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **Id** only.
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding the `Select` statement. The following example performs the same query as the previous example but uses a `Select` statement to limit the properties returned for the expanded child items to the **Id** only.
 
 ```powershell
 Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members | 
@@ -161,14 +161,14 @@ Id                                   DisplayName   Mail               UserPrinci
 >[!Note]
 >Support for `-Search` varies by module and some properties support `-Search` only in [advanced queries](/graph/aad-advanced-queries?tabs=powershell).
 
-## Select parameter
+## Property parameter
 
-Use the `-Select` query parameter to return a set of properties that are different from the default set for an individual resource or a collection of resources. With `-Select`, you can specify a subset or a superset of the default properties.
+Use the `-Property` query parameter to return a set of properties that are different from the default set for an individual resource or a collection of resources. With `-Property`, you can specify a subset or a superset of the default properties.
 
 For example, when retrieving a list of all the users, you can specify that only the **Id** and **DisplayName** properties be returned:
 
 ```powershell
-Get-MgUser | Select Id, DisplayName
+Get-MgUser -Property Id, DisplayName | Select Id, DisplayName
 ```
 
 ```Output
@@ -182,9 +182,9 @@ daf80309-1a1f-459d-91b6-7ae5673bc2f2 MOD Administrator
 f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani
 ```
 
-We recommend that you use `-Select` to limit the properties returned by a query to those properties needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
+We recommend that you use `-Property` to limit the properties returned by a query to those properties needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 
- Some Azure AD resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Select` to return properties outside of the default set.  
+ Some Azure AD resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Property` to return properties outside of the default set.  
 
 ## Top parameter
 

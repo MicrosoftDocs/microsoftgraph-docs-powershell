@@ -30,6 +30,8 @@ Remove-MgUserChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Unpin a message from a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -208,4 +210,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
-

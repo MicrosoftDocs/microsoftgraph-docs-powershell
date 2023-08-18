@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgGroup
 
 ## SYNOPSIS
-Add a member to a security or Microsoft 365 group through the members navigation property.
-The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
+Update the properties of a group object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroup?view=graph-powershell-beta)
@@ -93,8 +92,7 @@ Update-MgGroup -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphGro
 ```
 
 ## DESCRIPTION
-Add a member to a security or Microsoft 365 group through the members navigation property.
-The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
+Update the properties of a group object.
 
 ## EXAMPLES
 ### Example 1: Update the properties of a group
@@ -3667,7 +3665,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
         - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
         - `[AllowMeetingChat <String>]`: meetingChatMode
-        - `[AllowParticipantsToChangeName <Boolean?>]`: 
+        - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
         - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
         - `[AllowedPresenters <String>]`: onlineMeetingPresenters
         - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -3735,6 +3733,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[Upn <String>]`: User principal name of the participant.
           - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
         - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+        - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
         - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
         - `[Subject <String>]`: The subject of the online meeting.
         - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
@@ -7053,7 +7052,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowMeetingChat <String>]`: meetingChatMode
-      - `[AllowParticipantsToChangeName <Boolean?>]`: 
+      - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -7121,6 +7120,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[Upn <String>]`: User principal name of the participant.
         - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
       - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+      - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the online meeting.
       - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
@@ -9905,7 +9905,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowMeetingChat <String>]`: meetingChatMode
-      - `[AllowParticipantsToChangeName <Boolean?>]`: 
+      - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -9973,6 +9973,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[Upn <String>]`: User principal name of the participant.
         - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
       - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+      - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the online meeting.
       - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
@@ -13203,7 +13204,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
       - `[AllowMeetingChat <String>]`: meetingChatMode
-      - `[AllowParticipantsToChangeName <Boolean?>]`: 
+      - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -13271,6 +13272,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[Upn <String>]`: User principal name of the participant.
         - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
       - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+      - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the online meeting.
       - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
@@ -15299,7 +15301,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
           - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
           - `[AllowMeetingChat <String>]`: meetingChatMode
-          - `[AllowParticipantsToChangeName <Boolean?>]`: 
+          - `[AllowParticipantsToChangeName <Boolean?>]`: Specifies if participants are allowed to rename themselves in an instance of the meeting.
           - `[AllowTeamworkReactions <Boolean?>]`: Indicates whether Teams reactions are enabled for the meeting.
           - `[AllowedPresenters <String>]`: onlineMeetingPresenters
           - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
@@ -15367,6 +15369,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[Upn <String>]`: User principal name of the participant.
             - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
           - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
+          - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
           - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
           - `[Subject <String>]`: The subject of the online meeting.
           - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.

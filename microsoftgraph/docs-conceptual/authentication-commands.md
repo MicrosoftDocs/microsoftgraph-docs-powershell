@@ -129,7 +129,7 @@ By default, `Connect-MgGraph` targets the global public cloud. To target other c
 To connect as a different identity other than CurrentUser, specify the `-ContextScope` parameter with the value **Process**.
 
 ```powershell
-Connect-MgGraph -ContextScope Process -ForceRefresh
+Connect-MgGraph -ContextScope Process
 ```
 
 ### Using passwordless authentication

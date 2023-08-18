@@ -9,7 +9,7 @@ ms.prod: cloud-communications
 # Get-MgBetaVirtualEventSessionRegistration
 
 ## SYNOPSIS
-Get the externalMeetingRegistration details associated with an onlineMeeting.
+Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-MgBetaVirtualEventSessionRegistration -InputObject <IBookingsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get the externalMeetingRegistration details associated with an onlineMeeting.
+Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
 ## PARAMETERS
 
@@ -143,6 +143,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
+  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
   - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 

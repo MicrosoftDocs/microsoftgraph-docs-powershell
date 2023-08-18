@@ -12,7 +12,7 @@ ms.prod: applications
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
-Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationOwner](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwner?view=graph-powershell-1.0)
@@ -29,7 +29,7 @@ Get-MgBetaApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] 
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
-Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 
 ## EXAMPLES
 ### Example 1: Code snippet

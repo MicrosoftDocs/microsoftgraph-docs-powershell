@@ -48,6 +48,7 @@ Create a new timeOff instance in a schedule.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -67,10 +68,9 @@ $params = @{
 }
 
 New-MgTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgTeamScheduleTimeOff Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

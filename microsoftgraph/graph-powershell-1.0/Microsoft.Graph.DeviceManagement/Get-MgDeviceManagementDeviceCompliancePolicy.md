@@ -10,7 +10,7 @@ ms.prod: intune
 # Get-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Read properties and relationships of the windowsPhone81CompliancePolicy object.
+Read properties and relationships of the windows10CompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -37,7 +37,20 @@ Get-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the windowsPhone81CompliancePolicy object.
+Read properties and relationships of the windows10CompliancePolicy object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementDeviceCompliancePolicy
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -298,4 +311,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
-

@@ -3,14 +3,15 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthreadpost
 schema: 2.0.0
-ms.prod: groups
+ms.prod: extensions
 ---
 
 # Invoke-MgReplyGroupConversationThreadPost
 
 ## SYNOPSIS
-Reply to a post and add a new post to the specified thread in a group conversation.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReplyGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThreadPost?view=graph-powershell-beta)
@@ -46,8 +47,9 @@ Invoke-MgReplyGroupConversationThreadPost -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Reply to a post and add a new post to the specified thread in a group conversation.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
 ### Example 1: Code snippet

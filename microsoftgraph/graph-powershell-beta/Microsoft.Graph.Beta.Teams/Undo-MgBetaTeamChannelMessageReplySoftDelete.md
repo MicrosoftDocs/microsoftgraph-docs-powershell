@@ -30,6 +30,8 @@ Undo-MgBetaTeamChannelMessageReplySoftDelete -InputObject <ITeamsIdentity> [-Pas
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -214,4 +216,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Undo-MgTeamChannelMessageReplySoftDelete](/powershell/module/Microsoft.Graph.Teams/Undo-MgTeamChannelMessageReplySoftDelete?view=graph-powershell-1.0)
-

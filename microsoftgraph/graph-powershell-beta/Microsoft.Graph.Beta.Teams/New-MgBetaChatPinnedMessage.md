@@ -48,6 +48,7 @@ This API cannot create a new chat; you must use the list chats method to retriev
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
@@ -55,10 +56,9 @@ $params = @{
 }
 
 New-MgBetaChatPinnedMessage -ChatId $chatId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaChatPinnedMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

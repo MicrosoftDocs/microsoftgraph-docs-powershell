@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgBetaTeamChannelMember
 
 ## SYNOPSIS
-Update the role of a conversationMember in a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
+Update the role of a conversationMember in a \nteam.\nor channel.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMember?view=graph-powershell-1.0)
@@ -43,13 +42,13 @@ Update-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Update the role of a conversationMember in a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
+Update the role of a conversationMember in a \nteam.\nor channel.
 
 ## EXAMPLES
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
@@ -60,10 +59,9 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgBetaTeamChannelMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

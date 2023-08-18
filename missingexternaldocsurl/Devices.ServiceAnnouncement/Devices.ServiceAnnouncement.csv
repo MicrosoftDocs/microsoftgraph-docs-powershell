@@ -140,3 +140,13 @@ beta, Get-MgBetaServiceAnnouncementHealthOverviewIssueCount, /admin/serviceAnnou
 beta, Get-MgBetaServiceAnnouncementIssueCount, /admin/serviceAnnouncement/issues/$count
 beta, Get-MgBetaServiceAnnouncementMessageAttachmentCount, /admin/serviceAnnouncement/messages/{serviceUpdateMessage-id}/attachments/$count
 beta, Get-MgBetaServiceAnnouncementMessageCount, /admin/serviceAnnouncement/messages/$count
+v1.0, Get-MgServiceAnnouncementHealthOverviewCount, /admin/serviceAnnouncement/healthOverviews/$count
+v1.0, Get-MgServiceAnnouncementHealthOverviewIssueCount, /admin/serviceAnnouncement/healthOverviews/{serviceHealth-id}/issues/$count
+v1.0, Get-MgServiceAnnouncementIssueCount, /admin/serviceAnnouncement/issues/$count
+v1.0, Get-MgServiceAnnouncementMessageAttachmentCount, /admin/serviceAnnouncement/messages/{serviceUpdateMessage-id}/attachments/$count
+v1.0, Get-MgServiceAnnouncementMessageCount, /admin/serviceAnnouncement/messages/$count
+beta, Get-MgBetaServiceAnnouncementHealthOverviewCount, /admin/serviceAnnouncement/healthOverviews/$count
+beta, Get-MgBetaServiceAnnouncementHealthOverviewIssueCount, /admin/serviceAnnouncement/healthOverviews/{serviceHealth-id}/issues/$count
+beta, Get-MgBetaServiceAnnouncementIssueCount, /admin/serviceAnnouncement/issues/$count
+beta, Get-MgBetaServiceAnnouncementMessageAttachmentCount, /admin/serviceAnnouncement/messages/{serviceUpdateMessage-id}/attachments/$count
+beta, Get-MgBetaServiceAnnouncementMessageCount, /admin/serviceAnnouncement/messages/$count

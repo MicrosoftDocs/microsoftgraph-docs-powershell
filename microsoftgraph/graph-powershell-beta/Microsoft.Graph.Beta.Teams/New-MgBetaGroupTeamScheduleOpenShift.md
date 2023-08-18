@@ -46,6 +46,8 @@ New-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParamete
 ## DESCRIPTION
 Create an instance of an openshift object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -396,4 +398,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOpenShift?view=graph-powershell-1.0)
-

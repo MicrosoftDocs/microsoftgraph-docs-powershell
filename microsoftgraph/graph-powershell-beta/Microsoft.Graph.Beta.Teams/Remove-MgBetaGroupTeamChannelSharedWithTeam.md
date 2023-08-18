@@ -33,6 +33,8 @@ Remove-MgBetaGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-IfMa
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a membershipType value of shared.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -217,4 +219,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamChannelSharedWithTeam?view=graph-powershell-1.0)
-

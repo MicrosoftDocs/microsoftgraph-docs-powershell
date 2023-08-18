@@ -62,6 +62,8 @@ New-MgBetaTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send a new chatMessage in the specified channel or a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -913,4 +915,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessage?view=graph-powershell-1.0)
-

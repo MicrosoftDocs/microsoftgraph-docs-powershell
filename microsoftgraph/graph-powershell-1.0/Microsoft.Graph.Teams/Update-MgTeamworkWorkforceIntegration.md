@@ -50,6 +50,7 @@ Update the properties of a workforceIntegration object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -65,10 +66,9 @@ $params = @{
 }
 
 Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId -BodyParameter $params
+
 ```
 This example shows how to use the Update-MgTeamworkWorkforceIntegration Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

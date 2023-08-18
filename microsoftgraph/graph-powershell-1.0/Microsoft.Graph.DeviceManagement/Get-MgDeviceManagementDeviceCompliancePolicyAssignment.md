@@ -39,6 +39,19 @@ Get-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceMana
 ## DESCRIPTION
 Read properties and relationships of the deviceCompliancePolicyAssignment object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementDeviceCompliancePolicyAssignment -DeviceCompliancePolicyId $deviceCompliancePolicyId
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicyAssignment Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -313,4 +326,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
-

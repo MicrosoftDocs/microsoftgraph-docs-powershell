@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Mail
-Module Guid: 6dd60a72-2052-4e4a-9b23-81281c2d0bf0
+Module Guid: fb158253-2087-4368-b8dc-748da1ac5c16
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail
 Help Version: 1.0.0.0
 Locale: en-US
@@ -159,8 +159,9 @@ Get the number of the resource
 Use this API to create a new Message in a mailfolder.
 
 ### [New-MgBetaUserMailFolderChildFolderMessageAttachment](New-MgBetaUserMailFolderChildFolderMessageAttachment.md)
-Use this API to create a new Attachment.
+Use this API to add an attachment to a message.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+You can add an attachment to an existing message by posting to its attachments collection, or to a new \nmessage that is being drafted, or created and sent on the fly.
 
 ### [New-MgBetaUserMailFolderChildFolderMessageExtension](New-MgBetaUserMailFolderChildFolderMessageExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -179,8 +180,9 @@ Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
 ### [New-MgBetaUserMailFolderMessageAttachment](New-MgBetaUserMailFolderMessageAttachment.md)
-Use this API to create a new Attachment.
+Use this API to add an attachment to a message.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+You can add an attachment to an existing message by posting to its attachments collection, or to a new \nmessage that is being drafted, or created and sent on the fly.
 
 ### [New-MgBetaUserMailFolderMessageExtension](New-MgBetaUserMailFolderMessageExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.

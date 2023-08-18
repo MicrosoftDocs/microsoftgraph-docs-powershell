@@ -123,3 +123,13 @@ beta, Get-MgBetaWindowsUpdatesPolicyComplianceChangeCount, /admin/windows/update
 beta, Get-MgBetaWindowsUpdatesPolicyCount, /admin/windows/updates/updatePolicies/$count
 beta, Get-MgBetaWindowsUpdatesResourceConnectionCount, /admin/windows/updates/resourceConnections/$count
 beta, Get-MgBetaWindowsUpdatesUpdatableAssetCount, /admin/windows/updates/updatableAssets/$count
+beta, Get-MgBetaWindowsUpdatesCatalogEntryCount, /admin/windows/updates/catalog/entries/$count
+beta, Get-MgBetaWindowsUpdatesDeploymentAudienceExclusionCount, /admin/windows/updates/deployments/{deployment-id}/audience/exclusions/$count
+beta, Get-MgBetaWindowsUpdatesDeploymentAudienceMemberCount, /admin/windows/updates/deployments/{deployment-id}/audience/members/$count
+beta, Get-MgBetaWindowsUpdatesDeploymentCount, /admin/windows/updates/deployments/$count
+beta, Get-MgBetaWindowsUpdatesPolicyAudienceExclusionCount, /admin/windows/updates/updatePolicies/{updatePolicy-id}/audience/exclusions/$count
+beta, Get-MgBetaWindowsUpdatesPolicyAudienceMemberCount, /admin/windows/updates/updatePolicies/{updatePolicy-id}/audience/members/$count
+beta, Get-MgBetaWindowsUpdatesPolicyComplianceChangeCount, /admin/windows/updates/updatePolicies/{updatePolicy-id}/complianceChanges/$count
+beta, Get-MgBetaWindowsUpdatesPolicyCount, /admin/windows/updates/updatePolicies/$count
+beta, Get-MgBetaWindowsUpdatesResourceConnectionCount, /admin/windows/updates/resourceConnections/$count
+beta, Get-MgBetaWindowsUpdatesUpdatableAssetCount, /admin/windows/updates/updatableAssets/$count

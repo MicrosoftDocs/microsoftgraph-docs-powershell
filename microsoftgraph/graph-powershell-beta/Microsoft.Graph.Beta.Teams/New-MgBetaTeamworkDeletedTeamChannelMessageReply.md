@@ -63,6 +63,8 @@ New-MgBetaTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send a new reply to a chatMessage in a specified channel.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -929,4 +931,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
-

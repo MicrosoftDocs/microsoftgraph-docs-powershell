@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Groups
-Module Guid: c25ad8f4-a1d4-4e65-91fc-178b59aa00ae
+Module Guid: 52996405-e214-4309-bc7a-461d8caadc7c
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1144,7 +1144,7 @@ Delete navigation property settings for groups
 Unfollow a user's site or multiple sites.
 
 ### [Remove-MgBetaGroupThread](Remove-MgBetaGroupThread.md)
-Delete conversationThread.
+Delete a thread object.
 
 ### [Remove-MgBetaGroupThreadPostAttachment](Remove-MgBetaGroupThreadPostAttachment.md)
 Delete navigation property attachments for groups

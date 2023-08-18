@@ -37,6 +37,8 @@ Get-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-Prope
 ## DESCRIPTION
 Retrieve the properties and relationships of a schedulingGroup by ID.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -281,4 +283,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
-

@@ -39,6 +39,19 @@ Get-MgDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdministr
 ## DESCRIPTION
 Read properties and relationships of the deviceManagementExchangeConnector object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Administration
+
+Get-MgDeviceManagementExchangeConnector
+
+```
+This example shows how to use the Get-MgDeviceManagementExchangeConnector Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -260,4 +273,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
-

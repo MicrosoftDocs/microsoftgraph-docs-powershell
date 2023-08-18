@@ -30,6 +30,8 @@ Remove-MgUserChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Uninstall an app installed within a chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -208,4 +210,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
-

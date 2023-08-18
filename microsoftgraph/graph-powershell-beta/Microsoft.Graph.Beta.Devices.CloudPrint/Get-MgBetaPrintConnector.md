@@ -46,7 +46,7 @@ Retrieve the properties and relationships of a printConnector object.
 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
-Get-MgBetaPrintConnector -PrintConnectorId $printConnectorId
+Get-MgBetaPrintConnector
 
 ```
 This example shows how to use the Get-MgBetaPrintConnector Cmdlet.

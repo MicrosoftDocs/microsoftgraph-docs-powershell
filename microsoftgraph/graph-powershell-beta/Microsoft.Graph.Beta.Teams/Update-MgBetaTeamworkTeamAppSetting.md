@@ -64,6 +64,7 @@ Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
 ```
 This example will allow teams users to request admins for access to certain teams apps.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -578,6 +578,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
+  - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AlertPolicyId <String>]`: 
   - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
   - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
   - `[Category <String>]`: The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.

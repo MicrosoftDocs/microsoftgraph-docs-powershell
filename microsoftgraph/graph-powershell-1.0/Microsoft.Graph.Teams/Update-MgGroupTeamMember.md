@@ -44,6 +44,8 @@ Update-MgGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the role of a conversationMember in a team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -282,4 +284,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamMember?view=graph-powershell-beta)
-

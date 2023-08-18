@@ -39,6 +39,19 @@ Get-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity> [-
 ## DESCRIPTION
 Read properties and relationships of the deviceCategory object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagementDeviceCategory
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCategory Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -298,4 +311,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCategory?view=graph-powershell-beta)
-

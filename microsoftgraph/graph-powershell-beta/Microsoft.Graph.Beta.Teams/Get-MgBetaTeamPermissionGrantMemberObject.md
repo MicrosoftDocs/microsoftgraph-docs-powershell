@@ -44,6 +44,8 @@ Get-MgBetaTeamPermissionGrantMemberObject -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action getMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -234,4 +236,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPermissionGrantMemberObject?view=graph-powershell-1.0)
-

@@ -31,6 +31,19 @@ Find-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdent
 ## DESCRIPTION
 Locate a device
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+Find-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
+
+```
+This example shows how to use the Find-MgDeviceManagementManagedDevice Cmdlet.
+
+
 ## PARAMETERS
 
 ### -InputObject
@@ -144,4 +157,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
-

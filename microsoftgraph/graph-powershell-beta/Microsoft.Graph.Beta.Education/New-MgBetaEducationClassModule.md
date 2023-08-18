@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBetaEducationClassModule
 
 ## SYNOPSIS
-Create new navigation property to modules for education
+Create a new module in a class.
+Only teachers in a class can create a module.
+Modules start in the draft state, which means that students will not see the modules until publication.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ New-MgBetaEducationClassModule -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to modules for education
+Create a new module in a class.
+Only teachers in a class can create a module.
+Modules start in the draft state, which means that students will not see the modules until publication.
 
 ## PARAMETERS
 
@@ -95,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Description of the module.
 
 ```yaml
 Type: String
@@ -110,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Name of the module.
 
 ```yaml
 Type: String
@@ -172,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsPinned
-.
+Indicates whether the module is pinned or not.
 
 ```yaml
 Type: SwitchParameter
@@ -203,7 +207,9 @@ Accept wildcard characters: False
 ```
 
 ### -Resources
-.
+Learning objects that are associated with this module.
+Only teachers can modify this list.
+Nullable.
 To construct, see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
@@ -294,11 +300,11 @@ To create the parameters described below, construct a hash table containing the 
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[IsPinned <Boolean?>]`: 
+  - `[Description <String>]`: Description of the module.
+  - `[DisplayName <String>]`: Name of the module.
+  - `[IsPinned <Boolean?>]`: Indicates whether the module is pinned or not.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Resources <IMicrosoftGraphEducationModuleResource[]>]`: 
+  - `[Resources <IMicrosoftGraphEducationModuleResource[]>]`: Learning objects that are associated with this module.  Only teachers can modify this list. Nullable.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -342,7 +348,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-`RESOURCES <IMicrosoftGraphEducationModuleResource[]>`: .
+`RESOURCES <IMicrosoftGraphEducationModuleResource[]>`: Learning objects that are associated with this module. Only teachers can modify this list. Nullable.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

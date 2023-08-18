@@ -39,6 +39,19 @@ Get-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 ## DESCRIPTION
 Retrieve the properties and relationships of an audioRoutingGroup object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgCommunicationCallAudioRoutingGroup -CallId $callId
+
+```
+This example shows how to use the Get-MgCommunicationCallAudioRoutingGroup Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -272,4 +285,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
-

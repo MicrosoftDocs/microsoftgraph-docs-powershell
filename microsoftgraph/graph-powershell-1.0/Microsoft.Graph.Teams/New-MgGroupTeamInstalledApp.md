@@ -46,6 +46,8 @@ New-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Install an app to the specified team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -371,4 +373,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
-

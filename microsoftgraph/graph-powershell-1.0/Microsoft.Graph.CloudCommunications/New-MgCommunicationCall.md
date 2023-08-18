@@ -42,7 +42,46 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You will need to register the calling bot and go through the list of permissions needed as mentioned below.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Create peer-to-peer VoIP call with service hosted media
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.call"
+	callbackUri = "https://bot.contoso.com/callback"
+	targets = @(
+		@{
+			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+			identity = @{
+				"@odata.type" = "#microsoft.graph.identitySet"
+				user = @{
+					"@odata.type" = "#microsoft.graph.identity"
+					displayName = "John"
+					id = "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+				}
+			}
+		}
+	)
+	requestedModalities = @(
+		"audio"
+	)
+	callOptions = @{
+		"@odata.type" = "#microsoft.graph.outgoingCallOptions"
+		isContentSharingNotificationEnabled = $true
+	}
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+	}
+}
+
+New-MgCommunicationCall -BodyParameter $params
+
+```
+This example will create peer-to-peer voip call with service hosted media
+
+### Example 2: Create peer-to-peer VoIP call with application hosted media
 
 ```powershell
 
@@ -89,9 +128,9 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-This example shows how to use the New-MgCommunicationCall Cmdlet.
+This example will create peer-to-peer voip call with application hosted media
 
-### Example 2: Code snippet
+### Example 3: Create a group call with service hosted media
 
 ```powershell
 
@@ -149,9 +188,9 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-This example shows how to use the New-MgCommunicationCall Cmdlet.
+This example will create a group call with service hosted media
 
-### Example 3: Code snippet
+### Example 4: Create a group call with application hosted media
 
 ```powershell
 
@@ -209,9 +248,9 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-This example shows how to use the New-MgCommunicationCall Cmdlet.
+This example will create a group call with application hosted media
 
-### Example 4: Code snippet
+### Example 5: Join scheduled meeting with service hosted media
 
 ```powershell
 
@@ -252,9 +291,9 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-This example shows how to use the New-MgCommunicationCall Cmdlet.
+This example will join scheduled meeting with service hosted media
 
-### Example 5: Code snippet
+### Example 6: Join scheduled meeting with application hosted media
 
 ```powershell
 
@@ -294,9 +333,9 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-This example shows how to use the New-MgCommunicationCall Cmdlet.
+This example will join scheduled meeting with application hosted media
 
-### Example 6: Code snippet
+### Example 7: Join a scheduled meeting with joinMeetingId and passcode
 
 ```powershell
 
@@ -324,9 +363,9 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-This example shows how to use the New-MgCommunicationCall Cmdlet.
+This example will join a scheduled meeting with joinmeetingid and passcode
 
-### Example 7: Code snippet
+### Example 8: Join a scheduled meeting with joinMeetingId
 
 ```powershell
 
@@ -354,9 +393,9 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-This example shows how to use the New-MgCommunicationCall Cmdlet.
+This example will join a scheduled meeting with joinmeetingid
 
-### Example 8: Code snippet
+### Example 9: Create peer-to-peer PSTN call with service hosted media
 
 ```powershell
 
@@ -404,9 +443,9 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-This example shows how to use the New-MgCommunicationCall Cmdlet.
+This example will create peer-to-peer pstn call with service hosted media
 
-### Example 9: Code snippet
+### Example 10: Create peer-to-peer PSTN call with application hosted media
 
 ```powershell
 
@@ -455,7 +494,7 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-This example shows how to use the New-MgCommunicationCall Cmdlet.
+This example will### example 10: create peer-to-peer pstn call with application hosted media
 
 
 ## PARAMETERS

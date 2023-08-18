@@ -53,16 +53,27 @@ A collection of all the pinned messages in the chat.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: List all the pinned messages in a chat
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
-Remove-MgBetaChatPinnedMessage -ChatId $chatId -PinnedChatMessageInfoId $pinnedChatMessageInfoId
-```
-This example shows how to use the Get-MgBetaBetaChatPinnedMessage Cmdlet.
+Get-MgBetaChatPinnedMessage -ChatId $chatId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will list all the pinned messages in a chat
+
+### Example 2: List all the pinned messages in a chat along with the associated chat message
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaChatPinnedMessage -ChatId $chatId -ExpandProperty "message" 
+
+```
+This example will list all the pinned messages in a chat along with the associated chat message
 
 
 ## PARAMETERS

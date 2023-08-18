@@ -45,6 +45,8 @@ Update-MgGroupTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,4 +392,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamChannelTab?view=graph-powershell-beta)
-

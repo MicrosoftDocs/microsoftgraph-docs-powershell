@@ -50,6 +50,7 @@ Create an instance of an openshift object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
@@ -87,10 +88,9 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleOpenShift -TeamId $teamId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaTeamScheduleOpenShift Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
