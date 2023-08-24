@@ -27,22 +27,6 @@ Get-MgBetaDeviceManagementDeviceHealthScriptRemediationHistory
 ## DESCRIPTION
 Function to get the number of remediations by a device health scripts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceHealthScriptId
@@ -125,3 +109,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+

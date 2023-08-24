@@ -31,22 +31,6 @@ New-MgBetaDirectoryImpactedResource -BodyParameter <IMicrosoftGraphImpactedResou
 ## DESCRIPTION
 Create new navigation property to impactedResources for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AddedDateTime
@@ -384,3 +368,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectId <String>]`: The related unique identifier, depending on the resourceType. For example, this property is set to the applicationId if the resourceType is an application.
 
 ## RELATED LINKS
+

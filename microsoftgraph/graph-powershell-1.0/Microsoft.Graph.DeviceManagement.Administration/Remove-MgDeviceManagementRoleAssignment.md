@@ -30,22 +30,6 @@ Remove-MgDeviceManagementRoleAssignment -InputObject <IDeviceManagementAdministr
 ## DESCRIPTION
 Deletes a deviceAndAppManagementRoleAssignment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceAndAppManagementRoleAssignmentId
@@ -177,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRoleAssignment?view=graph-powershell-beta)
+

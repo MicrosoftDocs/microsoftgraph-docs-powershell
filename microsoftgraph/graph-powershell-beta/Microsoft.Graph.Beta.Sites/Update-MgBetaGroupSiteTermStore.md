@@ -44,22 +44,6 @@ Update-MgBetaGroupSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property termStore in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -451,3 +435,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStore?view=graph-powershell-1.0)
+

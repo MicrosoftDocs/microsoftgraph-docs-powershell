@@ -30,18 +30,6 @@ New-MgBetaIdentityGovernanceRoleManagementAlertConfiguration
 ## DESCRIPTION
 Create new navigation property to alertConfigurations for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -257,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScopeType <String>]`: The type of scope where the alert is created. DirectoryRole is the only currently supported scope type for Azure AD roles.
 
 ## RELATED LINKS
+

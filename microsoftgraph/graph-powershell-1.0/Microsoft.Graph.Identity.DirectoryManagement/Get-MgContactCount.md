@@ -22,18 +22,6 @@ Get-MgContactCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <Stri
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -96,3 +84,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaContactCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactCount?view=graph-powershell-beta)
+

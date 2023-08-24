@@ -28,18 +28,6 @@ Update-MgBetaAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings> [-W
 ## DESCRIPTION
 Update the navigation property people in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -201,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabledInOrganization <Boolean?>]`: true to enable pronouns in the organization, false otherwise. The default is false, and pronouns are disabled.
 
 ## RELATED LINKS
+

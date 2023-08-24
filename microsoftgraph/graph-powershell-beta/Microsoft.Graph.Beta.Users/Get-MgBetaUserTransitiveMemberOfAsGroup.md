@@ -37,18 +37,6 @@ Get-MgBetaUserTransitiveMemberOfAsGroup -InputObject <IUsersIdentity> [-ExpandPr
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -308,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOfAsGroup?view=graph-powershell-1.0)
+

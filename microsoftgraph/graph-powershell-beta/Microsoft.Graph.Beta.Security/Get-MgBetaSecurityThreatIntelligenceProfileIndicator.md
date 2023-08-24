@@ -38,18 +38,6 @@ Get-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIden
 ## DESCRIPTION
 Read the properties and relationships of a intelligenceProfileIndicator object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -331,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-1.0)
+

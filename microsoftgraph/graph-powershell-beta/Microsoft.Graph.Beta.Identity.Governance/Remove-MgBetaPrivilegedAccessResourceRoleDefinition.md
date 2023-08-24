@@ -28,22 +28,6 @@ Remove-MgBetaPrivilegedAccessResourceRoleDefinition -InputObject <IIdentityGover
 ## DESCRIPTION
 Delete navigation property roleDefinitions for privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GovernanceResourceId
@@ -285,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

@@ -30,18 +30,6 @@ Invoke-MgBetaRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation
 Retry installation for the partner agents which failed to install on the Cloud PC.
 Service side will check which agent installation failed firstly and retry.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -193,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

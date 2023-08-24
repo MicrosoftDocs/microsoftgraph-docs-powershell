@@ -22,22 +22,6 @@ Get-MgBetaSearchEntity [-ExpandProperty <String[]>] [-Property <String[]>] [<Com
 ## DESCRIPTION
 Get search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSearchEntity](/powershell/module/Microsoft.Graph.Search/Get-MgSearchEntity?view=graph-powershell-1.0)
+

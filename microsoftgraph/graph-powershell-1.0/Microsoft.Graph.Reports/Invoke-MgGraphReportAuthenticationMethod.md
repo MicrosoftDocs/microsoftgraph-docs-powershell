@@ -45,18 +45,6 @@ Invoke-MgGraphReportAuthenticationMethod -InputObject <IReportsIdentity> [<Commo
 ## DESCRIPTION
 Invoke function usersRegisteredByFeature
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IncludedUserRoles
@@ -148,3 +136,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Invoke-MgBetaGraphReportAuthenticationMethod?view=graph-powershell-beta)
+

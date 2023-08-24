@@ -22,18 +22,6 @@ Get-MgDeviceManagementTroubleshootingEventCount [-Filter <String>] [-Search <Str
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementTroubleshootingEventCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementTroubleshootingEventCount?view=graph-powershell-beta)
+

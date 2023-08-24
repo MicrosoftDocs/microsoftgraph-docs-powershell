@@ -38,18 +38,6 @@ New-MgBetaSecurityAlertV2 -BodyParameter <IMicrosoftGraphSecurityAlert> [-WhatIf
 ## DESCRIPTION
 Create new navigation property to alerts_v2 for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActorDisplayName
@@ -648,3 +636,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAlertV2?view=graph-powershell-1.0)
+

@@ -45,18 +45,6 @@ New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -InputObject <IDevice
 ## DESCRIPTION
 Create new navigation property to policyStatusDetails for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -316,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+

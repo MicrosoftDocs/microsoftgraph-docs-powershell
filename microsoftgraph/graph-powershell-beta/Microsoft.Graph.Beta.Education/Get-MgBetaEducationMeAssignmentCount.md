@@ -22,18 +22,6 @@ Get-MgBetaEducationMeAssignmentCount [-Filter <String>] [-Search <String>] [<Com
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationMeAssignmentCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentCount?view=graph-powershell-1.0)
+

@@ -30,18 +30,6 @@ Get-MgBetaEducationSchoolUserCount -InputObject <IEducationIdentity> [-Filter <S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -142,3 +130,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationSchoolUserCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUserCount?view=graph-powershell-1.0)
+

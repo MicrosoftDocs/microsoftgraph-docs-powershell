@@ -81,22 +81,6 @@ To move a DriveItem to a new parent item, your app requests to update the parent
 This is a special case of the Update method.nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -18733,3 +18717,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItem?view=graph-powershell-beta)
+

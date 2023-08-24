@@ -66,22 +66,6 @@ Update-MgBetaDeviceManagementDeviceConfiguration -InputObject <IDeviceManagement
 ## DESCRIPTION
 Update the navigation property deviceConfigurations in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -870,3 +854,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfiguration?view=graph-powershell-1.0)
+

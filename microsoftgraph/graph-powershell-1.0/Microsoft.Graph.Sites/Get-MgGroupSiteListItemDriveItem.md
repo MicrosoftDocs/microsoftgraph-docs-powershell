@@ -30,22 +30,6 @@ Get-MgGroupSiteListItemDriveItem -InputObject <ISitesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -214,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemDriveItem?view=graph-powershell-beta)
+

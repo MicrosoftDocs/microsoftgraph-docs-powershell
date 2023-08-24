@@ -31,18 +31,6 @@ Add-MgBetaSite -BodyParameter <IPathsV2U0Z1SitesMicrosoftGraphAddPostRequestbody
 ## DESCRIPTION
 Follow a user's site or multiple sites.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9512,3 +9500,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgSite](/powershell/module/Microsoft.Graph.Sites/Add-MgSite?view=graph-powershell-1.0)
+

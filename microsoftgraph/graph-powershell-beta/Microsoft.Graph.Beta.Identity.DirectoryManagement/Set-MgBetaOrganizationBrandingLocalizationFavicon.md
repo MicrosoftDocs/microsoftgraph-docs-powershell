@@ -31,22 +31,6 @@ Set-MgBetaOrganizationBrandingLocalizationFavicon -InputObject <IIdentityDirecto
 ## DESCRIPTION
 A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -238,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationFavicon?view=graph-powershell-1.0)
+

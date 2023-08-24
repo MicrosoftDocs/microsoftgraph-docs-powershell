@@ -64,22 +64,6 @@ Update-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Update the navigation property onlineMeetings in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -809,3 +793,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
+

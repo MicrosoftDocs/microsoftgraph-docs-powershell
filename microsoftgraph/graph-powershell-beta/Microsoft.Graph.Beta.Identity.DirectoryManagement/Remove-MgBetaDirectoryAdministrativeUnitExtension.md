@@ -30,22 +30,6 @@ Remove-MgBetaDirectoryAdministrativeUnitExtension -InputObject <IIdentityDirecto
 ## DESCRIPTION
 Delete navigation property extensions for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -219,3 +203,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitExtension?view=graph-powershell-1.0)
+
