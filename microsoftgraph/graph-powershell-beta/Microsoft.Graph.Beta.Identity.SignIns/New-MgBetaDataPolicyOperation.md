@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to dataPolicyOperations
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgDataPolicyOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -246,3 +249,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The id for the user on whom the operation is performed.
 
 ## RELATED LINKS
+[New-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgDataPolicyOperation?view=graph-powershell-1.0)

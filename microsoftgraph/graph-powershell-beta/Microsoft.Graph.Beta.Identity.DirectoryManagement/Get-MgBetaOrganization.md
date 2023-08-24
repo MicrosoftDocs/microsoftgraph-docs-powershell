@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the properties and relationships of the currently authenticated organization.
 Since the organization resource supports extensions, you can also use the GET operation to get custom properties and extension data in an organization instance.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -292,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganization?view=graph-powershell-1.0)

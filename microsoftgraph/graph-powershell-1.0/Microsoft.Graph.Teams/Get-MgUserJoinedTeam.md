@@ -12,6 +12,9 @@ ms.prod: microsoft-teams
 The application that is linked to the tab.
 This cannot be changed after tab creation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -192,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)

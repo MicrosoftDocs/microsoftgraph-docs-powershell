@@ -11,6 +11,9 @@ ms.prod: education
 ## SYNOPSIS
 Get outcomes from education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmissionOutcome?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -329,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmissionOutcome?view=graph-powershell-1.0)

@@ -12,6 +12,9 @@ ms.prod: cloud-communications
 The content stream of the attendee report of a Microsoft Teams live event.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -138,3 +141,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-beta)

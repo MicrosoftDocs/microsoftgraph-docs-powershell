@@ -12,6 +12,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve the properties and relationships of a permission object on a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -325,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePermission?view=graph-powershell-beta)

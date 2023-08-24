@@ -13,6 +13,9 @@ Allow the application to unmute itself.
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnmuteCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaUnmuteCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UnmuteExpanded (Default)
@@ -207,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaUnmuteCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaUnmuteCommunicationCall?view=graph-powershell-beta)

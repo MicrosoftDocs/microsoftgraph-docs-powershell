@@ -11,6 +11,9 @@ ms.prod: service-communications
 ## SYNOPSIS
 Mark a list of serviceUpdateMessages as read for the signed in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaMarkServiceAnnouncementMessageRead?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MarkExpanded (Default)
@@ -147,3 +150,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MessageIds <String[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBetaMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaMarkServiceAnnouncementMessageRead?view=graph-powershell-beta)

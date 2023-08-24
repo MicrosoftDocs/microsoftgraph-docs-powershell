@@ -11,6 +11,9 @@ ms.prod: directory-management
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantMemberGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -281,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantMemberGroup?view=graph-powershell-beta)

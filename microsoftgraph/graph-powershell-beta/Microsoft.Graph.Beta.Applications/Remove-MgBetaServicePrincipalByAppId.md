@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a servicePrincipal object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalByAppId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -184,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalByAppId?view=graph-powershell-1.0)

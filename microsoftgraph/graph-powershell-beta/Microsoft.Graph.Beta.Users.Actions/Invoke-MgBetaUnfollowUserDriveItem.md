@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Unfollow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnfollowUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnfollowUserDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unfollow (Default)
@@ -214,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgUnfollowUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnfollowUserDriveItem?view=graph-powershell-1.0)

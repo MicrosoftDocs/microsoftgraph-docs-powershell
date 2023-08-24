@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an ediscoverySearch object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -199,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Remove-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)

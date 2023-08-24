@@ -11,6 +11,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Get contentTypes from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -291,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentType?view=graph-powershell-1.0)

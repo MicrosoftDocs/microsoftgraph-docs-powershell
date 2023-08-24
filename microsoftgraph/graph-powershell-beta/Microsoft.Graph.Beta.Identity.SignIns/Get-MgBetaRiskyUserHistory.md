@@ -12,6 +12,9 @@ ms.prod: identity-and-sign-in
 ## SYNOPSIS
 Get a riskyUserHistoryItem object of a riskyUser.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -362,3 +365,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)

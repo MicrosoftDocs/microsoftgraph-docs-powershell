@@ -12,6 +12,9 @@ ms.prod: groups
 ## SYNOPSIS
 Get an event object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -242,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)

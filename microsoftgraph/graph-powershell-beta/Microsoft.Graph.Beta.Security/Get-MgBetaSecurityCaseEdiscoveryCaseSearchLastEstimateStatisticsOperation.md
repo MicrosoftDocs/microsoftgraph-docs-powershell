@@ -11,6 +11,9 @@ ms.prod: ediscovery
 ## SYNOPSIS
 Get the last ediscoveryEstimateOperation objects and their properties.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -211,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-1.0)

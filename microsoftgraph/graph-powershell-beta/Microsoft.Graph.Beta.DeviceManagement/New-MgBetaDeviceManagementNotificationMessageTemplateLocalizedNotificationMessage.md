@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to localizedNotificationMessages for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -417,5 +420,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-1.0)

@@ -14,6 +14,9 @@ The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 
 Photos can be any dimension if they are stored in Azure Active Directory.
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.\nIf the size you request is not available, you can still get a smaller size that the user has uploaded and made available.\nFor example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhoto?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -161,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaGroupTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhoto?view=graph-powershell-beta)

@@ -12,6 +12,9 @@ ms.prod: directory-management
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyFeatureRolloutPolicyApplyToById](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFeatureRolloutPolicyApplyToById?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -295,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgPolicyFeatureRolloutPolicyApplyToById](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFeatureRolloutPolicyApplyToById?view=graph-powershell-1.0)

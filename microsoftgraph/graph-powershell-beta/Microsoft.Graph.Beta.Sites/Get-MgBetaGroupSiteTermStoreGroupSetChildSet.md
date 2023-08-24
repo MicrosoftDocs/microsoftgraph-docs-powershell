@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The [set] in which the term is created.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreGroupSetChildSet](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetChildSet?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -258,3 +261,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupSiteTermStoreGroupSetChildSet](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetChildSet?view=graph-powershell-1.0)

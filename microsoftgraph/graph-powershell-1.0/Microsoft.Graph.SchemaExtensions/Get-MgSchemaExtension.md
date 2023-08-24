@@ -12,6 +12,9 @@ ms.prod: extensions
 ## SYNOPSIS
 Get schemaExtension
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgBetaSchemaExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -251,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
 ## RELATED LINKS
+[Get-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgBetaSchemaExtension?view=graph-powershell-beta)
