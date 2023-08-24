@@ -1,18 +1,14 @@
 ---
-external help file: Microsoft.Graph.Beta.Planner-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplandetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgBetaPlannerPlanDetail
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerPlanDetails object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,25 +20,21 @@ Get-MgBetaPlannerPlanDetail -PlannerPlanId <String> [-ExpandProperty <String[]>]
 
 ### GetViaIdentity
 ```
-Get-MgBetaPlannerPlanDetail -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaPlannerPlanDetail -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerPlanDetails object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 Get-MgBetaPlannerPlanDetail -PlannerPlanId $plannerPlanId
-
-```
-This example shows how to use the Get-MgBetaPlannerPlanDetail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -50,7 +42,7 @@ This example shows how to use the Get-MgBetaPlannerPlanDetail Cmdlet.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -66,7 +58,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPlannerIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -81,7 +73,7 @@ Accept wildcard characters: False
 The unique identifier of plannerPlan
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -96,7 +88,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -113,9 +105,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails
+
 ## NOTES
 
 ALIASES
@@ -136,4 +130,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanDetail?view=graph-powershell-1.0)
+

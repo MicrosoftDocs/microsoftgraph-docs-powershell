@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticanomalycorrelationgroupoverview
 schema: 2.0.0
@@ -21,15 +21,23 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOvervi
  [-CorrelationGroupFeatures <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature[]>]
  [-CorrelationGroupId <String>]
  [-CorrelationGroupPrevalence <UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence>]
- [-CorrelationGroupPrevalencePercentage <Double>] [-Id <String>] [-TotalDeviceCount <Int32>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CorrelationGroupPrevalencePercentage <Double>] [-Id <String>] [-TotalDeviceCount <Int32>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
  -UserExperienceAnalyticsAnomalyCorrelationGroupOverviewId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -42,20 +50,28 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOvervi
  [-CorrelationGroupFeatures <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature[]>]
  [-CorrelationGroupId <String>]
  [-CorrelationGroupPrevalence <UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence>]
- [-CorrelationGroupPrevalencePercentage <Double>] [-Id <String>] [-TotalDeviceCount <Int32>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
- -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-CorrelationGroupPrevalencePercentage <Double>] [-Id <String>] [-TotalDeviceCount <Int32>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsAnomalyCorrelationGroupOverview in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -63,7 +79,7 @@ Update the navigation property userExperienceAnalyticsAnomalyCorrelationGroupOve
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +95,7 @@ Indicates the number of correlation groups in the anomaly.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +111,7 @@ The unique identifier of the anomaly.
 Anomaly details such as name and type can be found in the UserExperienceAnalyticsAnomalySeverityOverview entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -111,7 +127,7 @@ The user experience analytics anomaly correlation group overview entity contains
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -127,7 +143,7 @@ Indicates the total number of devices affected by the anomaly in the correlation
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +159,7 @@ Indicates the total number of devices at risk in the correlation group.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +175,7 @@ Indicates the total number of devices in a correlation group.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +191,7 @@ Describes the features of a device that are shared between all devices in a corr
 To construct, see NOTES section for CORRELATIONGROUPFEATURES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +208,7 @@ The correlation Id can be mapped to the correlation group name by concatinating 
 Example of correlation group name which is the indicative of concatenated features names are for names, Contoso manufacture 4.4.1 and Windows 11.22621.1485.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +224,7 @@ Indicates the level of prevalence of the correlation group features in the anoma
 Possible values are: high, medium or low
 
 ```yaml
-Type: UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence
+Type: Microsoft.Graph.Beta.PowerShell.Support.UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +240,7 @@ The percentage of the devices in the correlation group that are anomalous.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +256,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -256,8 +272,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -272,7 +288,7 @@ Indicates the total number of devices in the tenant.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -287,8 +303,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsAnomalyCorrelationGroupOverview
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -302,7 +318,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -318,7 +334,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -335,10 +351,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview
+
 ## NOTES
 
 ALIASES
@@ -506,8 +525,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

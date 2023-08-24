@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalapproleassignedto
 schema: 2.0.0
@@ -13,9 +13,6 @@ App roles that are assigned to service principals are also known as application 
 Application permissions can be granted directly with app role assignments, or through a consent experience.
 To grant an app role assignment, you need three identifiers:
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23,13 +20,19 @@ To grant an app role assignment, you need three identifiers:
 New-MgBetaServicePrincipalAppRoleAssignedTo -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
  [-AppRoleId <String>] [-CreationTimestamp <DateTime>] [-Id <String>] [-PrincipalDisplayName <String>]
  [-PrincipalId <String>] [-PrincipalType <String>] [-ResourceDisplayName <String>] [-ResourceId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaServicePrincipalAppRoleAssignedTo -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphAppRoleAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppRoleAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphAppRoleAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -37,13 +40,7 @@ New-MgBetaServicePrincipalAppRoleAssignedTo -ServicePrincipalId <String>
 New-MgBetaServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AppRoleId <String>] [-CreationTimestamp <DateTime>] [-Id <String>]
  [-PrincipalDisplayName <String>] [-PrincipalId <String>] [-PrincipalType <String>]
- [-ResourceDisplayName <String>] [-ResourceId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphAppRoleAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResourceDisplayName <String>] [-ResourceId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,10 +50,11 @@ Application permissions can be granted directly with app role assignments, or th
 To grant an app role assignment, you need three identifiers:
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
+```
 
 $params = @{
 	principalId = "33ad69f9-da99-4bed-acd0-3f24235cb296"
@@ -65,11 +63,6 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaServicePrincipalAppRoleAssignedTo Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -77,7 +70,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +88,7 @@ If the resource application has not declared any app roles, a default app role I
 Required on create.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -111,7 +104,7 @@ appRoleAssignment
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRoleAssignment
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -129,7 +122,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +138,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -161,8 +154,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -178,7 +171,7 @@ Read-only.
 Supports $filter (eq and startswith).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +188,7 @@ Security groups with dynamic memberships are supported.
 Required on create.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +205,7 @@ This can either be User, Group, or ServicePrincipal.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +220,7 @@ Accept wildcard characters: False
 The display name of the resource app's service principal to which the assignment is made.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +237,7 @@ Required on create.
 Supports $filter (eq only).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -259,8 +252,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -274,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -290,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -307,10 +300,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
+
 ## NOTES
 
 ALIASES
@@ -364,4 +360,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-1.0)
+

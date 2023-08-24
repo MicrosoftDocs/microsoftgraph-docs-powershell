@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementassignmentfilter
 schema: 2.0.0
@@ -15,19 +15,35 @@ Invoke action validateFilter
 ### ValidateExpanded (Default)
 ```
 Test-MgBetaDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>]
- [-DeviceAndAppManagementAssignmentFilter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-DeviceAndAppManagementAssignmentFilter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgBetaDeviceManagementAssignmentFilter
  -BodyParameter <IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action validateFilter
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -35,7 +51,7 @@ Invoke action validateFilter
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -51,7 +67,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate
 Aliases:
 
@@ -67,7 +83,7 @@ A class containing the properties used for Assignment Filter.
 To construct, see NOTES section for DEVICEANDAPPMANAGEMENTASSIGNMENTFILTER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -82,7 +98,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +114,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -115,9 +131,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

@@ -1,18 +1,14 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassgroup
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationClassGroup
 
 ## SYNOPSIS
 Retrieve the Microsoft 365 group that corresponds to this educationClass.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassGroup](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,13 +28,14 @@ Get-MgBetaEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty
 Retrieve the Microsoft 365 group that corresponds to this educationClass.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaEducationClassGroup Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationClassGroup -EducationClassId $educationClassId
 ```
-This example shows how to use the Get-MgBetaEducationClassGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -46,7 +43,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationClass
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -61,7 +58,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -77,7 +74,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -92,7 +89,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -109,9 +106,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroup
+
 ## NOTES
 
 ALIASES
@@ -139,4 +138,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationClassGroup](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassGroup?view=graph-powershell-1.0)
+

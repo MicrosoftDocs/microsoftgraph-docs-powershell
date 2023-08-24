@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevicecommand
 schema: 2.0.0
@@ -17,13 +17,19 @@ Update the navigation property commands in devices
 Update-MgBetaDeviceCommand -CommandId <String> -DeviceId <String> [-AdditionalProperties <Hashtable>]
  [-AppServiceName <String>] [-Error <String>] [-Id <String>] [-PackageFamilyName <String>]
  [-Payload <Hashtable>] [-PermissionTicket <String>] [-PostBackUri <String>] [-Responsepayload <Hashtable>]
- [-Status <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <String>] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceCommand -CommandId <String> -DeviceId <String> -BodyParameter <IMicrosoftGraphCommand>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphCommand> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -31,17 +37,27 @@ Update-MgBetaDeviceCommand -CommandId <String> -DeviceId <String> -BodyParameter
 Update-MgBetaDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-AppServiceName <String>] [-Error <String>] [-Id <String>]
  [-PackageFamilyName <String>] [-Payload <Hashtable>] [-PermissionTicket <String>] [-PostBackUri <String>]
- [-Responsepayload <Hashtable>] [-Status <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphCommand> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Responsepayload <Hashtable>] [-Status <String>] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property commands in devices
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Update the navigation property commands in devices
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -64,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +96,7 @@ command
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommand
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommand
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -95,8 +111,8 @@ Accept wildcard characters: False
 The unique identifier of command
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -110,8 +126,8 @@ Accept wildcard characters: False
 The unique identifier of device
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -125,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +157,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,8 +173,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -172,7 +188,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -187,7 +203,7 @@ Accept wildcard characters: False
 payloadRequest
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -202,7 +218,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -217,7 +233,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -232,7 +248,7 @@ Accept wildcard characters: False
 payloadResponse
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -247,7 +263,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +278,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -277,7 +293,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -293,7 +309,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -310,10 +326,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommand
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommand
+
 ## NOTES
 
 ALIASES

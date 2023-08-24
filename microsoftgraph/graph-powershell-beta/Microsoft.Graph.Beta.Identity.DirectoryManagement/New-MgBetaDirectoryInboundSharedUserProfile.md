@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryinboundshareduserprofile
 schema: 2.0.0
@@ -15,18 +15,34 @@ Create new navigation property to inboundSharedUserProfiles for directory
 ### CreateExpanded (Default)
 ```
 New-MgBetaDirectoryInboundSharedUserProfile [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-HomeTenantId <String>] [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-HomeTenantId <String>] [-UserId <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDirectoryInboundSharedUserProfile -BodyParameter <IMicrosoftGraphInboundSharedUserProfile> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDirectoryInboundSharedUserProfile -BodyParameter <IMicrosoftGraphInboundSharedUserProfile>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to inboundSharedUserProfiles for directory
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -34,7 +50,7 @@ Create new navigation property to inboundSharedUserProfiles for directory
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +66,7 @@ inboundSharedUserProfile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInboundSharedUserProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInboundSharedUserProfile
 Parameter Sets: Create
 Aliases:
 
@@ -66,7 +82,7 @@ The name displayed in the address book for teh user at the time when the sharing
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +98,7 @@ The home tenant id of the external user.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +114,7 @@ The object id of the external user.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +130,7 @@ The user principal name (UPN) of the external user.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,9 +178,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInboundSharedUserProfile
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInboundSharedUserProfile
+
 ## NOTES
 
 ALIASES

@@ -1,18 +1,14 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchlastestimatestatisticsoperation
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation
 
 ## SYNOPSIS
 Get the last  ediscoveryEstimateOperation objects and their properties.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,17 +28,13 @@ Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -InputObje
 Get the last  ediscoveryEstimateOperation objects and their properties.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Security
+```
 
 Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
-
-```
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation Cmdlet.
-
 
 ## PARAMETERS
 
@@ -50,7 +42,7 @@ This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchLastEsti
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -65,7 +57,7 @@ Accept wildcard characters: False
 The unique identifier of ediscoverySearch
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -80,7 +72,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -96,7 +88,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -111,7 +103,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -128,9 +120,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryEstimateOperation
+
 ## NOTES
 
 ALIASES
@@ -176,4 +170,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-beta)
+

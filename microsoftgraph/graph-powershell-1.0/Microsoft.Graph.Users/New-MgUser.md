@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguser
 schema: 2.0.0
@@ -8,12 +8,9 @@ schema: 2.0.0
 # New-MgUser
 
 ## SYNOPSIS
-Create a new user.nThe request body contains the user to create.
+Create a new user.\nThe request body contains the user to create.
 At a minimum, you must specify the required properties for the user.
 You can optionally specify any other writable properties.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,11 +23,11 @@ New-MgUser [-AboutMe <String>] [-AccountEnabled] [-Activities <IMicrosoftGraphUs
  [-AssignedLicenses <IMicrosoftGraphAssignedLicense[]>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
  [-Authentication <IMicrosoftGraphAuthentication>] [-AuthorizationInfo <IMicrosoftGraphAuthorizationInfo>]
  [-Birthday <DateTime>] [-BusinessPhones <String[]>] [-Calendar <IMicrosoftGraphCalendar>]
- [-CalendarGroups <IMicrosoftGraphCalendarGroup[]>] [-CalendarView <IMicrosoftGraphEvent[]>]
- [-Calendars <IMicrosoftGraphCalendar[]>] [-Chats <IMicrosoftGraphChat[]>] [-City <String>]
- [-CompanyName <String>] [-ConsentProvidedForMinor <String>] [-ContactFolders <IMicrosoftGraphContactFolder[]>]
- [-Contacts <IMicrosoftGraphContact[]>] [-Country <String>] [-CreatedDateTime <DateTime>]
- [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CreationType <String>]
+ [-CalendarGroups <IMicrosoftGraphCalendarGroup[]>] [-Calendars <IMicrosoftGraphCalendar[]>]
+ [-CalendarView <IMicrosoftGraphEvent[]>] [-Chats <IMicrosoftGraphChat[]>] [-City <String>]
+ [-CompanyName <String>] [-ConsentProvidedForMinor <String>]
+ [-ContactFolders <IMicrosoftGraphContactFolder[]>] [-Contacts <IMicrosoftGraphContact[]>] [-Country <String>]
+ [-CreatedDateTime <DateTime>] [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CreationType <String>]
  [-CustomSecurityAttributes <Hashtable>] [-DeletedDateTime <DateTime>] [-Department <String>]
  [-DeviceEnrollmentLimit <Int32>]
  [-DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>]
@@ -46,22 +43,21 @@ New-MgUser [-AboutMe <String>] [-AccountEnabled] [-Activities <IMicrosoftGraphUs
  [-JobTitle <String>] [-JoinedTeams <IMicrosoftGraphTeam[]>] [-LastPasswordChangeDateTime <DateTime>]
  [-LegalAgeGroupClassification <String>] [-LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]
  [-LicenseDetails <IMicrosoftGraphLicenseDetails[]>] [-Mail <String>]
- [-MailFolders <IMicrosoftGraphMailFolder[]>] [-MailNickname <String>]
- [-MailboxSettings <IMicrosoftGraphMailboxSettings>]
- [-ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]
+ [-MailboxSettings <IMicrosoftGraphMailboxSettings>] [-MailFolders <IMicrosoftGraphMailFolder[]>]
+ [-MailNickname <String>] [-ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration[]>]
  [-ManagedDevices <IMicrosoftGraphManagedDevice[]>] [-Manager <IMicrosoftGraphDirectoryObject>]
  [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Messages <IMicrosoftGraphMessage[]>] [-MobilePhone <String>]
  [-MySite <String>] [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
- [-OfficeLocation <String>] [-OnPremisesDistinguishedName <String>] [-OnPremisesDomainName <String>]
+ [-OfficeLocation <String>] [-Onenote <IMicrosoftGraphOnenote>]
+ [-OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>] [-OnPremisesDistinguishedName <String>]
+ [-OnPremisesDomainName <String>]
  [-OnPremisesExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]
  [-OnPremisesImmutableId <String>] [-OnPremisesLastSyncDateTime <DateTime>]
  [-OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]
  [-OnPremisesSamAccountName <String>] [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled]
- [-OnPremisesUserPrincipalName <String>] [-Onenote <IMicrosoftGraphOnenote>]
- [-OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>] [-OtherMails <String[]>]
- [-Outlook <IMicrosoftGraphOutlookUser>] [-OwnedDevices <IMicrosoftGraphDirectoryObject[]>]
- [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>] [-PasswordPolicies <String>]
- [-PasswordProfile <IMicrosoftGraphPasswordProfile>] [-PastProjects <String[]>]
+ [-OnPremisesUserPrincipalName <String>] [-OtherMails <String[]>] [-Outlook <IMicrosoftGraphOutlookUser>]
+ [-OwnedDevices <IMicrosoftGraphDirectoryObject[]>] [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>]
+ [-PasswordPolicies <String>] [-PasswordProfile <IMicrosoftGraphPasswordProfile>] [-PastProjects <String[]>]
  [-People <IMicrosoftGraphPerson[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
  [-Photos <IMicrosoftGraphProfilePhoto[]>] [-Planner <IMicrosoftGraphPlannerUser>] [-PostalCode <String>]
  [-PreferredDataLocation <String>] [-PreferredLanguage <String>] [-PreferredName <String>]
@@ -74,35 +70,32 @@ New-MgUser [-AboutMe <String>] [-AccountEnabled] [-Activities <IMicrosoftGraphUs
  [-Skills <String[]>] [-State <String>] [-StreetAddress <String>] [-Surname <String>]
  [-Teamwork <IMicrosoftGraphUserTeamwork>] [-Todo <IMicrosoftGraphTodo>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-UsageLocation <String>]
- [-UserPrincipalName <String>] [-UserType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-UserType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUser -BodyParameter <IMicrosoftGraphUser> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUser -BodyParameter <IMicrosoftGraphUser> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a new user.nThe request body contains the user to create.
+Create a new user.\nThe request body contains the user to create.
 At a minimum, you must specify the required properties for the user.
 You can optionally specify any other writable properties.
 
 ## EXAMPLES
-### Example 1: Create a new user
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 $PasswordProfile = @{
   Password = 'xWwvJ]6NMw+bWH-d'
   }
 New-MgUser -DisplayName 'Rene Magi' -PasswordProfile $PasswordProfile -AccountEnabled -MailNickName 'ReneMagi' -UserPrincipalName 'ReneMagi@contoso.com'
+```
 
 Id                                   DisplayName Mail UserPrincipalName                    UserType
 --                                   ----------- ---- -----------------                    --------
 1fe21dc8-7d53-4a92-b1fa-32043b9875a7 Rene Magi        ReneMagi@contoso.com
-```
-
-This command first sets a value for the password profile variable and uses it to create a new user.
-
 
 ## PARAMETERS
 
@@ -111,7 +104,7 @@ A freeform text entry field for the user to describe themselves.
 Returned only on $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +122,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, and in).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +140,7 @@ Nullable.
 To construct, see NOTES section for ACTIVITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserActivity[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserActivity[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +155,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,7 +174,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, and in).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -199,7 +192,7 @@ Nullable.
 To construct, see NOTES section for AGREEMENTACCEPTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementAcceptance[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -216,7 +209,7 @@ Supports $expand.
 To construct, see NOTES section for APPROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRoleAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +230,7 @@ Supports $filter (eq, not, /$count eq 0, /$count ne 0).
 To construct, see NOTES section for ASSIGNEDLICENSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAssignedLicense[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignedLicense[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -257,7 +250,7 @@ Supports $filter (eq and not).
 To construct, see NOTES section for ASSIGNEDPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAssignedPlan[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignedPlan[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -273,7 +266,7 @@ authentication
 To construct, see NOTES section for AUTHENTICATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthentication
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthentication
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -289,7 +282,7 @@ authorizationInfo
 To construct, see NOTES section for AUTHORIZATIONINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthorizationInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthorizationInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -307,7 +300,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -323,7 +316,7 @@ user
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUser
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
 Parameter Sets: Create
 Aliases:
 
@@ -342,7 +335,7 @@ Returned by default.
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -358,7 +351,7 @@ calendar
 To construct, see NOTES section for CALENDAR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalendar
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -376,7 +369,7 @@ Nullable.
 To construct, see NOTES section for CALENDARGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalendarGroup[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -394,7 +387,7 @@ Nullable.
 To construct, see NOTES section for CALENDARS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalendar[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -412,7 +405,7 @@ Nullable.
 To construct, see NOTES section for CALENDARVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -428,7 +421,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CHATS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChat[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -446,7 +439,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -464,7 +457,7 @@ The maximum length is 64 characters.Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -483,7 +476,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, and in).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -501,7 +494,7 @@ Nullable.
 To construct, see NOTES section for CONTACTFOLDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -519,7 +512,7 @@ Nullable.
 To construct, see NOTES section for CONTACTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContact[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -537,7 +530,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -559,7 +552,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in).
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -577,7 +570,7 @@ Nullable.
 To construct, see NOTES section for CREATEDOBJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -598,7 +591,7 @@ Read-only.Returned only on $select.
 Supports $filter (eq, ne, not, in).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -613,7 +606,7 @@ Accept wildcard characters: False
 customSecurityAttributeValue
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -629,7 +622,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -647,7 +640,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -663,7 +656,7 @@ The limit on the maximum number of devices that the user is permitted to enroll.
 Allowed values are 5 or 1000.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -679,7 +672,7 @@ The list of troubleshooting events for this user.
 To construct, see NOTES section for DEVICEMANAGEMENTTROUBLESHOOTINGEVENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementTroubleshootingEvent[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -698,7 +691,7 @@ Supports $expand.
 To construct, see NOTES section for DIRECTREPORTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -718,7 +711,7 @@ Returned by default.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), $orderBy, and $search.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -734,7 +727,7 @@ drive
 To construct, see NOTES section for DRIVE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDrive
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -751,7 +744,7 @@ Read-only.
 To construct, see NOTES section for DRIVES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDrive[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -767,7 +760,7 @@ employeeExperienceUser
 To construct, see NOTES section for EMPLOYEEEXPERIENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmployeeExperienceUser
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmployeeExperienceUser
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -784,7 +777,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in).
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -802,7 +795,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -823,7 +816,7 @@ Supports $filter (eq, ne, not , ge, le, in).
 For more information, see Configure the employeeLeaveDateTime property for a user.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -839,7 +832,7 @@ employeeOrgData
 To construct, see NOTES section for EMPLOYEEORGDATA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmployeeOrgData
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmployeeOrgData
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -857,7 +850,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, startsWith).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -876,7 +869,7 @@ Nullable.
 To construct, see NOTES section for EVENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -895,7 +888,7 @@ Nullable.
 To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -913,7 +906,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , in).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -930,7 +923,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , in).
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -947,7 +940,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -963,7 +956,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for FOLLOWEDSITES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSite[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -981,7 +974,7 @@ Returned by default.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1001,7 +994,7 @@ Note: This property is specific to SharePoint Online.
 We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1017,7 +1010,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1037,7 +1030,7 @@ Supports $filter (eq) including on null values, only where the signInType is not
 To construct, see NOTES section for IDENTITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphObjectIdentity[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphObjectIdentity[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1055,7 +1048,7 @@ Returned only on $select.
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1071,7 +1064,7 @@ inferenceClassification
 To construct, see NOTES section for INFERENCECLASSIFICATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInferenceClassification
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassification
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1087,7 +1080,7 @@ officeGraphInsights
 To construct, see NOTES section for INSIGHTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOfficeGraphInsights
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeGraphInsights
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1103,7 +1096,7 @@ A list for the user to describe their interests.
 Returned only on $select.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1115,10 +1108,10 @@ Accept wildcard characters: False
 ```
 
 ### -IsResourceAccount
-Do not use - reserved for future use.
+Do not use – reserved for future use.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1136,7 +1129,7 @@ Returned by default.
 Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1152,7 +1145,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for JOINEDTEAMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeam[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1170,7 +1163,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Returned only on $select.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1189,7 +1182,7 @@ Refer to the legal age group property definitions for further information.
 Returned only on $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1208,7 +1201,7 @@ Returned only on $select.
 To construct, see NOTES section for LICENSEASSIGNMENTSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLicenseAssignmentState[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLicenseAssignmentState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1225,7 +1218,7 @@ Read-only.
 To construct, see NOTES section for LICENSEDETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLicenseDetails[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLicenseDetails[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1246,7 +1239,7 @@ Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1262,7 +1255,7 @@ mailboxSettings
 To construct, see NOTES section for MAILBOXSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMailboxSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1280,7 +1273,7 @@ Nullable.
 To construct, see NOTES section for MAILFOLDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMailFolder[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1299,7 +1292,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1315,7 +1308,7 @@ Zero or more managed app registrations that belong to the user.
 To construct, see NOTES section for MANAGEDAPPREGISTRATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppRegistration[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1331,7 +1324,7 @@ The managed devices associated with the user.
 To construct, see NOTES section for MANAGEDDEVICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDevice[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1347,7 +1340,7 @@ directoryObject
 To construct, see NOTES section for MANAGER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1366,7 +1359,7 @@ Supports $expand.
 To construct, see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1384,7 +1377,7 @@ Nullable.
 To construct, see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessage[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1403,7 +1396,7 @@ Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values) and $search.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1419,7 +1412,7 @@ The URL for the user's personal site.
 Returned only on $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1435,7 +1428,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for OAUTH2PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOAuth2PermissionGrant[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1452,7 +1445,7 @@ Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1468,7 +1461,7 @@ onenote
 To construct, see NOTES section for ONENOTE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnenote
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenote
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1484,7 +1477,7 @@ Information about a meeting, including the URL used to join a meeting, the atten
 To construct, see NOTES section for ONLINEMEETINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnlineMeeting[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1502,7 +1495,7 @@ Read-only.
 Returned only on $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1520,7 +1513,7 @@ Read-only.
 Returned only on $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1536,7 +1529,7 @@ onPremisesExtensionAttributes
 To construct, see NOTES section for ONPREMISESEXTENSIONATTRIBUTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesExtensionAttributes
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesExtensionAttributes
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1555,7 +1548,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in)..
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1575,7 +1568,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in).
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1593,7 +1586,7 @@ Supports $filter (eq, not, ge, le).
 To construct, see NOTES section for ONPREMISESPROVISIONINGERRORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesProvisioningError[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesProvisioningError[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1612,7 +1605,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1630,7 +1623,7 @@ Returned only on $select.
 Supports $filter (eq including on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1648,7 +1641,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1667,7 +1660,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1685,7 +1678,7 @@ Returned only on $select.
 Supports $filter (eq, not, ge, le, in, startsWith, endsWith, /$count eq 0, /$count ne 0).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1701,7 +1694,7 @@ outlookUser
 To construct, see NOTES section for OUTLOOK properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOutlookUser
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookUser
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1720,7 +1713,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 To construct, see NOTES section for OWNEDDEVICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1739,7 +1732,7 @@ Supports $expand.
 To construct, see NOTES section for OWNEDOBJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1760,7 +1753,7 @@ For more information on the default password policies, see Azure AD pasword poli
 Supports $filter (ne, not, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1776,7 +1769,7 @@ passwordProfile
 To construct, see NOTES section for PASSWORDPROFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPasswordProfile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPasswordProfile
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1792,7 +1785,7 @@ A list for the user to enumerate their past projects.
 Returned only on $select.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1810,7 +1803,7 @@ Nullable.
 To construct, see NOTES section for PEOPLE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPerson[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1826,7 +1819,7 @@ profilePhoto
 To construct, see NOTES section for PHOTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProfilePhoto
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1842,7 +1835,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PHOTOS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProfilePhoto[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1858,7 +1851,7 @@ plannerUser
 To construct, see NOTES section for PLANNER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerUser
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerUser
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1878,7 +1871,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1894,7 +1887,7 @@ The preferred data location for the user.
 For more information, see OneDrive Online Multi-Geo.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1912,7 +1905,7 @@ Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1929,7 +1922,7 @@ Not Supported.
 This attribute returns an empty string.Returned only on $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1945,7 +1938,7 @@ presence
 To construct, see NOTES section for PRESENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPresence
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPresence
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1961,7 +1954,7 @@ userPrint
 To construct, see NOTES section for PRINT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserPrint
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserPrint
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1981,7 +1974,7 @@ Supports $filter (eq, not, ge, le).
 To construct, see NOTES section for PROVISIONEDPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProvisionedPlan[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProvisionedPlan[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2004,7 +1997,7 @@ Returned only on $select.
 Supports $filter (eq, not, ge, le, startsWith, endsWith, /$count eq 0, /$count ne 0).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2023,7 +2016,7 @@ Supports $expand.
 To construct, see NOTES section for REGISTEREDDEVICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2039,7 +2032,7 @@ A list for the user to enumerate their responsibilities.
 Returned only on $select.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2055,7 +2048,7 @@ A list for the user to enumerate the schools they have attended.
 Returned only on $select.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2071,7 +2064,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SCOPEDROLEMEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphScopedRoleMembership[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2089,7 +2082,7 @@ Returned by default.
 Supports $select and $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2105,7 +2098,7 @@ userSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2123,7 +2116,7 @@ Represents whether the user should be included in the Outlook global address lis
 See Known issue.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2139,7 +2132,7 @@ signInActivity
 To construct, see NOTES section for SIGNINACTIVITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSignInActivity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSignInActivity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2158,7 +2151,7 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2174,7 +2167,7 @@ A list for the user to enumerate their skills.
 Returned only on $select.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2192,7 +2185,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2210,7 +2203,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2228,7 +2221,7 @@ Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2244,7 +2237,7 @@ userTeamwork
 To construct, see NOTES section for TEAMWORK properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserTeamwork
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserTeamwork
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2260,7 +2253,7 @@ todo
 To construct, see NOTES section for TODO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTodo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2277,7 +2270,7 @@ Nullable.
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2297,7 +2290,7 @@ Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2322,7 +2315,7 @@ Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2340,7 +2333,7 @@ Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2355,7 +2348,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -2371,7 +2364,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -2388,9 +2381,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
+
 ## NOTES
 
 ALIASES
@@ -2405,7 +2400,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
   - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
   - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-  - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+  - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
   - `[ContentInfo <IMicrosoftGraphJson>]`: Json
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -2430,7 +2425,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+      - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
       - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
       - `[AlternativeText <String>]`: 
       - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -2586,7 +2581,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
     - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
     - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
     - `[ContentInfo <IMicrosoftGraphJson>]`: Json
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -2611,7 +2606,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
         - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
         - `[AlternativeText <String>]`: 
         - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -3005,7 +3000,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4184,7 +4179,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
       - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
   - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-  - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+  - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
   - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -4810,7 +4805,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
       - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
       - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-    - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+    - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Description <String>]`: Optional description for the device category.
@@ -5107,7 +5102,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
       - `[Address <String>]`: The email address.
       - `[ItemId <String>]`: 
-      - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+      - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
       - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
     - `[Surname <String>]`: The person's surname.
     - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -6150,7 +6145,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
     - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
       - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6394,7 +6389,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -6419,7 +6414,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -6806,7 +6801,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -7952,7 +7947,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -8578,7 +8573,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
         - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
         - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-      - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+      - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Description <String>]`: Optional description for the device category.
@@ -8875,7 +8870,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
         - `[Address <String>]`: The email address.
         - `[ItemId <String>]`: 
-        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
         - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
       - `[Surname <String>]`: The person's surname.
       - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -9247,7 +9242,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -9272,7 +9267,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -9659,7 +9654,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10805,7 +10800,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -11431,7 +11426,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
         - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
         - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-      - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+      - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Description <String>]`: Optional description for the device category.
@@ -11728,7 +11723,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
         - `[Address <String>]`: The email address.
         - `[ItemId <String>]`: 
-        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
         - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
       - `[Surname <String>]`: The person's surname.
       - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -12277,7 +12272,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -12302,7 +12297,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -12689,7 +12684,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13726,7 +13721,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -14441,7 +14436,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
         - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
         - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-      - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+      - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Description <String>]`: Optional description for the device category.
@@ -14738,7 +14733,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
         - `[Address <String>]`: The email address.
         - `[ItemId <String>]`: 
-        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
         - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
       - `[Surname <String>]`: The person's surname.
       - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -15209,7 +15204,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
           - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
           - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
           - `[ContentInfo <IMicrosoftGraphJson>]`: Json
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -15234,7 +15229,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
               - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
               - `[AlternativeText <String>]`: 
               - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -15621,7 +15616,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16401,7 +16396,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-        - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+        - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
         - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
         - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, whichever date the latest action was performed. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned only on $select.
@@ -16602,7 +16597,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
             - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
             - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[Description <String>]`: Optional description for the device category.
@@ -16903,7 +16898,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
             - `[Address <String>]`: The email address.
             - `[ItemId <String>]`: 
-            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
             - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
           - `[Surname <String>]`: The person's surname.
           - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -18256,7 +18251,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
     - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
     - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-  - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+  - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Description <String>]`: Optional description for the device category.
@@ -18367,7 +18362,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -18392,7 +18387,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -18786,7 +18781,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19965,7 +19960,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -20741,7 +20736,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
         - `[Address <String>]`: The email address.
         - `[ItemId <String>]`: 
-        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
         - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
       - `[Surname <String>]`: The person's surname.
       - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -21462,7 +21457,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
     - `[Address <String>]`: The email address.
     - `[ItemId <String>]`: 
-    - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+    - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
     - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
   - `[Surname <String>]`: The person's surname.
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -21994,7 +21989,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
             - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
             - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-            - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+            - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
             - `[ContentInfo <IMicrosoftGraphJson>]`: Json
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -22019,7 +22014,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+                - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
                 - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
                 - `[AlternativeText <String>]`: 
                 - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -22239,7 +22234,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -23385,7 +23380,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
               - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
           - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-          - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+          - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
           - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
           - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -23791,7 +23786,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
               - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
               - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-            - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+            - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[Description <String>]`: Optional description for the device category.
@@ -24092,7 +24087,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
               - `[Address <String>]`: The email address.
               - `[ItemId <String>]`: 
-              - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+              - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
               - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
             - `[Surname <String>]`: The person's surname.
             - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -24551,7 +24546,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
               - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
               - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-              - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+              - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
               - `[ContentInfo <IMicrosoftGraphJson>]`: Json
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -24576,7 +24571,7 @@ To create the parameters described below, construct a hash table containing the 
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+                  - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
                   - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
                   - `[AlternativeText <String>]`: 
                   - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -24963,7 +24958,7 @@ To create the parameters described below, construct a hash table containing the 
                 - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
                 - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
                 - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -25743,7 +25738,7 @@ To create the parameters described below, construct a hash table containing the 
                 - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
                 - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
             - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-            - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+            - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
             - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
             - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
             - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, whichever date the latest action was performed. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned only on $select.
@@ -25944,7 +25939,7 @@ To create the parameters described below, construct a hash table containing the 
                 - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
                 - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
                 - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-              - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+              - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[Description <String>]`: Optional description for the device category.
@@ -26245,7 +26240,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
                 - `[Address <String>]`: The email address.
                 - `[ItemId <String>]`: 
-                - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+                - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
                 - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
               - `[Surname <String>]`: The person's surname.
               - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -27451,7 +27446,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUser?view=graph-powershell-beta)
 
-## RELATED LINKS
-[New-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUser?view=graph-powershell-beta)

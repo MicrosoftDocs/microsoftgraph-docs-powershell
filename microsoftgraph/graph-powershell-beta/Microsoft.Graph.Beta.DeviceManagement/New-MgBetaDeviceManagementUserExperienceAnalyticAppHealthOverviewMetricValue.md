@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthoverviewmetricvalue
 schema: 2.0.0
@@ -10,26 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to metricValues for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Unit <String>] [-Value <Double>] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Unit <String>] [-Value <Double>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsMetric> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsMetric> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to metricValues for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Create new navigation property to metricValues for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ The user experience analytics metric contains the score and units of a metric of
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsMetric
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +82,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +98,7 @@ The unit of the user experience analytics metric.
 Examples: none, percentage, count, seconds, score.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 The value of the user experience analytics metric.
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -131,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -148,9 +161,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric
+
 ## NOTES
 
 ALIASES
@@ -167,5 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-1.0)
 

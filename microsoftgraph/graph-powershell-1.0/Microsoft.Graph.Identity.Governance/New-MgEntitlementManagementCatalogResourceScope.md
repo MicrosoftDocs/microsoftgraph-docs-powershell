@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogresourcescope
 schema: 2.0.0
@@ -17,15 +17,27 @@ Create new navigation property to resourceScopes for identityGovernance
 New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded2
+### Create
 ```
 New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -AccessPackageResourceScopeId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create1
+```
+New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
+ -AccessPackageResourceId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### Create2
+```
+New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
+ -AccessPackageResourceScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateExpanded1
@@ -33,43 +45,33 @@ New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
 New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
  -AccessPackageResourceId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create2
+### CreateExpanded2
 ```
 New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -AccessPackageResourceScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -AccessPackageResourceScopeId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
-```
-New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -AccessPackageResourceId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgEntitlementManagementCatalogResourceScope -AccessPackageCatalogId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded2
+### CreateViaIdentity
 ```
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentity1
 ```
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity2
+```
+New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -77,29 +79,43 @@ New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanc
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentity2
+### CreateViaIdentityExpanded1
 ```
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentityExpanded2
 ```
 New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgEntitlementManagementCatalogResourceScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-IsRootScope] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to resourceScopes for identityGovernance
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -107,8 +123,8 @@ Create new navigation property to resourceScopes for identityGovernance
 The unique identifier of accessPackageCatalog
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateExpanded1, Create2, Create1, Create
+Type: System.String
+Parameter Sets: Create, Create1, Create2, CreateExpanded, CreateExpanded1, CreateExpanded2
 Aliases:
 
 Required: True
@@ -122,8 +138,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResource
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -137,8 +153,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceScope
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded2, Create2
+Type: System.String
+Parameter Sets: Create2, CreateExpanded2
 Aliases:
 
 Required: True
@@ -152,8 +168,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -168,8 +184,8 @@ accessPackageResourceScope
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceScope
-Parameter Sets: Create2, Create1, Create, CreateViaIdentity2, CreateViaIdentity1, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
+Parameter Sets: Create, Create1, Create2, CreateViaIdentity, CreateViaIdentity1, CreateViaIdentity2
 Aliases:
 
 Required: True
@@ -183,8 +199,8 @@ Accept wildcard characters: False
 The description of the scope.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -198,8 +214,8 @@ Accept wildcard characters: False
 The display name of the scope.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -214,8 +230,8 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -230,8 +246,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateViaIdentity2, CreateViaIdentity1, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentity1, CreateViaIdentity2, CreateViaIdentityExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
 Aliases:
 
 Required: True
@@ -245,8 +261,8 @@ Accept wildcard characters: False
 True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -260,8 +276,8 @@ Accept wildcard characters: False
 The unique identifier for the scope in the resource as defined in the origin system.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -275,8 +291,8 @@ Accept wildcard characters: False
 The origin system for the scope.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -291,8 +307,8 @@ accessPackageResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResource
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -306,7 +322,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -322,7 +338,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -339,10 +355,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
+
 ## NOTES
 
 ALIASES
@@ -488,8 +507,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[OriginId <String>]`: The unique identifier for the scope in the resource as defined in the origin system.
     - `[OriginSystem <String>]`: The origin system for the scope.
     - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingtranscriptcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaUserOnlineMeetingTranscriptContent
@@ -31,34 +30,38 @@ The content of the transcript.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt" 
+Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
+
+
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt" 
+Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
+
+
+
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -66,7 +69,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of callTranscript
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -82,7 +85,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -97,7 +100,7 @@ Accept wildcard characters: False
 The unique identifier of onlineMeeting
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -112,7 +115,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -127,7 +130,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -142,7 +145,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -159,9 +162,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -192,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetasummarizedevicemanagementuserexperienceanalyticremoteconnectiondeviceremoteconnection
 schema: 2.0.0
@@ -29,13 +29,29 @@ Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDevi
 ## DESCRIPTION
 Invoke function summarizeDeviceRemoteConnection
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Count
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -50,7 +66,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -66,7 +82,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: SummarizeViaIdentity
 Aliases:
 
@@ -81,7 +97,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -96,7 +112,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -111,7 +142,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -126,7 +157,7 @@ Accept wildcard characters: False
 Usage: summarizeBy='{summarizeBy}'
 
 ```yaml
-Type: UserExperienceAnalyticsSummarizedBy
+Type: Microsoft.Graph.Beta.PowerShell.Support.UserExperienceAnalyticsSummarizedBy
 Parameter Sets: Summarize
 Aliases:
 
@@ -141,24 +172,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named
@@ -173,9 +189,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesupdatableasset
 schema: 2.0.0
@@ -14,41 +14,44 @@ Delete an updatableAsset object.
 
 ### Delete (Default)
 ```
-Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId <String> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete an updatableAsset object.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
-This example shows how to use the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
-This example shows how to use the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
+
+
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
-This example shows how to use the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -56,7 +59,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -72,7 +75,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IWindowsUpdatesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -87,7 +90,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -102,7 +105,7 @@ Accept wildcard characters: False
 The unique identifier of updatableAsset
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -117,7 +120,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -133,7 +136,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -150,9 +153,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -173,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+

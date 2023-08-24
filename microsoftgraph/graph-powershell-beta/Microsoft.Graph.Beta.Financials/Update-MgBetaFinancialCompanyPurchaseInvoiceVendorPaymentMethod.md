@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanypurchaseinvoicevendorpaymentmethod
 schema: 2.0.0
@@ -14,32 +14,49 @@ Update the navigation property paymentMethod in financials
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentMethod -CompanyId <String> -PurchaseInvoiceId <String>
- [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentMethod -CompanyId <String>
+ -PurchaseInvoiceId <String> [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentMethod -CompanyId <String> -PurchaseInvoiceId <String>
- -BodyParameter <IMicrosoftGraphPaymentMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentMethod -CompanyId <String>
+ -PurchaseInvoiceId <String> -BodyParameter <IMicrosoftGraphPaymentMethod> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentMethod -InputObject <IFinancialsIdentity>
+ -BodyParameter <IMicrosoftGraphPaymentMethod> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentMethod -InputObject <IFinancialsIdentity>
  [-AdditionalProperties <Hashtable>] [-Code <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentMethod -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphPaymentMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property paymentMethod in financials
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -47,7 +64,7 @@ Update the navigation property paymentMethod in financials
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -63,7 +80,7 @@ paymentMethod
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPaymentMethod
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPaymentMethod
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -78,7 +95,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -93,8 +110,8 @@ Accept wildcard characters: False
 The unique identifier of company
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -108,7 +125,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +140,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -139,8 +156,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -154,7 +171,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -169,8 +186,8 @@ Accept wildcard characters: False
 The unique identifier of purchaseInvoice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -184,7 +201,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -200,7 +217,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -217,10 +234,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPaymentMethod
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPaymentMethod
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileapprelationship
 schema: 2.0.0
@@ -17,13 +17,19 @@ Update the navigation property relationships in deviceAppManagement
 Update-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> -MobileAppRelationshipId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetDisplayName <String>]
  [-TargetDisplayVersion <String>] [-TargetId <String>] [-TargetPublisher <String>]
- [-TargetType <MobileAppRelationshipType>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TargetType <MobileAppRelationshipType>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> -MobileAppRelationshipId <String>
- -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -31,17 +37,27 @@ Update-MgBetaDeviceAppManagementMobileAppRelationship -MobileAppId <String> -Mob
 Update-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetDisplayName <String>]
  [-TargetDisplayVersion <String>] [-TargetId <String>] [-TargetPublisher <String>]
- [-TargetType <MobileAppRelationshipType>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppRelationship> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TargetType <MobileAppRelationshipType>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property relationships in deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Update the navigation property relationships in deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -65,7 +81,7 @@ Describes a relationship between two mobile apps.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppRelationship
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppRelationship
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -81,7 +97,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -97,8 +113,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -112,8 +128,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -127,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppRelationship
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -142,7 +158,7 @@ Accept wildcard characters: False
 The target mobile app's display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -157,7 +173,7 @@ Accept wildcard characters: False
 The target mobile app's display version.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -172,7 +188,7 @@ Accept wildcard characters: False
 The target mobile app's app id.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -187,7 +203,7 @@ Accept wildcard characters: False
 The target mobile app's publisher.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -202,7 +218,7 @@ Accept wildcard characters: False
 Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 ```yaml
-Type: MobileAppRelationshipType
+Type: Microsoft.Graph.Beta.PowerShell.Support.MobileAppRelationshipType
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -217,7 +233,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -233,7 +249,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -250,10 +266,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppRelationship
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppRelationship
+
 ## NOTES
 
 ALIASES

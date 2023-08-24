@@ -139,6 +139,9 @@ Invoke action getAppsInstallSummaryReport
 ### [Get-MgBetaDeviceManagementReportAppStatusOverviewReport](Get-MgBetaDeviceManagementReportAppStatusOverviewReport.md)
 Invoke action getAppStatusOverviewReport
 
+### [Get-MgBetaDeviceManagementReportAutopilotDeploymentDeviceInformation](Get-MgBetaDeviceManagementReportAutopilotDeploymentDeviceInformation.md)
+Invoke action getAutopilotDeploymentDeviceInformation
+
 ### [Get-MgBetaDeviceManagementReportCachedReport](Get-MgBetaDeviceManagementReportCachedReport.md)
 Invoke action getCachedReport
 

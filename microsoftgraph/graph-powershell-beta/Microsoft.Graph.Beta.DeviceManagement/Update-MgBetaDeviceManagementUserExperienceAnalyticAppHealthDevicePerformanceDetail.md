@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticapphealthdeviceperformancedetail
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsAppHealthDevicePerformanceDetails in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,7 +17,7 @@ Update the navigation property userExperienceAnalyticsAppHealthDevicePerformance
 Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail
  -UserExperienceAnalyticsAppHealthDevicePerformanceDetailsId <String> [-AdditionalProperties <Hashtable>]
  [-AppDisplayName <String>] [-AppPublisher <String>] [-AppVersion <String>] [-DeviceDisplayName <String>]
- [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventType <String>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventType <String>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -28,7 +25,15 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDet
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail
  -UserExperienceAnalyticsAppHealthDevicePerformanceDetailsId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,19 +42,27 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDet
 Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>]
  [-AppPublisher <String>] [-AppVersion <String>] [-DeviceDisplayName <String>] [-DeviceId <String>]
- [-EventDateTime <DateTime>] [-EventType <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail
- -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-EventDateTime <DateTime>] [-EventType <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsAppHealthDevicePerformanceDetails in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -57,7 +70,7 @@ Update the navigation property userExperienceAnalyticsAppHealthDevicePerformance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -75,7 +88,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -92,7 +105,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,7 +123,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,7 +139,7 @@ The user experience analytics device performance entity contains device performa
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -143,7 +156,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +173,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -180,7 +193,7 @@ Returned by default.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +210,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +226,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,8 +242,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -244,8 +257,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -259,7 +272,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -275,7 +288,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -292,10 +305,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails
+
 ## NOTES
 
 ALIASES
@@ -456,8 +472,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail?view=graph-powershell-1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotification
 schema: 2.0.0
@@ -18,18 +18,34 @@ New-MgBetaSecurityAttackSimulationEndUserNotification [-AdditionalProperties <Ha
  [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-Details <IMicrosoftGraphEndUserNotificationDetail[]>] [-DisplayName <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
- [-NotificationType <String>] [-Source <String>] [-Status <String>] [-SupportedLocales <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-NotificationType <String>] [-Source <String>] [-Status <String>] [-SupportedLocales <String[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityAttackSimulationEndUserNotification -BodyParameter <IMicrosoftGraphEndUserNotification>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to endUserNotifications for security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +53,7 @@ Create new navigation property to endUserNotifications for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +69,7 @@ endUserNotification
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEndUserNotification
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndUserNotification
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +85,7 @@ emailIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +100,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +115,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +131,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEndUserNotificationDetail[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndUserNotificationDetail[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +146,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +162,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +178,7 @@ emailIdentity
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +193,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,7 +208,7 @@ Accept wildcard characters: False
 endUserNotificationType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +223,7 @@ Accept wildcard characters: False
 simulationContentSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +238,7 @@ Accept wildcard characters: False
 simulationContentStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +253,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -252,7 +268,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -268,7 +284,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -285,9 +301,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndUserNotification
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndUserNotification
+
 ## NOTES
 
 ALIASES

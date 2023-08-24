@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenoteresource
 schema: 2.0.0
@@ -10,39 +10,52 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to resources for groups
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteResource?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgGroupSiteOnenoteResource -GroupId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-ContentUrl <String>] [-Id <String>] [-Self <String>] [-WhatIf] [-Confirm]
+ [-ContentInputFile <String>] [-ContentUrl <String>] [-Id <String>] [-Self <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgGroupSiteOnenoteResource -GroupId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphOnenoteResource> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgGroupSiteOnenoteResource -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-ContentUrl <String>] [-Id <String>] [-Self <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnenoteResource> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgGroupSiteOnenoteResource -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphOnenoteResource>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgGroupSiteOnenoteResource -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContentInputFile <String>] [-ContentUrl <String>] [-Id <String>] [-Self <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to resources for groups
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -50,7 +63,7 @@ Create new navigation property to resources for groups
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +79,7 @@ onenoteResource
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnenoteResource
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteResource
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -81,7 +94,7 @@ Accept wildcard characters: False
 Input File for Content (The content stream)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +109,7 @@ Accept wildcard characters: False
 The URL for downloading the content
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -111,8 +124,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -127,7 +140,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,8 +156,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -159,7 +172,7 @@ The endpoint where you can get details about the page.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -174,8 +187,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -189,7 +202,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +218,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,10 +235,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteResource
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteResource
+
 ## NOTES
 
 ALIASES
@@ -283,5 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteResource?view=graph-powershell-beta)
 

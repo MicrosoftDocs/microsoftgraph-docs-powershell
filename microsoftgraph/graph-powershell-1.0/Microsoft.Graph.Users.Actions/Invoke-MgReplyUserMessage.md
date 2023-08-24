@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgReplyUserMessage
@@ -16,35 +15,32 @@ When using MIME format:\n- Provide the applicable Internet message headers and t
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to an existing message and send it later.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyUserMessage?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### ReplyExpanded (Default)
 ```
 Invoke-MgReplyUserMessage -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Reply
 ```
 Invoke-MgReplyUserMessage -MessageId <String> -UserId <String>
  -BodyParameter <IPaths1Inq4EUsersUserIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ReplyViaIdentityExpanded
-```
-Invoke-MgReplyUserMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReplyViaIdentity
 ```
 Invoke-MgReplyUserMessage -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Inq4EUsersUserIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ReplyViaIdentityExpanded
+```
+Invoke-MgReplyUserMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,7 +52,8 @@ This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to an existing message and send it later.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgReplyUserMessage Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -81,8 +78,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgReplyUserMessage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -90,7 +87,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -106,7 +103,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Inq4EUsersUserIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Inq4EUsersUserIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Reply, ReplyViaIdentity
 Aliases:
 
@@ -121,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -137,8 +134,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: ReplyViaIdentityExpanded, ReplyViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: ReplyViaIdentity, ReplyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -153,7 +150,7 @@ message
 To construct, see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessage
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -168,8 +165,8 @@ Accept wildcard characters: False
 The unique identifier of message
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
+Type: System.String
+Parameter Sets: Reply, ReplyExpanded
 Aliases:
 
 Required: True
@@ -183,7 +180,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -198,8 +195,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
+Type: System.String
+Parameter Sets: Reply, ReplyExpanded
 Aliases:
 
 Required: True
@@ -213,7 +210,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -229,7 +226,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -246,10 +243,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Inq4EUsersUserIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -427,7 +427,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
-[Invoke-MgBetaReplyUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyUserMessage?view=graph-powershell-beta)
 
-## RELATED LINKS
-[Invoke-MgBetaReplyUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyUserMessage?view=graph-powershell-beta)

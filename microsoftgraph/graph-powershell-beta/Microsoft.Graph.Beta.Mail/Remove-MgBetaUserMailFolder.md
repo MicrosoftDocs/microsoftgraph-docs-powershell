@@ -1,189 +1,54 @@
 ---
-external help file: Microsoft.Graph.Beta.Mail-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessagemention
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolder
 schema: 2.0.0
 ---
 
-# New-MgBetaUserMessageMention
+# Remove-MgBetaUserMailFolder
 
 ## SYNOPSIS
-Create new navigation property to mentions for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolder?view=graph-powershell-1.0)
+Delete the specified mailFolder.
+The folder can be a mailSearchFolder.
+You can specify a mail folder by its folder ID, or by its well-known folder name, if one exists.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Delete (Default)
 ```
-New-MgBetaUserMessageMention -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Application <String>] [-ClientReference <String>] [-CreatedBy <IMicrosoftGraphEmailAddress>]
- [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>] [-MentionText <String>]
- [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>] [-WhatIf] [-Confirm]
+Remove-MgBetaUserMailFolder -MailFolderId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### DeleteViaIdentity
+```
+Remove-MgBetaUserMailFolder -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### Create
-```
-New-MgBetaUserMessageMention -MessageId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMention>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaUserMessageMention -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
- [-Application <String>] [-ClientReference <String>] [-CreatedBy <IMicrosoftGraphEmailAddress>]
- [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>] [-MentionText <String>]
- [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaUserMessageMention -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMention> [-WhatIf]
- [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to mentions for users
+Delete the specified mailFolder.
+The folder can be a mailSearchFolder.
+You can specify a mail folder by its folder ID, or by its well-known folder name, if one exists.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
-```
-This example shows how to use the Remove-MgBetaUserMailFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -IfMatch
+ETag
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Application
-The name of the application where the mention is created.
-Optional.
-Not used and defaulted as null for message.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-mention
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphMention
-Parameter Sets: Create, CreateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ClientReference
-A unique identifier that represents a parent of the resource instance.
-Optional.
-Not used and defaulted as null for message.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreatedBy
-emailAddress
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphEmailAddress
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The date and time that the mention is created on the client.
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeepLink
-A deep web link to the context of the mention in the resource instance.
-Optional.
-Not used and defaulted as null for message.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Id
-The unique identifier for an entity.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -198,8 +63,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -209,45 +74,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Mentioned
-emailAddress
-To construct, see NOTES section for MENTIONED properties and create a hash table.
+### -MailFolderId
+The unique identifier of mailFolder
 
 ```yaml
-Type: IMicrosoftGraphEmailAddress
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MentionText
-Optional.
-Not used and defaulted as null for message.
-To get the mentions in a message, see the bodyPreview property of the message instead.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MessageId
-The unique identifier of message
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -257,14 +89,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ServerCreatedDateTime
-The date and time that the mention is created on the server.
-Optional.
-Not used and defaulted as null for message.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -278,8 +108,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -293,7 +123,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -309,7 +139,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -326,10 +156,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
+
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
+### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -338,26 +169,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphMention>`: mention
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
-  - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
-  - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of an entity instance.
-    - `[Name <String>]`: The display name of an entity instance.
-  - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
-  - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for message.
-  - `[MentionText <String>]`: Optional. Not used and defaulted as null for message. To get the mentions in a message, see the bodyPreview property of the message instead.
-  - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
-
-`CREATEDBY <IMicrosoftGraphEmailAddress>`: emailAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of an entity instance.
-  - `[Name <String>]`: The display name of an entity instance.
 
 `INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -371,10 +182,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
-`MENTIONED <IMicrosoftGraphEmailAddress>`: emailAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of an entity instance.
-  - `[Name <String>]`: The display name of an entity instance.
-
 ## RELATED LINKS
-[Remove-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolder?view=graph-powershell-1.0)
+

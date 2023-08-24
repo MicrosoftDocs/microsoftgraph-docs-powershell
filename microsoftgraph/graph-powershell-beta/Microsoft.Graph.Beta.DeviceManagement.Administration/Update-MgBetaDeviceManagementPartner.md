@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementpartner
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property deviceManagementPartners in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementPartner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -23,13 +20,19 @@ Update-MgBetaDeviceManagementPartner -DeviceManagementPartnerId <String> [-Addit
  [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
  [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
- [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementPartner -DeviceManagementPartnerId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementPartner> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementPartner> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementPartner> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,17 +43,27 @@ Update-MgBetaDeviceManagementPartner -InputObject <IDeviceManagementAdministrati
  [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
  [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
- [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementPartner> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceManagementPartners in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -58,7 +71,7 @@ Update the navigation property deviceManagementPartners in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +87,7 @@ Entity which represents a connection to device management partner.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementPartner
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -89,8 +102,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementPartner
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -104,7 +117,7 @@ Accept wildcard characters: False
 Partner display name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,7 +133,7 @@ User groups that specifies whether enrollment is through partner.
 To construct, see NOTES section for GROUPSREQUIRINGPARTNERENROLLMENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementPartnerAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementPartnerAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +149,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,8 +165,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -167,7 +180,7 @@ Accept wildcard characters: False
 Whether device management partner is configured or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,7 +195,7 @@ Accept wildcard characters: False
 Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +210,7 @@ Accept wildcard characters: False
 Partner App Type.
 
 ```yaml
-Type: DeviceManagementPartnerAppType
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementPartnerAppType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +225,7 @@ Accept wildcard characters: False
 Partner state of this tenant.
 
 ```yaml
-Type: DeviceManagementPartnerTenantState
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementPartnerTenantState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +240,7 @@ Accept wildcard characters: False
 Partner Single tenant App id
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +255,7 @@ Accept wildcard characters: False
 DateTime in UTC when PartnerDevices will be marked as NonCompliant
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +270,7 @@ Accept wildcard characters: False
 DateTime in UTC when PartnerDevices will be removed
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +285,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -288,7 +301,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -305,10 +318,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
+
 ## NOTES
 
 ALIASES
@@ -401,5 +417,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Update-MgDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementPartner?view=graph-powershell-1.0)
 

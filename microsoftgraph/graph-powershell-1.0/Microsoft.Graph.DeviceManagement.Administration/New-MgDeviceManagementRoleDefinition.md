@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition
 schema: 2.0.0
@@ -10,26 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new roleDefinition object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementRoleDefinition [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsBuiltIn] [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>]
- [-RolePermissions <IMicrosoftGraphRolePermission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RolePermissions <IMicrosoftGraphRolePermission[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefinition> [-WhatIf] [-Confirm]
+New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefinition> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new roleDefinition object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Create a new roleDefinition object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -59,7 +72,7 @@ Create custom roles if you want to define a role that allows any of the availabl
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -74,7 +87,7 @@ Accept wildcard characters: False
 Description of the Role definition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +102,7 @@ Accept wildcard characters: False
 Display Name of the Role definition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -105,7 +118,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +134,7 @@ Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +150,7 @@ List of Role assignments for this role definition.
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -154,7 +167,7 @@ These must match the actionName that is defined as part of the rolePermission.
 To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRolePermission[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRolePermission[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +182,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -185,7 +198,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -202,9 +215,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition
+
 ## NOTES
 
 ALIASES
@@ -254,5 +269,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
 

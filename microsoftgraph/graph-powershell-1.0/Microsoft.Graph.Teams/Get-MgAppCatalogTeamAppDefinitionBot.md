@@ -1,18 +1,14 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitionbot
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgAppCatalogTeamAppDefinitionBot
 
 ## SYNOPSIS
 Get the bot associated with a specific definition of the  TeamsApp.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,17 +28,13 @@ Get-MgAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandPrope
 Get the bot associated with a specific definition of the  TeamsApp.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
-
-```
-This example shows how to use the Get-MgAppCatalogTeamAppDefinitionBot Cmdlet.
-
 
 ## PARAMETERS
 
@@ -50,7 +42,7 @@ This example shows how to use the Get-MgAppCatalogTeamAppDefinitionBot Cmdlet.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -66,7 +58,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -81,7 +73,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -96,7 +88,7 @@ Accept wildcard characters: False
 The unique identifier of teamsAppDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -111,7 +103,7 @@ Accept wildcard characters: False
 The unique identifier of teamsApp
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -128,9 +120,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -175,4 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
+

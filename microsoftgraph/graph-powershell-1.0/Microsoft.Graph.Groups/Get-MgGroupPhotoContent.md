@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphotocontent
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get media content for the navigation property photo from groups
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupPhotoContent](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhotoContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,12 +23,12 @@ Get-MgGroupPhotoContent -GroupId <String> -ProfilePhotoId <String> -OutFile <Str
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
@@ -39,13 +36,29 @@ Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassT
 ## DESCRIPTION
 Get media content for the navigation property photo from groups
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -GroupId
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -61,8 +74,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -76,7 +89,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -91,7 +104,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -106,7 +119,7 @@ Accept wildcard characters: False
 The unique identifier of profilePhoto
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -123,9 +136,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -173,5 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupPhotoContent](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhotoContent?view=graph-powershell-beta)
 

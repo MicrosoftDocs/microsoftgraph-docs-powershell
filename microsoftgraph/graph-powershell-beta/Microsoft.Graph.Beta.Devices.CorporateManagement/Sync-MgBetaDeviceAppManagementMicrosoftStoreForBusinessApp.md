@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementmicrosoftstoreforbusinessapp
 schema: 2.0.0
@@ -10,18 +10,31 @@ schema: 2.0.0
 ## SYNOPSIS
 Syncs Intune account with Microsoft Store For Business
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
-Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp [-PassThru] [-WhatIf] [-Confirm]
+Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Syncs Intune account with Microsoft Store For Business
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -29,7 +42,7 @@ Syncs Intune account with Microsoft Store For Business
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -44,7 +57,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -60,7 +73,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -79,6 +92,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -86,5 +100,4 @@ ALIASES
 Sync-MgBetaDeviceAppMgtMicrosoftStoreGraphFPreBusinessApp
 
 ## RELATED LINKS
-[Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a auditEvent object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,32 +18,49 @@ Update-MgDeviceManagementAuditEvent -AuditEventId <String> [-Activity <String>] 
  [-ActivityOperationType <String>] [-ActivityResult <String>] [-ActivityType <String>]
  [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>] [-Category <String>]
  [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>] [-Id <String>]
- [-Resources <IMicrosoftGraphAuditResource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resources <IMicrosoftGraphAuditResource[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity> [-Activity <String>]
- [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>] [-ActivityResult <String>]
- [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>]
- [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>]
- [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphAuditEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuditEvent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
+ [-Activity <String>] [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>]
+ [-ActivityResult <String>] [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>]
+ [-AdditionalProperties <Hashtable>] [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>]
+ [-DisplayName <String>] [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a auditEvent object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -54,7 +68,7 @@ Update the properties of a auditEvent object.
 Friendly name of the activity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 The date time in UTC when the activity was performed.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +98,7 @@ Accept wildcard characters: False
 The HTTP operation type of the activity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +113,7 @@ Accept wildcard characters: False
 The result of the activity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +128,7 @@ Accept wildcard characters: False
 The type of activity that was being performed.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +144,7 @@ A class containing the properties for Audit Actor.
 To construct, see NOTES section for ACTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuditActor
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditActor
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +159,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,8 +174,8 @@ Accept wildcard characters: False
 The unique identifier of auditEvent
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -176,7 +190,7 @@ A class containing the properties for Audit Event.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuditEvent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -191,7 +205,7 @@ Accept wildcard characters: False
 Audit category.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -206,7 +220,7 @@ Accept wildcard characters: False
 Component name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +235,7 @@ Accept wildcard characters: False
 The client request Id that is used to correlate activity within the system.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +250,7 @@ Accept wildcard characters: False
 Event display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -252,7 +266,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -268,8 +282,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -284,7 +298,7 @@ Resources being modified.
 To construct, see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuditResource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditResource[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -299,7 +313,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -315,7 +329,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -332,10 +346,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent
+
 ## NOTES
 
 ALIASES
@@ -414,5 +431,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceId <String>]`: Audit resource's Id.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
 

@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/initialize-mgbetaeducationuserassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Initialize-MgBetaEducationUserAssignment
@@ -16,13 +15,13 @@ This action can only be performed by a teacher on currently inactive assignments
 
 ### Activate (Default)
 ```
-Initialize-MgBetaEducationUserAssignment -EducationAssignmentId <String> -EducationUserId <String> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Initialize-MgBetaEducationUserAssignment -EducationAssignmentId <String> -EducationUserId <String> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
-Initialize-MgBetaEducationUserAssignment -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Initialize-MgBetaEducationUserAssignment -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -30,13 +29,29 @@ Initialize-MgBetaEducationUserAssignment -InputObject <IEducationIdentity> [-Wha
 Activate an inactive educationAssignment to signal that the assignment has further action items for teachers and students.
 This action can only be performed by a teacher on currently inactive assignments.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Activate
 Aliases:
 
@@ -51,7 +66,7 @@ Accept wildcard characters: False
 The unique identifier of educationUser
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Activate
 Aliases:
 
@@ -67,7 +82,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: ActivateViaIdentity
 Aliases:
 
@@ -82,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -115,9 +130,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignment
+
 ## NOTES
 
 ALIASES

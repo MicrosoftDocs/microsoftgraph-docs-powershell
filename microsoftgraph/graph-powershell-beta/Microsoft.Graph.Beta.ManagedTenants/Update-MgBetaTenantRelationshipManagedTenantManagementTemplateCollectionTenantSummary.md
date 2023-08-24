@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatecollectiontenantsummary
 schema: 2.0.0
@@ -22,14 +22,22 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSu
  [-IncompleteUsersCount <Int32>] [-IneligibleStepsCount <Int32>] [-IsComplete] [-LastActionByUserId <String>]
  [-LastActionDateTime <DateTime>] [-ManagementTemplateCollectionDisplayName <String>]
  [-ManagementTemplateCollectionId <String>] [-RegressedStepsCount <Int32>] [-RegressedUsersCount <Int32>]
- [-TenantId <String>] [-UnlicensedUsersCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TenantId <String>] [-UnlicensedUsersCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
  -ManagementTemplateCollectionTenantSummaryId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
+ -InputObject <IManagedTenantsIdentity>
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -39,23 +47,31 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSu
  -InputObject <IManagedTenantsIdentity> [-AdditionalProperties <Hashtable>] [-CompleteStepsCount <Int32>]
  [-CompleteUsersCount <Int32>] [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
  [-DismissedStepsCount <Int32>] [-ExcludedUsersCount <Int32>] [-ExcludedUsersDistinctCount <Int32>]
- [-Id <String>] [-IncompleteStepsCount <Int32>] [-IncompleteUsersCount <Int32>] [-IneligibleStepsCount <Int32>]
- [-IsComplete] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
+ [-Id <String>] [-IncompleteStepsCount <Int32>] [-IncompleteUsersCount <Int32>]
+ [-IneligibleStepsCount <Int32>] [-IsComplete] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>]
  [-ManagementTemplateCollectionDisplayName <String>] [-ManagementTemplateCollectionId <String>]
  [-RegressedStepsCount <Int32>] [-RegressedUsersCount <Int32>] [-TenantId <String>]
- [-UnlicensedUsersCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
- -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UnlicensedUsersCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property managementTemplateCollectionTenantSummaries in tenantRelationships
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -63,7 +79,7 @@ Update the navigation property managementTemplateCollectionTenantSummaries in te
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +95,7 @@ managementTemplateCollectionTenantSummary
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -94,7 +110,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -109,7 +125,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -124,7 +140,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -139,7 +155,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -154,7 +170,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -169,7 +185,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +200,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +216,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +231,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -230,7 +246,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -245,7 +261,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -261,8 +277,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IManagedTenantsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -276,7 +292,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -291,7 +307,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -306,7 +322,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -321,7 +337,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -336,7 +352,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -351,8 +367,8 @@ Accept wildcard characters: False
 The unique identifier of managementTemplateCollectionTenantSummary
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -366,7 +382,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -381,7 +397,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -396,7 +412,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -411,7 +427,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -426,7 +442,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -442,7 +458,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -459,10 +475,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateCollectionTenantSummary
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicysettingstatesummary
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new deviceCompliancePolicySettingStateSummary object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,18 +19,34 @@ New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary [-AdditionalProp
  [-DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>] [-ErrorDeviceCount <Int32>]
  [-Id <String>] [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>]
  [-PlatformType <PolicyPlatformType>] [-RemediatedDeviceCount <Int32>] [-Setting <String>]
- [-SettingName <String>] [-UnknownDeviceCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SettingName <String>] [-UnknownDeviceCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new deviceCompliancePolicySettingStateSummary object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -41,7 +54,7 @@ Create a new deviceCompliancePolicySettingStateSummary object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -57,7 +70,7 @@ Device Compilance Policy Setting State summary across the account.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
 Parameter Sets: Create
 Aliases:
 
@@ -72,7 +85,7 @@ Accept wildcard characters: False
 Number of compliant devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +100,7 @@ Accept wildcard characters: False
 Number of conflict devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +116,7 @@ Not yet documented
 To construct, see NOTES section for DEVICECOMPLIANCESETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceSettingState[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceSettingState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +131,7 @@ Accept wildcard characters: False
 Number of error devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +147,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +162,7 @@ Accept wildcard characters: False
 Number of NonCompliant devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +177,7 @@ Accept wildcard characters: False
 Number of not applicable devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +192,7 @@ Accept wildcard characters: False
 Supported platform types for policies.
 
 ```yaml
-Type: PolicyPlatformType
+Type: Microsoft.Graph.PowerShell.Support.PolicyPlatformType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +207,7 @@ Accept wildcard characters: False
 Number of remediated devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +222,7 @@ Accept wildcard characters: False
 The setting class name and property name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -224,7 +237,7 @@ Accept wildcard characters: False
 Name of the setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +252,7 @@ Accept wildcard characters: False
 Number of unknown devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -254,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -270,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -287,9 +300,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
+
 ## NOTES
 
 ALIASES
@@ -341,5 +356,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
 

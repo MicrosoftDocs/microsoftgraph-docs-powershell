@@ -486,8 +486,9 @@ Get the number of the resource
 ### [Get-MgDirectoryDeletedItemCountAsUser](Get-MgDirectoryDeletedItemCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgDirectoryDeletedItemCountAsUser](Get-MgDirectoryDeletedItemCountAsUser.md)
-Get the number of the resource
+### [Get-MgDirectoryDeletedItemMemberGroup](Get-MgDirectoryDeletedItemMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectoryDeletedItemMemberObject](Get-MgDirectoryDeletedItemMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -584,8 +585,9 @@ Get the number of the resource
 ### [Get-MgDirectoryRoleMemberCountAsUser](Get-MgDirectoryRoleMemberCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgDirectoryRoleMemberCountAsUser](Get-MgDirectoryRoleMemberCountAsUser.md)
-Get the number of the resource
+### [Get-MgDirectoryRoleMemberGroup](Get-MgDirectoryRoleMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectoryRoleMemberObject](Get-MgDirectoryRoleMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -614,8 +616,9 @@ Get the number of the resource
 ### [Get-MgDirectoryRoleTemplateDelta](Get-MgDirectoryRoleTemplateDelta.md)
 Invoke function delta
 
-### [Get-MgDirectoryRoleTemplateDelta](Get-MgDirectoryRoleTemplateDelta.md)
-Invoke function delta
+### [Get-MgDirectoryRoleTemplateMemberGroup](Get-MgDirectoryRoleTemplateMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgDirectoryRoleTemplateMemberObject](Get-MgDirectoryRoleTemplateMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -756,8 +759,9 @@ Nullable.
 ### [Get-MgOrganizationExtensionCount](Get-MgOrganizationExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgOrganizationExtensionCount](Get-MgOrganizationExtensionCount.md)
-Get the number of the resource
+### [Get-MgOrganizationMemberGroup](Get-MgOrganizationMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgOrganizationMemberObject](Get-MgOrganizationMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.

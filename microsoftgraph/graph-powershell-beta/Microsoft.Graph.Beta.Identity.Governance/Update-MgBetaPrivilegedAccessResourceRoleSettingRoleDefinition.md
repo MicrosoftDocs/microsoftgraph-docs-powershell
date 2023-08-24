@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessresourcerolesettingroledefinition
 schema: 2.0.0
@@ -17,15 +17,21 @@ Update the navigation property roleDefinition in privilegedAccess
 Update-MgBetaPrivilegedAccessResourceRoleSettingRoleDefinition -GovernanceResourceId <String>
  -GovernanceRoleSettingId <String> -PrivilegedAccessId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-ExternalId <String>] [-Id <String>] [-Resource <IMicrosoftGraphGovernanceResource>]
- [-ResourceId <String>] [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ResourceId <String>] [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrivilegedAccessResourceRoleSettingRoleDefinition -GovernanceResourceId <String>
  -GovernanceRoleSettingId <String> -PrivilegedAccessId <String>
- -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaPrivilegedAccessResourceRoleSettingRoleDefinition -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,18 +39,28 @@ Update-MgBetaPrivilegedAccessResourceRoleSettingRoleDefinition -GovernanceResour
 Update-MgBetaPrivilegedAccessResourceRoleSettingRoleDefinition -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-ExternalId <String>] [-Id <String>]
  [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
- [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>] [-WhatIf] [-Confirm]
+ [-RoleSetting <IMicrosoftGraphGovernanceRoleSetting>] [-TemplateId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaPrivilegedAccessResourceRoleSettingRoleDefinition -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphGovernanceRoleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property roleDefinition in privilegedAccess
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +68,7 @@ Update the navigation property roleDefinition in privilegedAccess
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +84,7 @@ governanceRoleDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -83,7 +99,7 @@ Accept wildcard characters: False
 The display name of the role definition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +114,7 @@ Accept wildcard characters: False
 The external id of the role definition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,8 +129,8 @@ Accept wildcard characters: False
 The unique identifier of governanceResource
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -128,8 +144,8 @@ Accept wildcard characters: False
 The unique identifier of governanceRoleSetting
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -144,7 +160,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,8 +176,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -175,8 +191,8 @@ Accept wildcard characters: False
 The unique identifier of privilegedAccess
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -191,7 +207,7 @@ governanceResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceResource
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceResource
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +223,7 @@ Required.
 The id of the resource associated with the role definition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +239,7 @@ governanceRoleSetting
 To construct, see NOTES section for ROLESETTING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleSetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -238,7 +254,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -253,7 +269,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -269,7 +285,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -286,10 +302,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleDefinition
+
 ## NOTES
 
 ALIASES
@@ -647,8 +666,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleDefinitionId <String>]`: Required. The id of the role definition that the role setting is associated with.
   - `[UserEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now.
   - `[UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to activate his role assignment.
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

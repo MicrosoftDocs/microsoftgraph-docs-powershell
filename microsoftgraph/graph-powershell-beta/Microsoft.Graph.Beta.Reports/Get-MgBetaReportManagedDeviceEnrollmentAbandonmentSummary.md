@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmanageddeviceenrollmentabandonmentsummary
 schema: 2.0.0
@@ -27,13 +27,29 @@ Get-MgBetaReportManagedDeviceEnrollmentAbandonmentSummary -InputObject <IReports
 ## DESCRIPTION
 Metadata for Enrollment abandonment summary report
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Filter
 Usage: filter='{filter}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Managed
 Aliases:
 
@@ -49,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
 Parameter Sets: ManagedViaIdentity
 Aliases:
 
@@ -64,7 +80,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -79,7 +95,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -90,11 +106,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Usage: skip={skip}
+
+```yaml
+Type: System.Int32
+Parameter Sets: Managed
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SkipToken
 Usage: skipToken='{skipToken}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Managed
 Aliases:
 
@@ -109,24 +140,9 @@ Accept wildcard characters: False
 Usage: top={top}
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: Managed
 Aliases: Limit
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Usage: skip={skip}
-
-```yaml
-Type: Int32
-Parameter Sets: Managed
-Aliases:
 
 Required: True
 Position: Named
@@ -141,9 +157,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
