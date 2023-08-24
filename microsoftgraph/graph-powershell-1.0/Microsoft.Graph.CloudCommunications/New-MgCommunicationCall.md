@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
@@ -114,7 +114,7 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "\<Media Session Configuration\>"
+		blob = "<Media Session Configuration>"
 	}
 }
 
@@ -447,7 +447,7 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "\<Media Session Configuration\>"
+		blob = "<Media Session Configuration>"
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }

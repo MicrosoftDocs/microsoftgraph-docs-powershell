@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Users.Actions
 Module Guid: d850f946-8957-46dc-a4df-5f305a228a87
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions
