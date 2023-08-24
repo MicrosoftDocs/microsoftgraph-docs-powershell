@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingattendancereportattendancerecord
 schema: 2.0.0
@@ -17,31 +17,29 @@ Update the navigation property attendanceRecords in communications
 Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId <String>
  -MeetingAttendanceReportId <String> -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
  [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>] [-Id <String>]
- [-Identity <IMicrosoftGraphIdentity>] [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Identity <IMicrosoftGraphIdentity>] [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -AttendanceRecordId <String>
- -MeetingAttendanceReportId <String> -OnlineMeetingId <String>
- -BodyParameter <IMicrosoftGraphAttendanceRecord> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord
- -InputObject <ICloudCommunicationsIdentity> -BodyParameter <IMicrosoftGraphAttendanceRecord> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -MeetingAttendanceReportId <String> -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphAttendanceRecord>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord
- -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>] [-Id <String>]
- [-Identity <IMicrosoftGraphIdentity>] [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
+ [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-Role <String>]
+ [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphAttendanceRecord> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,14 +47,14 @@ Update the navigation property attendanceRecords in communications
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -69,7 +67,7 @@ Update the navigation property attendanceRecords in communications
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +83,7 @@ List of time periods between joining and leaving a meeting.
 To construct, see NOTES section for ATTENDANCEINTERVALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceInterval[]
+Type: IMicrosoftGraphAttendanceInterval[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of attendanceRecord
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -116,7 +114,7 @@ attendanceRecord
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord
+Type: IMicrosoftGraphAttendanceRecord
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -131,7 +129,7 @@ Accept wildcard characters: False
 Email address of the user associated with this attendance record.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +145,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +161,7 @@ identity
 To construct, see NOTES section for IDENTITY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentity
+Type: IMicrosoftGraphIdentity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,8 +177,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -194,8 +192,8 @@ Accept wildcard characters: False
 The unique identifier of meetingAttendanceReport
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -209,8 +207,8 @@ Accept wildcard characters: False
 The unique identifier of onlineMeeting
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -225,7 +223,7 @@ Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +238,7 @@ Accept wildcard characters: False
 Total duration of the attendances in seconds.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -255,7 +253,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -271,7 +269,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -288,13 +286,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord
-
 ## NOTES
 
 ALIASES
@@ -344,4 +339,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

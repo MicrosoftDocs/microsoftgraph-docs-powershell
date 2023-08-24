@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroleassignment
 schema: 2.0.0
@@ -16,13 +16,13 @@ Create a new deviceAndAppManagementRoleAssignment object.
 ```
 New-MgDeviceManagementRoleAssignment [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-Members <String[]>] [-ResourceScopes <String[]>]
- [-RoleDefinition <IMicrosoftGraphRoleDefinition>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RoleDefinition <IMicrosoftGraphRoleDefinition>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementRoleAssignment -BodyParameter <IMicrosoftGraphDeviceAndAppManagementRoleAssignment>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,14 +30,14 @@ Create a new deviceAndAppManagementRoleAssignment object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -50,7 +50,7 @@ Create a new deviceAndAppManagementRoleAssignment object.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ This applies to custom and built-in roles.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment
+Type: IMicrosoftGraphDeviceAndAppManagementRoleAssignment
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 Description of the Role Assignment.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 The display or friendly name of the role Assignment.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ The list of ids of role member security groups.
 These are IDs from Azure Active Directory.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +147,7 @@ List of ids of role scope member security groups.
 These are IDs from Azure Active Directory.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +169,7 @@ Create custom roles if you want to define a role that allows any of the availabl
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition
+Type: IMicrosoftGraphRoleDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -200,7 +200,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -217,11 +217,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment
-
 ## NOTES
 
 ALIASES
@@ -273,4 +271,3 @@ To create the parameters described below, construct a hash table containing the 
       - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
 ## RELATED LINKS
-

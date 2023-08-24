@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetapolicyfeaturerolloutpolicyapplytoproperty
 schema: 2.0.0
@@ -24,28 +24,28 @@ However, you can validate both the mail nickname and the display name and receiv
 ```
 Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty -FeatureRolloutPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EntityType <String>] [-MailNickname <String>]
- [-OnBehalfOfUserId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty -FeatureRolloutPolicyId <String>
  -BodyParameter <IPathsYhq3DgPoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ValidateViaIdentity
-```
-Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IPathsYhq3DgPoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentityExpanded
 ```
 Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EntityType <String>] [-MailNickname <String>]
- [-OnBehalfOfUserId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ValidateViaIdentity
+```
+Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IPathsYhq3DgPoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,7 +61,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 ```
@@ -81,7 +81,7 @@ Test-MgBetaDirectoryObjectProperty -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsYhq3DgPoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+Type: IPathsYhq3DgPoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate, ValidateViaIdentity
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -142,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of featureRolloutPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Validate, ValidateExpanded
+Type: String
+Parameter Sets: ValidateExpanded, Validate
 Aliases:
 
 Required: True
@@ -158,8 +158,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: ValidateViaIdentity, ValidateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: ValidateViaIdentityExpanded, ValidateViaIdentity
 Aliases:
 
 Required: True
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -234,7 +234,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -251,13 +251,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsYhq3DgPoliciesFeaturerolloutpoliciesFeaturerolloutpolicyIdAppliestoMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -351,4 +348,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

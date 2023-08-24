@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotectionpolicy
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update the navigation property policy in informationProtection
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaInformationProtectionPolicy [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Labels <IMicrosoftGraphInformationProtectionLabel[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Labels <IMicrosoftGraphInformationProtectionLabel[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaInformationProtectionPolicy -BodyParameter <IMicrosoftGraphInformationProtectionPolicy>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaInformationProtectionPolicy -BodyParameter <IMicrosoftGraphInformationProtectionPolicy> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,14 +29,14 @@ Update the navigation property policy in informationProtection
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -49,7 +49,7 @@ Update the navigation property policy in informationProtection
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ informationProtectionPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
+Type: IMicrosoftGraphInformationProtectionPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -81,7 +81,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for LABELS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel[]
+Type: IMicrosoftGraphInformationProtectionLabel[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,11 +145,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
-
 ## NOTES
 
 ALIASES
@@ -201,4 +199,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
-

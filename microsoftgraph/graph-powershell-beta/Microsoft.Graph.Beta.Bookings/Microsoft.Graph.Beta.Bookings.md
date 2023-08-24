@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Bookings
 Module Guid: 4705fd52-ac1a-43df-a248-832e1fefdbbd
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings
@@ -177,9 +177,6 @@ Get the number of the resource
 ### [Get-MgBetaVirtualEventSessionRegistration](Get-MgBetaVirtualEventSessionRegistration.md)
 Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
-### [Get-MgBetaVirtualEventSessionRegistrationCount](Get-MgBetaVirtualEventSessionRegistrationCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaVirtualEventSessionRegistrationCustomQuestion](Get-MgBetaVirtualEventSessionRegistrationCustomQuestion.md)
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
@@ -225,33 +222,6 @@ Get the number of the resource
 
 ### [Get-MgBetaVirtualEventWebinarRegistration](Get-MgBetaVirtualEventWebinarRegistration.md)
 Get registrations from solutions
-
-### [Get-MgBetaVirtualEventWebinarRegistrationConfiguration](Get-MgBetaVirtualEventWebinarRegistrationConfiguration.md)
-Get registrationConfiguration from solutions
-
-### [Get-MgBetaVirtualEventWebinarRegistrationCount](Get-MgBetaVirtualEventWebinarRegistrationCount.md)
-Get the number of the resource
-
-### [Get-MgBetaVirtualEventWebinarRegistrationSession](Get-MgBetaVirtualEventWebinarRegistrationSession.md)
-Get sessions from solutions
-
-### [Get-MgBetaVirtualEventWebinarRegistrationSessionAlternativeRecording](Get-MgBetaVirtualEventWebinarRegistrationSessionAlternativeRecording.md)
-The content stream of the alternative recording of a Microsoft Teams live event.
-Read-only.
-
-### [Get-MgBetaVirtualEventWebinarRegistrationSessionAttendeeReport](Get-MgBetaVirtualEventWebinarRegistrationSessionAttendeeReport.md)
-The content stream of the attendee report of a Teams live event.
-Read-only.
-
-### [Get-MgBetaVirtualEventWebinarRegistrationSessionBroadcastRecording](Get-MgBetaVirtualEventWebinarRegistrationSessionBroadcastRecording.md)
-Get broadcastRecording for the navigation property sessions from solutions
-
-### [Get-MgBetaVirtualEventWebinarRegistrationSessionCount](Get-MgBetaVirtualEventWebinarRegistrationSessionCount.md)
-Get the number of the resource
-
-### [Get-MgBetaVirtualEventWebinarRegistrationSessionRecording](Get-MgBetaVirtualEventWebinarRegistrationSessionRecording.md)
-The content stream of the recording of a Teams live event.
-Read-only.
 
 ### [Get-MgBetaVirtualEventWebinarSession](Get-MgBetaVirtualEventWebinarSession.md)
 Read the properties and relationships of a virtualEventSession object.
@@ -308,9 +278,6 @@ Get the number of the resource
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistration](Get-MgBetaVirtualEventWebinarSessionRegistration.md)
 Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
-
-### [Get-MgBetaVirtualEventWebinarSessionRegistrationCount](Get-MgBetaVirtualEventWebinarSessionRegistrationCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion](Get-MgBetaVirtualEventWebinarSessionRegistrationCustomQuestion.md)
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
@@ -413,9 +380,6 @@ Create new navigation property to webinars for solutions
 
 ### [New-MgBetaVirtualEventWebinarPresenter](New-MgBetaVirtualEventWebinarPresenter.md)
 Create new navigation property to presenters for solutions
-
-### [New-MgBetaVirtualEventWebinarRegistration](New-MgBetaVirtualEventWebinarRegistration.md)
-Create new navigation property to registrations for solutions
 
 ### [New-MgBetaVirtualEventWebinarSession](New-MgBetaVirtualEventWebinarSession.md)
 Create new navigation property to sessions for solutions
@@ -545,9 +509,6 @@ Delete navigation property webinars for solutions
 ### [Remove-MgBetaVirtualEventWebinarPresenter](Remove-MgBetaVirtualEventWebinarPresenter.md)
 Delete navigation property presenters for solutions
 
-### [Remove-MgBetaVirtualEventWebinarRegistration](Remove-MgBetaVirtualEventWebinarRegistration.md)
-Delete navigation property registrations for solutions
-
 ### [Remove-MgBetaVirtualEventWebinarSession](Remove-MgBetaVirtualEventWebinarSession.md)
 Delete navigation property sessions for solutions
 
@@ -606,21 +567,6 @@ Read-only.
 
 ### [Set-MgBetaVirtualEventSessionTranscriptMetadataContent](Set-MgBetaVirtualEventSessionTranscriptMetadataContent.md)
 The time-aligned metadata of the utterances in the transcript.
-Read-only.
-
-### [Set-MgBetaVirtualEventWebinarRegistrationSessionAlternativeRecording](Set-MgBetaVirtualEventWebinarRegistrationSessionAlternativeRecording.md)
-The content stream of the alternative recording of a Microsoft Teams live event.
-Read-only.
-
-### [Set-MgBetaVirtualEventWebinarRegistrationSessionAttendeeReport](Set-MgBetaVirtualEventWebinarRegistrationSessionAttendeeReport.md)
-The content stream of the attendee report of a Teams live event.
-Read-only.
-
-### [Set-MgBetaVirtualEventWebinarRegistrationSessionBroadcastRecording](Set-MgBetaVirtualEventWebinarRegistrationSessionBroadcastRecording.md)
-Update broadcastRecording for the navigation property sessions in solutions
-
-### [Set-MgBetaVirtualEventWebinarRegistrationSessionRecording](Set-MgBetaVirtualEventWebinarRegistrationSessionRecording.md)
-The content stream of the recording of a Teams live event.
 Read-only.
 
 ### [Set-MgBetaVirtualEventWebinarSessionAlternativeRecording](Set-MgBetaVirtualEventWebinarSessionAlternativeRecording.md)
@@ -759,9 +705,6 @@ Update the navigation property webinars in solutions
 
 ### [Update-MgBetaVirtualEventWebinarPresenter](Update-MgBetaVirtualEventWebinarPresenter.md)
 Update the navigation property presenters in solutions
-
-### [Update-MgBetaVirtualEventWebinarRegistration](Update-MgBetaVirtualEventWebinarRegistration.md)
-Update the navigation property registrations in solutions
 
 ### [Update-MgBetaVirtualEventWebinarSession](Update-MgBetaVirtualEventWebinarSession.md)
 Update the navigation property sessions in solutions

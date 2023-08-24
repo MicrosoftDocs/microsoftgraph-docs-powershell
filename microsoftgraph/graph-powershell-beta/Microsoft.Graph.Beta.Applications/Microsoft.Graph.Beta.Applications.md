@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Applications
 Module Guid: adda8768-d0d1-4b2a-85b7-d77ba706ed67
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications
@@ -15,7 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 Add a key credential to an application.
 This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
+Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
 ### [Add-MgBetaApplicationPassword](Add-MgBetaApplicationPassword.md)
@@ -85,9 +85,6 @@ Get the properties and relationships of an application object.
 ### [Get-MgBetaApplicationById](Get-MgBetaApplicationById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
-
-### [Get-MgBetaApplicationByUniqueName](Get-MgBetaApplicationByUniqueName.md)
-Get the properties and relationships of an application object.
 
 ### [Get-MgBetaApplicationConnectorGroup](Get-MgBetaApplicationConnectorGroup.md)
 The connectorGroup the application is using with Azure AD Application Proxy.
@@ -879,11 +876,6 @@ Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 
-### [Remove-MgBetaApplicationByUniqueName](Remove-MgBetaApplicationByUniqueName.md)
-Deletes an application.
-When deleted, apps are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-
 ### [Remove-MgBetaApplicationConnectorGroupByRef](Remove-MgBetaApplicationConnectorGroupByRef.md)
 Delete ref of navigation property connectorGroup for applications
 
@@ -1143,9 +1135,6 @@ Validate that the credentials are valid in the tenant.
 Update the properties of an application object.
 
 ### [Update-MgBetaApplicationByAppId](Update-MgBetaApplicationByAppId.md)
-Update the properties of an application object.
-
-### [Update-MgBetaApplicationByUniqueName](Update-MgBetaApplicationByUniqueName.md)
 Update the properties of an application object.
 
 ### [Update-MgBetaApplicationExtensionProperty](Update-MgBetaApplicationExtensionProperty.md)

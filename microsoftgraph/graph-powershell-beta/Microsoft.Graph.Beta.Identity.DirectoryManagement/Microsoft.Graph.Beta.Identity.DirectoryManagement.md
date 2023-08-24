@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 Module Guid: 285892f9-aa58-40a6-a742-173822184cfa
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement
@@ -340,9 +340,8 @@ Get the number of the resource
 ### [Get-MgBetaContractDelta](Get-MgBetaContractDelta.md)
 Invoke function delta
 
-### [Get-MgBetaContractMemberGroup](Get-MgBetaContractMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgBetaContractDelta](Get-MgBetaContractDelta.md)
+Invoke function delta
 
 ### [Get-MgBetaContractMemberObject](Get-MgBetaContractMemberObject.md)
 Invoke action getMemberObjects
@@ -386,9 +385,8 @@ Nullable.
 ### [Get-MgBetaDeviceExtensionCount](Get-MgBetaDeviceExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceMemberGroup](Get-MgBetaDeviceMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgBetaDeviceExtensionCount](Get-MgBetaDeviceExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaDeviceMemberObject](Get-MgBetaDeviceMemberObject.md)
 Invoke action getMemberObjects
@@ -677,9 +675,8 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryDeletedItemCountAsUser](Get-MgBetaDirectoryDeletedItemCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryDeletedItemMemberGroup](Get-MgBetaDirectoryDeletedItemMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgBetaDirectoryDeletedItemCountAsUser](Get-MgBetaDirectoryDeletedItemCountAsUser.md)
+Get the number of the resource
 
 ### [Get-MgBetaDirectoryDeletedItemMemberObject](Get-MgBetaDirectoryDeletedItemMemberObject.md)
 Invoke action getMemberObjects
@@ -840,9 +837,8 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryRoleMemberCountAsUser](Get-MgBetaDirectoryRoleMemberCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryRoleMemberGroup](Get-MgBetaDirectoryRoleMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgBetaDirectoryRoleMemberCountAsUser](Get-MgBetaDirectoryRoleMemberCountAsUser.md)
+Get the number of the resource
 
 ### [Get-MgBetaDirectoryRoleMemberObject](Get-MgBetaDirectoryRoleMemberObject.md)
 Invoke action getMemberObjects
@@ -868,9 +864,8 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryRoleTemplateDelta](Get-MgBetaDirectoryRoleTemplateDelta.md)
 Invoke function delta
 
-### [Get-MgBetaDirectoryRoleTemplateMemberGroup](Get-MgBetaDirectoryRoleTemplateMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgBetaDirectoryRoleTemplateDelta](Get-MgBetaDirectoryRoleTemplateDelta.md)
+Invoke function delta
 
 ### [Get-MgBetaDirectoryRoleTemplateMemberObject](Get-MgBetaDirectoryRoleTemplateMemberObject.md)
 Invoke action getMemberObjects
@@ -1062,9 +1057,8 @@ Nullable.
 ### [Get-MgBetaOrganizationExtensionCount](Get-MgBetaOrganizationExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaOrganizationMemberGroup](Get-MgBetaOrganizationMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgBetaOrganizationExtensionCount](Get-MgBetaOrganizationExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaOrganizationMemberObject](Get-MgBetaOrganizationMemberObject.md)
 Invoke action getMemberObjects
@@ -1148,9 +1142,6 @@ On the specified date and time, Azure AD will automatically mark the status of t
 ### [Invoke-MgBetaPromoteDomain](Invoke-MgBetaPromoteDomain.md)
 Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
-
-### [Invoke-MgBetaPromoteDomainToInitial](Invoke-MgBetaPromoteDomainToInitial.md)
-Invoke action promoteToInitial
 
 ### [Invoke-MgBetaReactivateDirectoryImpactedResource](Invoke-MgBetaReactivateDirectoryImpactedResource.md)
 Reactivate an accidentally dismissed, completed, or postponed impactedResource object.

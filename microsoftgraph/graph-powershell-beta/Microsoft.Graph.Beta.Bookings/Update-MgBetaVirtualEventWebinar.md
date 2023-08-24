@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinar
 schema: 2.0.0
@@ -19,22 +19,14 @@ Update-MgBetaVirtualEventWebinar -VirtualEventWebinarId <String> [-AdditionalPro
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <String>] [-DisplayName <String>]
  [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
- [-RegistrationConfiguration <IMicrosoftGraphVirtualEventRegistrationConfiguration>]
- [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
- [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Registration <IMicrosoftGraphVirtualEventRegistration>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaVirtualEventWebinar -VirtualEventWebinarId <String>
- -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -44,10 +36,14 @@ Update-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity> [-AdditionalPr
  [-CreatedBy <IMicrosoftGraphCommunicationsIdentitySet>] [-Description <String>] [-DisplayName <String>]
  [-EndDateTime <IMicrosoftGraphDateTimeZone>] [-Id <String>]
  [-Presenters <IMicrosoftGraphVirtualEventPresenter[]>]
- [-RegistrationConfiguration <IMicrosoftGraphVirtualEventRegistrationConfiguration>]
- [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
- [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Registration <IMicrosoftGraphVirtualEventRegistration>] [-Sessions <IMicrosoftGraphVirtualEventSession[]>]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,19 +51,15 @@ Update the navigation property webinars in solutions
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -75,7 +67,7 @@ Update the navigation property webinars in solutions
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -90,7 +82,7 @@ Accept wildcard characters: False
 meetingAudience
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +98,7 @@ virtualEventWebinar
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
+Type: IMicrosoftGraphVirtualEventWebinar
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -122,7 +114,7 @@ Identity information of co-organizers of the webinar.
 To construct, see NOTES section for COORGANIZERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommunicationsUserIdentity[]
+Type: IMicrosoftGraphCommunicationsUserIdentity[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -138,7 +130,7 @@ communicationsIdentitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommunicationsIdentitySet
+Type: IMicrosoftGraphCommunicationsIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,7 +145,7 @@ Accept wildcard characters: False
 Description of the virtual event.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +160,7 @@ Accept wildcard characters: False
 Display name of the virtual event
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +176,7 @@ dateTimeTimeZone
 To construct, see NOTES section for ENDDATETIME properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Type: IMicrosoftGraphDateTimeZone
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +192,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,8 +208,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IBookingsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -232,7 +224,7 @@ Presenters' information of the virtual event.
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventPresenter[]
+Type: IMicrosoftGraphVirtualEventPresenter[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -243,28 +235,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RegistrationConfiguration
-virtualEventRegistrationConfiguration
-To construct, see NOTES section for REGISTRATIONCONFIGURATION properties and create a hash table.
+### -Registration
+virtualEventRegistration
+To construct, see NOTES section for REGISTRATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventRegistrationConfiguration
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Registrations
-.
-To construct, see NOTES section for REGISTRATIONS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventRegistration[]
+Type: IMicrosoftGraphVirtualEventRegistration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,7 +256,7 @@ Sessions of the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventSession[]
+Type: IMicrosoftGraphVirtualEventSession[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -296,7 +272,7 @@ dateTimeTimeZone
 To construct, see NOTES section for STARTDATETIME properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Type: IMicrosoftGraphDateTimeZone
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -311,7 +287,7 @@ Accept wildcard characters: False
 virtualEventStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -326,8 +302,8 @@ Accept wildcard characters: False
 The unique identifier of virtualEventWebinar
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -341,7 +317,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -357,7 +333,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -374,13 +350,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
-
 ## NOTES
 
 ALIASES
@@ -1034,3 +1007,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

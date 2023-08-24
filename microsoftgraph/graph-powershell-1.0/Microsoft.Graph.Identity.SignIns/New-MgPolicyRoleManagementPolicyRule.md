@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyrolemanagementpolicyrule
 schema: 2.0.0
@@ -16,26 +16,26 @@ Create new navigation property to rules for policies
 ```
 New-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyRule> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyRule> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyRule> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyRule> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,7 +43,7 @@ Create new navigation property to rules for policies
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 ```
@@ -56,7 +56,7 @@ Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRole
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ unifiedRoleManagementPolicyRule
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule
+Type: IMicrosoftGraphUnifiedRoleManagementPolicyRule
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -88,7 +88,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -104,8 +104,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -120,7 +120,7 @@ unifiedRoleManagementPolicyRuleTarget
 To construct, see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget
+Type: IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -135,8 +135,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleManagementPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -166,7 +166,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -183,13 +183,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule
-
 ## NOTES
 
 ALIASES
@@ -282,4 +279,3 @@ To create the parameters described below, construct a hash table containing the 
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-

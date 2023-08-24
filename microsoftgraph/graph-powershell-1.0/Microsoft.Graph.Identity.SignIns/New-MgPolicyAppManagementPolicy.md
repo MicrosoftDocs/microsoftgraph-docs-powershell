@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy
 schema: 2.0.0
@@ -17,12 +17,12 @@ Create an appManagementPolicy object.
 New-MgPolicyAppManagementPolicy [-AdditionalProperties <Hashtable>]
  [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsEnabled]
- [-Restrictions <IMicrosoftGraphAppManagementConfiguration>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Restrictions <IMicrosoftGraphAppManagementConfiguration>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagementPolicy> [-Confirm] [-WhatIf]
+New-MgPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagementPolicy> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,19 +31,15 @@ Create an appManagementPolicy object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -51,7 +47,7 @@ Create an appManagementPolicy object.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -67,7 +63,7 @@ Collection of applications and service principals to which the policy is applied
 To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +79,7 @@ appManagementPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
+Type: IMicrosoftGraphAppManagementPolicy
 Parameter Sets: Create
 Aliases:
 
@@ -99,7 +95,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +111,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +127,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +143,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +158,7 @@ Accept wildcard characters: False
 Denotes whether the policy is enabled.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +174,7 @@ appManagementConfiguration
 To construct, see NOTES section for RESTRICTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementConfiguration
+Type: IMicrosoftGraphAppManagementConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -209,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -226,11 +222,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
-
 ## NOTES
 
 ALIASES
@@ -277,4 +271,3 @@ To create the parameters described below, construct a hash table containing the 
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantalertruledefinition
 schema: 2.0.0
@@ -18,21 +18,14 @@ Update-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition -ManagedTenantAl
  [-AdditionalProperties <Hashtable>] [-AlertRules <IMicrosoftGraphManagedTenantsManagedTenantAlertRule[]>]
  [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
  [-DefinitionTemplate <IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>] [-DisplayName <String>]
- [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Confirm] [-WhatIf]
+ [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition -ManagedTenantAlertRuleDefinitionId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,7 +35,14 @@ Update-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition -InputObject <IM
  [-AdditionalProperties <Hashtable>] [-AlertRules <IMicrosoftGraphManagedTenantsManagedTenantAlertRule[]>]
  [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
  [-DefinitionTemplate <IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate>] [-DisplayName <String>]
- [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Confirm] [-WhatIf]
+ [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaTenantRelationshipManagedTenantAlertRuleDefinition -InputObject <IManagedTenantsIdentity>
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -51,19 +51,15 @@ Update the navigation property managedTenantAlertRuleDefinitions in tenantRelati
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -71,7 +67,7 @@ Update the navigation property managedTenantAlertRuleDefinitions in tenantRelati
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ALERTRULES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlertRule[]
+Type: IMicrosoftGraphManagedTenantsManagedTenantAlertRule[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -103,7 +99,7 @@ managedTenantAlertRuleDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition
+Type: IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -118,7 +114,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +145,7 @@ alertRuleDefinitionTemplate
 To construct, see NOTES section for DEFINITIONTEMPLATE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate
+Type: IMicrosoftGraphManagedTenantsAlertRuleDefinitionTemplate
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,7 +160,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -180,7 +176,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,8 +192,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IManagedTenantsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -211,7 +207,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +222,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -241,8 +237,8 @@ Accept wildcard characters: False
 The unique identifier of managedTenantAlertRuleDefinition
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -256,7 +252,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -272,7 +268,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -289,13 +285,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedTenantAlertRuleDefinition
-
 ## NOTES
 
 ALIASES
@@ -517,3 +510,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

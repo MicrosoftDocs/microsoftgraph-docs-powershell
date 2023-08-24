@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/resume-mgidentitygovernancelifecycleworkflowtemplatetaskprocessingresult
 schema: 2.0.0
@@ -18,8 +18,8 @@ For more information, see: Lifecycle Workflows extensibility approach.
 ```
 Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult -TaskId <String>
  -TaskProcessingResultId <String> -WorkflowTemplateId <String> [-AdditionalProperties <Hashtable>]
- [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>] [-Source <String>]
- [-Type <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>] [-Source <String>] [-Type <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Resume
@@ -27,7 +27,15 @@ Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult -TaskId
 Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult -TaskId <String>
  -TaskProcessingResultId <String> -WorkflowTemplateId <String>
  -BodyParameter <IPathsZ177NiIdentitygovernanceLifecycleworkflowsWorkflowtemplatesWorkflowtemplateIdTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ResumeViaIdentityExpanded
+```
+Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
+ [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>] [-Source <String>] [-Type <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResumeViaIdentity
@@ -35,15 +43,7 @@ Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult -TaskId
 Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPathsZ177NiIdentitygovernanceLifecycleworkflowsWorkflowtemplatesWorkflowtemplateIdTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ResumeViaIdentityExpanded
-```
-Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>] [-Source <String>]
- [-Type <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,19 +53,15 @@ For more information, see: Lifecycle Workflows extensibility approach.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -73,7 +69,7 @@ For more information, see: Lifecycle Workflows extensibility approach.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ResumeExpanded, ResumeViaIdentityExpanded
 Aliases:
 
@@ -89,7 +85,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsZ177NiIdentitygovernanceLifecycleworkflowsWorkflowtemplatesWorkflowtemplateIdTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema
+Type: IPathsZ177NiIdentitygovernanceLifecycleworkflowsWorkflowtemplatesWorkflowtemplateIdTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Resume, ResumeViaIdentity
 Aliases:
 
@@ -105,7 +101,7 @@ customTaskExtensionCallbackData
 To construct, see NOTES section for DATA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData
+Type: IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData
 Parameter Sets: ResumeExpanded, ResumeViaIdentityExpanded
 Aliases:
 
@@ -121,8 +117,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: ResumeViaIdentity, ResumeViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: ResumeViaIdentityExpanded, ResumeViaIdentity
 Aliases:
 
 Required: True
@@ -136,7 +132,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -151,7 +147,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ResumeExpanded, ResumeViaIdentityExpanded
 Aliases:
 
@@ -166,8 +162,8 @@ Accept wildcard characters: False
 The unique identifier of task
 
 ```yaml
-Type: System.String
-Parameter Sets: Resume, ResumeExpanded
+Type: String
+Parameter Sets: ResumeExpanded, Resume
 Aliases:
 
 Required: True
@@ -181,8 +177,8 @@ Accept wildcard characters: False
 The unique identifier of taskProcessingResult
 
 ```yaml
-Type: System.String
-Parameter Sets: Resume, ResumeExpanded
+Type: String
+Parameter Sets: ResumeExpanded, Resume
 Aliases:
 
 Required: True
@@ -196,7 +192,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ResumeExpanded, ResumeViaIdentityExpanded
 Aliases:
 
@@ -211,8 +207,8 @@ Accept wildcard characters: False
 The unique identifier of workflowTemplate
 
 ```yaml
-Type: System.String
-Parameter Sets: Resume, ResumeExpanded
+Type: String
+Parameter Sets: ResumeExpanded, Resume
 Aliases:
 
 Required: True
@@ -226,7 +222,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -242,7 +238,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -259,13 +255,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsZ177NiIdentitygovernanceLifecycleworkflowsWorkflowtemplatesWorkflowtemplateIdTasksTaskIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -352,4 +345,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

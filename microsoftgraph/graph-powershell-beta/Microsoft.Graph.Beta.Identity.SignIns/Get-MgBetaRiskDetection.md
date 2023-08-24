@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection
 schema: 2.0.0
@@ -14,9 +14,9 @@ Retrieve the properties of a collection of riskDetection objects.
 
 ### List (Default)
 ```
-Get-MgBetaRiskDetection [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
- [-PageSize <Int32>] [<CommonParameters>]
+Get-MgBetaRiskDetection [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
@@ -36,7 +36,7 @@ Retrieve the properties of a collection of riskDetection objects.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -All | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
@@ -53,7 +53,7 @@ Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
 Alice Su        unfamiliarFeatures            low       5/2/2022 12:01:44 AM
 Alice Su        unlikelyTravel                low       5/2/2022 2:16:22 AM
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "UserDisplayname eq 'Jason Mayer'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
@@ -68,7 +68,7 @@ Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
 Jason Mayer     unlikelyTravel                medium    4/21/2022 10:42:04 PM
 Jason Mayer     generic                       medium    4/23/2022 12:52:20 PM
 
-### -------------------------- EXAMPLE 3 --------------------------
+### EXAMPLE 3
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "RiskType eq 'anonymizedIPAddress'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
@@ -80,7 +80,7 @@ Jason Mayer     anonymizedIPAddress high      4/21/2022 9:50:28 PM
 Jason Mayer     anonymizedIPAddress medium    4/19/2022 10:44:40 PM
 Alex  Su        anonymizedIPAddress high      6/9/2022 4:31:19 AM
 
-### -------------------------- EXAMPLE 4 --------------------------
+### EXAMPLE 4
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskEvent.Read.All"
 Get-MgBetaRiskDetection -Filter "UserDisplayName eq 'Jason Mayer' and Risklevel eq 'high'" | Format-Table UserDisplayName, RiskType, RiskLevel, DetectedDateTime
@@ -97,7 +97,7 @@ Jason Mayer     unfamiliarFeatures            high      4/21/2022 10:07:33 PM
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -113,7 +113,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List
 Aliases: CV
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List
 Aliases:
 
@@ -159,7 +159,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Type: IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 The unique identifier of riskDetection
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -219,22 +219,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
+Type: String
 Parameter Sets: List
 Aliases:
 
@@ -249,7 +234,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -264,9 +249,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -281,11 +281,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskDetection
-
 ## NOTES
 
 ALIASES
@@ -372,4 +370,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

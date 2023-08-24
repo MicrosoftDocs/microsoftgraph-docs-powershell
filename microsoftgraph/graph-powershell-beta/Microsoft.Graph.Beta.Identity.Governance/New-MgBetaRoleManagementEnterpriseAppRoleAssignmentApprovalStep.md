@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapproleassignmentapprovalstep
 schema: 2.0.0
@@ -16,30 +16,29 @@ Create new navigation property to steps for roleManagement
 ```
 New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -ApprovalId <String>
  -RbacApplicationId <String> [-AdditionalProperties <Hashtable>] [-AssignedToMe] [-DisplayName <String>]
- [-Id <String>] [-Justification <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
- [-ReviewedDateTime <DateTime>] [-ReviewResult <String>] [-Status <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-Id <String>] [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
+ [-ReviewedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -ApprovalId <String>
- -RbacApplicationId <String> -BodyParameter <IMicrosoftGraphApprovalStep> [-Confirm] [-WhatIf]
+ -RbacApplicationId <String> -BodyParameter <IMicrosoftGraphApprovalStep> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphApprovalStep> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-AssignedToMe] [-DisplayName <String>] [-Id <String>]
- [-Justification <String>] [-ReviewedBy <IMicrosoftGraphIdentity>] [-ReviewedDateTime <DateTime>]
- [-ReviewResult <String>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphIdentity>]
+ [-ReviewedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphApprovalStep> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,19 +46,15 @@ Create new navigation property to steps for roleManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -67,7 +62,7 @@ Create new navigation property to steps for roleManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -82,8 +77,8 @@ Accept wildcard characters: False
 The unique identifier of approval
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -98,7 +93,7 @@ Indicates whether the step is assigned to the calling user to review.
 Read-only.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +109,7 @@ approvalStep
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApprovalStep
+Type: IMicrosoftGraphApprovalStep
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -130,7 +125,7 @@ The label provided by the policy creator to identify an approval step.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +141,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +157,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -177,7 +172,7 @@ Accept wildcard characters: False
 The justification associated with the approval step decision.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,8 +187,8 @@ Accept wildcard characters: False
 The unique identifier of rbacApplication
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -208,7 +203,7 @@ identity
 To construct, see NOTES section for REVIEWEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentity
+Type: IMicrosoftGraphIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +221,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +237,7 @@ The result of this approval record.
 Possible values include: NotReviewed, Approved, Denied.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -259,7 +254,7 @@ Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +269,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -290,7 +285,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -307,13 +302,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApprovalStep
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApprovalStep
-
 ## NOTES
 
 ALIASES
@@ -442,3 +434,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

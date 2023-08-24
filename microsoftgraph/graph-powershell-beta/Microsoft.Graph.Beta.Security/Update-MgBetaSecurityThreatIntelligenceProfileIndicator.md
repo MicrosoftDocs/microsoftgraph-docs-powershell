@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligenceprofileindicator
 schema: 2.0.0
@@ -16,28 +16,26 @@ Update the navigation property intelligenceProfileIndicators in security
 ```
 Update-MgBetaSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicatorId <String>
  [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>] [-FirstSeenDateTime <DateTime>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-Source <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-LastSeenDateTime <DateTime>] [-Source <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicatorId <String>
- -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfileIndicator> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfileIndicator> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfileIndicator> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>] [-FirstSeenDateTime <DateTime>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-Source <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-LastSeenDateTime <DateTime>] [-Source <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfileIndicator> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +43,15 @@ Update the navigation property intelligenceProfileIndicators in security
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +59,7 @@ Update the navigation property intelligenceProfileIndicators in security
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +74,7 @@ Accept wildcard characters: False
 artifact
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +90,7 @@ intelligenceProfileIndicator
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator
+Type: IMicrosoftGraphSecurityIntelligenceProfileIndicator
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -111,7 +105,7 @@ Accept wildcard characters: False
 Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +121,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,8 +137,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ISecurityIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -158,8 +152,8 @@ Accept wildcard characters: False
 The unique identifier of intelligenceProfileIndicator
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -173,7 +167,7 @@ Accept wildcard characters: False
 Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +182,7 @@ Accept wildcard characters: False
 indicatorSource
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +197,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -219,7 +213,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -236,13 +230,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator
-
 ## NOTES
 
 ALIASES
@@ -340,4 +331,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostfederationsignupclientcertificate
 schema: 2.0.0
@@ -18,7 +18,7 @@ This method returns an apiConnector.
 ```
 Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSignupClientCertificate
  -B2XIdentityUserFlowId <String> [-AdditionalProperties <Hashtable>] [-Password <String>]
- [-Pkcs12Value <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Pkcs12Value <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Upload
@@ -26,7 +26,14 @@ Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSig
 Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSignupClientCertificate
  -B2XIdentityUserFlowId <String>
  -BodyParameter <IPathsVcsnhbIdentityB2XuserflowsB2XidentityuserflowIdApiconnectorconfigurationPostfederationsignupMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UploadViaIdentityExpanded
+```
+Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSignupClientCertificate
+ -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-Password <String>]
+ [-Pkcs12Value <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UploadViaIdentity
@@ -34,14 +41,7 @@ Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSig
 Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSignupClientCertificate
  -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPathsVcsnhbIdentityB2XuserflowsB2XidentityuserflowIdApiconnectorconfigurationPostfederationsignupMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UploadViaIdentityExpanded
-```
-Invoke-MgBetaUploadIdentityB2XUserFlowApiConnectorConfigurationPostFederationSignupClientCertificate
- -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-Password <String>]
- [-Pkcs12Value <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,19 +51,15 @@ This method returns an apiConnector.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -71,7 +67,7 @@ This method returns an apiConnector.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -86,8 +82,8 @@ Accept wildcard characters: False
 The unique identifier of b2xIdentityUserFlow
 
 ```yaml
-Type: System.String
-Parameter Sets: Upload, UploadExpanded
+Type: String
+Parameter Sets: UploadExpanded, Upload
 Aliases:
 
 Required: True
@@ -102,7 +98,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsVcsnhbIdentityB2XuserflowsB2XidentityuserflowIdApiconnectorconfigurationPostfederationsignupMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema
+Type: IPathsVcsnhbIdentityB2XuserflowsB2XidentityuserflowIdApiconnectorconfigurationPostfederationsignupMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Upload, UploadViaIdentity
 Aliases:
 
@@ -118,8 +114,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UploadViaIdentity, UploadViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UploadViaIdentityExpanded, UploadViaIdentity
 Aliases:
 
 Required: True
@@ -133,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -148,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -163,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -179,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -196,13 +192,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsVcsnhbIdentityB2XuserflowsB2XidentityuserflowIdApiconnectorconfigurationPostfederationsignupMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
-
 ## NOTES
 
 ALIASES
@@ -294,4 +287,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

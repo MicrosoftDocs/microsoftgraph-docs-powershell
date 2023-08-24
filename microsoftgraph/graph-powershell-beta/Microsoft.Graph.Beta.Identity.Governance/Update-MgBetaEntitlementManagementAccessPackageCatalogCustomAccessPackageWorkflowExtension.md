@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension
 schema: 2.0.0
@@ -19,23 +19,14 @@ Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflo
  [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
  -AccessPackageCatalogId <String> -CustomAccessPackageWorkflowExtensionId <String>
- -BodyParameter <IMicrosoftGraphCustomAccessPackageWorkflowExtension> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
- -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphCustomAccessPackageWorkflowExtension> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomAccessPackageWorkflowExtension> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,7 +36,14 @@ Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflo
  [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
+ -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphCustomAccessPackageWorkflowExtension> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,14 +51,14 @@ Update the properties of an existing customAccessPackageWorkflowExtension object
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -73,8 +71,8 @@ Update the properties of an existing customAccessPackageWorkflowExtension object
 The unique identifier of accessPackageCatalog
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -88,7 +86,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -103,7 +101,7 @@ Accept wildcard characters: False
 customExtensionAuthenticationConfiguration
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +117,7 @@ customAccessPackageWorkflowExtension
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomAccessPackageWorkflowExtension
+Type: IMicrosoftGraphCustomAccessPackageWorkflowExtension
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -135,7 +133,7 @@ customExtensionClientConfiguration
 To construct, see NOTES section for CLIENTCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomExtensionClientConfiguration
+Type: IMicrosoftGraphCustomExtensionClientConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +150,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,8 +165,8 @@ Accept wildcard characters: False
 The unique identifier of customAccessPackageWorkflowExtension
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -182,7 +180,7 @@ Accept wildcard characters: False
 Description for the customCalloutExtension object.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +195,7 @@ Accept wildcard characters: False
 Display name for the customCalloutExtension object.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +210,7 @@ Accept wildcard characters: False
 customExtensionEndpointConfiguration
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -228,7 +226,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,8 +242,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -261,7 +259,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -276,7 +274,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -292,7 +290,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -309,13 +307,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomAccessPackageWorkflowExtension
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomAccessPackageWorkflowExtension
-
 ## NOTES
 
 ALIASES
@@ -446,3 +441,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

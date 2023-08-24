@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannel
 schema: 2.0.0
@@ -14,9 +14,15 @@ List of channels either hosted in or shared with the team (incoming channels).
 
 ### List (Default)
 ```
-Get-MgTeamChannel -TeamId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
- [-PageSize <Int32>] [<CommonParameters>]
+Get-MgTeamChannel -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgTeamChannel -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -25,9 +31,16 @@ Get-MgTeamChannel -ChannelId <String> -TeamId <String> [-ExpandProperty <String[
  [<CommonParameters>]
 ```
 
-### Get1
+### List1
 ```
-Get-MgTeamChannel -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgTeamChannel -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -37,32 +50,19 @@ Get-MgTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
-```
-Get-MgTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### List1
-```
-Get-MgTeamChannel -TeamId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
- [-PageSize <Int32>] [<CommonParameters>]
-```
-
 ## DESCRIPTION
 List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 ```
 
 Get-MgTeamChannel -TeamId $teamId
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
 ```
@@ -75,7 +75,7 @@ Get-MgTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: List, List1
 Aliases:
 
@@ -90,8 +90,8 @@ Accept wildcard characters: False
 The unique identifier of channel
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get1
+Type: String
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -106,7 +106,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List, List1
 Aliases: CV
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List, List1
 Aliases:
 
@@ -152,8 +152,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1
+Type: ITeamsIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List, List1
 Aliases:
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -197,22 +197,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: List, List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
+Type: String
 Parameter Sets: List, List1
 Aliases:
 
@@ -227,7 +212,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: List, List1
 Aliases: OrderBy
 
@@ -242,8 +227,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get1, List, List1
+Type: String
+Parameter Sets: List, Get1, Get, List1
 Aliases:
 
 Required: True
@@ -257,9 +242,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List, List1
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List, List1
+Aliases:
 
 Required: False
 Position: Named
@@ -274,11 +274,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel
-
 ## NOTES
 
 ALIASES
@@ -323,4 +321,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-

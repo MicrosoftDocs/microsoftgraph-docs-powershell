@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudience
 schema: 2.0.0
@@ -17,19 +17,13 @@ Update the navigation property audience in admin
 Update-MgBetaWindowsUpdatesPolicyAudience -UpdatePolicyId <String> [-AdditionalProperties <Hashtable>]
  [-ApplicableContent <IMicrosoftGraphWindowsUpdatesApplicableContent[]>]
  [-Exclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-Id <String>]
- [-Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaWindowsUpdatesPolicyAudience -UpdatePolicyId <String>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesDeploymentAudience> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesDeploymentAudience> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsUpdatesDeploymentAudience> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,7 +31,13 @@ Update-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity>
 Update-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity>
  [-AdditionalProperties <Hashtable>] [-ApplicableContent <IMicrosoftGraphWindowsUpdatesApplicableContent[]>]
  [-Exclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-Id <String>]
- [-Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsUpdatesDeploymentAudience> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ Update the navigation property audience in admin
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ Update the navigation property audience in admin
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +79,7 @@ Read-only.
 To construct, see NOTES section for APPLICABLECONTENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesApplicableContent[]
+Type: IMicrosoftGraphWindowsUpdatesApplicableContent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +95,7 @@ deploymentAudience
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeploymentAudience
+Type: IMicrosoftGraphWindowsUpdatesDeploymentAudience
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -115,7 +111,7 @@ Specifies the assets to exclude from the audience.
 To construct, see NOTES section for EXCLUSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +127,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,8 +143,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IWindowsUpdatesIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -163,7 +159,7 @@ Specifies the assets to include in the audience.
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,8 +174,8 @@ Accept wildcard characters: False
 The unique identifier of updatePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -193,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -209,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -226,13 +222,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeploymentAudience
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeploymentAudience
-
 ## NOTES
 
 ALIASES
@@ -287,4 +280,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
-

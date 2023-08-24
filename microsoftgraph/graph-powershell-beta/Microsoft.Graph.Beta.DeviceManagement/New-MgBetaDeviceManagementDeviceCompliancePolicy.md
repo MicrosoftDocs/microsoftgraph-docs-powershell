@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicy
 schema: 2.0.0
@@ -17,19 +17,19 @@ Create new navigation property to deviceCompliancePolicies for deviceManagement
 New-MgBetaDeviceManagementDeviceCompliancePolicy [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
- [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus[]>]
- [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
+ [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview>]
+ [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus[]>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
  [-ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]
- [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>]
- [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview>] [-Version <Int32>] [-Confirm] [-WhatIf]
+ [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview>]
+ [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>] [-Version <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,14 +37,14 @@ Create new navigation property to deviceCompliancePolicies for deviceManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -57,7 +57,7 @@ Create new navigation property to deviceCompliancePolicies for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ The collection of assignments for this compliance policy.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyAssignment[]
+Type: IMicrosoftGraphDeviceCompliancePolicyAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -91,7 +91,7 @@ Compliance policies are platform specific and individual per-platform compliance
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy
+Type: IMicrosoftGraphDeviceCompliancePolicy
 Parameter Sets: Create
 Aliases:
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 DateTime the object was created.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 Admin provided description of the Device Configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +137,7 @@ Compliance Setting State Device Summary
 To construct, see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSettingStateDeviceSummary[]
+Type: IMicrosoftGraphSettingStateDeviceSummary[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -153,7 +153,7 @@ List of DeviceComplianceDeviceStatus.
 To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceDeviceStatus[]
+Type: IMicrosoftGraphDeviceComplianceDeviceStatus[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +169,7 @@ deviceComplianceDeviceOverview
 To construct, see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceDeviceOverview
+Type: IMicrosoftGraphDeviceComplianceDeviceOverview
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 Admin provided name of the device configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -200,7 +200,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 DateTime the object was last modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -246,7 +246,7 @@ The list of scheduled action for this rule
 To construct, see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceScheduledActionForRule[]
+Type: IMicrosoftGraphDeviceComplianceScheduledActionForRule[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -262,7 +262,7 @@ List of DeviceComplianceUserStatus.
 To construct, see NOTES section for USERSTATUSES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceUserStatus[]
+Type: IMicrosoftGraphDeviceComplianceUserStatus[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -278,7 +278,7 @@ deviceComplianceUserOverview
 To construct, see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceUserOverview
+Type: IMicrosoftGraphDeviceComplianceUserOverview
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 Version of the device configuration.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -324,7 +324,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -341,11 +341,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy
-
 ## NOTES
 
 ALIASES
@@ -510,3 +508,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitecontenttypewithhubsite
 schema: 2.0.0
@@ -16,27 +16,27 @@ Associate a [content type][contentType] with a list of hub sites.
 ```
 Join-MgBetaSiteContentTypeWithHubSite -ContentTypeId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Associate
 ```
 Join-MgBetaSiteContentTypeWithHubSite -ContentTypeId <String> -SiteId <String>
  -BodyParameter <IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AssociateViaIdentityExpanded
+```
+Join-MgBetaSiteContentTypeWithHubSite -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssociateViaIdentity
 ```
 Join-MgBetaSiteContentTypeWithHubSite -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### AssociateViaIdentityExpanded
-```
-Join-MgBetaSiteContentTypeWithHubSite -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,7 +44,7 @@ Associate a [content type][contentType] with a list of hub sites.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
@@ -56,15 +56,13 @@ $params = @{
 Join-MgBetaSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +78,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Associate, AssociateViaIdentity
 Aliases:
 
@@ -95,8 +93,8 @@ Accept wildcard characters: False
 The unique identifier of contentType
 
 ```yaml
-Type: System.String
-Parameter Sets: Associate, AssociateExpanded
+Type: String
+Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
@@ -110,7 +108,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
@@ -126,8 +124,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-Parameter Sets: AssociateViaIdentity, AssociateViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: AssociateViaIdentityExpanded, AssociateViaIdentity
 Aliases:
 
 Required: True
@@ -141,7 +139,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -156,7 +154,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
@@ -171,8 +169,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Associate, AssociateExpanded
+Type: String
+Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
@@ -186,7 +184,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -202,7 +200,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -219,13 +217,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -290,4 +285,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

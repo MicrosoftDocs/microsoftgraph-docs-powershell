@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting
 schema: 2.0.0
@@ -16,13 +16,13 @@ Create a new cloudPcExternalPartnerSetting object.
 ```
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting [-AdditionalProperties <Hashtable>]
  [-EnableConnection] [-Id <String>] [-LastSyncDateTime <DateTime>] [-PartnerId <String>] [-Status <String>]
- [-StatusDetails <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StatusDetails <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
- -BodyParameter <IMicrosoftGraphCloudPcExternalPartnerSetting> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcExternalPartnerSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,7 +30,7 @@ Create a new cloudPcExternalPartnerSetting object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
@@ -41,15 +41,13 @@ $params = @{
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -65,7 +63,7 @@ cloudPcExternalPartnerSetting
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExternalPartnerSetting
+Type: IMicrosoftGraphCloudPcExternalPartnerSetting
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +81,7 @@ Required.
 Supports $filter (eq).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +97,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +114,7 @@ The Timestamp type represents the date and time information using ISO 8601 forma
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +129,7 @@ Accept wildcard characters: False
 The external partner ID.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +144,7 @@ Accept wildcard characters: False
 cloudPcExternalPartnerStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +159,7 @@ Accept wildcard characters: False
 Status details message.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,11 +207,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExternalPartnerSetting
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExternalPartnerSetting
-
 ## NOTES
 
 ALIASES
@@ -233,4 +229,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[StatusDetails <String>]`: Status details message.
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetarecorduserpendingaccessreviewinstancedecision
 schema: 2.0.0
@@ -17,28 +17,28 @@ If no IDs are specified, the decisions will apply to every accessReviewInstanceD
 ```
 Invoke-MgBetaRecordUserPendingAccessReviewInstanceDecision -AccessReviewInstanceId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
- [-ResourceId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Record
 ```
 Invoke-MgBetaRecordUserPendingAccessReviewInstanceDecision -AccessReviewInstanceId <String> -UserId <String>
  -BodyParameter <IPathsZwyhwbUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### RecordViaIdentity
-```
-Invoke-MgBetaRecordUserPendingAccessReviewInstanceDecision -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsZwyhwbUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RecordViaIdentityExpanded
 ```
 Invoke-MgBetaRecordUserPendingAccessReviewInstanceDecision -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
- [-ResourceId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RecordViaIdentity
+```
+Invoke-MgBetaRecordUserPendingAccessReviewInstanceDecision -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsZwyhwbUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,14 +47,14 @@ If no IDs are specified, the decisions will apply to every accessReviewInstanceD
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -67,8 +67,8 @@ If no IDs are specified, the decisions will apply to every accessReviewInstanceD
 The unique identifier of accessReviewInstance
 
 ```yaml
-Type: System.String
-Parameter Sets: Record, RecordExpanded
+Type: String
+Parameter Sets: RecordExpanded, Record
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsZwyhwbUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema
+Type: IPathsZwyhwbUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Record, RecordViaIdentity
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -129,8 +129,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: RecordViaIdentity, RecordViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: RecordViaIdentityExpanded, RecordViaIdentity
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
 Aliases:
 
@@ -204,8 +204,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Record, RecordExpanded
+Type: String
+Parameter Sets: RecordExpanded, Record
 Aliases:
 
 Required: True
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -235,7 +235,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -252,13 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsZwyhwbUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdDecisionsMicrosoftGraphRecordalldecisionsPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -318,4 +315,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-
