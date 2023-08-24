@@ -47,17 +47,21 @@ Update-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> -B
 Update the properties of a claimsMappingPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "UpdateClaimsPolicy"
 }
 
 Update-MgBetaPolicyClaimMappingPolicy -ClaimsMappingPolicyId $claimsMappingPolicyId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaPolicyClaimMappingPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

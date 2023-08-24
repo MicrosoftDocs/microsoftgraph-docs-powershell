@@ -42,11 +42,11 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You will need to register the calling bot and go through the list of permissions needed as mentioned below.
 
 ## EXAMPLES
+### Example 1: Create peer-to-peer VoIP call with service hosted media
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -78,10 +78,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example will create peer-to-peer voip call with service hosted media
+
+### Example 2: Create peer-to-peer VoIP call with application hosted media
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -123,10 +127,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example will create peer-to-peer voip call with application hosted media
+
+### Example 3: Create a group call with service hosted media
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -179,10 +187,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example will create a group call with service hosted media
+
+### Example 4: Create a group call with application hosted media
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -235,10 +247,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 5
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example will create a group call with application hosted media
+
+### Example 5: Join scheduled meeting with service hosted media
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -274,10 +290,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 6
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example will join scheduled meeting with service hosted media
+
+### Example 6: Join scheduled meeting with application hosted media
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -312,10 +332,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 7
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example will join scheduled meeting with application hosted media
+
+### Example 7: Join a scheduled meeting with joinMeetingId and passcode
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -338,10 +362,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 8
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example will join a scheduled meeting with joinmeetingid and passcode
+
+### Example 8: Join a scheduled meeting with joinMeetingId
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -364,10 +392,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 9
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example will join a scheduled meeting with joinmeetingid
+
+### Example 9: Create peer-to-peer PSTN call with service hosted media
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -410,10 +442,14 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-### EXAMPLE 10
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example will create peer-to-peer pstn call with service hosted media
+
+### Example 10: Create peer-to-peer PSTN call with application hosted media
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -456,6 +492,10 @@ $params = @{
 }
 
 New-MgCommunicationCall -BodyParameter $params
+
+```
+This example will### example 10: create peer-to-peer pstn call with application hosted media
+
 
 ## PARAMETERS
 

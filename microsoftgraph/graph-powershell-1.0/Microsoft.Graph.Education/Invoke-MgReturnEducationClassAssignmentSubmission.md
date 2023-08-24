@@ -36,13 +36,17 @@ This action changes the status of the submission from 'submitted' to 'returned' 
 This action can only be done by the teacher.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Invoke-MgReturnEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
+```
+This example shows how to use the Invoke-MgReturnEducationClassAssignmentSubmission Cmdlet.
+
 
 ## PARAMETERS
 

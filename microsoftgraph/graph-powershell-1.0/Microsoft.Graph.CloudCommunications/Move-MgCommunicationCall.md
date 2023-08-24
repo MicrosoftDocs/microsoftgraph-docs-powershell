@@ -51,11 +51,11 @@ A consultative transfer means that the transferor can inform the person they wan
 This is opposed to transfering the call directly.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	transferTarget = @{
@@ -71,10 +71,14 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the Move-MgCommunicationCall Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	transferTarget = @{
@@ -94,10 +98,14 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the Move-MgCommunicationCall Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	transferTarget = @{
@@ -119,10 +127,14 @@ $params = @{
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.CloudCommunications
 ```
+This example shows how to use the Move-MgCommunicationCall Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
 
 $params = @{
 	transferTarget = @{
@@ -146,6 +158,10 @@ $params = @{
 }
 
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Move-MgCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

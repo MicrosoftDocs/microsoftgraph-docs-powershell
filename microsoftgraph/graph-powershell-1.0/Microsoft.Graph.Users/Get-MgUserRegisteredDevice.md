@@ -30,16 +30,18 @@ Get-MgUserPhotoCount -InputObject <IUsersIdentity> [-Filter <String>] [<CommonPa
 Get the number of the resource
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Users
+
+# A UPN can also be used as -UserId.
+Get-MgUserRegisteredDevice -UserId $userId
+
 ```
+This example shows how to use the Get-MgUserRegisteredDevice Cmdlet.
+
 
 ## PARAMETERS
 

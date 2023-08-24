@@ -47,8 +47,7 @@ Set-MgUserPresence -InputObject <IUsersActionsIdentity>
 Set the state of a user's presence session as an application.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Set-MgUserPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -59,6 +58,8 @@ $params = @{
 }
 Set-MgUserPresence -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Set-MgUserPresence Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -38,11 +38,11 @@ New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm] [<Commo
 Create a new chat object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -66,10 +66,14 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example shows how to use the New-MgBetaChat Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	chatType = "group"
@@ -101,10 +105,14 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example shows how to use the New-MgBetaChat Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	chatType = "oneOnOne"
@@ -133,10 +141,14 @@ $params = @{
 
 New-MgBetaChat -BodyParameter $params
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example shows how to use the New-MgBetaChat Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	chatType = "group"
@@ -167,6 +179,10 @@ $params = @{
 }
 
 New-MgBetaChat -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaChat Cmdlet.
+
 
 ## PARAMETERS
 

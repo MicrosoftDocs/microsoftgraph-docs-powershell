@@ -42,20 +42,23 @@ New-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> [-W
 Create new navigation property to extensions for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Users
+
+$params = @{
+	displayName = "Project expenses"
+	color = "preset9"
+}
+
+# A UPN can also be used as -UserId.
+New-MgUserOutlookMasterCategory -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgUserOutlookMasterCategory Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

@@ -49,13 +49,17 @@ Get-MgEntitlementManagementAssignmentRequest [-ExpandProperty <String[]>] [-Prop
 In Azure AD entitlement management, retrieve the properties and relationships of an  accessPackageAssignmentRequest object.
 
 ## EXAMPLES
+### Example scenarios for using query parameters
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignmentRequest
+
+```
+This example will### example scenarios for using query parameters
+
 
 ## PARAMETERS
 
