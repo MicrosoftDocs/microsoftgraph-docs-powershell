@@ -172,15 +172,8 @@ function Get-ExternalDocsUrl {
                     WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $File
                 }
                 else {
-                    #Add report for missing external docs url 
-                    #Version UriPath Command #Module
-                    $Folder = "$MissingMsProdHeaderPath\$Module"
-                    #Create folder if it doesn't exist
-                    if (-not (Test-Path $Folder)) {
-                        New-Item -ItemType Directory -Force -Path $Folder
-                    }
                     #Create file if it doesn't exist
-                    $MissingMetaData = "$Folder\$Module.csv"
+                    $MissingMetaData = "$MissingMsProdHeaderPath\MissingMsProd.csv"
                     if (-not (Test-Path $MissingMetaData)) {
                         "Graph profile, Command, UriPath" | Out-File -FilePath  $MissingMetaData -Encoding ASCII
                     }

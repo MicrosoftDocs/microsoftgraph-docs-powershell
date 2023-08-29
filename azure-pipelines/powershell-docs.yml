@@ -56,21 +56,21 @@ jobs:
       pwsh: true
       filePath: microsoftgraph-docs-powershell\scripts\FileCopy.ps1
 
-  - task: PowerShell@2
-    displayName: 'Update Powershell Help'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Update Powershell Help'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
 
-  - task: PowerShell@2
-    displayName: 'Escape disallowed html tags'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Escape disallowed html tags'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
 
   - task: PowerShell@2
     displayName: 'Update metadata header'
@@ -80,29 +80,36 @@ jobs:
       pwsh: true
       filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
 
-  - task: PowerShell@2
-    displayName: 'Update Links'
-    continueOnError: false
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Examples to be reviewed as artifact'
     inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
-  
-  - task: PowerShell@2
-    displayName: 'Repair Examples and Descriptions and Title'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
+      PathtoPublish: 'missingexternaldocsurl'
+      ArtifactName: 'MissingExternalDocs'
+      publishLocation: 'Container'
 
-  - task: PowerShell@2
-    displayName: 'Remove boiler plate code'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Update Links'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
+  
+  # - task: PowerShell@2
+  #   displayName: 'Repair Examples and Descriptions and Title'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
+
+  # - task: PowerShell@2
+  #   displayName: 'Remove boiler plate code'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
       
   - task: PowerShell@2
     displayName: Pushing to github
