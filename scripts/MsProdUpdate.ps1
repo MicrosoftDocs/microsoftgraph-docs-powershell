@@ -174,6 +174,9 @@ function Get-ExternalDocsUrl {
                 }
                 else {
                     #Create file if it doesn't exist
+                    if (-not(Test-Path -PathType Container $MissingMsProdHeaderPath)) {
+                        New-Item -ItemType Directory -Force -Path $MissingMsProdHeaderPath
+                    }
                     $MissingMetaData = "$MissingMsProdHeaderPath\MissingMsProd.csv"
                     if (-not (Test-Path $MissingMetaData)) {
                         "Graph profile, Command, UriPath" | Out-File -FilePath  $MissingMetaData -Encoding ASCII
