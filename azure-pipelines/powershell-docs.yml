@@ -83,7 +83,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Examples to be reviewed as artifact'
     inputs:
-      PathtoPublish: 'missingexternaldocsurl'
+      PathtoPublish: 'microsoftgraph-docs-powershell\missingexternaldocsurl'
       ArtifactName: 'MissingExternalDocs'
       publishLocation: 'Container'
 
