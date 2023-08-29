@@ -119,6 +119,7 @@ function Get-ExternalDocsUrl {
         [string] $File = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md"),
         [string] $Module = "Users"
     )
+    try {
     if ($UriPath) {
     
         if ($OpenApiContent.openapi && $OpenApiContent.info.version) {
@@ -193,6 +194,13 @@ function Get-ExternalDocsUrl {
 
         }
     }
+} catch {
+
+    Write-Host "`nError Message: " $_.Exception.Message
+    Write-Host "`nError in Line: " $_.InvocationInfo.Line
+    Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+    Write-Host "`nError Item Name: "$_.Exception.ItemName
+}
 }
 function Append-GraphPrefix {
     param(
