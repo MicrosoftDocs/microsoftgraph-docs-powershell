@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Notes
 Module Guid: 0b980a25-2af9-495b-8908-b26f68891c84
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes

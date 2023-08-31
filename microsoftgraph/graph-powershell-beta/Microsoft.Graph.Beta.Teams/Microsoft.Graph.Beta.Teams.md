@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: 0ad4b6aa-e714-4c31-a305-64410c48a832
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams

@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 Module Guid: c3095cec-e817-4823-b228-c34632267966
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications
