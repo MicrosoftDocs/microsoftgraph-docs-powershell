@@ -31,20 +31,18 @@ Remove-MgUserOnenoteNotebook -InputObject <INotesIdentity> [-IfMatch <String>] [
 Delete navigation property notebooks for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Notes
+
+# A UPN can also be used as -UserId.
+Remove-MgUserOnenotePage -UserId $userId -OnenotePageId $onenotePageId
 ```
+This example shows how to use the Remove-MgUserOnenotePage Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

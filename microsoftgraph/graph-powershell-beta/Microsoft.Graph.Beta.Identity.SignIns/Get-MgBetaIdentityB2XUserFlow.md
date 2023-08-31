@@ -40,20 +40,28 @@ Get-MgBetaIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
 
 ## EXAMPLES
+### Example 1: List all b2xIdentityUserFlow objects
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityB2XUserFlow
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
 ```
+This example will list all b2xidentityuserflow objects
 
-Get-MgBetaIdentityB2XUserFlow -ExpandProperty "identityProviders"
+### Example 2: List all b2xIdentityUserFlow objects and expand identityProviders
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityB2XUserFlow -ExpandProperty "identityProviders" 
+
+```
+This example will list all b2xidentityuserflow objects and expand identityproviders
+
 
 ## PARAMETERS
 

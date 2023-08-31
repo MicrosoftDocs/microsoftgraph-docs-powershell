@@ -33,16 +33,6 @@ A custom icon (favicon) to replace a default Microsoft product favicon on an Azu
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject

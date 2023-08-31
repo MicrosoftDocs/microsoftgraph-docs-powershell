@@ -47,27 +47,23 @@ Grant-MgGroupSitePermission -InputObject <IGroupsIdentity>
 Grant users access to a link represented by a [permission][].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Files
-```
+Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	Recipients = @(
-		@{
-			Email = "john@contoso.com"
-		}
-		@{
-			Email = "ryan@external.com"
-		}
-	)
-	Roles = @(
-		"read"
-	)
+	Comment = "comment-value"
+	SendResponse = $true
 }
 
-Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
+# A UPN can also be used as -UserId.
+Invoke-MgAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgAcceptGroupEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

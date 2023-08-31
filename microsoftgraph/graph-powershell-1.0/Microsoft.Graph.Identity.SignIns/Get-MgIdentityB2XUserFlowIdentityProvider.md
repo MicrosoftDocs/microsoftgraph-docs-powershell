@@ -46,13 +46,17 @@ Get-MgIdentityB2XUserFlowIdentityProvider -InputObject <IIdentitySignInsIdentity
 The identity providers included in the user flow.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityB2XUserFlowIdentityProvider -B2xIdentityUserFlowId $b2xIdentityUserFlowId
+
+```
+This example shows how to use the Get-MgIdentityB2XUserFlowIdentityProvider Cmdlet.
+
 
 ## PARAMETERS
 

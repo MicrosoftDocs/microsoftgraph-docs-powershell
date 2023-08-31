@@ -35,13 +35,14 @@ This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Send-MgUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 # A UPN can also be used as -UserId.
 Send-MgUserMessage -UserId $userId -MessageId $messageId
 ```
+This example shows how to use the Send-MgUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

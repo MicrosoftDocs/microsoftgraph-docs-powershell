@@ -46,8 +46,7 @@ Invoke-MgBetaSnoozeUserEventReminder -InputObject <IUsersActionsIdentity>
 Postpone a reminder for an event in a user calendar until a new time.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaSnoozeUserEventReminder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -59,6 +58,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaSnoozeUserEventReminder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

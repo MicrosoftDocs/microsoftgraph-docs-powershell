@@ -55,11 +55,11 @@ Update-MgBetaTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Update the properties of the specified channel.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "UpdateChannelModeration"
@@ -73,6 +73,10 @@ $params = @{
 }
 
 Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaTeamChannel Cmdlet.
+
 
 ## PARAMETERS
 

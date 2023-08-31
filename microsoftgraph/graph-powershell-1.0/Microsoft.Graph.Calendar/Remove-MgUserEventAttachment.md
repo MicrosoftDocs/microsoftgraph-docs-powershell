@@ -43,13 +43,18 @@ Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <Stri
 Delete calendarPermission.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
-Remove-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
+# A UPN can also be used as -UserId.
+Remove-MgUserEventAttachment -UserId $userId -EventId $eventId -AttachmentId $attachmentId
+```
+This example shows how to use the Remove-MgUserEventAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

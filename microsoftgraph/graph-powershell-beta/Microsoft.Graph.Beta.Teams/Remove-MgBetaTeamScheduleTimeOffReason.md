@@ -37,13 +37,17 @@ This method does not remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamScheduleTimeOffReason -TeamId $teamId -TimeOffReasonId $timeOffReasonId
+
+```
+This example shows how to use the Remove-MgBetaTeamScheduleTimeOffReason Cmdlet.
+
 
 ## PARAMETERS
 

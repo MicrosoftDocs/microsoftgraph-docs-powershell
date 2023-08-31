@@ -31,20 +31,28 @@ Set-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Data <S
 Update media content for the navigation property photo in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.PersonalContacts
+
+$params = @{
+	homeAddress = @{
+		street = "123 Some street"
+		city = "Seattle"
+		state = "WA"
+		postalCode = "98121"
+	}
+	birthday = [System.DateTime]::Parse("1974-07-22")
+}
+
+# A UPN can also be used as -UserId.
+Update-MgUserContact -UserId $userId -ContactId $contactId -BodyParameter $params
 ```
+This example shows how to use the Update-MgUserContact Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
