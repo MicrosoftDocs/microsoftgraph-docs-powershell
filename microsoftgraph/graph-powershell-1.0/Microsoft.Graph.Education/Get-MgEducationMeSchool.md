@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeschool
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationMeSchool

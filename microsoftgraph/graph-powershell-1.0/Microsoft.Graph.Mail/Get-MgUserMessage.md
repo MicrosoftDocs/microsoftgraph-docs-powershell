@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagerulecount
 schema: 2.0.0
+ms.prod: extensions
+ms.prod: outlook
 ---
 
 # Get-MgUserMailFolderMessageRuleCount
