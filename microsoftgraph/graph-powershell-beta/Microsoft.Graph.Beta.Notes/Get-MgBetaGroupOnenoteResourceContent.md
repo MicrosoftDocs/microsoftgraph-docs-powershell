@@ -30,22 +30,6 @@ Get-MgBetaGroupOnenoteResourceContent -InputObject <INotesIdentity> -OutFile <St
 ## DESCRIPTION
 Get content for the navigation property resources from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -155,3 +139,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteResourceContent?view=graph-powershell-1.0)
+

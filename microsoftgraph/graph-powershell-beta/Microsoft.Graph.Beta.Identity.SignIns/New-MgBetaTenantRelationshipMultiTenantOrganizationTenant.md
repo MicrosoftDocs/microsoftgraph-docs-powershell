@@ -36,18 +36,6 @@ The administrator of an owner tenant has the permissions to add tenants to the m
 The added tenant is in the pending state until the administrator of the added tenant joins the multi-tenant organization by submitting a join request.
 Note that a tenant can be part of only one multi-tenant organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddedByTenantId
@@ -314,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
 
 ## RELATED LINKS
+

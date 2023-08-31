@@ -43,18 +43,6 @@ Set-MgBetaUserPresenceStatusMessage -InputObject <IUsersActionsIdentity>
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -269,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime is not available when requesting presence of another user.
 
 ## RELATED LINKS
+

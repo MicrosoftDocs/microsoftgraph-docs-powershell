@@ -35,22 +35,6 @@ New-MgBetaDeviceManagementConfigurationSetting
 ## DESCRIPTION
 Create new navigation property to configurationSettings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessTypes
@@ -469,3 +453,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting
 
 ## RELATED LINKS
+

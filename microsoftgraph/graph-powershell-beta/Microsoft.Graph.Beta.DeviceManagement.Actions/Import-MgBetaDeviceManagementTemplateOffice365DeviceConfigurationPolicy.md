@@ -20,22 +20,6 @@ Import-MgBetaDeviceManagementTemplateOffice365DeviceConfigurationPolicy [-WhatIf
 ## DESCRIPTION
 Invoke action importOffice365DeviceConfigurationPolicies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Confirm
@@ -82,3 +66,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

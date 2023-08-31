@@ -56,22 +56,6 @@ New-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create new navigation property to calendarView for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -651,3 +635,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)
+

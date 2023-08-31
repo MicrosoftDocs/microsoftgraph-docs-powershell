@@ -32,18 +32,6 @@ Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration -InputObject <IIdentitySi
 Configuration for enabling an API connector for use as part of the self-service sign up user flow.
 You can only obtain the value of this object using Get userFlowApiConnectorConfiguration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -204,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2XUserFlowApiConnectorConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowApiConnectorConfiguration?view=graph-powershell-1.0)
+

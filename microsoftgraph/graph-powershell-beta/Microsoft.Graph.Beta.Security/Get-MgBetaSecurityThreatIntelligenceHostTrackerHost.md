@@ -32,18 +32,6 @@ Get-MgBetaSecurityThreatIntelligenceHostTrackerHost -InputObject <ISecurityIdent
 The host related to this hostTracker.
 When navigating to a hostTracker from a host, this should be assumed to be a return reference.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -204,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityThreatIntelligenceHostTrackerHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostTrackerHost?view=graph-powershell-1.0)
+

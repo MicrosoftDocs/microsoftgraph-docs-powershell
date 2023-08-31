@@ -39,22 +39,6 @@ Get-MgBetaGroupSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Returns the metadata for an [item][] in a [list][].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -353,3 +337,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteListItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItem?view=graph-powershell-1.0)
+

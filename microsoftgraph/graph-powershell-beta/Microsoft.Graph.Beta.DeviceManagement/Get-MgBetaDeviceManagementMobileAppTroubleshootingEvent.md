@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceMan
 ## DESCRIPTION
 The collection property of MobileAppTroubleshootingEvent.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -399,3 +383,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-1.0)
+

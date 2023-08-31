@@ -23,18 +23,6 @@ Get-MgBetaAdminSharepointSetting [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Get the tenant-level settings for SharePoint and OneDrive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgAdminSharepointSetting?view=graph-powershell-1.0)
+
