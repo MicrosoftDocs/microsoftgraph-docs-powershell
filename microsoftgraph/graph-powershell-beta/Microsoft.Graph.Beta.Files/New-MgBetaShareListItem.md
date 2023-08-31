@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new [listItem][] in a [list][].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgShareListItem](/powershell/module/Microsoft.Graph.Files/New-MgShareListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -28777,5 +28780,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[New-MgShareListItem](/powershell/module/Microsoft.Graph.Files/New-MgShareListItem?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgShareListItem](/powershell/module/Microsoft.Graph.Files/New-MgShareListItem?view=graph-powershell-1.0)

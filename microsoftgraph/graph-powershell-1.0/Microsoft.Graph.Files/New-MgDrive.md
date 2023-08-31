@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -26311,5 +26314,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)

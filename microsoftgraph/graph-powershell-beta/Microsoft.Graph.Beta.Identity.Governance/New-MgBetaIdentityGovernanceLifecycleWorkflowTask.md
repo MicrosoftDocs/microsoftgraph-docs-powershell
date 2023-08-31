@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to tasks for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceLifecycleWorkflowTask](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -9850,5 +9853,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]`: The result of processing the task.
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceLifecycleWorkflowTask](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowTask?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceLifecycleWorkflowTask](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowTask?view=graph-powershell-1.0)

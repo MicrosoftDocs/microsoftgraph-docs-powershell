@@ -12,6 +12,9 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve the properties and relationships of a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -278,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUser?view=graph-powershell-1.0)

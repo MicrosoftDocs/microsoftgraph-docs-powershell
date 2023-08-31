@@ -12,6 +12,9 @@ ms.prod: directory-management
 ## SYNOPSIS
 Get the properties and relationships of an organizational contact.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -290,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContact?view=graph-powershell-beta)

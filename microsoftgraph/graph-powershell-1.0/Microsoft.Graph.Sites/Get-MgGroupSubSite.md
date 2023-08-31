@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 The collection of the sub-sites under this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List2 (Default)
@@ -324,3 +327,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSubSite?view=graph-powershell-beta)

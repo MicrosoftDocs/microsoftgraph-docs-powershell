@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property items in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListItem](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -28845,5 +28848,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgGroupSiteListItem](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListItem?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgGroupSiteListItem](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListItem?view=graph-powershell-1.0)

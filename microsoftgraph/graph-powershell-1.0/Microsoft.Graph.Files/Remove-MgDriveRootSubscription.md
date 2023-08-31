@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property subscriptions for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -197,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootSubscription?view=graph-powershell-beta)

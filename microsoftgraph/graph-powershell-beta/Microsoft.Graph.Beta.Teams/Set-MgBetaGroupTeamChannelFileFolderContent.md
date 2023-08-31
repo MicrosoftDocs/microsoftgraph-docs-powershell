@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamChannelFileFolderContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -207,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Set-MgGroupTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamChannelFileFolderContent?view=graph-powershell-1.0)
