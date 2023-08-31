@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarpermissioncount
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarPermissionCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarPermissionCount?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -22,13 +19,8 @@ Get-MgBetaUserCalendarPermissionCount -UserId <String> [-Filter <String>] [<Comm
 
 ### Get1
 ```
-Get-MgBetaUserCalendarPermissionCount -UserId <String> -CalendarId <String> [-Filter <String>]
+Get-MgBetaUserCalendarPermissionCount -CalendarId <String> -UserId <String> [-Filter <String>]
  [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgBetaUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -36,8 +28,29 @@ Get-MgBetaUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter 
 Get-MgBetaUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter <String>] [<CommonParameters>]
 ```
 
+### GetViaIdentity1
+```
+Get-MgBetaUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter <String>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -45,7 +58,7 @@ Get the number of the resource
 The unique identifier of calendar
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -60,7 +73,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -76,8 +89,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -91,7 +104,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -108,9 +121,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
@@ -134,5 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserCalendarPermissionCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarPermissionCount?view=graph-powershell-1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepoint
 schema: 2.0.0
@@ -10,24 +10,37 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property sharepoint in admin
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepoint?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgAdminSharepoint [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Settings <IMicrosoftGraphSharepointSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Settings <IMicrosoftGraphSharepointSettings>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgAdminSharepoint -BodyParameter <IMicrosoftGraphSharepoint> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgAdminSharepoint -BodyParameter <IMicrosoftGraphSharepoint> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property sharepoint in admin
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,7 +48,7 @@ Update the navigation property sharepoint in admin
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +64,7 @@ sharepoint
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharepoint
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepoint
 Parameter Sets: Update
 Aliases:
 
@@ -63,11 +76,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +96,7 @@ sharepointSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharepointSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepointSettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -98,7 +111,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -114,7 +127,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -131,9 +144,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepoint
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepoint
+
 ## NOTES
 
 ALIASES
@@ -145,10 +160,10 @@ To create the parameters described below, construct a hash table containing the 
 
 `BODYPARAMETER <IMicrosoftGraphSharepoint>`: sharepoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Settings <IMicrosoftGraphSharepointSettings>]`: sharepointSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AllowedDomainGuidsForSyncApp <String[]>]`: Collection of trusted domain GUIDs for the OneDrive sync app.
     - `[AvailableManagedPathsForSiteCreation <String[]>]`: Collection of managed paths available for site creation. Read-only.
     - `[DeletedUserPersonalSiteRetentionPeriodInDays <Int32?>]`: The number of days for preserving a deleted user's OneDrive.
@@ -185,7 +200,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `SETTINGS <IMicrosoftGraphSharepointSettings>`: sharepointSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AllowedDomainGuidsForSyncApp <String[]>]`: Collection of trusted domain GUIDs for the OneDrive sync app.
   - `[AvailableManagedPathsForSiteCreation <String[]>]`: Collection of managed paths available for site creation. Read-only.
   - `[DeletedUserPersonalSiteRetentionPeriodInDays <Int32?>]`: The number of days for preserving a deleted user's OneDrive.
@@ -221,5 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantDefaultTimezone <String>]`: The default timezone of a tenant for newly created sites. For a list of possible values, see SPRegionalSettings.TimeZones property.
 
 ## RELATED LINKS
-[Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepoint?view=graph-powershell-beta)
 

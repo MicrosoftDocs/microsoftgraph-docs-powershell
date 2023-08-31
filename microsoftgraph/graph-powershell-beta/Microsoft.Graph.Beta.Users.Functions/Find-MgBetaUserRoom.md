@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroom
 schema: 2.0.0
@@ -20,13 +20,7 @@ Find-MgBetaUserRoom -UserId <String> [-Count] [-Filter <String>] [-Search <Strin
 
 ### Find1
 ```
-Find-MgBetaUserRoom -UserId <String> -RoomList <String> [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
-```
-
-### FindViaIdentity1
-```
-Find-MgBetaUserRoom -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>] [-Search <String>]
+Find-MgBetaUserRoom -RoomList <String> -UserId <String> [-Count] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -36,18 +30,25 @@ Find-MgBetaUserRoom -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <St
  [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
+### FindViaIdentity1
+```
+Find-MgBetaUserRoom -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Invoke function findRooms
 
 ## EXAMPLES
-### Example 1: Using the Find-MgBetaUserRoom Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.
 Find-MgBetaUserRoom -UserId $userId
 ```
-This example shows how to use the Find-MgBetaUserRoom Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -55,7 +56,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -70,7 +71,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -86,8 +87,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: FindViaIdentity1, FindViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: FindViaIdentity, FindViaIdentity1
 Aliases:
 
 Required: True
@@ -101,7 +102,7 @@ Accept wildcard characters: False
 Usage: RoomList='{RoomList}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Find1
 Aliases:
 
@@ -116,7 +117,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -131,7 +147,7 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
 
@@ -146,26 +162,11 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Find, Find1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -178,9 +179,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailAddress
+
 ## NOTES
 
 ALIASES
@@ -230,3 +233,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

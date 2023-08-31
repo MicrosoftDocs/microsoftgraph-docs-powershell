@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgInviteCommunicationCallParticipant
@@ -12,15 +11,12 @@ ms.prod: cloud-communications
 Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaInviteCommunicationCallParticipant?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### InviteExpanded (Default)
 ```
 Invoke-MgInviteCommunicationCallParticipant -CallId <String> [-AdditionalProperties <Hashtable>]
- [-ClientContext <String>] [-Participants <IMicrosoftGraphInvitationParticipantInfo[]>] [-WhatIf] [-Confirm]
+ [-ClientContext <String>] [-Participants <IMicrosoftGraphInvitationParticipantInfo[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -28,21 +24,21 @@ Invoke-MgInviteCommunicationCallParticipant -CallId <String> [-AdditionalPropert
 ```
 Invoke-MgInviteCommunicationCallParticipant -CallId <String>
  -BodyParameter <IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### InviteViaIdentityExpanded
-```
-Invoke-MgInviteCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>]
- [-Participants <IMicrosoftGraphInvitationParticipantInfo[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### InviteViaIdentity
 ```
 Invoke-MgInviteCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### InviteViaIdentityExpanded
+```
+Invoke-MgInviteCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>]
+ [-Participants <IMicrosoftGraphInvitationParticipantInfo[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,11 +46,11 @@ Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	participants = @(
@@ -66,92 +62,6 @@ $params = @{
 				user = @{
 					"@odata.type" = "#microsoft.graph.identity"
 					id = "278405a3-f568-4b3e-b684-009193463064"
-					displayName = "string"
-				}
-			}
-		}
-	)
-	clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
-}
-
-Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.CloudCommunications
-
-$params = @{
-	participants = @(
-		@{
-			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			replacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db"
-			identity = @{
-				"@odata.type" = "#microsoft.graph.identitySet"
-				user = @{
-					"@odata.type" = "#microsoft.graph.identity"
-					id = "7e1b4346-85a6-4bdd-abe3-d11c5d420efe"
-					displayName = "string"
-				}
-			}
-		}
-	)
-	clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
-}
-
-Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.CloudCommunications
-
-$params = @{
-	participants = @(
-		@{
-			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			identity = @{
-				"@odata.type" = "#microsoft.graph.identitySet"
-				phone = @{
-					"@odata.type" = "#microsoft.graph.identity"
-					id = "+12345678901"
-				}
-			}
-		}
-	)
-	clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
-}
-
-Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
-
-Import-Module Microsoft.Graph.CloudCommunications
-
-$params = @{
-	participants = @(
-		@{
-			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
-			replacesCallId = "a7ebfb2d-871e-419c-87af-27290b22e8db"
-			participantId = "7d501bf1-5ee4-4605-ba92-0ae4513c611c"
-			identity = @{
-				"@odata.type" = "#microsoft.graph.identitySet"
-				user = @{
-					"@odata.type" = "#microsoft.graph.identity"
-					id = "682b6c37-0729-4fab-ace6-d730d5d9137e"
 					identityProvider = "AAD"
 				}
 			}
@@ -162,17 +72,13 @@ $params = @{
 
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-```
-This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -188,7 +94,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Invite, InviteViaIdentity
 Aliases:
 
@@ -203,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: InviteExpanded, Invite
+Type: System.String
+Parameter Sets: Invite, InviteExpanded
 Aliases:
 
 Required: True
@@ -218,7 +124,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -234,8 +140,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: InviteViaIdentityExpanded, InviteViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: InviteViaIdentity, InviteViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -250,7 +156,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvitationParticipantInfo[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInvitationParticipantInfo[]
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -265,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -281,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -298,10 +204,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInviteParticipantsOperation
+
 ## NOTES
 
 ALIASES
@@ -357,4 +266,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-[Invoke-MgBetaInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaInviteCommunicationCallParticipant?view=graph-powershell-beta)
+

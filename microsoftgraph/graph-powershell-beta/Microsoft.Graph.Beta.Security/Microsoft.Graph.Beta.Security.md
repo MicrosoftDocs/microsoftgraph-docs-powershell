@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Security
-Module Guid: 9561e265-7ec1-4da9-b36b-c859a8e52d94
+Module Guid: 12985a9b-0178-4d16-9f7e-034d2bb3c519
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -425,7 +425,7 @@ The specific rule or regulation created by a jurisdiction used to determine whet
 Specifies the  department or business unit of an organization to which a label belongs.
 
 ### [Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate](Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate.md)
-Specifies a unique alpha-numeric identifier for an organization's retention schedule.
+Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
 
 ### [Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage.md)
 When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.
@@ -440,7 +440,7 @@ Get providerTenantSettings from security
 Get the number of the resource
 
 ### [Get-MgBetaSecuritySecureScore](Get-MgBetaSecuritySecureScore.md)
-Measurements of tenants' security posture to help protect them from threats.
+Measurements of tenants’ security posture to help protect them from threats.
 
 ### [Get-MgBetaSecuritySecureScoreControlProfile](Get-MgBetaSecuritySecureScoreControlProfile.md)
 Get secureScoreControlProfiles from security
@@ -682,10 +682,25 @@ Get the number of the resource
 ### [Get-MgBetaSecurityThreatIntelligenceVulnerabilityCount](Get-MgBetaSecurityThreatIntelligenceVulnerabilityCount.md)
 Get the number of the resource
 
+### [Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord](Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord.md)
+Get whoisHistoryRecords from security
+
+### [Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecordCount](Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecordCount.md)
+Get the number of the resource
+
+### [Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecordHost](Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecordHost.md)
+Get host from security
+
 ### [Get-MgBetaSecurityThreatIntelligenceWhoisRecord](Get-MgBetaSecurityThreatIntelligenceWhoisRecord.md)
 Get whoisRecords from security
 
 ### [Get-MgBetaSecurityThreatIntelligenceWhoisRecordCount](Get-MgBetaSecurityThreatIntelligenceWhoisRecordCount.md)
+Get the number of the resource
+
+### [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory](Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory.md)
+Get history from security
+
+### [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistoryCount](Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistoryCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHost](Get-MgBetaSecurityThreatIntelligenceWhoisRecordHost.md)
@@ -989,6 +1004,9 @@ Create new navigation property to vulnerabilities for security
 ### [New-MgBetaSecurityThreatIntelligenceVulnerabilityComponent](New-MgBetaSecurityThreatIntelligenceVulnerabilityComponent.md)
 Create new navigation property to components for security
 
+### [New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord](New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord.md)
+Create new navigation property to whoisHistoryRecords for security
+
 ### [New-MgBetaSecurityThreatIntelligenceWhoisRecord](New-MgBetaSecurityThreatIntelligenceWhoisRecord.md)
 Create new navigation property to whoisRecords for security
 
@@ -1263,6 +1281,9 @@ Delete navigation property vulnerabilities for security
 
 ### [Remove-MgBetaSecurityThreatIntelligenceVulnerabilityComponent](Remove-MgBetaSecurityThreatIntelligenceVulnerabilityComponent.md)
 Delete navigation property components for security
+
+### [Remove-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord](Remove-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord.md)
+Delete navigation property whoisHistoryRecords for security
 
 ### [Remove-MgBetaSecurityThreatIntelligenceWhoisRecord](Remove-MgBetaSecurityThreatIntelligenceWhoisRecord.md)
 Delete navigation property whoisRecords for security
@@ -1595,6 +1616,9 @@ Update the navigation property vulnerabilities in security
 
 ### [Update-MgBetaSecurityThreatIntelligenceVulnerabilityComponent](Update-MgBetaSecurityThreatIntelligenceVulnerabilityComponent.md)
 Update the navigation property components in security
+
+### [Update-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord](Update-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord.md)
+Update the navigation property whoisHistoryRecords in security
 
 ### [Update-MgBetaSecurityThreatIntelligenceWhoisRecord](Update-MgBetaSecurityThreatIntelligenceWhoisRecord.md)
 Update the navigation property whoisRecords in security
