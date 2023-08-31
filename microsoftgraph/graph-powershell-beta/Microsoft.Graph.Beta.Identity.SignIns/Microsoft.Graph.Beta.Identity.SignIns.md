@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 Module Guid: 96bc639a-bc69-448a-b36c-735cc0bad764
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins
@@ -703,20 +703,20 @@ Get media content for the navigation property policies from trustFramework
 ### [Get-MgBetaTrustFrameworkPolicyCount](Get-MgBetaTrustFrameworkPolicyCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationEmailMethod](Get-MgBetaUserAuthenticationEmailMethod.md)
-Retrieve a user's single email Authentication Method object.
+### [Get-MgBetaTrustFrameworkPolicyCount](Get-MgBetaTrustFrameworkPolicyCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationFido2Method](Get-MgBetaUserAuthenticationFido2Method.md)
-Retrieve a user's single FIDO2 Security Key Authentication Method object.
+### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationFido2MethodCount](Get-MgBetaUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationMethod](Get-MgBetaUserAuthenticationMethod.md)
-Retrieve the properties and relationships of an authenticationMethod object.
+### [Get-MgBetaUserAuthenticationFido2MethodCount](Get-MgBetaUserAuthenticationFido2MethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationMethodCount](Get-MgBetaUserAuthenticationMethodCount.md)
 Get the number of the resource
@@ -749,21 +749,20 @@ Get the number of the resource
 ### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
 Get device from users
 
-### [Get-MgBetaUserAuthenticationPasswordMethod](Get-MgBetaUserAuthenticationPasswordMethod.md)
-Retrieve the properties and relationships of a password authentication method object.
+### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
+Get device from users
 
 ### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationPhoneMethod](Get-MgBetaUserAuthenticationPhoneMethod.md)
-Retrieve a single phoneAuthenticationMethod object.
-This method is available only for standard Azure AD and B2B users, but not B2C users.
+### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationSoftwareOathMethod](Get-MgBetaUserAuthenticationSoftwareOathMethod.md)
-Retrieve a user's single Software OATH token authentication method object and its properties.
+### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationSoftwareOathMethodCount](Get-MgBetaUserAuthenticationSoftwareOathMethodCount.md)
 Get the number of the resource
@@ -1509,12 +1508,8 @@ Delete navigation property operations for users
 ### [Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
 Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 
-### [Remove-MgBetaUserAuthenticationPhoneMethod](Remove-MgBetaUserAuthenticationPhoneMethod.md)
-Delete a user's phone authentication method.
-Remember that a user cannot have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted.
-Have the user change their default authentication method, and then delete the number.
+### [Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
+Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 
 ### [Remove-MgBetaUserAuthenticationSoftwareOathMethod](Remove-MgBetaUserAuthenticationSoftwareOathMethod.md)
 Delete a user's Software OATH token authentication method object.
@@ -1891,9 +1886,6 @@ Update the navigation property history in identityProtection
 
 ### [Update-MgBetaServicePrincipalRiskDetection](Update-MgBetaServicePrincipalRiskDetection.md)
 Update the navigation property servicePrincipalRiskDetections in identityProtection
-
-### [Update-MgBetaTenantRelationshipMultiTenantOrganization](Update-MgBetaTenantRelationshipMultiTenantOrganization.md)
-Update the properties of a multi-tenant organization.
 
 ### [Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest](Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest.md)
 Join a multi-tenant organization, after the owner of the multi-tenant organization has added your tenant to the multi-tenant organization as pending.

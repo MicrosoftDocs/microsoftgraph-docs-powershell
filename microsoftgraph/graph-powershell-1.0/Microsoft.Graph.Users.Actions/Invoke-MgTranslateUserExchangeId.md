@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgtranslateuserexchangeid
 schema: 2.0.0
@@ -15,28 +15,28 @@ Translate identifiers of Outlook-related resources between formats.
 ### TranslateExpanded (Default)
 ```
 Invoke-MgTranslateUserExchangeId -UserId <String> [-AdditionalProperties <Hashtable>] [-InputIds <String[]>]
- [-SourceIdType <String>] [-TargetIdType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SourceIdType <String>] [-TargetIdType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Translate
 ```
 Invoke-MgTranslateUserExchangeId -UserId <String>
  -BodyParameter <IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### TranslateViaIdentityExpanded
+```
+Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-InputIds <String[]>] [-SourceIdType <String>] [-TargetIdType <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### TranslateViaIdentity
 ```
 Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### TranslateViaIdentityExpanded
-```
-Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-InputIds <String[]>] [-SourceIdType <String>] [-TargetIdType <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,7 +44,7 @@ Translate identifiers of Outlook-related resources between formats.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -59,15 +59,13 @@ $params = @{
 Invoke-MgTranslateUserExchangeId -UserId $userId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema
+Type: IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema
 Parameter Sets: Translate, TranslateViaIdentity
 Aliases:
 
@@ -98,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
@@ -114,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: TranslateViaIdentity, TranslateViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: TranslateViaIdentityExpanded, TranslateViaIdentity
 Aliases:
 
 Required: True
@@ -129,7 +127,7 @@ Accept wildcard characters: False
 exchangeIdFormat
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +142,7 @@ Accept wildcard characters: False
 exchangeIdFormat
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
@@ -159,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Translate, TranslateExpanded
+Type: String
+Parameter Sets: TranslateExpanded, Translate
 Aliases:
 
 Required: True
@@ -174,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConvertIdResult
-
 ## NOTES
 
 ALIASES
@@ -262,4 +257,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

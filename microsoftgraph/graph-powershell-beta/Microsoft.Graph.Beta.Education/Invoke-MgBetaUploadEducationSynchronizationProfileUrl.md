@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetauploadeducationsynchronizationprofileurl
 schema: 2.0.0
@@ -28,13 +28,11 @@ Invoke function uploadUrl
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Invoke-MgBetaUploadEducationSynchronizationProfileUrl -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
-
-
 
 ## PARAMETERS
 
@@ -42,7 +40,7 @@ Invoke-MgBetaUploadEducationSynchronizationProfileUrl -EducationSynchronizationP
 The unique identifier of educationSynchronizationProfile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Upload
 Aliases:
 
@@ -58,7 +56,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+Type: IEducationIdentity
 Parameter Sets: UploadViaIdentity
 Aliases:
 
@@ -75,11 +73,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -107,4 +103,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-

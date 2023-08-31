@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 Module Guid: 590cc2bf-b4c4-4b7c-bbf4-1771ca8f2114
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration
@@ -850,7 +850,7 @@ Delete navigation property organizationSettings for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Delete a cloudPcProvisioningPolicy object.
-You can’t delete a policy that’s in use.
+You can't delete a policy that's in use.
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 Delete navigation property assignments for deviceManagement

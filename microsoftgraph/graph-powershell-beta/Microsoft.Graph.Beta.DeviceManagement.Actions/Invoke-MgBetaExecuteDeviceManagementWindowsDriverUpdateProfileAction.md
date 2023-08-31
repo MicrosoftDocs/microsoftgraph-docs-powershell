@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaexecutedevicemanagementwindowsdriverupdateprofileaction
 schema: 2.0.0
@@ -16,14 +16,22 @@ Invoke action executeAction
 ```
 Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction -WindowsDriverUpdateProfileId <String>
  [-ActionName <DriverApprovalAction>] [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>]
- [-DriverIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DriverIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Execute
 ```
 Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction -WindowsDriverUpdateProfileId <String>
  -BodyParameter <IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ExecuteViaIdentityExpanded
+```
+Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction
+ -InputObject <IDeviceManagementActionsIdentity> [-ActionName <DriverApprovalAction>]
+ [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>] [-DriverIds <String[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ExecuteViaIdentity
@@ -31,15 +39,7 @@ Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction -WindowsDri
 Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ExecuteViaIdentityExpanded
-```
-Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction
- -InputObject <IDeviceManagementActionsIdentity> [-ActionName <DriverApprovalAction>]
- [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>] [-DriverIds <String[]>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,19 +47,15 @@ Invoke action executeAction
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -67,7 +63,7 @@ Invoke action executeAction
 An enum type to represent approval actions of single or list of drivers.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.DriverApprovalAction
+Type: DriverApprovalAction
 Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
 Aliases:
 
@@ -82,7 +78,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
 Aliases:
 
@@ -98,7 +94,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
+Type: IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Execute, ExecuteViaIdentity
 Aliases:
 
@@ -113,7 +109,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
 Aliases:
 
@@ -128,7 +124,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
 Aliases:
 
@@ -144,8 +140,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: ExecuteViaIdentity, ExecuteViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: ExecuteViaIdentityExpanded, ExecuteViaIdentity
 Aliases:
 
 Required: True
@@ -159,8 +155,8 @@ Accept wildcard characters: False
 The unique identifier of windowsDriverUpdateProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Execute, ExecuteExpanded
+Type: String
+Parameter Sets: ExecuteExpanded, Execute
 Aliases:
 
 Required: True
@@ -174,7 +170,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +186,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,13 +203,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBulkDriverActionResult
-
 ## NOTES
 
 ALIASES
@@ -283,4 +276,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-

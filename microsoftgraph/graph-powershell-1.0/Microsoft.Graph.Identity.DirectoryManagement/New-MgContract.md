@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontract
 schema: 2.0.0
@@ -15,13 +15,13 @@ Add new entity to contracts
 ### CreateExpanded (Default)
 ```
 New-MgContract [-AdditionalProperties <Hashtable>] [-ContractType <String>] [-CustomerId <String>]
- [-DefaultDomainName <String>] [-DeletedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-DefaultDomainName <String>] [-DeletedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgContract -BodyParameter <IMicrosoftGraphContract> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgContract -BodyParameter <IMicrosoftGraphContract> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,7 +29,7 @@ Add new entity to contracts
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 ```
@@ -42,7 +42,7 @@ Get-MgContract
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -58,7 +58,7 @@ contract
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContract
+Type: IMicrosoftGraphContract
 Parameter Sets: Create
 Aliases:
 
@@ -75,7 +75,7 @@ Possible values are: SyndicationPartner, BreadthPartner, ResellerPartner.
 See more in the table below.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -91,7 +91,7 @@ The unique identifier for the customer tenant referenced by this partnership.
 Corresponds to the id property of the customer tenant's organization resource.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -108,7 +108,7 @@ The copy is made when the partnership with the customer is established.
 It is not automatically updated if the customer tenant's default domain name changes.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +124,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -141,7 +141,7 @@ The copy is made when the partnership with the customer is established.
 It is not automatically updated if the customer tenant's display name changes.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +157,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,11 +205,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContract
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContract
-
 ## NOTES
 
 ALIASES
@@ -229,4 +227,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's display name changes.
 
 ## RELATED LINKS
-

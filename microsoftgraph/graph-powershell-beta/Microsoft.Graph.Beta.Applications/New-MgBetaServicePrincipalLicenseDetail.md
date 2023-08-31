@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipallicensedetail
 schema: 2.0.0
@@ -16,26 +16,26 @@ Create new navigation property to licenseDetails for servicePrincipals
 ```
 New-MgBetaServicePrincipalLicenseDetail -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaServicePrincipalLicenseDetail -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphLicenseDetails> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaServicePrincipalLicenseDetail -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphLicenseDetails> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphLicenseDetails> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaServicePrincipalLicenseDetail -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>]
- [-SkuId <String>] [-SkuPartNumber <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SkuId <String>] [-SkuPartNumber <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaServicePrincipalLicenseDetail -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphLicenseDetails> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,14 +43,14 @@ Create new navigation property to licenseDetails for servicePrincipals
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -63,7 +63,7 @@ Create new navigation property to licenseDetails for servicePrincipals
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +79,7 @@ licenseDetails
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLicenseDetails
+Type: IMicrosoftGraphLicenseDetails
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -95,7 +95,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -111,8 +111,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ Read-only, Not nullable
 To construct, see NOTES section for SERVICEPLANS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePlanInfo[]
+Type: IMicrosoftGraphServicePlanInfo[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -160,7 +160,7 @@ Equal to the skuId property on the related SubscribedSku object.
 Read-only
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AA
 Read-only
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +208,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -225,13 +225,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLicenseDetails
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLicenseDetails
-
 ## NOTES
 
 ALIASES
@@ -291,4 +288,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
-

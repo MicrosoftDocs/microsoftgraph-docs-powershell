@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganizationexternalsponsorbyid
 schema: 2.0.0
@@ -16,7 +16,7 @@ Some common uses for this function are to:
 ### GetExpanded (Default)
 ```
 Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById -ConnectedOrganizationId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,7 +24,14 @@ Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById -Connect
 ```
 Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById -ConnectedOrganizationId <String>
  -BodyParameter <IPaths1Vmy872IdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
+ [-Types <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -32,14 +39,7 @@ Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById -Connect
 Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths1Vmy872IdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-Types <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,19 +48,15 @@ Some common uses for this function are to:
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -68,7 +64,7 @@ Some common uses for this function are to:
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -84,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Vmy872IdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Vmy872IdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -99,8 +95,8 @@ Accept wildcard characters: False
 The unique identifier of connectedOrganization
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, GetExpanded
+Type: String
+Parameter Sets: GetExpanded, Get
 Aliases:
 
 Required: True
@@ -114,7 +110,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -130,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
 Aliases:
 
 Required: True
@@ -145,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -160,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -176,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -193,13 +189,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Vmy872IdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES
@@ -313,4 +306,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

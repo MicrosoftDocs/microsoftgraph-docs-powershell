@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticworkfromanywheremodelperformance
 schema: 2.0.0
@@ -18,13 +18,13 @@ New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
  [-AdditionalProperties <Hashtable>] [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>]
  [-CloudProvisioningScore <Double>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
  [-Manufacturer <String>] [-Model <String>] [-ModelDeviceCount <Int32>] [-WindowsScore <Double>]
- [-WorkFromAnywhereScore <Double>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,14 +33,14 @@ Create new navigation property to userExperienceAnalyticsWorkFromAnywhereModelPe
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -53,7 +53,7 @@ Create new navigation property to userExperienceAnalyticsWorkFromAnywhereModelPe
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ The user experience analytics work from anywhere model performance.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance
+Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance
 Parameter Sets: Create
 Aliases:
 
@@ -89,7 +89,7 @@ Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -109,7 +109,7 @@ Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 userExperienceAnalyticsHealthState
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.UserExperienceAnalyticsHealthState
+Type: UserExperienceAnalyticsHealthState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +160,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +194,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -212,7 +212,7 @@ Read-only.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -232,7 +232,7 @@ Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -252,7 +252,7 @@ Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -283,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -300,11 +300,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance
-
 ## NOTES
 
 ALIASES
@@ -328,4 +326,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkFromAnywhereScore <Double?>]`: The work from anywhere score of the device model. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
-

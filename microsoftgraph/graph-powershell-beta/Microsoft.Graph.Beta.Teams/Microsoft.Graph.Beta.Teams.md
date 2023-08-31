@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: 0ad4b6aa-e714-4c31-a305-64410c48a832
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams
@@ -1075,16 +1075,18 @@ Get the number of the resource
 ### [Get-MgBetaUserChatTabTeamApp](Get-MgBetaUserChatTabTeamApp.md)
 The application that is linked to the tab.
 
-### [Get-MgBetaUserJoinedTeam](Get-MgBetaUserJoinedTeam.md)
-Get the teams in Microsoft Teams that the user is a direct member of.
+### [Get-MgBetaUserChatTabTeamApp](Get-MgBetaUserChatTabTeamApp.md)
+The application that is linked to the tab.
 
 ### [Get-MgBetaUserTeamwork](Get-MgBetaUserTeamwork.md)
 A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
-### [Get-MgBetaUserTeamworkAssociatedTeam](Get-MgBetaUserTeamworkAssociatedTeam.md)
-The list of associatedTeamInfo objects that a user is associated with.
+### [Get-MgBetaUserTeamwork](Get-MgBetaUserTeamwork.md)
+A container for Microsoft Teams features available for the user.
+Read-only.
+Nullable.
 
 ### [Get-MgBetaUserTeamworkAssociatedTeamCount](Get-MgBetaUserTeamworkAssociatedTeamCount.md)
 Get the number of the resource
@@ -1536,8 +1538,9 @@ This API cannot create a new chat; you must use the list chats method to retriev
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
-### [New-MgBetaUserTeamworkAssociatedTeam](New-MgBetaUserTeamworkAssociatedTeam.md)
-Create new navigation property to associatedTeams for users
+### [New-MgBetaUserChatTab](New-MgBetaUserChatTab.md)
+Add (pin) a tab to the specified chat.
+\nThe corresponding app must already be installed in the chat.
 
 ### [New-MgBetaUserTeamworkInstalledApp](New-MgBetaUserTeamworkInstalledApp.md)
 Install an app in the personal scope of the specified user.

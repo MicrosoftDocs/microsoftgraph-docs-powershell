@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementresourcenamespaceresourceaction
 schema: 2.0.0
@@ -16,23 +16,16 @@ Update the navigation property resourceActions in roleManagement
 ```
 Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
  -UnifiedRbacResourceActionId <String> -UnifiedRbacResourceNamespaceId <String> [-ActionVerb <String>]
- [-AdditionalProperties <Hashtable>] [-AuthenticationContextId <String>] [-Description <String>]
- [-Id <String>] [-IsAuthenticationContextSettable] [-Name <String>] [-ResourceScopeId <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>]
+ [-IsAuthenticationContextSettable] [-Name <String>] [-ResourceScopeId <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
  -UnifiedRbacResourceActionId <String> -UnifiedRbacResourceNamespaceId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,7 +33,14 @@ Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
 Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
  -InputObject <IIdentityGovernanceIdentity> [-ActionVerb <String>] [-AdditionalProperties <Hashtable>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
- [-Name <String>] [-ResourceScopeId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Name <String>] [-ResourceScopeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,19 +48,15 @@ Update the navigation property resourceActions in roleManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -68,7 +64,7 @@ Update the navigation property resourceActions in roleManagement
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +79,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +94,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +110,7 @@ unifiedRbacResourceAction
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
+Type: IMicrosoftGraphUnifiedRbacResourceAction
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -129,7 +125,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +141,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,8 +157,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -176,7 +172,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +187,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -206,7 +202,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -221,8 +217,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRbacResourceAction
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -236,8 +232,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRbacResourceNamespace
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -251,7 +247,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -267,7 +263,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -284,13 +280,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
-
 ## NOTES
 
 ALIASES
@@ -375,4 +368,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

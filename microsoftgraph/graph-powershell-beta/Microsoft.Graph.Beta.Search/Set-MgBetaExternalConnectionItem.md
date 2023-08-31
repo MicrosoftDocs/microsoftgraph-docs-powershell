@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/set-mgbetaexternalconnectionitem
 schema: 2.0.0
@@ -18,28 +18,27 @@ Set-MgBetaExternalConnectionItem -ExternalConnectionId <String> -ExternalItemId 
  [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
  [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
  [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgBetaExternalConnectionItem -ExternalConnectionId <String> -ExternalItemId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
+ [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
+ [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded
-```
-Set-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
- [-Acl <IMicrosoftGraphExternalConnectorsAcl[]>]
- [-Activities <IMicrosoftGraphExternalConnectorsExternalActivity[]>] [-AdditionalProperties <Hashtable>]
- [-Content <IMicrosoftGraphExternalConnectorsExternalItemContent>] [-Id <String>] [-Properties <Hashtable>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsExternalItem> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,19 +46,15 @@ Update the navigation property items in external
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -70,7 +65,7 @@ Required.
 To construct, see NOTES section for ACL properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsAcl[]
+Type: IMicrosoftGraphExternalConnectorsAcl[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -87,7 +82,7 @@ Write-only.
 To construct, see NOTES section for ACTIVITIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalActivity[]
+Type: IMicrosoftGraphExternalConnectorsExternalActivity[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -102,7 +97,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -118,7 +113,7 @@ externalItem
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem
+Type: IMicrosoftGraphExternalConnectorsExternalItem
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -134,7 +129,7 @@ externalItemContent
 To construct, see NOTES section for CONTENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItemContent
+Type: IMicrosoftGraphExternalConnectorsExternalItemContent
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -149,8 +144,8 @@ Accept wildcard characters: False
 The unique identifier of externalConnection
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, SetExpanded
+Type: String
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -164,8 +159,8 @@ Accept wildcard characters: False
 The unique identifier of externalItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, SetExpanded
+Type: String
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -180,7 +175,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -196,8 +191,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
-Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
+Type: ISearchIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
@@ -211,7 +206,7 @@ Accept wildcard characters: False
 properties
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -226,7 +221,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -242,7 +237,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -259,13 +254,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem
-
 ## NOTES
 
 ALIASES
@@ -339,4 +331,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-

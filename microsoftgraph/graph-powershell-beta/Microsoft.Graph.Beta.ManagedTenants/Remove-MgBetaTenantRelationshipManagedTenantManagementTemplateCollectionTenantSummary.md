@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantmanagementtemplatecollectiontenantsummary
 schema: 2.0.0
@@ -15,14 +15,14 @@ Delete navigation property managementTemplateCollectionTenantSummaries for tenan
 ### Delete (Default)
 ```
 Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
- -ManagementTemplateCollectionTenantSummaryId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ -ManagementTemplateCollectionTenantSummaryId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaTenantRelationshipManagedTenantManagementTemplateCollectionTenantSummary
- -InputObject <IManagedTenantsIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ -InputObject <IManagedTenantsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,19 +31,15 @@ Delete navigation property managementTemplateCollectionTenantSummaries for tenan
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -51,7 +47,7 @@ Delete navigation property managementTemplateCollectionTenantSummaries for tenan
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -67,7 +63,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
+Type: IManagedTenantsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -82,7 +78,7 @@ Accept wildcard characters: False
 The unique identifier of managementTemplateCollectionTenantSummary
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -97,7 +93,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -112,7 +108,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +124,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,11 +141,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -200,4 +194,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
 ## RELATED LINKS
-

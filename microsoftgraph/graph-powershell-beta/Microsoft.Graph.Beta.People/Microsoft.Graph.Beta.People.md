@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.People
 Module Guid: abf4527d-321c-480f-b135-3bfcf653f48d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people
@@ -19,11 +19,8 @@ Nullable.
 ### [Get-MgBetaUserAnalyticActivityStatisticsCount](Get-MgBetaUserAnalyticActivityStatisticsCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserPerson](Get-MgBetaUserPerson.md)
-Read-only.
-The most relevant people to the user.
-The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
-A person is an aggregation of information from across mail, contacts and social networks.
+### [Get-MgBetaUserAnalyticActivityStatisticsCount](Get-MgBetaUserAnalyticActivityStatisticsCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserPersonCount](Get-MgBetaUserPersonCount.md)
 Get the number of the resource

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessnamedlocation
 schema: 2.0.0
@@ -16,14 +16,14 @@ Named locations can be either ipNamedLocation or countryNamedLocation objects.
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityConditionalAccessNamedLocation [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-ModifiedDateTime <DateTime>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-ModifiedDateTime <DateTime>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphNamedLocation> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgBetaIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphNamedLocation> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,7 +32,7 @@ Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 ```
@@ -53,7 +53,7 @@ Id                                   CreatedDateTime      DisplayName           
 --                                   ---------------      -----------                                       ----------------
 1f0fd623-bf8f-4003-9627-32a68c3cdcc1 6/13/2022 8:27:35 AM Named location with unknown countries and regions 6/13/2022 8:27:35 AM
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 ```
@@ -86,7 +86,7 @@ Id                                   CreatedDateTime      DisplayName           
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +102,7 @@ namedLocation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNamedLocation
+Type: IMicrosoftGraphNamedLocation
 Parameter Sets: Create
 Aliases:
 
@@ -119,7 +119,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 Human-readable name of the location.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -198,7 +198,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -215,11 +215,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNamedLocation
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNamedLocation
-
 ## NOTES
 
 ALIASES
@@ -237,4 +235,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/confirm-mgbetasiteinformationprotectionsignature
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action verifySignature
 ### VerifyExpanded (Default)
 ```
 Confirm-MgBetaSiteInformationProtectionSignature -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-DigestInputFile <String>] [-SignatureInputFile <String>] [-SigningKeyId <String>] [-Confirm] [-WhatIf]
+ [-DigestInputFile <String>] [-SignatureInputFile <String>] [-SigningKeyId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,21 +23,21 @@ Confirm-MgBetaSiteInformationProtectionSignature -SiteId <String> [-AdditionalPr
 ```
 Confirm-MgBetaSiteInformationProtectionSignature -SiteId <String>
  -BodyParameter <IPaths13QrfzcSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### VerifyViaIdentity
-```
-Confirm-MgBetaSiteInformationProtectionSignature -InputObject <ISitesIdentity>
- -BodyParameter <IPaths13QrfzcSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### VerifyViaIdentityExpanded
 ```
 Confirm-MgBetaSiteInformationProtectionSignature -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-SignatureInputFile <String>]
- [-SigningKeyId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SigningKeyId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### VerifyViaIdentity
+```
+Confirm-MgBetaSiteInformationProtectionSignature -InputObject <ISitesIdentity>
+ -BodyParameter <IPaths13QrfzcSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ Invoke action verifySignature
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ Invoke action verifySignature
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -81,7 +77,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths13QrfzcSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
+Type: IPaths13QrfzcSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Verify, VerifyViaIdentity
 Aliases:
 
@@ -96,7 +92,7 @@ Accept wildcard characters: False
 Input File for Digest (.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -112,8 +108,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-Parameter Sets: VerifyViaIdentity, VerifyViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: VerifyViaIdentityExpanded, VerifyViaIdentity
 Aliases:
 
 Required: True
@@ -127,7 +123,7 @@ Accept wildcard characters: False
 Input File for Signature (.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -142,7 +138,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -157,8 +153,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Verify, VerifyExpanded
+Type: String
+Parameter Sets: VerifyExpanded, Verify
 Aliases:
 
 Required: True
@@ -172,7 +168,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +184,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,13 +201,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths13QrfzcSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -277,4 +270,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

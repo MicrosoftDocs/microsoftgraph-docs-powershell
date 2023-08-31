@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadmincustomerservicemanagementdetail
 schema: 2.0.0
@@ -16,20 +16,13 @@ Create new navigation property to serviceManagementDetails for tenantRelationshi
 ```
 New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -DelegatedAdminCustomerId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-ServiceManagementUrl <String>] [-ServiceName <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -DelegatedAdminCustomerId <String>
- -BodyParameter <IMicrosoftGraphDelegatedAdminServiceManagementDetail> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -InputObject <IIdentityPartnerIdentity>
- -BodyParameter <IMicrosoftGraphDelegatedAdminServiceManagementDetail> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDelegatedAdminServiceManagementDetail> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,7 +30,14 @@ New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -InputObje
 ```
 New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -InputObject <IIdentityPartnerIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-ServiceManagementUrl <String>] [-ServiceName <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail -InputObject <IIdentityPartnerIdentity>
+ -BodyParameter <IMicrosoftGraphDelegatedAdminServiceManagementDetail> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ Create new navigation property to serviceManagementDetails for tenantRelationshi
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ Create new navigation property to serviceManagementDetails for tenantRelationshi
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +77,7 @@ delegatedAdminServiceManagementDetail
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedAdminServiceManagementDetail
+Type: IMicrosoftGraphDelegatedAdminServiceManagementDetail
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -96,8 +92,8 @@ Accept wildcard characters: False
 The unique identifier of delegatedAdminCustomer
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -112,7 +108,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -128,8 +124,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityPartnerIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentityPartnerIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -144,7 +140,7 @@ The URL of the management portal for the managed service.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +156,7 @@ The name of a managed service.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,13 +204,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityPartnerIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedAdminServiceManagementDetail
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedAdminServiceManagementDetail
-
 ## NOTES
 
 ALIASES
@@ -239,4 +232,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-

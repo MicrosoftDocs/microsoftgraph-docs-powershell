@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedapproval
 schema: 2.0.0
@@ -18,12 +18,12 @@ New-MgBetaPrivilegedApproval [-AdditionalProperties <Hashtable>] [-ApprovalDurat
  [-ApprovalState <String>] [-ApprovalType <String>] [-ApproverReason <String>] [-EndDateTime <DateTime>]
  [-Id <String>] [-Request <IMicrosoftGraphPrivilegedRoleAssignmentRequest>] [-RequestorReason <String>]
  [-RoleId <String>] [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-StartDateTime <DateTime>] [-UserId <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPrivilegedApproval -BodyParameter <IMicrosoftGraphPrivilegedApproval> [-Confirm] [-WhatIf]
+New-MgBetaPrivilegedApproval -BodyParameter <IMicrosoftGraphPrivilegedApproval> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Add new entity to privilegedApproval
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -45,15 +45,13 @@ $params = @{
 New-MgBetaPrivilegedApproval -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +66,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +81,7 @@ Accept wildcard characters: False
 approvalState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +127,7 @@ privilegedApproval
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedApproval
+Type: IMicrosoftGraphPrivilegedApproval
 Parameter Sets: Create
 Aliases:
 
@@ -144,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +158,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +174,7 @@ privilegedRoleAssignmentRequest
 To construct, see NOTES section for REQUEST properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignmentRequest
+Type: IMicrosoftGraphPrivilegedRoleAssignmentRequest
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +189,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +204,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +220,7 @@ privilegedRole
 To construct, see NOTES section for ROLEINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRole
+Type: IMicrosoftGraphPrivilegedRole
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +235,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -252,7 +250,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -267,7 +265,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -283,7 +281,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -300,11 +298,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedApproval
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedApproval
-
 ## NOTES
 
 ALIASES
@@ -468,4 +464,3 @@ To create the parameters described below, construct a hash table containing the 
     - `[UsersCount <Int32?>]`: 
 
 ## RELATED LINKS
-

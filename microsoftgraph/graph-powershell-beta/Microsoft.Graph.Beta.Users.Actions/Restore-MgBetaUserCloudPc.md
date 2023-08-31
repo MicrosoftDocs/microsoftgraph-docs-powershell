@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetausercloudpc
 schema: 2.0.0
@@ -16,27 +16,27 @@ Use this API to trigger a remote action that restores a Cloud PC device to a pre
 ### RestoreExpanded (Default)
 ```
 Restore-MgBetaUserCloudPc -CloudPcId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-CloudPcSnapshotId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-CloudPcSnapshotId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Restore
 ```
 Restore-MgBetaUserCloudPc -CloudPcId <String> -UserId <String>
  -BodyParameter <IPathsDqlywlUsersUserIdCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RestoreViaIdentityExpanded
+```
+Restore-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-CloudPcSnapshotId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
 Restore-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsDqlywlUsersUserIdCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### RestoreViaIdentityExpanded
-```
-Restore-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-CloudPcSnapshotId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,14 +45,14 @@ Use this API to trigger a remote action that restores a Cloud PC device to a pre
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -65,7 +65,7 @@ Use this API to trigger a remote action that restores a Cloud PC device to a pre
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsDqlywlUsersUserIdCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
+Type: IPathsDqlywlUsersUserIdCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Restore, RestoreViaIdentity
 Aliases:
 
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of cloudPC
 
 ```yaml
-Type: System.String
-Parameter Sets: Restore, RestoreExpanded
+Type: String
+Parameter Sets: RestoreExpanded, Restore
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
 Aliases:
 
@@ -127,8 +127,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: RestoreViaIdentity, RestoreViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: RestoreViaIdentityExpanded, RestoreViaIdentity
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -157,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Restore, RestoreExpanded
+Type: String
+Parameter Sets: RestoreExpanded, Restore
 Aliases:
 
 Required: True
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsDqlywlUsersUserIdCloudpcsCloudpcIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -268,4 +265,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectionpolicylabelclassificationresult
 schema: 2.0.0
@@ -19,28 +19,28 @@ The API returns an informationProtectionAction that contains one of more of the 
 ```
 Test-MgBetaSiteInformationProtectionPolicyLabelClassificationResult -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-ClassificationResults <IMicrosoftGraphClassificationResult[]>]
- [-ContentInfo <IMicrosoftGraphContentInfo>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ContentInfo <IMicrosoftGraphContentInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaSiteInformationProtectionPolicyLabelClassificationResult -SiteId <String>
  -BodyParameter <IPathsWmmb97SitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### EvaluateViaIdentity
-```
-Test-MgBetaSiteInformationProtectionPolicyLabelClassificationResult -InputObject <ISitesIdentity>
- -BodyParameter <IPathsWmmb97SitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
 ```
 Test-MgBetaSiteInformationProtectionPolicyLabelClassificationResult -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-ClassificationResults <IMicrosoftGraphClassificationResult[]>]
- [-ContentInfo <IMicrosoftGraphContentInfo>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ContentInfo <IMicrosoftGraphContentInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### EvaluateViaIdentity
+```
+Test-MgBetaSiteInformationProtectionPolicyLabelClassificationResult -InputObject <ISitesIdentity>
+ -BodyParameter <IPathsWmmb97SitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,19 +51,15 @@ The API returns an informationProtectionAction that contains one of more of the 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -71,7 +67,7 @@ The API returns an informationProtectionAction that contains one of more of the 
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsWmmb97SitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema
+Type: IPathsWmmb97SitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate, EvaluateViaIdentity
 Aliases:
 
@@ -103,7 +99,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CLASSIFICATIONRESULTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphClassificationResult[]
+Type: IMicrosoftGraphClassificationResult[]
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +115,7 @@ contentInfo
 To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentInfo
+Type: IMicrosoftGraphContentInfo
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -135,8 +131,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-Parameter Sets: EvaluateViaIdentity, EvaluateViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: EvaluateViaIdentityExpanded, EvaluateViaIdentity
 Aliases:
 
 Required: True
@@ -150,8 +146,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Evaluate, EvaluateExpanded
+Type: String
+Parameter Sets: EvaluateExpanded, Evaluate
 Aliases:
 
 Required: True
@@ -165,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -181,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -198,13 +194,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsWmmb97SitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionAction
-
 ## NOTES
 
 ALIASES
@@ -293,4 +286,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

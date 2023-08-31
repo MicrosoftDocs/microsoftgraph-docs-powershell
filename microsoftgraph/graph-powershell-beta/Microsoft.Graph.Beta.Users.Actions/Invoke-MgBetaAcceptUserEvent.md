@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptuserevent
 schema: 2.0.0
@@ -15,27 +15,27 @@ Accept the specified event in a user calendar.
 ### AcceptExpanded (Default)
 ```
 Invoke-MgBetaAcceptUserEvent -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-SendResponse] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Accept
 ```
 Invoke-MgBetaAcceptUserEvent -EventId <String> -UserId <String>
  -BodyParameter <IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AcceptViaIdentityExpanded
+```
+Invoke-MgBetaAcceptUserEvent -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AcceptViaIdentity
 ```
 Invoke-MgBetaAcceptUserEvent -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### AcceptViaIdentityExpanded
-```
-Invoke-MgBetaAcceptUserEvent -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-SendResponse] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,7 +43,7 @@ Accept the specified event in a user calendar.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -54,15 +54,13 @@ $params = @{
 Invoke-MgBetaAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
@@ -78,7 +76,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Accept, AcceptViaIdentity
 Aliases:
 
@@ -93,7 +91,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
@@ -108,8 +106,8 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: System.String
-Parameter Sets: Accept, AcceptExpanded
+Type: String
+Parameter Sets: AcceptExpanded, Accept
 Aliases:
 
 Required: True
@@ -124,8 +122,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: AcceptViaIdentity, AcceptViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: AcceptViaIdentityExpanded, AcceptViaIdentity
 Aliases:
 
 Required: True
@@ -139,7 +137,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -154,7 +152,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
@@ -169,8 +167,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Accept, AcceptExpanded
+Type: String
+Parameter Sets: AcceptExpanded, Accept
 Aliases:
 
 Required: True
@@ -184,7 +182,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -200,7 +198,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -217,13 +215,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -281,4 +276,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

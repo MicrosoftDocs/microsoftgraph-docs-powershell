@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdevicecompliancepolicysettingstatesummary
 schema: 2.0.0
@@ -19,13 +19,13 @@ New-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSumma
  [-FailedDeviceCount <Int32>] [-Id <String>] [-IntuneAccountId <String>] [-IntuneSettingId <String>]
  [-LastRefreshedDateTime <DateTime>] [-NotApplicableDeviceCount <Int32>] [-PendingDeviceCount <Int32>]
  [-PolicyType <String>] [-SettingName <String>] [-SucceededDeviceCount <Int32>] [-TenantDisplayName <String>]
- [-TenantId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSummary
- -BodyParameter <IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -34,14 +34,14 @@ Create new navigation property to deviceCompliancePolicySettingStateSummaries fo
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -54,7 +54,7 @@ Create new navigation property to deviceCompliancePolicySettingStateSummaries fo
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ deviceCompliancePolicySettingStateSummary
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary
+Type: IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary
 Parameter Sets: Create
 Aliases:
 
@@ -87,7 +87,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +121,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +137,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -154,7 +154,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -171,7 +171,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +188,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -205,7 +205,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +222,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +239,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -256,7 +256,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -273,7 +273,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -290,7 +290,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -307,7 +307,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -338,7 +338,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -355,11 +355,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsDeviceCompliancePolicySettingStateSummary
-
 ## NOTES
 
 ALIASES
@@ -387,4 +385,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: The Azure Active Directory tenant identifier for the managed tenant. Required. Read-only.
 
 ## RELATED LINKS
-

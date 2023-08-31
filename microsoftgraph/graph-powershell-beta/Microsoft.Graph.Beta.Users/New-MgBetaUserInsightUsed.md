@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightused
 schema: 2.0.0
@@ -17,19 +17,13 @@ Create new navigation property to used for users
 New-MgBetaUserInsightUsed -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LastUsed <IMicrosoftGraphUsageDetails>] [-Resource <IMicrosoftGraphEntity>]
  [-ResourceReference <IMicrosoftGraphResourceReference>]
- [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserInsightUsed -UserId <String> -BodyParameter <IMicrosoftGraphUsedInsight> [-Confirm] [-WhatIf]
+New-MgBetaUserInsightUsed -UserId <String> -BodyParameter <IMicrosoftGraphUsedInsight> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUsedInsight> [-Confirm]
- [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -37,7 +31,13 @@ New-MgBetaUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 New-MgBetaUserInsightUsed -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LastUsed <IMicrosoftGraphUsageDetails>] [-Resource <IMicrosoftGraphEntity>]
  [-ResourceReference <IMicrosoftGraphResourceReference>]
- [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUsedInsight> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ Create new navigation property to used for users
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ Create new navigation property to used for users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +77,7 @@ usedInsight
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsedInsight
+Type: IMicrosoftGraphUsedInsight
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -97,7 +93,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -113,8 +109,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IUsersIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -129,7 +125,7 @@ usageDetails
 To construct, see NOTES section for LASTUSED properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsageDetails
+Type: IMicrosoftGraphUsageDetails
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +141,7 @@ entity
 To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEntity
+Type: IMicrosoftGraphEntity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +157,7 @@ resourceReference
 To construct, see NOTES section for RESOURCEREFERENCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceReference
+Type: IMicrosoftGraphResourceReference
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +173,7 @@ resourceVisualization
 To construct, see NOTES section for RESOURCEVISUALIZATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceVisualization
+Type: IMicrosoftGraphResourceVisualization
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,8 +188,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -207,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -223,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,13 +236,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsedInsight
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsedInsight
-
 ## NOTES
 
 ALIASES
@@ -333,4 +326,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types.
 
 ## RELATED LINKS
-

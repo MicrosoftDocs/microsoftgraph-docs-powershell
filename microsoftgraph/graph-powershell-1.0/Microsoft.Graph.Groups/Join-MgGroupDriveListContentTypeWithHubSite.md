@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/join-mggroupdrivelistcontenttypewithhubsite
 schema: 2.0.0
@@ -16,27 +16,27 @@ Associate a published [content type][contentType] present in a content type hub 
 ```
 Join-MgGroupDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String> -GroupId <String>
  [-AdditionalProperties <Hashtable>] [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Associate
 ```
 Join-MgGroupDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String> -GroupId <String>
  -BodyParameter <IPaths2Euw62GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AssociateViaIdentityExpanded
+```
+Join-MgGroupDriveListContentTypeWithHubSite -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AssociateViaIdentity
 ```
 Join-MgGroupDriveListContentTypeWithHubSite -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths2Euw62GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### AssociateViaIdentityExpanded
-```
-Join-MgGroupDriveListContentTypeWithHubSite -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,14 +44,14 @@ Associate a published [content type][contentType] present in a content type hub 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -64,7 +64,7 @@ Associate a published [content type][contentType] present in a content type hub 
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths2Euw62GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+Type: IPaths2Euw62GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Associate, AssociateViaIdentity
 Aliases:
 
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 The unique identifier of contentType
 
 ```yaml
-Type: System.String
-Parameter Sets: Associate, AssociateExpanded
+Type: String
+Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Associate, AssociateExpanded
+Type: String
+Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
@@ -125,8 +125,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Associate, AssociateExpanded
+Type: String
+Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
@@ -156,8 +156,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: AssociateViaIdentity, AssociateViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: AssociateViaIdentityExpanded, AssociateViaIdentity
 Aliases:
 
 Required: True
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -217,7 +217,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -234,13 +234,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths2Euw62GroupsGroupIdDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -293,4 +290,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

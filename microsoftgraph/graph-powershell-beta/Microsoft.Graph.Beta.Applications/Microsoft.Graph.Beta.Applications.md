@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Applications
 Module Guid: 885044e2-6162-4ee9-bea3-79db02058561
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications
@@ -15,7 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 Add a key credential to an application.
 This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
+Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
 ### [Add-MgBetaApplicationPassword](Add-MgBetaApplicationPassword.md)

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementtroubleshootingevent
 schema: 2.0.0
@@ -15,14 +15,13 @@ Create new navigation property to troubleshootingEvents for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementTroubleshootingEvent [-AdditionalProperties <Hashtable>] [-CorrelationId <String>]
- [-EventDateTime <DateTime>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-EventDateTime <DateTime>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementTroubleshootingEvent
- -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgDeviceManagementTroubleshootingEvent -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,14 +29,14 @@ Create new navigation property to troubleshootingEvents for deviceManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -50,7 +49,7 @@ Create new navigation property to troubleshootingEvents for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +65,7 @@ Event representing an general failure.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent
+Type: IMicrosoftGraphDeviceManagementTroubleshootingEvent
 Parameter Sets: Create
 Aliases:
 
@@ -81,7 +80,7 @@ Accept wildcard characters: False
 Id used for tracing the failure in the service.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +95,7 @@ Accept wildcard characters: False
 Time when the event occurred .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +111,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -143,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -160,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent
-
 ## NOTES
 
 ALIASES
@@ -181,4 +178,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[EventDateTime <DateTime?>]`: Time when the event occurred .
 
 ## RELATED LINKS
-

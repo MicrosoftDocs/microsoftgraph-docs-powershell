@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users.Functions
 Module Guid: 88f0396e-b2e5-4f64-9776-7d09680e9582
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions
@@ -201,14 +201,8 @@ Invoke function getRecentNotebooks
 ### [Get-MgBetaUserOnlineMeetingRecording](Get-MgBetaUserOnlineMeetingRecording.md)
 Invoke function getAllRecordings
 
-### [Get-MgBetaUserOnlineMeetingRecordingDelta](Get-MgBetaUserOnlineMeetingRecordingDelta.md)
-Invoke function delta
-
 ### [Get-MgBetaUserOnlineMeetingTranscript](Get-MgBetaUserOnlineMeetingTranscript.md)
 Invoke function getAllTranscripts
-
-### [Get-MgBetaUserOnlineMeetingTranscriptDelta](Get-MgBetaUserOnlineMeetingTranscriptDelta.md)
-Invoke function delta
 
 ### [Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl.md)
 Invoke function getVirtualAppointmentJoinWebUrl

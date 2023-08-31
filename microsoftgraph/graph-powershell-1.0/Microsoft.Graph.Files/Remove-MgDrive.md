@@ -1,95 +1,59 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrive
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype
 schema: 2.0.0
 ---
 
-# Remove-MgDrive
+# Publish-MgShareListContentType
 
 ## SYNOPSIS
-Delete entity from drives
+Publishes a [contentType][] present in the content type hub site.
 
 ## SYNTAX
 
-### Delete (Default)
+### Publish (Default)
 ```
-Remove-MgDrive -DriveId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Publish-MgShareListContentType -ContentTypeId <String> -SharedDriveItemId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### PublishViaIdentity
 ```
-Remove-MgDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+Publish-MgShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete entity from drives
+Publishes a [contentType][] present in the content type hub site.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Files
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Get-MgUserDefaultDrive -UserId $userId
+{{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Files
+{{ Add code here }}
 ```
 
-Get-MgUserDefaultDrive -UserId $userId
-
-### -------------------------- EXAMPLE 3 --------------------------
-```powershell
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgGroupDefaultDrive -GroupId $groupId
-
-### -------------------------- EXAMPLE 4 --------------------------
-```powershell
-Import-Module Microsoft.Graph.Sites
-```
-
-Get-MgSiteDefaultDrive -SiteId $siteId
-
-### -------------------------- EXAMPLE 5 --------------------------
-```powershell
-Import-Module Microsoft.Graph.Files
-```
-
-Get-MgDrive -DriveId $driveId
+{{ Add output here }}
 
 ## PARAMETERS
 
-### -DriveId
-The unique identifier of drive
+### -ContentTypeId
+The unique identifier of contentType
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete
+Type: String
+Parameter Sets: Publish
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
-
-```yaml
-Type: System.String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -101,8 +65,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: DeleteViaIdentity
+Type: IFilesIdentity
+Parameter Sets: PublishViaIdentity
 Aliases:
 
 Required: True
@@ -116,7 +80,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -127,11 +91,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SharedDriveItemId
+The unique identifier of sharedDriveItem
+
+```yaml
+Type: String
+Parameter Sets: Publish
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +126,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,11 +143,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -205,4 +182,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

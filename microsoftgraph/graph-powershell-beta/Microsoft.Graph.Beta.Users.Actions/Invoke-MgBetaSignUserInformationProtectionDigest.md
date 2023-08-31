@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasignuserinformationprotectiondigest
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke action signDigest
 ### SignExpanded (Default)
 ```
 Invoke-MgBetaSignUserInformationProtectionDigest -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DigestInputFile <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Sign
 ```
 Invoke-MgBetaSignUserInformationProtectionDigest -UserId <String>
  -Body <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SignViaIdentityExpanded
+```
+Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SignViaIdentity
 ```
 Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### SignViaIdentityExpanded
-```
-Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,14 +43,14 @@ Invoke action signDigest
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -63,7 +63,7 @@ Invoke action signDigest
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SignExpanded, SignViaIdentityExpanded
 Aliases:
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Type: IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Sign
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Type: IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: SignViaIdentity
 Aliases:
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 Input File for Digest (.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SignExpanded, SignViaIdentityExpanded
 Aliases:
 
@@ -126,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: SignViaIdentity, SignViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: SignViaIdentityExpanded, SignViaIdentity
 Aliases:
 
 Required: True
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Sign, SignExpanded
+Type: String
+Parameter Sets: SignExpanded, Sign
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,13 +189,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSigningResult
-
 ## NOTES
 
 ALIASES
@@ -256,4 +253,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

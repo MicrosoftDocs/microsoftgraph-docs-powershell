@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequest
 schema: 2.0.0
@@ -17,19 +17,13 @@ Update the navigation property appConsentRequests in identityGovernance
 Update-MgBetaIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppId <String>] [-ConsentType <String>]
  [-Id <String>] [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
- [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernanceAppConsentRequest -AppConsentRequestId <String>
- -BodyParameter <IMicrosoftGraphAppConsentRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAppConsentRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppConsentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,7 +31,13 @@ Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernan
 Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppId <String>] [-ConsentType <String>]
  [-Id <String>] [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
- [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAppConsentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,14 +45,14 @@ Update the navigation property appConsentRequests in identityGovernance
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -65,7 +65,7 @@ Update the navigation property appConsentRequests in identityGovernance
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 The unique identifier of appConsentRequest
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ Required.
 Supports $filter (eq only) and $orderby.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ Required.
 Supports $filter (eq only) and $orderby.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +130,7 @@ appConsentRequest
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppConsentRequest
+Type: IMicrosoftGraphAppConsentRequest
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -149,7 +149,7 @@ Supports $filter (eq only) and $orderby.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,8 +181,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -199,7 +199,7 @@ Required.
 To construct, see NOTES section for PENDINGSCOPES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppConsentRequestScope[]
+Type: IMicrosoftGraphAppConsentRequestScope[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,7 +216,7 @@ Supports $filter (eq).
 To construct, see NOTES section for USERCONSENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserConsentRequest[]
+Type: IMicrosoftGraphUserConsentRequest[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -247,7 +247,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -264,13 +264,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppConsentRequest
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppConsentRequest
-
 ## NOTES
 
 ALIASES
@@ -449,3 +446,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS
