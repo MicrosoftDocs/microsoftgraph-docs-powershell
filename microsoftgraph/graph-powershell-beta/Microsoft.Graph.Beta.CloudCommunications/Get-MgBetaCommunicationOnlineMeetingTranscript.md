@@ -16,17 +16,23 @@ Retrieving the content of the transcript returns the stream of text associated w
 
 ## SYNTAX
 
-### List (Default)
+### Get1 (Default)
 ```
-Get-MgBetaCommunicationOnlineMeetingTranscript -OnlineMeetingId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaCommunicationOnlineMeetingTranscript [-Property <String[]>] [-Count] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaCommunicationOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeetingId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### List
+```
+Get-MgBetaCommunicationOnlineMeetingTranscript -OnlineMeetingId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -72,6 +78,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Get1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
@@ -93,7 +114,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: Get, List, GetViaIdentity
 Aliases: Expand
 
 Required: False
@@ -108,7 +129,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get1, List
 Aliases:
 
 Required: False
@@ -139,7 +160,7 @@ The unique identifier of onlineMeeting
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -184,7 +205,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get1, List
 Aliases:
 
 Required: False
@@ -199,7 +220,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: Get1, List
 Aliases: OrderBy
 
 Required: False
@@ -214,7 +235,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get1, List
 Aliases: Limit
 
 Required: False
@@ -229,7 +250,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get1, List
 Aliases:
 
 Required: False

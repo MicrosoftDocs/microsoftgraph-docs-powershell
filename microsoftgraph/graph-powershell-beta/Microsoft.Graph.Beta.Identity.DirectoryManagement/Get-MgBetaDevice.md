@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevice
 schema: 2.0.0
+ms.prod: directory-management
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDevice
@@ -42,24 +44,24 @@ Since the device resource supports extensions, you can also use the GET operatio
 ### Example 1: Get a device
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDevice -DeviceId $deviceId
-```
-This example shows how to use the Get-MgBetaDevice Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get a device
 
 ### Example 2: Get a device and return only its id and extensionAttributes properties
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Get-MgBetaDevice -DeviceId $deviceId -Property "id,extensionAttributes"
-```
-This example shows how to use the Get-MgBetaDevice Cmdlet.
+Get-MgBetaDevice -DeviceId $deviceId -Property "id,extensionAttributes" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get a device and return only its id and extensionattributes properties
 
 
 ## PARAMETERS

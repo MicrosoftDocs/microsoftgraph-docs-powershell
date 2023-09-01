@@ -48,6 +48,7 @@ Create a new externalGroup object.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
@@ -57,10 +58,9 @@ $params = @{
 }
 
 New-MgBetaExternalConnectionGroup -ExternalConnectionId $externalConnectionId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaExternalConnectionGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS

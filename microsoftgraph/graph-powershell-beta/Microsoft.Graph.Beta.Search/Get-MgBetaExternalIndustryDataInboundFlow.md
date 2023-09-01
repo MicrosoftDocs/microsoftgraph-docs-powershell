@@ -10,7 +10,7 @@ ms.prod: industry-data-etl
 # Get-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Read the properties and relationships of an inboundFileFlow object.
+Read the properties and relationships of an inboundFlow object.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an inboundFileFlow object.
+Read the properties and relationships of an inboundFlow object.
 
 ## PARAMETERS
 

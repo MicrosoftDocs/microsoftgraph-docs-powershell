@@ -436,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -880,20 +880,20 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `APPS <IMicrosoftGraphManagedMobileApp[]>`: List of apps to which the policy is deployed.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Version <String>]`: Version of the entity.
 
 `ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 `BODYPARAMETER <IMicrosoftGraphAndroidManagedAppProtection>`: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsAssigned <Boolean?>]`: Indicates if the policy is deployed to any inclusion groups or not.
@@ -929,9 +929,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: Policy display name.
   - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
   - `[Version <String>]`: Version of the entity.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: List of apps to which the policy is deployed.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Version <String>]`: Version of the entity.
@@ -940,7 +940,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
   - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ConfigurationDeployedUserCount <Int32?>]`: Not yet documented
     - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]`: Not yet documented
       - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
@@ -956,7 +956,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ConfigurationDeployedUserCount <Int32?>]`: Not yet documented
   - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]`: Not yet documented
     - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.

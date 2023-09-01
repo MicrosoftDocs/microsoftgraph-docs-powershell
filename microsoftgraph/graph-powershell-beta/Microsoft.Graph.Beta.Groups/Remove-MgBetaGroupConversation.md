@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupConversation
 
 ## SYNOPSIS
-Delete conversation.
+Delete a conversation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversation?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Remove-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Delete conversation.
+Delete a conversation object.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserChatMessageReply
 
 ## SYNOPSIS
-Create a new reply to a chatMessage in a specified channel.
+Send a new reply to a chatMessage in a specified channel.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessageReply?view=graph-powershell-beta)
@@ -58,7 +58,7 @@ New-MgUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a new reply to a chatMessage in a specified channel.
+Send a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
 

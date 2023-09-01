@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 438be6cc-3432-45b1-a16a-528e7cc315a7
+Module Guid: 33d03074-3741-451d-ba6f-b1bf4c44f9c4
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -295,9 +295,7 @@ Get the number of the resource
 Get the number of the resource
 
 ### [New-MgUser](New-MgUser.md)
-Create a new user.\nThe request body contains the user to create.
-At a minimum, you must specify the required properties for the user.
-You can optionally specify any other writable properties.
+Create a new user object.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
@@ -327,10 +325,7 @@ Create new navigation property to extensions for users
 Create new navigation property to extensions for users
 
 ### [Remove-MgUser](Remove-MgUser.md)
-Delete user.
- When deleted, user resources are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-To learn more, see deletedItems.
+Deletes a user.
 
 ### [Remove-MgUserExtension](Remove-MgUserExtension.md)
 Delete navigation property extensions for users
@@ -394,8 +389,6 @@ The content streams that are uploaded.
 
 ### [Update-MgUser](Update-MgUser.md)
 Update the properties of a user object.
-Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles.
-Compare member and guest default permissions to see properties they can manage.
 
 ### [Update-MgUserExtension](Update-MgUserExtension.md)
 Update the navigation property extensions in users

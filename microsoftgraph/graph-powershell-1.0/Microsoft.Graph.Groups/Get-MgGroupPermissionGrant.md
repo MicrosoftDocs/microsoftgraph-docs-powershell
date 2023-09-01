@@ -9,8 +9,7 @@ ms.prod: microsoft-teams
 # Get-MgGroupPermissionGrant
 
 ## SYNOPSIS
-The permission that has been granted for a group to a specific application.
-Supports $expand.
+Get permissionGrants from groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
@@ -37,8 +36,7 @@ Get-MgGroupPermissionGrant -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-The permission that has been granted for a group to a specific application.
-Supports $expand.
+Get permissionGrants from groups
 
 ## EXAMPLES
 ### Example 1: Code snippet

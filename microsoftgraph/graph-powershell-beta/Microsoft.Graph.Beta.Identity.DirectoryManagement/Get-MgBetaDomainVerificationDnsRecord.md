@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainverificationdnsrecord
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDomainVerificationDnsRecord
@@ -42,13 +43,17 @@ Read-only, Nullable.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDomainVerificationDnsRecord Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaDomainVerificationDnsRecord -DomainId $domainId
+
 ```
 This example shows how to use the Get-MgBetaDomainVerificationDnsRecord Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Deletes a windowsUpdateForBusinessConfiguration.
+Deletes a iosUpdateConfiguration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Deletes a windowsUpdateForBusinessConfiguration.
+Deletes a iosUpdateConfiguration.
 
 ## PARAMETERS
 

@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotepagecontent
 schema: 2.0.0
-ms.service: onenote
+ms.prod: onenote
 ---
 
 # Get-MgGroupSiteOnenotePageContent

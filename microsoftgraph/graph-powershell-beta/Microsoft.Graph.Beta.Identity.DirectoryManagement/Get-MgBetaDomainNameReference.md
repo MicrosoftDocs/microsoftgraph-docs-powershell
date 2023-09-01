@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomainnamereference
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDomainNameReference
@@ -44,13 +45,17 @@ Supports $expand and $filter by the OData type of objects returned.
 For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDomainNameReference Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaDomainNameReference -DomainId $domainId
+
 ```
 This example shows how to use the Get-MgBetaDomainNameReference Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -24,8 +24,9 @@ Update-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> [-AdditionalPr
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
- [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>] [-CreationDateTime <DateTime>]
- [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEntryExitAnnounced]
+ [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>]
+ [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEntryExitAnnounced]
  [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
  [-JoinUrl <String>] [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
@@ -33,7 +34,6 @@ Update-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> [-AdditionalPr
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
  [-ShareMeetingChatHistoryDefault <String>] [-StartDateTime <DateTime>] [-Subject <String>]
  [-Transcripts <IMicrosoftGraphCallTranscript[]>] [-VideoTeleconferenceId <String>]
- [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>]
  [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -52,8 +52,9 @@ Update-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdenti
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]
  [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastRecordingInputFile <String>] [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>]
- [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>] [-CreationDateTime <DateTime>]
- [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEntryExitAnnounced]
+ [-Capabilities <String[]>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-ChatRestrictions <IMicrosoftGraphChatRestrictions>] [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>]
+ [-ExternalId <String>] [-Id <String>] [-IsBroadcast] [-IsEntryExitAnnounced]
  [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]
  [-JoinUrl <String>] [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
@@ -61,7 +62,6 @@ Update-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdenti
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
  [-ShareMeetingChatHistoryDefault <String>] [-StartDateTime <DateTime>] [-Subject <String>]
  [-Transcripts <IMicrosoftGraphCallTranscript[]>] [-VideoTeleconferenceId <String>]
- [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>]
  [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -361,6 +361,22 @@ To construct, see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphChatInfo
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ChatRestrictions
+chatRestrictions
+To construct, see NOTES section for CHATRESTRICTIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphChatRestrictions
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -749,22 +765,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -VirtualAppointment
-virtualAppointment
-To construct, see NOTES section for VIRTUALAPPOINTMENT properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphVirtualAppointment
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WatermarkProtection
 watermarkProtectionValues
 To construct, see NOTES section for WATERMARKPROTECTION properties and create a hash table.
@@ -842,8 +842,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant. Presents when the participant has registered for the meeting.
     - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
     - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -884,8 +884,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant. Presents when the participant has registered for the meeting.
       - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
       - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -963,6 +963,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Content <Byte[]>]`: The content of the recording. Read-only.
     - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording. Read-only.
+    - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording. Read-only.
+    - `[RecordingContentUrl <String>]`: The URL which can be used to access the content of the recording. Read-only.
   - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowedRegistrant <String>]`: meetingAudience
@@ -992,7 +995,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Content <Byte[]>]`: The content of the transcript. Read-only.
     - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript. Read-only.
+    - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript. Read-only.
     - `[MetadataContent <Byte[]>]`: The time-aligned metadata of the utterances in the transcript. Read-only.
+    - `[TranscriptContentUrl <String>]`: The URL which can be used to access the content of the transcript. Read-only.
   - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
   - `[WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]`: watermarkProtectionValues
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1070,8 +1076,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant. Presents when the participant has registered for the meeting.
     - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
     - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
@@ -1086,8 +1092,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Role <String>]`: onlineMeetingRole
@@ -1100,6 +1106,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Content <Byte[]>]`: The content of the recording. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording. Read-only.
+  - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording. Read-only.
+  - `[RecordingContentUrl <String>]`: The URL which can be used to access the content of the recording. Read-only.
 
 `REGISTRATION <IMicrosoftGraphMeetingRegistration>`: meetingRegistration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1128,7 +1137,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Content <Byte[]>]`: The content of the transcript. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript. Read-only.
+  - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript. Read-only.
   - `[MetadataContent <Byte[]>]`: The time-aligned metadata of the utterances in the transcript. Read-only.
+  - `[TranscriptContentUrl <String>]`: The URL which can be used to access the content of the transcript. Read-only.
 
 `WATERMARKPROTECTION <IMicrosoftGraphWatermarkProtectionValues>`: watermarkProtectionValues
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

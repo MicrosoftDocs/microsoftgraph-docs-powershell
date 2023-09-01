@@ -45,57 +45,57 @@ A threat assessment request can be one of the following types:
 ### Example 1: Get the properties of a mail assessment request
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
-```
-This example shows how to use the Get-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get the properties of a mail assessment request
 
 ### Example 2: Get the properties of an email file assessment request
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
-```
-This example shows how to use the Get-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get the properties of an email file assessment request
 
 ### Example 3: Get the properties of a file assessment request
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
-```
-This example shows how to use the Get-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get the properties of a file assessment request
 
 ### Example 4: Get the properties of an url assessment request
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
-```
-This example shows how to use the Get-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get the properties of an url assessment request
 
 ### Example 5: Expand threat assessment results for a request
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results"
-```
-This example shows how to use the Get-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
+Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results" 
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will expand threat assessment results for a request
 
 
 ## PARAMETERS
@@ -342,6 +342,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization

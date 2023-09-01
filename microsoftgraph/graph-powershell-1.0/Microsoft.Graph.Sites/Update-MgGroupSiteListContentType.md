@@ -295,7 +295,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -531,15 +531,15 @@ To create the parameters described below, construct a hash table containing the 
 
 `BASE <IMicrosoftGraphContentType>`: contentType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
   - `[Base <IMicrosoftGraphContentType>]`: contentType
   - `[BaseTypes <IMicrosoftGraphContentType[]>]`: The collection of content types that are ancestors of this content type.
   - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Name <String>]`: The name of the column  in this content type.
   - `[ColumnPositions <IMicrosoftGraphColumnDefinition[]>]`: Column order information in a content type.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
@@ -611,7 +611,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
       - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children of current term.
         - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
         - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
@@ -626,12 +626,12 @@ To create the parameters described below, construct a hash table containing the 
           - `[Key <String>]`: Key for the key-value pair.
           - `[Value <String>]`: Value for the key-value pair.
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
           - `[Relationship <String>]`: relationType
           - `[Set <IMicrosoftGraphTermStoreSet>]`: set
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children terms of set in term [store].
             - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
             - `[Description <String>]`: Description that gives details on the term usage.
@@ -640,7 +640,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[Name <String>]`: The name in the localized language.
             - `[ParentGroup <IMicrosoftGraphTermStoreGroup>]`: group
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+              - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
               - `[Description <String>]`: Description that gives details on the term usage.
               - `[DisplayName <String>]`: Name of the group.
@@ -718,15 +718,15 @@ To create the parameters described below, construct a hash table containing the 
   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 
 `BASETYPES <IMicrosoftGraphContentType[]>`: The collection of content types that are ancestors of this content type.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
   - `[Base <IMicrosoftGraphContentType>]`: contentType
   - `[BaseTypes <IMicrosoftGraphContentType[]>]`: The collection of content types that are ancestors of this content type.
   - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Name <String>]`: The name of the column  in this content type.
   - `[ColumnPositions <IMicrosoftGraphColumnDefinition[]>]`: Column order information in a content type.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
@@ -798,7 +798,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
       - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children of current term.
         - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
         - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
@@ -813,12 +813,12 @@ To create the parameters described below, construct a hash table containing the 
           - `[Key <String>]`: Key for the key-value pair.
           - `[Value <String>]`: Value for the key-value pair.
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
           - `[Relationship <String>]`: relationType
           - `[Set <IMicrosoftGraphTermStoreSet>]`: set
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children terms of set in term [store].
             - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
             - `[Description <String>]`: Description that gives details on the term usage.
@@ -827,7 +827,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[Name <String>]`: The name in the localized language.
             - `[ParentGroup <IMicrosoftGraphTermStoreGroup>]`: group
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+              - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
               - `[Description <String>]`: Description that gives details on the term usage.
               - `[DisplayName <String>]`: Name of the group.
@@ -906,15 +906,15 @@ To create the parameters described below, construct a hash table containing the 
 
 `BODYPARAMETER <IMicrosoftGraphContentType>`: contentType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
   - `[Base <IMicrosoftGraphContentType>]`: contentType
   - `[BaseTypes <IMicrosoftGraphContentType[]>]`: The collection of content types that are ancestors of this content type.
   - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Name <String>]`: The name of the column  in this content type.
   - `[ColumnPositions <IMicrosoftGraphColumnDefinition[]>]`: Column order information in a content type.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
@@ -986,7 +986,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
       - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children of current term.
         - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
         - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
@@ -1001,12 +1001,12 @@ To create the parameters described below, construct a hash table containing the 
           - `[Key <String>]`: Key for the key-value pair.
           - `[Value <String>]`: Value for the key-value pair.
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
           - `[Relationship <String>]`: relationType
           - `[Set <IMicrosoftGraphTermStoreSet>]`: set
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children terms of set in term [store].
             - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
             - `[Description <String>]`: Description that gives details on the term usage.
@@ -1015,7 +1015,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[Name <String>]`: The name in the localized language.
             - `[ParentGroup <IMicrosoftGraphTermStoreGroup>]`: group
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+              - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
               - `[Description <String>]`: Description that gives details on the term usage.
               - `[DisplayName <String>]`: Name of the group.
@@ -1093,11 +1093,11 @@ To create the parameters described below, construct a hash table containing the 
   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 
 `COLUMNLINKS <IMicrosoftGraphColumnLink[]>`: The collection of columns that are required by this content type.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Name <String>]`: The name of the column  in this content type.
 
 `COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition[]>`: Column order information in a content type.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
@@ -1169,7 +1169,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
     - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children of current term.
       - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
       - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
@@ -1184,12 +1184,12 @@ To create the parameters described below, construct a hash table containing the 
         - `[Key <String>]`: Key for the key-value pair.
         - `[Value <String>]`: Value for the key-value pair.
       - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[Relationship <String>]`: relationType
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children terms of set in term [store].
           - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
           - `[Description <String>]`: Description that gives details on the term usage.
@@ -1198,7 +1198,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[Name <String>]`: The name in the localized language.
           - `[ParentGroup <IMicrosoftGraphTermStoreGroup>]`: group
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
             - `[Description <String>]`: Description that gives details on the term usage.
             - `[DisplayName <String>]`: Name of the group.
@@ -1231,7 +1231,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
 `COLUMNS <IMicrosoftGraphColumnDefinition[]>`: The collection of column definitions for this contentType.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
@@ -1303,7 +1303,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
     - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children of current term.
       - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
       - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
@@ -1318,12 +1318,12 @@ To create the parameters described below, construct a hash table containing the 
         - `[Key <String>]`: Key for the key-value pair.
         - `[Value <String>]`: Value for the key-value pair.
       - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[Relationship <String>]`: relationType
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children terms of set in term [store].
           - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
           - `[Description <String>]`: Description that gives details on the term usage.
@@ -1332,7 +1332,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[Name <String>]`: The name in the localized language.
           - `[ParentGroup <IMicrosoftGraphTermStoreGroup>]`: group
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
             - `[Description <String>]`: Description that gives details on the term usage.
             - `[DisplayName <String>]`: Name of the group.
@@ -1375,7 +1375,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
   - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
   - `[SharedColumns <IMicrosoftGraphColumnDefinition[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
@@ -1444,7 +1444,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
       - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children of current term.
         - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
         - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
@@ -1459,12 +1459,12 @@ To create the parameters described below, construct a hash table containing the 
           - `[Key <String>]`: Key for the key-value pair.
           - `[Value <String>]`: Value for the key-value pair.
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
           - `[Relationship <String>]`: relationType
           - `[Set <IMicrosoftGraphTermStoreSet>]`: set
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children terms of set in term [store].
             - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
             - `[Description <String>]`: Description that gives details on the term usage.
@@ -1473,7 +1473,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[Name <String>]`: The name in the localized language.
             - `[ParentGroup <IMicrosoftGraphTermStoreGroup>]`: group
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+              - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
               - `[Description <String>]`: Description that gives details on the term usage.
               - `[DisplayName <String>]`: Name of the group.

@@ -193,7 +193,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `APPS <IMicrosoftGraphManagedMobileApp[]>`: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Version <String>]`: Version of the entity.
@@ -201,7 +201,7 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IPaths14Nj8OcDeviceappmanagementManagedapppoliciesManagedapppolicyIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Version <String>]`: Version of the entity.

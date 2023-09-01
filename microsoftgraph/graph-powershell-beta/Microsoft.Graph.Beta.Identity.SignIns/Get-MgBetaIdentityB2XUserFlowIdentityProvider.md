@@ -45,6 +45,19 @@ Get-MgBetaIdentityB2XUserFlowIdentityProvider -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Get identityProviders from identity
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityB2XUserFlowIdentityProvider -B2xIdentityUserFlowId $b2xIdentityUserFlowId
+
+```
+This example shows how to use the Get-MgBetaIdentityB2XUserFlowIdentityProvider Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -305,6 +318,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -341,4 +355,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2XUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowIdentityProvider?view=graph-powershell-1.0)
-

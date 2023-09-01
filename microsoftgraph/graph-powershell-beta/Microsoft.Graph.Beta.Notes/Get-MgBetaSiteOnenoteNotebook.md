@@ -3,7 +3,8 @@ external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebook
 schema: 2.0.0
-ms.service: onenote
+ms.prod: onenote
+ms.prod: onenote
 ---
 
 # Get-MgBetaSiteOnenoteNotebook

@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsession
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventSession
 
 ## SYNOPSIS
-Read the properties and relationships of a virtualEventSession object.
+Sessions of the virtual event.
 
 ## SYNTAX
 
@@ -33,7 +32,7 @@ Get-MgBetaVirtualEventSession -InputObject <IBookingsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a virtualEventSession object.
+Sessions of the virtual event.
 
 ## PARAMETERS
 

@@ -46,13 +46,13 @@ You cannot create custom languages in self-service sign up user flows.
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaIdentityB2XUserFlowLanguage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
+Get-MgBetaIdentityB2XUserFlowLanguage -B2xIdentityUserFlowId $b2xIdentityUserFlowId
+
 ```
 This example shows how to use the Get-MgBetaIdentityB2XUserFlowLanguage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -314,6 +314,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization

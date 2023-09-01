@@ -3,20 +3,21 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannel
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamChannel
 
 ## SYNOPSIS
-List of channels either hosted in or shared with the team (incoming channels).
+Retrieve the properties and relationships of a channel.
+This method supports federation.
+Only a user who is a member of the shared channel can retrieve channel information.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### List (Default)
+### List1 (Default)
 ```
 Get-MgTeamChannel -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
@@ -29,33 +30,16 @@ Get-MgTeamChannel -ChannelId <String> -TeamId <String> [-ExpandProperty <String[
  [<CommonParameters>]
 ```
 
-### Get
-```
-Get-MgTeamChannel -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### List1
-```
-Get-MgTeamChannel -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
-```
-
 ### GetViaIdentity1
 ```
 Get-MgTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
-```
-Get-MgTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
 ## DESCRIPTION
-List of channels either hosted in or shared with the team (incoming channels).
+Retrieve the properties and relationships of a channel.
+This method supports federation.
+Only a user who is a member of the shared channel can retrieve channel information.
 
 ## EXAMPLES
 ### Example 1: List all channels
@@ -88,7 +72,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List, List1
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -103,7 +87,7 @@ The unique identifier of channel
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -119,7 +103,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -149,7 +133,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -165,7 +149,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -180,7 +164,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -210,7 +194,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -225,7 +209,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List, List1
+Parameter Sets: List1
 Aliases: OrderBy
 
 Required: False
@@ -240,7 +224,7 @@ The unique identifier of team
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1, Get, List1
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -255,7 +239,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List1
 Aliases: Limit
 
 Required: False
@@ -270,7 +254,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List1
 Aliases:
 
 Required: False

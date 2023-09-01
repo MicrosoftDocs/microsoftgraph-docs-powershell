@@ -14,7 +14,13 @@ Read-only.
 
 ## SYNTAX
 
-### List (Default)
+### Get2 (Default)
+```
+Get-MgBetaCommunicationOnlineMeetingRecording [-Property <String[]>] [-Count] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+```
+
+### List
 ```
 Get-MgBetaCommunicationOnlineMeetingRecording -OnlineMeetingId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -81,6 +87,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Get2
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
@@ -117,7 +138,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get2, List
 Aliases:
 
 Required: False
@@ -208,7 +229,7 @@ Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: List, Get1, GetViaIdentity1
+Parameter Sets: Get2, List, Get1, GetViaIdentity1
 Aliases: Select
 
 Required: False
@@ -223,7 +244,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: Get2, List
 Aliases:
 
 Required: False
@@ -238,7 +259,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: Get2, List
 Aliases: OrderBy
 
 Required: False
@@ -253,7 +274,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get2, List
 Aliases: Limit
 
 Required: False
@@ -268,7 +289,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: Get2, List
 Aliases:
 
 Required: False

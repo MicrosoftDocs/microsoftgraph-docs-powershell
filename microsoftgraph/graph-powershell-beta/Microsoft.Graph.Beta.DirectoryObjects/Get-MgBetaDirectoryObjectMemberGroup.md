@@ -11,6 +11,9 @@ ms.prod: directory-management
 ## SYNOPSIS
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
+This API returns up to 11,000 group IDs.
+If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
+As a workaround, use the List group transitive memberOf API.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObjectMemberGroup](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObjectMemberGroup?view=graph-powershell-1.0)
@@ -46,6 +49,9 @@ Get-MgBetaDirectoryObjectMemberGroup -InputObject <IDirectoryObjectsIdentity>
 ## DESCRIPTION
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
+This API returns up to 11,000 group IDs.
+If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
+As a workaround, use the List group transitive memberOf API.
 
 ## EXAMPLES
 ### Example 1: Check group memberships for a directory object

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmembergroup
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaContactMemberGroup
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
+This API returns up to 11,000 group IDs.
+If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
+As a workaround, use the List group transitive memberOf API.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgContactMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberGroup?view=graph-powershell-1.0)
@@ -45,6 +49,9 @@ Get-MgBetaContactMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
+This API returns up to 11,000 group IDs.
+If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
+As a workaround, use the List group transitive memberOf API.
 
 ## EXAMPLES
 

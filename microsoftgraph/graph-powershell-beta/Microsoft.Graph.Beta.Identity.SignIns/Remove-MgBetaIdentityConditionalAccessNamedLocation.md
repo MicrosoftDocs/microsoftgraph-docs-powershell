@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Delete an ipNamedLocation object.
+Delete a namedLocation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Remove-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 ```
 
 ## DESCRIPTION
-Delete an ipNamedLocation object.
+Delete a namedLocation object.
 
 ## EXAMPLES
 ### Example 1: Remove a named location
@@ -195,6 +195,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization

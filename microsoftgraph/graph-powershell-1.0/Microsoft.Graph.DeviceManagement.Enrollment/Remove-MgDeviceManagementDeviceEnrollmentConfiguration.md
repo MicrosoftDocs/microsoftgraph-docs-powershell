@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration.
+Deletes a deviceEnrollmentLimitConfiguration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration.
+Deletes a deviceEnrollmentLimitConfiguration.
 
 ## PARAMETERS
 

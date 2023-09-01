@@ -20,8 +20,9 @@ Create new navigation property to incidents for security
 New-MgSecurityIncident [-AdditionalProperties <Hashtable>] [-Alerts <IMicrosoftGraphSecurityAlert[]>]
  [-AssignedTo <String>] [-Classification <String>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
  [-CreatedDateTime <DateTime>] [-CustomTags <String[]>] [-Determination <String>] [-DisplayName <String>]
- [-Id <String>] [-IncidentWebUrl <String>] [-LastUpdateDateTime <DateTime>] [-RedirectIncidentId <String>]
- [-Severity <String>] [-Status <String>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
+ [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>] [-TenantId <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -208,6 +209,21 @@ Accept wildcard characters: False
 
 ### -IncidentWebUrl
 The URL for the incident page in the Microsoft 365 Defender portal.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastModifiedBy
+.
 
 ```yaml
 Type: String

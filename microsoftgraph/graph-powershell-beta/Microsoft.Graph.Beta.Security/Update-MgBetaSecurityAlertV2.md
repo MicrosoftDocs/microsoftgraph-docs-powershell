@@ -17,16 +17,17 @@ Update the properties of an alert object in an organization based on the specifi
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityAlertV2 -AlertId <String> [-ActorDisplayName <String>] [-AdditionalProperties <Hashtable>]
- [-AlertWebUrl <String>] [-AssignedTo <String>] [-Category <String>] [-Classification <String>]
- [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DetectionSource <String>] [-DetectorId <String>] [-Determination <String>]
- [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <DateTime>] [-Id <String>]
- [-IncidentId <String>] [-IncidentWebUrl <String>] [-LastActivityDateTime <DateTime>]
- [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProviderAlertId <String>]
- [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>] [-ServiceSource <String>] [-Severity <String>]
- [-Status <String>] [-SystemTags <String[]>] [-TenantId <String>] [-ThreatDisplayName <String>]
- [-ThreatFamilyName <String>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityAlertV2 -AlertId <String> [-ActorDisplayName <String>] [-AdditionalData <Hashtable>]
+ [-AdditionalProperties <Hashtable>] [-AlertPolicyId <String>] [-AlertWebUrl <String>] [-AssignedTo <String>]
+ [-Category <String>] [-Classification <String>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DetectionSource <String>] [-DetectorId <String>]
+ [-Determination <String>] [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>]
+ [-FirstActivityDateTime <DateTime>] [-Id <String>] [-IncidentId <String>] [-IncidentWebUrl <String>]
+ [-LastActivityDateTime <DateTime>] [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>]
+ [-ProviderAlertId <String>] [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>]
+ [-ServiceSource <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
+ [-TenantId <String>] [-ThreatDisplayName <String>] [-ThreatFamilyName <String>] [-Title <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -38,9 +39,10 @@ Update-MgBetaSecurityAlertV2 -AlertId <String> -BodyParameter <IMicrosoftGraphSe
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-ActorDisplayName <String>]
- [-AdditionalProperties <Hashtable>] [-AlertWebUrl <String>] [-AssignedTo <String>] [-Category <String>]
- [-Classification <String>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DetectionSource <String>] [-DetectorId <String>] [-Determination <String>]
+ [-AdditionalData <Hashtable>] [-AdditionalProperties <Hashtable>] [-AlertPolicyId <String>]
+ [-AlertWebUrl <String>] [-AssignedTo <String>] [-Category <String>] [-Classification <String>]
+ [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DetectionSource <String>] [-DetectorId <String>] [-Determination <String>]
  [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <DateTime>] [-Id <String>]
  [-IncidentId <String>] [-IncidentWebUrl <String>] [-LastActivityDateTime <DateTime>]
  [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProviderAlertId <String>]
@@ -75,6 +77,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AdditionalData
+dictionary
+
+```yaml
+Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AdditionalProperties
 Additional Parameters
 
@@ -99,6 +116,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AlertPolicyId
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

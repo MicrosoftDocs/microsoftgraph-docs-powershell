@@ -15,8 +15,8 @@ Create new navigation property to recordings for communications
 ### CreateExpanded (Default)
 ```
 New-MgBetaCommunicationOnlineMeetingRecording -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-MeetingId <String>]
+ [-MeetingOrganizerId <String>] [-RecordingContentUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -29,7 +29,8 @@ New-MgBetaCommunicationOnlineMeetingRecording -OnlineMeetingId <String>
 ```
 New-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MeetingId <String>] [-MeetingOrganizerId <String>] [-RecordingContentUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -140,6 +141,38 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -MeetingId
+The unique identifier of the onlineMeeting related to this recording.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MeetingOrganizerId
+The unique identifier of the organizer of the onlineMeeting related to this recording.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OnlineMeetingId
 The unique identifier of onlineMeeting
 
@@ -149,6 +182,22 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RecordingContentUrl
+The URL which can be used to access the content of the recording.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -210,6 +259,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Content <Byte[]>]`: The content of the recording. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording. Read-only.
+  - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording. Read-only.
+  - `[RecordingContentUrl <String>]`: The URL which can be used to access the content of the recording. Read-only.
 
 `INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord

@@ -11,7 +11,7 @@ schema: 2.0.0
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
-Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwnedObject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObject?view=graph-powershell-beta)
@@ -41,7 +41,7 @@ Get-MgServicePrincipalOwnedObject -InputObject <IApplicationsIdentity> [-ExpandP
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
-Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+Supports $expand, $select nested in $expand, and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgServicePrincipalOwnedObject Cmdlet
