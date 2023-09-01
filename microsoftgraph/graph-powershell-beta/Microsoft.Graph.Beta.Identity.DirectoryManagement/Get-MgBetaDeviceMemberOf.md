@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberof
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDeviceMemberOf
@@ -44,13 +45,17 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceMemberOf Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaDeviceMemberOf -DeviceId $deviceId
+
 ```
 This example shows how to use the Get-MgBetaDeviceMemberOf Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

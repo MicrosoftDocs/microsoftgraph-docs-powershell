@@ -10,7 +10,7 @@ ms.prod: intune
 # Get-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Read properties and relationships of the iosCustomConfiguration object.
+Read properties and relationships of the windows10EnterpriseModernAppManagementConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIdentit
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the iosCustomConfiguration object.
+Read properties and relationships of the windows10EnterpriseModernAppManagementConfiguration object.
 
 ## PARAMETERS
 

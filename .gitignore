@@ -405,3 +405,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+#Missing external url docs report Folder
+missingexternaldocsurl/

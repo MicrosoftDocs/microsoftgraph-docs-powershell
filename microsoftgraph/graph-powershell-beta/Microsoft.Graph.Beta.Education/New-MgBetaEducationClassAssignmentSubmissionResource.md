@@ -54,9 +54,10 @@ To create a new file-based resource, upload the file to the resources folder ass
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Create an educationWordResource
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
@@ -68,14 +69,14 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
 ```
-This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionResource Cmdlet.
+This example will create an educationwordresource
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
+### Example 2: Create an educationLinkResource
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
@@ -87,14 +88,14 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
 ```
-This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionResource Cmdlet.
+This example will create an educationlinkresource
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
+### Example 3: Create an educationFileResource
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
@@ -106,14 +107,14 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
 ```
-This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionResource Cmdlet.
+This example will create an educationfileresource
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
+### Example 4: Create an educationExcelResource
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
@@ -125,14 +126,14 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
 ```
-This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionResource Cmdlet.
+This example will create an educationexcelresource
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Code snippet
+### Example 5: Create an educationPowerPointResource
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
@@ -144,10 +145,28 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionResource Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will create an educationpowerpointresource
+
+### Example 6: Create an educationMediaResource
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+$params = @{
+	resource = @{
+		displayName = "category.jpg"
+		fileUrl = "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RK2WLKUUBAA4ZBKXNBL6QFC2TKG"
+		"@odata.type" = "#microsoft.graph.educationMediaResource"
+	}
+}
+
+New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
+```
+This example will create an educationmediaresource
 
 
 ## PARAMETERS
@@ -352,8 +371,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: Display name of resource.
@@ -382,8 +401,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: Display name of resource.

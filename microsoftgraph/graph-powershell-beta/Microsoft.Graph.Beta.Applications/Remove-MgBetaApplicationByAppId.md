@@ -19,8 +19,8 @@ After that time, they are permanently deleted.
 
 ### Delete (Default)
 ```
-Remove-MgBetaApplicationByAppId -AppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaApplicationByAppId -AppId <String> -UniqueName <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -91,6 +91,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UniqueName
+Alternate key of application
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

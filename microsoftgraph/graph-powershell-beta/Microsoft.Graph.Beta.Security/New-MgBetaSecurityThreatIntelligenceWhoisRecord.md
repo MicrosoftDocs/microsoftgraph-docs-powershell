@@ -17,12 +17,12 @@ Create new navigation property to whoisRecords for security
 New-MgBetaSecurityThreatIntelligenceWhoisRecord [-Abuse <IMicrosoftGraphSecurityWhoisContact>]
  [-AdditionalProperties <Hashtable>] [-Admin <IMicrosoftGraphSecurityWhoisContact>]
  [-Billing <IMicrosoftGraphSecurityWhoisContact>] [-DomainStatus <String>] [-ExpirationDateTime <DateTime>]
- [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-LastUpdateDateTime <DateTime>]
- [-Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>] [-Noc <IMicrosoftGraphSecurityWhoisContact>]
- [-RawWhoisText <String>] [-Registrant <IMicrosoftGraphSecurityWhoisContact>]
- [-Registrar <IMicrosoftGraphSecurityWhoisContact>] [-RegistrationDateTime <DateTime>]
- [-Technical <IMicrosoftGraphSecurityWhoisContact>] [-WhoisServer <String>]
+ [-FirstSeenDateTime <DateTime>] [-History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]
+ [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>] [-LastSeenDateTime <DateTime>]
+ [-LastUpdateDateTime <DateTime>] [-Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]
+ [-Noc <IMicrosoftGraphSecurityWhoisContact>] [-RawWhoisText <String>]
+ [-Registrant <IMicrosoftGraphSecurityWhoisContact>] [-Registrar <IMicrosoftGraphSecurityWhoisContact>]
+ [-RegistrationDateTime <DateTime>] [-Technical <IMicrosoftGraphSecurityWhoisContact>] [-WhoisServer <String>]
  [-Zone <IMicrosoftGraphSecurityWhoisContact>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -151,6 +151,22 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -History
+.
+To construct, see NOTES section for HISTORY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityWhoisHistoryRecord[]
 Parameter Sets: CreateExpanded
 Aliases:
 

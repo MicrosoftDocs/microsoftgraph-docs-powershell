@@ -10,7 +10,7 @@ ms.prod: w10
 # Get-MgBetaWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Read the properties of an azureADDevice object.
+Read the properties and relationships of an updatableAsset object.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgBetaWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-
 ```
 
 ## DESCRIPTION
-Read the properties of an azureADDevice object.
+Read the properties and relationships of an updatableAsset object.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet

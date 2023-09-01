@@ -40,16 +40,27 @@ Get-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIde
 Read the properties and relationships of a partner-specific configuration.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: List all partner configurations within a cross-tenant access policy
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
-```
-This example shows how to use the Get-MgBetaPolicyCrossTenantAccessPolicyPartner Cmdlet.
+Get-MgBetaPolicyCrossTenantAccessPolicyPartner
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will list all partner configurations within a cross-tenant access policy
+
+### Example 2: List the user synchronization policy for all partner configurations
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyCrossTenantAccessPolicyPartner -Property "tenantId" -ExpandProperty "identitySynchronization" 
+
+```
+This example will list the user synchronization policy for all partner configurations
 
 
 ## PARAMETERS
@@ -296,6 +307,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization

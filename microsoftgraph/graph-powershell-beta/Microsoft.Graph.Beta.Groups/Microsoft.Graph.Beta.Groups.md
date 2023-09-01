@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Groups
-Module Guid: 52996405-e214-4309-bc7a-461d8caadc7c
+Module Guid: 9922e8be-e81d-44a0-ac3a-b32bd811ec65
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups
 Help Version: 1.0.0.0
 Locale: en-US
@@ -136,6 +136,13 @@ Get the number of the resource
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+### [Get-MgBetaGroupByUniqueName](Get-MgBetaGroupByUniqueName.md)
+Get the properties and relationships of a group object.
+This operation returns by default only a subset of all the available properties, as noted in the Properties section.
+To get properties that are not returned by default, specify them in a $select OData query option.
+The hasMembersWithLicenseErrors and isArchived properties are an exception and are not returned in the $select query.
+Because the group resource supports extensions, you can also use the GET operation to get custom properties and extension data in a group instance.
+
 ### [Get-MgBetaGroupCalendarEventDelta](Get-MgBetaGroupCalendarEventDelta.md)
 Get a set of event resources that have been added, deleted, or updated in one or more calendars.
 You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a calendarView (range of events defined by start and end dates) of a calendar.
@@ -150,7 +157,7 @@ The following table lists the differences between the delta function on events a
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ### [Get-MgBetaGroupConversation](Get-MgBetaGroupConversation.md)
-Retrieve the properties and relationships of conversation object.
+Get a conversation object.
 
 ### [Get-MgBetaGroupConversationCount](Get-MgBetaGroupConversationCount.md)
 Get the number of the resource
@@ -562,8 +569,7 @@ Invoke function getActivitiesByInterval
 Invoke function delta
 
 ### [Get-MgBetaGroupThread](Get-MgBetaGroupThread.md)
-Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
+Get a thread object.
 
 ### [Get-MgBetaGroupThreadCount](Get-MgBetaGroupThreadCount.md)
 Get the number of the resource
@@ -830,32 +836,30 @@ Renew a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ### [Invoke-MgBetaReplyGroupConversationThread](Invoke-MgBetaReplyGroupConversationThread.md)
-Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
+Add an attachment when creating a group post.
+This operation limits the size of the attachment you can add to under 3 MB.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [Invoke-MgBetaReplyGroupConversationThreadPost](Invoke-MgBetaReplyGroupConversationThreadPost.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo](Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaReplyGroupThread](Invoke-MgBetaReplyGroupThread.md)
-Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
+Add an attachment when creating a group post.
+This operation limits the size of the attachment you can add to under 3 MB.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [Invoke-MgBetaReplyGroupThreadPost](Invoke-MgBetaReplyGroupThreadPost.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaReplyGroupThreadPostInReplyTo](Invoke-MgBetaReplyGroupThreadPostInReplyTo.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaRetryGroupServiceProvisioning](Invoke-MgBetaRetryGroupServiceProvisioning.md)
 Retry the group service provisioning.
@@ -1074,8 +1078,15 @@ To learn more, see deletedItems.
 ### [Remove-MgBetaGroupAcceptedSenderByRef](Remove-MgBetaGroupAcceptedSenderByRef.md)
 Remove a user or group from the accepted-senders list of the specified group.
 
+### [Remove-MgBetaGroupByUniqueName](Remove-MgBetaGroupByUniqueName.md)
+Deletes a group.
+When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.
+After that time, they are permanently deleted.
+This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
+To learn more, see deletedItems.
+
 ### [Remove-MgBetaGroupConversation](Remove-MgBetaGroupConversation.md)
-Delete conversation.
+Delete a conversation object.
 
 ### [Remove-MgBetaGroupConversationThread](Remove-MgBetaGroupConversationThread.md)
 Delete navigation property threads for groups
@@ -1329,6 +1340,9 @@ Unpublish a [contentType][] from a content type hub site.
 Unpublish a [contentType][] from a content type hub site.
 
 ### [Update-MgBetaGroup](Update-MgBetaGroup.md)
+Update the properties of a group object.
+
+### [Update-MgBetaGroupByUniqueName](Update-MgBetaGroupByUniqueName.md)
 Update the properties of a group object.
 
 ### [Update-MgBetaGroupConversationThread](Update-MgBetaGroupConversationThread.md)

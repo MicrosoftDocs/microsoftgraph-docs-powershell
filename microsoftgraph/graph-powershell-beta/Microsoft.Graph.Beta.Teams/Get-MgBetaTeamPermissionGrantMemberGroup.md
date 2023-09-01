@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
+This API returns up to 11,000 group IDs.
+If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
+As a workaround, use the List group transitive memberOf API.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPermissionGrantMemberGroup?view=graph-powershell-1.0)
@@ -45,6 +48,9 @@ Get-MgBetaTeamPermissionGrantMemberGroup -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
+This API returns up to 11,000 group IDs.
+If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
+As a workaround, use the List group transitive memberOf API.
 
 ## EXAMPLES
 

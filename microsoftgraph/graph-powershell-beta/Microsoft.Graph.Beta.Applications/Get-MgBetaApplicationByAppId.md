@@ -18,8 +18,8 @@ Get the properties and relationships of an application object.
 
 ### Get (Default)
 ```
-Get-MgBetaApplicationByAppId -AppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaApplicationByAppId -AppId <String> -UniqueName <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -88,6 +88,21 @@ Parameter Sets: (All)
 Aliases: Select
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UniqueName
+Alternate key of application
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteampermissiongrantmembergroup
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgTeamPermissionGrantMemberGroup
@@ -11,6 +10,9 @@ ms.prod: directory-management
 ## SYNOPSIS
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
+This API returns up to 11,000 group IDs.
+If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
+As a workaround, use the List group transitive memberOf API.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantMemberGroup?view=graph-powershell-beta)
@@ -46,6 +48,9 @@ Get-MgTeamPermissionGrantMemberGroup -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
+This API returns up to 11,000 group IDs.
+If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
+As a workaround, use the List group transitive memberOf API.
 
 ## PARAMETERS
 

@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of an educationAssignmentSettings object.
-Only Teachers can update these settings.
+Only teachers can update these settings.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity>
 
 ## DESCRIPTION
 Update the properties of an educationAssignmentSettings object.
-Only Teachers can update these settings.
+Only teachers can update these settings.
 
 ## EXAMPLES
 ### Example 1: Code snippet

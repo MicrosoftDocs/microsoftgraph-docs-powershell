@@ -3,8 +3,6 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteaminstalledapp
 schema: 2.0.0
-ms.prod: microsoft-teams
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamInstalledApp
@@ -40,27 +38,38 @@ Get-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 Retrieve the app installed in the specified team.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get the installed app
 
 ```powershell
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamInstalledApp -TeamId $teamId
+Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
 
 ```
-This example shows how to use the Get-MgTeamInstalledApp Cmdlet.
+This example will get the installed app
 
-### Example 2: Code snippet
+### Example 2: Get the names and other details of the installed app
 
 ```powershell
 
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamInstalledApp -TeamId $teamId -ExpandProperty "teamsApp,teamsAppDefinition" -Filter "teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'" 
+Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId -ExpandProperty "teamsAppDefinition" 
 
 ```
-This example shows how to use the Get-MgTeamInstalledApp Cmdlet.
+This example will get the names and other details of the installed app
+
+### Example 3: Get the resource specific permissions consented for the app installed in the specified team
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId -Property "consentedPermissionSet,id" 
+
+```
+This example will get the resource specific permissions consented for the app installed in the specified team
 
 
 ## PARAMETERS

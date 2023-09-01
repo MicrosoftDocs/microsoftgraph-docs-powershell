@@ -562,6 +562,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[Region <String>]`: 
     - `[Type <String>]`: phoneType
   - `[ProxyAddresses <String[]>]`: For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'. The any operator is required for filter expressions on multi-valued properties. Supports $filter (eq, not, ge, le, startsWith, /$count eq 0, /$count ne 0).
+  - `[ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>]`: 
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[IsResolved <Boolean?>]`: 
+    - `[ServiceInstance <String>]`: 
   - `[Surname <String>]`: Last name for this organizational contact. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
   - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this contact is a member of, including groups that the contact is nested under. Read-only. Nullable.
 
@@ -613,6 +617,11 @@ To create the parameters described below, construct a hash table containing the 
   - `[Number <String>]`: The phone number.
   - `[Region <String>]`: 
   - `[Type <String>]`: phoneType
+
+`SERVICEPROVISIONINGERRORS <IMicrosoftGraphServiceProvisioningError[]>`: .
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[IsResolved <Boolean?>]`: 
+  - `[ServiceInstance <String>]`: 
 
 `TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject[]>`: Groups that this contact is a member of, including groups that the contact is nested under. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.

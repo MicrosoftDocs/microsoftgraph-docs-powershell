@@ -44,49 +44,27 @@ Among the types of providers derived from identityProviderBase, you can currentl
 In Azure AD B2C, this operation can currently get a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## EXAMPLES
-### Example 1: Retrieve a specific <strong>social identity provider</strong> (Azure AD or Azure AD B2C)
+### Example 1: List all identity provider resources configured in an Azure AD tenant
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
+Get-MgBetaIdentityProvider
+
 ```
-This example shows how to use the Get-MgBetaIdentityProvider Cmdlet.
+This example will list all identity provider resources configured in an azure ad tenant
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Retrieve a specific <strong>built-in identity provider</strong> (only for Azure AD)
+### Example 2: List all **identityProvider** configured in an Azure AD B2C tenant
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-Get-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
+Get-MgBetaIdentityProvider
+
 ```
-This example shows how to use the Get-MgBetaIdentityProvider Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Retrieve a specific <strong>OpenID Connect identity provider</strong> (only for Azure AD B2C)
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
-```
-This example shows how to use the Get-MgBetaIdentityProvider Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Retrieves Apple identity provider(only for Azure AD B2C)
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-
-Get-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
-```
-This example shows how to use the Get-MgBetaIdentityProvider Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will list all **identityprovider** configured in an azure ad b2c tenant
 
 
 ## PARAMETERS
@@ -333,6 +311,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization

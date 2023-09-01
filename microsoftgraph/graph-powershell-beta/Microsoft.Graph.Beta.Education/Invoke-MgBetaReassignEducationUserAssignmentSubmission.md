@@ -41,6 +41,8 @@ This means that the reassigned status will be mapped to the returned status, and
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -172,4 +174,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReassignEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationUserAssignmentSubmission?view=graph-powershell-1.0)
-

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryattributeset
 schema: 2.0.0
+ms.prod: directory-management
+ms.prod: directory-management
 ---
 
 # Get-MgBetaDirectoryAttributeSet
@@ -38,16 +40,38 @@ Get-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdenti
 Read the properties and relationships of an attributeSet object.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get all attribute sets
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
-Get-MgBetaDirectoryAttributeSet -AttributeSetId $attributeSetId
-```
-This example shows how to use the Get-MgBetaDirectoryAttributeSet Cmdlet.
+Get-MgBetaDirectoryAttributeSet
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+```
+This example will get all attribute sets
+
+### Example 2: Get top attribute sets
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryAttributeSet -Top 10 
+
+```
+This example will get top attribute sets
+
+### Example 3: Get attribute sets in order
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryAttributeSet -Sort "id" 
+
+```
+This example will get attribute sets in order
 
 
 ## PARAMETERS

@@ -51,7 +51,7 @@ A consultative transfer means that the transferor can inform the person they wan
 This is opposed to transfering the call directly.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Call transfer from a peer-to-peer call
 
 ```powershell
 
@@ -72,9 +72,9 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
 ```
-This example shows how to use the Move-MgCommunicationCall Cmdlet.
+This example will call transfer from a peer-to-peer call
 
-### Example 2: Code snippet
+### Example 2: Consultative transfer from a peer-to-peer call
 
 ```powershell
 
@@ -99,9 +99,35 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
 ```
-This example shows how to use the Move-MgCommunicationCall Cmdlet.
+This example will consultative transfer from a peer-to-peer call
 
-### Example 3: Code snippet
+### Example 3: Call transfer from a peer-to-peer call to PSTN number
+
+```powershell
+
+Import-Module Microsoft.Graph.CloudCommunications
+
+$params = @{
+	transferTarget = @{
+		endpointType = "default"
+		identity = @{
+			phone = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				id = "+12345678901"
+			}
+		}
+		languageId = "languageId-value"
+		region = "region-value"
+	}
+	clientContext = "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+}
+
+Move-MgCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example will call transfer from a peer-to-peer call to pstn number
+
+### Example 4: Consultative transfer from a peer-to-peer call to PSTN number
 
 ```powershell
 
@@ -128,9 +154,9 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
 ```
-This example shows how to use the Move-MgCommunicationCall Cmdlet.
+This example will consultative transfer from a peer-to-peer call to pstn number
 
-### Example 4: Code snippet
+### Example 5: Call transfer from a group call
 
 ```powershell
 
@@ -160,7 +186,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 
 ```
-This example shows how to use the Move-MgCommunicationCall Cmdlet.
+This example will call transfer from a group call
 
 
 ## PARAMETERS
