@@ -3,7 +3,7 @@ title: "Manage PIM policies using Microsoft Graph PowerShell"
 description: "Learn how to manage PIM policies in Microsoft Graph PowerShell"
 
 ms.topic: how-to
-ms.date: 09/20/2022
+ms.date: 09/05/2023
 author: msewaweru
 manager: mwongerapk
 ms.author: eunicewaweru
@@ -46,10 +46,15 @@ Get-MgPolicyRoleManagementPolicy -Filter "scopeId eq '/' and scopeType eq 'Direc
 ```Output
 Id                                                                                      Description   DisplayName   IsOrganizationDefault LastModifiedDateTime ScopeId ScopeType
 --                                                                                      -----------   -----------   --------------------- -------------------- ------- ---------
-DirectoryRole_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03 DirectoryRole DirectoryRole False                                      /       DirectoryRole
-DirectoryRole_06f6521d-c18c-460a-8656-fa82e81aa94b_cc690af9-a579-4c20-81f0-c9e0c6f3e4d9 DirectoryRole DirectoryRole False                                      /       DirectoryRole
-DirectoryRole_06f6521d-c18c-460a-8656-fa82e81aa94b_c4955dbd-25f9-4018-9499-8fcf0f6bf2db DirectoryRole DirectoryRole False                                      /       DirectoryRole
-DirectoryRole_06f6521d-c18c-460a-8656-fa82e81aa94b_7f3f1941-38f9-42fa-828c-e45eae7ec6fd DirectoryRole DirectoryRole False                                      /       DirectoryRole
+DirectoryRole_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720 DirectoryRole DirectoryRole False                                      /       DirectoryRole
+DirectoryRole_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_04949382-ea50-4d50-8d4e-a89801b95dc2 DirectoryRole DirectoryRole False                                      /       DirectoryRole
+DirectoryRole_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_5e870933-40ea-48d6-a77f-b8813f9172c2 DirectoryRole DirectoryRole False                                      /       DirectoryRole
+DirectoryRole_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_dbc3fbda-6dfe-4e3f-9a93-e7afc047dc6b DirectoryRole DirectoryRole False                                      /       DirectoryRole
+DirectoryRole_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_2a5f1b68-1022-41a6-be9a-fa022b1d1670 DirectoryRole DirectoryRole False                                      /       DirectoryRole
+DirectoryRole_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_98664ea2-fcb2-4dee-a42d-4891d18df7d6 DirectoryRole DirectoryRole False                                      /       DirectoryRole
+DirectoryRole_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_c7645eec-de95-4c56-8516-eea261ddf063 DirectoryRole DirectoryRole False                                      /       DirectoryRole
+DirectoryRole_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_e7701331-5e4b-42cb-98b5-04b12e9b780d DirectoryRole DirectoryRole False                                      /       DirectoryRole
+DirectoryRol
 ```
 
 ### List details of a specific policy
@@ -57,15 +62,23 @@ DirectoryRole_06f6521d-c18c-460a-8656-fa82e81aa94b_7f3f1941-38f9-42fa-828c-e45ea
 To get the details of a specific policy, run:
 
 ```powershell
-$policyId = "DirectoryRole_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03"
+$policyId = "DirectoryRole_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720"
 
-Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $policyId 
+Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $policyId | FL
 ```
 
 ```Output
-Id                                                                                      Description   DisplayName   IsOrganizationDefault LastModifiedDateTime ScopeId ScopeType
---                                                                                      -----------   -----------   --------------------- -------------------- ------- ---------
-DirectoryRole_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03 DirectoryRole DirectoryRole False                                      /       DirectoryRole
+Description           : DirectoryRole
+DisplayName           : DirectoryRole
+EffectiveRules        :
+Id                    : DirectoryRole_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720
+IsOrganizationDefault : False
+LastModifiedBy        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphIdentity
+LastModifiedDateTime  :
+Rules                 :
+ScopeId               : /
+ScopeType             : DirectoryRole
+AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies/$entity]}
 ```
 
 ## Step 2: Get policy assignments
@@ -83,11 +96,11 @@ Get-MgPolicyRoleManagementPolicyAssignment -Filter "scopeId eq '/' and scopeType
 ```Output
 Id                                                                                                                       PolicyId                                                                            RoleDefinitionId                     ScopeId ScopeType
 --                                                                                                                       --------                                                                            ----------------                     ------- ---------
-Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03_9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3 Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03 9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3 /       Directory
-Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_cc690af9-a579-4c20-81f0-c9e0c6f3e4d9_62e90394-69f5-4237-9190-012177145e10 Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_cc690af9-a579-4c20-81f0-c9e0c6f3e4d9 62e90394-69f5-4237-9190-012177145e10 /       Directory
-Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_c4955dbd-25f9-4018-9499-8fcf0f6bf2db_2af84b1e-32c8-42b7-82bc-daa82404023b Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_c4955dbd-25f9-4018-9499-8fcf0f6bf2db 2af84b1e-32c8-42b7-82bc-daa82404023b /       Directory
-Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_7f3f1941-38f9-42fa-828c-e45eae7ec6fd_fe930be7-5e62-47db-91af-98c3a49a38b1 Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_7f3f1941-38f9-42fa-828c-e45eae7ec6fd fe930be7-5e62-47db-91af-98c3a49a38b1 /       Directory
-Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_b0ebbcf4-edb5-4c6a-b646-01850c5fc5cd_f023fd81-a637-4b56-95fd-791ac0226033 Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_b0ebbcf4-edb5-4c6a-b646-01850c5fc5cd f023fd81-a637-4b56-95fd-791ac0226033 /       Directory
+Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720_88d8e3e3-8f55-4a1e-953a-9b9898b8876b Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720 88d8e3e3-8f55-4a1e-953a-9b9898b8876b /       Directory
+Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_04949382-ea50-4d50-8d4e-a89801b95dc2_62e90394-69f5-4237-9190-012177145e10 Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_04949382-ea50-4d50-8d4e-a89801b95dc2 62e90394-69f5-4237-9190-012177145e10 /       Directory
+Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_5e870933-40ea-48d6-a77f-b8813f9172c2_10dae51f-b6af-4016-8d66-8c2a99b929b3 Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_5e870933-40ea-48d6-a77f-b8813f9172c2 10dae51f-b6af-4016-8d66-8c2a99b929b3 /       Directory
+Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_dbc3fbda-6dfe-4e3f-9a93-e7afc047dc6b_2af84b1e-32c8-42b7-82bc-daa82404023b Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_dbc3fbda-6dfe-4e3f-9a93-e7afc047dc6b 2af84b1e-32c8-42b7-82bc-daa82404023b /       Directory
+Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_2a5f1b68-1022-41a6-be9a-fa022b1d1670_95e79109-95c0-4d8e-aee3-d01accf2d47b Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_2a5f1b68-1022-41a6-be9a-fa022b1d1670 95e79109-95c0-4d8e-aee3-d01accf2d47b /       Directory
 ```
 
 ### Get a specific policy assignment
@@ -95,15 +108,19 @@ Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_b0ebbcf4-edb5-4c6a-b646-01850c5fc
 To get a specific policy assignment, run:
 
 ```powershell
-$policyId = "Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03_9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+$assignmentId = "Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720_88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 
-Get-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $policyId
+Get-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $assignmentId | FL
 ```
 
 ```Output
-Id                                                                                                                       PolicyId                                                                            RoleDefinitionId                     ScopeId ScopeType
---                                                                                                                       --------                                                                            ----------------                     ------- ---------
-Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03_9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3 Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03 9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3 /       Directory
+Id                   : Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720_88d8e3e3-8f55-4a1e-953a-9b9898b8876b
+Policy               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleManagementPolicy
+PolicyId             : Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720
+RoleDefinitionId     : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
+ScopeId              : /
+ScopeType            : Directory
+AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicyAssignments/$entity]}
 ```
 
 ## Step 3: Get policy rules
@@ -115,12 +132,11 @@ Policy rules are the individual role setting details.
 To get all the rules for a policy, run:
 
 ```powershell
-$policyId = "Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03"
-Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $policyId | Format-List
+$policyId = "Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720"
+Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $policyId | FL
 ```
 
 ```Output
-
 Id                   : Expiration_Admin_Eligibility
 Target               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleManagementPolicyRuleTarget
 AdditionalProperties : {[@odata.type, #microsoft.graph.unifiedRoleManagementPolicyExpirationRule], [isExpirationRequired, False], [maximumDuration, P365D]}
@@ -130,24 +146,26 @@ Target               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRo
 AdditionalProperties : {[@odata.type, #microsoft.graph.unifiedRoleManagementPolicyEnablementRule], [enabledRules, System.Object[]]}
 ```
 
+> [!NOTE]
+>The output above is truncated for readability.
+
 ### Get  a specific rule for a policy
 
 To get the details of a specific rule for a policy, run:
 
 ```powershell
-$policyId = "Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03"
+$policyId = "Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720"
 
 $ruleId = "Expiration_EndUser_Assignment"
 
-Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $policyId -UnifiedRoleManagementPolicyRuleId $ruleId | Format-List 
+Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $policyId -UnifiedRoleManagementPolicyRuleId $ruleId | FL 
 ```
 
 ```Output
-
 Id                   : Expiration_EndUser_Assignment
 Target               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleManagementPolicyRuleTarget
-AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03')/rules/$entity], [@odata.type, #microsoft.graph.unifiedRoleManagementPolicyExpirationRule],
-                       [isExpirationRequired, True], [maximumDuration, PT8H]}
+AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720')/rules/$entity], [@odata.type,
+                       #microsoft.graph.unifiedRoleManagementPolicyExpirationRule], [isExpirationRequired, True], [maximumDuration, PT8H]}
 ```
 
 ## Step 4: Update a policy rule 
@@ -155,7 +173,7 @@ AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metad
 In this step, we'll update the `Expiration_EndUser_Assignment` rule.
 
 ```powershell
-$policyId = "Directory_06f6521d-c18c-460a-8656-fa82e81aa94b_81328d30-ae8f-48cc-b242-48f50dd77d03"
+$policyId = "Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720"
 
 $ruleId = "Expiration_EndUser_Assignment"
 
@@ -178,7 +196,20 @@ Target = @{
   }
 }
 
-Update-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $policyid -UnifiedRoleManagementPolicyRuleId $ruleId -BodyParameter $params
+Update-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $policyId -UnifiedRoleManagementPolicyRuleId $ruleId -BodyParameter $params
+```
+
+You can check the updated rule by running the following command:
+
+```powershell
+Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $policyId -UnifiedRoleManagementPolicyRuleId $ruleId | FL
+```
+
+```Output
+Id                   : Expiration_EndUser_Assignment
+Target               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleManagementPolicyRuleTarget
+AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('Directory_f54257c3-0b0f-4dd1-b7d9-8a20d8f57f8b_181f1c72-4d0e-4e3c-902d-ad08d070e720')/rules/$entity], [@odata.type,
+                       #microsoft.graph.unifiedRoleManagementPolicyExpirationRule], [isExpirationRequired, False], [maximumDuration, P365D]}
 ```
 
 ## Next steps
