@@ -1,7 +1,7 @@
 ---
 external help file: Microsoft.Graph.Authentication-help.xml
 Module Name: Microsoft.Graph.Authentication
-online version:
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.authentication/find-mggraphcommand
 schema: 2.0.0
 ---
 
