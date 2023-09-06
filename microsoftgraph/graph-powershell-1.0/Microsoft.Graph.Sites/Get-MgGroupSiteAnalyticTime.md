@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteanalytictime
 schema: 2.0.0
-ms.prod: sharepoint
+ms.service: sharepoint
 ---
 
 # Get-MgGroupSiteAnalyticTime

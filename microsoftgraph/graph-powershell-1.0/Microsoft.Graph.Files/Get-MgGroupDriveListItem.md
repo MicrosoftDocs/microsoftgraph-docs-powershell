@@ -3,8 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitem
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
+ms.service: sharepoint
 ---
 
 # Get-MgGroupDriveListItem
