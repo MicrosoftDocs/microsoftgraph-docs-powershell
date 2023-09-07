@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xm
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointshareduseserviceplan
 schema: 2.0.0
+ms.prod: cloud-pc
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
