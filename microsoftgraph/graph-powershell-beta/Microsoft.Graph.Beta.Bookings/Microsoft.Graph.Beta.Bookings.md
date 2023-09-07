@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Bookings
 Module Guid: 1aff5426-6170-4d8f-8b90-2cdc6b91b5c9
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestteam
