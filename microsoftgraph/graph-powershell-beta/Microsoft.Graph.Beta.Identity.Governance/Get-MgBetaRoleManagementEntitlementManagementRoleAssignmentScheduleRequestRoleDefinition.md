@@ -11,6 +11,9 @@ schema: 2.0.0
 Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -223,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition?view=graph-powershell-1.0)

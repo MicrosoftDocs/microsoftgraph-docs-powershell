@@ -11,6 +11,9 @@ schema: 2.0.0
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJobOnDemand?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ProvisionExpanded (Default)
@@ -250,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[ObjectTypeName <String>]`: The type of the object to which a synchronizationJob is to be applied. Can be one of the following: user for synchronizing between Active Directory and Azure AD.User for synchronizing a user between Azure AD and a third-party application. Worker for synchronization a user between Workday and either Active Directory or Azure AD.Group for synchronizing a group between Azure AD and a third-party application.
 
 ## RELATED LINKS
+[New-MgBetaApplicationSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJobOnDemand?view=graph-powershell-beta)

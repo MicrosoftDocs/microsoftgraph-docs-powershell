@@ -15,6 +15,9 @@ If a special folder is renamed or moved to another location within the drive, th
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveSpecial?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -318,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveSpecial?view=graph-powershell-beta)

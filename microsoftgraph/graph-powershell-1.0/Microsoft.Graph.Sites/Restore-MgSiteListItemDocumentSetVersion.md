@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a document set version.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -218,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)

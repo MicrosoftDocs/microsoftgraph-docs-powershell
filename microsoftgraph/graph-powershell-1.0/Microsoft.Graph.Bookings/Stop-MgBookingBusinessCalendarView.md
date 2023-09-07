@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)
@@ -231,3 +234,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
+[Stop-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)

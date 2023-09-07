@@ -11,6 +11,9 @@ schema: 2.0.0
 Create an authenticationContextClassReference object, if the ID has not been used.
 If ID has been used, this call updates the authenticationContextClassReference object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -307,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)

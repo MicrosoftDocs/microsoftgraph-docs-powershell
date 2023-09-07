@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -166,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveRootListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemDriveItem?view=graph-powershell-beta)

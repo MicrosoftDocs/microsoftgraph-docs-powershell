@@ -12,6 +12,9 @@ Get a set of messages that have been added, deleted, or updated in a specified f
 A delta function call for messages in a folder is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\nthat folder](/graph/delta-query-messages).
 This allows you to maintain and synchronize a local store of a user's messages without\nhaving to fetch the entire set of messages from the server every time.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMessageDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMessageDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -290,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserMessageDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMessageDelta?view=graph-powershell-1.0)

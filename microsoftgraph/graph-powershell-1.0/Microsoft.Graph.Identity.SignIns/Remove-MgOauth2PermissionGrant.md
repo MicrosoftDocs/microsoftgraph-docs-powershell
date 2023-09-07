@@ -12,6 +12,9 @@ Delete a delegated permission grant, represented by an oAuth2PermissionGrant obj
 When a delegated permission grant is deleted, the access it granted is revoked.
 Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted oAuth2PermissionGrant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -210,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)

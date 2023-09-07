@@ -11,6 +11,9 @@ ms.prod: directory-management
 ## SYNOPSIS
 Get this organizational contact's manager.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactManager](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactManager?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -143,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaContactManager](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactManager?view=graph-powershell-beta)

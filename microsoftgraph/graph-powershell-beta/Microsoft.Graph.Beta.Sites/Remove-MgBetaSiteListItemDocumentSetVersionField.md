@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property fields for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemDocumentSetVersionField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -247,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemDocumentSetVersionField?view=graph-powershell-1.0)

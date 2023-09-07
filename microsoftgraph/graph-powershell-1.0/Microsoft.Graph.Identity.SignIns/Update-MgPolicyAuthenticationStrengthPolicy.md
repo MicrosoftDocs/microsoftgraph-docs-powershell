@@ -12,6 +12,9 @@ Update the properties of an authenticationStrengthPolicy object.
 You cannot update the allowed auth method combinations using this request.
 To do so, use the Update allowed combinations action.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -391,3 +394,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)

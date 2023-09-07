@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reauthorize (Default)
@@ -204,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-beta)

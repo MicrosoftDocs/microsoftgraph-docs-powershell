@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The principal that's getting a role assignment or role eligibility through the request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -187,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal?view=graph-powershell-beta)

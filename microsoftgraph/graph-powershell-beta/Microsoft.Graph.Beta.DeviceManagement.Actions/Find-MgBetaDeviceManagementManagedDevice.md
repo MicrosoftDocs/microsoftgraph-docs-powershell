@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Locate a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Find-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Find-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Locate (Default)
@@ -194,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Find-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Find-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function userExperienceAnalyticsSummarizedDeviceScopes
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExperienceDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -51,3 +54,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Invoke-MgExperienceDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-1.0)

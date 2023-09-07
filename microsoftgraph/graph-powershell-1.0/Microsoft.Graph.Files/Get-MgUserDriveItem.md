@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -310,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItem?view=graph-powershell-beta)

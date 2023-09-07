@@ -11,6 +11,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Invoke action reenable
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyAllUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reenable (Default)
@@ -199,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgReplyAllUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderMessage?view=graph-powershell-1.0)

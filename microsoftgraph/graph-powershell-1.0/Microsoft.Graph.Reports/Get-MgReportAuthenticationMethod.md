@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Container for navigation properties for Azure AD authentication methods resources.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportAuthenticationMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -76,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportAuthenticationMethod?view=graph-powershell-beta)

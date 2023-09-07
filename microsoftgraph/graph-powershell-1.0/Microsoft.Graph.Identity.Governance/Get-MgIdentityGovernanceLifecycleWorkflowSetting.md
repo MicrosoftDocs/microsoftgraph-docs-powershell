@@ -11,6 +11,9 @@ ms.prod: governance
 ## SYNOPSIS
 Read the properties and relationships of a lifecycleManagementSettings object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -78,3 +81,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-beta)

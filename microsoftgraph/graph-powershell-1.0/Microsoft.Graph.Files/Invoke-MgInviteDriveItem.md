@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Sends a sharing invitation for a driveItem.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaInviteDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaInviteDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### InviteExpanded (Default)
@@ -358,3 +361,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Invoke-MgBetaInviteDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaInviteDriveItem?view=graph-powershell-beta)

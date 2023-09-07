@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -187,3 +190,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceDelta?view=graph-powershell-1.0)

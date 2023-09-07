@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property chats in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1084,5 +1087,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastMessageReadDateTime <DateTime?>]`: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
+[Update-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChat?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChat?view=graph-powershell-1.0)

@@ -15,6 +15,9 @@ During the submit process, all the resources are copied to the submittedResource
 The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Submit-MgBetaEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationMeAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Submit (Default)
@@ -156,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Submit-MgBetaEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationMeAssignmentSubmission?view=graph-powershell-beta)

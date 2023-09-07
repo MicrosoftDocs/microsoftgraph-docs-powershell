@@ -11,6 +11,9 @@ ms.prod: groups
 ## SYNOPSIS
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\nMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupAcceptedSender](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupAcceptedSender?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -181,3 +184,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupAcceptedSender](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupAcceptedSender?view=graph-powershell-beta)

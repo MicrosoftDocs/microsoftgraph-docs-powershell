@@ -12,6 +12,9 @@ ms.prod: groups
 Reply to a thread in a group conversation and add a new post to it.
 You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThread?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)
@@ -446,5 +449,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[Invoke-MgReplyGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThread?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Invoke-MgReplyGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThread?view=graph-powershell-1.0)

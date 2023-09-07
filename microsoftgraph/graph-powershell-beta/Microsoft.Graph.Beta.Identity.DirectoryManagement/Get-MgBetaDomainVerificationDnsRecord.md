@@ -13,6 +13,9 @@ DNS records that the customer adds to the DNS zone file of the domain before the
 Read-only, Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainVerificationDnsRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -310,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainVerificationDnsRecord?view=graph-powershell-1.0)

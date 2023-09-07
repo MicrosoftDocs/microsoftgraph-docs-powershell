@@ -11,6 +11,9 @@ ms.prod: change-notifications
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeSiteListSubscription](/powershell/module/Microsoft.Graph.Sites/Invoke-MgReauthorizeSiteListSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reauthorize (Default)
@@ -221,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgReauthorizeSiteListSubscription](/powershell/module/Microsoft.Graph.Sites/Invoke-MgReauthorizeSiteListSubscription?view=graph-powershell-1.0)

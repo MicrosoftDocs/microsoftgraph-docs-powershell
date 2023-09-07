@@ -12,6 +12,9 @@ ms.prod: applications
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ParseExpanded (Default)
@@ -349,5 +352,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Key <String>]`: Key.
 
 ## RELATED LINKS
+[Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)

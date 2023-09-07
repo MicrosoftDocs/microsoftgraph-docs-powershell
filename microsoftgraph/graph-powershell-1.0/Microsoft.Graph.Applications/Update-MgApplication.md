@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an application object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1737,5 +1740,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RedirectUris <String[]>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
 ## RELATED LINKS
+[Update-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplication?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplication?view=graph-powershell-beta)

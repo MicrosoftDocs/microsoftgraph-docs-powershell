@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeam?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -202,3 +205,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeam?view=graph-powershell-1.0)

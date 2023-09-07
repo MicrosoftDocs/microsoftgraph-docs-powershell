@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsBaselines for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticBaseline](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBaseline?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -428,5 +431,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticBaseline](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBaseline?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticBaseline](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBaseline?view=graph-powershell-1.0)

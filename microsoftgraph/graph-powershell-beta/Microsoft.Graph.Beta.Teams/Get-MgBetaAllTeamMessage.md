@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getAllMessages
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgAllTeamMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -169,3 +172,4 @@ ALIASES
 Get-MgBetaTeamMessage
 
 ## RELATED LINKS
+[Get-MgAllTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgAllTeamMessage?view=graph-powershell-1.0)

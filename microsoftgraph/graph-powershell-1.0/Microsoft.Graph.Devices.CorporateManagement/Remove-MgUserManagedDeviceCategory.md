@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property deviceCategory for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -205,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+[Remove-MgBetaUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaUserManagedDeviceCategory?view=graph-powershell-beta)

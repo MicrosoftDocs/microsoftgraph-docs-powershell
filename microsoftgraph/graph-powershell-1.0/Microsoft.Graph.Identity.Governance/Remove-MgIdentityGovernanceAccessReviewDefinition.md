@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes an accessReviewScheduleDefinition object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -213,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
