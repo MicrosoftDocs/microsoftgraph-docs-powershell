@@ -58,11 +58,11 @@ You should continue to GET until the status is not 'running'.
 The recommended delay between GETs is 5 seconds.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "Library Assist"
@@ -73,6 +73,10 @@ $params = @{
 }
 
 Copy-MgBetaTeam -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgBetaTeam Cmdlet.
+
 
 ## PARAMETERS
 

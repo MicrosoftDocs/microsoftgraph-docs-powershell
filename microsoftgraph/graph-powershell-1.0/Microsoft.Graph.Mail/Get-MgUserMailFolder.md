@@ -32,16 +32,30 @@ Get-MgUserInferenceClassificationOverrideCount -InputObject <IMailIdentity> [-Fi
 Get the number of the resource
 
 ## EXAMPLES
+### Example 1: Get a mail folder
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
+
 ```
+This example will get a mail folder
+
+### Example 2: Get a mail sent items folder
+
+```powershell
+
+Import-Module Microsoft.Graph.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
+
+```
+This example will get a mail sent items folder
+
 
 ## PARAMETERS
 

@@ -32,16 +32,22 @@ Get-MgBetaGroupMemberWithLicenseErrorCountAsUser -InputObject <IGroupsIdentity> 
 Get the number of the resource
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+$params = @{
+	WebUrl = "webUrl value"
+}
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Get-MgBetaGroupOnenoteNotebookFromWebUrl Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -51,11 +51,11 @@ Send an activity feed notification in the scope of a team.
 For more details about sending notifications and the requirements for doing so, seensending Teams activity notifications.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = @{
@@ -84,10 +84,14 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	topic = @{
@@ -116,10 +120,14 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	topic = @{
@@ -145,10 +153,14 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	topic = @{
@@ -173,10 +185,14 @@ $params = @{
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 5
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	topic = @{
@@ -201,6 +217,10 @@ $params = @{
 }
 
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+
 
 ## PARAMETERS
 

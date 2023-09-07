@@ -40,13 +40,17 @@ Get-MgIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity> [-Expand
 Retrieve the properties and relationships of a identityUserFlowAttribute object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityUserFlowAttribute
+
+```
+This example shows how to use the Get-MgIdentityUserFlowAttribute Cmdlet.
+
 
 ## PARAMETERS
 

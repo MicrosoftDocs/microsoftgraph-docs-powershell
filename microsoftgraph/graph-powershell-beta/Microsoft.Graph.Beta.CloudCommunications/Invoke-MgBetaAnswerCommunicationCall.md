@@ -60,17 +60,17 @@ The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	callbackUri = "callbackUri-value"
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "\<Media Session Configuration Blob\>"
+		blob = "<Media Session Configuration Blob>"
 	}
 	acceptedModalities = @(
 		"audio"
@@ -84,10 +84,14 @@ $params = @{
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
+This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	callbackUri = "https://bot.contoso.com/api/calls"
@@ -96,11 +100,15 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "\<Media Session Configuration Blob\>"
+		blob = "<Media Session Configuration Blob>"
 	}
 }
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

@@ -37,27 +37,39 @@ Get-MgBetaTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prop
 Retrieve the properties and relationships of the specified team.
 
 ## EXAMPLES
+### Example 1: Get a list of teams
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeam
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example will get a list of teams
 
-Get-MgBetaTeam -Filter "startswith(displayName, 'A')" -Top 2
+### Example 2: Use $filter and $top to get two teams with a display name that starts with 'A'
 
-### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-```
 
-Get-MgBetaTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description"
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeam -Filter "startswith(displayName, 'A')" -Top 2 
+
+```
+This example will use $filter and $top to get two teams with a display name that starts with 'a'
+
+### Example 3: Use $filter and $select to get id and description for team with displayName equals "A Contoso Team"
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeam -Filter "displayName eq 'A Contoso Team'" -Property "id,description" 
+
+```
+This example will use $filter and $select to get id and description for team with displayname equals "a contoso team"
+
 
 ## PARAMETERS
 

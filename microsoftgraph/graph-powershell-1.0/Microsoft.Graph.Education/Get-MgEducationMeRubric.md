@@ -42,13 +42,17 @@ Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationMeRubric
+
+```
+This example shows how to use the Get-MgEducationMeRubric Cmdlet.
+
 
 ## PARAMETERS
 

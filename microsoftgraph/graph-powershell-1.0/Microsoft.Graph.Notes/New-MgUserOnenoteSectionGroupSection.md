@@ -55,20 +55,22 @@ Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages opera
 If you're targeting other notebooks, you can create pages in a specified section.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+
+Import-Module Microsoft.Graph.Notes
+
+$params = @{
+	displayName = "Section name"
+}
+
+# A UPN can also be used as -UserId.
+New-MgUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgUserOnenoteSectionGroupSection Cmdlet.
 
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

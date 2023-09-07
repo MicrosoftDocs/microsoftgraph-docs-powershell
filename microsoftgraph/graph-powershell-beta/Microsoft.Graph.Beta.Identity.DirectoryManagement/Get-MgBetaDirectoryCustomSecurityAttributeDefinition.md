@@ -40,27 +40,39 @@ Get-MgBetaDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDire
 Read the properties and relationships of a customSecurityAttributeDefinition object.
 
 ## EXAMPLES
+### Example 1: Get all custom security attributes
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryCustomSecurityAttributeDefinition
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
+This example will get all custom security attributes
 
-Get-MgBetaDirectoryCustomSecurityAttributeDefinition -Filter "name eq 'Project' and status eq 'Available'"
+### Example 2: Filter custom security attributes based on name
 
-### EXAMPLE 3
 ```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
-Get-MgBetaDirectoryCustomSecurityAttributeDefinition -Filter "attributeSet eq 'Engineering' and status eq 'Available' and type eq 'String'"
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryCustomSecurityAttributeDefinition -Filter "name eq 'Project' and status eq 'Available'" 
+
+```
+This example will filter custom security attributes based on name
+
+### Example 3: Filter custom security attributes based on attribute set
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Get-MgBetaDirectoryCustomSecurityAttributeDefinition -Filter "attributeSet eq 'Engineering' and status eq 'Available' and type eq 'String'" 
+
+```
+This example will filter custom security attributes based on attribute set
+
 
 ## PARAMETERS
 

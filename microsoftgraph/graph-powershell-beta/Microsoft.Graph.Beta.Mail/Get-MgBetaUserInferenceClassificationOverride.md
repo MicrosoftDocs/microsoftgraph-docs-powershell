@@ -30,20 +30,18 @@ Get-MgBetaUserInferenceClassification -InputObject <IMailIdentity> [-Property <S
 Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+
+Import-Module Microsoft.Graph.Beta.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserInferenceClassificationOverride -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserInferenceClassificationOverride Cmdlet.
 
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

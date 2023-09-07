@@ -54,17 +54,21 @@ If more than 11,000 results are available, it returns a 400 Bad Request error wi
 As a workaround, use the List group transitive memberOf API.
 
 ## EXAMPLES
+### Example 1: Check group memberships for a directory object
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	securityEnabledOnly = $false
 }
 
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example will check group memberships for a directory object
+
 
 ## PARAMETERS
 

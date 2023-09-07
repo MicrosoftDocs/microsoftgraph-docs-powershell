@@ -32,13 +32,17 @@ Get-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-Expan
 Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId $plannerTaskId
+
+```
+This example shows how to use the Get-MgPlannerTaskProgressTaskBoardFormat Cmdlet.
+
 
 ## PARAMETERS
 

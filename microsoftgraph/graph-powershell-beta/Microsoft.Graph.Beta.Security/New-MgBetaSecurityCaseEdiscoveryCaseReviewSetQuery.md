@@ -49,11 +49,11 @@ New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdenti
 Create a new ediscoveryReviewSetQuery object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	displayName = "My Query 1"
@@ -61,6 +61,10 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
+
 
 ## PARAMETERS
 

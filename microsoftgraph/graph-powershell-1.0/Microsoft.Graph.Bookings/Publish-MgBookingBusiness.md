@@ -32,13 +32,17 @@ Make the scheduling page of a business available to external customers.
 Set the isPublished property to true, and the publicUrl property to the URL of the scheduling page.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Publish-MgBookingBusiness -BookingBusinessId $bookingBusinessId
+
+```
+This example shows how to use the Publish-MgBookingBusiness Cmdlet.
+
 
 ## PARAMETERS
 

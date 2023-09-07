@@ -31,13 +31,17 @@ Get-MgBetaTeamChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandProperty <
 Get the metadata for the location where the files of a channel are stored.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
+
+```
+This example shows how to use the Get-MgBetaTeamChannelFileFolder Cmdlet.
+
 
 ## PARAMETERS
 
