@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Planner
-Module Guid: 52f3ad88-2495-4cc8-b84e-7a9ebe4ed675
+Module Guid: b25d32ca-6624-4f1f-85c3-069050d8291a
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.planner
 Help Version: 1.0.0.0
 Locale: en-US
@@ -80,13 +80,11 @@ Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat 
 Entry-point to the Planner resource that might exist for a user.
 Read-only.
 
-### [Get-MgUserPlanner](Get-MgUserPlanner.md)
-Entry-point to the Planner resource that might exist for a user.
-Read-only.
+### [Get-MgUserPlannerPlan](Get-MgUserPlannerPlan.md)
+Retrieve a list of plannerplan objects shared with a user object.
 
-### [Get-MgUserPlanner](Get-MgUserPlanner.md)
-Entry-point to the Planner resource that might exist for a user.
-Read-only.
+### [Get-MgUserPlannerTask](Get-MgUserPlannerTask.md)
+Retrieve a list of plannertask objects assigned to a User.
 
 ### [New-MgPlannerBucket](New-MgPlannerBucket.md)
 Create a new plannerBucket object.

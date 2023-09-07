@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Files
-Module Guid: 48d6d1b9-7d51-4526-af13-01d8da9fb0a3
+Module Guid: 8c54f3a2-0a20-45d0-85b9-7638516d7767
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,7 +18,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgBetaShareListContentTypeCopy](Add-MgBetaShareListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -27,7 +27,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Copy-MgBetaDriveItem](Copy-MgBetaDriveItem.md)
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
@@ -1234,8 +1234,9 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 ### [Get-MgBetaShareSite](Get-MgBetaShareSite.md)
 Used to access the underlying site
 
-### [Get-MgBetaShareSite](Get-MgBetaShareSite.md)
-Used to access the underlying site
+### [Get-MgBetaUserDefaultDrive](Get-MgBetaUserDefaultDrive.md)
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ### [Get-MgBetaUserDrive](Get-MgBetaUserDrive.md)
 A collection of drives available for this user.
@@ -1911,8 +1912,8 @@ Invoke action createUploadSession
 ### [New-MgBetaDriveRootVersion](New-MgBetaDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgBetaDriveRootVersion](New-MgBetaDriveRootVersion.md)
-Create new navigation property to versions for drives
+### [New-MgBetaGroupDrive](New-MgBetaGroupDrive.md)
+Create new navigation property to drives for groups
 
 ### [New-MgBetaGroupDriveBundle](New-MgBetaGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -2025,8 +2026,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgBetaShareSharedDriveItemSharedDriveItem](New-MgBetaShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgBetaShareSharedDriveItemSharedDriveItem](New-MgBetaShareSharedDriveItemSharedDriveItem.md)
-Add new entity to shares
+### [New-MgBetaUserDrive](New-MgBetaUserDrive.md)
+Create new navigation property to drives for users
 
 ### [New-MgBetaUserDriveBundle](New-MgBetaUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -2115,8 +2116,8 @@ Publishes a [contentType][] present in a content type hub site.
 ### [Publish-MgBetaShareListContentType](Publish-MgBetaShareListContentType.md)
 Publishes a [contentType][] present in a content type hub site.
 
-### [Publish-MgBetaShareListContentType](Publish-MgBetaShareListContentType.md)
-Publishes a [contentType][] present in a content type hub site.
+### [Remove-MgBetaDrive](Remove-MgBetaDrive.md)
+Delete entity from drives
 
 ### [Remove-MgBetaDriveItem](Remove-MgBetaDriveItem.md)
 Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
@@ -2768,15 +2769,16 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgBetaShareListContentType](Unpublish-MgBetaShareListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
-### [Unpublish-MgBetaShareListContentType](Unpublish-MgBetaShareListContentType.md)
-Unpublish a [contentType][] from a content type hub site.
+### [Update-MgBetaDrive](Update-MgBetaDrive.md)
+Update entity in drives
 
 ### [Update-MgBetaDriveCreatedByUserMailboxSetting](Update-MgBetaDriveCreatedByUserMailboxSetting.md)
 Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveItem](Update-MgBetaDriveItem.md)
-Update the metadata for a DriveItem by ID or path.
-You can also use update to move an item to another parent by updating the item's parentReference property.
+To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ### [Update-MgBetaDriveItemAnalytic](Update-MgBetaDriveItemAnalytic.md)
 Update the navigation property analytics in drives
@@ -2946,8 +2948,9 @@ Update the navigation property drives in groups
 Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveItem](Update-MgBetaGroupDriveItem.md)
-Update the metadata for a DriveItem by ID or path.
-You can also use update to move an item to another parent by updating the item's parentReference property.
+To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ### [Update-MgBetaGroupDriveItemAnalytic](Update-MgBetaGroupDriveItemAnalytic.md)
 Update the navigation property analytics in groups
@@ -3180,8 +3183,9 @@ Update the navigation property drives in users
 Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveItem](Update-MgBetaUserDriveItem.md)
-Update the metadata for a DriveItem by ID or path.
-You can also use update to move an item to another parent by updating the item's parentReference property.
+To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ### [Update-MgBetaUserDriveItemAnalytic](Update-MgBetaUserDriveItemAnalytic.md)
 Update the navigation property analytics in users

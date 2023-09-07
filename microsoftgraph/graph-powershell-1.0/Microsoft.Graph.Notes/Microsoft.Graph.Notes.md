@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Notes
-Module Guid: f72a2275-8229-4419-93f6-96b91dc47934
+Module Guid: 6ff9d647-7625-420a-b2ff-708d3d4965e3
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.notes
 Help Version: 1.0.0.0
 Locale: en-US
@@ -135,26 +135,31 @@ Retrieve a list of onenoteSection objects from the specified section group.
 ### [Get-MgSiteOnenoteSectionPage](Get-MgSiteOnenoteSectionPage.md)
 Retrieve a list of page objects from the specified section.
 
-### [Get-MgSiteOnenoteSectionPage](Get-MgSiteOnenoteSectionPage.md)
-Retrieve a list of page objects from the specified section.
+### [Get-MgUserOnenoteNotebook](Get-MgUserOnenoteNotebook.md)
+Retrieve the properties and relationships of a notebook object.
 
 ### [Get-MgUserOnenoteNotebookCount](Get-MgUserOnenoteNotebookCount.md)
 Get the number of the resource
 
-### [Get-MgUserOnenoteNotebookCount](Get-MgUserOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgUserOnenoteNotebookSection](Get-MgUserOnenoteNotebookSection.md)
+Retrieve a list of onenoteSection objects from the specified notebook.
 
-### [Get-MgUserOnenoteNotebookCount](Get-MgUserOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgUserOnenoteNotebookSectionGroup](Get-MgUserOnenoteNotebookSectionGroup.md)
+Retrieve a list of section groups from the specified notebook.
 
-### [Get-MgUserOnenoteNotebookCount](Get-MgUserOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgUserOnenoteOperation](Get-MgUserOnenoteOperation.md)
+Get the status of a long-running OneNote operation.
+This applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
+  You can poll the Operation-Location endpoint until the status property returns completed or failed.
+If the status is completed, the resourceLocation property contains the resource endpoint URI.
+If the status is failed, the error and @api.diagnostics properties provide error information.
 
 ### [Get-MgUserOnenoteOperationCount](Get-MgUserOnenoteOperationCount.md)
 Get the number of the resource
 
-### [Get-MgUserOnenoteOperationCount](Get-MgUserOnenoteOperationCount.md)
-Get the number of the resource
+### [Get-MgUserOnenotePage](Get-MgUserOnenotePage.md)
+Retrieve the properties and relationships of a page object.
+Getting page information Access a page's metadata by page identifier: Getting page content You can use the page's content endpoint to get the HTML content of a page: The includeIDs=true query option is used to update pages.
 
 ### [Get-MgUserOnenotePageContent](Get-MgUserOnenotePageContent.md)
 The page's HTML content.
@@ -174,23 +179,23 @@ The content stream
 ### [Get-MgUserOnenoteResourceCount](Get-MgUserOnenoteResourceCount.md)
 Get the number of the resource
 
-### [Get-MgUserOnenoteResourceCount](Get-MgUserOnenoteResourceCount.md)
-Get the number of the resource
+### [Get-MgUserOnenoteSection](Get-MgUserOnenoteSection.md)
+Retrieve the properties and relationships of a onenoteSection object.
 
 ### [Get-MgUserOnenoteSectionCount](Get-MgUserOnenoteSectionCount.md)
 Get the number of the resource
 
-### [Get-MgUserOnenoteSectionCount](Get-MgUserOnenoteSectionCount.md)
-Get the number of the resource
+### [Get-MgUserOnenoteSectionGroup](Get-MgUserOnenoteSectionGroup.md)
+Retrieve the properties and relationships of a sectionGroup object.
 
 ### [Get-MgUserOnenoteSectionGroupCount](Get-MgUserOnenoteSectionGroupCount.md)
 Get the number of the resource
 
-### [Get-MgUserOnenoteSectionGroupCount](Get-MgUserOnenoteSectionGroupCount.md)
-Get the number of the resource
+### [Get-MgUserOnenoteSectionGroupSection](Get-MgUserOnenoteSectionGroupSection.md)
+Retrieve a list of onenoteSection objects from the specified section group.
 
-### [Get-MgUserOnenoteSectionGroupCount](Get-MgUserOnenoteSectionGroupCount.md)
-Get the number of the resource
+### [Get-MgUserOnenoteSectionPage](Get-MgUserOnenoteSectionPage.md)
+Retrieve a list of page objects from the specified section.
 
 ### [New-MgGroupOnenoteNotebook](New-MgGroupOnenoteNotebook.md)
 Create a new OneNote notebook.
@@ -207,17 +212,11 @@ To create a page in a different section in the default notebook, you can use the
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
 
-### [New-MgGroupOnenotePage](New-MgGroupOnenotePage.md)
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+### [New-MgGroupOnenoteSection](New-MgGroupOnenoteSection.md)
+Create new navigation property to sections for groups
 
-### [New-MgGroupOnenotePage](New-MgGroupOnenotePage.md)
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+### [New-MgGroupOnenoteSectionGroup](New-MgGroupOnenoteSectionGroup.md)
+Create new navigation property to sectionGroups for groups
 
 ### [New-MgGroupOnenoteSectionGroupSection](New-MgGroupOnenoteSectionGroupSection.md)
 Create a new onenoteSection in the specified section group.
@@ -240,17 +239,11 @@ To create a page in a different section in the default notebook, you can use the
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
 
-### [New-MgSiteOnenotePage](New-MgSiteOnenotePage.md)
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+### [New-MgSiteOnenoteSection](New-MgSiteOnenoteSection.md)
+Create new navigation property to sections for sites
 
-### [New-MgSiteOnenotePage](New-MgSiteOnenotePage.md)
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+### [New-MgSiteOnenoteSectionGroup](New-MgSiteOnenoteSectionGroup.md)
+Create new navigation property to sectionGroups for sites
 
 ### [New-MgSiteOnenoteSectionGroupSection](New-MgSiteOnenoteSectionGroupSection.md)
 Create a new onenoteSection in the specified section group.
@@ -258,20 +251,14 @@ Create a new onenoteSection in the specified section group.
 ### [New-MgSiteOnenoteSectionPage](New-MgSiteOnenoteSectionPage.md)
 Create a new page in the specified section.
 
-### [New-MgSiteOnenoteSectionPage](New-MgSiteOnenoteSectionPage.md)
-Create a new page in the specified section.
+### [New-MgUserOnenoteNotebook](New-MgUserOnenoteNotebook.md)
+Create a new OneNote notebook.
 
-### [New-MgSiteOnenoteSectionPage](New-MgSiteOnenoteSectionPage.md)
-Create a new page in the specified section.
+### [New-MgUserOnenoteNotebookSection](New-MgUserOnenoteNotebookSection.md)
+Create a new onenoteSection in the specified notebook.
 
-### [New-MgSiteOnenoteSectionPage](New-MgSiteOnenoteSectionPage.md)
-Create a new page in the specified section.
-
-### [New-MgUserOnenotePage](New-MgUserOnenotePage.md)
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+### [New-MgUserOnenoteNotebookSectionGroup](New-MgUserOnenoteNotebookSectionGroup.md)
+Create a new section group in the specified notebook.
 
 ### [New-MgUserOnenotePage](New-MgUserOnenotePage.md)
 Create a new OneNote page in the default section of the default notebook.
@@ -279,17 +266,14 @@ To create a page in a different section in the default notebook, you can use the
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
 
-### [New-MgUserOnenotePage](New-MgUserOnenotePage.md)
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+### [New-MgUserOnenoteSection](New-MgUserOnenoteSection.md)
+Create new navigation property to sections for users
 
-### [New-MgUserOnenotePage](New-MgUserOnenotePage.md)
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+### [New-MgUserOnenoteSectionGroup](New-MgUserOnenoteSectionGroup.md)
+Create new navigation property to sectionGroups for users
+
+### [New-MgUserOnenoteSectionGroupSection](New-MgUserOnenoteSectionGroupSection.md)
+Create a new onenoteSection in the specified section group.
 
 ### [New-MgUserOnenoteSectionPage](New-MgUserOnenoteSectionPage.md)
 Create a new page in the specified section.
@@ -321,8 +305,8 @@ Delete navigation property sectionGroups for sites
 ### [Remove-MgUserOnenoteNotebook](Remove-MgUserOnenoteNotebook.md)
 Delete navigation property notebooks for users
 
-### [Remove-MgUserOnenoteNotebook](Remove-MgUserOnenoteNotebook.md)
-Delete navigation property notebooks for users
+### [Remove-MgUserOnenotePage](Remove-MgUserOnenotePage.md)
+Delete a OneNote page.
 
 ### [Remove-MgUserOnenoteSection](Remove-MgUserOnenoteSection.md)
 Delete navigation property sections for users

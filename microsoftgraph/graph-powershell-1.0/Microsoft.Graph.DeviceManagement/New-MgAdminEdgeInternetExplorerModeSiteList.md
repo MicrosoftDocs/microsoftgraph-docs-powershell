@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelist
 schema: 2.0.0
@@ -10,29 +10,42 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new browserSiteList object to support Internet Explorer mode.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgAdminEdgeInternetExplorerModeSiteList [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-PublishedBy <IMicrosoftGraphIdentitySet>] [-PublishedDateTime <DateTime>]
- [-Revision <String>] [-SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>]
- [-Sites <IMicrosoftGraphBrowserSite[]>] [-Status <BrowserSiteListStatus>] [-WhatIf] [-Confirm]
+ [-LastModifiedDateTime <DateTime>] [-PublishedBy <IMicrosoftGraphIdentitySet>]
+ [-PublishedDateTime <DateTime>] [-Revision <String>] [-SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>]
+ [-Sites <IMicrosoftGraphBrowserSite[]>] [-Status <BrowserSiteListStatus>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphBrowserSiteList> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgAdminEdgeInternetExplorerModeSiteList -BodyParameter <IMicrosoftGraphBrowserSiteList> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new browserSiteList object to support Internet Explorer mode.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -40,7 +53,7 @@ Create a new browserSiteList object to support Internet Explorer mode.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +69,7 @@ A singleton entity which is used to specify IE mode site list metadata
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBrowserSiteList
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowserSiteList
 Parameter Sets: Create
 Aliases:
 
@@ -71,7 +84,7 @@ Accept wildcard characters: False
 The description of the site list.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +99,7 @@ Accept wildcard characters: False
 The name of the site list.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,11 +111,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +131,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +146,7 @@ Accept wildcard characters: False
 The date and time when the site list was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +162,7 @@ identitySet
 To construct, see NOTES section for PUBLISHEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +177,7 @@ Accept wildcard characters: False
 The date and time when the site list was published.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +192,7 @@ Accept wildcard characters: False
 The current revision of the site list.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -195,7 +208,7 @@ A collection of shared cookies defined for the site list.
 To construct, see NOTES section for SHAREDCOOKIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBrowserSharedCookie[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowserSharedCookie[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -211,7 +224,7 @@ A collection of sites defined for the site list.
 To construct, see NOTES section for SITES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBrowserSite[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowserSite[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +239,7 @@ Accept wildcard characters: False
 browserSiteListStatus
 
 ```yaml
-Type: BrowserSiteListStatus
+Type: Microsoft.Graph.PowerShell.Support.BrowserSiteListStatus
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -241,7 +254,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -257,7 +270,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -274,9 +287,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowserSiteList
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowserSiteList
+
 ## NOTES
 
 ALIASES
@@ -288,7 +303,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `BODYPARAMETER <IMicrosoftGraphBrowserSiteList>`: A singleton entity which is used to specify IE mode site list metadata
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: The description of the site list.
   - `[DisplayName <String>]`: The name of the site list.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -304,7 +319,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PublishedDateTime <DateTime?>]`: The date and time when the site list was published.
   - `[Revision <String>]`: The current revision of the site list.
   - `[SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>]`: A collection of shared cookies defined for the site list.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Comment <String>]`: The comment for the shared cookie.
     - `[CreatedDateTime <DateTime?>]`: The date and time when the shared cookie was created.
     - `[DeletedDateTime <DateTime?>]`: The date and time when the shared cookie was deleted.
@@ -326,7 +341,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
     - `[Status <BrowserSharedCookieStatus?>]`: browserSharedCookieStatus
   - `[Sites <IMicrosoftGraphBrowserSite[]>]`: A collection of sites defined for the site list.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AllowRedirect <Boolean?>]`: Controls the behavior of redirected sites. If true, indicates that the site will open in Internet Explorer 11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.
     - `[Comment <String>]`: The comment for the site.
     - `[CompatibilityMode <BrowserSiteCompatibilityMode?>]`: browserSiteCompatibilityMode
@@ -367,7 +382,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 `SHAREDCOOKIES <IMicrosoftGraphBrowserSharedCookie[]>`: A collection of shared cookies defined for the site list.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Comment <String>]`: The comment for the shared cookie.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the shared cookie was created.
   - `[DeletedDateTime <DateTime?>]`: The date and time when the shared cookie was deleted.
@@ -397,7 +412,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <BrowserSharedCookieStatus?>]`: browserSharedCookieStatus
 
 `SITES <IMicrosoftGraphBrowserSite[]>`: A collection of sites defined for the site list.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AllowRedirect <Boolean?>]`: Controls the behavior of redirected sites. If true, indicates that the site will open in Internet Explorer 11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.
   - `[Comment <String>]`: The comment for the site.
   - `[CompatibilityMode <BrowserSiteCompatibilityMode?>]`: browserSiteCompatibilityMode
@@ -426,8 +441,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The URL of the site.
 
 ## RELATED LINKS
-[New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
-
-## RELATED LINKS
-[New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 

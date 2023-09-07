@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligence
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property threatIntelligence in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligence?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,25 +18,42 @@ Update-MgBetaSecurityThreatIntelligence [-AdditionalProperties <Hashtable>]
  [-ArticleIndicators <IMicrosoftGraphSecurityArticleIndicator[]>]
  [-Articles <IMicrosoftGraphSecurityArticle[]>] [-HostComponents <IMicrosoftGraphSecurityHostComponent[]>]
  [-HostCookies <IMicrosoftGraphSecurityHostCookie[]>] [-HostPairs <IMicrosoftGraphSecurityHostPair[]>]
- [-HostSslCertificates <IMicrosoftGraphSecurityHostSslCertificate[]>]
- [-HostTrackers <IMicrosoftGraphSecurityHostTracker[]>] [-Hosts <IMicrosoftGraphSecurityHost[]>] [-Id <String>]
- [-IntelProfiles <IMicrosoftGraphSecurityIntelligenceProfile[]>]
+ [-Hosts <IMicrosoftGraphSecurityHost[]>] [-HostSslCertificates <IMicrosoftGraphSecurityHostSslCertificate[]>]
+ [-HostTrackers <IMicrosoftGraphSecurityHostTracker[]>] [-Id <String>]
  [-IntelligenceProfileIndicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>]
+ [-IntelProfiles <IMicrosoftGraphSecurityIntelligenceProfile[]>]
  [-PassiveDnsRecords <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
  [-SslCertificates <IMicrosoftGraphSecuritySslCertificate[]>]
- [-Subdomains <IMicrosoftGraphSecuritySubdomain[]>] [-Vulnerabilities <IMicrosoftGraphSecurityVulnerability[]>]
+ [-Subdomains <IMicrosoftGraphSecuritySubdomain[]>]
+ [-Vulnerabilities <IMicrosoftGraphSecurityVulnerability[]>]
  [-WhoisHistoryRecords <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]
- [-WhoisRecords <IMicrosoftGraphSecurityWhoisRecord[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhoisRecords <IMicrosoftGraphSecurityWhoisRecord[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSecurityThreatIntelligence -BodyParameter <IMicrosoftGraphSecurityThreatIntelligence> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityThreatIntelligence -BodyParameter <IMicrosoftGraphSecurityThreatIntelligence> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property threatIntelligence in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -47,7 +61,7 @@ Update the navigation property threatIntelligence in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -59,11 +73,11 @@ Accept wildcard characters: False
 ```
 
 ### -ArticleIndicators
-Refers to indicators of threat or compromise highlighted in an microsoft.graph.security.article.Note: List retrieval is not yet supported.
+Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
 To construct, see NOTES section for ARTICLEINDICATORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityArticleIndicator[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityArticleIndicator[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -79,7 +93,7 @@ A list of article objects.
 To construct, see NOTES section for ARTICLES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityArticle[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityArticle[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -95,7 +109,7 @@ threatIntelligence
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityThreatIntelligence
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
 Parameter Sets: Update
 Aliases:
 
@@ -107,11 +121,11 @@ Accept wildcard characters: False
 ```
 
 ### -HostComponents
-Retrieve details about microsoft.graph.security.hostComponent objects.Note: List retrieval is not yet supported.
+Retrieve details about hostComponent objects.Note: List retrieval is not yet supported.
 To construct, see NOTES section for HOSTCOMPONENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostComponent[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostComponent[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -123,11 +137,11 @@ Accept wildcard characters: False
 ```
 
 ### -HostCookies
-Retrieve details about microsoft.graph.security.hostCookie objects.Note: List retrieval is not yet supported.
+Retrieve details about hostCookie objects.Note: List retrieval is not yet supported.
 To construct, see NOTES section for HOSTCOOKIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostCookie[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostCookie[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -139,11 +153,11 @@ Accept wildcard characters: False
 ```
 
 ### -HostPairs
-Retrieve details about microsoft.graph.security.hostTracker objects.Note: List retrieval is not yet supported.
+Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
 To construct, see NOTES section for HOSTPAIRS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostPair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostPair[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -155,11 +169,11 @@ Accept wildcard characters: False
 ```
 
 ### -Hosts
-Refers to microsoft.graph.security.host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
+Refers to host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
 To construct, see NOTES section for HOSTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHost[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHost[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -175,7 +189,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for HOSTSSLCERTIFICATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostSslCertificate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -187,11 +201,11 @@ Accept wildcard characters: False
 ```
 
 ### -HostTrackers
-Retrieve details about microsoft.graph.security.hostTracker objects.Note: List retrieval is not yet supported.
+Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
 To construct, see NOTES section for HOSTTRACKERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostTracker[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostTracker[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -207,7 +221,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -223,7 +237,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for INTELLIGENCEPROFILEINDICATORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfileIndicator[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -239,7 +253,7 @@ A list of intelligenceProfile objects.
 To construct, see NOTES section for INTELPROFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfile[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -251,11 +265,11 @@ Accept wildcard characters: False
 ```
 
 ### -PassiveDnsRecords
-Retrieve details about microsoft.graph.security.passiveDnsRecord objects.Note: List retrieval is not yet supported.
+Retrieve details about passiveDnsRecord objects.Note: List retrieval is not yet supported.
 To construct, see NOTES section for PASSIVEDNSRECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityPassiveDnsRecord[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -271,7 +285,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SSLCERTIFICATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySslCertificate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySslCertificate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -283,11 +297,11 @@ Accept wildcard characters: False
 ```
 
 ### -Subdomains
-Retrieve details about the microsoft.graph.security.subdomain.Note: List retrieval is not yet supported.
+Retrieve details about the subdomain.Note: List retrieval is not yet supported.
 To construct, see NOTES section for SUBDOMAINS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySubdomain[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubdomain[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -299,11 +313,11 @@ Accept wildcard characters: False
 ```
 
 ### -Vulnerabilities
-Retrieve details about microsoft.graph.security.vulnerabilities.Note: List retrieval is not yet supported.
+Retrieve details about vulnerabilities.Note: List retrieval is not yet supported.
 To construct, see NOTES section for VULNERABILITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVulnerability[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityVulnerability[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -315,11 +329,11 @@ Accept wildcard characters: False
 ```
 
 ### -WhoisHistoryRecords
-.
+Retrieve details about whoisHistoryRecord objects.Note: List retrieval is not yet supported.
 To construct, see NOTES section for WHOISHISTORYRECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisHistoryRecord[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisHistoryRecord[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -331,11 +345,11 @@ Accept wildcard characters: False
 ```
 
 ### -WhoisRecords
-.
+A list of whoisRecord objects.
 To construct, see NOTES section for WHOISRECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisRecord[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisRecord[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -350,7 +364,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -366,7 +380,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -383,9 +397,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
+
 ## NOTES
 
 ALIASES
@@ -395,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`ARTICLEINDICATORS <IMicrosoftGraphSecurityArticleIndicator[]>`: Refers to indicators of threat or compromise highlighted in an microsoft.graph.security.article.Note: List retrieval is not yet supported.
+`ARTICLEINDICATORS <IMicrosoftGraphSecurityArticleIndicator[]>`: Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -425,7 +441,7 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphSecurityThreatIntelligence>`: threatIntelligence
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ArticleIndicators <IMicrosoftGraphSecurityArticleIndicator[]>]`: Refers to indicators of threat or compromise highlighted in an microsoft.graph.security.article.Note: List retrieval is not yet supported.
+  - `[ArticleIndicators <IMicrosoftGraphSecurityArticleIndicator[]>]`: Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
     - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -445,14 +461,14 @@ To create the parameters described below, construct a hash table containing the 
     - `[Summary <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
     - `[Tags <String[]>]`: Tags for this article, communicating keywords, or key concepts.
     - `[Title <String>]`: The title of this article.
-  - `[HostComponents <IMicrosoftGraphSecurityHostComponent[]>]`: Retrieve details about microsoft.graph.security.hostComponent objects.Note: List retrieval is not yet supported.
+  - `[HostComponents <IMicrosoftGraphSecurityHostComponent[]>]`: Retrieve details about hostComponent objects.Note: List retrieval is not yet supported.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Category <String>]`: The type of component that was detected (for example, Operating System, Framework, Remote Access, or Server).
     - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Host <IMicrosoftGraphSecurityHost>]`: host
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+      - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
         - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -546,60 +562,60 @@ To create the parameters described below, construct a hash table containing the 
         - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-          - `[Email <String>]`: 
-          - `[Fax <String>]`: 
-          - `[Name <String>]`: 
-          - `[Organization <String>]`: 
-          - `[Telephone <String>]`: 
+          - `[Email <String>]`: The email of this WHOIS contact.
+          - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+          - `[Name <String>]`: The name of this WHOIS contact.
+          - `[Organization <String>]`: The organization of this WHOIS contact.
+          - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
         - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[DomainStatus <String>]`: 
-        - `[ExpirationDateTime <DateTime?>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+        - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
-        - `[LastUpdateDateTime <DateTime?>]`: 
-        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-          - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+          - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Host <IMicrosoftGraphSecurityHost>]`: host
-          - `[LastSeenDateTime <DateTime?>]`: 
+          - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RawWhoisText <String>]`: 
+        - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
         - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[WhoisServer <String>]`: 
+        - `[WhoisServer <String>]`: The WHOIS server that provides the details.
         - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
-        - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+        - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
           - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
           - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
           - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-          - `[DomainStatus <String>]`: 
-          - `[ExpirationDateTime <DateTime?>]`: 
-          - `[FirstSeenDateTime <DateTime?>]`: 
+          - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+          - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Host <IMicrosoftGraphSecurityHost>]`: host
-          - `[LastSeenDateTime <DateTime?>]`: 
-          - `[LastUpdateDateTime <DateTime?>]`: 
-          - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+          - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
           - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-          - `[RawWhoisText <String>]`: 
+          - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
           - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
           - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-          - `[RegistrationDateTime <DateTime?>]`: 
+          - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-          - `[WhoisServer <String>]`: 
+          - `[WhoisServer <String>]`: The WHOIS server that provides the details.
           - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Name <String>]`: A name running on the artifact, for example, Microsoft IIS.
     - `[Version <String>]`: The component version running on the artifact, for example, v8.5. This should not be assumed to be strictly numerical.
-  - `[HostCookies <IMicrosoftGraphSecurityHostCookie[]>]`: Retrieve details about microsoft.graph.security.hostCookie objects.Note: List retrieval is not yet supported.
-  - `[HostPairs <IMicrosoftGraphSecurityHostPair[]>]`: Retrieve details about microsoft.graph.security.hostTracker objects.Note: List retrieval is not yet supported.
+  - `[HostCookies <IMicrosoftGraphSecurityHostCookie[]>]`: Retrieve details about hostCookie objects.Note: List retrieval is not yet supported.
+  - `[HostPairs <IMicrosoftGraphSecurityHostPair[]>]`: Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
   - `[HostSslCertificates <IMicrosoftGraphSecurityHostSslCertificate[]>]`: 
-  - `[HostTrackers <IMicrosoftGraphSecurityHostTracker[]>]`: Retrieve details about microsoft.graph.security.hostTracker objects.Note: List retrieval is not yet supported.
-  - `[Hosts <IMicrosoftGraphSecurityHost[]>]`: Refers to microsoft.graph.security.host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
+  - `[HostTrackers <IMicrosoftGraphSecurityHostTracker[]>]`: Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
+  - `[Hosts <IMicrosoftGraphSecurityHost[]>]`: Refers to host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
   - `[IntelProfiles <IMicrosoftGraphSecurityIntelligenceProfile[]>]`: A list of intelligenceProfile objects.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Aliases <String[]>]`: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
@@ -620,10 +636,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[Title <String>]`: The title of this intelligenceProfile.
     - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
   - `[IntelligenceProfileIndicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>]`: 
-  - `[PassiveDnsRecords <IMicrosoftGraphSecurityPassiveDnsRecord[]>]`: Retrieve details about microsoft.graph.security.passiveDnsRecord objects.Note: List retrieval is not yet supported.
+  - `[PassiveDnsRecords <IMicrosoftGraphSecurityPassiveDnsRecord[]>]`: Retrieve details about passiveDnsRecord objects.Note: List retrieval is not yet supported.
   - `[SslCertificates <IMicrosoftGraphSecuritySslCertificate[]>]`: 
-  - `[Subdomains <IMicrosoftGraphSecuritySubdomain[]>]`: Retrieve details about the microsoft.graph.security.subdomain.Note: List retrieval is not yet supported.
-  - `[Vulnerabilities <IMicrosoftGraphSecurityVulnerability[]>]`: Retrieve details about microsoft.graph.security.vulnerabilities.Note: List retrieval is not yet supported.
+  - `[Subdomains <IMicrosoftGraphSecuritySubdomain[]>]`: Retrieve details about the subdomain.Note: List retrieval is not yet supported.
+  - `[Vulnerabilities <IMicrosoftGraphSecurityVulnerability[]>]`: Retrieve details about vulnerabilities.Note: List retrieval is not yet supported.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ActiveExploitsObserved <Boolean?>]`: Indicates whether this vulnerability has any known exploits associated to known bad actors.
     - `[Articles <IMicrosoftGraphSecurityArticle[]>]`: Articles related to this vulnerability.
@@ -650,17 +666,17 @@ To create the parameters described below, construct a hash table containing the 
     - `[References <IMicrosoftGraphSecurityHyperlink[]>]`: Reference links where further information can be learned about this vulnerability.
     - `[Remediation <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
     - `[Severity <String>]`: vulnerabilitySeverity
-  - `[WhoisHistoryRecords <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
-  - `[WhoisRecords <IMicrosoftGraphSecurityWhoisRecord[]>]`: 
+  - `[WhoisHistoryRecords <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: Retrieve details about whoisHistoryRecord objects.Note: List retrieval is not yet supported.
+  - `[WhoisRecords <IMicrosoftGraphSecurityWhoisRecord[]>]`: A list of whoisRecord objects.
 
-`HOSTCOMPONENTS <IMicrosoftGraphSecurityHostComponent[]>`: Retrieve details about microsoft.graph.security.hostComponent objects.Note: List retrieval is not yet supported.
+`HOSTCOMPONENTS <IMicrosoftGraphSecurityHostComponent[]>`: Retrieve details about hostComponent objects.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Category <String>]`: The type of component that was detected (for example, Operating System, Framework, Remote Access, or Server).
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Host <IMicrosoftGraphSecurityHost>]`: host
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -756,64 +772,64 @@ To create the parameters described below, construct a hash table containing the 
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-        - `[Email <String>]`: 
-        - `[Fax <String>]`: 
-        - `[Name <String>]`: 
-        - `[Organization <String>]`: 
-        - `[Telephone <String>]`: 
+        - `[Email <String>]`: The email of this WHOIS contact.
+        - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+        - `[Name <String>]`: The name of this WHOIS contact.
+        - `[Organization <String>]`: The organization of this WHOIS contact.
+        - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
       - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[DomainStatus <String>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
-      - `[LastUpdateDateTime <DateTime?>]`: 
-      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RawWhoisText <String>]`: 
+      - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
       - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[WhoisServer <String>]`: 
+      - `[WhoisServer <String>]`: The WHOIS server that provides the details.
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
         - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[DomainStatus <String>]`: 
-        - `[ExpirationDateTime <DateTime?>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+        - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
-        - `[LastUpdateDateTime <DateTime?>]`: 
-        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
         - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RawWhoisText <String>]`: 
+        - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
         - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[WhoisServer <String>]`: 
+        - `[WhoisServer <String>]`: The WHOIS server that provides the details.
         - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Name <String>]`: A name running on the artifact, for example, Microsoft IIS.
   - `[Version <String>]`: The component version running on the artifact, for example, v8.5. This should not be assumed to be strictly numerical.
 
-`HOSTCOOKIES <IMicrosoftGraphSecurityHostCookie[]>`: Retrieve details about microsoft.graph.security.hostCookie objects.Note: List retrieval is not yet supported.
+`HOSTCOOKIES <IMicrosoftGraphSecurityHostCookie[]>`: Retrieve details about hostCookie objects.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Domain <String>]`: The URI for which the cookie is valid.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostCookie was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Host <IMicrosoftGraphSecurityHost>]`: host
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -910,61 +926,61 @@ To create the parameters described below, construct a hash table containing the 
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-        - `[Email <String>]`: 
-        - `[Fax <String>]`: 
-        - `[Name <String>]`: 
-        - `[Organization <String>]`: 
-        - `[Telephone <String>]`: 
+        - `[Email <String>]`: The email of this WHOIS contact.
+        - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+        - `[Name <String>]`: The name of this WHOIS contact.
+        - `[Organization <String>]`: The organization of this WHOIS contact.
+        - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
       - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[DomainStatus <String>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
-      - `[LastUpdateDateTime <DateTime?>]`: 
-      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RawWhoisText <String>]`: 
+      - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
       - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[WhoisServer <String>]`: 
+      - `[WhoisServer <String>]`: The WHOIS server that provides the details.
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
         - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[DomainStatus <String>]`: 
-        - `[ExpirationDateTime <DateTime?>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+        - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
-        - `[LastUpdateDateTime <DateTime?>]`: 
-        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
         - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RawWhoisText <String>]`: 
+        - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
         - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[WhoisServer <String>]`: 
+        - `[WhoisServer <String>]`: The WHOIS server that provides the details.
         - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this hostCookie was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Name <String>]`: The name of the cookie, for example, JSESSIONID or SEARCH_NAMESITE.
 
-`HOSTPAIRS <IMicrosoftGraphSecurityHostPair[]>`: Retrieve details about microsoft.graph.security.hostTracker objects.Note: List retrieval is not yet supported.
+`HOSTPAIRS <IMicrosoftGraphSecurityHostPair[]>`: Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
     - `[Components <IMicrosoftGraphSecurityHostComponent[]>]`: The hostComponents that are associated with this host.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Category <String>]`: The type of component that was detected (for example, Operating System, Framework, Remote Access, or Server).
@@ -1061,50 +1077,50 @@ To create the parameters described below, construct a hash table containing the 
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-        - `[Email <String>]`: 
-        - `[Fax <String>]`: 
-        - `[Name <String>]`: 
-        - `[Organization <String>]`: 
-        - `[Telephone <String>]`: 
+        - `[Email <String>]`: The email of this WHOIS contact.
+        - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+        - `[Name <String>]`: The name of this WHOIS contact.
+        - `[Organization <String>]`: The organization of this WHOIS contact.
+        - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
       - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[DomainStatus <String>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
-      - `[LastUpdateDateTime <DateTime?>]`: 
-      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RawWhoisText <String>]`: 
+      - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
       - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[WhoisServer <String>]`: 
+      - `[WhoisServer <String>]`: The WHOIS server that provides the details.
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
         - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[DomainStatus <String>]`: 
-        - `[ExpirationDateTime <DateTime?>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+        - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
-        - `[LastUpdateDateTime <DateTime?>]`: 
-        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
         - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RawWhoisText <String>]`: 
+        - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
         - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[WhoisServer <String>]`: 
+        - `[WhoisServer <String>]`: The WHOIS server that provides the details.
         - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -1112,9 +1128,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[LinkKind <String>]`: The reason the two hosts are identified as hostPairs.
   - `[ParentHost <IMicrosoftGraphSecurityHost>]`: host
 
-`HOSTS <IMicrosoftGraphSecurityHost[]>`: Refers to microsoft.graph.security.host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
+`HOSTS <IMicrosoftGraphSecurityHost[]>`: Refers to host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+  - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
     - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -1217,50 +1233,50 @@ To create the parameters described below, construct a hash table containing the 
     - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-      - `[Email <String>]`: 
-      - `[Fax <String>]`: 
-      - `[Name <String>]`: 
-      - `[Organization <String>]`: 
-      - `[Telephone <String>]`: 
+      - `[Email <String>]`: The email of this WHOIS contact.
+      - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+      - `[Name <String>]`: The name of this WHOIS contact.
+      - `[Organization <String>]`: The organization of this WHOIS contact.
+      - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
     - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-    - `[DomainStatus <String>]`: 
-    - `[ExpirationDateTime <DateTime?>]`: 
-    - `[FirstSeenDateTime <DateTime?>]`: 
+    - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+    - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Host <IMicrosoftGraphSecurityHost>]`: host
-    - `[LastSeenDateTime <DateTime?>]`: 
-    - `[LastUpdateDateTime <DateTime?>]`: 
-    - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+    - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-    - `[RawWhoisText <String>]`: 
+    - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
     - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-    - `[RegistrationDateTime <DateTime?>]`: 
+    - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-    - `[WhoisServer <String>]`: 
+    - `[WhoisServer <String>]`: The WHOIS server that provides the details.
     - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+    - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[DomainStatus <String>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
-      - `[LastUpdateDateTime <DateTime?>]`: 
-      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
       - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RawWhoisText <String>]`: 
+      - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
       - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[WhoisServer <String>]`: 
+      - `[WhoisServer <String>]`: The WHOIS server that provides the details.
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
@@ -1270,7 +1286,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Host <IMicrosoftGraphSecurityHost>]`: host
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -1342,50 +1358,50 @@ To create the parameters described below, construct a hash table containing the 
           - `[State <String>]`: The state.
           - `[Street <String>]`: The street.
           - `[Type <String>]`: physicalAddressType
-        - `[Email <String>]`: 
-        - `[Fax <String>]`: 
-        - `[Name <String>]`: 
-        - `[Organization <String>]`: 
-        - `[Telephone <String>]`: 
+        - `[Email <String>]`: The email of this WHOIS contact.
+        - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+        - `[Name <String>]`: The name of this WHOIS contact.
+        - `[Organization <String>]`: The organization of this WHOIS contact.
+        - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
       - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[DomainStatus <String>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
-      - `[LastUpdateDateTime <DateTime?>]`: 
-      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RawWhoisText <String>]`: 
+      - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
       - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[WhoisServer <String>]`: 
+      - `[WhoisServer <String>]`: The WHOIS server that provides the details.
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
         - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[DomainStatus <String>]`: 
-        - `[ExpirationDateTime <DateTime?>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+        - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
-        - `[LastUpdateDateTime <DateTime?>]`: 
-        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
         - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RawWhoisText <String>]`: 
+        - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
         - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[WhoisServer <String>]`: 
+        - `[WhoisServer <String>]`: The WHOIS server that provides the details.
         - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[LastSeenDateTime <DateTime?>]`: 
@@ -1417,13 +1433,13 @@ To create the parameters described below, construct a hash table containing the 
     - `[Sha1 <String>]`: 
     - `[Subject <IMicrosoftGraphSecuritySslCertificateEntity>]`: sslCertificateEntity
 
-`HOSTTRACKERS <IMicrosoftGraphSecurityHostTracker[]>`: Retrieve details about microsoft.graph.security.hostTracker objects.Note: List retrieval is not yet supported.
+`HOSTTRACKERS <IMicrosoftGraphSecurityHostTracker[]>`: Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Host <IMicrosoftGraphSecurityHost>]`: host
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -1520,50 +1536,50 @@ To create the parameters described below, construct a hash table containing the 
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-        - `[Email <String>]`: 
-        - `[Fax <String>]`: 
-        - `[Name <String>]`: 
-        - `[Organization <String>]`: 
-        - `[Telephone <String>]`: 
+        - `[Email <String>]`: The email of this WHOIS contact.
+        - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+        - `[Name <String>]`: The name of this WHOIS contact.
+        - `[Organization <String>]`: The organization of this WHOIS contact.
+        - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
       - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[DomainStatus <String>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
-      - `[LastUpdateDateTime <DateTime?>]`: 
-      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RawWhoisText <String>]`: 
+      - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
       - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[WhoisServer <String>]`: 
+      - `[WhoisServer <String>]`: The WHOIS server that provides the details.
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
         - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[DomainStatus <String>]`: 
-        - `[ExpirationDateTime <DateTime?>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+        - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
-        - `[LastUpdateDateTime <DateTime?>]`: 
-        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
         - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RawWhoisText <String>]`: 
+        - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
         - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[WhoisServer <String>]`: 
+        - `[WhoisServer <String>]`: The WHOIS server that provides the details.
         - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Kind <String>]`: The kind of hostTracker that was detected. For example, GoogleAnalyticsID or JarmHash.
@@ -1604,7 +1620,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: The title of this intelligenceProfile.
   - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
 
-`PASSIVEDNSRECORDS <IMicrosoftGraphSecurityPassiveDnsRecord[]>`: Retrieve details about microsoft.graph.security.passiveDnsRecord objects.Note: List retrieval is not yet supported.
+`PASSIVEDNSRECORDS <IMicrosoftGraphSecurityPassiveDnsRecord[]>`: Retrieve details about passiveDnsRecord objects.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1615,7 +1631,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentHost <IMicrosoftGraphSecurityHost>]`: host
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -1709,50 +1725,50 @@ To create the parameters described below, construct a hash table containing the 
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-        - `[Email <String>]`: 
-        - `[Fax <String>]`: 
-        - `[Name <String>]`: 
-        - `[Organization <String>]`: 
-        - `[Telephone <String>]`: 
+        - `[Email <String>]`: The email of this WHOIS contact.
+        - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+        - `[Name <String>]`: The name of this WHOIS contact.
+        - `[Organization <String>]`: The organization of this WHOIS contact.
+        - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
       - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[DomainStatus <String>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
-      - `[LastUpdateDateTime <DateTime?>]`: 
-      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RawWhoisText <String>]`: 
+      - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
       - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[WhoisServer <String>]`: 
+      - `[WhoisServer <String>]`: The WHOIS server that provides the details.
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
         - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[DomainStatus <String>]`: 
-        - `[ExpirationDateTime <DateTime?>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+        - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
-        - `[LastUpdateDateTime <DateTime?>]`: 
-        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
         - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RawWhoisText <String>]`: 
+        - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
         - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[WhoisServer <String>]`: 
+        - `[WhoisServer <String>]`: The WHOIS server that provides the details.
         - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RecordType <String>]`: The DNS record type for this passiveDnsRecord entry.
@@ -1785,7 +1801,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastSeenDateTime <DateTime?>]`: 
   - `[RelatedHosts <IMicrosoftGraphSecurityHost[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -1858,63 +1874,63 @@ To create the parameters described below, construct a hash table containing the 
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-        - `[Email <String>]`: 
-        - `[Fax <String>]`: 
-        - `[Name <String>]`: 
-        - `[Organization <String>]`: 
-        - `[Telephone <String>]`: 
+        - `[Email <String>]`: The email of this WHOIS contact.
+        - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+        - `[Name <String>]`: The name of this WHOIS contact.
+        - `[Organization <String>]`: The organization of this WHOIS contact.
+        - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
       - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[DomainStatus <String>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
-      - `[LastUpdateDateTime <DateTime?>]`: 
-      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RawWhoisText <String>]`: 
+      - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
       - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[WhoisServer <String>]`: 
+      - `[WhoisServer <String>]`: The WHOIS server that provides the details.
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
         - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[DomainStatus <String>]`: 
-        - `[ExpirationDateTime <DateTime?>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+        - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
-        - `[LastUpdateDateTime <DateTime?>]`: 
-        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
         - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RawWhoisText <String>]`: 
+        - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
         - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[WhoisServer <String>]`: 
+        - `[WhoisServer <String>]`: The WHOIS server that provides the details.
         - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[SerialNumber <String>]`: 
   - `[Sha1 <String>]`: 
   - `[Subject <IMicrosoftGraphSecuritySslCertificateEntity>]`: sslCertificateEntity
 
-`SUBDOMAINS <IMicrosoftGraphSecuritySubdomain[]>`: Retrieve details about the microsoft.graph.security.subdomain.Note: List retrieval is not yet supported.
+`SUBDOMAINS <IMicrosoftGraphSecuritySubdomain[]>`: Retrieve details about the subdomain.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the subdomain. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
   - `[Host <IMicrosoftGraphSecurityHost>]`: host
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -2014,54 +2030,54 @@ To create the parameters described below, construct a hash table containing the 
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-        - `[Email <String>]`: 
-        - `[Fax <String>]`: 
-        - `[Name <String>]`: 
-        - `[Organization <String>]`: 
-        - `[Telephone <String>]`: 
+        - `[Email <String>]`: The email of this WHOIS contact.
+        - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+        - `[Name <String>]`: The name of this WHOIS contact.
+        - `[Organization <String>]`: The organization of this WHOIS contact.
+        - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
       - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[DomainStatus <String>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
-      - `[LastUpdateDateTime <DateTime?>]`: 
-      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RawWhoisText <String>]`: 
+      - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
       - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[WhoisServer <String>]`: 
+      - `[WhoisServer <String>]`: The WHOIS server that provides the details.
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
         - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[DomainStatus <String>]`: 
-        - `[ExpirationDateTime <DateTime?>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+        - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+        - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
-        - `[LastUpdateDateTime <DateTime?>]`: 
-        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
         - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RawWhoisText <String>]`: 
+        - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
         - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[RegistrationDateTime <DateTime?>]`: 
+        - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-        - `[WhoisServer <String>]`: 
+        - `[WhoisServer <String>]`: The WHOIS server that provides the details.
         - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-`VULNERABILITIES <IMicrosoftGraphSecurityVulnerability[]>`: Retrieve details about microsoft.graph.security.vulnerabilities.Note: List retrieval is not yet supported.
+`VULNERABILITIES <IMicrosoftGraphSecurityVulnerability[]>`: Retrieve details about vulnerabilities.Note: List retrieval is not yet supported.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActiveExploitsObserved <Boolean?>]`: Indicates whether this vulnerability has any known exploits associated to known bad actors.
   - `[Articles <IMicrosoftGraphSecurityArticle[]>]`: Articles related to this vulnerability.
@@ -2107,7 +2123,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Remediation <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
   - `[Severity <String>]`: vulnerabilitySeverity
 
-`WHOISHISTORYRECORDS <IMicrosoftGraphSecurityWhoisHistoryRecord[]>`: .
+`WHOISHISTORYRECORDS <IMicrosoftGraphSecurityWhoisHistoryRecord[]>`: Retrieve details about whoisHistoryRecord objects.Note: List retrieval is not yet supported.
   - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -2119,20 +2135,20 @@ To create the parameters described below, construct a hash table containing the 
       - `[State <String>]`: The state.
       - `[Street <String>]`: The street.
       - `[Type <String>]`: physicalAddressType
-    - `[Email <String>]`: 
-    - `[Fax <String>]`: 
-    - `[Name <String>]`: 
-    - `[Organization <String>]`: 
-    - `[Telephone <String>]`: 
+    - `[Email <String>]`: The email of this WHOIS contact.
+    - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+    - `[Name <String>]`: The name of this WHOIS contact.
+    - `[Organization <String>]`: The organization of this WHOIS contact.
+    - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
   - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
   - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-  - `[DomainStatus <String>]`: 
-  - `[ExpirationDateTime <DateTime?>]`: 
-  - `[FirstSeenDateTime <DateTime?>]`: 
+  - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+  - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Host <IMicrosoftGraphSecurityHost>]`: host
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -2227,40 +2243,40 @@ To create the parameters described below, construct a hash table containing the 
       - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[DomainStatus <String>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+      - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
-      - `[LastSeenDateTime <DateTime?>]`: 
-      - `[LastUpdateDateTime <DateTime?>]`: 
-      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-        - `[FirstSeenDateTime <DateTime?>]`: 
+      - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+        - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[Host <IMicrosoftGraphSecurityHost>]`: host
-        - `[LastSeenDateTime <DateTime?>]`: 
+        - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RawWhoisText <String>]`: 
+      - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
       - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[RegistrationDateTime <DateTime?>]`: 
+      - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-      - `[WhoisServer <String>]`: 
+      - `[WhoisServer <String>]`: The WHOIS server that provides the details.
       - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
-  - `[LastSeenDateTime <DateTime?>]`: 
-  - `[LastUpdateDateTime <DateTime?>]`: 
-  - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+      - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
+  - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
   - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-  - `[RawWhoisText <String>]`: 
+  - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
   - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
   - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-  - `[RegistrationDateTime <DateTime?>]`: 
+  - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-  - `[WhoisServer <String>]`: 
+  - `[WhoisServer <String>]`: The WHOIS server that provides the details.
   - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-`WHOISRECORDS <IMicrosoftGraphSecurityWhoisRecord[]>`: .
+`WHOISRECORDS <IMicrosoftGraphSecurityWhoisRecord[]>`: A list of whoisRecord objects.
   - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -2272,20 +2288,20 @@ To create the parameters described below, construct a hash table containing the 
       - `[State <String>]`: The state.
       - `[Street <String>]`: The street.
       - `[Type <String>]`: physicalAddressType
-    - `[Email <String>]`: 
-    - `[Fax <String>]`: 
-    - `[Name <String>]`: 
-    - `[Organization <String>]`: 
-    - `[Telephone <String>]`: 
+    - `[Email <String>]`: The email of this WHOIS contact.
+    - `[Fax <String>]`: The fax of this WHOIS contact. No format is guaranteed.
+    - `[Name <String>]`: The name of this WHOIS contact.
+    - `[Organization <String>]`: The organization of this WHOIS contact.
+    - `[Telephone <String>]`: The telephone of this WHOIS contact. No format is guaranteed.
   - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
   - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-  - `[DomainStatus <String>]`: 
-  - `[ExpirationDateTime <DateTime?>]`: 
-  - `[FirstSeenDateTime <DateTime?>]`: 
+  - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+  - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Host <IMicrosoftGraphSecurityHost>]`: host
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
+    - `[ChildHostPairs <IMicrosoftGraphSecurityHostPair[]>]`: The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ChildHost <IMicrosoftGraphSecurityHost>]`: host
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
@@ -2376,45 +2392,41 @@ To create the parameters described below, construct a hash table containing the 
       - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Value <String>]`: The identification value for the hostTracker.
     - `[Whois <IMicrosoftGraphSecurityWhoisRecord>]`: whoisRecord
-  - `[LastSeenDateTime <DateTime?>]`: 
-  - `[LastUpdateDateTime <DateTime?>]`: 
-  - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
-    - `[FirstSeenDateTime <DateTime?>]`: 
+  - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
+    - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Host <IMicrosoftGraphSecurityHost>]`: host
-    - `[LastSeenDateTime <DateTime?>]`: 
+    - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-  - `[RawWhoisText <String>]`: 
+  - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
   - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
   - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-  - `[RegistrationDateTime <DateTime?>]`: 
+  - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-  - `[WhoisServer <String>]`: 
+  - `[WhoisServer <String>]`: The WHOIS server that provides the details.
   - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: 
+  - `[History <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]`: The collection of historical records associated to this WHOIS object.
     - `[Abuse <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[Admin <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[Billing <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-    - `[DomainStatus <String>]`: 
-    - `[ExpirationDateTime <DateTime?>]`: 
-    - `[FirstSeenDateTime <DateTime?>]`: 
+    - `[DomainStatus <String>]`: The domain status for this WHOIS object.
+    - `[ExpirationDateTime <DateTime?>]`: The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[FirstSeenDateTime <DateTime?>]`: The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Host <IMicrosoftGraphSecurityHost>]`: host
-    - `[LastSeenDateTime <DateTime?>]`: 
-    - `[LastUpdateDateTime <DateTime?>]`: 
-    - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: 
+    - `[LastSeenDateTime <DateTime?>]`: The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[LastUpdateDateTime <DateTime?>]`: The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Nameservers <IMicrosoftGraphSecurityWhoisNameserver[]>]`: The nameservers for this WHOIS object.
     - `[Noc <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-    - `[RawWhoisText <String>]`: 
+    - `[RawWhoisText <String>]`: The raw WHOIS details for this WHOIS object.
     - `[Registrant <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[Registrar <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-    - `[RegistrationDateTime <DateTime?>]`: 
+    - `[RegistrationDateTime <DateTime?>]`: The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Technical <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
-    - `[WhoisServer <String>]`: 
+    - `[WhoisServer <String>]`: The WHOIS server that provides the details.
     - `[Zone <IMicrosoftGraphSecurityWhoisContact>]`: whoisContact
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
-[Update-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligence?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Update-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligence?view=graph-powershell-1.0)
 

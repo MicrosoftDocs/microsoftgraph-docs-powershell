@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users
-Module Guid: a9216691-f2f4-4228-aaae-7802ff5ae4a6
+Module Guid: 747afed2-05a4-4b25-838b-43f1364cd5a0
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -166,8 +166,8 @@ Get oauth2PermissionGrants from users
 ### [Get-MgBetaUserOauth2PermissionGrantCount](Get-MgBetaUserOauth2PermissionGrantCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOauth2PermissionGrantCount](Get-MgBetaUserOauth2PermissionGrantCount.md)
-Get the number of the resource
+### [Get-MgBetaUserOutlookMasterCategory](Get-MgBetaUserOutlookMasterCategory.md)
+Get the properties and relationships of the specified outlookCategory object.
 
 ### [Get-MgBetaUserOutlookMasterCategoryCount](Get-MgBetaUserOutlookMasterCategoryCount.md)
 Get the number of the resource
@@ -342,8 +342,8 @@ Supports $expand.
 ### [Get-MgBetaUserSponsorCount](Get-MgBetaUserSponsorCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserSponsorCount](Get-MgBetaUserSponsorCount.md)
-Get the number of the resource
+### [Get-MgBetaUserTodoList](Get-MgBetaUserTodoList.md)
+Read the properties and relationships of a todoTaskList object.
 
 ### [Get-MgBetaUserTodoListCount](Get-MgBetaUserTodoListCount.md)
 Get the number of the resource
@@ -453,8 +453,8 @@ Create new navigation property to used for users
 ### [New-MgBetaUserNotification](New-MgBetaUserNotification.md)
 Create new navigation property to notifications for users
 
-### [New-MgBetaUserNotification](New-MgBetaUserNotification.md)
-Create new navigation property to notifications for users
+### [New-MgBetaUserOutlookMasterCategory](New-MgBetaUserOutlookMasterCategory.md)
+Create an outlookCategory object in the user's master list of categories.
 
 ### [New-MgBetaUserOutlookTask](New-MgBetaUserOutlookTask.md)
 Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox.
@@ -491,27 +491,30 @@ The POST method always ignores the time portion of startDateTime and dueDateTime
 Use this API to add an attachment to an outlookTask.
 The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
-### [New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment](New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment.md)
-Use this API to add an attachment to an outlookTask.
-The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
+### [New-MgBetaUserTodoList](New-MgBetaUserTodoList.md)
+Create a new lists object.
 
 ### [New-MgBetaUserTodoListExtension](New-MgBetaUserTodoListExtension.md)
 Create new navigation property to extensions for users
 
-### [New-MgBetaUserTodoListExtension](New-MgBetaUserTodoListExtension.md)
-Create new navigation property to extensions for users
+### [New-MgBetaUserTodoListTask](New-MgBetaUserTodoListTask.md)
+Create a new task object in a specified todoTaskList.
 
-### [New-MgBetaUserTodoListExtension](New-MgBetaUserTodoListExtension.md)
-Create new navigation property to extensions for users
+### [New-MgBetaUserTodoListTaskAttachment](New-MgBetaUserTodoListTaskAttachment.md)
+Add a new taskFileAttachment object to a todoTask.
+This operation limits the size of the attachment you can add to under 3 MB.
+If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
 
-### [New-MgBetaUserTodoListExtension](New-MgBetaUserTodoListExtension.md)
-Create new navigation property to extensions for users
+### [New-MgBetaUserTodoListTaskChecklistItem](New-MgBetaUserTodoListTaskChecklistItem.md)
+Create a new checklistItem object as a subtask in a bigger todoTask.
 
 ### [New-MgBetaUserTodoListTaskExtension](New-MgBetaUserTodoListTaskExtension.md)
 Create new navigation property to extensions for users
 
-### [New-MgBetaUserTodoListTaskExtension](New-MgBetaUserTodoListTaskExtension.md)
-Create new navigation property to extensions for users
+### [New-MgBetaUserTodoListTaskLinkedResource](New-MgBetaUserTodoListTaskLinkedResource.md)
+Create a linkedResource object to associate a specified task with an item in a partner application.
+For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a linkedResource object to track its association.
+You can also create a linkedResource object while creating a todoTask.
 
 ### [Remove-MgBetaUser](Remove-MgBetaUser.md)
 Delete user.
@@ -546,8 +549,8 @@ Remove a user's manager.
 ### [Remove-MgBetaUserNotification](Remove-MgBetaUserNotification.md)
 Delete navigation property notifications for users
 
-### [Remove-MgBetaUserNotification](Remove-MgBetaUserNotification.md)
-Delete navigation property notifications for users
+### [Remove-MgBetaUserOutlookMasterCategory](Remove-MgBetaUserOutlookMasterCategory.md)
+Delete the specified outlookCategory object.
 
 ### [Remove-MgBetaUserOutlookTask](Remove-MgBetaUserOutlookTask.md)
 Delete the specified Outlook task in the user's mailbox.
@@ -597,29 +600,29 @@ Delete navigation property shiftPreferences for users
 ### [Remove-MgBetaUserSponsor](Remove-MgBetaUserSponsor.md)
 Remove a user's sponsor.
 
-### [Remove-MgBetaUserSponsor](Remove-MgBetaUserSponsor.md)
-Remove a user's sponsor.
+### [Remove-MgBetaUserTodoList](Remove-MgBetaUserTodoList.md)
+Deletes a todoTaskList object.
 
 ### [Remove-MgBetaUserTodoListExtension](Remove-MgBetaUserTodoListExtension.md)
 Delete navigation property extensions for users
 
-### [Remove-MgBetaUserTodoListExtension](Remove-MgBetaUserTodoListExtension.md)
-Delete navigation property extensions for users
+### [Remove-MgBetaUserTodoListTask](Remove-MgBetaUserTodoListTask.md)
+Deletes a todoTask object.
 
-### [Remove-MgBetaUserTodoListExtension](Remove-MgBetaUserTodoListExtension.md)
-Delete navigation property extensions for users
+### [Remove-MgBetaUserTodoListTaskAttachment](Remove-MgBetaUserTodoListTaskAttachment.md)
+Delete a taskFileAttachment object from a todoTask resource.
 
 ### [Remove-MgBetaUserTodoListTaskAttachmentSession](Remove-MgBetaUserTodoListTaskAttachmentSession.md)
 Delete navigation property attachmentSessions for users
 
-### [Remove-MgBetaUserTodoListTaskAttachmentSession](Remove-MgBetaUserTodoListTaskAttachmentSession.md)
-Delete navigation property attachmentSessions for users
+### [Remove-MgBetaUserTodoListTaskChecklistItem](Remove-MgBetaUserTodoListTaskChecklistItem.md)
+Delete a checklistItem object.
 
 ### [Remove-MgBetaUserTodoListTaskExtension](Remove-MgBetaUserTodoListTaskExtension.md)
 Delete navigation property extensions for users
 
-### [Remove-MgBetaUserTodoListTaskExtension](Remove-MgBetaUserTodoListTaskExtension.md)
-Delete navigation property extensions for users
+### [Remove-MgBetaUserTodoListTaskLinkedResource](Remove-MgBetaUserTodoListTaskLinkedResource.md)
+Deletes a linkedResource object.
 
 ### [Set-MgBetaUserManagerByRef](Set-MgBetaUserManagerByRef.md)
 Assign a user's manager.
@@ -662,8 +665,9 @@ Update property mailboxSettings value.
 ### [Update-MgBetaUserNotification](Update-MgBetaUserNotification.md)
 Update the navigation property notifications in users
 
-### [Update-MgBetaUserNotification](Update-MgBetaUserNotification.md)
-Update the navigation property notifications in users
+### [Update-MgBetaUserOutlookMasterCategory](Update-MgBetaUserOutlookMasterCategory.md)
+Update the writable property, color, of the specified outlookCategory object.
+You cannot modify the displayName property\nonce you have created the category.
 
 ### [Update-MgBetaUserOutlookTask](Update-MgBetaUserOutlookTask.md)
 Change writable properties of an Outlook task.
@@ -706,24 +710,24 @@ Update some or all of the properties of a regionalAndLanguageSettings object.
 ### [Update-MgBetaUserSettingShiftPreference](Update-MgBetaUserSettingShiftPreference.md)
 Update the properties and relationships of a shiftPreferences object.
 
-### [Update-MgBetaUserSettingShiftPreference](Update-MgBetaUserSettingShiftPreference.md)
-Update the properties and relationships of a shiftPreferences object.
+### [Update-MgBetaUserTodoList](Update-MgBetaUserTodoList.md)
+Update the properties of a todoTaskList object.
 
 ### [Update-MgBetaUserTodoListExtension](Update-MgBetaUserTodoListExtension.md)
 Update the navigation property extensions in users
 
-### [Update-MgBetaUserTodoListExtension](Update-MgBetaUserTodoListExtension.md)
-Update the navigation property extensions in users
+### [Update-MgBetaUserTodoListTask](Update-MgBetaUserTodoListTask.md)
+Update the properties of a todoTask object.
 
 ### [Update-MgBetaUserTodoListTaskAttachmentSession](Update-MgBetaUserTodoListTaskAttachmentSession.md)
 Update the navigation property attachmentSessions in users
 
-### [Update-MgBetaUserTodoListTaskAttachmentSession](Update-MgBetaUserTodoListTaskAttachmentSession.md)
-Update the navigation property attachmentSessions in users
+### [Update-MgBetaUserTodoListTaskChecklistItem](Update-MgBetaUserTodoListTaskChecklistItem.md)
+Update the properties of a checklistItem object.
 
 ### [Update-MgBetaUserTodoListTaskExtension](Update-MgBetaUserTodoListTaskExtension.md)
 Update the navigation property extensions in users
 
-### [Update-MgBetaUserTodoListTaskExtension](Update-MgBetaUserTodoListTaskExtension.md)
-Update the navigation property extensions in users
+### [Update-MgBetaUserTodoListTaskLinkedResource](Update-MgBetaUserTodoListTaskLinkedResource.md)
+Update the properties of a linkedResource object.
 

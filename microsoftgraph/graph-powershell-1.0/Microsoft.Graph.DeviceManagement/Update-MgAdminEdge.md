@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedge
 schema: 2.0.0
@@ -10,24 +10,37 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property edge in admin
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdge?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgAdminEdge [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InternetExplorerMode <IMicrosoftGraphInternetExplorerMode>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InternetExplorerMode <IMicrosoftGraphInternetExplorerMode>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property edge in admin
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,7 +48,7 @@ Update the navigation property edge in admin
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +64,7 @@ edge
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdge
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdge
 Parameter Sets: Update
 Aliases:
 
@@ -63,11 +76,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +96,7 @@ internetExplorerMode
 To construct, see NOTES section for INTERNETEXPLORERMODE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInternetExplorerMode
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternetExplorerMode
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -98,7 +111,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -114,7 +127,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -131,9 +144,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdge
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdge
+
 ## NOTES
 
 ALIASES
@@ -145,12 +160,12 @@ To create the parameters described below, construct a hash table containing the 
 
 `BODYPARAMETER <IMicrosoftGraphEdge>`: edge
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[InternetExplorerMode <IMicrosoftGraphInternetExplorerMode>]`: internetExplorerMode
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[SiteLists <IMicrosoftGraphBrowserSiteList[]>]`: A collection of site lists to support Internet Explorer mode.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Description <String>]`: The description of the site list.
       - `[DisplayName <String>]`: The name of the site list.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -166,7 +181,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[PublishedDateTime <DateTime?>]`: The date and time when the site list was published.
       - `[Revision <String>]`: The current revision of the site list.
       - `[SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>]`: A collection of shared cookies defined for the site list.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Comment <String>]`: The comment for the shared cookie.
         - `[CreatedDateTime <DateTime?>]`: The date and time when the shared cookie was created.
         - `[DeletedDateTime <DateTime?>]`: The date and time when the shared cookie was deleted.
@@ -188,7 +203,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
         - `[Status <BrowserSharedCookieStatus?>]`: browserSharedCookieStatus
       - `[Sites <IMicrosoftGraphBrowserSite[]>]`: A collection of sites defined for the site list.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[AllowRedirect <Boolean?>]`: Controls the behavior of redirected sites. If true, indicates that the site will open in Internet Explorer 11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.
         - `[Comment <String>]`: The comment for the site.
         - `[CompatibilityMode <BrowserSiteCompatibilityMode?>]`: browserSiteCompatibilityMode
@@ -212,9 +227,9 @@ To create the parameters described below, construct a hash table containing the 
 
 `INTERNETEXPLORERMODE <IMicrosoftGraphInternetExplorerMode>`: internetExplorerMode
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[SiteLists <IMicrosoftGraphBrowserSiteList[]>]`: A collection of site lists to support Internet Explorer mode.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Description <String>]`: The description of the site list.
     - `[DisplayName <String>]`: The name of the site list.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -230,7 +245,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[PublishedDateTime <DateTime?>]`: The date and time when the site list was published.
     - `[Revision <String>]`: The current revision of the site list.
     - `[SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>]`: A collection of shared cookies defined for the site list.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Comment <String>]`: The comment for the shared cookie.
       - `[CreatedDateTime <DateTime?>]`: The date and time when the shared cookie was created.
       - `[DeletedDateTime <DateTime?>]`: The date and time when the shared cookie was deleted.
@@ -252,7 +267,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[SourceEnvironment <BrowserSharedCookieSourceEnvironment?>]`: browserSharedCookieSourceEnvironment
       - `[Status <BrowserSharedCookieStatus?>]`: browserSharedCookieStatus
     - `[Sites <IMicrosoftGraphBrowserSite[]>]`: A collection of sites defined for the site list.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AllowRedirect <Boolean?>]`: Controls the behavior of redirected sites. If true, indicates that the site will open in Internet Explorer 11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain.
       - `[Comment <String>]`: The comment for the site.
       - `[CompatibilityMode <BrowserSiteCompatibilityMode?>]`: browserSiteCompatibilityMode
@@ -275,8 +290,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Status <BrowserSiteListStatus?>]`: browserSiteListStatus
 
 ## RELATED LINKS
-[Update-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdge?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdge?view=graph-powershell-beta)
 
