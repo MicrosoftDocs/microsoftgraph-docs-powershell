@@ -47,18 +47,6 @@ Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile -InputObject <IDeviceMa
 ## DESCRIPTION
 Update the navigation property windowsFeatureUpdateProfiles in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -407,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OfferStartDateTimeInUtc <DateTime?>]`: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
 
 ## RELATED LINKS
+

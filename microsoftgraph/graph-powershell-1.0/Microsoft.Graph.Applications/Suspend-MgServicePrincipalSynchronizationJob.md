@@ -32,18 +32,6 @@ Suspend-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -181,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Suspend-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Suspend-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+

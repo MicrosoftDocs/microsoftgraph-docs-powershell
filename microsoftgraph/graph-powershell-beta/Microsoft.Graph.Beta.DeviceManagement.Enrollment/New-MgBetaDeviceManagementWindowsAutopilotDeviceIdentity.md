@@ -43,18 +43,6 @@ New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity
 ## DESCRIPTION
 Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -776,3 +764,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-1.0)
+

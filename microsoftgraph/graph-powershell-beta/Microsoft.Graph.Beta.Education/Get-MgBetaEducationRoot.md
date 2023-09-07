@@ -22,22 +22,6 @@ Get-MgBetaEducationRoot [-ExpandProperty <String[]>] [-Property <String[]>] [<Co
 ## DESCRIPTION
 Get education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationRoot](/powershell/module/Microsoft.Graph.Education/Get-MgEducationRoot?view=graph-powershell-1.0)
+

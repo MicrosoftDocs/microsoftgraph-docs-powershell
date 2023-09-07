@@ -22,22 +22,6 @@ Get-MgBetaReportAuthenticationMethod [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Container for navigation properties for Azure AD authentication methods resources.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-1.0)
+

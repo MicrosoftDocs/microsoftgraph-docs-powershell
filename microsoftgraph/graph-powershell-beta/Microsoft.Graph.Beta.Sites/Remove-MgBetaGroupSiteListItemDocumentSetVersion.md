@@ -31,22 +31,6 @@ Remove-MgBetaGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [
 ## DESCRIPTION
 Delete a version of a document set in a list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -270,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
+

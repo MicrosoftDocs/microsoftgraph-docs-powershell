@@ -46,22 +46,6 @@ Set-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Set the availability and activity status in a presence session of an application for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -280,3 +264,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationPresence?view=graph-powershell-1.0)
+

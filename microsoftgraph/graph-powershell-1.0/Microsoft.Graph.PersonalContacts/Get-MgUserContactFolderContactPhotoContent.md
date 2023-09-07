@@ -30,22 +30,6 @@ Get-MgUserContactFolderContactPhotoContent -InputObject <IPersonalContactsIdenti
 ## DESCRIPTION
 Get media content for the navigation property photo from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContactFolderId
@@ -166,3 +150,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserContactFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactPhotoContent?view=graph-powershell-beta)
+

@@ -30,22 +30,6 @@ Remove-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property operations for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -175,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintOperation?view=graph-powershell-beta)
+

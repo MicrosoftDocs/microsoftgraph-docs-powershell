@@ -19,18 +19,6 @@ Sync-MgBetaDeviceAppManagementVppTokenLicenseCount [-PassThru] [-WhatIf] [-Confi
 ## DESCRIPTION
 Invoke action syncLicenseCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -PassThru
@@ -94,3 +82,4 @@ ALIASES
 Sync-MgBetaDeviceAppMgtVppTokenLicenseCount
 
 ## RELATED LINKS
+

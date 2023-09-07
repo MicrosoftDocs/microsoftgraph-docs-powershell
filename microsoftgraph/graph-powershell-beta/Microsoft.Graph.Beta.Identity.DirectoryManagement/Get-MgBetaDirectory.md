@@ -22,22 +22,6 @@ Get-MgBetaDirectory [-ExpandProperty <String[]>] [-Property <String[]>] [<Common
 ## DESCRIPTION
 Get directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectory?view=graph-powershell-1.0)
+

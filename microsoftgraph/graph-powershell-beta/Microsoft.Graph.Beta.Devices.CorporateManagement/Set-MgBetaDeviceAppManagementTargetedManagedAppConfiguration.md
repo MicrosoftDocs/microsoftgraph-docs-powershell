@@ -46,18 +46,6 @@ Set-MgBetaDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevi
 ## DESCRIPTION
 Invoke action assign
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -293,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Set-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-1.0)
+

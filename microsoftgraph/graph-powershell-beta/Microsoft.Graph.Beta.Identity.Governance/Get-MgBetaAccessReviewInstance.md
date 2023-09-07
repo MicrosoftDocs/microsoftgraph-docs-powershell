@@ -34,22 +34,6 @@ Get-MgBetaAccessReviewInstance -InputObject <IIdentityGovernanceIdentity> [-Expa
 ## DESCRIPTION
 The collection of access reviews instances past, present and future, if this object is a recurring access review.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -366,3 +350,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

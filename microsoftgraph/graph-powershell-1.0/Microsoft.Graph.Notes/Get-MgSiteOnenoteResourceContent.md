@@ -30,22 +30,6 @@ Get-MgSiteOnenoteResourceContent -InputObject <INotesIdentity> -OutFile <String>
 ## DESCRIPTION
 The content stream
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -155,3 +139,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteResourceContent?view=graph-powershell-beta)
+

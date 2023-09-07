@@ -23,18 +23,6 @@ Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp [-PassThru] [-WhatIf]
 ## DESCRIPTION
 Syncs Intune account with Microsoft Store For Business
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -PassThru
@@ -99,3 +87,4 @@ Sync-MgBetaDeviceAppMgtMicrosoftStoreGraphFPreBusinessApp
 
 ## RELATED LINKS
 [Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-1.0)
+

@@ -24,18 +24,6 @@ Get-MgAdminEdge [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonPara
 A container for Microsoft Edge resources.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +70,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdge?view=graph-powershell-beta)
+

@@ -48,18 +48,6 @@ Update-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property administrativeUnit in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -357,3 +345,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
+

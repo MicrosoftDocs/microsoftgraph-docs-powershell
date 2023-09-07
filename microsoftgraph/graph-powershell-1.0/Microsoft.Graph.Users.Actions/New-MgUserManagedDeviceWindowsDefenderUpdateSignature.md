@@ -30,22 +30,6 @@ New-MgUserManagedDeviceWindowsDefenderUpdateSignature -InputObject <IUsersAction
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -192,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-beta)
+

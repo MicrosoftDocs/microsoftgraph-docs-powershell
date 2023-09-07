@@ -30,22 +30,6 @@ Remove-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property notebooks for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -186,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Remove-MgUserOnenoteNotebook?view=graph-powershell-1.0)
+

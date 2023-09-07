@@ -22,18 +22,6 @@ Get-MgAuditLogProvisioningCount [-Filter <String>] [-Search <String>] [<CommonPa
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaAuditLogProvisioningCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogProvisioningCount?view=graph-powershell-beta)
+

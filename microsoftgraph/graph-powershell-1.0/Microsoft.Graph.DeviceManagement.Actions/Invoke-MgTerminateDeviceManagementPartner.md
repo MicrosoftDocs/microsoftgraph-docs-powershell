@@ -31,18 +31,6 @@ Invoke-MgTerminateDeviceManagementPartner -InputObject <IDeviceManagementActions
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementPartnerId
@@ -156,3 +144,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaTerminateDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaTerminateDeviceManagementPartner?view=graph-powershell-beta)
+

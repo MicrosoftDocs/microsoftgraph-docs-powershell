@@ -36,22 +36,6 @@ New-MgBetaTenantRelationshipManagedTenantCloudPcOverview
 ## DESCRIPTION
 Create new navigation property to cloudPcsOverview for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -513,3 +497,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TotalEnterpriseLicenses <Int32?>]`: The total number of cloud PC devices that have the Enterprise SKU. Optional. Read-only.
 
 ## RELATED LINKS
+

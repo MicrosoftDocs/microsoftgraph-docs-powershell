@@ -40,18 +40,6 @@ Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest -InputObject <II
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRoleEligibilityScheduleRequest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -354,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
+

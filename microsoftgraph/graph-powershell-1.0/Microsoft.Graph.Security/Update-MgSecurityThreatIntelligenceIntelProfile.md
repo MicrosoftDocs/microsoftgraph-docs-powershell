@@ -52,18 +52,6 @@ Update-MgSecurityThreatIntelligenceIntelProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property intelProfiles in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -442,3 +430,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceIntelProfile?view=graph-powershell-beta)
+

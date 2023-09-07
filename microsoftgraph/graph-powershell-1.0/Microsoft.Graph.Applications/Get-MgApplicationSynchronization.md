@@ -30,18 +30,6 @@ Get-MgApplicationSynchronization -InputObject <IApplicationsIdentity> [-ExpandPr
 ## DESCRIPTION
 Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -148,3 +136,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronization?view=graph-powershell-beta)
+

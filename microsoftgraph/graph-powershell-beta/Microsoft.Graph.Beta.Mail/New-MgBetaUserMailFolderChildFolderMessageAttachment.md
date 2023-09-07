@@ -50,22 +50,6 @@ Use this API to add an attachment to a message.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 You can add an attachment to an existing message by posting to its attachments collection, or to a new\nmessage that is being drafted, or created and sent on the fly.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -341,3 +325,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserMailFolderChildFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessageAttachment?view=graph-powershell-1.0)
+

@@ -58,22 +58,6 @@ Update-MgBetaSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property items in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -28873,3 +28857,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItem?view=graph-powershell-1.0)
+
