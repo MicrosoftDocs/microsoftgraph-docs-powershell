@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished
 schema: 2.0.0
@@ -27,13 +27,11 @@ Invoke function isPublished
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Test-MgSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeId
 ```
-
-
 
 ## PARAMETERS
 
@@ -41,7 +39,7 @@ Test-MgSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeId
 The unique identifier of contentType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Is
 Aliases:
 
@@ -57,7 +55,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Type: ISitesIdentity
 Parameter Sets: IsViaIdentity
 Aliases:
 
@@ -72,7 +70,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Is
 Aliases:
 
@@ -89,11 +87,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -144,4 +140,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

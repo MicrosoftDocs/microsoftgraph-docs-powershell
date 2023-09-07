@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest
 schema: 2.0.0
@@ -19,14 +19,14 @@ Furthermore, to allow for asynchronous processing, you must wait up to 4 hours b
 ```
 Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest [-AddedByTenantId <String>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-MemberState <String>] [-Role <String>]
- [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
- -BodyParameter <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,19 +38,15 @@ Furthermore, to allow for asynchronous processing, you must wait up to 4 hours b
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -60,7 +56,7 @@ To reset a failed join request, set addedByTenantId to 00000000-0000-0000-0000-0
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -75,7 +71,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -91,7 +87,7 @@ multiTenantOrganizationJoinRequestRecord
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord
+Type: IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord
 Parameter Sets: Update
 Aliases:
 
@@ -107,7 +103,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -122,7 +118,7 @@ Accept wildcard characters: False
 multiTenantOrganizationMemberState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -137,7 +133,7 @@ Accept wildcard characters: False
 multiTenantOrganizationMemberRole
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -153,7 +149,7 @@ multiTenantOrganizationJoinRequestTransitionDetails
 To construct, see NOTES section for TRANSITIONDETAILS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails
+Type: IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -168,7 +164,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -184,7 +180,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -201,11 +197,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord
-
 ## NOTES
 
 ALIASES
@@ -234,4 +228,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
 
 ## RELATED LINKS
-

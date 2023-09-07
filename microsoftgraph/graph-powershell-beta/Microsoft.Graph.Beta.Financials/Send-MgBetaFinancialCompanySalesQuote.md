@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Financials-help.xml
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/send-mgbetafinancialcompanysalesquote
 schema: 2.0.0
@@ -14,13 +14,13 @@ Invoke action send
 
 ### Send (Default)
 ```
-Send-MgBetaFinancialCompanySalesQuote -CompanyId <String> -SalesQuoteId <String> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Send-MgBetaFinancialCompanySalesQuote -CompanyId <String> -SalesQuoteId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
-Send-MgBetaFinancialCompanySalesQuote -InputObject <IFinancialsIdentity> [-PassThru] [-Confirm] [-WhatIf]
+Send-MgBetaFinancialCompanySalesQuote -InputObject <IFinancialsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,19 +29,15 @@ Invoke action send
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -49,7 +45,7 @@ Invoke action send
 The unique identifier of company
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Send
 Aliases:
 
@@ -65,7 +61,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+Type: IFinancialsIdentity
 Parameter Sets: SendViaIdentity
 Aliases:
 
@@ -80,7 +76,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -95,7 +91,7 @@ Accept wildcard characters: False
 The unique identifier of salesQuote
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Send
 Aliases:
 
@@ -110,7 +106,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -126,7 +122,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -143,11 +139,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -196,4 +190,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
@@ -21,14 +21,14 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationship
  [-Customer <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>] [-DisplayName <String>]
  [-Duration <TimeSpan>] [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Operations <IMicrosoftGraphDelegatedAdminRelationshipOperation[]>]
- [-Requests <IMicrosoftGraphDelegatedAdminRelationshipRequest[]>] [-Status <String>] [-Confirm] [-WhatIf]
+ [-Requests <IMicrosoftGraphDelegatedAdminRelationshipRequest[]>] [-Status <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipDelegatedAdminRelationship
- -BodyParameter <IMicrosoftGraphDelegatedAdminRelationship> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDelegatedAdminRelationship> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,19 +36,15 @@ Create a new delegatedAdminRelationship object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -57,7 +53,7 @@ The access assignments associated with the delegated admin relationship.
 To construct, see NOTES section for ACCESSASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDelegatedAdminAccessAssignment[]
+Type: IMicrosoftGraphDelegatedAdminAccessAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +69,7 @@ delegatedAdminAccessDetails
 To construct, see NOTES section for ACCESSDETAILS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDelegatedAdminAccessDetails
+Type: IMicrosoftGraphDelegatedAdminAccessDetails
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +85,7 @@ The date and time in ISO 8601 format and in UTC time when the relationship becam
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +100,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +116,7 @@ delegatedAdminRelationship
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDelegatedAdminRelationship
+Type: IMicrosoftGraphDelegatedAdminRelationship
 Parameter Sets: Create
 Aliases:
 
@@ -136,7 +132,7 @@ The date and time in ISO 8601 format and in UTC time when the relationship was c
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +148,7 @@ delegatedAdminRelationshipCustomerParticipant
 To construct, see NOTES section for CUSTOMER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant
+Type: IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +165,7 @@ Must be unique across all delegated admin relationships of the partner.
 This is set by the partner only when the relationship is in the created status and cannot be changed by the customer.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -186,7 +182,7 @@ Must be a value between P1D and P2Y inclusive.
 This is set by the partner only when the relationship is in the created status and cannot be changed by the customer.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +199,7 @@ Calculated as endDateTime = activatedDateTime + duration.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +215,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -235,7 +231,7 @@ The date and time in ISO 8601 format and in UTC time when the relationship was l
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +247,7 @@ The long running operations associated with the delegated admin relationship.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDelegatedAdminRelationshipOperation[]
+Type: IMicrosoftGraphDelegatedAdminRelationshipOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -267,7 +263,7 @@ The requests associated with the delegated admin relationship.
 To construct, see NOTES section for REQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDelegatedAdminRelationshipRequest[]
+Type: IMicrosoftGraphDelegatedAdminRelationshipRequest[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -282,7 +278,7 @@ Accept wildcard characters: False
 delegatedAdminRelationshipStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -297,7 +293,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -313,7 +309,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -330,11 +326,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDelegatedAdminRelationship
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDelegatedAdminRelationship
-
 ## NOTES
 
 ALIASES
@@ -426,4 +420,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: delegatedAdminRelationshipRequestStatus
 
 ## RELATED LINKS
-

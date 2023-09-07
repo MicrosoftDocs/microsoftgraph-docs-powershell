@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatenantrelationshipmanagedtenantgroupsearch
 schema: 2.0.0
@@ -15,14 +15,14 @@ Invoke action tenantSearch
 ### TenantExpanded (Default)
 ```
 Invoke-MgBetaTenantRelationshipManagedTenantGroupSearch [-AdditionalProperties <Hashtable>]
- [-TenantId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Tenant
 ```
 Invoke-MgBetaTenantRelationshipManagedTenantGroupSearch
  -Body <IPathsF1Wwh1TenantrelationshipsManagedtenantsTenantgroupsMicrosoftGraphManagedtenantsTenantsearchPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,19 +30,15 @@ Invoke action tenantSearch
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -50,7 +46,7 @@ Invoke action tenantSearch
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: TenantExpanded
 Aliases:
 
@@ -66,7 +62,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsF1Wwh1TenantrelationshipsManagedtenantsTenantgroupsMicrosoftGraphManagedtenantsTenantsearchPostRequestbodyContentApplicationJsonSchema
+Type: IPathsF1Wwh1TenantrelationshipsManagedtenantsTenantgroupsMicrosoftGraphManagedtenantsTenantsearchPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Tenant
 Aliases:
 
@@ -81,7 +77,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: TenantExpanded
 Aliases:
 
@@ -96,7 +92,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +108,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,11 +125,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsF1Wwh1TenantrelationshipsManagedtenantsTenantgroupsMicrosoftGraphManagedtenantsTenantsearchPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantGroup
-
 ## NOTES
 
 ALIASES
@@ -148,4 +142,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: 
 
 ## RELATED LINKS
-

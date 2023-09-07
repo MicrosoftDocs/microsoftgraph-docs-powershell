@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 Module Guid: 67a98b2f-3c89-46e4-96f4-0407f54afbad
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions
@@ -376,12 +376,6 @@ Activate eSIM on the device.
 
 ### [Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeviceIdentity](Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeviceIdentity.md)
 Unassigns the resource account from an Autopilot device.
-
-### [Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceNextEnrollment](Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceNextEnrollment.md)
-Unblocks next autopilot enrollment.
-
-### [Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeviceIdentityNextEnrollment](Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeviceIdentityNextEnrollment.md)
-Unblocks next autopilot enrollment.
 
 ### [Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding](Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding.md)
 A request to start onboarding.

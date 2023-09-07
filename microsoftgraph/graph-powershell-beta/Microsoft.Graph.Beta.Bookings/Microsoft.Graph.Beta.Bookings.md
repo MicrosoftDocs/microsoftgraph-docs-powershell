@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Bookings
 Module Guid: 1aff5426-6170-4d8f-8b90-2cdc6b91b5c9
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings
@@ -108,18 +108,6 @@ Retrieve the properties and relationships of a plannerTaskDetails object.
 
 ### [Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat](Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat.md)
 Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
-
-### [Get-MgBetaSolutionVirtualEventSessionRecordingDelta](Get-MgBetaSolutionVirtualEventSessionRecordingDelta.md)
-Invoke function delta
-
-### [Get-MgBetaSolutionVirtualEventSessionTranscriptDelta](Get-MgBetaSolutionVirtualEventSessionTranscriptDelta.md)
-Invoke function delta
-
-### [Get-MgBetaSolutionVirtualEventWebinarSessionRecordingDelta](Get-MgBetaSolutionVirtualEventWebinarSessionRecordingDelta.md)
-Invoke function delta
-
-### [Get-MgBetaSolutionVirtualEventWebinarSessionTranscriptDelta](Get-MgBetaSolutionVirtualEventWebinarSessionTranscriptDelta.md)
-Invoke function delta
 
 ### [Get-MgBetaVirtualEvent](Get-MgBetaVirtualEvent.md)
 Get events from solutions
