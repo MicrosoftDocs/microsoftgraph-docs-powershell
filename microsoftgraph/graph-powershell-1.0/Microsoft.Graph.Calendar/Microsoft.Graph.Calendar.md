@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: 748dcfc7-770a-4f9a-a056-1b84fa82fdc8
+Module Guid: f8e4a6f1-3f29-43fc-93ef-6dfca8855c58
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar
 Help Version: 1.0.0.0
 Locale: en-US
@@ -214,8 +214,9 @@ Create a calendarPermission resource to specify the identity and role of the use
 Use this API to create a new event.
 
 ### [New-MgGroupEventAttachment](New-MgGroupEventAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgGroupEventExtension](New-MgGroupEventExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -223,8 +224,9 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgGroupEventInstanceAttachment](New-MgGroupEventInstanceAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -272,8 +274,9 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgUserEventInstanceAttachment](New-MgUserEventInstanceAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+Use this API to add an attachment to an existing event.
+This operation limits the size of the attachment you can add to under 3 MB.
+If an organizer adds an attachment to a meeting event, the organizer can subsequently update the event to send the attachment and update the event for each attendee as well.
 
 ### [New-MgUserEventInstanceExtension](New-MgUserEventInstanceExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.

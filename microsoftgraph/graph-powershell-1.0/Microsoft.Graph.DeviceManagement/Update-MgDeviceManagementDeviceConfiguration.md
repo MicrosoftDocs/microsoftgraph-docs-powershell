@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Update the properties of a iosUpdateConfiguration object.
+Update the properties of a androidWorkProfileCustomConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Update the properties of a iosUpdateConfiguration object.
+Update the properties of a androidWorkProfileCustomConfiguration object.
 
 ## PARAMETERS
 
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -358,21 +358,21 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment[]>`: The list of assignments for the device configuration profile.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 `BODYPARAMETER <IMicrosoftGraphDeviceConfiguration>`: Device Configuration.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]`: The list of assignments for the device configuration profile.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
   - `[Description <String>]`: Admin provided description of the Device Configuration.
   - `[DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]`: Device Configuration Setting State Device Summary
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
     - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
     - `[ErrorDeviceCount <Int32?>]`: Device error count for the setting
@@ -384,7 +384,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
   - `[DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>]`: deviceConfigurationDeviceOverview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
     - `[ErrorCount <Int32?>]`: Number of error devices
     - `[FailedCount <Int32?>]`: Number of failed devices
@@ -393,7 +393,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[PendingCount <Int32?>]`: Number of pending devices
     - `[SuccessCount <Int32?>]`: Number of succeeded devices
   - `[DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>]`: Device configuration installation status by device.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
     - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
     - `[DeviceModel <String>]`: The device model that is being reported
@@ -405,7 +405,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>]`: deviceConfigurationUserOverview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
     - `[ErrorCount <Int32?>]`: Number of error Users
     - `[FailedCount <Int32?>]`: Number of failed Users
@@ -414,7 +414,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[PendingCount <Int32?>]`: Number of pending Users
     - `[SuccessCount <Int32?>]`: Number of succeeded Users
   - `[UserStatuses <IMicrosoftGraphDeviceConfigurationUserStatus[]>]`: Device configuration installation status by user.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DevicesCount <Int32?>]`: Devices count for that user.
     - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
     - `[Status <String>]`: complianceStatus
@@ -423,7 +423,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <Int32?>]`: Version of the device configuration.
 
 `DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary[]>`: Device Configuration Setting State Device Summary
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
   - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
   - `[ErrorDeviceCount <Int32?>]`: Device error count for the setting
@@ -435,7 +435,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
 
 `DEVICESTATUSES <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>`: Device configuration installation status by device.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
   - `[DeviceModel <String>]`: The device model that is being reported
@@ -446,7 +446,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `DEVICESTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationDeviceOverview>`: deviceConfigurationDeviceOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
   - `[ErrorCount <Int32?>]`: Number of error devices
   - `[FailedCount <Int32?>]`: Number of failed devices
@@ -511,7 +511,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 `USERSTATUSES <IMicrosoftGraphDeviceConfigurationUserStatus[]>`: Device configuration installation status by user.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DevicesCount <Int32?>]`: Devices count for that user.
   - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
   - `[Status <String>]`: complianceStatus
@@ -520,7 +520,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `USERSTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationUserOverview>`: deviceConfigurationUserOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
   - `[ErrorCount <Int32?>]`: Number of error Users
   - `[FailedCount <Int32?>]`: Number of failed Users

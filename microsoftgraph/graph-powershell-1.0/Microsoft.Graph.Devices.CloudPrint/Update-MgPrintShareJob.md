@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -336,7 +336,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `BODYPARAMETER <IMicrosoftGraphPrintJob>`: printJob
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Configuration <IMicrosoftGraphPrintJobConfiguration>]`: printJobConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Collate <Boolean?>]`: Whether the printer should collate pages wehen printing multiple copies of a multi-page document.
@@ -373,7 +373,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
   - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ContentType <String>]`: The document's content (MIME) type. Read-only.
     - `[DisplayName <String>]`: The document's name. Read-only.
     - `[Size <Int64?>]`: The document's size in bytes. Read-only.
@@ -387,10 +387,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[IsAcquiredByPrinter <Boolean?>]`: True if the job was acknowledged by a printer; false otherwise. Read-only.
     - `[State <String>]`: printJobProcessingState
   - `[Tasks <IMicrosoftGraphPrintTask[]>]`: A list of printTasks that were triggered by this print job.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AppId <String>]`: Refers to the Unique GUID representing Application Id in the Azure Active Directory.
@@ -406,7 +406,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[State <String>]`: printTaskProcessingState
     - `[Trigger <IMicrosoftGraphPrintTaskTrigger>]`: printTaskTrigger
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
       - `[Event <String>]`: printEvent
 
@@ -447,7 +447,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 `DOCUMENTS <IMicrosoftGraphPrintDocument[]>`: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ContentType <String>]`: The document's content (MIME) type. Read-only.
   - `[DisplayName <String>]`: The document's name. Read-only.
   - `[Size <Int64?>]`: The document's size in bytes. Read-only.
@@ -475,10 +475,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: printJobProcessingState
 
 `TASKS <IMicrosoftGraphPrintTask[]>`: A list of printTasks that were triggered by this print job.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AppId <String>]`: Refers to the Unique GUID representing Application Id in the Azure Active Directory.
@@ -494,7 +494,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[State <String>]`: printTaskProcessingState
   - `[Trigger <IMicrosoftGraphPrintTaskTrigger>]`: printTaskTrigger
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
     - `[Event <String>]`: printEvent
 

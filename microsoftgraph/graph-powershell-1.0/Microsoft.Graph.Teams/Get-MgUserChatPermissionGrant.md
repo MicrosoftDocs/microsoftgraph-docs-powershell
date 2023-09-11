@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserChatPermissionGrant
 
 ## SYNOPSIS
-Get permissionGrants from users
+A collection of permissions granted to apps for the chat.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatPermissionGrant?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgUserChatPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get permissionGrants from users
+A collection of permissions granted to apps for the chat.
 
 ## PARAMETERS
 

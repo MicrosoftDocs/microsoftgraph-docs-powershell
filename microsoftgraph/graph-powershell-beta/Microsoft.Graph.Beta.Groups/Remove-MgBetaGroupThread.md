@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupThread
 
 ## SYNOPSIS
-Delete a thread object.
+Delete conversationThread.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-1.0)
@@ -28,7 +28,7 @@ Remove-MgBetaGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Pa
 ```
 
 ## DESCRIPTION
-Delete a thread object.
+Delete conversationThread.
 
 ## EXAMPLES
 ### Example 1: Code snippet

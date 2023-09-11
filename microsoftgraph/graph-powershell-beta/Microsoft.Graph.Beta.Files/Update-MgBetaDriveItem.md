@@ -8,8 +8,9 @@ schema: 2.0.0
 # Update-MgBetaDriveItem
 
 ## SYNOPSIS
-Update the metadata for a DriveItem by ID or path.
-You can also use update to move an item to another parent by updating the item's parentReference property.
+To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
+This is a special case of the Update method.nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-1.0)
@@ -79,8 +80,9 @@ Update-MgBetaDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the metadata for a DriveItem by ID or path.
-You can also use update to move an item to another parent by updating the item's parentReference property.
+To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
+This is a special case of the Update method.nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -3845,10 +3847,13 @@ To create the parameters described below, construct a hash table containing the 
           - `[DataExcutionPolicy <String>]`: DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
           - `[DeviceHealthAttestationStatus <String>]`: The DHA report version. (Namespace version)
           - `[EarlyLaunchAntiMalwareDriverProtection <String>]`: ELAM provides protection for the computers in your network when they start up
+          - `[FirmwareProtection <FirmwareProtectionType?>]`: A list of possible Firmware protection type for a device. Firmware protection is a set of features that helps to ensure attackers can't get your device to start with untrusted or malicious firmware. Firmware protection type is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "systemGuardSecureLaunch" or "firmwareAttackSurfaceReduction" or "disabled". Windows 10 devices will have value "notApplicable".
           - `[HealthAttestationSupportedStatus <String>]`: This attribute indicates if DHA is supported for the device
           - `[HealthStatusMismatchInfo <String>]`: This attribute appears if DHA-Service detects an integrity issue
           - `[IssuedDateTime <DateTime?>]`: The DateTime when device was evaluated or issued to MDM
           - `[LastUpdateDateTime <String>]`: The Timestamp of the last update.
+          - `[MemoryAccessProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+          - `[MemoryIntegrityProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
           - `[OperatingSystemKernelDebugging <String>]`: When operatingSystemKernelDebugging is enabled, the device is used in development and testing
           - `[OperatingSystemRevListInfo <String>]`: The Operating System Revision List that was loaded during initial boot on the attested device
           - `[Pcr0 <String>]`: The measurement that is captured in PCR[0]
@@ -3858,9 +3863,12 @@ To create the parameters described below, construct a hash table containing the 
           - `[SafeMode <String>]`: Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
           - `[SecureBoot <String>]`: When Secure Boot is enabled, the core components must have the correct cryptographic signatures
           - `[SecureBootConfigurationPolicyFingerPrint <String>]`: Fingerprint of the Custom Secure Boot Configuration Policy
+          - `[SecuredCorePc <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+          - `[SystemManagementMode <SystemManagementModeLevel?>]`: A list of possible System Management Mode levels for a device. System Management Mode levels is determined by report sent from Microsoft Azure Attestation service. Only specific hardwares support System Management Mode. Windows 11 devices will have values "notApplicable", "level1", "level2" or "level3". Windows 10 devices will have value "notApplicable".
           - `[TestSigning <String>]`: When test signing is allowed, the device does not enforce signature validation during boot
           - `[TpmVersion <String>]`: The security version number of the Boot Application
           - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
+          - `[VirtualizationBasedSecurity <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
           - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
         - `[DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]`: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
           - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
@@ -8526,10 +8534,13 @@ To create the parameters described below, construct a hash table containing the 
               - `[DataExcutionPolicy <String>]`: DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
               - `[DeviceHealthAttestationStatus <String>]`: The DHA report version. (Namespace version)
               - `[EarlyLaunchAntiMalwareDriverProtection <String>]`: ELAM provides protection for the computers in your network when they start up
+              - `[FirmwareProtection <FirmwareProtectionType?>]`: A list of possible Firmware protection type for a device. Firmware protection is a set of features that helps to ensure attackers can't get your device to start with untrusted or malicious firmware. Firmware protection type is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "systemGuardSecureLaunch" or "firmwareAttackSurfaceReduction" or "disabled". Windows 10 devices will have value "notApplicable".
               - `[HealthAttestationSupportedStatus <String>]`: This attribute indicates if DHA is supported for the device
               - `[HealthStatusMismatchInfo <String>]`: This attribute appears if DHA-Service detects an integrity issue
               - `[IssuedDateTime <DateTime?>]`: The DateTime when device was evaluated or issued to MDM
               - `[LastUpdateDateTime <String>]`: The Timestamp of the last update.
+              - `[MemoryAccessProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+              - `[MemoryIntegrityProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
               - `[OperatingSystemKernelDebugging <String>]`: When operatingSystemKernelDebugging is enabled, the device is used in development and testing
               - `[OperatingSystemRevListInfo <String>]`: The Operating System Revision List that was loaded during initial boot on the attested device
               - `[Pcr0 <String>]`: The measurement that is captured in PCR[0]
@@ -8539,9 +8550,12 @@ To create the parameters described below, construct a hash table containing the 
               - `[SafeMode <String>]`: Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
               - `[SecureBoot <String>]`: When Secure Boot is enabled, the core components must have the correct cryptographic signatures
               - `[SecureBootConfigurationPolicyFingerPrint <String>]`: Fingerprint of the Custom Secure Boot Configuration Policy
+              - `[SecuredCorePc <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+              - `[SystemManagementMode <SystemManagementModeLevel?>]`: A list of possible System Management Mode levels for a device. System Management Mode levels is determined by report sent from Microsoft Azure Attestation service. Only specific hardwares support System Management Mode. Windows 11 devices will have values "notApplicable", "level1", "level2" or "level3". Windows 10 devices will have value "notApplicable".
               - `[TestSigning <String>]`: When test signing is allowed, the device does not enforce signature validation during boot
               - `[TpmVersion <String>]`: The security version number of the Boot Application
               - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
+              - `[VirtualizationBasedSecurity <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
               - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
             - `[DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]`: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
               - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
@@ -13246,10 +13260,13 @@ To create the parameters described below, construct a hash table containing the 
         - `[DataExcutionPolicy <String>]`: DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
         - `[DeviceHealthAttestationStatus <String>]`: The DHA report version. (Namespace version)
         - `[EarlyLaunchAntiMalwareDriverProtection <String>]`: ELAM provides protection for the computers in your network when they start up
+        - `[FirmwareProtection <FirmwareProtectionType?>]`: A list of possible Firmware protection type for a device. Firmware protection is a set of features that helps to ensure attackers can't get your device to start with untrusted or malicious firmware. Firmware protection type is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "systemGuardSecureLaunch" or "firmwareAttackSurfaceReduction" or "disabled". Windows 10 devices will have value "notApplicable".
         - `[HealthAttestationSupportedStatus <String>]`: This attribute indicates if DHA is supported for the device
         - `[HealthStatusMismatchInfo <String>]`: This attribute appears if DHA-Service detects an integrity issue
         - `[IssuedDateTime <DateTime?>]`: The DateTime when device was evaluated or issued to MDM
         - `[LastUpdateDateTime <String>]`: The Timestamp of the last update.
+        - `[MemoryAccessProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+        - `[MemoryIntegrityProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
         - `[OperatingSystemKernelDebugging <String>]`: When operatingSystemKernelDebugging is enabled, the device is used in development and testing
         - `[OperatingSystemRevListInfo <String>]`: The Operating System Revision List that was loaded during initial boot on the attested device
         - `[Pcr0 <String>]`: The measurement that is captured in PCR[0]
@@ -13259,9 +13276,12 @@ To create the parameters described below, construct a hash table containing the 
         - `[SafeMode <String>]`: Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
         - `[SecureBoot <String>]`: When Secure Boot is enabled, the core components must have the correct cryptographic signatures
         - `[SecureBootConfigurationPolicyFingerPrint <String>]`: Fingerprint of the Custom Secure Boot Configuration Policy
+        - `[SecuredCorePc <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+        - `[SystemManagementMode <SystemManagementModeLevel?>]`: A list of possible System Management Mode levels for a device. System Management Mode levels is determined by report sent from Microsoft Azure Attestation service. Only specific hardwares support System Management Mode. Windows 11 devices will have values "notApplicable", "level1", "level2" or "level3". Windows 10 devices will have value "notApplicable".
         - `[TestSigning <String>]`: When test signing is allowed, the device does not enforce signature validation during boot
         - `[TpmVersion <String>]`: The security version number of the Boot Application
         - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
+        - `[VirtualizationBasedSecurity <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
         - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
       - `[DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]`: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
         - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
@@ -17940,10 +17960,13 @@ To create the parameters described below, construct a hash table containing the 
         - `[DataExcutionPolicy <String>]`: DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
         - `[DeviceHealthAttestationStatus <String>]`: The DHA report version. (Namespace version)
         - `[EarlyLaunchAntiMalwareDriverProtection <String>]`: ELAM provides protection for the computers in your network when they start up
+        - `[FirmwareProtection <FirmwareProtectionType?>]`: A list of possible Firmware protection type for a device. Firmware protection is a set of features that helps to ensure attackers can't get your device to start with untrusted or malicious firmware. Firmware protection type is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "systemGuardSecureLaunch" or "firmwareAttackSurfaceReduction" or "disabled". Windows 10 devices will have value "notApplicable".
         - `[HealthAttestationSupportedStatus <String>]`: This attribute indicates if DHA is supported for the device
         - `[HealthStatusMismatchInfo <String>]`: This attribute appears if DHA-Service detects an integrity issue
         - `[IssuedDateTime <DateTime?>]`: The DateTime when device was evaluated or issued to MDM
         - `[LastUpdateDateTime <String>]`: The Timestamp of the last update.
+        - `[MemoryAccessProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+        - `[MemoryIntegrityProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
         - `[OperatingSystemKernelDebugging <String>]`: When operatingSystemKernelDebugging is enabled, the device is used in development and testing
         - `[OperatingSystemRevListInfo <String>]`: The Operating System Revision List that was loaded during initial boot on the attested device
         - `[Pcr0 <String>]`: The measurement that is captured in PCR[0]
@@ -17953,9 +17976,12 @@ To create the parameters described below, construct a hash table containing the 
         - `[SafeMode <String>]`: Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
         - `[SecureBoot <String>]`: When Secure Boot is enabled, the core components must have the correct cryptographic signatures
         - `[SecureBootConfigurationPolicyFingerPrint <String>]`: Fingerprint of the Custom Secure Boot Configuration Policy
+        - `[SecuredCorePc <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+        - `[SystemManagementMode <SystemManagementModeLevel?>]`: A list of possible System Management Mode levels for a device. System Management Mode levels is determined by report sent from Microsoft Azure Attestation service. Only specific hardwares support System Management Mode. Windows 11 devices will have values "notApplicable", "level1", "level2" or "level3". Windows 10 devices will have value "notApplicable".
         - `[TestSigning <String>]`: When test signing is allowed, the device does not enforce signature validation during boot
         - `[TpmVersion <String>]`: The security version number of the Boot Application
         - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
+        - `[VirtualizationBasedSecurity <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
         - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
       - `[DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]`: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
         - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
@@ -23087,10 +23113,13 @@ To create the parameters described below, construct a hash table containing the 
       - `[DataExcutionPolicy <String>]`: DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
       - `[DeviceHealthAttestationStatus <String>]`: The DHA report version. (Namespace version)
       - `[EarlyLaunchAntiMalwareDriverProtection <String>]`: ELAM provides protection for the computers in your network when they start up
+      - `[FirmwareProtection <FirmwareProtectionType?>]`: A list of possible Firmware protection type for a device. Firmware protection is a set of features that helps to ensure attackers can't get your device to start with untrusted or malicious firmware. Firmware protection type is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "systemGuardSecureLaunch" or "firmwareAttackSurfaceReduction" or "disabled". Windows 10 devices will have value "notApplicable".
       - `[HealthAttestationSupportedStatus <String>]`: This attribute indicates if DHA is supported for the device
       - `[HealthStatusMismatchInfo <String>]`: This attribute appears if DHA-Service detects an integrity issue
       - `[IssuedDateTime <DateTime?>]`: The DateTime when device was evaluated or issued to MDM
       - `[LastUpdateDateTime <String>]`: The Timestamp of the last update.
+      - `[MemoryAccessProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+      - `[MemoryIntegrityProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
       - `[OperatingSystemKernelDebugging <String>]`: When operatingSystemKernelDebugging is enabled, the device is used in development and testing
       - `[OperatingSystemRevListInfo <String>]`: The Operating System Revision List that was loaded during initial boot on the attested device
       - `[Pcr0 <String>]`: The measurement that is captured in PCR[0]
@@ -23100,9 +23129,12 @@ To create the parameters described below, construct a hash table containing the 
       - `[SafeMode <String>]`: Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
       - `[SecureBoot <String>]`: When Secure Boot is enabled, the core components must have the correct cryptographic signatures
       - `[SecureBootConfigurationPolicyFingerPrint <String>]`: Fingerprint of the Custom Secure Boot Configuration Policy
+      - `[SecuredCorePc <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+      - `[SystemManagementMode <SystemManagementModeLevel?>]`: A list of possible System Management Mode levels for a device. System Management Mode levels is determined by report sent from Microsoft Azure Attestation service. Only specific hardwares support System Management Mode. Windows 11 devices will have values "notApplicable", "level1", "level2" or "level3". Windows 10 devices will have value "notApplicable".
       - `[TestSigning <String>]`: When test signing is allowed, the device does not enforce signature validation during boot
       - `[TpmVersion <String>]`: The security version number of the Boot Application
       - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
+      - `[VirtualizationBasedSecurity <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
       - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
     - `[DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]`: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
       - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
@@ -27845,10 +27877,13 @@ To create the parameters described below, construct a hash table containing the 
       - `[DataExcutionPolicy <String>]`: DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
       - `[DeviceHealthAttestationStatus <String>]`: The DHA report version. (Namespace version)
       - `[EarlyLaunchAntiMalwareDriverProtection <String>]`: ELAM provides protection for the computers in your network when they start up
+      - `[FirmwareProtection <FirmwareProtectionType?>]`: A list of possible Firmware protection type for a device. Firmware protection is a set of features that helps to ensure attackers can't get your device to start with untrusted or malicious firmware. Firmware protection type is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "systemGuardSecureLaunch" or "firmwareAttackSurfaceReduction" or "disabled". Windows 10 devices will have value "notApplicable".
       - `[HealthAttestationSupportedStatus <String>]`: This attribute indicates if DHA is supported for the device
       - `[HealthStatusMismatchInfo <String>]`: This attribute appears if DHA-Service detects an integrity issue
       - `[IssuedDateTime <DateTime?>]`: The DateTime when device was evaluated or issued to MDM
       - `[LastUpdateDateTime <String>]`: The Timestamp of the last update.
+      - `[MemoryAccessProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+      - `[MemoryIntegrityProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
       - `[OperatingSystemKernelDebugging <String>]`: When operatingSystemKernelDebugging is enabled, the device is used in development and testing
       - `[OperatingSystemRevListInfo <String>]`: The Operating System Revision List that was loaded during initial boot on the attested device
       - `[Pcr0 <String>]`: The measurement that is captured in PCR[0]
@@ -27858,9 +27893,12 @@ To create the parameters described below, construct a hash table containing the 
       - `[SafeMode <String>]`: Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
       - `[SecureBoot <String>]`: When Secure Boot is enabled, the core components must have the correct cryptographic signatures
       - `[SecureBootConfigurationPolicyFingerPrint <String>]`: Fingerprint of the Custom Secure Boot Configuration Policy
+      - `[SecuredCorePc <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+      - `[SystemManagementMode <SystemManagementModeLevel?>]`: A list of possible System Management Mode levels for a device. System Management Mode levels is determined by report sent from Microsoft Azure Attestation service. Only specific hardwares support System Management Mode. Windows 11 devices will have values "notApplicable", "level1", "level2" or "level3". Windows 10 devices will have value "notApplicable".
       - `[TestSigning <String>]`: When test signing is allowed, the device does not enforce signature validation during boot
       - `[TpmVersion <String>]`: The security version number of the Boot Application
       - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
+      - `[VirtualizationBasedSecurity <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
       - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
     - `[DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]`: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
       - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
@@ -32494,10 +32532,13 @@ To create the parameters described below, construct a hash table containing the 
         - `[DataExcutionPolicy <String>]`: DEP Policy defines a set of hardware and software technologies that perform additional checks on memory
         - `[DeviceHealthAttestationStatus <String>]`: The DHA report version. (Namespace version)
         - `[EarlyLaunchAntiMalwareDriverProtection <String>]`: ELAM provides protection for the computers in your network when they start up
+        - `[FirmwareProtection <FirmwareProtectionType?>]`: A list of possible Firmware protection type for a device. Firmware protection is a set of features that helps to ensure attackers can't get your device to start with untrusted or malicious firmware. Firmware protection type is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "systemGuardSecureLaunch" or "firmwareAttackSurfaceReduction" or "disabled". Windows 10 devices will have value "notApplicable".
         - `[HealthAttestationSupportedStatus <String>]`: This attribute indicates if DHA is supported for the device
         - `[HealthStatusMismatchInfo <String>]`: This attribute appears if DHA-Service detects an integrity issue
         - `[IssuedDateTime <DateTime?>]`: The DateTime when device was evaluated or issued to MDM
         - `[LastUpdateDateTime <String>]`: The Timestamp of the last update.
+        - `[MemoryAccessProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+        - `[MemoryIntegrityProtection <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
         - `[OperatingSystemKernelDebugging <String>]`: When operatingSystemKernelDebugging is enabled, the device is used in development and testing
         - `[OperatingSystemRevListInfo <String>]`: The Operating System Revision List that was loaded during initial boot on the attested device
         - `[Pcr0 <String>]`: The measurement that is captured in PCR[0]
@@ -32507,9 +32548,12 @@ To create the parameters described below, construct a hash table containing the 
         - `[SafeMode <String>]`: Safe mode is a troubleshooting option for Windows that starts your computer in a limited state
         - `[SecureBoot <String>]`: When Secure Boot is enabled, the core components must have the correct cryptographic signatures
         - `[SecureBootConfigurationPolicyFingerPrint <String>]`: Fingerprint of the Custom Secure Boot Configuration Policy
+        - `[SecuredCorePc <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
+        - `[SystemManagementMode <SystemManagementModeLevel?>]`: A list of possible System Management Mode levels for a device. System Management Mode levels is determined by report sent from Microsoft Azure Attestation service. Only specific hardwares support System Management Mode. Windows 11 devices will have values "notApplicable", "level1", "level2" or "level3". Windows 10 devices will have value "notApplicable".
         - `[TestSigning <String>]`: When test signing is allowed, the device does not enforce signature validation during boot
         - `[TpmVersion <String>]`: The security version number of the Boot Application
         - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
+        - `[VirtualizationBasedSecurity <AzureAttestationSettingStatus?>]`: A list of possible Azure Attestation states for a device. Azure Attestation setting status is determined by report sent from Microsoft Azure Attestation service. Only Windows 11 devices will have values "enabled" or "disabled". Windows 10 devices will have value "notApplicable".
         - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
       - `[DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]`: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
         - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
