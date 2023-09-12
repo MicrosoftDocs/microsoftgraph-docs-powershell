@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Deletes a roleDefinition.
+Deletes a deviceAndAppManagementRoleDefinition.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Deletes a roleDefinition.
+Deletes a deviceAndAppManagementRoleDefinition.
 
 ## PARAMETERS
 

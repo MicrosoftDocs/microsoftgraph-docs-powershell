@@ -617,6 +617,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SkuNumber <String>]`: SKU Number
   - `[SystemFamily <String>]`: System Family
   - `[UserPrincipalName <String>]`: User Principal Name.
+  - `[UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus?>]`: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
 
 `DEPLOYMENTPROFILE <IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows Autopilot Deployment Profile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -650,6 +651,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[SkuNumber <String>]`: SKU Number
     - `[SystemFamily <String>]`: System Family
     - `[UserPrincipalName <String>]`: User Principal Name.
+    - `[UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus?>]`: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
   - `[Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]>]`: The list of group assignments for the profile.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
@@ -719,6 +721,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[SkuNumber <String>]`: SKU Number
     - `[SystemFamily <String>]`: System Family
     - `[UserPrincipalName <String>]`: User Principal Name.
+    - `[UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus?>]`: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
   - `[Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]>]`: The list of group assignments for the profile.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Deletes a managedIOSLobApp.
+Deletes a webApp.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ```
 
 ## DESCRIPTION
-Deletes a managedIOSLobApp.
+Deletes a webApp.
 
 ## PARAMETERS
 

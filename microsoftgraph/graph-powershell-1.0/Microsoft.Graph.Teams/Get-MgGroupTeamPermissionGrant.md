@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamPermissionGrant
 
 ## SYNOPSIS
-Get permissionGrants from groups
+A collection of permissions granted to apps to access the team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPermissionGrant?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get permissionGrants from groups
+A collection of permissions granted to apps to access the team.
 
 ## PARAMETERS
 

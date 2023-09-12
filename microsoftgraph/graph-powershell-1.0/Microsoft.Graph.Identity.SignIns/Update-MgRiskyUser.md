@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
@@ -317,7 +317,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `BODYPARAMETER <IMicrosoftGraphRiskyUser>`: riskyUser
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[History <IMicrosoftGraphRiskyUserHistoryItem[]>]`: The activity related to user risk level change
     - `[History <IMicrosoftGraphRiskyUserHistoryItem[]>]`: The activity related to user risk level change
     - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
@@ -328,7 +328,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[RiskState <String>]`: riskState
     - `[UserDisplayName <String>]`: Risky user display name.
     - `[UserPrincipalName <String>]`: Risky user principal name.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Detail <String>]`: riskDetail
@@ -354,7 +354,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RiskState <String>]`: riskState
   - `[UserDisplayName <String>]`: Risky user display name.
   - `[UserPrincipalName <String>]`: Risky user principal name.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: riskDetail

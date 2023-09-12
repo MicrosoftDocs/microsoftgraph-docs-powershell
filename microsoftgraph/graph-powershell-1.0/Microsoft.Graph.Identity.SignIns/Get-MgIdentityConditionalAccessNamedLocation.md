@@ -10,7 +10,7 @@ ms.prod: identity-and-sign-in
 # Get-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an ipNamedLocation object.
+Retrieve the properties and relationships of a namedLocation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an ipNamedLocation object.
+Retrieve the properties and relationships of a namedLocation object.
 
 ## EXAMPLES
 ### Example 1: Get a list of all named locations

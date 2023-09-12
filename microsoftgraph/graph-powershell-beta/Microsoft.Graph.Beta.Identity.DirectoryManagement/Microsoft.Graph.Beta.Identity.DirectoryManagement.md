@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-Module Guid: 5705bd97-d213-47b6-8ad3-e480533a41d6
+Module Guid: 23cdb549-a7f6-4a93-b100-dfbd4bd6a66f
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1115,7 +1115,7 @@ Get the settings in a microsoftApplicationDataAccessSettings object that specify
 
 ### [Get-MgBetaOrganizationSettingPersonInsight](Get-MgBetaOrganizationSettingPersonInsight.md)
 Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
-To learn how to customize privacy for people insights in an organization, see Customize people insights privacy.
+To learn how to customize privacy for people insights in an organization, see Customize people insights privacy in Microsoft Graph.
 
 ### [Get-MgBetaOrganizationSettingProfileCardProperty](Get-MgBetaOrganizationSettingProfileCardProperty.md)
 Get profileCardProperties from organization
@@ -1966,12 +1966,12 @@ Update the navigation property extensions in organization
 Update the navigation property settings in organization
 
 ### [Update-MgBetaOrganizationSettingContactInsight](Update-MgBetaOrganizationSettingContactInsight.md)
-Update the privacy settings to display or return the specified type of insights in an organization.
+Update privacy settings to display or return the specified type of insights in an organization.
 The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy
 
 ### [Update-MgBetaOrganizationSettingItemInsight](Update-MgBetaOrganizationSettingItemInsight.md)
-Update the privacy settings to display or return the specified type of insights in an organization.
+Update privacy settings to display or return the specified type of insights in an organization.
 The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy
 
@@ -1979,7 +1979,7 @@ To learn more about customizing insights privacy for your organization, see:\n- 
 Update the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
 ### [Update-MgBetaOrganizationSettingPersonInsight](Update-MgBetaOrganizationSettingPersonInsight.md)
-Update the privacy settings to display or return the specified type of insights in an organization.
+Update privacy settings to display or return the specified type of insights in an organization.
 The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy
 
