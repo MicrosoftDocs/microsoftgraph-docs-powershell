@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthread
@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further post\nto that thread.
+Use reply thread to further postnto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
@@ -49,7 +49,7 @@ New-MgBetaGroupConversationThread -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further post\nto that thread.
+Use reply thread to further postnto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
