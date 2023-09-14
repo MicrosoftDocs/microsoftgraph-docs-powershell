@@ -30,22 +30,6 @@ Remove-MgSiteListItemVersion -InputObject <ISitesIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property versions for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -245,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemVersion?view=graph-powershell-beta)
+

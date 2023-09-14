@@ -22,18 +22,6 @@ Get-MgBetaDeviceAppManagementManagedEBookCount [-Filter <String>] [-Search <Stri
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -82,3 +70,4 @@ Get-MgBetaDeviceAppMgtManagedEBookCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementManagedEBookCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookCount?view=graph-powershell-1.0)
+

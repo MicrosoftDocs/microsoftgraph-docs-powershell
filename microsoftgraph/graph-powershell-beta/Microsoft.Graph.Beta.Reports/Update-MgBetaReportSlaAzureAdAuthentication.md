@@ -28,18 +28,6 @@ Update-MgBetaReportSlaAzureAdAuthentication -BodyParameter <IMicrosoftGraphAzure
 ## DESCRIPTION
 Update the navigation property azureADAuthentication in reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -168,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[StartDate <DateTime?>]`: The start date for the calendar month for which SLA attainment is measured.
 
 ## RELATED LINKS
+

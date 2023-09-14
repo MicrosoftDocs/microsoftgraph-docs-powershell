@@ -48,18 +48,6 @@ New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <IDevi
 ## DESCRIPTION
 Create new navigation property to deviceStatuses for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -468,3 +456,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyDeviceStatus?view=graph-powershell-1.0)
+

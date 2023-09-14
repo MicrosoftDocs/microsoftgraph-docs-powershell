@@ -48,18 +48,6 @@ Update-MgDeviceAppManagementMobileAppConfigurationAssignment -InputObject <IDevi
 ## DESCRIPTION
 Update the properties of a managedDeviceMobileAppConfigurationAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -264,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfigurationAssignment?view=graph-powershell-beta)
+

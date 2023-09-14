@@ -34,18 +34,6 @@ Get-MgBetaTeamworkDeletedChat -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Read the properties and relationships of a deletedChat object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -290,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

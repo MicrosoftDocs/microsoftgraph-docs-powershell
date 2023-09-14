@@ -30,22 +30,6 @@ Remove-MgBetaSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a term object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -254,3 +238,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreGroupSetTerm?view=graph-powershell-1.0)
+

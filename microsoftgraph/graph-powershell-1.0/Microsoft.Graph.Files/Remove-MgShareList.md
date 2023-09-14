@@ -30,22 +30,6 @@ Remove-MgShareList -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
 ## DESCRIPTION
 Delete navigation property list for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -186,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaShareList](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareList?view=graph-powershell-beta)
+

@@ -28,18 +28,6 @@ New-MgGroupSettingTemplateGroupSettingTemplate -BodyParameter <IMicrosoftGraphGr
 ## DESCRIPTION
 Add new entity to groupSettingTemplates
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -220,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the setting.
 
 ## RELATED LINKS
+

@@ -30,18 +30,6 @@ Get-MgDeviceManagementManagedDeviceWindowsProtectionState -InputObject <IDeviceM
 ## DESCRIPTION
 Read properties and relationships of the windowsProtectionState object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -180,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
+

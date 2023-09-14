@@ -22,18 +22,6 @@ Get-MgBetaDeviceManagementResourceOperationCount [-Filter <String>] [-Search <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementResourceOperationCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementResourceOperationCount?view=graph-powershell-1.0)
+

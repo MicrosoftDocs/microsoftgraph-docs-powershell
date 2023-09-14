@@ -28,18 +28,6 @@ Remove-MgBetaDeviceManagementComanagedDeviceHealthScriptState -InputObject <IDev
 ## DESCRIPTION
 Delete navigation property deviceHealthScriptStates for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -341,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

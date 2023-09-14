@@ -30,22 +30,6 @@ Publish-MgBetaGroupSiteContentType -InputObject <IGroupsIdentity> [-PassThru] [-
 ## DESCRIPTION
 Publishes a [contentType][] present in a content type hub site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -218,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Publish-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupSiteContentType?view=graph-powershell-1.0)
+

@@ -39,22 +39,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTask -InputObject <IIdentit
 Represents the configured tasks to execute and their execution sequence within a workflow.
 This relationship is expanded by default.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -372,3 +356,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask?view=graph-powershell-1.0)
+

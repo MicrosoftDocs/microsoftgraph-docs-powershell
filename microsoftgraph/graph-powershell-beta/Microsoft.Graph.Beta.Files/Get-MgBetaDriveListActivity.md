@@ -21,22 +21,6 @@ Get-MgBetaDriveListActivity -DriveId <String> [-ExpandProperty <String[]>] [-Fil
 ## DESCRIPTION
 The recent activities that took place within this list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -218,3 +202,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

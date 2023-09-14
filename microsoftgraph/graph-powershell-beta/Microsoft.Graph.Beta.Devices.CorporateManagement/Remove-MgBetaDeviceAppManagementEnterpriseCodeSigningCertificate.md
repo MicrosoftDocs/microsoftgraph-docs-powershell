@@ -28,18 +28,6 @@ Remove-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificate
 ## DESCRIPTION
 Delete navigation property enterpriseCodeSigningCertificates for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EnterpriseCodeSigningCertificateId
@@ -221,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+

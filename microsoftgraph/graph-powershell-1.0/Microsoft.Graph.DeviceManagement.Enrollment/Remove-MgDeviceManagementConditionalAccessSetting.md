@@ -23,18 +23,6 @@ Remove-MgDeviceManagementConditionalAccessSetting [-IfMatch <String>] [-PassThru
 ## DESCRIPTION
 Delete navigation property conditionalAccessSettings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -112,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
+
