@@ -32,8 +32,7 @@ Using the metadata that exists on an already-labeled piece of information, resol
 The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaExtractInformationProtectionPolicyLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -86,6 +85,8 @@ $params = @{
 }
 Invoke-MgBetaExtractInformationProtectionPolicyLabel -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaExtractInformationProtectionPolicyLabel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

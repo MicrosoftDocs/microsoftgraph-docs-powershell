@@ -47,17 +47,21 @@ Adds specific groups to a lifecycle policy.
 This action limits the group lifecycle policy to a set of groups only if the managedGroupTypes property of groupLifecyclePolicy is set to Selected.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	groupId = "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 
 Add-MgGroupToLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgGroupToLifecyclePolicy Cmdlet.
+
 
 ## PARAMETERS
 

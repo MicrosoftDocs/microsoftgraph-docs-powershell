@@ -40,13 +40,17 @@ Get-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandPrope
 Get the properties of the specified schemaExtension definition.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.SchemaExtensions
-```
 
-Get-MgBetaSchemaExtension -Filter "id eq 'graphlearn_test'"
+Import-Module Microsoft.Graph.Beta.SchemaExtensions
+
+Get-MgBetaSchemaExtension -Filter "id eq 'graphlearn_test'" 
+
+```
+This example shows how to use the Get-MgBetaSchemaExtension Cmdlet.
+
 
 ## PARAMETERS
 

@@ -31,13 +31,17 @@ Get-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> [-Exp
 Retrieve the properties and relationships of a plannerAssignedToTaskBoardTaskFormat object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId
+
+```
+This example shows how to use the Get-MgPlannerTaskAssignedToTaskBoardFormat Cmdlet.
+
 
 ## PARAMETERS
 

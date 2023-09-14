@@ -40,20 +40,28 @@ Get-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> [-E
 Retrieve the properties and relationships of a featureRolloutPolicy object.
 
 ## EXAMPLES
+### Example 1: Get a feature rollout policy
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
 ```
+This example will get a feature rollout policy
 
-Get-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -ExpandProperty "appliesTo"
+### Example 2: Get a feature rollout policy and expand appliesTo
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -ExpandProperty "appliesTo" 
+
+```
+This example will get a feature rollout policy and expand appliesto
+
 
 ## PARAMETERS
 

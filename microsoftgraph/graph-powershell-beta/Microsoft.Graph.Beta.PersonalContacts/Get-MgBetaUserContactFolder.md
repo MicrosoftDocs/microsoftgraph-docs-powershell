@@ -33,16 +33,18 @@ Get-MgBetaUserContactExtensionCount -InputObject <IPersonalContactsIdentity> [-F
 Get the number of the resource
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.PersonalContacts
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserContactFolder -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserContactFolder Cmdlet.
+
 
 ## PARAMETERS
 

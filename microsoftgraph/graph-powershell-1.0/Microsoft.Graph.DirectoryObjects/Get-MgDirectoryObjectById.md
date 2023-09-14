@@ -36,11 +36,11 @@ Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	ids = @(
@@ -57,6 +57,10 @@ $params = @{
 }
 
 Get-MgDirectoryObjectById -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDirectoryObjectById Cmdlet.
+
 
 ## PARAMETERS
 

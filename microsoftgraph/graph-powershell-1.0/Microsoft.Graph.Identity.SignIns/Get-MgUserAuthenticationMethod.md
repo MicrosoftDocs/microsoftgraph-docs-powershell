@@ -33,16 +33,18 @@ Get-MgUserAuthenticationFido2MethodCount -InputObject <IIdentitySignInsIdentity>
 Get the number of the resource
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Identity.SignIns
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+# A UPN can also be used as -UserId.
+Get-MgUserAuthenticationMethod -UserId $userId -AuthenticationMethodId $authenticationMethodId
 ```
+This example shows how to use the Get-MgUserAuthenticationMethod Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

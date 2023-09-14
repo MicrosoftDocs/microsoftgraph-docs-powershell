@@ -33,16 +33,18 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Identity.Governance
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+# A UPN can also be used as -UserId.
+Get-MgUserAgreementAcceptance -UserId $userId
 ```
+This example shows how to use the Get-MgUserAgreementAcceptance Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

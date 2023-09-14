@@ -42,13 +42,17 @@ These objects represent the resource roles that an access package assigns to eac
 Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAccessPackage
+
+```
+This example shows how to use the Get-MgEntitlementManagementAccessPackage Cmdlet.
+
 
 ## PARAMETERS
 

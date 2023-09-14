@@ -41,16 +41,6 @@ Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All

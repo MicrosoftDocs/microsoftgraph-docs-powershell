@@ -62,11 +62,11 @@ The startDateTime is set to the same time the certificate is created using the a
 The endDateTime can be up to three years after the certificate is created.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	displayName = "CN=customDisplayName"
@@ -74,6 +74,10 @@ $params = @{
 }
 
 Add-MgBetaServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaServicePrincipalTokenSigningCertificate Cmdlet.
+
 
 ## PARAMETERS
 

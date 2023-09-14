@@ -30,8 +30,7 @@ Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset
 Invoke action enrollAssets
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -45,6 +44,8 @@ $params = @{
 }
 Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

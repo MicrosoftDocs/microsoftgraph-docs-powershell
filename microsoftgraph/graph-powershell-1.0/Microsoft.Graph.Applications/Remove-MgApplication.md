@@ -35,11 +35,13 @@ When deleted, apps are moved to a temporary container and can be restored within
 After that time, they are permanently deleted.
 
 ## EXAMPLES
+### Example 1: Delete an application
 
-### EXAMPLE 1
 ```powershell
 Remove-MgApplication -ApplicationId '1bc44759-ef10-46de-b199-40c077768fff'
 ```
+
+This example deletes the specified application.
 
 ## PARAMETERS
 

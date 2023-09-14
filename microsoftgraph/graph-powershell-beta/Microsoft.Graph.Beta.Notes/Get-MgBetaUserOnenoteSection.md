@@ -32,16 +32,18 @@ Get-MgBetaUserOnenoteResourceCount -InputObject <INotesIdentity> [-Filter <Strin
 Get the number of the resource
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Notes
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOnenoteSection -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserOnenoteSection Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,8 +51,7 @@ If the event allows proposals for new times, on responding tentative to the even
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgAcceptUserEventTentatively Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -72,6 +71,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgAcceptUserEventTentatively -UserId $userId -EventId $eventId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgAcceptUserEventTentatively Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
