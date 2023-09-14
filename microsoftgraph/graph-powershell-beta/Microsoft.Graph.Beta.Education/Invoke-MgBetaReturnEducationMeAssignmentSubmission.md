@@ -13,6 +13,9 @@ Make the grade and feedback associated with this submission available to the stu
 This will change the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
 This action can only be done by the teacher.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationMeAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Return (Default)
@@ -159,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Invoke-MgReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationMeAssignmentSubmission?view=graph-powershell-1.0)

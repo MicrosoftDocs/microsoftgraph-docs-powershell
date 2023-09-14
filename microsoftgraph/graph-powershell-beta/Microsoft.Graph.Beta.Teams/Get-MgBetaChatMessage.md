@@ -12,6 +12,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -339,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessage?view=graph-powershell-1.0)

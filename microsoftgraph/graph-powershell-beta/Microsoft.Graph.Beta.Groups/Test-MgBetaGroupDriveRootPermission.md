@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action validatePermission
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDriveRootPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -280,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDriveRootPermission?view=graph-powershell-1.0)

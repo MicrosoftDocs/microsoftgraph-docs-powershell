@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property permissionGrants in chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatPermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -342,3 +345,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgBetaChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatPermissionGrant?view=graph-powershell-beta)

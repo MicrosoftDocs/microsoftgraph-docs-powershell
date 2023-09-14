@@ -12,6 +12,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Returns the metadata for a [list][].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -317,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteList?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1151,5 +1154,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[New-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)

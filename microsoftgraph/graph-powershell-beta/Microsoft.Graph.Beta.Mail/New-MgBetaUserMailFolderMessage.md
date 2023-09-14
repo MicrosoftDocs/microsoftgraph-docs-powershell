@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -520,5 +523,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessage?view=graph-powershell-1.0)

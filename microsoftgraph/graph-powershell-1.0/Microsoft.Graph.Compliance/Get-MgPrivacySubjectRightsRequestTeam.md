@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Information about the Microsoft Teams team that was created for the request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -125,3 +128,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
 
 ## RELATED LINKS
+[Get-MgBetaPrivacySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestTeam?view=graph-powershell-beta)

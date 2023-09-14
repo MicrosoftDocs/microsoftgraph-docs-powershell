@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Clean Windows device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CleanExpanded (Default)
@@ -255,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice?view=graph-powershell-1.0)

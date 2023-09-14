@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action restoreVersion
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgUserDriveListItemVersion](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveListItemVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -221,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgUserDriveListItemVersion](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveListItemVersion?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function search
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Search-MgDrive](/powershell/module/Microsoft.Graph.Files/Search-MgDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Search (Default)
@@ -241,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Search-MgDrive](/powershell/module/Microsoft.Graph.Files/Search-MgDrive?view=graph-powershell-1.0)

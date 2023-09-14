@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function recent
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentUserActivity](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgRecentUserActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Recent (Default)
@@ -240,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgRecentUserActivity](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgRecentUserActivity?view=graph-powershell-1.0)

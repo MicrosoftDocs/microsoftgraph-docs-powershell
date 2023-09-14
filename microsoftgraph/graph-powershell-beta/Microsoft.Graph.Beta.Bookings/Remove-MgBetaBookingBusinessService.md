@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a bookingService object in the specified bookingBusiness.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessService?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -186,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Remove-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessService?view=graph-powershell-1.0)

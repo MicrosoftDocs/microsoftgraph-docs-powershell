@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getAllMessages
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgAllTeamworkDeletedTeamMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -169,3 +172,4 @@ ALIASES
 Get-MgBetaTeamworkDeletedTeamMessage
 
 ## RELATED LINKS
+[Get-MgAllTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgAllTeamworkDeletedTeamMessage?view=graph-powershell-1.0)
