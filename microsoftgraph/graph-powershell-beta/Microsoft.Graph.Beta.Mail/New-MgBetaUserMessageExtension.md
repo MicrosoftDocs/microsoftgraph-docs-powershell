@@ -1,65 +1,65 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessageextension
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagemention
 schema: 2.0.0
 ---
 
-# New-MgBetaUserMessageExtension
+# New-MgBetaUserMailFolderMessageMention
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Create new navigation property to mentions for users
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserMessageExtension -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaUserMailFolderMessageMention -MailFolderId <String> -MessageId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-Application <String>] [-ClientReference <String>]
+ [-CreatedBy <IMicrosoftGraphEmailAddress>] [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>]
+ [-MentionText <String>] [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserMessageExtension -MessageId <String> -UserId <String> -BodyParameter <Hashtable> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgBetaUserMailFolderMessageMention -MailFolderId <String> -MessageId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphMention> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserMessageExtension -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
+ [-Application <String>] [-ClientReference <String>] [-CreatedBy <IMicrosoftGraphEmailAddress>]
+ [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>] [-MentionText <String>]
+ [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMention>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Create new navigation property to mentions for users
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Mail
+{{ Add code here }}
 ```
 
-$params = @{
-	"@odata.type" = "microsoft.graph.openTypeExtension"
-	extensionName = "Com.Contoso.Referral"
-	companyName = "Wingtip Toys"
-	dealValue = 
-	expirationDate = "2015-12-03T10:00:00.000Z"
-}
+{{ Add output here }}
 
-# A UPN can also be used as -UserId.
-New-MgBetaUserMessageExtension -UserId $userId -MessageId $messageId -BodyParameter $params
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -67,7 +67,24 @@ New-MgBetaUserMessageExtension -UserId $userId -MessageId $messageId -BodyParame
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Application
+The name of the application where the mention is created.
+Optional.
+Not used and defaulted as null for message.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -79,10 +96,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-extension
+mention
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: IMicrosoftGraphMention
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -93,12 +111,77 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ClientReference
+A unique identifier that represents a parent of the resource instance.
+Optional.
+Not used and defaulted as null for message.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CreatedBy
+emailAddress
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphEmailAddress
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CreatedDateTime
+The date and time that the mention is created on the client.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeepLink
+A deep web link to the context of the mention in the resource instance.
+Optional.
+Not used and defaulted as null for message.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -114,8 +197,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IMailIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -125,15 +208,80 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -MailFolderId
+The unique identifier of mailFolder
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, Create
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Mentioned
+emailAddress
+To construct, see NOTES section for MENTIONED properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphEmailAddress
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MentionText
+Optional.
+Not used and defaulted as null for message.
+To get the mentions in a message, see the bodyPreview property of the message instead.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -MessageId
 The unique identifier of message
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServerCreatedDateTime
+The date and time that the mention is created on the server.
+Optional.
+Not used and defaulted as null for message.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -144,8 +292,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -159,7 +307,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +323,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,13 +340,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
-
-### System.Collections.Hashtable
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
 ## OUTPUTS
 
-### System.String
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
 ## NOTES
 
 ALIASES
@@ -207,6 +352,26 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+`BODYPARAMETER <IMicrosoftGraphMention>`: mention
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
+  - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
+  - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
+  - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
+  - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for message.
+  - `[MentionText <String>]`: Optional. Not used and defaulted as null for message. To get the mentions in a message, see the bodyPreview property of the message instead.
+  - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
+  - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
+
+`CREATEDBY <IMicrosoftGraphEmailAddress>`: emailAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
 `INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -220,5 +385,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
-## RELATED LINKS
+`MENTIONED <IMicrosoftGraphEmailAddress>`: emailAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
+## RELATED LINKS

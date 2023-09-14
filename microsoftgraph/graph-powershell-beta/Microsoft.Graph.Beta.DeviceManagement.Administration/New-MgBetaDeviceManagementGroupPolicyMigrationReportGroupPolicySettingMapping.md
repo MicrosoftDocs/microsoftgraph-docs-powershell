@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicymigrationreportgrouppolicysettingmapping
 schema: 2.0.0
@@ -15,29 +15,21 @@ Create new navigation property to groupPolicySettingMappings for deviceManagemen
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
- -GroupPolicyMigrationReportId <String> [-AdditionalProperties <Hashtable>]
- [-AdmxSettingDefinitionId <String>] [-ChildIdList <String[]>] [-Id <String>]
- [-IntuneSettingDefinitionId <String>] [-IntuneSettingUriList <String[]>] [-IsMdmSupported]
- [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>] [-MdmSettingUri <String>]
- [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>] [-SettingCategory <String>]
- [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
- [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>] [-SettingType <GroupPolicySettingType>]
- [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -GroupPolicyMigrationReportId <String> [-AdditionalProperties <Hashtable>] [-AdmxSettingDefinitionId <String>]
+ [-ChildIdList <String[]>] [-Id <String>] [-IntuneSettingDefinitionId <String>]
+ [-IntuneSettingUriList <String[]>] [-IsMdmSupported] [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>]
+ [-MdmSettingUri <String>] [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>]
+ [-SettingCategory <String>] [-SettingDisplayName <String>] [-SettingDisplayValue <String>]
+ [-SettingDisplayValueType <String>] [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>]
+ [-SettingType <GroupPolicySettingType>] [-SettingValue <String>] [-SettingValueDisplayUnits <String>]
+ [-SettingValueType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
- -GroupPolicyMigrationReportId <String> -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
- -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -GroupPolicyMigrationReportId <String> -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,8 +42,15 @@ New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>] [-SettingCategory <String>]
  [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
  [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>] [-SettingType <GroupPolicySettingType>]
- [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+ -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,14 +58,14 @@ Create new navigation property to groupPolicySettingMappings for deviceManagemen
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -79,7 +78,7 @@ Create new navigation property to groupPolicySettingMappings for deviceManagemen
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -94,7 +93,7 @@ Accept wildcard characters: False
 Admx Group Policy Id
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -110,7 +109,7 @@ The Group Policy setting to MDM/Intune mapping.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
+Type: IMicrosoftGraphGroupPolicySettingMapping
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -125,7 +124,7 @@ Accept wildcard characters: False
 List of Child Ids of the group policy setting.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -140,8 +139,8 @@ Accept wildcard characters: False
 The unique identifier of groupPolicyMigrationReport
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -156,7 +155,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -172,8 +171,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementAdministrationIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -187,7 +186,7 @@ Accept wildcard characters: False
 The Intune Setting Definition Id
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -202,7 +201,7 @@ Accept wildcard characters: False
 The list of Intune Setting URIs this group policy setting maps to
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -217,7 +216,7 @@ Accept wildcard characters: False
 Indicates if the setting is supported by Intune or not
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -232,7 +231,7 @@ Accept wildcard characters: False
 The CSP name this group policy setting maps to.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -247,7 +246,7 @@ Accept wildcard characters: False
 The minimum OS version this mdm setting supports.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +261,7 @@ Accept wildcard characters: False
 The MDM CSP URI this group policy setting maps to.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -277,7 +276,7 @@ Accept wildcard characters: False
 Mdm Support Status of the setting.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.MdmSupportedState
+Type: MdmSupportedState
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -292,7 +291,7 @@ Accept wildcard characters: False
 Parent Id of the group policy setting.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -307,7 +306,7 @@ Accept wildcard characters: False
 The category the group policy setting is in.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -322,7 +321,7 @@ Accept wildcard characters: False
 The display name of this group policy setting.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -337,7 +336,7 @@ Accept wildcard characters: False
 The display value of this group policy setting.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -352,7 +351,7 @@ Accept wildcard characters: False
 The display value type of this group policy setting.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -367,7 +366,7 @@ Accept wildcard characters: False
 The name of this group policy setting.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -382,7 +381,7 @@ Accept wildcard characters: False
 Scope of the group policy setting.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.GroupPolicySettingScope
+Type: GroupPolicySettingScope
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -397,7 +396,7 @@ Accept wildcard characters: False
 Setting type of the group policy.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.GroupPolicySettingType
+Type: GroupPolicySettingType
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -412,7 +411,7 @@ Accept wildcard characters: False
 The value of this group policy setting.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -427,7 +426,7 @@ Accept wildcard characters: False
 The display units of this group policy setting value
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -442,7 +441,7 @@ Accept wildcard characters: False
 The value type of this group policy setting.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -457,7 +456,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -473,7 +472,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -490,13 +489,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
-
 ## NOTES
 
 ALIASES
@@ -590,4 +586,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-

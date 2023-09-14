@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupdrivelistcontenttypepublished
 schema: 2.0.0
@@ -28,14 +28,14 @@ Invoke function isPublished
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -48,7 +48,7 @@ Invoke function isPublished
 The unique identifier of contentType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Is
 Aliases:
 
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Is
 Aliases:
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Is
 Aliases:
 
@@ -94,7 +94,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Type: IGroupsIdentity
 Parameter Sets: IsViaIdentity
 Aliases:
 
@@ -111,11 +111,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -163,4 +161,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

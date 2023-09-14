@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementassignmentfilter
 schema: 2.0.0
@@ -18,13 +18,13 @@ New-MgBetaDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>]
  [-AssignmentFilterManagementType <AssignmentFilterManagementType>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Payloads <IMicrosoftGraphPayloadByFilter[]>] [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>]
- [-Rule <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Rule <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAssignmentFilter
- -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,14 +33,14 @@ Create new navigation property to assignmentFilters for deviceManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -53,7 +53,7 @@ Create new navigation property to assignmentFilters for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 Supported filter management types whether its devices or apps.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.AssignmentFilterManagementType
+Type: AssignmentFilterManagementType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ A class containing the properties used for Assignment Filter.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
+Type: IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
 Parameter Sets: Create
 Aliases:
 
@@ -102,7 +102,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 Optional description of the Assignment Filter.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 The name of the Assignment Filter.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,7 +181,7 @@ Indicates associated assignments for a specific filter.
 To construct, see NOTES section for PAYLOADS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPayloadByFilter[]
+Type: IMicrosoftGraphPayloadByFilter[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Supported platform types.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.DevicePlatformType
+Type: DevicePlatformType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 Indicates role scope tags assigned for the assignment filter.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 Rule definition of the assignment filter.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -257,7 +257,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -274,11 +274,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
-
 ## NOTES
 
 ALIASES
@@ -312,4 +310,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[PayloadType <AssociatedAssignmentPayloadType?>]`: This enum represents associated assignment payload type
 
 ## RELATED LINKS
-

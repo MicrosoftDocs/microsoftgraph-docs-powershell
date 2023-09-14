@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementappleuserinitiatedenrollmentprofile
 schema: 2.0.0
@@ -19,13 +19,13 @@ New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile [-AdditionalProper
  [-AvailableEnrollmentTypeOptions <IMicrosoftGraphAppleOwnerTypeEnrollmentType[]>]
  [-CreatedDateTime <DateTime>] [-DefaultEnrollmentType <AppleUserInitiatedEnrollmentType>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Platform <DevicePlatformType>] [-Priority <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Platform <DevicePlatformType>] [-Priority <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
- -BodyParameter <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,19 +33,15 @@ Create new navigation property to appleUserInitiatedEnrollmentProfiles for devic
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -53,7 +49,7 @@ Create new navigation property to appleUserInitiatedEnrollmentProfiles for devic
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +65,7 @@ The list of assignments for this profile.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppleEnrollmentProfileAssignment[]
+Type: IMicrosoftGraphAppleEnrollmentProfileAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +81,7 @@ List of available enrollment type options
 To construct, see NOTES section for AVAILABLEENROLLMENTTYPEOPTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppleOwnerTypeEnrollmentType[]
+Type: IMicrosoftGraphAppleOwnerTypeEnrollmentType[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +98,7 @@ Pre-staged device identities are assigned to this type of profile to apply the p
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppleUserInitiatedEnrollmentProfile
+Type: IMicrosoftGraphAppleUserInitiatedEnrollmentProfile
 Parameter Sets: Create
 Aliases:
 
@@ -117,7 +113,7 @@ Accept wildcard characters: False
 Profile creation time
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +128,7 @@ Accept wildcard characters: False
 appleUserInitiatedEnrollmentType
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.AppleUserInitiatedEnrollmentType
+Type: AppleUserInitiatedEnrollmentType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +143,7 @@ Accept wildcard characters: False
 Description of the profile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +158,7 @@ Accept wildcard characters: False
 Name of the profile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +174,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +189,7 @@ Accept wildcard characters: False
 Profile last modified time
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +204,7 @@ Accept wildcard characters: False
 Supported platform types.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.DevicePlatformType
+Type: DevicePlatformType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +219,7 @@ Accept wildcard characters: False
 Priority, 0 is highest
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +234,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -254,7 +250,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -271,11 +267,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppleUserInitiatedEnrollmentProfile
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppleUserInitiatedEnrollmentProfile
-
 ## NOTES
 
 ALIASES
@@ -317,4 +311,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Priority <Int32?>]`: Priority, 0 is highest
 
 ## RELATED LINKS
-

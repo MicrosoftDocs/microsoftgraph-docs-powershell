@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmentpermanent
 schema: 2.0.0
@@ -16,28 +16,28 @@ Invoke action makePermanent
 ```
 New-MgBetaPrivilegedRoleAssignmentPermanent -PrivilegedRoleAssignmentId <String>
  [-AdditionalProperties <Hashtable>] [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Make
 ```
 New-MgBetaPrivilegedRoleAssignmentPermanent -PrivilegedRoleAssignmentId <String>
  -BodyParameter <IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### MakeViaIdentity
-```
-New-MgBetaPrivilegedRoleAssignmentPermanent -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MakeViaIdentityExpanded
 ```
 New-MgBetaPrivilegedRoleAssignmentPermanent -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### MakeViaIdentity
+```
+New-MgBetaPrivilegedRoleAssignmentPermanent -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,7 +45,7 @@ Invoke action makePermanent
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -56,15 +56,13 @@ $params = @{
 New-MgBetaPrivilegedRoleAssignmentPermanent -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: MakeExpanded, MakeViaIdentityExpanded
 Aliases:
 
@@ -80,7 +78,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Make, MakeViaIdentity
 Aliases:
 
@@ -96,8 +94,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: MakeViaIdentity, MakeViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: MakeViaIdentityExpanded, MakeViaIdentity
 Aliases:
 
 Required: True
@@ -111,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of privilegedRoleAssignment
 
 ```yaml
-Type: System.String
-Parameter Sets: Make, MakeExpanded
+Type: String
+Parameter Sets: MakeExpanded, Make
 Aliases:
 
 Required: True
@@ -126,7 +124,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: MakeExpanded, MakeViaIdentityExpanded
 Aliases:
 
@@ -141,7 +139,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: MakeExpanded, MakeViaIdentityExpanded
 Aliases:
 
@@ -156,7 +154,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: MakeExpanded, MakeViaIdentityExpanded
 Aliases:
 
@@ -171,7 +169,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +185,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,13 +202,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
-
 ## NOTES
 
 ALIASES
@@ -325,4 +320,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

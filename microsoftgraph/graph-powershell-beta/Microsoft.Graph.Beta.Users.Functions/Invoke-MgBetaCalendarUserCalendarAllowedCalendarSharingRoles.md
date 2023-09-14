@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetacalendarusercalendarallowedcalendarsharingroles
 schema: 2.0.0
@@ -20,18 +20,18 @@ Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -Use
 
 ### Calendar1
 ```
-Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -CalendarId <String> -User <String>
- -UserId <String> [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>]
+Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId <String>
+ -CalendarId <String> [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>]
  [<CommonParameters>]
 ```
 
-### CalendarViaIdentity
+### CalendarViaIdentity1
 ```
 Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity> [-Count]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### CalendarViaIdentity1
+### CalendarViaIdentity
 ```
 Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity> [-Count]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
@@ -42,14 +42,14 @@ Invoke function allowedCalendarSharingRoles
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -62,7 +62,7 @@ Invoke function allowedCalendarSharingRoles
 The unique identifier of calendar
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Calendar1
 Aliases:
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 Include count of items
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -108,8 +108,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: CalendarViaIdentity, CalendarViaIdentity1
+Type: IUsersFunctionsIdentity
+Parameter Sets: CalendarViaIdentity1, CalendarViaIdentity
 Aliases:
 
 Required: True
@@ -123,22 +123,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -153,7 +138,7 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
 
@@ -168,7 +153,7 @@ Accept wildcard characters: False
 Usage: User='{User}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Calendar, Calendar1
 Aliases:
 
@@ -183,11 +168,26 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Calendar, Calendar1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -200,11 +200,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -254,4 +252,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

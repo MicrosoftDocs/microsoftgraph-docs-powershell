@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoregroupsetchildrelation
 schema: 2.0.0
@@ -15,53 +15,53 @@ Delete navigation property relations for groups
 ### Delete1 (Default)
 ```
 Remove-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
- -SetId <String> -SiteId <String> -TermId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ -SetId <String> -SiteId <String> -TermId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### Delete
-```
-Remove-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
- -SetId <String> -SiteId <String> -TermId <String> -TermId1 <String> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Delete2
-```
-Remove-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
- -SetId <String> -SiteId <String> -StoreId <String> -TermId <String> -TermId1 <String> [-IfMatch <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Delete3
 ```
 Remove-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
- -SetId <String> -SiteId <String> -StoreId <String> -TermId <String> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -SetId <String> -SiteId <String> -TermId <String> -StoreId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### Delete2
 ```
-Remove-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
+ -SetId <String> -SiteId <String> -TermId <String> -TermId1 <String> -StoreId <String> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity2
+### Delete
 ```
-Remove-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgGroupSiteTermStoreGroupSetChildRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
+ -SetId <String> -SiteId <String> -TermId <String> -TermId1 <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity3
 ```
 Remove-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity2
+```
+Remove-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity
+```
+Remove-MgGroupSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,14 +69,14 @@ Delete navigation property relations for groups
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -89,8 +89,8 @@ Delete navigation property relations for groups
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, Delete1, Delete2, Delete3
+Type: String
+Parameter Sets: Delete1, Delete3, Delete2, Delete
 Aliases:
 
 Required: True
@@ -104,8 +104,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, Delete1, Delete2, Delete3
+Type: String
+Parameter Sets: Delete1, Delete3, Delete2, Delete
 Aliases:
 
 Required: True
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -135,8 +135,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: DeleteViaIdentity, DeleteViaIdentity1, DeleteViaIdentity2, DeleteViaIdentity3
+Type: ISitesIdentity
+Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -165,8 +165,8 @@ Accept wildcard characters: False
 The unique identifier of relation
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, Delete1, Delete2, Delete3
+Type: String
+Parameter Sets: Delete1, Delete3, Delete2, Delete
 Aliases:
 
 Required: True
@@ -180,8 +180,8 @@ Accept wildcard characters: False
 The unique identifier of set
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, Delete1, Delete2, Delete3
+Type: String
+Parameter Sets: Delete1, Delete3, Delete2, Delete
 Aliases:
 
 Required: True
@@ -195,8 +195,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, Delete1, Delete2, Delete3
+Type: String
+Parameter Sets: Delete1, Delete3, Delete2, Delete
 Aliases:
 
 Required: True
@@ -210,8 +210,8 @@ Accept wildcard characters: False
 The unique identifier of store
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete2, Delete3
+Type: String
+Parameter Sets: Delete3, Delete2
 Aliases:
 
 Required: True
@@ -225,8 +225,8 @@ Accept wildcard characters: False
 The unique identifier of term
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, Delete1, Delete2, Delete3
+Type: String
+Parameter Sets: Delete1, Delete3, Delete2, Delete
 Aliases:
 
 Required: True
@@ -240,8 +240,8 @@ Accept wildcard characters: False
 The unique identifier of term
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, Delete2
+Type: String
+Parameter Sets: Delete2, Delete
 Aliases:
 
 Required: True
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -271,7 +271,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -288,11 +288,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -343,4 +341,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,59 +1,52 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteoperation
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebookcount
 schema: 2.0.0
 ---
 
-# Get-MgBetaUserOnenoteOperation
+# Get-MgBetaUserOnenoteNotebookCount
 
 ## SYNOPSIS
-Get the status of a long-running OneNote operation.
-This applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
-  You can poll the Operation-Location endpoint until the status property returns completed or failed.
-If the status is completed, the resourceLocation property contains the resource endpoint URI.
-If the status is failed, the error and @api.diagnostics properties provide error information.
+Get the number of the resource
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaUserOnenoteOperation -OnenoteOperationId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserOnenoteNotebookCount -UserId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserOnenoteOperation -InputObject <INotesIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserOnenoteNotebookCount -InputObject <INotesIdentity> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the status of a long-running OneNote operation.
-This applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
-  You can poll the Operation-Location endpoint until the status property returns completed or failed.
-If the status is completed, the resourceLocation property contains the resource endpoint URI.
-If the status is failed, the error and @api.diagnostics properties provide error information.
+Get the number of the resource
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Notes
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOnenoteOperation -UserId $userId -OnenoteOperationId $onenoteOperationId
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
-### -ExpandProperty
-Expand related entities
+### -Filter
+Filter items by property values
 
 ```yaml
-Type: System.String[]
+Type: String
 Parameter Sets: (All)
-Aliases: Expand
+Aliases:
 
 Required: False
 Position: Named
@@ -67,7 +60,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
+Type: INotesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -78,28 +71,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OnenoteOperationId
-The unique identifier of onenoteOperation
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: System.String[]
+Type: String
 Parameter Sets: (All)
-Aliases: Select
+Aliases:
 
 Required: False
 Position: Named
@@ -112,7 +90,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -129,11 +107,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteOperation
-
+### System.Int32
 ## NOTES
 
 ALIASES
@@ -155,4 +131,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-
