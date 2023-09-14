@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessdeviceusageuserdetail
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getSkypeForBusinessDeviceUsageUserDetail
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessDeviceUsageUserDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,13 +24,13 @@ Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail -Period <String> -OutFile 
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile <String>
  [-PassThru] [<CommonParameters>]
@@ -42,13 +39,29 @@ Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIden
 ## DESCRIPTION
 Invoke function getSkypeForBusinessDeviceUsageUserDetail
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Date
 Usage: date={date}
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: Get
 Aliases:
 
@@ -64,8 +77,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -79,7 +92,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -94,7 +107,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -109,7 +122,7 @@ Accept wildcard characters: False
 Usage: period='{period}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -126,9 +139,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -169,5 +184,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportSkypeForBusinessDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessDeviceUsageUserDetail?view=graph-powershell-1.0)
 

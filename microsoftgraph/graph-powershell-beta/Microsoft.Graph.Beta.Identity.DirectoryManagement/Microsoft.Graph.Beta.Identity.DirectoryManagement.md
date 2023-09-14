@@ -1099,6 +1099,9 @@ As a workaround, use the List group transitive memberOf API.
 ### [Get-MgBetaOrganizationMemberObject](Get-MgBetaOrganizationMemberObject.md)
 Invoke action getMemberObjects
 
+### [Get-MgBetaOrganizationPartnerInformation](Get-MgBetaOrganizationPartnerInformation.md)
+Get partnerInformation from organization
+
 ### [Get-MgBetaOrganizationSetting](Get-MgBetaOrganizationSetting.md)
 Retrieve the properties and relationships of organizationSettings object.
 Nullable.
@@ -1575,6 +1578,9 @@ To delete the organizationalBrandingLocalization object, all images (Stream type
 ### [Remove-MgBetaOrganizationExtension](Remove-MgBetaOrganizationExtension.md)
 Delete navigation property extensions for organization
 
+### [Remove-MgBetaOrganizationPartnerInformation](Remove-MgBetaOrganizationPartnerInformation.md)
+Delete navigation property partnerInformation for organization
+
 ### [Remove-MgBetaOrganizationSetting](Remove-MgBetaOrganizationSetting.md)
 Delete navigation property settings for organization
 
@@ -1961,6 +1967,9 @@ Update the properties of an organizationalBrandingLocalization object for a spec
 
 ### [Update-MgBetaOrganizationExtension](Update-MgBetaOrganizationExtension.md)
 Update the navigation property extensions in organization
+
+### [Update-MgBetaOrganizationPartnerInformation](Update-MgBetaOrganizationPartnerInformation.md)
+Update the navigation property partnerInformation in organization
 
 ### [Update-MgBetaOrganizationSetting](Update-MgBetaOrganizationSetting.md)
 Update the navigation property settings in organization

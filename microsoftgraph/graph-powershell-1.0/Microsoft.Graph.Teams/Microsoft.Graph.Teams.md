@@ -246,12 +246,6 @@ This cannot be changed after tab creation.
 ### [Get-MgGroupTeam](Get-MgGroupTeam.md)
 The team associated with this group.
 
-### [Get-MgGroupTeamAllChannelCount](Get-MgGroupTeamAllChannelCount.md)
-Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamAllChannelCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamAllChannelCount?view=graph-powershell-beta)
-
 ### [Get-MgGroupTeamChannel](Get-MgGroupTeamChannel.md)
 Retrieve the properties and relationships of a channel.
 This method supports federation.
@@ -509,12 +503,6 @@ See available templates.
 ### [Get-MgTeam](Get-MgTeam.md)
 Retrieve the properties and relationships of the specified team.
 
-### [Get-MgTeamAllChannelCount](Get-MgTeamAllChannelCount.md)
-Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamAllChannelCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamAllChannelCount?view=graph-powershell-beta)
-
 ### [Get-MgTeamChannel](Get-MgTeamChannel.md)
 Retrieve the properties and relationships of a channel.
 This method supports federation.
@@ -614,12 +602,6 @@ Get a conversationMember from a team.
 
 ### [Get-MgTeamMemberCount](Get-MgTeamMemberCount.md)
 Get the number of the resource
-
-### [Get-MgTeamMessage](Get-MgTeamMessage.md)
-Invoke function getAllMessages
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamMessage?view=graph-powershell-beta)
 
 ### [Get-MgTeamOperation](Get-MgTeamOperation.md)
 The async operations that ran or are running on this team.
@@ -887,12 +869,6 @@ This cannot be changed after tab creation.
 ### [Get-MgTeamworkDeletedTeamCount](Get-MgTeamworkDeletedTeamCount.md)
 Get the number of the resource
 
-### [Get-MgTeamworkDeletedTeamMessage](Get-MgTeamworkDeletedTeamMessage.md)
-Invoke function getAllMessages
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamMessage?view=graph-powershell-beta)
-
 ### [Get-MgTeamworkTeamAppSetting](Get-MgTeamworkTeamAppSetting.md)
 Get teamsAppSettings from teamwork
 
@@ -980,19 +956,16 @@ Get the number of the resource
 The application that is linked to the tab.
 This cannot be changed after tab creation.
 
-### [Get-MgUserChatTabTeamApp](Get-MgUserChatTabTeamApp.md)
-The application that is linked to the tab.
-This cannot be changed after tab creation.
+### [Get-MgUserJoinedTeam](Get-MgUserJoinedTeam.md)
+Get the teams in Microsoft Teams that the user is a direct member of.
 
 ### [Get-MgUserTeamwork](Get-MgUserTeamwork.md)
 A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
-### [Get-MgUserTeamwork](Get-MgUserTeamwork.md)
-A container for Microsoft Teams features available for the user.
-Read-only.
-Nullable.
+### [Get-MgUserTeamworkAssociatedTeam](Get-MgUserTeamworkAssociatedTeam.md)
+The list of associatedTeamInfo objects that a user is associated with.
 
 ### [Get-MgUserTeamworkAssociatedTeamCount](Get-MgUserTeamworkAssociatedTeamCount.md)
 Get the number of the resource
@@ -1398,9 +1371,8 @@ This API cannot create a new chat; you must use the list chats method to retriev
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
-### [New-MgUserChatTab](New-MgUserChatTab.md)
-Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+### [New-MgUserTeamworkAssociatedTeam](New-MgUserTeamworkAssociatedTeam.md)
+Create new navigation property to associatedTeams for users
 
 ### [New-MgUserTeamworkInstalledApp](New-MgUserTeamworkInstalledApp.md)
 Install an app in the personal scope of the specified user.

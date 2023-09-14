@@ -124,6 +124,9 @@ Read-only.
 ### [Get-MgBetaCommunicationOnlineMeetingRecordingCount](Get-MgBetaCommunicationOnlineMeetingRecordingCount.md)
 Get the number of the resource
 
+### [Get-MgBetaCommunicationOnlineMeetingRecordingDelta](Get-MgBetaCommunicationOnlineMeetingRecordingDelta.md)
+Invoke function delta
+
 ### [Get-MgBetaCommunicationOnlineMeetingRegistration](Get-MgBetaCommunicationOnlineMeetingRegistration.md)
 Get the externalMeetingRegistration details associated with an onlineMeeting.
 
@@ -151,6 +154,9 @@ Read-only.
 ### [Get-MgBetaCommunicationOnlineMeetingTranscriptCount](Get-MgBetaCommunicationOnlineMeetingTranscriptCount.md)
 Get the number of the resource
 
+### [Get-MgBetaCommunicationOnlineMeetingTranscriptDelta](Get-MgBetaCommunicationOnlineMeetingTranscriptDelta.md)
+Invoke function delta
+
 ### [Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent](Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent.md)
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
@@ -167,19 +173,19 @@ Get the presence information for multiple users.
 ### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
-Get the number of the resource
+### [Get-MgBetaUserOnlineMeeting](Get-MgBetaUserOnlineMeeting.md)
+Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
 
 ### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
 The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
 
-### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
-The content stream of the alternative recording of a Microsoft Teams live event.
-Read-only.
+### [Get-MgBetaUserOnlineMeetingAttendanceReport](Get-MgBetaUserOnlineMeetingAttendanceReport.md)
+Get the meetingAttendanceReport for an onlineMeeting.
+Each time an online meeting ends, an attendance report will be generated for that session.
 
-### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
-The content stream of the alternative recording of a Microsoft Teams live event.
+### [Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
 Read-only.
 
 ### [Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecordCount](Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecordCount.md)
@@ -188,8 +194,9 @@ Get the number of the resource
 ### [Get-MgBetaUserOnlineMeetingAttendanceReportCount](Get-MgBetaUserOnlineMeetingAttendanceReportCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnlineMeetingAttendanceReportCount](Get-MgBetaUserOnlineMeetingAttendanceReportCount.md)
-Get the number of the resource
+### [Get-MgBetaUserOnlineMeetingAttendeeReport](Get-MgBetaUserOnlineMeetingAttendeeReport.md)
+The content stream of the attendee report of a Teams live event.
+Read-only.
 
 ### [Get-MgBetaUserOnlineMeetingBroadcastRecording](Get-MgBetaUserOnlineMeetingBroadcastRecording.md)
 Get broadcastRecording for the navigation property onlineMeetings from users
@@ -239,9 +246,8 @@ Get the number of the resource
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
-### [Get-MgBetaUserOnlineMeetingTranscriptMetadataContent](Get-MgBetaUserOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+### [Get-MgBetaUserPresence](Get-MgBetaUserPresence.md)
+Get a user's presence information.
 
 ### [Invoke-MgBetaAnswerCommunicationCall](Invoke-MgBetaAnswerCommunicationCall.md)
 Enable a bot to answer an incoming call.
@@ -353,8 +359,8 @@ Create new navigation property to participants for communications
 ### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
 Create new navigation property to sessions for communications
 
-### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
-Create new navigation property to sessions for communications
+### [New-MgBetaCommunicationOnlineMeeting](New-MgBetaCommunicationOnlineMeeting.md)
+Create new navigation property to onlineMeetings for communications
 
 ### [New-MgBetaCommunicationOnlineMeetingAttendanceReport](New-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for communications
@@ -377,8 +383,8 @@ Create new navigation property to transcripts for communications
 ### [New-MgBetaCommunicationPresence](New-MgBetaCommunicationPresence.md)
 Create new navigation property to presences for communications
 
-### [New-MgBetaCommunicationPresence](New-MgBetaCommunicationPresence.md)
-Create new navigation property to presences for communications
+### [New-MgBetaUserOnlineMeeting](New-MgBetaUserOnlineMeeting.md)
+Create an online meeting on behalf of a user.
 
 ### [New-MgBetaUserOnlineMeetingAttendanceReport](New-MgBetaUserOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for users
@@ -448,8 +454,8 @@ Delete navigation property transcripts for communications
 ### [Remove-MgBetaCommunicationPresence](Remove-MgBetaCommunicationPresence.md)
 Delete navigation property presences for communications
 
-### [Remove-MgBetaCommunicationPresence](Remove-MgBetaCommunicationPresence.md)
-Delete navigation property presences for communications
+### [Remove-MgBetaUserOnlineMeeting](Remove-MgBetaUserOnlineMeeting.md)
+Delete an onlineMeeting object.
 
 ### [Remove-MgBetaUserOnlineMeetingAttendanceReport](Remove-MgBetaUserOnlineMeetingAttendanceReport.md)
 Delete navigation property attendanceReports for users
@@ -472,8 +478,8 @@ Delete navigation property registrants for users
 ### [Remove-MgBetaUserOnlineMeetingTranscript](Remove-MgBetaUserOnlineMeetingTranscript.md)
 Delete navigation property transcripts for users
 
-### [Remove-MgBetaUserOnlineMeetingTranscript](Remove-MgBetaUserOnlineMeetingTranscript.md)
-Delete navigation property transcripts for users
+### [Remove-MgBetaUserPresence](Remove-MgBetaUserPresence.md)
+Delete navigation property presence for users
 
 ### [Rename-MgBetaCommunicationCallScreenSharingRole](Rename-MgBetaCommunicationCallScreenSharingRole.md)
 Allow applications to share screen content with the participants of a group call.
@@ -606,8 +612,9 @@ Update the navigation property transcripts in communications
 ### [Update-MgBetaCommunicationPresence](Update-MgBetaCommunicationPresence.md)
 Update the navigation property presences in communications
 
-### [Update-MgBetaCommunicationPresence](Update-MgBetaCommunicationPresence.md)
-Update the navigation property presences in communications
+### [Update-MgBetaUserOnlineMeeting](Update-MgBetaUserOnlineMeeting.md)
+Update the properties of the specified onlineMeeting object.
+Please see Request body section for the list of properties that support updating.
 
 ### [Update-MgBetaUserOnlineMeetingAttendanceReport](Update-MgBetaUserOnlineMeetingAttendanceReport.md)
 Update the navigation property attendanceReports in users
@@ -630,6 +637,6 @@ Update the navigation property registrants in users
 ### [Update-MgBetaUserOnlineMeetingTranscript](Update-MgBetaUserOnlineMeetingTranscript.md)
 Update the navigation property transcripts in users
 
-### [Update-MgBetaUserOnlineMeetingTranscript](Update-MgBetaUserOnlineMeetingTranscript.md)
-Update the navigation property transcripts in users
+### [Update-MgBetaUserPresence](Update-MgBetaUserPresence.md)
+Update the navigation property presence in users
 

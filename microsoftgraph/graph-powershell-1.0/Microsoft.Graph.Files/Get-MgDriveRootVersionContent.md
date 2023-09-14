@@ -1,18 +1,14 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootversioncontent
 schema: 2.0.0
-ms.service: sharepoint
 ---
 
 # Get-MgDriveRootVersionContent
 
 ## SYNOPSIS
 The content stream for this version of the item.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,13 +26,29 @@ Get-MgDriveRootVersionContent -InputObject <IFilesIdentity> -OutFile <String> [-
 ## DESCRIPTION
 The content stream for this version of the item.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -DriveId
 The unique identifier of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -51,7 +63,7 @@ Accept wildcard characters: False
 The unique identifier of driveItemVersion
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -67,7 +79,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -82,7 +94,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +109,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -114,9 +126,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -153,5 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
 
