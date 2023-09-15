@@ -341,7 +341,7 @@ $params = @{
 			content = '{
   "title": "This is an example of posting a card",
   "subtitle": "<h3>This is the subtitle</h3>",
-  "text": "Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:",
+  "text": "Here is some body text. <br>\rAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\rAnd below that is some buttons:",
   "buttons": [
     {
       "type": "messageBack",

@@ -217,8 +217,7 @@ function Special-Escape{
 			Move-Item -Path $tempFilePath -Destination $filePath
 	   }
 	 }
-	#$location = Get-Location
-	#Set-Location microsoftgraph-docs-powershell
+     Remove-Invalid-NextLine-Characters -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
@@ -250,6 +249,36 @@ try{
 	Write-Host "`nError Item Name: "$_.Exception.ItemName
 }	
 return "NA"	
+}
+function Remove-Invalid-NextLine-Characters{
+    param (
+        [ValidateNotNullOrEmpty()]
+        [string] $FilePath,
+        [ValidateSet("beta", "v1.0")]
+        [string] $GraphProfile = "v1.0",
+        [ValidateNotNullOrEmpty()]
+        [string] $ModuleName = "Users"
+    )
+    $tempFilePath = "$env:TEMP\$($FilePath | Split-Path -Leaf)"
+
+    $replace = ""
+	try{
+    $text = Get-Content -Path $FilePath
+    Write-Host $FilePath
+    foreach($content in $text){
+       if($content -match "\\n"){
+        $text = $text -replace "\\n", $replace
+       } 
+    }
+    $text > $tempFilePath
+    Remove-Item -Path $FilePath
+    Move-Item -Path $tempFilePath -Destination $FilePath
+	}catch{
+	Write-Host "`nError Message: " $_.Exception.Message
+	Write-Host "`nError in Line: " $_.InvocationInfo.Line
+	Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
+	Write-Host "`nError Item Name: "$_.Exception.ItemName
+	}
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"

@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatTab?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeams
 
 ## DESCRIPTION
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 
 ## EXAMPLES
 ### Example 1: Code snippet
