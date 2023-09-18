@@ -18,8 +18,9 @@ New-MgBetaDeviceManagementWindowsFeatureUpdateProfile [-AdditionalProperties <Ha
  [-Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>] [-CreatedDateTime <DateTime>]
  [-DeployableContentDisplayName <String>] [-Description <String>] [-DisplayName <String>]
  [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
- [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InstallLatestWindows10OnWindows11IneligibleDevice] [-LastModifiedDateTime <DateTime>]
+ [-RoleScopeTagIds <String[]>] [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -177,6 +178,21 @@ Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InstallLatestWindows10OnWindows11IneligibleDevice
+If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 

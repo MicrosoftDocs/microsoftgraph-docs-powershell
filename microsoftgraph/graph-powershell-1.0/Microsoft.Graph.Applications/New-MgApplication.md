@@ -36,7 +36,9 @@ New-MgApplication [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Has
  [-PublicClient <IMicrosoftGraphPublicClientApplication>] [-PublisherDomain <String>]
  [-RequestSignatureVerification <IMicrosoftGraphRequestSignatureVerification>]
  [-RequiredResourceAccess <IMicrosoftGraphRequiredResourceAccess[]>] [-SamlMetadataUrl <String>]
- [-ServiceManagementReference <String>] [-SignInAudience <String>] [-Spa <IMicrosoftGraphSpaApplication>]
+ [-ServiceManagementReference <String>]
+ [-ServicePrincipalLockConfiguration <IMicrosoftGraphServicePrincipalLockConfiguration>]
+ [-SignInAudience <String>] [-Spa <IMicrosoftGraphSpaApplication>]
  [-Synchronization <IMicrosoftGraphSynchronization>] [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
@@ -717,6 +719,22 @@ Nullable.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServicePrincipalLockConfiguration
+servicePrincipalLockConfiguration
+To construct, see NOTES section for SERVICEPRINCIPALLOCKCONFIGURATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphServicePrincipalLockConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 

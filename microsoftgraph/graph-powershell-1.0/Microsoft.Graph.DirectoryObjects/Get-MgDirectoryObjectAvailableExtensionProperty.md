@@ -3,14 +3,13 @@ external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDirectoryObjectAvailableExtensionProperty
 
 ## SYNOPSIS
 Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
-The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
+The following entities support extension properties:+ user+ group+ administrativeUnit+ application+ device+ organization
 
 ## SYNTAX
 
@@ -29,7 +28,7 @@ Get-MgDirectoryObjectAvailableExtensionProperty
 
 ## DESCRIPTION
 Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
-The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
+The following entities support extension properties:+ user+ group+ administrativeUnit+ application+ device+ organization
 
 ## EXAMPLES
 ### Example 1: Code snippet

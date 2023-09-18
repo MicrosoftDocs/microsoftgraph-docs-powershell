@@ -124,6 +124,9 @@ Read-only.
 ### [Get-MgBetaCommunicationOnlineMeetingRecordingCount](Get-MgBetaCommunicationOnlineMeetingRecordingCount.md)
 Get the number of the resource
 
+### [Get-MgBetaCommunicationOnlineMeetingRecordingDelta](Get-MgBetaCommunicationOnlineMeetingRecordingDelta.md)
+Invoke function delta
+
 ### [Get-MgBetaCommunicationOnlineMeetingRegistration](Get-MgBetaCommunicationOnlineMeetingRegistration.md)
 Get the externalMeetingRegistration details associated with an onlineMeeting.
 
@@ -150,6 +153,9 @@ Read-only.
 
 ### [Get-MgBetaCommunicationOnlineMeetingTranscriptCount](Get-MgBetaCommunicationOnlineMeetingTranscriptCount.md)
 Get the number of the resource
+
+### [Get-MgBetaCommunicationOnlineMeetingTranscriptDelta](Get-MgBetaCommunicationOnlineMeetingTranscriptDelta.md)
+Invoke function delta
 
 ### [Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent](Get-MgBetaCommunicationOnlineMeetingTranscriptMetadataContent.md)
 The time-aligned metadata of the utterances in the transcript.

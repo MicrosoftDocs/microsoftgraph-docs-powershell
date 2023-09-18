@@ -11,7 +11,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune) For other Microsoft 365 applications (like Azure AD), use unifiedRoleAssignment.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Azure AD), use unifiedRoleAssignment.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaRoleManagementCloudPcRoleAssignment -InputObject <IDeviceManagementEnr
 
 ## DESCRIPTION
 Get the properties and relationships of a unifiedRoleAssignmentMultiple object of an RBAC provider.
-The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune) For other Microsoft 365 applications (like Azure AD), use unifiedRoleAssignment.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Azure AD), use unifiedRoleAssignment.
 
 ## PARAMETERS
 

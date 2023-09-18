@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeSubscription

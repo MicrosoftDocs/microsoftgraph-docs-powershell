@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 
 ## EXAMPLES
 

@@ -24,7 +24,8 @@ New-MgContact [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPh
  [-Manager <IMicrosoftGraphDirectoryObject>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>]
  [-OnPremisesLastSyncDateTime <DateTime>]
  [-OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>] [-OnPremisesSyncEnabled]
- [-Phones <IMicrosoftGraphPhone[]>] [-ProxyAddresses <String[]>] [-Surname <String>]
+ [-Phones <IMicrosoftGraphPhone[]>] [-ProxyAddresses <String[]>]
+ [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>] [-Surname <String>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -395,6 +396,22 @@ Supports $filter (eq, not, ge, le, startsWith, /$count eq 0, /$count ne 0).
 
 ```yaml
 Type: String[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServiceProvisioningErrors
+.
+To construct, see NOTES section for SERVICEPROVISIONINGERRORS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphServiceProvisioningError[]
 Parameter Sets: CreateExpanded
 Aliases:
 

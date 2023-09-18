@@ -15,10 +15,11 @@ Update the navigation property subjects in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaEntitlementManagementSubject -AccessPackageSubjectId <String> [-AdditionalProperties <Hashtable>]
- [-AltSecId <String>] [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]
- [-ConnectedOrganizationId <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
- [-ObjectId <String>] [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>]
- [-SubjectLifecycle <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AltSecId <String>] [-CleanupScheduledDateTime <DateTime>]
+ [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>] [-ConnectedOrganizationId <String>]
+ [-DisplayName <String>] [-Email <String>] [-Id <String>] [-ObjectId <String>]
+ [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>] [-SubjectLifecycle <String>]
+ [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,7 +31,7 @@ Update-MgBetaEntitlementManagementSubject -AccessPackageSubjectId <String>
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-AltSecId <String>]
+ [-AdditionalProperties <Hashtable>] [-AltSecId <String>] [-CleanupScheduledDateTime <DateTime>]
  [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>] [-ConnectedOrganizationId <String>]
  [-DisplayName <String>] [-Email <String>] [-Id <String>] [-ObjectId <String>]
  [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>] [-SubjectLifecycle <String>]
@@ -106,6 +107,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CleanupScheduledDateTime
+.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

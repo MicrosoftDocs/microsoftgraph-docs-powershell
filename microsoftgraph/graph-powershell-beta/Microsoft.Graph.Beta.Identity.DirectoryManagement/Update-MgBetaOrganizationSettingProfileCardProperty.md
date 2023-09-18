@@ -42,7 +42,8 @@ Update-MgBetaOrganizationSettingProfileCardProperty -InputObject <IIdentityDirec
 Update the navigation property profileCardProperties in organization
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaOrganizationSettingProfileCardProperty Cmdlet
+
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -59,8 +60,6 @@ $params = @{
 }
 Update-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaOrganizationSettingProfileCardProperty Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

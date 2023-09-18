@@ -377,6 +377,12 @@ Activate eSIM on the device.
 ### [Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeviceIdentity](Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeviceIdentity.md)
 Unassigns the resource account from an Autopilot device.
 
+### [Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceNextEnrollment](Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceNextEnrollment.md)
+Unblocks next autopilot enrollment.
+
+### [Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeviceIdentityNextEnrollment](Invoke-MgBetaAllowDeviceManagementWindowsAutopilotDeviceIdentityNextEnrollment.md)
+Unblocks next autopilot enrollment.
+
 ### [Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding](Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding.md)
 A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information

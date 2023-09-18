@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of the specified tab in a chat.
-\nThis can be used to configure the content of the tab.
+This can be used to configure the content of the tab.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgChatTab?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Update-MgBetaChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Update the properties of the specified tab in a chat.
-\nThis can be used to configure the content of the tab.
+This can be used to configure the content of the tab.
 
 ## EXAMPLES
 ### Example 1: Update the name of a tab in a chat

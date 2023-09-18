@@ -101,10 +101,10 @@ Invoke action checkMemberObjects
 
 ### [Copy-MgTeam](Copy-MgTeam.md)
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.\nYou can specify which parts of the team to clone: When tabs are cloned, they are put into an unconfigured state \n-- they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen.
-\n(If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.) Cloning is a long-running operation.\nAfter the POST clone returns, you need to GET the operation to see if it's 'running' or 'succeeded' or 'failed'.
-\nYou should continue to GET until the status is not 'running'.
-\nThe recommended delay between GETs is 5 seconds.
+This operation also creates a copy of the corresponding group.You can specify which parts of the team to clone: When tabs are cloned, they are put into an unconfigured state -- they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen.
+(If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.) Cloning is a long-running operation.After the POST clone returns, you need to GET the operation to see if it's 'running' or 'succeeded' or 'failed'.
+You should continue to GET until the status is not 'running'.
+The recommended delay between GETs is 5 seconds.
 
 ### [Get-MgAllGroupTeamChannel](Get-MgAllGroupTeamChannel.md)
 List of channels either hosted in or shared with the team (incoming channels).
@@ -360,9 +360,9 @@ Get the number of the resource
 
 ### [Get-MgGroupTeamPhoto](Get-MgGroupTeamPhoto.md)
 Get the specified profilePhoto or its metadata (profilePhoto properties).
-The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,\n360x360, 432x432, 504x504, and 648x648.
+The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,360x360, 432x432, 504x504, and 648x648.
 Photos can be any dimension if they are stored in Azure Active Directory.
-You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.\nIf the size you request is not available, you can still get a smaller size that the user has uploaded and made available.\nFor example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
+You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
 
 ### [Get-MgGroupTeamPhotoContent](Get-MgGroupTeamPhotoContent.md)
 Get media content for the navigation property photo from groups
@@ -431,7 +431,7 @@ This cannot be changed after tab creation.
 
 ### [Get-MgGroupTeamSchedule](Get-MgGroupTeamSchedule.md)
 Retrieve the properties and relationships of a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\nWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
@@ -655,9 +655,9 @@ Note: Only users and role-enabled groups can be members of directory roles.
 
 ### [Get-MgTeamPhoto](Get-MgTeamPhoto.md)
 Get the specified profilePhoto or its metadata (profilePhoto properties).
-The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,\n360x360, 432x432, 504x504, and 648x648.
+The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,360x360, 432x432, 504x504, and 648x648.
 Photos can be any dimension if they are stored in Azure Active Directory.
-You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.\nIf the size you request is not available, you can still get a smaller size that the user has uploaded and made available.\nFor example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
+You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
 
 ### [Get-MgTeamPhotoContent](Get-MgTeamPhotoContent.md)
 Get media content for the navigation property photo from teams
@@ -732,7 +732,7 @@ This cannot be changed after tab creation.
 
 ### [Get-MgTeamSchedule](Get-MgTeamSchedule.md)
 Retrieve the properties and relationships of a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\nWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
@@ -1017,7 +1017,7 @@ Hide a chat for a user.
 
 ### [Invoke-MgArchiveTeam](Invoke-MgArchiveTeam.md)
 Archive the specified team.
-\nWhen a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.\nMembership changes to the team continue to be allowed.
+When a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.Membership changes to the team continue to be allowed.
 Archiving is an async operation.
 A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
@@ -1042,7 +1042,7 @@ Mark a chat as read for a user.
 Mark a chat as unread for a user.
 
 ### [Invoke-MgShareTeamSchedule](Invoke-MgShareTeamSchedule.md)
-Share a schedule time range with schedule members.\nMake the collections of shift, openshift and timeOff items in the specified time range of the schedule viewable by the specified team members, including employees and managers.\nEach shift, openshift and timeOff instance in a schedule supports a draft version and a shared version of the item.
+Share a schedule time range with schedule members.Make the collections of shift, openshift and timeOff items in the specified time range of the schedule viewable by the specified team members, including employees and managers.Each shift, openshift and timeOff instance in a schedule supports a draft version and a shared version of the item.
 The draft version is viewable by only managers, and the shared version is viewable by employees and managers.
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
@@ -1079,7 +1079,7 @@ Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
 ### [New-MgAppCatalogTeamApp](New-MgAppCatalogTeamApp.md)
-Publish an app to the Microsoft Teams apps catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource will have a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams apps catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource will have a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
@@ -1119,7 +1119,7 @@ This API cannot create a new chat; you must use the list chats method to retriev
 
 ### [New-MgChatTab](New-MgChatTab.md)
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 
 ### [New-MgGroupTeamChannel](New-MgGroupTeamChannel.md)
 Create a new channel in a team, as specified in the request body.
@@ -1147,7 +1147,7 @@ Create new navigation property to sharedWithTeams for groups
 
 ### [New-MgGroupTeamChannelTab](New-MgGroupTeamChannelTab.md)
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 
 ### [New-MgGroupTeamInstalledApp](New-MgGroupTeamInstalledApp.md)
 Install an app to the specified team.
@@ -1181,7 +1181,7 @@ Create new navigation property to sharedWithTeams for groups
 
 ### [New-MgGroupTeamPrimaryChannelTab](New-MgGroupTeamPrimaryChannelTab.md)
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 
 ### [New-MgGroupTeamScheduleOfferShiftRequest](New-MgGroupTeamScheduleOfferShiftRequest.md)
 Create an instance of an offerShiftRequest.
@@ -1252,7 +1252,7 @@ Create new navigation property to sharedWithTeams for teams
 
 ### [New-MgTeamChannelTab](New-MgTeamChannelTab.md)
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 
 ### [New-MgTeamInstalledApp](New-MgTeamInstalledApp.md)
 Install an app to the specified team.
@@ -1292,7 +1292,7 @@ Create new navigation property to sharedWithTeams for teams
 
 ### [New-MgTeamPrimaryChannelTab](New-MgTeamPrimaryChannelTab.md)
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 
 ### [New-MgTeamScheduleOfferShiftRequest](New-MgTeamScheduleOfferShiftRequest.md)
 Create an instance of an offerShiftRequest.
@@ -1360,10 +1360,10 @@ Create new navigation property to sharedWithTeams for teamwork
 
 ### [New-MgTeamworkDeletedTeamChannelTab](New-MgTeamworkDeletedTeamChannelTab.md)
 Adds (pins) a tab to the specified channel within a team.
-\nThe corresponding app must already be installed in the team.
+The corresponding app must already be installed in the team.
 
 ### [New-MgTeamworkWorkforceIntegration](New-MgTeamworkWorkforceIntegration.md)
-Create a new workforceIntegration object.\nYou can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
+Create a new workforceIntegration object.You can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
 
 ### [New-MgUserChat](New-MgUserChat.md)
 Create new navigation property to chats for users
@@ -1396,11 +1396,11 @@ This API cannot create a new chat; you must use the list chats method to retriev
 
 ### [New-MgUserChatTab](New-MgUserChatTab.md)
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 
 ### [New-MgUserChatTab](New-MgUserChatTab.md)
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 
 ### [New-MgUserTeamworkInstalledApp](New-MgUserTeamworkInstalledApp.md)
 Install an app in the personal scope of the specified user.
@@ -1521,7 +1521,7 @@ Delete an openShift object.
 Delete navigation property openShiftChangeRequests for groups
 
 ### [Remove-MgGroupTeamScheduleSchedulingGroup](Remove-MgGroupTeamScheduleSchedulingGroup.md)
-Mark a schedulingGroup as inactive by setting its isActive property.\nThis method does not remove the schedulingGroup from the schedule.
+Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
 
 ### [Remove-MgGroupTeamScheduleShift](Remove-MgGroupTeamScheduleShift.md)
@@ -1621,7 +1621,7 @@ Delete an openShift object.
 Delete navigation property openShiftChangeRequests for teams
 
 ### [Remove-MgTeamScheduleSchedulingGroup](Remove-MgTeamScheduleSchedulingGroup.md)
-Mark a schedulingGroup as inactive by setting its isActive property.\nThis method does not remove the schedulingGroup from the schedule.
+Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
 
 ### [Remove-MgTeamScheduleShift](Remove-MgTeamScheduleShift.md)
@@ -1735,11 +1735,11 @@ For more details about sending notifications and the requirements for doing so, 
 
 ### [Send-MgTeamActivityNotification](Send-MgTeamActivityNotification.md)
 Send an activity feed notification in the scope of a team.
-For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
+For more details about sending notifications and the requirements for doing so, seesending Teams activity notifications.
 
 ### [Send-MgTeamworkActivityNotificationToRecipient](Send-MgTeamworkActivityNotificationToRecipient.md)
 Send activity feed notifications to multiple users, in bulk.
-For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
+For more details about sending notifications and the requirements for doing so, seesending Teams activity notifications.
 
 ### [Set-MgChatMessageHostedContent](Set-MgChatMessageHostedContent.md)
 Update media content for the navigation property hostedContents in chats
@@ -1841,9 +1841,9 @@ Update media content for the navigation property hostedContents in users
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 To validate the properties of an existing group, use the group: validateProperties function.
-The following policy validations are performed for the display name and mail nickname properties:\n1.
-Validate the prefix and suffix naming policy\n2.
-Validate the custom banned words policy\n3.
+The following policy validations are performed for the display name and mail nickname properties:1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
 Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
@@ -1853,9 +1853,9 @@ To learn more about configuring naming policies, see Configure naming policy.
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 To validate the properties of an existing group, use the group: validateProperties function.
-The following policy validations are performed for the display name and mail nickname properties:\n1.
-Validate the prefix and suffix naming policy\n2.
-Validate the custom banned words policy\n3.
+The following policy validations are performed for the display name and mail nickname properties:1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
 Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
@@ -1889,7 +1889,7 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 Update the navigation property teamsApps in appCatalogs
 
 ### [Update-MgAppCatalogTeamAppDefinition](Update-MgAppCatalogTeamAppDefinition.md)
-Publish an app to the Microsoft Teams apps catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource will have a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams apps catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource will have a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
@@ -1925,7 +1925,7 @@ Update the navigation property pinnedMessages in chats
 
 ### [Update-MgChatTab](Update-MgChatTab.md)
 Update the properties of the specified tab in a chat.
-\nThis can be used to configure the content of the tab.
+This can be used to configure the content of the tab.
 
 ### [Update-MgGroupTeamChannel](Update-MgGroupTeamChannel.md)
 Update the properties of the specified channel.
@@ -1936,7 +1936,7 @@ This operation is allowed only for channels with a membershipType value of priva
 
 ### [Update-MgGroupTeamChannelMessage](Update-MgGroupTeamChannelMessage.md)
 Update a chatMessage object.
-\nWith the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
@@ -1955,7 +1955,7 @@ Update the navigation property hostedContents in groups
 Update the navigation property sharedWithTeams in groups
 
 ### [Update-MgGroupTeamChannelTab](Update-MgGroupTeamChannelTab.md)
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 
 ### [Update-MgGroupTeamMember](Update-MgGroupTeamMember.md)
 Update the role of a conversationMember in a team.
@@ -1978,7 +1978,7 @@ This operation is allowed only for channels with a membershipType value of priva
 
 ### [Update-MgGroupTeamPrimaryChannelMessage](Update-MgGroupTeamPrimaryChannelMessage.md)
 Update a chatMessage object.
-\nWith the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
@@ -1997,7 +1997,7 @@ Update the navigation property hostedContents in groups
 Update the navigation property sharedWithTeams in groups
 
 ### [Update-MgGroupTeamPrimaryChannelTab](Update-MgGroupTeamPrimaryChannelTab.md)
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 
 ### [Update-MgGroupTeamScheduleOfferShiftRequest](Update-MgGroupTeamScheduleOfferShiftRequest.md)
 Update the navigation property offerShiftRequests in groups
@@ -2049,7 +2049,7 @@ This operation is allowed only for channels with a membershipType value of priva
 
 ### [Update-MgTeamChannelMessage](Update-MgTeamChannelMessage.md)
 Update a chatMessage object.
-\nWith the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
@@ -2065,7 +2065,7 @@ Update the navigation property hostedContents in teams
 Update the navigation property sharedWithTeams in teams
 
 ### [Update-MgTeamChannelTab](Update-MgTeamChannelTab.md)
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 
 ### [Update-MgTeamInstalledApp](Update-MgTeamInstalledApp.md)
 Upgrade an app installation within a chat.
@@ -2091,7 +2091,7 @@ This operation is allowed only for channels with a membershipType value of priva
 
 ### [Update-MgTeamPrimaryChannelMessage](Update-MgTeamPrimaryChannelMessage.md)
 Update a chatMessage object.
-\nWith the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
@@ -2107,7 +2107,7 @@ Update the navigation property hostedContents in teams
 Update the navigation property sharedWithTeams in teams
 
 ### [Update-MgTeamPrimaryChannelTab](Update-MgTeamPrimaryChannelTab.md)
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 
 ### [Update-MgTeamScheduleOfferShiftRequest](Update-MgTeamScheduleOfferShiftRequest.md)
 Update the navigation property offerShiftRequests in teams
@@ -2162,7 +2162,7 @@ This operation is allowed only for channels with a membershipType value of priva
 
 ### [Update-MgTeamworkDeletedTeamChannelMessage](Update-MgTeamworkDeletedTeamChannelMessage.md)
 Update a chatMessage object.
-\nWith the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.\nOnly the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
 If one of the participants is using Skype, the operation will fail.
 This method does not support federation.
@@ -2181,7 +2181,7 @@ Update the navigation property hostedContents in teamwork
 Update the navigation property sharedWithTeams in teamwork
 
 ### [Update-MgTeamworkDeletedTeamChannelTab](Update-MgTeamworkDeletedTeamChannelTab.md)
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 
 ### [Update-MgTeamworkTeamAppSetting](Update-MgTeamworkTeamAppSetting.md)
 Update the navigation property teamsAppSettings in teamwork
@@ -2218,7 +2218,7 @@ Update the navigation property pinnedMessages in users
 
 ### [Update-MgUserChatTab](Update-MgUserChatTab.md)
 Update the properties of the specified tab in a chat.
-\nThis can be used to configure the content of the tab.
+This can be used to configure the content of the tab.
 
 ### [Update-MgUserTeamwork](Update-MgUserTeamwork.md)
 Update the navigation property teamwork in users

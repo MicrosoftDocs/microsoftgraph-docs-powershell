@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
-Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource will have a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource will have a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
@@ -52,7 +52,7 @@ Update-MgBetaAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource will have a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource will have a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 

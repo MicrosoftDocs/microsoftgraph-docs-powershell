@@ -69,6 +69,7 @@ Update-MgUser -UserId <String> [-AboutMe <String>] [-AccountEnabled]
  [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>] [-ProxyAddresses <String[]>]
  [-RegisteredDevices <IMicrosoftGraphDirectoryObject[]>] [-Responsibilities <String[]>] [-Schools <String[]>]
  [-ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>] [-SecurityIdentifier <String>]
+ [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>]
  [-Settings <IMicrosoftGraphUserSettings>] [-ShowInAddressList]
  [-SignInActivity <IMicrosoftGraphSignInActivity>] [-SignInSessionsValidFromDateTime <DateTime>]
  [-Skills <String[]>] [-State <String>] [-StreetAddress <String>] [-Surname <String>]
@@ -134,6 +135,7 @@ Update-MgUser -InputObject <IUsersIdentity> [-AboutMe <String>] [-AccountEnabled
  [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>] [-ProxyAddresses <String[]>]
  [-RegisteredDevices <IMicrosoftGraphDirectoryObject[]>] [-Responsibilities <String[]>] [-Schools <String[]>]
  [-ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>] [-SecurityIdentifier <String>]
+ [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>]
  [-Settings <IMicrosoftGraphUserSettings>] [-ShowInAddressList]
  [-SignInActivity <IMicrosoftGraphSignInActivity>] [-SignInSessionsValidFromDateTime <DateTime>]
  [-Skills <String[]>] [-State <String>] [-StreetAddress <String>] [-Surname <String>]
@@ -2164,6 +2166,22 @@ Supports $select and $filter (eq, not, ge, le, startsWith).
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServiceProvisioningErrors
+.
+To construct, see NOTES section for SERVICEPROVISIONINGERRORS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphServiceProvisioningError[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

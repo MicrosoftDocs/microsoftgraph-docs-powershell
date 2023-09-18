@@ -3,8 +3,6 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessageattachment
 schema: 2.0.0
-ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgUserMailFolderChildFolderMessageAttachment

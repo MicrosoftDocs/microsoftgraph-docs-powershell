@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamPrimaryChannelTab
 
 ## SYNOPSIS
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Update-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 
 ## EXAMPLES
 
