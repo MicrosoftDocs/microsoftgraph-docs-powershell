@@ -431,7 +431,7 @@ Read-only.
 Get the number of the resource
 
 ### [New-MgBetaUser](New-MgBetaUser.md)
-Create a new user.\nThe request body contains the user to create.
+Create a new user.The request body contains the user to create.
 At a minimum, you must specify the required properties for the user.
 You can optionally specify any other writable properties.
 This operation returns by default only a subset of the properties for each user.
@@ -458,9 +458,9 @@ Create new navigation property to notifications for users
 
 ### [New-MgBetaUserOutlookTask](New-MgBetaUserOutlookTask.md)
 Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time \nto be always midnight in the specified time zone.
+The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
 By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
-\nYou can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone \ndifferent than UTC.
+You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
 
 ### [New-MgBetaUserOutlookTaskAttachment](New-MgBetaUserOutlookTaskAttachment.md)
 Use this API to add an attachment to an outlookTask.
@@ -471,7 +471,7 @@ Create a task folder in the default task group (My Tasks) of the user's mailbox.
 
 ### [New-MgBetaUserOutlookTaskFolderTask](New-MgBetaUserOutlookTaskFolderTask.md)
 Create an Outlook task in the specified task folder.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time \nto be always midnight in the specified time zone.
+The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
 
 ### [New-MgBetaUserOutlookTaskFolderTaskAttachment](New-MgBetaUserOutlookTaskFolderTaskAttachment.md)
 Use this API to add an attachment to an outlookTask.
@@ -485,7 +485,7 @@ Create an Outlook task folder under a specified outlookTaskGroup.
 
 ### [New-MgBetaUserOutlookTaskGroupTaskFolderTask](New-MgBetaUserOutlookTaskGroupTaskFolderTask.md)
 Create an Outlook task in the specified task folder.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time \nto be always midnight in the specified time zone.
+The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
 
 ### [New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment](New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment.md)
 Use this API to add an attachment to an outlookTask.

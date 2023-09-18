@@ -28,7 +28,8 @@ New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
  [-ProductKey <String>] [-PurchaseOrderIdentifier <String>]
  [-RemediationState <WindowsAutopilotDeviceRemediationState>]
  [-RemediationStateLastModifiedDateTime <DateTime>] [-ResourceName <String>] [-SerialNumber <String>]
- [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>]
+ [-UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -55,7 +56,8 @@ New-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignedDevice
  [-ProductKey <String>] [-PurchaseOrderIdentifier <String>]
  [-RemediationState <WindowsAutopilotDeviceRemediationState>]
  [-RemediationStateLastModifiedDateTime <DateTime>] [-ResourceName <String>] [-SerialNumber <String>]
- [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>]
+ [-UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -516,6 +518,21 @@ System Family
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserlessEnrollmentStatus
+Userless enrollment block status, indicating whether the next device enrollment will be blocked.
+
+```yaml
+Type: WindowsAutopilotUserlessEnrollmentStatus
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

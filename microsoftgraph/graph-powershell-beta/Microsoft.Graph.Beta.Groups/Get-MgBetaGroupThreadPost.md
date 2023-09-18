@@ -11,7 +11,7 @@ ms.prod: groups
 
 ## SYNOPSIS
 Get the properties and relationships of a post in a specified thread.
-You can specify both the parent \nconversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
 > [!NOTE]
@@ -52,7 +52,7 @@ Get-MgBetaGroupThreadPost -InputObject <IGroupsIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Get the properties and relationships of a post in a specified thread.
-You can specify both the parent \nconversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
 ## EXAMPLES

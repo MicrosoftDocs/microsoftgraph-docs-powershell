@@ -18,8 +18,9 @@ Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile -WindowsFeatureUpdatePr
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>]
  [-CreatedDateTime <DateTime>] [-DeployableContentDisplayName <String>] [-Description <String>]
  [-DisplayName <String>] [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
- [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InstallLatestWindows10OnWindows11IneligibleDevice] [-LastModifiedDateTime <DateTime>]
+ [-RoleScopeTagIds <String[]>] [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -34,8 +35,9 @@ Update-MgBetaDeviceManagementWindowsFeatureUpdateProfile -InputObject <IDeviceMa
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>]
  [-CreatedDateTime <DateTime>] [-DeployableContentDisplayName <String>] [-Description <String>]
  [-DisplayName <String>] [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
- [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InstallLatestWindows10OnWindows11IneligibleDevice] [-LastModifiedDateTime <DateTime>]
+ [-RoleScopeTagIds <String[]>] [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -216,6 +218,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -InstallLatestWindows10OnWindows11IneligibleDevice
+If true, the latest Microsoft Windows 10 update will be installed on devices ineligible for Microsoft Windows 11
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

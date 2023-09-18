@@ -1195,6 +1195,18 @@ List of devices affected by current malware with the malware state on each devic
 ### [Get-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount](Get-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount.md)
 Get the number of the resource
 
+### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfile](Get-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
+A collection of windows quality update profiles
+
+### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
+The list of group assignments of the profile.
+
+### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignmentCount](Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignmentCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfileCount](Get-MgBetaDeviceManagementWindowsQualityUpdateProfileCount.md)
+Get the number of the resource
+
 ### [New-MgBetaAdminEdgeInternetExplorerModeSiteList](New-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
 Create a new browserSiteList object to support Internet Explorer mode.
 
@@ -1695,6 +1707,12 @@ Create new navigation property to windowsMalwareInformation for deviceManagement
 
 ### [New-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState](New-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
 Create new navigation property to deviceMalwareStates for deviceManagement
+
+### [New-MgBetaDeviceManagementWindowsQualityUpdateProfile](New-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
+Create new navigation property to windowsQualityUpdateProfiles for deviceManagement
+
+### [New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
+Create new navigation property to assignments for deviceManagement
 
 ### [Remove-MgBetaAdminEdge](Remove-MgBetaAdminEdge.md)
 Delete navigation property edge for admin
@@ -2281,6 +2299,12 @@ Delete navigation property windowsMalwareInformation for deviceManagement
 ### [Remove-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState](Remove-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
 Delete navigation property deviceMalwareStates for deviceManagement
 
+### [Remove-MgBetaDeviceManagementWindowsQualityUpdateProfile](Remove-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
+Delete navigation property windowsQualityUpdateProfiles for deviceManagement
+
+### [Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
+Delete navigation property assignments for deviceManagement
+
 ### [Update-MgBetaAdminEdge](Update-MgBetaAdminEdge.md)
 Update the navigation property edge in admin
 
@@ -2865,4 +2889,10 @@ Update the navigation property windowsMalwareInformation in deviceManagement
 
 ### [Update-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState](Update-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
 Update the navigation property deviceMalwareStates in deviceManagement
+
+### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfile](Update-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
+Update the navigation property windowsQualityUpdateProfiles in deviceManagement
+
+### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
+Update the navigation property assignments in deviceManagement
 

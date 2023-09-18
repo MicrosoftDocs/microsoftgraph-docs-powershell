@@ -1,6 +1,6 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
-Module Name: Microsoft.Graph.Beta.Users.Functions
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronlinemeetingrecording
 schema: 2.0.0
 ---
@@ -12,16 +12,34 @@ Invoke function getAllRecordings
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 ```
-Get-MgBetaUserOnlineMeetingRecording -UserId <String> [-Count] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgBetaUserOnlineMeetingRecording -OnlineMeetingId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgBetaUserOnlineMeetingRecording -OnlineMeetingId <String> -UserId <String> -CallRecordingId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaUserOnlineMeetingRecording -OnlineMeetingId <String> -UserId <String> -OutFile <String> [-PassThru]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserOnlineMeetingRecording -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+Get-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -30,13 +48,59 @@ Invoke function getAllRecordings
 
 ## PARAMETERS
 
-### -Count
-Include count of items
+### -All
+List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CallRecordingId
+The unique identifier of callRecording
+
+```yaml
+Type: String
+Parameter Sets: Get1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: List, Get1, GetViaIdentity1
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -50,7 +114,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -65,8 +129,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: GetViaIdentity
+Type: ICloudCommunicationsIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -76,12 +140,72 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -OnlineMeetingId
+The unique identifier of onlineMeeting
+
+```yaml
+Type: String
+Parameter Sets: List, Get1, Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OutFile
+Path to write output file to
+
+```yaml
+Type: String
+Parameter Sets: Get, GetViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Get, GetViaIdentity
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List, Get1, GetViaIdentity1
 Aliases: Select
 
 Required: False
@@ -96,7 +220,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -111,7 +235,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -126,7 +250,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -141,7 +265,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: List, Get1, Get
 Aliases:
 
 Required: True
@@ -156,7 +280,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: (All)
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -171,10 +295,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallRecording
+### System.Boolean
 ## NOTES
 
 ALIASES

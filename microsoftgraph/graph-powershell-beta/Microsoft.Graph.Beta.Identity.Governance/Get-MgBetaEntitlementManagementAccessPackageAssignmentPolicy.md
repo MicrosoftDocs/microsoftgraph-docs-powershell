@@ -10,7 +10,7 @@ ms.prod: governance
 # Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 
 ## SYNOPSIS
-In Azure AD entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
+In Azure AD entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
@@ -56,7 +56,7 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-In Azure AD entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
+In Azure AD entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 
 ## EXAMPLES
 ### Example 1: Get all access package policy assignment policies

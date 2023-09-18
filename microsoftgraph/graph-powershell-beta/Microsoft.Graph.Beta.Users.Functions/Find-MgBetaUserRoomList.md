@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
-In this API, each meeting room and room list is represented by an emailAddress instance.\nYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
+In this API, each meeting room and room list is represented by an emailAddress instance.You can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Find-MgBetaUserRoomList -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter
 ## DESCRIPTION
 Get the room lists defined in a tenant, as represented by their emailAddress objects.
 Tenants can organize meeting rooms into room lists.
-In this API, each meeting room and room list is represented by an emailAddress instance.\nYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
+In this API, each meeting room and room list is represented by an emailAddress instance.You can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
 ## EXAMPLES
 ### Example 1: Using the Find-MgBetaUserRoomList Cmdlet

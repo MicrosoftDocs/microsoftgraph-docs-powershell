@@ -9,8 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Use this API to add an attachment to a message.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
-You can add an attachment to an existing message by posting to its attachments collection, or to a new\nmessage that is being drafted, or created and sent on the fly.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+You can add an attachment to an existing message by posting to its attachments collection, or to a newmessage that is being drafted, or created and sent on the fly.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessageAttachment?view=graph-powershell-1.0)
@@ -45,8 +45,8 @@ New-MgBetaUserMailFolderMessageAttachment -InputObject <IMailIdentity>
 
 ## DESCRIPTION
 Use this API to add an attachment to a message.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
-You can add an attachment to an existing message by posting to its attachments collection, or to a new\nmessage that is being drafted, or created and sent on the fly.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+You can add an attachment to an existing message by posting to its attachments collection, or to a newmessage that is being drafted, or created and sent on the fly.
 
 ## EXAMPLES
 

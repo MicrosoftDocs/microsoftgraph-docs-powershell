@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobject
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserCreatedObject
 
 ## SYNOPSIS
-Directory objects that were created by the user.
+Directory objects that the user created.
 Read-only.
 Nullable.
 
@@ -38,7 +37,7 @@ Get-MgUserCreatedObject -InputObject <IUsersIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Directory objects that were created by the user.
+Directory objects that the user created.
 Read-only.
 Nullable.
 

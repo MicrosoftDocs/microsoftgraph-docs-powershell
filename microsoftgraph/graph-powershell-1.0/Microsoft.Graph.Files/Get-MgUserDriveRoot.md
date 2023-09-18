@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveroot
 schema: 2.0.0
-ms.service: sharepoint
 ---
 
 # Get-MgUserDriveRoot
 
 ## SYNOPSIS
-Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
 > [!NOTE]
@@ -30,7 +29,7 @@ Get-MgUserDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
 ## PARAMETERS
