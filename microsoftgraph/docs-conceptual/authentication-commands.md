@@ -100,6 +100,9 @@ $ClientSecretCredential = Get-Credential -Credential "Client_Id"
 Connect-MgGraph -TenantId "Tenant_Id" -ClientSecretCredential $ClientSecretCredential
 ```
 
+>[!NOTE]
+>It's recommended to use PowerShell 7 and above when using client secret credentials.
+
 #### Using managed identity
 
 A common challenge when writing automation scripts is the management of secrets, credentials, certificates, and keys used to secure communication between services. Eliminate the need to manage credentials by allowing the module to obtain access tokens for Azure resources that are protected by Azure AD. The identity is managed by the Azure platform and does not require you to provision or rotate any secrets.
