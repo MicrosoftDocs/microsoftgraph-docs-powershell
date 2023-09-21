@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna
 schema: 2.0.0
@@ -20,14 +20,20 @@ Update-MgBetaSearchQna -QnaId <String> [-AdditionalProperties <Hashtable>]
  [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Platforms <DevicePlatformType[]>] [-State <String>]
- [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+ [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSearchQna -QnaId <String> -BodyParameter <IMicrosoftGraphSearchQna> [-WhatIf] [-Confirm]
+Update-MgBetaSearchQna -QnaId <String> -BodyParameter <IMicrosoftGraphSearchQna> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGraphSearchQna> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,18 +44,28 @@ Update-MgBetaSearchQna -InputObject <ISearchIdentity> [-AdditionalProperties <Ha
  [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Platforms <DevicePlatformType[]>] [-State <String>]
- [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+ [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGraphSearchQna> [-WhatIf]
- [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a qna object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -57,7 +73,7 @@ Update the properties of a qna object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -73,7 +89,7 @@ Timestamp of when the qna will stop to appear as a search result.
 Set as null for always available.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +105,7 @@ Timestamp of when the qna will start to appear as a search result.
 Set as null for always available.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -105,7 +121,7 @@ qna
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchQna
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -120,7 +136,7 @@ Accept wildcard characters: False
 Search answer description shown on search results page.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +151,7 @@ Accept wildcard characters: False
 Search answer name displayed in search results.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +166,7 @@ Accept wildcard characters: False
 List of security groups able to view this qna.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,7 +182,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,8 +198,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -198,7 +214,7 @@ True if this qna was suggested to the admin by a user or was mined and suggested
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +230,7 @@ answerKeyword
 To construct, see NOTES section for KEYWORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchAnswerKeyword
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAnswerKeyword
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -232,7 +248,7 @@ As an example, en-us is English as used in the United States.
 For the list of possible values, see supported language tags.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -248,7 +264,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -264,7 +280,7 @@ Timestamp of when the search answer is created or edited.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,7 +296,7 @@ List of devices and operating systems able to view this qna.
 Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
 
 ```yaml
-Type: DevicePlatformType[]
+Type: Microsoft.Graph.Beta.PowerShell.Support.DevicePlatformType[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -295,8 +311,8 @@ Accept wildcard characters: False
 The unique identifier of qna
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -310,7 +326,7 @@ Accept wildcard characters: False
 answerState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -328,7 +344,7 @@ The date and group settings will apply to all variations.
 To construct, see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchAnswerVariant[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAnswerVariant[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -344,7 +360,7 @@ Search answer URL link.
 When users click this search answer in search results, they will go to this URL.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -359,7 +375,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -375,7 +391,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -392,10 +408,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna
+
 ## NOTES
 
 ALIASES

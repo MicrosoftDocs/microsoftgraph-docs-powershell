@@ -1,18 +1,14 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of a crossTenantAccessPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,17 +21,13 @@ Get-MgBetaPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property 
 Read the properties and relationships of a crossTenantAccessPolicy object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyCrossTenantAccessPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyCrossTenantAccessPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -43,7 +35,7 @@ This example shows how to use the Get-MgBetaPolicyCrossTenantAccessPolicy Cmdlet
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -58,7 +50,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -77,9 +69,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-1.0)
+

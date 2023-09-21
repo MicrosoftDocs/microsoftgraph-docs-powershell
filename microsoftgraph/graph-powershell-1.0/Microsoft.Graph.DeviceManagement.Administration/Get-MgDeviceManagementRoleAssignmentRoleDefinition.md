@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementroleassignmentroledefinition
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Role definition this assignment is part of.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRoleAssignmentRoleDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,13 +27,29 @@ Get-MgDeviceManagementRoleAssignmentRoleDefinition -InputObject <IDeviceManageme
 ## DESCRIPTION
 Role definition this assignment is part of.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -DeviceAndAppManagementRoleAssignmentId
 The unique identifier of deviceAndAppManagementRoleAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -51,7 +64,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -67,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -82,7 +95,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -99,9 +112,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition
+
 ## NOTES
 
 ALIASES
@@ -129,5 +144,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRoleAssignmentRoleDefinition?view=graph-powershell-beta)
 

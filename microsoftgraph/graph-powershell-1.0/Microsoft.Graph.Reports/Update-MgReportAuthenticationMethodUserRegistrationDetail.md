@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgreportauthenticationmethoduserregistrationdetail
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property userRegistrationDetails in reports
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,15 +18,21 @@ Update-MgReportAuthenticationMethodUserRegistrationDetail -UserRegistrationDetai
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsAdmin] [-IsMfaCapable] [-IsMfaRegistered]
  [-IsPasswordlessCapable] [-IsSsprCapable] [-IsSsprEnabled] [-IsSsprRegistered]
  [-IsSystemPreferredAuthenticationMethodEnabled] [-LastUpdatedDateTime <DateTime>]
- [-MethodsRegistered <String[]>] [-SystemPreferredAuthenticationMethods <String[]>] [-UserDisplayName <String>]
- [-UserPreferredMethodForSecondaryAuthentication <String>] [-UserPrincipalName <String>] [-UserType <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MethodsRegistered <String[]>] [-SystemPreferredAuthenticationMethods <String[]>]
+ [-UserDisplayName <String>] [-UserPreferredMethodForSecondaryAuthentication <String>]
+ [-UserPrincipalName <String>] [-UserType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgReportAuthenticationMethodUserRegistrationDetail -UserRegistrationDetailsId <String>
- -BodyParameter <IMicrosoftGraphUserRegistrationDetails> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserRegistrationDetails> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReportsIdentity>
+ -BodyParameter <IMicrosoftGraphUserRegistrationDetails> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,19 +41,29 @@ Update-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReports
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsAdmin] [-IsMfaCapable] [-IsMfaRegistered]
  [-IsPasswordlessCapable] [-IsSsprCapable] [-IsSsprEnabled] [-IsSsprRegistered]
  [-IsSystemPreferredAuthenticationMethodEnabled] [-LastUpdatedDateTime <DateTime>]
- [-MethodsRegistered <String[]>] [-SystemPreferredAuthenticationMethods <String[]>] [-UserDisplayName <String>]
- [-UserPreferredMethodForSecondaryAuthentication <String>] [-UserPrincipalName <String>] [-UserType <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReportsIdentity>
- -BodyParameter <IMicrosoftGraphUserRegistrationDetails> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MethodsRegistered <String[]>] [-SystemPreferredAuthenticationMethods <String[]>]
+ [-UserDisplayName <String>] [-UserPreferredMethodForSecondaryAuthentication <String>]
+ [-UserPrincipalName <String>] [-UserType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userRegistrationDetails in reports
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -58,7 +71,7 @@ Update the navigation property userRegistrationDetails in reports
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +87,7 @@ userRegistrationDetails
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserRegistrationDetails
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -90,7 +103,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,8 +119,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -122,7 +135,7 @@ Indicates whether the user has an admin role in the tenant.
 This value can be used to check the authentication methods that privileged accounts are registered for and capable of.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -139,7 +152,7 @@ The method must be allowed by the authentication methods policy.
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +169,7 @@ The method may not necessarily be allowed by the authentication methods policy.
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +185,7 @@ Indicates whether the user has registered a passwordless strong authentication m
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +201,7 @@ Indicates whether the user has registered the required number of authentication 
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +218,7 @@ The user may not necessarily have registered the required number of authenticati
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +235,7 @@ The user may not necessarily be allowed to perform self-service password reset b
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +252,7 @@ If enabled, the system dynamically determines the most secure authentication met
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +269,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +285,7 @@ Collection of authentication methods registered, such as mobilePhone, email, fid
 Supports $filter (any with eq).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +302,7 @@ Possible values are: push, oath, voiceMobile, voiceAlternateMobile, voiceOffice,
 Supports $filter (any with eq).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -305,7 +318,7 @@ The user display name, such as Adele Vance.
 Supports $filter (eq, startsWith) and $orderBy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -320,7 +333,7 @@ Accept wildcard characters: False
 userDefaultAuthenticationMethod
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -336,7 +349,7 @@ The user principal name, such as AdeleV@contoso.com.
 Supports $filter (eq, startsWith) and $orderBy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -351,8 +364,8 @@ Accept wildcard characters: False
 The unique identifier of userRegistrationDetails
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -366,7 +379,7 @@ Accept wildcard characters: False
 signInUserType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -381,7 +394,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -397,7 +410,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -414,10 +427,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
+
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
+
 ## NOTES
 
 ALIASES
@@ -469,5 +485,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Update-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 

@@ -850,7 +850,7 @@ Delete navigation property organizationSettings for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Delete a cloudPcProvisioningPolicy object.
-You can't delete a policy that's in use.
+You can’t delete a policy that’s in use.
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 Delete navigation property assignments for deviceManagement

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent
 schema: 2.0.0
@@ -16,31 +16,47 @@ Update the navigation property hostedContent in appCatalogs
 ```
 Update-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
  -TeamsAppId <String> [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>]
- [-ContentType <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ContentType <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
- -TeamsAppId <String> -BodyParameter <IMicrosoftGraphTeamworkHostedContent> [-WhatIf] [-Confirm]
+ -TeamsAppId <String> -BodyParameter <IMicrosoftGraphTeamworkHostedContent> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphTeamworkHostedContent> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>] [-ContentType <String>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamworkHostedContent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property hostedContent in appCatalogs
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +64,7 @@ Update the navigation property hostedContent in appCatalogs
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -64,7 +80,7 @@ teamworkHostedContent
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkHostedContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -80,7 +96,7 @@ Input File for ContentBytes (Write only.
 Bytes for the hosted content (such as images).)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +112,7 @@ Write only.
 Content type, such as image/png, image/jpg.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +128,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,8 +144,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,8 +159,8 @@ Accept wildcard characters: False
 The unique identifier of teamsAppDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -158,8 +174,8 @@ Accept wildcard characters: False
 The unique identifier of teamsApp
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -173,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +222,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
+
 ## NOTES
 
 ALIASES

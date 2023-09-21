@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/reset-mgbetacomplianceediscoverycasesettingtodefault
 schema: 2.0.0
@@ -14,27 +14,28 @@ Reset a caseSettings object to the default values.
 
 ### Reset (Default)
 ```
-Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -CaseId <String> [-PassThru] [-WhatIf] [-Confirm]
+Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -CaseId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### ResetViaIdentity
 ```
-Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -InputObject <IComplianceIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -InputObject <IComplianceIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reset a caseSettings object to the default values.
 
 ## EXAMPLES
-### Example 1: Using the Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -CaseId $caseId
 ```
-This example shows how to use the Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -42,7 +43,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of case
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reset
 Aliases:
 
@@ -58,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 Parameter Sets: ResetViaIdentity
 Aliases:
 
@@ -73,7 +74,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -88,7 +89,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -104,7 +105,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -121,9 +122,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -153,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+

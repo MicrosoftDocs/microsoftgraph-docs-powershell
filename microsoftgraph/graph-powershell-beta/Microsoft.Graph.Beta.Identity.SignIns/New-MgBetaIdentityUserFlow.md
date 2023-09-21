@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflow
 schema: 2.0.0
@@ -15,12 +15,12 @@ Create a new userFlow object.
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityUserFlow [-AdditionalProperties <Hashtable>] [-Id <String>] [-UserFlowType <String>]
- [-UserFlowTypeVersion <Single>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserFlowTypeVersion <Single>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityUserFlow -BodyParameter <IMicrosoftGraphIdentityUserFlow> [-WhatIf] [-Confirm]
+New-MgBetaIdentityUserFlow -BodyParameter <IMicrosoftGraphIdentityUserFlow> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -28,7 +28,8 @@ New-MgBetaIdentityUserFlow -BodyParameter <IMicrosoftGraphIdentityUserFlow> [-Wh
 Create a new userFlow object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaIdentityUserFlow Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -38,8 +39,8 @@ $params = @{
 }
 New-MgBetaIdentityUserFlow -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaIdentityUserFlow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -47,7 +48,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -63,7 +64,7 @@ identityUserFlow
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityUserFlow
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlow
 Parameter Sets: Create
 Aliases:
 
@@ -79,7 +80,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -94,7 +95,7 @@ Accept wildcard characters: False
 userFlowType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -109,7 +110,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Single
+Type: System.Single
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +125,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -140,7 +141,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -157,9 +158,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlow
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlow
+
 ## NOTES
 
 ALIASES
@@ -176,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserFlowTypeVersion <Single?>]`: 
 
 ## RELATED LINKS
+

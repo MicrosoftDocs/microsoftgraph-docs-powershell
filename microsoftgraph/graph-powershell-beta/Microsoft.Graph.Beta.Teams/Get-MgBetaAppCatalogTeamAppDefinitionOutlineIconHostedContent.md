@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent
@@ -25,20 +24,36 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitio
  -TeamsAppId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
-```
-Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity> -OutFile <String>
- [-PassThru] [<CommonParameters>]
-```
-
 ### GetViaIdentity
 ```
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
+### GetViaIdentity1
+```
+Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Retrieve the hosted content in an app's icon.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -46,7 +61,7 @@ Retrieve the hosted content in an app's icon.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: Get, GetViaIdentity
 Aliases: Expand
 
@@ -62,8 +77,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -77,7 +92,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
@@ -92,7 +107,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
@@ -107,7 +122,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: Get, GetViaIdentity
 Aliases: Select
 
@@ -122,7 +137,7 @@ Accept wildcard characters: False
 The unique identifier of teamsAppDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -137,7 +152,7 @@ Accept wildcard characters: False
 The unique identifier of teamsApp
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -154,10 +169,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
+
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedaccessresourceroledefinitionrolesetting
 schema: 2.0.0
@@ -28,13 +28,29 @@ Get-MgBetaPrivilegedAccessResourceRoleDefinitionRoleSetting -InputObject <IIdent
 ## DESCRIPTION
 The associated role setting for the role definition.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -49,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of governanceResource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -64,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of governanceRoleDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -80,7 +96,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -95,7 +111,7 @@ Accept wildcard characters: False
 The unique identifier of privilegedAccess
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -110,7 +126,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -127,9 +143,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleSetting
+
 ## NOTES
 
 ALIASES

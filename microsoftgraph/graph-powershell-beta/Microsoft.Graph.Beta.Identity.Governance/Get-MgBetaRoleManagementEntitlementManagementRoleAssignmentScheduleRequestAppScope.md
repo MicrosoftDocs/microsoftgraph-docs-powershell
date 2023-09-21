@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequestappscope
 schema: 2.0.0
@@ -11,9 +11,6 @@ schema: 2.0.0
 Read-only property with details of the app-specific scope when the assignment is scoped to an app.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScope?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,13 +33,29 @@ Read-only property with details of the app-specific scope when the assignment is
 Nullable.
 Supports $expand.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -58,7 +71,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -73,7 +86,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -88,7 +101,7 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleAssignmentScheduleRequest
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -105,9 +118,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppScope
+
 ## NOTES
 
 ALIASES
@@ -216,5 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScope?view=graph-powershell-1.0)
 

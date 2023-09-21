@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwdacsupplementalpolicy
 schema: 2.0.0
@@ -21,18 +21,34 @@ New-MgBetaDeviceAppManagementWdacSupplementalPolicy [-AdditionalProperties <Hash
  [-Description <String>]
  [-DeviceStatuses <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus[]>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
- [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementWdacSupplementalPolicy
- -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to wdacSupplementalPolicies for deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -40,7 +56,7 @@ Create new navigation property to wdacSupplementalPolicies for deviceAppManageme
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +72,7 @@ The associated group assignments for the Windows Defender Application Control Su
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +88,7 @@ windowsDefenderApplicationControlSupplementalPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy
 Parameter Sets: Create
 Aliases:
 
@@ -87,7 +103,7 @@ Accept wildcard characters: False
 Indicates the file name associated with the content of the Windows Defender Application Control Supplemental Policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +118,7 @@ Accept wildcard characters: False
 Input File for Content (Indicates the content of the Windows Defender Application Control Supplemental Policy in byte array format.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +133,7 @@ Accept wildcard characters: False
 Indicates the created date and time when the Windows Defender Application Control Supplemental Policy was uploaded.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +149,7 @@ Contains properties for the deployment summary of a WindowsDefenderApplicationCo
 To construct, see NOTES section for DEPLOYSUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentSummary
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +164,7 @@ Accept wildcard characters: False
 The description of the Windows Defender Application Control Supplemental Policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +180,7 @@ The list of device deployment states for this WindowsDefenderApplicationControl 
 To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +195,7 @@ Accept wildcard characters: False
 The display name of the Windows Defender Application Control Supplemental Policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -195,7 +211,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +226,7 @@ Accept wildcard characters: False
 Indicates the last modified date and time of the Windows Defender Application Control Supplemental Policy.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -225,7 +241,7 @@ Accept wildcard characters: False
 List of Scope Tags for the Windows Defender Application Control Supplemental Policy entity.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -240,7 +256,7 @@ Accept wildcard characters: False
 Indicates the Windows Defender Application Control Supplemental Policy's version.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -255,7 +271,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -271,7 +287,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -288,9 +304,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy
+
 ## NOTES
 
 ALIASES

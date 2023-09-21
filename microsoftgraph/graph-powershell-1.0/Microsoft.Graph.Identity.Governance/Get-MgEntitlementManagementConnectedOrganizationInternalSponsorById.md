@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationinternalsponsorbyid
 schema: 2.0.0
@@ -12,15 +12,12 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorById](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorById?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
 Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById -ConnectedOrganizationId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -28,21 +25,21 @@ Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById -ConnectedOr
 ```
 Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById -ConnectedOrganizationId <String>
  -BodyParameter <IPaths1R7BrcyIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdInternalsponsorsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths1R7BrcyIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdInternalsponsorsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,10 +48,11 @@ Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 $params = @{
 	Ids = @(
@@ -71,11 +69,6 @@ $params = @{
 }
 
 Get-MgDirectoryObjectById -BodyParameter $params
-```
-This example shows how to use the Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -83,7 +76,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -99,7 +92,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1R7BrcyIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdInternalsponsorsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1R7BrcyIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdInternalsponsorsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -114,8 +107,8 @@ Accept wildcard characters: False
 The unique identifier of connectedOrganization
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -129,7 +122,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -145,8 +138,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -160,7 +153,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -175,7 +168,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +184,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,10 +201,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1R7BrcyIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdInternalsponsorsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+
 ## NOTES
 
 ALIASES
@@ -291,4 +287,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorById](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorById?view=graph-powershell-beta)
+

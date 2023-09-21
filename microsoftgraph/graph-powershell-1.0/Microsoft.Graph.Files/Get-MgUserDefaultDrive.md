@@ -1,48 +1,43 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharesite
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdefaultdrive
 schema: 2.0.0
 ---
 
-# Get-MgShareSite
+# Get-MgUserDefaultDrive
 
 ## SYNOPSIS
-Used to access the underlying site
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDefaultDrive?view=graph-powershell-beta)
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgShareSite -SharedDriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgUserDefaultDrive -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgShareSite -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgUserDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Used to access the underlying site
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Files
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserDefaultDrive -UserId $userId
-```
-This example shows how to use the Get-MgUserDefaultDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -50,7 +45,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -66,7 +61,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -81,7 +76,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -92,11 +87,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SharedDriveItemId
-The unique identifier of sharedDriveItem
+### -UserId
+The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -113,9 +108,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive
+
 ## NOTES
 
 ALIASES
@@ -152,4 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDefaultDrive?view=graph-powershell-beta)
+

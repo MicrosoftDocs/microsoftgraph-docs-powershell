@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyassignmentpolicy
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The policy that's associated with a policy assignment.
 Supports $expand and a nested $expand of the rules and effectiveRules relationships for the policy.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicyAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignmentPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,13 +29,29 @@ Get-MgBetaPolicyRoleManagementPolicyAssignmentPolicy -InputObject <IIdentitySign
 The policy that's associated with a policy assignment.
 Supports $expand and a nested $expand of the rules and effectiveRules relationships for the policy.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -54,7 +67,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -69,7 +82,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -84,7 +97,7 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleManagementPolicyAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -101,9 +114,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicy
+
 ## NOTES
 
 ALIASES
@@ -191,5 +206,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyRoleManagementPolicyAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignmentPolicy?view=graph-powershell-1.0)
 

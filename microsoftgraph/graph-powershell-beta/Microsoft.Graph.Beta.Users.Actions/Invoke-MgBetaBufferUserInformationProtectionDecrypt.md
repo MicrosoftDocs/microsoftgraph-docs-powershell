@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabufferuserinformationprotectiondecrypt
 schema: 2.0.0
@@ -16,32 +16,48 @@ Invoke action decryptBuffer
 ```
 Invoke-MgBetaBufferUserInformationProtectionDecrypt -UserId <String> -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
- [-PublishingLicenseInputFile <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PublishingLicenseInputFile <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Buffer
 ```
-Invoke-MgBetaBufferUserInformationProtectionDecrypt -UserId <String> -OutFile <String>
+Invoke-MgBetaBufferUserInformationProtectionDecrypt -UserId <String>
  -Body <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -OutFile <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### BufferViaIdentity
+```
+Invoke-MgBetaBufferUserInformationProtectionDecrypt -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
+ -OutFile <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### BufferViaIdentityExpanded
 ```
 Invoke-MgBetaBufferUserInformationProtectionDecrypt -InputObject <IUsersActionsIdentity> -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
- [-PublishingLicenseInputFile <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### BufferViaIdentity
-```
-Invoke-MgBetaBufferUserInformationProtectionDecrypt -InputObject <IUsersActionsIdentity> -OutFile <String>
- -BodyParameter <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PublishingLicenseInputFile <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action decryptBuffer
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Invoke action decryptBuffer
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
@@ -65,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Buffer
 Aliases:
 
@@ -81,7 +97,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: BufferViaIdentity
 Aliases:
 
@@ -96,7 +112,7 @@ Accept wildcard characters: False
 Input File for EncryptedBuffer (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
@@ -112,8 +128,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: BufferViaIdentityExpanded, BufferViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: BufferViaIdentity, BufferViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -127,7 +143,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -142,7 +158,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -157,7 +173,7 @@ Accept wildcard characters: False
 Input File for PublishingLicense (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
@@ -172,8 +188,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: BufferExpanded, Buffer
+Type: System.String
+Parameter Sets: Buffer, BufferExpanded
 Aliases:
 
 Required: True
@@ -187,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -203,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -220,10 +236,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

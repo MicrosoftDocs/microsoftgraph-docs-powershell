@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicydevicesettingstatesummary
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deviceSettingStateSummaries for deviceManagement
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,13 +18,19 @@ New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary -DeviceCom
  [-AdditionalProperties <Hashtable>] [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>]
  [-ErrorDeviceCount <Int32>] [-Id <String>] [-InstancePath <String>] [-NonCompliantDeviceCount <Int32>]
  [-NotApplicableDeviceCount <Int32>] [-RemediatedDeviceCount <Int32>] [-SettingName <String>]
- [-UnknownDeviceCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UnknownDeviceCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary -DeviceCompliancePolicyId <String>
- -BodyParameter <IMicrosoftGraphSettingStateDeviceSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSettingStateDeviceSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphSettingStateDeviceSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,17 +39,27 @@ New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary -InputObje
  [-AdditionalProperties <Hashtable>] [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>]
  [-ErrorDeviceCount <Int32>] [-Id <String>] [-InstancePath <String>] [-NonCompliantDeviceCount <Int32>]
  [-NotApplicableDeviceCount <Int32>] [-RemediatedDeviceCount <Int32>] [-SettingName <String>]
- [-UnknownDeviceCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphSettingStateDeviceSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UnknownDeviceCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceSettingStateSummaries for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Create new navigation property to deviceSettingStateSummaries for deviceManageme
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ Device Compilance Policy and Configuration for a Setting State summary
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSettingStateDeviceSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSettingStateDeviceSummary
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 Device Compliant count for the setting
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 Device conflict error count for the setting
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +128,8 @@ Accept wildcard characters: False
 The unique identifier of deviceCompliancePolicy
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -130,7 +143,7 @@ Accept wildcard characters: False
 Device error count for the setting
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +159,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +175,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -177,7 +190,7 @@ Accept wildcard characters: False
 Name of the InstancePath for the setting
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +205,7 @@ Accept wildcard characters: False
 Device NonCompliant count for the setting
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +220,7 @@ Accept wildcard characters: False
 Device Not Applicable count for the setting
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +235,7 @@ Accept wildcard characters: False
 Device Compliant count for the setting
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +250,7 @@ Accept wildcard characters: False
 Name of the setting
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -252,7 +265,7 @@ Accept wildcard characters: False
 Device Unkown count for the setting
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -267,7 +280,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -283,7 +296,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -300,10 +313,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSettingStateDeviceSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSettingStateDeviceSummary
+
 ## NOTES
 
 ALIASES
@@ -382,5 +398,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-beta)
 

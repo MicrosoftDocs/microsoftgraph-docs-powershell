@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting
 schema: 2.0.0
@@ -16,17 +16,33 @@ Update the navigation property windowsAutopilotSettings in deviceManagement
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotSetting [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LastManualSyncTriggerDateTime <DateTime>] [-LastSyncDateTime <DateTime>]
- [-SyncStatus <WindowsAutopilotSyncStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SyncStatus <WindowsAutopilotSyncStatus>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotSetting -BodyParameter <IMicrosoftGraphWindowsAutopilotSettings>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property windowsAutopilotSettings in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -34,7 +50,7 @@ Update the navigation property windowsAutopilotSettings in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -50,7 +66,7 @@ The windowsAutopilotSettings resource represents a Windows Autopilot Account to 
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsAutopilotSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotSettings
 Parameter Sets: Update
 Aliases:
 
@@ -66,7 +82,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -81,7 +97,7 @@ Accept wildcard characters: False
 Last data sync date time with DDS service.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -96,7 +112,7 @@ Accept wildcard characters: False
 Last data sync date time with DDS service.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -111,7 +127,7 @@ Accept wildcard characters: False
 windowsAutopilotSyncStatus
 
 ```yaml
-Type: WindowsAutopilotSyncStatus
+Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsAutopilotSyncStatus
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -126,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,9 +175,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotSettings
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotSettings
+
 ## NOTES
 
 ALIASES

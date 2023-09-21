@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticremoteconnection
 schema: 2.0.0
@@ -19,14 +19,21 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
  [-CloudPcFailurePercentage <Double>] [-CloudPcRoundTripTime <Double>] [-CloudPcSignInTime <Double>]
  [-CoreBootTime <Double>] [-CoreSignInTime <Double>] [-DeviceCount <Int32>] [-DeviceId <String>]
  [-DeviceName <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-RemoteSignInTime <Double>]
- [-UserPrincipalName <String>] [-VirtualNetwork <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-VirtualNetwork <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
  -UserExperienceAnalyticsRemoteConnectionId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -36,19 +43,28 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection -InputObject
  [-AdditionalProperties <Hashtable>] [-CloudPcFailurePercentage <Double>] [-CloudPcRoundTripTime <Double>]
  [-CloudPcSignInTime <Double>] [-CoreBootTime <Double>] [-CoreSignInTime <Double>] [-DeviceCount <Int32>]
  [-DeviceId <String>] [-DeviceName <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
- [-RemoteSignInTime <Double>] [-UserPrincipalName <String>] [-VirtualNetwork <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-WhatIf] [-Confirm]
+ [-RemoteSignInTime <Double>] [-UserPrincipalName <String>] [-VirtualNetwork <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsRemoteConnection in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -56,7 +72,7 @@ Update the navigation property userExperienceAnalyticsRemoteConnection in device
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +88,7 @@ The user experience analyte remote connection entity.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -88,7 +104,7 @@ The sign in failure percentage of Cloud PC Device.
 Valid values 0 to 100
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +120,7 @@ The round tip time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,7 +136,7 @@ The sign in time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +152,7 @@ The core boot time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +168,7 @@ The core sign in time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +184,7 @@ The count of remote connection.
 Valid values 0 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -183,7 +199,7 @@ Accept wildcard characters: False
 The id of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +214,7 @@ Accept wildcard characters: False
 The name of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +230,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -230,8 +246,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -245,7 +261,7 @@ Accept wildcard characters: False
 The user experience analytics manufacturer.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -260,7 +276,7 @@ Accept wildcard characters: False
 The user experience analytics device model.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -276,7 +292,7 @@ The remote sign in time of Cloud PC Device.
 Valid values 0 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -291,8 +307,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsRemoteConnection
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -306,7 +322,7 @@ Accept wildcard characters: False
 The user experience analytics userPrincipalName.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -321,7 +337,7 @@ Accept wildcard characters: False
 The user experience analytics virtual network.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -336,7 +352,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -352,7 +368,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -369,10 +385,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
+
 ## NOTES
 
 ALIASES
@@ -539,8 +558,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

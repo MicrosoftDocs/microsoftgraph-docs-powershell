@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostcookie
 schema: 2.0.0
@@ -10,26 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to hostCookies for security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgSecurityThreatIntelligenceHostCookie [-AdditionalProperties <Hashtable>] [-Domain <String>]
  [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-Name <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastSeenDateTime <DateTime>] [-Name <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityThreatIntelligenceHostCookie -BodyParameter <IMicrosoftGraphSecurityHostCookie> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgSecurityThreatIntelligenceHostCookie -BodyParameter <IMicrosoftGraphSecurityHostCookie> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to hostCookies for security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Create new navigation property to hostCookies for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ hostCookie
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostCookie
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostCookie
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +81,7 @@ Accept wildcard characters: False
 The URI for which the cookie is valid.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +98,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +114,7 @@ host
 To construct, see NOTES section for HOST1 properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHost
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHost
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +130,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +147,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +162,7 @@ Accept wildcard characters: False
 The name of the cookie, for example, JSESSIONID or SEARCH_NAMESITE.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +177,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -180,7 +193,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -197,9 +210,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostCookie
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostCookie
+
 ## NOTES
 
 ALIASES
@@ -309,8 +324,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: The identification value for the hostTracker.
 
 ## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
-
-## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
 

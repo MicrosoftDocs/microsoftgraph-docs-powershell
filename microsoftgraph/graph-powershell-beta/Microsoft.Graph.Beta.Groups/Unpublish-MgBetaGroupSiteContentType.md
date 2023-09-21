@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupsitecontenttype
 schema: 2.0.0
@@ -10,25 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Unpublish a [contentType][] from a content type hub site.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Unpublish-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Groups/Unpublish-MgGroupSiteContentType?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Unpublish (Default)
 ```
 Unpublish-MgBetaGroupSiteContentType -ContentTypeId <String> -GroupId <String> -SiteId <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UnpublishViaIdentity
 ```
-Unpublish-MgBetaGroupSiteContentType -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Unpublish-MgBetaGroupSiteContentType -InputObject <IGroupsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Unpublish a [contentType][] from a content type hub site.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +49,7 @@ Unpublish a [contentType][] from a content type hub site.
 The unique identifier of contentType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unpublish
 Aliases:
 
@@ -51,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unpublish
 Aliases:
 
@@ -67,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
 Parameter Sets: UnpublishViaIdentity
 Aliases:
 
@@ -82,7 +95,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unpublish
 Aliases:
 
@@ -112,7 +125,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +141,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,9 +158,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -201,5 +216,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Unpublish-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Groups/Unpublish-MgGroupSiteContentType?view=graph-powershell-1.0)
 

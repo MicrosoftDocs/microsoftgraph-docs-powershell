@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinition
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new accessReviewScheduleDefinition object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,24 +23,25 @@ New-MgBetaIdentityGovernanceAccessReviewDefinition
  [-InstanceEnumerationScope <Hashtable>] [-Instances <IMicrosoftGraphAccessReviewInstance[]>]
  [-LastModifiedDateTime <DateTime>] [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]
  [-Scope <Hashtable>] [-Settings <IMicrosoftGraphAccessReviewScheduleSettings>]
- [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-WhatIf] [-Confirm]
+ [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityGovernanceAccessReviewDefinition
- -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new accessReviewScheduleDefinition object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 $params = @{
 	displayName = "Test create"
@@ -82,15 +80,11 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 $params = @{
 	displayName = "Review employee access to LinkedIn"
@@ -156,15 +150,11 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 $params = @{
 	displayName = "Group Multi-stage Access Review"
@@ -230,15 +220,11 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
-
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 $params = @{
 	displayName = "Test create"
@@ -281,11 +267,6 @@ $params = @{
 }
 
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -294,7 +275,7 @@ Defines the list of additional users or group members to be notified of the acce
 To construct, see NOTES section for ADDITIONALNOTIFICATIONRECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewNotificationRecipientItem[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewNotificationRecipientItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -309,7 +290,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -325,7 +306,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BACKUPREVIEWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewReviewerScope[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewReviewerScope[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -341,7 +322,7 @@ accessReviewScheduleDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewScheduleDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -357,7 +338,7 @@ userIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -374,7 +355,7 @@ Supports $select.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -390,7 +371,7 @@ Description provided by review creators to provide more context of the review to
 Supports $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -408,7 +389,7 @@ Email notifications support up to 256 characters.
 Supports $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -425,7 +406,7 @@ Supports $select and $orderBy.
 Required on create.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -447,7 +428,7 @@ NOTE: The value of this property will be ignored if fallback reviewers are assig
 To construct, see NOTES section for FALLBACKREVIEWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewReviewerScope[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewReviewerScope[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -463,7 +444,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -478,7 +459,7 @@ Accept wildcard characters: False
 accessReviewScope
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -495,7 +476,7 @@ Access reviews that do not recur will only have one instance; otherwise, there i
 To construct, see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewInstance[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewInstance[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -512,7 +493,7 @@ Supports $select.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -533,7 +514,7 @@ NOTE: The value of this property will be ignored if reviewers are assigned throu
 To construct, see NOTES section for REVIEWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewReviewerScope[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewReviewerScope[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -548,7 +529,7 @@ Accept wildcard characters: False
 accessReviewScope
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -564,7 +545,7 @@ accessReviewScheduleSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewScheduleSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -584,7 +565,7 @@ When this property is defined, its settings are used instead of the correspondin
 To construct, see NOTES section for STAGESETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewStageSettings[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewStageSettings[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -602,7 +583,7 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -617,7 +598,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -633,7 +614,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -650,9 +631,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
+
 ## NOTES
 
 ALIASES
@@ -991,7 +974,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StageId <String>]`: Unique identifier of the accessReviewStageSettings. The stageId will be used in dependsOn property to indicate the stage relationship. Required.
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
-## RELATED LINKS
-[New-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)

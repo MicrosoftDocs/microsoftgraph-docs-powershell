@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtask
 schema: 2.0.0
@@ -18,17 +18,33 @@ New-MgBetaDeviceAppManagementTask [-AdditionalProperties <Hashtable>] [-Assigned
  [-Category <DeviceAppManagementTaskCategory>] [-CreatedDateTime <DateTime>] [-Creator <String>]
  [-CreatorNotes <String>] [-Description <String>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Id <String>] [-Priority <DeviceAppManagementTaskPriority>] [-Status <DeviceAppManagementTaskStatus>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceAppManagementTask -BodyParameter <IMicrosoftGraphDeviceAppManagementTask> [-WhatIf] [-Confirm]
+New-MgBetaDeviceAppManagementTask -BodyParameter <IMicrosoftGraphDeviceAppManagementTask> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceAppManagementTasks for deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -36,7 +52,7 @@ Create new navigation property to deviceAppManagementTasks for deviceAppManageme
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +67,7 @@ Accept wildcard characters: False
 The name or email of the admin this task is assigned to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ A device app management task.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAppManagementTask
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagementTask
 Parameter Sets: Create
 Aliases:
 
@@ -82,7 +98,7 @@ Accept wildcard characters: False
 Device app management task category.
 
 ```yaml
-Type: DeviceAppManagementTaskCategory
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceAppManagementTaskCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +113,7 @@ Accept wildcard characters: False
 The created date.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +128,7 @@ Accept wildcard characters: False
 The email address of the creator.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +143,7 @@ Accept wildcard characters: False
 Notes from the creator.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +158,7 @@ Accept wildcard characters: False
 The description.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +173,7 @@ Accept wildcard characters: False
 The name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,7 +188,7 @@ Accept wildcard characters: False
 The due date.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +204,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +219,7 @@ Accept wildcard characters: False
 Device app management task priority.
 
 ```yaml
-Type: DeviceAppManagementTaskPriority
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceAppManagementTaskPriority
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +234,7 @@ Accept wildcard characters: False
 Device app management task status.
 
 ```yaml
-Type: DeviceAppManagementTaskStatus
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceAppManagementTaskStatus
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -233,7 +249,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -249,7 +265,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -266,9 +282,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagementTask
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagementTask
+
 ## NOTES
 
 ALIASES

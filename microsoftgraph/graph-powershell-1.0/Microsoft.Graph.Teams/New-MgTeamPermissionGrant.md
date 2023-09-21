@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteampermissiongrant
 schema: 2.0.0
@@ -10,40 +10,53 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to permissionGrants for teams
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPermissionGrant?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgTeamPermissionGrant -TeamId <String> [-AdditionalProperties <Hashtable>] [-ClientAppId <String>]
  [-ClientId <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-Permission <String>]
- [-PermissionType <String>] [-ResourceAppId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PermissionType <String>] [-ResourceAppId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgTeamPermissionGrant -TeamId <String> -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgTeamPermissionGrant -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgTeamPermissionGrant -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-ClientAppId <String>] [-ClientId <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
- [-Permission <String>] [-PermissionType <String>] [-ResourceAppId <String>] [-WhatIf] [-Confirm]
+ [-Permission <String>] [-PermissionType <String>] [-ResourceAppId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgTeamPermissionGrant -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to permissionGrants for teams
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +64,7 @@ Create new navigation property to permissionGrants for teams
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +80,7 @@ resourceSpecificPermissionGrant
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceSpecificPermissionGrant
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -83,7 +96,7 @@ ID of the service principal of the Azure AD app that has been granted access.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +112,7 @@ ID of the Azure AD app that has been granted access.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +128,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +144,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,8 +160,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -163,7 +176,7 @@ The name of the resource-specific permission.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -180,7 +193,7 @@ Possible values are: Application, Delegated.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +209,7 @@ ID of the Azure AD app that is hosting the resource.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -211,8 +224,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -226,7 +239,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -242,7 +255,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -259,10 +272,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
+
 ## NOTES
 
 ALIASES
@@ -317,5 +333,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPermissionGrant?view=graph-powershell-beta)
 

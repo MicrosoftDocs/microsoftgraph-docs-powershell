@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingalternativerecording
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgBetaUserOnlineMeetingAlternativeRecording
@@ -30,6 +29,22 @@ Get-MgBetaUserOnlineMeetingAlternativeRecording -InputObject <ICloudCommunicatio
 The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -InputObject
@@ -37,7 +52,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -52,7 +67,7 @@ Accept wildcard characters: False
 The unique identifier of onlineMeeting
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -67,7 +82,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -82,7 +97,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +112,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -114,9 +129,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

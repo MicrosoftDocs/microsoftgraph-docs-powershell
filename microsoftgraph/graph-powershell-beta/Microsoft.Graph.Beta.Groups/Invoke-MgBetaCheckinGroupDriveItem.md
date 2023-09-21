@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckingroupdriveitem
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaCheckinGroupDriveItem
@@ -11,57 +10,50 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCheckinGroupDriveItem?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CheckinExpanded (Default)
 ```
 Invoke-MgBetaCheckinGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
- [-AdditionalProperties <Hashtable>] [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Checkin
 ```
 Invoke-MgBetaCheckinGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
  -Body <IPaths18Yllh1GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CheckinViaIdentityExpanded
-```
-Invoke-MgBetaCheckinGroupDriveItem -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CheckinViaIdentity
 ```
 Invoke-MgBetaCheckinGroupDriveItem -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths18Yllh1GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CheckinViaIdentityExpanded
+```
+Invoke-MgBetaCheckinGroupDriveItem -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 $params = @{
 	Comment = "Updating the latest guidelines"
 }
 
 Invoke-MgBetaCheckinDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaCheckinGroupDriveItem Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -69,7 +61,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
@@ -85,7 +77,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPaths18Yllh1GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths18Yllh1GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Checkin
 Aliases:
 
@@ -101,7 +93,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths18Yllh1GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths18Yllh1GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: CheckinViaIdentity
 Aliases:
 
@@ -116,7 +108,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
@@ -131,7 +123,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
@@ -146,8 +138,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: CheckinExpanded, Checkin
+Type: System.String
+Parameter Sets: Checkin, CheckinExpanded
 Aliases:
 
 Required: True
@@ -161,8 +153,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: CheckinExpanded, Checkin
+Type: System.String
+Parameter Sets: Checkin, CheckinExpanded
 Aliases:
 
 Required: True
@@ -176,8 +168,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CheckinExpanded, Checkin
+Type: System.String
+Parameter Sets: Checkin, CheckinExpanded
 Aliases:
 
 Required: True
@@ -192,8 +184,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CheckinViaIdentityExpanded, CheckinViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CheckinViaIdentity, CheckinViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -207,7 +199,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -222,7 +214,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -238,7 +230,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -255,10 +247,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths18Yllh1GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -322,4 +317,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgCheckinGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCheckinGroupDriveItem?view=graph-powershell-1.0)
+

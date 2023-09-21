@@ -18,7 +18,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgBetaShareListContentTypeCopy](Add-MgBetaShareListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -27,7 +27,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Copy-MgBetaDriveItem](Copy-MgBetaDriveItem.md)
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
@@ -96,7 +96,7 @@ The list of recent activities that took place on this item.
 Invoke function getActivitiesByInterval
 
 ### [Get-MgBetaDriveItemAnalytic](Get-MgBetaDriveItemAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgBetaDriveItemAnalyticItemActivityStat](Get-MgBetaDriveItemAnalyticItemActivityStat.md)
 Get itemActivityStats from drives
@@ -214,7 +214,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaDriveItemPermission](Get-MgBetaDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgBetaDriveItemPermissionCount](Get-MgBetaDriveItemPermissionCount.md)
 Get the number of the resource
@@ -392,7 +392,7 @@ The list of recent activities that took place on this item.
 Invoke function getActivitiesByInterval
 
 ### [Get-MgBetaDriveRootAnalytic](Get-MgBetaDriveRootAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgBetaDriveRootAnalyticItemActivityStat](Get-MgBetaDriveRootAnalyticItemActivityStat.md)
 Get itemActivityStats from drives
@@ -507,7 +507,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaDriveRootPermission](Get-MgBetaDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgBetaDriveRootPermissionCount](Get-MgBetaDriveRootPermissionCount.md)
 Get the number of the resource
@@ -611,7 +611,7 @@ Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 The list of recent activities that took place on this item.
 
 ### [Get-MgBetaGroupDriveItemAnalytic](Get-MgBetaGroupDriveItemAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgBetaGroupDriveItemAnalyticItemActivityStat](Get-MgBetaGroupDriveItemAnalyticItemActivityStat.md)
 Get itemActivityStats from groups
@@ -723,7 +723,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaGroupDriveItemPermission](Get-MgBetaGroupDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgBetaGroupDriveItemPermissionCount](Get-MgBetaGroupDriveItemPermissionCount.md)
 Get the number of the resource
@@ -886,7 +886,7 @@ Retrieve the metadata for a driveItem in a drive by file system path or ID.
 The list of recent activities that took place on this item.
 
 ### [Get-MgBetaGroupDriveRootAnalytic](Get-MgBetaGroupDriveRootAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgBetaGroupDriveRootAnalyticItemActivityStat](Get-MgBetaGroupDriveRootAnalyticItemActivityStat.md)
 Get itemActivityStats from groups
@@ -995,7 +995,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaGroupDriveRootPermission](Get-MgBetaGroupDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgBetaGroupDriveRootPermissionCount](Get-MgBetaGroupDriveRootPermissionCount.md)
 Get the number of the resource
@@ -1234,8 +1234,9 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 ### [Get-MgBetaShareSite](Get-MgBetaShareSite.md)
 Used to access the underlying site
 
-### [Get-MgBetaShareSite](Get-MgBetaShareSite.md)
-Used to access the underlying site
+### [Get-MgBetaUserDefaultDrive](Get-MgBetaUserDefaultDrive.md)
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
 ### [Get-MgBetaUserDrive](Get-MgBetaUserDrive.md)
 A collection of drives available for this user.
@@ -1291,7 +1292,7 @@ Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 The list of recent activities that took place on this item.
 
 ### [Get-MgBetaUserDriveItemAnalytic](Get-MgBetaUserDriveItemAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgBetaUserDriveItemAnalyticItemActivityStat](Get-MgBetaUserDriveItemAnalyticItemActivityStat.md)
 Get itemActivityStats from users
@@ -1403,7 +1404,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaUserDriveItemPermission](Get-MgBetaUserDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgBetaUserDriveItemPermissionCount](Get-MgBetaUserDriveItemPermissionCount.md)
 Get the number of the resource
@@ -1566,7 +1567,7 @@ Retrieve the metadata for a driveItem in a drive by file system path or ID.
 The list of recent activities that took place on this item.
 
 ### [Get-MgBetaUserDriveRootAnalytic](Get-MgBetaUserDriveRootAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgBetaUserDriveRootAnalyticItemActivityStat](Get-MgBetaUserDriveRootAnalyticItemActivityStat.md)
 Get itemActivityStats from users
@@ -1675,7 +1676,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaUserDriveRootPermission](Get-MgBetaUserDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ### [Get-MgBetaUserDriveRootPermissionCount](Get-MgBetaUserDriveRootPermissionCount.md)
 Get the number of the resource
@@ -1758,10 +1759,10 @@ Follow a driveItem.
 Invoke function sharedWithMe
 
 ### [Invoke-MgBetaInviteDriveItem](Invoke-MgBetaInviteDriveItem.md)
-Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a DriveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ### [Invoke-MgBetaInviteDriveRoot](Invoke-MgBetaInviteDriveRoot.md)
-Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a DriveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ### [Invoke-MgBetaPreviewDriveItem](Invoke-MgBetaPreviewDriveItem.md)
 Invoke action preview
@@ -1813,7 +1814,7 @@ Create new navigation property to children for drives
 
 ### [New-MgBetaDriveItemLink](New-MgBetaDriveItemLink.md)
 You can use createLink action to share a driveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ### [New-MgBetaDriveItemListItemDocumentSetVersion](New-MgBetaDriveItemListItemDocumentSetVersion.md)
@@ -1821,7 +1822,7 @@ Create a new version of a document set item in a list.
 
 ### [New-MgBetaDriveItemListItemLink](New-MgBetaDriveItemListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaDriveItemListItemVersion](New-MgBetaDriveItemListItemVersion.md)
@@ -1862,7 +1863,7 @@ Create a new version of a document set item in a list.
 
 ### [New-MgBetaDriveListItemLink](New-MgBetaDriveListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaDriveListItemVersion](New-MgBetaDriveListItemVersion.md)
@@ -1882,7 +1883,7 @@ Create new navigation property to children for drives
 
 ### [New-MgBetaDriveRootLink](New-MgBetaDriveRootLink.md)
 You can use createLink action to share a driveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ### [New-MgBetaDriveRootListItemDocumentSetVersion](New-MgBetaDriveRootListItemDocumentSetVersion.md)
@@ -1890,7 +1891,7 @@ Create a new version of a document set item in a list.
 
 ### [New-MgBetaDriveRootListItemLink](New-MgBetaDriveRootListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaDriveRootListItemVersion](New-MgBetaDriveRootListItemVersion.md)
@@ -1911,8 +1912,8 @@ Invoke action createUploadSession
 ### [New-MgBetaDriveRootVersion](New-MgBetaDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgBetaDriveRootVersion](New-MgBetaDriveRootVersion.md)
-Create new navigation property to versions for drives
+### [New-MgBetaGroupDrive](New-MgBetaGroupDrive.md)
+Create new navigation property to drives for groups
 
 ### [New-MgBetaGroupDriveBundle](New-MgBetaGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -2025,8 +2026,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgBetaShareSharedDriveItemSharedDriveItem](New-MgBetaShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgBetaShareSharedDriveItemSharedDriveItem](New-MgBetaShareSharedDriveItemSharedDriveItem.md)
-Add new entity to shares
+### [New-MgBetaUserDrive](New-MgBetaUserDrive.md)
+Create new navigation property to drives for users
 
 ### [New-MgBetaUserDriveBundle](New-MgBetaUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -2115,11 +2116,11 @@ Publishes a [contentType][] present in a content type hub site.
 ### [Publish-MgBetaShareListContentType](Publish-MgBetaShareListContentType.md)
 Publishes a [contentType][] present in a content type hub site.
 
-### [Publish-MgBetaShareListContentType](Publish-MgBetaShareListContentType.md)
-Publishes a [contentType][] present in a content type hub site.
+### [Remove-MgBetaDrive](Remove-MgBetaDrive.md)
+Delete entity from drives
 
 ### [Remove-MgBetaDriveItem](Remove-MgBetaDriveItem.md)
-Delete a DriveItem by using its ID or path.Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 
 ### [Remove-MgBetaDriveItemAnalytic](Remove-MgBetaDriveItemAnalytic.md)
 Delete navigation property analytics for drives
@@ -2153,7 +2154,7 @@ Invoke action permanentDelete
 
 ### [Remove-MgBetaDriveItemPermission](Remove-MgBetaDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgBetaDriveItemRetentionLabel](Remove-MgBetaDriveItemRetentionLabel.md)
 Delete navigation property retentionLabel for drives
@@ -2241,7 +2242,7 @@ Invoke action permanentDelete
 
 ### [Remove-MgBetaDriveRootPermission](Remove-MgBetaDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgBetaDriveRootRetentionLabel](Remove-MgBetaDriveRootRetentionLabel.md)
 Delete navigation property retentionLabel for drives
@@ -2259,7 +2260,7 @@ Delete navigation property versions for drives
 Delete navigation property drives for groups
 
 ### [Remove-MgBetaGroupDriveItem](Remove-MgBetaGroupDriveItem.md)
-Delete a DriveItem by using its ID or path.Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 
 ### [Remove-MgBetaGroupDriveItemAnalytic](Remove-MgBetaGroupDriveItemAnalytic.md)
 Delete navigation property analytics for groups
@@ -2290,7 +2291,7 @@ Delete navigation property fields for groups
 
 ### [Remove-MgBetaGroupDriveItemPermission](Remove-MgBetaGroupDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgBetaGroupDriveItemRetentionLabel](Remove-MgBetaGroupDriveItemRetentionLabel.md)
 Delete navigation property retentionLabel for groups
@@ -2375,7 +2376,7 @@ Delete navigation property fields for groups
 
 ### [Remove-MgBetaGroupDriveRootPermission](Remove-MgBetaGroupDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgBetaGroupDriveRootRetentionLabel](Remove-MgBetaGroupDriveRootRetentionLabel.md)
 Delete navigation property retentionLabel for groups
@@ -2438,7 +2439,7 @@ Delete entity from shares
 Delete navigation property drives for users
 
 ### [Remove-MgBetaUserDriveItem](Remove-MgBetaUserDriveItem.md)
-Delete a DriveItem by using its ID or path.Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 
 ### [Remove-MgBetaUserDriveItemAnalytic](Remove-MgBetaUserDriveItemAnalytic.md)
 Delete navigation property analytics for users
@@ -2469,7 +2470,7 @@ Delete navigation property fields for users
 
 ### [Remove-MgBetaUserDriveItemPermission](Remove-MgBetaUserDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgBetaUserDriveItemRetentionLabel](Remove-MgBetaUserDriveItemRetentionLabel.md)
 Delete navigation property retentionLabel for users
@@ -2554,7 +2555,7 @@ Delete navigation property fields for users
 
 ### [Remove-MgBetaUserDriveRootPermission](Remove-MgBetaUserDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
 
 ### [Remove-MgBetaUserDriveRootRetentionLabel](Remove-MgBetaUserDriveRootRetentionLabel.md)
 Delete navigation property retentionLabel for users
@@ -2768,15 +2769,15 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgBetaShareListContentType](Unpublish-MgBetaShareListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
-### [Unpublish-MgBetaShareListContentType](Unpublish-MgBetaShareListContentType.md)
-Unpublish a [contentType][] from a content type hub site.
+### [Update-MgBetaDrive](Update-MgBetaDrive.md)
+Update entity in drives
 
 ### [Update-MgBetaDriveCreatedByUserMailboxSetting](Update-MgBetaDriveCreatedByUserMailboxSetting.md)
 Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveItem](Update-MgBetaDriveItem.md)
 To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 
 ### [Update-MgBetaDriveItemAnalytic](Update-MgBetaDriveItemAnalytic.md)
@@ -2948,7 +2949,7 @@ Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveItem](Update-MgBetaGroupDriveItem.md)
 To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 
 ### [Update-MgBetaGroupDriveItemAnalytic](Update-MgBetaGroupDriveItemAnalytic.md)
@@ -3183,7 +3184,7 @@ Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveItem](Update-MgBetaUserDriveItem.md)
 To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 
 ### [Update-MgBetaUserDriveItemAnalytic](Update-MgBetaUserDriveItemAnalytic.md)

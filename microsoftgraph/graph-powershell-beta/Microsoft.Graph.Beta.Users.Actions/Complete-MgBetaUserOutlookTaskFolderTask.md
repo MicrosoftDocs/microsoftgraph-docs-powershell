@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/complete-mgbetauseroutlooktaskfoldertask
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Complete-MgBetaUserOutlookTaskFolderTask
@@ -20,13 +19,13 @@ You can use the Prefer: outlook.timezone header to have all the date-related pro
 
 ### Complete (Default)
 ```
-Complete-MgBetaUserOutlookTaskFolderTask -OutlookTaskFolderId <String> -OutlookTaskId <String> -UserId <String>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Complete-MgBetaUserOutlookTaskFolderTask -OutlookTaskFolderId <String> -OutlookTaskId <String>
+ -UserId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CompleteViaIdentity
 ```
-Complete-MgBetaUserOutlookTaskFolderTask -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm]
+Complete-MgBetaUserOutlookTaskFolderTask -InputObject <IUsersActionsIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,6 +37,22 @@ The time portion of completedDateTime is set to midnight UTC by default.
 By default, this operation (and the POST, GET, and PATCH task operations) returns date-related properties in UTC.
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -InputObject
@@ -45,7 +60,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: CompleteViaIdentity
 Aliases:
 
@@ -60,7 +75,7 @@ Accept wildcard characters: False
 The unique identifier of outlookTaskFolder
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Complete
 Aliases:
 
@@ -75,7 +90,7 @@ Accept wildcard characters: False
 The unique identifier of outlookTask
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Complete
 Aliases:
 
@@ -90,7 +105,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Complete
 Aliases:
 
@@ -105,7 +120,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -121,7 +136,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -138,9 +153,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
+
 ## NOTES
 
 ALIASES

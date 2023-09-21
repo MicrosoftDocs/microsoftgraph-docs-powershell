@@ -376,7 +376,7 @@ Get the number of the resource
 
 ### [Get-MgPolicyRoleManagementPolicyRule](Get-MgPolicyRoleManagementPolicyRule.md)
 Retrieve a rule or settings defined for a role management policy.
-The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:+ unifiedRoleManagementPolicyApprovalRule+ unifiedRoleManagementPolicyAuthenticationContextRule+ unifiedRoleManagementPolicyEnablementRule+ unifiedRoleManagementPolicyExpirationRule+ unifiedRoleManagementPolicyNotificationRule
+The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:\n+ unifiedRoleManagementPolicyApprovalRule\n+ unifiedRoleManagementPolicyAuthenticationContextRule\n+ unifiedRoleManagementPolicyEnablementRule\n+ unifiedRoleManagementPolicyExpirationRule\n+ unifiedRoleManagementPolicyNotificationRule
 
 ### [Get-MgPolicyRoleManagementPolicyRuleCount](Get-MgPolicyRoleManagementPolicyRuleCount.md)
 Get the number of the resource
@@ -441,20 +441,20 @@ Read the properties and relationships of a servicePrincipalRiskDetection object.
 ### [Get-MgServicePrincipalRiskDetectionCount](Get-MgServicePrincipalRiskDetectionCount.md)
 Get the number of the resource
 
-### [Get-MgServicePrincipalRiskDetectionCount](Get-MgServicePrincipalRiskDetectionCount.md)
-Get the number of the resource
+### [Get-MgUserAuthenticationEmailMethod](Get-MgUserAuthenticationEmailMethod.md)
+Retrieve a user's single email authentication method object.
 
 ### [Get-MgUserAuthenticationEmailMethodCount](Get-MgUserAuthenticationEmailMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationEmailMethodCount](Get-MgUserAuthenticationEmailMethodCount.md)
-Get the number of the resource
+### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
+Retrieve a user's single FIDO2 Security Key Authentication Method object.
 
 ### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
-Get the number of the resource
+### [Get-MgUserAuthenticationMethod](Get-MgUserAuthenticationMethod.md)
+Retrieve the properties and relationships of an authenticationMethod object.
 
 ### [Get-MgUserAuthenticationMethodCount](Get-MgUserAuthenticationMethodCount.md)
 Get the number of the resource
@@ -478,20 +478,22 @@ The possible states of the long-running operation are notStarted, running, succe
 ### [Get-MgUserAuthenticationOperationCount](Get-MgUserAuthenticationOperationCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationOperationCount](Get-MgUserAuthenticationOperationCount.md)
-Get the number of the resource
+### [Get-MgUserAuthenticationPasswordMethod](Get-MgUserAuthenticationPasswordMethod.md)
+Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
+For security, the password itself will never be returned in the object and the password property is always null.
 
 ### [Get-MgUserAuthenticationPasswordMethodCount](Get-MgUserAuthenticationPasswordMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationPasswordMethodCount](Get-MgUserAuthenticationPasswordMethodCount.md)
-Get the number of the resource
+### [Get-MgUserAuthenticationPhoneMethod](Get-MgUserAuthenticationPhoneMethod.md)
+Retrieve a single phoneAuthenticationMethod object for a user.
+This method is available only for standard Azure AD and B2B users, but not B2C users.
 
 ### [Get-MgUserAuthenticationPhoneMethodCount](Get-MgUserAuthenticationPhoneMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationPhoneMethodCount](Get-MgUserAuthenticationPhoneMethodCount.md)
-Get the number of the resource
+### [Get-MgUserAuthenticationSoftwareOathMethod](Get-MgUserAuthenticationSoftwareOathMethod.md)
+Retrieve a user's single Software OATH token authentication method object and its properties.
 
 ### [Get-MgUserAuthenticationSoftwareOathMethodCount](Get-MgUserAuthenticationSoftwareOathMethodCount.md)
 Get the number of the resource
@@ -912,8 +914,13 @@ Deletes a microsoftAuthenticatorAuthenticationMethod object.
 ### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
 Delete navigation property operations for users
 
-### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
-Delete navigation property operations for users
+### [Remove-MgUserAuthenticationPhoneMethod](Remove-MgUserAuthenticationPhoneMethod.md)
+Delete a user's phone authentication method.
+This removes the phone number from the user and they will no longer be able to use the number for authentication, whether via SMS or voice calls.
+A user cannot have an alternateMobile number without a mobile number.
+If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
+If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted.
+Have the user change their default authentication method, and then delete the number.
 
 ### [Remove-MgUserAuthenticationSoftwareOathMethod](Remove-MgUserAuthenticationSoftwareOathMethod.md)
 Delete a user's Software OATH token authentication method object.
@@ -946,9 +953,9 @@ Set the order of identityUserFlowAttributeAssignments being collected within a u
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 To validate the properties of an existing group, use the group: validateProperties function.
-The following policy validations are performed for the display name and mail nickname properties:1.
-Validate the prefix and suffix naming policy2.
-Validate the custom banned words policy3.
+The following policy validations are performed for the display name and mail nickname properties:\n1.
+Validate the prefix and suffix naming policy\n2.
+Validate the custom banned words policy\n3.
 Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.

@@ -1,59 +1,118 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationemailmethodcount
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationfido2method
 schema: 2.0.0
-ms.prod: identity-and-sign-in
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgBetaUserAuthenticationEmailMethodCount
+# Get-MgBetaUserAuthenticationFido2Method
 
 ## SYNOPSIS
-Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationFido2Method?view=graph-powershell-1.0)
+Retrieve a user's single FIDO2 Security Key Authentication Method object.
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 ```
-Get-MgBetaUserAuthenticationEmailMethodCount -UserId <String> [-Filter <String>] [-Search <String>]
- [<CommonParameters>]
+Get-MgBetaUserAuthenticationFido2Method -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaUserAuthenticationFido2Method -Fido2AuthenticationMethodId <String> -UserId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserAuthenticationEmailMethodCount -InputObject <IIdentitySignInsIdentity> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
+Get-MgBetaUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the number of the resource
+Retrieve a user's single FIDO2 Security Key Authentication Method object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserAuthenticationFido2Method -UserId $userId
 
-```
-This example shows how to use the Get-MgBetaUserAuthenticationFido2Method Cmdlet.
-
-
 ## PARAMETERS
+
+### -All
+List all pages.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: System.String
+Parameter Sets: List
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Fido2AuthenticationMethodId
+The unique identifier of fido2AuthenticationMethod
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Filter
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -68,7 +127,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -79,13 +138,88 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+Select properties to be returned
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: List
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: System.String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases: Limit
 
 Required: False
 Position: Named
@@ -98,8 +232,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -115,9 +249,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod
+
 ## NOTES
 
 ALIASES
@@ -205,4 +341,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationFido2Method?view=graph-powershell-1.0)
+

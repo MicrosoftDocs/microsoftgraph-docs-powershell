@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new ediscoveryReviewSetQuery object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,14 +17,20 @@ Create a new ediscoveryReviewSetQuery object.
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  [-AdditionalProperties <Hashtable>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentity> -BodyParameter <Hashtable>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,25 +38,19 @@ New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId <String> -E
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentity> -BodyParameter <Hashtable>
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new ediscoveryReviewSetQuery object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	displayName = "My Query 1"
@@ -62,17 +59,13 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
 
-```
-This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +80,7 @@ Accept wildcard characters: False
 ediscoveryReviewSetQuery
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -102,7 +95,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +111,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +126,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +156,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -178,8 +171,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -193,8 +186,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryReviewSet
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -209,7 +202,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -225,8 +218,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -241,7 +234,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +249,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -271,7 +264,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -287,7 +280,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -304,10 +297,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewSetQuery
+
 ## NOTES
 
 ALIASES
@@ -413,4 +409,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
+

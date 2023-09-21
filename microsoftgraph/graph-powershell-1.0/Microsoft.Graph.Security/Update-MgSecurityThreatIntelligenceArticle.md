@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticle
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property articles in security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,32 +18,49 @@ Update-MgSecurityThreatIntelligenceArticle -ArticleId <String> [-AdditionalPrope
  [-Body <IMicrosoftGraphSecurityFormattedContent>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-ImageUrl <String>] [-Indicators <IMicrosoftGraphSecurityArticleIndicator[]>] [-IsFeatured]
  [-LastUpdatedDateTime <DateTime>] [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Tags <String[]>]
- [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityThreatIntelligenceArticle -ArticleId <String> -BodyParameter <IMicrosoftGraphSecurityArticle>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-Body <IMicrosoftGraphSecurityFormattedContent>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-ImageUrl <String>] [-Indicators <IMicrosoftGraphSecurityArticleIndicator[]>] [-IsFeatured]
- [-LastUpdatedDateTime <DateTime>] [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Tags <String[]>]
- [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityArticle> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityArticle> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
+ [-AdditionalProperties <Hashtable>] [-Body <IMicrosoftGraphSecurityFormattedContent>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-ImageUrl <String>]
+ [-Indicators <IMicrosoftGraphSecurityArticleIndicator[]>] [-IsFeatured] [-LastUpdatedDateTime <DateTime>]
+ [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Tags <String[]>] [-Title <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property articles in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -54,7 +68,7 @@ Update the navigation property articles in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,8 +83,8 @@ Accept wildcard characters: False
 The unique identifier of article
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -85,7 +99,7 @@ formattedContent
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFormattedContent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityFormattedContent
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +115,7 @@ article
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityArticle
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityArticle
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -118,7 +132,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +148,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +163,7 @@ Accept wildcard characters: False
 URL of the header image for this article, used for display purposes.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +179,7 @@ Indicators related to this article.
 To construct, see NOTES section for INDICATORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityArticleIndicator[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityArticleIndicator[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,8 +195,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -196,7 +210,7 @@ Accept wildcard characters: False
 Indicates whether this article is currently featured by Microsoft.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +227,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +243,7 @@ formattedContent
 To construct, see NOTES section for SUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFormattedContent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityFormattedContent
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +258,7 @@ Accept wildcard characters: False
 Tags for this article, communicating keywords, or key concepts.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -259,7 +273,7 @@ Accept wildcard characters: False
 The title of this article.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +288,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -290,7 +304,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -307,10 +321,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityArticle
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityArticle
+
 ## NOTES
 
 ALIASES
@@ -394,5 +411,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 

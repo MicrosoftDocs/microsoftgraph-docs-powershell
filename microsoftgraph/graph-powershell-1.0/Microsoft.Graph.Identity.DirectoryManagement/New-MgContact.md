@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to contacts
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,51 +23,39 @@ New-MgContact [-AdditionalProperties <Hashtable>] [-Addresses <IMicrosoftGraphPh
  [-OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>] [-OnPremisesSyncEnabled]
  [-Phones <IMicrosoftGraphPhone[]>] [-ProxyAddresses <String[]>]
  [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>] [-Surname <String>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgContact -BodyParameter <IMicrosoftGraphOrgContact> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgContact -BodyParameter <IMicrosoftGraphOrgContact> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to contacts
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgContact
-```
-This example shows how to use the New-MgContact Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgContact -Filter "startswith(displayName,'A')" -CountVariable CountVar -Top 1 -Sort "displayName" -ConsistencyLevel eventual
-```
-This example shows how to use the New-MgContact Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 Get-MgContact -Search '"displayName:wa"' -CountVariable CountVar -ConsistencyLevel eventual
-```
-This example shows how to use the New-MgContact Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -78,7 +63,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -95,7 +80,7 @@ For now a contact can only have one physical address.
 To construct, see NOTES section for ADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalOfficeAddress[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhysicalOfficeAddress[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -111,7 +96,7 @@ orgContact
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOrgContact
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrgContact
 Parameter Sets: Create
 Aliases:
 
@@ -127,7 +112,7 @@ Name of the company that this organizational contact belongs to.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +128,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +144,7 @@ The name for the department in which the contact works.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +163,7 @@ Supports $expand.
 To construct, see NOTES section for DIRECTREPORTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +179,7 @@ Display name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values), $search, and $orderBy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +195,7 @@ First name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +211,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +227,7 @@ Job title for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -258,7 +243,7 @@ The SMTP address for the contact, for example, 'jeff@contoso.onmicrosoft.com'.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -274,7 +259,7 @@ Email alias (portion of email address pre-pending the @ symbol) for this organiz
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -290,7 +275,7 @@ directoryObject
 To construct, see NOTES section for MANAGER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -309,7 +294,7 @@ Supports $expand.
 To construct, see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -327,7 +312,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, ne, not, ge, le, in).
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -344,7 +329,7 @@ Supports $filter (eq, not for category and propertyCausingError), /$count eq 0, 
 To construct, see NOTES section for ONPREMISESPROVISIONINGERRORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesProvisioningError[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesProvisioningError[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -360,7 +345,7 @@ true if this object is synced from an on-premises directory; false if this objec
 Supports $filter (eq, ne, not, in, and eq for null values).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -378,7 +363,7 @@ Only one of each type can ever be present in the collection.
 To construct, see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhone[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhone[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -395,7 +380,7 @@ The any operator is required for filter expressions on multi-valued properties.
 Supports $filter (eq, not, ge, le, startsWith, /$count eq 0, /$count ne 0).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -411,7 +396,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SERVICEPROVISIONINGERRORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceProvisioningError[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceProvisioningError[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -427,7 +412,7 @@ Last name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -445,7 +430,7 @@ Nullable.
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -460,7 +445,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -476,7 +461,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -493,9 +478,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrgContact
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrgContact
+
 ## NOTES
 
 ALIASES
@@ -591,4 +578,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
+

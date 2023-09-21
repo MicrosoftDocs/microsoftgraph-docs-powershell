@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionpolicylabel
 schema: 2.0.0
@@ -17,13 +17,19 @@ Create new navigation property to labels for groups
 New-MgBetaGroupSiteInformationProtectionPolicyLabel -GroupId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-Color <String>] [-Description <String>] [-Id <String>] [-IsActive]
  [-Name <String>] [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>] [-Tooltip <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupSiteInformationProtectionPolicyLabel -GroupId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
+ -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -31,17 +37,27 @@ New-MgBetaGroupSiteInformationProtectionPolicyLabel -GroupId <String> -SiteId <S
 New-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-Color <String>] [-Description <String>] [-Id <String>] [-IsActive]
  [-Name <String>] [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>] [-Tooltip <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to labels for groups
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Create new navigation property to labels for groups
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +81,7 @@ informationProtectionLabel
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtectionLabel
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -80,7 +96,7 @@ Accept wildcard characters: False
 The color that the UI should display for the label, if configured.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +111,7 @@ Accept wildcard characters: False
 The admin-defined description for the label.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -110,8 +126,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -126,7 +142,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,8 +158,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -158,7 +174,7 @@ Indicates whether the label is active or not.
 Active labels should be hidden or disabled in UI.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +189,7 @@ Accept wildcard characters: False
 The plaintext name of the label.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +205,7 @@ parentLabelDetails
 To construct, see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParentLabelDetails
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParentLabelDetails
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +220,7 @@ Accept wildcard characters: False
 The sensitivity value of the label, where lower is less sensitive.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -219,8 +235,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -234,7 +250,7 @@ Accept wildcard characters: False
 The tooltip that should be displayed for the label in a UI.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -249,7 +265,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -265,7 +281,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -282,10 +298,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
+
 ## NOTES
 
 ALIASES
