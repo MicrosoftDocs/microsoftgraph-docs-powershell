@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementmicrosofttunnelserverlogcollectionresponsedownloadurl
 schema: 2.0.0
@@ -15,25 +15,25 @@ Invoke action createDownloadUrl
 ### Create (Default)
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
- -MicrosoftTunnelServerLogCollectionResponseId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
- -InputObject <IDeviceManagementActionsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -MicrosoftTunnelServerLogCollectionResponseId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Generate
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
- -MicrosoftTunnelServerLogCollectionResponseId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -MicrosoftTunnelServerLogCollectionResponseId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GenerateViaIdentity
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
- -InputObject <IDeviceManagementActionsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl
+ -InputObject <IDeviceManagementActionsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,14 +41,14 @@ Invoke action createDownloadUrl
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -62,8 +62,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: CreateViaIdentity, GenerateViaIdentity
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: GenerateViaIdentity, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 The unique identifier of microsoftTunnelServerLogCollectionResponse
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Create, Generate
 Aliases:
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -108,7 +108,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -125,11 +125,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -193,4 +191,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-

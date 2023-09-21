@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrengthpolicyallowedcombination
 schema: 2.0.0
@@ -16,8 +16,8 @@ To update other properties of an authenticationStrengthPolicy object, use the Up
 ### UpdateExpanded1 (Default)
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
- -AuthenticationStrengthPolicyId <String> [-AdditionalProperties <Hashtable>]
- [-AllowedCombinations <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -AuthenticationStrengthPolicyId <String> [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
@@ -25,7 +25,14 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombina
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
  -AuthenticationStrengthPolicyId <String>
  -BodyParameter <IPaths1Pedu11IdentityConditionalaccessAuthenticationstrengthsPoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
+```
+Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
+ -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
@@ -33,14 +40,7 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombina
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
  -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPaths1Pedu11IdentityConditionalaccessAuthenticationstrengthsPoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyAllowedCombination
- -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,14 +49,14 @@ To update other properties of an authenticationStrengthPolicy object, use the Up
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -69,7 +69,7 @@ To update other properties of an authenticationStrengthPolicy object, use the Up
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 The unique identifier of authenticationStrengthPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pedu11IdentityConditionalaccessAuthenticationstrengthsPoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Pedu11IdentityConditionalaccessAuthenticationstrengthsPoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -131,8 +131,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +162,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,13 +179,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pedu11IdentityConditionalaccessAuthenticationstrengthsPoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUpdateAllowedCombinationsResult
-
 ## NOTES
 
 ALIASES
@@ -277,4 +274,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

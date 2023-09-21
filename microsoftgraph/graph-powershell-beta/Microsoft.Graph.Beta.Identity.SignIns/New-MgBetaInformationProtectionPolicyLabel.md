@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainformationprotectionpolicylabel
 schema: 2.0.0
@@ -16,14 +16,14 @@ Create new navigation property to labels for informationProtection
 ```
 New-MgBetaInformationProtectionPolicyLabel [-AdditionalProperties <Hashtable>] [-Color <String>]
  [-Description <String>] [-Id <String>] [-IsActive] [-Name <String>]
- [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>] [-Tooltip <String>] [-Confirm] [-WhatIf]
+ [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>] [-Tooltip <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaInformationProtectionPolicyLabel -BodyParameter <IMicrosoftGraphInformationProtectionLabel>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaInformationProtectionPolicyLabel -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,14 +31,14 @@ Create new navigation property to labels for informationProtection
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -51,7 +51,7 @@ Create new navigation property to labels for informationProtection
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ informationProtectionLabel
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
+Type: IMicrosoftGraphInformationProtectionLabel
 Parameter Sets: Create
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 The color that the UI should display for the label, if configured.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 The admin-defined description for the label.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Indicates whether the label is active or not.
 Active labels should be hidden or disabled in UI.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 The plaintext name of the label.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +160,7 @@ parentLabelDetails
 To construct, see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParentLabelDetails
+Type: IMicrosoftGraphParentLabelDetails
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 The sensitivity value of the label, where lower is less sensitive.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 The tooltip that should be displayed for the label in a UI.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -221,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -238,11 +238,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
-
 ## NOTES
 
 ALIASES
@@ -284,4 +282,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
 
 ## RELATED LINKS
-

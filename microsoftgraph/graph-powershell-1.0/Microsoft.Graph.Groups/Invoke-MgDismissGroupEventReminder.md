@@ -1,50 +1,49 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgdismissgroupeventreminder
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcheckoutgroupdriveroot
 schema: 2.0.0
 ---
 
-# Invoke-MgDismissGroupEventReminder
+# Invoke-MgCheckoutGroupDriveRoot
 
 ## SYNOPSIS
-Dismiss a reminder that has been triggered for an event in a user calendar.
+Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ## SYNTAX
 
-### Dismiss (Default)
+### Checkout (Default)
 ```
-Invoke-MgDismissGroupEventReminder -EventId <String> -GroupId <String> [-PassThru] [-Confirm] [-WhatIf]
+Invoke-MgCheckoutGroupDriveRoot -DriveId <String> -GroupId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DismissViaIdentity
+### CheckoutViaIdentity
 ```
-Invoke-MgDismissGroupEventReminder -InputObject <IGroupsIdentity> [-PassThru] [-Confirm] [-WhatIf]
+Invoke-MgCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Dismiss a reminder that has been triggered for an event in a user calendar.
+Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Files
 ```
 
-# A UPN can also be used as -UserId.
-Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
+Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
 
 ## PARAMETERS
 
-### -EventId
-The unique identifier of event
+### -DriveId
+The unique identifier of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Dismiss
+Type: String
+Parameter Sets: Checkout
 Aliases:
 
 Required: True
@@ -58,8 +57,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Dismiss
+Type: String
+Parameter Sets: Checkout
 Aliases:
 
 Required: True
@@ -74,8 +73,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: DismissViaIdentity
+Type: IGroupsIdentity
+Parameter Sets: CheckoutViaIdentity
 Aliases:
 
 Required: True
@@ -89,7 +88,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -104,7 +103,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -120,7 +119,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -137,11 +136,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -189,4 +186,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

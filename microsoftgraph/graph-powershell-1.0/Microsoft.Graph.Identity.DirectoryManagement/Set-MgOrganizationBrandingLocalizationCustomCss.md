@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationcustomcss
 schema: 2.0.0
@@ -15,15 +15,15 @@ The allowed format is .css format only and not larger than 25 KB.
 
 ### Set (Default)
 ```
-Set-MgOrganizationBrandingLocalizationCustomCss -OrganizationalBrandingLocalizationId <String>
- -OrganizationId <String> -InFile <String> [-Data <Stream>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Set-MgOrganizationBrandingLocalizationCustomCss -OrganizationId <String>
+ -OrganizationalBrandingLocalizationId <String> [-Data <Stream>] -InFile <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgOrganizationBrandingLocalizationCustomCss -InputObject <IIdentityDirectoryManagementIdentity>
- -InFile <String> [-Data <Stream>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Data <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,19 +32,15 @@ The allowed format is .css format only and not larger than 25 KB.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -52,7 +48,7 @@ The allowed format is .css format only and not larger than 25 KB.
 .
 
 ```yaml
-Type: System.IO.Stream
+Type: Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -69,7 +65,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -85,7 +81,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Type: IIdentityDirectoryManagementIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -100,7 +96,7 @@ Accept wildcard characters: False
 The unique identifier of organizationalBrandingLocalization
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -115,7 +111,7 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -130,7 +126,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -145,7 +141,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +157,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,13 +174,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.IO.Stream
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -219,4 +212,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

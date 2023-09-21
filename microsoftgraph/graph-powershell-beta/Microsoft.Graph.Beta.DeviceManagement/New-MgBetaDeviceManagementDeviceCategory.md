@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecategory
 schema: 2.0.0
@@ -15,13 +15,12 @@ Create new navigation property to deviceCategories for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementDeviceCategory [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCategory> [-Confirm] [-WhatIf]
+New-MgBetaDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCategory> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,14 +29,14 @@ Create new navigation property to deviceCategories for deviceManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -50,7 +49,7 @@ Create new navigation property to deviceCategories for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +68,7 @@ You can filter reports and create dynamic Azure Active Directory device groups b
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCategory
+Type: IMicrosoftGraphDeviceCategory
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +83,7 @@ Accept wildcard characters: False
 Optional description for the device category.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +98,7 @@ Accept wildcard characters: False
 Display name for the device category.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +114,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +129,7 @@ Accept wildcard characters: False
 Optional role scope tags for the device category.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +144,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +160,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,11 +177,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCategory
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCategory
-
 ## NOTES
 
 ALIASES
@@ -200,4 +197,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the device category.
 
 ## RELATED LINKS
-

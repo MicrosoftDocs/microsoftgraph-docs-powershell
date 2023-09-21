@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencewhoishistoryrecord
 schema: 2.0.0
@@ -23,12 +23,12 @@ New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord [-Abuse <IMicrosoftGraphS
  [-RawWhoisText <String>] [-Registrant <IMicrosoftGraphSecurityWhoisContact>]
  [-Registrar <IMicrosoftGraphSecurityWhoisContact>] [-RegistrationDateTime <DateTime>]
  [-Technical <IMicrosoftGraphSecurityWhoisContact>] [-WhoisServer <String>]
- [-Zone <IMicrosoftGraphSecurityWhoisContact>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Zone <IMicrosoftGraphSecurityWhoisContact>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,19 +37,15 @@ Create new navigation property to whoisHistoryRecords for security
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -58,7 +54,7 @@ whoisContact
 To construct, see NOTES section for ABUSE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
+Type: IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +69,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +85,7 @@ whoisContact
 To construct, see NOTES section for ADMIN properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
+Type: IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -105,7 +101,7 @@ whoisContact
 To construct, see NOTES section for BILLING properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
+Type: IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +116,7 @@ Accept wildcard characters: False
 whoisHistoryRecord
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: Create
 Aliases:
 
@@ -135,7 +131,7 @@ Accept wildcard characters: False
 The domain status for this WHOIS object.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +148,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +165,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -185,7 +181,7 @@ host
 To construct, see NOTES section for HOST1 properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHost
+Type: IMicrosoftGraphSecurityHost
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -201,7 +197,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +214,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -235,7 +231,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +247,7 @@ The nameservers for this WHOIS object.
 To construct, see NOTES section for NAMESERVERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisNameserver[]
+Type: IMicrosoftGraphSecurityWhoisNameserver[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -267,7 +263,7 @@ whoisContact
 To construct, see NOTES section for NOC properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
+Type: IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -282,7 +278,7 @@ Accept wildcard characters: False
 The raw WHOIS details for this WHOIS object.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -298,7 +294,7 @@ whoisContact
 To construct, see NOTES section for REGISTRANT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
+Type: IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -314,7 +310,7 @@ whoisContact
 To construct, see NOTES section for REGISTRAR properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
+Type: IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -331,7 +327,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -347,7 +343,7 @@ whoisContact
 To construct, see NOTES section for TECHNICAL properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
+Type: IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -362,7 +358,7 @@ Accept wildcard characters: False
 The WHOIS server that provides the details.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -378,7 +374,7 @@ whoisContact
 To construct, see NOTES section for ZONE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisContact
+Type: IMicrosoftGraphSecurityWhoisContact
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -393,7 +389,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -409,7 +405,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -426,11 +422,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisHistoryRecord
-
 ## NOTES
 
 ALIASES
@@ -884,3 +878,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

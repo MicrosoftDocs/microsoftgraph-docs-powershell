@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/copy-mgbetadevicemanagementreusablepolicysetting
 schema: 2.0.0
@@ -14,14 +14,14 @@ Invoke action clone
 
 ### Clone (Default)
 ```
-Copy-MgBetaDeviceManagementReusablePolicySetting -DeviceManagementReusablePolicySettingId <String> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Copy-MgBetaDeviceManagementReusablePolicySetting -DeviceManagementReusablePolicySettingId <String> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CloneViaIdentity
 ```
-Copy-MgBetaDeviceManagementReusablePolicySetting -InputObject <IDeviceManagementActionsIdentity> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Copy-MgBetaDeviceManagementReusablePolicySetting -InputObject <IDeviceManagementActionsIdentity> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,14 +29,14 @@ Invoke action clone
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -49,7 +49,7 @@ Invoke action clone
 The unique identifier of deviceManagementReusablePolicySetting
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Clone
 Aliases:
 
@@ -65,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Type: IDeviceManagementActionsIdentity
 Parameter Sets: CloneViaIdentity
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -96,7 +96,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementReusablePolicySetting
-
 ## NOTES
 
 ALIASES
@@ -181,4 +179,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-

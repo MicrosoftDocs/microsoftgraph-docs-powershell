@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpost
 schema: 2.0.0
@@ -17,7 +17,7 @@ The table in the Permissions section lists the resources that support open exten
 ### ReplyExpanded (Default)
 ```
 Invoke-MgReplyGroupThreadPost -ConversationThreadId <String> -GroupId <String> -PostId <String>
- [-AdditionalProperties <Hashtable>] [-Post <IMicrosoftGraphPost>] [-PassThru] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-Post <IMicrosoftGraphPost>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,20 +25,20 @@ Invoke-MgReplyGroupThreadPost -ConversationThreadId <String> -GroupId <String> -
 ```
 Invoke-MgReplyGroupThreadPost -ConversationThreadId <String> -GroupId <String> -PostId <String>
  -BodyParameter <IPaths1B2Nw99GroupsGroupIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReplyViaIdentityExpanded
+```
+Invoke-MgReplyGroupThreadPost -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Post <IMicrosoftGraphPost>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReplyViaIdentity
 ```
 Invoke-MgReplyGroupThreadPost -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1B2Nw99GroupsGroupIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ReplyViaIdentityExpanded
-```
-Invoke-MgReplyGroupThreadPost -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Post <IMicrosoftGraphPost>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,7 +48,7 @@ The table in the Permissions section lists the resources that support open exten
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
 $params = @{
@@ -106,15 +106,13 @@ $params = @{
 Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -130,7 +128,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1B2Nw99GroupsGroupIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1B2Nw99GroupsGroupIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Reply, ReplyViaIdentity
 Aliases:
 
@@ -145,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of conversationThread
 
 ```yaml
-Type: System.String
-Parameter Sets: Reply, ReplyExpanded
+Type: String
+Parameter Sets: ReplyExpanded, Reply
 Aliases:
 
 Required: True
@@ -160,8 +158,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Reply, ReplyExpanded
+Type: String
+Parameter Sets: ReplyExpanded, Reply
 Aliases:
 
 Required: True
@@ -176,8 +174,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: ReplyViaIdentity, ReplyViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: ReplyViaIdentityExpanded, ReplyViaIdentity
 Aliases:
 
 Required: True
@@ -191,7 +189,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -207,7 +205,7 @@ post
 To construct, see NOTES section for POST properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost
+Type: IMicrosoftGraphPost
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -222,8 +220,8 @@ Accept wildcard characters: False
 The unique identifier of post
 
 ```yaml
-Type: System.String
-Parameter Sets: Reply, ReplyExpanded
+Type: String
+Parameter Sets: ReplyExpanded, Reply
 Aliases:
 
 Required: True
@@ -237,7 +235,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +251,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,13 +268,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths1B2Nw99GroupsGroupIdThreadsConversationthreadIdPostsPostIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -407,3 +402,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

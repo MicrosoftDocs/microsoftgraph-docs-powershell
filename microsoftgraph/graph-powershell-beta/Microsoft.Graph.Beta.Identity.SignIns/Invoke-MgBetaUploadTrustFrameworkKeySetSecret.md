@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadtrustframeworkkeysetsecret
 schema: 2.0.0
@@ -17,29 +17,29 @@ his method returns trustFrameworkKey.
 ### UploadExpanded (Default)
 ```
 Invoke-MgBetaUploadTrustFrameworkKeySetSecret -TrustFrameworkKeySetId <String>
- [-AdditionalProperties <Hashtable>] [-Exp <Int64>] [-K <String>] [-Nbf <Int64>] [-Use <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Exp <Int64>] [-K <String>] [-Nbf <Int64>] [-Use <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Upload
 ```
 Invoke-MgBetaUploadTrustFrameworkKeySetSecret -TrustFrameworkKeySetId <String>
  -BodyParameter <IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UploadViaIdentityExpanded
+```
+Invoke-MgBetaUploadTrustFrameworkKeySetSecret -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Exp <Int64>] [-K <String>] [-Nbf <Int64>] [-Use <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UploadViaIdentity
 ```
 Invoke-MgBetaUploadTrustFrameworkKeySetSecret -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UploadViaIdentityExpanded
-```
-Invoke-MgBetaUploadTrustFrameworkKeySetSecret -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Exp <Int64>] [-K <String>] [-Nbf <Int64>] [-Use <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ his method returns trustFrameworkKey.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -61,15 +61,13 @@ $params = @{
 Invoke-MgBetaUploadTrustFrameworkKeySetSecret -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -85,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema
+Type: IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Upload, UploadViaIdentity
 Aliases:
 
@@ -100,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -116,8 +114,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UploadViaIdentity, UploadViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UploadViaIdentityExpanded, UploadViaIdentity
 Aliases:
 
 Required: True
@@ -131,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -146,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -161,8 +159,8 @@ Accept wildcard characters: False
 The unique identifier of trustFrameworkKeySet
 
 ```yaml
-Type: System.String
-Parameter Sets: Upload, UploadExpanded
+Type: String
+Parameter Sets: UploadExpanded, Upload
 Aliases:
 
 Required: True
@@ -176,7 +174,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -191,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -224,13 +222,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkKey
-
 ## NOTES
 
 ALIASES
@@ -325,4 +320,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

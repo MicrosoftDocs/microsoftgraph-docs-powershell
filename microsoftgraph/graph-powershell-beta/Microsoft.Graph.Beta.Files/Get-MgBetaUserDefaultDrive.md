@@ -1,43 +1,47 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdefaultdrive
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharesite
 schema: 2.0.0
 ---
 
-# Get-MgBetaUserDefaultDrive
+# Get-MgBetaShareSite
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a Drive resource.
-A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
+Used to access the underlying site
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaUserDefaultDrive -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaShareSite -SharedDriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaShareSite -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a Drive resource.
-A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
+Used to access the underlying site
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Files
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Get-MgBetaUserDefaultDrive -UserId $userId
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -45,7 +49,7 @@ Get-MgBetaUserDefaultDrive -UserId $userId
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -61,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Type: IFilesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -76,7 +80,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -87,11 +91,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-The unique identifier of user
+### -SharedDriveItemId
+The unique identifier of sharedDriveItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -108,11 +112,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDrive
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSite
 ## NOTES
 
 ALIASES
@@ -149,4 +151,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

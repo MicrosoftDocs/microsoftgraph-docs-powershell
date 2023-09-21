@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent
 schema: 2.0.0
@@ -16,18 +16,18 @@ Create new navigation property to mobileAppTroubleshootingEvents for deviceManag
 ```
 New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
  [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
- [-ApplicationId <String>] [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]
+ [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-ApplicationId <String>]
  [-CorrelationId <String>] [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventName <String>]
  [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>]
- [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
- [-UserId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>] [-UserId <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,14 +35,14 @@ Create new navigation property to mobileAppTroubleshootingEvents for deviceManag
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -56,7 +56,7 @@ A set of string key and string value pairs which provides additional information
 To construct, see NOTES section for ADDITIONALINFORMATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
+Type: IMicrosoftGraphKeyValuePair[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 Intune application identifier.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +102,7 @@ The collection property of AppLogUploadRequest.
 To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest[]
+Type: IMicrosoftGraphAppLogCollectionRequest[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Event representing a users device application install status.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+Type: IMicrosoftGraphMobileAppTroubleshootingEvent
 Parameter Sets: Create
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 Id used for tracing the failure in the service.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 Device identifier created or collected by Intune.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 Time when the event occurred .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +179,7 @@ Event Name corresponding to the Troubleshooting Event.
 It is an Optional field
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -195,7 +195,7 @@ Intune Mobile Application Troubleshooting History Item
 To construct, see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]
+Type: IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -211,7 +211,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 Device identifier created or collected by Intune.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +242,7 @@ Object containing detailed information about the error and its remediation.
 To construct, see NOTES section for TROUBLESHOOTINGERRORDETAILS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails
+Type: IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 Identifier for the user that tried to enroll the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -288,7 +288,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -305,11 +305,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
-
 ## NOTES
 
 ALIASES
@@ -385,4 +383,3 @@ To create the parameters described below, construct a hash table containing the 
     - `[Text <String>]`: Not yet documented
 
 ## RELATED LINKS
-

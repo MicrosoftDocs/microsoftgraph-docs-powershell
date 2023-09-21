@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapromotedomain
 schema: 2.0.0
@@ -15,12 +15,12 @@ A verified domain has its isVerified property set to true.
 
 ### Promote (Default)
 ```
-Invoke-MgBetaPromoteDomain -DomainId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaPromoteDomain -DomainId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PromoteViaIdentity
 ```
-Invoke-MgBetaPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Confirm] [-WhatIf]
+Invoke-MgBetaPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,13 +30,11 @@ A verified domain has its isVerified property set to true.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Invoke-MgBetaPromoteDomain -DomainId $domainId
 ```
-
-
 
 ## PARAMETERS
 
@@ -44,7 +42,7 @@ Invoke-MgBetaPromoteDomain -DomainId $domainId
 The unique identifier of domain
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Promote
 Aliases:
 
@@ -60,7 +58,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Type: IIdentityDirectoryManagementIdentity
 Parameter Sets: PromoteViaIdentity
 Aliases:
 
@@ -75,7 +73,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -91,7 +89,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -108,11 +106,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -167,4 +163,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

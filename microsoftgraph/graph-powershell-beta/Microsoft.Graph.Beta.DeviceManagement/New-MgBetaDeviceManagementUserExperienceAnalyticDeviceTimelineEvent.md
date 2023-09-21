@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicetimelineevent
 schema: 2.0.0
@@ -16,13 +16,13 @@ Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent [-AdditionalProperties <Hashtable>]
  [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventDetails <String>] [-EventLevel <DeviceEventLevel>]
- [-EventName <String>] [-EventSource <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-EventName <String>] [-EventSource <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,19 +31,15 @@ Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -51,7 +47,7 @@ Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -67,7 +63,7 @@ The user experience analytics device event entity contains NRT device event deta
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
+Type: IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
 Parameter Sets: Create
 Aliases:
 
@@ -82,7 +78,7 @@ Accept wildcard characters: False
 The id of the device where the event occurred.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +93,7 @@ Accept wildcard characters: False
 The time the event occured.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +108,7 @@ Accept wildcard characters: False
 The details provided by the event, format depends on event type.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +124,7 @@ Indicates device event level.
 Possible values are: None, Verbose, Information, Warning, Error, Critical
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceEventLevel
+Type: DeviceEventLevel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +140,7 @@ The name of the event.
 Examples include: BootEvent, LogonEvent, AppCrashEvent, AppHangEvent.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +156,7 @@ The source of the event.
 Examples include: Intune, Sccm.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +172,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -224,11 +220,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
-
 ## NOTES
 
 ALIASES
@@ -249,4 +243,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[EventSource <String>]`: The source of the event. Examples include: Intune, Sccm.
 
 ## RELATED LINKS
-
