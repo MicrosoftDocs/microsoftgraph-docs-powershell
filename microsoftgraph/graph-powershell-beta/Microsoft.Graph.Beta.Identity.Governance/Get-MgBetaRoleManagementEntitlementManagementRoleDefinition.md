@@ -41,18 +41,6 @@ Get-MgBetaRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdent
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Azure AD directory roles)- entitlement management (Azure AD entitlement management)- Exchange Online
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -355,3 +343,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-1.0)
+

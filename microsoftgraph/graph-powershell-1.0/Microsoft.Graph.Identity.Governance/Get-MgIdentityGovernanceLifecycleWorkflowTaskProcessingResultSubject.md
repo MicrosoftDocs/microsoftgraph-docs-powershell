@@ -31,18 +31,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubject -InputObjec
 ## DESCRIPTION
 The unique identifier of the Azure AD user targeted for the task execution.Supports $filter(eq, ne) and $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -220,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubject?view=graph-powershell-beta)
+

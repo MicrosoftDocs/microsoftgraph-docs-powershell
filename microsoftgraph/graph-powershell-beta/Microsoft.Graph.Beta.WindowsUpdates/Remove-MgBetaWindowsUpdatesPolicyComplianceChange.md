@@ -27,18 +27,6 @@ Remove-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesI
 ## DESCRIPTION
 Delete a complianceChange object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ComplianceChangeId
@@ -177,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+

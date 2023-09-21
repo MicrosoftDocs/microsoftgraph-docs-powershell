@@ -33,18 +33,6 @@ Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport -OutFil
 Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status.
 An inaccessible Cloud PC represents a Cloud PC that is in an unavailable state (at least one of the health checks failed) or has consecutive user connections failure.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -273,3 +261,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+

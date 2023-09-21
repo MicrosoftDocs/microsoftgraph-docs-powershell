@@ -23,22 +23,6 @@ Get-MgBetaDeviceDelta [-Filter <String>] [-Property <String[]>] [-Search <String
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -191,3 +175,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceDelta?view=graph-powershell-1.0)
+

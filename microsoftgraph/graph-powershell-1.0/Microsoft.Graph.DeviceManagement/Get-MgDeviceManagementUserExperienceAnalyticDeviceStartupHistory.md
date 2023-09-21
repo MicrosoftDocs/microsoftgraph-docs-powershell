@@ -38,18 +38,6 @@ Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory -InputObject <I
 ## DESCRIPTION
 User experience analytics device Startup History
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -309,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory?view=graph-powershell-beta)
+

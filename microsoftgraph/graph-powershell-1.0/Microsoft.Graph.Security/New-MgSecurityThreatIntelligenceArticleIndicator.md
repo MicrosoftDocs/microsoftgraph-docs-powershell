@@ -30,18 +30,6 @@ New-MgSecurityThreatIntelligenceArticleIndicator -BodyParameter <Hashtable> [-Wh
 ## DESCRIPTION
 Create new navigation property to articleIndicators for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -166,3 +154,4 @@ ALIASES
 
 ## RELATED LINKS
 [New-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
+

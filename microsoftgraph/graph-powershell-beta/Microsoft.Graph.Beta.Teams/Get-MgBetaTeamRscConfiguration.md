@@ -19,18 +19,6 @@ Get-MgBetaTeamRscConfiguration [<CommonParameters>]
 ## DESCRIPTION
 Get team RSC configuration for tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### CommonParameters
@@ -46,3 +34,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

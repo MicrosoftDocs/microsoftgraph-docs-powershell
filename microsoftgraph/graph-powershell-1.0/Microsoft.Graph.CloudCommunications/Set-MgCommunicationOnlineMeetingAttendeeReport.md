@@ -32,22 +32,6 @@ Set-MgCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunication
 The content stream of the attendee report of a Microsoft Teams live event.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -194,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-beta)
+

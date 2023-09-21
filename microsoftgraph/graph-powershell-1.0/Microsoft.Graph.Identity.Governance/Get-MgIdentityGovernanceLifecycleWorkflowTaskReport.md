@@ -37,18 +37,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskReport -InputObject <IIdentityGover
 ## DESCRIPTION
 Represents the aggregation of task execution data for tasks within a workflow object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -332,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport?view=graph-powershell-beta)
+

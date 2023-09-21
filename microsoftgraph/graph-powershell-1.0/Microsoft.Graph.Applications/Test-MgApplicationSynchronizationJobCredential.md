@@ -48,18 +48,6 @@ Test-MgApplicationSynchronizationJobCredential -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -303,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgBetaApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationSynchronizationJobCredential?view=graph-powershell-beta)
+

@@ -22,22 +22,6 @@ Remove-MgBetaDeviceManagementReport [-IfMatch <String>] [-PassThru] [-WhatIf] [-
 ## DESCRIPTION
 Delete navigation property reports for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -115,3 +99,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Remove-MgDeviceManagementReport?view=graph-powershell-1.0)
+

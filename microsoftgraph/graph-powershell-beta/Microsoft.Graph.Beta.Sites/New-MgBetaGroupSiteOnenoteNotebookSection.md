@@ -50,18 +50,6 @@ New-MgBetaGroupSiteOnenoteNotebookSection -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create a new section in the specified notebook.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -797,3 +785,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSection?view=graph-powershell-1.0)
+

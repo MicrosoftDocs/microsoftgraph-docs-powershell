@@ -37,18 +37,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowExecutionScope -InputObject <IIdentityG
 ## DESCRIPTION
 The unique identifier of the Azure AD identity that last modified the workflow object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -332,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScope?view=graph-powershell-beta)
+

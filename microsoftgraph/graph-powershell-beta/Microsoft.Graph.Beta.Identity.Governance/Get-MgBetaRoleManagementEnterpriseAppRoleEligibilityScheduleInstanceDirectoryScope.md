@@ -31,18 +31,6 @@ Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceDirectorySco
 The directory object that is the scope of the assignment or role eligibility.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -238,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

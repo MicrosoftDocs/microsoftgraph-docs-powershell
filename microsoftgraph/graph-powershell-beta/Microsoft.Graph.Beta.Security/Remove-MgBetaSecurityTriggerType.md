@@ -22,22 +22,6 @@ Remove-MgBetaSecurityTriggerType [-IfMatch <String>] [-PassThru] [-WhatIf] [-Con
 ## DESCRIPTION
 Delete navigation property triggerTypes for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -115,3 +99,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTriggerType?view=graph-powershell-1.0)
+

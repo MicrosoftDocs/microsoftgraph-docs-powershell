@@ -39,18 +39,6 @@ New-MgBetaDeviceManagementAutopilotEvent -BodyParameter <IMicrosoftGraphDeviceMa
 ## DESCRIPTION
 Create new navigation property to autopilotEvents for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountSetupDuration
@@ -603,3 +591,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
 
 ## RELATED LINKS
+

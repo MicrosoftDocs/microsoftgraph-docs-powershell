@@ -31,18 +31,6 @@ Remove-MgApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplic
 ## DESCRIPTION
 Delete navigation property directories for applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -210,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+

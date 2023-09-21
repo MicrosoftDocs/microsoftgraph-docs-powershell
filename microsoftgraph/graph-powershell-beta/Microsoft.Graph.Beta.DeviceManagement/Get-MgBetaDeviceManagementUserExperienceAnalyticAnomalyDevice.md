@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice -InputObject <IDev
 ## DESCRIPTION
 The user experience analytics anomaly entity contains device details.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -396,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

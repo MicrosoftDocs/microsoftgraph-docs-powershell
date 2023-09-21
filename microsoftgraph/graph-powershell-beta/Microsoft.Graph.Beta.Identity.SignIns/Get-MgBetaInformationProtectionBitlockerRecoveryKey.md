@@ -47,22 +47,6 @@ To include the key property in the response, use the $select OData query paramet
 Including the $select query parameter triggers an Azure AD audit of the operation and generates an audit log.
 You can find the log in Azure AD audit logs under the KeyManagement category.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -344,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKey?view=graph-powershell-1.0)
+

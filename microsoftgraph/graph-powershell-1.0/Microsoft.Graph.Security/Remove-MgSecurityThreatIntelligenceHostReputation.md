@@ -30,18 +30,6 @@ Remove-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Delete navigation property reputation for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HostId
@@ -191,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceHostReputation?view=graph-powershell-beta)
+

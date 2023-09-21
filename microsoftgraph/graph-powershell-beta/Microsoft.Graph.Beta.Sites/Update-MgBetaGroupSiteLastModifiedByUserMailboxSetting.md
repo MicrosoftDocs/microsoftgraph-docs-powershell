@@ -50,18 +50,6 @@ Update-MgBetaGroupSiteLastModifiedByUserMailboxSetting -InputObject <ISitesIdent
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -455,3 +443,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupSiteLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
+
