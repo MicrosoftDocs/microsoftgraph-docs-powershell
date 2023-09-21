@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deviceCategories for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -197,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the device category.
 
 ## RELATED LINKS
+[New-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCategory?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new version of a document set item in a list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -441,3 +444,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[New-MgGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)

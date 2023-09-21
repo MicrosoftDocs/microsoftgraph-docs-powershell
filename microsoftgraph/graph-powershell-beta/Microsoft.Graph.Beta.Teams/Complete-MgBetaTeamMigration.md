@@ -14,6 +14,9 @@ Migration mode is a special state where certain operations are barred, like mess
 After a completeMigration request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Complete-MgTeamMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamMigration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Complete (Default)
@@ -180,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Complete-MgTeamMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamMigration?view=graph-powershell-1.0)

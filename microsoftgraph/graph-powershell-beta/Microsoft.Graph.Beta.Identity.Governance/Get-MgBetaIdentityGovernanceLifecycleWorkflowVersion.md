@@ -12,6 +12,9 @@ ms.prod: governance
 ## SYNOPSIS
 Read the properties and relationships of a workflowVersion object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -368,3 +371,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgIdentityGovernanceLifecycleWorkflowVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersion?view=graph-powershell-1.0)

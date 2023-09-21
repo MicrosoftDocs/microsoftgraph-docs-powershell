@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new printerShare for the specified printer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShare?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -19383,5 +19386,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastUsedDateTime <DateTime?>]`: Date and time when the printer was last used by the signed-in user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+[New-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShare?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShare?view=graph-powershell-1.0)

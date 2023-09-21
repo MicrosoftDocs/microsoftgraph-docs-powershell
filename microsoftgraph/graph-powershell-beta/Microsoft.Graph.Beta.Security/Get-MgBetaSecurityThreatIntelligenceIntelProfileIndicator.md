@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 Includes an assemblage of high-fidelity network indicators of compromise.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceIntelProfileIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceIntelProfileIndicator?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -343,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceIntelProfileIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceIntelProfileIndicator?view=graph-powershell-1.0)
