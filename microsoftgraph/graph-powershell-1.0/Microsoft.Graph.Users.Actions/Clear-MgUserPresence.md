@@ -50,8 +50,7 @@ If it is the user's only presence session, the user's presence will change to Of
 For details about presences sessions, see presence: setPresence.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Clear-MgUserPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -59,6 +58,8 @@ $params = @{
 }
 Clear-MgUserPresence -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Clear-MgUserPresence Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

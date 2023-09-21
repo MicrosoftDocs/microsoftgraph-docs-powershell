@@ -50,17 +50,21 @@ If it is the user's only presence session, a successful clearPresence changes th
 Read more about presence sessions and their time-out and expiration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 $params = @{
 	sessionId = "22553876-f5ab-4529-bffb-cfe50aa89f87"
 }
 
 Clear-MgBetaUserPresence -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the Clear-MgBetaUserPresence Cmdlet.
+
 
 ## PARAMETERS
 

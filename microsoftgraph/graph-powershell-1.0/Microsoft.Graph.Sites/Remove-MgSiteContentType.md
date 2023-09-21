@@ -31,13 +31,17 @@ Remove-MgSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>] [-Pas
 Remove a [content type][contentType] from a [list][] or a [site][].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
+```
+This example shows how to use the Remove-MgSiteContentType Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

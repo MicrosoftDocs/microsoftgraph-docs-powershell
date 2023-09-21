@@ -50,11 +50,11 @@ Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	participants = @(
@@ -76,10 +76,14 @@ $params = @{
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	participants = @(
@@ -101,10 +105,14 @@ $params = @{
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	participants = @(
@@ -124,10 +132,14 @@ $params = @{
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	participants = @(
@@ -149,6 +161,10 @@ $params = @{
 }
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+
 
 ## PARAMETERS
 

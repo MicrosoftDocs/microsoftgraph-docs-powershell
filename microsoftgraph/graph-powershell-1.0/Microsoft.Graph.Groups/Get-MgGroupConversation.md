@@ -36,13 +36,17 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>] [<
 Retrieve the properties and relationships of conversation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupConversation -GroupId $groupId
+
+```
+This example shows how to use the Get-MgGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 

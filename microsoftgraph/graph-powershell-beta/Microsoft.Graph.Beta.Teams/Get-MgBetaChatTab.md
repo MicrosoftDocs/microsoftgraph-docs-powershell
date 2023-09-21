@@ -38,20 +38,28 @@ Get-MgBetaChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 Retrieve the properties and relationships of the specified tab in a chat.
 
 ## EXAMPLES
+### Example 1: List all the tabs in the chat along with associated Teams app
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaChatTab -ChatId $chatId -ExpandProperty "teamsApp" 
+
 ```
+This example will list all the tabs in the chat along with associated teams app
 
-Get-MgBetaChatTab -ChatId $chatId -ExpandProperty "teamsApp"
+### Example 2: List all the tabs belonging to a specific app in a chat
 
-### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-```
 
-Get-MgBetaChatTab -ChatId $chatId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.web'"
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaChatTab -ChatId $chatId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.web'" 
+
+```
+This example will list all the tabs belonging to a specific app in a chat
+
 
 ## PARAMETERS
 

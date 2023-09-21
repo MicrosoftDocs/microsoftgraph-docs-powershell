@@ -25,16 +25,18 @@ Get-MgSiteOnenoteSectionPage -OnenoteSectionId <String> -SiteId <String> [-Expan
 Retrieve a list of page objects from the specified section.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Notes
+
+# A UPN can also be used as -UserId.
+Get-MgUserOnenoteNotebook -UserId $userId
+
 ```
+This example shows how to use the Get-MgUserOnenoteNotebook Cmdlet.
+
 
 ## PARAMETERS
 

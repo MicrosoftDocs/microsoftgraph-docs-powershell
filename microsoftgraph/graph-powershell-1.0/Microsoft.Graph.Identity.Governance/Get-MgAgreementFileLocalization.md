@@ -38,13 +38,17 @@ Get-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity> [-Exp
 The localized version of the terms of use agreement files attached to the agreement.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgAgreementFileLocalization -AgreementId $agreementId
+
+```
+This example shows how to use the Get-MgAgreementFileLocalization Cmdlet.
+
 
 ## PARAMETERS
 
