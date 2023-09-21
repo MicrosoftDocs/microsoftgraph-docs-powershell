@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 Module Guid: a523190d-ee40-4b05-8384-90f6b55e551d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins
@@ -588,7 +588,7 @@ Get the number of the resource
 
 ### [Get-MgBetaPolicyRoleManagementPolicyRule](Get-MgBetaPolicyRoleManagementPolicyRule.md)
 Retrieve a rule defined for a role management policy.
-The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:\n+ unifiedRoleManagementPolicyApprovalRule\n+ unifiedRoleManagementPolicyAuthenticationContextRule\n+ unifiedRoleManagementPolicyEnablementRule\n+ unifiedRoleManagementPolicyExpirationRule\n+ unifiedRoleManagementPolicyNotificationRule
+The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:+ unifiedRoleManagementPolicyApprovalRule+ unifiedRoleManagementPolicyAuthenticationContextRule+ unifiedRoleManagementPolicyEnablementRule+ unifiedRoleManagementPolicyExpirationRule+ unifiedRoleManagementPolicyNotificationRule
 
 ### [Get-MgBetaPolicyRoleManagementPolicyRuleCount](Get-MgBetaPolicyRoleManagementPolicyRuleCount.md)
 Get the number of the resource
@@ -1603,9 +1603,9 @@ Given contentInfo as an input, which includes existing content metadata key/valu
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
-The following validations are performed for the display name and mail nickname properties: \n1.
-Validate the prefix and suffix naming policy\n2.
-Validate the custom banned words policy\n3.
+The following validations are performed for the display name and mail nickname properties: 1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
@@ -1853,7 +1853,7 @@ Update the navigation property effectiveRules in policies
 
 ### [Update-MgBetaPolicyRoleManagementPolicyRule](Update-MgBetaPolicyRoleManagementPolicyRule.md)
 Update a rule defined for a role management policy.
-The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:\n+ unifiedRoleManagementPolicyApprovalRule\n+ unifiedRoleManagementPolicyAuthenticationContextRule\n+ unifiedRoleManagementPolicyEnablementRule\n+ unifiedRoleManagementPolicyExpirationRule\n+ unifiedRoleManagementPolicyNotificationRule For more information about rules for Azure AD roles and examples of updating rules, see the following articles:\n+ Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph\n+ Use PIM APIs in Microsoft Graph to update Azure AD rules
+The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:+ unifiedRoleManagementPolicyApprovalRule+ unifiedRoleManagementPolicyAuthenticationContextRule+ unifiedRoleManagementPolicyEnablementRule+ unifiedRoleManagementPolicyExpirationRule+ unifiedRoleManagementPolicyNotificationRule For more information about rules for Azure AD roles and examples of updating rules, see the following articles:+ Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph+ Use PIM APIs in Microsoft Graph to update Azure AD rules
 
 ### [Update-MgBetaPolicyServicePrincipalCreationPolicy](Update-MgBetaPolicyServicePrincipalCreationPolicy.md)
 Update the navigation property servicePrincipalCreationPolicies in policies

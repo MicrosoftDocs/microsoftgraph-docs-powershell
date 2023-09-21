@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Groups
 Module Guid: 2da9f0b3-7eb6-4f49-9577-c1c5d13b7b4d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups
@@ -173,7 +173,7 @@ Get the number of the resource
 
 ### [Get-MgBetaGroupConversationThreadPost](Get-MgBetaGroupConversationThreadPost.md)
 Get the properties and relationships of a post in a specified thread.
-You can specify both the parent \nconversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
 ### [Get-MgBetaGroupConversationThreadPostAttachment](Get-MgBetaGroupConversationThreadPostAttachment.md)
@@ -576,7 +576,7 @@ Get the number of the resource
 
 ### [Get-MgBetaGroupThreadPost](Get-MgBetaGroupThreadPost.md)
 Get the properties and relationships of a post in a specified thread.
-You can specify both the parent \nconversation and the thread, or, you can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
 ### [Get-MgBetaGroupThreadPostAttachment](Get-MgBetaGroupThreadPostAttachment.md)
@@ -772,23 +772,23 @@ Follow a driveItem.
 
 ### [Invoke-MgBetaForwardGroupConversationThreadPost](Invoke-MgBetaForwardGroupConversationThreadPost.md)
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo](Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo.md)
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo](Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo.md)
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaForwardGroupThreadPost](Invoke-MgBetaForwardGroupThreadPost.md)
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaForwardGroupThreadPostInReplyTo](Invoke-MgBetaForwardGroupThreadPostInReplyTo.md)
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaGraphGroup](Invoke-MgBetaGraphGroup.md)
 Calling this method will disable the current user to receive email notifications for this group about new posts, events, and files in that group.
@@ -798,10 +798,10 @@ Supported for Microsoft 365 groups only.
 Invoke function sharedWithMe
 
 ### [Invoke-MgBetaInviteGroupDriveItem](Invoke-MgBetaInviteGroupDriveItem.md)
-Sends a sharing invitation for a DriveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ### [Invoke-MgBetaInviteGroupDriveRoot](Invoke-MgBetaInviteGroupDriveRoot.md)
-Sends a sharing invitation for a DriveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ### [Invoke-MgBetaPreviewGroupDriveItem](Invoke-MgBetaPreviewGroupDriveItem.md)
 Invoke action preview
@@ -837,7 +837,7 @@ When a group is renewed, the group expiration is extended by the number of days 
 
 ### [Invoke-MgBetaReplyGroupConversationThread](Invoke-MgBetaReplyGroupConversationThread.md)
 Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
+You can specify the parent conversation in the request, or, you can specify just the thread without the parent conversation.
 
 ### [Invoke-MgBetaReplyGroupConversationThreadPost](Invoke-MgBetaReplyGroupConversationThreadPost.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -851,7 +851,7 @@ The table in the Permissions section lists the resources that support open exten
 
 ### [Invoke-MgBetaReplyGroupThread](Invoke-MgBetaReplyGroupThread.md)
 Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
+You can specify the parent conversation in the request, or, you can specify just the thread without the parent conversation.
 
 ### [Invoke-MgBetaReplyGroupThreadPost](Invoke-MgBetaReplyGroupThreadPost.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -915,7 +915,7 @@ The table in the Permissions section lists the resources that support open exten
 ### [New-MgBetaGroupConversationThread](New-MgBetaGroupConversationThread.md)
 Create a new thread in the specified conversation.
 A thread and post are created as specified.
-Use reply thread to further post\nto that thread.
+Use reply thread to further postto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
@@ -945,12 +945,12 @@ Create new navigation property to mentions for groups
 
 ### [New-MgBetaGroupDriveItemLink](New-MgBetaGroupDriveItemLink.md)
 You can use createLink action to share a driveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ### [New-MgBetaGroupDriveItemListItemLink](New-MgBetaGroupDriveItemListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaGroupDriveItemUploadSession](New-MgBetaGroupDriveItemUploadSession.md)
@@ -958,17 +958,17 @@ Invoke action createUploadSession
 
 ### [New-MgBetaGroupDriveListItemLink](New-MgBetaGroupDriveListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaGroupDriveRootLink](New-MgBetaGroupDriveRootLink.md)
 You can use createLink action to share a driveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ### [New-MgBetaGroupDriveRootListItemLink](New-MgBetaGroupDriveRootListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaGroupDriveRootUploadSession](New-MgBetaGroupDriveRootUploadSession.md)
@@ -1014,7 +1014,7 @@ The template named Group.Unified can be used to configure tenant-wide Microsoft 
 
 ### [New-MgBetaGroupSiteListItemLink](New-MgBetaGroupSiteListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaGroupThread](New-MgBetaGroupThread.md)
@@ -1255,16 +1255,16 @@ Update media content for the navigation property photo in groups
 ### [Stop-MgBetaGroupCalendarEvent](Stop-MgBetaGroupCalendarEvent.md)
 This action allows the organizer of a meeting to send a cancellation message and cancel the event.
 The action moves the event to the Deleted Items folder.
-The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
-An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
-You need to be an organizer to cancel a meeting.' This action differs from Delete in that Cancel is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
+The organizer can also cancel an occurrence of a recurring meeting by providing the occurrence event ID.
+An attendee calling this action gets an error (HTTP 400 Bad Request), with the followingerror message: 'Your request can't be completed.
+You need to be an organizer to cancel a meeting.' This action differs from Delete in that Cancel is available to only the organizer, and letsthe organizer send a custom message to the attendees about the cancellation.
 
 ### [Stop-MgBetaGroupEvent](Stop-MgBetaGroupEvent.md)
 This action allows the organizer of a meeting to send a cancellation message and cancel the event.
 The action moves the event to the Deleted Items folder.
-The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
-An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
-You need to be an organizer to cancel a meeting.' This action differs from Delete in that Cancel is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
+The organizer can also cancel an occurrence of a recurring meeting by providing the occurrence event ID.
+An attendee calling this action gets an error (HTTP 400 Bad Request), with the followingerror message: 'Your request can't be completed.
+You need to be an organizer to cancel a meeting.' This action differs from Delete in that Cancel is available to only the organizer, and letsthe organizer send a custom message to the attendees about the cancellation.
 
 ### [Test-MgBetaGroupDriveItemPermission](Test-MgBetaGroupDriveItemPermission.md)
 Invoke action validatePermission
@@ -1287,9 +1287,9 @@ Invoke action evaluateDynamicMembership
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
-The following validations are performed for the display name and mail nickname properties: \n1.
-Validate the prefix and suffix naming policy\n2.
-Validate the custom banned words policy\n3.
+The following validations are performed for the display name and mail nickname properties: 1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.

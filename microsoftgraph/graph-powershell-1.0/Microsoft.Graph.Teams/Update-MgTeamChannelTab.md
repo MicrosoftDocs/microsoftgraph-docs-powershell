@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchanneltab
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamChannelTab
 
 ## SYNOPSIS
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Update-MgTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
+Update the properties of the specified tab.This can be used to configure the content of the tab.
 
 ## EXAMPLES
 
