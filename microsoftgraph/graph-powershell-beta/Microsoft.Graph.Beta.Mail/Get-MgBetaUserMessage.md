@@ -4,7 +4,7 @@ Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderuserconfigurationcount
 schema: 2.0.0
 ms.prod: extensions
-ms.prod: non-product-specific
+ms.prod: extensions
 ---
 
 # Get-MgBetaUserMailFolderUserConfigurationCount
