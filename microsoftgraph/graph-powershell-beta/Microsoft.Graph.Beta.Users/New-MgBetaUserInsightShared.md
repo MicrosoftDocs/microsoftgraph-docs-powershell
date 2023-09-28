@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsightshared
 schema: 2.0.0
@@ -18,13 +18,19 @@ New-MgBetaUserInsightShared -UserId <String> [-AdditionalProperties <Hashtable>]
  [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
  [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
- [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserInsightShared -UserId <String> -BodyParameter <IMicrosoftGraphSharedInsight> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserInsightShared -UserId <String> -BodyParameter <IMicrosoftGraphSharedInsight> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphSharedInsight>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -33,17 +39,27 @@ New-MgBetaUserInsightShared -InputObject <IUsersIdentity> [-AdditionalProperties
  [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
  [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
- [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphSharedInsight>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to shared for users
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Create new navigation property to shared for users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ sharedInsight
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharedInsight
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedInsight
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -83,7 +99,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,8 +115,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -115,7 +131,7 @@ sharingDetail
 To construct, see NOTES section for LASTSHARED properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharingDetail
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharingDetail
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +147,7 @@ entity
 To construct, see NOTES section for LASTSHAREDMETHOD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEntity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEntity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +163,7 @@ entity
 To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEntity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEntity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +179,7 @@ resourceReference
 To construct, see NOTES section for RESOURCEREFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceReference
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceReference
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +195,7 @@ resourceVisualization
 To construct, see NOTES section for RESOURCEVISUALIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceVisualization
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceVisualization
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +211,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SHARINGHISTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharingDetail[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharingDetail[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -210,8 +226,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -225,7 +241,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -241,7 +257,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -258,10 +274,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedInsight
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedInsight
+
 ## NOTES
 
 ALIASES

@@ -21,7 +21,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgSiteListContentTypeCopy](Add-MgSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -30,7 +30,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Copy-MgSiteContentTypeToDefaultContentLocation](Copy-MgSiteContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
@@ -125,7 +125,7 @@ Get the number of the resource
 Get lastSevenDays from groups
 
 ### [Get-MgGroupSiteAnalyticTime](Get-MgGroupSiteAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgGroupSiteColumn](Get-MgGroupSiteColumn.md)
 The collection of column definitions reusable across lists under this site.
@@ -902,7 +902,7 @@ The collection of the sub-sites under this site.
 Get the number of the resource
 
 ### [Get-MgSite](Get-MgSite.md)
-Retrieve properties and relationships for a [site][] resource.A site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a [site][] resource.\nA site resource represents a team site in SharePoint.
 
 ### [Get-MgSiteActivityByInterval](Get-MgSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -932,7 +932,7 @@ Get the number of the resource
 Get lastSevenDays from sites
 
 ### [Get-MgSiteAnalyticTime](Get-MgSiteAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ### [Get-MgSiteApplicableContentTypeForList](Get-MgSiteApplicableContentTypeForList.md)
 Invoke function getApplicableContentTypesForList
@@ -1139,8 +1139,9 @@ The set of subscriptions on the list.
 ### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
 Get the number of the resource
 
-### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
-Get the number of the resource
+### [Get-MgSiteOnenoteNotebookFromWebUrl](Get-MgSiteOnenoteNotebookFromWebUrl.md)
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
 ### [Get-MgSiteOperation](Get-MgSiteOperation.md)
 Get the status of a rich long-running operation on a site or a list.
@@ -1496,8 +1497,8 @@ The collection of the sub-sites under this site.
 ### [Get-MgSubSiteCount](Get-MgSubSiteCount.md)
 Get the number of the resource
 
-### [Get-MgSubSiteCount](Get-MgSubSiteCount.md)
-Get the number of the resource
+### [Get-MgUserFollowedSite](Get-MgUserFollowedSite.md)
+Get followedSites from users
 
 ### [Get-MgUserFollowedSiteCount](Get-MgUserFollowedSiteCount.md)
 Get the number of the resource

@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryrecommendationimpactedresource
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Invoke-MgBetaDismissDirectoryRecommendationImpactedResource
@@ -16,7 +15,7 @@ Dismiss an impactedResources object and update its status to dismissed.
 ### DismissExpanded (Default)
 ```
 Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -ImpactedResourceId <String>
- -RecommendationId <String> [-AdditionalProperties <Hashtable>] [-DismissReason <String>] [-WhatIf] [-Confirm]
+ -RecommendationId <String> [-AdditionalProperties <Hashtable>] [-DismissReason <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -25,24 +24,42 @@ Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -ImpactedResourceId 
 Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -ImpactedResourceId <String>
  -RecommendationId <String>
  -BodyParameter <IPathsK8CifmDirectoryRecommendationsRecommendationIdImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DismissViaIdentityExpanded
-```
-Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DismissReason <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DismissViaIdentity
 ```
-Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
+Invoke-MgBetaDismissDirectoryRecommendationImpactedResource
+ -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPathsK8CifmDirectoryRecommendationsRecommendationIdImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### DismissViaIdentityExpanded
+```
+Invoke-MgBetaDismissDirectoryRecommendationImpactedResource
+ -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
+ [-DismissReason <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Dismiss an impactedResources object and update its status to dismissed.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +67,7 @@ Dismiss an impactedResources object and update its status to dismissed.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: DismissExpanded, DismissViaIdentityExpanded
 Aliases:
 
@@ -66,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsK8CifmDirectoryRecommendationsRecommendationIdImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsK8CifmDirectoryRecommendationsRecommendationIdImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Dismiss, DismissViaIdentity
 Aliases:
 
@@ -81,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: DismissExpanded, DismissViaIdentityExpanded
 Aliases:
 
@@ -96,8 +113,8 @@ Accept wildcard characters: False
 The unique identifier of impactedResource
 
 ```yaml
-Type: String
-Parameter Sets: DismissExpanded, Dismiss
+Type: System.String
+Parameter Sets: Dismiss, DismissExpanded
 Aliases:
 
 Required: True
@@ -112,8 +129,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: DismissViaIdentityExpanded, DismissViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: DismissViaIdentity, DismissViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -127,8 +144,8 @@ Accept wildcard characters: False
 The unique identifier of recommendation
 
 ```yaml
-Type: String
-Parameter Sets: DismissExpanded, Dismiss
+Type: System.String
+Parameter Sets: Dismiss, DismissExpanded
 Aliases:
 
 Required: True
@@ -142,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,10 +192,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsK8CifmDirectoryRecommendationsRecommendationIdImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
+
 ## NOTES
 
 ALIASES
