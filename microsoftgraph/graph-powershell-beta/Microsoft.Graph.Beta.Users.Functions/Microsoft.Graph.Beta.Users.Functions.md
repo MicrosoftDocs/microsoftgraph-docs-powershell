@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users.Functions
 Module Guid: 7bb2de0a-45b6-461e-8e72-baace566b4f3
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions
@@ -24,6 +24,12 @@ In this API, each meeting room and room list is represented by an emailAddress i
 
 ### [Get-MgBetaAllUserChatMessage](Get-MgBetaAllUserChatMessage.md)
 Invoke function getAllMessages
+
+### [Get-MgBetaAllUserOnlineMeetingRecording](Get-MgBetaAllUserOnlineMeetingRecording.md)
+Invoke function getAllRecordings
+
+### [Get-MgBetaAllUserOnlineMeetingTranscript](Get-MgBetaAllUserOnlineMeetingTranscript.md)
+Invoke function getAllTranscripts
 
 ### [Get-MgBetaUserCalendarEventDelta](Get-MgBetaUserCalendarEventDelta.md)
 Get a set of event resources that have been added, deleted, or updated in one or more calendars.

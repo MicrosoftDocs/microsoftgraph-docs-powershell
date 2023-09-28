@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting
 schema: 2.0.0
@@ -26,12 +26,12 @@ Update-MgAdminSharepointSetting [-AdditionalProperties <Hashtable>] [-AllowedDom
  [-PersonalSiteDefaultStorageLimitInMb <Int64>] [-SharingAllowedDomainList <String[]>]
  [-SharingBlockedDomainList <String[]>] [-SharingCapability <String>] [-SharingDomainRestrictionMode <String>]
  [-SiteCreationDefaultManagedPath <String>] [-SiteCreationDefaultStorageLimitInMb <Int32>]
- [-TenantDefaultTimezone <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TenantDefaultTimezone <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSettings> [-Confirm] [-WhatIf]
+Update-MgAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSettings> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,19 +40,15 @@ Update one or more tenant-level settings for SharePoint and OneDrive.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -60,7 +56,7 @@ Update one or more tenant-level settings for SharePoint and OneDrive.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -75,7 +71,7 @@ Accept wildcard characters: False
 Collection of trusted domain GUIDs for the OneDrive sync app.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -91,7 +87,7 @@ Collection of managed paths available for site creation.
 Read-only.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -107,7 +103,7 @@ sharepointSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepointSettings
+Type: IMicrosoftGraphSharepointSettings
 Parameter Sets: Update
 Aliases:
 
@@ -122,7 +118,7 @@ Accept wildcard characters: False
 The number of days for preserving a deleted user's OneDrive.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -137,7 +133,7 @@ Accept wildcard characters: False
 Collection of file extensions not uploaded by the OneDrive sync app.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -153,7 +149,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -169,7 +165,7 @@ idleSessionSignOut
 To construct, see NOTES section for IDLESESSIONSIGNOUT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdleSessionSignOut
+Type: IMicrosoftGraphIdleSessionSignOut
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -184,7 +180,7 @@ Accept wildcard characters: False
 imageTaggingChoice
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -199,7 +195,7 @@ Accept wildcard characters: False
 Indicates whether comments are allowed on modern site pages in SharePoint.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -214,7 +210,7 @@ Accept wildcard characters: False
 Indicates whether push notifications are enabled for OneDrive events.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -229,7 +225,7 @@ Accept wildcard characters: False
 Indicates whether legacy authentication protocols are enabled for the tenant.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -244,7 +240,7 @@ Accept wildcard characters: False
 Indicates whether if Fluid Framework is allowed on SharePoint sites.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -259,7 +255,7 @@ Accept wildcard characters: False
 Indicates whether files can be synced using the OneDrive sync app for Mac.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -274,7 +270,7 @@ Accept wildcard characters: False
 Indicates whether guests must sign in using the same account to which sharing invitations are sent.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -289,7 +285,7 @@ Accept wildcard characters: False
 Indicates whether guests are allowed to reshare files, folders, and sites they don't own.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -304,7 +300,7 @@ Accept wildcard characters: False
 Indicates whether mobile push notifications are enabled for SharePoint.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -319,7 +315,7 @@ Accept wildcard characters: False
 Indicates whether the newsfeed is allowed on the modern site pages in SharePoint.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -334,7 +330,7 @@ Accept wildcard characters: False
 Indicates whether users are allowed to create sites.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -349,7 +345,7 @@ Accept wildcard characters: False
 Indicates whether the UI commands for creating sites are shown.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -364,7 +360,7 @@ Accept wildcard characters: False
 Indicates whether creating new modern pages is allowed on SharePoint sites.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -379,7 +375,7 @@ Accept wildcard characters: False
 Indicates whether site storage space is automatically managed or if specific storage limits are set per site.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -394,7 +390,7 @@ Accept wildcard characters: False
 Indicates whether the sync button in OneDrive is hidden.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -409,7 +405,7 @@ Accept wildcard characters: False
 Indicates whether users are allowed to sync files only on PCs joined to specific domains.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -425,7 +421,7 @@ The default OneDrive storage limit for all new and existing users who are assign
 Measured in megabytes (MB).
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -440,7 +436,7 @@ Accept wildcard characters: False
 Collection of email domains that are allowed for sharing outside the organization.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -455,7 +451,7 @@ Accept wildcard characters: False
 Collection of email domains that are blocked for sharing outside the organization.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -470,7 +466,7 @@ Accept wildcard characters: False
 sharingCapabilities
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -485,7 +481,7 @@ Accept wildcard characters: False
 sharingDomainRestrictionMode
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -501,7 +497,7 @@ The value of the team site managed path.
 This is the path under which new team sites will be created.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -517,7 +513,7 @@ The default storage quota for a new site upon creation.
 Measured in megabytes (MB).
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -533,7 +529,7 @@ The default timezone of a tenant for newly created sites.
 For a list of possible values, see SPRegionalSettings.TimeZones property.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -548,7 +544,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -564,7 +560,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -581,11 +577,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepointSettings
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepointSettings
-
 ## NOTES
 
 ALIASES
@@ -639,4 +633,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WarnAfterInSeconds <Int64?>]`: Number of seconds of inactivity after which a user is notified that they'll be signed out.
 
 ## RELATED LINKS
-

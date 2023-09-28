@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 Module Guid: 67e00679-8986-481c-9717-2483a1a7de82
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement
@@ -2320,8 +2320,8 @@ Update the properties of a browserSharedCookie object.
 ### [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
 Update the properties of a browserSite object.
 
-### [Update-MgBetaDeviceManagement](Update-MgBetaDeviceManagement.md)
-Update deviceManagement
+### [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
+Update the properties of a browserSite object.
 
 ### [Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
 Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement

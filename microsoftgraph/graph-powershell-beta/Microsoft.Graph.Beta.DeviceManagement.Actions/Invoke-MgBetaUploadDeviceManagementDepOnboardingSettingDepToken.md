@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetauploaddevicemanagementdeponboardingsettingdeptoken
 schema: 2.0.0
@@ -15,7 +15,7 @@ Uploads a new Device Enrollment Program token
 ### UploadExpanded (Default)
 ```
 Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken -DepOnboardingSettingId <String>
- [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-DepToken <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-DepToken <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -23,22 +23,21 @@ Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken -DepOnboardingSe
 ```
 Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken -DepOnboardingSettingId <String>
  -BodyParameter <IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UploadViaIdentity
-```
-Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken
- -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UploadViaIdentityExpanded
 ```
-Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-AppleId <String>]
- [-DepToken <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AppleId <String>] [-DepToken <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UploadViaIdentity
+```
+Invoke-MgBetaUploadDeviceManagementDepOnboardingSettingDepToken -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,14 +45,14 @@ Uploads a new Device Enrollment Program token
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -66,7 +65,7 @@ Uploads a new Device Enrollment Program token
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -81,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -97,7 +96,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema
+Type: IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Upload, UploadViaIdentity
 Aliases:
 
@@ -112,8 +111,8 @@ Accept wildcard characters: False
 The unique identifier of depOnboardingSetting
 
 ```yaml
-Type: System.String
-Parameter Sets: Upload, UploadExpanded
+Type: String
+Parameter Sets: UploadExpanded, Upload
 Aliases:
 
 Required: True
@@ -127,7 +126,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -143,8 +142,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: UploadViaIdentity, UploadViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: UploadViaIdentityExpanded, UploadViaIdentity
 Aliases:
 
 Required: True
@@ -158,7 +157,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -173,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths7Ytj24DevicemanagementDeponboardingsettingsDeponboardingsettingIdMicrosoftGraphUploaddeptokenPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -281,4 +277,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-

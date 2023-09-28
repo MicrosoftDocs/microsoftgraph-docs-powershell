@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetchildcount
 schema: 2.0.0
@@ -18,31 +18,25 @@ Get-MgSiteTermStoreSetChildCount -SetId <String> -SiteId <String> [-Filter <Stri
  [<CommonParameters>]
 ```
 
-### Get
-```
-Get-MgSiteTermStoreSetChildCount -SetId <String> -SiteId <String> -TermId <String> [-Filter <String>]
- [-Search <String>] [<CommonParameters>]
-```
-
-### Get2
-```
-Get-MgSiteTermStoreSetChildCount -SetId <String> -SiteId <String> -StoreId <String> -TermId <String>
- [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
 ### Get3
 ```
 Get-MgSiteTermStoreSetChildCount -SetId <String> -SiteId <String> -StoreId <String> [-Filter <String>]
  [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### Get2
 ```
-Get-MgSiteTermStoreSetChildCount -InputObject <ISitesIdentity> [-Filter <String>] [-Search <String>]
- [<CommonParameters>]
+Get-MgSiteTermStoreSetChildCount -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### Get
+```
+Get-MgSiteTermStoreSetChildCount -SetId <String> -SiteId <String> -TermId <String> [-Filter <String>]
+ [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity3
 ```
 Get-MgSiteTermStoreSetChildCount -InputObject <ISitesIdentity> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
@@ -54,7 +48,13 @@ Get-MgSiteTermStoreSetChildCount -InputObject <ISitesIdentity> [-Filter <String>
  [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity1
+```
+Get-MgSiteTermStoreSetChildCount -InputObject <ISitesIdentity> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity
 ```
 Get-MgSiteTermStoreSetChildCount -InputObject <ISitesIdentity> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
@@ -65,19 +65,15 @@ Get the number of the resource
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -85,7 +81,7 @@ Get the number of the resource
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -101,8 +97,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1, GetViaIdentity2, GetViaIdentity3
+Type: ISitesIdentity
+Parameter Sets: GetViaIdentity3, GetViaIdentity2, GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -116,7 +112,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -131,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of set
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get1, Get2, Get3
+Type: String
+Parameter Sets: Get1, Get3, Get2, Get
 Aliases:
 
 Required: True
@@ -146,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get1, Get2, Get3
+Type: String
+Parameter Sets: Get1, Get3, Get2, Get
 Aliases:
 
 Required: True
@@ -161,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of store
 
 ```yaml
-Type: System.String
-Parameter Sets: Get2, Get3
+Type: String
+Parameter Sets: Get3, Get2
 Aliases:
 
 Required: True
@@ -176,8 +172,8 @@ Accept wildcard characters: False
 The unique identifier of term
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get2
+Type: String
+Parameter Sets: Get2, Get
 Aliases:
 
 Required: True
@@ -193,11 +189,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Int32
-
 ## NOTES
 
 ALIASES
@@ -248,4 +242,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-
