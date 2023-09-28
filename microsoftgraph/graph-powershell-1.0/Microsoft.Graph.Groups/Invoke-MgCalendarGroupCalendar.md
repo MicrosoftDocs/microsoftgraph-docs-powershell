@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function allowedCalendarSharingRoles
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaCalendarGroupCalendar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Calendar (Default)
@@ -222,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Invoke-MgBetaCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaCalendarGroupCalendar?view=graph-powershell-beta)

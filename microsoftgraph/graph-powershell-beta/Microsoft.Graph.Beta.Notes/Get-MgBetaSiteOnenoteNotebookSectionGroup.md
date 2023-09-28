@@ -11,6 +11,9 @@ ms.prod: onenote
 ## SYNOPSIS
 Retrieve a list of section groups from the specified notebook.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -230,3 +233,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebookSectionGroup?view=graph-powershell-1.0)

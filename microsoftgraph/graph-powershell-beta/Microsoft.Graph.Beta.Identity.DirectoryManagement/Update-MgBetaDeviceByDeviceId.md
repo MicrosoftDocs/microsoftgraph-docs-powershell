@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceByDeviceId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDeviceByDeviceId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1182,5 +1185,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: usageRightState
 
 ## RELATED LINKS
+[Update-MgDeviceByDeviceId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDeviceByDeviceId?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceByDeviceId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDeviceByDeviceId?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an ediscoverySearch object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -241,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Remove-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)

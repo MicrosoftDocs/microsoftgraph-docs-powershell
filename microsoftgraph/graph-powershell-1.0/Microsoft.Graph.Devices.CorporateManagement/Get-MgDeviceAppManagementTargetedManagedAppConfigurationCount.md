@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -79,3 +82,4 @@ ALIASES
 Get-MgDeviceAppMgtTargetedManagedAppConfigurationCount
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationCount?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterOperators
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Filter (Default)
@@ -249,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator?view=graph-powershell-1.0)

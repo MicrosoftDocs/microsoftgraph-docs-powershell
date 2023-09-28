@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property analytics in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -11714,5 +11717,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootAnalytic?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootAnalytic?view=graph-powershell-beta)

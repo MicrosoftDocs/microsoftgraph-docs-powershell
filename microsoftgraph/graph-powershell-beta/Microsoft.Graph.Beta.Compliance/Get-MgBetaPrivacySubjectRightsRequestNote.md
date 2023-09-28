@@ -11,6 +11,9 @@ ms.prod: compliance
 ## SYNOPSIS
 List of notes associated with the request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -284,3 +287,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
