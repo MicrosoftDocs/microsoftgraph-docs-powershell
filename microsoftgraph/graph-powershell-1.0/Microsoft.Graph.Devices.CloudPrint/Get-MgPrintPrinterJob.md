@@ -37,18 +37,6 @@ Get-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty
 ## DESCRIPTION
 The list of jobs that are queued for printing by the printer/printerShare.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -283,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJob?view=graph-powershell-beta)
+

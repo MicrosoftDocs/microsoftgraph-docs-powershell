@@ -35,18 +35,6 @@ New-MgBetaTenantRelationshipManagedTenantWindowsProtectionState
 ## DESCRIPTION
 Create new navigation property to windowsProtectionStates for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -600,3 +588,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: The Azure Active Directory tenant identifier for the managed tenant. Optional. Read-only.
 
 ## RELATED LINKS
+

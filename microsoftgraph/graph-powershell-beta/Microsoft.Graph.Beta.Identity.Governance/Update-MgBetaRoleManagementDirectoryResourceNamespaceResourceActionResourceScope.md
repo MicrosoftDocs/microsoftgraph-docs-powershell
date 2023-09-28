@@ -44,18 +44,6 @@ Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionResourceScope
 ## DESCRIPTION
 Update the navigation property resourceScope in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -352,3 +340,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

@@ -37,18 +37,6 @@ Get-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-Expan
 ## DESCRIPTION
 List of notes associcated with the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -272,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
+

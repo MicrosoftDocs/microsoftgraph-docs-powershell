@@ -37,18 +37,6 @@ Get-MgPrivacySubjectRightsRequestApprover -InputObject <IComplianceIdentity> [-E
 ## DESCRIPTION
 Get approvers from privacy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -273,3 +261,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrivacySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestApprover?view=graph-powershell-beta)
+

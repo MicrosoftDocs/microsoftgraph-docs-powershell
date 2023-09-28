@@ -30,22 +30,6 @@ Remove-MgUserDriveRootListItemVersion -InputObject <IFilesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property versions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -216,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItemVersion?view=graph-powershell-beta)
+

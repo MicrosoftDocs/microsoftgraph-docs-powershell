@@ -29,22 +29,6 @@ Invoke-MgBetaFollowGroupDriveRoot -InputObject <IGroupsIdentity> [-WhatIf] [-Con
 ## DESCRIPTION
 Follow a driveItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -187,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgFollowGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgFollowGroupDriveRoot?view=graph-powershell-1.0)
+

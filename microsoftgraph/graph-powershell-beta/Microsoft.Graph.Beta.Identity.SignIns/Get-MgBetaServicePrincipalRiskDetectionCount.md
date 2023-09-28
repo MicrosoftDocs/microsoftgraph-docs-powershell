@@ -22,18 +22,6 @@ Get-MgBetaServicePrincipalRiskDetectionCount [-Filter <String>] [-Search <String
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgServicePrincipalRiskDetectionCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgServicePrincipalRiskDetectionCount?view=graph-powershell-1.0)
+

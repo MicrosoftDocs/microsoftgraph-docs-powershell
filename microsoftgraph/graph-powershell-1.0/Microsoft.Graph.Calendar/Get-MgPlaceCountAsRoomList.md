@@ -22,18 +22,6 @@ Get-MgPlaceCountAsRoomList [-Filter <String>] [-Search <String>] [<CommonParamet
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPlaceCountAsRoomList](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceCountAsRoomList?view=graph-powershell-beta)
+

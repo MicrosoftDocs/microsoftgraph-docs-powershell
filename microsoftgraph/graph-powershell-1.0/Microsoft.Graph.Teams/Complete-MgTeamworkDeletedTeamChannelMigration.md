@@ -36,18 +36,6 @@ Migration mode is a special state that prevents certain operations, like sending
 After a completeMigration request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -196,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgBetaTeamworkDeletedTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamworkDeletedTeamChannelMigration?view=graph-powershell-beta)
+

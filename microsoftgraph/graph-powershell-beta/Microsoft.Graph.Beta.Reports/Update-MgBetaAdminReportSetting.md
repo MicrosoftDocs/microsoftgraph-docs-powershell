@@ -27,18 +27,6 @@ Update-MgBetaAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettin
 ## DESCRIPTION
 Update tenant-level settings for Microsoft 365 reports.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -161,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayConcealedNames <Boolean?>]`: If set to true, all reports will conceal user information such as usernames, groups, and sites. If false, all reports will show identifiable information. This property represents a setting in the Microsoft 365 admin center. Required.
 
 ## RELATED LINKS
+

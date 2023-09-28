@@ -24,18 +24,6 @@ Get-MgDeviceManagementConditionalAccessSetting [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Read properties and relationships of the onPremisesConditionalAccessSettings object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +70,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
+

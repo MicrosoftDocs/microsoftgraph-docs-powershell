@@ -27,22 +27,6 @@ Remove-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <
 ## DESCRIPTION
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -191,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

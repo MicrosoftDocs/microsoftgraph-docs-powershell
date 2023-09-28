@@ -32,22 +32,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsAnomaly for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -363,3 +347,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <UserExperienceAnalyticsAnomalyState?>]`: Indicates the state of the anomaly. Eg: anomaly severity can be new, active, disabled, removed or other.
 
 ## RELATED LINKS
+

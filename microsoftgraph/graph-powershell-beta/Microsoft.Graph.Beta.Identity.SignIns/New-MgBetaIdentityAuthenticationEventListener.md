@@ -30,22 +30,6 @@ New-MgBetaIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAut
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -213,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
       - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
 ## RELATED LINKS
+

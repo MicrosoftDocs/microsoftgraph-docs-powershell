@@ -38,18 +38,6 @@ Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy
 ## DESCRIPTION
 Zero or more policys already applied on the registered app when it last synchronized with managment service.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -337,3 +325,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy?view=graph-powershell-1.0)
+

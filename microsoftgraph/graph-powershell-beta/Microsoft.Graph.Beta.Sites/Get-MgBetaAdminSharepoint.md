@@ -22,18 +22,6 @@ Get-MgBetaAdminSharepoint [-ExpandProperty <String[]>] [-Property <String[]>] [<
 ## DESCRIPTION
 Get sharepoint from admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgAdminSharepoint](/powershell/module/Microsoft.Graph.Sites/Get-MgAdminSharepoint?view=graph-powershell-1.0)
+

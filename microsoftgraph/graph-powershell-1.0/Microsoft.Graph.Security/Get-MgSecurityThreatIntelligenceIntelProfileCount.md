@@ -22,18 +22,6 @@ Get-MgSecurityThreatIntelligenceIntelProfileCount [-Filter <String>] [-Search <S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaSecurityThreatIntelligenceIntelProfileCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceIntelProfileCount?view=graph-powershell-beta)
+

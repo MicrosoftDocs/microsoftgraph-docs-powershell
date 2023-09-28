@@ -30,18 +30,6 @@ Get-MgBetaIdentityB2XUserFlowPostFederationSignup -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Get postFederationSignup from identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -202,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2XUserFlowPostFederationSignup](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowPostFederationSignup?view=graph-powershell-1.0)
+

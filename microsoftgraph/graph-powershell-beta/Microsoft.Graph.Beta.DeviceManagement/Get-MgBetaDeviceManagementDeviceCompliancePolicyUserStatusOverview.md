@@ -30,22 +30,6 @@ Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview -InputObject 
 ## DESCRIPTION
 Device compliance users status overview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceCompliancePolicyId
@@ -273,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview?view=graph-powershell-1.0)
+

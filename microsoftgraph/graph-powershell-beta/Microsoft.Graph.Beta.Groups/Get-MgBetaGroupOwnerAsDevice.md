@@ -37,18 +37,6 @@ Get-MgBetaGroupOwnerAsDevice -InputObject <IGroupsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -327,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupOwnerAsDevice](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerAsDevice?view=graph-powershell-1.0)
+

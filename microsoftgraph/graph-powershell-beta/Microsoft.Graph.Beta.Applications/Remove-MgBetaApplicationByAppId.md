@@ -34,18 +34,6 @@ Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -207,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationByAppId](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationByAppId?view=graph-powershell-1.0)
+

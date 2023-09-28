@@ -30,22 +30,6 @@ Remove-MgBetaInformationProtectionThreatAssessmentRequest -InputObject <IIdentit
 ## DESCRIPTION
 Delete navigation property threatAssessmentRequests for informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -237,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
+

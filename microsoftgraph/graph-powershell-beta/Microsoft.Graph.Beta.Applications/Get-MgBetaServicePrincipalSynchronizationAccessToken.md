@@ -47,22 +47,6 @@ Get-MgBetaServicePrincipalSynchronizationAccessToken -InputObject <IApplications
 ## DESCRIPTION
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -252,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationAccessToken?view=graph-powershell-1.0)
+

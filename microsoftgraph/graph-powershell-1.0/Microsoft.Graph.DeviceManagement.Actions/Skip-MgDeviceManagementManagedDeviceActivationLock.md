@@ -30,22 +30,6 @@ Skip-MgDeviceManagementManagedDeviceActivationLock -InputObject <IDeviceManageme
 ## DESCRIPTION
 Bypass activation lock
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -159,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Skip-MgBetaDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Skip-MgBetaDeviceManagementManagedDeviceActivationLock?view=graph-powershell-beta)
+

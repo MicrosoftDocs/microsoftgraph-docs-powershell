@@ -29,22 +29,6 @@ Remove-MgGroupTeam -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru]
 ## DESCRIPTION
 Delete navigation property team for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -193,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeam?view=graph-powershell-beta)
+

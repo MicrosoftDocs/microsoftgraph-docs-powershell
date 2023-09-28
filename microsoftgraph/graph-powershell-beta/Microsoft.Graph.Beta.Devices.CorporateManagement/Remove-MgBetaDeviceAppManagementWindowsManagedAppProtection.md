@@ -27,18 +27,6 @@ Remove-MgBetaDeviceAppManagementWindowsManagedAppProtection -InputObject <IDevic
 ## DESCRIPTION
 Delete navigation property windowsManagedAppProtections for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -220,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+

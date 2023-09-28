@@ -30,18 +30,6 @@ Get-MgBetaExternalIndustryDataRunStatistics -InputObject <ISearchIdentity> [<Com
 ## DESCRIPTION
 Invoke function getStatistics
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IndustryDataRunId
@@ -114,3 +102,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+
