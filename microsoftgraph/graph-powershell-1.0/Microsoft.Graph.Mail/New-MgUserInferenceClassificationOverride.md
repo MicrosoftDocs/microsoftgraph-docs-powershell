@@ -29,16 +29,26 @@ Get-MgUserMessageExtensionCount -InputObject <IMailIdentity> [-Filter <String>] 
 Get the number of the resource
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Mail
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+$params = @{
+	classifyAs = "focused"
+	senderEmailAddress = @{
+		name = "Samantha Booth"
+		address = "samanthab@adatum.onmicrosoft.com"
+	}
+}
+
+# A UPN can also be used as -UserId.
+New-MgUserInferenceClassificationOverride -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgUserInferenceClassificationOverride Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

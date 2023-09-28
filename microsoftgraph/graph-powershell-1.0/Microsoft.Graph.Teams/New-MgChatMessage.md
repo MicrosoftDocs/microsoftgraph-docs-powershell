@@ -63,11 +63,11 @@ Send a new chatMessage in the specified chat.
 This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -77,6 +77,10 @@ $params = @{
 }
 
 New-MgChatMessage -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgChatMessage Cmdlet.
+
 
 ## PARAMETERS
 

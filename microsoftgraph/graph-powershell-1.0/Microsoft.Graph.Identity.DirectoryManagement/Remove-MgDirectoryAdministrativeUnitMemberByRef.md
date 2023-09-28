@@ -31,13 +31,17 @@ Remove-MgDirectoryAdministrativeUnitMemberByRef -InputObject <IIdentityDirectory
 Use this API to remove a member (user, group, or device) from an administrative unit.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -DirectoryObjectId $directoryObjectId
+```
+This example shows how to use the Remove-MgDirectoryAdministrativeUnitMemberByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

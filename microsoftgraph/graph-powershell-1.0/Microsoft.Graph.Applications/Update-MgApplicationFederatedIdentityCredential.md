@@ -45,11 +45,10 @@ Update-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdent
 Update the properties of a federatedIdentityCredential object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	name = "testing02"
@@ -62,6 +61,11 @@ $params = @{
 }
 
 Update-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId -BodyParameter $params
+```
+This example shows how to use the Update-MgApplicationFederatedIdentityCredential Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -38,13 +38,17 @@ Get-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementIden
 Retrieve the properties and relationships of an administrativeUnit object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryAdministrativeUnit
+
+```
+This example shows how to use the Get-MgDirectoryAdministrativeUnit Cmdlet.
+
 
 ## PARAMETERS
 

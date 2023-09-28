@@ -31,13 +31,18 @@ Invoke-MgCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-PassThru] [-Wha
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Files
-```
+Import-Module Microsoft.Graph.Users.Actions
 
-Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
+# A UPN can also be used as -UserId.
+Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
+```
+This example shows how to use the Invoke-MgDismissGroupCalendarEventReminder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

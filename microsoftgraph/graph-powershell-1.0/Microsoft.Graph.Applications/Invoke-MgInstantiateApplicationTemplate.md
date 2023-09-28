@@ -50,17 +50,21 @@ You can also use this API to instantiate non-gallery apps.
 Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	displayName = "Azure AD SAML Toolkit"
 }
 
 Invoke-MgInstantiateApplicationTemplate -ApplicationTemplateId $applicationTemplateId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgInstantiateApplicationTemplate Cmdlet.
+
 
 ## PARAMETERS
 

@@ -81,11 +81,10 @@ This is a special case of the Update method.nYour app can combine moving an item
 Items cannot be moved between Drives using this request.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -95,6 +94,11 @@ $params = @{
 }
 
 Update-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+```
+This example shows how to use the Update-MgDriveItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

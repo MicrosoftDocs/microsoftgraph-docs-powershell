@@ -45,11 +45,11 @@ New-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsI
 Create a new audioRoutingGroup.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	id = "oneToOne"
@@ -63,6 +63,10 @@ $params = @{
 }
 
 New-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaCommunicationCallAudioRoutingGroup Cmdlet.
+
 
 ## PARAMETERS
 
