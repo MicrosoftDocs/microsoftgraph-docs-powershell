@@ -643,6 +643,9 @@ You can also enable and disable specific plans associated with a subscription.
 ### [Set-MgUserPresence](Set-MgUserPresence.md)
 Set the state of a user's presence session as an application.
 
+### [Set-MgUserPresenceStatusMessage](Set-MgUserPresenceStatusMessage.md)
+Invoke action setStatusMessage
+
 ### [Set-MgUserPresenceUserPreferredPresence](Set-MgUserPresenceUserPreferredPresence.md)
 Set the preferred availability and activity status for a user.
 If the preferred presence of a user is set, the user's presence shows as the preferred status.

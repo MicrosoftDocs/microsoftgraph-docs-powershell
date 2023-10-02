@@ -18,9 +18,7 @@ Update-MgBetaOrganizationSetting -OrganizationId <String> [-AdditionalProperties
  [-ContactInsights <IMicrosoftGraphInsightsSettings>] [-Id <String>]
  [-ItemInsights <IMicrosoftGraphInsightsSettings>]
  [-MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]
- [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
- [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PeopleInsights <IMicrosoftGraphInsightsSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,9 +33,7 @@ Update-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdent
  [-AdditionalProperties <Hashtable>] [-ContactInsights <IMicrosoftGraphInsightsSettings>] [-Id <String>]
  [-ItemInsights <IMicrosoftGraphInsightsSettings>]
  [-MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]
- [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
- [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PeopleInsights <IMicrosoftGraphInsightsSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -183,38 +179,6 @@ To construct, see NOTES section for PEOPLEINSIGHTS properties and create a hash 
 
 ```yaml
 Type: IMicrosoftGraphInsightsSettings
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProfileCardProperties
-.
-To construct, see NOTES section for PROFILECARDPROPERTIES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphProfileCardProperty[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Pronouns
-pronounsSettings
-To construct, see NOTES section for PRONOUNS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphPronounsSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

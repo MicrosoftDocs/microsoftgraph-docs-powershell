@@ -17,13 +17,16 @@ Create a new subjectRightsRequest object.
 
 ### CreateExpanded (Default)
 ```
-New-MgPrivacySubjectRightsRequest [-AdditionalProperties <Hashtable>] [-AssignedTo <IMicrosoftGraphIdentity>]
- [-ClosedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+New-MgPrivacySubjectRightsRequest [-AdditionalProperties <Hashtable>] [-Approvers <IMicrosoftGraphUser[]>]
+ [-AssignedTo <IMicrosoftGraphIdentity>] [-ClosedDateTime <DateTime>] [-Collaborators <IMicrosoftGraphUser[]>]
+ [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DataSubject <IMicrosoftGraphDataSubject>] [-DataSubjectType <String>] [-Description <String>]
- [-DisplayName <String>] [-History <IMicrosoftGraphSubjectRightsRequestHistory[]>] [-Id <String>]
+ [-DisplayName <String>] [-ExternalId <String>] [-History <IMicrosoftGraphSubjectRightsRequestHistory[]>]
+ [-Id <String>] [-IncludeAllVersions] [-IncludeAuthoredContent]
  [-Insight <IMicrosoftGraphSubjectRightsRequestDetail>] [-InternalDueDateTime <DateTime>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Notes <IMicrosoftGraphAuthoredNote[]>] [-Regulations <String[]>]
+ [-Mailboxlocations <Hashtable>] [-Notes <IMicrosoftGraphAuthoredNote[]>] [-PauseAfterEstimate]
+ [-Regulations <String[]>] [-Sitelocations <Hashtable>]
  [-Stages <IMicrosoftGraphSubjectRightsRequestStageDetail[]>] [-Status <String>] [-Team <IMicrosoftGraphTeam>]
  [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +47,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Approvers
+.
+To construct, see NOTES section for APPROVERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUser[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -93,6 +112,37 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Collaborators
+.
+To construct, see NOTES section for COLLABORATORS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUser[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContentQuery
+.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -197,6 +247,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ExternalId
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -History
 Collection of history change events.
 To construct, see NOTES section for HISTORY properties and create a hash table.
@@ -225,6 +290,36 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludeAllVersions
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludeAuthoredContent
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -295,6 +390,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Mailboxlocations
+subjectRightsRequestMailboxLocation
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Notes
 List of notes associcated with the request.
 To construct, see NOTES section for NOTES properties and create a hash table.
@@ -311,11 +421,41 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PauseAfterEstimate
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Regulations
 List of regulations that this request will fulfill.
 
 ```yaml
 Type: String[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sitelocations
+subjectRightsRequestSiteLocation
+
+```yaml
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 

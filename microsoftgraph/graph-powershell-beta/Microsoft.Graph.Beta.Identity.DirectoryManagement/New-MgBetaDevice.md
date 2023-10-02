@@ -27,11 +27,11 @@ New-MgBetaDevice [-AccountEnabled] [-AdditionalProperties <Hashtable>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Hostnames <String[]>] [-Id <String>] [-IsCompliant] [-IsManaged]
  [-IsManagementRestricted] [-IsRooted] [-Kind <String>] [-ManagementType <String>] [-Manufacturer <String>]
  [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Model <String>] [-Name <String>]
- [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSyncEnabled] [-OperatingSystem <String>]
- [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>] [-Platform <String>] [-ProfileType <String>]
- [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>] [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]
- [-RegistrationDateTime <DateTime>] [-Status <String>] [-SystemLabels <String[]>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
+ [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled]
+ [-OperatingSystem <String>] [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>] [-Platform <String>]
+ [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
+ [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>] [-RegistrationDateTime <DateTime>] [-Status <String>]
+ [-SystemLabels <String[]>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
  [-UsageRights <IMicrosoftGraphUsageRight[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -615,6 +615,21 @@ Supports $filter (eq, ne, not, ge, le, in).
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OnPremisesSecurityIdentifier
+.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 

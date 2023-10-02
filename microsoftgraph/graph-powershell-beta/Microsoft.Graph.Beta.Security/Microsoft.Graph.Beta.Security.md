@@ -332,6 +332,9 @@ Microsoft 365 Defender correlates alerts with the same attack techniques or the 
 The list of related alerts.
 Supports $expand.
 
+### [Get-MgBetaSecurityIncidentAlertCommentCount](Get-MgBetaSecurityIncidentAlertCommentCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaSecurityIncidentAlertCount](Get-MgBetaSecurityIncidentAlertCount.md)
 Get the number of the resource
 
@@ -792,6 +795,9 @@ For details, see Manage custodians in an eDiscovery (Premium) case.
 
 ### [Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy](Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy.md)
 Invoke function asHierarchy
+
+### [Invoke-MgBetaCommentSecurityAlert](Invoke-MgBetaCommentSecurityAlert.md)
+Get the number of the resource
 
 ### [Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics](Invoke-MgBetaEstimateSecurityCaseEdiscoveryCaseSearchStatistics.md)
 Run an estimate of the number of emails and documents in the eDiscovery search.
@@ -1345,11 +1351,17 @@ Delete navigation property parent for users
 ### [Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault](Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault.md)
 Reset a caseSettings object to the default values.
 
+### [Set-MgBetaSecurityAlert](Set-MgBetaSecurityAlert.md)
+Sets a new value for the collection of alertComment.
+
 ### [Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent](Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent.md)
 Update content for the navigation property files in security
 
 ### [Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent](Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileExtractedTextContent.md)
 Update extractedTextContent for the navigation property files in security
+
+### [Set-MgBetaSecurityIncidentAlertComment](Set-MgBetaSecurityIncidentAlertComment.md)
+Sets a new value for the collection of alertComment.
 
 ### [Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery.md)
 Invoke function run

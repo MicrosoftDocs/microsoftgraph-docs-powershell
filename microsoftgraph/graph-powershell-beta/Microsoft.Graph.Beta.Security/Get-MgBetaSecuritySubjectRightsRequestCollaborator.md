@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get collaborators from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestCollaborator](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestCollaborator?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -329,4 +332,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecuritySubjectRightsRequestCollaborator](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestCollaborator?view=graph-powershell-1.0)
 
