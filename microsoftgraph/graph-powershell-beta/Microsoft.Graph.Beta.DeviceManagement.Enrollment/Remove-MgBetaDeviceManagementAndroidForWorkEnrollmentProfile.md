@@ -27,18 +27,6 @@ Remove-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile -InputObject <IDevi
 ## DESCRIPTION
 Delete navigation property androidForWorkEnrollmentProfiles for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AndroidForWorkEnrollmentProfileId
@@ -179,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+

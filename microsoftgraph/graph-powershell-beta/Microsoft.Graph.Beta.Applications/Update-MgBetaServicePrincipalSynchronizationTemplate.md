@@ -49,22 +49,6 @@ Update-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplications
 ## DESCRIPTION
 Update (override) the synchronization template associated with a given application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -545,3 +529,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
+

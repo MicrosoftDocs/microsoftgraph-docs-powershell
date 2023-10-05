@@ -30,18 +30,6 @@ Find-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsI
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -179,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Find-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+

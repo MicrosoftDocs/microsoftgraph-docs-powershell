@@ -27,18 +27,6 @@ Test-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-PassTh
 ## DESCRIPTION
 Perform validations applicable for the specific instance of the data connector.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IndustryDataConnectorId
@@ -157,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+

@@ -46,18 +46,6 @@ Update-MgGroupSiteAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property analytics in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -11735,3 +11723,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteAnalytic?view=graph-powershell-beta)
+

@@ -24,22 +24,6 @@ Get-MgBetaDeviceManagementManagedDeviceUser -ManagedDeviceId <String> [-ExpandPr
 ## DESCRIPTION
 The primary users associated with the managed device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -222,3 +206,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementManagedDeviceUser](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceUser?view=graph-powershell-1.0)
+

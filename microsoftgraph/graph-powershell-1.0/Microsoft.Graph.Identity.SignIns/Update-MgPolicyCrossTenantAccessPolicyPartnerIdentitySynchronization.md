@@ -43,18 +43,6 @@ Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObjec
 ## DESCRIPTION
 Create a cross-tenant user synchronization policy for a partner-specific configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsSyncAllowed <Boolean?>]`: Defines whether user objects should be synchronized from the partner tenant. false causes any current user synchronization from the source tenant to the target tenant to stop. This property has no impact on existing users who have already been synchronized.
 
 ## RELATED LINKS
+

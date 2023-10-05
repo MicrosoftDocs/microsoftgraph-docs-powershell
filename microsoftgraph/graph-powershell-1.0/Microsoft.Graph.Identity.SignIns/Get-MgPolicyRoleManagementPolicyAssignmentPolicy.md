@@ -32,22 +32,6 @@ Get-MgPolicyRoleManagementPolicyAssignmentPolicy -InputObject <IIdentitySignInsI
 The policy that's associated with a policy assignment.
 Supports $expand and a nested $expand of the rules and effectiveRules relationships for the policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -188,3 +172,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyRoleManagementPolicyAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyRoleManagementPolicyAssignmentPolicy?view=graph-powershell-beta)
+

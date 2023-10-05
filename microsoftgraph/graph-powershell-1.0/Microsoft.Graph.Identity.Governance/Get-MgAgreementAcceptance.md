@@ -39,22 +39,6 @@ Get-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-ExpandPro
 Read-only.
 Information about acceptances of this agreement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AgreementAcceptanceId
@@ -338,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementAcceptance?view=graph-powershell-beta)
+

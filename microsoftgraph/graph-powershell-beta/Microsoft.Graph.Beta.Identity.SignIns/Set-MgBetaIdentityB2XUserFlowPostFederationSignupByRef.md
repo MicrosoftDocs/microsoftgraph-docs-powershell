@@ -44,18 +44,6 @@ Set-MgBetaIdentityB2XUserFlowPostFederationSignupByRef -InputObject <IIdentitySi
 ## DESCRIPTION
 Update the ref of navigation property postFederationSignup in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -300,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgIdentityB2XUserFlowPostFederationSignupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowPostFederationSignupByRef?view=graph-powershell-1.0)
+

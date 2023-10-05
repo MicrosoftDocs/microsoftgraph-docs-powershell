@@ -41,18 +41,6 @@ The events in the calendar.
 Navigation property.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -269,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
+

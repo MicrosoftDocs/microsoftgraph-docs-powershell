@@ -27,18 +27,6 @@ Set-MgBetaApplicationSynchronizationJobBulkUploadContent -InputObject <IApplicat
 ## DESCRIPTION
 Update media content for the navigation property bulkUpload in applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -217,3 +205,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

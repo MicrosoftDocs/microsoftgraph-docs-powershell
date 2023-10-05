@@ -29,18 +29,6 @@ Remove-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity
 ## DESCRIPTION
 Delete navigation property importedAppleDeviceIdentities for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -196,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+

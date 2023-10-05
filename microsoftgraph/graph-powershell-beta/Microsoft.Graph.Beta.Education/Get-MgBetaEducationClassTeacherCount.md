@@ -30,18 +30,6 @@ Get-MgBetaEducationClassTeacherCount -InputObject <IEducationIdentity> [-Filter 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -142,3 +130,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassTeacherCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassTeacherCount?view=graph-powershell-1.0)
+

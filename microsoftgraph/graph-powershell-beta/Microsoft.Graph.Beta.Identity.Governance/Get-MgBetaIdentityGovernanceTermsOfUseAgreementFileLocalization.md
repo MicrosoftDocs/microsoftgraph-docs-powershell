@@ -38,18 +38,6 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <II
 ## DESCRIPTION
 The localized version of the terms of use agreement files attached to the agreement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId
@@ -367,3 +355,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization?view=graph-powershell-1.0)
+

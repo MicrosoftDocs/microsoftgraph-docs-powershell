@@ -26,22 +26,6 @@ Get-MgBetaDeviceManagementSuggestedEnrollmentLimit -InputObject <IDeviceManageme
 ## DESCRIPTION
 Invoke function getSuggestedEnrollmentLimit
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EnrollmentType
@@ -124,3 +108,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+
