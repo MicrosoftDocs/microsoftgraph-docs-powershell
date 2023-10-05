@@ -1,71 +1,49 @@
 ---
-external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.PersonalContacts
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactextension
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfolder
 schema: 2.0.0
 ---
 
-# Remove-MgBetaUserContactExtension
+# Remove-MgBetaUserContactFolder
 
 ## SYNOPSIS
-Delete navigation property extensions for users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolder?view=graph-powershell-1.0)
+Delete contactFolder other than the default contactFolder.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaUserContactExtension -ContactId <String> -ExtensionId <String> -UserId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaUserContactFolder -ContactFolderId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaUserContactExtension -InputObject <IPersonalContactsIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property extensions for users
+Delete contactFolder other than the default contactFolder.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.PersonalContacts
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserContactFolder -UserId $userId -ContactFolderId $contactFolderId
-```
-This example shows how to use the Remove-MgBetaUserContactFolder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
-### -ContactId
-The unique identifier of contact
+### -ContactFolderId
+The unique identifier of contactFolder
 
 ```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExtensionId
-The unique identifier of extension
-
-```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -80,7 +58,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -96,7 +74,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPersonalContactsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPersonalContactsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -111,7 +89,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,7 +104,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -141,7 +119,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +135,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,9 +152,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPersonalContactsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -194,4 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolder?view=graph-powershell-1.0)
+

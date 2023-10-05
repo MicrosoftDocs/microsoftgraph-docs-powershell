@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionschema
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Read the properties and relationships of a schema object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,17 +28,13 @@ Get-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProperty <
 Read the properties and relationships of a schema object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Search
+```
 
 Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
-
-```
-This example shows how to use the Get-MgExternalConnectionSchema Cmdlet.
-
 
 ## PARAMETERS
 
@@ -49,7 +42,7 @@ This example shows how to use the Get-MgExternalConnectionSchema Cmdlet.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -64,7 +57,7 @@ Accept wildcard characters: False
 The unique identifier of externalConnection
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -80,7 +73,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -95,7 +88,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -112,9 +105,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSchema
+
 ## NOTES
 
 ALIASES
@@ -133,4 +128,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-[Get-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
+

@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareprovisiondevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc
@@ -16,36 +15,37 @@ Reprovision a specific Cloud PC.
 ### ReprovisionExpanded (Default)
 ```
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPcId <String>
- [-AdditionalProperties <Hashtable>] [-OSVersion <String>] [-UserAccountType <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-OSVersion <String>] [-UserAccountType <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Reprovision
 ```
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPcId <String>
  -BodyParameter <IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ReprovisionViaIdentityExpanded
-```
-Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-OSVersion <String>] [-UserAccountType <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReprovisionViaIdentity
 ```
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ReprovisionViaIdentityExpanded
+```
+Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-OSVersion <String>] [-UserAccountType <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reprovision a specific Cloud PC.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
@@ -54,8 +54,8 @@ $params = @{
 }
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -63,7 +63,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ReprovisionExpanded, ReprovisionViaIdentityExpanded
 Aliases:
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Reprovision, ReprovisionViaIdentity
 Aliases:
 
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 The unique identifier of cloudPC
 
 ```yaml
-Type: String
-Parameter Sets: ReprovisionExpanded, Reprovision
+Type: System.String
+Parameter Sets: Reprovision, ReprovisionExpanded
 Aliases:
 
 Required: True
@@ -110,8 +110,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: ReprovisionViaIdentityExpanded, ReprovisionViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: ReprovisionViaIdentity, ReprovisionViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 cloudPcOperatingSystem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ReprovisionExpanded, ReprovisionViaIdentityExpanded
 Aliases:
 
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 cloudPcUserAccountType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ReprovisionExpanded, ReprovisionViaIdentityExpanded
 Aliases:
 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -186,7 +186,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -203,10 +203,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -275,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

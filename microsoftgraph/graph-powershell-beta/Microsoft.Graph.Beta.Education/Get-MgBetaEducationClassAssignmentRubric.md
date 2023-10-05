@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentrubric
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationClassAssignmentRubric
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentRubric?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,17 +30,13 @@ Get the educationRubric object attached to an educationAssignment, if one exists
 Only teachers, students, and applications with application permissions can perform this operation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationClassAssignmentRubric -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
-
-```
-This example shows how to use the Get-MgBetaEducationClassAssignmentRubric Cmdlet.
-
 
 ## PARAMETERS
 
@@ -52,7 +44,7 @@ This example shows how to use the Get-MgBetaEducationClassAssignmentRubric Cmdle
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -67,7 +59,7 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -82,7 +74,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -98,7 +90,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -113,7 +105,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -130,9 +122,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationRubric
+
 ## NOTES
 
 ALIASES
@@ -160,4 +154,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationClassAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentRubric?view=graph-powershell-1.0)
+

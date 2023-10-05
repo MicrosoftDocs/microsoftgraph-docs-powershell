@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpromotedomain
 schema: 2.0.0
@@ -11,19 +11,16 @@ schema: 2.0.0
 Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaPromoteDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaPromoteDomain?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Promote (Default)
 ```
-Invoke-MgPromoteDomain -DomainId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgPromoteDomain -DomainId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### PromoteViaIdentity
 ```
-Invoke-MgPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf] [-Confirm]
+Invoke-MgPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -31,13 +28,29 @@ Invoke-MgPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Wha
 Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -DomainId
 The unique identifier of domain
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Promote
 Aliases:
 
@@ -53,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: PromoteViaIdentity
 Aliases:
 
@@ -68,7 +81,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -84,7 +97,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -101,9 +114,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -138,5 +153,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaPromoteDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaPromoteDomain?view=graph-powershell-beta)
 

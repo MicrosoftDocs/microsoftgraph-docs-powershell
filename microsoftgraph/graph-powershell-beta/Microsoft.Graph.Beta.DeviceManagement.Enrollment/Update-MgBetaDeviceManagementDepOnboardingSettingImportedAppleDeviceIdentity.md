@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentity
 schema: 2.0.0
@@ -19,14 +19,21 @@ Update-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity -De
  [-Description <String>] [-DiscoverySource <DiscoverySource>] [-EnrollmentState <EnrollmentState>]
  [-Id <String>] [-IsDeleted] [-IsSupervised] [-LastContactedDateTime <DateTime>] [-Platform <Platform>]
  [-RequestedEnrollmentProfileAssignmentDateTime <DateTime>] [-RequestedEnrollmentProfileId <String>]
- [-SerialNumber <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SerialNumber <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity -DepOnboardingSettingId <String>
- -ImportedAppleDeviceIdentityId <String> -BodyParameter <IMicrosoftGraphImportedAppleDeviceIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -ImportedAppleDeviceIdentityId <String> -BodyParameter <IMicrosoftGraphImportedAppleDeviceIdentity>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity
+ -InputObject <IDeviceManagementEnrollmentIdentity>
+ -BodyParameter <IMicrosoftGraphImportedAppleDeviceIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,18 +44,27 @@ Update-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity
  [-EnrollmentState <EnrollmentState>] [-Id <String>] [-IsDeleted] [-IsSupervised]
  [-LastContactedDateTime <DateTime>] [-Platform <Platform>]
  [-RequestedEnrollmentProfileAssignmentDateTime <DateTime>] [-RequestedEnrollmentProfileId <String>]
- [-SerialNumber <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity
- -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphImportedAppleDeviceIdentity>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SerialNumber <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property importedAppleDeviceIdentities in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -56,7 +72,7 @@ Update the navigation property importedAppleDeviceIdentities in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +88,7 @@ The importedAppleDeviceIdentity resource represents the imported device identity
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphImportedAppleDeviceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentity
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -87,7 +103,7 @@ Accept wildcard characters: False
 Created Date Time of the device
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -102,8 +118,8 @@ Accept wildcard characters: False
 The unique identifier of depOnboardingSetting
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -117,7 +133,7 @@ Accept wildcard characters: False
 The description of the device
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +148,7 @@ Accept wildcard characters: False
 discoverySource
 
 ```yaml
-Type: DiscoverySource
+Type: Microsoft.Graph.Beta.PowerShell.Support.DiscoverySource
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +163,7 @@ Accept wildcard characters: False
 enrollmentState
 
 ```yaml
-Type: EnrollmentState
+Type: Microsoft.Graph.Beta.PowerShell.Support.EnrollmentState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +179,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,8 +194,8 @@ Accept wildcard characters: False
 The unique identifier of importedAppleDeviceIdentity
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -194,8 +210,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrollmentIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -209,7 +225,7 @@ Accept wildcard characters: False
 Indicates if the device is deleted from Apple Business Manager
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -225,7 +241,7 @@ Indicates if the Apple device is supervised.
 More information is at: https://support.apple.com/en-us/HT202837
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +256,7 @@ Accept wildcard characters: False
 Last Contacted Date Time of the device
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -255,7 +271,7 @@ Accept wildcard characters: False
 platform
 
 ```yaml
-Type: Platform
+Type: Microsoft.Graph.Beta.PowerShell.Support.Platform
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,7 +286,7 @@ Accept wildcard characters: False
 The time enrollment profile was assigned to the device
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +301,7 @@ Accept wildcard characters: False
 Enrollment profile Id admin intends to apply to the device during next enrollment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +316,7 @@ Accept wildcard characters: False
 Device serial number
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -315,7 +331,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -331,7 +347,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -348,10 +364,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentity
+
 ## NOTES
 
 ALIASES

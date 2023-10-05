@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligence
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property threatIntelligence in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligence?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,25 +18,42 @@ Update-MgBetaSecurityThreatIntelligence [-AdditionalProperties <Hashtable>]
  [-ArticleIndicators <IMicrosoftGraphSecurityArticleIndicator[]>]
  [-Articles <IMicrosoftGraphSecurityArticle[]>] [-HostComponents <IMicrosoftGraphSecurityHostComponent[]>]
  [-HostCookies <IMicrosoftGraphSecurityHostCookie[]>] [-HostPairs <IMicrosoftGraphSecurityHostPair[]>]
- [-HostSslCertificates <IMicrosoftGraphSecurityHostSslCertificate[]>]
- [-HostTrackers <IMicrosoftGraphSecurityHostTracker[]>] [-Hosts <IMicrosoftGraphSecurityHost[]>] [-Id <String>]
- [-IntelProfiles <IMicrosoftGraphSecurityIntelligenceProfile[]>]
+ [-Hosts <IMicrosoftGraphSecurityHost[]>] [-HostSslCertificates <IMicrosoftGraphSecurityHostSslCertificate[]>]
+ [-HostTrackers <IMicrosoftGraphSecurityHostTracker[]>] [-Id <String>]
  [-IntelligenceProfileIndicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>]
+ [-IntelProfiles <IMicrosoftGraphSecurityIntelligenceProfile[]>]
  [-PassiveDnsRecords <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
  [-SslCertificates <IMicrosoftGraphSecuritySslCertificate[]>]
- [-Subdomains <IMicrosoftGraphSecuritySubdomain[]>] [-Vulnerabilities <IMicrosoftGraphSecurityVulnerability[]>]
+ [-Subdomains <IMicrosoftGraphSecuritySubdomain[]>]
+ [-Vulnerabilities <IMicrosoftGraphSecurityVulnerability[]>]
  [-WhoisHistoryRecords <IMicrosoftGraphSecurityWhoisHistoryRecord[]>]
- [-WhoisRecords <IMicrosoftGraphSecurityWhoisRecord[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WhoisRecords <IMicrosoftGraphSecurityWhoisRecord[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSecurityThreatIntelligence -BodyParameter <IMicrosoftGraphSecurityThreatIntelligence> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityThreatIntelligence -BodyParameter <IMicrosoftGraphSecurityThreatIntelligence> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property threatIntelligence in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -47,7 +61,7 @@ Update the navigation property threatIntelligence in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -63,7 +77,7 @@ Refers to indicators of threat or compromise highlighted in an article.Note: Lis
 To construct, see NOTES section for ARTICLEINDICATORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityArticleIndicator[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityArticleIndicator[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -79,7 +93,7 @@ A list of article objects.
 To construct, see NOTES section for ARTICLES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityArticle[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityArticle[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -95,7 +109,7 @@ threatIntelligence
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityThreatIntelligence
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
 Parameter Sets: Update
 Aliases:
 
@@ -111,7 +125,7 @@ Retrieve details about hostComponent objects.Note: List retrieval is not yet sup
 To construct, see NOTES section for HOSTCOMPONENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostComponent[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostComponent[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -127,7 +141,7 @@ Retrieve details about hostCookie objects.Note: List retrieval is not yet suppor
 To construct, see NOTES section for HOSTCOOKIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostCookie[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostCookie[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -143,7 +157,7 @@ Retrieve details about hostTracker objects.Note: List retrieval is not yet suppo
 To construct, see NOTES section for HOSTPAIRS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostPair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostPair[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -159,7 +173,7 @@ Refers to host objects that Microsoft Threat Intelligence has observed.Note: Lis
 To construct, see NOTES section for HOSTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHost[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHost[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -175,7 +189,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for HOSTSSLCERTIFICATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostSslCertificate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -191,7 +205,7 @@ Retrieve details about hostTracker objects.Note: List retrieval is not yet suppo
 To construct, see NOTES section for HOSTTRACKERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostTracker[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostTracker[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -207,7 +221,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -223,7 +237,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for INTELLIGENCEPROFILEINDICATORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfileIndicator[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -239,7 +253,7 @@ A list of intelligenceProfile objects.
 To construct, see NOTES section for INTELPROFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfile[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfile[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -255,7 +269,7 @@ Retrieve details about passiveDnsRecord objects.Note: List retrieval is not yet 
 To construct, see NOTES section for PASSIVEDNSRECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityPassiveDnsRecord[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -271,7 +285,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SSLCERTIFICATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySslCertificate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySslCertificate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -287,7 +301,7 @@ Retrieve details about the subdomain.Note: List retrieval is not yet supported.
 To construct, see NOTES section for SUBDOMAINS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySubdomain[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubdomain[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -303,7 +317,7 @@ Retrieve details about vulnerabilities.Note: List retrieval is not yet supported
 To construct, see NOTES section for VULNERABILITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVulnerability[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityVulnerability[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -319,7 +333,7 @@ Retrieve details about whoisHistoryRecord objects.Note: List retrieval is not ye
 To construct, see NOTES section for WHOISHISTORYRECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisHistoryRecord[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisHistoryRecord[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -335,7 +349,7 @@ A list of whoisRecord objects.
 To construct, see NOTES section for WHOISRECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityWhoisRecord[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityWhoisRecord[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -350,7 +364,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -366,7 +380,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -383,9 +397,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence
+
 ## NOTES
 
 ALIASES
@@ -2413,8 +2429,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
-[Update-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligence?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Update-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligence?view=graph-powershell-1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new macOSOfficeSuiteApp object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,17 +19,33 @@ New-MgDeviceAppManagementMobileApp [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-Developer <String>] [-DisplayName <String>]
  [-Id <String>] [-InformationUrl <String>] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>]
  [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Owner <String>] [-PrivacyInformationUrl <String>]
- [-Publisher <String>] [-PublishingState <MobileAppPublishingState>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Publisher <String>] [-PublishingState <MobileAppPublishingState>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp> [-WhatIf] [-Confirm]
+New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new macOSOfficeSuiteApp object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -40,7 +53,7 @@ Create a new macOSOfficeSuiteApp object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +69,7 @@ The list of group assignments for this mobile app.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -75,7 +88,7 @@ Then, perform the expansion on individual applications.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileApp
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileApp
 Parameter Sets: Create
 Aliases:
 
@@ -91,7 +104,7 @@ The list of categories for this app.
 To construct, see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppCategory[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppCategory[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -106,7 +119,7 @@ Accept wildcard characters: False
 The date and time the app was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +134,7 @@ Accept wildcard characters: False
 The description of the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -136,7 +149,7 @@ Accept wildcard characters: False
 The developer of the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,7 +164,7 @@ Accept wildcard characters: False
 The admin provided or imported title of the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +180,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +195,7 @@ Accept wildcard characters: False
 The more information Url.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -197,7 +210,7 @@ Accept wildcard characters: False
 The value indicating whether the app is marked as featured by the admin.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -213,7 +226,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for LARGEICON properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMimeContent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMimeContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -228,7 +241,7 @@ Accept wildcard characters: False
 The date and time the app was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -243,7 +256,7 @@ Accept wildcard characters: False
 Notes for the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -258,7 +271,7 @@ Accept wildcard characters: False
 The owner of the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -273,7 +286,7 @@ Accept wildcard characters: False
 The privacy statement Url.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -288,7 +301,7 @@ Accept wildcard characters: False
 The publisher of the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -303,7 +316,7 @@ Accept wildcard characters: False
 Indicates the publishing state of an app.
 
 ```yaml
-Type: MobileAppPublishingState
+Type: Microsoft.Graph.PowerShell.Support.MobileAppPublishingState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -318,7 +331,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -334,7 +347,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -351,9 +364,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileApp
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileApp
+
 ## NOTES
 
 ALIASES
@@ -415,5 +430,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
 

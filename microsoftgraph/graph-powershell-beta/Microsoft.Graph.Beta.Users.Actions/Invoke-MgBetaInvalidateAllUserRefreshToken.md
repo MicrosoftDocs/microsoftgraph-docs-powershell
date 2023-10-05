@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Invoke-MgBetaInvalidateAllUserRefreshToken
@@ -20,12 +19,12 @@ If this happens, the application will need to acquire a new refresh token by mak
 
 ### Invalidate (Default)
 ```
-Invoke-MgBetaInvalidateAllUserRefreshToken -UserId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaInvalidateAllUserRefreshToken -UserId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### InvalidateViaIdentity
 ```
-Invoke-MgBetaInvalidateAllUserRefreshToken -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm]
+Invoke-MgBetaInvalidateAllUserRefreshToken -InputObject <IUsersActionsIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,6 +36,22 @@ In fact, this operation would force the user to sign in again for all applicatio
 For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.
 If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -InputObject
@@ -44,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: InvalidateViaIdentity
 Aliases:
 
@@ -59,7 +74,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Invalidate
 Aliases:
 
@@ -74,7 +89,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -90,7 +105,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -107,9 +122,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
