@@ -48,16 +48,6 @@ The response provides details about which memberships could and couldn't be crea
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -51,16 +51,6 @@ This can be used to configure the content of the tab.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

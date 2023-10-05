@@ -44,13 +44,17 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDeviceMemberOf -DeviceId $deviceId
+
+```
+This example shows how to use the Get-MgDeviceMemberOf Cmdlet.
+
 
 ## PARAMETERS
 

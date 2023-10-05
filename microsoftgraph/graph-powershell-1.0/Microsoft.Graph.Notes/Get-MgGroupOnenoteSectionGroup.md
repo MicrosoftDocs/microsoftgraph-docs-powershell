@@ -46,16 +46,6 @@ Retrieve the properties and relationships of a sectionGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All

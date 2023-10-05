@@ -27,16 +27,6 @@ Retrieve a list of classes owned by a school.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All

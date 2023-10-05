@@ -31,13 +31,17 @@ Remove-MgChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru
 Remove a conversationMember from a chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
+
+```
+This example shows how to use the Remove-MgChatMember Cmdlet.
+
 
 ## PARAMETERS
 

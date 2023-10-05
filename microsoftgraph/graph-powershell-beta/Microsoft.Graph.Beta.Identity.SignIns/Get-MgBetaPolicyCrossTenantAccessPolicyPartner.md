@@ -40,20 +40,28 @@ Get-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIde
 Read the properties and relationships of a partner-specific configuration.
 
 ## EXAMPLES
+### Example 1: List all partner configurations within a cross-tenant access policy
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyCrossTenantAccessPolicyPartner
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
 ```
+This example will list all partner configurations within a cross-tenant access policy
 
-Get-MgBetaPolicyCrossTenantAccessPolicyPartner -Property "tenantId" -ExpandProperty "identitySynchronization"
+### Example 2: List the user synchronization policy for all partner configurations
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyCrossTenantAccessPolicyPartner -Property "tenantId" -ExpandProperty "identitySynchronization" 
+
+```
+This example will list the user synchronization policy for all partner configurations
+
 
 ## PARAMETERS
 

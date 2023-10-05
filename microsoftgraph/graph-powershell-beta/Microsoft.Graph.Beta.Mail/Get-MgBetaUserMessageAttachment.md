@@ -33,16 +33,54 @@ Get-MgBetaUserMailFolderUserConfigurationCount -InputObject <IMailIdentity> [-Fi
 Get the number of the resource
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Beta.Mail
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+# A UPN can also be used as -UserId.
+Get-MgBetaUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
 ```
+This example shows how to use the Get-MgBetaUserMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
+```
+This example shows how to use the Get-MgBetaUserMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId -ExpandProperty "microsoft.graph.itemattachment/item"
+```
+This example shows how to use the Get-MgBetaUserMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId -ExpandProperty "microsoft.graph.itemattachment/item"
+```
+This example shows how to use the Get-MgBetaUserMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

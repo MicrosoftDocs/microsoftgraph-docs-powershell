@@ -39,20 +39,17 @@ Get-MgBetaPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 The policy that controls Azure AD authorization settings.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyAuthorizationPolicy
+
 ```
+This example shows how to use the Get-MgBetaPolicyAuthorizationPolicy Cmdlet.
 
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

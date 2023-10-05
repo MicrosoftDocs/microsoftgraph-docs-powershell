@@ -31,8 +31,7 @@ Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
@@ -48,6 +47,8 @@ $params = @{
 }
 Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
