@@ -12,6 +12,9 @@ ms.prod: directory-management
 Get the properties and relationships of a device object.
 Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceByDeviceId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceByDeviceId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -168,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDeviceByDeviceId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceByDeviceId?view=graph-powershell-1.0)

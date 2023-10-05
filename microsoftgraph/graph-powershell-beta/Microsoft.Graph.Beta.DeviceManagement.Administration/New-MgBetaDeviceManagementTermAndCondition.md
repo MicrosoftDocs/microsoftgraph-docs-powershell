@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to termsAndConditions for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTermAndCondition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -451,5 +454,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
 ## RELATED LINKS
+[New-MgDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTermAndCondition?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTermAndCondition?view=graph-powershell-1.0)

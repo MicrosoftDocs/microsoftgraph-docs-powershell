@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 List the tokenIssuancePolicy objects that are assigned to an application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -185,3 +188,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-1.0)

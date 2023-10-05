@@ -12,6 +12,9 @@ Return all IDs for the groups, administrative units, and directory roles that a 
 This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPermissionGrantMemberObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -240,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPermissionGrantMemberObject?view=graph-powershell-beta)

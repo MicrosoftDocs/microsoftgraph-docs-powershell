@@ -12,6 +12,9 @@ ms.prod: service-communications
 ## SYNOPSIS
 Read the properties and relationships of a serviceAnnouncementAttachment object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -269,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
+[Get-MgServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachment?view=graph-powershell-1.0)

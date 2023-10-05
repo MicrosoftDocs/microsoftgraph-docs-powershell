@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1135,5 +1138,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
+[New-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update an appManagementPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -400,5 +403,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
+[Update-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)

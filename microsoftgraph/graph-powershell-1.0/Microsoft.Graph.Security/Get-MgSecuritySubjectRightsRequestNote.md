@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of notes associcated with the request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -302,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)

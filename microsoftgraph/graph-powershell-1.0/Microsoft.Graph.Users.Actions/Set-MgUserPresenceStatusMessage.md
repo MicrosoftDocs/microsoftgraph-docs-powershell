@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action setStatusMessage
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceStatusMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -257,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PublishedDateTime <DateTime?>]`: 
 
 ## RELATED LINKS
+[Set-MgBetaUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresenceStatusMessage?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to resourceActions for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -471,5 +474,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: 
 
 ## RELATED LINKS
+[New-MgRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-1.0)

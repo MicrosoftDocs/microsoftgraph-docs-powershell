@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to subscribedSkus
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgSubscribedSku?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -331,3 +334,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
+[New-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgSubscribedSku?view=graph-powershell-1.0)

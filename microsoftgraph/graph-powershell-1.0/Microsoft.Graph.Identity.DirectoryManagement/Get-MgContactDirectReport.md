@@ -13,6 +13,9 @@ The contact's direct reports.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactDirectReport](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDirectReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -307,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaContactDirectReport](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDirectReport?view=graph-powershell-beta)

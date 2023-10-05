@@ -19,6 +19,9 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -340,3 +343,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty?view=graph-powershell-beta)

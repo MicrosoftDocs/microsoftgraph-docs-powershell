@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportPolicyNonComplianceMetadata](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportPolicyNonComplianceMetadata?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -306,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementReportPolicyNonComplianceMetadata](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportPolicyNonComplianceMetadata?view=graph-powershell-beta)

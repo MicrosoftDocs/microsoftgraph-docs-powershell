@@ -12,6 +12,9 @@ Mute a specific participant in the call.
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
 For more information about how to handle mute operations, see muteParticipantOperation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMuteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaMuteCommunicationCallParticipant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MuteExpanded (Default)
@@ -221,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaMuteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaMuteCommunicationCallParticipant?view=graph-powershell-beta)

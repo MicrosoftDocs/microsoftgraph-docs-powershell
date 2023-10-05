@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List the tokenIssuancePolicy objects that are assigned to an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -184,3 +187,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)

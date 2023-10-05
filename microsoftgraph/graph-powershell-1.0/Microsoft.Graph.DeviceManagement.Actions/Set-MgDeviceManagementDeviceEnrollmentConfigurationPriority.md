@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -220,3 +223,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementDeviceEnrollmentConfigurationPriority?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Contains the collection of directories and all of their objects.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -315,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-1.0)

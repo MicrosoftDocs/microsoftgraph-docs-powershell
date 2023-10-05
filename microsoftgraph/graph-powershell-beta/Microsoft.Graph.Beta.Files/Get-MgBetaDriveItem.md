@@ -11,6 +11,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -288,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItem?view=graph-powershell-1.0)

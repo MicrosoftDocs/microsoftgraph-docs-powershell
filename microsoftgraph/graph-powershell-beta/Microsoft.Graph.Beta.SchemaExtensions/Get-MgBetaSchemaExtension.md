@@ -12,6 +12,9 @@ ms.prod: extensions
 ## SYNOPSIS
 Get the properties of the specified schemaExtension definition.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -251,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
 ## RELATED LINKS
+[Get-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-1.0)

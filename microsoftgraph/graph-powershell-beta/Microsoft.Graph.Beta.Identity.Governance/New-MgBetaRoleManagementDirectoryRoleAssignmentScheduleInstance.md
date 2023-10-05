@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -516,5 +519,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -15496,5 +15499,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter.
 
 ## RELATED LINKS
+[Update-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationRoot?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationRoot?view=graph-powershell-beta)

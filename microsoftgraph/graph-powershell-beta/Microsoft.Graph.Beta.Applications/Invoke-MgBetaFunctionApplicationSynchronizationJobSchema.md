@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function functions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Function (Default)
@@ -249,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgFunctionApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionApplicationSynchronizationJobSchema?view=graph-powershell-1.0)

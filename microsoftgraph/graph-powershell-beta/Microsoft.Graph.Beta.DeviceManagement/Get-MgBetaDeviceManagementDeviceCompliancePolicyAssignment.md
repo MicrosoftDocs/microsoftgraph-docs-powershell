@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of assignments for this compliance policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -409,5 +412,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-1.0)

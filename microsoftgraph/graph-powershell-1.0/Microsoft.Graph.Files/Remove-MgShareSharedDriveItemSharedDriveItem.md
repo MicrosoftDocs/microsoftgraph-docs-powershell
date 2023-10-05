@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -189,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
