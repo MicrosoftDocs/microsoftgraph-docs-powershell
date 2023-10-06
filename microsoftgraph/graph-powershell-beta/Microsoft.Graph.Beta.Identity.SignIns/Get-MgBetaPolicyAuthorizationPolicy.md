@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthorizationpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaPolicyAuthorizationPolicy
@@ -36,6 +37,19 @@ Get-MgBetaPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 
 ## DESCRIPTION
 The policy that controls Azure AD authorization settings.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyAuthorizationPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyAuthorizationPolicy Cmdlet.
+
 
 ## PARAMETERS
 
@@ -318,4 +332,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthorizationPolicy?view=graph-powershell-1.0)
-
