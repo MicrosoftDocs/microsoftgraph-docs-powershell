@@ -18,7 +18,11 @@ function Start-Copy {
         $ModulesToGenerate = @()
     )
 
+    $AuthDocs = Join-Path $SDKDocsPath "Authentication" "docs"
     $ModulePrefix = "Microsoft.Graph"
+     #Copy the authenitcation module first
+    Copy-Files -DocPath $AuthDocs -GraphProfilePath "graph-powershell-1.0" -Module "Authentication" -ModulePrefix $ModulePrefix -GraphProfile "v1.0"
+    
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
