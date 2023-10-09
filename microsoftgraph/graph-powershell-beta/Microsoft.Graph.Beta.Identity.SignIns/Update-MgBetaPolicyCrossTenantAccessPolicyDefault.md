@@ -23,7 +23,8 @@ Update-MgBetaPolicyCrossTenantAccessPolicyDefault [-AdditionalProperties <Hashta
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>] [-Id <String>]
- [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsServiceDefault]
+ [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>]
+ [-InvitationRedemptionIdentityProviderConfiguration <Hashtable>] [-IsServiceDefault]
  [-TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -209,6 +210,21 @@ To construct, see NOTES section for INBOUNDTRUST properties and create a hash ta
 
 ```yaml
 Type: IMicrosoftGraphCrossTenantAccessPolicyInboundTrust
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InvitationRedemptionIdentityProviderConfiguration
+defaultInvitationRedemptionIdentityProviderConfiguration
+
+```yaml
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 

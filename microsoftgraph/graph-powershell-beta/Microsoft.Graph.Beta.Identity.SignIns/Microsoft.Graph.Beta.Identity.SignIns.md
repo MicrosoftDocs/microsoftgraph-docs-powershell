@@ -1575,6 +1575,9 @@ Update the ref of navigation property postFederationSignup in identity
 ### [Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder.md)
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
+### [Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+Update the navigation property identitySynchronization in policies
+
 ### [Set-MgBetaTrustFrameworkPolicyContent](Set-MgBetaTrustFrameworkPolicyContent.md)
 Update media content for the navigation property policies in trustFramework
 
@@ -1798,9 +1801,6 @@ Update the default configuration of a cross-tenant access policy.
 
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyPartner](Update-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
 Update the properties of a partner-specific configuration.
-
-### [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
-Update the user synchronization policy of a partner-specific configuration.
 
 ### [Update-MgBetaPolicyDefaultAppManagementPolicy](Update-MgBetaPolicyDefaultAppManagementPolicy.md)
 Update the properties of a tenantAppManagementPolicy object.

@@ -11,6 +11,9 @@ ms.prod: compliance
 ## SYNOPSIS
 List of notes associated with the request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -34,6 +37,8 @@ Get-MgBetaSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [-Ex
 
 ## DESCRIPTION
 List of notes associated with the request.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -330,4 +335,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-
+[Get-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)

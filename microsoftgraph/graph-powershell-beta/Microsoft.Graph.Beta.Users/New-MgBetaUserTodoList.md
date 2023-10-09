@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Use this API to add an attachment to an outlookTask.
 The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoList?view=graph-powershell-1.0)
@@ -47,6 +48,7 @@ New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment -InputObject <IUsersIdent
 ## DESCRIPTION
 Use this API to add an attachment to an outlookTask.
 The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

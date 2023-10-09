@@ -18,7 +18,8 @@ Update the navigation property presences in communications
 ### UpdateExpanded (Default)
 ```
 Update-MgCommunicationPresence -PresenceId <String> [-Activity <String>] [-AdditionalProperties <Hashtable>]
- [-Availability <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Availability <String>] [-Id <String>] [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,8 +31,8 @@ Update-MgCommunicationPresence -PresenceId <String> -BodyParameter <IMicrosoftGr
 ### UpdateViaIdentityExpanded
 ```
 Update-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Availability <String>] [-Id <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Availability <String>] [-Id <String>]
+ [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -187,6 +188,22 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StatusMessage
+presenceStatusMessage
+To construct, see NOTES section for STATUSMESSAGE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPresenceStatusMessage
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

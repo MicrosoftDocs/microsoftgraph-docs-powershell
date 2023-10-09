@@ -130,9 +130,6 @@ Get the number of the resource
 ### [Get-MgUserOnlineMeetingCount](Get-MgUserOnlineMeetingCount.md)
 Get the number of the resource
 
-### [Get-MgUserOnlineMeetingCount](Get-MgUserOnlineMeetingCount.md)
-Get the number of the resource
-
 ### [Invoke-MgAnswerCommunicationCall](Invoke-MgAnswerCommunicationCall.md)
 Enable a bot to answer an incoming call.
 The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
@@ -300,9 +297,6 @@ Delete navigation property attendanceReports for users
 ### [Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 Delete navigation property attendanceRecords for users
 
-### [Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
-Delete navigation property attendanceRecords for users
-
 ### [Rename-MgCommunicationCallScreenSharingRole](Rename-MgCommunicationCallScreenSharingRole.md)
 Allow applications to share screen content with the participants of a group call.
 
@@ -312,6 +306,9 @@ Read-only.
 
 ### [Set-MgCommunicationPresence](Set-MgCommunicationPresence.md)
 Set the state of a user's presence session as an application.
+
+### [Set-MgCommunicationPresenceStatusMessage](Set-MgCommunicationPresenceStatusMessage.md)
+Invoke action setStatusMessage
 
 ### [Set-MgCommunicationPresenceUserPreferredPresence](Set-MgCommunicationPresenceUserPreferredPresence.md)
 Set the preferred availability and activity status for a user.
@@ -374,9 +371,6 @@ Update the navigation property presences in communications
 
 ### [Update-MgUserOnlineMeetingAttendanceReport](Update-MgUserOnlineMeetingAttendanceReport.md)
 Update the navigation property attendanceReports in users
-
-### [Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
-Update the navigation property attendanceRecords in users
 
 ### [Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 Update the navigation property attendanceRecords in users

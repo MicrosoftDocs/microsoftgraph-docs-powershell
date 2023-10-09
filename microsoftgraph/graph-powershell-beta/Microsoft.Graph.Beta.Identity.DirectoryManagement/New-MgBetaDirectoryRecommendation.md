@@ -21,7 +21,8 @@ New-MgBetaDirectoryRecommendation [-ActionSteps <IMicrosoftGraphActionStep[]>]
  [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <String>]
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
  [-MaxScore <Double>] [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-RecommendationType <String>]
- [-RemediationImpact <String>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ReleaseType <String>] [-RemediationImpact <String>] [-Status <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -345,6 +346,22 @@ Accept wildcard characters: False
 
 ### -RecommendationType
 recommendationType
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReleaseType
+The current release type of the recommendation.
+The possible values are: preview or generallyAvailable.
 
 ```yaml
 Type: String

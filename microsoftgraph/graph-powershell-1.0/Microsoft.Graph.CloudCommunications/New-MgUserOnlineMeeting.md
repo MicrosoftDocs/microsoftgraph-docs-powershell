@@ -18,7 +18,8 @@ Create new navigation property to presences for communications
 ### CreateExpanded (Default)
 ```
 New-MgCommunicationPresence [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Availability <String>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -162,6 +163,22 @@ Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StatusMessage
+presenceStatusMessage
+To construct, see NOTES section for STATUSMESSAGE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPresenceStatusMessage
 Parameter Sets: CreateExpanded
 Aliases:
 

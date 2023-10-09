@@ -20,7 +20,7 @@ Create a new delegatedAdminRelationship object.
 New-MgBetaTenantRelationshipDelegatedAdminRelationship
  [-AccessAssignments <IMicrosoftGraphDelegatedAdminAccessAssignment[]>]
  [-AccessDetails <IMicrosoftGraphDelegatedAdminAccessDetails>] [-ActivatedDateTime <DateTime>]
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-AdditionalProperties <Hashtable>] [-AutoExtendDuration <TimeSpan>] [-CreatedDateTime <DateTime>]
  [-Customer <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>] [-DisplayName <String>]
  [-Duration <TimeSpan>] [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Operations <IMicrosoftGraphDelegatedAdminRelationshipOperation[]>]
@@ -92,6 +92,21 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AutoExtendDuration
+.
+
+```yaml
+Type: TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
