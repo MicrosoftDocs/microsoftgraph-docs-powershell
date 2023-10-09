@@ -13,6 +13,15 @@ Read properties and relationships of the user object.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)
 
+## Permissions
+One of the following permissions is required to call this cmdlet. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
+|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
 ## SYNTAX
 
 ### List (Default)
@@ -364,6 +373,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
+
+
+
+
+
+
+
+
+
 `INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -381,3 +399,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)
+
