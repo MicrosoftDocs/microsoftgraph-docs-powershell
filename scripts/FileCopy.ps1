@@ -21,7 +21,7 @@ function Start-Copy {
     $AuthDocs = Join-Path $SDKDocsPath "Authentication" "docs"
     $ModulePrefix = "Microsoft.Graph"
      #Copy the authenitcation module first
-    Copy-Files -DocPath $AuthDocs -GraphProfilePath "graph-powershell-1.0" -Module "Authentication" -ModulePrefix $ModulePrefix -GraphProfile "v1.0"
+    Copy-Files -DocPath $AuthDocs -GraphProfilePath "graph-powershell-1.0" -ModuleName "Authentication" -ModulePrefix $ModulePrefix -GraphProfile "v1.0"
     
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
@@ -52,7 +52,7 @@ function Get-FilesByProfile{
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
 		$docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "docs"
-        Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
+        Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -ModuleName $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
     }
 
 }
@@ -63,7 +63,7 @@ function Copy-Files{
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
         [ValidateNotNullOrEmpty()]
-        [string] $Module = "Users",
+        [string] $ModuleName = "Users",
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
 		[ValidateNotNullOrEmpty()]
