@@ -18,11 +18,7 @@ function Start-Copy {
         $ModulesToGenerate = @()
     )
 
-    $AuthDocs = Join-Path $SDKDocsPath "Authentication" "docs"
     $ModulePrefix = "Microsoft.Graph"
-     #Copy the authenitcation module first
-    Copy-Files -DocPath $AuthDocs -GraphProfilePath "graph-powershell-1.0" -Module "Authentication" -ModulePrefix $ModulePrefix -GraphProfile "v1.0"
-    
     $GraphMapping = Get-GraphMapping 
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
@@ -32,10 +28,7 @@ function Start-Copy {
 		}
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add .
-    git commit -m "Updating files from the sdk" 
+
 }
 function Get-FilesByProfile{
  Param(
@@ -70,35 +63,33 @@ function Copy-Files{
         [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\docs"
     )
     $Path = "$ModulePrefix.$ModuleName"
+    $ModifiedModuleName = $Module
     if($GraphProfile -eq 'beta'){
        $Path = "$ModulePrefix.Beta.$ModuleName"
+       $ModifiedModuleName = "Beta.$Module"
     }
      $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
-     if (-not(Test-Path $destination)) {
-        New-Item -Path $destination -ItemType Directory
-     }
-     if ((Test-Path $DocPath)) {
-     if($GraphProfile -eq "beta"){
-        Write-Host -ForegroundColor DarkYellow "Copying beta markdown files to " $destination
-        Get-ChildItem $destination -Recurse -File | ForEach-Object {
-                Remove-Item $_
-            
-        }
-        Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
 
-            Copy-Item $_  -Destination $destination
-
-        }
-     }else{
 	    Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination
-	    Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
-        Write-Host "File $_"
-        Write-Host "Destination $destination"
-        #Copy-Item $_  -Destination $destination
+	    Get-ChildItem $destination -Recurse -File | ForEach-Object {
+        $Command = [System.IO.Path]::GetFileNameWithoutExtension($_)
+        if($Command -eq "Microsoft.Graph.$ModifiedModuleName" -or $Command -eq "README"){
+            #Extract URI path
+        }else{
+        $CommandDetails = Find-MgGraphCommand -Command $Command
+        if($CommandDetails){
+            if(-not($CommandDetails.Module -eq $ModifiedModuleName)){
+                Remove-Item $_
+            }
+        }else{
+            Remove-Item $_
+        }
+        }
+        
       }
 	 }
-    }     
-}
+        
+
 
 
 
@@ -120,7 +111,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-# Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
