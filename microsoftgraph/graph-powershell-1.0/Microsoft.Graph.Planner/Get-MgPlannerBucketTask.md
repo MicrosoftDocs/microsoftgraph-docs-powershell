@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerBucketTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucketTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -211,3 +214,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaPlannerBucketTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucketTask?view=graph-powershell-beta)

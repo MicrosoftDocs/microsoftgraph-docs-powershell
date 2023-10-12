@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property sections in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/Update-MgSiteOnenoteSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -741,5 +744,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
 
 ## RELATED LINKS
+[Update-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/Update-MgSiteOnenoteSection?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/Update-MgSiteOnenoteSection?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an instance of an openShift object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -384,3 +387,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
+[New-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)

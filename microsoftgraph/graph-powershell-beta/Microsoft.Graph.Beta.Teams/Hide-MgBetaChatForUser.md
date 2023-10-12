@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Hide a chat for a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Hide-MgChatForUser](/powershell/module/Microsoft.Graph.Teams/Hide-MgChatForUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### HideExpanded (Default)
@@ -271,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
+[Hide-MgChatForUser](/powershell/module/Microsoft.Graph.Teams/Hide-MgChatForUser?view=graph-powershell-1.0)

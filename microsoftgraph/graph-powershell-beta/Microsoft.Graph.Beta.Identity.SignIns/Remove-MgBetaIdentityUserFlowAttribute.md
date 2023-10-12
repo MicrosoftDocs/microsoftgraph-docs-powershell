@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete an identityUserFlowAttribute.
 Only custom user flow attributes can be deleted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -228,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)

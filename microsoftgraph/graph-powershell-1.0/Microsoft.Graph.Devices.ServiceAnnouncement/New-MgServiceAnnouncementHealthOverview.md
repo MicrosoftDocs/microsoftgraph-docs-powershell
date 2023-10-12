@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to healthOverviews for admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementHealthOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -245,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: serviceHealthStatus
 
 ## RELATED LINKS
+[New-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementHealthOverview?view=graph-powershell-beta)

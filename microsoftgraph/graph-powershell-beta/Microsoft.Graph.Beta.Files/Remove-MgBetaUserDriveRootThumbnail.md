@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property thumbnails for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootThumbnail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -212,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootThumbnail?view=graph-powershell-1.0)

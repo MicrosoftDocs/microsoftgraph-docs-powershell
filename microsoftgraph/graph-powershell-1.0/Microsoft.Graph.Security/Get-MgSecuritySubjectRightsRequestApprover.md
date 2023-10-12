@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get approvers from security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestApprover?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -302,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgBetaSecuritySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestApprover?view=graph-powershell-beta)

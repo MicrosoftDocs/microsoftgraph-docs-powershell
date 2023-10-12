@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove an ediscoveryNoncustodialDataSource object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -218,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-beta)

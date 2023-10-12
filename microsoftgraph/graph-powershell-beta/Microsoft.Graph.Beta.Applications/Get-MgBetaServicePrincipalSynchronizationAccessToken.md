@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationAccessToken?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AcquireExpanded (Default)
@@ -248,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationAccessToken?view=graph-powershell-1.0)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The metric values for the user experience analytics category.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -412,5 +415,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue?view=graph-powershell-1.0)

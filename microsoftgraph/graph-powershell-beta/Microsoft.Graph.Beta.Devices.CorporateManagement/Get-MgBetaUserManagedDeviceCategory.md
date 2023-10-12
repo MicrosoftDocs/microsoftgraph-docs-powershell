@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device category
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -206,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceCategory?view=graph-powershell-1.0)

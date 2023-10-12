@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property hostedContents in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamChannelMessageHostedContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -256,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Set-MgGroupTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamChannelMessageHostedContent?view=graph-powershell-1.0)

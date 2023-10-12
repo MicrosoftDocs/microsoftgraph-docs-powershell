@@ -11,6 +11,9 @@ ms.prod: education
 ## SYNOPSIS
 Retrieve the simple directory administrativeUnit that corresponds to this educationSchool.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -143,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)

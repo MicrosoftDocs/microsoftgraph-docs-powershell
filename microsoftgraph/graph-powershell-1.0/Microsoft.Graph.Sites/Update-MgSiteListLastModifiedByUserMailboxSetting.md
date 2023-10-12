@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -425,3 +428,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
+[Update-MgBetaSiteListLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListLastModifiedByUserMailboxSetting?view=graph-powershell-beta)

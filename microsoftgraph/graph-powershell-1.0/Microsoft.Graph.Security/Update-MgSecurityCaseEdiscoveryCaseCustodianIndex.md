@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Trigger an indexOperation to make a custodian and associated sources searchable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Update (Default)
@@ -183,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex?view=graph-powershell-beta)

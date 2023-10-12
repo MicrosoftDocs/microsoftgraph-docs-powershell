@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property defaultPages in identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -294,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-1.0)
