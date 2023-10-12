@@ -23,18 +23,6 @@ Get-MgContractDelta [-Filter <String>] [-Property <String[]>] [-Search <String>]
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -187,3 +175,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaContractDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContractDelta?view=graph-powershell-beta)
+

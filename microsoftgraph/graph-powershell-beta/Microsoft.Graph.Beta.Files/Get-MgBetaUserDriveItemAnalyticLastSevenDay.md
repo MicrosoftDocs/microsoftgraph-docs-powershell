@@ -30,18 +30,6 @@ Get-MgBetaUserDriveItemAnalyticLastSevenDay -InputObject <IFilesIdentity> [-Expa
 ## DESCRIPTION
 Get lastSevenDays from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -181,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDriveItemAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemAnalyticLastSevenDay?view=graph-powershell-1.0)
+

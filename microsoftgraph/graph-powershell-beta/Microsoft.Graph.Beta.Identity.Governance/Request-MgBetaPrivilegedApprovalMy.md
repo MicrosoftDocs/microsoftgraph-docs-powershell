@@ -20,18 +20,6 @@ Request-MgBetaPrivilegedApprovalMy [-Count] [-Filter <String>] [-Property <Strin
 ## DESCRIPTION
 Invoke function myRequests
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -152,3 +140,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

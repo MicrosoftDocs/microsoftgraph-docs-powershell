@@ -47,18 +47,6 @@ Update-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIden
 ## DESCRIPTION
 Update the navigation property tenants in tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddedByTenantId
@@ -434,3 +422,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
 
 ## RELATED LINKS
+

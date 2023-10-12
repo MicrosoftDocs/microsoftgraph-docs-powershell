@@ -34,18 +34,6 @@ Get-MgBetaPrintPrinterShareJobTask -InputObject <IDevicesCloudPrintIdentity> [-E
 ## DESCRIPTION
 A list of printTasks that were triggered by this print job.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -294,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

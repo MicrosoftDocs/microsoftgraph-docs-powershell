@@ -30,22 +30,6 @@ New-MgBetaTenantRelationshipManagedTenantAuditEvent -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to auditEvents for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -385,3 +369,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantNames <String>]`: The collection of tenant names that were impacted by this change. This is formatted as a list of comma-separated values. Required. Read-only.
 
 ## RELATED LINKS
+

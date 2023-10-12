@@ -30,18 +30,6 @@ Remove-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesC
 ## DESCRIPTION
 Deletes a userInstallStateSummary.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -207,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-beta)
+

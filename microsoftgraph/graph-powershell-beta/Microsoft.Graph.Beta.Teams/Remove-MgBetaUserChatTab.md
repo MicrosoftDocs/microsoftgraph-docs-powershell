@@ -30,22 +30,6 @@ Remove-MgBetaUserChatTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pas
 ## DESCRIPTION
 Remove (unpin) a tab from the specified chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -230,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatTab?view=graph-powershell-1.0)
+

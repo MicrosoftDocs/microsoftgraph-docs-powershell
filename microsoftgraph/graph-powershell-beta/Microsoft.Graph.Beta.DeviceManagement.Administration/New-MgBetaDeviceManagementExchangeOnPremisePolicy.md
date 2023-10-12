@@ -32,18 +32,6 @@ New-MgBetaDeviceManagementExchangeOnPremisePolicy
 ## DESCRIPTION
 Create new navigation property to exchangeOnPremisesPolicies for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessRules
@@ -262,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <DeviceManagementExchangeAccessRuleType?>]`: Criteria which defines the type of device this access rule will apply to
 
 ## RELATED LINKS
+

@@ -39,18 +39,6 @@ The value of the originSystem property within the resource should be AadGroup an
 If using delegated permissions, the user requesting to add a group should be an owner of the group or in a directory role which allows them to modify groups.
 If using application permissions, the application requesting to add the group should also be assigned the Group.ReadWrite.All permission.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -6292,3 +6280,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

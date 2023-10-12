@@ -45,18 +45,6 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdate
 Remove members of the same type from an updatableAssetGroup.
 You can also use the method removeMembers to remove members.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -247,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+

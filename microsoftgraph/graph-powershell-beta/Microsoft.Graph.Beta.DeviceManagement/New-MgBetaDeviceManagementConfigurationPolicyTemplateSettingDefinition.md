@@ -61,22 +61,6 @@ New-MgBetaDeviceManagementConfigurationPolicyTemplateSettingDefinition -InputObj
 ## DESCRIPTION
 Create new navigation property to settingDefinitions for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessTypes
@@ -685,3 +669,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

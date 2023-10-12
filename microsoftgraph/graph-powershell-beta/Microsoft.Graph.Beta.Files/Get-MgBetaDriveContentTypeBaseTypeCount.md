@@ -30,18 +30,6 @@ Get-MgBetaDriveContentTypeBaseTypeCount -InputObject <IFilesIdentity> [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -166,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveContentTypeBaseTypeCount](/powershell/module/Microsoft.Graph.Files/Get-MgDriveContentTypeBaseTypeCount?view=graph-powershell-1.0)
+

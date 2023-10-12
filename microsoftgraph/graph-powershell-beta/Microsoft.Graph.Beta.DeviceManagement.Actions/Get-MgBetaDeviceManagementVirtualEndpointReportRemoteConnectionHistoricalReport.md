@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport 
 ## DESCRIPTION
 Get the remote connection history records of a Cloud PC during a given period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -271,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+
