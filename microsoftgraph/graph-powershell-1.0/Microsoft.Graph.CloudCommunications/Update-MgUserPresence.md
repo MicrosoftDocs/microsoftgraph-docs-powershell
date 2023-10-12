@@ -44,30 +44,6 @@ Update-MgUserPresence -InputObject <ICloudCommunicationsIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property presence in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgUserPresence -UserId $userId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.CloudCommunications
-```
-
-Get-MgUserPresence -UserId $userId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.CloudCommunications
-```
-
-Get-MgCommunicationPresence -PresenceId $presenceId
-
 ## PARAMETERS
 
 ### -Activity

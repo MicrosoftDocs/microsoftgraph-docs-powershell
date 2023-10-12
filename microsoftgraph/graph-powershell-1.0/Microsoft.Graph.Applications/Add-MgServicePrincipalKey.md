@@ -52,11 +52,11 @@ ServicePrincipals that don't have any existing valid certificates (i.e.: no cert
 Update servicePrincipal can be used to perform an update instead.
 
 ## EXAMPLES
+### Example 1: Adding a new key credential to a servicePrincipal
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	keyCredential = @{
@@ -70,10 +70,14 @@ $params = @{
 
 Add-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Applications
 ```
+This example shows adding a new key credential to a serviceprincipal
+
+### Example 2: Adding a key credential and an associated password for the key
+
+```powershell
+
+Import-Module Microsoft.Graph.Applications
 
 $params = @{
 	keyCredential = @{
@@ -88,6 +92,10 @@ $params = @{
 }
 
 Add-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows adding a key credential and an associated password for the key
+
 
 ## PARAMETERS
 

@@ -37,11 +37,11 @@ New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExtern
 Create a new externalConnection object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	id = "contosohr"
@@ -50,6 +50,10 @@ $params = @{
 }
 
 New-MgExternalConnection -BodyParameter $params
+
+```
+This example shows how to use the New-MgExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 

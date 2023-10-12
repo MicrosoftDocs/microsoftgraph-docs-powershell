@@ -31,8 +31,7 @@ New-MgBetaPrivilegedApproval -BodyParameter <IMicrosoftGraphPrivilegedApproval> 
 Add new entity to privilegedApproval
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaPrivilegedApproval Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -44,6 +43,8 @@ $params = @{
 }
 New-MgBetaPrivilegedApproval -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaPrivilegedApproval Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

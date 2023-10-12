@@ -31,12 +31,13 @@ Get the properties of an insightsSettings object for displaying or returning peo
 To learn how to customize privacy for people insights in an organization, see Customize people insights privacy in Microsoft Graph.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaOrganizationSettingPersonInsight Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingPersonInsight -OrganizationId $organizationId
 ```
+This example shows how to use the Get-MgBetaOrganizationSettingPersonInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

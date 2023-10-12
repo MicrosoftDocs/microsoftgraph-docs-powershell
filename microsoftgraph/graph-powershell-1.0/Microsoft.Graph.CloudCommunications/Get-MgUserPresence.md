@@ -29,23 +29,6 @@ Get-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get a user's presence information.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgUserPresence -UserId $userId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.CloudCommunications
-```
-
-Get-MgUserPresence -UserId $userId
-
 ## PARAMETERS
 
 ### -ExpandProperty

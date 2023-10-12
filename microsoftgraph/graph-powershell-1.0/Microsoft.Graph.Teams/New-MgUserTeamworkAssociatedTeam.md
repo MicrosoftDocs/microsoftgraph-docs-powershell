@@ -47,16 +47,18 @@ Add (pin) a tab to the specified chat.
 The corresponding app must already be installed in the chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Teams
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+# A UPN can also be used as -UserId.
+Get-MgUserTeamworkAssociatedTeam -UserId $userId
 ```
+This example shows how to use the New-MgUserTeamworkAssociatedTeam Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

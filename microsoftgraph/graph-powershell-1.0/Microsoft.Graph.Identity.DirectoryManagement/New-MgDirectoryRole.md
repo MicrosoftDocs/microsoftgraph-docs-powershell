@@ -38,17 +38,21 @@ The Company Administrators and the implicit user directory roles (User, Guest Us
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	roleTemplateId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
 
 New-MgDirectoryRole -BodyParameter $params
+```
+This example shows how to use the New-MgDirectoryRole Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

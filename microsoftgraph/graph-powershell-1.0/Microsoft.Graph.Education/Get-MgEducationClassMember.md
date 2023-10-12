@@ -25,13 +25,17 @@ Get-MgEducationClassMember -EducationClassId <String> [-ExpandProperty <String[]
 Retrieves the educationUser members of an educationClass.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassMember -EducationClassId $educationClassId
+
+```
+This example shows how to use the Get-MgEducationClassMember Cmdlet.
+
 
 ## PARAMETERS
 

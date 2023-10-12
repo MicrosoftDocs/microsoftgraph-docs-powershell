@@ -42,13 +42,17 @@ Retrieve a printer's usage summary for a particular time period.
 For descriptions of each of the endpoints, see printUsageByPrinter.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportDailyPrintUsageByPrinter
+
+```
+This example shows how to use the Get-MgBetaReportDailyPrintUsageByPrinter Cmdlet.
+
 
 ## PARAMETERS
 

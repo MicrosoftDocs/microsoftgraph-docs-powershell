@@ -38,20 +38,28 @@ Get-MgAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty <Str
 Get provisioning from auditLogs
 
 ## EXAMPLES
+### Example 1: Successful request
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgAuditLogProvisioning
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Reports
 ```
+This example will successful request
+
+### Example 2: Error reponse
+
+```powershell
+
+Import-Module Microsoft.Graph.Reports
 
 Get-MgAuditLogProvisioning
+
+```
+This example will error reponse
+
 
 ## PARAMETERS
 

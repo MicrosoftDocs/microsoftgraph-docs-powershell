@@ -48,48 +48,72 @@ This resource is in the 'working' resource list and should be considered work in
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
 ## EXAMPLES
+### Example 1: Get an educationWordResource
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Education
 ```
+This example will get an educationwordresource
+
+### Example 2: Get an educationFileResource
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Beta.Education
 ```
+This example will get an educationfileresource
+
+### Example 3: Get an educationExcelResource
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Beta.Education
 ```
+This example will get an educationexcelresource
+
+### Example 4: Get an educationPowerPointResource
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-### EXAMPLE 5
-```powershell
-Import-Module Microsoft.Graph.Beta.Education
 ```
+This example will get an educationpowerpointresource
+
+### Example 5: Get an educationLinkResource
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-### EXAMPLE 6
-```powershell
-Import-Module Microsoft.Graph.Beta.Education
 ```
+This example will get an educationlinkresource
+
+### Example 6: Get an educationMediaResource
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
+
+```
+This example will get an educationmediaresource
+
 
 ## PARAMETERS
 
