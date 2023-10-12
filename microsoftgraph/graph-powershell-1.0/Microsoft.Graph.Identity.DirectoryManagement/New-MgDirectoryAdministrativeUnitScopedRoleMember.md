@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitscopedrolemember
 schema: 2.0.0
@@ -11,35 +11,32 @@ schema: 2.0.0
 Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String>
  [-AdditionalProperties <Hashtable>] [-AdministrativeUnitId1 <String>] [-Id <String>] [-RoleId <String>]
- [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDirectoryAdministrativeUnitScopedRoleMember [-AdministrativeUnitId <String>]
- -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RoleId <String>] [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId <String>
- -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphScopedRoleMembership> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdministrativeUnitId <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-RoleId <String>]
+ [-RoleMemberInfo <IMicrosoftGraphIdentity>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,10 +44,11 @@ Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
+```
 
 $params = @{
 	roleId = "roleId-value"
@@ -60,11 +58,6 @@ $params = @{
 }
 
 New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
-```
-This example shows how to use the New-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -72,7 +65,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -87,23 +80,11 @@ Accept wildcard characters: False
 The unique identifier of administrativeUnit
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: CreateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -114,7 +95,7 @@ Accept wildcard characters: False
 Unique identifier for the administrative unit that the directory role is scoped to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +111,7 @@ scopedRoleMembership
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphScopedRoleMembership
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -146,7 +127,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +143,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -177,7 +158,7 @@ Accept wildcard characters: False
 Unique identifier for the directory role that the member is in.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +174,7 @@ identity
 To construct, see NOTES section for ROLEMEMBERINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -241,10 +222,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
+
 ## NOTES
 
 ALIASES
@@ -294,4 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
-[New-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
+

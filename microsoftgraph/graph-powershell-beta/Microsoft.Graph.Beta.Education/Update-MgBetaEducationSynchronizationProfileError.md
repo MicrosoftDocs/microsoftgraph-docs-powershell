@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofileerror
 schema: 2.0.0
@@ -17,14 +17,20 @@ Update the navigation property errors in education
 Update-MgBetaEducationSynchronizationProfileError -EducationSynchronizationErrorId <String>
  -EducationSynchronizationProfileId <String> [-AdditionalProperties <Hashtable>] [-EntryType <String>]
  [-ErrorCode <String>] [-ErrorMessage <String>] [-Id <String>] [-JoiningValue <String>]
- [-RecordedDateTime <DateTime>] [-ReportableIdentifier <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RecordedDateTime <DateTime>] [-ReportableIdentifier <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationSynchronizationProfileError -EducationSynchronizationErrorId <String>
  -EducationSynchronizationProfileId <String> -BodyParameter <IMicrosoftGraphEducationSynchronizationError>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
+ -BodyParameter <IMicrosoftGraphEducationSynchronizationError> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -32,17 +38,27 @@ Update-MgBetaEducationSynchronizationProfileError -EducationSynchronizationError
 Update-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
  [-AdditionalProperties <Hashtable>] [-EntryType <String>] [-ErrorCode <String>] [-ErrorMessage <String>]
  [-Id <String>] [-JoiningValue <String>] [-RecordedDateTime <DateTime>] [-ReportableIdentifier <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationSynchronizationError> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property errors in education
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +66,7 @@ Update the navigation property errors in education
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +82,7 @@ educationSynchronizationError
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSynchronizationError
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -81,8 +97,8 @@ Accept wildcard characters: False
 The unique identifier of educationSynchronizationError
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -96,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of educationSynchronizationProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -111,7 +127,7 @@ Accept wildcard characters: False
 Represents the sync entity (school, section, student, teacher).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,7 +142,7 @@ Accept wildcard characters: False
 Represents the error code for this error.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +157,7 @@ Accept wildcard characters: False
 Contains a description of the error.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +173,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,8 +189,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -188,7 +204,7 @@ Accept wildcard characters: False
 The unique identifier for the entry.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +219,7 @@ Accept wildcard characters: False
 The time of occurrence of this error.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -218,7 +234,7 @@ Accept wildcard characters: False
 The identifier of this error entry.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -233,7 +249,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -249,7 +265,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -266,10 +282,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
+
 ## NOTES
 
 ALIASES

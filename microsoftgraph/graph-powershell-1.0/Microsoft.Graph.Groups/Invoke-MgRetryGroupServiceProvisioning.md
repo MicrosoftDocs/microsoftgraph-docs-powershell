@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning
 schema: 2.0.0
@@ -10,24 +10,37 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action retryServiceProvisioning
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRetryGroupServiceProvisioning?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Retry (Default)
 ```
-Invoke-MgRetryGroupServiceProvisioning -GroupId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgRetryGroupServiceProvisioning -GroupId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RetryViaIdentity
 ```
-Invoke-MgRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action retryServiceProvisioning
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,7 +48,7 @@ Invoke action retryServiceProvisioning
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Retry
 Aliases:
 
@@ -51,7 +64,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
 Parameter Sets: RetryViaIdentity
 Aliases:
 
@@ -66,7 +79,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +94,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -97,7 +110,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -114,9 +127,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -164,5 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRetryGroupServiceProvisioning?view=graph-powershell-beta)
 

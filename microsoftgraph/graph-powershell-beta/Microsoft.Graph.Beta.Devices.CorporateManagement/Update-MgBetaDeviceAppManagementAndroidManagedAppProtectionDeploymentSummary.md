@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementandroidmanagedappprotectiondeploymentsummary
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deploymentSummary in deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,7 +18,7 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
  -AndroidManagedAppProtectionId <String> [-AdditionalProperties <Hashtable>]
  [-ConfigurationDeployedUserCount <Int32>]
  [-ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]
- [-DisplayName <String>] [-Id <String>] [-LastRefreshTime <DateTime>] [-Version <String>] [-WhatIf] [-Confirm]
+ [-DisplayName <String>] [-Id <String>] [-LastRefreshTime <DateTime>] [-Version <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -29,7 +26,14 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
 ```
 Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
  -AndroidManagedAppProtectionId <String> -BodyParameter <IMicrosoftGraphManagedAppPolicyDeploymentSummary>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
+ -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphManagedAppPolicyDeploymentSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,19 +42,28 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
  -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
  [-ConfigurationDeployedUserCount <Int32>]
  [-ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]
- [-DisplayName <String>] [-Id <String>] [-LastRefreshTime <DateTime>] [-Version <String>] [-WhatIf] [-Confirm]
+ [-DisplayName <String>] [-Id <String>] [-LastRefreshTime <DateTime>] [-Version <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
- -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedAppPolicyDeploymentSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deploymentSummary in deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -58,7 +71,7 @@ Update the navigation property deploymentSummary in deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -73,8 +86,8 @@ Accept wildcard characters: False
 The unique identifier of androidManagedAppProtection
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -89,7 +102,7 @@ The ManagedAppEntity is the base entity type for all other entity types under ap
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppPolicyDeploymentSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppPolicyDeploymentSummary
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -104,7 +117,7 @@ Accept wildcard characters: False
 Not yet documented
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,7 +133,7 @@ Not yet documented
 To construct, see NOTES section for CONFIGURATIONDEPLOYMENTSUMMARYPERAPP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +148,7 @@ Accept wildcard characters: False
 Not yet documented
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -151,7 +164,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,8 +180,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -182,7 +195,7 @@ Accept wildcard characters: False
 Not yet documented
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +210,7 @@ Accept wildcard characters: False
 Version of the entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +225,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -228,7 +241,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -245,10 +258,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppPolicyDeploymentSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppPolicyDeploymentSummary
+
 ## NOTES
 
 ALIASES
@@ -344,5 +360,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary?view=graph-powershell-1.0)
 

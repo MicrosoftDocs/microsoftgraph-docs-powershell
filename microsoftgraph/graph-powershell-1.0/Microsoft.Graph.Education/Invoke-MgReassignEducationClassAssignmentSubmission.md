@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgreassigneducationclassassignmentsubmission
 schema: 2.0.0
@@ -15,20 +15,17 @@ This means that the reassigned status will be mapped to the returned status, and
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReassignEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReassignEducationClassAssignmentSubmission?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Reassign (Default)
 ```
 Invoke-MgReassignEducationClassAssignmentSubmission -EducationAssignmentId <String> -EducationClassId <String>
- -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -EducationSubmissionId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReassignViaIdentity
 ```
-Invoke-MgReassignEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Invoke-MgReassignEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -41,28 +38,20 @@ If the header Prefer: include-unknown-enum-members is provided, a reassigned sub
 For details, see the examples section.
 
 ## EXAMPLES
-### Example 1: Request without optional Prefer header
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-```
-This example will request without optional prefer header
-
-### Example 2: Request with Prefer header
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Education
+```
 
 Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
-```
-This example will request with prefer header
-
 
 ## PARAMETERS
 
@@ -70,7 +59,7 @@ This example will request with prefer header
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reassign
 Aliases:
 
@@ -85,7 +74,7 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reassign
 Aliases:
 
@@ -100,7 +89,7 @@ Accept wildcard characters: False
 The unique identifier of educationSubmission
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reassign
 Aliases:
 
@@ -116,7 +105,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
 Parameter Sets: ReassignViaIdentity
 Aliases:
 
@@ -131,7 +120,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +136,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,9 +153,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
+
 ## NOTES
 
 ALIASES
@@ -189,4 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgBetaReassignEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReassignEducationClassAssignmentSubmission?view=graph-powershell-beta)
+

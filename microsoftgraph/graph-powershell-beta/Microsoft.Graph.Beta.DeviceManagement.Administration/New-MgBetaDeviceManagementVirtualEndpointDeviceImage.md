@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage
 schema: 2.0.0
@@ -17,14 +17,14 @@ Upload a custom OS image that you can later provision on Cloud PCs.
 ```
 New-MgBetaDeviceManagementVirtualEndpointDeviceImage [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-ExpirationDate <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-OSBuildNumber <String>] [-OSStatus <String>] [-OperatingSystem <String>] [-SourceImageResourceId <String>]
- [-Status <String>] [-StatusDetails <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OperatingSystem <String>] [-OSBuildNumber <String>] [-OSStatus <String>] [-SourceImageResourceId <String>]
+ [-Status <String>] [-StatusDetails <String>] [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementVirtualEndpointDeviceImage -BodyParameter <IMicrosoftGraphCloudPcDeviceImage>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,7 +32,8 @@ Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
@@ -45,8 +46,8 @@ $params = @{
 }
 New-MgBetaDeviceManagementVirtualEndpointDeviceImage -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -54,7 +55,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +71,7 @@ cloudPcDeviceImage
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcDeviceImage
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcDeviceImage
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +86,7 @@ Accept wildcard characters: False
 The display name of the image.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +101,7 @@ Accept wildcard characters: False
 The date the image became unavailable.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +117,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +134,7 @@ The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time.
 For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +150,7 @@ The operating system of the image.
 For example, Windows 10 Enterprise.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +166,7 @@ The OS build version of the image.
 For example, 1909.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +181,7 @@ Accept wildcard characters: False
 cloudPcDeviceImageOsStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +197,7 @@ The ID of the source image resource on Azure.
 Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -211,7 +212,7 @@ Accept wildcard characters: False
 cloudPcDeviceImageStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +227,7 @@ Accept wildcard characters: False
 cloudPcDeviceImageStatusDetails
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +243,7 @@ The image version.
 For example, 0.0.1 and 1.5.13.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -257,7 +258,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -273,7 +274,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -290,9 +291,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcDeviceImage
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcDeviceImage
+
 ## NOTES
 
 ALIASES
@@ -317,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The image version. For example, 0.0.1 and 1.5.13.
 
 ## RELATED LINKS
+

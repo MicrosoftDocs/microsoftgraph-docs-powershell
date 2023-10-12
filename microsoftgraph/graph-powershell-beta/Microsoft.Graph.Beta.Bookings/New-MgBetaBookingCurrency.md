@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingcurrency
 schema: 2.0.0
@@ -10,25 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to bookingCurrencies
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingCurrency?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaBookingCurrency [-AdditionalProperties <Hashtable>] [-Id <String>] [-Symbol <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaBookingCurrency [-AdditionalProperties <Hashtable>] [-Id <String>] [-Symbol <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaBookingCurrency -BodyParameter <IMicrosoftGraphBookingCurrency> [-WhatIf] [-Confirm]
+New-MgBetaBookingCurrency -BodyParameter <IMicrosoftGraphBookingCurrency> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to bookingCurrencies
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +49,7 @@ Add new entity to bookingCurrencies
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +65,7 @@ bookingCurrency
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBookingCurrency
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCurrency
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +81,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +97,7 @@ The currency symbol.
 For example, the currency symbol for the US dollar and for the Australian dollar is $.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -115,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -132,9 +145,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCurrency
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCurrency
+
 ## NOTES
 
 ALIASES
@@ -150,5 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Symbol <String>]`: The currency symbol. For example, the currency symbol for the US dollar and for the Australian dollar is $.
 
 ## RELATED LINKS
-[New-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingCurrency?view=graph-powershell-1.0)
 

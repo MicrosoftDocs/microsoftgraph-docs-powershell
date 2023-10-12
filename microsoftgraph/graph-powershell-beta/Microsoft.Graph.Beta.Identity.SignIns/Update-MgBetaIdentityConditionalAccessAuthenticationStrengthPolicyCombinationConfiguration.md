@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration
 schema: 2.0.0
@@ -17,7 +17,7 @@ In use, only fido2combinationConfigurations may be updated as they are the only 
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
  -AuthenticationCombinationConfigurationId <String> -AuthenticationStrengthPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-AppliesToCombinations <String[]>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-AppliesToCombinations <String[]>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -25,7 +25,15 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationCon
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
  -AuthenticationCombinationConfigurationId <String> -AuthenticationStrengthPolicyId <String>
- -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
+ -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -33,19 +41,28 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationCon
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
  -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-AppliesToCombinations <String[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
- -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AppliesToCombinations <String[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be updated as they are the only type of authenticationCombinationConfiguration that may be created.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53,7 +70,7 @@ In use, only fido2combinationConfigurations may be updated as they are the only 
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -70,7 +87,7 @@ Must be an allowedCombinations object that's defined for the authenticationStren
 The only possible value for fido2combinationConfigurations is 'fido2'.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -85,8 +102,8 @@ Accept wildcard characters: False
 The unique identifier of authenticationCombinationConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -100,8 +117,8 @@ Accept wildcard characters: False
 The unique identifier of authenticationStrengthPolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -116,7 +133,7 @@ authenticationCombinationConfiguration
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationCombinationConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -132,7 +149,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -148,8 +165,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -163,7 +180,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -179,7 +196,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -196,10 +213,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
+
 ## NOTES
 
 ALIASES

@@ -1,71 +1,49 @@
 ---
-external help file: Microsoft.Graph.Beta.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersponsor
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolist
 schema: 2.0.0
 ---
 
-# Remove-MgBetaUserSponsor
+# Remove-MgBetaUserTodoList
 
 ## SYNOPSIS
-Remove a user's sponsor.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoList?view=graph-powershell-1.0)
+Deletes a todoTaskList object.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaUserSponsor -DirectoryObjectId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaUserTodoList -TodoTaskListId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaUserSponsor -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaUserTodoList -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Remove a user's sponsor.
+Deletes a todoTaskList object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId
-```
-This example shows how to use the Remove-MgBetaUserTodoList Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
-
-### -DirectoryObjectId
-The unique identifier of directoryObject
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -IfMatch
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -96,7 +74,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -107,11 +85,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -TodoTaskListId
+The unique identifier of todoTaskList
+
+```yaml
+Type: System.String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -126,7 +119,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +135,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,9 +152,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -196,4 +191,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoList?view=graph-powershell-1.0)
+

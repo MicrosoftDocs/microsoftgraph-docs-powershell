@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicydefaultappmanagementpolicy
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a tenantAppManagementPolicy object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,18 +17,34 @@ Update the properties of a tenantAppManagementPolicy object.
 Update-MgPolicyDefaultAppManagementPolicy [-AdditionalProperties <Hashtable>]
  [-ApplicationRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
- [-ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-WhatIf] [-Confirm]
+ [-ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantAppManagementPolicy> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantAppManagementPolicy> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a tenantAppManagementPolicy object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -39,7 +52,7 @@ Update the properties of a tenantAppManagementPolicy object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -55,7 +68,7 @@ appManagementConfiguration
 To construct, see NOTES section for APPLICATIONRESTRICTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppManagementConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementConfiguration
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -71,7 +84,7 @@ tenantAppManagementPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTenantAppManagementPolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -87,7 +100,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -103,7 +116,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -119,7 +132,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -135,7 +148,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -151,7 +164,7 @@ Denotes whether the policy is enabled.
 Default value is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -167,7 +180,7 @@ appManagementConfiguration
 To construct, see NOTES section for SERVICEPRINCIPALRESTRICTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppManagementConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementConfiguration
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -182,7 +195,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -198,7 +211,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -215,9 +228,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
+
 ## NOTES
 
 ALIASES
@@ -269,5 +284,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
-[Update-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
 

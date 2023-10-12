@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatespolicyaudienceexclusionmemberbyid
 schema: 2.0.0
@@ -17,7 +17,7 @@ You can also use the method removeMembers to remove members.
 ```
 Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMemberById -UpdatableAssetId <String>
  -UpdatePolicyId <String> [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Remove
@@ -25,26 +25,42 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMemberById -UpdatableAssetId <
 Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMemberById -UpdatableAssetId <String>
  -UpdatePolicyId <String>
  -BodyParameter <IPathsJzgwz3AdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RemoveViaIdentityExpanded
-```
-Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMemberById -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
 Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMemberById -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IPathsJzgwz3AdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RemoveViaIdentityExpanded
+```
+Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMemberById -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Remove members of the same type from an updatableAssetGroup.
 You can also use the method removeMembers to remove members.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -52,7 +68,7 @@ You can also use the method removeMembers to remove members.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -68,7 +84,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsJzgwz3AdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsJzgwz3AdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Remove, RemoveViaIdentity
 Aliases:
 
@@ -83,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -99,8 +115,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IWindowsUpdatesIdentity
-Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+Parameter Sets: RemoveViaIdentity, RemoveViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -114,7 +130,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -129,7 +145,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -144,8 +160,8 @@ Accept wildcard characters: False
 The unique identifier of updatableAsset
 
 ```yaml
-Type: String
-Parameter Sets: RemoveExpanded, Remove
+Type: System.String
+Parameter Sets: Remove, RemoveExpanded
 Aliases:
 
 Required: True
@@ -159,8 +175,8 @@ Accept wildcard characters: False
 The unique identifier of updatePolicy
 
 ```yaml
-Type: String
-Parameter Sets: RemoveExpanded, Remove
+Type: System.String
+Parameter Sets: Remove, RemoveExpanded
 Aliases:
 
 Required: True
@@ -174,7 +190,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +206,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,10 +223,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsJzgwz3AdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceExclusionsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

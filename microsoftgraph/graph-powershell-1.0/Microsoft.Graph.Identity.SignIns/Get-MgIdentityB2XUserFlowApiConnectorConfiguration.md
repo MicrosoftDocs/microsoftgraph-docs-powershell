@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowapiconnectorconfiguration
 schema: 2.0.0
@@ -11,15 +11,12 @@ schema: 2.0.0
 Configuration for enabling an API connector for use as part of the self-service sign-up user flow.
 You can only obtain the value of this object using Get userFlowApiConnectorConfiguration.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgIdentityB2XUserFlowApiConnectorConfiguration -B2XIdentityUserFlowId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgIdentityB2XUserFlowApiConnectorConfiguration -B2XIdentityUserFlowId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -32,13 +29,29 @@ Get-MgIdentityB2XUserFlowApiConnectorConfiguration -InputObject <IIdentitySignIn
 Configuration for enabling an API connector for use as part of the self-service sign-up user flow.
 You can only obtain the value of this object using Get userFlowApiConnectorConfiguration.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
 The unique identifier of b2xIdentityUserFlow
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -53,7 +66,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -69,7 +82,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -84,7 +97,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -101,9 +114,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowApiConnectorConfiguration
+
 ## NOTES
 
 ALIASES
@@ -171,5 +186,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration?view=graph-powershell-beta)
 

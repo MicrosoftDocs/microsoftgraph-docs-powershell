@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepointsetting
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the tenant-level settings for SharePoint and OneDrive.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,13 +19,29 @@ Get-MgAdminSharepointSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get the tenant-level settings for SharePoint and OneDrive.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -62,10 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepointSettings
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
 

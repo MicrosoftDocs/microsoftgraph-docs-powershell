@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintersharejobdocumentcontent
 schema: 2.0.0
@@ -14,8 +14,8 @@ Get media content for the navigation property documents from print
 
 ### Get (Default)
 ```
-Get-MgBetaPrintPrinterShareJobDocumentContent -PrintDocumentId <String> -PrintJobId <String>
- -PrinterShareId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaPrintPrinterShareJobDocumentContent -PrintDocumentId <String> -PrinterShareId <String>
+ -PrintJobId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -27,6 +27,22 @@ Get-MgBetaPrintPrinterShareJobDocumentContent -InputObject <IDevicesCloudPrintId
 ## DESCRIPTION
 Get media content for the navigation property documents from print
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -InputObject
@@ -34,7 +50,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -49,7 +65,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -64,7 +80,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -79,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of printDocument
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -94,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of printerShare
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -109,7 +125,7 @@ Accept wildcard characters: False
 The unique identifier of printJob
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -126,9 +142,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

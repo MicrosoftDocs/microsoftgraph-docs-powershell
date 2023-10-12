@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytriggerretentionevent
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property retentionEvents in security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,16 +18,22 @@ Update-MgSecurityTriggerRetentionEvent -RetentionEventId <String> [-AdditionalPr
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult[]>]
  [-EventQueries <IMicrosoftGraphSecurityEventQuery[]>]
- [-EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>] [-EventTriggerDateTime <DateTime>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>] [-EventTriggerDateTime <DateTime>]
+ [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-LastStatusUpdateDateTime <DateTime>] [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityTriggerRetentionEvent -RetentionEventId <String>
- -BodyParameter <IMicrosoftGraphSecurityRetentionEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityRetentionEvent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityRetentionEvent> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,20 +42,30 @@ Update-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-Additi
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult[]>]
  [-EventQueries <IMicrosoftGraphSecurityEventQuery[]>]
- [-EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>] [-EventTriggerDateTime <DateTime>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>] [-EventTriggerDateTime <DateTime>]
+ [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-LastStatusUpdateDateTime <DateTime>] [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityRetentionEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property retentionEvents in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -60,7 +73,7 @@ Update the navigation property retentionEvents in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,7 +89,7 @@ retentionEvent
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionEvent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionEvent
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -92,7 +105,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,7 +120,7 @@ Accept wildcard characters: False
 The date time when the retentionEvent was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +135,7 @@ Accept wildcard characters: False
 Optional information about the event.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -137,7 +150,7 @@ Accept wildcard characters: False
 Name of the event.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,7 +166,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for EVENTPROPAGATIONRESULTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEventPropagationResult[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEventPropagationResult[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -169,7 +182,7 @@ Represents the workload (SharePoint Online, OneDrive for Business, Exchange Onli
 To construct, see NOTES section for EVENTQUERIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEventQuery[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEventQuery[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +198,7 @@ retentionEventStatus
 To construct, see NOTES section for EVENTSTATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionEventStatus
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionEventStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +213,7 @@ Accept wildcard characters: False
 Optional time when the event should be triggered.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,7 +229,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -232,8 +245,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -248,7 +261,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -263,7 +276,7 @@ Accept wildcard characters: False
 The latest date time when the retentionEvent was modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -278,7 +291,7 @@ Accept wildcard characters: False
 Last time the status of the event was updated.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -293,8 +306,8 @@ Accept wildcard characters: False
 The unique identifier of retentionEvent
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -309,7 +322,7 @@ retentionEventType
 To construct, see NOTES section for RETENTIONEVENTTYPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionEventType
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionEventType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -324,7 +337,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -340,7 +353,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -357,10 +370,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionEvent
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityRetentionEvent
+
 ## NOTES
 
 ALIASES
@@ -524,8 +540,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
 

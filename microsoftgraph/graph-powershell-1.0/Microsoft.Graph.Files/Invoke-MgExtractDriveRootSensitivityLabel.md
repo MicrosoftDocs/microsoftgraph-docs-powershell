@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgextractdriverootsensitivitylabel
 schema: 2.0.0
@@ -10,24 +10,37 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action extractSensitivityLabels
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaExtractDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaExtractDriveRootSensitivityLabel?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Extract (Default)
 ```
-Invoke-MgExtractDriveRootSensitivityLabel -DriveId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgExtractDriveRootSensitivityLabel -DriveId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ExtractViaIdentity
 ```
-Invoke-MgExtractDriveRootSensitivityLabel -InputObject <IFilesIdentity> [-WhatIf] [-Confirm]
+Invoke-MgExtractDriveRootSensitivityLabel -InputObject <IFilesIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,7 +48,7 @@ Invoke action extractSensitivityLabels
 The unique identifier of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Extract
 Aliases:
 
@@ -51,7 +64,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
 Parameter Sets: ExtractViaIdentity
 Aliases:
 
@@ -66,7 +79,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -82,7 +95,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -99,9 +112,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityLabelAssignment
+
 ## NOTES
 
 ALIASES
@@ -138,5 +153,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaExtractDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaExtractDriveRootSensitivityLabel?view=graph-powershell-beta)
 

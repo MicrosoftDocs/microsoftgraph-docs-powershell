@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsitelistcontenttypecopy
 schema: 2.0.0
@@ -10,46 +10,43 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteListContentTypeCopy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### AddExpanded (Default)
 ```
 Add-MgSiteListContentTypeCopy -ListId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ContentType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgSiteListContentTypeCopy -ListId <String> -SiteId <String>
  -BodyParameter <IPaths2Ehha4SitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentityExpanded
-```
-Add-MgSiteListContentTypeCopy -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgSiteListContentTypeCopy -InputObject <ISitesIdentity>
  -BodyParameter <IPaths2Ehha4SitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgSiteListContentTypeCopy -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Sites
+```
 
 $params = @{
 	contentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
@@ -57,17 +54,13 @@ $params = @{
 
 Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
 
-```
-This example shows how to use the Add-MgSiteListContentTypeCopy Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -83,7 +76,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths2Ehha4SitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths2Ehha4SitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Add, AddViaIdentity
 Aliases:
 
@@ -98,7 +91,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -114,8 +107,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,8 +122,8 @@ Accept wildcard characters: False
 The unique identifier of list
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -144,8 +137,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -159,7 +152,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +168,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,10 +185,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths2Ehha4SitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
+
 ## NOTES
 
 ALIASES
@@ -250,4 +246,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgBetaSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteListContentTypeCopy?view=graph-powershell-beta)
+

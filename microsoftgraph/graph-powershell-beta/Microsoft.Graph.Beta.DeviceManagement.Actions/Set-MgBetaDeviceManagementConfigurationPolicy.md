@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementconfigurationpolicy
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action assign
 ```
 Set-MgBetaDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
  [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>] [-WhatIf] [-Confirm]
+ [-Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -24,26 +24,42 @@ Set-MgBetaDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPoli
 ```
 Set-MgBetaDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
  -BodyParameter <IPathsI6E5RhDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssignViaIdentityExpanded
-```
-Set-MgBetaDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
 ```
 Set-MgBetaDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsI6E5RhDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssignViaIdentityExpanded
+```
+Set-MgBetaDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>]
+ [-Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action assign
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Invoke action assign
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -83,7 +99,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsI6E5RhDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsI6E5RhDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
@@ -98,8 +114,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementConfigurationPolicy
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
 Aliases:
 
 Required: True
@@ -114,8 +130,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,10 +178,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsI6E5RhDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment
+
 ## NOTES
 
 ALIASES
