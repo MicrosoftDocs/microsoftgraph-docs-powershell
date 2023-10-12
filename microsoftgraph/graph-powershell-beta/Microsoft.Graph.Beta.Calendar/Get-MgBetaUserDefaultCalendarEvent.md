@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserdefaultcalendarevent
@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+To get expanded event instances, you can get the calendar view, orget the instances of an event.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgBetaUserDefaultCalendarEvent -UserId <String> [-ExpandProperty <String[]>]
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+To get expanded event instances, you can get the calendar view, orget the instances of an event.
 
 ## EXAMPLES
 

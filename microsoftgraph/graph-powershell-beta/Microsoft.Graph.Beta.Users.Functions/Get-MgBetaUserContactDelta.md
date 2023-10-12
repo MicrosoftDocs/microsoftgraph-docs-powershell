@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactdelta
@@ -9,8 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
-A delta function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
-This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
+A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
+This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
 
 ## SYNTAX
 
@@ -29,8 +29,8 @@ Get-MgBetaUserContactDelta -InputObject <IUsersFunctionsIdentity> [-Filter <Stri
 
 ## DESCRIPTION
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
-A delta function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
-This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
+A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
+This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
 
 ## EXAMPLES
 

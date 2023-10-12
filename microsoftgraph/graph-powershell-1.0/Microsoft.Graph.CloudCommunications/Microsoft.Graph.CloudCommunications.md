@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.CloudCommunications
 Module Guid: 8b8662aa-42b7-41ba-a986-73d77b935855
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications
@@ -178,7 +178,7 @@ Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
 
 ### [Invoke-MgRecordCommunicationCallResponse](Invoke-MgRecordCommunicationCallResponse.md)
-Records a short audio response from the caller.\nA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Records a short audio response from the caller.A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.

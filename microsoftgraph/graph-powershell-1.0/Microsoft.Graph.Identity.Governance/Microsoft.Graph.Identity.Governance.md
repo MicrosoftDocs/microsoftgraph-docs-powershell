@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Identity.Governance
 Module Guid: f529dcf7-3715-4622-91ba-726ed37b144f
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance
@@ -110,7 +110,7 @@ Invoke function additionalAccess
 Get the number of the resource
 
 ### [Get-MgEntitlementManagementAssignmentPolicy](Get-MgEntitlementManagementAssignmentPolicy.md)
-In Azure AD entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
+In Azure AD entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 
 ### [Get-MgEntitlementManagementAssignmentPolicyAccessPackage](Get-MgEntitlementManagementAssignmentPolicyAccessPackage.md)
 Access package containing this policy.
@@ -1903,7 +1903,7 @@ Create new navigation property to roleAssignmentSchedules for roleManagement
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
 
 ### [New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
-In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object:\n+ Request active and persistent role assignments for a principal, with or without expiry dates.\n+ Activate, deactivate, extend, or renew an eligible role assignment for a principal.
+In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object:+ Request active and persistent role assignments for a principal, with or without expiry dates.+ Activate, deactivate, extend, or renew an eligible role assignment for a principal.
 To call this API to update, renew, and extend assignments for yourself, you must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
 See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
 
@@ -1940,7 +1940,7 @@ Create new navigation property to roleAssignmentSchedules for roleManagement
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
 
 ### [New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
-In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object:\n+ Request active and persistent role assignments for a principal, with or without expiry dates.\n+ Activate, deactivate, extend, or renew an eligible role assignment for a principal.
+In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object:+ Request active and persistent role assignments for a principal, with or without expiry dates.+ Activate, deactivate, extend, or renew an eligible role assignment for a principal.
 To call this API to update, renew, and extend assignments for yourself, you must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
 See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
 
@@ -2478,9 +2478,9 @@ After calling this action, the status of the cancelled unifiedRoleEligibilitySch
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 To validate the properties of an existing group, use the group: validateProperties function.
-The following policy validations are performed for the display name and mail nickname properties:\n1.
-Validate the prefix and suffix naming policy\n2.
-Validate the custom banned words policy\n3.
+The following policy validations are performed for the display name and mail nickname properties:1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
 Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
@@ -2490,9 +2490,9 @@ To learn more about configuring naming policies, see Configure naming policy.
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 To validate the properties of an existing group, use the group: validateProperties function.
-The following policy validations are performed for the display name and mail nickname properties:\n1.
-Validate the prefix and suffix naming policy\n2.
-Validate the custom banned words policy\n3.
+The following policy validations are performed for the display name and mail nickname properties:1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
 Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
