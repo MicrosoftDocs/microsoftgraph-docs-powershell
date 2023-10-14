@@ -46,20 +46,28 @@ Students can only see assignments assigned to them; teachers and applications wi
 You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, you will get an unknownFutureValue value in the response.
 
 ## EXAMPLES
+### Example 1: Get education assignment
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Education
 ```
+This example will get education assignment
+
+### Example 2: Get assignment in inactive state with optional Prefer header
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+```
+This example will get assignment in inactive state with optional prefer header
+
 
 ## PARAMETERS
 

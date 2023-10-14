@@ -51,20 +51,22 @@ The attachment can be a file (of fileAttachment type) or Outlook item (itemAttac
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Users
+
+$params = @{
+	displayName = "Travel items"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserTodoList -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserTodoList Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

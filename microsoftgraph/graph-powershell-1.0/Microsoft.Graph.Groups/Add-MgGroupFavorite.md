@@ -31,13 +31,17 @@ Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Add-MgGroupFavorite -GroupId $groupId
+
+```
+This example shows how to use the Add-MgGroupFavorite Cmdlet.
+
 
 ## PARAMETERS
 

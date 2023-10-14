@@ -51,20 +51,30 @@ Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Mail
+
+$params = @{
+	receivedDateTime = [System.DateTime]::Parse("datetime-value")
+	sentDateTime = [System.DateTime]::Parse("datetime-value")
+	hasAttachments = $true
+	subject = "subject-value"
+	body = @{
+		contentType = ""
+		content = "content-value"
+	}
+	bodyPreview = "bodyPreview-value"
+}
+
+# A UPN can also be used as -UserId.
+New-MgUserMailFolderMessage -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
+This example shows how to use the New-MgUserMailFolderMessage Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

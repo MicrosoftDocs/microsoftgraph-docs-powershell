@@ -38,13 +38,17 @@ Get-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-ExpandProperty <S
 Get an externalGroup object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 Get-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId
+
+```
+This example shows how to use the Get-MgExternalConnectionGroup Cmdlet.
+
 
 ## PARAMETERS
 

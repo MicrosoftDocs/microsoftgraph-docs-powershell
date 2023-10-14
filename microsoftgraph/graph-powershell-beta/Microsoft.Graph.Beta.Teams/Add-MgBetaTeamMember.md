@@ -48,11 +48,11 @@ Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
 ## EXAMPLES
+### Example 1: Add members in bulk to a team
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	values = @(
@@ -74,10 +74,14 @@ $params = @{
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example will add members in bulk to a team
+
+### Example 2: Add members in bulk and encounter partial failure
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	values = @(
@@ -99,10 +103,14 @@ $params = @{
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example will add members in bulk and encounter partial failure
+
+### Example 3: Add members in bulk to a team using user principal name
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	values = @(
@@ -123,6 +131,10 @@ $params = @{
 }
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
+
+```
+This example will add members in bulk to a team using user principal name
+
 
 ## PARAMETERS
 

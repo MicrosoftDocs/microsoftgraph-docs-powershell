@@ -30,30 +30,6 @@ Remove-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property presence for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.CloudCommunications
-```
-
-# A UPN can also be used as -UserId.
-Get-MgUserPresence -UserId $userId
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.CloudCommunications
-```
-
-Get-MgUserPresence -UserId $userId
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.CloudCommunications
-```
-
-Get-MgCommunicationPresence -PresenceId $presenceId
-
 ## PARAMETERS
 
 ### -IfMatch

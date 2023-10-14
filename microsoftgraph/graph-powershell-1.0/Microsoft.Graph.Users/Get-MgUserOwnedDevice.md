@@ -30,16 +30,18 @@ Get-MgUserOutlookMasterCategoryCount -InputObject <IUsersIdentity> [-Filter <Str
 Get the number of the resource
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Users
+
+# A UPN can also be used as -UserId.
+Get-MgUserOwnedDevice -UserId $userId
+
 ```
+This example shows how to use the Get-MgUserOwnedDevice Cmdlet.
+
 
 ## PARAMETERS
 

@@ -67,11 +67,10 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	EntityType = "Group"
@@ -81,6 +80,11 @@ $params = @{
 }
 
 Test-MgDirectoryObjectProperty -BodyParameter $params
+```
+This example shows how to use the Test-MgEntitlementManagementConnectedOrganizationInternalSponsorProperty Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
