@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddeviceencryptionstate
 schema: 2.0.0
@@ -19,17 +19,33 @@ New-MgBetaDeviceManagementManagedDeviceEncryptionState [-AdditionalProperties <H
  [-EncryptionPolicySettingState <String>] [-EncryptionReadinessState <EncryptionReadinessState>]
  [-EncryptionState <EncryptionState>] [-FileVaultStates <FileVaultState>] [-Id <String>] [-OSVersion <String>]
  [-PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>] [-TpmSpecificationVersion <String>]
- [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementManagedDeviceEncryptionState
- -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to managedDeviceEncryptionStates for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +53,7 @@ Create new navigation property to managedDeviceEncryptionStates for deviceManage
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +68,7 @@ Accept wildcard characters: False
 Advanced BitLocker State
 
 ```yaml
-Type: AdvancedBitLockerState
+Type: Microsoft.Graph.Beta.PowerShell.Support.AdvancedBitLockerState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +84,7 @@ Encryption report per device
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDeviceEncryptionState
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +99,7 @@ Accept wildcard characters: False
 Device name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +114,7 @@ Accept wildcard characters: False
 Device type.
 
 ```yaml
-Type: DeviceTypes
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceTypes
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +129,7 @@ Accept wildcard characters: False
 complianceStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +144,7 @@ Accept wildcard characters: False
 Encryption readiness state
 
 ```yaml
-Type: EncryptionReadinessState
+Type: Microsoft.Graph.Beta.PowerShell.Support.EncryptionReadinessState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +159,7 @@ Accept wildcard characters: False
 Encryption state
 
 ```yaml
-Type: EncryptionState
+Type: Microsoft.Graph.Beta.PowerShell.Support.EncryptionState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,7 +174,7 @@ Accept wildcard characters: False
 FileVault State
 
 ```yaml
-Type: FileVaultState
+Type: Microsoft.Graph.Beta.PowerShell.Support.FileVaultState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +190,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +205,7 @@ Accept wildcard characters: False
 Operating system version of the device
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -205,7 +221,7 @@ Policy Details
 To construct, see NOTES section for POLICYDETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEncryptionReportPolicyDetails[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEncryptionReportPolicyDetails[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -220,7 +236,7 @@ Accept wildcard characters: False
 Device TPM Version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -235,7 +251,7 @@ Accept wildcard characters: False
 User name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -250,7 +266,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -266,7 +282,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -283,9 +299,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
+
 ## NOTES
 
 ALIASES

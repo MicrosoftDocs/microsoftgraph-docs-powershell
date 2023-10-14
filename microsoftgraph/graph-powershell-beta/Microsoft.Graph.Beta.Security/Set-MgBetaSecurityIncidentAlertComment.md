@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecurityincidentalertcomment
 schema: 2.0.0
@@ -10,25 +10,40 @@ schema: 2.0.0
 ## SYNOPSIS
 Sets a new value for the collection of alertComment.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgSecurityIncidentAlertComment](/powershell/module/Microsoft.Graph.Security/Set-MgSecurityIncidentAlertComment?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### SetViaIdentity (Default)
 ```
-Set-MgBetaSecurityIncidentAlertComment -InputObject <ISecurityIdentity> [-IfMatch <String>]
- -BodyParameter <IMicrosoftGraphSecurityAlertComment[]> [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaSecurityIncidentAlertComment -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityAlertComment[]> [-IfMatch <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgBetaSecurityIncidentAlertComment -AlertId <String> -IncidentId <String> [-IfMatch <String>]
- -BodyParameter <IMicrosoftGraphSecurityAlertComment[]> [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaSecurityIncidentAlertComment -AlertId <String> -IncidentId <String>
+ -BodyParameter <IMicrosoftGraphSecurityAlertComment[]> [-IfMatch <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Sets a new value for the collection of alertComment.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -36,7 +51,7 @@ Sets a new value for the collection of alertComment.
 The unique identifier of alert
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -52,7 +67,7 @@ Array of microsoft.graph.security.alertComment
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlertComment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
 Parameter Sets: (All)
 Aliases:
 
@@ -67,7 +82,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -82,7 +97,7 @@ Accept wildcard characters: False
 The unique identifier of incident
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -98,7 +113,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -113,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,10 +161,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertComment
+
 ## NOTES
 
 ALIASES
@@ -242,5 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Set-MgSecurityIncidentAlertComment](/powershell/module/Microsoft.Graph.Security/Set-MgSecurityIncidentAlertComment?view=graph-powershell-1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmenteligible
 schema: 2.0.0
@@ -14,13 +14,13 @@ Invoke action makeEligible
 
 ### Make (Default)
 ```
-New-MgBetaPrivilegedRoleAssignmentEligible -PrivilegedRoleAssignmentId <String> [-WhatIf] [-Confirm]
+New-MgBetaPrivilegedRoleAssignmentEligible -PrivilegedRoleAssignmentId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### MakeViaIdentity
 ```
-New-MgBetaPrivilegedRoleAssignmentEligible -InputObject <IIdentityGovernanceIdentity> [-WhatIf] [-Confirm]
+New-MgBetaPrivilegedRoleAssignmentEligible -InputObject <IIdentityGovernanceIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -28,13 +28,14 @@ New-MgBetaPrivilegedRoleAssignmentEligible -InputObject <IIdentityGovernanceIden
 Invoke action makeEligible
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaPrivilegedRoleAssignmentEligible Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 New-MgBetaPrivilegedRoleAssignmentEligible -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId
 ```
-This example shows how to use the New-MgBetaPrivilegedRoleAssignmentEligible Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -43,7 +44,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: MakeViaIdentity
 Aliases:
 
@@ -58,7 +59,7 @@ Accept wildcard characters: False
 The unique identifier of privilegedRoleAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Make
 Aliases:
 
@@ -73,7 +74,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -89,7 +90,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -106,9 +107,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
+
 ## NOTES
 
 ALIASES
@@ -217,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

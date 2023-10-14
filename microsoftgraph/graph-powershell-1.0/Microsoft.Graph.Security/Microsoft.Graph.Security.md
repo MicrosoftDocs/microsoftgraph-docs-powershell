@@ -32,10 +32,10 @@ The location provides a URL that will return a Add to review set operation.
 
 ### [Clear-MgSecurityCaseEdiscoveryCaseSearchData](Clear-MgSecurityCaseEdiscoveryCaseSearchData.md)
 Delete Microsoft Teams messages contained in an eDiscovery search.
-You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
-Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
-Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams
+You can collect and purge the following categories of Teams content:\n- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
+Teams 1:1 chats are also called *conversations*.\n- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
+Also called *1:N* chats or *group conversations*.\n- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\n- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\n- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
+For more information about purging Teams messages, see:\n- eDiscovery solution series: Data spillage scenario - Search and purge\n- eDiscovery (Premium) workflow for content in Microsoft Teams
 
 ### [Close-MgSecurityCaseEdiscoveryCase](Close-MgSecurityCaseEdiscoveryCase.md)
 Close an eDiscovery case.
@@ -206,9 +206,6 @@ Microsoft 365 Defender correlates alerts with the same attack techniques or the 
 The list of related alerts.
 Supports $expand.
 
-### [Get-MgSecurityIncidentAlertCommentCount](Get-MgSecurityIncidentAlertCommentCount.md)
-Get the number of the resource
-
 ### [Get-MgSecurityIncidentAlertCount](Get-MgSecurityIncidentAlertCount.md)
 Get the number of the resource
 
@@ -226,49 +223,6 @@ Get the number of the resource
 
 ### [Get-MgSecuritySecureScoreCount](Get-MgSecuritySecureScoreCount.md)
 Get the number of the resource
-
-### [Get-MgSecuritySubjectRightsRequest](Get-MgSecuritySubjectRightsRequest.md)
-Get subjectRightsRequests from security
-
-### [Get-MgSecuritySubjectRightsRequestApprover](Get-MgSecuritySubjectRightsRequestApprover.md)
-Get approvers from security
-
-### [Get-MgSecuritySubjectRightsRequestApproverCount](Get-MgSecuritySubjectRightsRequestApproverCount.md)
-Get the number of the resource
-
-### [Get-MgSecuritySubjectRightsRequestApproverMailboxSetting](Get-MgSecuritySubjectRightsRequestApproverMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
-Returned only on $select.
-
-### [Get-MgSecuritySubjectRightsRequestCollaborator](Get-MgSecuritySubjectRightsRequestCollaborator.md)
-Get collaborators from security
-
-### [Get-MgSecuritySubjectRightsRequestCollaboratorCount](Get-MgSecuritySubjectRightsRequestCollaboratorCount.md)
-Get the number of the resource
-
-### [Get-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting](Get-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
-Returned only on $select.
-
-### [Get-MgSecuritySubjectRightsRequestCount](Get-MgSecuritySubjectRightsRequestCount.md)
-Get the number of the resource
-
-### [Get-MgSecuritySubjectRightsRequestFinalAttachment](Get-MgSecuritySubjectRightsRequestFinalAttachment.md)
-Invoke function getFinalAttachment
-
-### [Get-MgSecuritySubjectRightsRequestFinalReport](Get-MgSecuritySubjectRightsRequestFinalReport.md)
-Invoke function getFinalReport
-
-### [Get-MgSecuritySubjectRightsRequestNote](Get-MgSecuritySubjectRightsRequestNote.md)
-List of notes associcated with the request.
-
-### [Get-MgSecuritySubjectRightsRequestNoteCount](Get-MgSecuritySubjectRightsRequestNoteCount.md)
-Get the number of the resource
-
-### [Get-MgSecuritySubjectRightsRequestTeam](Get-MgSecuritySubjectRightsRequestTeam.md)
-Information about the Microsoft Teams team that was created for the request.
 
 ### [Get-MgSecurityThreatIntelligence](Get-MgSecurityThreatIntelligence.md)
 Get threatIntelligence from security
@@ -421,9 +375,6 @@ For details, see Manage custodians in an eDiscovery (Premium) case.
 ### [Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy.md)
 Invoke function asHierarchy
 
-### [Invoke-MgCommentSecurityAlert](Invoke-MgCommentSecurityAlert.md)
-Get the number of the resource
-
 ### [Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics](Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics.md)
 Run an estimate of the number of emails and documents in the eDiscovery search.
 To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
@@ -451,7 +402,7 @@ Create new navigation property to runs for security
 Create a new ediscoveryCase object.
 
 ### [New-MgSecurityCaseEdiscoveryCaseCustodian](New-MgSecurityCaseEdiscoveryCaseCustodian.md)
-Create a new ediscoveryCustodian object.After the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
+Create a new ediscoveryCustodian object.\nAfter the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
 
 ### [New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource.md)
 Create a new siteSource object associated with an eDiscovery custodian.
@@ -491,12 +442,6 @@ Create new navigation property to secureScores for security
 
 ### [New-MgSecuritySecureScoreControlProfile](New-MgSecuritySecureScoreControlProfile.md)
 Create new navigation property to secureScoreControlProfiles for security
-
-### [New-MgSecuritySubjectRightsRequest](New-MgSecuritySubjectRightsRequest.md)
-Create new navigation property to subjectRightsRequests for security
-
-### [New-MgSecuritySubjectRightsRequestNote](New-MgSecuritySubjectRightsRequestNote.md)
-Create a new authoredNote object.
 
 ### [New-MgSecurityThreatIntelligenceArticle](New-MgSecurityThreatIntelligenceArticle.md)
 Create new navigation property to articles for security
@@ -623,12 +568,6 @@ Delete navigation property secureScores for security
 ### [Remove-MgSecuritySecureScoreControlProfile](Remove-MgSecuritySecureScoreControlProfile.md)
 Delete navigation property secureScoreControlProfiles for security
 
-### [Remove-MgSecuritySubjectRightsRequest](Remove-MgSecuritySubjectRightsRequest.md)
-Delete navigation property subjectRightsRequests for security
-
-### [Remove-MgSecuritySubjectRightsRequestNote](Remove-MgSecuritySubjectRightsRequestNote.md)
-Delete navigation property notes for security
-
 ### [Remove-MgSecurityThreatIntelligence](Remove-MgSecurityThreatIntelligence.md)
 Delete navigation property threatIntelligence for security
 
@@ -682,12 +621,6 @@ Delete a retentionEventType object.
 
 ### [Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault](Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault.md)
 Reset a caseSettings object to the default values.
-
-### [Set-MgSecurityAlert](Set-MgSecurityAlert.md)
-Sets a new value for the collection of alertComment.
-
-### [Set-MgSecurityIncidentAlertComment](Set-MgSecurityIncidentAlertComment.md)
-Sets a new value for the collection of alertComment.
 
 ### [Start-MgSecurityHuntingQuery](Start-MgSecurityHuntingQuery.md)
 Invoke action runHuntingQuery
@@ -761,18 +694,6 @@ Update the navigation property secureScores in security
 
 ### [Update-MgSecuritySecureScoreControlProfile](Update-MgSecuritySecureScoreControlProfile.md)
 Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
-
-### [Update-MgSecuritySubjectRightsRequest](Update-MgSecuritySubjectRightsRequest.md)
-Update the navigation property subjectRightsRequests in security
-
-### [Update-MgSecuritySubjectRightsRequestApproverMailboxSetting](Update-MgSecuritySubjectRightsRequestApproverMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting](Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgSecuritySubjectRightsRequestNote](Update-MgSecuritySubjectRightsRequestNote.md)
-Update the navigation property notes in security
 
 ### [Update-MgSecurityThreatIntelligence](Update-MgSecurityThreatIntelligence.md)
 Update the navigation property threatIntelligence in security

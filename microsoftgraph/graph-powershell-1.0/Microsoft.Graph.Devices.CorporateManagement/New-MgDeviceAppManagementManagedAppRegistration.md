@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistration
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new androidManagedAppRegistration object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,17 +20,33 @@ New-MgDeviceAppManagementManagedAppRegistration [-AdditionalProperties <Hashtabl
  [-DeviceTag <String>] [-DeviceType <String>] [-FlaggedReasons <ManagedAppFlaggedReason[]>] [-Id <String>]
  [-IntendedPolicies <IMicrosoftGraphManagedAppPolicy[]>] [-LastSyncDateTime <DateTime>]
  [-ManagementSdkVersion <String>] [-Operations <IMicrosoftGraphManagedAppOperation[]>]
- [-PlatformVersion <String>] [-UserId <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PlatformVersion <String>] [-UserId <String>] [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceAppManagementManagedAppRegistration -BodyParameter <IMicrosoftGraphManagedAppRegistration>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new androidManagedAppRegistration object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -41,7 +54,7 @@ Create a new androidManagedAppRegistration object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +69,7 @@ Accept wildcard characters: False
 The identifier for a mobile app.
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +84,7 @@ Accept wildcard characters: False
 App version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +100,7 @@ Zero or more policys already applied on the registered app when it last synchron
 To construct, see NOTES section for APPLIEDPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +116,7 @@ The ManagedAppEntity is the base entity type for all other entity types under ap
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppRegistration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration
 Parameter Sets: Create
 Aliases:
 
@@ -118,7 +131,7 @@ Accept wildcard characters: False
 Date and time of creation
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +146,7 @@ Accept wildcard characters: False
 Host device name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +162,7 @@ App management SDK generated tag, which helps relate apps hosted on the same dev
 Not guaranteed to relate apps in all conditions.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +177,7 @@ Accept wildcard characters: False
 Host device type
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,7 +194,7 @@ E.g.
 app running on rooted device
 
 ```yaml
-Type: ManagedAppFlaggedReason[]
+Type: Microsoft.Graph.PowerShell.Support.ManagedAppFlaggedReason[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -197,7 +210,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -213,7 +226,7 @@ Zero or more policies admin intended for the app as of now.
 To construct, see NOTES section for INTENDEDPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -228,7 +241,7 @@ Accept wildcard characters: False
 Date and time of last the app synced with management service.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -243,7 +256,7 @@ Accept wildcard characters: False
 App management SDK version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -259,7 +272,7 @@ Zero or more long running operations triggered on the app registration.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppOperation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -274,7 +287,7 @@ Accept wildcard characters: False
 Operating System version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -289,7 +302,7 @@ Accept wildcard characters: False
 The user Id to who this app registration belongs.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -304,7 +317,7 @@ Accept wildcard characters: False
 Version of the entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -319,7 +332,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -335,7 +348,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -352,9 +365,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration
+
 ## NOTES
 
 ALIASES
@@ -421,5 +436,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Version of the entity.
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
 

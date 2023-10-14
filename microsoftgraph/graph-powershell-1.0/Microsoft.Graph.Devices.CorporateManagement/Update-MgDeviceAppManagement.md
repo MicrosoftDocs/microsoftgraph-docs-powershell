@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagement
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a deviceAppManagement object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,18 +30,34 @@ Update-MgDeviceAppManagement [-AdditionalProperties <Hashtable>]
  [-MobileApps <IMicrosoftGraphMobileApp[]>]
  [-TargetedManagedAppConfigurations <IMicrosoftGraphTargetedManagedAppConfiguration[]>]
  [-VppTokens <IMicrosoftGraphVppToken[]>]
- [-WindowsInformationProtectionPolicies <IMicrosoftGraphWindowsInformationProtectionPolicy[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-WindowsInformationProtectionPolicies <IMicrosoftGraphWindowsInformationProtectionPolicy[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement> [-WhatIf] [-Confirm]
+Update-MgDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a deviceAppManagement object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ Update the properties of a deviceAppManagement object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -68,7 +81,7 @@ Android managed app policies.
 To construct, see NOTES section for ANDROIDMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidManagedAppProtection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -84,7 +97,7 @@ Singleton entity that acts as a container for all device app management function
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAppManagement
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
 Parameter Sets: Update
 Aliases:
 
@@ -100,7 +113,7 @@ Default managed app policies.
 To construct, see NOTES section for DEFAULTMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDefaultManagedAppProtection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -116,7 +129,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -132,7 +145,7 @@ iOS managed app policies.
 To construct, see NOTES section for IOSMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIosManagedAppProtection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIosManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -147,7 +160,7 @@ Accept wildcard characters: False
 Whether the account is enabled for syncing applications from the Microsoft Store for Business.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -163,7 +176,7 @@ Managed app policies.
 To construct, see NOTES section for MANAGEDAPPPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -179,7 +192,7 @@ The managed app registrations.
 To construct, see NOTES section for MANAGEDAPPREGISTRATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppRegistration[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -195,7 +208,7 @@ The managed app statuses.
 To construct, see NOTES section for MANAGEDAPPSTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppStatus[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppStatus[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -211,7 +224,7 @@ The Managed eBook.
 To construct, see NOTES section for MANAGEDEBOOKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedEBook[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedEBook[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -227,7 +240,7 @@ Windows information protection for apps running on devices which are MDM enrolle
 To construct, see NOTES section for MDMWINDOWSINFORMATIONPROTECTIONPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMdmWindowsInformationProtectionPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMdmWindowsInformationProtectionPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -242,11 +255,11 @@ Accept wildcard characters: False
 The locale information used to sync applications from the Microsoft Store for Business.
 Cultures that are specific to a country/region.
 The names of these cultures follow RFC 4646 (Windows Vista and later).
-The format is -<country/regioncode2>, where is a lowercase two-letter code derived from ISO 639-1 and <country/regioncode2> is an uppercase two-letter code derived from ISO 3166.
+The format is -\<country/regioncode2\>, where is a lowercase two-letter code derived from ISO 639-1 and \<country/regioncode2\> is an uppercase two-letter code derived from ISO 3166.
 For example, en-US for English (United States) is a specific culture.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -261,7 +274,7 @@ Accept wildcard characters: False
 The last time an application sync from the Microsoft Store for Business was completed.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -276,7 +289,7 @@ Accept wildcard characters: False
 The last time the apps from the Microsoft Store for Business were synced successfully for the account.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -292,7 +305,7 @@ The mobile app categories.
 To construct, see NOTES section for MOBILEAPPCATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppCategory[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppCategory[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -308,7 +321,7 @@ The Managed Device Mobile Application Configurations.
 To construct, see NOTES section for MOBILEAPPCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDeviceMobileAppConfiguration[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -324,7 +337,7 @@ The mobile apps.
 To construct, see NOTES section for MOBILEAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileApp[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileApp[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -340,7 +353,7 @@ Targeted managed app configurations.
 To construct, see NOTES section for TARGETEDMANAGEDAPPCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTargetedManagedAppConfiguration[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTargetedManagedAppConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -356,7 +369,7 @@ List of Vpp tokens for this organization.
 To construct, see NOTES section for VPPTOKENS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVppToken[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVppToken[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -372,7 +385,7 @@ Windows information protection for apps running on devices which are not MDM enr
 To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -387,7 +400,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -403,7 +416,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -420,9 +433,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
+
 ## NOTES
 
 ALIASES
@@ -1405,8 +1420,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessBlocked <Boolean?>]`: Boolean value that sets Windows Hello for Business as a method for signing into Windows.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagement?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagement?view=graph-powershell-beta)
 

@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryimpactedresource
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Invoke-MgBetaReactivateDirectoryImpactedResource
@@ -17,14 +16,14 @@ This method is relevant only if the status of the impactedResource object is dis
 
 ### Reactivate (Default)
 ```
-Invoke-MgBetaReactivateDirectoryImpactedResource -ImpactedResourceId <String> [-WhatIf] [-Confirm]
+Invoke-MgBetaReactivateDirectoryImpactedResource -ImpactedResourceId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### ReactivateViaIdentity
 ```
-Invoke-MgBetaReactivateDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgBetaReactivateDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,13 +31,29 @@ Reactivate an accidentally dismissed, completed, or postponed impactedResource o
 This action updates the status of the resource to active.
 This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ImpactedResourceId
 The unique identifier of impactedResource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reactivate
 Aliases:
 
@@ -54,7 +69,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: ReactivateViaIdentity
 Aliases:
 
@@ -69,7 +84,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -85,7 +100,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -102,9 +117,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
+
 ## NOTES
 
 ALIASES
