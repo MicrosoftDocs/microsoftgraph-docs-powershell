@@ -40,22 +40,6 @@ Get-MgBetaReportEmailActivityUserDetail -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Invoke function getEmailActivityUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -184,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportEmailActivityUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportEmailActivityUserDetail?view=graph-powershell-1.0)
+

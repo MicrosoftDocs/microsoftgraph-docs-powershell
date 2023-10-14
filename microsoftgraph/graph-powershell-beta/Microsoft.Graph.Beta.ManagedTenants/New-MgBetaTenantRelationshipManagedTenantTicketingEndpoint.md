@@ -30,18 +30,6 @@ New-MgBetaTenantRelationshipManagedTenantTicketingEndpoint
 ## DESCRIPTION
 Create new navigation property to managedTenantTicketingEndpoints for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -257,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PhoneNumber <String>]`: 
 
 ## RELATED LINKS
+

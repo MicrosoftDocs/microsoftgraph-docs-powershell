@@ -37,18 +37,6 @@ Get-MgTeamPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 A collection of permissions granted to apps to access the team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -302,3 +290,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrant?view=graph-powershell-beta)
+

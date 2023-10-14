@@ -30,18 +30,6 @@ Get-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [-Exp
 ## DESCRIPTION
 Get the properties and relationships of a device object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -149,3 +137,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
+

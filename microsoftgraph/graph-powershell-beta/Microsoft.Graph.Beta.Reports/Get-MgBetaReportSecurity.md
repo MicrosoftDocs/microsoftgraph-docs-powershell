@@ -22,22 +22,6 @@ Get-MgBetaReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [<C
 ## DESCRIPTION
 Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportSecurity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurity?view=graph-powershell-1.0)
+

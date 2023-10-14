@@ -27,18 +27,6 @@ Remove-MgBetaDeviceAppManagementTask -InputObject <IDevicesCorporateManagementId
 ## DESCRIPTION
 Delete navigation property deviceAppManagementTasks for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceAppManagementTaskId
@@ -220,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+

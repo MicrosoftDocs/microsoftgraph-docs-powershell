@@ -30,18 +30,6 @@ Update-MgSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypes
 ## DESCRIPTION
 Update the navigation property triggerTypes in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -193,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerType?view=graph-powershell-beta)
+

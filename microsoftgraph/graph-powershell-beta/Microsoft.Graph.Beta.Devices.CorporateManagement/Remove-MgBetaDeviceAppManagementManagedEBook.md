@@ -30,18 +30,6 @@ Remove-MgBetaDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Delete navigation property managedEBooks for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -224,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedEBook?view=graph-powershell-1.0)
+

@@ -37,18 +37,6 @@ Get-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorporateM
 ## DESCRIPTION
 Read properties and relationships of the iosMobileAppConfiguration object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -289,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
+

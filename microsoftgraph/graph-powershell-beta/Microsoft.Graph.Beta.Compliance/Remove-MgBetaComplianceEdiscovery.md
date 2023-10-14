@@ -19,22 +19,6 @@ Remove-MgBetaComplianceEdiscovery [-IfMatch <String>] [-PassThru] [-WhatIf] [-Co
 ## DESCRIPTION
 Delete navigation property ediscovery for compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -111,3 +95,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

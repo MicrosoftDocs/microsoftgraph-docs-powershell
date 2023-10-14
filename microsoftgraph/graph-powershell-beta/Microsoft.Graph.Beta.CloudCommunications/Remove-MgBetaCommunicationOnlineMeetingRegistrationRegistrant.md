@@ -27,18 +27,6 @@ Remove-MgBetaCommunicationOnlineMeetingRegistrationRegistrant -InputObject <IClo
 ## DESCRIPTION
 Delete navigation property registrants for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -187,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

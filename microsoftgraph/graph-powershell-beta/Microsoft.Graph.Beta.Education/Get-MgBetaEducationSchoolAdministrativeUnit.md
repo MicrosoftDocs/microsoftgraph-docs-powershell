@@ -31,22 +31,6 @@ Get-MgBetaEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-
 ## DESCRIPTION
 Retrieve the simple directory administrativeUnit that corresponds to this educationSchool.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -147,3 +131,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolAdministrativeUnit?view=graph-powershell-1.0)
+

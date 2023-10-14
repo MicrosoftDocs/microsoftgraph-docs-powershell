@@ -23,22 +23,6 @@ Get-MgReportSecurityAttackSimulationTrainingUserCoverage [-Count] [-Filter <Stri
 ## DESCRIPTION
 Invoke function getAttackSimulationTrainingUserCoverage
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -130,3 +114,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage?view=graph-powershell-beta)
+

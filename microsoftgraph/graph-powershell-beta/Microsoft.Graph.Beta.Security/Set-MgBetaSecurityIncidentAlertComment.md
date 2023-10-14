@@ -30,18 +30,6 @@ Set-MgBetaSecurityIncidentAlertComment -AlertId <String> -IncidentId <String> [-
 ## DESCRIPTION
 Sets a new value for the collection of alertComment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertId
@@ -255,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgSecurityIncidentAlertComment](/powershell/module/Microsoft.Graph.Security/Set-MgSecurityIncidentAlertComment?view=graph-powershell-1.0)
+

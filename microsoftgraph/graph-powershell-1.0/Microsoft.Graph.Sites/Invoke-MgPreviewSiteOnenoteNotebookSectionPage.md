@@ -29,18 +29,6 @@ Invoke-MgPreviewSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity> [<C
 ## DESCRIPTION
 Invoke function preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -179,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaPreviewSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaPreviewSiteOnenoteNotebookSectionPage?view=graph-powershell-beta)
+

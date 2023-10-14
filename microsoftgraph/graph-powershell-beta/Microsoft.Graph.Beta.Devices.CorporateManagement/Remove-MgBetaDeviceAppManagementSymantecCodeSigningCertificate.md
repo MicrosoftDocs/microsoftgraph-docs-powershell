@@ -20,18 +20,6 @@ Remove-MgBetaDeviceAppManagementSymantecCodeSigningCertificate [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property symantecCodeSigningCertificate for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -110,3 +98,4 @@ ALIASES
 Remove-MgBetaDeviceAppMgtSymantecCodeSigningCertificate
 
 ## RELATED LINKS
+

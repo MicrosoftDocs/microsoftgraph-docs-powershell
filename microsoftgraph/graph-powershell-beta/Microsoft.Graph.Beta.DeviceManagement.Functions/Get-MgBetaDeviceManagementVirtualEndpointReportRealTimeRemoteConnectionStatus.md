@@ -27,18 +27,6 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
 ## DESCRIPTION
 Invoke function getRealTimeRemoteConnectionStatus
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -151,3 +139,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+

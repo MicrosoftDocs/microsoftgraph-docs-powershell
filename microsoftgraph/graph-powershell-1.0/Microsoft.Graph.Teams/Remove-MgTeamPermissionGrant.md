@@ -30,18 +30,6 @@ Remove-MgTeamPermissionGrant -InputObject <ITeamsIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property permissionGrants for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -205,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPermissionGrant?view=graph-powershell-beta)
+
