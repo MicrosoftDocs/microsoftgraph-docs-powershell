@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Removes a group from a lifecycle policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupFromLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupFromLifecyclePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)
@@ -228,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Remove-MgBetaGroupFromLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupFromLifecyclePolicy?view=graph-powershell-beta)

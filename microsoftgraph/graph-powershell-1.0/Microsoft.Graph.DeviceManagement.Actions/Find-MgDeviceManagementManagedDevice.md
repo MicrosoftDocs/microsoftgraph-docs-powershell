@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Locate a device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Locate (Default)
@@ -148,3 +151,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The template this team was created from.
 See available templates.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamTemplate](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -161,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaGroupTeamTemplate](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTemplate?view=graph-powershell-beta)

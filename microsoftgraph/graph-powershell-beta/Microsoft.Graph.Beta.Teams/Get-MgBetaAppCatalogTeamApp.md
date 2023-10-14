@@ -11,6 +11,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Get teamsApps from appCatalogs
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -329,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamApp?view=graph-powershell-1.0)

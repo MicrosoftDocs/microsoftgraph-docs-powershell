@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberAsApplication](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -317,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupMemberAsApplication](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsApplication?view=graph-powershell-beta)

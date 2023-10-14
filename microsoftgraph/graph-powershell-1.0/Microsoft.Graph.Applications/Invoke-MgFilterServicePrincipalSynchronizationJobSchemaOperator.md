@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterOperators
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)
@@ -236,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator?view=graph-powershell-beta)

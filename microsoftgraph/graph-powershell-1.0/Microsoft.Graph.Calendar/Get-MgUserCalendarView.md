@@ -12,6 +12,9 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarView?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -240,3 +243,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaUserCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarView?view=graph-powershell-beta)

@@ -13,6 +13,9 @@ You can create the following types of groups: This operation returns by default 
 These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -16544,5 +16547,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroup?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroup?view=graph-powershell-beta)

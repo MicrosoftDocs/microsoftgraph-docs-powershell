@@ -12,6 +12,9 @@ You can use createLink action to share a driveItem via a sharing link.
 The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveItemLink](/powershell/module/Microsoft.Graph.Groups/New-MgGroupDriveItemLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -393,3 +396,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[New-MgGroupDriveItemLink](/powershell/module/Microsoft.Graph.Groups/New-MgGroupDriveItemLink?view=graph-powershell-1.0)

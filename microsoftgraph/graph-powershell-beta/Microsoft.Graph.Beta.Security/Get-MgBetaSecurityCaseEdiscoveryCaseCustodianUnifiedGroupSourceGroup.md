@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents a group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -233,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveItemDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -333,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveItemDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveItemDelta?view=graph-powershell-beta)

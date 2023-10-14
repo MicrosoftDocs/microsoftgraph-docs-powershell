@@ -11,6 +11,9 @@ ms.prod: onenote
 ## SYNOPSIS
 Retrieve a list of onenoteSection objects from the specified section group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteSectionGroupSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -230,3 +233,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteSectionGroupSection?view=graph-powershell-1.0)

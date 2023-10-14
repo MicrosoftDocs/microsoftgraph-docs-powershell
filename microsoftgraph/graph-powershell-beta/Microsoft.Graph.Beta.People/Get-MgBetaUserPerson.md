@@ -11,6 +11,9 @@ ms.prod: insights
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -146,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-1.0)

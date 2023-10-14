@@ -16,6 +16,9 @@ The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the by the Cloud Communications Platform and is discarded shortly after the call ends.
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRecordCommunicationCallResponse?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RecordExpanded (Default)
@@ -368,3 +371,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRecordCommunicationCallResponse?view=graph-powershell-1.0)

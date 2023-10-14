@@ -11,6 +11,9 @@ schema: 2.0.0
 Configuration for enabling an API connector for use as part of the self-service sign up user flow.
 You can only obtain the value of this object using Get userFlowApiConnectorConfiguration.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowApiConnectorConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowApiConnectorConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -200,3 +203,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgIdentityB2XUserFlowApiConnectorConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowApiConnectorConfiguration?view=graph-powershell-1.0)
