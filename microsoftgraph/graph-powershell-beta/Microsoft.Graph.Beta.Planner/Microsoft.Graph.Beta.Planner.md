@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Planner
 Module Guid: 3c6e214b-5cc3-4a60-b5ec-24d8786cbcfc
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner
@@ -120,8 +120,8 @@ Returns the plannerPlans that the user marked as favorites.
 ### [Get-MgBetaUserPlannerFavoritePlanCount](Get-MgBetaUserPlannerFavoritePlanCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserPlannerPlan](Get-MgBetaUserPlannerPlan.md)
-Retrieve a list of plannerplan objects shared with a user object.
+### [Get-MgBetaUserPlannerFavoritePlanCount](Get-MgBetaUserPlannerFavoritePlanCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserPlannerRecentPlan](Get-MgBetaUserPlannerRecentPlan.md)
 Read-only.
@@ -139,8 +139,8 @@ Returns the plannerPlans contained by the plannerRosters the user is a member.
 ### [Get-MgBetaUserPlannerRosterPlanCount](Get-MgBetaUserPlannerRosterPlanCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserPlannerTask](Get-MgBetaUserPlannerTask.md)
-Retrieve a list of plannertask objects assigned to a User.
+### [Get-MgBetaUserPlannerRosterPlanCount](Get-MgBetaUserPlannerRosterPlanCount.md)
+Get the number of the resource
 
 ### [New-MgBetaPlannerBucket](New-MgBetaPlannerBucket.md)
 Create a new plannerBucket object.

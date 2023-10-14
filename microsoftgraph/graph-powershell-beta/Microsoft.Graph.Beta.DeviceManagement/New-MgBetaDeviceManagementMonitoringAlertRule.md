@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule
 schema: 2.0.0
@@ -14,17 +14,16 @@ Create an alertRule object.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementMonitoringAlertRule [-AdditionalProperties <Hashtable>]
- [-AlertRuleTemplate <String>] [-Description <String>] [-DisplayName <String>] [-Enabled] [-Id <String>]
- [-IsSystemRule] [-NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>]
- [-Severity <String>] [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgBetaDeviceManagementMonitoringAlertRule [-AdditionalProperties <Hashtable>] [-AlertRuleTemplate <String>]
+ [-Description <String>] [-DisplayName <String>] [-Enabled] [-Id <String>] [-IsSystemRule]
+ [-NotificationChannels <IMicrosoftGraphDeviceManagementNotificationChannel[]>] [-Severity <String>]
+ [-Threshold <IMicrosoftGraphDeviceManagementRuleThreshold>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMonitoringAlertRule -BodyParameter <IMicrosoftGraphDeviceManagementAlertRule>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,19 +31,15 @@ Create an alertRule object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -52,7 +47,7 @@ Create an alertRule object.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -67,7 +62,7 @@ Accept wildcard characters: False
 alertRuleTemplate
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +78,7 @@ alertRule
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule
+Type: IMicrosoftGraphDeviceManagementAlertRule
 Parameter Sets: Create
 Aliases:
 
@@ -98,7 +93,7 @@ Accept wildcard characters: False
 The rule description.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +108,7 @@ Accept wildcard characters: False
 The display name of the rule.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +124,7 @@ The status of the rule that indicates whether the rule is enabled or disabled.
 If true, the rule is enabled; otherwise, the rule is disabled.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +140,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +157,7 @@ If true, the rule is a system rule; otherwise, the rule is a custom defined rule
 System rules are built-in and only a few properties can be edited.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +173,7 @@ The notification channels of the rule selected by the user.
 To construct, see NOTES section for NOTIFICATIONCHANNELS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementNotificationChannel[]
+Type: IMicrosoftGraphDeviceManagementNotificationChannel[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +188,7 @@ Accept wildcard characters: False
 ruleSeverityType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +204,7 @@ ruleThreshold
 To construct, see NOTES section for THRESHOLD properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementRuleThreshold
+Type: IMicrosoftGraphDeviceManagementRuleThreshold
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -224,7 +219,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -240,7 +235,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -257,11 +252,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule
-
 ## NOTES
 
 ALIASES
@@ -306,4 +299,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Target <Int32?>]`: The target threshold value.
 
 ## RELATED LINKS
-
