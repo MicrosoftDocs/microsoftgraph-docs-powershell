@@ -56,7 +56,7 @@ PublisherDomain : Contoso.com
 
 This examples gets a list of all the applications.
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
 
 To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
@@ -75,7 +75,7 @@ PublisherDomain : Contoso.com
 
 This examples gets the application by the specified Id.
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
 
 To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
@@ -96,7 +96,7 @@ fe4caed6-6182-4aca-b70b-b114c5334a8a New app            641992e9-d176-4aff-a3b6-
 
 This example gets a list of all applications. The $appCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
 
 To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
@@ -114,7 +114,7 @@ f6b30057-7095-4e2c-89f8-224149f591b7 Testing App        00e80963-9bc0-4147-b9e0-
 
 This example returns all applications whose display name contains 'Test'. The $appCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
 
 To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
@@ -132,7 +132,7 @@ fe4caed6-6182-4aca-b70b-b114c5334a8a New app     641992e9-d176-4aff-a3b6-a867b3b
 
 This example returns all applications whose display name starts with 'New'. The $appCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
-To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
 
 To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
@@ -354,6 +354,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
+
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
@@ -388,3 +389,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgApplication](/powershell/module/Microsoft.Graph.Applications/Get-MgApplication?view=graph-powershell-1.0)
+
