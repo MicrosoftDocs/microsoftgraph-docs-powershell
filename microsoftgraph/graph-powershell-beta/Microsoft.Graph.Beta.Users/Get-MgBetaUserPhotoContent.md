@@ -45,7 +45,7 @@ By default, original size of the photo is returned. Other available sizes are: 4
 ### Example 1: Get a user's photo
 
 ```powershell
-Get-MgUserPhotoContent -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe' -OutFile photo.jpg
+Get-MgBetaUserPhotoContent -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe' -OutFile photo.jpg
 ```
 
 This example retrieves the profile photo properties for the specified user.
@@ -53,7 +53,7 @@ This example retrieves the profile photo properties for the specified user.
 ### Example 2: Get a specific size of a user's photo
 
 ```powershell
-Get-MgUserPhotoContent -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe' -ProfilePhotoId 360x360 -OutFile photo.jpg
+Get-MgBetaUserPhotoContent -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe' -ProfilePhotoId 360x360 -OutFile photo.jpg
 ```
 
 ## PARAMETERS
