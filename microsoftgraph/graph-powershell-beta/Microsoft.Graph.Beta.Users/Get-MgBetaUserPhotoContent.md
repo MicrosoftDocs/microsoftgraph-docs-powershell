@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from users
+Get the profilePhoto media content.
+By default, original size of the photo is returned. Other available sizes are: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserPhotoContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserPhotoContent?view=graph-powershell-1.0)
@@ -37,7 +38,23 @@ Get-MgBetaUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-Pas
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from users
+Get the profilePhoto media content.
+By default, original size of the photo is returned. Other available sizes are: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648.
+
+## EXAMPLES
+### Example 1: Get a user's photo
+
+```powershell
+Get-MgUserPhotoContent -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe' -OutFile photo.jpg
+```
+
+This example retrieves the profile photo properties for the specified user.
+
+### Example 2: Get a specific size of a user's photo
+
+```powershell
+Get-MgUserPhotoContent -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe' -ProfilePhotoId 360x360 -OutFile photo.jpg
+```
 
 ## PARAMETERS
 
