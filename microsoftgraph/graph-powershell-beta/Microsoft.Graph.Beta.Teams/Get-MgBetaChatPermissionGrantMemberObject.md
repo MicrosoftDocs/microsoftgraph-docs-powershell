@@ -44,18 +44,6 @@ Get-MgBetaChatPermissionGrantMemberObject -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action getMemberObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -245,4 +233,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Get-MgChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrantMemberObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpermissiongrantmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatpermissiongrantmemberobject)
+
 

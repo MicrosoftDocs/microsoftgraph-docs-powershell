@@ -50,18 +50,6 @@ New-MgBetaGroupDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -10125,3 +10113,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
+

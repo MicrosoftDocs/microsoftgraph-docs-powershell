@@ -30,22 +30,6 @@ Get-MgEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 The underlying Microsoft 365 group object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -141,3 +125,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassGroup](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassGroup?view=graph-powershell-beta)
+

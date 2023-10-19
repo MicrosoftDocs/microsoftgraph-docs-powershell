@@ -32,18 +32,6 @@ Get-MgBetaUserChatPermissionGrantDelta -InputObject <IUsersFunctionsIdentity> [-
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -301,4 +289,5 @@ INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
 [Get-MgUserChatPermissionGrantDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserChatPermissionGrantDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserchatpermissiongrantdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserchatpermissiongrantdelta)
+
 

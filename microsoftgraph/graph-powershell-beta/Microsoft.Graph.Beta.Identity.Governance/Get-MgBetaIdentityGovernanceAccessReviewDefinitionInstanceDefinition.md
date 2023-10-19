@@ -30,22 +30,6 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDefinition -InputObjec
 There's exactly one accessReviewScheduleDefinition associated with each instance.
 It's the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -242,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

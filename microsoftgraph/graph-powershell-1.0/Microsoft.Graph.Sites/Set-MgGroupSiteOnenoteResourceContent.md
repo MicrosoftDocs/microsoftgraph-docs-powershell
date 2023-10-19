@@ -30,18 +30,6 @@ Set-MgGroupSiteOnenoteResourceContent -InputObject <ISitesIdentity> [-Data <Stre
 ## DESCRIPTION
 The content stream
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -229,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaGroupSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaGroupSiteOnenoteResourceContent?view=graph-powershell-beta)
+

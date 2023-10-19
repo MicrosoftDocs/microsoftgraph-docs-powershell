@@ -32,22 +32,6 @@ Remove-MgBetaGroupEventAttachment -InputObject <ICalendarIdentity> [-IfMatch <St
 Delete an attachment from a user calendar event, message, Outlook task, or post.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -205,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEventAttachment?view=graph-powershell-1.0)
+

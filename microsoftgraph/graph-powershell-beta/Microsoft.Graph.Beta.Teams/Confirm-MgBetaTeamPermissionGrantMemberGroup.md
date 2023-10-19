@@ -52,18 +52,6 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -253,4 +241,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Confirm-MgTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Teams/Confirm-MgTeamPermissionGrantMemberGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateampermissiongrantmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateampermissiongrantmembergroup)
+
 

@@ -38,18 +38,6 @@ The added tenant is in the pending state until the administrator of the added te
 A tenant can be part of only one multitenant organization.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddedByTenantId
@@ -316,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
 
 ## RELATED LINKS
+

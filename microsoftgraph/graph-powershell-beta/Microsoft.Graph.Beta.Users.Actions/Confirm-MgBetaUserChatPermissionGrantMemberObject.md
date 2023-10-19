@@ -46,22 +46,6 @@ Confirm-MgBetaUserChatPermissionGrantMemberObject -InputObject <IUsersActionsIde
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -268,4 +252,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Confirm-MgUserChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserChatPermissionGrantMemberObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetauserchatpermissiongrantmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetauserchatpermissiongrantmemberobject)
+
 

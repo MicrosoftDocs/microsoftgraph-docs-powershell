@@ -58,22 +58,6 @@ Update-MgBetaGroupDriveRootListItem -InputObject <IFilesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property listItem in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -29765,3 +29749,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupDriveRootListItem](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootListItem?view=graph-powershell-1.0)
+

@@ -38,18 +38,6 @@ The hasMembersWithLicenseErrors and isArchived properties are an exception and a
 Because the group resource supports extensions, you can also use the GET operation to get custom properties and extension data in a group instance.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -175,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

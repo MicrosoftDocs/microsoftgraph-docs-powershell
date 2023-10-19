@@ -44,22 +44,6 @@ Confirm-MgBetaChatPermissionGrantMemberObject -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -249,4 +233,5 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
 [Confirm-MgChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Teams/Confirm-MgChatPermissionGrantMemberObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetachatpermissiongrantmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetachatpermissiongrantmemberobject)
+
 

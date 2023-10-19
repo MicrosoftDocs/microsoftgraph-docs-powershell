@@ -31,18 +31,6 @@ Remove-MgBetaGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdent
 ## DESCRIPTION
 Delete navigation property activities for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -252,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-1.0)
+

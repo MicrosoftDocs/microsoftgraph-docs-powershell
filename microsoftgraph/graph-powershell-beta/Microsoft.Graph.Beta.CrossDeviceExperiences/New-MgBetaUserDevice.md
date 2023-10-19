@@ -67,22 +67,6 @@ New-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to devices for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -1140,3 +1124,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

@@ -30,22 +30,6 @@ New-MgBetaDirectoryDeletedItem -BodyParameter <IMicrosoftGraphDirectoryObject> [
 ## DESCRIPTION
 Create new navigation property to deletedItems for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -168,4 +152,5 @@ Always null when the object hasn't been deleted.
 [New-MgDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryDeletedItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydeleteditem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorydeleteditem)
+
 

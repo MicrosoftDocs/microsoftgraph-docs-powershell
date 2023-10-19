@@ -48,22 +48,6 @@ Update-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Update the navigation property jobs in servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -634,3 +618,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
+

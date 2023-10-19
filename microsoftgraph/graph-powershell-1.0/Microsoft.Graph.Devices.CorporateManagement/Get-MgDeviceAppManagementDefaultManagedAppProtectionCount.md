@@ -23,18 +23,6 @@ Get-MgDeviceAppManagementDefaultManagedAppProtectionCount [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -83,3 +71,4 @@ Get-MgDeviceAppMgtDefaultManagedAppProtectionCount
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementDefaultManagedAppProtectionCount?view=graph-powershell-beta)
+

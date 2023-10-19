@@ -43,18 +43,6 @@ Get-MgBetaUserPermissionGrantById -InputObject <IUsersActionsIdentity>
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -246,4 +234,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserpermissiongrantbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserpermissiongrantbyid)
+
 

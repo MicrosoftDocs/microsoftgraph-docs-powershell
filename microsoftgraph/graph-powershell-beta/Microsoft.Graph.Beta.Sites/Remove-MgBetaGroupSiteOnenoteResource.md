@@ -30,18 +30,6 @@ Remove-MgBetaGroupSiteOnenoteResource -InputObject <ISitesIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property resources for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -236,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
+

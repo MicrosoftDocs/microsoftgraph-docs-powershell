@@ -30,22 +30,6 @@ Sync-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsI
 ## DESCRIPTION
 Invoke action syncDevice
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Sync-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
+

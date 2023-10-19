@@ -62,22 +62,6 @@ Validate the mail nickname is unique This API returns with the first failure enc
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,4 +316,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Test-MgUserChatPermissionGrantProperty](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserChatPermissionGrantProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserchatpermissiongrantproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserchatpermissiongrantproperty)
+
 

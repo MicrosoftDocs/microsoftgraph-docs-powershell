@@ -20,18 +20,6 @@ Get-MgBetaDeviceAppManagementSymantecCodeSigningCertificate [-ExpandProperty <St
 ## DESCRIPTION
 The WinPhone Symantec Code Signing Certificate.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -79,3 +67,4 @@ ALIASES
 Get-MgBetaDeviceAppMgtSymantecCodeSigningCertificate
 
 ## RELATED LINKS
+

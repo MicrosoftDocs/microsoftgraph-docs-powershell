@@ -31,18 +31,6 @@ Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric -InputObj
 ## DESCRIPTION
 The scores and insights for the best practices metrics.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -182,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric?view=graph-powershell-beta)
+

@@ -30,18 +30,6 @@ Get-MgBetaSiteListItemCreatedByUser -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Get createdByUser from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -205,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteListItemCreatedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemCreatedByUser?view=graph-powershell-1.0)
+

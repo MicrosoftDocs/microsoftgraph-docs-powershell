@@ -46,22 +46,6 @@ Get-MgBetaUserChatPermissionGrantMemberObject -InputObject <IUsersActionsIdentit
 ## DESCRIPTION
 Invoke action getMemberObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -268,4 +252,5 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
 [Get-MgUserChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserChatPermissionGrantMemberObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserchatpermissiongrantmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserchatpermissiongrantmemberobject)
+
 

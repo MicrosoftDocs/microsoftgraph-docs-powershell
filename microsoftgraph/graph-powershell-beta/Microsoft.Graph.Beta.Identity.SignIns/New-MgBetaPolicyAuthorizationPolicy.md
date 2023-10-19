@@ -33,22 +33,6 @@ New-MgBetaPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorization
 ## DESCRIPTION
 Create new navigation property to authorizationPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -417,3 +401,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users. DO NOT SET THIS VALUE TO false.
 
 ## RELATED LINKS
+

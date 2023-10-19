@@ -31,18 +31,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroup
 References the group that is the scope of the membership or ownership eligibility through PIM for groups.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -224,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

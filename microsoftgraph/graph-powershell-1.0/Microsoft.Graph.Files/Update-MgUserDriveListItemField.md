@@ -44,22 +44,6 @@ Update-MgUserDriveListItemField -InputObject <IFilesIdentity> -BodyParameter <Ha
 Update the properties on a listItem][].
 This API is supported in the following [national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -247,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemField?view=graph-powershell-beta)
+

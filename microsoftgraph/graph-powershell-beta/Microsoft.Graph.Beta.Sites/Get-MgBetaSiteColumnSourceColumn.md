@@ -30,18 +30,6 @@ Get-MgBetaSiteColumnSourceColumn -InputObject <ISitesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The source column for content type column.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -190,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteColumnSourceColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteColumnSourceColumn?view=graph-powershell-1.0)
+

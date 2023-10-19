@@ -32,18 +32,6 @@ Undo-MgChatMessageSoftDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf]
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -192,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Undo-MgBetaChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Undo-MgBetaChatMessageSoftDelete?view=graph-powershell-beta)
+

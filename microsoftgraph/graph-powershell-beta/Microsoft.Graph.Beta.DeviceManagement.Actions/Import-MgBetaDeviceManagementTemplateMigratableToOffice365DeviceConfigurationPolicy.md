@@ -27,22 +27,6 @@ Import-MgBetaDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPol
 ## DESCRIPTION
 Invoke action importOffice365DeviceConfigurationPolicies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementTemplateId
@@ -179,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

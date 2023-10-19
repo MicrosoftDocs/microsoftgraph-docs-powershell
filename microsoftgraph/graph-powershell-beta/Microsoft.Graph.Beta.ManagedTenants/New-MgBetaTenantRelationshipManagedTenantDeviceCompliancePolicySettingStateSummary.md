@@ -32,22 +32,6 @@ New-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSumma
 ## DESCRIPTION
 Create new navigation property to deviceCompliancePolicySettingStateSummaries for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -385,3 +369,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: The Azure Active Directory tenant identifier for the managed tenant. Required. Read-only.
 
 ## RELATED LINKS
+
