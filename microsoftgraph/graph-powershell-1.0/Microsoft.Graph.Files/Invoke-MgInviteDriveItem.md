@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveitem
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgInviteDriveItem
 
 ## SYNOPSIS
-Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
+Sends a sharing invitation for a driveItem.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
 This API is supported in the following [national cloud deployments.
 
 ## SYNTAX
@@ -44,7 +44,7 @@ Invoke-MgInviteDriveItem -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
+Sends a sharing invitation for a driveItem.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
 This API is supported in the following [national cloud deployments.
 
 ## EXAMPLES

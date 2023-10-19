@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Mail
 Module Guid: 2e01a6d4-58ec-4ed8-8ddb-a4780d0d0a65
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail
@@ -166,7 +166,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserMailFolderChildFolderMessageAttachment](New-MgBetaUserMailFolderChildFolderMessageAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserMailFolderChildFolderMessageExtension](New-MgBetaUserMailFolderChildFolderMessageExtension.md)
@@ -190,7 +190,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserMailFolderMessageAttachment](New-MgBetaUserMailFolderMessageAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserMailFolderMessageExtension](New-MgBetaUserMailFolderMessageExtension.md)

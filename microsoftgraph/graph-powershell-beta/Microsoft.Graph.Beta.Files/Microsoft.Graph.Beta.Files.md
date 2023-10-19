@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Files
 Module Guid: 2e2f1e96-fe5f-4fb2-b62f-dab36041a5ca
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files
@@ -107,7 +107,7 @@ The list of recent activities that took place on this item.
 Invoke function getActivitiesByInterval
 
 ### [Get-MgBetaDriveItemAnalytic](Get-MgBetaDriveItemAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is available in the following [national cloud deployments.
 
 ### [Get-MgBetaDriveItemAnalyticItemActivityStat](Get-MgBetaDriveItemAnalyticItemActivityStat.md)
@@ -227,7 +227,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaDriveItemPermission](Get-MgBetaDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaDriveItemPermissionCount](Get-MgBetaDriveItemPermissionCount.md)
@@ -412,7 +412,7 @@ The list of recent activities that took place on this item.
 Invoke function getActivitiesByInterval
 
 ### [Get-MgBetaDriveRootAnalytic](Get-MgBetaDriveRootAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is available in the following [national cloud deployments.
 
 ### [Get-MgBetaDriveRootAnalyticItemActivityStat](Get-MgBetaDriveRootAnalyticItemActivityStat.md)
@@ -529,7 +529,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaDriveRootPermission](Get-MgBetaDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaDriveRootPermissionCount](Get-MgBetaDriveRootPermissionCount.md)
@@ -640,7 +640,7 @@ This API is available in the following [national cloud deployments.
 The list of recent activities that took place on this item.
 
 ### [Get-MgBetaGroupDriveItemAnalytic](Get-MgBetaGroupDriveItemAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is available in the following [national cloud deployments.
 
 ### [Get-MgBetaGroupDriveItemAnalyticItemActivityStat](Get-MgBetaGroupDriveItemAnalyticItemActivityStat.md)
@@ -754,7 +754,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaGroupDriveItemPermission](Get-MgBetaGroupDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaGroupDriveItemPermissionCount](Get-MgBetaGroupDriveItemPermissionCount.md)
@@ -924,7 +924,7 @@ This API is available in the following national cloud deployments.
 The list of recent activities that took place on this item.
 
 ### [Get-MgBetaGroupDriveRootAnalytic](Get-MgBetaGroupDriveRootAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is available in the following [national cloud deployments.
 
 ### [Get-MgBetaGroupDriveRootAnalyticItemActivityStat](Get-MgBetaGroupDriveRootAnalyticItemActivityStat.md)
@@ -1035,7 +1035,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaGroupDriveRootPermission](Get-MgBetaGroupDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaGroupDriveRootPermissionCount](Get-MgBetaGroupDriveRootPermissionCount.md)
@@ -1342,7 +1342,7 @@ This API is available in the following [national cloud deployments.
 The list of recent activities that took place on this item.
 
 ### [Get-MgBetaUserDriveItemAnalytic](Get-MgBetaUserDriveItemAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is available in the following [national cloud deployments.
 
 ### [Get-MgBetaUserDriveItemAnalyticItemActivityStat](Get-MgBetaUserDriveItemAnalyticItemActivityStat.md)
@@ -1456,7 +1456,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaUserDriveItemPermission](Get-MgBetaUserDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaUserDriveItemPermissionCount](Get-MgBetaUserDriveItemPermissionCount.md)
@@ -1626,7 +1626,7 @@ This API is available in the following national cloud deployments.
 The list of recent activities that took place on this item.
 
 ### [Get-MgBetaUserDriveRootAnalytic](Get-MgBetaUserDriveRootAnalytic.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is available in the following [national cloud deployments.
 
 ### [Get-MgBetaUserDriveRootAnalyticItemActivityStat](Get-MgBetaUserDriveRootAnalyticItemActivityStat.md)
@@ -1737,7 +1737,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgBetaUserDriveRootPermission](Get-MgBetaUserDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaUserDriveRootPermissionCount](Get-MgBetaUserDriveRootPermissionCount.md)
@@ -1833,11 +1833,11 @@ This API is available in the following national cloud deployments.
 Invoke function sharedWithMe
 
 ### [Invoke-MgBetaInviteDriveItem](Invoke-MgBetaInviteDriveItem.md)
-Sends a sharing invitation for a DriveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaInviteDriveRoot](Invoke-MgBetaInviteDriveRoot.md)
-Sends a sharing invitation for a DriveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaPreviewDriveItem](Invoke-MgBetaPreviewDriveItem.md)
@@ -1898,7 +1898,7 @@ Create new navigation property to children for drives
 
 ### [New-MgBetaDriveItemLink](New-MgBetaDriveItemLink.md)
 You can use createLink action to share a driveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 This API is available in the following national cloud deployments.
 
@@ -1908,7 +1908,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaDriveItemListItemLink](New-MgBetaDriveItemListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 This API is available in the following national cloud deployments.
 
@@ -1954,7 +1954,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaDriveListItemLink](New-MgBetaDriveListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 This API is available in the following national cloud deployments.
 
@@ -1975,7 +1975,7 @@ Create new navigation property to children for drives
 
 ### [New-MgBetaDriveRootLink](New-MgBetaDriveRootLink.md)
 You can use createLink action to share a driveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 This API is available in the following national cloud deployments.
 
@@ -1985,7 +1985,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaDriveRootListItemLink](New-MgBetaDriveRootListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 This API is available in the following national cloud deployments.
 
@@ -2234,7 +2234,7 @@ Publishes a contentType][] present in a content type hub site.
 This API is available in the following [national cloud deployments.
 
 ### [Remove-MgBetaDriveItem](Remove-MgBetaDriveItem.md)
-Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaDriveItemAnalytic](Remove-MgBetaDriveItemAnalytic.md)
@@ -2271,7 +2271,7 @@ Invoke action permanentDelete
 
 ### [Remove-MgBetaDriveItemPermission](Remove-MgBetaDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaDriveItemRetentionLabel](Remove-MgBetaDriveItemRetentionLabel.md)
@@ -2367,7 +2367,7 @@ Invoke action permanentDelete
 
 ### [Remove-MgBetaDriveRootPermission](Remove-MgBetaDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaDriveRootRetentionLabel](Remove-MgBetaDriveRootRetentionLabel.md)
@@ -2388,7 +2388,7 @@ Delete navigation property versions for drives
 Delete navigation property drives for groups
 
 ### [Remove-MgBetaGroupDriveItem](Remove-MgBetaGroupDriveItem.md)
-Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaGroupDriveItemAnalytic](Remove-MgBetaGroupDriveItemAnalytic.md)
@@ -2422,7 +2422,7 @@ Delete navigation property fields for groups
 
 ### [Remove-MgBetaGroupDriveItemPermission](Remove-MgBetaGroupDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaGroupDriveItemRetentionLabel](Remove-MgBetaGroupDriveItemRetentionLabel.md)
@@ -2515,7 +2515,7 @@ Delete navigation property fields for groups
 
 ### [Remove-MgBetaGroupDriveRootPermission](Remove-MgBetaGroupDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaGroupDriveRootRetentionLabel](Remove-MgBetaGroupDriveRootRetentionLabel.md)
@@ -2583,7 +2583,7 @@ Delete entity from shares
 Delete navigation property drives for users
 
 ### [Remove-MgBetaUserDriveItem](Remove-MgBetaUserDriveItem.md)
-Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaUserDriveItemAnalytic](Remove-MgBetaUserDriveItemAnalytic.md)
@@ -2617,7 +2617,7 @@ Delete navigation property fields for users
 
 ### [Remove-MgBetaUserDriveItemPermission](Remove-MgBetaUserDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaUserDriveItemRetentionLabel](Remove-MgBetaUserDriveItemRetentionLabel.md)
@@ -2710,7 +2710,7 @@ Delete navigation property fields for users
 
 ### [Remove-MgBetaUserDriveRootPermission](Remove-MgBetaUserDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaUserDriveRootRetentionLabel](Remove-MgBetaUserDriveRootRetentionLabel.md)
@@ -2949,7 +2949,7 @@ Update property mailboxSettings value.
 
 ### [Update-MgBetaDriveItem](Update-MgBetaDriveItem.md)
 To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 This API is available in the following national cloud deployments.
 
@@ -3134,7 +3134,7 @@ Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupDriveItem](Update-MgBetaGroupDriveItem.md)
 To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 This API is available in the following national cloud deployments.
 
@@ -3384,7 +3384,7 @@ Update property mailboxSettings value.
 
 ### [Update-MgBetaUserDriveItem](Update-MgBetaUserDriveItem.md)
 To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 This API is available in the following national cloud deployments.
 

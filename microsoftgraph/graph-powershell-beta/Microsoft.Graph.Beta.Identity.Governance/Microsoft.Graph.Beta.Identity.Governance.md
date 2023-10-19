@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 Module Guid: 39f329f0-5bc0-4da9-b25c-c0e4f2317b9e
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance
@@ -176,7 +176,7 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy.md)
-In Azure AD entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
+In Azure AD entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCount](Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCount.md)
@@ -1447,7 +1447,7 @@ Detailed information for the roleDefinition object that is referenced through th
 
 ### [Get-MgBetaRoleManagementDirectoryRoleDefinition](Get-MgBetaRoleManagementDirectoryRoleDefinition.md)
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)\n- directory (Azure AD directory roles)\n- entitlement management (Azure AD entitlement management)\n- Exchange Online This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Azure AD directory roles)- entitlement management (Azure AD entitlement management)- Exchange Online This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaRoleManagementDirectoryRoleDefinitionCount](Get-MgBetaRoleManagementDirectoryRoleDefinitionCount.md)
 Get the number of the resource
@@ -1714,7 +1714,7 @@ Detailed information for the roleDefinition object that is referenced through th
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleDefinition.md)
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)\n- directory (Azure AD directory roles)\n- entitlement management (Azure AD entitlement management)\n- Exchange Online This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Azure AD directory roles)- entitlement management (Azure AD entitlement management)- Exchange Online This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionCount](Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionCount.md)
 Get the number of the resource
@@ -1978,7 +1978,7 @@ Detailed information for the roleDefinition object that is referenced through th
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementRoleDefinition.md)
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)\n- directory (Azure AD directory roles)\n- entitlement management (Azure AD entitlement management)\n- Exchange Online This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Azure AD directory roles)- entitlement management (Azure AD entitlement management)- Exchange Online This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionCount](Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionCount.md)
 Get the number of the resource
@@ -2788,7 +2788,7 @@ This API is available in the following national cloud deployments.
 ### [New-MgBetaRoleManagementDirectoryRoleDefinition](New-MgBetaRoleManagementDirectoryRoleDefinition.md)
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD) This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Azure AD) This API is available in the following national cloud deployments.
 
 ### [New-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
 Create new navigation property to inheritsPermissionsFrom for roleManagement
@@ -2842,7 +2842,7 @@ This API is available in the following national cloud deployments.
 ### [New-MgBetaRoleManagementEnterpriseAppRoleDefinition](New-MgBetaRoleManagementEnterpriseAppRoleDefinition.md)
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD) This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Azure AD) This API is available in the following national cloud deployments.
 
 ### [New-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom.md)
 Create new navigation property to inheritsPermissionsFrom for roleManagement
@@ -2893,7 +2893,7 @@ This API is available in the following national cloud deployments.
 ### [New-MgBetaRoleManagementEntitlementManagementRoleDefinition](New-MgBetaRoleManagementEntitlementManagementRoleDefinition.md)
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD) This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Azure AD) This API is available in the following national cloud deployments.
 
 ### [New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
 Create new navigation property to inheritsPermissionsFrom for roleManagement
@@ -3009,10 +3009,10 @@ Delete navigation property accessPackageCustomWorkflowExtensions for identityGov
 ### [Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension.md)
 Delete a customAccessPackageWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
-Follow these steps to remove the custom workflow extension from any associated policies:\n1.
+Follow these steps to remove the custom workflow extension from any associated policies:1.
 First retrieve the accessPackageCatalogId by calling the Get accessPackageAssignmentPolicies operation and appending ?$expand=accessPackage($expand=accessPackageCatalog) to the query.
-For example, https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies?$expand=accessPackage($expand=accessPackageCatalog).\n2.
-Use the access package catalog ID and retrieve the ID of the customAccessPackageWorkflowExtension object that you want to delete by running the LIST customAccessPackageWorkflowExtensions operation.\n3.
+For example, https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies?$expand=accessPackage($expand=accessPackageCatalog).2.
+Use the access package catalog ID and retrieve the ID of the customAccessPackageWorkflowExtension object that you want to delete by running the LIST customAccessPackageWorkflowExtensions operation.3.
 Call the Update accessPackageAssignmentPolicy operation to remove the custom workflow extension object from the policy.
 For an example, see Example 2: Remove the customExtensionHandlers and verifiableCredentialSettings from a policy.
 This API is available in the following national cloud deployments.
@@ -3380,7 +3380,7 @@ Delete navigation property roleAssignmentScheduleRequests for roleManagement
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)  This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Azure AD)  This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
 Delete navigation property inheritsPermissionsFrom for roleManagement
@@ -3438,7 +3438,7 @@ Delete navigation property roleAssignmentScheduleRequests for roleManagement
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)  This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Azure AD)  This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom.md)
 Delete navigation property inheritsPermissionsFrom for roleManagement
@@ -3496,7 +3496,7 @@ Delete navigation property roleAssignmentScheduleRequests for roleManagement
 Delete a unifiedRoleDefinition object for an RBAC provider.
 You cannot delete built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)  This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Azure AD)  This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
 Delete navigation property inheritsPermissionsFrom for roleManagement
@@ -4199,7 +4199,7 @@ Update the navigation property roleAssignmentScheduleRequests in roleManagement
 Update the properties of a unifiedRoleDefinition object for an RBAC provider.
 You cannot update built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)  This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Azure AD)  This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
 Update the navigation property inheritsPermissionsFrom in roleManagement
@@ -4257,7 +4257,7 @@ Update the navigation property roleAssignmentScheduleRequests in roleManagement
 Update the properties of a unifiedRoleDefinition object for an RBAC provider.
 You cannot update built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)  This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Azure AD)  This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom.md)
 Update the navigation property inheritsPermissionsFrom in roleManagement
@@ -4315,7 +4315,7 @@ Update the navigation property roleAssignmentScheduleRequests in roleManagement
 Update the properties of a unifiedRoleDefinition object for an RBAC provider.
 You cannot update built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)  This API is available in the following national cloud deployments.
+The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Azure AD)  This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
 Update the navigation property inheritsPermissionsFrom in roleManagement

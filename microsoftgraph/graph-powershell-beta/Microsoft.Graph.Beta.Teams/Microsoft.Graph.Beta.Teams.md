@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: 85a72c06-fbd8-48bc-84d2-6ee3a77d6a53
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams
@@ -94,9 +94,9 @@ This API is available in the following national cloud deployments.
 
 ### [Copy-MgBetaTeam](Copy-MgBetaTeam.md)
 Create a copy of a team.
-This operation also creates a copy of the corresponding group.\nYou can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
+This operation also creates a copy of the corresponding group.You can specify which parts of the team to clone: When tabs are cloned, they aren't configured.
 The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen.
-\nIf the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
+If the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
 Cloning is a long-running operation.
 After the POST clone returns, you need to GET the operation returned by the Location: header to see if it's running, succeeded, or failed.
 You should continue to GET until the status isn't running.
@@ -466,7 +466,7 @@ The application that is linked to the tab.
 
 ### [Get-MgBetaGroupTeamSchedule](Get-MgBetaGroupTeamSchedule.md)
 Retrieve the properties and relationships of a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\nWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
@@ -794,7 +794,7 @@ Get team RSC configuration for tenant.
 
 ### [Get-MgBetaTeamSchedule](Get-MgBetaTeamSchedule.md)
 Retrieve the properties and relationships of a schedule object.
-The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).\nWhen clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+The schedule creation process conforms to the One API guideline for resource based long running operations (RELO).When clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
@@ -1168,7 +1168,7 @@ This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaArchiveTeam](Invoke-MgBetaArchiveTeam.md)
 Archive the specified team.
-\nWhen a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.\nMembership changes to the team continue to be allowed.
+When a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.Membership changes to the team continue to be allowed.
 Archiving is an async operation.
 A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
@@ -1217,7 +1217,7 @@ Invoke function allMessages
 Invoke function allMessages
 
 ### [Invoke-MgBetaShareTeamSchedule](Invoke-MgBetaShareTeamSchedule.md)
-Share a schedule time range with schedule members.\nMake the collections of shift, openshift and timeOff items in the specified time range of the schedule viewable by the specified team members, including employees and managers.\nEach shift, openshift and timeOff instance in a schedule supports a draft version and a shared version of the item.
+Share a schedule time range with schedule members.Make the collections of shift, openshift and timeOff items in the specified time range of the schedule viewable by the specified team members, including employees and managers.Each shift, openshift and timeOff instance in a schedule supports a draft version and a shared version of the item.
 The draft version is viewable by only managers, and the shared version is viewable by employees and managers.
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
@@ -1263,7 +1263,7 @@ A team is unarchived once the async operation completes successfully, which may 
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaAppCatalogTeamApp](New-MgBetaAppCatalogTeamApp.md)
-Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 This API is available in the following national cloud deployments.
@@ -1313,7 +1313,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaChatTab](New-MgBetaChatTab.md)
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaGroupTeamChannel](New-MgBetaGroupTeamChannel.md)
@@ -1670,12 +1670,12 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserChatTab](New-MgBetaUserChatTab.md)
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserChatTab](New-MgBetaUserChatTab.md)
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserTeamworkInstalledApp](New-MgBetaUserTeamworkInstalledApp.md)
@@ -1830,7 +1830,7 @@ This API is available in the following national cloud deployments.
 Delete navigation property openShiftChangeRequests for groups
 
 ### [Remove-MgBetaGroupTeamScheduleSchedulingGroup](Remove-MgBetaGroupTeamScheduleSchedulingGroup.md)
-Mark a schedulingGroup as inactive by setting its isActive property.\nThis method does not remove the schedulingGroup from the schedule.
+Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
 This API is available in the following national cloud deployments.
 
@@ -1954,7 +1954,7 @@ This API is available in the following national cloud deployments.
 Delete navigation property openShiftChangeRequests for teams
 
 ### [Remove-MgBetaTeamScheduleSchedulingGroup](Remove-MgBetaTeamScheduleSchedulingGroup.md)
-Mark a schedulingGroup as inactive by setting its isActive property.\nThis method does not remove the schedulingGroup from the schedule.
+Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
 This API is available in the following national cloud deployments.
 
@@ -2121,12 +2121,12 @@ This API is available in the following national cloud deployments.
 
 ### [Send-MgBetaTeamActivityNotification](Send-MgBetaTeamActivityNotification.md)
 Send an activity feed notification in the scope of a team.
-For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
+For more details about sending notifications and the requirements for doing so, seesending Teams activity notifications.
 This API is available in the following national cloud deployments.
 
 ### [Send-MgBetaTeamworkActivityNotificationToRecipient](Send-MgBetaTeamworkActivityNotificationToRecipient.md)
 Send activity feed notifications to multiple users, in bulk.
-For more details about sending notifications and the requirements for doing so, see\nsending Teams activity notifications.
+For more details about sending notifications and the requirements for doing so, seesending Teams activity notifications.
 This API is available in the following national cloud deployments.
 
 ### [Set-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent](Set-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent.md)
@@ -2290,7 +2290,7 @@ This API is available in the following national cloud deployments.
 Update the navigation property teamsApps in appCatalogs
 
 ### [Update-MgBetaAppCatalogTeamAppDefinition](Update-MgBetaAppCatalogTeamAppDefinition.md)
-Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource has a distributionMethod property value of organization.
+Publish an app to the Microsoft Teams app catalog.Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);the created resource has a distributionMethod property value of organization.
 The requiresReview property allows any user to submit an app for review by an administrator.
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 This API is available in the following national cloud deployments.
@@ -2344,7 +2344,7 @@ Update the navigation property pinnedMessages in chats
 
 ### [Update-MgBetaChatTab](Update-MgBetaChatTab.md)
 Update the properties of the specified tab in a chat.
-\nThis can be used to configure the content of the tab.
+This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaGroupTeamChannel](Update-MgBetaGroupTeamChannel.md)
@@ -2352,7 +2352,7 @@ Update the properties of the specified channel.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaGroupTeamChannelMember](Update-MgBetaGroupTeamChannelMember.md)
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a team.or channel.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaGroupTeamChannelMessage](Update-MgBetaGroupTeamChannelMessage.md)
@@ -2400,7 +2400,7 @@ Update the navigation property photo in groups
 Update the navigation property primaryChannel in groups
 
 ### [Update-MgBetaGroupTeamPrimaryChannelMember](Update-MgBetaGroupTeamPrimaryChannelMember.md)
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a team.or channel.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaGroupTeamPrimaryChannelMessage](Update-MgBetaGroupTeamPrimaryChannelMessage.md)
@@ -2482,7 +2482,7 @@ Update the properties of the specified channel.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaTeamChannelMember](Update-MgBetaTeamChannelMember.md)
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a team.or channel.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaTeamChannelMessage](Update-MgBetaTeamChannelMessage.md)
@@ -2531,7 +2531,7 @@ Update the navigation property photo in teams
 Update the navigation property primaryChannel in teams
 
 ### [Update-MgBetaTeamPrimaryChannelMember](Update-MgBetaTeamPrimaryChannelMember.md)
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a team.or channel.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaTeamPrimaryChannelMessage](Update-MgBetaTeamPrimaryChannelMessage.md)
@@ -2611,7 +2611,7 @@ Update the navigation property deletedTeams in teamwork
 Update the navigation property channels in teamwork
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelMember](Update-MgBetaTeamworkDeletedTeamChannelMember.md)
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a team.or channel.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelMessage](Update-MgBetaTeamworkDeletedTeamChannelMessage.md)
@@ -2705,7 +2705,7 @@ Update the navigation property pinnedMessages in users
 
 ### [Update-MgBetaUserChatTab](Update-MgBetaUserChatTab.md)
 Update the properties of the specified tab in a chat.
-\nThis can be used to configure the content of the tab.
+This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaUserTeamwork](Update-MgBetaUserTeamwork.md)

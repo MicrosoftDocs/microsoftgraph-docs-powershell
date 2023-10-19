@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -33,7 +33,7 @@ Get-MgBetaGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [<Co
 
 ## DESCRIPTION
 Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES

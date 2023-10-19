@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
+You can specify the parent conversation in the request, or, you can specify just the thread without the parent conversation.
 This API is supported in the following national cloud deployments.
 
 ## SYNTAX
@@ -43,7 +43,7 @@ Invoke-MgReplyGroupConversationThread -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
+You can specify the parent conversation in the request, or, you can specify just the thread without the parent conversation.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
