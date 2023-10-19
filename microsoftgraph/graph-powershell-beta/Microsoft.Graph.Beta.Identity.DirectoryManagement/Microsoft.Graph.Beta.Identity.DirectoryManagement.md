@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 Module Guid: 484fe87d-be5d-49e0-b910-e4e0dad36998
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement
@@ -316,13 +316,6 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgBetaContactMemberOfCountAsGroup](Get-MgBetaContactMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaContactServiceProvisioningError](Get-MgBetaContactServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaContactServiceProvisioningErrorCount](Get-MgBetaContactServiceProvisioningErrorCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaContactTransitiveMemberOf](Get-MgBetaContactTransitiveMemberOf.md)

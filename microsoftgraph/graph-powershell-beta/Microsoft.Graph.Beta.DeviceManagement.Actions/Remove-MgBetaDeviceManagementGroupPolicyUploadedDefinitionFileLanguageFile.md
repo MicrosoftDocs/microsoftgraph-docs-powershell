@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/remove-mgbetadevicemanagementgrouppolicyuploadeddefinitionfilelanguagefile
 schema: 2.0.0
@@ -16,8 +16,8 @@ Invoke action removeLanguageFiles
 ```
 Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
  -GroupPolicyUploadedDefinitionFileId <String> [-AdditionalProperties <Hashtable>]
- [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Remove
@@ -25,7 +25,15 @@ Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
 Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
  -GroupPolicyUploadedDefinitionFileId <String>
  -BodyParameter <IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RemoveViaIdentityExpanded
+```
+Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
@@ -33,15 +41,7 @@ Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
 Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### RemoveViaIdentityExpanded
-```
-Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,14 +49,14 @@ Invoke action removeLanguageFiles
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -69,7 +69,7 @@ Invoke action removeLanguageFiles
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema
+Type: IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Remove, RemoveViaIdentity
 Aliases:
 
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of groupPolicyUploadedDefinitionFile
 
 ```yaml
-Type: System.String
-Parameter Sets: Remove, RemoveExpanded
+Type: String
+Parameter Sets: RemoveExpanded, Remove
 Aliases:
 
 Required: True
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for GROUPPOLICYUPLOADEDLANGUAGEFILES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedLanguageFile[]
+Type: IMicrosoftGraphGroupPolicyUploadedLanguageFile[]
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -132,8 +132,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: RemoveViaIdentity, RemoveViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -178,7 +178,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -195,13 +195,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -281,4 +278,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-

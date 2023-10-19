@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskconfiguration
 schema: 2.0.0
@@ -16,27 +16,27 @@ This API is available in the following national cloud deployments.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId <String>
- [-AdditionalProperties <Hashtable>] [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaBusinessScenarioPlannerTaskConfiguration -BusinessScenarioId <String>
- -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdentity>
- [-AdditionalProperties <Hashtable>] [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-EditPolicy <IMicrosoftGraphPlannerTaskPolicy>] [-Id <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphPlannerTaskConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +77,7 @@ plannerTaskConfiguration
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskConfiguration
+Type: IMicrosoftGraphPlannerTaskConfiguration
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -96,8 +92,8 @@ Accept wildcard characters: False
 The unique identifier of businessScenario
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -112,7 +108,7 @@ plannerTaskPolicy
 To construct, see NOTES section for EDITPOLICY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskPolicy
+Type: IMicrosoftGraphPlannerTaskPolicy
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +124,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +140,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IBookingsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -159,7 +155,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +171,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,13 +188,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskConfiguration
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskConfiguration
-
 ## NOTES
 
 ALIASES
@@ -297,4 +290,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-

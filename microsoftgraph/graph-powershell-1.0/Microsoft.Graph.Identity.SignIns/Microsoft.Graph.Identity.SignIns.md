@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.SignIns
 Module Guid: ec45f17a-2894-403e-aca8-23b1e3dffcdd
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins
@@ -199,12 +199,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgInvitationInvitedUserServiceProvisioningError](Get-MgInvitationInvitedUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgInvitationInvitedUserServiceProvisioningErrorCount](Get-MgInvitationInvitedUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgOauth2PermissionGrant](Get-MgOauth2PermissionGrant.md)
 Retrieve the properties of a single delegated permission grant represented by an oAuth2PermissionGrant object.
 An oAuth2PermissionGrant represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
@@ -334,12 +328,26 @@ This API is available in the following national cloud deployments.
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
+### [Get-MgPolicyFeatureRolloutPolicyApplyToById](Get-MgPolicyFeatureRolloutPolicyApplyToById.md)
+Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
+Some common uses for this function are to:
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyFeatureRolloutPolicyApplyToById](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyToById?view=graph-powershell-beta)
+
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToByRef](Get-MgPolicyFeatureRolloutPolicyApplyToByRef.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToCount](Get-MgPolicyFeatureRolloutPolicyApplyToCount.md)
 Get the number of the resource
+
+### [Get-MgPolicyFeatureRolloutPolicyApplyToDelta](Get-MgPolicyFeatureRolloutPolicyApplyToDelta.md)
+Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyFeatureRolloutPolicyApplyToDelta](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyToDelta?view=graph-powershell-beta)
 
 ### [Get-MgPolicyFeatureRolloutPolicyCount](Get-MgPolicyFeatureRolloutPolicyCount.md)
 Get the number of the resource
@@ -480,23 +488,20 @@ This API is available in the following national cloud deployments.
 ### [Get-MgServicePrincipalRiskDetectionCount](Get-MgServicePrincipalRiskDetectionCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationEmailMethod](Get-MgUserAuthenticationEmailMethod.md)
-Retrieve a user's single email authentication method object.
-This API is available in the following national cloud deployments.
+### [Get-MgServicePrincipalRiskDetectionCount](Get-MgServicePrincipalRiskDetectionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationEmailMethodCount](Get-MgUserAuthenticationEmailMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
-Retrieve a user's single FIDO2 Security Key Authentication Method object.
-This API is available in the following national cloud deployments.
+### [Get-MgUserAuthenticationEmailMethodCount](Get-MgUserAuthenticationEmailMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationMethod](Get-MgUserAuthenticationMethod.md)
-Retrieve the properties and relationships of an authenticationMethod object.
-This API is available in the following national cloud deployments.
+### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationMethodCount](Get-MgUserAuthenticationMethodCount.md)
 Get the number of the resource
@@ -522,25 +527,20 @@ This API is available in the following national cloud deployments.
 ### [Get-MgUserAuthenticationOperationCount](Get-MgUserAuthenticationOperationCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationPasswordMethod](Get-MgUserAuthenticationPasswordMethod.md)
-Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
-For security, the password itself will never be returned in the object and the password property is always null.
-This API is available in the following national cloud deployments.
+### [Get-MgUserAuthenticationOperationCount](Get-MgUserAuthenticationOperationCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationPasswordMethodCount](Get-MgUserAuthenticationPasswordMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationPhoneMethod](Get-MgUserAuthenticationPhoneMethod.md)
-Retrieve a single phoneAuthenticationMethod object for a user.
-This method is available only for standard Azure AD and B2B users, but not B2C users.
-This API is available in the following national cloud deployments.
+### [Get-MgUserAuthenticationPasswordMethodCount](Get-MgUserAuthenticationPasswordMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationPhoneMethodCount](Get-MgUserAuthenticationPhoneMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationSoftwareOathMethod](Get-MgUserAuthenticationSoftwareOathMethod.md)
-Retrieve a user's single Software OATH token authentication method object and its properties.
-This API is available in the following national cloud deployments.
+### [Get-MgUserAuthenticationPhoneMethodCount](Get-MgUserAuthenticationPhoneMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationSoftwareOathMethodCount](Get-MgUserAuthenticationSoftwareOathMethodCount.md)
 Get the number of the resource
@@ -1023,14 +1023,8 @@ This API is available in the following national cloud deployments.
 ### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
 Delete navigation property operations for users
 
-### [Remove-MgUserAuthenticationPhoneMethod](Remove-MgUserAuthenticationPhoneMethod.md)
-Delete a user's phone authentication method.
-This removes the phone number from the user and they'll no longer be able to use the number for authentication, whether via SMS or voice calls.
-A user can't have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it can't be deleted.
-Have the user change their default authentication method, and then delete the number.
-This API is available in the following national cloud deployments.
+### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
+Delete navigation property operations for users
 
 ### [Remove-MgUserAuthenticationSoftwareOathMethod](Remove-MgUserAuthenticationSoftwareOathMethod.md)
 Delete a user's Software OATH token authentication method object.
@@ -1064,8 +1058,20 @@ Update the ref of navigation property postFederationSignup in identity
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 This API is available in the following national cloud deployments.
 
-### [Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
-Update the navigation property identitySynchronization in policies
+### [Test-MgPolicyFeatureRolloutPolicyApplyToProperty](Test-MgPolicyFeatureRolloutPolicyApplyToProperty.md)
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty?view=graph-powershell-beta)
 
 ### [Update-MgDataPolicyOperation](Update-MgDataPolicyOperation.md)
 Update entity in dataPolicyOperations
@@ -1200,6 +1206,9 @@ This API is available in the following national cloud deployments.
 ### [Update-MgPolicyCrossTenantAccessPolicyPartner](Update-MgPolicyCrossTenantAccessPolicyPartner.md)
 Update the properties of a partner-specific configuration.
 This API is available in the following national cloud deployments.
+
+### [Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+Create a cross-tenant user synchronization policy for a partner-specific configuration.
 
 ### [Update-MgPolicyDefaultAppManagementPolicy](Update-MgPolicyDefaultAppManagementPolicy.md)
 Update the properties of a tenantAppManagementPolicy object.

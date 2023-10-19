@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update external
 ### UpdateExpanded (Default)
 ```
 Update-MgExternal [-AdditionalProperties <Hashtable>]
- [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>] [-Confirm] [-WhatIf]
+ [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal> [-Confirm] [-WhatIf]
+Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,14 +30,14 @@ Update external
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -50,7 +50,7 @@ Update external
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ external
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal
+Type: IMicrosoftGraphExternalConnectorsExternal
 Parameter Sets: Update
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CONNECTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection[]
+Type: IMicrosoftGraphExternalConnectorsExternalConnection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,11 +130,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
-
 ## NOTES
 
 ALIASES
@@ -308,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

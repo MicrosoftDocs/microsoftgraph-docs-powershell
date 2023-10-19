@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicycompliancechange
 schema: 2.0.0
@@ -17,27 +17,27 @@ This API is available in the following national cloud deployments.
 ```
 New-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-IsRevoked] [-RevokedDateTime <DateTime>]
- [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId <String>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsRevoked]
- [-RevokedDateTime <DateTime>] [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-RevokedDateTime <DateTime>] [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,19 +46,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -66,7 +62,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -82,7 +78,7 @@ complianceChange
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesComplianceChange
+Type: IMicrosoftGraphWindowsUpdatesComplianceChange
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -97,7 +93,7 @@ Accept wildcard characters: False
 The date and time when a compliance change was created.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -113,7 +109,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -129,8 +125,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IWindowsUpdatesIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -145,7 +141,7 @@ True indicates that a compliance change is revoked, preventing further applicati
 Revoking a compliance change is a final action.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +156,7 @@ Accept wildcard characters: False
 The date and time when the compliance change was revoked.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +172,7 @@ updatePolicy
 To construct, see NOTES section for UPDATEPOLICY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatePolicy
+Type: IMicrosoftGraphWindowsUpdatesUpdatePolicy
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -191,8 +187,8 @@ Accept wildcard characters: False
 The unique identifier of updatePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -206,7 +202,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -222,7 +218,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -239,13 +235,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesComplianceChange
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesComplianceChange
-
 ## NOTES
 
 ALIASES
@@ -384,3 +377,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinterjobdocument
 schema: 2.0.0
@@ -14,28 +14,28 @@ Create new navigation property to documents for print
 
 ### CreateExpanded (Default)
 ```
-New-MgPrintPrinterJobDocument -PrinterId <String> -PrintJobId <String> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-DisplayName <String>] [-Id <String>] [-Size <Int64>] [-Confirm] [-WhatIf]
+New-MgPrintPrinterJobDocument -PrintJobId <String> -PrinterId <String> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-DisplayName <String>] [-Id <String>] [-Size <Int64>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPrintPrinterJobDocument -PrinterId <String> -PrintJobId <String>
- -BodyParameter <IMicrosoftGraphPrintDocument> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintDocument> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgPrintPrinterJobDocument -PrintJobId <String> -PrinterId <String>
+ -BodyParameter <IMicrosoftGraphPrintDocument> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-DisplayName <String>] [-Id <String>] [-Size <Int64>] [-Confirm] [-WhatIf]
+ [-ContentType <String>] [-DisplayName <String>] [-Id <String>] [-Size <Int64>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity>
+ -BodyParameter <IMicrosoftGraphPrintDocument> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,19 +43,15 @@ Create new navigation property to documents for print
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -63,7 +59,7 @@ Create new navigation property to documents for print
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +75,7 @@ printDocument
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintDocument
+Type: IMicrosoftGraphPrintDocument
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -95,7 +91,7 @@ The document's content (MIME) type.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -111,7 +107,7 @@ The document's name.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +123,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,8 +139,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDevicesCloudPrintIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -158,8 +154,8 @@ Accept wildcard characters: False
 The unique identifier of printer
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -173,8 +169,8 @@ Accept wildcard characters: False
 The unique identifier of printJob
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -189,7 +185,7 @@ The document's size in bytes.
 Read-only.
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +200,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +216,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,13 +233,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintDocument
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintDocument
-
 ## NOTES
 
 ALIASES
@@ -276,4 +269,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

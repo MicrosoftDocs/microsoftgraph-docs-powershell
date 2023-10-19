@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamapppreapproval
 schema: 2.0.0
@@ -14,11 +14,10 @@ Create Preapproval policy associated with a Teams App.
 
 ```
 New-MgBetaTeamAppPreApproval -TeamsAppId <String>
- [-ResourceSpecificApplicationPermissionsAllowedForChats <String[]>]
  [-ResourceSpecificApplicationPermissionsAllowedForTeams <String[]>]
- [-SpecificSensitivityLabelIdsApplicableToTeams <String[]>]
- [-TeamLevelSensitivityLabelCondition <MicrosoftGraphSensitivityLabelCondition?>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-ResourceSpecificApplicationPermissionsAllowedForChats <String[]>]
+ [-TeamLevelSensitivityLabelCondition <MicrosoftGraphSensitivityLabelCondition>]
+ [-SpecificSensitivityLabelIdsApplicableToTeams <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -26,19 +25,15 @@ Create Preapproval policy associated with a Teams App.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -46,7 +41,7 @@ Create Preapproval policy associated with a Teams App.
 Resource Specific Permissions Allowed for Chats
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases:
 
@@ -61,7 +56,7 @@ Accept wildcard characters: False
 Resource Specific Permissions Allowed for Teams
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases:
 
@@ -76,7 +71,7 @@ Accept wildcard characters: False
 Specific Sensitivity label ids applicable to Teams.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases:
 
@@ -91,7 +86,7 @@ Accept wildcard characters: False
 Label selection mode for Teams.
 
 ```yaml
-Type: System.Nullable`1[[Microsoft.Graph.Beta.PowerShell.Models.MicrosoftGraphSensitivityLabelCondition, Microsoft.Graph.Beta.Teams.private, Version=2.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]
+Type: MicrosoftGraphSensitivityLabelCondition
 Parameter Sets: (All)
 Aliases:
 
@@ -106,7 +101,7 @@ Accept wildcard characters: False
 key: id of Teams App
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -121,7 +116,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -137,7 +132,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -156,10 +151,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppPreApproval
-
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-

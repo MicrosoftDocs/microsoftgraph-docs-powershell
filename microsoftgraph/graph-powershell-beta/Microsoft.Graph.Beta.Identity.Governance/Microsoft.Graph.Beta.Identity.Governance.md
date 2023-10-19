@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 Module Guid: 39f329f0-5bc0-4da9-b25c-c0e4f2317b9e
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance
@@ -524,13 +524,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
 Read the properties and relationships of a customTaskExtension object.
 This API is available in the following national cloud deployments.
@@ -547,13 +540,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy.md)
 The unique identifier of the Azure AD user that modified the custom task extension last.Supports $filter(eq, ne) and $expand.
 
@@ -562,13 +548,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem.md)
 Deleted workflows in your lifecycle workflows instance.
@@ -621,13 +600,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowRun.md)
 Read the properties and relationships of a run object.
 This API is available in the following national cloud deployments.
@@ -650,13 +622,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultTask.md)
 The related workflow task
 
@@ -675,13 +640,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
 The associated individual task execution.
@@ -718,13 +676,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask.md)
 The related workflow task
 
@@ -754,13 +705,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask.md)
 The related workflow task
@@ -794,13 +738,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultTask.md)
 The related workflow task
 
@@ -818,13 +755,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
 The associated individual task execution.
@@ -845,13 +775,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy.md)
 The user who last modified the workflow.
 
@@ -860,13 +783,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
 The tasks in the workflow.
@@ -889,24 +805,8 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningError](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultTask.md)
 The related workflow task
-
-### [Get-MgBetaIdentityGovernancePermissionManagement](Get-MgBetaIdentityGovernancePermissionManagement.md)
-Get permissionsManagement from identityGovernance
-
-### [Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
-Get permissionsRequestChanges from identityGovernance
-
-### [Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChangeCount](Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChangeCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccess](Get-MgBetaIdentityGovernancePrivilegedAccess.md)
 Get privilegedAccess from identityGovernance
@@ -943,13 +843,6 @@ Get the number of the resource
 References the group that is the scope of the membership or ownership assignment through PIM for groups.
 Supports $expand.
 
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance.md)
 Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object.
 This API is available in the following national cloud deployments.
@@ -964,13 +857,6 @@ Get the number of the resource
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup.md)
 References the group that is the scope of the membership or ownership assignment through PIM for groups.
 Supports $expand.
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancePrincipal](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancePrincipal.md)
 References the principal that's in the scope of the membership or ownership assignment request through the group that's governed by PIM.
@@ -996,13 +882,6 @@ Get the number of the resource
 References the group that is the scope of the membership or ownership assignment request through PIM for groups.
 Supports $expand.
 
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal](Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal.md)
 References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM.
 Supports $expand.
@@ -1022,13 +901,6 @@ Get the number of the resource
 References the group that is the scope of the membership or ownership eligibility through PIM for groups.
 Supports $expand.
 
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
 Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleInstance object.
 This API is available in the following national cloud deployments.
@@ -1039,13 +911,6 @@ Get the number of the resource
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroup.md)
 References the group that is the scope of the membership or ownership eligibility through PIM for groups.
 Supports $expand.
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrincipal](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrincipal.md)
 References the principal that's in the scope of the membership or ownership eligibility request through the group that's governed by PIM.
@@ -1065,13 +930,6 @@ Get the number of the resource
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup.md)
 References the group that is the scope of the membership or ownership eligibility request through PIM for groups.
 Supports $expand.
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningError](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningErrorCount](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal](Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal.md)
 References the principal that's in the scope of the membership or ownership eligibility request through the group that's governed by PIM.
@@ -2772,12 +2630,6 @@ Create new navigation property to tasks for identityGovernance
 ### [New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
 Create new navigation property to tasks for identityGovernance
 
-### [New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](New-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
-Create new navigation property to permissionsRequestChanges for identityGovernance
-
-### [New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest](New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest.md)
-Create new navigation property to scheduledPermissionsRequests for identityGovernance
-
 ### [New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval](New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
 Create new navigation property to assignmentApprovals for identityGovernance
 
@@ -3300,12 +3152,6 @@ Delete navigation property tasks for identityGovernance
 
 ### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](Remove-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
 Delete navigation property tasks for identityGovernance
-
-### [Remove-MgBetaIdentityGovernancePermissionManagement](Remove-MgBetaIdentityGovernancePermissionManagement.md)
-Delete navigation property permissionsManagement for identityGovernance
-
-### [Remove-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](Remove-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
-Delete navigation property permissionsRequestChanges for identityGovernance
 
 ### [Remove-MgBetaIdentityGovernancePrivilegedAccess](Remove-MgBetaIdentityGovernancePrivilegedAccess.md)
 Delete navigation property privilegedAccess for identityGovernance
@@ -4127,12 +3973,6 @@ Update the navigation property tasks in identityGovernance
 
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting.md)
 Update property mailboxSettings value.
-
-### [Update-MgBetaIdentityGovernancePermissionManagement](Update-MgBetaIdentityGovernancePermissionManagement.md)
-Update the navigation property permissionsManagement in identityGovernance
-
-### [Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange](Update-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange.md)
-Update the navigation property permissionsRequestChanges in identityGovernance
 
 ### [Update-MgBetaIdentityGovernancePrivilegedAccess](Update-MgBetaIdentityGovernancePrivilegedAccess.md)
 Update the navigation property privilegedAccess in identityGovernance

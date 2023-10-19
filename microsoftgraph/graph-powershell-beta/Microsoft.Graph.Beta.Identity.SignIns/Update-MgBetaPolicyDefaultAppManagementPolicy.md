@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy
 schema: 2.0.0
@@ -18,14 +18,14 @@ This API is available in the following national cloud deployments.
 Update-MgBetaPolicyDefaultAppManagementPolicy [-AdditionalProperties <Hashtable>]
  [-ApplicationRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
- [-ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-Confirm] [-WhatIf]
+ [-ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantAppManagementPolicy>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,7 +34,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 ```
@@ -87,7 +87,7 @@ Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ appManagementConfiguration
 To construct, see NOTES section for APPLICATIONRESTRICTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppManagementConfiguration
+Type: IMicrosoftGraphAppManagementConfiguration
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ tenantAppManagementPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
+Type: IMicrosoftGraphTenantAppManagementPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -135,7 +135,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -151,7 +151,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -183,7 +183,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -199,7 +199,7 @@ Denotes whether the policy is enabled.
 Default value is false.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -215,7 +215,7 @@ appManagementConfiguration
 To construct, see NOTES section for SERVICEPRINCIPALRESTRICTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppManagementConfiguration
+Type: IMicrosoftGraphAppManagementConfiguration
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -246,7 +246,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -263,11 +263,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
-
 ## NOTES
 
 ALIASES
@@ -322,4 +320,3 @@ To create the parameters described below, construct a hash table containing the 
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
-

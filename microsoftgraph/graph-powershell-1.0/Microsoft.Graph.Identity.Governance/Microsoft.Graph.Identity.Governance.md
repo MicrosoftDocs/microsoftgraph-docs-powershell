@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.Governance
 Module Guid: c65edd0a-c632-433e-9c77-3e7237205b0f
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance
@@ -271,6 +271,14 @@ Retrieve a list of a connectedOrganization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 This API is available in the following national cloud deployments.
 
+### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsorById](Get-MgEntitlementManagementConnectedOrganizationExternalSponsorById.md)
+Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
+Some common uses for this function are to:
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById?view=graph-powershell-beta)
+
 ### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](Get-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
 Retrieve a list of a connectedOrganization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
@@ -279,10 +287,24 @@ This API is available in the following national cloud deployments.
 ### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsorCount](Get-MgEntitlementManagementConnectedOrganizationExternalSponsorCount.md)
 Get the number of the resource
 
+### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsorDelta](Get-MgEntitlementManagementConnectedOrganizationExternalSponsorDelta.md)
+Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDelta](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDelta?view=graph-powershell-beta)
+
 ### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsor](Get-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
 Retrieve a list of a connectedOrganization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 This API is available in the following national cloud deployments.
+
+### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorById.md)
+Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
+Some common uses for this function are to:
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorById](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorById?view=graph-powershell-beta)
 
 ### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
 Retrieve a list of a connectedOrganization's internal sponsors.
@@ -291,6 +313,12 @@ This API is available in the following national cloud deployments.
 
 ### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorCount](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorCount.md)
 Get the number of the resource
+
+### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorDelta.md)
+Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDelta](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDelta?view=graph-powershell-beta)
 
 ### [Get-MgEntitlementManagementResource](Get-MgEntitlementManagementResource.md)
 The resources associated with the catalogs.
@@ -805,12 +833,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowCreatedByServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
 Read the properties and relationships of a customTaskExtension object.
 This API is available in the following national cloud deployments.
@@ -826,12 +848,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedByServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy.md)
 The unique identifier of the Azure AD user that modified the custom task extension last.Supports $filter(eq, ne) and $expand.
 
@@ -839,12 +855,6 @@ The unique identifier of the Azure AD user that modified the custom task extensi
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItem](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItem.md)
 Deleted workflows in your lifecycle workflows instance.
@@ -896,12 +906,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRun](Get-MgIdentityGovernanceLifecycleWorkflowRun.md)
 Read the properties and relationships of a run object.
 This API is available in the following national cloud deployments.
@@ -923,12 +927,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultTask](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultTask.md)
 The related workflow task
 
@@ -946,12 +944,6 @@ The unique identifier of the AAD user targeted for the taskProcessingResult.Supp
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult.md)
 The associated individual task execution.
@@ -987,12 +979,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask](Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask.md)
 The related workflow task
 
@@ -1021,12 +1007,6 @@ The unique identifier of the Azure AD user targeted for the task execution.Suppo
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask](Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask.md)
 The related workflow task
@@ -1059,12 +1039,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultTask](Get-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResultTask.md)
 The related workflow task
 
@@ -1081,12 +1055,6 @@ The unique identifier of the AAD user targeted for the taskProcessingResult.Supp
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultTaskProcessingResult.md)
 The associated individual task execution.
@@ -1106,12 +1074,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowVersionCreatedByServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy](Get-MgIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy.md)
 The unique identifier of the Azure Active Directory identity that last modified the workflow.
 
@@ -1119,12 +1081,6 @@ The unique identifier of the Azure Active Directory identity that last modified 
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowVersionLastModifiedByServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersionTask](Get-MgIdentityGovernanceLifecycleWorkflowVersionTask.md)
 The tasks in the workflow.
@@ -1146,157 +1102,8 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningError](Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningErrorCount](Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultTask](Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultTask.md)
 The related workflow task
-
-### [Get-MgIdentityGovernancePrivilegedAccess](Get-MgIdentityGovernancePrivilegedAccess.md)
-Get privilegedAccess from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroup](Get-MgIdentityGovernancePrivilegedAccessGroup.md)
-Get group from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
-Get assignmentApprovals from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage.md)
-In Azure AD entitlement management, retrieve the properties of an approvalStage object.
-An approval stage is contained within an approval object.
-This API is available in the following national cloud deployments.
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStageCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStageCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule.md)
-Get assignmentSchedules from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing.md)
-Get activatedUsing from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup.md)
-Get group from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningErrorCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance.md)
-Get assignmentScheduleInstances from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceActivatedUsing](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceActivatedUsing.md)
-Get activatedUsing from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroup.md)
-Get group from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningError](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningErrorCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancePrincipal](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstancePrincipal.md)
-Get principal from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedulePrincipal](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedulePrincipal.md)
-Get principal from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest.md)
-Get assignmentScheduleRequests from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestActivatedUsing.md)
-Get activatedUsing from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroup](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroup.md)
-Get group from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningError](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningErrorCount](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal.md)
-Get principal from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestTargetSchedule](Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestTargetSchedule.md)
-Get targetSchedule from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule.md)
-Get eligibilitySchedules from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleCount](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroup](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroup.md)
-Get group from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningError](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningErrorCount](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
-Get eligibilityScheduleInstances from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceCount](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroup](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroup.md)
-Get group from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningError](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningErrorCount](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrincipal](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrincipal.md)
-Get principal from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedulePrincipal](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedulePrincipal.md)
-Get principal from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
-Get eligibilityScheduleRequests from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestCount](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup.md)
-Get group from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningError](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningErrorCount](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestPrincipal.md)
-Get principal from identityGovernance
-
-### [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestTargetSchedule](Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestTargetSchedule.md)
-Get targetSchedule from identityGovernance
 
 ### [Get-MgIdentityGovernanceTermsOfUseAgreement](Get-MgIdentityGovernanceTermsOfUseAgreement.md)
 Retrieve the properties and relationships of an agreement object.
@@ -1767,10 +1574,8 @@ Supports $expand.
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition.md)
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
-### [Get-MgUserAgreementAcceptance](Get-MgUserAgreementAcceptance.md)
-The user's terms of use acceptance statuses.
-Read-only.
-Nullable.
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
 ### [Get-MgUserAgreementAcceptanceCount](Get-MgUserAgreementAcceptanceCount.md)
 Get the number of the resource
@@ -1828,27 +1633,6 @@ Invoke function filterByCurrentUser
 Invoke function filterByCurrentUser
 
 ### [Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser](Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser](Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentApprovalByCurrentUser.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser](Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceByCurrentUser](Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstanceByCurrentUser.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser](Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestByCurrentUser.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleByCurrentUser](Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleByCurrentUser.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser](Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceByCurrentUser.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestByCurrentUser](Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestByCurrentUser.md)
 Invoke function filterByCurrentUser
 
 ### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleByCurrentUser.md)
@@ -2183,30 +1967,6 @@ Create new navigation property to tasks for identityGovernance
 
 ### [New-MgIdentityGovernanceLifecycleWorkflowVersionTask](New-MgIdentityGovernanceLifecycleWorkflowVersionTask.md)
 Create new navigation property to tasks for identityGovernance
-
-### [New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval](New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
-Create new navigation property to assignmentApprovals for identityGovernance
-
-### [New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage](New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage.md)
-Create new navigation property to stages for identityGovernance
-
-### [New-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](New-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule.md)
-Create new navigation property to assignmentSchedules for identityGovernance
-
-### [New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance.md)
-Create new navigation property to assignmentScheduleInstances for identityGovernance
-
-### [New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest.md)
-Create new navigation property to assignmentScheduleRequests for identityGovernance
-
-### [New-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](New-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule.md)
-Create new navigation property to eligibilitySchedules for identityGovernance
-
-### [New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
-Create new navigation property to eligibilityScheduleInstances for identityGovernance
-
-### [New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
-Create new navigation property to eligibilityScheduleRequests for identityGovernance
 
 ### [New-MgIdentityGovernanceTermsOfUseAgreement](New-MgIdentityGovernanceTermsOfUseAgreement.md)
 Create a new agreement object.
@@ -2660,36 +2420,6 @@ Delete navigation property tasks for identityGovernance
 ### [Remove-MgIdentityGovernanceLifecycleWorkflowVersionTask](Remove-MgIdentityGovernanceLifecycleWorkflowVersionTask.md)
 Delete navigation property tasks for identityGovernance
 
-### [Remove-MgIdentityGovernancePrivilegedAccess](Remove-MgIdentityGovernancePrivilegedAccess.md)
-Delete navigation property privilegedAccess for identityGovernance
-
-### [Remove-MgIdentityGovernancePrivilegedAccessGroup](Remove-MgIdentityGovernancePrivilegedAccessGroup.md)
-Delete navigation property group for identityGovernance
-
-### [Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval](Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
-Delete navigation property assignmentApprovals for identityGovernance
-
-### [Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage](Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage.md)
-Delete navigation property stages for identityGovernance
-
-### [Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule.md)
-Delete navigation property assignmentSchedules for identityGovernance
-
-### [Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance.md)
-Delete navigation property assignmentScheduleInstances for identityGovernance
-
-### [Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest.md)
-Delete navigation property assignmentScheduleRequests for identityGovernance
-
-### [Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule.md)
-Delete navigation property eligibilitySchedules for identityGovernance
-
-### [Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
-Delete navigation property eligibilityScheduleInstances for identityGovernance
-
-### [Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](Remove-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
-Delete navigation property eligibilityScheduleRequests for identityGovernance
-
 ### [Remove-MgIdentityGovernanceTermsOfUseAgreement](Remove-MgIdentityGovernanceTermsOfUseAgreement.md)
 Delete an agreement object.
 This API is available in the following national cloud deployments.
@@ -2872,12 +2602,6 @@ If there are subsequent stages that depend on the completed stage, the next stag
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 This API is available in the following national cloud deployments.
 
-### [Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest.md)
-Invoke action cancel
-
-### [Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
-Invoke action cancel
-
 ### [Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a Granted status, and have the system automatically delete the canceled request after 30 days.
 After calling this action, the status of the canceled unifiedRoleAssignmentScheduleRequest changes to Canceled.
@@ -2897,6 +2621,36 @@ This API is available in the following national cloud deployments.
 Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is Granted and have the system automatically delete the cancelled request after 30 days.
 After calling this action, the status of the cancelled unifiedRoleEligibilityScheduleRequest changes to Revoked.
 This API is available in the following national cloud deployments.
+
+### [Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty](Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty.md)
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty?view=graph-powershell-beta)
+
+### [Test-MgEntitlementManagementConnectedOrganizationInternalSponsorProperty](Test-MgEntitlementManagementConnectedOrganizationInternalSponsorProperty.md)
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty?view=graph-powershell-beta)
 
 ### [Update-MgAgreement](Update-MgAgreement.md)
 Update entity in agreements
@@ -2934,7 +2688,7 @@ Update the navigation property assignmentPolicies in identityGovernance
 Update the navigation property resourceRoleScopes in identityGovernance
 
 ### [Update-MgEntitlementManagementAssignment](Update-MgEntitlementManagementAssignment.md)
-In Azure AD entitlement management, callers can automatically reevaluate and enforce an accessPackageAssignment object of a user’s assignments for a specific access package.
+In Azure AD entitlement management, callers can automatically reevaluate and enforce an accessPackageAssignment object of a user's assignments for a specific access package.
 The state of the access package assignment must be Delivered for the administrator to reprocess the user's assignment.
 Only admins with the Access Package Assignment Manager role, or higher, in Azure AD entitlement management can perform this action.
 This API is available in the following national cloud deployments.
@@ -3274,37 +3028,6 @@ Update the navigation property tasks in identityGovernance
 
 ### [Update-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting](Update-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting.md)
 Update property mailboxSettings value.
-
-### [Update-MgIdentityGovernancePrivilegedAccess](Update-MgIdentityGovernancePrivilegedAccess.md)
-Update the navigation property privilegedAccess in identityGovernance
-
-### [Update-MgIdentityGovernancePrivilegedAccessGroup](Update-MgIdentityGovernancePrivilegedAccessGroup.md)
-Update the navigation property group in identityGovernance
-
-### [Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval](Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
-Update the navigation property assignmentApprovals in identityGovernance
-
-### [Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage](Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage.md)
-In Azure AD entitlement management, approve or deny an approvalStage object in an approval.
-This API is available in the following national cloud deployments.
-
-### [Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule.md)
-Update the navigation property assignmentSchedules in identityGovernance
-
-### [Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance.md)
-Update the navigation property assignmentScheduleInstances in identityGovernance
-
-### [Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest](Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest.md)
-Update the navigation property assignmentScheduleRequests in identityGovernance
-
-### [Update-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](Update-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule.md)
-Update the navigation property eligibilitySchedules in identityGovernance
-
-### [Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance.md)
-Update the navigation property eligibilityScheduleInstances in identityGovernance
-
-### [Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest.md)
-Update the navigation property eligibilityScheduleRequests in identityGovernance
 
 ### [Update-MgIdentityGovernanceTermsOfUseAgreement](Update-MgIdentityGovernanceTermsOfUseAgreement.md)
 Update the properties of an agreement object.

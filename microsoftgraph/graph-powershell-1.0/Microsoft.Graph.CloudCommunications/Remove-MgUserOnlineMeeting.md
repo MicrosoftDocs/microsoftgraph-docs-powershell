@@ -1,43 +1,47 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeeting
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationpresence
 schema: 2.0.0
 ---
 
-# Remove-MgUserOnlineMeeting
+# Remove-MgCommunicationPresence
 
 ## SYNOPSIS
-Delete an onlineMeeting object.
-This API is available in the following national cloud deployments.
+Delete navigation property presences for communications
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgUserOnlineMeeting -OnlineMeetingId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgCommunicationPresence -PresenceId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete an onlineMeeting object.
-This API is available in the following national cloud deployments.
+Delete navigation property presences for communications
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Remove-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -45,7 +49,7 @@ Remove-MgUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -61,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Type: ICloudCommunicationsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -72,26 +76,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OnlineMeetingId
-The unique identifier of onlineMeeting
-
-```yaml
-Type: System.String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -102,11 +91,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-The unique identifier of user
+### -PresenceId
+The unique identifier of presence
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -121,7 +110,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -137,7 +126,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -154,11 +143,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -184,4 +171,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

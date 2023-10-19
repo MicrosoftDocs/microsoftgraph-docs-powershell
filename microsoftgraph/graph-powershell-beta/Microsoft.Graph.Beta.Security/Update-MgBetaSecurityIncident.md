@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident
 schema: 2.0.0
@@ -20,22 +20,15 @@ Update-MgBetaSecurityIncident -IncidentId <String> [-AdditionalProperties <Hasht
  [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-CustomTags <String[]>]
  [-Description <String>] [-Determination <String>] [-DisplayName <String>] [-Id <String>]
  [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
- [-RecommendedActions <String>]
- [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
+ [-RecommendedActions <String>] [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
  [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
- [-TenantId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSecurityIncident -IncidentId <String> -BodyParameter <IMicrosoftGraphSecurityIncident> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityIncident> [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaSecurityIncident -IncidentId <String> -BodyParameter <IMicrosoftGraphSecurityIncident> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,10 +38,15 @@ Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity> [-AdditionalPrope
  [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-CustomTags <String[]>]
  [-Description <String>] [-Determination <String>] [-DisplayName <String>] [-Id <String>]
  [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
- [-RecommendedActions <String>]
- [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
+ [-RecommendedActions <String>] [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
  [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
- [-TenantId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecurityIncident>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +55,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 ```
@@ -78,7 +76,7 @@ Update-MgBetaSecurityIncident -IncidentId $incidentId -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +93,7 @@ Supports $expand.
 To construct, see NOTES section for ALERTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlert[]
+Type: IMicrosoftGraphSecurityAlert[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -111,7 +109,7 @@ Owner of the incident, or null if no owner is assigned.
 Free editable text.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +125,7 @@ incident
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIncident
+Type: IMicrosoftGraphSecurityIncident
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -142,7 +140,7 @@ Accept wildcard characters: False
 alertClassification
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +156,7 @@ Array of comments created by the Security Operations (SecOps) team when the inci
 To construct, see NOTES section for COMMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
+Type: IMicrosoftGraphSecurityAlertComment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +171,7 @@ Accept wildcard characters: False
 Time when the incident was first created.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +186,7 @@ Accept wildcard characters: False
 Array of custom tags associated with an incident.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +201,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -218,7 +216,7 @@ Accept wildcard characters: False
 alertDetermination
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -233,7 +231,7 @@ Accept wildcard characters: False
 The incident name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -249,7 +247,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -264,8 +262,8 @@ Accept wildcard characters: False
 The unique identifier of incident
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -279,7 +277,7 @@ Accept wildcard characters: False
 The URL for the incident page in the Microsoft 365 Defender portal.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -295,8 +293,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ISecurityIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -310,7 +308,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -325,7 +323,7 @@ Accept wildcard characters: False
 Time when the incident was last updated.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -340,7 +338,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -356,7 +354,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for RECOMMENDEDHUNTINGQUERIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRecommendedHuntingQuery[]
+Type: IMicrosoftGraphSecurityRecommendedHuntingQuery[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -372,7 +370,7 @@ Only populated in case an incident is grouped together with another incident, as
 In such a case, the status property is redirected.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -387,7 +385,7 @@ Accept wildcard characters: False
 alertSeverity
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -402,7 +400,7 @@ Accept wildcard characters: False
 incidentStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -417,7 +415,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -432,7 +430,7 @@ Accept wildcard characters: False
 The Azure Active Directory tenant in which the alert was created.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -447,7 +445,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -463,7 +461,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -480,13 +478,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIncident
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIncident
-
 ## NOTES
 
 ALIASES
@@ -696,3 +691,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

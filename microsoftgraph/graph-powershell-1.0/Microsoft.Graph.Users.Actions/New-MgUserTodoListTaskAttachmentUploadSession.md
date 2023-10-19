@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusertodolisttaskattachmentuploadsession
 schema: 2.0.0
@@ -20,7 +20,7 @@ This API is supported in the following national cloud deployments.
 ### CreateExpanded (Default)
 ```
 New-MgUserTodoListTaskAttachmentUploadSession -TodoTaskId <String> -TodoTaskListId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-AttachmentInfo <IMicrosoftGraphAttachmentInfo>] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-AttachmentInfo <IMicrosoftGraphAttachmentInfo>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -28,21 +28,21 @@ New-MgUserTodoListTaskAttachmentUploadSession -TodoTaskId <String> -TodoTaskList
 ```
 New-MgUserTodoListTaskAttachmentUploadSession -TodoTaskId <String> -TodoTaskListId <String> -UserId <String>
  -BodyParameter <IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgUserTodoListTaskAttachmentUploadSession -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AttachmentInfo <IMicrosoftGraphAttachmentInfo>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserTodoListTaskAttachmentUploadSession -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserTodoListTaskAttachmentUploadSession -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-AttachmentInfo <IMicrosoftGraphAttachmentInfo>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,14 +55,14 @@ This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -75,7 +75,7 @@ This API is supported in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -91,7 +91,7 @@ attachmentInfo
 To construct, see NOTES section for ATTACHMENTINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentInfo
+Type: IMicrosoftGraphAttachmentInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+Type: IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -123,8 +123,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -138,8 +138,8 @@ Accept wildcard characters: False
 The unique identifier of todoTask
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -153,8 +153,8 @@ Accept wildcard characters: False
 The unique identifier of todoTaskList
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -168,8 +168,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -199,7 +199,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -216,13 +216,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths4768B9UsersUserIdTodoListsTodotasklistIdTasksTodotaskIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUploadSession
-
 ## NOTES
 
 ALIASES
@@ -281,4 +278,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest
 schema: 2.0.0
@@ -19,15 +19,15 @@ This API is available in the following national cloud deployments.
 New-MgBetaEntitlementManagementAccessPackageResourceRequest
  [-AccessPackageResource <IMicrosoftGraphAccessPackageResource>] [-AdditionalProperties <Hashtable>]
  [-CatalogId <String>] [-ExecuteImmediately] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-IsValidationOnly] [-Justification <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>]
- [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>] [-Confirm] [-WhatIf]
+ [-IsValidationOnly] [-Justification <String>] [-RequestState <String>] [-RequestStatus <String>]
+ [-RequestType <String>] [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEntitlementManagementAccessPackageResourceRequest
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +37,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All', 'Group.ReadWrite.All'
 $accessPackageResource = @{
@@ -67,7 +67,7 @@ accessPackageResource
 To construct, see NOTES section for ACCESSPACKAGERESOURCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResource
+Type: IMicrosoftGraphAccessPackageResource
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ accessPackageResourceRequest
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRequest
+Type: IMicrosoftGraphAccessPackageResourceRequest
 Parameter Sets: Create
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 The unique ID of the access package catalog.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +160,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 If set, does not add the resource.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 The requestor's justification for adding or removing the resource.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +206,7 @@ accessPackageSubject
 To construct, see NOTES section for REQUESTOR properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
+Type: IMicrosoftGraphAccessPackageSubject
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +223,7 @@ The value is Delivered if the resource was added or removed.
 Read-Only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 Use AdminAdd to add a resource, if the caller is an administrator or resource owner, AdminUpdate to update a resource, or AdminRemove to remove a resource.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -284,7 +284,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -301,11 +301,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRequest
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRequest
-
 ## NOTES
 
 ALIASES
@@ -495,3 +493,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement
 Module Guid: c0ec343c-8c3d-447e-aaa5-b17e152af79e
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement
@@ -359,12 +359,6 @@ User experience analytics device Startup Processes
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessCount.md)
 Get the number of the resource
 
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-User experience analytics device Startup Process Performance
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformanceCount.md)
-Get the number of the resource
-
 ### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](Get-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
 User experience analytics metric history
 
@@ -567,9 +561,6 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupHistory fo
 ### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
 Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
 
-### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPerformance for deviceManagement
-
 ### [New-MgDeviceManagementUserExperienceAnalyticMetricHistory](New-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
 Create new navigation property to userExperienceAnalyticsMetricHistory for deviceManagement
 
@@ -770,9 +761,6 @@ Delete navigation property userExperienceAnalyticsDeviceStartupHistory for devic
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
 Delete navigation property userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Delete navigation property userExperienceAnalyticsDeviceStartupProcessPerformance for deviceManagement
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory](Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
 Delete navigation property userExperienceAnalyticsMetricHistory for deviceManagement
@@ -983,9 +971,6 @@ Update the navigation property userExperienceAnalyticsDeviceStartupHistory in de
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
 Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in deviceManagement
-
-### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Update the navigation property userExperienceAnalyticsDeviceStartupProcessPerformance in deviceManagement
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticMetricHistory](Update-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
 Update the navigation property userExperienceAnalyticsMetricHistory in deviceManagement

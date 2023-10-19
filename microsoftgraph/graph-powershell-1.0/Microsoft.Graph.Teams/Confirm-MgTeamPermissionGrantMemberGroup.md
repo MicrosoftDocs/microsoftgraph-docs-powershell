@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/confirm-mgteampermissiongrantmembergroup
@@ -51,6 +51,8 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -235,5 +237,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Confirm-MgBetaTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaTeamPermissionGrantMemberGroup?view=graph-powershell-beta)
 

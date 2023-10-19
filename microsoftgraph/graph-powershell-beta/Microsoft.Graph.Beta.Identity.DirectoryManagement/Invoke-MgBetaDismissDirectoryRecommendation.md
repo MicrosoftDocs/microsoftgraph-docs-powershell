@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryrecommendation
 schema: 2.0.0
@@ -16,27 +16,27 @@ This API is available in the following national cloud deployments.
 ### DismissExpanded (Default)
 ```
 Invoke-MgBetaDismissDirectoryRecommendation -RecommendationId <String> [-AdditionalProperties <Hashtable>]
- [-DismissReason <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DismissReason <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Dismiss
 ```
 Invoke-MgBetaDismissDirectoryRecommendation -RecommendationId <String>
  -BodyParameter <IPathsTqf0JxDirectoryRecommendationsRecommendationIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DismissViaIdentityExpanded
+```
+Invoke-MgBetaDismissDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-DismissReason <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DismissViaIdentity
 ```
 Invoke-MgBetaDismissDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPathsTqf0JxDirectoryRecommendationsRecommendationIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### DismissViaIdentityExpanded
-```
-Invoke-MgBetaDismissDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DismissReason <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,14 +45,14 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -65,7 +65,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: DismissExpanded, DismissViaIdentityExpanded
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsTqf0JxDirectoryRecommendationsRecommendationIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
+Type: IPathsTqf0JxDirectoryRecommendationsRecommendationIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Dismiss, DismissViaIdentity
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: DismissExpanded, DismissViaIdentityExpanded
 Aliases:
 
@@ -112,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: DismissViaIdentity, DismissViaIdentityExpanded
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: DismissViaIdentityExpanded, DismissViaIdentity
 Aliases:
 
 Required: True
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of recommendation
 
 ```yaml
-Type: System.String
-Parameter Sets: Dismiss, DismissExpanded
+Type: String
+Parameter Sets: DismissExpanded, Dismiss
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,13 +175,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsTqf0JxDirectoryRecommendationsRecommendationIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendation
-
 ## NOTES
 
 ALIASES
@@ -240,4 +237,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

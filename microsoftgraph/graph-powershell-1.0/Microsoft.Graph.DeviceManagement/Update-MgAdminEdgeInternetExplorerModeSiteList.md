@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelist
 schema: 2.0.0
@@ -17,22 +17,16 @@ This API is available in the following national cloud deployments.
 ```
 Update-MgAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId <String> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-PublishedBy <IMicrosoftGraphIdentitySet>]
- [-PublishedDateTime <DateTime>] [-Revision <String>] [-SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>]
- [-Sites <IMicrosoftGraphBrowserSite[]>] [-Status <BrowserSiteListStatus>] [-Confirm] [-WhatIf]
+ [-LastModifiedDateTime <DateTime>] [-PublishedBy <IMicrosoftGraphIdentitySet>] [-PublishedDateTime <DateTime>]
+ [-Revision <String>] [-SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>]
+ [-Sites <IMicrosoftGraphBrowserSite[]>] [-Status <BrowserSiteListStatus>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgAdminEdgeInternetExplorerModeSiteList -BrowserSiteListId <String>
- -BodyParameter <IMicrosoftGraphBrowserSiteList> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphBrowserSiteList> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBrowserSiteList> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,7 +36,13 @@ Update-MgAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementId
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-PublishedBy <IMicrosoftGraphIdentitySet>] [-PublishedDateTime <DateTime>] [-Revision <String>]
  [-SharedCookies <IMicrosoftGraphBrowserSharedCookie[]>] [-Sites <IMicrosoftGraphBrowserSite[]>]
- [-Status <BrowserSiteListStatus>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Status <BrowserSiteListStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphBrowserSiteList> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,19 +51,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -71,7 +67,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +83,7 @@ A singleton entity which is used to specify IE mode site list metadata
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowserSiteList
+Type: IMicrosoftGraphBrowserSiteList
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -102,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of browserSiteList
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -117,7 +113,7 @@ Accept wildcard characters: False
 The description of the site list.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +128,7 @@ Accept wildcard characters: False
 The name of the site list.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +144,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,8 +160,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -180,7 +176,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +191,7 @@ Accept wildcard characters: False
 The date and time when the site list was last modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -211,7 +207,7 @@ identitySet
 To construct, see NOTES section for PUBLISHEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +222,7 @@ Accept wildcard characters: False
 The date and time when the site list was published.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -241,7 +237,7 @@ Accept wildcard characters: False
 The current revision of the site list.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +253,7 @@ A collection of shared cookies defined for the site list.
 To construct, see NOTES section for SHAREDCOOKIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowserSharedCookie[]
+Type: IMicrosoftGraphBrowserSharedCookie[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +269,7 @@ A collection of sites defined for the site list.
 To construct, see NOTES section for SITES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowserSite[]
+Type: IMicrosoftGraphBrowserSite[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -288,7 +284,7 @@ Accept wildcard characters: False
 browserSiteListStatus
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.BrowserSiteListStatus
+Type: BrowserSiteListStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -303,7 +299,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -319,7 +315,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -336,13 +332,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowserSiteList
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBrowserSiteList
-
 ## NOTES
 
 ALIASES
@@ -549,3 +542,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

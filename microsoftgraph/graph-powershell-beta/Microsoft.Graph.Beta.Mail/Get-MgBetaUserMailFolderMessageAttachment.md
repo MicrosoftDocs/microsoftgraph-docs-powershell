@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessageattachment
 schema: 2.0.0
@@ -17,8 +17,8 @@ This API is available in the following national cloud deployments.
 ### List (Default)
 ```
 Get-MgBetaUserMailFolderMessageAttachment -MailFolderId <String> -MessageId <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Sort <String[]>] [-All]
- [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Sort <String[]>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
@@ -40,19 +40,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -60,7 +56,7 @@ This API is available in the following national cloud deployments.
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -75,7 +71,7 @@ Accept wildcard characters: False
 The unique identifier of attachment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -91,7 +87,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List
 Aliases: CV
 
@@ -106,7 +102,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -121,7 +117,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List
 Aliases:
 
@@ -137,7 +133,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+Type: IMailIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -152,8 +148,8 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List
+Type: String
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -167,8 +163,8 @@ Accept wildcard characters: False
 The unique identifier of message
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List
+Type: String
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -182,7 +178,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List
 Aliases:
 
@@ -197,7 +193,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -212,7 +208,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -227,8 +223,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List
+Type: String
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -244,11 +240,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## NOTES
 
 ALIASES
@@ -271,4 +265,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserpresenceuserpreferredpresence
 schema: 2.0.0
@@ -22,28 +22,28 @@ This API is supported in the following national cloud deployments.
 ```
 Set-MgUserPresenceUserPreferredPresence -UserId <String> [-Activity <String>]
  [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgUserPresenceUserPreferredPresence -UserId <String>
  -BodyParameter <IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### SetViaIdentity
-```
-Set-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity> [-Activity <String>]
  [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentity
+```
+Set-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +57,7 @@ This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -68,15 +68,13 @@ $params = @{
 Set-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -Activity
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -91,7 +89,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -106,7 +104,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -122,7 +120,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema
+Type: IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -137,7 +135,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -153,8 +151,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
@@ -168,7 +166,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -183,8 +181,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, SetExpanded
+Type: String
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -198,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -214,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -231,13 +229,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsTrjrarUsersUserIdPresenceMicrosoftGraphSetuserpreferredpresencePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -286,4 +281,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

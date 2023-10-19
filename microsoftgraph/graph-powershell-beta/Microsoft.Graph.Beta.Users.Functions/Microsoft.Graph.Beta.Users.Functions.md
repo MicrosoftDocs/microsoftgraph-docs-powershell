@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users.Functions
 Module Guid: 40b3ee80-28c4-474c-ba29-cbe7132477be
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions
@@ -51,9 +51,6 @@ Invoke function delta
 
 ### [Get-MgBetaUserCloudPcConnectivityHistory](Get-MgBetaUserCloudPcConnectivityHistory.md)
 Invoke function getCloudPcConnectivityHistory
-
-### [Get-MgBetaUserCloudPcFrontlineCloudPcAccessState](Get-MgBetaUserCloudPcFrontlineCloudPcAccessState.md)
-Invoke function getFrontlineCloudPcAccessState
 
 ### [Get-MgBetaUserCloudPcLaunchInfo](Get-MgBetaUserCloudPcLaunchInfo.md)
 Invoke function getCloudPcLaunchInfo

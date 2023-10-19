@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: b1367aaa-f7e4-487f-9a29-797b9d7e455c
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.security
@@ -89,60 +89,6 @@ Get the number of the resource
 ### [Get-MgSecurityAttackSimulationCount](Get-MgSecurityAttackSimulationCount.md)
 Get the number of the resource
 
-### [Get-MgSecurityAttackSimulationEndUserNotification](Get-MgSecurityAttackSimulationEndUserNotification.md)
-Get endUserNotifications from security
-
-### [Get-MgSecurityAttackSimulationEndUserNotificationCount](Get-MgSecurityAttackSimulationEndUserNotificationCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityAttackSimulationEndUserNotificationDetail](Get-MgSecurityAttackSimulationEndUserNotificationDetail.md)
-Get details from security
-
-### [Get-MgSecurityAttackSimulationEndUserNotificationDetailCount](Get-MgSecurityAttackSimulationEndUserNotificationDetailCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityAttackSimulationLandingPage](Get-MgSecurityAttackSimulationLandingPage.md)
-Get landingPages from security
-
-### [Get-MgSecurityAttackSimulationLandingPageCount](Get-MgSecurityAttackSimulationLandingPageCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityAttackSimulationLandingPageDetail](Get-MgSecurityAttackSimulationLandingPageDetail.md)
-Get details from security
-
-### [Get-MgSecurityAttackSimulationLandingPageDetailCount](Get-MgSecurityAttackSimulationLandingPageDetailCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityAttackSimulationLoginPage](Get-MgSecurityAttackSimulationLoginPage.md)
-Get loginPages from security
-
-### [Get-MgSecurityAttackSimulationLoginPageCount](Get-MgSecurityAttackSimulationLoginPageCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityAttackSimulationOperation](Get-MgSecurityAttackSimulationOperation.md)
-Get operations from security
-
-### [Get-MgSecurityAttackSimulationOperationCount](Get-MgSecurityAttackSimulationOperationCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityAttackSimulationPayload](Get-MgSecurityAttackSimulationPayload.md)
-Get payloads from security
-
-### [Get-MgSecurityAttackSimulationPayloadCount](Get-MgSecurityAttackSimulationPayloadCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityAttackSimulationTraining](Get-MgSecurityAttackSimulationTraining.md)
-Get trainings from security
-
-### [Get-MgSecurityAttackSimulationTrainingCount](Get-MgSecurityAttackSimulationTrainingCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityAttackSimulationTrainingLanguageDetail](Get-MgSecurityAttackSimulationTrainingLanguageDetail.md)
-Get languageDetails from security
-
-### [Get-MgSecurityAttackSimulationTrainingLanguageDetailCount](Get-MgSecurityAttackSimulationTrainingLanguageDetailCount.md)
-Get the number of the resource
-
 ### [Get-MgSecurityCase](Get-MgSecurityCase.md)
 Get cases from security
 
@@ -181,12 +127,6 @@ Get the number of the resource
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup](Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup.md)
 Represents a group.
-
-### [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningError](Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningErrorCount](Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource](Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource.md)
 Data source entity for a the custodian.
@@ -325,12 +265,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgSecuritySubjectRightsRequestApproverServiceProvisioningError](Get-MgSecuritySubjectRightsRequestApproverServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount](Get-MgSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgSecuritySubjectRightsRequestCollaborator](Get-MgSecuritySubjectRightsRequestCollaborator.md)
 Collection of users who can collaborate on the request.
 
@@ -341,12 +275,6 @@ Get the number of the resource
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgSecuritySubjectRightsRequestCollaboratorServiceProvisioningError](Get-MgSecuritySubjectRightsRequestCollaboratorServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgSecuritySubjectRightsRequestCollaboratorServiceProvisioningErrorCount](Get-MgSecuritySubjectRightsRequestCollaboratorServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgSecuritySubjectRightsRequestCount](Get-MgSecuritySubjectRightsRequestCount.md)
 Get the number of the resource
@@ -391,12 +319,6 @@ Read the properties and relationships of a host object.
 The host resource is the abstract base type that returns an implementation.
 A host can be of one of the following types: This API is available in the following national cloud deployments.
 
-### [Get-MgSecurityThreatIntelligenceHostChildHostPair](Get-MgSecurityThreatIntelligenceHostChildHostPair.md)
-The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
-
-### [Get-MgSecurityThreatIntelligenceHostChildHostPairCount](Get-MgSecurityThreatIntelligenceHostChildHostPairCount.md)
-Get the number of the resource
-
 ### [Get-MgSecurityThreatIntelligenceHostComponent](Get-MgSecurityThreatIntelligenceHostComponent.md)
 Read the properties and relationships of a hostComponent object.
 This API is available in the following national cloud deployments.
@@ -422,25 +344,6 @@ Indicates that a cookie of this name and domain was found related to this host.
 ### [Get-MgSecurityThreatIntelligenceHostCount](Get-MgSecurityThreatIntelligenceHostCount.md)
 Get the number of the resource
 
-### [Get-MgSecurityThreatIntelligenceHostPair](Get-MgSecurityThreatIntelligenceHostPair.md)
-Read the properties and relationships of a hostPair object.
-This API is available in the following national cloud deployments.
-
-### [Get-MgSecurityThreatIntelligenceHostPairChildHost](Get-MgSecurityThreatIntelligenceHostPairChildHost.md)
-Host reached via the parentHost.
-
-### [Get-MgSecurityThreatIntelligenceHostPairCount](Get-MgSecurityThreatIntelligenceHostPairCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityThreatIntelligenceHostPairParentHost](Get-MgSecurityThreatIntelligenceHostPairParentHost.md)
-Host used to reach the childHost.
-
-### [Get-MgSecurityThreatIntelligenceHostParentHostPair](Get-MgSecurityThreatIntelligenceHostParentHostPair.md)
-The hostPairs that are associated with a host, where that host is the childHost and has an incoming pairing with a parentHost.
-
-### [Get-MgSecurityThreatIntelligenceHostParentHostPairCount](Get-MgSecurityThreatIntelligenceHostParentHostPairCount.md)
-Get the number of the resource
-
 ### [Get-MgSecurityThreatIntelligenceHostPassiveDns](Get-MgSecurityThreatIntelligenceHostPassiveDns.md)
 Passive DNS retrieval about this host.
 
@@ -457,22 +360,6 @@ Get the number of the resource
 Get the properties and relationships of a hostReputation object.
 This API is available in the following national cloud deployments.
 
-### [Get-MgSecurityThreatIntelligenceHostSslCertificate](Get-MgSecurityThreatIntelligenceHostSslCertificate.md)
-Get the properties and relationships of a hostSslCertificate object.
-This API is available in the following national cloud deployments.
-
-### [Get-MgSecurityThreatIntelligenceHostSslCertificateCount](Get-MgSecurityThreatIntelligenceHostSslCertificateCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityThreatIntelligenceHostSslCertificateHost](Get-MgSecurityThreatIntelligenceHostSslCertificateHost.md)
-The host for this hostSslCertificate.
-
-### [Get-MgSecurityThreatIntelligenceHostSubdomain](Get-MgSecurityThreatIntelligenceHostSubdomain.md)
-The subdomains that are associated with this host.
-
-### [Get-MgSecurityThreatIntelligenceHostSubdomainCount](Get-MgSecurityThreatIntelligenceHostSubdomainCount.md)
-Get the number of the resource
-
 ### [Get-MgSecurityThreatIntelligenceHostTracker](Get-MgSecurityThreatIntelligenceHostTracker.md)
 Read the properties and relationships of a hostTracker object.
 This API is available in the following national cloud deployments.
@@ -483,12 +370,6 @@ Get the number of the resource
 ### [Get-MgSecurityThreatIntelligenceHostTrackerHost](Get-MgSecurityThreatIntelligenceHostTrackerHost.md)
 The host related to this hostTracker.
 When navigating to a hostTracker from a host, this should be assumed to be a return reference.
-
-### [Get-MgSecurityThreatIntelligenceHostWhoi](Get-MgSecurityThreatIntelligenceHostWhoi.md)
-Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
-\n- Specify an id value to get the corresponding whoisRecord.
-This API is available in the following national cloud deployments.
 
 ### [Get-MgSecurityThreatIntelligenceIntelProfile](Get-MgSecurityThreatIntelligenceIntelProfile.md)
 Read the properties and relationships of a intelligenceProfile object.
@@ -527,29 +408,6 @@ The artifact related to this indicator.
 ### [Get-MgSecurityThreatIntelligenceProfileIndicatorCount](Get-MgSecurityThreatIntelligenceProfileIndicatorCount.md)
 Get the number of the resource
 
-### [Get-MgSecurityThreatIntelligenceSslCertificate](Get-MgSecurityThreatIntelligenceSslCertificate.md)
-Get the properties and relationships of an sslCertificate object.
-This API is available in the following national cloud deployments.
-
-### [Get-MgSecurityThreatIntelligenceSslCertificateCount](Get-MgSecurityThreatIntelligenceSslCertificateCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost](Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost.md)
-The hosts related with this sslCertificate.
-
-### [Get-MgSecurityThreatIntelligenceSslCertificateRelatedHostCount](Get-MgSecurityThreatIntelligenceSslCertificateRelatedHostCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityThreatIntelligenceSubdomain](Get-MgSecurityThreatIntelligenceSubdomain.md)
-Read the properties and relationships of a subdomain object.
-This API is available in the following national cloud deployments.
-
-### [Get-MgSecurityThreatIntelligenceSubdomainCount](Get-MgSecurityThreatIntelligenceSubdomainCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityThreatIntelligenceSubdomainHost](Get-MgSecurityThreatIntelligenceSubdomainHost.md)
-The host of the subdomain.
-
 ### [Get-MgSecurityThreatIntelligenceVulnerability](Get-MgSecurityThreatIntelligenceVulnerability.md)
 Read the properties and relationships of a vulnerability object.
 This API is available in the following national cloud deployments.
@@ -569,33 +427,6 @@ Get the number of the resource
 
 ### [Get-MgSecurityThreatIntelligenceVulnerabilityCount](Get-MgSecurityThreatIntelligenceVulnerabilityCount.md)
 Get the number of the resource
-
-### [Get-MgSecurityThreatIntelligenceWhoisHistoryRecord](Get-MgSecurityThreatIntelligenceWhoisHistoryRecord.md)
-Retrieve details about whoisHistoryRecord objects.Note: List retrieval is not yet supported.
-
-### [Get-MgSecurityThreatIntelligenceWhoisHistoryRecordCount](Get-MgSecurityThreatIntelligenceWhoisHistoryRecordCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityThreatIntelligenceWhoisHistoryRecordHost](Get-MgSecurityThreatIntelligenceWhoisHistoryRecordHost.md)
-The host associated to this WHOIS object.
-
-### [Get-MgSecurityThreatIntelligenceWhoisRecord](Get-MgSecurityThreatIntelligenceWhoisRecord.md)
-Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
-\n- Specify an id value to get the corresponding whoisRecord.
-This API is available in the following national cloud deployments.
-
-### [Get-MgSecurityThreatIntelligenceWhoisRecordCount](Get-MgSecurityThreatIntelligenceWhoisRecordCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityThreatIntelligenceWhoisRecordHistory](Get-MgSecurityThreatIntelligenceWhoisRecordHistory.md)
-The collection of historical records associated to this WHOIS object.
-
-### [Get-MgSecurityThreatIntelligenceWhoisRecordHistoryCount](Get-MgSecurityThreatIntelligenceWhoisRecordHistoryCount.md)
-Get the number of the resource
-
-### [Get-MgSecurityThreatIntelligenceWhoisRecordHost](Get-MgSecurityThreatIntelligenceWhoisRecordHost.md)
-The host associated to this WHOIS object.
 
 ### [Get-MgSecurityTrigger](Get-MgSecurityTrigger.md)
 Get triggers from security
@@ -655,33 +486,6 @@ Create new navigation property to simulationAutomations for security
 
 ### [New-MgSecurityAttackSimulationAutomationRun](New-MgSecurityAttackSimulationAutomationRun.md)
 Create new navigation property to runs for security
-
-### [New-MgSecurityAttackSimulationEndUserNotification](New-MgSecurityAttackSimulationEndUserNotification.md)
-Create new navigation property to endUserNotifications for security
-
-### [New-MgSecurityAttackSimulationEndUserNotificationDetail](New-MgSecurityAttackSimulationEndUserNotificationDetail.md)
-Create new navigation property to details for security
-
-### [New-MgSecurityAttackSimulationLandingPage](New-MgSecurityAttackSimulationLandingPage.md)
-Create new navigation property to landingPages for security
-
-### [New-MgSecurityAttackSimulationLandingPageDetail](New-MgSecurityAttackSimulationLandingPageDetail.md)
-Create new navigation property to details for security
-
-### [New-MgSecurityAttackSimulationLoginPage](New-MgSecurityAttackSimulationLoginPage.md)
-Create new navigation property to loginPages for security
-
-### [New-MgSecurityAttackSimulationOperation](New-MgSecurityAttackSimulationOperation.md)
-Create new navigation property to operations for security
-
-### [New-MgSecurityAttackSimulationPayload](New-MgSecurityAttackSimulationPayload.md)
-Create new navigation property to payloads for security
-
-### [New-MgSecurityAttackSimulationTraining](New-MgSecurityAttackSimulationTraining.md)
-Create new navigation property to trainings for security
-
-### [New-MgSecurityAttackSimulationTrainingLanguageDetail](New-MgSecurityAttackSimulationTrainingLanguageDetail.md)
-Create new navigation property to languageDetails for security
 
 ### [New-MgSecurityCaseEdiscoveryCase](New-MgSecurityCaseEdiscoveryCase.md)
 Create a new ediscoveryCase object.
@@ -761,12 +565,6 @@ Create new navigation property to hostComponents for security
 ### [New-MgSecurityThreatIntelligenceHostCookie](New-MgSecurityThreatIntelligenceHostCookie.md)
 Create new navigation property to hostCookies for security
 
-### [New-MgSecurityThreatIntelligenceHostPair](New-MgSecurityThreatIntelligenceHostPair.md)
-Create new navigation property to hostPairs for security
-
-### [New-MgSecurityThreatIntelligenceHostSslCertificate](New-MgSecurityThreatIntelligenceHostSslCertificate.md)
-Create new navigation property to hostSslCertificates for security
-
 ### [New-MgSecurityThreatIntelligenceHostTracker](New-MgSecurityThreatIntelligenceHostTracker.md)
 Create new navigation property to hostTrackers for security
 
@@ -779,23 +577,11 @@ Create new navigation property to passiveDnsRecords for security
 ### [New-MgSecurityThreatIntelligenceProfileIndicator](New-MgSecurityThreatIntelligenceProfileIndicator.md)
 Create new navigation property to intelligenceProfileIndicators for security
 
-### [New-MgSecurityThreatIntelligenceSslCertificate](New-MgSecurityThreatIntelligenceSslCertificate.md)
-Create new navigation property to sslCertificates for security
-
-### [New-MgSecurityThreatIntelligenceSubdomain](New-MgSecurityThreatIntelligenceSubdomain.md)
-Create new navigation property to subdomains for security
-
 ### [New-MgSecurityThreatIntelligenceVulnerability](New-MgSecurityThreatIntelligenceVulnerability.md)
 Create new navigation property to vulnerabilities for security
 
 ### [New-MgSecurityThreatIntelligenceVulnerabilityComponent](New-MgSecurityThreatIntelligenceVulnerabilityComponent.md)
 Create new navigation property to components for security
-
-### [New-MgSecurityThreatIntelligenceWhoisHistoryRecord](New-MgSecurityThreatIntelligenceWhoisHistoryRecord.md)
-Create new navigation property to whoisHistoryRecords for security
-
-### [New-MgSecurityThreatIntelligenceWhoisRecord](New-MgSecurityThreatIntelligenceWhoisRecord.md)
-Create new navigation property to whoisRecords for security
 
 ### [New-MgSecurityTriggerRetentionEvent](New-MgSecurityTriggerRetentionEvent.md)
 Create a new retentionEvent object.
@@ -825,33 +611,6 @@ Delete navigation property simulationAutomations for security
 
 ### [Remove-MgSecurityAttackSimulationAutomationRun](Remove-MgSecurityAttackSimulationAutomationRun.md)
 Delete navigation property runs for security
-
-### [Remove-MgSecurityAttackSimulationEndUserNotification](Remove-MgSecurityAttackSimulationEndUserNotification.md)
-Delete navigation property endUserNotifications for security
-
-### [Remove-MgSecurityAttackSimulationEndUserNotificationDetail](Remove-MgSecurityAttackSimulationEndUserNotificationDetail.md)
-Delete navigation property details for security
-
-### [Remove-MgSecurityAttackSimulationLandingPage](Remove-MgSecurityAttackSimulationLandingPage.md)
-Delete navigation property landingPages for security
-
-### [Remove-MgSecurityAttackSimulationLandingPageDetail](Remove-MgSecurityAttackSimulationLandingPageDetail.md)
-Delete navigation property details for security
-
-### [Remove-MgSecurityAttackSimulationLoginPage](Remove-MgSecurityAttackSimulationLoginPage.md)
-Delete navigation property loginPages for security
-
-### [Remove-MgSecurityAttackSimulationOperation](Remove-MgSecurityAttackSimulationOperation.md)
-Delete navigation property operations for security
-
-### [Remove-MgSecurityAttackSimulationPayload](Remove-MgSecurityAttackSimulationPayload.md)
-Delete navigation property payloads for security
-
-### [Remove-MgSecurityAttackSimulationTraining](Remove-MgSecurityAttackSimulationTraining.md)
-Delete navigation property trainings for security
-
-### [Remove-MgSecurityAttackSimulationTrainingLanguageDetail](Remove-MgSecurityAttackSimulationTrainingLanguageDetail.md)
-Delete navigation property languageDetails for security
 
 ### [Remove-MgSecurityCase](Remove-MgSecurityCase.md)
 Delete navigation property cases for security
@@ -950,14 +709,8 @@ Delete navigation property hostComponents for security
 ### [Remove-MgSecurityThreatIntelligenceHostCookie](Remove-MgSecurityThreatIntelligenceHostCookie.md)
 Delete navigation property hostCookies for security
 
-### [Remove-MgSecurityThreatIntelligenceHostPair](Remove-MgSecurityThreatIntelligenceHostPair.md)
-Delete navigation property hostPairs for security
-
 ### [Remove-MgSecurityThreatIntelligenceHostReputation](Remove-MgSecurityThreatIntelligenceHostReputation.md)
 Delete navigation property reputation for security
-
-### [Remove-MgSecurityThreatIntelligenceHostSslCertificate](Remove-MgSecurityThreatIntelligenceHostSslCertificate.md)
-Delete navigation property hostSslCertificates for security
 
 ### [Remove-MgSecurityThreatIntelligenceHostTracker](Remove-MgSecurityThreatIntelligenceHostTracker.md)
 Delete navigation property hostTrackers for security
@@ -971,23 +724,11 @@ Delete navigation property passiveDnsRecords for security
 ### [Remove-MgSecurityThreatIntelligenceProfileIndicator](Remove-MgSecurityThreatIntelligenceProfileIndicator.md)
 Delete navigation property intelligenceProfileIndicators for security
 
-### [Remove-MgSecurityThreatIntelligenceSslCertificate](Remove-MgSecurityThreatIntelligenceSslCertificate.md)
-Delete navigation property sslCertificates for security
-
-### [Remove-MgSecurityThreatIntelligenceSubdomain](Remove-MgSecurityThreatIntelligenceSubdomain.md)
-Delete navigation property subdomains for security
-
 ### [Remove-MgSecurityThreatIntelligenceVulnerability](Remove-MgSecurityThreatIntelligenceVulnerability.md)
 Delete navigation property vulnerabilities for security
 
 ### [Remove-MgSecurityThreatIntelligenceVulnerabilityComponent](Remove-MgSecurityThreatIntelligenceVulnerabilityComponent.md)
 Delete navigation property components for security
-
-### [Remove-MgSecurityThreatIntelligenceWhoisHistoryRecord](Remove-MgSecurityThreatIntelligenceWhoisHistoryRecord.md)
-Delete navigation property whoisHistoryRecords for security
-
-### [Remove-MgSecurityThreatIntelligenceWhoisRecord](Remove-MgSecurityThreatIntelligenceWhoisRecord.md)
-Delete navigation property whoisRecords for security
 
 ### [Remove-MgSecurityTrigger](Remove-MgSecurityTrigger.md)
 Delete navigation property triggers for security
@@ -1029,33 +770,6 @@ Update the navigation property simulationAutomations in security
 
 ### [Update-MgSecurityAttackSimulationAutomationRun](Update-MgSecurityAttackSimulationAutomationRun.md)
 Update the navigation property runs in security
-
-### [Update-MgSecurityAttackSimulationEndUserNotification](Update-MgSecurityAttackSimulationEndUserNotification.md)
-Update the navigation property endUserNotifications in security
-
-### [Update-MgSecurityAttackSimulationEndUserNotificationDetail](Update-MgSecurityAttackSimulationEndUserNotificationDetail.md)
-Update the navigation property details in security
-
-### [Update-MgSecurityAttackSimulationLandingPage](Update-MgSecurityAttackSimulationLandingPage.md)
-Update the navigation property landingPages in security
-
-### [Update-MgSecurityAttackSimulationLandingPageDetail](Update-MgSecurityAttackSimulationLandingPageDetail.md)
-Update the navigation property details in security
-
-### [Update-MgSecurityAttackSimulationLoginPage](Update-MgSecurityAttackSimulationLoginPage.md)
-Update the navigation property loginPages in security
-
-### [Update-MgSecurityAttackSimulationOperation](Update-MgSecurityAttackSimulationOperation.md)
-Update the navigation property operations in security
-
-### [Update-MgSecurityAttackSimulationPayload](Update-MgSecurityAttackSimulationPayload.md)
-Update the navigation property payloads in security
-
-### [Update-MgSecurityAttackSimulationTraining](Update-MgSecurityAttackSimulationTraining.md)
-Update the navigation property trainings in security
-
-### [Update-MgSecurityAttackSimulationTrainingLanguageDetail](Update-MgSecurityAttackSimulationTrainingLanguageDetail.md)
-Update the navigation property languageDetails in security
 
 ### [Update-MgSecurityCase](Update-MgSecurityCase.md)
 Update the navigation property cases in security
@@ -1153,14 +867,8 @@ Update the navigation property hostComponents in security
 ### [Update-MgSecurityThreatIntelligenceHostCookie](Update-MgSecurityThreatIntelligenceHostCookie.md)
 Update the navigation property hostCookies in security
 
-### [Update-MgSecurityThreatIntelligenceHostPair](Update-MgSecurityThreatIntelligenceHostPair.md)
-Update the navigation property hostPairs in security
-
 ### [Update-MgSecurityThreatIntelligenceHostReputation](Update-MgSecurityThreatIntelligenceHostReputation.md)
 Update the navigation property reputation in security
-
-### [Update-MgSecurityThreatIntelligenceHostSslCertificate](Update-MgSecurityThreatIntelligenceHostSslCertificate.md)
-Update the navigation property hostSslCertificates in security
 
 ### [Update-MgSecurityThreatIntelligenceHostTracker](Update-MgSecurityThreatIntelligenceHostTracker.md)
 Update the navigation property hostTrackers in security
@@ -1174,23 +882,11 @@ Update the navigation property passiveDnsRecords in security
 ### [Update-MgSecurityThreatIntelligenceProfileIndicator](Update-MgSecurityThreatIntelligenceProfileIndicator.md)
 Update the navigation property intelligenceProfileIndicators in security
 
-### [Update-MgSecurityThreatIntelligenceSslCertificate](Update-MgSecurityThreatIntelligenceSslCertificate.md)
-Update the navigation property sslCertificates in security
-
-### [Update-MgSecurityThreatIntelligenceSubdomain](Update-MgSecurityThreatIntelligenceSubdomain.md)
-Update the navigation property subdomains in security
-
 ### [Update-MgSecurityThreatIntelligenceVulnerability](Update-MgSecurityThreatIntelligenceVulnerability.md)
 Update the navigation property vulnerabilities in security
 
 ### [Update-MgSecurityThreatIntelligenceVulnerabilityComponent](Update-MgSecurityThreatIntelligenceVulnerabilityComponent.md)
 Update the navigation property components in security
-
-### [Update-MgSecurityThreatIntelligenceWhoisHistoryRecord](Update-MgSecurityThreatIntelligenceWhoisHistoryRecord.md)
-Update the navigation property whoisHistoryRecords in security
-
-### [Update-MgSecurityThreatIntelligenceWhoisRecord](Update-MgSecurityThreatIntelligenceWhoisRecord.md)
-Update the navigation property whoisRecords in security
 
 ### [Update-MgSecurityTrigger](Update-MgSecurityTrigger.md)
 Update the navigation property triggers in security

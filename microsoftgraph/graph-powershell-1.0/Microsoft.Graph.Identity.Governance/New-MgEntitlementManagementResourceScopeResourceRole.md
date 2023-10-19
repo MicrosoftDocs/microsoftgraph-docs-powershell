@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcescoperesourcerole
 schema: 2.0.0
@@ -17,28 +17,28 @@ Create new navigation property to roles for identityGovernance
 New-MgEntitlementManagementResourceScopeResourceRole -AccessPackageResourceId <String>
  -AccessPackageResourceScopeId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementResourceScopeResourceRole -AccessPackageResourceId <String>
- -AccessPackageResourceScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgEntitlementManagementResourceScopeResourceRole -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -AccessPackageResourceScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgEntitlementManagementResourceScopeResourceRole -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-OriginId <String>] [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-OriginId <String>] [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgEntitlementManagementResourceScopeResourceRole -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,19 +46,15 @@ Create new navigation property to roles for identityGovernance
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -66,8 +62,8 @@ Create new navigation property to roles for identityGovernance
 The unique identifier of accessPackageResource
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -81,8 +77,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceScope
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -96,7 +92,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +108,7 @@ accessPackageResourceRole
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
+Type: IMicrosoftGraphAccessPackageResourceRole
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -127,7 +123,7 @@ Accept wildcard characters: False
 A description for the resource role.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +138,7 @@ Accept wildcard characters: False
 The display name of the resource role such as the role defined by the application.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +154,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -174,8 +170,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -190,7 +186,7 @@ The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId will be the sequence number of the role in the site.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +201,7 @@ Accept wildcard characters: False
 The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +217,7 @@ accessPackageResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
+Type: IMicrosoftGraphAccessPackageResource
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +232,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +248,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,13 +265,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
-
 ## NOTES
 
 ALIASES
@@ -430,3 +423,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

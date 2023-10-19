@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitecontenttypetodefaultcontentlocation
 schema: 2.0.0
@@ -18,28 +18,28 @@ This API is available in the following [national cloud deployments.
 ```
 Copy-MgBetaSiteContentTypeToDefaultContentLocation -ContentTypeId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
- [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
 Copy-MgBetaSiteContentTypeToDefaultContentLocation -ContentTypeId <String> -SiteId <String>
  -BodyParameter <IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CopyViaIdentity
-```
-Copy-MgBetaSiteContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
- -BodyParameter <IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
 ```
 Copy-MgBetaSiteContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
- [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CopyViaIdentity
+```
+Copy-MgBetaSiteContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
+ -BodyParameter <IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 ```
@@ -72,7 +72,7 @@ Copy-MgBetaSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeI
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Copy, CopyViaIdentity
 Aliases:
 
@@ -103,8 +103,8 @@ Accept wildcard characters: False
 The unique identifier of contentType
 
 ```yaml
-Type: System.String
-Parameter Sets: Copy, CopyExpanded
+Type: String
+Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -134,8 +134,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-Parameter Sets: CopyViaIdentity, CopyViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
 Aliases:
 
 Required: True
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -164,8 +164,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Copy, CopyExpanded
+Type: String
+Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
@@ -180,7 +180,7 @@ itemReference
 To construct, see NOTES section for SOURCEFILE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemReference
+Type: IMicrosoftGraphItemReference
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -211,7 +211,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -228,13 +228,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Dt8IfaSitesSiteIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -336,4 +333,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationexternalsponsorbyid
@@ -51,6 +51,7 @@ Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -72,10 +73,10 @@ $params = @{
 
 Get-MgDirectoryObjectById -BodyParameter $params
 ```
+
 This example shows how to use the Get-MgEntitlementManagementConnectedOrganizationExternalSponsorById Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -291,4 +292,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorById?view=graph-powershell-beta)

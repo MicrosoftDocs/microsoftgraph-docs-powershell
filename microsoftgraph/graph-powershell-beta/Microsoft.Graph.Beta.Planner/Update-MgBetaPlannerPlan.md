@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan
 schema: 2.0.0
@@ -20,19 +20,13 @@ Update-MgBetaPlannerPlan -PlannerPlanId <String> [-AdditionalProperties <Hashtab
  [-Contexts <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-Owner <String>] [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaPlannerPlan -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlan> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlan>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaPlannerPlan -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,7 +36,13 @@ Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-AdditionalProperties 
  [-Contexts <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-Owner <String>] [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 ```
@@ -68,7 +68,7 @@ Update-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ plannerPlan
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
+Type: IMicrosoftGraphPlannerPlan
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -102,7 +102,7 @@ Nullable.
 To construct, see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerBucket[]
+Type: IMicrosoftGraphPlannerBucket[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ plannerPlanContainer
 To construct, see NOTES section for CONTAINER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanContainer
+Type: IMicrosoftGraphPlannerPlanContainer
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 plannerPlanContextCollection
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +149,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -183,7 +183,7 @@ plannerPlanCreation
 To construct, see NOTES section for CREATIONSOURCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanCreation
+Type: IMicrosoftGraphPlannerPlanCreation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +199,7 @@ plannerPlanDetails
 To construct, see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails
+Type: IMicrosoftGraphPlannerPlanDetails
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +215,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,8 +231,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IPlannerIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -261,8 +261,8 @@ Accept wildcard characters: False
 The unique identifier of plannerPlan
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -277,7 +277,7 @@ List of containers the plan is shared with.
 To construct, see NOTES section for SHAREDWITHCONTAINERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerSharedWithContainer[]
+Type: IMicrosoftGraphPlannerSharedWithContainer[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -295,7 +295,7 @@ Nullable.
 To construct, see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask[]
+Type: IMicrosoftGraphPlannerTask[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -311,7 +311,7 @@ Required.
 Title of the plan.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -342,7 +342,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -359,13 +359,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
-
 ## NOTES
 
 ALIASES
@@ -814,3 +811,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

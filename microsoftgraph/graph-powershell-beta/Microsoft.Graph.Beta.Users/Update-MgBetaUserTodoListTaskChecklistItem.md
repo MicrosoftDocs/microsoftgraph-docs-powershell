@@ -1,63 +1,63 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskchecklistitem
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskattachmentsession
 schema: 2.0.0
 ---
 
-# Update-MgBetaUserTodoListTaskChecklistItem
+# Update-MgBetaUserTodoListTaskAttachmentSession
 
 ## SYNOPSIS
-Update the properties of a checklistItem object.
-This API is available in the following national cloud deployments.
+Update the navigation property attachmentSessions in users
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserTodoListTaskChecklistItem -ChecklistItemId <String> -TodoTaskId <String>
- -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-CheckedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-IsChecked] [-Confirm] [-WhatIf]
+Update-MgBetaUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
+ -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaUserTodoListTaskChecklistItem -ChecklistItemId <String> -TodoTaskId <String>
- -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphChecklistItem> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphChecklistItem> [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
+ -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachmentSession> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-CheckedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-IsChecked] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-NextExpectedRanges <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
+ -BodyParameter <IMicrosoftGraphAttachmentSession> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the properties of a checklistItem object.
-This API is available in the following national cloud deployments.
+Update the navigation property attachmentSessions in users
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Users
+{{ Add code here }}
 ```
 
-$params = @{
-	displayName = "buy cake"
-}
+{{ Add output here }}
 
-# A UPN can also be used as -UserId.
-Update-MgBetaUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -ChecklistItemId $checklistItemId -BodyParameter $params
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -65,7 +65,7 @@ Update-MgBetaUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todo
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,12 +76,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AttachmentSessionId
+The unique identifier of attachmentSession
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
-checklistItem
+attachmentSession
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChecklistItem
+Type: IMicrosoftGraphAttachmentSession
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -92,11 +107,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -CheckedDateTime
-The date and time when the checklistItem was finished.
+### -ContentInputFile
+Input File for Content (The content streams that are uploaded.)
 
 ```yaml
-Type: System.DateTime
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,41 +122,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ChecklistItemId
-The unique identifier of checklistItem
+### -ExpirationDateTime
+The date and time in UTC when the upload session will expire.
+The complete file must be uploaded before this expiration time is reached.
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The date and time when the checklistItem was created.
-
-```yaml
-Type: System.DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayName
-Field indicating the title of checklistItem.
-
-```yaml
-Type: System.String
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +143,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,8 +159,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IUsersIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -184,11 +170,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IsChecked
-State indicating whether the item is checked off or not.
+### -NextExpectedRanges
+Indicates a single value {start} that represents the location in the file where the next upload should begin.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,8 +189,8 @@ Accept wildcard characters: False
 The unique identifier of todoTask
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -218,8 +204,8 @@ Accept wildcard characters: False
 The unique identifier of todoTaskList
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -233,8 +219,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -248,7 +234,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -264,7 +250,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -280,14 +266,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChecklistItem
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachmentSession
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChecklistItem
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachmentSession
 ## NOTES
 
 ALIASES
@@ -297,13 +280,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IMicrosoftGraphChecklistItem>`: checklistItem
+`BODYPARAMETER <IMicrosoftGraphAttachmentSession>`: attachmentSession
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-  - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-  - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+  - `[Content <Byte[]>]`: The content streams that are uploaded.
+  - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+  - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
 
 `INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
@@ -330,4 +312,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

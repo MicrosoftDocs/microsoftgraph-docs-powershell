@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation
 schema: 2.0.0
@@ -17,20 +17,14 @@ Create new navigation property to simulations for security
 New-MgSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechnique <String>]
  [-AttackType <String>] [-AutomationId <String>] [-CompletionDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-DurationInDays <Int32>]
- [-EndUserNotificationSetting <IMicrosoftGraphEndUserNotificationSetting>]
- [-ExcludedAccountTarget <IMicrosoftGraphAccountTargetContent>] [-Id <String>]
- [-IncludedAccountTarget <IMicrosoftGraphAccountTargetContent>] [-IsAutomated]
- [-LandingPage <IMicrosoftGraphLandingPage>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
- [-LastModifiedDateTime <DateTime>] [-LaunchDateTime <DateTime>] [-LoginPage <IMicrosoftGraphLoginPage>]
- [-OAuthConsentAppDetail <IMicrosoftGraphOAuthConsentAppDetail>] [-Payload <IMicrosoftGraphPayload>]
- [-PayloadDeliveryPlatform <String>] [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>]
- [-TrainingSetting <IMicrosoftGraphTrainingSetting>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-IsAutomated] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
+ [-LastModifiedDateTime <DateTime>] [-LaunchDateTime <DateTime>] [-PayloadDeliveryPlatform <String>]
+ [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-Confirm] [-WhatIf]
+New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,14 +33,14 @@ Create new navigation property to simulations for security
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -59,7 +53,7 @@ Create new navigation property to simulations for security
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -74,7 +68,7 @@ Accept wildcard characters: False
 simulationAttackTechnique
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +83,7 @@ Accept wildcard characters: False
 simulationAttackType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +98,7 @@ Accept wildcard characters: False
 Unique identifier for the attack simulation automation.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +114,7 @@ simulation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation
+Type: IMicrosoftGraphSimulation
 Parameter Sets: Create
 Aliases:
 
@@ -136,7 +130,7 @@ Date and time of completion of the attack simulation and training campaign.
 Supports $filter and $orderby.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +146,7 @@ emailIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailIdentity
+Type: IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +161,7 @@ Accept wildcard characters: False
 Date and time of creation of the attack simulation and training campaign.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +176,7 @@ Accept wildcard characters: False
 Description of the attack simulation and training campaign.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -198,54 +192,7 @@ Display name of the attack simulation and training campaign.
 Supports $filter and $orderby.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DurationInDays
-.
-
-```yaml
-Type: System.Int32
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EndUserNotificationSetting
-endUserNotificationSetting
-To construct, see NOTES section for ENDUSERNOTIFICATIONSETTING properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndUserNotificationSetting
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExcludedAccountTarget
-accountTargetContent
-To construct, see NOTES section for EXCLUDEDACCOUNTTARGET properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccountTargetContent
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -261,23 +208,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IncludedAccountTarget
-accountTargetContent
-To construct, see NOTES section for INCLUDEDACCOUNTTARGET properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccountTargetContent
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -293,23 +224,7 @@ Flag that represents if the attack simulation and training campaign was created 
 Supports $filter and $orderby.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LandingPage
-landingPage
-To construct, see NOTES section for LANDINGPAGE properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLandingPage
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -325,7 +240,7 @@ emailIdentity
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailIdentity
+Type: IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -340,7 +255,7 @@ Accept wildcard characters: False
 Date and time of the most recent modification of the attack simulation and training campaign.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -356,55 +271,7 @@ Date and time of the launch/start of the attack simulation and training campaign
 Supports $filter and $orderby.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LoginPage
-loginPage
-To construct, see NOTES section for LOGINPAGE properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLoginPage
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -OAuthConsentAppDetail
-oAuthConsentAppDetail
-To construct, see NOTES section for OAUTHCONSENTAPPDETAIL properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuthConsentAppDetail
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Payload
-payload
-To construct, see NOTES section for PAYLOAD properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPayload
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -419,7 +286,7 @@ Accept wildcard characters: False
 payloadDeliveryPlatform
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -435,7 +302,7 @@ simulationReport
 To construct, see NOTES section for REPORT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationReport
+Type: IMicrosoftGraphSimulationReport
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -450,23 +317,7 @@ Accept wildcard characters: False
 simulationStatus
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TrainingSetting
-trainingSetting
-To construct, see NOTES section for TRAININGSETTING properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrainingSetting
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -481,7 +332,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -497,7 +348,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -514,11 +365,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation
-
 ## NOTES
 
 ALIASES
@@ -918,3 +767,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

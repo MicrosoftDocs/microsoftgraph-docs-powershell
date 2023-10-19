@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveitem
 schema: 2.0.0
@@ -18,21 +18,14 @@ This API is supported in the following [national cloud deployments.
 Invoke-MgInviteGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
- [-Roles <String[]>] [-SendInvitation] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Roles <String[]>] [-SendInvitation] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Invite
 ```
 Invoke-MgInviteGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
  -BodyParameter <IPathsLx1Fn7GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### InviteViaIdentity
-```
-Invoke-MgInviteGroupDriveItem -InputObject <IGroupsIdentity>
- -BodyParameter <IPathsLx1Fn7GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### InviteViaIdentityExpanded
@@ -40,7 +33,14 @@ Invoke-MgInviteGroupDriveItem -InputObject <IGroupsIdentity>
 Invoke-MgInviteGroupDriveItem -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <String>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RequireSignIn] [-RetainInheritedPermissions]
- [-Roles <String[]>] [-SendInvitation] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Roles <String[]>] [-SendInvitation] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### InviteViaIdentity
+```
+Invoke-MgInviteGroupDriveItem -InputObject <IGroupsIdentity>
+ -BodyParameter <IPathsLx1Fn7GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,14 +49,14 @@ This API is supported in the following [national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -69,7 +69,7 @@ This API is supported in the following [national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsLx1Fn7GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema
+Type: IPathsLx1Fn7GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Invite, InviteViaIdentity
 Aliases:
 
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Invite, InviteExpanded
+Type: String
+Parameter Sets: InviteExpanded, Invite
 Aliases:
 
 Required: True
@@ -115,8 +115,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Invite, InviteExpanded
+Type: String
+Parameter Sets: InviteExpanded, Invite
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -145,8 +145,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Invite, InviteExpanded
+Type: String
+Parameter Sets: InviteExpanded, Invite
 Aliases:
 
 Required: True
@@ -161,8 +161,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: InviteViaIdentity, InviteViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: InviteViaIdentityExpanded, InviteViaIdentity
 Aliases:
 
 Required: True
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveRecipient[]
+Type: IMicrosoftGraphDriveRecipient[]
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: InviteExpanded, InviteViaIdentityExpanded
 Aliases:
 
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -298,7 +298,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -315,13 +315,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsLx1Fn7GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
-
 ## NOTES
 
 ALIASES
@@ -388,4 +385,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-

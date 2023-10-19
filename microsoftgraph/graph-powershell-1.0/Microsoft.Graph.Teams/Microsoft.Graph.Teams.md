@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Teams
 Module Guid: 1aab26fc-d3e1-4022-bdaa-e0f4ebfceaef
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.teams
@@ -87,6 +87,38 @@ Migration mode is a special state that prevents certain operations, like sending
 After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 This API is available in the following national cloud deployments.
+
+### [Confirm-MgChatPermissionGrantMemberGroup](Confirm-MgChatPermissionGrantMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaChatPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaChatPermissionGrantMemberGroup?view=graph-powershell-beta)
+
+### [Confirm-MgChatPermissionGrantMemberObject](Confirm-MgChatPermissionGrantMemberObject.md)
+Invoke action checkMemberObjects
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaChatPermissionGrantMemberObject?view=graph-powershell-beta)
+
+### [Confirm-MgTeamPermissionGrantMemberGroup](Confirm-MgTeamPermissionGrantMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaTeamPermissionGrantMemberGroup?view=graph-powershell-beta)
+
+### [Confirm-MgTeamPermissionGrantMemberObject](Confirm-MgTeamPermissionGrantMemberObject.md)
+Invoke action checkMemberObjects
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaTeamPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaTeamPermissionGrantMemberObject?view=graph-powershell-beta)
 
 ### [Copy-MgTeam](Copy-MgTeam.md)
 Create a copy of a team.
@@ -204,8 +236,40 @@ Get the number of the resource
 ### [Get-MgChatPermissionGrant](Get-MgChatPermissionGrant.md)
 A collection of permissions granted to apps for the chat.
 
+### [Get-MgChatPermissionGrantById](Get-MgChatPermissionGrantById.md)
+Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
+Some common uses for this function are to:
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatPermissionGrantById](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPermissionGrantById?view=graph-powershell-beta)
+
 ### [Get-MgChatPermissionGrantCount](Get-MgChatPermissionGrantCount.md)
 Get the number of the resource
+
+### [Get-MgChatPermissionGrantDelta](Get-MgChatPermissionGrantDelta.md)
+Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatPermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPermissionGrantDelta?view=graph-powershell-beta)
+
+### [Get-MgChatPermissionGrantMemberGroup](Get-MgChatPermissionGrantMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+This API returns up to 11,000 group IDs.
+If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
+As a workaround, use the List group transitive memberOf API.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPermissionGrantMemberGroup?view=graph-powershell-beta)
+
+### [Get-MgChatPermissionGrantMemberObject](Get-MgChatPermissionGrantMemberObject.md)
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+Note: Only users and role-enabled groups can be members of directory roles.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPermissionGrantMemberObject?view=graph-powershell-beta)
 
 ### [Get-MgChatPinnedMessage](Get-MgChatPinnedMessage.md)
 A collection of all the pinned messages in the chat.
@@ -227,6 +291,12 @@ This can't be changed after tab creation.
 
 ### [Get-MgGroupTeam](Get-MgGroupTeam.md)
 The team associated with this group.
+
+### [Get-MgGroupTeamAllChannelCount](Get-MgGroupTeamAllChannelCount.md)
+Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamAllChannelCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamAllChannelCount?view=graph-powershell-beta)
 
 ### [Get-MgGroupTeamChannel](Get-MgGroupTeamChannel.md)
 Retrieve the properties and relationships of a channel.
@@ -306,12 +376,6 @@ This can't be changed after tab creation.
 
 ### [Get-MgGroupTeamGroup](Get-MgGroupTeamGroup.md)
 Get group from groups
-
-### [Get-MgGroupTeamGroupServiceProvisioningError](Get-MgGroupTeamGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupTeamGroupServiceProvisioningErrorCount](Get-MgGroupTeamGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupTeamIncomingChannel](Get-MgGroupTeamIncomingChannel.md)
 List of channels shared with the team.
@@ -525,6 +589,12 @@ See available templates.
 Retrieve the properties and relationships of the specified team.
 This API is available in the following national cloud deployments.
 
+### [Get-MgTeamAllChannelCount](Get-MgTeamAllChannelCount.md)
+Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamAllChannelCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamAllChannelCount?view=graph-powershell-beta)
+
 ### [Get-MgTeamChannel](Get-MgTeamChannel.md)
 Retrieve the properties and relationships of a channel.
 This method supports federation.
@@ -610,12 +680,6 @@ This can't be changed after tab creation.
 ### [Get-MgTeamCount](Get-MgTeamCount.md)
 Get the number of the resource
 
-### [Get-MgTeamGroupServiceProvisioningError](Get-MgTeamGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgTeamGroupServiceProvisioningErrorCount](Get-MgTeamGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgTeamIncomingChannel](Get-MgTeamIncomingChannel.md)
 List of channels shared with the team.
 
@@ -642,6 +706,12 @@ This API is available in the following national cloud deployments.
 ### [Get-MgTeamMemberCount](Get-MgTeamMemberCount.md)
 Get the number of the resource
 
+### [Get-MgTeamMessage](Get-MgTeamMessage.md)
+Invoke function getAllMessages
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamMessage?view=graph-powershell-beta)
+
 ### [Get-MgTeamOperation](Get-MgTeamOperation.md)
 The async operations that ran or are running on this team.
 
@@ -651,8 +721,40 @@ Get the number of the resource
 ### [Get-MgTeamPermissionGrant](Get-MgTeamPermissionGrant.md)
 A collection of permissions granted to apps to access the team.
 
+### [Get-MgTeamPermissionGrantById](Get-MgTeamPermissionGrantById.md)
+Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
+Some common uses for this function are to:
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPermissionGrantById](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantById?view=graph-powershell-beta)
+
 ### [Get-MgTeamPermissionGrantCount](Get-MgTeamPermissionGrantCount.md)
 Get the number of the resource
+
+### [Get-MgTeamPermissionGrantDelta](Get-MgTeamPermissionGrantDelta.md)
+Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantDelta?view=graph-powershell-beta)
+
+### [Get-MgTeamPermissionGrantMemberGroup](Get-MgTeamPermissionGrantMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+This API returns up to 11,000 group IDs.
+If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
+As a workaround, use the List group transitive memberOf API.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantMemberGroup?view=graph-powershell-beta)
+
+### [Get-MgTeamPermissionGrantMemberObject](Get-MgTeamPermissionGrantMemberObject.md)
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+Note: Only users and role-enabled groups can be members of directory roles.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantMemberObject?view=graph-powershell-beta)
 
 ### [Get-MgTeamPhoto](Get-MgTeamPhoto.md)
 Get the specified profilePhoto or its metadata (profilePhoto properties).
@@ -918,6 +1020,12 @@ This can't be changed after tab creation.
 ### [Get-MgTeamworkDeletedTeamCount](Get-MgTeamworkDeletedTeamCount.md)
 Get the number of the resource
 
+### [Get-MgTeamworkDeletedTeamMessage](Get-MgTeamworkDeletedTeamMessage.md)
+Invoke function getAllMessages
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamMessage?view=graph-powershell-beta)
+
 ### [Get-MgTeamworkTeamAppSetting](Get-MgTeamworkTeamAppSetting.md)
 Get the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 This API is available in the following national cloud deployments.
@@ -1015,17 +1123,19 @@ Get the number of the resource
 The application that is linked to the tab.
 This can't be changed after tab creation.
 
-### [Get-MgUserJoinedTeam](Get-MgUserJoinedTeam.md)
-Get the teams in Microsoft Teams that the user is a direct member of.
-This API is available in the following national cloud deployments.
+### [Get-MgUserChatTabTeamApp](Get-MgUserChatTabTeamApp.md)
+The application that is linked to the tab.
+This can't be changed after tab creation.
 
 ### [Get-MgUserTeamwork](Get-MgUserTeamwork.md)
 A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
-### [Get-MgUserTeamworkAssociatedTeam](Get-MgUserTeamworkAssociatedTeam.md)
-The list of associatedTeamInfo objects that a user is associated with.
+### [Get-MgUserTeamwork](Get-MgUserTeamwork.md)
+A container for Microsoft Teams features available for the user.
+Read-only.
+Nullable.
 
 ### [Get-MgUserTeamworkAssociatedTeamCount](Get-MgUserTeamworkAssociatedTeamCount.md)
 Get the number of the resource
@@ -1519,8 +1629,10 @@ Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 This API is available in the following national cloud deployments.
 
-### [New-MgUserTeamworkAssociatedTeam](New-MgUserTeamworkAssociatedTeam.md)
-Create new navigation property to associatedTeams for users
+### [New-MgUserChatTab](New-MgUserChatTab.md)
+Add (pin) a tab to the specified chat.
+\nThe corresponding app must already be installed in the chat.
+This API is available in the following national cloud deployments.
 
 ### [New-MgUserTeamworkInstalledApp](New-MgUserTeamworkInstalledApp.md)
 Install an app in the personal scope of the specified user.
@@ -2010,6 +2122,36 @@ Update media content for the navigation property hostedContents in users
 
 ### [Set-MgUserChatMessageReplyHostedContent](Set-MgUserChatMessageReplyHostedContent.md)
 Update media content for the navigation property hostedContents in users
+
+### [Test-MgChatPermissionGrantProperty](Test-MgChatPermissionGrantProperty.md)
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaChatPermissionGrantProperty](/powershell/module/Microsoft.Graph.Beta.Teams/Test-MgBetaChatPermissionGrantProperty?view=graph-powershell-beta)
+
+### [Test-MgTeamPermissionGrantProperty](Test-MgTeamPermissionGrantProperty.md)
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaTeamPermissionGrantProperty](/powershell/module/Microsoft.Graph.Beta.Teams/Test-MgBetaTeamPermissionGrantProperty?view=graph-powershell-beta)
 
 ### [Undo-MgChatMessageReplySoftDelete](Undo-MgChatMessageReplySoftDelete.md)
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.

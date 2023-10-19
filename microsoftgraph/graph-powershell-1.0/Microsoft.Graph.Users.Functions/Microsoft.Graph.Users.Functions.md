@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Functions
 Module Guid: 9469445c-d8eb-49f6-8725-cab0495a7108
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions
@@ -29,6 +29,12 @@ Invoke function delta
 
 ### [Get-MgUserChatMessageReplyDelta](Get-MgUserChatMessageReplyDelta.md)
 Invoke function delta
+
+### [Get-MgUserChatPermissionGrantDelta](Get-MgUserChatPermissionGrantDelta.md)
+Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatPermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserChatPermissionGrantDelta?view=graph-powershell-beta)
 
 ### [Get-MgUserContactDelta](Get-MgUserContactDelta.md)
 Get a set of contacts that have been added, deleted, or updated in a specified folder.

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/invoke-mggraphreportauthenticationmethod
 schema: 2.0.0
@@ -17,24 +17,24 @@ Invoke function usersRegisteredByFeature
 Invoke-MgGraphReportAuthenticationMethod [<CommonParameters>]
 ```
 
-### Graph1
-```
-Invoke-MgGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
- [<CommonParameters>]
-```
-
 ### Graph3
 ```
 Invoke-MgGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
  [<CommonParameters>]
 ```
 
-### GraphViaIdentity
+### Graph1
+```
+Invoke-MgGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
+ [<CommonParameters>]
+```
+
+### GraphViaIdentity1
 ```
 Invoke-MgGraphReportAuthenticationMethod -InputObject <IReportsIdentity> [<CommonParameters>]
 ```
 
-### GraphViaIdentity1
+### GraphViaIdentity
 ```
 Invoke-MgGraphReportAuthenticationMethod -InputObject <IReportsIdentity> [<CommonParameters>]
 ```
@@ -44,19 +44,15 @@ Invoke function usersRegisteredByFeature
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -64,8 +60,8 @@ Invoke function usersRegisteredByFeature
 Usage: includedUserRoles='{includedUserRoles}'
 
 ```yaml
-Type: System.String
-Parameter Sets: Graph1, Graph3
+Type: String
+Parameter Sets: Graph3, Graph1
 Aliases:
 
 Required: True
@@ -79,8 +75,8 @@ Accept wildcard characters: False
 Usage: includedUserTypes='{includedUserTypes}'
 
 ```yaml
-Type: System.String
-Parameter Sets: Graph1, Graph3
+Type: String
+Parameter Sets: Graph3, Graph1
 Aliases:
 
 Required: True
@@ -95,8 +91,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
-Parameter Sets: GraphViaIdentity, GraphViaIdentity1
+Type: IReportsIdentity
+Parameter Sets: GraphViaIdentity1, GraphViaIdentity
 Aliases:
 
 Required: True
@@ -112,13 +108,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationFeatureSummary
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationMethodSummary
-
 ## NOTES
 
 ALIASES
@@ -151,4 +144,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-

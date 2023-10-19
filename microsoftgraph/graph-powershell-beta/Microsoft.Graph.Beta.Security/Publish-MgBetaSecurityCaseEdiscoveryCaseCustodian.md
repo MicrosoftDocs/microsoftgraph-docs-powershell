@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/publish-mgbetasecuritycaseediscoverycasecustodian
 schema: 2.0.0
@@ -17,13 +17,13 @@ This API is available in the following national cloud deployments.
 ### Release (Default)
 ```
 Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReleaseViaIdentity
 ```
-Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,13 +33,11 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
-
-
 
 ## PARAMETERS
 
@@ -47,7 +45,7 @@ Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryC
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Release
 Aliases:
 
@@ -62,7 +60,7 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCustodian
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Release
 Aliases:
 
@@ -78,7 +76,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Type: ISecurityIdentity
 Parameter Sets: ReleaseViaIdentity
 Aliases:
 
@@ -93,7 +91,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -108,7 +106,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -124,7 +122,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -141,11 +139,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -234,4 +230,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Applications
 Module Guid: f84ad08f-39be-4ba9-b1fb-63176f1d9c1c
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications
@@ -606,15 +606,6 @@ Get the number of the resource
 Get a list of single sign-on credentials using a password for a user or group.
 This API is available in the following national cloud deployments.
 
-### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration.md)
-Get remoteDesktopSecurityConfiguration from servicePrincipals
-
-### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
-Get targetDeviceGroups from servicePrincipals
-
-### [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroupCount](Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroupCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaServicePrincipalSynchronization](Get-MgBetaServicePrincipalSynchronization.md)
 Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
@@ -914,9 +905,6 @@ This API is available in the following national cloud deployments.
 Create single sign-on credentials using a password for a user or group.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
-Create new navigation property to targetDeviceGroups for servicePrincipals
-
 ### [New-MgBetaServicePrincipalSynchronizationJob](New-MgBetaServicePrincipalSynchronizationJob.md)
 Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
@@ -1126,12 +1114,6 @@ This API is available in the following national cloud deployments.
 ### [Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential](Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential.md)
 Delete single sign-on credentials using a password for a user or group.
 This API is available in the following national cloud deployments.
-
-### [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration.md)
-Delete navigation property remoteDesktopSecurityConfiguration for servicePrincipals
-
-### [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
-Delete navigation property targetDeviceGroups for servicePrincipals
 
 ### [Remove-MgBetaServicePrincipalSynchronization](Remove-MgBetaServicePrincipalSynchronization.md)
 Delete navigation property synchronization for servicePrincipals
@@ -1365,12 +1347,6 @@ Update the navigation property licenseDetails in servicePrincipals
 ### [Update-MgBetaServicePrincipalPasswordSingleSignOnCredential](Update-MgBetaServicePrincipalPasswordSingleSignOnCredential.md)
 Update single sign-on credentials using a password for a user or group.
 This API is available in the following national cloud deployments.
-
-### [Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration.md)
-Update the navigation property remoteDesktopSecurityConfiguration in servicePrincipals
-
-### [Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
-Update the navigation property targetDeviceGroups in servicePrincipals
 
 ### [Update-MgBetaServicePrincipalSynchronizationJob](Update-MgBetaServicePrincipalSynchronizationJob.md)
 Update the navigation property jobs in servicePrincipals

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrengthauthenticationmethodmode
 schema: 2.0.0
@@ -16,7 +16,7 @@ Update the navigation property authenticationMethodModes in identity
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
  -AuthenticationMethodModeDetailId <String> [-AdditionalProperties <Hashtable>]
- [-AuthenticationMethod <String>] [-DisplayName <String>] [-Id <String>] [-Confirm] [-WhatIf]
+ [-AuthenticationMethod <String>] [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,21 +24,21 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethod
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
  -AuthenticationMethodModeDetailId <String> -BodyParameter <IMicrosoftGraphAuthenticationMethodModeDetail>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
- -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphAuthenticationMethodModeDetail>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
  -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-AuthenticationMethod <String>]
- [-DisplayName <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode
+ -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphAuthenticationMethodModeDetail>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,14 +46,14 @@ Update the navigation property authenticationMethodModes in identity
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -66,7 +66,7 @@ Update the navigation property authenticationMethodModes in identity
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 baseAuthenticationMethod
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of authenticationMethodModeDetail
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ authenticationMethodModeDetail
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodModeDetail
+Type: IMicrosoftGraphAuthenticationMethodModeDetail
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 The display name of this mode
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -143,7 +143,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -159,8 +159,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,13 +207,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodModeDetail
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodModeDetail
-
 ## NOTES
 
 ALIASES
@@ -307,4 +304,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

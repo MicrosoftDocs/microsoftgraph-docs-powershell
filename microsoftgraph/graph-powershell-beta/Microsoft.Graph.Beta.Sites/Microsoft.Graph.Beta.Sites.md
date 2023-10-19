@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Sites
 Module Guid: a9ede8dd-dfb7-4963-b0a3-0245c1a285e8
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites
@@ -22,7 +22,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Add-MgBetaSiteListContentTypeCopy](Add-MgBetaSiteListContentTypeCopy.md)
@@ -33,7 +33,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Confirm-MgBetaSiteInformationProtectionSignature](Confirm-MgBetaSiteInformationProtectionSignature.md)
@@ -220,13 +220,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupSiteCreatedByUserServiceProvisioningError](Get-MgBetaGroupSiteCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSiteCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSiteCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupSiteDefaultDrive](Get-MgBetaGroupSiteDefaultDrive.md)
 The default drive (document library) for this site.
 
@@ -321,13 +314,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupSiteItemLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupSiteItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSiteItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSiteItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupSiteLastModifiedByUser](Get-MgBetaGroupSiteLastModifiedByUser.md)
 Get lastModifiedByUser from groups
 
@@ -336,13 +322,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaGroupSiteLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupSiteLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSiteLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSiteLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaGroupSiteList](Get-MgBetaGroupSiteList.md)
 Get the list of richLongRunningOperations associated with a list.
@@ -400,13 +379,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupSiteListCreatedByUserServiceProvisioningError](Get-MgBetaGroupSiteListCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSiteListCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSiteListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupSiteListDrive](Get-MgBetaGroupSiteListDrive.md)
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
@@ -441,13 +413,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaGroupSiteListItemCreatedByUserServiceProvisioningError](Get-MgBetaGroupSiteListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSiteListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSiteListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaGroupSiteListItemDocumentSetVersion](Get-MgBetaGroupSiteListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -734,13 +699,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupSitePageCreatedByUserServiceProvisioningError](Get-MgBetaGroupSitePageCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSitePageCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSitePageCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupSitePageLastModifiedByUser](Get-MgBetaGroupSitePageLastModifiedByUser.md)
 Get lastModifiedByUser from groups
 
@@ -750,91 +708,11 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupSitePageLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupSitePageLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupSitePermission](Get-MgBetaGroupSitePermission.md)
 Retrieve the properties and relationships of a permission object on a site.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaGroupSitePermissionCount](Get-MgBetaGroupSitePermissionCount.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupSiteRecycleBin](Get-MgBetaGroupSiteRecycleBin.md)
-The collection of recycleBinItems under this site.
-
-### [Get-MgBetaGroupSiteRecycleBinCreatedByUser](Get-MgBetaGroupSiteRecycleBinCreatedByUser.md)
-Get createdByUser from groups
-
-### [Get-MgBetaGroupSiteRecycleBinCreatedByUserMailboxSetting](Get-MgBetaGroupSiteRecycleBinCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
-### [Get-MgBetaGroupSiteRecycleBinCreatedByUserServiceProvisioningError](Get-MgBetaGroupSiteRecycleBinCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSiteRecycleBinCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSiteRecycleBinCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupSiteRecycleBinItem](Get-MgBetaGroupSiteRecycleBinItem.md)
-List of the recycleBinItems deleted by a user.
-
-### [Get-MgBetaGroupSiteRecycleBinItemCount](Get-MgBetaGroupSiteRecycleBinItemCount.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupSiteRecycleBinItemCreatedByUser](Get-MgBetaGroupSiteRecycleBinItemCreatedByUser.md)
-Get createdByUser from groups
-
-### [Get-MgBetaGroupSiteRecycleBinItemCreatedByUserMailboxSetting](Get-MgBetaGroupSiteRecycleBinItemCreatedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
-### [Get-MgBetaGroupSiteRecycleBinItemCreatedByUserServiceProvisioningError](Get-MgBetaGroupSiteRecycleBinItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSiteRecycleBinItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSiteRecycleBinItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupSiteRecycleBinItemLastModifiedByUser](Get-MgBetaGroupSiteRecycleBinItemLastModifiedByUser.md)
-Get lastModifiedByUser from groups
-
-### [Get-MgBetaGroupSiteRecycleBinItemLastModifiedByUserMailboxSetting](Get-MgBetaGroupSiteRecycleBinItemLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
-### [Get-MgBetaGroupSiteRecycleBinItemLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupSiteRecycleBinItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSiteRecycleBinItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSiteRecycleBinItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupSiteRecycleBinLastModifiedByUser](Get-MgBetaGroupSiteRecycleBinLastModifiedByUser.md)
-Get lastModifiedByUser from groups
-
-### [Get-MgBetaGroupSiteRecycleBinLastModifiedByUserMailboxSetting](Get-MgBetaGroupSiteRecycleBinLastModifiedByUserMailboxSetting.md)
-Settings for the primary mailbox of the signed-in user.
-You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
-For more information, see User preferences for languages and regional formats.
-Returned only on $select.
-
-### [Get-MgBetaGroupSiteRecycleBinLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupSiteRecycleBinLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupSiteRecycleBinLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSiteRecycleBinLastModifiedByUserServiceProvisioningErrorCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaGroupSiteTermStore](Get-MgBetaGroupSiteTermStore.md)
@@ -1298,13 +1176,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaSiteItemLastModifiedByUserServiceProvisioningError](Get-MgBetaSiteItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaSiteItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaSiteItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaSiteLastModifiedByUser](Get-MgBetaSiteLastModifiedByUser.md)
 Get lastModifiedByUser from sites
 
@@ -1313,13 +1184,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaSiteLastModifiedByUserServiceProvisioningError](Get-MgBetaSiteLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaSiteLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaSiteLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaSiteList](Get-MgBetaSiteList.md)
 Get the list of richLongRunningOperations associated with a list.
@@ -1380,13 +1244,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaSiteListCreatedByUserServiceProvisioningError](Get-MgBetaSiteListCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaSiteListCreatedByUserServiceProvisioningErrorCount](Get-MgBetaSiteListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaSiteListDrive](Get-MgBetaSiteListDrive.md)
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
@@ -1424,13 +1281,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaSiteListItemCreatedByUserServiceProvisioningError](Get-MgBetaSiteListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaSiteListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaSiteListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaSiteListItemDelta](Get-MgBetaSiteListItemDelta.md)
 Invoke function delta
@@ -1475,10 +1325,8 @@ The set of subscriptions on the list.
 ### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteOnenoteNotebookFromWebUrl](Get-MgBetaSiteOnenoteNotebookFromWebUrl.md)
-Retrieve the properties and relationships of a notebook object by using its URL path.
-The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaSiteOperation](Get-MgBetaSiteOperation.md)
 Read the properties of a richLongRunningOperation object.
@@ -1503,13 +1351,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaSitePageCreatedByUserServiceProvisioningError](Get-MgBetaSitePageCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaSitePageCreatedByUserServiceProvisioningErrorCount](Get-MgBetaSitePageCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaSitePageLastModifiedByUser](Get-MgBetaSitePageLastModifiedByUser.md)
 Get lastModifiedByUser from sites
 
@@ -1518,13 +1359,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaSitePageLastModifiedByUserServiceProvisioningError](Get-MgBetaSitePageLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaSitePermission](Get-MgBetaSitePermission.md)
 Retrieve the properties and relationships of a permission object on a site.
@@ -2068,9 +1902,6 @@ This API is available in the following [national cloud deployments.
 Create a new permission object on a site.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaGroupSiteRecycleBinItem](New-MgBetaGroupSiteRecycleBinItem.md)
-Create new navigation property to items for groups
-
 ### [New-MgBetaGroupSiteTermStoreGroup](New-MgBetaGroupSiteTermStoreGroup.md)
 Create a new group object.
 This API is available in the following national cloud deployments.
@@ -2471,12 +2302,6 @@ Delete navigation property pages for groups
 
 ### [Remove-MgBetaGroupSitePermission](Remove-MgBetaGroupSitePermission.md)
 Delete navigation property permissions for groups
-
-### [Remove-MgBetaGroupSiteRecycleBin](Remove-MgBetaGroupSiteRecycleBin.md)
-Delete navigation property recycleBin for groups
-
-### [Remove-MgBetaGroupSiteRecycleBinItem](Remove-MgBetaGroupSiteRecycleBinItem.md)
-Delete navigation property items for groups
 
 ### [Remove-MgBetaGroupSiteTermStore](Remove-MgBetaGroupSiteTermStore.md)
 Delete navigation property termStore for groups
@@ -3000,24 +2825,6 @@ Update property mailboxSettings value.
 ### [Update-MgBetaGroupSitePermission](Update-MgBetaGroupSitePermission.md)
 Update the permission object on a site.
 This API is available in the following national cloud deployments.
-
-### [Update-MgBetaGroupSiteRecycleBin](Update-MgBetaGroupSiteRecycleBin.md)
-Update the navigation property recycleBin in groups
-
-### [Update-MgBetaGroupSiteRecycleBinCreatedByUserMailboxSetting](Update-MgBetaGroupSiteRecycleBinCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgBetaGroupSiteRecycleBinItem](Update-MgBetaGroupSiteRecycleBinItem.md)
-Update the navigation property items in groups
-
-### [Update-MgBetaGroupSiteRecycleBinItemCreatedByUserMailboxSetting](Update-MgBetaGroupSiteRecycleBinItemCreatedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgBetaGroupSiteRecycleBinItemLastModifiedByUserMailboxSetting](Update-MgBetaGroupSiteRecycleBinItemLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
-
-### [Update-MgBetaGroupSiteRecycleBinLastModifiedByUserMailboxSetting](Update-MgBetaGroupSiteRecycleBinLastModifiedByUserMailboxSetting.md)
-Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupSiteTermStore](Update-MgBetaGroupSiteTermStore.md)
 Update the navigation property termStore in groups

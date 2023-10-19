@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicy
 schema: 2.0.0
@@ -19,14 +19,14 @@ This API is available in the following national cloud deployments.
 ```
 New-MgBetaPolicyPermissionGrantPolicy [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Excludes <IMicrosoftGraphPermissionGrantConditionSet[]>]
- [-Id <String>] [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-Confirm] [-WhatIf]
+ [-Id <String>] [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionGrantPolicy> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgBetaPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionGrantPolicy> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +37,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
 New-MgBetaPolicyPermissionGrantPolicy -Id "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant" -DisplayName "Sample app permissions" | fl
@@ -57,7 +57,7 @@ AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metad
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ permissionGrantPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
+Type: IMicrosoftGraphPermissionGrantPolicy
 Parameter Sets: Create
 Aliases:
 
@@ -89,7 +89,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -105,7 +105,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +121,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -138,7 +138,7 @@ Automatically expanded on GET.
 To construct, see NOTES section for EXCLUDES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet[]
+Type: IMicrosoftGraphPermissionGrantConditionSet[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -154,7 +154,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -171,7 +171,7 @@ Automatically expanded on GET.
 To construct, see NOTES section for INCLUDES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet[]
+Type: IMicrosoftGraphPermissionGrantConditionSet[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -202,7 +202,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -219,11 +219,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
-
 ## NOTES
 
 ALIASES
@@ -277,4 +275,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g. the API) for which a permission is being granted, or any to match with any resource application or API. Default is any.
 
 ## RELATED LINKS
-

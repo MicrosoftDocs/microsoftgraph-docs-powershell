@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 Module Guid: be5b5222-5814-4906-95b3-2a6ea2d4712d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration
@@ -463,13 +463,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserServiceProvisioningError](Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserServiceProvisioningErrorCount](Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentCount](Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignmentCount.md)
 Get the number of the resource
 
@@ -878,7 +871,7 @@ Delete navigation property organizationSettings for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Delete a cloudPcProvisioningPolicy object.
-You can’t delete a policy that’s in use.
+You can't delete a policy that's in use.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/confirm-mgteampermissiongrantmemberobject
@@ -43,6 +43,8 @@ Confirm-MgTeamPermissionGrantMemberObject -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Invoke action checkMemberObjects
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -227,5 +229,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Confirm-MgBetaTeamPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaTeamPermissionGrantMemberObject?view=graph-powershell-beta)
 

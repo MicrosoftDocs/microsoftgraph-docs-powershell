@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.PersonalContacts
 Module Guid: 1602ae47-8704-48a1-b08b-2ff5ac827ea9
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts
@@ -11,10 +11,6 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.PersonalContacts Cmdlets
-### [Get-MgUserContact](Get-MgUserContact.md)
-Retrieve the properties and relationships of a contact object.
-There are two scenarios where an app can get a contact in another user's contact folder: This API is available in the following national cloud deployments.
-
 ### [Get-MgUserContactCount](Get-MgUserContactCount.md)
 Get the number of the resource
 
@@ -26,15 +22,11 @@ Nullable.
 ### [Get-MgUserContactExtensionCount](Get-MgUserContactExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgUserContactFolder](Get-MgUserContactFolder.md)
-Get a contact folder by using the contact folder ID.
-There are two scenarios where an app can get another user's contact folder: This API is available in the following national cloud deployments.
+### [Get-MgUserContactExtensionCount](Get-MgUserContactExtensionCount.md)
+Get the number of the resource
 
-### [Get-MgUserContactFolderChildFolder](Get-MgUserContactFolderChildFolder.md)
-The collection of child folders in the folder.
-Navigation property.
-Read-only.
-Nullable.
+### [Get-MgUserContactExtensionCount](Get-MgUserContactExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserContactFolderChildFolderContact](Get-MgUserContactFolderChildFolderContact.md)
 The contacts in the folder.
@@ -63,11 +55,8 @@ Get media content for the navigation property photo from users
 ### [Get-MgUserContactFolderChildFolderCount](Get-MgUserContactFolderChildFolderCount.md)
 Get the number of the resource
 
-### [Get-MgUserContactFolderContact](Get-MgUserContactFolderContact.md)
-The contacts in the folder.
-Navigation property.
-Read-only.
-Nullable.
+### [Get-MgUserContactFolderChildFolderCount](Get-MgUserContactFolderChildFolderCount.md)
+Get the number of the resource
 
 ### [Get-MgUserContactFolderContactCount](Get-MgUserContactFolderContactCount.md)
 Get the number of the resource
@@ -97,22 +86,17 @@ You can get or set a photo for a contact.
 ### [Get-MgUserContactPhotoContent](Get-MgUserContactPhotoContent.md)
 Get media content for the navigation property photo from users
 
-### [New-MgUserContact](New-MgUserContact.md)
-Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-This API is available in the following national cloud deployments.
+### [Get-MgUserContactPhotoContent](Get-MgUserContactPhotoContent.md)
+Get media content for the navigation property photo from users
 
 ### [New-MgUserContactExtension](New-MgUserContactExtension.md)
 Create new navigation property to extensions for users
 
-### [New-MgUserContactFolder](New-MgUserContactFolder.md)
-Create a new contactFolder under the user's default contacts folder.
-You can also create a new contactfolder as a child of any specified contact folder.
-This API is available in the following national cloud deployments.
+### [New-MgUserContactExtension](New-MgUserContactExtension.md)
+Create new navigation property to extensions for users
 
-### [New-MgUserContactFolderChildFolder](New-MgUserContactFolderChildFolder.md)
-Create a new contactFolder as a child of a specified folder.
-You can also create a new contactFolder under the user's default contact folder.
-This API is available in the following national cloud deployments.
+### [New-MgUserContactExtension](New-MgUserContactExtension.md)
+Create new navigation property to extensions for users
 
 ### [New-MgUserContactFolderChildFolderContact](New-MgUserContactFolderChildFolderContact.md)
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
@@ -121,23 +105,20 @@ This API is available in the following national cloud deployments.
 ### [New-MgUserContactFolderChildFolderContactExtension](New-MgUserContactFolderChildFolderContactExtension.md)
 Create new navigation property to extensions for users
 
-### [New-MgUserContactFolderContact](New-MgUserContactFolderContact.md)
-Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-This API is available in the following national cloud deployments.
+### [New-MgUserContactFolderChildFolderContactExtension](New-MgUserContactFolderChildFolderContactExtension.md)
+Create new navigation property to extensions for users
 
 ### [New-MgUserContactFolderContactExtension](New-MgUserContactFolderContactExtension.md)
 Create new navigation property to extensions for users
 
-### [Remove-MgUserContact](Remove-MgUserContact.md)
-Delete a contact.
-This API is available in the following national cloud deployments.
+### [New-MgUserContactFolderContactExtension](New-MgUserContactFolderContactExtension.md)
+Create new navigation property to extensions for users
 
 ### [Remove-MgUserContactExtension](Remove-MgUserContactExtension.md)
 Delete navigation property extensions for users
 
-### [Remove-MgUserContactFolder](Remove-MgUserContactFolder.md)
-Delete contactFolder other than the default contactFolder.
-This API is available in the following national cloud deployments.
+### [Remove-MgUserContactExtension](Remove-MgUserContactExtension.md)
+Delete navigation property extensions for users
 
 ### [Remove-MgUserContactFolderChildFolder](Remove-MgUserContactFolderChildFolder.md)
 Delete navigation property childFolders for users
@@ -163,16 +144,14 @@ Update media content for the navigation property photo in users
 ### [Set-MgUserContactPhotoContent](Set-MgUserContactPhotoContent.md)
 Update media content for the navigation property photo in users
 
-### [Update-MgUserContact](Update-MgUserContact.md)
-Update the properties of a contact object.
-This API is available in the following national cloud deployments.
+### [Set-MgUserContactPhotoContent](Set-MgUserContactPhotoContent.md)
+Update media content for the navigation property photo in users
 
 ### [Update-MgUserContactExtension](Update-MgUserContactExtension.md)
 Update the navigation property extensions in users
 
-### [Update-MgUserContactFolder](Update-MgUserContactFolder.md)
-Update the properties of contactfolder object.
-This API is available in the following national cloud deployments.
+### [Update-MgUserContactExtension](Update-MgUserContactExtension.md)
+Update the navigation property extensions in users
 
 ### [Update-MgUserContactFolderChildFolder](Update-MgUserContactFolderChildFolder.md)
 Update the navigation property childFolders in users

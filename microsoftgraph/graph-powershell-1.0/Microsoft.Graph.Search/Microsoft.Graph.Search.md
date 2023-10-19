@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Search
 Module Guid: 23c46272-7024-40f3-8c30-b5d6d7262729
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.search
@@ -116,6 +116,12 @@ Delete navigation property activities for external
 
 ### [Remove-MgExternalConnectionOperation](Remove-MgExternalConnectionOperation.md)
 Delete navigation property operations for external
+
+### [Remove-MgExternalConnectionSchema](Remove-MgExternalConnectionSchema.md)
+Delete navigation property schema for external
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 
 ### [Set-MgExternalConnectionItem](Set-MgExternalConnectionItem.md)
 Update the navigation property items in external

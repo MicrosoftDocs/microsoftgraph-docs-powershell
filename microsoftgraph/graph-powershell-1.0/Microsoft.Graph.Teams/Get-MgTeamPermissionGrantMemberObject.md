@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteampermissiongrantmemberobject
@@ -47,6 +47,8 @@ Get-MgTeamPermissionGrantMemberObject -InputObject <ITeamsIdentity>
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -231,5 +233,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantMemberObject?view=graph-powershell-beta)
 

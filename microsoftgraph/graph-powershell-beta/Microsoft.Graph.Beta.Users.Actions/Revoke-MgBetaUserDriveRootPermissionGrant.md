@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetauserdriverootpermissiongrant
 schema: 2.0.0
@@ -16,7 +16,7 @@ This API is available in the following [national cloud deployments.
 ### RevokeExpanded (Default)
 ```
 Revoke-MgBetaUserDriveRootPermissionGrant -DriveId <String> -PermissionId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,21 +24,21 @@ Revoke-MgBetaUserDriveRootPermissionGrant -DriveId <String> -PermissionId <Strin
 ```
 Revoke-MgBetaUserDriveRootPermissionGrant -DriveId <String> -PermissionId <String> -UserId <String>
  -BodyParameter <IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RevokeViaIdentityExpanded
+```
+Revoke-MgBetaUserDriveRootPermissionGrant -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### RevokeViaIdentity
 ```
 Revoke-MgBetaUserDriveRootPermissionGrant -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### RevokeViaIdentityExpanded
-```
-Revoke-MgBetaUserDriveRootPermissionGrant -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,14 +47,14 @@ This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -67,7 +67,7 @@ This API is available in the following [national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Revoke, RevokeViaIdentity
 Aliases:
 
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Revoke, RevokeExpanded
+Type: String
+Parameter Sets: RevokeExpanded, Revoke
 Aliases:
 
 Required: True
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for GRANTEES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveRecipient[]
+Type: IMicrosoftGraphDriveRecipient[]
 Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
 Aliases:
 
@@ -130,8 +130,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: RevokeViaIdentity, RevokeViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: RevokeViaIdentityExpanded, RevokeViaIdentity
 Aliases:
 
 Required: True
@@ -145,8 +145,8 @@ Accept wildcard characters: False
 The unique identifier of permission
 
 ```yaml
-Type: System.String
-Parameter Sets: Revoke, RevokeExpanded
+Type: String
+Parameter Sets: RevokeExpanded, Revoke
 Aliases:
 
 Required: True
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Revoke, RevokeExpanded
+Type: String
+Parameter Sets: RevokeExpanded, Revoke
 Aliases:
 
 Required: True
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +191,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,13 +208,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths18Gi85XUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
-
 ## NOTES
 
 ALIASES
@@ -277,4 +274,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

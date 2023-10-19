@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: 85a72c06-fbd8-48bc-84d2-6ee3a77d6a53
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams
@@ -335,13 +335,6 @@ The application that is linked to the tab.
 ### [Get-MgBetaGroupTeamGroup](Get-MgBetaGroupTeamGroup.md)
 Get group from groups
 
-### [Get-MgBetaGroupTeamGroupServiceProvisioningError](Get-MgBetaGroupTeamGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupTeamGroupServiceProvisioningErrorCount](Get-MgBetaGroupTeamGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupTeamIncomingChannel](Get-MgBetaGroupTeamIncomingChannel.md)
 List of channels shared with the team.
 
@@ -388,13 +381,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaGroupTeamOwnerServiceProvisioningError](Get-MgBetaGroupTeamOwnerServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupTeamOwnerServiceProvisioningErrorCount](Get-MgBetaGroupTeamOwnerServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaGroupTeamPermissionGrant](Get-MgBetaGroupTeamPermissionGrant.md)
 A collection of permissions granted to apps to access the team.
@@ -668,13 +654,6 @@ The application that is linked to the tab.
 ### [Get-MgBetaTeamCount](Get-MgBetaTeamCount.md)
 Get the number of the resource
 
-### [Get-MgBetaTeamGroupServiceProvisioningError](Get-MgBetaTeamGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaTeamGroupServiceProvisioningErrorCount](Get-MgBetaTeamGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaTeamIncomingChannel](Get-MgBetaTeamIncomingChannel.md)
 List of channels shared with the team.
 
@@ -721,13 +700,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaTeamOwnerServiceProvisioningError](Get-MgBetaTeamOwnerServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaTeamOwnerServiceProvisioningErrorCount](Get-MgBetaTeamOwnerServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaTeamPermissionGrant](Get-MgBetaTeamPermissionGrant.md)
 A collection of permissions granted to apps to access the team.
@@ -1157,17 +1129,18 @@ Get the number of the resource
 ### [Get-MgBetaUserChatTabTeamApp](Get-MgBetaUserChatTabTeamApp.md)
 The application that is linked to the tab.
 
-### [Get-MgBetaUserJoinedTeam](Get-MgBetaUserJoinedTeam.md)
-Get the teams in Microsoft Teams that the user is a direct member of.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserChatTabTeamApp](Get-MgBetaUserChatTabTeamApp.md)
+The application that is linked to the tab.
 
 ### [Get-MgBetaUserTeamwork](Get-MgBetaUserTeamwork.md)
 A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
-### [Get-MgBetaUserTeamworkAssociatedTeam](Get-MgBetaUserTeamworkAssociatedTeam.md)
-The list of associatedTeamInfo objects that a user is associated with.
+### [Get-MgBetaUserTeamwork](Get-MgBetaUserTeamwork.md)
+A container for Microsoft Teams features available for the user.
+Read-only.
+Nullable.
 
 ### [Get-MgBetaUserTeamworkAssociatedTeamCount](Get-MgBetaUserTeamworkAssociatedTeamCount.md)
 Get the number of the resource
@@ -1700,8 +1673,10 @@ Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaUserTeamworkAssociatedTeam](New-MgBetaUserTeamworkAssociatedTeam.md)
-Create new navigation property to associatedTeams for users
+### [New-MgBetaUserChatTab](New-MgBetaUserChatTab.md)
+Add (pin) a tab to the specified chat.
+\nThe corresponding app must already be installed in the chat.
+This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserTeamworkInstalledApp](New-MgBetaUserTeamworkInstalledApp.md)
 Install an app in the personal scope of the specified user.

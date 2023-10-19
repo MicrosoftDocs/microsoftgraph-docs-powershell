@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckindriveitem
 schema: 2.0.0
@@ -16,27 +16,27 @@ This API is supported in the following national cloud deployments.
 ### CheckinExpanded (Default)
 ```
 Invoke-MgCheckinDriveItem -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
- [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Checkin
 ```
 Invoke-MgCheckinDriveItem -DriveId <String> -DriveItemId <String>
  -Body <IPaths1W9Q4DmDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CheckinViaIdentityExpanded
+```
+Invoke-MgCheckinDriveItem -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckinViaIdentity
 ```
 Invoke-MgCheckinDriveItem -InputObject <IFilesIdentity>
  -BodyParameter <IPaths1W9Q4DmDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CheckinViaIdentityExpanded
-```
-Invoke-MgCheckinDriveItem -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,7 +45,7 @@ This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
 $params = @{
@@ -54,15 +54,13 @@ $params = @{
 Invoke-MgCheckinDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
@@ -78,7 +76,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1W9Q4DmDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1W9Q4DmDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Checkin
 Aliases:
 
@@ -94,7 +92,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1W9Q4DmDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1W9Q4DmDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: CheckinViaIdentity
 Aliases:
 
@@ -109,7 +107,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
@@ -124,7 +122,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
@@ -139,8 +137,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Checkin, CheckinExpanded
+Type: String
+Parameter Sets: CheckinExpanded, Checkin
 Aliases:
 
 Required: True
@@ -154,8 +152,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Checkin, CheckinExpanded
+Type: String
+Parameter Sets: CheckinExpanded, Checkin
 Aliases:
 
 Required: True
@@ -170,8 +168,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: CheckinViaIdentity, CheckinViaIdentityExpanded
+Type: IFilesIdentity
+Parameter Sets: CheckinViaIdentityExpanded, CheckinViaIdentity
 Aliases:
 
 Required: True
@@ -185,7 +183,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -200,7 +198,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -216,7 +214,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -233,13 +231,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths1W9Q4DmDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -286,4 +281,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

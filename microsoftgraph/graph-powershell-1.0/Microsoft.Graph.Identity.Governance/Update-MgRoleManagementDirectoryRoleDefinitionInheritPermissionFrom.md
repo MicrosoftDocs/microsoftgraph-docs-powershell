@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinitioninheritpermissionfrom
 schema: 2.0.0
@@ -19,20 +19,14 @@ Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom -UnifiedRole
  [-DisplayName <String>] [-Id <String>] [-InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]
  [-IsBuiltIn] [-IsEnabled] [-ResourceScopes <String[]>]
  [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-TemplateId <String>] [-Version <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom -UnifiedRoleDefinitionId <String>
- -UnifiedRoleDefinitionId1 <String> -BodyParameter <IMicrosoftGraphUnifiedRoleDefinition> [-Confirm] [-WhatIf]
+ -UnifiedRoleDefinitionId1 <String> -BodyParameter <IMicrosoftGraphUnifiedRoleDefinition> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,7 +35,13 @@ Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom -InputObject
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>] [-IsBuiltIn] [-IsEnabled]
  [-ResourceScopes <String[]>] [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]
- [-TemplateId <String>] [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TemplateId <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,19 +49,15 @@ Update the navigation property inheritsPermissionsFrom in roleManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -69,7 +65,7 @@ Update the navigation property inheritsPermissionsFrom in roleManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +81,7 @@ unifiedRoleDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
+Type: IMicrosoftGraphUnifiedRoleDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,7 +97,7 @@ The description for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +115,7 @@ Required.
 Supports $filter (eq, in).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +131,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,7 +149,7 @@ Supports $expand.
 To construct, see NOTES section for INHERITSPERMISSIONSFROM properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition[]
+Type: IMicrosoftGraphUnifiedRoleDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -169,8 +165,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -186,7 +182,7 @@ Read-only.
 Supports $filter (eq, in).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +199,7 @@ If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +219,7 @@ This will be deprecated soon.
 Attach scope to role assignment.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -241,7 +237,7 @@ Required.
 To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRolePermission[]
+Type: IMicrosoftGraphUnifiedRolePermission[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +253,7 @@ Custom template identifier that can be set when isBuiltIn is false but is read-o
 This identifier is typically used if one needs an identifier to be the same across different directories.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -272,8 +268,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleDefinition
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -287,8 +283,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleDefinition
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -303,7 +299,7 @@ Indicates version of the role definition.
 Read-only when isBuiltIn is true.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -318,7 +314,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -334,7 +330,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -351,13 +347,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
-
 ## NOTES
 
 ALIASES
@@ -475,3 +468,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

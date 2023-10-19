@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteampermissiongrantmembergroup
@@ -51,6 +51,8 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -235,5 +237,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantMemberGroup?view=graph-powershell-beta)
 

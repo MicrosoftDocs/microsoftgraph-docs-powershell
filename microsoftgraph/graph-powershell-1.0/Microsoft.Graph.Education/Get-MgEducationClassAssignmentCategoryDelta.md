@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorydelta
 schema: 2.0.0
@@ -15,28 +15,28 @@ Invoke function delta
 ### Delta (Default)
 ```
 Get-MgEducationClassAssignmentCategoryDelta -EducationClassId <String> [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
- [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Delta1
 ```
-Get-MgEducationClassAssignmentCategoryDelta -EducationAssignmentId <String> -EducationClassId <String>
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
-```
-
-### DeltaViaIdentity
-```
-Get-MgEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Count] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [<CommonParameters>]
+Get-MgEducationClassAssignmentCategoryDelta -EducationClassId <String> -EducationAssignmentId <String>
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity1
 ```
-Get-MgEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Count] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+Get-MgEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count]
+ [<CommonParameters>]
+```
+
+### DeltaViaIdentity
+```
+Get-MgEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count]
  [<CommonParameters>]
 ```
 
@@ -45,37 +45,29 @@ Invoke function delta
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Skiptoken "U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FDy9b1hMDaAJGdLb7n2fh1IVSFtBcXz0jxjIEihcR91dS3R7i8Z2IMtxIn9rKbK9Jvurj6jCH-lDbSNatdesrK0PJ5zpZ_-i8HyqkdtLhWD9tewXVArIqQWJA7gJz8z4paG2q0MU9rixrQOTe7WIXikPiBTUPilHuUW-o1k7cvqke3K7llJbU3G7z_O7WGoVGE.l8-2OcBi9ZWAhwhPnXvJ-kyyk8GNb6-H4o6qofP5YBY"
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Deltatoken "7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApZYl6uZqiXcR7H0G14btPqR761sKWNc0jgiczrHGF6dGfSQwsLzPT46og-84ArhOU.Jnxvkr08FE-QBvEYstYel3JZUrgwgTauo-GmpbdWeSA"
 ```
 
-
-
-### -------------------------- EXAMPLE 3 --------------------------
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Deltatoken "7ORzTfzlUEGDy6BRE3OC-3ePBbvLHCRe4aJ_hjaBKJxUHmn_ODgoM4xreLS7YRaxc-iACeqCQsT5Tb0u9vn6QXYflO6j0sRgRQlhcfR7DApZYl6uZqiXcR7H0G14btPqR761sKWNc0jgiczrHGF6dGfSQwsLzPT46og-84ArhOU.Jnxvkr08FE-QBvEYstYel3JZUrgwgTauo-GmpbdWeSA"  -OutFile $outFileId
 ```
 
-
-
-### -------------------------- EXAMPLE 4 --------------------------
+### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId -Top 3
 ```
-
-
 
 ## PARAMETERS
 
@@ -83,7 +75,7 @@ Get-MgEducationClassAssignmentCategoryDelta -EducationClassId $educationClassId 
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -98,8 +90,8 @@ Accept wildcard characters: False
 Include count of items
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: DeltaViaIdentity, DeltaViaIdentity1
+Type: SwitchParameter
+Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
 Aliases:
 
 Required: False
@@ -114,7 +106,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases: CV
 
@@ -129,7 +121,7 @@ Accept wildcard characters: False
 The unique identifier of educationAssignment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta1
 Aliases:
 
@@ -144,7 +136,7 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -159,7 +151,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -175,8 +167,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
-Parameter Sets: DeltaViaIdentity, DeltaViaIdentity1
+Type: IEducationIdentity
+Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -190,7 +182,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -205,7 +197,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -220,22 +212,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -250,7 +227,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -265,9 +242,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -282,11 +274,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
-
 ## NOTES
 
 ALIASES
@@ -309,4 +299,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-

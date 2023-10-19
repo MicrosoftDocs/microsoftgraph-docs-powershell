@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtagmember
 schema: 2.0.0
@@ -16,26 +16,26 @@ This API is available in the following national cloud deployments.
 ### CreateExpanded (Default)
 ```
 New-MgTeamTagMember -TeamId <String> -TeamworkTagId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-UserId <String>] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-UserId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgTeamTagMember -TeamId <String> -TeamworkTagId <String> -BodyParameter <IMicrosoftGraphTeamworkTagMember>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamworkTagMember> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgTeamTagMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-TenantId <String>] [-UserId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-TenantId <String>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamworkTagMember> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,7 +44,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 ```
@@ -61,7 +61,7 @@ New-MgTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -BodyParameter
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -77,7 +77,7 @@ teamworkTagMember
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkTagMember
+Type: IMicrosoftGraphTeamworkTagMember
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 The member's display name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -108,7 +108,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -124,8 +124,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -139,8 +139,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -154,8 +154,8 @@ Accept wildcard characters: False
 The unique identifier of teamworkTag
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 The ID of the tenant that the tag member is a part of.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 The user ID of the member.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -215,7 +215,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -232,13 +232,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkTagMember
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkTagMember
-
 ## NOTES
 
 ALIASES
@@ -290,4 +287,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-

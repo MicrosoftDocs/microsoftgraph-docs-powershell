@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicyapplytobyid
@@ -51,6 +51,7 @@ Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -72,10 +73,10 @@ $params = @{
 
 Get-MgDirectoryObjectById -BodyParameter $params
 ```
+
 This example shows how to use the Get-MgPolicyFeatureRolloutPolicyApplyToById Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -284,4 +285,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaPolicyFeatureRolloutPolicyApplyToById](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyApplyToById?view=graph-powershell-beta)

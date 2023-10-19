@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Compliance
 Module Guid: 9b45a4d8-124a-4053-85c9-3f90d0a407f8
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance
@@ -29,12 +29,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningError](Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount](Get-MgPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgPrivacySubjectRightsRequestCollaborator](Get-MgPrivacySubjectRightsRequestCollaborator.md)
 Get collaborators from privacy
 
@@ -45,12 +39,6 @@ Get the number of the resource
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningError](Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount](Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgPrivacySubjectRightsRequestCount](Get-MgPrivacySubjectRightsRequestCount.md)
 Get the number of the resource

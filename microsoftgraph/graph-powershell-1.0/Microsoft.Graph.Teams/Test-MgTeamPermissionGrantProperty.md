@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/test-mgteampermissiongrantproperty
@@ -63,6 +63,8 @@ Validate that the mail nickname is unique This API only returns the first valida
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -295,5 +297,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Test-MgBetaTeamPermissionGrantProperty](/powershell/module/Microsoft.Graph.Beta.Teams/Test-MgBetaTeamPermissionGrantProperty?view=graph-powershell-beta)
 

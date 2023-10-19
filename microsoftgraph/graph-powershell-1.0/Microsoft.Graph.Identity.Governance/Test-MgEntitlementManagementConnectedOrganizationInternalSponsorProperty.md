@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/test-mgentitlementmanagementconnectedorganizationinternalsponsorproperty
@@ -67,6 +67,7 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -81,10 +82,10 @@ $params = @{
 
 Test-MgDirectoryObjectProperty -BodyParameter $params
 ```
+
 This example shows how to use the Test-MgEntitlementManagementConnectedOrganizationInternalSponsorProperty Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -347,4 +348,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty?view=graph-powershell-beta)

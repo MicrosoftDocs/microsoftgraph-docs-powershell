@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogcustomworkflowextension
 schema: 2.0.0
@@ -18,21 +18,15 @@ Update-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatal
  -CustomCalloutExtensionId <String> [-AdditionalProperties <Hashtable>]
  [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
- [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEntitlementManagementCatalogCustomWorkflowExtension -AccessPackageCatalogId <String>
- -CustomCalloutExtensionId <String> -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -CustomCalloutExtensionId <String> -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,8 +34,14 @@ Update-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIden
 Update-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
- [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,19 +49,15 @@ Update the properties of an accessPackageAssignmentWorkflowExtension object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -69,8 +65,8 @@ Update the properties of an accessPackageAssignmentWorkflowExtension object.
 The unique identifier of accessPackageCatalog
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -84,7 +80,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +95,7 @@ Accept wildcard characters: False
 customExtensionAuthenticationConfiguration
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +111,7 @@ customCalloutExtension
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
+Type: IMicrosoftGraphCustomCalloutExtension
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -131,7 +127,7 @@ customExtensionClientConfiguration
 To construct, see NOTES section for CLIENTCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomExtensionClientConfiguration
+Type: IMicrosoftGraphCustomExtensionClientConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of customCalloutExtension
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -161,7 +157,7 @@ Accept wildcard characters: False
 Description for the customCalloutExtension object.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +172,7 @@ Accept wildcard characters: False
 Display name for the customCalloutExtension object.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +187,7 @@ Accept wildcard characters: False
 customExtensionEndpointConfiguration
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +203,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,8 +219,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -238,7 +234,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -254,7 +250,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -271,13 +267,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
-
 ## NOTES
 
 ALIASES
@@ -375,4 +368,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofile
 schema: 2.0.0
@@ -18,8 +18,7 @@ This API is available in the following national cloud deployments.
 
 ### Get (Default)
 ```
-Get-MgBetaUserProfile -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaUserProfile -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -37,23 +36,19 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfile -UserId $userId
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)"
 ```
-
-
 
 ## PARAMETERS
 
@@ -61,7 +56,7 @@ Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -77,7 +72,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+Type: IPeopleIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -92,7 +87,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -107,7 +102,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -124,11 +119,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProfile
-
 ## NOTES
 
 ALIASES
@@ -163,4 +156,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
-

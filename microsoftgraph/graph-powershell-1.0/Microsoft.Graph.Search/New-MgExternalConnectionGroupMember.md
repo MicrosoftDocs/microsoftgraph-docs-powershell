@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroupmember
 schema: 2.0.0
@@ -16,25 +16,25 @@ This API is available in the following national cloud deployments.
 ### CreateExpanded (Default)
 ```
 New-MgExternalConnectionGroupMember -ExternalConnectionId <String> -ExternalGroupId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgExternalConnectionGroupMember -ExternalConnectionId <String> -ExternalGroupId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgExternalConnectionGroupMember -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphExternalConnectorsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgExternalConnectionGroupMember -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphExternalConnectorsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,7 +43,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
 ```
@@ -55,7 +55,7 @@ $params = @{
 
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Search
 ```
@@ -67,7 +67,7 @@ $params = @{
 
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
-### -------------------------- EXAMPLE 3 --------------------------
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Search
 ```
@@ -85,7 +85,7 @@ New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId 
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ identity
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
+Type: IMicrosoftGraphExternalConnectorsIdentity
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -116,8 +116,8 @@ Accept wildcard characters: False
 The unique identifier of externalConnection
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 The unique identifier of externalGroup
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -147,7 +147,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -163,8 +163,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ISearchIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 identityType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -209,7 +209,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -226,13 +226,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsIdentity
-
 ## NOTES
 
 ALIASES
@@ -256,4 +253,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-

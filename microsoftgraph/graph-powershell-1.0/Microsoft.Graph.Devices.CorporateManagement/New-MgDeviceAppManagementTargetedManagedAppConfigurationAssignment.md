@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementtargetedmanagedappconfigurationassignment
 schema: 2.0.0
@@ -15,28 +15,28 @@ Create new navigation property to assignments for deviceAppManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment -TargetedManagedAppConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Target <Hashtable>] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment -TargetedManagedAppConfigurationId <String>
- -BodyParameter <IMicrosoftGraphTargetedManagedAppPolicyAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment
- -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphTargetedManagedAppPolicyAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTargetedManagedAppPolicyAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment
  -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Target <Hashtable>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment
+ -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphTargetedManagedAppPolicyAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,19 +44,15 @@ Create new navigation property to assignments for deviceAppManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -64,7 +60,7 @@ Create new navigation property to assignments for deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +76,7 @@ The type for deployment of groups or apps.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTargetedManagedAppPolicyAssignment
+Type: IMicrosoftGraphTargetedManagedAppPolicyAssignment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -96,7 +92,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -112,8 +108,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -127,7 +123,7 @@ Accept wildcard characters: False
 Base type for assignment targets.
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,8 +138,8 @@ Accept wildcard characters: False
 The unique identifier of targetedManagedAppConfiguration
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -157,7 +153,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +169,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,13 +186,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTargetedManagedAppPolicyAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTargetedManagedAppPolicyAssignment
-
 ## NOTES
 
 ALIASES
@@ -249,4 +242,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-

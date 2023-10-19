@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancerolemanagementalert
 schema: 2.0.0
@@ -15,60 +15,60 @@ Invoke action refresh
 ### RefreshExpanded (Default)
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlert [-AdditionalProperties <Hashtable>] [-ScopeId <String>]
- [-ScopeType <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ScopeType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
+ [-AdditionalProperties <Hashtable>] [-ScopeId <String>] [-ScopeType <String>]
+ [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
+ [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
+ [-AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>] [-Id <String>]
+ [-IncidentCount <Int32>] [-IsActive] [-LastModifiedDateTime <DateTime>] [-LastScannedDateTime <DateTime>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Refresh
 ```
-Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-ScopeId <String>] [-ScopeType <String>]
+ [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
+ [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
+ [-AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>] [-Id <String>]
+ [-IncidentCount <Int32>] [-IsActive] [-LastModifiedDateTime <DateTime>] [-LastScannedDateTime <DateTime>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RefreshViaIdentity
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Refresh1
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlert
  -Body <IPaths1O7WbujIdentitygovernanceRolemanagementalertsAlertsMicrosoftGraphRefreshPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### RefreshViaIdentity
-```
-Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded
-```
-Update-MgBetaIdentityGovernanceRoleManagementAlert -UnifiedRoleManagementAlertId <String>
- [-AdditionalProperties <Hashtable>]
- [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
- [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
- [-AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>] [-Id <String>]
- [-IncidentCount <Int32>] [-IsActive] [-LastModifiedDateTime <DateTime>] [-LastScannedDateTime <DateTime>]
- [-ScopeId <String>] [-ScopeType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlert> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>]
- [-AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]
- [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
- [-AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>] [-Id <String>]
- [-IncidentCount <Int32>] [-IsActive] [-LastModifiedDateTime <DateTime>] [-LastScannedDateTime <DateTime>]
- [-ScopeId <String>] [-ScopeType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -76,19 +76,15 @@ Invoke action refresh
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -96,7 +92,7 @@ Invoke action refresh
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: RefreshExpanded, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +108,7 @@ unifiedRoleManagementAlertConfiguration
 To construct, see NOTES section for ALERTCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertConfiguration
+Type: IMicrosoftGraphUnifiedRoleManagementAlertConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +124,7 @@ unifiedRoleManagementAlertDefinition
 To construct, see NOTES section for ALERTDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
+Type: IMicrosoftGraphUnifiedRoleManagementAlertDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +140,7 @@ The identifier of an alert definition.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +157,7 @@ Supports $expand.
 To construct, see NOTES section for ALERTINCIDENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertIncident[]
+Type: IMicrosoftGraphUnifiedRoleManagementAlertIncident[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +173,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1O7WbujIdentitygovernanceRolemanagementalertsAlertsMicrosoftGraphRefreshPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1O7WbujIdentitygovernanceRolemanagementalertsAlertsMicrosoftGraphRefreshPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Refresh1
 Aliases:
 
@@ -193,7 +189,7 @@ unifiedRoleManagementAlert
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlert
+Type: IMicrosoftGraphUnifiedRoleManagementAlert
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -209,7 +205,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -225,7 +221,7 @@ The number of incidents triggered in the tenant and relating to the alert.
 Can only be a positive integer.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -241,8 +237,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: RefreshViaIdentity, UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity, RefreshViaIdentity
 Aliases:
 
 Required: True
@@ -257,7 +253,7 @@ false by default.
 true if the alert is active.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +268,7 @@ Accept wildcard characters: False
 The date time when the alert configuration was updated or new incidents generated.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -287,7 +283,7 @@ Accept wildcard characters: False
 The date time when the tenant was last scanned for incidents that trigger this alert.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -302,8 +298,8 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: Refresh, Refresh1, RefreshExpanded, RefreshViaIdentity
+Type: SwitchParameter
+Parameter Sets: RefreshExpanded, Refresh, RefreshViaIdentity, Refresh1
 Aliases:
 
 Required: False
@@ -317,7 +313,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: RefreshExpanded, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -332,7 +328,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: RefreshExpanded, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -347,8 +343,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleManagementAlert
 
 ```yaml
-Type: System.String
-Parameter Sets: Refresh, Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update, Refresh
 Aliases:
 
 Required: True
@@ -362,7 +358,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -378,7 +374,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -395,17 +391,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlert
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1O7WbujIdentitygovernanceRolemanagementalertsAlertsMicrosoftGraphRefreshPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlert
-
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -593,3 +584,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorydeleteditem
@@ -29,6 +29,8 @@ New-MgDirectoryDeletedItem -BodyParameter <IMicrosoftGraphDirectoryObject> [-Wha
 
 ## DESCRIPTION
 Create new navigation property to deletedItems for directory
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -150,5 +152,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+
 [New-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
 

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationtemplate
 schema: 2.0.0
@@ -18,19 +18,13 @@ New-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId <String>
  [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-Default] [-Description <String>]
  [-Discoverable] [-FactoryTag <String>] [-Id <String>]
  [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -39,7 +33,13 @@ New-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIde
  [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-Default] [-Description <String>]
  [-Discoverable] [-FactoryTag <String>] [-Id <String>]
  [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,14 +47,14 @@ Create new navigation property to templates for servicePrincipals
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -67,7 +67,7 @@ Create new navigation property to templates for servicePrincipals
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Identifier of the application this template belongs to.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ synchronizationTemplate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
+Type: IMicrosoftGraphSynchronizationTemplate
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 true if this template is recommended to be the default for the application.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 Description of the template.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 true if this template should appear in the collection of templates available for the application instance (service principal).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +159,7 @@ One of the well-known factory tags supported by the synchronization engine.
 The factoryTag tells the synchronization engine which implementation to use when processing jobs based on this template.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -191,8 +191,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -208,7 +208,7 @@ Unless mentioned explicitly, metadata values shouldn't be changed.
 To construct, see NOTES section for METADATA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationMetadataEntry[]
+Type: IMicrosoftGraphSynchronizationMetadataEntry[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +224,7 @@ synchronizationSchema
 To construct, see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
+Type: IMicrosoftGraphSynchronizationSchema
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -239,8 +239,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -270,7 +270,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -287,13 +287,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
-
 ## NOTES
 
 ALIASES
@@ -527,3 +524,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

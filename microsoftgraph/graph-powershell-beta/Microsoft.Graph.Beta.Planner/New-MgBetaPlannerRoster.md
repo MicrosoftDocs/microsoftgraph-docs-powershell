@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster
 schema: 2.0.0
@@ -16,14 +16,13 @@ This API is available in the following national cloud deployments.
 ### CreateExpanded (Default)
 ```
 New-MgBetaPlannerRoster [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgBetaPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,7 +31,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 $params = @{
@@ -41,15 +40,13 @@ $params = @{
 New-MgBetaPlannerRoster -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -65,7 +62,7 @@ plannerRoster
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRoster
+Type: IMicrosoftGraphPlannerRoster
 Parameter Sets: Create
 Aliases:
 
@@ -81,7 +78,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +94,7 @@ Retrieves the members of the plannerRoster.
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRosterMember[]
+Type: IMicrosoftGraphPlannerRosterMember[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +110,7 @@ Retrieves the plans contained by the plannerRoster.
 To construct, see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan[]
+Type: IMicrosoftGraphPlannerPlan[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +125,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -144,7 +141,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -161,11 +158,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRoster
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRoster
-
 ## NOTES
 
 ALIASES
@@ -515,3 +510,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

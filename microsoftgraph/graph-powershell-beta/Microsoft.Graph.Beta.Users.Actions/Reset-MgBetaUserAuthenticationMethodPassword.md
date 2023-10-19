@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetauserauthenticationmethodpassword
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke action resetPassword
 ### ResetExpanded (Default)
 ```
 Reset-MgBetaUserAuthenticationMethodPassword -AuthenticationMethodId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-NewPassword <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-NewPassword <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Reset
 ```
 Reset-MgBetaUserAuthenticationMethodPassword -AuthenticationMethodId <String> -UserId <String>
  -BodyParameter <IPaths1KjcdupUsersUserIdAuthenticationMethodsAuthenticationmethodIdMicrosoftGraphResetpasswordPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ResetViaIdentityExpanded
+```
+Reset-MgBetaUserAuthenticationMethodPassword -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-NewPassword <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResetViaIdentity
 ```
 Reset-MgBetaUserAuthenticationMethodPassword -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1KjcdupUsersUserIdAuthenticationMethodsAuthenticationmethodIdMicrosoftGraphResetpasswordPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ResetViaIdentityExpanded
-```
-Reset-MgBetaUserAuthenticationMethodPassword -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-NewPassword <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,14 +43,14 @@ Invoke action resetPassword
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -63,7 +63,7 @@ Invoke action resetPassword
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ResetExpanded, ResetViaIdentityExpanded
 Aliases:
 
@@ -78,8 +78,8 @@ Accept wildcard characters: False
 The unique identifier of authenticationMethod
 
 ```yaml
-Type: System.String
-Parameter Sets: Reset, ResetExpanded
+Type: String
+Parameter Sets: ResetExpanded, Reset
 Aliases:
 
 Required: True
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1KjcdupUsersUserIdAuthenticationMethodsAuthenticationmethodIdMicrosoftGraphResetpasswordPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1KjcdupUsersUserIdAuthenticationMethodsAuthenticationmethodIdMicrosoftGraphResetpasswordPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Reset, ResetViaIdentity
 Aliases:
 
@@ -110,8 +110,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: ResetViaIdentity, ResetViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: ResetViaIdentityExpanded, ResetViaIdentity
 Aliases:
 
 Required: True
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ResetExpanded, ResetViaIdentityExpanded
 Aliases:
 
@@ -140,8 +140,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Reset, ResetExpanded
+Type: String
+Parameter Sets: ResetExpanded, Reset
 Aliases:
 
 Required: True
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -171,7 +171,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -188,13 +188,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1KjcdupUsersUserIdAuthenticationMethodsAuthenticationmethodIdMicrosoftGraphResetpasswordPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -249,4 +246,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

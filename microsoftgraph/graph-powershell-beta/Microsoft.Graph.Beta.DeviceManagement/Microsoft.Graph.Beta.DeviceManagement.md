@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 Module Guid: 3b00dcd9-2d6e-4009-9651-4e34019d7a7c
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement
@@ -2335,8 +2335,9 @@ This API is available in the following national cloud deployments.
 Update the properties of a browserSite object.
 This API is available in the following national cloud deployments.
 
-### [Update-MgBetaDeviceManagement](Update-MgBetaDeviceManagement.md)
-Update deviceManagement
+### [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
+Update the properties of a browserSite object.
+This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
 Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement

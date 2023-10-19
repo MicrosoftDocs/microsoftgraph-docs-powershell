@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgsummaryidentitygovernancelifecycleworkflowtaskreport
 schema: 2.0.0
@@ -14,8 +14,8 @@ Invoke function summary
 
 ### Summary (Default)
 ```
-Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport -EndDateTime <DateTime>
- -StartDateTime <DateTime> -WorkflowId <String> [<CommonParameters>]
+Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport -EndDateTime <DateTime> -StartDateTime <DateTime>
+ -WorkflowId <String> [<CommonParameters>]
 ```
 
 ### SummaryViaIdentity
@@ -29,19 +29,15 @@ Invoke function summary
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -49,7 +45,7 @@ Invoke function summary
 Usage: endDateTime={endDateTime}
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: Summary
 Aliases:
 
@@ -65,7 +61,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Type: IIdentityGovernanceIdentity
 Parameter Sets: SummaryViaIdentity
 Aliases:
 
@@ -80,7 +76,7 @@ Accept wildcard characters: False
 Usage: startDateTime={startDateTime}
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: Summary
 Aliases:
 
@@ -95,7 +91,7 @@ Accept wildcard characters: False
 The unique identifier of workflow
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Summary
 Aliases:
 
@@ -112,11 +108,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityGovernanceTaskReportSummary
-
 ## NOTES
 
 ALIASES
@@ -197,4 +191,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

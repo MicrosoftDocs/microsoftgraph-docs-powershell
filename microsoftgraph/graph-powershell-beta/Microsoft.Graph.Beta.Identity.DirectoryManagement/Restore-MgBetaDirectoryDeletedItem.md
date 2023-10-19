@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/restore-mgbetadirectorydeleteditem
 schema: 2.0.0
@@ -19,12 +19,12 @@ This API is available in the following national cloud deployments.
 
 ### Restore (Default)
 ```
-Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
+Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
-Restore-MgBetaDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIdentity> [-Confirm] [-WhatIf]
+Restore-MgBetaDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,13 +38,11 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
 ```
-
-
 
 ## PARAMETERS
 
@@ -52,7 +50,7 @@ Restore-MgBetaDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
 The unique identifier of directoryObject
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Restore
 Aliases:
 
@@ -68,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Type: IIdentityDirectoryManagementIdentity
 Parameter Sets: RestoreViaIdentity
 Aliases:
 
@@ -83,7 +81,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +97,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -116,11 +114,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES
@@ -175,4 +171,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

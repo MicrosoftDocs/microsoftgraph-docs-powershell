@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedge
 schema: 2.0.0
@@ -15,12 +15,12 @@ Update the navigation property edge in admin
 ### UpdateExpanded (Default)
 ```
 Update-MgAdminEdge [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InternetExplorerMode <IMicrosoftGraphInternetExplorerMode>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-InternetExplorerMode <IMicrosoftGraphInternetExplorerMode>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -28,19 +28,15 @@ Update the navigation property edge in admin
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -48,7 +44,7 @@ Update the navigation property edge in admin
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -64,7 +60,7 @@ edge
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdge
+Type: IMicrosoftGraphEdge
 Parameter Sets: Update
 Aliases:
 
@@ -80,7 +76,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -96,7 +92,7 @@ internetExplorerMode
 To construct, see NOTES section for INTERNETEXPLORERMODE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternetExplorerMode
+Type: IMicrosoftGraphInternetExplorerMode
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -111,7 +107,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -127,7 +123,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -144,11 +140,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdge
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdge
-
 ## NOTES
 
 ALIASES
@@ -291,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

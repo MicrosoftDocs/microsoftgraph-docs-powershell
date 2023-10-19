@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerequestcatalogresourcescoperesourcerole
 schema: 2.0.0
@@ -18,8 +18,16 @@ Supports $expand.
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
  -AccessPackageResourceRequestId <String> -AccessPackageResourceScopeId <String> [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List
+```
+Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole -AccessPackageResourceId <String>
+ -AccessPackageResourceRequestId <String> -AccessPackageResourceScopeId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
@@ -38,13 +46,6 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
-```
-Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
- -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
 ### GetViaIdentity1
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
@@ -52,12 +53,11 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
  [<CommonParameters>]
 ```
 
-### List
+### GetViaIdentity
 ```
-Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole -AccessPackageResourceId <String>
- -AccessPackageResourceRequestId <String> -AccessPackageResourceScopeId <String> [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
- [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+Get-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
+ -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,19 +67,15 @@ Supports $expand.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -87,8 +83,8 @@ Supports $expand.
 The unique identifier of accessPackageResource
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List
+Type: String
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -102,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceRequest
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get1, List, List1
+Type: String
+Parameter Sets: List1, List, Get, Get1
 Aliases:
 
 Required: True
@@ -117,7 +113,7 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceRole
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -132,8 +128,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceScope
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get1, List, List1
+Type: String
+Parameter Sets: List1, List, Get, Get1
 Aliases:
 
 Required: True
@@ -147,8 +143,8 @@ Accept wildcard characters: False
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: List, List1
+Type: SwitchParameter
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -163,8 +159,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
-Parameter Sets: List, List1
+Type: String
+Parameter Sets: List1, List
 Aliases: CV
 
 Required: False
@@ -178,7 +174,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -193,8 +189,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
-Parameter Sets: List, List1
+Type: String
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -209,8 +205,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1
+Type: IIdentityGovernanceIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -224,8 +220,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
-Parameter Sets: List, List1
+Type: Int32
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -239,7 +235,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -254,23 +250,8 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: List, List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
-Parameter Sets: List, List1
+Type: String
+Parameter Sets: List1, List
 Aliases:
 
 Required: False
@@ -284,8 +265,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
-Parameter Sets: List, List1
+Type: String[]
+Parameter Sets: List1, List
 Aliases: OrderBy
 
 Required: False
@@ -299,9 +280,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
-Parameter Sets: List, List1
+Type: Int32
+Parameter Sets: List1, List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1, List
+Aliases:
 
 Required: False
 Position: Named
@@ -316,11 +312,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
-
 ## NOTES
 
 ALIASES
@@ -401,4 +395,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

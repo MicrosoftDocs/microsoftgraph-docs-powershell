@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Devices.CloudPrint
 Module Guid: ad2cf476-37ec-4fca-934b-a88e29b329bd
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint
@@ -120,12 +120,6 @@ This API is supported in the following national cloud deployments.
 ### [Get-MgPrintShareAllowedGroupCount](Get-MgPrintShareAllowedGroupCount.md)
 Get the number of the resource
 
-### [Get-MgPrintShareAllowedGroupServiceProvisioningError](Get-MgPrintShareAllowedGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgPrintShareAllowedGroupServiceProvisioningErrorCount](Get-MgPrintShareAllowedGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgPrintShareAllowedUser](Get-MgPrintShareAllowedUser.md)
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 This API is supported in the following national cloud deployments.
@@ -141,12 +135,6 @@ Get the number of the resource
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgPrintShareAllowedUserServiceProvisioningError](Get-MgPrintShareAllowedUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgPrintShareAllowedUserServiceProvisioningErrorCount](Get-MgPrintShareAllowedUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgPrintShareCount](Get-MgPrintShareCount.md)
 Get the number of the resource

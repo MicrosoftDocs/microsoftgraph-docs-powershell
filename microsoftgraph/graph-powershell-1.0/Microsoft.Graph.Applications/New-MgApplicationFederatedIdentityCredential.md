@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationfederatedidentitycredential
 schema: 2.0.0
@@ -19,26 +19,26 @@ This API is available in the following national cloud deployments.
 ```
 New-MgApplicationFederatedIdentityCredential -ApplicationId <String> [-AdditionalProperties <Hashtable>]
  [-Audiences <String[]>] [-Description <String>] [-Id <String>] [-Issuer <String>] [-Name <String>]
- [-Subject <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Subject <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgApplicationFederatedIdentityCredential -ApplicationId <String>
- -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Audiences <String[]>] [-Description <String>] [-Id <String>]
- [-Issuer <String>] [-Name <String>] [-Subject <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Issuer <String>] [-Name <String>] [-Subject <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
 ```
@@ -71,7 +71,7 @@ New-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId -Body
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -86,8 +86,8 @@ Accept wildcard characters: False
 The unique identifier of application
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -106,7 +106,7 @@ This field can only accept a single value and has a limit of 600 characters.
 Required.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +122,7 @@ federatedIdentityCredential
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
+Type: IMicrosoftGraphFederatedIdentityCredential
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -139,7 +139,7 @@ It has a limit of 600 characters.
 Optional.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -155,7 +155,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -171,8 +171,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -189,7 +189,7 @@ It has a limit of 600 characters.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +208,7 @@ Not nullable.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +229,7 @@ It has a limit of 600 characters.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -260,7 +260,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -277,13 +277,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
-
 ## NOTES
 
 ALIASES
@@ -326,4 +323,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

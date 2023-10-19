@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetaextractsiteinformationprotectionpolicylabel
 schema: 2.0.0
@@ -17,28 +17,28 @@ This API is available in the following national cloud deployments.
 ### ExtractExpanded (Default)
 ```
 Invoke-MgBetaExtractSiteInformationProtectionPolicyLabel -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-ContentInfo <IMicrosoftGraphContentInfo>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ContentInfo <IMicrosoftGraphContentInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Extract
 ```
 Invoke-MgBetaExtractSiteInformationProtectionPolicyLabel -SiteId <String>
  -BodyParameter <IPathsGmuosySitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ExtractViaIdentityExpanded
+```
+Invoke-MgBetaExtractSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ExtractViaIdentity
 ```
 Invoke-MgBetaExtractSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
  -BodyParameter <IPathsGmuosySitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ExtractViaIdentityExpanded
-```
-Invoke-MgBetaExtractSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,19 +48,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -68,7 +64,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ExtractExpanded, ExtractViaIdentityExpanded
 Aliases:
 
@@ -84,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsGmuosySitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema
+Type: IPathsGmuosySitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Extract, ExtractViaIdentity
 Aliases:
 
@@ -100,7 +96,7 @@ contentInfo
 To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentInfo
+Type: IMicrosoftGraphContentInfo
 Parameter Sets: ExtractExpanded, ExtractViaIdentityExpanded
 Aliases:
 
@@ -116,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-Parameter Sets: ExtractViaIdentity, ExtractViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: ExtractViaIdentityExpanded, ExtractViaIdentity
 Aliases:
 
 Required: True
@@ -131,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Extract, ExtractExpanded
+Type: String
+Parameter Sets: ExtractExpanded, Extract
 Aliases:
 
 Required: True
@@ -146,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,13 +175,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsGmuosySitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionContentLabel
-
 ## NOTES
 
 ALIASES
@@ -266,4 +259,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

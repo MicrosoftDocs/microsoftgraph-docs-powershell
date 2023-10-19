@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryoutboundshareduserprofiletenantpersonaldata
 schema: 2.0.0
@@ -16,13 +16,13 @@ This API is available in the following national cloud deployments.
 ### Remove (Default)
 ```
 Remove-MgBetaDirectoryOutboundSharedUserProfileTenantPersonalData -OutboundSharedUserProfileUserId <String>
- -TenantReferenceTenantId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -TenantReferenceTenantId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
 Remove-MgBetaDirectoryOutboundSharedUserProfileTenantPersonalData
- -InputObject <IIdentityDirectoryManagementIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -InputObject <IIdentityDirectoryManagementIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,14 +31,14 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -52,7 +52,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Type: IIdentityDirectoryManagementIdentity
 Parameter Sets: RemoveViaIdentity
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 The unique identifier of outboundSharedUserProfile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Remove
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 The unique identifier of tenantReference
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Remove
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,11 +145,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -204,4 +202,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

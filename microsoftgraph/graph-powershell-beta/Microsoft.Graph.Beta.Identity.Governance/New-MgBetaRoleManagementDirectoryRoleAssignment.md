@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignment
 schema: 2.0.0
@@ -20,13 +20,13 @@ New-MgBetaRoleManagementDirectoryRoleAssignment [-AdditionalProperties <Hashtabl
  [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-Id <String>]
  [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>] [-PrincipalOrganizationId <String>]
  [-ResourceScope <String>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]
- [-RoleDefinitionId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RoleDefinitionId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter <IMicrosoftGraphUnifiedRoleAssignment>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter <IMicrosoftGraphUnifiedRoleAssignment> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,19 +35,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -55,7 +51,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +67,7 @@ appScope
 To construct, see NOTES section for APPSCOPE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppScope
+Type: IMicrosoftGraphAppScope
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -91,7 +87,7 @@ App scopes are scopes that are defined and understood by this application only.
 For the entitlement management provider, use app scopes to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -107,7 +103,7 @@ unifiedRoleAssignment
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignment
+Type: IMicrosoftGraphUnifiedRoleAssignment
 Parameter Sets: Create
 Aliases:
 
@@ -122,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -138,7 +134,7 @@ directoryObject
 To construct, see NOTES section for DIRECTORYSCOPE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+Type: IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -156,7 +152,7 @@ Directory scopes are shared scopes stored in the directory that are understood b
 App scopes are scopes that are defined and understood by this application only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,7 +168,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +184,7 @@ directoryObject
 To construct, see NOTES section for PRINCIPAL properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+Type: IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +200,7 @@ Identifier of the principal to which the assignment is granted.
 Supports $filter (eq operator only).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +215,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +233,7 @@ DO NOT USE.
 This property will be deprecated soon.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +249,7 @@ unifiedRoleDefinition
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
+Type: IMicrosoftGraphUnifiedRoleDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -270,7 +266,7 @@ Read-only.
 Supports $filter (eq operator only).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -285,7 +281,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -301,7 +297,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -318,11 +314,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignment
-
 ## NOTES
 
 ALIASES
@@ -405,4 +399,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationsynchronizationjobcredential
 schema: 2.0.0
@@ -18,21 +18,14 @@ This API is available in the following national cloud deployments.
 Test-MgApplicationSynchronizationJobCredential -ApplicationId <String> -SynchronizationJobId <String>
  [-AdditionalProperties <Hashtable>] [-ApplicationIdentifier <String>]
  [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-TemplateId <String>]
- [-UseSavedCredentials] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UseSavedCredentials] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgApplicationSynchronizationJobCredential -ApplicationId <String> -SynchronizationJobId <String>
  -BodyParameter <IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ValidateViaIdentity
-```
-Test-MgApplicationSynchronizationJobCredential -InputObject <IApplicationsIdentity>
- -BodyParameter <IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentityExpanded
@@ -40,7 +33,14 @@ Test-MgApplicationSynchronizationJobCredential -InputObject <IApplicationsIdenti
 Test-MgApplicationSynchronizationJobCredential -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-ApplicationIdentifier <String>]
  [-Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>] [-TemplateId <String>]
- [-UseSavedCredentials] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UseSavedCredentials] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ValidateViaIdentity
+```
+Test-MgApplicationSynchronizationJobCredential -InputObject <IApplicationsIdentity>
+ -BodyParameter <IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,19 +49,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -69,7 +65,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -84,8 +80,8 @@ Accept wildcard characters: False
 The unique identifier of application
 
 ```yaml
-Type: System.String
-Parameter Sets: Validate, ValidateExpanded
+Type: String
+Parameter Sets: ValidateExpanded, Validate
 Aliases:
 
 Required: True
@@ -99,7 +95,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +111,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema
+Type: IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate, ValidateViaIdentity
 Aliases:
 
@@ -131,7 +127,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
+Type: IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -147,8 +143,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: ValidateViaIdentity, ValidateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: ValidateViaIdentityExpanded, ValidateViaIdentity
 Aliases:
 
 Required: True
@@ -162,7 +158,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -177,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of synchronizationJob
 
 ```yaml
-Type: System.String
-Parameter Sets: Validate, ValidateExpanded
+Type: String
+Parameter Sets: ValidateExpanded, Validate
 Aliases:
 
 Required: True
@@ -192,7 +188,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +203,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +218,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -238,7 +234,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -255,13 +251,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -308,4 +301,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

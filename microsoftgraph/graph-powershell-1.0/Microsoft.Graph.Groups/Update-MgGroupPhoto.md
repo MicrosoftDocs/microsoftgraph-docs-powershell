@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupphoto
 schema: 2.0.0
@@ -15,25 +15,25 @@ Update the navigation property photo in groups
 ### UpdateExpanded (Default)
 ```
 Update-MgGroupPhoto -GroupId <String> [-AdditionalProperties <Hashtable>] [-Height <Int32>] [-Id <String>]
- [-Width <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Width <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgGroupPhoto -GroupId <String> -BodyParameter <IMicrosoftGraphProfilePhoto> [-Confirm] [-WhatIf]
+Update-MgGroupPhoto -GroupId <String> -BodyParameter <IMicrosoftGraphProfilePhoto> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgGroupPhoto -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphProfilePhoto> [-Confirm]
- [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgGroupPhoto -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Height <Int32>]
- [-Id <String>] [-Width <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-Width <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgGroupPhoto -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphProfilePhoto> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,14 +41,14 @@ Update the navigation property photo in groups
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -61,7 +61,7 @@ Update the navigation property photo in groups
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -77,7 +77,7 @@ profilePhoto
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
+Type: IMicrosoftGraphProfilePhoto
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -92,8 +92,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -108,7 +108,7 @@ The height of the photo.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -124,7 +124,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -140,8 +140,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ The width of the photo.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,13 +204,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ## NOTES
 
 ALIASES
@@ -264,4 +261,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie
 schema: 2.0.0
@@ -17,34 +17,34 @@ This API is available in the following national cloud deployments.
 ```
 New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId <String>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-CreatedDateTime <DateTime>]
- [-DeletedDateTime <DateTime>] [-DisplayName <String>]
- [-History <IMicrosoftGraphBrowserSharedCookieHistory[]>] [-HostOnly] [-HostOrDomain <String>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Path <String>]
- [-SourceEnvironment <BrowserSharedCookieSourceEnvironment>] [-Status <BrowserSharedCookieStatus>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-DeletedDateTime <DateTime>] [-DisplayName <String>] [-History <IMicrosoftGraphBrowserSharedCookieHistory[]>]
+ [-HostOnly] [-HostOrDomain <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-Path <String>]
+ [-SourceEnvironment <BrowserSharedCookieSourceEnvironment>] [-Status <BrowserSharedCookieStatus>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -BrowserSiteListId <String>
- -BodyParameter <IMicrosoftGraphBrowserSharedCookie> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphBrowserSharedCookie> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBrowserSharedCookie> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-CreatedDateTime <DateTime>]
- [-DeletedDateTime <DateTime>] [-DisplayName <String>]
- [-History <IMicrosoftGraphBrowserSharedCookieHistory[]>] [-HostOnly] [-HostOrDomain <String>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Path <String>]
- [-SourceEnvironment <BrowserSharedCookieSourceEnvironment>] [-Status <BrowserSharedCookieStatus>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-DeletedDateTime <DateTime>] [-DisplayName <String>] [-History <IMicrosoftGraphBrowserSharedCookieHistory[]>]
+ [-HostOnly] [-HostOrDomain <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-Path <String>]
+ [-SourceEnvironment <BrowserSharedCookieSourceEnvironment>] [-Status <BrowserSharedCookieStatus>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphBrowserSharedCookie> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,19 +53,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -73,7 +69,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +85,7 @@ browserSharedCookie
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBrowserSharedCookie
+Type: IMicrosoftGraphBrowserSharedCookie
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -104,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of browserSiteList
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -119,7 +115,7 @@ Accept wildcard characters: False
 The comment for the shared cookie.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +130,7 @@ Accept wildcard characters: False
 The date and time when the shared cookie was created.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +145,7 @@ Accept wildcard characters: False
 The date and time when the shared cookie was deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -164,7 +160,7 @@ Accept wildcard characters: False
 The name of the cookie.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -180,7 +176,7 @@ The history of modifications applied to the cookie.
 To construct, see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBrowserSharedCookieHistory[]
+Type: IMicrosoftGraphBrowserSharedCookieHistory[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +191,7 @@ Accept wildcard characters: False
 Controls whether a cookie is a host-only or domain cookie.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -210,7 +206,7 @@ Accept wildcard characters: False
 The URL of the cookie.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +222,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -242,8 +238,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -258,7 +254,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +269,7 @@ Accept wildcard characters: False
 The date and time when the cookie was last modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -288,7 +284,7 @@ Accept wildcard characters: False
 The path of the cookie.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -303,7 +299,7 @@ Accept wildcard characters: False
 browserSharedCookieSourceEnvironment
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.BrowserSharedCookieSourceEnvironment
+Type: BrowserSharedCookieSourceEnvironment
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -318,7 +314,7 @@ Accept wildcard characters: False
 browserSharedCookieStatus
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.BrowserSharedCookieStatus
+Type: BrowserSharedCookieStatus
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -333,7 +329,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -349,7 +345,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -366,13 +362,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBrowserSharedCookie
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBrowserSharedCookie
-
 ## NOTES
 
 ALIASES
@@ -582,3 +575,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

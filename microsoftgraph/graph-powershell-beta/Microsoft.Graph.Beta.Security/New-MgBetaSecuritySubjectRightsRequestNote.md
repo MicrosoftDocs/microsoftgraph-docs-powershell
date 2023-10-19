@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequestnote
 schema: 2.0.0
@@ -15,28 +15,28 @@ This API is available in the following national cloud deployments.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecuritySubjectRightsRequestNote -SubjectRightsRequestId <String>
- [-AdditionalProperties <Hashtable>] [-Author <IMicrosoftGraphIdentity>] [-Content <IMicrosoftGraphItemBody>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaSecuritySubjectRightsRequestNote -SubjectRightsRequestId <String> [-AdditionalProperties <Hashtable>]
+ [-Author <IMicrosoftGraphIdentity>] [-Content <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecuritySubjectRightsRequestNote -SubjectRightsRequestId <String>
- -BodyParameter <IMicrosoftGraphAuthoredNote> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthoredNote> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
+ [-Author <IMicrosoftGraphIdentity>] [-Content <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphAuthoredNote> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Author <IMicrosoftGraphIdentity>] [-Content <IMicrosoftGraphItemBody>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthoredNote> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +77,7 @@ identity
 To construct, see NOTES section for AUTHOR properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentity
+Type: IMicrosoftGraphIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +93,7 @@ authoredNote
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthoredNote
+Type: IMicrosoftGraphAuthoredNote
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -113,7 +109,7 @@ itemBody
 To construct, see NOTES section for CONTENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
+Type: IMicrosoftGraphItemBody
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +126,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +142,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +158,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ISecurityIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -177,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of subjectRightsRequest
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -192,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -225,13 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthoredNote
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthoredNote
-
 ## NOTES
 
 ALIASES
@@ -343,4 +336,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-

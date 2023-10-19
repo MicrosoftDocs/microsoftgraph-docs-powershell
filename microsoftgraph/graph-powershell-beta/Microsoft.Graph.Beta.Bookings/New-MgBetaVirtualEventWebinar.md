@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetavirtualeventwebinar
 schema: 2.0.0
@@ -22,12 +22,12 @@ New-MgBetaVirtualEventWebinar [-AdditionalProperties <Hashtable>] [-Audience <St
  [-RegistrationConfiguration <IMicrosoftGraphVirtualEventRegistrationConfiguration>]
  [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaVirtualEventWebinar -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-Confirm] [-WhatIf]
+New-MgBetaVirtualEventWebinar -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -36,19 +36,15 @@ Create new navigation property to webinars for solutions
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -56,7 +52,7 @@ Create new navigation property to webinars for solutions
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +67,7 @@ Accept wildcard characters: False
 meetingAudience
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +83,7 @@ virtualEventWebinar
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
+Type: IMicrosoftGraphVirtualEventWebinar
 Parameter Sets: Create
 Aliases:
 
@@ -103,7 +99,7 @@ Identity information of coorganizers of the webinar.
 To construct, see NOTES section for COORGANIZERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommunicationsUserIdentity[]
+Type: IMicrosoftGraphCommunicationsUserIdentity[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +115,7 @@ communicationsIdentitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommunicationsIdentitySet
+Type: IMicrosoftGraphCommunicationsIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +130,7 @@ Accept wildcard characters: False
 Description of the virtual event.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +145,7 @@ Accept wildcard characters: False
 Display name of the virtual event
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +161,7 @@ dateTimeTimeZone
 To construct, see NOTES section for ENDDATETIME properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Type: IMicrosoftGraphDateTimeZone
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,7 +177,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -197,7 +193,7 @@ Presenters' information of the virtual event.
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventPresenter[]
+Type: IMicrosoftGraphVirtualEventPresenter[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -213,7 +209,7 @@ virtualEventRegistrationConfiguration
 To construct, see NOTES section for REGISTRATIONCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventRegistrationConfiguration
+Type: IMicrosoftGraphVirtualEventRegistrationConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -229,7 +225,7 @@ Registration records of the webinar.
 To construct, see NOTES section for REGISTRATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventRegistration[]
+Type: IMicrosoftGraphVirtualEventRegistration[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -245,7 +241,7 @@ Sessions of the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventSession[]
+Type: IMicrosoftGraphVirtualEventSession[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -261,7 +257,7 @@ dateTimeTimeZone
 To construct, see NOTES section for STARTDATETIME properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Type: IMicrosoftGraphDateTimeZone
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -276,7 +272,7 @@ Accept wildcard characters: False
 virtualEventStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -291,7 +287,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -307,7 +303,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -324,11 +320,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
-
 ## NOTES
 
 ALIASES
@@ -947,3 +941,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

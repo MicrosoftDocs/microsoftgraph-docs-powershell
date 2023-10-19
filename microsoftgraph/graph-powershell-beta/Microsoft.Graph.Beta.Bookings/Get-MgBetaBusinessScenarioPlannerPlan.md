@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplan
 schema: 2.0.0
@@ -17,27 +17,27 @@ This API is available in the following national cloud deployments.
 ### GetExpanded (Default)
 ```
 Get-MgBetaBusinessScenarioPlannerPlan -BusinessScenarioId <String> [-AdditionalProperties <Hashtable>]
- [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaBusinessScenarioPlannerPlan -BusinessScenarioId <String>
  -BodyParameter <IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgBetaBusinessScenarioPlannerPlan -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaBusinessScenarioPlannerPlan -InputObject <IBookingsIdentity>
  -BodyParameter <IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgBetaBusinessScenarioPlannerPlan -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,19 +47,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -67,7 +63,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -83,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -98,8 +94,8 @@ Accept wildcard characters: False
 The unique identifier of businessScenario
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, GetExpanded
+Type: String
+Parameter Sets: GetExpanded, Get
 Aliases:
 
 Required: True
@@ -114,8 +110,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
+Type: IBookingsIdentity
+Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
 Aliases:
 
 Required: True
@@ -130,7 +126,7 @@ businessScenarioTaskTargetBase
 To construct, see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBusinessScenarioTaskTargetBase
+Type: IMicrosoftGraphBusinessScenarioTaskTargetBase
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -145,7 +141,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +157,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,13 +174,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBusinessScenarioPlanReference
-
 ## NOTES
 
 ALIASES
@@ -228,4 +221,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
 ## RELATED LINKS
-

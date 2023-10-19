@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/grant-mgbetauserdriverootpermission
 schema: 2.0.0
@@ -17,27 +17,27 @@ This API is available in the following [national cloud deployments.
 ```
 Grant-MgBetaUserDriveRootPermission -DriveId <String> -PermissionId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Grant
 ```
 Grant-MgBetaUserDriveRootPermission -DriveId <String> -PermissionId <String> -UserId <String>
  -BodyParameter <IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GrantViaIdentityExpanded
+```
+Grant-MgBetaUserDriveRootPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GrantViaIdentity
 ```
 Grant-MgBetaUserDriveRootPermission -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### GrantViaIdentityExpanded
-```
-Grant-MgBetaUserDriveRootPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,7 +46,7 @@ This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 ```
@@ -73,7 +73,7 @@ Grant-MgBetaSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
+Type: IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Grant, GrantViaIdentity
 Aliases:
 
@@ -104,8 +104,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Grant, GrantExpanded
+Type: String
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -120,8 +120,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: GrantViaIdentity, GrantViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -135,8 +135,8 @@ Accept wildcard characters: False
 The unique identifier of permission
 
 ```yaml
-Type: System.String
-Parameter Sets: Grant, GrantExpanded
+Type: String
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveRecipient[]
+Type: IMicrosoftGraphDriveRecipient[]
 Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
@@ -181,8 +181,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Grant, GrantExpanded
+Type: String
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -212,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -229,13 +229,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
-
 ## NOTES
 
 ALIASES
@@ -299,4 +296,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-

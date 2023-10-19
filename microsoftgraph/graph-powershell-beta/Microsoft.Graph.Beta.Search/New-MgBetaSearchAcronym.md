@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym
 schema: 2.0.0
@@ -17,13 +17,12 @@ This API is available in the following national cloud deployments.
 ```
 New-MgBetaSearchAcronym [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-StandsFor <String>] [-State <String>] [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StandsFor <String>] [-State <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgBetaSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,7 +31,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{
@@ -45,15 +44,13 @@ $params = @{
 New-MgBetaSearchAcronym -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +66,7 @@ acronym
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym
+Type: IMicrosoftGraphSearchAcronym
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +81,7 @@ Accept wildcard characters: False
 Search answer description shown on search results page.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +96,7 @@ Accept wildcard characters: False
 Search answer name displayed in search results.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +112,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +128,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchIdentitySet
+Type: IMicrosoftGraphSearchIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +144,7 @@ Timestamp of when the search answer is created or edited.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +159,7 @@ Accept wildcard characters: False
 What the acronym stands for.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +174,7 @@ Accept wildcard characters: False
 answerState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +190,7 @@ Search answer URL link.
 When users click this search answer in search results, they'll go to this URL.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -241,11 +238,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym
-
 ## NOTES
 
 ALIASES
@@ -283,4 +278,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
 ## RELATED LINKS
-

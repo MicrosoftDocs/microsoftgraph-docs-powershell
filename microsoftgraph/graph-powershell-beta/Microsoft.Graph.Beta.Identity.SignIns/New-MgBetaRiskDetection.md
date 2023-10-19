@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection
 schema: 2.0.0
@@ -16,17 +16,16 @@ Create new navigation property to riskDetections for identityProtection
 ```
 New-MgBetaRiskDetection [-Activity <String>] [-ActivityDateTime <DateTime>] [-AdditionalInfo <String>]
  [-AdditionalProperties <Hashtable>] [-CorrelationId <String>] [-DetectedDateTime <DateTime>]
- [-DetectionTimingType <String>] [-Id <String>] [-IPAddress <String>] [-LastUpdatedDateTime <DateTime>]
- [-Location <IMicrosoftGraphSignInLocation>] [-MitreTechniqueId <String>] [-RequestId <String>]
- [-RiskDetail <String>] [-RiskEventType <String>] [-RiskLevel <String>] [-RiskState <String>]
- [-RiskType <String>] [-Source <String>] [-TokenIssuerType <String>] [-UserDisplayName <String>]
- [-UserId <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DetectionTimingType <String>] [-IPAddress <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
+ [-Location <IMicrosoftGraphSignInLocation>] [-RequestId <String>] [-RiskDetail <String>]
+ [-RiskEventType <String>] [-RiskLevel <String>] [-RiskState <String>] [-RiskType <String>] [-Source <String>]
+ [-TokenIssuerType <String>] [-UserDisplayName <String>] [-UserId <String>] [-UserPrincipalName <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgBetaRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,7 +33,7 @@ Create new navigation property to riskDetections for identityProtection
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 ```
@@ -47,7 +46,7 @@ Get-MgBetaRiskDetection
 activityType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -64,7 +63,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -79,7 +78,7 @@ Accept wildcard characters: False
 Additional information associated with the risk detection in JSON format.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -94,7 +93,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -110,7 +109,7 @@ riskDetection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskDetection
+Type: IMicrosoftGraphRiskDetection
 Parameter Sets: Create
 Aliases:
 
@@ -126,7 +125,7 @@ Correlation ID of the sign-in associated with the risk detection.
 This property is null if the risk detection is not associated with a sign-in.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +142,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,7 +157,7 @@ Accept wildcard characters: False
 riskDetectionTimingType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +173,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +188,7 @@ Accept wildcard characters: False
 Provides the IP address of the client from where the risk occurred.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +203,7 @@ Accept wildcard characters: False
 Date and time that the risk detection was last updated.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -220,22 +219,7 @@ signInLocation
 To construct, see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSignInLocation
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MitreTechniqueId
-.
-
-```yaml
-Type: System.String
+Type: IMicrosoftGraphSignInLocation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +235,7 @@ Request ID of the sign-in associated with the risk detection.
 This property is null if the risk detection is not associated with a sign-in.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -266,7 +250,7 @@ Accept wildcard characters: False
 riskDetail
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -283,7 +267,7 @@ The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress,
 For more information about each value, see riskEventType values.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -298,7 +282,7 @@ Accept wildcard characters: False
 riskLevel
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -313,7 +297,7 @@ Accept wildcard characters: False
 riskState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -328,7 +312,7 @@ Accept wildcard characters: False
 riskEventType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -344,7 +328,7 @@ Source of the risk detection.
 For example, activeDirectory.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -359,7 +343,7 @@ Accept wildcard characters: False
 tokenIssuerType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -374,7 +358,7 @@ Accept wildcard characters: False
 Name of the user.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -391,7 +375,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -406,7 +390,7 @@ Accept wildcard characters: False
 The user principal name (UPN) of the user.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -421,7 +405,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -437,7 +421,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -454,11 +438,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskDetection
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskDetection
-
 ## NOTES
 
 ALIASES
@@ -514,4 +496,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
-

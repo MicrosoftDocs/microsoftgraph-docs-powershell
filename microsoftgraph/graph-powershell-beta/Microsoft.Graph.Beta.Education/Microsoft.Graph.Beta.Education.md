@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Education
 Module Guid: af92ce3b-97ab-4131-b87c-09ce582b2fe6
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education
@@ -65,12 +65,6 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaEducationClassAssignmentResourceCount](Get-MgBetaEducationClassAssignmentResourceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaEducationClassAssignmentResourceDependentResource](Get-MgBetaEducationClassAssignmentResourceDependentResource.md)
-Get dependentResources from education
-
-### [Get-MgBetaEducationClassAssignmentResourceDependentResourceCount](Get-MgBetaEducationClassAssignmentResourceDependentResourceCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaEducationClassAssignmentRubric](Get-MgBetaEducationClassAssignmentRubric.md)
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
@@ -125,22 +119,10 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaEducationClassAssignmentSubmissionResourceCount](Get-MgBetaEducationClassAssignmentSubmissionResourceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResource](Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResource.md)
-Get dependentResources from education
-
-### [Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResourceCount](Get-MgBetaEducationClassAssignmentSubmissionResourceDependentResourceCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource.md)
 Get submittedResources from education
 
 ### [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceCount](Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceCount.md)
-Get the number of the resource
-
-### [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource](Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
-Get dependentResources from education
-
-### [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResourceCount](Get-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResourceCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaEducationClassCount](Get-MgBetaEducationClassCount.md)
@@ -152,13 +134,6 @@ Invoke function delta
 ### [Get-MgBetaEducationClassGroup](Get-MgBetaEducationClassGroup.md)
 Retrieve the Microsoft 365 group that corresponds to this educationClass.
 This API is available in the following national cloud deployments.
-
-### [Get-MgBetaEducationClassGroupServiceProvisioningError](Get-MgBetaEducationClassGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaEducationClassGroupServiceProvisioningErrorCount](Get-MgBetaEducationClassGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaEducationClassMember](Get-MgBetaEducationClassMember.md)
 Retrieve the teachers and students for a class.
@@ -250,12 +225,6 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaEducationMeAssignmentResourceCount](Get-MgBetaEducationMeAssignmentResourceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaEducationMeAssignmentResourceDependentResource](Get-MgBetaEducationMeAssignmentResourceDependentResource.md)
-Get dependentResources from education
-
-### [Get-MgBetaEducationMeAssignmentResourceDependentResourceCount](Get-MgBetaEducationMeAssignmentResourceDependentResourceCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaEducationMeAssignmentRubric](Get-MgBetaEducationMeAssignmentRubric.md)
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
@@ -299,22 +268,10 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaEducationMeAssignmentSubmissionResourceCount](Get-MgBetaEducationMeAssignmentSubmissionResourceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaEducationMeAssignmentSubmissionResourceDependentResource](Get-MgBetaEducationMeAssignmentSubmissionResourceDependentResource.md)
-Get dependentResources from education
-
-### [Get-MgBetaEducationMeAssignmentSubmissionResourceDependentResourceCount](Get-MgBetaEducationMeAssignmentSubmissionResourceDependentResourceCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource](Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource.md)
 Get submittedResources from education
 
 ### [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceCount](Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceCount.md)
-Get the number of the resource
-
-### [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource](Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource.md)
-Get dependentResources from education
-
-### [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResourceCount](Get-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResourceCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaEducationMeClass](Get-MgBetaEducationMeClass.md)
@@ -354,13 +311,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaEducationMeUserServiceProvisioningError](Get-MgBetaEducationMeUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaEducationMeUserServiceProvisioningErrorCount](Get-MgBetaEducationMeUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaEducationRoot](Get-MgBetaEducationRoot.md)
 Get education
@@ -460,12 +410,6 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaEducationUserAssignmentResourceCount](Get-MgBetaEducationUserAssignmentResourceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaEducationUserAssignmentResourceDependentResource](Get-MgBetaEducationUserAssignmentResourceDependentResource.md)
-Get dependentResources from education
-
-### [Get-MgBetaEducationUserAssignmentResourceDependentResourceCount](Get-MgBetaEducationUserAssignmentResourceDependentResourceCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaEducationUserAssignmentRubric](Get-MgBetaEducationUserAssignmentRubric.md)
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
@@ -509,22 +453,10 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaEducationUserAssignmentSubmissionResourceCount](Get-MgBetaEducationUserAssignmentSubmissionResourceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResource](Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResource.md)
-Get dependentResources from education
-
-### [Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResourceCount](Get-MgBetaEducationUserAssignmentSubmissionResourceDependentResourceCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResource](Get-MgBetaEducationUserAssignmentSubmissionSubmittedResource.md)
 Get submittedResources from education
 
 ### [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceCount](Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceCount.md)
-Get the number of the resource
-
-### [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource](Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource.md)
-Get dependentResources from education
-
-### [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount](Get-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResourceCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaEducationUserClass](Get-MgBetaEducationUserClass.md)
@@ -559,13 +491,6 @@ Schools to which the user belongs.
 Nullable.
 
 ### [Get-MgBetaEducationUserSchoolCount](Get-MgBetaEducationUserSchoolCount.md)
-Get the number of the resource
-
-### [Get-MgBetaEducationUserServiceProvisioningError](Get-MgBetaEducationUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaEducationUserServiceProvisioningErrorCount](Get-MgBetaEducationUserServiceProvisioningErrorCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaEducationUserTaughtClass](Get-MgBetaEducationUserTaughtClass.md)
@@ -719,9 +644,6 @@ Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaEducationClassAssignmentResourceDependentResource](New-MgBetaEducationClassAssignmentResourceDependentResource.md)
-Create new navigation property to dependentResources for education
-
 ### [New-MgBetaEducationClassAssignmentSettingGradingCategory](New-MgBetaEducationClassAssignmentSettingGradingCategory.md)
 Create new navigation property to gradingCategories for education
 
@@ -743,14 +665,8 @@ To create a new file-based resource, upload the file to the resources folder ass
 If the file doesn't exist or is not in that folder, the POST request will fail.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaEducationClassAssignmentSubmissionResourceDependentResource](New-MgBetaEducationClassAssignmentSubmissionResourceDependentResource.md)
-Create new navigation property to dependentResources for education
-
 ### [New-MgBetaEducationClassAssignmentSubmissionSubmittedResource](New-MgBetaEducationClassAssignmentSubmissionSubmittedResource.md)
 Create new navigation property to submittedResources for education
-
-### [New-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource](New-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
-Create new navigation property to dependentResources for education
 
 ### [New-MgBetaEducationClassMemberByRef](New-MgBetaEducationClassMemberByRef.md)
 Add an educationUser member to an educationClass.
@@ -787,9 +703,6 @@ Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaEducationMeAssignmentResourceDependentResource](New-MgBetaEducationMeAssignmentResourceDependentResource.md)
-Create new navigation property to dependentResources for education
-
 ### [New-MgBetaEducationMeAssignmentSubmission](New-MgBetaEducationMeAssignmentSubmission.md)
 Create new navigation property to submissions for education
 
@@ -808,14 +721,8 @@ To create a new file-based resource, upload the file to the resources folder ass
 If the file doesn't exist or is not in that folder, the POST request will fail.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaEducationMeAssignmentSubmissionResourceDependentResource](New-MgBetaEducationMeAssignmentSubmissionResourceDependentResource.md)
-Create new navigation property to dependentResources for education
-
 ### [New-MgBetaEducationMeAssignmentSubmissionSubmittedResource](New-MgBetaEducationMeAssignmentSubmissionSubmittedResource.md)
 Create new navigation property to submittedResources for education
-
-### [New-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource](New-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource.md)
-Create new navigation property to dependentResources for education
 
 ### [New-MgBetaEducationMeRubric](New-MgBetaEducationMeRubric.md)
 Create a new educationRubric object.
@@ -858,9 +765,6 @@ Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaEducationUserAssignmentResourceDependentResource](New-MgBetaEducationUserAssignmentResourceDependentResource.md)
-Create new navigation property to dependentResources for education
-
 ### [New-MgBetaEducationUserAssignmentSubmission](New-MgBetaEducationUserAssignmentSubmission.md)
 Create new navigation property to submissions for education
 
@@ -879,14 +783,8 @@ To create a new file-based resource, upload the file to the resources folder ass
 If the file doesn't exist or is not in that folder, the POST request will fail.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaEducationUserAssignmentSubmissionResourceDependentResource](New-MgBetaEducationUserAssignmentSubmissionResourceDependentResource.md)
-Create new navigation property to dependentResources for education
-
 ### [New-MgBetaEducationUserAssignmentSubmissionSubmittedResource](New-MgBetaEducationUserAssignmentSubmissionSubmittedResource.md)
 Create new navigation property to submittedResources for education
-
-### [New-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource](New-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource.md)
-Create new navigation property to dependentResources for education
 
 ### [New-MgBetaEducationUserRubric](New-MgBetaEducationUserRubric.md)
 Create a new educationRubric object.
@@ -963,9 +861,6 @@ Only teachers in the class can remove a resource.
 After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
 This API is available in the following national cloud deployments.
 
-### [Remove-MgBetaEducationClassAssignmentResourceDependentResource](Remove-MgBetaEducationClassAssignmentResourceDependentResource.md)
-Delete navigation property dependentResources for education
-
 ### [Remove-MgBetaEducationClassAssignmentRubric](Remove-MgBetaEducationClassAssignmentRubric.md)
 Delete an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
@@ -998,14 +893,8 @@ This allows you to 'reset' the resource to its original state.
 If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
 This API is available in the following national cloud deployments.
 
-### [Remove-MgBetaEducationClassAssignmentSubmissionResourceDependentResource](Remove-MgBetaEducationClassAssignmentSubmissionResourceDependentResource.md)
-Delete navigation property dependentResources for education
-
 ### [Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResource](Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResource.md)
 Delete navigation property submittedResources for education
-
-### [Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource](Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
-Delete navigation property dependentResources for education
 
 ### [Remove-MgBetaEducationClassMemberByRef](Remove-MgBetaEducationClassMemberByRef.md)
 Remove an educationUser from an educationClass.
@@ -1044,9 +933,6 @@ Only teachers in the class can remove a resource.
 After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
 This API is available in the following national cloud deployments.
 
-### [Remove-MgBetaEducationMeAssignmentResourceDependentResource](Remove-MgBetaEducationMeAssignmentResourceDependentResource.md)
-Delete navigation property dependentResources for education
-
 ### [Remove-MgBetaEducationMeAssignmentRubric](Remove-MgBetaEducationMeAssignmentRubric.md)
 Delete an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
@@ -1073,14 +959,8 @@ This allows you to 'reset' the resource to its original state.
 If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
 This API is available in the following national cloud deployments.
 
-### [Remove-MgBetaEducationMeAssignmentSubmissionResourceDependentResource](Remove-MgBetaEducationMeAssignmentSubmissionResourceDependentResource.md)
-Delete navigation property dependentResources for education
-
 ### [Remove-MgBetaEducationMeAssignmentSubmissionSubmittedResource](Remove-MgBetaEducationMeAssignmentSubmissionSubmittedResource.md)
 Delete navigation property submittedResources for education
-
-### [Remove-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource](Remove-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource.md)
-Delete navigation property dependentResources for education
 
 ### [Remove-MgBetaEducationMeRubric](Remove-MgBetaEducationMeRubric.md)
 Delete an educationRubric object.
@@ -1129,9 +1009,6 @@ Only teachers in the class can remove a resource.
 After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
 This API is available in the following national cloud deployments.
 
-### [Remove-MgBetaEducationUserAssignmentResourceDependentResource](Remove-MgBetaEducationUserAssignmentResourceDependentResource.md)
-Delete navigation property dependentResources for education
-
 ### [Remove-MgBetaEducationUserAssignmentRubric](Remove-MgBetaEducationUserAssignmentRubric.md)
 Delete an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
@@ -1158,14 +1035,8 @@ This allows you to 'reset' the resource to its original state.
 If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
 This API is available in the following national cloud deployments.
 
-### [Remove-MgBetaEducationUserAssignmentSubmissionResourceDependentResource](Remove-MgBetaEducationUserAssignmentSubmissionResourceDependentResource.md)
-Delete navigation property dependentResources for education
-
 ### [Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResource](Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResource.md)
 Delete navigation property submittedResources for education
-
-### [Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource](Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource.md)
-Delete navigation property dependentResources for education
 
 ### [Remove-MgBetaEducationUserRubric](Remove-MgBetaEducationUserRubric.md)
 Delete an educationRubric object.
@@ -1319,9 +1190,6 @@ This API is available in the following national cloud deployments.
 ### [Update-MgBetaEducationClassAssignmentResource](Update-MgBetaEducationClassAssignmentResource.md)
 Update the navigation property resources in education
 
-### [Update-MgBetaEducationClassAssignmentResourceDependentResource](Update-MgBetaEducationClassAssignmentResourceDependentResource.md)
-Update the navigation property dependentResources in education
-
 ### [Update-MgBetaEducationClassAssignmentRubric](Update-MgBetaEducationClassAssignmentRubric.md)
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
@@ -1346,14 +1214,8 @@ This API is available in the following national cloud deployments.
 ### [Update-MgBetaEducationClassAssignmentSubmissionResource](Update-MgBetaEducationClassAssignmentSubmissionResource.md)
 Update the navigation property resources in education
 
-### [Update-MgBetaEducationClassAssignmentSubmissionResourceDependentResource](Update-MgBetaEducationClassAssignmentSubmissionResourceDependentResource.md)
-Update the navigation property dependentResources in education
-
 ### [Update-MgBetaEducationClassAssignmentSubmissionSubmittedResource](Update-MgBetaEducationClassAssignmentSubmissionSubmittedResource.md)
 Update the navigation property submittedResources in education
-
-### [Update-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource](Update-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
-Update the navigation property dependentResources in education
 
 ### [Update-MgBetaEducationClassModule](Update-MgBetaEducationClassModule.md)
 Update an educationModule object in a class.
@@ -1377,9 +1239,6 @@ Update the navigation property assignments in education
 ### [Update-MgBetaEducationMeAssignmentResource](Update-MgBetaEducationMeAssignmentResource.md)
 Update the navigation property resources in education
 
-### [Update-MgBetaEducationMeAssignmentResourceDependentResource](Update-MgBetaEducationMeAssignmentResourceDependentResource.md)
-Update the navigation property dependentResources in education
-
 ### [Update-MgBetaEducationMeAssignmentRubric](Update-MgBetaEducationMeAssignmentRubric.md)
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
@@ -1396,14 +1255,8 @@ This API is available in the following national cloud deployments.
 ### [Update-MgBetaEducationMeAssignmentSubmissionResource](Update-MgBetaEducationMeAssignmentSubmissionResource.md)
 Update the navigation property resources in education
 
-### [Update-MgBetaEducationMeAssignmentSubmissionResourceDependentResource](Update-MgBetaEducationMeAssignmentSubmissionResourceDependentResource.md)
-Update the navigation property dependentResources in education
-
 ### [Update-MgBetaEducationMeAssignmentSubmissionSubmittedResource](Update-MgBetaEducationMeAssignmentSubmissionSubmittedResource.md)
 Update the navigation property submittedResources in education
-
-### [Update-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource](Update-MgBetaEducationMeAssignmentSubmissionSubmittedResourceDependentResource.md)
-Update the navigation property dependentResources in education
 
 ### [Update-MgBetaEducationMeRubric](Update-MgBetaEducationMeRubric.md)
 Update the properties of an educationRubric object.
@@ -1445,9 +1298,6 @@ Update the navigation property assignments in education
 ### [Update-MgBetaEducationUserAssignmentResource](Update-MgBetaEducationUserAssignmentResource.md)
 Update the navigation property resources in education
 
-### [Update-MgBetaEducationUserAssignmentResourceDependentResource](Update-MgBetaEducationUserAssignmentResourceDependentResource.md)
-Update the navigation property dependentResources in education
-
 ### [Update-MgBetaEducationUserAssignmentRubric](Update-MgBetaEducationUserAssignmentRubric.md)
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
@@ -1464,14 +1314,8 @@ This API is available in the following national cloud deployments.
 ### [Update-MgBetaEducationUserAssignmentSubmissionResource](Update-MgBetaEducationUserAssignmentSubmissionResource.md)
 Update the navigation property resources in education
 
-### [Update-MgBetaEducationUserAssignmentSubmissionResourceDependentResource](Update-MgBetaEducationUserAssignmentSubmissionResourceDependentResource.md)
-Update the navigation property dependentResources in education
-
 ### [Update-MgBetaEducationUserAssignmentSubmissionSubmittedResource](Update-MgBetaEducationUserAssignmentSubmissionSubmittedResource.md)
 Update the navigation property submittedResources in education
-
-### [Update-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource](Update-MgBetaEducationUserAssignmentSubmissionSubmittedResourceDependentResource.md)
-Update the navigation property dependentResources in education
 
 ### [Update-MgBetaEducationUserMailboxSetting](Update-MgBetaEducationUserMailboxSetting.md)
 Update property mailboxSettings value.

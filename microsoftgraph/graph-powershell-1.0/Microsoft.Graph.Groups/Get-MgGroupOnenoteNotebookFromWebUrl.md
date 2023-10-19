@@ -1,72 +1,68 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouponenotenotebookfromweburl
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberwithlicenseerrorcountasuser
 schema: 2.0.0
 ---
 
-# Get-MgGroupOnenoteNotebookFromWebUrl
+# Get-MgGroupMemberWithLicenseErrorCountAsUser
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a notebook object by using its URL path.
-The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
-This API is supported in the following national cloud deployments.
+Get the number of the resource
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### Get (Default)
 ```
-Get-MgGroupOnenoteNotebookFromWebUrl -GroupId <String> [-AdditionalProperties <Hashtable>] [-WebUrl <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgGroupOnenoteNotebookFromWebUrl -GroupId <String>
- -BodyParameter <IPaths1N0Gyr2GroupsGroupIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Get-MgGroupMemberWithLicenseErrorCountAsUser -GroupId <String> [-Filter <String>] [-Search <String>]
+ -ConsistencyLevel <String> [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupOnenoteNotebookFromWebUrl -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths1N0Gyr2GroupsGroupIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgGroupOnenoteNotebookFromWebUrl -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Get-MgGroupMemberWithLicenseErrorCountAsUser -InputObject <IGroupsIdentity> [-Filter <String>]
+ [-Search <String>] -ConsistencyLevel <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a notebook object by using its URL path.
-The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
-This API is supported in the following national cloud deployments.
+Get the number of the resource
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+{{ Add code here }}
 ```
 
-$params = @{
-	WebUrl = "webUrl value"
-}
-
-# A UPN can also be used as -UserId.
-Get-MgUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -ConsistencyLevel
+Indicates the requested consistency level.
+Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -76,28 +72,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1N0Gyr2GroupsGroupIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get, GetViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
 ### -GroupId
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, GetExpanded
+Type: String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -112,8 +92,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -123,44 +103,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -WebUrl
-.
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Type: String
+Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
 
 Required: False
 Position: Named
@@ -175,13 +124,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
-### Microsoft.Graph.PowerShell.Models.IPaths1N0Gyr2GroupsGroupIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCopyNotebookModel
-
+### System.Int32
 ## NOTES
 
 ALIASES
@@ -190,10 +135,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IPaths1N0Gyr2GroupsGroupIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[WebUrl <String>]`: 
 
 `INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -233,4 +174,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

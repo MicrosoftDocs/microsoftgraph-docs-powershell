@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserbyid
 schema: 2.0.0
@@ -15,15 +15,15 @@ Some common uses for this function are to: This API is available in the followin
 
 ### GetExpanded (Default)
 ```
-Get-MgBetaUserById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Get-MgBetaUserById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaUserById
- -BodyParameter <IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,7 +32,7 @@ Some common uses for this function are to: This API is available in the followin
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 ```
@@ -59,7 +59,7 @@ Get-MgBetaDirectoryObjectById -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+Type: IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -136,7 +136,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -153,11 +153,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES
@@ -173,4 +171,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
-

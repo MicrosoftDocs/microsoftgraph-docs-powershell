@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasmobilelobapp
@@ -36,6 +36,8 @@ Get-MgDeviceAppManagementMobileAppAsMobileLobApp -InputObject <IDevicesCorporate
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.mobileLobApp
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -276,5 +278,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+
 [Get-MgBetaDeviceAppManagementMobileAppAsMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsMobileLobApp?view=graph-powershell-beta)
 

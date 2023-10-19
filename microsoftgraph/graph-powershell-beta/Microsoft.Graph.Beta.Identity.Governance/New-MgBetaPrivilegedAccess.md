@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccess
 schema: 2.0.0
@@ -19,12 +19,12 @@ New-MgBetaPrivilegedAccess [-AdditionalProperties <Hashtable>] [-DisplayName <St
  [-RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]
  [-RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]
- [-RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPrivilegedAccess -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-Confirm] [-WhatIf]
+New-MgBetaPrivilegedAccess -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,14 +33,14 @@ Add new entity to privilegedAccess
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -53,7 +53,7 @@ Add new entity to privilegedAccess
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ privilegedAccess
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
+Type: IMicrosoftGraphPrivilegedAccess
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 The display name of the provider managed by PIM.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ A collection of resources for the provider.
 To construct, see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceResource[]
+Type: IMicrosoftGraphGovernanceResource[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +132,7 @@ A collection of role assignment requests for the provider.
 To construct, see NOTES section for ROLEASSIGNMENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignmentRequest[]
+Type: IMicrosoftGraphGovernanceRoleAssignmentRequest[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ A collection of role assignments for the provider.
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignment[]
+Type: IMicrosoftGraphGovernanceRoleAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +164,7 @@ A collection of role definitions for the provider.
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleDefinition[]
+Type: IMicrosoftGraphGovernanceRoleDefinition[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +180,7 @@ A collection of role settings for the provider.
 To construct, see NOTES section for ROLESETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleSetting[]
+Type: IMicrosoftGraphGovernanceRoleSetting[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -211,7 +211,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -228,11 +228,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
-
 ## NOTES
 
 ALIASES
@@ -751,3 +749,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

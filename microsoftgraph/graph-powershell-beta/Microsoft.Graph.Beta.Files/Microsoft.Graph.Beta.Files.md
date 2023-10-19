@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Files
 Module Guid: 2e2f1e96-fe5f-4fb2-b62f-dab36041a5ca
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files
@@ -19,7 +19,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Add-MgBetaShareListContentTypeCopy](Add-MgBetaShareListContentTypeCopy.md)
@@ -30,7 +30,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Copy-MgBetaDriveItem](Copy-MgBetaDriveItem.md)
@@ -85,13 +85,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaDriveCreatedByUserServiceProvisioningError](Get-MgBetaDriveCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveCreatedByUserServiceProvisioningErrorCount](Get-MgBetaDriveCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaDriveFollowing](Get-MgBetaDriveFollowing.md)
 The list of items the user is following.
@@ -159,13 +152,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaDriveItemCreatedByUserServiceProvisioningError](Get-MgBetaDriveItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaDriveItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDriveItemDelta](Get-MgBetaDriveItemDelta.md)
 Invoke function delta
 
@@ -178,13 +164,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaDriveItemItemLastModifiedByUserServiceProvisioningError](Get-MgBetaDriveItemItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveItemItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaDriveItemItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDriveItemLastModifiedByUser](Get-MgBetaDriveItemLastModifiedByUser.md)
 Get lastModifiedByUser from drives
 
@@ -193,13 +172,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaDriveItemLastModifiedByUserServiceProvisioningError](Get-MgBetaDriveItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaDriveItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaDriveItemListItem](Get-MgBetaDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -223,13 +195,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaDriveItemListItemCreatedByUserServiceProvisioningError](Get-MgBetaDriveItemListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveItemListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaDriveItemListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaDriveItemListItemDocumentSetVersion](Get-MgBetaDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -307,13 +272,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaDriveLastModifiedByUserServiceProvisioningError](Get-MgBetaDriveLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaDriveLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDriveList](Get-MgBetaDriveList.md)
 For drives in SharePoint, the underlying document library list.
 Read-only.
@@ -371,13 +329,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaDriveListCreatedByUserServiceProvisioningError](Get-MgBetaDriveListCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveListCreatedByUserServiceProvisioningErrorCount](Get-MgBetaDriveListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDriveListDrive](Get-MgBetaDriveListDrive.md)
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
@@ -406,13 +357,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaDriveListItemCreatedByUserServiceProvisioningError](Get-MgBetaDriveListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaDriveListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaDriveListItemDelta](Get-MgBetaDriveListItemDelta.md)
 Invoke function delta
@@ -510,13 +454,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaDriveRootCreatedByUserServiceProvisioningError](Get-MgBetaDriveRootCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveRootCreatedByUserServiceProvisioningErrorCount](Get-MgBetaDriveRootCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDriveRootDelta](Get-MgBetaDriveRootDelta.md)
 Invoke function delta
 
@@ -529,13 +466,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaDriveRootItemLastModifiedByUserServiceProvisioningError](Get-MgBetaDriveRootItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveRootItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaDriveRootItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDriveRootLastModifiedByUser](Get-MgBetaDriveRootLastModifiedByUser.md)
 Get lastModifiedByUser from drives
 
@@ -544,13 +474,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaDriveRootLastModifiedByUserServiceProvisioningError](Get-MgBetaDriveRootLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveRootLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaDriveRootLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaDriveRootListItem](Get-MgBetaDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -574,13 +497,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaDriveRootListItemCreatedByUserServiceProvisioningError](Get-MgBetaDriveRootListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaDriveRootListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaDriveRootListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaDriveRootListItemDocumentSetVersion](Get-MgBetaDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -706,13 +622,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupDriveCreatedByUserServiceProvisioningError](Get-MgBetaGroupDriveCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupDriveFollowing](Get-MgBetaGroupDriveFollowing.md)
 The list of items the user is following.
 Only in OneDrive for Business.
@@ -776,13 +685,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupDriveItemCreatedByUserServiceProvisioningError](Get-MgBetaGroupDriveItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupDriveItemItemLastModifiedByUser](Get-MgBetaGroupDriveItemItemLastModifiedByUser.md)
 Get lastModifiedByUser from groups
 
@@ -792,13 +694,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupDriveItemItemLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupDriveItemItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveItemItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveItemItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupDriveItemLastModifiedByUser](Get-MgBetaGroupDriveItemLastModifiedByUser.md)
 Get lastModifiedByUser from groups
 
@@ -807,13 +702,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaGroupDriveItemLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupDriveItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaGroupDriveItemListItem](Get-MgBetaGroupDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -834,13 +722,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningError](Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaGroupDriveItemListItemDocumentSetVersion](Get-MgBetaGroupDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -918,13 +799,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupDriveLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupDriveLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupDriveList](Get-MgBetaGroupDriveList.md)
 For drives in SharePoint, the underlying document library list.
 Read-only.
@@ -979,13 +853,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupDriveListCreatedByUserServiceProvisioningError](Get-MgBetaGroupDriveListCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveListCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupDriveListDrive](Get-MgBetaGroupDriveListDrive.md)
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
@@ -1008,13 +875,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaGroupDriveListItemCreatedByUserServiceProvisioningError](Get-MgBetaGroupDriveListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaGroupDriveListItemDocumentSetVersion](Get-MgBetaGroupDriveListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1106,13 +966,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupDriveRootCreatedByUserServiceProvisioningError](Get-MgBetaGroupDriveRootCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveRootCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveRootCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupDriveRootItemLastModifiedByUser](Get-MgBetaGroupDriveRootItemLastModifiedByUser.md)
 Get lastModifiedByUser from groups
 
@@ -1122,13 +975,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaGroupDriveRootItemLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupDriveRootItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveRootItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveRootItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupDriveRootLastModifiedByUser](Get-MgBetaGroupDriveRootLastModifiedByUser.md)
 Get lastModifiedByUser from groups
 
@@ -1137,13 +983,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaGroupDriveRootLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupDriveRootLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveRootLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveRootLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaGroupDriveRootListItem](Get-MgBetaGroupDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -1164,13 +1003,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaGroupDriveRootListItemCreatedByUserServiceProvisioningError](Get-MgBetaGroupDriveRootListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaGroupDriveRootListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupDriveRootListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaGroupDriveRootListItemDocumentSetVersion](Get-MgBetaGroupDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1274,13 +1106,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaShareCreatedByUserServiceProvisioningError](Get-MgBetaShareCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaShareCreatedByUserServiceProvisioningErrorCount](Get-MgBetaShareCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaShareDriveItem](Get-MgBetaShareDriveItem.md)
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
@@ -1308,13 +1133,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError](Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaShareItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaShareItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaShareLastModifiedByUser](Get-MgBetaShareLastModifiedByUser.md)
 Get lastModifiedByUser from shares
 
@@ -1323,13 +1141,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaShareLastModifiedByUserServiceProvisioningError](Get-MgBetaShareLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaShareLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaShareLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaShareList](Get-MgBetaShareList.md)
 Used to access the underlying list
@@ -1386,13 +1197,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaShareListCreatedByUserServiceProvisioningError](Get-MgBetaShareListCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaShareListCreatedByUserServiceProvisioningErrorCount](Get-MgBetaShareListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaShareListDrive](Get-MgBetaShareListDrive.md)
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
@@ -1417,13 +1221,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaShareListItemCreatedByUserServiceProvisioningError](Get-MgBetaShareListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaShareListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaShareListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaShareListItemDelta](Get-MgBetaShareListItemDelta.md)
 Invoke function delta
@@ -1485,10 +1282,8 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaShareSite](Get-MgBetaShareSite.md)
 Used to access the underlying site
 
-### [Get-MgBetaUserDefaultDrive](Get-MgBetaUserDefaultDrive.md)
-Retrieve the properties and relationships of a Drive resource.
-A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaShareSite](Get-MgBetaShareSite.md)
+Used to access the underlying site
 
 ### [Get-MgBetaUserDrive](Get-MgBetaUserDrive.md)
 A collection of drives available for this user.
@@ -1528,13 +1323,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaUserDriveCreatedByUserServiceProvisioningError](Get-MgBetaUserDriveCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveCreatedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaUserDriveFollowing](Get-MgBetaUserDriveFollowing.md)
 The list of items the user is following.
@@ -1599,13 +1387,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError](Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaUserDriveItemItemLastModifiedByUser](Get-MgBetaUserDriveItemItemLastModifiedByUser.md)
 Get lastModifiedByUser from users
 
@@ -1615,13 +1396,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaUserDriveItemItemLastModifiedByUserServiceProvisioningError](Get-MgBetaUserDriveItemItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveItemItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveItemItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaUserDriveItemLastModifiedByUser](Get-MgBetaUserDriveItemLastModifiedByUser.md)
 Get lastModifiedByUser from users
 
@@ -1630,13 +1404,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaUserDriveItemLastModifiedByUserServiceProvisioningError](Get-MgBetaUserDriveItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaUserDriveItemListItem](Get-MgBetaUserDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -1657,13 +1424,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaUserDriveItemListItemCreatedByUserServiceProvisioningError](Get-MgBetaUserDriveItemListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveItemListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveItemListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaUserDriveItemListItemDocumentSetVersion](Get-MgBetaUserDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1741,13 +1501,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaUserDriveLastModifiedByUserServiceProvisioningError](Get-MgBetaUserDriveLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaUserDriveList](Get-MgBetaUserDriveList.md)
 For drives in SharePoint, the underlying document library list.
 Read-only.
@@ -1802,13 +1555,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaUserDriveListCreatedByUserServiceProvisioningError](Get-MgBetaUserDriveListCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveListCreatedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaUserDriveListDrive](Get-MgBetaUserDriveListDrive.md)
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
@@ -1831,13 +1577,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaUserDriveListItemCreatedByUserServiceProvisioningError](Get-MgBetaUserDriveListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaUserDriveListItemDocumentSetVersion](Get-MgBetaUserDriveListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1929,13 +1668,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaUserDriveRootCreatedByUserServiceProvisioningError](Get-MgBetaUserDriveRootCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveRootCreatedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveRootCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaUserDriveRootItemLastModifiedByUser](Get-MgBetaUserDriveRootItemLastModifiedByUser.md)
 Get lastModifiedByUser from users
 
@@ -1945,13 +1677,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError](Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveRootItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaUserDriveRootLastModifiedByUser](Get-MgBetaUserDriveRootLastModifiedByUser.md)
 Get lastModifiedByUser from users
 
@@ -1960,13 +1685,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaUserDriveRootLastModifiedByUserServiceProvisioningError](Get-MgBetaUserDriveRootLastModifiedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveRootLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveRootLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaUserDriveRootListItem](Get-MgBetaUserDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -1987,13 +1705,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaUserDriveRootListItemCreatedByUserServiceProvisioningError](Get-MgBetaUserDriveRootListItemCreatedByUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaUserDriveRootListItemCreatedByUserServiceProvisioningErrorCount](Get-MgBetaUserDriveRootListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaUserDriveRootListItemDocumentSetVersion](Get-MgBetaUserDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -2296,8 +2007,8 @@ Invoke action createUploadSession
 ### [New-MgBetaDriveRootVersion](New-MgBetaDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgBetaGroupDrive](New-MgBetaGroupDrive.md)
-Create new navigation property to drives for groups
+### [New-MgBetaDriveRootVersion](New-MgBetaDriveRootVersion.md)
+Create new navigation property to versions for drives
 
 ### [New-MgBetaGroupDriveBundle](New-MgBetaGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -2420,8 +2131,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgBetaShareSharedDriveItemSharedDriveItem](New-MgBetaShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgBetaUserDrive](New-MgBetaUserDrive.md)
-Create new navigation property to drives for users
+### [New-MgBetaShareSharedDriveItemSharedDriveItem](New-MgBetaShareSharedDriveItemSharedDriveItem.md)
+Add new entity to shares
 
 ### [New-MgBetaUserDriveBundle](New-MgBetaUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -2518,8 +2229,9 @@ This API is available in the following [national cloud deployments.
 Publishes a contentType][] present in a content type hub site.
 This API is available in the following [national cloud deployments.
 
-### [Remove-MgBetaDrive](Remove-MgBetaDrive.md)
-Delete entity from drives
+### [Publish-MgBetaShareListContentType](Publish-MgBetaShareListContentType.md)
+Publishes a contentType][] present in a content type hub site.
+This API is available in the following [national cloud deployments.
 
 ### [Remove-MgBetaDriveItem](Remove-MgBetaDriveItem.md)
 Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
@@ -3228,8 +2940,9 @@ This API is available in the following [national cloud deployments.
 Unpublish a contentType][] from a content type hub site.
 This API is available in the following [national cloud deployments.
 
-### [Update-MgBetaDrive](Update-MgBetaDrive.md)
-Update entity in drives
+### [Unpublish-MgBetaShareListContentType](Unpublish-MgBetaShareListContentType.md)
+Unpublish a contentType][] from a content type hub site.
+This API is available in the following [national cloud deployments.
 
 ### [Update-MgBetaDriveCreatedByUserMailboxSetting](Update-MgBetaDriveCreatedByUserMailboxSetting.md)
 Update property mailboxSettings value.

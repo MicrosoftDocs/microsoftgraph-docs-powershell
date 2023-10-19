@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggrouppermissiongrantmembergroup
 schema: 2.0.0
@@ -20,27 +20,27 @@ This API is supported in the following national cloud deployments.
 ### CheckExpanded (Default)
 ```
 Confirm-MgGroupPermissionGrantMemberGroup -GroupId <String> -ResourceSpecificPermissionGrantId <String>
- [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Check
 ```
 Confirm-MgGroupPermissionGrantMemberGroup -GroupId <String> -ResourceSpecificPermissionGrantId <String>
  -BodyParameter <IPaths1Dr4KhqGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CheckViaIdentityExpanded
+```
+Confirm-MgGroupPermissionGrantMemberGroup -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
 Confirm-MgGroupPermissionGrantMemberGroup -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1Dr4KhqGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CheckViaIdentityExpanded
-```
-Confirm-MgGroupPermissionGrantMemberGroup -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-GroupIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,19 +53,15 @@ This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -73,7 +69,7 @@ This API is supported in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -89,7 +85,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1Dr4KhqGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Dr4KhqGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Check, CheckViaIdentity
 Aliases:
 
@@ -104,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Check, CheckExpanded
+Type: String
+Parameter Sets: CheckExpanded, Check
 Aliases:
 
 Required: True
@@ -119,7 +115,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -135,8 +131,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: CheckViaIdentity, CheckViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: CheckViaIdentityExpanded, CheckViaIdentity
 Aliases:
 
 Required: True
@@ -150,8 +146,8 @@ Accept wildcard characters: False
 The unique identifier of resourceSpecificPermissionGrant
 
 ```yaml
-Type: System.String
-Parameter Sets: Check, CheckExpanded
+Type: String
+Parameter Sets: CheckExpanded, Check
 Aliases:
 
 Required: True
@@ -165,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -181,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -198,13 +194,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths1Dr4KhqGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -256,4 +249,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

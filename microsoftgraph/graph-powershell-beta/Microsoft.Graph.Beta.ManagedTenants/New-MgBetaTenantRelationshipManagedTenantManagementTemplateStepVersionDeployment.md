@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversiondeployment
 schema: 2.0.0
@@ -19,22 +19,14 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
  [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>] [-Id <String>]
  [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Status <String>]
  [-TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>] [-TenantId <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
  -ManagementTemplateStepVersionId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
- -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -45,7 +37,15 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
  [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphManagedTenantsGraphApiErrorDetails>] [-Id <String>]
  [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Status <String>]
  [-TemplateStepVersion <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion>] [-TenantId <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersionDeployment
+ -InputObject <IManagedTenantsIdentity>
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,14 +53,14 @@ Create new navigation property to deployments for tenantRelationships
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -73,7 +73,7 @@ Create new navigation property to deployments for tenantRelationships
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ managementTemplateStepDeployment
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment
+Type: IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ graphAPIErrorDetails
 To construct, see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsGraphApiErrorDetails
+Type: IMicrosoftGraphManagedTenantsGraphApiErrorDetails
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -151,7 +151,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -167,8 +167,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IManagedTenantsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -212,8 +212,8 @@ Accept wildcard characters: False
 The unique identifier of managementTemplateStepVersion
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 managementTemplateDeploymentStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -243,7 +243,7 @@ managementTemplateStepVersion
 To construct, see NOTES section for TEMPLATESTEPVERSION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepVersion
+Type: IMicrosoftGraphManagedTenantsManagementTemplateStepVersion
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -289,7 +289,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -306,13 +306,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment
-
 ## NOTES
 
 ALIASES
@@ -542,3 +539,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

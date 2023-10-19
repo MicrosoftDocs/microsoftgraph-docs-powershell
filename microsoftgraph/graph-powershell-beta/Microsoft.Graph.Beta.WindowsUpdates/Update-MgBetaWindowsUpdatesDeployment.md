@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatesdeployment
 schema: 2.0.0
@@ -19,19 +19,13 @@ Update-MgBetaWindowsUpdatesDeployment -DeploymentId <String> [-AdditionalPropert
  [-Audience <IMicrosoftGraphWindowsUpdatesDeploymentAudience>] [-Content <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Settings <IMicrosoftGraphWindowsUpdatesDeploymentSettings>]
- [-State <IMicrosoftGraphWindowsUpdatesDeploymentState>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-State <IMicrosoftGraphWindowsUpdatesDeploymentState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaWindowsUpdatesDeployment -DeploymentId <String>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesDeployment> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesDeployment> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsUpdatesDeployment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,7 +34,13 @@ Update-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity>
  [-AdditionalProperties <Hashtable>] [-Audience <IMicrosoftGraphWindowsUpdatesDeploymentAudience>]
  [-Content <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Settings <IMicrosoftGraphWindowsUpdatesDeploymentSettings>]
- [-State <IMicrosoftGraphWindowsUpdatesDeploymentState>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-State <IMicrosoftGraphWindowsUpdatesDeploymentState>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsUpdatesDeployment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -62,9 +62,7 @@ $params = @{
 Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -85,15 +83,13 @@ $params = @{
 Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -109,7 +105,7 @@ deploymentAudience
 To construct, see NOTES section for AUDIENCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeploymentAudience
+Type: IMicrosoftGraphWindowsUpdatesDeploymentAudience
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -125,7 +121,7 @@ deployment
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeployment
+Type: IMicrosoftGraphWindowsUpdatesDeployment
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -140,7 +136,7 @@ Accept wildcard characters: False
 deployableContent
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +153,7 @@ Returned by default.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,8 +168,8 @@ Accept wildcard characters: False
 The unique identifier of deployment
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -188,7 +184,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -204,8 +200,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IWindowsUpdatesIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -221,7 +217,7 @@ Returned by default.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +233,7 @@ deploymentSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeploymentSettings
+Type: IMicrosoftGraphWindowsUpdatesDeploymentSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -253,7 +249,7 @@ deploymentState
 To construct, see NOTES section for STATE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeploymentState
+Type: IMicrosoftGraphWindowsUpdatesDeploymentState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -268,7 +264,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -284,7 +280,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -301,13 +297,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeployment
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeployment
-
 ## NOTES
 
 ALIASES
@@ -438,3 +431,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

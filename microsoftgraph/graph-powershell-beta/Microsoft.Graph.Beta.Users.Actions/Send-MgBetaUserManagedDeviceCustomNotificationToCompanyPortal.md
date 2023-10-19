@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermanageddevicecustomnotificationtocompanyportal
 schema: 2.0.0
@@ -16,28 +16,28 @@ Invoke action sendCustomNotificationToCompanyPortal
 ```
 Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal -ManagedDeviceId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-NotificationBody <String>] [-NotificationTitle <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### SendViaIdentity
-```
-Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentityExpanded
 ```
 Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-NotificationBody <String>] [-NotificationTitle <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SendViaIdentity
+```
+Send-MgBetaUserManagedDeviceCustomNotificationToCompanyPortal -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,14 +45,14 @@ Invoke action sendCustomNotificationToCompanyPortal
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -65,7 +65,7 @@ Invoke action sendCustomNotificationToCompanyPortal
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Send, SendViaIdentity
 Aliases:
 
@@ -97,8 +97,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: SendViaIdentity, SendViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: SendViaIdentityExpanded, SendViaIdentity
 Aliases:
 
 Required: True
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: System.String
-Parameter Sets: Send, SendExpanded
+Type: String
+Parameter Sets: SendExpanded, Send
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -172,8 +172,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Send, SendExpanded
+Type: String
+Parameter Sets: SendExpanded, Send
 Aliases:
 
 Required: True
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -203,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -220,13 +220,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Cnuhc3UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSendcustomnotificationtocompanyportalPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -282,4 +279,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

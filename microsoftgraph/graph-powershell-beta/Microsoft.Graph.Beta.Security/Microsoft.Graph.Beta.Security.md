@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Security
 Module Guid: b4c13ecb-e1ce-4165-bc04-712a1c06def8
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security
@@ -189,13 +189,6 @@ Get the number of the resource
 
 ### [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup](Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroup.md)
 Represents a group.
-
-### [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningError](Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningErrorCount](Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource.md)
 Data source entity for a custodian.
@@ -465,7 +458,7 @@ The specific rule or regulation created by a jurisdiction used to determine whet
 Specifies the  department or business unit of an organization to which a label belongs.
 
 ### [Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate](Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate.md)
-Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
+Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 
 ### [Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage.md)
 When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.
@@ -480,7 +473,7 @@ Get providerTenantSettings from security
 Get the number of the resource
 
 ### [Get-MgBetaSecuritySecureScore](Get-MgBetaSecuritySecureScore.md)
-Measurements of tenants’ security posture to help protect them from threats.
+Measurements of tenants' security posture to help protect them from threats.
 
 ### [Get-MgBetaSecuritySecureScoreControlProfile](Get-MgBetaSecuritySecureScoreControlProfile.md)
 Get secureScoreControlProfiles from security
@@ -506,13 +499,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaSecuritySubjectRightsRequestApproverServiceProvisioningError](Get-MgBetaSecuritySubjectRightsRequestApproverServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount](Get-MgBetaSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaSecuritySubjectRightsRequestCollaborator](Get-MgBetaSecuritySubjectRightsRequestCollaborator.md)
 Get collaborators from security
 
@@ -524,13 +510,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaSecuritySubjectRightsRequestCollaboratorServiceProvisioningError](Get-MgBetaSecuritySubjectRightsRequestCollaboratorServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaSecuritySubjectRightsRequestCollaboratorServiceProvisioningErrorCount](Get-MgBetaSecuritySubjectRightsRequestCollaboratorServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaSecuritySubjectRightsRequestCount](Get-MgBetaSecuritySubjectRightsRequestCount.md)
 Get the number of the resource
@@ -636,18 +615,6 @@ Reverse passive DNS retrieval about this host.
 
 ### [Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverseCount](Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverseCount.md)
 Get the number of the resource
-
-### [Get-MgBetaSecurityThreatIntelligenceHostPort](Get-MgBetaSecurityThreatIntelligenceHostPort.md)
-Get hostPorts from security
-
-### [Get-MgBetaSecurityThreatIntelligenceHostPortCount](Get-MgBetaSecurityThreatIntelligenceHostPortCount.md)
-Get the number of the resource
-
-### [Get-MgBetaSecurityThreatIntelligenceHostPortHost](Get-MgBetaSecurityThreatIntelligenceHostPortHost.md)
-Get host from security
-
-### [Get-MgBetaSecurityThreatIntelligenceHostPortMostRecentSslCertificate](Get-MgBetaSecurityThreatIntelligenceHostPortMostRecentSslCertificate.md)
-Get mostRecentSslCertificate from security
 
 ### [Get-MgBetaSecurityThreatIntelligenceHostReputation](Get-MgBetaSecurityThreatIntelligenceHostReputation.md)
 Get the properties and relationships of a hostReputation object.
@@ -1102,9 +1069,6 @@ Create new navigation property to hostCookies for security
 ### [New-MgBetaSecurityThreatIntelligenceHostPair](New-MgBetaSecurityThreatIntelligenceHostPair.md)
 Create new navigation property to hostPairs for security
 
-### [New-MgBetaSecurityThreatIntelligenceHostPort](New-MgBetaSecurityThreatIntelligenceHostPort.md)
-Create new navigation property to hostPorts for security
-
 ### [New-MgBetaSecurityThreatIntelligenceHostSslCertificate](New-MgBetaSecurityThreatIntelligenceHostSslCertificate.md)
 Create new navigation property to hostSslCertificates for security
 
@@ -1398,9 +1362,6 @@ Delete navigation property hostCookies for security
 
 ### [Remove-MgBetaSecurityThreatIntelligenceHostPair](Remove-MgBetaSecurityThreatIntelligenceHostPair.md)
 Delete navigation property hostPairs for security
-
-### [Remove-MgBetaSecurityThreatIntelligenceHostPort](Remove-MgBetaSecurityThreatIntelligenceHostPort.md)
-Delete navigation property hostPorts for security
 
 ### [Remove-MgBetaSecurityThreatIntelligenceHostReputation](Remove-MgBetaSecurityThreatIntelligenceHostReputation.md)
 Delete navigation property reputation for security
@@ -1760,9 +1721,6 @@ Update the navigation property hostCookies in security
 
 ### [Update-MgBetaSecurityThreatIntelligenceHostPair](Update-MgBetaSecurityThreatIntelligenceHostPair.md)
 Update the navigation property hostPairs in security
-
-### [Update-MgBetaSecurityThreatIntelligenceHostPort](Update-MgBetaSecurityThreatIntelligenceHostPort.md)
-Update the navigation property hostPorts in security
 
 ### [Update-MgBetaSecurityThreatIntelligenceHostReputation](Update-MgBetaSecurityThreatIntelligenceHostReputation.md)
 Update the navigation property reputation in security

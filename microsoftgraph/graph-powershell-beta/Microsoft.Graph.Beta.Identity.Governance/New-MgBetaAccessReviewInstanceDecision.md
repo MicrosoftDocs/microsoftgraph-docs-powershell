@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreviewinstancedecision
 schema: 2.0.0
@@ -17,29 +17,29 @@ Create new navigation property to decisions for accessReviews
 New-MgBetaAccessReviewInstanceDecision -AccessReviewId <String> -AccessReviewId1 <String>
  [-AccessRecommendation <String>] [-AccessReviewId2 <String>] [-AdditionalProperties <Hashtable>]
  [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>] [-ApplyResult <String>]
- [-Id <String>] [-Justification <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>]
- [-ReviewedDateTime <DateTime>] [-ReviewResult <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>]
+ [-ReviewedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaAccessReviewInstanceDecision [-AccessReviewId <String>] -InputObject <IIdentityGovernanceIdentity>
+ [-AccessRecommendation <String>] [-AdditionalProperties <Hashtable>]
+ [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>] [-ApplyResult <String>]
+ [-Id <String>] [-Justification <String>] [-ReviewResult <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>]
+ [-ReviewedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaAccessReviewInstanceDecision -AccessReviewId <String> -AccessReviewId1 <String>
- -BodyParameter <IMicrosoftGraphAccessReviewDecision> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewDecision> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReviewDecision> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity> [-AccessReviewId <String>]
- [-AccessRecommendation <String>] [-AdditionalProperties <Hashtable>]
- [-AppliedBy <IMicrosoftGraphUserIdentity>] [-AppliedDateTime <DateTime>] [-ApplyResult <String>]
- [-Id <String>] [-Justification <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>]
- [-ReviewedDateTime <DateTime>] [-ReviewResult <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewDecision> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,14 +47,14 @@ Create new navigation property to decisions for accessReviews
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -67,7 +67,7 @@ Create new navigation property to decisions for accessReviews
 The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -82,11 +82,23 @@ Accept wildcard characters: False
 The unique identifier of accessReview
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: String
+Parameter Sets: CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -97,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of accessReview
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -112,7 +124,7 @@ Accept wildcard characters: False
 The feature-generated ID of the access review.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +139,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +155,7 @@ userIdentity
 To construct, see NOTES section for APPLIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserIdentity
+Type: IMicrosoftGraphUserIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +170,7 @@ Accept wildcard characters: False
 The date and time when the review decision was applied.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +185,7 @@ Accept wildcard characters: False
 The outcome of applying the decision, one of NotApplied, Success, Failed, NotFound or NotSupported.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +201,7 @@ accessReviewDecision
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewDecision
+Type: IMicrosoftGraphAccessReviewDecision
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -205,7 +217,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -221,8 +233,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -236,7 +248,7 @@ Accept wildcard characters: False
 The reviewer's business justification, if supplied.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -252,7 +264,7 @@ userIdentity
 To construct, see NOTES section for REVIEWEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserIdentity
+Type: IMicrosoftGraphUserIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -267,7 +279,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -282,7 +294,7 @@ Accept wildcard characters: False
 The result of the review, one of NotReviewed, Deny, DontKnow or Approve.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -297,7 +309,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -313,7 +325,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -330,13 +342,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewDecision
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewDecision
-
 ## NOTES
 
 ALIASES
@@ -479,3 +488,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

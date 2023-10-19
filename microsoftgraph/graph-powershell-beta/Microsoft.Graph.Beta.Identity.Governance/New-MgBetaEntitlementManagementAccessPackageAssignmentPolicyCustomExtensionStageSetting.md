@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignmentpolicycustomextensionstagesetting
 schema: 2.0.0
@@ -16,30 +16,30 @@ Create new navigation property to customExtensionStageSettings for identityGover
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
  -AccessPackageAssignmentPolicyId <String> [-AdditionalProperties <Hashtable>]
- [-CustomExtension <IMicrosoftGraphCustomCalloutExtension>] [-Id <String>] [-Stage <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-CustomExtension <IMicrosoftGraphCustomCalloutExtension>] [-Id <String>] [-Stage <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
  -AccessPackageAssignmentPolicyId <String> -BodyParameter <IMicrosoftGraphCustomExtensionStageSetting>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphCustomExtensionStageSetting>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-CustomExtension <IMicrosoftGraphCustomCalloutExtension>] [-Id <String>] [-Stage <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-CustomExtension <IMicrosoftGraphCustomCalloutExtension>] [-Id <String>] [-Stage <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphCustomExtensionStageSetting>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,19 +47,15 @@ Create new navigation property to customExtensionStageSettings for identityGover
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -67,8 +63,8 @@ Create new navigation property to customExtensionStageSettings for identityGover
 The unique identifier of accessPackageAssignmentPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -82,7 +78,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +94,7 @@ customExtensionStageSetting
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomExtensionStageSetting
+Type: IMicrosoftGraphCustomExtensionStageSetting
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -114,7 +110,7 @@ customCalloutExtension
 To construct, see NOTES section for CUSTOMEXTENSION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
+Type: IMicrosoftGraphCustomCalloutExtension
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +126,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,8 +142,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -161,7 +157,7 @@ Accept wildcard characters: False
 accessPackageCustomExtensionStage
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomExtensionStageSetting
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomExtensionStageSetting
-
 ## NOTES
 
 ALIASES
@@ -358,3 +351,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

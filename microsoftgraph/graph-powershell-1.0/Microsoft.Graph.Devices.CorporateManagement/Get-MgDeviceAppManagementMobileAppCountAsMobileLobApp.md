@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcountasmobilelobapp
@@ -22,6 +22,8 @@ Get-MgDeviceAppManagementMobileAppCountAsMobileLobApp [-Filter <String>] [-Searc
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -70,5 +72,6 @@ ALIASES
 Get-MgDeviceAppMgtMobileAppCountAsMobileLobApp
 
 ## RELATED LINKS
+
 [Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp?view=graph-powershell-beta)
 

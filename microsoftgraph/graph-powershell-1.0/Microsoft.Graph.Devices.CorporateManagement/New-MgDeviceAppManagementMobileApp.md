@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp
 schema: 2.0.0
@@ -19,12 +19,12 @@ New-MgDeviceAppManagementMobileApp [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-Developer <String>] [-DisplayName <String>]
  [-Id <String>] [-InformationUrl <String>] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>]
  [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Owner <String>] [-PrivacyInformationUrl <String>]
- [-Publisher <String>] [-PublishingState <MobileAppPublishingState>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Publisher <String>] [-PublishingState <MobileAppPublishingState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp> [-Confirm] [-WhatIf]
+New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,19 +33,15 @@ Create a new windowsUniversalAppX object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -53,7 +49,7 @@ Create a new windowsUniversalAppX object.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +65,7 @@ The list of group assignments for this mobile app.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppAssignment[]
+Type: IMicrosoftGraphMobileAppAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +84,7 @@ Then, perform the expansion on individual applications.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileApp
+Type: IMicrosoftGraphMobileApp
 Parameter Sets: Create
 Aliases:
 
@@ -104,7 +100,7 @@ The list of categories for this app.
 To construct, see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppCategory[]
+Type: IMicrosoftGraphMobileAppCategory[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +115,7 @@ Accept wildcard characters: False
 The date and time the app was created.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +130,7 @@ Accept wildcard characters: False
 The description of the app.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +145,7 @@ Accept wildcard characters: False
 The developer of the app.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +160,7 @@ Accept wildcard characters: False
 The admin provided or imported title of the app.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +176,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -195,7 +191,7 @@ Accept wildcard characters: False
 The more information Url.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +206,7 @@ Accept wildcard characters: False
 The value indicating whether the app is marked as featured by the admin.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +222,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for LARGEICON properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMimeContent
+Type: IMicrosoftGraphMimeContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -241,7 +237,7 @@ Accept wildcard characters: False
 The date and time the app was last modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -256,7 +252,7 @@ Accept wildcard characters: False
 Notes for the app.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -271,7 +267,7 @@ Accept wildcard characters: False
 The owner of the app.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -286,7 +282,7 @@ Accept wildcard characters: False
 The privacy statement Url.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -301,7 +297,7 @@ Accept wildcard characters: False
 The publisher of the app.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -316,7 +312,7 @@ Accept wildcard characters: False
 Indicates the publishing state of an app.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.MobileAppPublishingState
+Type: MobileAppPublishingState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -331,7 +327,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -347,7 +343,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -364,11 +360,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileApp
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileApp
-
 ## NOTES
 
 ALIASES
@@ -430,4 +424,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
-

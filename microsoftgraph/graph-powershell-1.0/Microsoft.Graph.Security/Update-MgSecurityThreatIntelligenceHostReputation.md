@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostreputation
 schema: 2.0.0
@@ -16,27 +16,27 @@ Update the navigation property reputation in security
 ```
 Update-MgSecurityThreatIntelligenceHostReputation -HostId <String> [-AdditionalProperties <Hashtable>]
  [-Classification <String>] [-Id <String>] [-Rules <IMicrosoftGraphSecurityHostReputationRule[]>]
- [-Score <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Score <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityThreatIntelligenceHostReputation -HostId <String>
- -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Id <String>]
- [-Rules <IMicrosoftGraphSecurityHostReputationRule[]>] [-Score <Int32>] [-Confirm] [-WhatIf]
+ [-Rules <IMicrosoftGraphSecurityHostReputationRule[]>] [-Score <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityHostReputation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,19 +44,15 @@ Update the navigation property reputation in security
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -64,7 +60,7 @@ Update the navigation property reputation in security
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +76,7 @@ hostReputation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostReputation
+Type: IMicrosoftGraphSecurityHostReputation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -95,7 +91,7 @@ Accept wildcard characters: False
 hostReputationClassification
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,8 +106,8 @@ Accept wildcard characters: False
 The unique identifier of host
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -126,7 +122,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -142,8 +138,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ISecurityIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -158,7 +154,7 @@ A collection of rules that have been used to calculate the classification and sc
 To construct, see NOTES section for RULES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostReputationRule[]
+Type: IMicrosoftGraphSecurityHostReputationRule[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +170,7 @@ The calculated score (0-100) of the requested host.
 A higher value indicates that this host is more likely to be suspicious or malicious.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +185,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +201,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,13 +218,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostReputation
-
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostReputation
-
 ## NOTES
 
 ALIASES
@@ -309,4 +302,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Severity <String>]`: hostReputationRuleSeverity
 
 ## RELATED LINKS
-

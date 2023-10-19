@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Files
 Module Guid: 215c12ff-2eb9-4d9e-94f9-5ec8ad1793b3
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.files
@@ -19,7 +19,7 @@ This API is supported in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is supported in the following national cloud deployments.
 
 ### [Add-MgShareListContentTypeCopy](Add-MgShareListContentTypeCopy.md)
@@ -30,7 +30,7 @@ This API is supported in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is supported in the following national cloud deployments.
 
 ### [Copy-MgDriveItem](Copy-MgDriveItem.md)
@@ -81,12 +81,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgDriveCreatedByUserServiceProvisioningError](Get-MgDriveCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveCreatedByUserServiceProvisioningErrorCount](Get-MgDriveCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgDriveFollowing](Get-MgDriveFollowing.md)
 The list of items the user is following.
@@ -151,12 +145,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgDriveItemCreatedByUserServiceProvisioningError](Get-MgDriveItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveItemCreatedByUserServiceProvisioningErrorCount](Get-MgDriveItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgDriveItemDelta](Get-MgDriveItemDelta.md)
 Invoke function delta
 
@@ -169,12 +157,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgDriveItemItemLastModifiedByUserServiceProvisioningError](Get-MgDriveItemItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveItemItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgDriveItemItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgDriveItemLastModifiedByUser](Get-MgDriveItemLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -183,12 +165,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgDriveItemLastModifiedByUserServiceProvisioningError](Get-MgDriveItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgDriveItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgDriveItemListItem](Get-MgDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -209,12 +185,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgDriveItemListItemCreatedByUserServiceProvisioningError](Get-MgDriveItemListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveItemListItemCreatedByUserServiceProvisioningErrorCount](Get-MgDriveItemListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgDriveItemListItemDocumentSetVersion](Get-MgDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -289,12 +259,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgDriveLastModifiedByUserServiceProvisioningError](Get-MgDriveLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveLastModifiedByUserServiceProvisioningErrorCount](Get-MgDriveLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgDriveList](Get-MgDriveList.md)
 For drives in SharePoint, the underlying document library list.
 Read-only.
@@ -349,12 +313,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgDriveListCreatedByUserServiceProvisioningError](Get-MgDriveListCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveListCreatedByUserServiceProvisioningErrorCount](Get-MgDriveListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgDriveListDrive](Get-MgDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -380,12 +338,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgDriveListItemCreatedByUserServiceProvisioningError](Get-MgDriveListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveListItemCreatedByUserServiceProvisioningErrorCount](Get-MgDriveListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgDriveListItemDocumentSetVersion](Get-MgDriveListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -479,12 +431,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgDriveRootCreatedByUserServiceProvisioningError](Get-MgDriveRootCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveRootCreatedByUserServiceProvisioningErrorCount](Get-MgDriveRootCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgDriveRootDelta](Get-MgDriveRootDelta.md)
 Invoke function delta
 
@@ -497,12 +443,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgDriveRootItemLastModifiedByUserServiceProvisioningError](Get-MgDriveRootItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveRootItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgDriveRootItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgDriveRootLastModifiedByUser](Get-MgDriveRootLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -511,12 +451,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgDriveRootLastModifiedByUserServiceProvisioningError](Get-MgDriveRootLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveRootLastModifiedByUserServiceProvisioningErrorCount](Get-MgDriveRootLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgDriveRootListItem](Get-MgDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -537,12 +471,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgDriveRootListItemCreatedByUserServiceProvisioningError](Get-MgDriveRootListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgDriveRootListItemCreatedByUserServiceProvisioningErrorCount](Get-MgDriveRootListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgDriveRootListItemDocumentSetVersion](Get-MgDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -661,12 +589,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgGroupDriveCreatedByUserServiceProvisioningError](Get-MgGroupDriveCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveCreatedByUserServiceProvisioningErrorCount](Get-MgGroupDriveCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupDriveFollowing](Get-MgGroupDriveFollowing.md)
 The list of items the user is following.
 Only in OneDrive for Business.
@@ -727,12 +649,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgGroupDriveItemCreatedByUserServiceProvisioningError](Get-MgGroupDriveItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveItemCreatedByUserServiceProvisioningErrorCount](Get-MgGroupDriveItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupDriveItemItemLastModifiedByUser](Get-MgGroupDriveItemItemLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -742,12 +658,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgGroupDriveItemItemLastModifiedByUserServiceProvisioningError](Get-MgGroupDriveItemItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveItemItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgGroupDriveItemItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupDriveItemLastModifiedByUser](Get-MgGroupDriveItemLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -756,12 +666,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningError](Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupDriveItemListItem](Get-MgGroupDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -779,12 +683,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgGroupDriveItemListItemCreatedByUserServiceProvisioningError](Get-MgGroupDriveItemListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveItemListItemCreatedByUserServiceProvisioningErrorCount](Get-MgGroupDriveItemListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupDriveItemListItemDocumentSetVersion](Get-MgGroupDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -859,12 +757,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgGroupDriveLastModifiedByUserServiceProvisioningError](Get-MgGroupDriveLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveLastModifiedByUserServiceProvisioningErrorCount](Get-MgGroupDriveLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupDriveList](Get-MgGroupDriveList.md)
 For drives in SharePoint, the underlying document library list.
 Read-only.
@@ -916,12 +808,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgGroupDriveListCreatedByUserServiceProvisioningError](Get-MgGroupDriveListCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveListCreatedByUserServiceProvisioningErrorCount](Get-MgGroupDriveListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupDriveListDrive](Get-MgGroupDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -941,12 +827,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgGroupDriveListItemCreatedByUserServiceProvisioningError](Get-MgGroupDriveListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveListItemCreatedByUserServiceProvisioningErrorCount](Get-MgGroupDriveListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupDriveListItemDocumentSetVersion](Get-MgGroupDriveListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1037,12 +917,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgGroupDriveRootCreatedByUserServiceProvisioningError](Get-MgGroupDriveRootCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveRootCreatedByUserServiceProvisioningErrorCount](Get-MgGroupDriveRootCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupDriveRootItemLastModifiedByUser](Get-MgGroupDriveRootItemLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -1052,12 +926,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgGroupDriveRootItemLastModifiedByUserServiceProvisioningError](Get-MgGroupDriveRootItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveRootItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgGroupDriveRootItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupDriveRootLastModifiedByUser](Get-MgGroupDriveRootLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -1066,12 +934,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgGroupDriveRootLastModifiedByUserServiceProvisioningError](Get-MgGroupDriveRootLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveRootLastModifiedByUserServiceProvisioningErrorCount](Get-MgGroupDriveRootLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupDriveRootListItem](Get-MgGroupDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -1089,12 +951,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgGroupDriveRootListItemCreatedByUserServiceProvisioningError](Get-MgGroupDriveRootListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupDriveRootListItemCreatedByUserServiceProvisioningErrorCount](Get-MgGroupDriveRootListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupDriveRootListItemDocumentSetVersion](Get-MgGroupDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1195,12 +1051,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgShareCreatedByUserServiceProvisioningError](Get-MgShareCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgShareCreatedByUserServiceProvisioningErrorCount](Get-MgShareCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgShareDriveItem](Get-MgShareDriveItem.md)
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
@@ -1228,12 +1078,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgShareItemLastModifiedByUserServiceProvisioningError](Get-MgShareItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgShareItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgShareItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgShareLastModifiedByUser](Get-MgShareLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -1242,12 +1086,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgShareLastModifiedByUserServiceProvisioningError](Get-MgShareLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgShareLastModifiedByUserServiceProvisioningErrorCount](Get-MgShareLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgShareList](Get-MgShareList.md)
 Used to access the underlying list
@@ -1301,12 +1139,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgShareListCreatedByUserServiceProvisioningError](Get-MgShareListCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgShareListCreatedByUserServiceProvisioningErrorCount](Get-MgShareListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgShareListDrive](Get-MgShareListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -1328,12 +1160,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgShareListItemCreatedByUserServiceProvisioningError](Get-MgShareListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgShareListItemCreatedByUserServiceProvisioningErrorCount](Get-MgShareListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgShareListItemDocumentSetVersion](Get-MgShareListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1394,14 +1220,11 @@ This API is supported in the following national cloud deployments.
 ### [Get-MgShareSite](Get-MgShareSite.md)
 Used to access the underlying site
 
-### [Get-MgUserDefaultDrive](Get-MgUserDefaultDrive.md)
-Retrieve the properties and relationships of a Drive resource.
-A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
-This API is supported in the following national cloud deployments.
+### [Get-MgShareSite](Get-MgShareSite.md)
+Used to access the underlying site
 
-### [Get-MgUserDrive](Get-MgUserDrive.md)
-A collection of drives available for this user.
-Read-only.
+### [Get-MgShareSite](Get-MgShareSite.md)
+Used to access the underlying site
 
 ### [Get-MgUserDriveBundle](Get-MgUserDriveBundle.md)
 Retrieve the metadata for a bundle][] based on the unique ID of the bundle.
@@ -1433,12 +1256,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgUserDriveCreatedByUserServiceProvisioningError](Get-MgUserDriveCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveCreatedByUserServiceProvisioningErrorCount](Get-MgUserDriveCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgUserDriveFollowing](Get-MgUserDriveFollowing.md)
 The list of items the user is following.
@@ -1500,12 +1317,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgUserDriveItemCreatedByUserServiceProvisioningError](Get-MgUserDriveItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveItemCreatedByUserServiceProvisioningErrorCount](Get-MgUserDriveItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgUserDriveItemItemLastModifiedByUser](Get-MgUserDriveItemItemLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -1515,12 +1326,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgUserDriveItemItemLastModifiedByUserServiceProvisioningError](Get-MgUserDriveItemItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveItemItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgUserDriveItemItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgUserDriveItemLastModifiedByUser](Get-MgUserDriveItemLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -1529,12 +1334,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgUserDriveItemLastModifiedByUserServiceProvisioningError](Get-MgUserDriveItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgUserDriveItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgUserDriveItemListItem](Get-MgUserDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -1552,12 +1351,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgUserDriveItemListItemCreatedByUserServiceProvisioningError](Get-MgUserDriveItemListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveItemListItemCreatedByUserServiceProvisioningErrorCount](Get-MgUserDriveItemListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgUserDriveItemListItemDocumentSetVersion](Get-MgUserDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1632,12 +1425,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgUserDriveLastModifiedByUserServiceProvisioningError](Get-MgUserDriveLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveLastModifiedByUserServiceProvisioningErrorCount](Get-MgUserDriveLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgUserDriveList](Get-MgUserDriveList.md)
 For drives in SharePoint, the underlying document library list.
 Read-only.
@@ -1689,12 +1476,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgUserDriveListCreatedByUserServiceProvisioningError](Get-MgUserDriveListCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveListCreatedByUserServiceProvisioningErrorCount](Get-MgUserDriveListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgUserDriveListDrive](Get-MgUserDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -1714,12 +1495,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgUserDriveListItemCreatedByUserServiceProvisioningError](Get-MgUserDriveListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveListItemCreatedByUserServiceProvisioningErrorCount](Get-MgUserDriveListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgUserDriveListItemDocumentSetVersion](Get-MgUserDriveListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1810,12 +1585,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgUserDriveRootCreatedByUserServiceProvisioningError](Get-MgUserDriveRootCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveRootCreatedByUserServiceProvisioningErrorCount](Get-MgUserDriveRootCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgUserDriveRootItemLastModifiedByUser](Get-MgUserDriveRootItemLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -1825,12 +1594,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgUserDriveRootItemLastModifiedByUserServiceProvisioningError](Get-MgUserDriveRootItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveRootItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgUserDriveRootItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgUserDriveRootLastModifiedByUser](Get-MgUserDriveRootLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -1839,12 +1602,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgUserDriveRootLastModifiedByUserServiceProvisioningError](Get-MgUserDriveRootLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveRootLastModifiedByUserServiceProvisioningErrorCount](Get-MgUserDriveRootLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgUserDriveRootListItem](Get-MgUserDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -1862,12 +1619,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgUserDriveRootListItemCreatedByUserServiceProvisioningError](Get-MgUserDriveRootListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgUserDriveRootListItemCreatedByUserServiceProvisioningErrorCount](Get-MgUserDriveRootListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgUserDriveRootListItemDocumentSetVersion](Get-MgUserDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -2149,8 +1900,8 @@ Invoke action createUploadSession
 ### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgGroupDrive](New-MgGroupDrive.md)
-Create new navigation property to drives for groups
+### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
+Create new navigation property to versions for drives
 
 ### [New-MgGroupDriveBundle](New-MgGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -2273,8 +2024,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgUserDrive](New-MgUserDrive.md)
-Create new navigation property to drives for users
+### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
+Add new entity to shares
 
 ### [New-MgUserDriveBundle](New-MgUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -2371,8 +2122,9 @@ This API is supported in the following [national cloud deployments.
 Publishes a contentType][] present in the content type hub site.
 This API is supported in the following [national cloud deployments.
 
-### [Remove-MgDrive](Remove-MgDrive.md)
-Delete entity from drives
+### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
+Publishes a contentType][] present in the content type hub site.
+This API is supported in the following [national cloud deployments.
 
 ### [Remove-MgDriveItem](Remove-MgDriveItem.md)
 Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
@@ -3049,8 +2801,9 @@ This API is supported in the following [national cloud deployments.
 Unpublish a contentType][] from a content type hub site.
 This API is supported in the following [national cloud deployments.
 
-### [Update-MgDrive](Update-MgDrive.md)
-Update entity in drives
+### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
+Unpublish a contentType][] from a content type hub site.
+This API is supported in the following [national cloud deployments.
 
 ### [Update-MgDriveCreatedByUserMailboxSetting](Update-MgDriveCreatedByUserMailboxSetting.md)
 Update property mailboxSettings value.

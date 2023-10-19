@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Education
 Module Guid: 550710c3-d01e-4d7a-927e-0203ad55baa0
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.education
@@ -123,12 +123,6 @@ Invoke function delta
 
 ### [Get-MgEducationClassGroup](Get-MgEducationClassGroup.md)
 The underlying Microsoft 365 group object.
-
-### [Get-MgEducationClassGroupServiceProvisioningError](Get-MgEducationClassGroupServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgEducationClassGroupServiceProvisioningErrorCount](Get-MgEducationClassGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgEducationClassMember](Get-MgEducationClassMember.md)
 Retrieves the educationUser members of an educationClass.
@@ -284,12 +278,6 @@ This API is available in the following national cloud deployments.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgEducationMeUserServiceProvisioningError](Get-MgEducationMeUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgEducationMeUserServiceProvisioningErrorCount](Get-MgEducationMeUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgEducationRoot](Get-MgEducationRoot.md)
 Get education
@@ -449,12 +437,6 @@ Schools to which the user belongs.
 Nullable.
 
 ### [Get-MgEducationUserSchoolCount](Get-MgEducationUserSchoolCount.md)
-Get the number of the resource
-
-### [Get-MgEducationUserServiceProvisioningError](Get-MgEducationUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgEducationUserServiceProvisioningErrorCount](Get-MgEducationUserServiceProvisioningErrorCount.md)
 Get the number of the resource
 
 ### [Get-MgEducationUserTaughtClass](Get-MgEducationUserTaughtClass.md)

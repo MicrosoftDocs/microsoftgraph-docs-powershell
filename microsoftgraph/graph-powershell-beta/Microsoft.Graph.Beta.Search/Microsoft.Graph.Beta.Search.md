@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Search
 Module Guid: b30968ed-5cfe-428e-b81e-71d66df52ddb
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search
@@ -16,15 +16,6 @@ Invoke action addActivities
 
 ### [Get-MgBetaExternal](Get-MgBetaExternal.md)
 Get external
-
-### [Get-MgBetaExternalAuthorizationSystem](Get-MgBetaExternalAuthorizationSystem.md)
-Get authorizationSystems from external
-
-### [Get-MgBetaExternalAuthorizationSystemCount](Get-MgBetaExternalAuthorizationSystemCount.md)
-Get the number of the resource
-
-### [Get-MgBetaExternalAuthorizationSystemDataCollectionInfo](Get-MgBetaExternalAuthorizationSystemDataCollectionInfo.md)
-Get dataCollectionInfo from external
 
 ### [Get-MgBetaExternalConnection](Get-MgBetaExternalConnection.md)
 Retrieve the properties and relationships of an externalConnection.
@@ -186,9 +177,6 @@ Run a specified search query.
 Search results are provided in the response.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaExternalAuthorizationSystem](New-MgBetaExternalAuthorizationSystem.md)
-Create new navigation property to authorizationSystems for external
-
 ### [New-MgBetaExternalConnection](New-MgBetaExternalConnection.md)
 Create a new externalConnection.
 This API is available in the following national cloud deployments.
@@ -246,12 +234,6 @@ This API is available in the following national cloud deployments.
 ### [New-MgBetaSearchQna](New-MgBetaSearchQna.md)
 Create a new qna object.
 This API is available in the following national cloud deployments.
-
-### [Remove-MgBetaExternalAuthorizationSystem](Remove-MgBetaExternalAuthorizationSystem.md)
-Delete navigation property authorizationSystems for external
-
-### [Remove-MgBetaExternalAuthorizationSystemDataCollectionInfo](Remove-MgBetaExternalAuthorizationSystemDataCollectionInfo.md)
-Delete navigation property dataCollectionInfo for external
 
 ### [Remove-MgBetaExternalConnection](Remove-MgBetaExternalConnection.md)
 Delete an externalConnection.
@@ -324,12 +306,6 @@ This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaExternal](Update-MgBetaExternal.md)
 Update external
-
-### [Update-MgBetaExternalAuthorizationSystem](Update-MgBetaExternalAuthorizationSystem.md)
-Update the navigation property authorizationSystems in external
-
-### [Update-MgBetaExternalAuthorizationSystemDataCollectionInfo](Update-MgBetaExternalAuthorizationSystemDataCollectionInfo.md)
-Update the navigation property dataCollectionInfo in external
 
 ### [Update-MgBetaExternalConnection](Update-MgBetaExternalConnection.md)
 Update the properties of an externalConnection.

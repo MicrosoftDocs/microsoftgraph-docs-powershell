@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflow
 schema: 2.0.0
@@ -16,17 +16,17 @@ This API is available in the following national cloud deployments.
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityB2CUserFlow [-AdditionalProperties <Hashtable>]
- [-ApiConnectorConfiguration <IMicrosoftGraphUserFlowApiConnectorConfiguration>]
- [-DefaultLanguageTag <String>] [-Id <String>] [-IdentityProviders <IMicrosoftGraphIdentityProvider[]>]
- [-IsLanguageCustomizationEnabled] [-Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]
+ [-ApiConnectorConfiguration <IMicrosoftGraphUserFlowApiConnectorConfiguration>] [-DefaultLanguageTag <String>]
+ [-Id <String>] [-IdentityProviders <IMicrosoftGraphIdentityProvider[]>] [-IsLanguageCustomizationEnabled]
+ [-Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]
  [-UserAttributeAssignments <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>]
  [-UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase[]>] [-UserFlowType <String>]
- [-UserFlowTypeVersion <Single>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserFlowTypeVersion <Single>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityB2CUserFlow -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow> [-Confirm] [-WhatIf]
+New-MgBetaIdentityB2CUserFlow -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -55,9 +55,7 @@ $params = @{
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -73,9 +71,7 @@ $params = @{
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 3 --------------------------
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -86,15 +82,13 @@ $params = @{
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -110,7 +104,7 @@ userFlowApiConnectorConfiguration
 To construct, see NOTES section for APICONNECTORCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserFlowApiConnectorConfiguration
+Type: IMicrosoftGraphUserFlowApiConnectorConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -126,7 +120,7 @@ b2cIdentityUserFlow
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2CIdentityUserFlow
+Type: IMicrosoftGraphB2CIdentityUserFlow
 Parameter Sets: Create
 Aliases:
 
@@ -142,7 +136,7 @@ Indicates the default language of the b2cIdentityUserFlow that is used when no u
 This field is RFC 5646 compliant.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,7 +152,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +168,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for IDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProvider[]
+Type: IMicrosoftGraphIdentityProvider[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +184,7 @@ The property that determines whether language customization is enabled within th
 Language customization is not enabled by default for B2C user flows.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +201,7 @@ Language customization is not enabled by default in B2C user flows.
 To construct, see NOTES section for LANGUAGES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserFlowLanguageConfiguration[]
+Type: IMicrosoftGraphUserFlowLanguageConfiguration[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +217,7 @@ The user attribute assignments included in the user flow.
 To construct, see NOTES section for USERATTRIBUTEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
+Type: IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +233,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for USERFLOWIDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProviderBase[]
+Type: IMicrosoftGraphIdentityProviderBase[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -254,7 +248,7 @@ Accept wildcard characters: False
 userFlowType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -269,7 +263,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Single
+Type: Single
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -284,7 +278,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -300,7 +294,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -317,11 +311,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2CIdentityUserFlow
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2CIdentityUserFlow
-
 ## NOTES
 
 ALIASES
@@ -434,3 +426,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelhealththreshold
 schema: 2.0.0
@@ -16,13 +16,13 @@ Create new navigation property to microsoftTunnelHealthThresholds for deviceMana
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold [-AdditionalProperties <Hashtable>]
  [-DefaultHealthyThreshold <Int64>] [-DefaultUnhealthyThreshold <Int64>] [-HealthyThreshold <Int64>]
- [-Id <String>] [-UnhealthyThreshold <Int64>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-UnhealthyThreshold <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,14 +30,14 @@ Create new navigation property to microsoftTunnelHealthThresholds for deviceMana
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -50,7 +50,7 @@ Create new navigation property to microsoftTunnelHealthThresholds for deviceMana
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ Entity that represents the health thresholds of a health metric
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
+Type: IMicrosoftGraphMicrosoftTunnelHealthThreshold
 Parameter Sets: Create
 Aliases:
 
@@ -82,7 +82,7 @@ The threshold for being healthy based on default health status metrics: CPU usag
 Read-only.
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ The threshold for being unhealthy based on default health status metrics: CPU us
 Read-only.
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 The threshold for being healthy based on default health status metrics: CPU usage healthy \< 50%, Memory usage healthy \< 50%, Disk space healthy \> 5GB, Latency healthy \< 10ms, health metrics can be customized.
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy \> 75%, Memory usage unhealthy \> 75%, Disk space \< 3GB, Latency Unhealthy \> 20ms, health metrics can be customized.
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,11 +192,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
-
 ## NOTES
 
 ALIASES
@@ -215,4 +213,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnhealthyThreshold <Int64?>]`: The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy > 75%, Memory usage unhealthy > 75%, Disk space < 3GB, Latency Unhealthy > 20ms, health metrics can be customized.
 
 ## RELATED LINKS
-

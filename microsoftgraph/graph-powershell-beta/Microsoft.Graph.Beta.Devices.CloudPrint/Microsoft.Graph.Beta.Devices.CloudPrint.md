@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 Module Guid: f763fe64-1c77-4271-ba62-358bad555b92
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint
@@ -87,13 +87,6 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaPrintPrinterShareAllowedGroupCount](Get-MgBetaPrintPrinterShareAllowedGroupCount.md)
 Get the number of the resource
 
-### [Get-MgBetaPrintPrinterShareAllowedGroupServiceProvisioningError](Get-MgBetaPrintPrinterShareAllowedGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaPrintPrinterShareAllowedGroupServiceProvisioningErrorCount](Get-MgBetaPrintPrinterShareAllowedGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaPrintPrinterShareAllowedUser](Get-MgBetaPrintPrinterShareAllowedUser.md)
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 This API is available in the following national cloud deployments.
@@ -110,13 +103,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaPrintPrinterShareAllowedUserServiceProvisioningError](Get-MgBetaPrintPrinterShareAllowedUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaPrintPrinterShareAllowedUserServiceProvisioningErrorCount](Get-MgBetaPrintPrinterShareAllowedUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaPrintPrinterShareCount](Get-MgBetaPrintPrinterShareCount.md)
 Get the number of the resource
@@ -194,13 +180,6 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaPrintShareAllowedGroupCount](Get-MgBetaPrintShareAllowedGroupCount.md)
 Get the number of the resource
 
-### [Get-MgBetaPrintShareAllowedGroupServiceProvisioningError](Get-MgBetaPrintShareAllowedGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaPrintShareAllowedGroupServiceProvisioningErrorCount](Get-MgBetaPrintShareAllowedGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaPrintShareAllowedUser](Get-MgBetaPrintShareAllowedUser.md)
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 This API is available in the following national cloud deployments.
@@ -217,13 +196,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaPrintShareAllowedUserServiceProvisioningError](Get-MgBetaPrintShareAllowedUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaPrintShareAllowedUserServiceProvisioningErrorCount](Get-MgBetaPrintShareAllowedUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaPrintShareCount](Get-MgBetaPrintShareCount.md)
 Get the number of the resource

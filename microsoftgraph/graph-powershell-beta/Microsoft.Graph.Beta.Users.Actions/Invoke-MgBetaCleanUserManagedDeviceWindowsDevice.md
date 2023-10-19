@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacleanusermanageddevicewindowsdevice
 schema: 2.0.0
@@ -15,27 +15,27 @@ Clean Windows device
 ### CleanExpanded (Default)
 ```
 Invoke-MgBetaCleanUserManagedDeviceWindowsDevice -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-KeepUserData] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-KeepUserData] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Clean
 ```
 Invoke-MgBetaCleanUserManagedDeviceWindowsDevice -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CleanViaIdentityExpanded
+```
+Invoke-MgBetaCleanUserManagedDeviceWindowsDevice -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-KeepUserData] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CleanViaIdentity
 ```
 Invoke-MgBetaCleanUserManagedDeviceWindowsDevice -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CleanViaIdentityExpanded
-```
-Invoke-MgBetaCleanUserManagedDeviceWindowsDevice -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-KeepUserData] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,19 +43,15 @@ Clean Windows device
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -63,7 +59,7 @@ Clean Windows device
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CleanExpanded, CleanViaIdentityExpanded
 Aliases:
 
@@ -79,7 +75,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Clean, CleanViaIdentity
 Aliases:
 
@@ -95,8 +91,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: CleanViaIdentity, CleanViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: CleanViaIdentityExpanded, CleanViaIdentity
 Aliases:
 
 Required: True
@@ -110,7 +106,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CleanExpanded, CleanViaIdentityExpanded
 Aliases:
 
@@ -125,8 +121,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: System.String
-Parameter Sets: Clean, CleanExpanded
+Type: String
+Parameter Sets: CleanExpanded, Clean
 Aliases:
 
 Required: True
@@ -140,7 +136,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -155,8 +151,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Clean, CleanExpanded
+Type: String
+Parameter Sets: CleanExpanded, Clean
 Aliases:
 
 Required: True
@@ -170,7 +166,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -186,7 +182,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -203,13 +199,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -264,4 +257,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

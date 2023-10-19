@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Compliance
 Module Guid: 99509daf-5d3e-4a83-9ff8-be8305455b1c
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance
@@ -87,13 +87,6 @@ Get the number of the resource
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroup](Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroup.md)
 The group associated with the unifiedGroupSource.
 
-### [Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningError](Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningErrorCount](Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource](Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource.md)
 Read the properties and relationships of a userSource object.
 This API is available in the following national cloud deployments.
@@ -125,13 +118,6 @@ Get the number of the resource
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup.md)
 The group associated with the unifiedGroupSource.
-
-### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupServiceProvisioningError](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupServiceProvisioningErrorCount](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource.md)
 Data source entity for a the legal hold.
@@ -248,13 +234,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningError](Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount](Get-MgBetaPrivacySubjectRightsRequestApproverServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaPrivacySubjectRightsRequestCollaborator](Get-MgBetaPrivacySubjectRightsRequestCollaborator.md)
 Get collaborators from privacy
 
@@ -266,13 +245,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
-
-### [Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningError](Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount](Get-MgBetaPrivacySubjectRightsRequestCollaboratorServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaPrivacySubjectRightsRequestCount](Get-MgBetaPrivacySubjectRightsRequestCount.md)
 Get the number of the resource

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 Module Guid: 9af9bf1c-cf97-4cd4-9c86-998e7595db7f
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts
@@ -11,10 +11,6 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.PersonalContacts Cmdlets
-### [Get-MgBetaUserContact](Get-MgBetaUserContact.md)
-Retrieve the properties and relationships of contact object.
-There are two scenarios where an app can get a contact in another user's contact folder: This API is available in the following national cloud deployments.
-
 ### [Get-MgBetaUserContactCount](Get-MgBetaUserContactCount.md)
 Get the number of the resource
 
@@ -25,15 +21,11 @@ Nullable.
 ### [Get-MgBetaUserContactExtensionCount](Get-MgBetaUserContactExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserContactFolder](Get-MgBetaUserContactFolder.md)
-Get a contact folder by using the contact folder ID.
-There are two scenarios where an app can get another user's contact folder: This API is available in the following national cloud deployments.
+### [Get-MgBetaUserContactExtensionCount](Get-MgBetaUserContactExtensionCount.md)
+Get the number of the resource
 
-### [Get-MgBetaUserContactFolderChildFolder](Get-MgBetaUserContactFolderChildFolder.md)
-The collection of child folders in the folder.
-Navigation property.
-Read-only.
-Nullable.
+### [Get-MgBetaUserContactExtensionCount](Get-MgBetaUserContactExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserContactFolderChildFolderContact](Get-MgBetaUserContactFolderChildFolderContact.md)
 The contacts in the folder.
@@ -94,22 +86,17 @@ You can get or set a photo for a contact.
 ### [Get-MgBetaUserContactPhotoContent](Get-MgBetaUserContactPhotoContent.md)
 Get media content for the navigation property photo from users
 
-### [New-MgBetaUserContact](New-MgBetaUserContact.md)
-Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserContactPhotoContent](Get-MgBetaUserContactPhotoContent.md)
+Get media content for the navigation property photo from users
 
 ### [New-MgBetaUserContactExtension](New-MgBetaUserContactExtension.md)
 Create new navigation property to extensions for users
 
-### [New-MgBetaUserContactFolder](New-MgBetaUserContactFolder.md)
-Create a new contactFolder under the user's default contacts folder.
-You can also create a new contactfolder as a child of any specified contact folder.
-This API is available in the following national cloud deployments.
+### [New-MgBetaUserContactExtension](New-MgBetaUserContactExtension.md)
+Create new navigation property to extensions for users
 
-### [New-MgBetaUserContactFolderChildFolder](New-MgBetaUserContactFolderChildFolder.md)
-Create a new contactFolder as a child of a specified folder.
-You can also create a new contactFolder under the user's default contact folder.
-This API is available in the following national cloud deployments.
+### [New-MgBetaUserContactExtension](New-MgBetaUserContactExtension.md)
+Create new navigation property to extensions for users
 
 ### [New-MgBetaUserContactFolderChildFolderContact](New-MgBetaUserContactFolderChildFolderContact.md)
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
@@ -118,23 +105,20 @@ This API is available in the following national cloud deployments.
 ### [New-MgBetaUserContactFolderChildFolderContactExtension](New-MgBetaUserContactFolderChildFolderContactExtension.md)
 Create new navigation property to extensions for users
 
-### [New-MgBetaUserContactFolderContact](New-MgBetaUserContactFolderContact.md)
-Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
-This API is available in the following national cloud deployments.
+### [New-MgBetaUserContactFolderChildFolderContactExtension](New-MgBetaUserContactFolderChildFolderContactExtension.md)
+Create new navigation property to extensions for users
 
 ### [New-MgBetaUserContactFolderContactExtension](New-MgBetaUserContactFolderContactExtension.md)
 Create new navigation property to extensions for users
 
-### [Remove-MgBetaUserContact](Remove-MgBetaUserContact.md)
-Delete contact.
-This API is available in the following national cloud deployments.
+### [New-MgBetaUserContactFolderContactExtension](New-MgBetaUserContactFolderContactExtension.md)
+Create new navigation property to extensions for users
 
 ### [Remove-MgBetaUserContactExtension](Remove-MgBetaUserContactExtension.md)
 Delete navigation property extensions for users
 
-### [Remove-MgBetaUserContactFolder](Remove-MgBetaUserContactFolder.md)
-Delete contactFolder other than the default contactFolder.
-This API is available in the following national cloud deployments.
+### [Remove-MgBetaUserContactExtension](Remove-MgBetaUserContactExtension.md)
+Delete navigation property extensions for users
 
 ### [Remove-MgBetaUserContactFolderChildFolder](Remove-MgBetaUserContactFolderChildFolder.md)
 Delete navigation property childFolders for users
@@ -160,16 +144,14 @@ Update media content for the navigation property photo in users
 ### [Set-MgBetaUserContactPhotoContent](Set-MgBetaUserContactPhotoContent.md)
 Update media content for the navigation property photo in users
 
-### [Update-MgBetaUserContact](Update-MgBetaUserContact.md)
-Update the properties of contact object.
-This API is available in the following national cloud deployments.
+### [Set-MgBetaUserContactPhotoContent](Set-MgBetaUserContactPhotoContent.md)
+Update media content for the navigation property photo in users
 
 ### [Update-MgBetaUserContactExtension](Update-MgBetaUserContactExtension.md)
 Update the navigation property extensions in users
 
-### [Update-MgBetaUserContactFolder](Update-MgBetaUserContactFolder.md)
-Update the properties of contactfolder object.
-This API is available in the following national cloud deployments.
+### [Update-MgBetaUserContactExtension](Update-MgBetaUserContactExtension.md)
+Update the navigation property extensions in users
 
 ### [Update-MgBetaUserContactFolderChildFolder](Update-MgBetaUserContactFolderChildFolder.md)
 Update the navigation property childFolders in users

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprogramcontrol
 schema: 2.0.0
@@ -16,38 +16,38 @@ This API is available in the following national cloud deployments.
 
 ### Delete (Default)
 ```
-Remove-MgBetaProgramControl -ProgramControlId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+Remove-MgBetaProgramControl -ProgramControlId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### Delete1
-```
-Remove-MgBetaProgramControl -ProgramControlId <String> -ProgramControlId1 <String> [-IfMatch <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Delete2
 ```
 Remove-MgBetaProgramControl -ProgramControlId <String> -ProgramId <String> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### Delete1
 ```
-Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgBetaProgramControl -ProgramControlId <String> -ProgramControlId1 <String> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity2
 ```
 Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity
+```
+Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,13 +57,11 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaProgramControl -ProgramControlId $programControlId
 ```
-
-
 
 ## PARAMETERS
 
@@ -71,7 +69,7 @@ Remove-MgBetaProgramControl -ProgramControlId $programControlId
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -87,8 +85,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: DeleteViaIdentity, DeleteViaIdentity1, DeleteViaIdentity2
+Type: IIdentityGovernanceIdentity
+Parameter Sets: DeleteViaIdentity2, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -102,7 +100,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -117,8 +115,8 @@ Accept wildcard characters: False
 The unique identifier of programControl
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, Delete1, Delete2
+Type: String
+Parameter Sets: Delete, Delete2, Delete1
 Aliases:
 
 Required: True
@@ -132,7 +130,7 @@ Accept wildcard characters: False
 The unique identifier of programControl
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete1
 Aliases:
 
@@ -147,7 +145,7 @@ Accept wildcard characters: False
 The unique identifier of program
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete2
 Aliases:
 
@@ -162,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -178,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -195,11 +193,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -309,4 +305,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

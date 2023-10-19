@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionschema
@@ -31,6 +31,7 @@ Remove-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-IfMatch <Stri
 Delete navigation property schema for external
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -38,10 +39,10 @@ Import-Module Microsoft.Graph.Search
 
 Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
 ```
+
 This example shows how to use the Remove-MgExternalConnectionSchema Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -164,4 +165,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+
 [Remove-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionSchema?view=graph-powershell-beta)

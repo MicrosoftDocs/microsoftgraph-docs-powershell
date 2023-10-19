@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Sites
 Module Guid: 9c657dd1-e525-42de-ba5c-29c68e5741bf
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.sites
@@ -22,7 +22,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Add-MgSiteListContentTypeCopy](Add-MgSiteListContentTypeCopy.md)
@@ -33,7 +33,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Copy-MgSiteContentTypeToDefaultContentLocation](Copy-MgSiteContentTypeToDefaultContentLocation.md)
@@ -208,12 +208,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgGroupSiteCreatedByUserServiceProvisioningError](Get-MgGroupSiteCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupSiteCreatedByUserServiceProvisioningErrorCount](Get-MgGroupSiteCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupSiteDefaultDrive](Get-MgGroupSiteDefaultDrive.md)
 The default drive (document library) for this site.
 
@@ -245,12 +239,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgGroupSiteItemLastModifiedByUserServiceProvisioningError](Get-MgGroupSiteItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupSiteItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgGroupSiteItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupSiteLastModifiedByUser](Get-MgGroupSiteLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -259,12 +247,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgGroupSiteLastModifiedByUserServiceProvisioningError](Get-MgGroupSiteLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupSiteLastModifiedByUserServiceProvisioningErrorCount](Get-MgGroupSiteLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupSiteList](Get-MgGroupSiteList.md)
 Returns the metadata for a list][].
@@ -319,12 +301,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgGroupSiteListCreatedByUserServiceProvisioningError](Get-MgGroupSiteListCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupSiteListCreatedByUserServiceProvisioningErrorCount](Get-MgGroupSiteListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgGroupSiteListDrive](Get-MgGroupSiteListDrive.md)
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
@@ -344,12 +320,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgGroupSiteListItemCreatedByUserServiceProvisioningError](Get-MgGroupSiteListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgGroupSiteListItemCreatedByUserServiceProvisioningErrorCount](Get-MgGroupSiteListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupSiteListItemDocumentSetVersion](Get-MgGroupSiteListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1090,12 +1060,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgSiteItemLastModifiedByUserServiceProvisioningError](Get-MgSiteItemLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgSiteItemLastModifiedByUserServiceProvisioningErrorCount](Get-MgSiteItemLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgSiteLastModifiedByUser](Get-MgSiteLastModifiedByUser.md)
 Identity of the user who last modified the item.
 Read-only.
@@ -1104,12 +1068,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgSiteLastModifiedByUserServiceProvisioningError](Get-MgSiteLastModifiedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgSiteLastModifiedByUserServiceProvisioningErrorCount](Get-MgSiteLastModifiedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgSiteList](Get-MgSiteList.md)
 Returns the metadata for a list][].
@@ -1167,12 +1125,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-### [Get-MgSiteListCreatedByUserServiceProvisioningError](Get-MgSiteListCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgSiteListCreatedByUserServiceProvisioningErrorCount](Get-MgSiteListCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgSiteListDrive](Get-MgSiteListDrive.md)
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
@@ -1195,12 +1147,6 @@ Read-only.
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
-
-### [Get-MgSiteListItemCreatedByUserServiceProvisioningError](Get-MgSiteListItemCreatedByUserServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgSiteListItemCreatedByUserServiceProvisioningErrorCount](Get-MgSiteListItemCreatedByUserServiceProvisioningErrorCount.md)
-Get the number of the resource
 
 ### [Get-MgSiteListItemDocumentSetVersion](Get-MgSiteListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
@@ -1243,10 +1189,8 @@ The set of subscriptions on the list.
 ### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
 Get the number of the resource
 
-### [Get-MgSiteOnenoteNotebookFromWebUrl](Get-MgSiteOnenoteNotebookFromWebUrl.md)
-Retrieve the properties and relationships of a notebook object by using its URL path.
-The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
-This API is available in the following national cloud deployments.
+### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteOperation](Get-MgSiteOperation.md)
 Get the status of a rich long-running operation on a site or a list.
@@ -1610,8 +1554,8 @@ The collection of the sub-sites under this site.
 ### [Get-MgSubSiteCount](Get-MgSubSiteCount.md)
 Get the number of the resource
 
-### [Get-MgUserFollowedSite](Get-MgUserFollowedSite.md)
-Get followedSites from users
+### [Get-MgSubSiteCount](Get-MgSubSiteCount.md)
+Get the number of the resource
 
 ### [Get-MgUserFollowedSiteCount](Get-MgUserFollowedSiteCount.md)
 Get the number of the resource

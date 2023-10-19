@@ -1,106 +1,59 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationpasswordmethod
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationpasswordlessmicrosoftauthenticatormethoddevice
 schema: 2.0.0
 ---
 
-# Get-MgBetaUserAuthenticationPasswordMethod
+# Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a password authentication method object.
-This API is available in the following national cloud deployments.
+Get device from users
 
 ## SYNTAX
 
-### List (Default)
+### Get (Default)
 ```
-Get-MgBetaUserAuthenticationPasswordMethod -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
- [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgBetaUserAuthenticationPasswordMethod -PasswordAuthenticationMethodId <String> -UserId <String>
+Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice
+ -PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String> -UserId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserAuthenticationPasswordMethod -InputObject <IIdentitySignInsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice
+ -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a password authentication method object.
-This API is available in the following national cloud deployments.
+Get device from users
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Get-MgBetaUserAuthenticationPasswordMethod -UserId $userId -PasswordAuthenticationMethodId $passwordAuthenticationMethodId
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
-
-### -All
-List all pages.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: System.String
-Parameter Sets: List
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Filter
-Filter items by property values
-
-```yaml
-Type: System.String
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -114,7 +67,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Type: IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -125,26 +78,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
+### -PasswordlessMicrosoftAuthenticatorAuthenticationMethodId
+The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
 
 ```yaml
-Type: System.Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PasswordAuthenticationMethodId
-The unique identifier of passwordAuthenticationMethod
-
-```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -159,69 +97,9 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
-
-```yaml
-Type: System.String
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: System.String[]
-Parameter Sets: List
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: System.Int32
-Parameter Sets: List
-Aliases: Limit
 
 Required: False
 Position: Named
@@ -234,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List
+Type: String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -251,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPasswordAuthenticationMethod
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDevice
 ## NOTES
 
 ALIASES
@@ -343,4 +219,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

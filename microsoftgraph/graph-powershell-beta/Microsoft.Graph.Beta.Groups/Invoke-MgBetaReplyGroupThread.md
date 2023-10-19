@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthread
 schema: 2.0.0
@@ -17,7 +17,7 @@ This API is available in the following national cloud deployments.
 ### ReplyExpanded (Default)
 ```
 Invoke-MgBetaReplyGroupThread -ConversationThreadId <String> -GroupId <String>
- [-AdditionalProperties <Hashtable>] [-Post <IMicrosoftGraphPost>] [-PassThru] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-Post <IMicrosoftGraphPost>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,20 +25,20 @@ Invoke-MgBetaReplyGroupThread -ConversationThreadId <String> -GroupId <String>
 ```
 Invoke-MgBetaReplyGroupThread -ConversationThreadId <String> -GroupId <String>
  -BodyParameter <IPathsPlnw85GroupsGroupIdThreadsConversationthreadIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReplyViaIdentityExpanded
+```
+Invoke-MgBetaReplyGroupThread -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Post <IMicrosoftGraphPost>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReplyViaIdentity
 ```
 Invoke-MgBetaReplyGroupThread -InputObject <IGroupsIdentity>
  -BodyParameter <IPathsPlnw85GroupsGroupIdThreadsConversationthreadIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ReplyViaIdentityExpanded
-```
-Invoke-MgBetaReplyGroupThread -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Post <IMicrosoftGraphPost>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,7 +48,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -62,9 +62,7 @@ $params = @{
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -85,9 +83,7 @@ $params = @{
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 3 --------------------------
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -111,9 +107,7 @@ $params = @{
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 4 --------------------------
+### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -137,15 +131,13 @@ $params = @{
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -161,7 +153,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsPlnw85GroupsGroupIdThreadsConversationthreadIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
+Type: IPathsPlnw85GroupsGroupIdThreadsConversationthreadIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Reply, ReplyViaIdentity
 Aliases:
 
@@ -176,8 +168,8 @@ Accept wildcard characters: False
 The unique identifier of conversationThread
 
 ```yaml
-Type: System.String
-Parameter Sets: Reply, ReplyExpanded
+Type: String
+Parameter Sets: ReplyExpanded, Reply
 Aliases:
 
 Required: True
@@ -191,8 +183,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Reply, ReplyExpanded
+Type: String
+Parameter Sets: ReplyExpanded, Reply
 Aliases:
 
 Required: True
@@ -207,8 +199,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-Parameter Sets: ReplyViaIdentity, ReplyViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: ReplyViaIdentityExpanded, ReplyViaIdentity
 Aliases:
 
 Required: True
@@ -222,7 +214,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -238,7 +230,7 @@ post
 To construct, see NOTES section for POST properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPost
+Type: IMicrosoftGraphPost
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -253,7 +245,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -269,7 +261,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -286,13 +278,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsPlnw85GroupsGroupIdThreadsConversationthreadIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -451,3 +440,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

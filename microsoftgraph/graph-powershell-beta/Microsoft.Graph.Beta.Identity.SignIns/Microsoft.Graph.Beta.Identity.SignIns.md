@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 Module Guid: 167fe0e7-3dc0-4d24-b39a-eac568e8f3ec
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins
@@ -350,13 +350,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-### [Get-MgBetaInvitationInvitedUserServiceProvisioningError](Get-MgBetaInvitationInvitedUserServiceProvisioningError.md)
-Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaInvitationInvitedUserServiceProvisioningErrorCount](Get-MgBetaInvitationInvitedUserServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaInvitationInvitedUserSponsor](Get-MgBetaInvitationInvitedUserSponsor.md)
 The users or groups who are sponsors of the invited user.
 Sponsors are users and groups that are responsible for guest users' privileges in the tenant and for keeping the guest users' information and access up to date.
@@ -497,17 +490,6 @@ Get the number of the resource
 Get the user synchronization policy of a partner-specific configuration.
 This API is available in the following national cloud deployments.
 
-### [Get-MgBetaPolicyCrossTenantAccessPolicyTemplate](Get-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
-Represents the base policy in the directory for multi-tenant organization settings.
-
-### [Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization.md)
-Get the cross-tenant access policy template with user synchronization settings for a multitenant organization.
-This API is available in the following national cloud deployments.
-
-### [Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration.md)
-Get the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
-This API is available in the following national cloud deployments.
-
 ### [Get-MgBetaPolicyDefaultAppManagementPolicy](Get-MgBetaPolicyDefaultAppManagementPolicy.md)
 Read the properties of a tenantAppManagementPolicy object.
 This API is available in the following national cloud deployments.
@@ -580,13 +562,6 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupCount](Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupCount.md)
 Get the number of the resource
 
-### [Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupServiceProvisioningError](Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupServiceProvisioningErrorCount](Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupServiceProvisioningErrorCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaPolicyMobileDeviceManagementPolicy](Get-MgBetaPolicyMobileDeviceManagementPolicy.md)
 Read the properties and relationships of a mobilityManagementPolicy object.
 This API is available in the following national cloud deployments.
@@ -603,13 +578,6 @@ Get the list of groups that are included in a mobile app management policy.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupCount](Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupCount.md)
-Get the number of the resource
-
-### [Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupServiceProvisioningError](Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupServiceProvisioningError.md)
-Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a group object .
-Supports $filter (eq, not, for isResolved and serviceInstance).
-
-### [Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupServiceProvisioningErrorCount](Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupServiceProvisioningErrorCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaPolicyPermissionGrantPolicy](Get-MgBetaPolicyPermissionGrantPolicy.md)
@@ -785,23 +753,20 @@ Get media content for the navigation property policies from trustFramework
 ### [Get-MgBetaTrustFrameworkPolicyCount](Get-MgBetaTrustFrameworkPolicyCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationEmailMethod](Get-MgBetaUserAuthenticationEmailMethod.md)
-Retrieve a user's single email Authentication Method object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaTrustFrameworkPolicyCount](Get-MgBetaTrustFrameworkPolicyCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationFido2Method](Get-MgBetaUserAuthenticationFido2Method.md)
-Retrieve a user's single FIDO2 Security Key Authentication Method object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationFido2MethodCount](Get-MgBetaUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationMethod](Get-MgBetaUserAuthenticationMethod.md)
-Retrieve the properties and relationships of an authenticationMethod object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserAuthenticationFido2MethodCount](Get-MgBetaUserAuthenticationFido2MethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationMethodCount](Get-MgBetaUserAuthenticationMethodCount.md)
 Get the number of the resource
@@ -837,24 +802,20 @@ Get the number of the resource
 ### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
 Get device from users
 
-### [Get-MgBetaUserAuthenticationPasswordMethod](Get-MgBetaUserAuthenticationPasswordMethod.md)
-Retrieve the properties and relationships of a password authentication method object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
+Get device from users
 
 ### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationPhoneMethod](Get-MgBetaUserAuthenticationPhoneMethod.md)
-Retrieve a single phoneAuthenticationMethod object.
-This method is available only for standard Azure AD and B2B users, but not B2C users.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationSoftwareOathMethod](Get-MgBetaUserAuthenticationSoftwareOathMethod.md)
-Retrieve a user's single Software OATH token authentication method object and its properties.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationSoftwareOathMethodCount](Get-MgBetaUserAuthenticationSoftwareOathMethodCount.md)
 Get the number of the resource
@@ -1558,15 +1519,6 @@ This API is available in the following national cloud deployments.
 Delete the user synchronization policy for a partner-specific configuration.
 This API is available in the following national cloud deployments.
 
-### [Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate](Remove-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
-Delete navigation property templates for policies
-
-### [Remove-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](Remove-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization.md)
-Delete navigation property multiTenantOrganizationIdentitySynchronization for policies
-
-### [Remove-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](Remove-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration.md)
-Delete navigation property multiTenantOrganizationPartnerConfiguration for policies
-
 ### [Remove-MgBetaPolicyDefaultAppManagementPolicy](Remove-MgBetaPolicyDefaultAppManagementPolicy.md)
 Delete navigation property defaultAppManagementPolicy for policies
 
@@ -1701,12 +1653,8 @@ Delete navigation property operations for users
 Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 This API is available in the following national cloud deployments.
 
-### [Remove-MgBetaUserAuthenticationPhoneMethod](Remove-MgBetaUserAuthenticationPhoneMethod.md)
-Delete a user's phone authentication method.
-Remember that a user may not have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
-Have the user change their default authentication method, and then delete the number.
+### [Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
+Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaUserAuthenticationSoftwareOathMethod](Remove-MgBetaUserAuthenticationSoftwareOathMethod.md)
@@ -1750,16 +1698,6 @@ Delete navigation property results for users
 
 ### [Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault](Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault.md)
 Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
-This API is available in the following national cloud deployments.
-
-### [Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronizationToDefaultSetting](Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronizationToDefaultSetting.md)
-Reset the cross-tenant access policy template with user synchronization settings for a multitenant organization to the default values.
-In its reset state, the template has no impact on user synchronization settings, other than that unconfigured user synchronization settings are created if needed, for every multitenant organization tenant.
-This API is available in the following national cloud deployments.
-
-### [Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfigurationToDefaultSetting](Reset-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfigurationToDefaultSetting.md)
-Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization to the default values.
-In its reset state, the template has no impact on partner configuration settings, other than that an unconfigured partner configuration is created if needed, for every multitenant organization tenant.
 This API is available in the following national cloud deployments.
 
 ### [Set-MgBetaIdentityB2CUserFlowLanguageDefaultPageContent](Set-MgBetaIdentityB2CUserFlowLanguageDefaultPageContent.md)
@@ -2029,17 +1967,6 @@ This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyPartner](Update-MgBetaPolicyCrossTenantAccessPolicyPartner.md)
 Update the properties of a partner-specific configuration.
-This API is available in the following national cloud deployments.
-
-### [Update-MgBetaPolicyCrossTenantAccessPolicyTemplate](Update-MgBetaPolicyCrossTenantAccessPolicyTemplate.md)
-Update the navigation property templates in policies
-
-### [Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization.md)
-Update the cross-tenant access policy template with user synchronization settings for a multi-tenant organization.
-This API is available in the following national cloud deployments.
-
-### [Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration.md)
-Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaPolicyDefaultAppManagementPolicy](Update-MgBetaPolicyDefaultAppManagementPolicy.md)

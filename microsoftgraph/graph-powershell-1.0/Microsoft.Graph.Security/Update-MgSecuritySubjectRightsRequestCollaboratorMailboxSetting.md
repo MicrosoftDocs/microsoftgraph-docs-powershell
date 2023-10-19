@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysubjectrightsrequestcollaboratormailboxsetting
 schema: 2.0.0
@@ -19,19 +19,13 @@ Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting -SubjectRightsRe
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting -SubjectRightsRequestId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphMailboxSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -UserId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,7 +35,13 @@ Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting -InputObject <IS
  [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
  [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgSecuritySubjectRightsRequestCollaboratorMailboxSetting -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,19 +49,15 @@ Update property mailboxSettings value.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -69,7 +65,7 @@ Update property mailboxSettings value.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +80,7 @@ Accept wildcard characters: False
 Folder ID of an archive folder for the user.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +96,7 @@ automaticRepliesSetting
 To construct, see NOTES section for AUTOMATICREPLIESSETTING properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAutomaticRepliesSetting
+Type: IMicrosoftGraphAutomaticRepliesSetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +112,7 @@ mailboxSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
+Type: IMicrosoftGraphMailboxSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -131,7 +127,7 @@ Accept wildcard characters: False
 The date format for the user's mailbox.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +142,7 @@ Accept wildcard characters: False
 delegateMeetingMessageDeliveryOptions
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +158,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ISecurityIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -178,7 +174,7 @@ localeInfo
 To construct, see NOTES section for LANGUAGE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLocaleInfo
+Type: IMicrosoftGraphLocaleInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,8 +189,8 @@ Accept wildcard characters: False
 The unique identifier of subjectRightsRequest
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -208,7 +204,7 @@ Accept wildcard characters: False
 The time format for the user's mailbox.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +219,7 @@ Accept wildcard characters: False
 The default time zone for the user's mailbox.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -238,8 +234,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -253,7 +249,7 @@ Accept wildcard characters: False
 userPurpose
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,7 +265,7 @@ workingHours
 To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkingHours
+Type: IMicrosoftGraphWorkingHours
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -284,7 +280,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -300,7 +296,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -317,13 +313,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
-
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
-
 ## NOTES
 
 ALIASES
@@ -445,4 +438,3 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
-

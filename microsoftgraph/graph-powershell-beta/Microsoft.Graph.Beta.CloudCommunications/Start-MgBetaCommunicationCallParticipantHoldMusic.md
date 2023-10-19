@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/start-mgbetacommunicationcallparticipantholdmusic
 schema: 2.0.0
@@ -16,29 +16,29 @@ This API is available in the following national cloud deployments.
 ### StartExpanded (Default)
 ```
 Start-MgBetaCommunicationCallParticipantHoldMusic -CallId <String> -ParticipantId <String>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-CustomPrompt <Hashtable>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-CustomPrompt <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Start
 ```
 Start-MgBetaCommunicationCallParticipantHoldMusic -CallId <String> -ParticipantId <String>
  -BodyParameter <IPathsKtcw9WCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStartholdmusicPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### StartViaIdentityExpanded
+```
+Start-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-CustomPrompt <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### StartViaIdentity
 ```
 Start-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsKtcw9WCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStartholdmusicPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### StartViaIdentityExpanded
-```
-Start-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-CustomPrompt <Hashtable>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -63,15 +63,13 @@ $params = @{
 Start-MgBetaCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: StartExpanded, StartViaIdentityExpanded
 Aliases:
 
@@ -87,7 +85,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsKtcw9WCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStartholdmusicPostRequestbodyContentApplicationJsonSchema
+Type: IPathsKtcw9WCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStartholdmusicPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Start, StartViaIdentity
 Aliases:
 
@@ -102,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: System.String
-Parameter Sets: Start, StartExpanded
+Type: String
+Parameter Sets: StartExpanded, Start
 Aliases:
 
 Required: True
@@ -117,7 +115,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: StartExpanded, StartViaIdentityExpanded
 Aliases:
 
@@ -132,7 +130,7 @@ Accept wildcard characters: False
 prompt
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: StartExpanded, StartViaIdentityExpanded
 Aliases:
 
@@ -148,8 +146,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: StartViaIdentity, StartViaIdentityExpanded
+Type: ICloudCommunicationsIdentity
+Parameter Sets: StartViaIdentityExpanded, StartViaIdentity
 Aliases:
 
 Required: True
@@ -163,8 +161,8 @@ Accept wildcard characters: False
 The unique identifier of participant
 
 ```yaml
-Type: System.String
-Parameter Sets: Start, StartExpanded
+Type: String
+Parameter Sets: StartExpanded, Start
 Aliases:
 
 Required: True
@@ -178,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -194,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -211,13 +209,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsKtcw9WCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphStartholdmusicPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphStartHoldMusicOperation
-
 ## NOTES
 
 ALIASES
@@ -254,4 +249,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

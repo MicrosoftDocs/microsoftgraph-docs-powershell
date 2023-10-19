@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/add-mgbetasecuritycaseediscoverycasecustodianhold
 schema: 2.0.0
@@ -18,39 +18,39 @@ This API is available in the following national cloud deployments.
 ### ApplyExpanded (Default)
 ```
 Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Apply
-```
-Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Apply1
 ```
 Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId <String>
  -BodyParameter <IPaths2560XySecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ApplyViaIdentity
+### Apply
 ```
-Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ApplyViaIdentityExpanded
+```
+Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity1
 ```
 Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity>
  -BodyParameter <IPaths2560XySecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ApplyViaIdentityExpanded
+### ApplyViaIdentity
 ```
-Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,21 +61,17 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
-
-
 
 ## PARAMETERS
 
@@ -83,7 +79,7 @@ Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryC
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -99,7 +95,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths2560XySecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema
+Type: IPaths2560XySecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Apply1, ApplyViaIdentity1
 Aliases:
 
@@ -114,8 +110,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: System.String
-Parameter Sets: Apply, Apply1, ApplyExpanded
+Type: String
+Parameter Sets: ApplyExpanded, Apply1, Apply
 Aliases:
 
 Required: True
@@ -129,7 +125,7 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCustodian
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Apply
 Aliases:
 
@@ -144,7 +140,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -160,8 +156,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-Parameter Sets: ApplyViaIdentity, ApplyViaIdentity1, ApplyViaIdentityExpanded
+Type: ISecurityIdentity
+Parameter Sets: ApplyViaIdentityExpanded, ApplyViaIdentity1, ApplyViaIdentity
 Aliases:
 
 Required: True
@@ -175,7 +171,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -190,7 +186,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +202,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -223,13 +219,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths2560XySecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -322,4 +315,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-

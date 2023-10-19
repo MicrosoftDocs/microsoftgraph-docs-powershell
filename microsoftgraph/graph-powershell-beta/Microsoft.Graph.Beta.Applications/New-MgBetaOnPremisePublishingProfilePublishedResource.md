@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource
 schema: 2.0.0
@@ -17,28 +17,28 @@ This API is available in the following national cloud deployments.
 ```
 New-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId <String>
  [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
- [-DisplayName <String>] [-Id <String>] [-PublishingType <String>] [-ResourceName <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-PublishingType <String>] [-ResourceName <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId <String>
- -BodyParameter <IMicrosoftGraphPublishedResource> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphPublishedResource> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPublishedResource> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
- [-DisplayName <String>] [-Id <String>] [-PublishingType <String>] [-ResourceName <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-PublishingType <String>] [-ResourceName <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphPublishedResource> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -57,15 +57,13 @@ $params = @{
 New-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +81,7 @@ Nullable.
 To construct, see NOTES section for AGENTGROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup[]
+Type: IMicrosoftGraphOnPremisesAgentGroup[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +97,7 @@ publishedResource
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublishedResource
+Type: IMicrosoftGraphPublishedResource
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -114,7 +112,7 @@ Accept wildcard characters: False
 Display Name of the publishedResource.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +128,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,8 +144,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -161,8 +159,8 @@ Accept wildcard characters: False
 The unique identifier of onPremisesPublishingProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -176,7 +174,7 @@ Accept wildcard characters: False
 onPremisesPublishingType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +189,7 @@ Accept wildcard characters: False
 Name of the publishedResource.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -206,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -222,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -239,13 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublishedResource
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublishedResource
-
 ## NOTES
 
 ALIASES
@@ -328,4 +323,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

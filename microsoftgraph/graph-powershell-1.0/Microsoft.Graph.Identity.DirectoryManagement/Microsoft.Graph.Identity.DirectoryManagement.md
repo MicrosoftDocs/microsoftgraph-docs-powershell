@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: 13a7f9dd-01ae-4cef-accf-0e6f8855f655
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement
@@ -92,15 +92,6 @@ This API is available in the following national cloud deployments.
 ### [Confirm-MgOrganizationMemberObject](Confirm-MgOrganizationMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Get-MgAdminPeople](Get-MgAdminPeople.md)
-Get people from admin
-
-### [Get-MgAdminPeopleProfileCardProperty](Get-MgAdminPeopleProfileCardProperty.md)
-Get profileCardProperties from admin
-
-### [Get-MgAdminPeopleProfileCardPropertyCount](Get-MgAdminPeopleProfileCardPropertyCount.md)
-Get the number of the resource
-
 ### [Get-MgContact](Get-MgContact.md)
 Get the properties and relationships of an organizational contact.
 This API is available in the following national cloud deployments.
@@ -174,12 +165,6 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgContactMemberOfCountAsGroup](Get-MgContactMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgContactServiceProvisioningError](Get-MgContactServiceProvisioningError.md)
-Get serviceProvisioningErrors property value
-
-### [Get-MgContactServiceProvisioningErrorCount](Get-MgContactServiceProvisioningErrorCount.md)
 Get the number of the resource
 
 ### [Get-MgContactTransitiveMemberOf](Get-MgContactTransitiveMemberOf.md)
@@ -535,13 +520,8 @@ Get the number of the resource
 ### [Get-MgDirectoryDeletedItemCountAsUser](Get-MgDirectoryDeletedItemCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgDirectoryDeletedItemMemberGroup](Get-MgDirectoryDeletedItemMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+### [Get-MgDirectoryDeletedItemCountAsUser](Get-MgDirectoryDeletedItemCountAsUser.md)
+Get the number of the resource
 
 ### [Get-MgDirectoryDeletedItemMemberObject](Get-MgDirectoryDeletedItemMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -642,13 +622,8 @@ Get the number of the resource
 ### [Get-MgDirectoryRoleMemberCountAsUser](Get-MgDirectoryRoleMemberCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgDirectoryRoleMemberGroup](Get-MgDirectoryRoleMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+### [Get-MgDirectoryRoleMemberCountAsUser](Get-MgDirectoryRoleMemberCountAsUser.md)
+Get the number of the resource
 
 ### [Get-MgDirectoryRoleMemberObject](Get-MgDirectoryRoleMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -679,13 +654,8 @@ Get the number of the resource
 ### [Get-MgDirectoryRoleTemplateDelta](Get-MgDirectoryRoleTemplateDelta.md)
 Invoke function delta
 
-### [Get-MgDirectoryRoleTemplateMemberGroup](Get-MgDirectoryRoleTemplateMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+### [Get-MgDirectoryRoleTemplateDelta](Get-MgDirectoryRoleTemplateDelta.md)
+Invoke function delta
 
 ### [Get-MgDirectoryRoleTemplateMemberObject](Get-MgDirectoryRoleTemplateMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -831,13 +801,8 @@ Nullable.
 ### [Get-MgOrganizationExtensionCount](Get-MgOrganizationExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgOrganizationMemberGroup](Get-MgOrganizationMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+### [Get-MgOrganizationExtensionCount](Get-MgOrganizationExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgOrganizationMemberObject](Get-MgOrganizationMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -872,9 +837,6 @@ This API is available in the following national cloud deployments.
 
 ### [Invoke-MgRetryContactServiceProvisioning](Invoke-MgRetryContactServiceProvisioning.md)
 Invoke action retryServiceProvisioning
-
-### [New-MgAdminPeopleProfileCardProperty](New-MgAdminPeopleProfileCardProperty.md)
-Create new navigation property to profileCardProperties for admin
 
 ### [New-MgContact](New-MgContact.md)
 Add new entity to contacts
@@ -926,6 +888,12 @@ This API is available in the following national cloud deployments.
 ### [New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 Create a new allowedValue object.
 This API is available in the following national cloud deployments.
+
+### [New-MgDirectoryDeletedItem](New-MgDirectoryDeletedItem.md)
+Create new navigation property to deletedItems for directory
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
 
 ### [New-MgDirectoryFederationConfiguration](New-MgDirectoryFederationConfiguration.md)
 Create new navigation property to federationConfigurations for directory
@@ -992,9 +960,6 @@ Add new entity to subscribedSkus
 
 ### [New-MgUserScopedRoleMemberOf](New-MgUserScopedRoleMemberOf.md)
 Create new navigation property to scopedRoleMemberOf for users
-
-### [Remove-MgAdminPeopleProfileCardProperty](Remove-MgAdminPeopleProfileCardProperty.md)
-Delete navigation property profileCardProperties for admin
 
 ### [Remove-MgContact](Remove-MgContact.md)
 Delete entity from contacts
@@ -1280,12 +1245,6 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 This API is available in the following national cloud deployments.
 
-### [Update-MgAdminPeople](Update-MgAdminPeople.md)
-Update the navigation property people in admin
-
-### [Update-MgAdminPeopleProfileCardProperty](Update-MgAdminPeopleProfileCardProperty.md)
-Update the navigation property profileCardProperties in admin
-
 ### [Update-MgContact](Update-MgContact.md)
 Update entity in contacts
 
@@ -1329,6 +1288,12 @@ This API is available in the following national cloud deployments.
 ### [Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
 Update the properties of an allowedValue object.
 This API is available in the following national cloud deployments.
+
+### [Update-MgDirectoryDeletedItem](Update-MgDirectoryDeletedItem.md)
+Update the navigation property deletedItems in directory
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
 
 ### [Update-MgDirectoryFederationConfiguration](Update-MgDirectoryFederationConfiguration.md)
 Update the navigation property federationConfigurations in directory
