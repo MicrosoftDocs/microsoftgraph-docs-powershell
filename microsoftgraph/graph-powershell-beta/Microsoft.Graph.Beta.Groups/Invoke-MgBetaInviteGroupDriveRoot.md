@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Sends a sharing invitation for a DriveItem.nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgInviteGroupDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### InviteExpanded (Default)
@@ -377,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Invoke-MgInviteGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgInviteGroupDriveRoot?view=graph-powershell-1.0)

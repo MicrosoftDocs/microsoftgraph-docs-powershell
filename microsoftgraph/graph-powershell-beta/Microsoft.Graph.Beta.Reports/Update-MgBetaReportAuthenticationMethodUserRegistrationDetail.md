@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property userRegistrationDetails in reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Update-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -506,3 +509,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Update-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Update-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)

@@ -13,6 +13,9 @@ After the operation is created, you can get the status of the operation by retri
 The location provides a URL that will return a Add to review set operation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet](/powershell/module/Microsoft.Graph.Security/Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -10307,5 +10310,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastIndexOperation <IMicrosoftGraphSecurityEdiscoveryIndexOperation>]`: ediscoveryIndexOperation
 
 ## RELATED LINKS
+[Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet](/powershell/module/Microsoft.Graph.Security/Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet](/powershell/module/Microsoft.Graph.Security/Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet?view=graph-powershell-1.0)

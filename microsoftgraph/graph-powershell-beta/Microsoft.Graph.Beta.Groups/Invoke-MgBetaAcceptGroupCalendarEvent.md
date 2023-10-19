@@ -12,6 +12,9 @@ ms.prod: outlook
 Grant users access to a link represented by a permission][].
 This API is available in the following [national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupCalendarEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)
@@ -300,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Invoke-MgAcceptGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupCalendarEvent?view=graph-powershell-1.0)

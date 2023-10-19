@@ -14,6 +14,9 @@ Get the properties and relationships of a bookingAppointment object in the speci
 The start and end properties are always returned in UTC.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessAppointment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -295,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessAppointment?view=graph-powershell-1.0)

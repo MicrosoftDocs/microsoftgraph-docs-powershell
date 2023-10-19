@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property threatIntelligence in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -2298,5 +2301,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)

@@ -12,6 +12,9 @@ ms.prod: sharepoint
 Unfollow a driveItem.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaUnfollowUserDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unfollow (Default)
@@ -191,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaUnfollowUserDriveRoot?view=graph-powershell-beta)

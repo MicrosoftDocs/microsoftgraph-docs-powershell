@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new subjectRightsRequest object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/New-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20135,5 +20138,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
+[New-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/New-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/New-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)

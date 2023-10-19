@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new section group in the specified notebook.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -866,5 +869,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[New-MgGroupSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgGroupSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionGroup?view=graph-powershell-1.0)

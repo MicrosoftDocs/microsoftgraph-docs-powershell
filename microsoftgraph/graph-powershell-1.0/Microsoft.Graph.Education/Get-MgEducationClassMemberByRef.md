@@ -12,6 +12,9 @@ ms.prod: education
 Retrieves the educationUser members of an educationClass.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -187,3 +190,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)

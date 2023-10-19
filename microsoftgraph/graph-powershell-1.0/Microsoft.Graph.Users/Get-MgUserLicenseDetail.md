@@ -12,6 +12,9 @@ ms.prod: users
 A collection of this user's license details.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserLicenseDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -283,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserLicenseDetail?view=graph-powershell-beta)

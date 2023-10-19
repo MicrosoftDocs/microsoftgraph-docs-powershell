@@ -22,6 +22,9 @@ To learn more about configuring naming policies, see Configure naming policy.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -348,5 +351,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty?view=graph-powershell-beta)
 
 [Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorProperty?view=graph-powershell-beta)

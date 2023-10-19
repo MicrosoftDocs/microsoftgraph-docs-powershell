@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property triggerTypes in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -189,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+[Update-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerType?view=graph-powershell-beta)

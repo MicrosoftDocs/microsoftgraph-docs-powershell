@@ -13,6 +13,9 @@ ms.prod: identity-and-sign-in
 Read the properties and relationships of a riskyUser object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -306,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUser?view=graph-powershell-beta)

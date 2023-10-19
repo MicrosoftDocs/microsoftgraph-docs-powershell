@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property schema for external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -166,6 +169,7 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
   \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Remove-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionschema)
 

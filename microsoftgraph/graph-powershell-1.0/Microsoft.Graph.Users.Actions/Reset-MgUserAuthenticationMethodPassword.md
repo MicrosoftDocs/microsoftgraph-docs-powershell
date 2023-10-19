@@ -16,6 +16,9 @@ The user is prompted to change their password on their next sign in.
 This reset is a long-running operation and will return a Location header with a link where the caller can periodically check for the status of the reset operation.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaUserAuthenticationMethodPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Reset-MgBetaUserAuthenticationMethodPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ResetExpanded (Default)
@@ -250,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Reset-MgBetaUserAuthenticationMethodPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Reset-MgBetaUserAuthenticationMethodPassword?view=graph-powershell-beta)

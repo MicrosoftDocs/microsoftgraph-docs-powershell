@@ -15,6 +15,9 @@ The following actions are performed as part of this operation: After the domain 
 To verify deletion of a domain, you can perform a get domain operation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForceDomainDelete](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaForceDomainDelete?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForceExpanded (Default)
@@ -236,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaForceDomainDelete](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaForceDomainDelete?view=graph-powershell-beta)

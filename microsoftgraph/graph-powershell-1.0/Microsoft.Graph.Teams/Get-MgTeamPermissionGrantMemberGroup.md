@@ -17,6 +17,9 @@ As a workaround, use the List group transitive memberOf API.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantMemberGroup?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantMemberGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -237,6 +240,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantMemberGroup?view=graph-powershell-beta)
 
 [Get-MgBetaTeamPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantMemberGroup?view=graph-powershell-beta)
 

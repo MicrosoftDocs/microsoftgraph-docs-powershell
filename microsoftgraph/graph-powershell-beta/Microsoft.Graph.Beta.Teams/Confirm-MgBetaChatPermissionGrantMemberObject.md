@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Teams/Confirm-MgChatPermissionGrantMemberObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)
@@ -243,6 +246,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Confirm-MgChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Teams/Confirm-MgChatPermissionGrantMemberObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetachatpermissiongrantmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetachatpermissiongrantmemberobject)
 

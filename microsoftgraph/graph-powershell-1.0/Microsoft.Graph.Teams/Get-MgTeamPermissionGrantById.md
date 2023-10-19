@@ -15,6 +15,9 @@ Some common uses for this function are to:
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPermissionGrantById](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantById?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPermissionGrantById](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantById?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -234,6 +237,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaTeamPermissionGrantById](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantById?view=graph-powershell-beta)
 
 [Get-MgBetaTeamPermissionGrantById](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPermissionGrantById?view=graph-powershell-beta)
 

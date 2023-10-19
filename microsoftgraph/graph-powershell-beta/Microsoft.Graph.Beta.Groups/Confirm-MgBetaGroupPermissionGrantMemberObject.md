@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupPermissionGrantMemberObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)
@@ -246,6 +249,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Confirm-MgGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupPermissionGrantMemberObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagrouppermissiongrantmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagrouppermissiongrantmemberobject)
 

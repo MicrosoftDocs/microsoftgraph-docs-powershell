@@ -12,6 +12,9 @@ ms.prod: service-communications
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaFavoriteServiceAnnouncementMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### FavoriteExpanded (Default)
@@ -149,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MessageIds <String[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBetaFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaFavoriteServiceAnnouncementMessage?view=graph-powershell-beta)

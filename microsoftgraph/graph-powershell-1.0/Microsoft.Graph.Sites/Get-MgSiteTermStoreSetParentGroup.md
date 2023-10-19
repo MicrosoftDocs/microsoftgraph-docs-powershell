@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The parent [group] that contains the set.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -207,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroup?view=graph-powershell-beta)

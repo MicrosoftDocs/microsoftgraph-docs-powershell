@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in contracts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaContract?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -298,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaContract?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The scores and insights for the battery health metrics.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -268,5 +271,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric?view=graph-powershell-1.0)

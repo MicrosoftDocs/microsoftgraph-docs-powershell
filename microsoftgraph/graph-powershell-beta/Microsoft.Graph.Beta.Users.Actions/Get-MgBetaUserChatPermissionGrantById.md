@@ -11,6 +11,9 @@ schema: 2.0.0
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatPermissionGrantById](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserChatPermissionGrantById?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -263,6 +266,7 @@ INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserChatPermissionGrantById](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserChatPermissionGrantById?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserchatpermissiongrantbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserchatpermissiongrantbyid)
 

@@ -20,6 +20,9 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaUserChatPermissionGrantProperty](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Test-MgBetaUserChatPermissionGrantProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -319,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgBetaUserChatPermissionGrantProperty](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Test-MgBetaUserChatPermissionGrantProperty?view=graph-powershell-beta)

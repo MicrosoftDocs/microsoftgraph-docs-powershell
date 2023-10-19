@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties on a listItem][].
 This API is supported in the following [national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveItemListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -228,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaDriveItemListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemListItemField?view=graph-powershell-beta)

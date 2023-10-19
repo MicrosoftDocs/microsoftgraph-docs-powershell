@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the role of a conversationMember in a team.or channel.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamChannelMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -313,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamChannelMember?view=graph-powershell-1.0)

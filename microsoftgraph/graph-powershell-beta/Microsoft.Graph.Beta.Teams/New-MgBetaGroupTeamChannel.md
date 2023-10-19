@@ -14,6 +14,9 @@ This is the name that appears to the user in Microsoft Teams.
 You can add a maximum of 200 members when you create a private channel.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -15201,5 +15204,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
 
 ## RELATED LINKS
+[New-MgGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannel?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannel?view=graph-powershell-1.0)

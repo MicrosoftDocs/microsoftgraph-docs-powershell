@@ -11,6 +11,9 @@ schema: 2.0.0
 Get an app installed in a chat.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -321,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatInstalledApp?view=graph-powershell-1.0)

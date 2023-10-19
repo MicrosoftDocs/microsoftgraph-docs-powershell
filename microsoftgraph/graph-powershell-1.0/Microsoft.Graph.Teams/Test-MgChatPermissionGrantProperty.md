@@ -22,6 +22,9 @@ To learn more about configuring naming policies, see Configure naming policy.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaChatPermissionGrantProperty](/powershell/module/Microsoft.Graph.Beta.Teams/Test-MgBetaChatPermissionGrantProperty?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaChatPermissionGrantProperty](/powershell/module/Microsoft.Graph.Beta.Teams/Test-MgBetaChatPermissionGrantProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -297,6 +300,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Test-MgBetaChatPermissionGrantProperty](/powershell/module/Microsoft.Graph.Beta.Teams/Test-MgBetaChatPermissionGrantProperty?view=graph-powershell-beta)
 
 [Test-MgBetaChatPermissionGrantProperty](/powershell/module/Microsoft.Graph.Beta.Teams/Test-MgBetaChatPermissionGrantProperty?view=graph-powershell-beta)
 

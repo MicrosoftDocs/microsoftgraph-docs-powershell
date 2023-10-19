@@ -17,6 +17,9 @@ To get properties that are not returned by default, do a GET operation for the u
 Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUser](/powershell/module/Microsoft.Graph.Users/Get-MgUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -357,3 +360,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUser](/powershell/module/Microsoft.Graph.Users/Get-MgUser?view=graph-powershell-1.0)

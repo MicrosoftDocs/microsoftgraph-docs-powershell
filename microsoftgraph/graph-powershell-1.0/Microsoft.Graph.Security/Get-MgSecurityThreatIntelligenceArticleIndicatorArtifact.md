@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The artifact related to this indicator.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceArticleIndicatorArtifact](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticleIndicatorArtifact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -174,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityThreatIntelligenceArticleIndicatorArtifact](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticleIndicatorArtifact?view=graph-powershell-beta)

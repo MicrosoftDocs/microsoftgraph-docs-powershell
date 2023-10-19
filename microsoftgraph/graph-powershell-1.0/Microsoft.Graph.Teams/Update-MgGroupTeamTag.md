@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of a tag object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -348,3 +351,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The user ID of the member.
 
 ## RELATED LINKS
+[Update-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamTag?view=graph-powershell-beta)

@@ -22,6 +22,9 @@ To learn more about configuring naming policies, see Configure naming policy.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -339,5 +342,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty?view=graph-powershell-beta)
 
 [Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Test-MgBetaPolicyFeatureRolloutPolicyApplyToProperty?view=graph-powershell-beta)

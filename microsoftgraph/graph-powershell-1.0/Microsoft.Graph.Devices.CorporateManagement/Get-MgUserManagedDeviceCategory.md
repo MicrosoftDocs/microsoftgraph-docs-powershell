@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Read properties and relationships of the deviceCategory object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -175,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+[Get-MgBetaUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceCategory?view=graph-powershell-beta)

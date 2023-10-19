@@ -13,6 +13,9 @@ Invoke action checkMemberObjects
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Confirm-MgBetaTeamPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaTeamPermissionGrantMemberObject?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaTeamPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaTeamPermissionGrantMemberObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)
@@ -229,6 +232,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Confirm-MgBetaTeamPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaTeamPermissionGrantMemberObject?view=graph-powershell-beta)
 
 [Confirm-MgBetaTeamPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Teams/Confirm-MgBetaTeamPermissionGrantMemberObject?view=graph-powershell-beta)
 

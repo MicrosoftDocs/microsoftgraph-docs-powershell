@@ -12,6 +12,9 @@ ms.prod: applications
 Adds a strong password to an application.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationPassword?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -286,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
 
 ## RELATED LINKS
+[Add-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationPassword?view=graph-powershell-1.0)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -207,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupSiteListDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListDrive?view=graph-powershell-1.0)

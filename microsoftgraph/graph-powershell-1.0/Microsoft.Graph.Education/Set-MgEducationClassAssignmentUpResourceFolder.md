@@ -13,6 +13,9 @@ Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaEducationClassAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentUpResourceFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -153,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Set-MgBetaEducationClassAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentUpResourceFolder?view=graph-powershell-beta)

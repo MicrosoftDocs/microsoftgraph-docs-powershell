@@ -11,6 +11,9 @@ schema: 2.0.0
 Unpublish a contentType][] from a content type hub site.
 This API is supported in the following [national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Unpublish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unpublish (Default)
@@ -184,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Unpublish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaDriveListContentType?view=graph-powershell-beta)

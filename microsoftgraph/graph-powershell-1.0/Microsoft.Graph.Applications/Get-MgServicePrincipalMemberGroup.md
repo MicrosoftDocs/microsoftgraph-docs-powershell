@@ -16,6 +16,9 @@ If more than 11,000 results are available, it returns a 400 Bad Request error wi
 As a workaround, use the List group transitive memberOf API.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -221,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaServicePrincipalMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberGroup?view=graph-powershell-beta)

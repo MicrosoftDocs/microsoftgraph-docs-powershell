@@ -13,6 +13,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -72,6 +75,7 @@ ALIASES
 Get-MgDeviceAppMgtMobileAppCountAsMobileLobApp
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp?view=graph-powershell-beta)
 
 [Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp?view=graph-powershell-beta)
 
