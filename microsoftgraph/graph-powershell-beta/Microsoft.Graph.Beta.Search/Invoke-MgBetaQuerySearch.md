@@ -37,11 +37,11 @@ Search results are provided in the response.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	requests = @(
@@ -66,6 +66,10 @@ $params = @{
 }
 
 Invoke-MgBetaQuerySearch -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaQuerySearch Cmdlet.
+
 
 ## PARAMETERS
 

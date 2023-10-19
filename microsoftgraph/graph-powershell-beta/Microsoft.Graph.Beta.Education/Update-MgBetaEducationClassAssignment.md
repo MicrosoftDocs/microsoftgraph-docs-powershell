@@ -69,11 +69,10 @@ Use the publish action to change the assignment status.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	displayName = "Reading and review test 09.03 #5"
@@ -87,6 +86,11 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaEducationClassAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -31,8 +31,7 @@ Create a new cloudPcExternalPartnerSetting object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
@@ -42,6 +41,8 @@ $params = @{
 }
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

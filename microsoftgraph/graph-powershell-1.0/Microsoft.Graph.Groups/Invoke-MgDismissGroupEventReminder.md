@@ -34,13 +34,18 @@ Check out a driveItem resource to prevent others from editing the document, and 
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Files
-```
+Import-Module Microsoft.Graph.Users.Actions
 
-Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
+# A UPN can also be used as -UserId.
+Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
+```
+This example shows how to use the Invoke-MgDismissGroupEventReminder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

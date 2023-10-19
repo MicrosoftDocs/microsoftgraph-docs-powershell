@@ -30,12 +30,13 @@ Delete a tag object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
-Remove-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -Forcedelete true
+Remove-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -Forcedelete true 
 ```
+This example shows how to use the Remove-MgBetaComplianceEdiscoveryCaseTag Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

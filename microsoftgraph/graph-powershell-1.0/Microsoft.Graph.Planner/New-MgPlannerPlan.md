@@ -34,11 +34,11 @@ Use this API to create a new plannerPlan.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	container = @{
@@ -48,6 +48,10 @@ $params = @{
 }
 
 New-MgPlannerPlan -BodyParameter $params
+
+```
+This example shows how to use the New-MgPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

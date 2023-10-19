@@ -35,11 +35,11 @@ Get the presence information for multiple users.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	ids = @(
@@ -49,6 +49,10 @@ $params = @{
 }
 
 Get-MgBetaCommunicationPresenceByUserId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaCommunicationPresenceByUserId Cmdlet.
+
 
 ## PARAMETERS
 

@@ -47,20 +47,23 @@ New-MgBetaUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMicros
 Create new navigation property to notifications for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Users
+
+$params = @{
+	displayName = "Project expenses"
+	color = "preset9"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserOutlookMasterCategory -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserOutlookMasterCategory Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

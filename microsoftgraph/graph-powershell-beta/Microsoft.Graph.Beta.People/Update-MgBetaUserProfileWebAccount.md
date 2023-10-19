@@ -52,8 +52,7 @@ Update the properties of a webAccount object in a user's profile.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfileWebAccount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
@@ -62,6 +61,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileWebAccount -UserId $userId -WebAccountId $webAccountId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserProfileWebAccount Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

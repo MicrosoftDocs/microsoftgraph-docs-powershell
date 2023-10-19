@@ -52,8 +52,7 @@ Update the properties of an educationalActivity object within a user's profile.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfileEducationalActivity Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
@@ -72,6 +71,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileEducationalActivity -UserId $userId -EducationalActivityId $educationalActivityId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserProfileEducationalActivity Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

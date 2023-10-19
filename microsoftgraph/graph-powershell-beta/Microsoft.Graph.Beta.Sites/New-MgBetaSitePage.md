@@ -52,8 +52,7 @@ Create a new sitePage][] in the site pages [list][] in a [site][].
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSitePage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
@@ -82,6 +81,8 @@ $params = @{
 }
 New-MgBetaSitePage -SiteId $siteId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSitePage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

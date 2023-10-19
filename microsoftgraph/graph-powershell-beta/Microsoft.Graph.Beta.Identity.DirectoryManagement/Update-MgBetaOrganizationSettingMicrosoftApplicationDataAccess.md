@@ -48,8 +48,7 @@ Update the settings in a microsoftApplicationDataAccessSettings object that spec
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -57,6 +56,8 @@ $params = @{
 }
 Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId $organizationId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -30,8 +30,7 @@ Create a new operationalInsightsConnection object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaWindowsUpdatesResourceConnection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -42,6 +41,8 @@ $params = @{
 }
 New-MgBetaWindowsUpdatesResourceConnection -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaWindowsUpdatesResourceConnection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

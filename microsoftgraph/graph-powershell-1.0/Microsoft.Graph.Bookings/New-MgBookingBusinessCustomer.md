@@ -45,11 +45,11 @@ Create a new bookingCustomer object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomer"
@@ -62,6 +62,10 @@ $params = @{
 }
 
 New-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBookingBusinessCustomer Cmdlet.
+
 
 ## PARAMETERS
 

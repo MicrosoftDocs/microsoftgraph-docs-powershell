@@ -37,11 +37,13 @@ After that time, they are permanently deleted.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Delete an application
 
-### EXAMPLE 1
 ```powershell
 Remove-MgApplication -ApplicationId '1bc44759-ef10-46de-b199-40c077768fff'
 ```
+
+This example deletes the specified application.
 
 ## PARAMETERS
 

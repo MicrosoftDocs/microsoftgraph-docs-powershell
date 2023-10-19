@@ -42,13 +42,17 @@ Get the properties and relationships of a bookingBusiness object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgBookingBusiness
+
+```
+This example shows how to use the Get-MgBookingBusiness Cmdlet.
+
 
 ## PARAMETERS
 

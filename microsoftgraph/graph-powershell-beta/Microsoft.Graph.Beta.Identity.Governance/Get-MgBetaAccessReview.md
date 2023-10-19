@@ -49,18 +49,20 @@ Each past and current instance will have decisions.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaAccessReview Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaAccessReview -AccessReviewId $accessReviewId
 ```
-
-### EXAMPLE 2
+This example shows how to use the Get-MgBetaAccessReview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaAccessReview Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaAccessReview -Filter "businessFlowTemplateId eq '6e4f3d20-c5c3-407f-9695-8460952bcc68'" -Top 100 -Skip 0
+Get-MgBetaAccessReview -Filter "businessFlowTemplateId eq '6e4f3d20-c5c3-407f-9695-8460952bcc68'" -Top 100 -Skip 0 
 ```
+This example shows how to use the Get-MgBetaAccessReview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -49,20 +49,22 @@ The table in the Permissions section lists the resources that support open exten
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Calendar
+
+$params = @{
+	name = "Volunteer"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserCalendar -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserCalendar Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

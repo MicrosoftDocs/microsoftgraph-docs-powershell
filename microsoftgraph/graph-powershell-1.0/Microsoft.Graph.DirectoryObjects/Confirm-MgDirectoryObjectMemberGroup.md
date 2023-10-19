@@ -56,11 +56,11 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Check group memberships for a directory object
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	groupIds = @(
@@ -73,6 +73,10 @@ $params = @{
 }
 
 Confirm-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
+
+```
+This example will check group memberships for a directory object
+
 
 ## PARAMETERS
 

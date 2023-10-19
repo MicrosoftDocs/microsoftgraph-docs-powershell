@@ -55,101 +55,18 @@ To learn more about the steps involved in the backend before a mail is delivered
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Send an existing draft message
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
-$params = @{
-	Message = @{
-		Subject = "Meet for lunch?"
-		Body = @{
-			ContentType = "Text"
-			Content = "The new cafeteria is open."
-		}
-		ToRecipients = @(
-			@{
-				EmailAddress = @{
-					Address = "fannyd@contoso.onmicrosoft.com"
-				}
-			}
-		)
-		CcRecipients = @(
-			@{
-				EmailAddress = @{
-					Address = "danas@contoso.onmicrosoft.com"
-				}
-			}
-		)
-	}
-	SaveToSentItems = "false"
-}
-# A UPN can also be used as -UserId.
-Send-MgUserMail -UserId $userId -BodyParameter $params
-```
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-$params = @{
-	Message = @{
-		Subject = "Meet for lunch?"
-		Body = @{
-			ContentType = "Text"
-			Content = "The new cafeteria is open."
-		}
-		ToRecipients = @(
-			@{
-				EmailAddress = @{
-					Address = "meganb@contoso.onmicrosoft.com"
-				}
-			}
-		)
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				Name = "attachment.txt"
-				ContentType = "text/plain"
-				ContentBytes = "SGVsbG8gV29ybGQh"
-			}
-		)
-	}
-}
 # A UPN can also be used as -UserId.
-Send-MgUserMail -UserId $userId -BodyParameter $params
+Send-MgUserMessage -UserId $userId -MessageId $messageId
 ```
+This example shows how to use the Send-MgUserMailFolderChildFolderMessage Cmdlet.
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-$params = @{
-	Message = @{
-		Subject = "9/9/2018: concert"
-		Body = @{
-			ContentType = "HTML"
-			Content = "The group represents Nevada."
-		}
-		ToRecipients = @(
-			@{
-				EmailAddress = @{
-					Address = "AlexW@contoso.OnMicrosoft.com"
-				}
-			}
-		)
-		InternetMessageHeaders = @(
-			@{
-				Name = "x-custom-header-group-name"
-				Value = "Nevada"
-			}
-			@{
-				Name = "x-custom-header-group-id"
-				Value = "NV001"
-			}
-		)
-	}
-}
-# A UPN can also be used as -UserId.
-Send-MgUserMail -UserId $userId -BodyParameter $params
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

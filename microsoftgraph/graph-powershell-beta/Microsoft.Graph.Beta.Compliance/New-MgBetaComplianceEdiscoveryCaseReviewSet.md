@@ -47,8 +47,7 @@ The request body contains the display name of the review set, which is the only 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -56,6 +55,8 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

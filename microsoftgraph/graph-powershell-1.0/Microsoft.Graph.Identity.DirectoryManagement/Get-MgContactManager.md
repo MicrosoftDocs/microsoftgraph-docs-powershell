@@ -34,13 +34,17 @@ Get this organizational contact's manager.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContactManager -OrgContactId $orgContactId
+
+```
+This example shows how to use the Get-MgContactManager Cmdlet.
+
 
 ## PARAMETERS
 

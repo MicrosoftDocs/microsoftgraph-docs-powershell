@@ -59,11 +59,10 @@ For example, if a physical printer device breaks, an administrator can register 
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "PrinterShare Name"
@@ -72,6 +71,11 @@ $params = @{
 }
 
 Update-MgPrintShare -PrinterShareId $printerShareId -BodyParameter $params
+```
+This example shows how to use the Update-MgPrintShare Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

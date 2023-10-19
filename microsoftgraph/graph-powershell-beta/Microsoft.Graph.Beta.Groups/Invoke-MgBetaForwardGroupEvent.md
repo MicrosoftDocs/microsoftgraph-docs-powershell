@@ -54,25 +54,30 @@ You can specify both the parent conversation and thread in the request, nor, you
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Groups
-```
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
-	Comment = "comment-value"
 	ToRecipients = @(
 		@{
 			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
+				Address = "danas@contoso.onmicrosoft.com"
+				Name = "Dana Swope"
 			}
 		}
 	)
+	Comment = "Dana, hope you can make this meeting."
 }
 
-Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+# A UPN can also be used as -UserId.
+Invoke-MgBetaForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaForwardGroupEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

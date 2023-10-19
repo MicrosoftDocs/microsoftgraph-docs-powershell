@@ -65,11 +65,11 @@ This API can't create a new chat; you must use the list chats method to retrieve
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -79,6 +79,10 @@ $params = @{
 }
 
 New-MgChatMessage -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgChatMessage Cmdlet.
+
 
 ## PARAMETERS
 

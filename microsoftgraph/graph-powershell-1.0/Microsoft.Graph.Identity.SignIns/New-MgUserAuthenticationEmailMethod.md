@@ -49,17 +49,21 @@ A user may only have one email authentication method.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	emailAddress = "kim@contoso.com"
 }
 
 New-MgUserAuthenticationEmailMethod -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgUserAuthenticationEmailMethod Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

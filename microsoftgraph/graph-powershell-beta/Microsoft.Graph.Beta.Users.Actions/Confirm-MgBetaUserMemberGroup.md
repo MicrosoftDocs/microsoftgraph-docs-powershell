@@ -56,8 +56,7 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Confirm-MgBetaUserMemberGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -69,6 +68,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Confirm-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Confirm-MgBetaUserMemberGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -43,20 +43,22 @@ Update-MgUserPhoto -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraph
 Update the navigation property photo in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Users
+
+$params = @{
+	contributionToContentDiscoveryDisabled = $true
+}
+
+# A UPN can also be used as -UserId.
+Update-MgUserSetting -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Update-MgUserSetting Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

@@ -32,11 +32,10 @@ New-MgDeviceManagementTelecomExpenseManagementPartner
 Create a new telecomExpenseManagementPartner object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.telecomExpenseManagementPartner"
@@ -48,6 +47,11 @@ $params = @{
 }
 
 New-MgDeviceManagementTelecomExpenseManagementPartner -BodyParameter $params
+```
+This example shows how to use the New-MgDeviceManagementTelecomExpenseManagementPartner Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

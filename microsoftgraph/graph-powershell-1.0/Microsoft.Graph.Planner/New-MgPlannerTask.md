@@ -42,11 +42,11 @@ Create a new plannerTask.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	planId = "xqQg5FS2LkCp935s-FIFm2QAFkHM"
@@ -61,6 +61,10 @@ $params = @{
 }
 
 New-MgPlannerTask -BodyParameter $params
+
+```
+This example shows how to use the New-MgPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 
