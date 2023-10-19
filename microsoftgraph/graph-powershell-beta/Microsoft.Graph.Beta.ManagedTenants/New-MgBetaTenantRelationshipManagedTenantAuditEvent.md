@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantauditevent
 schema: 2.0.0
@@ -16,29 +16,45 @@ Create new navigation property to auditEvents for tenantRelationships
 ```
 New-MgBetaTenantRelationshipManagedTenantAuditEvent [-Activity <String>] [-ActivityDateTime <DateTime>]
  [-ActivityId <String>] [-AdditionalProperties <Hashtable>] [-Category <String>] [-HttpVerb <String>]
- [-IPAddress <String>] [-Id <String>] [-InitiatedByAppId <String>] [-InitiatedByUpn <String>]
- [-InitiatedByUserId <String>] [-RequestBody <String>] [-RequestUrl <String>] [-TenantIds <String>]
- [-TenantNames <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-InitiatedByAppId <String>] [-InitiatedByUpn <String>] [-InitiatedByUserId <String>]
+ [-IPAddress <String>] [-RequestBody <String>] [-RequestUrl <String>] [-TenantIds <String>]
+ [-TenantNames <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantAuditEvent -BodyParameter <IMicrosoftGraphManagedTenantsAuditEvent>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to auditEvents for tenantRelationships
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Activity
-A string which uniquely represents the operation that occurred.
+A string that uniquely represents the operation that occurred.
 Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,12 +66,12 @@ Accept wildcard characters: False
 ```
 
 ### -ActivityDateTime
-The time when the activity ocurred.
+The time when the activity occurred.
 Required.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +88,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +103,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +119,7 @@ auditEvent
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsAuditEvent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAuditEvent
 Parameter Sets: Create
 Aliases:
 
@@ -115,12 +131,12 @@ Accept wildcard characters: False
 ```
 
 ### -Category
-A category which represents a logical grouping of activities.
+A category that represents a logical grouping of activities.
 Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +153,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -153,7 +169,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -170,7 +186,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -187,7 +203,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +220,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +238,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +254,7 @@ The raw HTTP request body.
 Some sensitive information may be removed.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -255,7 +271,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -267,13 +283,12 @@ Accept wildcard characters: False
 ```
 
 ### -TenantIds
-The collection of Azure Active Directory tenant identifiers for the managed tenants that were impacted by this change.
-This is formatted as a list of comma-separated values.
+The collection of Azure Active Directory tenant identifiers for the managed tenants that were affected by a change, and is formatted as a list of comma-separated values.
 Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -285,13 +300,12 @@ Accept wildcard characters: False
 ```
 
 ### -TenantNames
-The collection of tenant names that were impacted by this change.
-This is formatted as a list of comma-separated values.
+The collection of tenant names that were affected by a change, and is formatted as a list of comma-separated values.
 Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -306,7 +320,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -322,7 +336,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -339,9 +353,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAuditEvent
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAuditEvent
+
 ## NOTES
 
 ALIASES
@@ -354,10 +370,10 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphManagedTenantsAuditEvent>`: auditEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Activity <String>]`: A string which uniquely represents the operation that occurred. Required. Read-only.
-  - `[ActivityDateTime <DateTime?>]`: The time when the activity ocurred. Required. Read-only.
+  - `[Activity <String>]`: A string that uniquely represents the operation that occurred. Required. Read-only.
+  - `[ActivityDateTime <DateTime?>]`: The time when the activity occurred. Required. Read-only.
   - `[ActivityId <String>]`: The identifier of the activity request that made the audit event. Required. Read-only.
-  - `[Category <String>]`: A category which represents a logical grouping of activities. Required. Read-only.
+  - `[Category <String>]`: A category that represents a logical grouping of activities. Required. Read-only.
   - `[HttpVerb <String>]`: The HTTP verb that was used when making the API request. Required. Read-only.
   - `[IPAddress <String>]`: The IP address of where the activity was initiated. This may be an IPv4 or IPv6 address. Required. Read-only.
   - `[InitiatedByAppId <String>]`: The identifier of the app that was used to make the request. Required. Read-only.
@@ -365,8 +381,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[InitiatedByUserId <String>]`: The identifier of the user who initiated the activity. Required. Read-only.
   - `[RequestBody <String>]`: The raw HTTP request body. Some sensitive information may be removed.
   - `[RequestUrl <String>]`: The raw HTTP request URL. Required. Read-only.
-  - `[TenantIds <String>]`: The collection of Azure Active Directory tenant identifiers for the managed tenants that were impacted by this change. This is formatted as a list of comma-separated values. Required. Read-only.
-  - `[TenantNames <String>]`: The collection of tenant names that were impacted by this change. This is formatted as a list of comma-separated values. Required. Read-only.
+  - `[TenantIds <String>]`: The collection of Azure Active Directory tenant identifiers for the managed tenants that were affected by a change, and is formatted as a list of comma-separated values. Required. Read-only.
+  - `[TenantNames <String>]`: The collection of tenant names that were affected by a change, and is formatted as a list of comma-separated values. Required. Read-only.
 
 ## RELATED LINKS
 

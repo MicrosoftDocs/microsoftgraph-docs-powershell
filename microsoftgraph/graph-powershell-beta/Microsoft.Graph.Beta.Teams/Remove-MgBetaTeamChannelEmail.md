@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamchannelemail
 schema: 2.0.0
@@ -10,40 +10,35 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove the email address of a channel.
 You can remove an email address only if it was provisioned using the provisionEmail method or through the Microsoft Teams client.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannelEmail?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### Remove (Default)
 ```
-Remove-MgBetaTeamChannelEmail -ChannelId <String> -TeamId <String> [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaTeamChannelEmail -ChannelId <String> -TeamId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
-Remove-MgBetaTeamChannelEmail -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaTeamChannelEmail -InputObject <ITeamsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Remove the email address of a channel.
 You can remove an email address only if it was provisioned using the provisionEmail method or through the Microsoft Teams client.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Remove-MgBetaTeamChannelEmail -TeamId $teamId -ChannelId $channelId
-
-```
-This example shows how to use the Remove-MgBetaTeamChannelEmail Cmdlet.
-
 
 ## PARAMETERS
 
@@ -51,7 +46,7 @@ This example shows how to use the Remove-MgBetaTeamChannelEmail Cmdlet.
 The unique identifier of channel
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Remove
 Aliases:
 
@@ -67,7 +62,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 Parameter Sets: RemoveViaIdentity
 Aliases:
 
@@ -82,7 +77,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +92,7 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Remove
 Aliases:
 
@@ -112,7 +107,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +123,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,9 +140,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -198,4 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannelEmail?view=graph-powershell-1.0)
+

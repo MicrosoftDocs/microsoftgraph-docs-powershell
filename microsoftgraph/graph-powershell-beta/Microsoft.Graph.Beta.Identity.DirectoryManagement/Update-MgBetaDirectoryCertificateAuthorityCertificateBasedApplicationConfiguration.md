@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration
 schema: 2.0.0
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 
 ## SYNOPSIS
-Update the navigation property certificateBasedApplicationConfigurations in directory
+Update the properties of a certificateBasedApplicationConfiguration object.
+To update the trustedCertificateAuthorities within a certificateBasedApplicationConfiguration object, use the Update certificateAuthorityAsEntity operation.
 
 ## SYNTAX
 
@@ -17,7 +18,7 @@ Update the navigation property certificateBasedApplicationConfigurations in dire
 Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
  -CertificateBasedApplicationConfigurationId <String> [-AdditionalProperties <Hashtable>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>] [-WhatIf] [-Confirm]
+ [-TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -25,7 +26,15 @@ Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 ```
 Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
  -CertificateBasedApplicationConfigurationId <String>
- -BodyParameter <IMicrosoftGraphCertificateBasedApplicationConfiguration> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphCertificateBasedApplicationConfiguration> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
+ -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphCertificateBasedApplicationConfiguration> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -34,20 +43,29 @@ Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
  -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
- -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphCertificateBasedApplicationConfiguration> [-WhatIf] [-Confirm]
+ [-TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property certificateBasedApplicationConfigurations in directory
+Update the properties of a certificateBasedApplicationConfiguration object.
+To update the trustedCertificateAuthorities within a certificateBasedApplicationConfiguration object, use the Update certificateAuthorityAsEntity operation.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -55,7 +73,7 @@ Update the navigation property certificateBasedApplicationConfigurations in dire
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +89,7 @@ certificateBasedApplicationConfiguration
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCertificateBasedApplicationConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateBasedApplicationConfiguration
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,8 +104,8 @@ Accept wildcard characters: False
 The unique identifier of certificateBasedApplicationConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -102,7 +120,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,10 +132,10 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+The description of the trusted certificate authorities.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,10 +147,10 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The display name of the trusted certificate authorities.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +166,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,8 +182,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -176,11 +194,11 @@ Accept wildcard characters: False
 ```
 
 ### -TrustedCertificateAuthorities
-.
+Collection of trusted certificate authorities.
 To construct, see NOTES section for TRUSTEDCERTIFICATEAUTHORITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCertificateAuthorityAsEntity[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateAuthorityAsEntity[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +213,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -211,7 +229,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -228,10 +246,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateBasedApplicationConfiguration
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateBasedApplicationConfiguration
+
 ## NOTES
 
 ALIASES
@@ -243,16 +264,16 @@ To create the parameters described below, construct a hash table containing the 
 
 `BODYPARAMETER <IMicrosoftGraphCertificateBasedApplicationConfiguration>`: certificateBasedApplicationConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>]`: 
+  - `[TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>]`: Collection of trusted certificate authorities.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Certificate <Byte[]>]`: 
-    - `[IsRootAuthority <Boolean?>]`: 
-    - `[Issuer <String>]`: 
-    - `[IssuerSubjectKeyIdentifier <String>]`: 
+    - `[Certificate <Byte[]>]`: The trusted certificate.
+    - `[IsRootAuthority <Boolean?>]`: Indicates if the certificate is a root authority. In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
+    - `[Issuer <String>]`: The issuer of the trusted certificate.
+    - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of the trusted certificate.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
+  - `[Description <String>]`: The description of the trusted certificate authorities.
+  - `[DisplayName <String>]`: The display name of the trusted certificate authorities.
 
 `INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
@@ -298,12 +319,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-`TRUSTEDCERTIFICATEAUTHORITIES <IMicrosoftGraphCertificateAuthorityAsEntity[]>`: .
+`TRUSTEDCERTIFICATEAUTHORITIES <IMicrosoftGraphCertificateAuthorityAsEntity[]>`: Collection of trusted certificate authorities.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Certificate <Byte[]>]`: 
-  - `[IsRootAuthority <Boolean?>]`: 
-  - `[Issuer <String>]`: 
-  - `[IssuerSubjectKeyIdentifier <String>]`: 
+  - `[Certificate <Byte[]>]`: The trusted certificate.
+  - `[IsRootAuthority <Boolean?>]`: Indicates if the certificate is a root authority. In a certificateBasedApplicationConfiguration object, at least one object in the trustedCertificateAuthorities collection must be a root authority.
+  - `[Issuer <String>]`: The issuer of the trusted certificate.
+  - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of the trusted certificate.
 
 ## RELATED LINKS
 

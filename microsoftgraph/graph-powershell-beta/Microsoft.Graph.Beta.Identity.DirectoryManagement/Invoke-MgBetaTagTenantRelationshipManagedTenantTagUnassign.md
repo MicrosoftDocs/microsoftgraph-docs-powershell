@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatagtenantrelationshipmanagedtenanttagunassign
 schema: 2.0.0
@@ -9,37 +9,55 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Un-assigns the tenant tag from the specified managed tenants.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### TagExpanded (Default)
 ```
 Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -TenantTagId <String>
- [-AdditionalProperties <Hashtable>] [-TenantIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-TenantIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Tag
 ```
 Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -TenantTagId <String>
  -Body <IPathsPyyl9MTenantrelationshipsManagedtenantsTenanttagsTenanttagIdMicrosoftGraphManagedtenantsUnassigntagPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### TagViaIdentityExpanded
-```
-Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-TenantIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### TagViaIdentity
 ```
 Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPathsPyyl9MTenantrelationshipsManagedtenantsTenanttagsTenanttagIdMicrosoftGraphManagedtenantsUnassigntagPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### TagViaIdentityExpanded
+```
+Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-TenantIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Un-assigns the tenant tag from the specified managed tenants.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -47,7 +65,7 @@ Un-assigns the tenant tag from the specified managed tenants.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: TagExpanded, TagViaIdentityExpanded
 Aliases:
 
@@ -63,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPathsPyyl9MTenantrelationshipsManagedtenantsTenanttagsTenanttagIdMicrosoftGraphManagedtenantsUnassigntagPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsPyyl9MTenantrelationshipsManagedtenantsTenanttagsTenanttagIdMicrosoftGraphManagedtenantsUnassigntagPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Tag
 Aliases:
 
@@ -79,7 +97,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsPyyl9MTenantrelationshipsManagedtenantsTenanttagsTenanttagIdMicrosoftGraphManagedtenantsUnassigntagPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsPyyl9MTenantrelationshipsManagedtenantsTenanttagsTenanttagIdMicrosoftGraphManagedtenantsUnassigntagPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: TagViaIdentity
 Aliases:
 
@@ -95,8 +113,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: TagViaIdentityExpanded, TagViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: TagViaIdentity, TagViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -110,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: TagExpanded, TagViaIdentityExpanded
 Aliases:
 
@@ -125,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of tenantTag
 
 ```yaml
-Type: String
-Parameter Sets: TagExpanded, Tag
+Type: System.String
+Parameter Sets: Tag, TagExpanded
 Aliases:
 
 Required: True
@@ -140,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -156,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -173,10 +191,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsPyyl9MTenantrelationshipsManagedtenantsTenanttagsTenanttagIdMicrosoftGraphManagedtenantsUnassigntagPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantTag
+
 ## NOTES
 
 ALIASES

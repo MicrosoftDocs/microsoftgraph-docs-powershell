@@ -1,31 +1,49 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryimpactedresource
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Complete-MgBetaDirectoryImpactedResource
 
 ## SYNOPSIS
 Complete an impactedResource object and update its status to completedByUser.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### Complete (Default)
 ```
-Complete-MgBetaDirectoryImpactedResource -ImpactedResourceId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Complete-MgBetaDirectoryImpactedResource -ImpactedResourceId <String> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### CompleteViaIdentity
 ```
-Complete-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Complete-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Complete an impactedResource object and update its status to completedByUser.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -33,7 +51,7 @@ Complete an impactedResource object and update its status to completedByUser.
 The unique identifier of impactedResource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Complete
 Aliases:
 
@@ -49,7 +67,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: CompleteViaIdentity
 Aliases:
 
@@ -64,7 +82,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -80,7 +98,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -97,9 +115,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
+
 ## NOTES
 
 ALIASES

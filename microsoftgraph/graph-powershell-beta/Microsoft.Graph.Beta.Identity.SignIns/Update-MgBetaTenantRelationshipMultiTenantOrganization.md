@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganization
 schema: 2.0.0
@@ -8,7 +8,11 @@ schema: 2.0.0
 # Update-MgBetaTenantRelationshipMultiTenantOrganization
 
 ## SYNOPSIS
-Update the properties of a multi-tenant organization.
+Create a new multi-tenant organization.
+By default, the creator tenant becomes an owner tenant upon successful creation.
+Only owner tenants can manage a multi-tenant organization.
+To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -17,17 +21,37 @@ Update the properties of a multi-tenant organization.
 Update-MgBetaTenantRelationshipMultiTenantOrganization [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-JoinRequest <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>] [-State <String>]
- [-Tenants <IMicrosoftGraphMultiTenantOrganizationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tenants <IMicrosoftGraphMultiTenantOrganizationMember[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosoftGraphMultiTenantOrganization>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the properties of a multi-tenant organization.
+Create a new multi-tenant organization.
+By default, the creator tenant becomes an owner tenant upon successful creation.
+Only owner tenants can manage a multi-tenant organization.
+To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,7 +59,7 @@ Update the properties of a multi-tenant organization.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +75,7 @@ multiTenantOrganization
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiTenantOrganization
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganization
 Parameter Sets: Update
 Aliases:
 
@@ -63,11 +87,11 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-Date when multi-tenant organization was created.
+Date when multitenant organization was created.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -79,10 +103,10 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Description of the multi-tenant organization.
+Description of the multitenant organization.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -94,10 +118,10 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the multi-tenant organization.
+Display name of the multitenant organization.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -113,7 +137,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -129,7 +153,7 @@ multiTenantOrganizationJoinRequestRecord
 To construct, see NOTES section for JOINREQUEST properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -144,7 +168,7 @@ Accept wildcard characters: False
 multiTenantOrganizationState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -156,11 +180,11 @@ Accept wildcard characters: False
 ```
 
 ### -Tenants
-Defines tenants added to a multi-tenant organization.
+Defines tenants added to a multitenant organization.
 To construct, see NOTES section for TENANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiTenantOrganizationMember[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationMember[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -175,7 +199,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +215,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,9 +232,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganization
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganization
+
 ## NOTES
 
 ALIASES
@@ -223,9 +249,9 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphMultiTenantOrganization>`: multiTenantOrganization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Date when multi-tenant organization was created. Read-only.
-  - `[Description <String>]`: Description of the multi-tenant organization.
-  - `[DisplayName <String>]`: Display name of the multi-tenant organization.
+  - `[CreatedDateTime <DateTime?>]`: Date when multitenant organization was created. Read-only.
+  - `[Description <String>]`: Description of the multitenant organization.
+  - `[DisplayName <String>]`: Display name of the multitenant organization.
   - `[JoinRequest <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>]`: multiTenantOrganizationJoinRequestRecord
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -238,16 +264,16 @@ To create the parameters described below, construct a hash table containing the 
       - `[Details <String>]`: Details that explain the processing status if any. Read-only.
       - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
   - `[State <String>]`: multiTenantOrganizationState
-  - `[Tenants <IMicrosoftGraphMultiTenantOrganizationMember[]>]`: Defines tenants added to a multi-tenant organization.
+  - `[Tenants <IMicrosoftGraphMultiTenantOrganizationMember[]>]`: Defines tenants added to a multitenant organization.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AddedByTenantId <String>]`: Tenant ID of the tenant that added the tenant to the multi-tenant organization. Read-only.
-    - `[AddedDateTime <DateTime?>]`: Date and time when the tenant was added to the multi-tenant organization. Read-only.
-    - `[DisplayName <String>]`: Display name of the tenant added to the multi-tenant organization.
-    - `[JoinedDateTime <DateTime?>]`: Date and time when the tenant joined the multi-tenant organization. Read-only.
+    - `[AddedByTenantId <String>]`: Tenant ID of the tenant that added the tenant to the multitenant organization. Read-only.
+    - `[AddedDateTime <DateTime?>]`: Date and time when the tenant was added to the multitenant organization. Read-only.
+    - `[DisplayName <String>]`: Display name of the tenant added to the multitenant organization.
+    - `[JoinedDateTime <DateTime?>]`: Date and time when the tenant joined the multitenant organization. Read-only.
     - `[Role <String>]`: multiTenantOrganizationMemberRole
     - `[State <String>]`: multiTenantOrganizationMemberState
-    - `[TenantId <String>]`: Tenant ID of the Azure Active Directory tenant added to the multi-tenant organization. Set at the time tenant is added.Supports $filter. Key.
+    - `[TenantId <String>]`: Tenant ID of the Azure Active Directory tenant added to the multitenant organization. Set at the time tenant is added.Supports $filter. Key.
     - `[TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>]`: multiTenantOrganizationMemberTransitionDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DesiredRole <String>]`: multiTenantOrganizationMemberRole
@@ -267,16 +293,16 @@ To create the parameters described below, construct a hash table containing the 
     - `[Details <String>]`: Details that explain the processing status if any. Read-only.
     - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
 
-`TENANTS <IMicrosoftGraphMultiTenantOrganizationMember[]>`: Defines tenants added to a multi-tenant organization.
+`TENANTS <IMicrosoftGraphMultiTenantOrganizationMember[]>`: Defines tenants added to a multitenant organization.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AddedByTenantId <String>]`: Tenant ID of the tenant that added the tenant to the multi-tenant organization. Read-only.
-  - `[AddedDateTime <DateTime?>]`: Date and time when the tenant was added to the multi-tenant organization. Read-only.
-  - `[DisplayName <String>]`: Display name of the tenant added to the multi-tenant organization.
-  - `[JoinedDateTime <DateTime?>]`: Date and time when the tenant joined the multi-tenant organization. Read-only.
+  - `[AddedByTenantId <String>]`: Tenant ID of the tenant that added the tenant to the multitenant organization. Read-only.
+  - `[AddedDateTime <DateTime?>]`: Date and time when the tenant was added to the multitenant organization. Read-only.
+  - `[DisplayName <String>]`: Display name of the tenant added to the multitenant organization.
+  - `[JoinedDateTime <DateTime?>]`: Date and time when the tenant joined the multitenant organization. Read-only.
   - `[Role <String>]`: multiTenantOrganizationMemberRole
   - `[State <String>]`: multiTenantOrganizationMemberState
-  - `[TenantId <String>]`: Tenant ID of the Azure Active Directory tenant added to the multi-tenant organization. Set at the time tenant is added.Supports $filter. Key.
+  - `[TenantId <String>]`: Tenant ID of the Azure Active Directory tenant added to the multitenant organization. Set at the time tenant is added.Supports $filter. Key.
   - `[TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>]`: multiTenantOrganizationMemberTransitionDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DesiredRole <String>]`: multiTenantOrganizationMemberRole

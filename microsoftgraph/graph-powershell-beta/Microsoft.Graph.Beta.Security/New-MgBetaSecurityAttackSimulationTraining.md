@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtraining
 schema: 2.0.0
@@ -19,17 +19,33 @@ New-MgBetaSecurityAttackSimulationTraining [-AdditionalProperties <Hashtable>] [
  [-DisplayName <String>] [-DurationInMinutes <Int32>] [-HasEvaluation] [-Id <String>]
  [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
  [-LastModifiedDateTime <DateTime>] [-Source <String>] [-SupportedLocales <String[]>] [-Tags <String[]>]
- [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityAttackSimulationTraining -BodyParameter <IMicrosoftGraphTraining> [-WhatIf] [-Confirm]
+New-MgBetaSecurityAttackSimulationTraining -BodyParameter <IMicrosoftGraphTraining> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to trainings for security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +53,7 @@ Create new navigation property to trainings for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +68,7 @@ Accept wildcard characters: False
 trainingAvailabilityStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +84,7 @@ training
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTraining
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTraining
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +100,7 @@ emailIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,10 +112,12 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+Date and time when the training was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -111,10 +129,10 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+The description for the training.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -126,10 +144,10 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The display name for the training.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -141,10 +159,10 @@ Accept wildcard characters: False
 ```
 
 ### -DurationInMinutes
-.
+Training duration.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -156,10 +174,10 @@ Accept wildcard characters: False
 ```
 
 ### -HasEvaluation
-.
+Indicates whether the training has any evaluation.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +193,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -187,11 +205,11 @@ Accept wildcard characters: False
 ```
 
 ### -LanguageDetails
-.
+Language specific details on a training.
 To construct, see NOTES section for LANGUAGEDETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrainingLanguageDetail[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrainingLanguageDetail[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +225,7 @@ emailIdentity
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,10 +237,12 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+Date and time when the training was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +257,7 @@ Accept wildcard characters: False
 simulationContentSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,10 +269,10 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedLocales
-.
+Supported locales for content for the associated training.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -264,10 +284,10 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-.
+Training tags.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -282,7 +302,7 @@ Accept wildcard characters: False
 trainingType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -297,7 +317,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -313,7 +333,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -330,9 +350,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTraining
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTraining
+
 ## NOTES
 
 ALIASES
@@ -351,27 +373,27 @@ To create the parameters described below, construct a hash table containing the 
     - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
     - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[DurationInMinutes <Int32?>]`: 
-  - `[HasEvaluation <Boolean?>]`: 
-  - `[LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>]`: 
+  - `[CreatedDateTime <DateTime?>]`: Date and time when the training was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Description <String>]`: The description for the training.
+  - `[DisplayName <String>]`: The display name for the training.
+  - `[DurationInMinutes <Int32?>]`: Training duration.
+  - `[HasEvaluation <Boolean?>]`: Indicates whether the training has any evaluation.
+  - `[LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>]`: Language specific details on a training.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Content <String>]`: 
+    - `[Content <String>]`: Language specific content for the training.
     - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[IsDefaultLangauge <Boolean?>]`: 
+    - `[CreatedDateTime <DateTime?>]`: Date and time when the language details were created.
+    - `[Description <String>]`: Description as defined by the user.
+    - `[DisplayName <String>]`: Display name as defined by the user.
+    - `[IsDefaultLangauge <Boolean?>]`: Indicates whether the training has a default language.
     - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[Locale <String>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: Date and time when the trainingLanguageDetail was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Locale <String>]`: Content locale for the training detail.
   - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the training was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Source <String>]`: simulationContentSource
-  - `[SupportedLocales <String[]>]`: 
-  - `[Tags <String[]>]`: 
+  - `[SupportedLocales <String[]>]`: Supported locales for content for the associated training.
+  - `[Tags <String[]>]`: Training tags.
   - `[Type <String>]`: trainingType
 
 `CREATEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
@@ -380,21 +402,21 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Email <String>]`: Email address of the user.
 
-`LANGUAGEDETAILS <IMicrosoftGraphTrainingLanguageDetail[]>`: .
+`LANGUAGEDETAILS <IMicrosoftGraphTrainingLanguageDetail[]>`: Language specific details on a training.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Content <String>]`: 
+  - `[Content <String>]`: Language specific content for the training.
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
     - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[IsDefaultLangauge <Boolean?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: Date and time when the language details were created.
+  - `[Description <String>]`: Description as defined by the user.
+  - `[DisplayName <String>]`: Display name as defined by the user.
+  - `[IsDefaultLangauge <Boolean?>]`: Indicates whether the training has a default language.
   - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Locale <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the trainingLanguageDetail was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Locale <String>]`: Content locale for the training detail.
 
 `LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
