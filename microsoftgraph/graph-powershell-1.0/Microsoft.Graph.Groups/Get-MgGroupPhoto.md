@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupPhoto
 
 ## SYNOPSIS
-The group's profile photo
+Get the profilePhoto metadata.
+By default, original size of the photo is returned. Other available sizes are: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhoto?view=graph-powershell-beta)
@@ -42,20 +43,33 @@ Get-MgGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [<CommonP
 ```
 
 ## DESCRIPTION
-The group's profile photo
+Get the profilePhoto metadata.
+By default, original size of the photo is returned. Other available sizes are: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get a group's photo properties
 
 ```powershell
-Import-Module Microsoft.Graph.Groups
+Get-MgGroupPhoto -GroupId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
 
-Get-MgGroupPhoto -GroupId $groupId
+Id      Height Width
+--      ------ -----
+default 240    240
 ```
-This example shows how to use the Get-MgGroupPhoto Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example retrieves the profile photo properties for the specified group.
 
+### Example 2: Get properties of a specific size of a group's photo
+
+```powershell
+Get-MgGroupPhoto -GroupId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe' -ProfilePhotoId 360x360
+
+Id      Height Width
+--      ------ -----
+360x360 360    360
+```
+
+This example retrieves the properties of a specific photo size for the specified group.
 
 ## PARAMETERS
 
