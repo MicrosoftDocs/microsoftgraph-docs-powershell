@@ -37,18 +37,6 @@ Get-MgBetaDeviceAppManagementMobileAppAsWin32LobApp -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.win32LobApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -321,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementMobileAppAsWin32LobApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWin32LobApp?view=graph-powershell-1.0)
+

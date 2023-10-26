@@ -47,22 +47,6 @@ Copy-MgUserDriveRoot -InputObject <IUsersActionsIdentity>
 Asynchronously creates a copy of an driveItem][item-resource] (including any children), under a new parent item or with a new name.
 This API is supported in the following [national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -298,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserDriveRoot?view=graph-powershell-beta)
+

@@ -41,22 +41,6 @@ Get-MgDriveRootListItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <S
 Retrieve the metadata for a specific version of a ListItem.
 This API is supported in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -302,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
+

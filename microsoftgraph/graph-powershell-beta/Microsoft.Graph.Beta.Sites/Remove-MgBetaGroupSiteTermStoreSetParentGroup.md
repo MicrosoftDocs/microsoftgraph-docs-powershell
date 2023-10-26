@@ -30,18 +30,6 @@ Remove-MgBetaGroupSiteTermStoreSetParentGroup -InputObject <ISitesIdentity> [-If
 ## DESCRIPTION
 Delete navigation property parentGroup for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -236,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSetParentGroup?view=graph-powershell-1.0)
+

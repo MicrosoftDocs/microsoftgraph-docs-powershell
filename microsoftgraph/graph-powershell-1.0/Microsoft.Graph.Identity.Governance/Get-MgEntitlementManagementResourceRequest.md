@@ -35,18 +35,6 @@ Get-MgEntitlementManagementResourceRequest -InputObject <IIdentityGovernanceIden
 ## DESCRIPTION
 Represents a request to add or remove a resource to or from a catalog respectively.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId
@@ -320,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

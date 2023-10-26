@@ -22,18 +22,6 @@ Get-MgBetaPrintOperationCount [-Filter <String>] [-Search <String>] [<CommonPara
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPrintOperationCount](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintOperationCount?view=graph-powershell-1.0)
+

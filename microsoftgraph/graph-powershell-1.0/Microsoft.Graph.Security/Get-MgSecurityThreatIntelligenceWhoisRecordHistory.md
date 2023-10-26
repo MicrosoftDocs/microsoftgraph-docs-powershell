@@ -38,18 +38,6 @@ Get-MgSecurityThreatIntelligenceWhoisRecordHistory -InputObject <ISecurityIdenti
 ## DESCRIPTION
 The collection of historical records associated to this WHOIS object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory?view=graph-powershell-beta)
+

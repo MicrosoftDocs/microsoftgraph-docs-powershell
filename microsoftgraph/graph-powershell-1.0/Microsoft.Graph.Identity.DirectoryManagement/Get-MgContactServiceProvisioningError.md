@@ -24,18 +24,6 @@ Get-MgContactServiceProvisioningError -OrgContactId <String> [-ExpandProperty <S
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -218,3 +206,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaContactServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactServiceProvisioningError?view=graph-powershell-beta)
+

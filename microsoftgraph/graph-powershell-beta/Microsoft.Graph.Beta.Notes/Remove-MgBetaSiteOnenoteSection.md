@@ -30,22 +30,6 @@ Remove-MgBetaSiteOnenoteSection -InputObject <INotesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property sections for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -186,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/Remove-MgSiteOnenoteSection?view=graph-powershell-1.0)
+

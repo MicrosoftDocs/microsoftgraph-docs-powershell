@@ -20,18 +20,6 @@ Get-MgBetaPolicyCrossTenantAccessPolicyTemplate [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Represents the base policy in the directory for multi-tenant organization settings.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -77,3 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

@@ -23,18 +23,6 @@ Get-MgIdentityGovernancePrivilegedAccessGroup [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 Get group from identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-beta)
+

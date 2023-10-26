@@ -30,18 +30,6 @@ Get-MgBetaSecurityThreatIntelligenceWhoisRecordHost -InputObject <ISecurityIdent
 ## DESCRIPTION
 The host associated to this WHOIS object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -203,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityThreatIntelligenceWhoisRecordHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceWhoisRecordHost?view=graph-powershell-1.0)
+

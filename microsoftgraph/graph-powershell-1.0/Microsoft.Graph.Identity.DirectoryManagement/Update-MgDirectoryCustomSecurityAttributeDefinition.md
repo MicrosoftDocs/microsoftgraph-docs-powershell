@@ -48,18 +48,6 @@ Update-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirec
 Update the properties of a customSecurityAttributeDefinition object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -392,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
+

@@ -45,18 +45,6 @@ Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property shared in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -414,3 +402,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SharingType <String>]`: Determines the way the document was shared, can be by a 'Link', 'Attachment', 'Group', 'Site'.
 
 ## RELATED LINKS
+

@@ -36,18 +36,6 @@ When the request activates an ownership or membership assignment in PIM for grou
 Otherwise, it's null.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -230,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing?view=graph-powershell-1.0)
+

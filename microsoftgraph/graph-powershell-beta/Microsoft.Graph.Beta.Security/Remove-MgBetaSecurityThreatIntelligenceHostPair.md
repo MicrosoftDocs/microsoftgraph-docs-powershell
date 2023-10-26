@@ -30,18 +30,6 @@ Remove-MgBetaSecurityThreatIntelligenceHostPair -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Delete navigation property hostPairs for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HostPairId
@@ -234,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceHostPair?view=graph-powershell-1.0)
+

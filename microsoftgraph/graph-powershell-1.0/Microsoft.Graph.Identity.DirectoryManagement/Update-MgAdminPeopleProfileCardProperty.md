@@ -44,18 +44,6 @@ Update-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Update the navigation property profileCardProperties in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -260,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
+

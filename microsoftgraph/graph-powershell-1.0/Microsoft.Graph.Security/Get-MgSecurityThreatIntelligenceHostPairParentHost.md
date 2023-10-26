@@ -30,18 +30,6 @@ Get-MgSecurityThreatIntelligenceHostPairParentHost -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Host used to reach the childHost.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -178,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityThreatIntelligenceHostPairParentHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPairParentHost?view=graph-powershell-beta)
+

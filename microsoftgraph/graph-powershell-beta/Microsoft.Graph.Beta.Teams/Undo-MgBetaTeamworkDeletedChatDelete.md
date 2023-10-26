@@ -29,18 +29,6 @@ Undo-MgBetaTeamworkDeletedChatDelete -InputObject <ITeamsIdentity> [-PassThru] [
 Restore a  deletedChat to an active chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeletedChatId
@@ -179,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

@@ -30,18 +30,6 @@ New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
 ## DESCRIPTION
 Create new navigation property to windowsInformationProtectionWipeActions for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -243,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetedUserId <String>]`: The UserId being targeted by this wipe action.
 
 ## RELATED LINKS
+

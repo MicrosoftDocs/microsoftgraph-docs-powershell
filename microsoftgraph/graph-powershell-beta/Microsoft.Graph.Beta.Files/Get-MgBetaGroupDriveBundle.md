@@ -41,22 +41,6 @@ Get-MgBetaGroupDriveBundle -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 Retrieve the metadata for a bundle][] based on the unique ID of the bundle.
 This API is available in the following [national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -317,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupDriveBundle](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveBundle?view=graph-powershell-1.0)
+

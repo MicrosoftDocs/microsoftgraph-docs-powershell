@@ -23,22 +23,6 @@ Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -116,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
+

@@ -62,22 +62,6 @@ Update-MgDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property columns in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1142,3 +1126,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
+

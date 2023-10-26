@@ -27,18 +27,6 @@ Get-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity> [-
 ## DESCRIPTION
 Specifies the audience to target.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -131,3 +119,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+

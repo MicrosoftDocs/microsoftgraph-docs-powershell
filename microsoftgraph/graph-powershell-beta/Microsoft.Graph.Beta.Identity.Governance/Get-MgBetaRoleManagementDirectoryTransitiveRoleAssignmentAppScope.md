@@ -29,18 +29,6 @@ Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentAppScope -InputObject <
 Details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -222,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

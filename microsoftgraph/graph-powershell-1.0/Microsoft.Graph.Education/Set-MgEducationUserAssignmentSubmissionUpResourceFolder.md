@@ -38,22 +38,6 @@ Note that files must be located in this folder in order to be added as resources
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -180,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaEducationUserAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationUserAssignmentSubmissionUpResourceFolder?view=graph-powershell-beta)
+

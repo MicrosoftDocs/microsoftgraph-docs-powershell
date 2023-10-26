@@ -30,18 +30,6 @@ Get-MgSiteAnalyticLastSevenDay -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get lastSevenDays from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -165,3 +153,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticLastSevenDay?view=graph-powershell-beta)
+

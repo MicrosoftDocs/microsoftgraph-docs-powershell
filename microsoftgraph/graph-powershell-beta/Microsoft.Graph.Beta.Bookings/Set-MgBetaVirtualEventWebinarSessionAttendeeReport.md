@@ -28,18 +28,6 @@ Set-MgBetaVirtualEventWebinarSessionAttendeeReport -InputObject <IBookingsIdenti
 ## DESCRIPTION
 Update attendeeReport for the navigation property sessions in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -209,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+

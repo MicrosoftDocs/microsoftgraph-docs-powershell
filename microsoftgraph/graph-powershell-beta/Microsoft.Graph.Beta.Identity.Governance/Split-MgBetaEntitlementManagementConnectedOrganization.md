@@ -20,22 +20,6 @@ Split-MgBetaEntitlementManagementConnectedOrganization [-ByIdentitySource]
 ## DESCRIPTION
 Split elements of one or more Azure AD entitlement management connected organizations, returned by Get-MgBetaEntitlementManagementConnectedOrganization, to simplify reporting.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ByIdentitySource
@@ -101,3 +85,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: connectedOrganizationState
 
 ## RELATED LINKS
+

@@ -24,18 +24,6 @@ Get-MgShareCreatedByUserServiceProvisioningError -SharedDriveItemId <String> [-E
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -218,3 +206,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaShareCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+

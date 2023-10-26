@@ -30,18 +30,6 @@ Remove-MgBetaSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISe
 ## DESCRIPTION
 Delete navigation property details for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EndUserNotificationDetailId
@@ -249,3 +237,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-1.0)
+

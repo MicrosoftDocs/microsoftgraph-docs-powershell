@@ -30,18 +30,6 @@ Remove-MgSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property hosts for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HostId
@@ -209,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
+

@@ -41,18 +41,6 @@ Get-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 Get the properties and relationships of an alert in an organization based on the specified alert id property.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertId
@@ -335,3 +323,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlertV2?view=graph-powershell-1.0)
+

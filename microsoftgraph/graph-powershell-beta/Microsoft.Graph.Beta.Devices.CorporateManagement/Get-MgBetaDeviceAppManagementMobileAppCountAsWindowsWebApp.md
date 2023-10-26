@@ -23,18 +23,6 @@ Get-MgBetaDeviceAppManagementMobileAppCountAsWindowsWebApp [-Filter <String>] [-
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -83,3 +71,4 @@ Get-MgBetaDeviceAppMgtMobileAppCountAsWindowWebApp
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementMobileAppCountAsWindowsWebApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppCountAsWindowsWebApp?view=graph-powershell-1.0)
+

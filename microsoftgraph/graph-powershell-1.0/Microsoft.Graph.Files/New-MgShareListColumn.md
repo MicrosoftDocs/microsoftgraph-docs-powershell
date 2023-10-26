@@ -64,22 +64,6 @@ New-MgShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGr
 Create a column for a list][list] with a request that specifies a [columnDefinition][columnDefinition].
 This API is supported in the following [national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1129,3 +1113,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListColumn?view=graph-powershell-beta)
+

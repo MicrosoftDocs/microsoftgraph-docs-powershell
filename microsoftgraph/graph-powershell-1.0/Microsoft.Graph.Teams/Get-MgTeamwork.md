@@ -22,22 +22,6 @@ Get-MgTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParam
 ## DESCRIPTION
 Get teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamwork?view=graph-powershell-beta)
+

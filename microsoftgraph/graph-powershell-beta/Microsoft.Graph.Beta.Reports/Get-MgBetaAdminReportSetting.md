@@ -22,18 +22,6 @@ Get-MgBetaAdminReportSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 Get the tenant-level settings for Microsoft 365 reports.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -79,3 +67,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

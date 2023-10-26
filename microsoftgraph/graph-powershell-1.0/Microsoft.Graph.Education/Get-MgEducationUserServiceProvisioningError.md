@@ -24,18 +24,6 @@ Get-MgEducationUserServiceProvisioningError -EducationUserId <String> [-ExpandPr
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -218,3 +206,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserServiceProvisioningError?view=graph-powershell-beta)
+

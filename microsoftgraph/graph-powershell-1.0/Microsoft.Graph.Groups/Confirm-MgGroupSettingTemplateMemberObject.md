@@ -41,18 +41,6 @@ Confirm-MgGroupSettingTemplateMemberObject -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -224,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+

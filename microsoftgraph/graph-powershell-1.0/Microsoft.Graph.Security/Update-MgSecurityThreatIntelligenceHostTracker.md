@@ -45,18 +45,6 @@ Update-MgSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property hostTrackers in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -629,3 +617,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
+

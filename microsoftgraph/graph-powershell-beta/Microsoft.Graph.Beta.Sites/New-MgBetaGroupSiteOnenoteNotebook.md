@@ -52,18 +52,6 @@ New-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> -BodyParameter 
 Create a new OneNote notebook.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -741,3 +729,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebook?view=graph-powershell-1.0)
+

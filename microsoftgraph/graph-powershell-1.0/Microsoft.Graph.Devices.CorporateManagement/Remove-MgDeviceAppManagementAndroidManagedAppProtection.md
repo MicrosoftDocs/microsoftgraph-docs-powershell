@@ -30,18 +30,6 @@ Remove-MgDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCo
 ## DESCRIPTION
 Deletes a androidManagedAppProtection.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AndroidManagedAppProtectionId
@@ -192,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
+

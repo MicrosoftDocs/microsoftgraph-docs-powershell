@@ -42,22 +42,6 @@ New-MgGroupThreadPostExtension -InputObject <IGroupsIdentity> -BodyParameter <Ha
 ## DESCRIPTION
 Create new navigation property to extensions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -256,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThreadPostExtension?view=graph-powershell-beta)
+

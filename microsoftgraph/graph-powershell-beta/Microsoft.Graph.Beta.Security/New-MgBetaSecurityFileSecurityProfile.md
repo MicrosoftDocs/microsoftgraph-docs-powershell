@@ -32,22 +32,6 @@ New-MgBetaSecurityFileSecurityProfile -BodyParameter <IMicrosoftGraphFileSecurit
 ## DESCRIPTION
 Create new navigation property to fileSecurityProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActivityGroupNames
@@ -449,3 +433,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
+

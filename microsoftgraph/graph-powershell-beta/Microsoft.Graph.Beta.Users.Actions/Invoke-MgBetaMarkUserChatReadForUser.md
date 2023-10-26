@@ -49,22 +49,6 @@ Invoke-MgBetaMarkUserChatReadForUser -InputObject <IUsersActionsIdentity>
 Mark a chat as read for a user.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -297,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgMarkUserChatReadForUser](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgMarkUserChatReadForUser?view=graph-powershell-1.0)
+

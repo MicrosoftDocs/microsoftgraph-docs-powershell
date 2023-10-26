@@ -34,22 +34,6 @@ Create a new customAuthenticationExtension object.
 Only the onTokenIssuanceStartCustomExtension object type is supported.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -229,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Azure AD waits for a response from the external app before it shuts down the connection. The valid range is between 200 and 2000 milliseconds. If null, the default for the service applies.
 
 ## RELATED LINKS
+

@@ -24,18 +24,6 @@ Get-MgGroupTeamGroupServiceProvisioningError -GroupId <String> [-ExpandProperty 
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -218,3 +206,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupTeamGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamGroupServiceProvisioningError?view=graph-powershell-beta)
+

@@ -29,18 +29,6 @@ New-MgBetaExternalAuthorizationSystem -BodyParameter <IMicrosoftGraphAuthorizati
 ## DESCRIPTION
 Create new navigation property to authorizationSystems for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -219,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
+

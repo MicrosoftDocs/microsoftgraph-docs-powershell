@@ -47,18 +47,6 @@ Update-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecuri
 ## DESCRIPTION
 Update the navigation property details in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -370,3 +358,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
+

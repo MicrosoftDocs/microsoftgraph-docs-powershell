@@ -20,22 +20,6 @@ Select-MgBetaEntitlementManagementAccessPackage [-AccessPackage <MicrosoftGraphA
 ## DESCRIPTION
 Select matching entitlement management accessPackage
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackage
@@ -5146,3 +5130,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

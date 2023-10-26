@@ -37,18 +37,6 @@ Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost -InputObject <ISec
 ## DESCRIPTION
 The hosts related with this sslCertificate.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -346,3 +334,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost?view=graph-powershell-1.0)
+

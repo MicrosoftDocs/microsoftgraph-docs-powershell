@@ -31,18 +31,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy
 ## DESCRIPTION
 The unique identifier of the Azure AD user that created the custom task extension.Supports $filter(eq, ne) and $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CustomTaskExtensionId
@@ -196,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy?view=graph-powershell-beta)
+

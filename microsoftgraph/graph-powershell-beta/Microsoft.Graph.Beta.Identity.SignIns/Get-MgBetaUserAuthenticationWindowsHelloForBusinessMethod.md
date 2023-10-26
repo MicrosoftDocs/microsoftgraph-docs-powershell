@@ -42,18 +42,6 @@ Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIdentit
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -350,3 +338,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-1.0)
+

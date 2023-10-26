@@ -37,18 +37,6 @@ Get-MgSecurityAttackSimulationTraining -InputObject <ISecurityIdentity> [-Expand
 ## DESCRIPTION
 Get trainings from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -306,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationTraining?view=graph-powershell-beta)
+

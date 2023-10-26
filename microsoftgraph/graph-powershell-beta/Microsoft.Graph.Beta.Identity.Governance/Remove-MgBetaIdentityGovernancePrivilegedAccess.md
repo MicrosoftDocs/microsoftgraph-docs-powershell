@@ -23,18 +23,6 @@ Remove-MgBetaIdentityGovernancePrivilegedAccess [-IfMatch <String>] [-PassThru] 
 ## DESCRIPTION
 Delete navigation property privilegedAccess for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -112,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernancePrivilegedAccess?view=graph-powershell-1.0)
+

@@ -48,18 +48,6 @@ New-MgBetaSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurity
 ## DESCRIPTION
 Create new navigation property to languageDetails for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -438,3 +426,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
+

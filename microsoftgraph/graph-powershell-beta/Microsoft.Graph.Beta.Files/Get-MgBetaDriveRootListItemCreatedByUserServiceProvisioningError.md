@@ -26,18 +26,6 @@ Get-MgBetaDriveRootListItemCreatedByUserServiceProvisioningError -DriveId <Strin
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -220,3 +208,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDriveRootListItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootListItemCreatedByUserServiceProvisioningError?view=graph-powershell-1.0)
+

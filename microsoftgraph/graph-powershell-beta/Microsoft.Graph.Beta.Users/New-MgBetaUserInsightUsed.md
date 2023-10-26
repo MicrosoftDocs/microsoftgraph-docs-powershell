@@ -43,18 +43,6 @@ New-MgBetaUserInsightUsed -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to used for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -326,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See the Type property values section, for supported types.
 
 ## RELATED LINKS
+

@@ -36,22 +36,6 @@ Getting a resources collection isn't supported, but you can get the binary conte
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -161,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOnenoteResource](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteResource?view=graph-powershell-1.0)
+

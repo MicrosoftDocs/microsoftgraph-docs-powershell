@@ -34,22 +34,6 @@ Get-MgBetaReportMonthlyPrintUsageSummaryByUser -InputObject <IReportsIdentity> [
 ## DESCRIPTION
 Get monthlyPrintUsageSummariesByUser from reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -283,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+

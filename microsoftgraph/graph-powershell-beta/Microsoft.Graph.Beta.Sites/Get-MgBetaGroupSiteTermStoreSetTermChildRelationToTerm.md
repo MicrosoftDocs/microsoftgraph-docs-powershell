@@ -33,18 +33,6 @@ Get-MgBetaGroupSiteTermStoreSetTermChildRelationToTerm -InputObject <ISitesIdent
 The to [term] of the relation.
 The term to which the relationship is defined.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -253,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteTermStoreSetTermChildRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetTermChildRelationToTerm?view=graph-powershell-1.0)
+

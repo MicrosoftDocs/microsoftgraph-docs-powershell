@@ -37,18 +37,6 @@ Update-MgIdentityGovernancePrivilegedAccessGroup -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property group in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -20691,3 +20679,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-beta)
+

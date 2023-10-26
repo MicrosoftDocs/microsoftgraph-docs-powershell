@@ -29,22 +29,6 @@ Get-MgBetaTeamPhoto -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 The team photo.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -168,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPhoto?view=graph-powershell-1.0)
+

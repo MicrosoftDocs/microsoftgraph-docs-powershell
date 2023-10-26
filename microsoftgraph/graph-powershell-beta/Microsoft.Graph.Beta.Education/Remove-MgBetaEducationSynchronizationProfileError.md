@@ -28,22 +28,6 @@ Remove-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdenti
 ## DESCRIPTION
 Delete navigation property errors for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationSynchronizationErrorId
@@ -191,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+

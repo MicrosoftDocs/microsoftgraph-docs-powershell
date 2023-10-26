@@ -43,18 +43,6 @@ Getting a resources collection isn't supported, but you can get the binary conte
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -339,3 +327,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteResource?view=graph-powershell-1.0)
+

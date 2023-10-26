@@ -29,18 +29,6 @@ Get-MgBetaGroupDriveRootRetentionLabel -InputObject <IFilesIdentity> [-ExpandPro
 Information about retention label and settings enforced on the driveItem.
 Read-write.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -164,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
