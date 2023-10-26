@@ -39,11 +39,11 @@ For more details about sending notifications and the requirements for doing so, 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	topic = @{
@@ -78,6 +78,10 @@ $params = @{
 }
 
 Send-MgTeamworkActivityNotificationToRecipient -BodyParameter $params
+
+```
+This example shows how to use the Send-MgTeamworkActivityNotificationToRecipient Cmdlet.
+
 
 ## PARAMETERS
 

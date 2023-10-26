@@ -28,12 +28,13 @@ Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgGroupLifecyclePolicyByGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupLifecyclePolicyByGroup -GroupId $groupId
 ```
+This example shows how to use the Get-MgGroupLifecyclePolicyByGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

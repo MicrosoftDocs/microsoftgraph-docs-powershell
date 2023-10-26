@@ -58,8 +58,7 @@ If all updatableAsset objects are the same type, you can also use the method upd
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaWindowsUpdatesDeploymentAudience Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -90,6 +89,8 @@ $params = @{
 }
 Update-MgBetaWindowsUpdatesDeploymentAudience -DeploymentId $deploymentId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaWindowsUpdatesDeploymentAudience Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

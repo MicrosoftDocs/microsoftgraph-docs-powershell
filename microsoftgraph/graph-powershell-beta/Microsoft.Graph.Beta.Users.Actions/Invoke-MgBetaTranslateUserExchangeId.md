@@ -50,8 +50,7 @@ Translate identifiers of Outlook-related resources between formats.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaTranslateUserExchangeId Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -65,6 +64,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaTranslateUserExchangeId -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaTranslateUserExchangeId Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

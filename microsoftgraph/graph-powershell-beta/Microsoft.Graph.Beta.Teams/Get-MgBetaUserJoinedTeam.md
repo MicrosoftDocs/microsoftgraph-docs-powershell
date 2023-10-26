@@ -31,20 +31,18 @@ Get-MgBetaUserChatTabTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 The application that is linked to the tab.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserJoinedTeam -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserJoinedTeam Cmdlet.
 
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

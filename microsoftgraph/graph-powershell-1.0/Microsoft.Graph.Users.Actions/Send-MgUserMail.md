@@ -55,8 +55,7 @@ To learn more about the steps involved in the backend before a mail is delivered
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Send-MgUserMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -86,8 +85,9 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
-
-### EXAMPLE 2
+This example shows how to use the Send-MgUserMail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Send-MgUserMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -117,8 +117,9 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
-
-### EXAMPLE 3
+This example shows how to use the Send-MgUserMail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Send-MgUserMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -150,6 +151,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Send-MgUserMail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

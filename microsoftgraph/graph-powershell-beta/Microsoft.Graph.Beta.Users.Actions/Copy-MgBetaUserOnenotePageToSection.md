@@ -52,8 +52,7 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Copy-MgBetaUserOnenotePageToSection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -63,6 +62,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
 ```
+This example shows how to use the Copy-MgBetaUserOnenotePageToSection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

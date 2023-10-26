@@ -58,25 +58,38 @@ Alternatively, create a draft to reply-all to a message, and send it later.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Reply in JSON format to an existing message
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
 	Message = @{
-		Attachments = @(
+		ToRecipients = @(
 			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				Name = "guidelines.txt"
-				ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+				EmailAddress = @{
+					Address = "samanthab@contoso.onmicrosoft.com"
+					Name = "Samantha Booth"
+				}
+			}
+			@{
+				EmailAddress = @{
+					Address = "randiw@contoso.onmicrosoft.com"
+					Name = "Randi Welch"
+				}
 			}
 		)
 	}
-	Comment = "Please take a look at the attached guidelines before you decide on the name."
+	Comment = "Samantha, Randi, would you name the group please?"
 }
+
 # A UPN can also be used as -UserId.
-Invoke-MgBetaReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+Invoke-MgBetaReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaReplyUserMailFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

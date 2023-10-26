@@ -33,13 +33,17 @@ Validates the ownership of the domain.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Confirm-MgBetaDomain -DomainId $domainId
+
+```
+This example shows how to use the Confirm-MgBetaDomain Cmdlet.
+
 
 ## PARAMETERS
 

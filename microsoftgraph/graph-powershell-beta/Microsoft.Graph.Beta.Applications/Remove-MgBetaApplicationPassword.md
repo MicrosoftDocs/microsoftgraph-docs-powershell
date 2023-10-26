@@ -47,8 +47,7 @@ Removes a password from an application.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaApplicationPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -56,6 +55,8 @@ $params = @{
 }
 Remove-MgBetaApplicationPassword -ApplicationId $applicationId -BodyParameter $params
 ```
+This example shows how to use the Remove-MgBetaApplicationPassword Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -43,8 +43,8 @@ In Azure AD entitlement management, create a new accessPackageAssignmentPolicy o
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Create an access package policy
 
-### EXAMPLE 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 $allowedRequestors = @(@{
@@ -53,7 +53,6 @@ $allowedRequestors = @(@{
   "id"= 'e4ef0e03-e149-4cbc-8f56-27bb22171a64'
   "description" = 'Requestor1'
   })
-```
 
 $requestorSettings =@{
   "scopeType" = 'SpecificDirectorySubjects'
@@ -89,6 +88,10 @@ Questions               : {}
 RequestApprovalSettings : Microsoft.Graph.PowerShell.Models.MicrosoftGraphApprovalSettings
 RequestorSettings       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestorSettings
 AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/$entity]}
+```
+
+This example shows a request to create an access package assignment policy. In this policy no approval is required, and there are no access reviews.
+
 
 ## PARAMETERS
 

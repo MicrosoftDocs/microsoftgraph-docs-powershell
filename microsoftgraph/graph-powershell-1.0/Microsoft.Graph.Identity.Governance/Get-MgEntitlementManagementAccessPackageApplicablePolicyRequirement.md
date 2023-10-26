@@ -36,13 +36,17 @@ Each requirement object corresponds to an access package assignment policy that 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement -AccessPackageId $accessPackageId
+
+```
+This example shows how to use the Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet.
+
 
 ## PARAMETERS
 

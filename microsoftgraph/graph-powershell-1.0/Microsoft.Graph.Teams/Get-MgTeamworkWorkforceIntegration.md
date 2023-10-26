@@ -40,13 +40,17 @@ Retrieve the properties and relationships of a workforceIntegration object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamworkWorkforceIntegration
+
+```
+This example shows how to use the Get-MgTeamworkWorkforceIntegration Cmdlet.
+
 
 ## PARAMETERS
 

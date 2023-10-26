@@ -34,13 +34,17 @@ Supported for Microsoft 365 groups only.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Add-MgGroupFavorite -GroupId $groupId
+
+```
+This example shows how to use the Add-MgGroupFavorite Cmdlet.
+
 
 ## PARAMETERS
 

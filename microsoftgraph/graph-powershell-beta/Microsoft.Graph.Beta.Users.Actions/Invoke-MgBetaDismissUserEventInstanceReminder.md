@@ -48,20 +48,18 @@ Invoke-MgBetaDeprovisionUserManagedDevice -InputObject <IUsersActionsIdentity>
 Invoke action deprovision
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+# A UPN can also be used as -UserId.
+Invoke-MgBetaDismissUserEventReminder -UserId $userId -EventId $eventId
 ```
+This example shows how to use the Invoke-MgBetaDismissUserEventInstanceReminder Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

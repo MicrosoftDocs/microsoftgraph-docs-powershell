@@ -50,8 +50,7 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgUserOnenoteNotebookFromWebUrl Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -60,6 +59,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Get-MgUserOnenoteNotebookFromWebUrl Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

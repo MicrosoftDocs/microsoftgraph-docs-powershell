@@ -36,12 +36,13 @@ Get-MgBetaTenantRelationshipManagedTenantMyRole -InputObject <IManagedTenantsIde
 The collection of role assignments to a signed-in user for a managed tenant.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantMyRole Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantMyRole
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantMyRole Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -34,11 +34,10 @@ Create a new claimsMappingPolicy object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	definition = @(
@@ -48,6 +47,11 @@ $params = @{
 }
 
 New-MgBetaPolicyClaimMappingPolicy -BodyParameter $params
+```
+This example shows how to use the New-MgBetaPolicyClaimMappingPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

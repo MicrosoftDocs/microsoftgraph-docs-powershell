@@ -56,8 +56,7 @@ The following table lists the operations.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -75,8 +74,9 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-
-### EXAMPLE 2
+This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -95,8 +95,9 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-
-### EXAMPLE 3
+This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -110,8 +111,9 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-
-### EXAMPLE 4
+This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -123,8 +125,9 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-
-### EXAMPLE 5
+This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 5: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -141,8 +144,9 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
-
-### EXAMPLE 6
+This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 6: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -160,6 +164,8 @@ $params = @{
 }
 New-MgBetaPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId $privilegedAccessId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

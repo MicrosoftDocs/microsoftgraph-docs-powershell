@@ -45,34 +45,50 @@ To access a chat, at least one chat member must belong to the tenant the request
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get a group chat
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgChat -ChatId $chatId
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Teams
 ```
+This example will get a group chat
 
-Get-MgChat -ChatId $chatId -ExpandProperty "members"
+### Example 2: Get a chat and all its members
 
-### EXAMPLE 3
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
+
+Get-MgChat -ChatId $chatId -ExpandProperty "members" 
+
 ```
+This example will get a chat and all its members
+
+### Example 3: Get the meeting details of a chat associated with a Microsoft Teams meeting
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
 
 Get-MgChat -ChatId $chatId
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Teams
 ```
+This example will get the meeting details of a chat associated with a microsoft teams meeting
 
-Get-MgChat -ChatId $chatId -ExpandProperty "lastMessagePreview"
+### Example 4: Get the chat along with the preview of the last message sent in the chat
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
+
+Get-MgChat -ChatId $chatId -ExpandProperty "lastMessagePreview" 
+
+```
+This example will get the chat along with the preview of the last message sent in the chat
+
 
 ## PARAMETERS
 

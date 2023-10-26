@@ -40,34 +40,50 @@ Get a conversationMember from a team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get list of members in team
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamMember -TeamId $teamId
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example will get list of members in team
 
-Get-MgBetaTeamMember -TeamId $teamId -Filter "(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')"
+### Example 2: Find members of a team by their Azure AD user object ID
 
-### EXAMPLE 3
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeamMember -TeamId $teamId -Filter "(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')" 
+
 ```
+This example will find members of a team by their azure ad user object id
 
-Get-MgBetaTeamMember -TeamId $teamId -Filter "(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')"
+### Example 3: Find members of a team by their names or email
 
-### EXAMPLE 4
 ```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-```
 
-Get-MgBetaTeamMember -TeamId $teamId -Filter "roles/any(r:r eq 'owner')"
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeamMember -TeamId $teamId -Filter "(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')" 
+
+```
+This example will find members of a team by their names or email
+
+### Example 4: List members by their role in the team
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaTeamMember -TeamId $teamId -Filter "roles/any(r:r eq 'owner')" 
+
+```
+This example will list members by their role in the team
+
 
 ## PARAMETERS
 

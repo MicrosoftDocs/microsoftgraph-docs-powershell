@@ -41,13 +41,17 @@ Data source entity for a the custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource Cmdlet.
+
 
 ## PARAMETERS
 

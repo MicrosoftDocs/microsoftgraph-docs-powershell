@@ -32,8 +32,7 @@ Create a new tenantTag object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 $params = @{
@@ -42,6 +41,8 @@ $params = @{
 }
 New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

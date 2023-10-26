@@ -62,8 +62,7 @@ To apply the decisions to the target group or app access rights, use the apply A
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaAccessReview Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -71,6 +70,8 @@ $params = @{
 }
 Update-MgBetaAccessReview -AccessReviewId $accessReviewId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaAccessReview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

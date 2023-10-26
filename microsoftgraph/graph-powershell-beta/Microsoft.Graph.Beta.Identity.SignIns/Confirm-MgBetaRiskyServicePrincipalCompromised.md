@@ -37,11 +37,11 @@ This action sets the targeted service principal account's risk level to high.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	servicePrincipalIds = @(
@@ -50,6 +50,10 @@ $params = @{
 }
 
 Confirm-MgBetaRiskyServicePrincipalCompromised -BodyParameter $params
+
+```
+This example shows how to use the Confirm-MgBetaRiskyServicePrincipalCompromised Cmdlet.
+
 
 ## PARAMETERS
 

@@ -39,13 +39,17 @@ Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurityIde
 Custodian sources that are included in the eDiscovery search.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource Cmdlet.
+
 
 ## PARAMETERS
 

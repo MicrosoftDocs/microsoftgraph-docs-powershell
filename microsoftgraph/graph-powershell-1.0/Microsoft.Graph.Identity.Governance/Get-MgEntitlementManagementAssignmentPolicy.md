@@ -51,13 +51,17 @@ In Azure AD entitlement management, retrieve the properties and relationships of
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignmentPolicy
+
+```
+This example shows how to use the Get-MgEntitlementManagementAssignmentPolicy Cmdlet.
+
 
 ## PARAMETERS
 

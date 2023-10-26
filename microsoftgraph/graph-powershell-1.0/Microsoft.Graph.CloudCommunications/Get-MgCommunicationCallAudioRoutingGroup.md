@@ -42,13 +42,17 @@ Retrieve the properties and relationships of an audioRoutingGroup object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallAudioRoutingGroup -CallId $callId
+
+```
+This example shows how to use the Get-MgCommunicationCallAudioRoutingGroup Cmdlet.
+
 
 ## PARAMETERS
 

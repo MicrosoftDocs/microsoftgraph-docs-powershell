@@ -33,13 +33,15 @@ Delete a conditionalAccessPolicy object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Remove a conditional access policy
 
-### EXAMPLE 1
 ```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
-```
 
 Remove-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId
+```
+
+This example deletes the conditional access policy specified by `$conditionalAccessPolicyId`.
 
 ## PARAMETERS
 

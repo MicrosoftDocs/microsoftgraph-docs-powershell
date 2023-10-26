@@ -34,16 +34,29 @@ The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
 ## EXAMPLES
+### Example 1: Get your own presence information
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserPresence -UserId $userId
+
 ```
+This example will get your own presence information
+
+### Example 2: Get the presence information of another user
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+Get-MgBetaUserPresence -UserId $userId
+
+```
+This example will get the presence information of another user
+
 
 ## PARAMETERS
 

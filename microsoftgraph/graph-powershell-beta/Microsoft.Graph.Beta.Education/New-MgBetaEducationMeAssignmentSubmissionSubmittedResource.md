@@ -48,13 +48,17 @@ New-MgBetaEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducat
 Create new navigation property to submittedResources for education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+```
+This example shows how to use the New-MgBetaBetaEducationMeAssignmentSubmissionSubmittedResource Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

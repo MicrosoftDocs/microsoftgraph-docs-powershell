@@ -58,16 +58,38 @@ Alternatively, create a draft to reply-all to a message and send it later.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Reply in JSON format to an existing message
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
-	Comment = "comment-value"
+	Message = @{
+		ToRecipients = @(
+			@{
+				EmailAddress = @{
+					Address = "samanthab@contoso.onmicrosoft.com"
+					Name = "Samantha Booth"
+				}
+			}
+			@{
+				EmailAddress = @{
+					Address = "randiw@contoso.onmicrosoft.com"
+					Name = "Randi Welch"
+				}
+			}
+		)
+	}
+	Comment = "Samantha, Randi, would you name the group please?"
 }
+
 # A UPN can also be used as -UserId.
-Invoke-MgReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+Invoke-MgReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgReplyUserMailFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
