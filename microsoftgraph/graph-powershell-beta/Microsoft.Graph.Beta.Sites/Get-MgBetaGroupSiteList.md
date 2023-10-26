@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelist
 schema: 2.0.0
+ms.prod: sharepoint
+ms.prod: sites-and-lists
 ---
 
 # Get-MgBetaGroupSiteList
