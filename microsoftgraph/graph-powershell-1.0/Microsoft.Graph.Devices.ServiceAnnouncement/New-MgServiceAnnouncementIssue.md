@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementissue
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to issues for admin
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,13 +18,13 @@ New-MgServiceAnnouncementIssue [-AdditionalProperties <Hashtable>] [-Classificat
  [-Details <IMicrosoftGraphKeyValuePair[]>] [-EndDateTime <DateTime>] [-Feature <String>]
  [-FeatureGroup <String>] [-Id <String>] [-ImpactDescription <String>] [-IsResolved]
  [-LastModifiedDateTime <DateTime>] [-Origin <String>] [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>]
- [-Service <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>] [-WhatIf] [-Confirm]
+ [-Service <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgServiceAnnouncementIssue -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-WhatIf] [-Confirm]
+New-MgServiceAnnouncementIssue -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -35,17 +32,13 @@ New-MgServiceAnnouncementIssue -BodyParameter <IMicrosoftGraphServiceHealthIssue
 Create new navigation property to issues for admin
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+```
 
 Get-MgServiceAnnouncementIssue
-```
-This example shows how to use the New-MgServiceAnnouncementIssue Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -53,7 +46,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +62,7 @@ serviceHealthIssue
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealthIssue
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +77,7 @@ Accept wildcard characters: False
 serviceHealthClassificationType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,12 +89,12 @@ Accept wildcard characters: False
 ```
 
 ### -Details
-Additional details about service event.
+More details about service event.
 This property doesn't support filters.
 To construct, see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +109,7 @@ Accept wildcard characters: False
 The end time of the service event.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +124,7 @@ Accept wildcard characters: False
 The feature name of the service issue.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +139,7 @@ Accept wildcard characters: False
 The feature group name of the service issue.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +155,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +170,7 @@ Accept wildcard characters: False
 The description of the service issue impact.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,7 +185,7 @@ Accept wildcard characters: False
 Indicates whether the issue is resolved.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +200,7 @@ Accept wildcard characters: False
 The last modified time of the service event.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +215,7 @@ Accept wildcard characters: False
 serviceHealthOrigin
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +231,7 @@ Collection of historical posts for the service issue.
 To construct, see NOTES section for POSTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealthIssuePost[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssuePost[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +246,7 @@ Accept wildcard characters: False
 Indicates the service affected by the issue.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -268,7 +261,7 @@ Accept wildcard characters: False
 The start time of the service event.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -283,7 +276,7 @@ Accept wildcard characters: False
 serviceHealthStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -298,7 +291,7 @@ Accept wildcard characters: False
 The title of the service event.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -313,7 +306,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -329,7 +322,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -346,9 +339,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue
+
 ## NOTES
 
 ALIASES
@@ -360,7 +355,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `BODYPARAMETER <IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Details <IMicrosoftGraphKeyValuePair[]>]`: Additional details about service event. This property doesn't support filters.
+  - `[Details <IMicrosoftGraphKeyValuePair[]>]`: More details about service event. This property doesn't support filters.
     - `[Name <String>]`: Name for this key-value pair
     - `[Value <String>]`: Value for this key-value pair
   - `[EndDateTime <DateTime?>]`: The end time of the service event.
@@ -384,7 +379,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Service <String>]`: Indicates the service affected by the issue.
   - `[Status <String>]`: serviceHealthStatus
 
-`DETAILS <IMicrosoftGraphKeyValuePair[]>`: Additional details about service event. This property doesn't support filters.
+`DETAILS <IMicrosoftGraphKeyValuePair[]>`: More details about service event. This property doesn't support filters.
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
@@ -397,4 +392,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PostType <String>]`: postType
 
 ## RELATED LINKS
-[New-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
+

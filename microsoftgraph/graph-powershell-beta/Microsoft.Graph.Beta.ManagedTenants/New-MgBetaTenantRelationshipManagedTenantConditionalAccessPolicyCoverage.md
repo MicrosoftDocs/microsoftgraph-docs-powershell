@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantconditionalaccesspolicycoverage
 schema: 2.0.0
@@ -16,18 +16,34 @@ Create new navigation property to conditionalAccessPolicyCoverages for tenantRel
 ```
 New-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage [-AdditionalProperties <Hashtable>]
  [-ConditionalAccessPolicyState <String>] [-Id <String>] [-LatestPolicyModifiedDateTime <DateTime>]
- [-RequiresDeviceCompliance] [-TenantDisplayName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RequiresDeviceCompliance] [-TenantDisplayName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
- -BodyParameter <IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to conditionalAccessPolicyCoverages for tenantRelationships
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -35,7 +51,7 @@ Create new navigation property to conditionalAccessPolicyCoverages for tenantRel
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +67,7 @@ conditionalAccessPolicyCoverage
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +85,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +101,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +118,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +135,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -136,7 +152,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,7 +167,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -167,7 +183,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -184,9 +200,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsConditionalAccessPolicyCoverage
+
 ## NOTES
 
 ALIASES

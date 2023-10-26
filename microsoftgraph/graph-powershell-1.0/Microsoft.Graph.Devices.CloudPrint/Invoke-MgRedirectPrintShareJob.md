@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgredirectprintsharejob
 schema: 2.0.0
@@ -11,44 +11,59 @@ schema: 2.0.0
 Redirect a print job to a different printer.
 Redirecting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRedirectPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Invoke-MgBetaRedirectPrintShareJob?view=graph-powershell-beta)
+This API is supported in the following national cloud deployments.
 
 ## SYNTAX
 
 ### RedirectExpanded (Default)
 ```
-Invoke-MgRedirectPrintShareJob -PrintJobId <String> -PrinterShareId <String>
+Invoke-MgRedirectPrintShareJob -PrinterShareId <String> -PrintJobId <String>
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
- [-DestinationPrinterId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DestinationPrinterId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Redirect
 ```
-Invoke-MgRedirectPrintShareJob -PrintJobId <String> -PrinterShareId <String>
+Invoke-MgRedirectPrintShareJob -PrinterShareId <String> -PrintJobId <String>
  -BodyParameter <IPathsQcb95LPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RedirectViaIdentityExpanded
-```
-Invoke-MgRedirectPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-DestinationPrinterId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RedirectViaIdentity
 ```
 Invoke-MgRedirectPrintShareJob -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IPathsQcb95LPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RedirectViaIdentityExpanded
+```
+Invoke-MgRedirectPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
+ [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-DestinationPrinterId <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Redirect a print job to a different printer.
 Redirecting a print job will only succeed if there is a printTask in a processing state on the associated print job, started by a trigger that the requesting app created.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+This API is supported in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -56,7 +71,7 @@ For details about how to use this API to add pull printing support to Universal 
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -72,7 +87,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsQcb95LPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsQcb95LPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Redirect, RedirectViaIdentity
 Aliases:
 
@@ -88,7 +103,7 @@ printJobConfiguration
 To construct, see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintJobConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintJobConfiguration
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -103,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -119,8 +134,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
-Parameter Sets: RedirectViaIdentityExpanded, RedirectViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+Parameter Sets: RedirectViaIdentity, RedirectViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -134,8 +149,8 @@ Accept wildcard characters: False
 The unique identifier of printerShare
 
 ```yaml
-Type: String
-Parameter Sets: RedirectExpanded, Redirect
+Type: System.String
+Parameter Sets: Redirect, RedirectExpanded
 Aliases:
 
 Required: True
@@ -149,8 +164,8 @@ Accept wildcard characters: False
 The unique identifier of printJob
 
 ```yaml
-Type: String
-Parameter Sets: RedirectExpanded, Redirect
+Type: System.String
+Parameter Sets: Redirect, RedirectExpanded
 Aliases:
 
 Required: True
@@ -164,7 +179,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -180,7 +195,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -197,10 +212,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsQcb95LPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintJob
+
 ## NOTES
 
 ALIASES
@@ -287,5 +305,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaRedirectPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Invoke-MgBetaRedirectPrintShareJob?view=graph-powershell-beta)
 

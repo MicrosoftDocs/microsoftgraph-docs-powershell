@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmentpermanent
 schema: 2.0.0
@@ -16,35 +16,36 @@ Invoke action makePermanent
 ```
 New-MgBetaPrivilegedRoleAssignmentPermanent -PrivilegedRoleAssignmentId <String>
  [-AdditionalProperties <Hashtable>] [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Make
 ```
 New-MgBetaPrivilegedRoleAssignmentPermanent -PrivilegedRoleAssignmentId <String>
  -BodyParameter <IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MakeViaIdentityExpanded
-```
-New-MgBetaPrivilegedRoleAssignmentPermanent -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### MakeViaIdentity
 ```
 New-MgBetaPrivilegedRoleAssignmentPermanent -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### MakeViaIdentityExpanded
+```
+New-MgBetaPrivilegedRoleAssignmentPermanent -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-Reason <String>] [-TicketNumber <String>] [-TicketSystem <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action makePermanent
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaPrivilegedRoleAssignmentPermanent Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -54,8 +55,8 @@ $params = @{
 }
 New-MgBetaPrivilegedRoleAssignmentPermanent -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPrivilegedRoleAssignmentPermanent Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -63,7 +64,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: MakeExpanded, MakeViaIdentityExpanded
 Aliases:
 
@@ -79,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Make, MakeViaIdentity
 Aliases:
 
@@ -95,8 +96,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: MakeViaIdentityExpanded, MakeViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: MakeViaIdentity, MakeViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -110,8 +111,8 @@ Accept wildcard characters: False
 The unique identifier of privilegedRoleAssignment
 
 ```yaml
-Type: String
-Parameter Sets: MakeExpanded, Make
+Type: System.String
+Parameter Sets: Make, MakeExpanded
 Aliases:
 
 Required: True
@@ -125,7 +126,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: MakeExpanded, MakeViaIdentityExpanded
 Aliases:
 
@@ -140,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: MakeExpanded, MakeViaIdentityExpanded
 Aliases:
 
@@ -155,7 +156,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: MakeExpanded, MakeViaIdentityExpanded
 Aliases:
 
@@ -170,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -186,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -203,10 +204,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ao8IriPrivilegedroleassignmentsPrivilegedroleassignmentIdMicrosoftGraphMakepermanentPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
+
 ## NOTES
 
 ALIASES
@@ -274,6 +278,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[On <String>]`: Usage: on='{on}'
+  - `[PermissionsRequestChangeId <String>]`: The unique identifier of permissionsRequestChange
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
   - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -321,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

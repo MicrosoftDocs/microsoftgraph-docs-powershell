@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityuserflowattribute
 schema: 2.0.0
@@ -8,11 +8,8 @@ schema: 2.0.0
 # Update-MgIdentityUserFlowAttribute
 
 ## SYNOPSIS
-Update the properties of a identityUserFlowAttribute object.
-Only custom user flow attributes can be updated.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
+Update the properties of a custom identityUserFlowAttribute object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -20,48 +17,44 @@ Only custom user flow attributes can be updated.
 ```
 Update-MgIdentityUserFlowAttribute -IdentityUserFlowAttributeId <String> [-AdditionalProperties <Hashtable>]
  [-DataType <String>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-UserFlowAttributeType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserFlowAttributeType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgIdentityUserFlowAttribute -IdentityUserFlowAttributeId <String>
- -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
  [-DataType <String>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-UserFlowAttributeType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphIdentityUserFlowAttribute> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserFlowAttributeType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the properties of a identityUserFlowAttribute object.
-Only custom user flow attributes can be updated.
+Update the properties of a custom identityUserFlowAttribute object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	description = "Your new hobby"
 }
 
 Update-MgIdentityUserFlowAttribute -IdentityUserFlowAttributeId $identityUserFlowAttributeId -BodyParameter $params
-```
-This example shows how to use the Update-MgIdentityUserFlowAttribute Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -69,7 +62,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +78,7 @@ identityUserFlowAttribute
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityUserFlowAttribute
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -100,7 +93,7 @@ Accept wildcard characters: False
 identityUserFlowAttributeDataType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +108,7 @@ Accept wildcard characters: False
 The description of the user flow attribute that's shown to the user at the time of sign-up.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,9 +121,10 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The display name of the user flow attribute.
+Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +140,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,8 +155,8 @@ Accept wildcard characters: False
 The unique identifier of identityUserFlowAttribute
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -177,8 +171,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -192,7 +186,7 @@ Accept wildcard characters: False
 identityUserFlowAttributeType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +201,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -223,7 +217,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,10 +234,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
+
 ## NOTES
 
 ALIASES
@@ -258,7 +255,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DataType <String>]`: identityUserFlowAttributeDataType
   - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
-  - `[DisplayName <String>]`: The display name of the user flow attribute.
+  - `[DisplayName <String>]`: The display name of the user flow attribute.  Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 
 `INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
@@ -319,4 +316,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
+

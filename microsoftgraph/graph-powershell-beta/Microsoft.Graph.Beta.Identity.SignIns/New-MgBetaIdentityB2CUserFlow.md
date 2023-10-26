@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflow
 schema: 2.0.0
@@ -9,31 +9,34 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new b2cIdentityUserFlow object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityB2CUserFlow [-AdditionalProperties <Hashtable>]
- [-ApiConnectorConfiguration <IMicrosoftGraphUserFlowApiConnectorConfiguration>] [-DefaultLanguageTag <String>]
- [-Id <String>] [-IdentityProviders <IMicrosoftGraphIdentityProvider[]>] [-IsLanguageCustomizationEnabled]
- [-Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]
+ [-ApiConnectorConfiguration <IMicrosoftGraphUserFlowApiConnectorConfiguration>]
+ [-DefaultLanguageTag <String>] [-Id <String>] [-IdentityProviders <IMicrosoftGraphIdentityProvider[]>]
+ [-IsLanguageCustomizationEnabled] [-Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]
  [-UserAttributeAssignments <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>]
  [-UserFlowIdentityProviders <IMicrosoftGraphIdentityProviderBase[]>] [-UserFlowType <String>]
- [-UserFlowTypeVersion <Single>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserFlowTypeVersion <Single>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityB2CUserFlow -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow> [-WhatIf] [-Confirm]
+New-MgBetaIdentityB2CUserFlow -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new b2cIdentityUserFlow object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaIdentityB2CUserFlow Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -51,9 +54,10 @@ $params = @{
 }
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaIdentityB2CUserFlow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the New-MgBetaIdentityB2CUserFlow Cmdlet
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -68,9 +72,10 @@ $params = @{
 }
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaIdentityB2CUserFlow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the New-MgBetaIdentityB2CUserFlow Cmdlet
+
+
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -80,8 +85,8 @@ $params = @{
 }
 New-MgBetaIdentityB2CUserFlow -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaIdentityB2CUserFlow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -89,7 +94,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -105,7 +110,7 @@ userFlowApiConnectorConfiguration
 To construct, see NOTES section for APICONNECTORCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserFlowApiConnectorConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserFlowApiConnectorConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +126,7 @@ b2cIdentityUserFlow
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphB2CIdentityUserFlow
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2CIdentityUserFlow
 Parameter Sets: Create
 Aliases:
 
@@ -137,7 +142,7 @@ Indicates the default language of the b2cIdentityUserFlow that is used when no u
 This field is RFC 5646 compliant.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -153,7 +158,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +174,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for IDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityProvider[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProvider[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -185,7 +190,7 @@ The property that determines whether language customization is enabled within th
 Language customization is not enabled by default for B2C user flows.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -202,7 +207,7 @@ Language customization is not enabled by default in B2C user flows.
 To construct, see NOTES section for LANGUAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserFlowLanguageConfiguration[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserFlowLanguageConfiguration[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +223,7 @@ The user attribute assignments included in the user flow.
 To construct, see NOTES section for USERATTRIBUTEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -234,7 +239,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for USERFLOWIDENTITYPROVIDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityProviderBase[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProviderBase[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,7 +254,7 @@ Accept wildcard characters: False
 userFlowType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -264,7 +269,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Single
+Type: System.Single
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -279,7 +284,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -295,7 +300,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -312,9 +317,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2CIdentityUserFlow
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2CIdentityUserFlow
+
 ## NOTES
 
 ALIASES
@@ -362,22 +369,22 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsLanguageCustomizationEnabled <Boolean?>]`: The property that determines whether language customization is enabled within the B2C user flow. Language customization is not enabled by default for B2C user flows.
   - `[Languages <IMicrosoftGraphUserFlowLanguageConfiguration[]>]`: The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the default content to display in a user flow for a specified language. This collection does not allow any kind of modification.
+    - `[DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the default content to display in a user flow for a specified language. This collection doesn't allow any kind of modification.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The language name to display. This property is read-only.
     - `[IsEnabled <Boolean?>]`: Indicates whether the language is enabled within the user flow.
-    - `[OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
+    - `[OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).
   - `[UserAttributeAssignments <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>]`: The user attribute assignments included in the user flow.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the identityUserFlowAttribute within a user flow.
-    - `[IsOptional <Boolean?>]`: Determines whether the identityUserFlowAttribute is optional. true means the user doesn't have to provide a value. false means the user cannot complete sign-up without providing a value.
+    - `[IsOptional <Boolean?>]`: Determines whether the identityUserFlowAttribute is optional. true means the user doesn't have to provide a value. false means the user can't complete sign-up without providing a value.
     - `[RequiresVerification <Boolean?>]`: Determines whether the identityUserFlowAttribute requires verification. This is only used for verifying the user's phone number or email address.
     - `[UserAttribute <IMicrosoftGraphIdentityUserFlowAttribute>]`: identityUserFlowAttribute
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DataType <String>]`: identityUserFlowAttributeDataType
       - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
-      - `[DisplayName <String>]`: The display name of the user flow attribute.
+      - `[DisplayName <String>]`: The display name of the user flow attribute.  Supports $filter (eq, ne).
       - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
     - `[UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>]`: The input options for the user flow attribute. Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
       - `[IsDefault <Boolean?>]`: Used to set the value as the default.
@@ -397,23 +404,23 @@ To create the parameters described below, construct a hash table containing the 
 
 `LANGUAGES <IMicrosoftGraphUserFlowLanguageConfiguration[]>`: The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the default content to display in a user flow for a specified language. This collection does not allow any kind of modification.
+  - `[DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the default content to display in a user flow for a specified language. This collection doesn't allow any kind of modification.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The language name to display. This property is read-only.
   - `[IsEnabled <Boolean?>]`: Indicates whether the language is enabled within the user flow.
-  - `[OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
+  - `[OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).
 
 `USERATTRIBUTEASSIGNMENTS <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>`: The user attribute assignments included in the user flow.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identityUserFlowAttribute within a user flow.
-  - `[IsOptional <Boolean?>]`: Determines whether the identityUserFlowAttribute is optional. true means the user doesn't have to provide a value. false means the user cannot complete sign-up without providing a value.
+  - `[IsOptional <Boolean?>]`: Determines whether the identityUserFlowAttribute is optional. true means the user doesn't have to provide a value. false means the user can't complete sign-up without providing a value.
   - `[RequiresVerification <Boolean?>]`: Determines whether the identityUserFlowAttribute requires verification. This is only used for verifying the user's phone number or email address.
   - `[UserAttribute <IMicrosoftGraphIdentityUserFlowAttribute>]`: identityUserFlowAttribute
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DataType <String>]`: identityUserFlowAttributeDataType
     - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
-    - `[DisplayName <String>]`: The display name of the user flow attribute.
+    - `[DisplayName <String>]`: The display name of the user flow attribute.  Supports $filter (eq, ne).
     - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
   - `[UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>]`: The input options for the user flow attribute. Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
     - `[IsDefault <Boolean?>]`: Used to set the value as the default.
@@ -427,4 +434,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
-## RELATED LINKS

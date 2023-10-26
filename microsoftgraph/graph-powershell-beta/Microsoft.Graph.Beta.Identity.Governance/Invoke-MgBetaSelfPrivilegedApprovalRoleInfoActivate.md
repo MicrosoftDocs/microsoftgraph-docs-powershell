@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedapprovalroleinfoactivate
 schema: 2.0.0
@@ -16,32 +16,48 @@ Invoke action selfActivate
 ```
 Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -PrivilegedApprovalId <String>
  [-AdditionalProperties <Hashtable>] [-Duration <String>] [-Reason <String>] [-TicketNumber <String>]
- [-TicketSystem <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TicketSystem <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Self
 ```
 Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -PrivilegedApprovalId <String>
  -BodyParameter <IPathsZs8JlrPrivilegedapprovalIdRoleinfoMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SelfViaIdentityExpanded
-```
-Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Duration <String>] [-Reason <String>] [-TicketNumber <String>]
- [-TicketSystem <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SelfViaIdentity
 ```
 Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPathsZs8JlrPrivilegedapprovalIdRoleinfoMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SelfViaIdentityExpanded
+```
+Invoke-MgBetaSelfPrivilegedApprovalRoleInfoActivate -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-Duration <String>] [-Reason <String>] [-TicketNumber <String>]
+ [-TicketSystem <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action selfActivate
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Invoke action selfActivate
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SelfExpanded, SelfViaIdentityExpanded
 Aliases:
 
@@ -65,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsZs8JlrPrivilegedapprovalIdRoleinfoMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsZs8JlrPrivilegedapprovalIdRoleinfoMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Self, SelfViaIdentity
 Aliases:
 
@@ -80,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SelfExpanded, SelfViaIdentityExpanded
 Aliases:
 
@@ -96,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: SelfViaIdentityExpanded, SelfViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: SelfViaIdentity, SelfViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -111,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of privilegedApproval
 
 ```yaml
-Type: String
-Parameter Sets: SelfExpanded, Self
+Type: System.String
+Parameter Sets: Self, SelfExpanded
 Aliases:
 
 Required: True
@@ -126,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SelfExpanded, SelfViaIdentityExpanded
 Aliases:
 
@@ -141,7 +157,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SelfExpanded, SelfViaIdentityExpanded
 Aliases:
 
@@ -156,7 +172,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SelfExpanded, SelfViaIdentityExpanded
 Aliases:
 
@@ -171,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,10 +220,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsZs8JlrPrivilegedapprovalIdRoleinfoMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
+
 ## NOTES
 
 ALIASES
@@ -276,6 +295,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[On <String>]`: Usage: on='{on}'
+  - `[PermissionsRequestChangeId <String>]`: The unique identifier of permissionsRequestChange
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
   - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

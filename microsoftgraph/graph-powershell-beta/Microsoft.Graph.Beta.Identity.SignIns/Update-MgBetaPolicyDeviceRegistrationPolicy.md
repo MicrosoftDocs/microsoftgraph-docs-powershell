@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeviceregistrationpolicy
 schema: 2.0.0
@@ -19,18 +19,34 @@ Update-MgBetaPolicyDeviceRegistrationPolicy [-AdditionalProperties <Hashtable>]
  [-AzureAdJoin <IMicrosoftGraphAzureAdJoinPolicy>]
  [-AzureAdRegistration <IMicrosoftGraphAzureAdRegistrationPolicy>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-LocalAdminPassword <IMicrosoftGraphLocalAdminPasswordSettings>]
- [-MultiFactorAuthConfiguration <String>] [-UserDeviceQuota <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MultiFactorAuthConfiguration <String>] [-UserDeviceQuota <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaPolicyDeviceRegistrationPolicy -BodyParameter <IMicrosoftGraphDeviceRegistrationPolicy> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaPolicyDeviceRegistrationPolicy -BodyParameter <IMicrosoftGraphDeviceRegistrationPolicy>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a deviceRegistrationPolicy object.
 Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -38,7 +54,7 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -54,7 +70,7 @@ azureAdJoinPolicy
 To construct, see NOTES section for AZUREADJOIN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAzureAdJoinPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAzureAdJoinPolicy
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -70,7 +86,7 @@ azureADRegistrationPolicy
 To construct, see NOTES section for AZUREADREGISTRATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAzureAdRegistrationPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAzureAdRegistrationPolicy
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -86,7 +102,7 @@ deviceRegistrationPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceRegistrationPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceRegistrationPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -99,11 +115,11 @@ Accept wildcard characters: False
 
 ### -Description
 The description of the device registration policy.
-It is always set to Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks.
+It's always set to Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -116,11 +132,11 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The name of the device registration policy.
-It is always set to Device Registration Policy.
+It's always set to Device Registration Policy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -136,7 +152,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -152,7 +168,7 @@ localAdminPasswordSettings
 To construct, see NOTES section for LOCALADMINPASSWORD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocalAdminPasswordSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLocalAdminPasswordSettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -167,7 +183,7 @@ Accept wildcard characters: False
 multiFactorAuthConfiguration
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -181,10 +197,10 @@ Accept wildcard characters: False
 ### -UserDeviceQuota
 Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations.
 The default value is set to 50.
-If this property is not specified during the policy update operation, it is automatically reset to 0 to indicate that users are not allowed to join any devices.
+If this property isn't specified during the policy update operation, it's automatically reset to 0 to indicate that users aren't allowed to join any devices.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -199,7 +215,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -215,7 +231,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -232,9 +248,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceRegistrationPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceRegistrationPolicy
+
 ## NOTES
 
 ALIASES
@@ -273,13 +291,13 @@ To create the parameters described below, construct a hash table containing the 
     - `[AllowedUsers <String[]>]`: The identifiers of users that are in the scope of the policy. Either this property or allowedGroups is required when the appliesTo property is set to selected.
     - `[AppliesTo <String>]`: policyScope
     - `[IsAdminConfigurable <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
-  - `[Description <String>]`: The description of the device registration policy. It is always set to Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks. Read-only.
-  - `[DisplayName <String>]`: The name of the device registration policy. It is always set to Device Registration Policy. Read-only.
+  - `[Description <String>]`: The description of the device registration policy. It's always set to Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks. Read-only.
+  - `[DisplayName <String>]`: The name of the device registration policy. It's always set to Device Registration Policy. Read-only.
   - `[LocalAdminPassword <IMicrosoftGraphLocalAdminPasswordSettings>]`: localAdminPasswordSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsEnabled <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. An admin can set it to true to enable Local Admin Password Solution (LAPS) within their organzation.
   - `[MultiFactorAuthConfiguration <String>]`: multiFactorAuthConfiguration
-  - `[UserDeviceQuota <Int32?>]`: Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. The default value is set to 50. If this property is not specified during the policy update operation, it is automatically reset to 0 to indicate that users are not allowed to join any devices.
+  - `[UserDeviceQuota <Int32?>]`: Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. The default value is set to 50. If this property isn't specified during the policy update operation, it's automatically reset to 0 to indicate that users aren't allowed to join any devices.
 
 `LOCALADMINPASSWORD <IMicrosoftGraphLocalAdminPasswordSettings>`: localAdminPasswordSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

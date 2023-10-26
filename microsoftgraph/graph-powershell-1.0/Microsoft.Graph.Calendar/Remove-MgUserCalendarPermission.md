@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermission
 schema: 2.0.0
@@ -9,51 +9,46 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete calendarPermission.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarPermission?view=graph-powershell-beta)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> [-IfMatch <String>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
-Remove-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> -CalendarId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgUserCalendarPermission -CalendarId <String> -CalendarPermissionId <String> -UserId <String>
+ [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete calendarPermission.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Calendar
+```
 
 Remove-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
-```
-This example shows how to use the Remove-MgUserCalendarPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -61,7 +56,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of calendar
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -76,7 +71,7 @@ Accept wildcard characters: False
 The unique identifier of calendarPermission
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete, Delete1
 Aliases:
 
@@ -91,7 +86,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -107,8 +102,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Parameter Sets: DeleteViaIdentity, DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -122,7 +117,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -137,7 +132,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete, Delete1
 Aliases:
 
@@ -152,7 +147,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -168,7 +163,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -185,9 +180,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -210,4 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarPermission?view=graph-powershell-beta)
+

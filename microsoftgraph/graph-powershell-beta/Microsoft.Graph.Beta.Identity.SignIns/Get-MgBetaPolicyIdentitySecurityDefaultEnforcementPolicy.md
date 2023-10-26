@@ -1,18 +1,15 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyidentitysecuritydefaultenforcementpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
 Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -23,19 +20,16 @@ Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -43,7 +37,7 @@ This example shows how to use the Get-MgBetaPolicyIdentitySecurityDefaultEnforce
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -58,7 +52,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -77,9 +71,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-1.0)
+

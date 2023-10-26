@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesetting
 schema: 2.0.0
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a an eDiscovery caseSettings object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -17,13 +18,19 @@ Update the properties of a an eDiscovery caseSettings object.
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -31,20 +38,16 @@ Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId <String>
 Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a an eDiscovery caseSettings object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -67,9 +70,10 @@ $params = @{
 }
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -92,8 +96,8 @@ $params = @{
 }
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -101,7 +105,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +121,7 @@ caseSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryCaseSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -132,8 +136,8 @@ Accept wildcard characters: False
 The unique identifier of case
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -148,7 +152,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,8 +168,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -180,7 +184,7 @@ ocrSettings
 To construct, see NOTES section for OCR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryOcrSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryOcrSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +200,7 @@ redundancyDetectionSettings
 To construct, see NOTES section for REDUNDANCYDETECTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryRedundancyDetectionSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryRedundancyDetectionSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +216,7 @@ topicModelingSettings
 To construct, see NOTES section for TOPICMODELING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryTopicModelingSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryTopicModelingSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +231,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -243,7 +247,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -260,10 +264,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseSettings
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseSettings
+
 ## NOTES
 
 ALIASES
@@ -291,7 +298,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
     - `[IgnoreNumbers <Boolean?>]`: To learn more, see Include numbers in themes.
-    - `[IsEnabled <Boolean?>]`: Indicates whether themes is enabled for the case.
+    - `[IsEnabled <Boolean?>]`: Indicates whether themes are enabled for the case.
     - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
 
 `INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
@@ -330,7 +337,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
   - `[IgnoreNumbers <Boolean?>]`: To learn more, see Include numbers in themes.
-  - `[IsEnabled <Boolean?>]`: Indicates whether themes is enabled for the case.
+  - `[IsEnabled <Boolean?>]`: Indicates whether themes are enabled for the case.
   - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetatenantrelationshipmanagedtenantoffboard
 schema: 2.0.0
@@ -8,28 +8,46 @@ schema: 2.0.0
 # Invoke-MgBetaTenantRelationshipManagedTenantOffboard
 
 ## SYNOPSIS
-Carries out the appropriate procedures to remove a managed tenant from the multi-tenant management platform.
+Carries out the appropriate procedures to remove a managed tenant from the multitenant management platform.
 No relationships, such as commerce and delegate administrative privileges, will be impacted.
-The only change made by invoking this action is the tenant will be deprovisioned from the multi-tenant management platform.
+The only change made by invoking this action is the tenant will be deprovisioned from the multitenant management platform.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### Tenant (Default)
 ```
-Invoke-MgBetaTenantRelationshipManagedTenantOffboard -TenantId <String> [-WhatIf] [-Confirm]
+Invoke-MgBetaTenantRelationshipManagedTenantOffboard -TenantId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### TenantViaIdentity
 ```
 Invoke-MgBetaTenantRelationshipManagedTenantOffboard -InputObject <IIdentityDirectoryManagementIdentity>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Carries out the appropriate procedures to remove a managed tenant from the multi-tenant management platform.
+Carries out the appropriate procedures to remove a managed tenant from the multitenant management platform.
 No relationships, such as commerce and delegate administrative privileges, will be impacted.
-The only change made by invoking this action is the tenant will be deprovisioned from the multi-tenant management platform.
+The only change made by invoking this action is the tenant will be deprovisioned from the multitenant management platform.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -38,7 +56,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: TenantViaIdentity
 Aliases:
 
@@ -53,7 +71,7 @@ Accept wildcard characters: False
 The unique identifier of tenant
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Tenant
 Aliases:
 
@@ -68,7 +86,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -84,7 +102,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -101,9 +119,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenant
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationclassmodule
 schema: 2.0.0
@@ -10,27 +10,45 @@ schema: 2.0.0
 ## SYNOPSIS
 Change the state of an educationModule from its original draft status to the published status.
 Only teachers in the class can perform this operation.
-When a module is in draft status, students will not see the module.
-When you call this API, the module appears in the student's classwork list.
+When a module is in draft status, students won't see the module.
+When you call this API, the module appears in the student's class work list.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### Publish (Default)
 ```
-Publish-MgBetaEducationClassModule -EducationClassId <String> -EducationModuleId <String> [-WhatIf] [-Confirm]
+Publish-MgBetaEducationClassModule -EducationClassId <String> -EducationModuleId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### PublishViaIdentity
 ```
-Publish-MgBetaEducationClassModule -InputObject <IEducationIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Publish-MgBetaEducationClassModule -InputObject <IEducationIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Change the state of an educationModule from its original draft status to the published status.
 Only teachers in the class can perform this operation.
-When a module is in draft status, students will not see the module.
-When you call this API, the module appears in the student's classwork list.
+When a module is in draft status, students won't see the module.
+When you call this API, the module appears in the student's class work list.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -38,7 +56,7 @@ When you call this API, the module appears in the student's classwork list.
 The unique identifier of educationClass
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Publish
 Aliases:
 
@@ -53,7 +71,7 @@ Accept wildcard characters: False
 The unique identifier of educationModule
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Publish
 Aliases:
 
@@ -69,7 +87,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: PublishViaIdentity
 Aliases:
 
@@ -84,7 +102,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -100,7 +118,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -117,9 +135,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationModule
+
 ## NOTES
 
 ALIASES
@@ -132,6 +152,7 @@ To create the parameters described below, construct a hash table containing the 
 `INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+  - `[EducationAssignmentResourceId1 <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
   - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
@@ -142,6 +163,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
   - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
   - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+  - `[EducationSubmissionResourceId1 <String>]`: The unique identifier of educationSubmissionResource
   - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser

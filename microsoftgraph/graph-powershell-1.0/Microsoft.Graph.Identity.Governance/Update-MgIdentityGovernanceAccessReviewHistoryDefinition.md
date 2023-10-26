@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewhistorydefinition
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property historyDefinitions in identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,13 +20,19 @@ Update-MgIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDef
  [-Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>] [-ReviewHistoryPeriodEndDateTime <DateTime>]
  [-ReviewHistoryPeriodStartDateTime <DateTime>]
  [-ScheduleSettings <IMicrosoftGraphAccessReviewHistoryScheduleSettings>]
- [-Scopes <IMicrosoftGraphAccessReviewScope[]>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Scopes <IMicrosoftGraphAccessReviewScope[]>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDefinitionId <String>
- -BodyParameter <IMicrosoftGraphAccessReviewHistoryDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessReviewHistoryDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessReviewHistoryDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,17 +43,27 @@ Update-MgIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentity
  [-Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>] [-ReviewHistoryPeriodEndDateTime <DateTime>]
  [-ReviewHistoryPeriodStartDateTime <DateTime>]
  [-ScheduleSettings <IMicrosoftGraphAccessReviewHistoryScheduleSettings>]
- [-Scopes <IMicrosoftGraphAccessReviewScope[]>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessReviewHistoryDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Scopes <IMicrosoftGraphAccessReviewScope[]>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property historyDefinitions in identityGovernance
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -58,8 +71,8 @@ Update the navigation property historyDefinitions in identityGovernance
 The unique identifier of accessReviewHistoryDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -73,7 +86,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +102,7 @@ accessReviewHistoryDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewHistoryDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -105,7 +118,7 @@ userIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserIdentity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,7 +133,7 @@ Accept wildcard characters: False
 Timestamp when the access review definition was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,11 +147,11 @@ Accept wildcard characters: False
 ### -Decisions
 Determines which review decisions will be included in the fetched review history data if specified.
 Optional on create.
-All decisions will be included by default if no decisions are provided on create.
+All decisions are included by default if no decisions are provided on create.
 Possible values are: approve, deny, dontKnow, notReviewed, and notNotified.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -154,7 +167,7 @@ Name for the access review history data collection.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -170,7 +183,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -186,8 +199,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -199,11 +212,11 @@ Accept wildcard characters: False
 
 ### -Instances
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
-A definition that does not recur will have exactly one instance.
+A definition that doesn't recur will have exactly one instance.
 To construct, see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewHistoryInstance[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryInstance[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -217,10 +230,10 @@ Accept wildcard characters: False
 ### -ReviewHistoryPeriodEndDateTime
 A timestamp.
 Reviews ending on or before this date will be included in the fetched history data.
-Only required if scheduleSettings is not defined.
+Only required if scheduleSettings isn't defined.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -234,10 +247,10 @@ Accept wildcard characters: False
 ### -ReviewHistoryPeriodStartDateTime
 A timestamp.
 Reviews starting on or before this date will be included in the fetched history data.
-Only required if scheduleSettings is not defined.
+Only required if scheduleSettings isn't defined.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -253,7 +266,7 @@ accessReviewHistoryScheduleSettings
 To construct, see NOTES section for SCHEDULESETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewHistoryScheduleSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryScheduleSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,7 +283,7 @@ Fetches reviews whose scope matches with this provided scope.
 Required.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewScope[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewScope[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +298,7 @@ Accept wildcard characters: False
 accessReviewHistoryStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +313,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -316,7 +329,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -333,10 +346,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryDefinition
+
 ## NOTES
 
 ALIASES
@@ -351,24 +367,24 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: Timestamp when the access review definition was created.
-  - `[Decisions <String[]>]`: Determines which review decisions will be included in the fetched review history data if specified. Optional on create. All decisions will be included by default if no decisions are provided on create. Possible values are: approve, deny, dontKnow, notReviewed, and notNotified.
+  - `[Decisions <String[]>]`: Determines which review decisions will be included in the fetched review history data if specified. Optional on create. All decisions are included by default if no decisions are provided on create. Possible values are: approve, deny, dontKnow, notReviewed, and notNotified.
   - `[DisplayName <String>]`: Name for the access review history data collection. Required.
-  - `[Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>]`: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence. A definition that does not recur will have exactly one instance.
+  - `[Instances <IMicrosoftGraphAccessReviewHistoryInstance[]>]`: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence. A definition that doesn't recur will have exactly one instance.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[DownloadUri <String>]`: Uri which can be used to retrieve review history data. This URI will be active for 24 hours after being generated. Required.
+    - `[DownloadUri <String>]`: Uri that can be used to retrieve review history data. This URI will be active for 24 hours after being generated. Required.
     - `[ExpirationDateTime <DateTime?>]`: Timestamp when this instance and associated data expires and the history is deleted. Required.
-    - `[FulfilledDateTime <DateTime?>]`: Timestamp when all of the available data for this instance was collected. This will be set after this instance's status is set to done. Required.
-    - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: Timestamp, reviews ending on or before this date will be included in the fetched history data.
-    - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: Timestamp, reviews starting on or after this date will be included in the fetched history data.
+    - `[FulfilledDateTime <DateTime?>]`: Timestamp when all of the available data for this instance was collected and is set after this instance's status is set to done. Required.
+    - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: Timestamp reviews ending on or before this date will be included in the fetched history data.
+    - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: Timestamp reviews starting on or after this date will be included in the fetched history data.
     - `[RunDateTime <DateTime?>]`: Timestamp when the instance's history data is scheduled to be generated.
     - `[Status <String>]`: accessReviewHistoryStatus
-  - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: A timestamp. Reviews ending on or before this date will be included in the fetched history data. Only required if scheduleSettings is not defined.
-  - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: A timestamp. Reviews starting on or before this date will be included in the fetched history data. Only required if scheduleSettings is not defined.
+  - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: A timestamp. Reviews ending on or before this date will be included in the fetched history data. Only required if scheduleSettings isn't defined.
+  - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: A timestamp. Reviews starting on or before this date will be included in the fetched history data. Only required if scheduleSettings isn't defined.
   - `[ScheduleSettings <IMicrosoftGraphAccessReviewHistoryScheduleSettings>]`: accessReviewHistoryScheduleSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
@@ -389,13 +405,13 @@ To create the parameters described below, construct a hash table containing the 
         - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
         - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
         - `[Type <String>]`: recurrenceRangeType
-    - `[ReportRange <String>]`: A duration string in ISO 8601 duration format specifying the lookback period of the generated review history data. For example, if a history definition is scheduled to run on the 1st of every month, the reportRange is P1M. In this case, on the first of every month, access review history data will be collected containing only the previous month's review data. Note: Only years, months, and days ISO 8601 properties are supported. Required.
+    - `[ReportRange <String>]`: A duration string in ISO 8601 duration format specifying the lookback period of the generated review history data. For example, if a history definition is scheduled to run on the first of every month, the reportRange is P1M. In this case, on the first of every month, access review history data is collected containing only the previous month's review data. Note: Only years, months, and days ISO 8601 properties are supported. Required.
   - `[Scopes <IMicrosoftGraphAccessReviewScope[]>]`: Used to scope what reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required.
   - `[Status <String>]`: accessReviewHistoryStatus
 
 `CREATEDBY <IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
@@ -440,6 +456,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
+  - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
+  - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
+  - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
+  - `[PrivilegedAccessGroupEligibilityScheduleId <String>]`: The unique identifier of privilegedAccessGroupEligibilitySchedule
+  - `[PrivilegedAccessGroupEligibilityScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupEligibilityScheduleInstance
+  - `[PrivilegedAccessGroupEligibilityScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupEligibilityScheduleRequest
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
@@ -464,13 +486,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-`INSTANCES <IMicrosoftGraphAccessReviewHistoryInstance[]>`: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence. A definition that does not recur will have exactly one instance.
+`INSTANCES <IMicrosoftGraphAccessReviewHistoryInstance[]>`: If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence. A definition that doesn't recur will have exactly one instance.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DownloadUri <String>]`: Uri which can be used to retrieve review history data. This URI will be active for 24 hours after being generated. Required.
+  - `[DownloadUri <String>]`: Uri that can be used to retrieve review history data. This URI will be active for 24 hours after being generated. Required.
   - `[ExpirationDateTime <DateTime?>]`: Timestamp when this instance and associated data expires and the history is deleted. Required.
-  - `[FulfilledDateTime <DateTime?>]`: Timestamp when all of the available data for this instance was collected. This will be set after this instance's status is set to done. Required.
-  - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: Timestamp, reviews ending on or before this date will be included in the fetched history data.
-  - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: Timestamp, reviews starting on or after this date will be included in the fetched history data.
+  - `[FulfilledDateTime <DateTime?>]`: Timestamp when all of the available data for this instance was collected and is set after this instance's status is set to done. Required.
+  - `[ReviewHistoryPeriodEndDateTime <DateTime?>]`: Timestamp reviews ending on or before this date will be included in the fetched history data.
+  - `[ReviewHistoryPeriodStartDateTime <DateTime?>]`: Timestamp reviews starting on or after this date will be included in the fetched history data.
   - `[RunDateTime <DateTime?>]`: Timestamp when the instance's history data is scheduled to be generated.
   - `[Status <String>]`: accessReviewHistoryStatus
 
@@ -494,11 +516,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
       - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
       - `[Type <String>]`: recurrenceRangeType
-  - `[ReportRange <String>]`: A duration string in ISO 8601 duration format specifying the lookback period of the generated review history data. For example, if a history definition is scheduled to run on the 1st of every month, the reportRange is P1M. In this case, on the first of every month, access review history data will be collected containing only the previous month's review data. Note: Only years, months, and days ISO 8601 properties are supported. Required.
+  - `[ReportRange <String>]`: A duration string in ISO 8601 duration format specifying the lookback period of the generated review history data. For example, if a history definition is scheduled to run on the first of every month, the reportRange is P1M. In this case, on the first of every month, access review history data is collected containing only the previous month's review data. Note: Only years, months, and days ISO 8601 properties are supported. Required.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 

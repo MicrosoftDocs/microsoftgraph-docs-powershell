@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmyrole
 schema: 2.0.0
@@ -15,18 +15,34 @@ Create new navigation property to myRoles for tenantRelationships
 ### CreateExpanded (Default)
 ```
 New-MgBetaTenantRelationshipManagedTenantMyRole [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphManagedTenantsRoleAssignment[]>] [-TenantId <String>] [-WhatIf] [-Confirm]
+ [-Assignments <IMicrosoftGraphManagedTenantsRoleAssignment[]>] [-TenantId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaTenantRelationshipManagedTenantMyRole -BodyParameter <IMicrosoftGraphManagedTenantsMyRole> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaTenantRelationshipManagedTenantMyRole -BodyParameter <IMicrosoftGraphManagedTenantsMyRole>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to myRoles for tenantRelationships
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -34,7 +50,7 @@ Create new navigation property to myRoles for tenantRelationships
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +66,7 @@ A collection of role assignments for the managed tenant.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsRoleAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsRoleAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +82,7 @@ myRole
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsMyRole
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsMyRole
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +99,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +114,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -114,7 +130,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -131,9 +147,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsMyRole
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsMyRole
+
 ## NOTES
 
 ALIASES

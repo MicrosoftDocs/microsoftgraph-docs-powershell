@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality
 schema: 2.0.0
@@ -15,23 +15,21 @@ One media leg is between the CVI bot and Teams infrastructure, such as Teams con
 The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-beta)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### LogExpanded (Default)
 ```
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality [-AdditionalProperties <Hashtable>]
- [-Quality <IMicrosoftGraphTeleconferenceDeviceQuality>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Quality <IMicrosoftGraphTeleconferenceDeviceQuality>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Log
 ```
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
  -Body <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,9 +40,11 @@ One media leg is between the CVI bot and Teams infrastructure, such as Teams con
 The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -133,8 +133,8 @@ $params = @{
 }
 Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -142,7 +142,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: LogExpanded
 Aliases:
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Log
 Aliases:
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -189,7 +189,7 @@ teleconferenceDeviceQuality
 To construct, see NOTES section for QUALITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeleconferenceDeviceQuality
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeleconferenceDeviceQuality
 Parameter Sets: LogExpanded
 Aliases:
 
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,9 +237,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -320,4 +322,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParticipantId <String>]`: A unique identifier for a specific participant in a conference. The CVI partner needs to copy over Call.MyParticipantId to this property.
 
 ## RELATED LINKS
-[Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-beta)
+

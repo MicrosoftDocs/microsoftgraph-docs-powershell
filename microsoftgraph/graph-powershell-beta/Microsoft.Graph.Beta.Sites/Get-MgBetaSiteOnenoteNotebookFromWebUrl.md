@@ -1,41 +1,56 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistsubscriptioncount
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteonenotenotebookfromweburl
 schema: 2.0.0
-ms.prod: onenote
 ---
 
-# Get-MgBetaSiteListSubscriptionCount
+# Get-MgBetaSiteOnenoteNotebookFromWebUrl
 
 ## SYNOPSIS
-Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOnenoteNotebookFromWebUrl?view=graph-powershell-1.0)
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
-### Get (Default)
+### GetExpanded (Default)
 ```
-Get-MgBetaSiteListSubscriptionCount -ListId <String> -SiteId <String> [-Filter <String>] [-Search <String>]
- [<CommonParameters>]
+Get-MgBetaSiteOnenoteNotebookFromWebUrl -SiteId <String> [-AdditionalProperties <Hashtable>]
+ [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaSiteOnenoteNotebookFromWebUrl -SiteId <String>
+ -BodyParameter <IPathsUkf43DSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaSiteListSubscriptionCount -InputObject <ISitesIdentity> [-Filter <String>] [-Search <String>]
- [<CommonParameters>]
+Get-MgBetaSiteOnenoteNotebookFromWebUrl -InputObject <ISitesIdentity>
+ -BodyParameter <IPathsUkf43DSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgBetaSiteOnenoteNotebookFromWebUrl -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the number of the resource
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	WebUrl = "webUrl value"
@@ -43,20 +58,15 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaSiteOnenoteNotebookFromWebUrl Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
-### -Filter
-Filter items by property values
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.Collections.Hashtable
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,13 +76,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsUkf43DSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Get, GetViaIdentity
 Aliases:
 
 Required: True
@@ -82,12 +92,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ListId
-The unique identifier of list
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -SiteId
+The unique identifier of site
+
+```yaml
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -97,12 +123,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Search
-Search items by search phrases
+### -WebUrl
+.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -112,15 +138,31 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SiteId
-The unique identifier of site
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -132,10 +174,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsUkf43DSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCopyNotebookModel
+
 ## NOTES
 
 ALIASES
@@ -144,6 +190,10 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+`BODYPARAMETER <IPathsUkf43DSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[WebUrl <String>]`: 
 
 `INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
@@ -175,6 +225,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
@@ -195,4 +246,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOnenoteNotebookFromWebUrl?view=graph-powershell-1.0)
+

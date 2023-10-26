@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccess
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property conditionalAccess in identity
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,17 +18,33 @@ Update-MgIdentityConditionalAccess [-AdditionalProperties <Hashtable>]
  [-AuthenticationContextClassReferences <IMicrosoftGraphAuthenticationContextClassReference[]>]
  [-AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthRoot>] [-Id <String>]
  [-NamedLocations <IMicrosoftGraphNamedLocation[]>] [-Policies <IMicrosoftGraphConditionalAccessPolicy[]>]
- [-Templates <IMicrosoftGraphConditionalAccessTemplate[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Templates <IMicrosoftGraphConditionalAccessTemplate[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgIdentityConditionalAccess -BodyParameter <IMicrosoftGraphConditionalAccessRoot> [-WhatIf] [-Confirm]
+Update-MgIdentityConditionalAccess -BodyParameter <IMicrosoftGraphConditionalAccessRoot> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property conditionalAccess in identity
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -39,7 +52,7 @@ Update the navigation property conditionalAccess in identity
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -57,7 +70,7 @@ Returns a collection of the specified authentication context class references.
 To construct, see NOTES section for AUTHENTICATIONCONTEXTCLASSREFERENCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationContextClassReference[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -73,7 +86,7 @@ authenticationStrengthRoot
 To construct, see NOTES section for AUTHENTICATIONSTRENGTH properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationStrengthRoot
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthRoot
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -89,7 +102,7 @@ conditionalAccessRoot
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessRoot
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessRoot
 Parameter Sets: Update
 Aliases:
 
@@ -105,7 +118,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -123,7 +136,7 @@ Returns a collection of the specified named locations.
 To construct, see NOTES section for NAMEDLOCATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNamedLocation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNamedLocation[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -141,7 +154,7 @@ Returns a collection of the specified Conditional Access (CA) policies.
 To construct, see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -159,7 +172,7 @@ Returns a collection of the specified Conditional Access templates.
 To construct, see NOTES section for TEMPLATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessTemplate[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -174,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,9 +220,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessRoot
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessRoot
+
 ## NOTES
 
 ALIASES
@@ -223,7 +238,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
   - `[DisplayName <String>]`: The display name is the friendly name of the authenticationContextClassReference object. This value should be used to identify the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
-  - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false, it should not be shown in authentication context selection UX, or used to protect app resources. It will be shown and available for Conditional Access policy authoring. The default value is false.  Supports $filter (eq).
+  - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it's set to false, it shouldn't be shown in authentication context selection UX, or used to protect app resources. It's shown and available for Conditional Access policy authoring. The default value is false.  Supports $filter (eq).
 
 `AUTHENTICATIONSTRENGTH <IMicrosoftGraphAuthenticationStrengthRoot>`: authenticationStrengthRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -253,7 +268,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
     - `[DisplayName <String>]`: The display name is the friendly name of the authenticationContextClassReference object. This value should be used to identify the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
-    - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false, it should not be shown in authentication context selection UX, or used to protect app resources. It will be shown and available for Conditional Access policy authoring. The default value is false.  Supports $filter (eq).
+    - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it's set to false, it shouldn't be shown in authentication context selection UX, or used to protect app resources. It's shown and available for Conditional Access policy authoring. The default value is false.  Supports $filter (eq).
   - `[AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthRoot>]`: authenticationStrengthRoot
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -571,8 +586,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Scenarios <String>]`: templateScenarios
 
 ## RELATED LINKS
-[Update-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
 

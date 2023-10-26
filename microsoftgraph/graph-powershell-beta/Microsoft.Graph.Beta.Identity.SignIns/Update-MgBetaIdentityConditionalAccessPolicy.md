@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccesspolicy
 schema: 2.0.0
@@ -9,9 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a conditionalAccessPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -20,15 +18,21 @@ Update the properties of a conditionalAccessPolicy object.
 Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
- [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>]
+ [-ModifiedDateTime <DateTime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]
+ [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
- -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,23 +40,18 @@ Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
 Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
- [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>]
+ [-ModifiedDateTime <DateTime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]
+ [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a conditionalAccessPolicy object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Add sign in risk levels to an existing conditional access policy
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
   
@@ -65,11 +64,9 @@ $params = @{
     )
   }
 }
-
-Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '61c7530f-5c1d-44b2-a972-4ae658b7a9ac' -BodyParameter $params
 ```
 
-This example updates and existing access policy to add the sign in risk levels.
+Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '61c7530f-5c1d-44b2-a972-4ae658b7a9ac' -BodyParameter $params
 
 ## PARAMETERS
 
@@ -77,7 +74,7 @@ This example updates and existing access policy to add the sign in risk levels.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -93,7 +90,7 @@ conditionalAccessPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -108,8 +105,8 @@ Accept wildcard characters: False
 The unique identifier of conditionalAccessPolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -124,7 +121,7 @@ conditionalAccessConditionSet
 To construct, see NOTES section for CONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessConditionSet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessConditionSet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +138,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Readonly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +153,7 @@ Accept wildcard characters: False
 Not used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +168,7 @@ Accept wildcard characters: False
 Specifies a display name for the conditionalAccessPolicy object.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -187,7 +184,7 @@ conditionalAccessGrantControls
 To construct, see NOTES section for GRANTCONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessGrantControls
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessGrantControls
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +200,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -219,8 +216,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -236,7 +233,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Readonly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -252,7 +249,7 @@ conditionalAccessSessionControls
 To construct, see NOTES section for SESSIONCONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessSessionControls
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessSessionControls
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -267,7 +264,7 @@ Accept wildcard characters: False
 conditionalAccessPolicyState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -282,7 +279,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -298,7 +295,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -315,10 +312,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
+
 ## NOTES
 
 ALIASES
@@ -421,7 +421,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[ContinuousAccessEvaluation <IMicrosoftGraphContinuousAccessEvaluationSessionControl>]`: continuousAccessEvaluationSessionControl
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Mode <String>]`: continuousAccessEvaluationMode
-    - `[DisableResilienceDefaults <Boolean?>]`: Session control that determines whether it is acceptable for Azure AD to extend existing sessions based on information collected prior to an outage or not.
+    - `[DisableResilienceDefaults <Boolean?>]`: Session control that determines whether it's acceptable for Azure AD to extend existing sessions based on information collected prior to an outage or not.
     - `[PersistentBrowser <IMicrosoftGraphPersistentBrowserSessionControl>]`: persistentBrowserSessionControl
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IsEnabled <Boolean?>]`: Specifies whether the session control is enabled.
@@ -603,7 +603,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContinuousAccessEvaluation <IMicrosoftGraphContinuousAccessEvaluationSessionControl>]`: continuousAccessEvaluationSessionControl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Mode <String>]`: continuousAccessEvaluationMode
-  - `[DisableResilienceDefaults <Boolean?>]`: Session control that determines whether it is acceptable for Azure AD to extend existing sessions based on information collected prior to an outage or not.
+  - `[DisableResilienceDefaults <Boolean?>]`: Session control that determines whether it's acceptable for Azure AD to extend existing sessions based on information collected prior to an outage or not.
   - `[PersistentBrowser <IMicrosoftGraphPersistentBrowserSessionControl>]`: persistentBrowserSessionControl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsEnabled <Boolean?>]`: Specifies whether the session control is enabled.
@@ -620,7 +620,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <Int32?>]`: The number of days or hours.
 
 ## RELATED LINKS
-[Update-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
 
-## RELATED LINKS
-[Update-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)

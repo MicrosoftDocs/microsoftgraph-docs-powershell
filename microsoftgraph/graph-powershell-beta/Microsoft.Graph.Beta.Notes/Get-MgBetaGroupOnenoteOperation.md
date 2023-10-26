@@ -1,22 +1,19 @@
 ---
-external help file: Microsoft.Graph.Beta.Notes-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenoteoperation
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgBetaGroupOnenoteOperation
 
 ## SYNOPSIS
 Get the status of a long-running OneNote operation.
-This applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
+The status applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
   You can poll the Operation-Location endpoint until the status property returns completed or failed.
 If the status is completed, the resourceLocation property contains the resource endpoint URI.
 If the status is failed, the error and @api.diagnostics properties provide error information.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteOperation?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -34,12 +31,27 @@ Get-MgBetaGroupOnenoteOperation -InputObject <INotesIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Get the status of a long-running OneNote operation.
-This applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
+The status applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
   You can poll the Operation-Location endpoint until the status property returns completed or failed.
 If the status is completed, the resourceLocation property contains the resource endpoint URI.
 If the status is failed, the error and @api.diagnostics properties provide error information.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -47,7 +59,7 @@ If the status is failed, the error and @api.diagnostics properties provide error
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -62,7 +74,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -78,7 +90,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: INotesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -93,7 +105,7 @@ Accept wildcard characters: False
 The unique identifier of onenoteOperation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -108,7 +120,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -125,9 +137,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+
 ## NOTES
 
 ALIASES
@@ -149,4 +163,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteOperation?view=graph-powershell-1.0)
+

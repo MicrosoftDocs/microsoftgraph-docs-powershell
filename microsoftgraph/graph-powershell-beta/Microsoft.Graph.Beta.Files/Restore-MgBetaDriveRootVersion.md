@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadriverootversion
 schema: 2.0.0
@@ -10,27 +10,42 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRootVersion?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### Restore (Default)
 ```
-Restore-MgBetaDriveRootVersion -DriveId <String> -DriveItemVersionId <String> [-PassThru] [-WhatIf] [-Confirm]
+Restore-MgBetaDriveRootVersion -DriveId <String> -DriveItemVersionId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
-Restore-MgBetaDriveRootVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Restore-MgBetaDriveRootVersion -InputObject <IFilesIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38,7 +53,7 @@ This will create a new version with the contents of the previous version, but pr
 The unique identifier of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Restore
 Aliases:
 
@@ -53,7 +68,7 @@ Accept wildcard characters: False
 The unique identifier of driveItemVersion
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Restore
 Aliases:
 
@@ -69,7 +84,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 Parameter Sets: RestoreViaIdentity
 Aliases:
 
@@ -84,7 +99,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -99,7 +114,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -115,7 +130,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -132,9 +147,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -171,5 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRootVersion?view=graph-powershell-1.0)
 

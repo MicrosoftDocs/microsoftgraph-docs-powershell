@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationlandingpagedetail
 schema: 2.0.0
@@ -14,32 +14,48 @@ Create new navigation property to details for security
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaSecurityAttackSimulationLandingPageDetail -LandingPageId <String> [-AdditionalProperties <Hashtable>]
- [-Content <String>] [-Id <String>] [-IsDefaultLangauge] [-Language <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSecurityAttackSimulationLandingPageDetail -LandingPageId <String>
+ [-AdditionalProperties <Hashtable>] [-Content <String>] [-Id <String>] [-IsDefaultLangauge]
+ [-Language <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityAttackSimulationLandingPageDetail -LandingPageId <String>
- -BodyParameter <IMicrosoftGraphLandingPageDetail> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphLandingPageDetail> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphLandingPageDetail> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Content <String>] [-Id <String>] [-IsDefaultLangauge]
- [-Language <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphLandingPageDetail> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Language <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to details for security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -47,7 +63,7 @@ Create new navigation property to details for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -63,7 +79,7 @@ landingPageDetail
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLandingPageDetail
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLandingPageDetail
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -75,10 +91,10 @@ Accept wildcard characters: False
 ```
 
 ### -Content
-.
+Landing page detail content.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -94,7 +110,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -110,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -122,10 +138,10 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefaultLangauge
-.
+Indicates whether this language detail is default for the landing page.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -140,8 +156,8 @@ Accept wildcard characters: False
 The unique identifier of landingPage
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -152,10 +168,10 @@ Accept wildcard characters: False
 ```
 
 ### -Language
-.
+The content language for the landing page.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -170,7 +186,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -186,7 +202,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -203,10 +219,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLandingPageDetail
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLandingPageDetail
+
 ## NOTES
 
 ALIASES
@@ -219,9 +238,9 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphLandingPageDetail>`: landingPageDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Content <String>]`: 
-  - `[IsDefaultLangauge <Boolean?>]`: 
-  - `[Language <String>]`: 
+  - `[Content <String>]`: Landing page detail content.
+  - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language detail is default for the landing page.
+  - `[Language <String>]`: The content language for the landing page.
 
 `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
@@ -259,6 +278,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker

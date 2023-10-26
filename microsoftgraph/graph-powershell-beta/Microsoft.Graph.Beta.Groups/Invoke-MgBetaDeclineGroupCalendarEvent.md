@@ -1,44 +1,64 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckoutgroupdriveroot
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadeclinegroupcalendarevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
-# Invoke-MgBetaCheckoutGroupDriveRoot
+# Invoke-MgBetaDeclineGroupCalendarEvent
 
 ## SYNOPSIS
-Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDeclineGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDeclineGroupCalendarEvent?view=graph-powershell-1.0)
+Decline invitation to the specified event in a user calendar.
+If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
-### Checkout (Default)
+### DeclineExpanded (Default)
 ```
-Invoke-MgBetaCheckoutGroupDriveRoot -DriveId <String> -GroupId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgBetaDeclineGroupCalendarEvent -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### CheckoutViaIdentity
+### Decline
 ```
-Invoke-MgBetaCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgBetaDeclineGroupCalendarEvent -EventId <String> -GroupId <String>
+ -BodyParameter <IPathsVpdpe0GroupsGroupIdCalendarEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### DeclineViaIdentity
+```
+Invoke-MgBetaDeclineGroupCalendarEvent -InputObject <IGroupsIdentity>
+ -BodyParameter <IPathsVpdpe0GroupsGroupIdCalendarEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### DeclineViaIdentityExpanded
+```
+Invoke-MgBetaDeclineGroupCalendarEvent -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+Decline invitation to the specified event in a user calendar.
+If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
-	Comment = "I won't be able to make this week. How about next week?"
+	Comment = "I won't be able to make this week.
+How about next week?"
 	SendResponse = $true
 	ProposedNewTime = @{
 		Start = @{
@@ -54,20 +74,61 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-```
-This example shows how to use the Invoke-MgBetaDeclineGroupCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
-### -DriveId
-The unique identifier of drive
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: String
-Parameter Sets: Checkout
+Type: System.Collections.Hashtable
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsVpdpe0GroupsGroupIdCalendarEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Decline, DeclineViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Comment
+.
+
+```yaml
+Type: System.String
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EventId
+The unique identifier of event
+
+```yaml
+Type: System.String
+Parameter Sets: Decline, DeclineExpanded
 Aliases:
 
 Required: True
@@ -81,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: Checkout
+Type: System.String
+Parameter Sets: Decline, DeclineExpanded
 Aliases:
 
 Required: True
@@ -97,8 +158,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CheckoutViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: DeclineViaIdentity, DeclineViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -112,8 +173,39 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProposedNewTime
+timeSlot
+To construct, see NOTES section for PROPOSEDNEWTIME properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeSlot
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SendResponse
+.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -127,7 +219,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -143,7 +235,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -160,9 +252,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsVpdpe0GroupsGroupIdCalendarEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -171,6 +267,18 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+`BODYPARAMETER <IPathsVpdpe0GroupsGroupIdCalendarEventsEventIdMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Comment <String>]`: 
+  - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+    - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[SendResponse <Boolean?>]`: 
 
 `INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -215,5 +323,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: The unique identifier of user
 
+`PROPOSEDNEWTIME <IMicrosoftGraphTimeSlot>`: timeSlot
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+  - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+
 ## RELATED LINKS
-[Invoke-MgDeclineGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDeclineGroupCalendarEvent?view=graph-powershell-1.0)
+

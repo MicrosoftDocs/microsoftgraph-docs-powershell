@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2
 schema: 2.0.0
@@ -9,9 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of an alert object in an organization based on the specified alert id property.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -26,14 +24,20 @@ Update-MgSecurityAlertV2 -AlertId <String> [-ActorDisplayName <String>] [-Additi
  [-LastActivityDateTime <DateTime>] [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>]
  [-ProviderAlertId <String>] [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>]
  [-ServiceSource <String>] [-Severity <String>] [-Status <String>] [-TenantId <String>]
- [-ThreatDisplayName <String>] [-ThreatFamilyName <String>] [-Title <String>] [-WhatIf] [-Confirm]
+ [-ThreatDisplayName <String>] [-ThreatFamilyName <String>] [-Title <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityAlertV2 -AlertId <String> -BodyParameter <IMicrosoftGraphSecurityAlert> [-WhatIf] [-Confirm]
+Update-MgSecurityAlertV2 -AlertId <String> -BodyParameter <IMicrosoftGraphSecurityAlert> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecurityAlert>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,17 +52,28 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ActorDisplayName <St
  [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProviderAlertId <String>]
  [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>] [-ServiceSource <String>] [-Severity <String>]
  [-Status <String>] [-TenantId <String>] [-ThreatDisplayName <String>] [-ThreatFamilyName <String>]
- [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecurityAlert>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of an alert object in an organization based on the specified alert id property.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -66,7 +81,7 @@ Update the properties of an alert object in an organization based on the specifi
 The adversary or activity group that is associated with this alert.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +96,7 @@ Accept wildcard characters: False
 dictionary
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +111,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -111,8 +126,8 @@ Accept wildcard characters: False
 The unique identifier of alert
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -126,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +156,7 @@ Accept wildcard characters: False
 URL for the alert page in the Microsoft 365 Defender portal.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +171,7 @@ Accept wildcard characters: False
 Owner of the alert, or null if no owner is assigned.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +187,7 @@ alert
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlert
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlert
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -188,7 +203,7 @@ The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +218,7 @@ Accept wildcard characters: False
 alertClassification
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -219,7 +234,7 @@ Array of comments created by the Security Operations (SecOps) team during the al
 To construct, see NOTES section for COMMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlertComment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -234,7 +249,7 @@ Accept wildcard characters: False
 Time when Microsoft 365 Defender created the alert.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -249,7 +264,7 @@ Accept wildcard characters: False
 String value describing each alert.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -264,7 +279,7 @@ Accept wildcard characters: False
 detectionSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -279,7 +294,7 @@ Accept wildcard characters: False
 The ID of the detector that triggered the alert.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -294,7 +309,7 @@ Accept wildcard characters: False
 alertDetermination
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -310,7 +325,7 @@ Collection of evidence related to the alert.
 To construct, see NOTES section for EVIDENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlertEvidence[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlertEvidence[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -325,7 +340,7 @@ Accept wildcard characters: False
 The earliest activity associated with the alert.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -341,7 +356,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -356,7 +371,7 @@ Accept wildcard characters: False
 Unique identifier to represent the incident this alert resource is associated with.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -371,7 +386,7 @@ Accept wildcard characters: False
 URL for the incident page in the Microsoft 365 Defender portal.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -387,8 +402,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -402,7 +417,7 @@ Accept wildcard characters: False
 The oldest activity associated with the alert.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -417,7 +432,7 @@ Accept wildcard characters: False
 Time when the alert was last updated at Microsoft 365 Defender.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -432,7 +447,7 @@ Accept wildcard characters: False
 The attack techniques, as aligned with the MITRE ATT&CK framework.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -447,7 +462,7 @@ Accept wildcard characters: False
 The ID of the alert as it appears in the security provider product that generated the alert.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -462,7 +477,7 @@ Accept wildcard characters: False
 Recommended response and remediation actions to take in the event this alert was generated.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -477,7 +492,7 @@ Accept wildcard characters: False
 Time when the alert was resolved.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -492,7 +507,7 @@ Accept wildcard characters: False
 serviceSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -507,7 +522,7 @@ Accept wildcard characters: False
 alertSeverity
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -522,7 +537,7 @@ Accept wildcard characters: False
 alertStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -537,7 +552,7 @@ Accept wildcard characters: False
 The Azure Active Directory tenant the alert was created in.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -552,7 +567,7 @@ Accept wildcard characters: False
 The threat associated with this alert.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -567,7 +582,7 @@ Accept wildcard characters: False
 Threat family associated with this alert.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -582,7 +597,7 @@ Accept wildcard characters: False
 Brief identifying string value describing the alert.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -597,7 +612,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -613,7 +628,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -630,10 +645,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlert
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlert
+
 ## NOTES
 
 ALIASES
@@ -668,7 +686,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DetailedRoles <String[]>]`: Detailed description of the entity role/s in an alert. Values are free-form.
     - `[RemediationStatus <String>]`: evidenceRemediationStatus
     - `[RemediationStatusDetails <String>]`: Details about the remediation status.
-    - `[Roles <String[]>]`: The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role Attacker.
+    - `[Roles <String[]>]`: The role/s that an evidence entity represents in an alert, for example, an IP address that is associated with an attacker has the evidence role Attacker.
     - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.
     - `[Verdict <String>]`: evidenceVerdict
   - `[FirstActivityDateTime <DateTime?>]`: The earliest activity associated with the alert.
@@ -698,7 +716,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DetailedRoles <String[]>]`: Detailed description of the entity role/s in an alert. Values are free-form.
   - `[RemediationStatus <String>]`: evidenceRemediationStatus
   - `[RemediationStatusDetails <String>]`: Details about the remediation status.
-  - `[Roles <String[]>]`: The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role Attacker.
+  - `[Roles <String[]>]`: The role/s that an evidence entity represents in an alert, for example, an IP address that is associated with an attacker has the evidence role Attacker.
   - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance, for example, to denote a group of devices, high-value assets, etc.
   - `[Verdict <String>]`: evidenceVerdict
 
@@ -706,6 +724,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
@@ -716,14 +736,22 @@ To create the parameters described below, construct a hash table containing the 
   - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
   - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
   - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
+  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
   - `[IncidentId <String>]`: The unique identifier of incident
   - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
   - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
+  - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[LoginPageId <String>]`: The unique identifier of loginPage
   - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+  - `[PayloadId <String>]`: The unique identifier of payload
   - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
   - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
   - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
@@ -732,11 +760,18 @@ To create the parameters described below, construct a hash table containing the 
   - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
+  - `[SubdomainId <String>]`: The unique identifier of subdomain
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TrainingId <String>]`: The unique identifier of training
+  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 

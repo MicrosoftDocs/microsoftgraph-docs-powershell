@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamphotocontent
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get media content for the navigation property photo from teams
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPhotoContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,17 +26,13 @@ Get-MgTeamPhotoContent -InputObject <ITeamsIdentity> -OutFile <String> [-PassThr
 Get media content for the navigation property photo from teams
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgTeamPhotoContent -TeamId $teamId -OutFile $outFileId
-
-```
-This example shows how to use the Get-MgTeamPhotoContent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -48,7 +41,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -63,7 +56,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -78,7 +71,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -93,7 +86,7 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -110,9 +103,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -157,4 +152,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPhotoContent?view=graph-powershell-beta)
+

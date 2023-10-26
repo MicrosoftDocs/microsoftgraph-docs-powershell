@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelconfiguration
 schema: 2.0.0
@@ -19,17 +19,33 @@ New-MgBetaDeviceManagementMicrosoftTunnelConfiguration [-AdditionalProperties <H
  [-DisableUdpConnections] [-DisplayName <String>] [-DnsServers <String[]>] [-Id <String>]
  [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>] [-Network <String>] [-RoleScopeTagIds <String[]>]
  [-RouteExcludes <String[]>] [-RouteIncludes <String[]>] [-RoutesExclude <String[]>]
- [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMicrosoftTunnelConfiguration
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to microsoftTunnelConfigurations for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +53,7 @@ Create new navigation property to microsoftTunnelConfigurations for deviceManage
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +69,7 @@ Additional settings that may be applied to the server
 To construct, see NOTES section for ADVANCEDSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +85,7 @@ Entity that represents a collection of Microsoft Tunnel settings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMicrosoftTunnelConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +100,7 @@ Accept wildcard characters: False
 The Default Domain appendix that will be used by the clients
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +115,7 @@ Accept wildcard characters: False
 The configuration's description (optional)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +130,7 @@ Accept wildcard characters: False
 When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to transfer data.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +146,7 @@ The display name for the server configuration.
 This property is required when a server is created.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +161,7 @@ Accept wildcard characters: False
 The DNS servers that will be used by the clients
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +177,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +192,7 @@ Accept wildcard characters: False
 When the configuration was last updated
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +207,7 @@ Accept wildcard characters: False
 The port that both TCP and UPD will listen over on the server
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +222,7 @@ Accept wildcard characters: False
 The subnet that will be used to allocate virtual address for the clients
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,7 +237,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +252,7 @@ Accept wildcard characters: False
 Subsets of the routes that will not be routed by the server
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +267,7 @@ Accept wildcard characters: False
 The routes that will be routed by the server
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -267,7 +283,7 @@ Subsets of the routes that will not be routed by the server.
 This property is going to be deprecated with the option of using the new property, 'RouteExcludes'.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -283,7 +299,7 @@ The routes that will be routed by the server.
 This property is going to be deprecated with the option of using the new property, 'RouteIncludes'.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -298,7 +314,7 @@ Accept wildcard characters: False
 The domains that will be resolved using the provided dns servers
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -313,7 +329,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -329,7 +345,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -346,9 +362,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
+
 ## NOTES
 
 ALIASES

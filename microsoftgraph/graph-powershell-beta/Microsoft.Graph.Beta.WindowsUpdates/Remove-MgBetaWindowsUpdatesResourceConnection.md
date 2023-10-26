@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesresourceconnection
 schema: 2.0.0
@@ -9,39 +9,43 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a resourceConnection object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgBetaWindowsUpdatesResourceConnection -ResourceConnectionId <String> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete a resourceConnection object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaWindowsUpdatesResourceConnection Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
 ```
-This example shows how to use the Remove-MgBetaWindowsUpdatesResourceConnection Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Remove-MgBetaWindowsUpdatesResourceConnection Cmdlet
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
 ```
-This example shows how to use the Remove-MgBetaWindowsUpdatesResourceConnection Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -49,7 +53,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -65,7 +69,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IWindowsUpdatesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -80,7 +84,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -95,7 +99,7 @@ Accept wildcard characters: False
 The unique identifier of resourceConnection
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -110,7 +114,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -126,7 +130,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -143,9 +147,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -166,3 +172,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+

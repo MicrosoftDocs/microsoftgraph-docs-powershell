@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordsession
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to sessions for communications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallRecordSession?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,13 +18,19 @@ New-MgCommunicationCallRecordSession -CallRecordId <String> [-AdditionalProperti
  [-Callee <IMicrosoftGraphCallRecordsEndpoint>] [-Caller <IMicrosoftGraphCallRecordsEndpoint>]
  [-EndDateTime <DateTime>] [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest]
  [-Modalities <String[]>] [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgCommunicationCallRecordSession -CallRecordId <String> -BodyParameter <IMicrosoftGraphCallRecordsSession>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphCallRecordsSession> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,42 +39,28 @@ New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Callee <IMicrosoftGraphCallRecordsEndpoint>]
  [-Caller <IMicrosoftGraphCallRecordsEndpoint>] [-EndDateTime <DateTime>]
  [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-IsTest] [-Modalities <String[]>]
- [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphCallRecordsSession> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to sessions for communications
 
 ## EXAMPLES
-### Example 1: Get session list
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId
-```
-This example shows how to use the New-MgCommunicationCallRecordSession Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get session list with segments
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
-```
-This example shows how to use the New-MgCommunicationCallRecordSession Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -79,7 +68,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +84,7 @@ session
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRecordsSession
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -111,7 +100,7 @@ endpoint
 To construct, see NOTES section for CALLEE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRecordsEndpoint
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsEndpoint
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +116,7 @@ endpoint
 To construct, see NOTES section for CALLER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRecordsEndpoint
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsEndpoint
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,8 +131,8 @@ Accept wildcard characters: False
 The unique identifier of callRecord
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -159,7 +148,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +164,7 @@ failureInfo
 To construct, see NOTES section for FAILUREINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRecordsFailureInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsFailureInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +180,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -207,8 +196,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -222,7 +211,7 @@ Accept wildcard characters: False
 Specifies whether the session is a test.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -238,7 +227,7 @@ List of modalities present in the session.
 Possible values are: unknown, audio, video, videoBasedScreenSharing, data, screenSharing, unknownFutureValue.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +245,7 @@ Nullable.
 To construct, see NOTES section for SEGMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRecordsSegment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSegment[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +262,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -288,7 +277,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -304,7 +293,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -321,10 +310,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
+
 ## NOTES
 
 ALIASES
@@ -390,7 +382,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[DnsSuffix <String>]`: DNS suffix associated with the network adapter of the media endpoint.
         - `[IPAddress <String>]`: IP address of the media endpoint.
         - `[LinkSpeed <Int64?>]`: Link speed in bits per second reported by the network adapter used by the media endpoint.
-        - `[MacAddress <String>]`: The media access control (MAC) address of the media endpoint's network device.
+        - `[MacAddress <String>]`: The media access control (MAC) address of the media endpoint's network device. This value may be missing or shown as 02:00:00:00:00:00 due to operating system privacy policies.
         - `[NetworkTransportProtocol <String>]`: networkTransportProtocol
         - `[Port <Int32?>]`: Network port number used by media endpoint.
         - `[ReceivedQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.
@@ -429,7 +421,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[AverageVideoFrameLossPercentage <Single?>]`: Average percentage of video frames lost as displayed to the user.
         - `[AverageVideoFrameRate <Single?>]`: Average frames per second received for a video stream, computed over the duration of the session.
         - `[AverageVideoPacketLossRate <Single?>]`: Average fraction of packets lost, as specified in [RFC 3550][], computed over the duration of the session.
-        - `[EndDateTime <DateTime?>]`: UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+        - `[EndDateTime <DateTime?>]`: UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. This field is only available for streams that use the SIP protocol.
         - `[IsAudioForwardErrorCorrectionUsed <Boolean?>]`: Indicates whether the forward error correction (FEC) was used at some point during the session. The default value is null.
         - `[LowFrameRateRatio <Single?>]`: Fraction of the call where frame rate is less than 7.5 frames per second.
         - `[LowVideoProcessingCapabilityRatio <Single?>]`: Fraction of the call that the client is running less than 70% expected video processing capability.
@@ -441,7 +433,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[PacketUtilization <Int64?>]`: Packet count for the stream.
         - `[PostForwardErrorCorrectionPacketLossRate <Single?>]`: Packet loss rate after FEC has been applied aggregated across all video streams and codecs.
         - `[RmsFreezeDuration <TimeSpan?>]`: Average duration of the received freezing time in the video stream represented in root mean square.
-        - `[StartDateTime <DateTime?>]`: UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+        - `[StartDateTime <DateTime?>]`: UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. This field is only available for streams that use the SIP protocol.
         - `[StreamDirection <String>]`: mediaStreamDirection
         - `[StreamId <String>]`: Unique identifier for the stream.
         - `[VideoCodec <String>]`: videoCodec
@@ -473,6 +465,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
@@ -529,7 +522,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[DnsSuffix <String>]`: DNS suffix associated with the network adapter of the media endpoint.
       - `[IPAddress <String>]`: IP address of the media endpoint.
       - `[LinkSpeed <Int64?>]`: Link speed in bits per second reported by the network adapter used by the media endpoint.
-      - `[MacAddress <String>]`: The media access control (MAC) address of the media endpoint's network device.
+      - `[MacAddress <String>]`: The media access control (MAC) address of the media endpoint's network device. This value may be missing or shown as 02:00:00:00:00:00 due to operating system privacy policies.
       - `[NetworkTransportProtocol <String>]`: networkTransportProtocol
       - `[Port <Int32?>]`: Network port number used by media endpoint.
       - `[ReceivedQualityEventRatio <Single?>]`: Fraction of the call that the media endpoint detected the network was causing poor quality of the audio received.
@@ -568,7 +561,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AverageVideoFrameLossPercentage <Single?>]`: Average percentage of video frames lost as displayed to the user.
       - `[AverageVideoFrameRate <Single?>]`: Average frames per second received for a video stream, computed over the duration of the session.
       - `[AverageVideoPacketLossRate <Single?>]`: Average fraction of packets lost, as specified in [RFC 3550][], computed over the duration of the session.
-      - `[EndDateTime <DateTime?>]`: UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[EndDateTime <DateTime?>]`: UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. This field is only available for streams that use the SIP protocol.
       - `[IsAudioForwardErrorCorrectionUsed <Boolean?>]`: Indicates whether the forward error correction (FEC) was used at some point during the session. The default value is null.
       - `[LowFrameRateRatio <Single?>]`: Fraction of the call where frame rate is less than 7.5 frames per second.
       - `[LowVideoProcessingCapabilityRatio <Single?>]`: Fraction of the call that the client is running less than 70% expected video processing capability.
@@ -580,7 +573,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[PacketUtilization <Int64?>]`: Packet count for the stream.
       - `[PostForwardErrorCorrectionPacketLossRate <Single?>]`: Packet loss rate after FEC has been applied aggregated across all video streams and codecs.
       - `[RmsFreezeDuration <TimeSpan?>]`: Average duration of the received freezing time in the video stream represented in root mean square.
-      - `[StartDateTime <DateTime?>]`: UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[StartDateTime <DateTime?>]`: UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. This field is only available for streams that use the SIP protocol.
       - `[StreamDirection <String>]`: mediaStreamDirection
       - `[StreamId <String>]`: Unique identifier for the stream.
       - `[VideoCodec <String>]`: videoCodec
@@ -588,7 +581,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
-[New-MgBetaCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallRecordSession?view=graph-powershell-beta)
 
-## RELATED LINKS
-[New-MgBetaCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallRecordSession?view=graph-powershell-beta)

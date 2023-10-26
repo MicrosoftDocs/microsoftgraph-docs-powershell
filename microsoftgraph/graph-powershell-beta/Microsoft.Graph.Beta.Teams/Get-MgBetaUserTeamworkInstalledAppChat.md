@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledappchat
 schema: 2.0.0
@@ -9,9 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the chat of the specified user and Teams app.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledAppChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledAppChat?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,19 +27,16 @@ Get-MgBetaUserTeamworkInstalledAppChat -InputObject <ITeamsIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Retrieve the chat of the specified user and Teams app.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Teams
+```
 
 Get-MgBetaUserTeamworkInstalledAppChat -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
-
-```
-This example shows how to use the Get-MgBetaUserTeamworkInstalledAppChat Cmdlet.
-
 
 ## PARAMETERS
 
@@ -49,7 +44,7 @@ This example shows how to use the Get-MgBetaUserTeamworkInstalledAppChat Cmdlet.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -65,7 +60,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -80,7 +75,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -95,7 +90,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -110,7 +105,7 @@ Accept wildcard characters: False
 The unique identifier of userScopeTeamsAppInstallation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -127,9 +122,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChat
+
 ## NOTES
 
 ALIASES
@@ -180,4 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgUserTeamworkInstalledAppChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledAppChat?view=graph-powershell-1.0)
+

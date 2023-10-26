@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgkeepcommunicationcallalive
 schema: 2.0.0
@@ -15,21 +15,19 @@ We recommend that you send a request in shorter time intervals (every 15 minutes
 Make sure that these requests are successful to prevent the call from timing out and ending.
 Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaKeepCommunicationCallAlive?view=graph-powershell-beta)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### Keep (Default)
 ```
-Invoke-MgKeepCommunicationCallAlive -CallId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgKeepCommunicationCallAlive -CallId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### KeepViaIdentity
 ```
-Invoke-MgKeepCommunicationCallAlive -InputObject <ICloudCommunicationsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgKeepCommunicationCallAlive -InputObject <ICloudCommunicationsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,19 +38,16 @@ We recommend that you send a request in shorter time intervals (every 15 minutes
 Make sure that these requests are successful to prevent the call from timing out and ending.
 Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 Invoke-MgKeepCommunicationCallAlive -CallId $callId
-
-```
-This example shows how to use the Invoke-MgKeepCommunicationCallAlive Cmdlet.
-
 
 ## PARAMETERS
 
@@ -60,7 +55,7 @@ This example shows how to use the Invoke-MgKeepCommunicationCallAlive Cmdlet.
 The unique identifier of call
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Keep
 Aliases:
 
@@ -76,7 +71,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 Parameter Sets: KeepViaIdentity
 Aliases:
 
@@ -91,7 +86,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -106,7 +101,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -122,7 +117,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -139,9 +134,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -156,6 +153,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
@@ -166,4 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaKeepCommunicationCallAlive?view=graph-powershell-beta)
+

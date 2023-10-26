@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedge
 schema: 2.0.0
@@ -10,24 +10,37 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property edge in admin
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdge?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAdminEdge [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InternetExplorerMode <IMicrosoftGraphInternetExplorerMode>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InternetExplorerMode <IMicrosoftGraphInternetExplorerMode>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property edge in admin
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,7 +48,7 @@ Update the navigation property edge in admin
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +64,7 @@ edge
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdge
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdge
 Parameter Sets: Update
 Aliases:
 
@@ -67,7 +80,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +96,7 @@ internetExplorerMode
 To construct, see NOTES section for INTERNETEXPLORERMODE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInternetExplorerMode
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInternetExplorerMode
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -98,7 +111,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -114,7 +127,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -131,9 +144,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdge
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdge
+
 ## NOTES
 
 ALIASES
@@ -157,8 +172,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[LastModifiedDateTime <DateTime?>]`: The date and time when the site list was last modified.
@@ -221,8 +236,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[LastModifiedDateTime <DateTime?>]`: The date and time when the site list was last modified.
@@ -275,8 +290,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Status <BrowserSiteListStatus?>]`: browserSiteListStatus
 
 ## RELATED LINKS
-[Update-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdge?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Update-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdge?view=graph-powershell-1.0)
 

@@ -1,18 +1,15 @@
 ---
-external help file: Microsoft.Graph.Beta.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveroot
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Get-MgBetaDriveRoot
 
 ## SYNOPSIS
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRoot?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,19 +26,16 @@ Get-MgBetaDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaDriveRoot -DriveId $driveId
-```
-This example shows how to use the Get-MgBetaDriveRoot Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -49,7 +43,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -64,7 +58,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -80,7 +74,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -95,7 +89,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -112,9 +106,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
+
 ## NOTES
 
 ALIASES
@@ -151,4 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRoot?view=graph-powershell-1.0)
+

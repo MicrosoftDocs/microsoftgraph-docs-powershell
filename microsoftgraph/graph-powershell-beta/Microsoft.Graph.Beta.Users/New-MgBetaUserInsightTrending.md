@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserinsighttrending
 schema: 2.0.0
@@ -17,14 +17,20 @@ Create new navigation property to trending for users
 New-MgBetaUserInsightTrending -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Resource <IMicrosoftGraphEntity>]
  [-ResourceReference <IMicrosoftGraphResourceReference>]
- [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Weight <Double>] [-WhatIf] [-Confirm]
+ [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Weight <Double>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserInsightTrending -UserId <String> -BodyParameter <IMicrosoftGraphTrending> [-WhatIf] [-Confirm]
+New-MgBetaUserInsightTrending -UserId <String> -BodyParameter <IMicrosoftGraphTrending> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaUserInsightTrending -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphTrending>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -32,18 +38,28 @@ New-MgBetaUserInsightTrending -UserId <String> -BodyParameter <IMicrosoftGraphTr
 New-MgBetaUserInsightTrending -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LastModifiedDateTime <DateTime>] [-Resource <IMicrosoftGraphEntity>]
  [-ResourceReference <IMicrosoftGraphResourceReference>]
- [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Weight <Double>] [-WhatIf] [-Confirm]
+ [-ResourceVisualization <IMicrosoftGraphResourceVisualization>] [-Weight <Double>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaUserInsightTrending -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphTrending> [-WhatIf]
- [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to trending for users
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Create new navigation property to trending for users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ trending
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrending
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrending
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -83,7 +99,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,8 +115,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -114,7 +130,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +146,7 @@ entity
 To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEntity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEntity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +162,7 @@ resourceReference
 To construct, see NOTES section for RESOURCEREFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceReference
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceReference
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +178,7 @@ resourceVisualization
 To construct, see NOTES section for RESOURCEVISUALIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceVisualization
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceVisualization
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,8 +193,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -194,7 +210,7 @@ The larger the number, the more the document is currently trending around the us
 Returned documents are sorted by this value.
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -209,7 +225,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -225,7 +241,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -242,10 +258,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrending
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrending
+
 ## NOTES
 
 ALIASES
@@ -272,11 +291,11 @@ To create the parameters described below, construct a hash table containing the 
     - `[ContainerDisplayName <String>]`: A string describing where the item is stored. For example, the name of a SharePoint site or the user name identifying the owner of the OneDrive storing the item.
     - `[ContainerType <String>]`: Can be used for filtering by the type of container in which the file is stored. Such as Site or OneDriveBusiness.
     - `[ContainerWebUrl <String>]`: A path leading to the folder in which the item is stored.
-    - `[MediaType <String>]`: The item's media type. Can be used for filtering for a specific type of file based on supported IANA Media Mime Types. Note that not all Media Mime Types are supported.
+    - `[MediaType <String>]`: The item's media type. Can be used for filtering for a specific type of file based on supported IANA Media Mime Types. Not all Media Mime Types are supported.
     - `[PreviewImageUrl <String>]`: A URL leading to the preview image for the item.
     - `[PreviewText <String>]`: A preview text for the item.
     - `[Title <String>]`: The item's title text.
-    - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types.
+    - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See the Type property values section, for supported types.
   - `[Weight <Double?>]`: Value indicating how much the document is currently trending. The larger the number, the more the document is currently trending around the user (the more relevant it is). Returned documents are sorted by this value.
 
 `INPUTOBJECT <IUsersIdentity>`: Identity Parameter
@@ -318,11 +337,11 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContainerDisplayName <String>]`: A string describing where the item is stored. For example, the name of a SharePoint site or the user name identifying the owner of the OneDrive storing the item.
   - `[ContainerType <String>]`: Can be used for filtering by the type of container in which the file is stored. Such as Site or OneDriveBusiness.
   - `[ContainerWebUrl <String>]`: A path leading to the folder in which the item is stored.
-  - `[MediaType <String>]`: The item's media type. Can be used for filtering for a specific type of file based on supported IANA Media Mime Types. Note that not all Media Mime Types are supported.
+  - `[MediaType <String>]`: The item's media type. Can be used for filtering for a specific type of file based on supported IANA Media Mime Types. Not all Media Mime Types are supported.
   - `[PreviewImageUrl <String>]`: A URL leading to the preview image for the item.
   - `[PreviewText <String>]`: A preview text for the item.
   - `[Title <String>]`: The item's title text.
-  - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types.
+  - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See the Type property values section, for supported types.
 
 ## RELATED LINKS
 

@@ -1,47 +1,41 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadomain
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Confirm-MgBetaDomain
 
 ## SYNOPSIS
 Validates the ownership of the domain.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDomain?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### Verify (Default)
 ```
-Confirm-MgBetaDomain -DomainId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaDomain -DomainId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### VerifyViaIdentity
 ```
-Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf] [-Confirm]
+Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Validates the ownership of the domain.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Confirm-MgBetaDomain -DomainId $domainId
-
-```
-This example shows how to use the Confirm-MgBetaDomain Cmdlet.
-
 
 ## PARAMETERS
 
@@ -49,7 +43,7 @@ This example shows how to use the Confirm-MgBetaDomain Cmdlet.
 The unique identifier of domain
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Verify
 Aliases:
 
@@ -65,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: VerifyViaIdentity
 Aliases:
 
@@ -80,7 +74,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -96,7 +90,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -113,9 +107,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomain
+
 ## NOTES
 
 ALIASES
@@ -170,4 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDomain?view=graph-powershell-1.0)
+

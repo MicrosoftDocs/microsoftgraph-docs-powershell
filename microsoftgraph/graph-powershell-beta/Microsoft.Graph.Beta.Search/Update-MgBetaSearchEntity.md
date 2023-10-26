@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchentity
 schema: 2.0.0
@@ -10,26 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Update search
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSearchEntity](/powershell/module/Microsoft.Graph.Search/Update-MgSearchEntity?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSearchEntity [-Acronyms <IMicrosoftGraphSearchAcronym[]>] [-AdditionalProperties <Hashtable>]
- [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity> [-WhatIf] [-Confirm]
+Update-MgBetaSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update search
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38,7 +51,7 @@ Administrative answer in Microsoft Search results to define common acronyms in a
 To construct, see NOTES section for ACRONYMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchAcronym[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -69,7 +82,7 @@ searchEntity
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchEntity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchEntity
 Parameter Sets: Update
 Aliases:
 
@@ -85,7 +98,7 @@ Administrative answer in Microsoft Search results for common search queries in a
 To construct, see NOTES section for BOOKMARKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchBookmark[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchBookmark[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -101,7 +114,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -117,7 +130,7 @@ Administrative answer in Microsoft Search results which provide answers for spec
 To construct, see NOTES section for QNAS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchQna[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -132,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -148,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -165,9 +178,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchEntity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchEntity
+
 ## NOTES
 
 ALIASES
@@ -189,7 +204,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
-  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
+  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they'll go to this URL.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState
@@ -209,7 +224,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
       - `[User <IMicrosoftGraphSearchIdentity>]`: identity
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
-    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
+    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they'll go to this URL.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[StandsFor <String>]`: What the acronym stands for.
     - `[State <String>]`: answerState
@@ -218,7 +233,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DisplayName <String>]`: Search answer name displayed in search results.
     - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
-    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
+    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they'll go to this URL.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
     - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
@@ -245,17 +260,17 @@ To create the parameters described below, construct a hash table containing the 
     - `[DisplayName <String>]`: Search answer name displayed in search results.
     - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
-    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
+    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they'll go to this URL.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna will stop to appear as a search result. Set as null for always available.
-    - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna will start to appear as a search result. Set as null for always available.
+    - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna stops to appear as a search result. Set as null for always available.
+    - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna starts to appear as a search result. Set as null for always available.
     - `[GroupIds <String[]>]`: List of security groups able to view this qna.
-    - `[IsSuggested <Boolean?>]`: True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.
+    - `[IsSuggested <Boolean?>]`: True if a user or Microsoft suggested this qna to the admin. Read-only.
     - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
     - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this QnA can be viewed in. Each language tag value follows the pattern {language}-{region}. As an example, en-us is English as used in the United States. For the list of possible values, see supported language tags.
     - `[Platforms <DevicePlatformType[]>]`: List of devices and operating systems able to view this qna. Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
     - `[State <String>]`: answerState
-    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.
 
 `BOOKMARKS <IMicrosoftGraphSearchBookmark[]>`: Administrative answer in Microsoft Search results for common search queries in an organization.
   - `[Description <String>]`: Search answer description shown on search results page.
@@ -269,7 +284,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
-  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
+  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they'll go to this URL.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
   - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
@@ -304,12 +319,12 @@ To create the parameters described below, construct a hash table containing the 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
-  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
+  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they'll go to this URL.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna will stop to appear as a search result. Set as null for always available.
-  - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna will start to appear as a search result. Set as null for always available.
+  - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna stops to appear as a search result. Set as null for always available.
+  - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna starts to appear as a search result. Set as null for always available.
   - `[GroupIds <String[]>]`: List of security groups able to view this qna.
-  - `[IsSuggested <Boolean?>]`: True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.
+  - `[IsSuggested <Boolean?>]`: True if a user or Microsoft suggested this qna to the admin. Read-only.
   - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
@@ -318,7 +333,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this QnA can be viewed in. Each language tag value follows the pattern {language}-{region}. As an example, en-us is English as used in the United States. For the list of possible values, see supported language tags.
   - `[Platforms <DevicePlatformType[]>]`: List of devices and operating systems able to view this qna. Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
   - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings apply to all variations.
     - `[Description <String>]`: Answer variation description shown on search results page.
     - `[DisplayName <String>]`: Answer variation name displayed in search results.
     - `[LanguageTag <String>]`: 
@@ -326,8 +341,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
 ## RELATED LINKS
-[Update-MgSearchEntity](/powershell/module/Microsoft.Graph.Search/Update-MgSearchEntity?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Update-MgSearchEntity](/powershell/module/Microsoft.Graph.Search/Update-MgSearchEntity?view=graph-powershell-1.0)
 

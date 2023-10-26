@@ -1,35 +1,23 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsslcertificate
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgBetaSecurityThreatIntelligenceHostSslCertificate
 
 ## SYNOPSIS
-Get hostSslCertificates from security
+Get the properties and relationships of a hostSslCertificate object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBetaSecurityThreatIntelligenceHostSslCertificate [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get2
-```
-Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId <String> -HostId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaSecurityThreatIntelligenceHostSslCertificate [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
@@ -38,14 +26,19 @@ Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId <St
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List1
+### Get1
 ```
-Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostId <String> -HostSslCertificateId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### Get2
+```
+Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostSslCertificateId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity
 ```
 Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
@@ -57,14 +50,38 @@ Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityId
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
 ```
 Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
+### List1
+```
+Get-MgBetaSecurityThreatIntelligenceHostSslCertificate -HostId <String> [-ExpandProperty <String[]>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Get hostSslCertificates from security
+Get the properties and relationships of a hostSslCertificate object.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -72,7 +89,7 @@ Get hostSslCertificates from security
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List, List1
 Aliases:
 
@@ -88,7 +105,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List, List1
 Aliases: CV
 
@@ -103,7 +120,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -118,7 +135,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List, List1
 Aliases:
 
@@ -133,7 +150,7 @@ Accept wildcard characters: False
 The unique identifier of host
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1, List1
 Aliases:
 
@@ -148,8 +165,8 @@ Accept wildcard characters: False
 The unique identifier of hostSslCertificate
 
 ```yaml
-Type: String
-Parameter Sets: Get2, Get1, Get
+Type: System.String
+Parameter Sets: Get, Get1, Get2
 Aliases:
 
 Required: True
@@ -164,8 +181,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -179,7 +196,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List, List1
 Aliases:
 
@@ -194,7 +211,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -209,7 +226,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List, List1
 Aliases:
 
@@ -224,7 +256,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List, List1
 Aliases: OrderBy
 
@@ -239,24 +271,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List, List1
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List, List1
-Aliases:
 
 Required: False
 Position: Named
@@ -271,10 +288,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySslCertificate
+
 ## NOTES
 
 ALIASES
@@ -320,6 +340,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker

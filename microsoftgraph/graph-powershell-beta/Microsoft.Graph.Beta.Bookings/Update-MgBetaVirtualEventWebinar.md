@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinar
 schema: 2.0.0
@@ -22,13 +22,19 @@ Update-MgBetaVirtualEventWebinar -VirtualEventWebinarId <String> [-AdditionalPro
  [-RegistrationConfiguration <IMicrosoftGraphVirtualEventRegistrationConfiguration>]
  [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaVirtualEventWebinar -VirtualEventWebinarId <String>
- -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,17 +47,27 @@ Update-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity> [-AdditionalPr
  [-RegistrationConfiguration <IMicrosoftGraphVirtualEventRegistrationConfiguration>]
  [-Registrations <IMicrosoftGraphVirtualEventRegistration[]>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-StartDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphVirtualEventWebinar> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property webinars in solutions
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -59,7 +75,7 @@ Update the navigation property webinars in solutions
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +90,7 @@ Accept wildcard characters: False
 meetingAudience
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -90,7 +106,7 @@ virtualEventWebinar
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventWebinar
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -102,11 +118,11 @@ Accept wildcard characters: False
 ```
 
 ### -CoOrganizers
-Identity information of co-organizers of the webinar.
+Identity information of coorganizers of the webinar.
 To construct, see NOTES section for COORGANIZERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommunicationsUserIdentity[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommunicationsUserIdentity[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +138,7 @@ communicationsIdentitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommunicationsIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommunicationsIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -137,7 +153,7 @@ Accept wildcard characters: False
 Description of the virtual event.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +168,7 @@ Accept wildcard characters: False
 Display name of the virtual event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +184,7 @@ dateTimeTimeZone
 To construct, see NOTES section for ENDDATETIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +200,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,8 +216,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -216,7 +232,7 @@ Presenters' information of the virtual event.
 To construct, see NOTES section for PRESENTERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventPresenter[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventPresenter[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -232,7 +248,7 @@ virtualEventRegistrationConfiguration
 To construct, see NOTES section for REGISTRATIONCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventRegistrationConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventRegistrationConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,11 +260,11 @@ Accept wildcard characters: False
 ```
 
 ### -Registrations
-.
+Registration records of the webinar.
 To construct, see NOTES section for REGISTRATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventRegistration[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventRegistration[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -264,7 +280,7 @@ Sessions of the virtual event.
 To construct, see NOTES section for SESSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVirtualEventSession[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventSession[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,7 +296,7 @@ dateTimeTimeZone
 To construct, see NOTES section for STARTDATETIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -295,7 +311,7 @@ Accept wildcard characters: False
 virtualEventStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -310,8 +326,8 @@ Accept wildcard characters: False
 The unique identifier of virtualEventWebinar
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -325,7 +341,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -341,7 +357,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -358,10 +374,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEventWebinar
+
 ## NOTES
 
 ALIASES
@@ -423,7 +442,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
-    - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
+    - `[AlternativeRecording <Byte[]>]`: 
     - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -441,7 +460,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
       - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
       - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
-    - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams live event. Read-only.
+    - `[AttendeeReport <Byte[]>]`: 
     - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConferenceId <String>]`: The conference id of the online meeting.
@@ -475,7 +494,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
     - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
     - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
-    - `[IsBroadcast <Boolean?>]`: Indicates whether this is a Teams live event.
+    - `[IsBroadcast <Boolean?>]`: 
+    - `[IsEndToEndEncryptionEnabled <Boolean?>]`: 
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
@@ -504,12 +524,13 @@ To create the parameters described below, construct a hash table containing the 
       - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
       - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
     - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
-    - `[Recording <Byte[]>]`: The content stream of the recording of a Teams live event. Read-only.
+    - `[Recording <Byte[]>]`: 
     - `[Recordings <IMicrosoftGraphCallRecording[]>]`: The recordings of an online meeting. Read-only.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Content <Byte[]>]`: The content of the recording. Read-only.
       - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording. Read-only.
+      - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording. Read-only.
       - `[RecordingContentUrl <String>]`: The URL which can be used to access the content of the recording. Read-only.
     - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -542,6 +563,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Content <Byte[]>]`: The content of the transcript. Read-only.
       - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript. Read-only.
+      - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript. Read-only.
       - `[MetadataContent <Byte[]>]`: The time-aligned metadata of the utterances in the transcript. Read-only.
       - `[TranscriptContentUrl <String>]`: The URL which can be used to access the content of the transcript. Read-only.
@@ -551,41 +573,41 @@ To create the parameters described below, construct a hash table containing the 
       - `[IsEnabledForContentSharing <Boolean?>]`: Indicates whether to apply a watermark to any shared content.
       - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Registrations <IMicrosoftGraphVirtualEventRegistration[]>]`: 
+    - `[Registrations <IMicrosoftGraphVirtualEventRegistration[]>]`: Registration records of this virtual event session.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[CancelationDateTime <DateTime?>]`: 
-      - `[Email <String>]`: 
-      - `[FirstName <String>]`: 
-      - `[LastName <String>]`: 
-      - `[RegistrationDateTime <DateTime?>]`: 
-      - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]`: 
+      - `[CancelationDateTime <DateTime?>]`: Date and time when the registrant cancels their registration for the virtual event. Only appears when applicable. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Email <String>]`: Email address of the registrant.
+      - `[FirstName <String>]`: First name of the registrant.
+      - `[LastName <String>]`: Last name of the registrant.
+      - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]`: The registrant's answer to the registration questions.
         - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion. Only appears when answerInputType is boolean.
         - `[DisplayName <String>]`: Display name of the registration question.
         - `[MultiChoiceValues <String[]>]`: Collection of text answer of the virtualEventRegistrationQuestion. Only appears when answerInputType is multiChoice.
         - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
         - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion. Appears when answerInputType is text, multilineText or singleChoice.
-      - `[Sessions <IMicrosoftGraphVirtualEventSession[]>]`: 
+      - `[Sessions <IMicrosoftGraphVirtualEventSession[]>]`: Sessions of the webinar.
       - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
-      - `[UserId <String>]`: 
+      - `[UserId <String>]`: The registrant's ID in Azure Active Directory (Azure AD). Only appears when the registrant is registered in Azure AD.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: virtualEventStatus
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Audience <String>]`: meetingAudience
-  - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]`: Identity information of co-organizers of the webinar.
+  - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity[]>]`: Identity information of coorganizers of the webinar.
   - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventRegistrationConfiguration>]`: virtualEventRegistrationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Capacity <Int32?>]`: 
-    - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestion[]>]`: 
+    - `[Capacity <Int32?>]`: Total capacity of the virtual event.
+    - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestion[]>]`: Registration questions.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AnswerChoices <String[]>]`: Answer choices when answerInputType is singleChoice or multiChoice.
       - `[AnswerInputType <String>]`: virtualEventRegistrationQuestionAnswerInputType
       - `[DisplayName <String>]`: Display name of the registration question.
       - `[IsRequired <Boolean?>]`: Indicates whether the question is required to answer. Default value is false.
-    - `[RegistrationWebUrl <String>]`: 
-  - `[Registrations <IMicrosoftGraphVirtualEventRegistration[]>]`: 
+    - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
+  - `[Registrations <IMicrosoftGraphVirtualEventRegistration[]>]`: Registration records of the webinar.
 
-`COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity[]>`: Identity information of co-organizers of the webinar.
+`COORGANIZERS <IMicrosoftGraphCommunicationsUserIdentity[]>`: Identity information of coorganizers of the webinar.
   - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
   - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[TenantId <String>]`: The user's tenant ID.
@@ -658,29 +680,29 @@ To create the parameters described below, construct a hash table containing the 
 `REGISTRATIONCONFIGURATION <IMicrosoftGraphVirtualEventRegistrationConfiguration>`: virtualEventRegistrationConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Capacity <Int32?>]`: 
-  - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestion[]>]`: 
+  - `[Capacity <Int32?>]`: Total capacity of the virtual event.
+  - `[Questions <IMicrosoftGraphVirtualEventRegistrationQuestion[]>]`: Registration questions.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AnswerChoices <String[]>]`: Answer choices when answerInputType is singleChoice or multiChoice.
     - `[AnswerInputType <String>]`: virtualEventRegistrationQuestionAnswerInputType
     - `[DisplayName <String>]`: Display name of the registration question.
     - `[IsRequired <Boolean?>]`: Indicates whether the question is required to answer. Default value is false.
-  - `[RegistrationWebUrl <String>]`: 
+  - `[RegistrationWebUrl <String>]`: Registration URL of the virtual event.
 
-`REGISTRATIONS <IMicrosoftGraphVirtualEventRegistration[]>`: .
+`REGISTRATIONS <IMicrosoftGraphVirtualEventRegistration[]>`: Registration records of the webinar.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CancelationDateTime <DateTime?>]`: 
-  - `[Email <String>]`: 
-  - `[FirstName <String>]`: 
-  - `[LastName <String>]`: 
-  - `[RegistrationDateTime <DateTime?>]`: 
-  - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]`: 
+  - `[CancelationDateTime <DateTime?>]`: Date and time when the registrant cancels their registration for the virtual event. Only appears when applicable. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Email <String>]`: Email address of the registrant.
+  - `[FirstName <String>]`: First name of the registrant.
+  - `[LastName <String>]`: Last name of the registrant.
+  - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]`: The registrant's answer to the registration questions.
     - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion. Only appears when answerInputType is boolean.
     - `[DisplayName <String>]`: Display name of the registration question.
     - `[MultiChoiceValues <String[]>]`: Collection of text answer of the virtualEventRegistrationQuestion. Only appears when answerInputType is multiChoice.
     - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
     - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion. Appears when answerInputType is text, multilineText or singleChoice.
-  - `[Sessions <IMicrosoftGraphVirtualEventSession[]>]`: 
+  - `[Sessions <IMicrosoftGraphVirtualEventSession[]>]`: Sessions of the webinar.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
     - `[AllowMeetingChat <String>]`: meetingChatMode
@@ -689,7 +711,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
-    - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
+    - `[AlternativeRecording <Byte[]>]`: 
     - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -710,7 +732,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
       - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
       - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
-    - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams live event. Read-only.
+    - `[AttendeeReport <Byte[]>]`: 
     - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConferenceId <String>]`: The conference id of the online meeting.
@@ -744,7 +766,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
     - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
     - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
-    - `[IsBroadcast <Boolean?>]`: Indicates whether this is a Teams live event.
+    - `[IsBroadcast <Boolean?>]`: 
+    - `[IsEndToEndEncryptionEnabled <Boolean?>]`: 
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -776,12 +799,13 @@ To create the parameters described below, construct a hash table containing the 
       - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
       - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
     - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
-    - `[Recording <Byte[]>]`: The content stream of the recording of a Teams live event. Read-only.
+    - `[Recording <Byte[]>]`: 
     - `[Recordings <IMicrosoftGraphCallRecording[]>]`: The recordings of an online meeting. Read-only.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Content <Byte[]>]`: The content of the recording. Read-only.
       - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording. Read-only.
+      - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording. Read-only.
       - `[RecordingContentUrl <String>]`: The URL which can be used to access the content of the recording. Read-only.
     - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -814,6 +838,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Content <Byte[]>]`: The content of the transcript. Read-only.
       - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript. Read-only.
+      - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript. Read-only.
       - `[MetadataContent <Byte[]>]`: The time-aligned metadata of the utterances in the transcript. Read-only.
       - `[TranscriptContentUrl <String>]`: The URL which can be used to access the content of the transcript. Read-only.
@@ -823,9 +848,9 @@ To create the parameters described below, construct a hash table containing the 
       - `[IsEnabledForContentSharing <Boolean?>]`: Indicates whether to apply a watermark to any shared content.
       - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Registrations <IMicrosoftGraphVirtualEventRegistration[]>]`: 
+    - `[Registrations <IMicrosoftGraphVirtualEventRegistration[]>]`: Registration records of this virtual event session.
   - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
-  - `[UserId <String>]`: 
+  - `[UserId <String>]`: The registrant's ID in Azure Active Directory (Azure AD). Only appears when the registrant is registered in Azure AD.
 
 `SESSIONS <IMicrosoftGraphVirtualEventSession[]>`: Sessions of the virtual event.
   - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
@@ -836,7 +861,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
-  - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
+  - `[AlternativeRecording <Byte[]>]`: 
   - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
   - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -857,7 +882,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
     - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
     - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
-  - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams live event. Read-only.
+  - `[AttendeeReport <Byte[]>]`: 
   - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConferenceId <String>]`: The conference id of the online meeting.
@@ -891,7 +916,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
   - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
   - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
-  - `[IsBroadcast <Boolean?>]`: Indicates whether this is a Teams live event.
+  - `[IsBroadcast <Boolean?>]`: 
+  - `[IsEndToEndEncryptionEnabled <Boolean?>]`: 
   - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
   - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -923,12 +949,13 @@ To create the parameters described below, construct a hash table containing the 
     - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
     - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
   - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
-  - `[Recording <Byte[]>]`: The content stream of the recording of a Teams live event. Read-only.
+  - `[Recording <Byte[]>]`: 
   - `[Recordings <IMicrosoftGraphCallRecording[]>]`: The recordings of an online meeting. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Content <Byte[]>]`: The content of the recording. Read-only.
     - `[CreatedDateTime <DateTime?>]`: Date and time at which the recording was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[MeetingId <String>]`: The unique identifier of the onlineMeeting related to this recording. Read-only.
+    - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording. Read-only.
     - `[RecordingContentUrl <String>]`: The URL which can be used to access the content of the recording. Read-only.
   - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -961,6 +988,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Content <Byte[]>]`: The content of the transcript. Read-only.
     - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript. Read-only.
+    - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript. Read-only.
     - `[MetadataContent <Byte[]>]`: The time-aligned metadata of the utterances in the transcript. Read-only.
     - `[TranscriptContentUrl <String>]`: The URL which can be used to access the content of the transcript. Read-only.
@@ -970,29 +998,27 @@ To create the parameters described below, construct a hash table containing the 
     - `[IsEnabledForContentSharing <Boolean?>]`: Indicates whether to apply a watermark to any shared content.
     - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Registrations <IMicrosoftGraphVirtualEventRegistration[]>]`: 
+  - `[Registrations <IMicrosoftGraphVirtualEventRegistration[]>]`: Registration records of this virtual event session.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[CancelationDateTime <DateTime?>]`: 
-    - `[Email <String>]`: 
-    - `[FirstName <String>]`: 
-    - `[LastName <String>]`: 
-    - `[RegistrationDateTime <DateTime?>]`: 
-    - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]`: 
+    - `[CancelationDateTime <DateTime?>]`: Date and time when the registrant cancels their registration for the virtual event. Only appears when applicable. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Email <String>]`: Email address of the registrant.
+    - `[FirstName <String>]`: First name of the registrant.
+    - `[LastName <String>]`: Last name of the registrant.
+    - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer[]>]`: The registrant's answer to the registration questions.
       - `[BooleanValue <Boolean?>]`: Boolean answer of the virtualEventRegistrationQuestion. Only appears when answerInputType is boolean.
       - `[DisplayName <String>]`: Display name of the registration question.
       - `[MultiChoiceValues <String[]>]`: Collection of text answer of the virtualEventRegistrationQuestion. Only appears when answerInputType is multiChoice.
       - `[QuestionId <String>]`: id of the virtualEventRegistrationQuestion.
       - `[Value <String>]`: Text answer of the virtualEventRegistrationQuestion. Appears when answerInputType is text, multilineText or singleChoice.
-    - `[Sessions <IMicrosoftGraphVirtualEventSession[]>]`: 
+    - `[Sessions <IMicrosoftGraphVirtualEventSession[]>]`: Sessions of the webinar.
     - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
-    - `[UserId <String>]`: 
+    - `[UserId <String>]`: The registrant's ID in Azure Active Directory (Azure AD). Only appears when the registrant is registered in Azure AD.
 
 `STARTDATETIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-
-## RELATED LINKS
 
 ## RELATED LINKS
 
