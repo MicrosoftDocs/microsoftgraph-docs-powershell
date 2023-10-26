@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalauthorizationsystem
 schema: 2.0.0
@@ -16,28 +16,28 @@ Update the navigation property authorizationSystems in external
 ```
 Update-MgBetaExternalAuthorizationSystem -AuthorizationSystemId <String> [-AdditionalProperties <Hashtable>]
  [-AuthorizationSystemId1 <String>] [-AuthorizationSystemName <String>] [-AuthorizationSystemType <String>]
- [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>] [-Confirm] [-WhatIf]
+ [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaExternalAuthorizationSystem [-AuthorizationSystemId <String>] -InputObject <ISearchIdentity>
+ [-AdditionalProperties <Hashtable>] [-AuthorizationSystemName <String>] [-AuthorizationSystemType <String>]
+ [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaExternalAuthorizationSystem -AuthorizationSystemId <String>
- -BodyParameter <IMicrosoftGraphAuthorizationSystem> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthorizationSystem> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphAuthorizationSystem> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity> [-AuthorizationSystemId <String>]
- [-AdditionalProperties <Hashtable>] [-AuthorizationSystemName <String>] [-AuthorizationSystemType <String>]
- [-DataCollectionInfo <IMicrosoftGraphDataCollectionInfo>] [-Id <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthorizationSystem> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ Update the navigation property authorizationSystems in external
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ Update the navigation property authorizationSystems in external
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,11 +76,23 @@ Accept wildcard characters: False
 The unique identifier of authorizationSystem
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: String
+Parameter Sets: UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -95,7 +103,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -110,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -125,7 +133,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +149,7 @@ authorizationSystem
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthorizationSystem
+Type: IMicrosoftGraphAuthorizationSystem
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -157,7 +165,7 @@ dataCollectionInfo
 To construct, see NOTES section for DATACOLLECTIONINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataCollectionInfo
+Type: IMicrosoftGraphDataCollectionInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +181,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,8 +197,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ISearchIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -204,7 +212,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +228,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,13 +245,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthorizationSystem
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthorizationSystem
-
 ## NOTES
 
 ALIASES
@@ -293,4 +298,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-

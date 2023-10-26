@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerrostermember
 schema: 2.0.0
@@ -15,27 +15,27 @@ Update the navigation property members in planner
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPlannerRosterMember -PlannerRosterId <String> -PlannerRosterMemberId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Roles <String[]>] [-TenantId <String>]
- [-UserId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Roles <String[]>] [-TenantId <String>] [-UserId <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPlannerRosterMember -PlannerRosterId <String> -PlannerRosterMemberId <String>
- -BodyParameter <IMicrosoftGraphPlannerRosterMember> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
- -BodyParameter <IMicrosoftGraphPlannerRosterMember> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerRosterMember> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Roles <String[]>] [-TenantId <String>] [-UserId <String>] [-Confirm] [-WhatIf]
+ [-Id <String>] [-Roles <String[]>] [-TenantId <String>] [-UserId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
+ -BodyParameter <IMicrosoftGraphPlannerRosterMember> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,14 +43,14 @@ Update the navigation property members in planner
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -63,7 +63,7 @@ Update the navigation property members in planner
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +79,7 @@ plannerRosterMember
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRosterMember
+Type: IMicrosoftGraphPlannerRosterMember
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -95,7 +95,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -111,8 +111,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IPlannerIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 The unique identifier of plannerRoster
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of plannerRosterMember
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -157,7 +157,7 @@ Additional roles associated with the PlannerRosterMember, which determines permi
 Currently there are no available roles to assign, and every member has full control over the contents of the plannerRoster.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +173,7 @@ Identifier of the tenant the user belongs to.
 Currently only the users from the same tenant can be added to a plannerRoster.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 Identifier of the user.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -219,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -236,13 +236,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRosterMember
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRosterMember
-
 ## NOTES
 
 ALIASES
@@ -270,4 +267,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

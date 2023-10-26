@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall
 schema: 2.0.0
@@ -21,8 +21,8 @@ This API is available in the following national cloud deployments.
 ### AnswerExpanded (Default)
 ```
 Invoke-MgBetaAnswerCommunicationCall -CallId <String> [-AcceptedModalities <String[]>]
- [-AdditionalProperties <Hashtable>] [-CallbackUri <String>] [-CallOptions <Hashtable>]
- [-MediaConfig <IMicrosoftGraphMediaConfig>] [-ParticipantCapacity <Int32>] [-PassThru] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>] [-CallbackUri <String>]
+ [-MediaConfig <IMicrosoftGraphMediaConfig>] [-ParticipantCapacity <Int32>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,22 +30,22 @@ Invoke-MgBetaAnswerCommunicationCall -CallId <String> [-AcceptedModalities <Stri
 ```
 Invoke-MgBetaAnswerCommunicationCall -CallId <String>
  -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AnswerViaIdentityExpanded
+```
+Invoke-MgBetaAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
+ [-AcceptedModalities <String[]>] [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>]
+ [-CallbackUri <String>] [-MediaConfig <IMicrosoftGraphMediaConfig>] [-ParticipantCapacity <Int32>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AnswerViaIdentity
 ```
 Invoke-MgBetaAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### AnswerViaIdentityExpanded
-```
-Invoke-MgBetaAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
- [-AcceptedModalities <String[]>] [-AdditionalProperties <Hashtable>] [-CallbackUri <String>]
- [-CallOptions <Hashtable>] [-MediaConfig <IMicrosoftGraphMediaConfig>] [-ParticipantCapacity <Int32>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +59,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
@@ -82,7 +82,7 @@ $params = @{
 
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 ```
@@ -106,7 +106,7 @@ Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema
+Type: IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Answer, AnswerViaIdentity
 Aliases:
 
@@ -152,7 +152,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -167,8 +167,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: System.String
-Parameter Sets: Answer, AnswerExpanded
+Type: String
+Parameter Sets: AnswerExpanded, Answer
 Aliases:
 
 Required: True
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 incomingCallOptions
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -198,8 +198,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: AnswerViaIdentity, AnswerViaIdentityExpanded
+Type: ICloudCommunicationsIdentity
+Parameter Sets: AnswerViaIdentityExpanded, AnswerViaIdentity
 Aliases:
 
 Required: True
@@ -214,7 +214,7 @@ mediaConfig
 To construct, see NOTES section for MEDIACONFIG properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMediaConfig
+Type: IMicrosoftGraphMediaConfig
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -275,7 +275,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -292,13 +292,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -346,4 +343,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[RemoveFromDefaultAudioGroup <Boolean?>]`: 
 
 ## RELATED LINKS
-

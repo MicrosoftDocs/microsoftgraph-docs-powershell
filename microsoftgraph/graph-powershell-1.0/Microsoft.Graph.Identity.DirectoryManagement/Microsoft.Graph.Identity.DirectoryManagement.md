@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: 13a7f9dd-01ae-4cef-accf-0e6f8855f655
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement
@@ -535,13 +535,8 @@ Get the number of the resource
 ### [Get-MgDirectoryDeletedItemCountAsUser](Get-MgDirectoryDeletedItemCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgDirectoryDeletedItemMemberGroup](Get-MgDirectoryDeletedItemMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+### [Get-MgDirectoryDeletedItemCountAsUser](Get-MgDirectoryDeletedItemCountAsUser.md)
+Get the number of the resource
 
 ### [Get-MgDirectoryDeletedItemMemberObject](Get-MgDirectoryDeletedItemMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -642,13 +637,8 @@ Get the number of the resource
 ### [Get-MgDirectoryRoleMemberCountAsUser](Get-MgDirectoryRoleMemberCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgDirectoryRoleMemberGroup](Get-MgDirectoryRoleMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+### [Get-MgDirectoryRoleMemberCountAsUser](Get-MgDirectoryRoleMemberCountAsUser.md)
+Get the number of the resource
 
 ### [Get-MgDirectoryRoleMemberObject](Get-MgDirectoryRoleMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -679,13 +669,8 @@ Get the number of the resource
 ### [Get-MgDirectoryRoleTemplateDelta](Get-MgDirectoryRoleTemplateDelta.md)
 Invoke function delta
 
-### [Get-MgDirectoryRoleTemplateMemberGroup](Get-MgDirectoryRoleTemplateMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+### [Get-MgDirectoryRoleTemplateDelta](Get-MgDirectoryRoleTemplateDelta.md)
+Invoke function delta
 
 ### [Get-MgDirectoryRoleTemplateMemberObject](Get-MgDirectoryRoleTemplateMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -831,13 +816,8 @@ Nullable.
 ### [Get-MgOrganizationExtensionCount](Get-MgOrganizationExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgOrganizationMemberGroup](Get-MgOrganizationMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+### [Get-MgOrganizationExtensionCount](Get-MgOrganizationExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgOrganizationMemberObject](Get-MgOrganizationMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.

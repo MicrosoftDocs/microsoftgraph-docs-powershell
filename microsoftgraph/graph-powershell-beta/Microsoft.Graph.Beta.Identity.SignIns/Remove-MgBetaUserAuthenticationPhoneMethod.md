@@ -1,51 +1,42 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationphonemethod
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationpasswordlessmicrosoftauthenticatormethod
 schema: 2.0.0
 ---
 
-# Remove-MgBetaUserAuthenticationPhoneMethod
+# Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod
 
 ## SYNOPSIS
-Delete a user's phone authentication method.
-Remember that a user may not have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
-Have the user change their default authentication method, and then delete the number.
+Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaUserAuthenticationPhoneMethod -PhoneAuthenticationMethodId <String> -UserId <String>
- [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod
+ -PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String> -UserId <String> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod -InputObject <IIdentitySignInsIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete a user's phone authentication method.
-Remember that a user may not have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
-Have the user change their default authentication method, and then delete the number.
+Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod -UserId $userId -PasswordlessMicrosoftAuthenticatorAuthenticationMethodId $passwordlessMicrosoftAuthenticatorAuthenticationMethodId
 ```
-
-# A UPN can also be used as -UserId.
-Remove-MgBetaUserAuthenticationPhoneMethod -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId
 
 ## PARAMETERS
 
@@ -53,7 +44,7 @@ Remove-MgBetaUserAuthenticationPhoneMethod -UserId $userId -PhoneAuthenticationM
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -69,7 +60,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Type: IIdentitySignInsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -84,7 +75,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -95,11 +86,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PhoneAuthenticationMethodId
-The unique identifier of phoneAuthenticationMethod
+### -PasswordlessMicrosoftAuthenticatorAuthenticationMethodId
+The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -114,7 +105,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -129,7 +120,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +136,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,11 +153,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -254,4 +243,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

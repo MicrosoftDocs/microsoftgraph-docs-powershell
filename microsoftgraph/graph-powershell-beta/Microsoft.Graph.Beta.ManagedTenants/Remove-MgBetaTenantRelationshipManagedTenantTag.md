@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenanttag
 schema: 2.0.0
@@ -15,14 +15,14 @@ This API is available in the following national cloud deployments.
 
 ### Delete (Default)
 ```
-Remove-MgBetaTenantRelationshipManagedTenantTag -TenantTagId <String> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgBetaTenantRelationshipManagedTenantTag -TenantTagId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIdentity> [-IfMatch <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,13 +31,11 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Remove-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId
 ```
-
-
 
 ## PARAMETERS
 
@@ -45,7 +43,7 @@ Remove-MgBetaTenantRelationshipManagedTenantTag -TenantTagId $tenantTagId
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -61,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
+Type: IManagedTenantsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -76,7 +74,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -91,7 +89,7 @@ Accept wildcard characters: False
 The unique identifier of tenantTag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -106,7 +104,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -122,7 +120,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -139,11 +137,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -194,4 +190,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
 ## RELATED LINKS
-

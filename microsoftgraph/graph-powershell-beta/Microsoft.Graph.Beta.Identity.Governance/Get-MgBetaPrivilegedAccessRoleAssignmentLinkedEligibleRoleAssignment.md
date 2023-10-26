@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedaccessroleassignmentlinkedeligibleroleassignment
 schema: 2.0.0
@@ -21,9 +21,8 @@ Get-MgBetaPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment -Governance
 
 ### GetViaIdentity
 ```
-Get-MgBetaPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment
- -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment -InputObject <IIdentityGovernanceIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,14 +31,14 @@ If this is an active assignment and created due to activation on an eligible ass
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -52,7 +51,7 @@ If this is an active assignment and created due to activation on an eligible ass
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -67,7 +66,7 @@ Accept wildcard characters: False
 The unique identifier of governanceRoleAssignment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -83,7 +82,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Type: IIdentityGovernanceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -98,7 +97,7 @@ Accept wildcard characters: False
 The unique identifier of privilegedAccess
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -113,7 +112,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -130,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignment
-
 ## NOTES
 
 ALIASES
@@ -244,4 +241,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

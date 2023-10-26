@@ -1,107 +1,52 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationpasswordmethod
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationoperationcount
 schema: 2.0.0
 ---
 
-# Get-MgUserAuthenticationPasswordMethod
+# Get-MgUserAuthenticationOperationCount
 
 ## SYNOPSIS
-Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
-For security, the password itself will never be returned in the object and the password property is always null.
-This API is available in the following national cloud deployments.
+Get the number of the resource
 
 ## SYNTAX
 
-### List (Default)
+### Get (Default)
 ```
-Get-MgUserAuthenticationPasswordMethod -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
- [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgUserAuthenticationPasswordMethod -PasswordAuthenticationMethodId <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgUserAuthenticationOperationCount -UserId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserAuthenticationPasswordMethod -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUserAuthenticationOperationCount -InputObject <IIdentitySignInsIdentity> [-Filter <String>]
+ [-Search <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
-For security, the password itself will never be returned in the object and the password property is always null.
-This API is available in the following national cloud deployments.
+Get the number of the resource
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Get-MgUserAuthenticationPasswordMethod -UserId $userId -PasswordAuthenticationMethodId $passwordAuthenticationMethodId
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
-
-### -All
-List all pages.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: System.String
-Parameter Sets: List
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: System.String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Filter
 Filter items by property values
 
 ```yaml
-Type: System.String
-Parameter Sets: List
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -116,7 +61,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Type: IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -127,103 +72,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
-
-```yaml
-Type: System.Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PasswordAuthenticationMethodId
-The unique identifier of passwordAuthenticationMethod
-
-```yaml
-Type: System.String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Search
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: List
+Type: String
+Parameter Sets: (All)
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: System.String[]
-Parameter Sets: List
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: System.Int32
-Parameter Sets: List
-Aliases: Limit
 
 Required: False
 Position: Named
@@ -236,8 +91,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List
+Type: String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -253,11 +108,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPasswordAuthenticationMethod
-
+### System.Int32
 ## NOTES
 
 ALIASES
@@ -325,4 +178,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

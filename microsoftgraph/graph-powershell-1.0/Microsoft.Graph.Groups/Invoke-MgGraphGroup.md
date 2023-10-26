@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroup
 schema: 2.0.0
@@ -16,12 +16,12 @@ This API is supported in the following national cloud deployments.
 
 ### Graph (Default)
 ```
-Invoke-MgGraphGroup -GroupId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgGraphGroup -GroupId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GraphViaIdentity
 ```
-Invoke-MgGraphGroup -InputObject <IGroupsIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgGraphGroup -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,13 +31,11 @@ This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Invoke-MgGraphGroup -GroupId $groupId
 ```
-
-
 
 ## PARAMETERS
 
@@ -45,7 +43,7 @@ Invoke-MgGraphGroup -GroupId $groupId
 The unique identifier of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Graph
 Aliases:
 
@@ -61,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Type: IGroupsIdentity
 Parameter Sets: GraphViaIdentity
 Aliases:
 
@@ -76,7 +74,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -91,7 +89,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -107,7 +105,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -124,11 +122,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -176,4 +172,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation
 schema: 2.0.0
@@ -17,21 +17,14 @@ This API is available in the following national cloud deployments.
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId <String>
  [-AdditionalProperties <Hashtable>] [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>]
- [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-Website <String>] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-Website <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,7 +32,14 @@ Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <
 ```
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <IManagedTenantsIdentity>
  [-AdditionalProperties <Hashtable>] [-Contacts <IMicrosoftGraphManagedTenantsTenantContactInformation[]>]
- [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-Website <String>] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-Id <String>] [-TenantId <String>] [-Website <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <IManagedTenantsIdentity>
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantCustomizedInformation> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -49,7 +49,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 $params = @{
@@ -70,15 +70,13 @@ $params = @{
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId $tenantCustomizedInformationId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -94,7 +92,7 @@ tenantCustomizedInformation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantCustomizedInformation
+Type: IMicrosoftGraphManagedTenantsTenantCustomizedInformation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -111,7 +109,7 @@ Optional.
 To construct, see NOTES section for CONTACTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantContactInformation[]
+Type: IMicrosoftGraphManagedTenantsTenantContactInformation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +126,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +142,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,8 +158,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IManagedTenantsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -175,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of tenantCustomizedInformation
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -192,7 +190,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +206,7 @@ The website for the managed tenant.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +221,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -239,7 +237,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -256,13 +254,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantCustomizedInformation
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantCustomizedInformation
-
 ## NOTES
 
 ALIASES
@@ -333,4 +328,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
 ## RELATED LINKS
-

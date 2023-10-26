@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractusersecurityinformationprotectionsensitivitylabelcontentlabel
 schema: 2.0.0
@@ -17,7 +17,7 @@ This API is available in the following national cloud deployments.
 ### ExtractExpanded (Default)
 ```
 Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,7 +25,14 @@ Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabe
 ```
 Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId <String>
  -BodyParameter <IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ExtractViaIdentityExpanded
+```
+Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
+ -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ExtractViaIdentity
@@ -33,14 +40,7 @@ Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabe
 Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
  -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ExtractViaIdentityExpanded
-```
-Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
- -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentInfo <IMicrosoftGraphSecurityContentInfo>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -93,15 +93,13 @@ $params = @{
 Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId $userId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ExtractExpanded, ExtractViaIdentityExpanded
 Aliases:
 
@@ -117,7 +115,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
+Type: IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Extract, ExtractViaIdentity
 Aliases:
 
@@ -133,7 +131,7 @@ contentInfo
 To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityContentInfo
+Type: IMicrosoftGraphSecurityContentInfo
 Parameter Sets: ExtractExpanded, ExtractViaIdentityExpanded
 Aliases:
 
@@ -149,8 +147,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: ExtractViaIdentity, ExtractViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: ExtractViaIdentityExpanded, ExtractViaIdentity
 Aliases:
 
 Required: True
@@ -164,8 +162,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Extract, ExtractExpanded
+Type: String
+Parameter Sets: ExtractExpanded, Extract
 Aliases:
 
 Required: True
@@ -179,7 +177,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -195,7 +193,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -212,13 +210,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityContentLabel
-
 ## NOTES
 
 ALIASES
@@ -289,4 +284,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

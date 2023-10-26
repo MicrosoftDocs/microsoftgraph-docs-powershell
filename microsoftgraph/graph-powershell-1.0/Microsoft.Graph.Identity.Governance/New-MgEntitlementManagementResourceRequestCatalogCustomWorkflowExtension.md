@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerequestcatalogcustomworkflowextension
 schema: 2.0.0
@@ -20,22 +20,15 @@ New-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
  -AccessPackageResourceRequestId <String> [-AdditionalProperties <Hashtable>]
  [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
- [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
- -AccessPackageResourceRequestId <String> -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -AccessPackageResourceRequestId <String> -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -44,8 +37,15 @@ New-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
  [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
- [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,19 +55,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -75,8 +71,8 @@ This API is available in the following national cloud deployments.
 The unique identifier of accessPackageResourceRequest
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -90,7 +86,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -105,7 +101,7 @@ Accept wildcard characters: False
 customExtensionAuthenticationConfiguration
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -121,7 +117,7 @@ customCalloutExtension
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
+Type: IMicrosoftGraphCustomCalloutExtension
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -137,7 +133,7 @@ customExtensionClientConfiguration
 To construct, see NOTES section for CLIENTCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomExtensionClientConfiguration
+Type: IMicrosoftGraphCustomExtensionClientConfiguration
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +148,7 @@ Accept wildcard characters: False
 Description for the customCalloutExtension object.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +163,7 @@ Accept wildcard characters: False
 Display name for the customCalloutExtension object.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -182,7 +178,7 @@ Accept wildcard characters: False
 customExtensionEndpointConfiguration
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +194,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -214,8 +210,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -229,7 +225,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -245,7 +241,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -262,13 +258,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
-
 ## NOTES
 
 ALIASES
@@ -366,4 +359,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 Module Guid: 167fe0e7-3dc0-4d24-b39a-eac568e8f3ec
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins
@@ -785,23 +785,20 @@ Get media content for the navigation property policies from trustFramework
 ### [Get-MgBetaTrustFrameworkPolicyCount](Get-MgBetaTrustFrameworkPolicyCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationEmailMethod](Get-MgBetaUserAuthenticationEmailMethod.md)
-Retrieve a user's single email Authentication Method object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaTrustFrameworkPolicyCount](Get-MgBetaTrustFrameworkPolicyCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationFido2Method](Get-MgBetaUserAuthenticationFido2Method.md)
-Retrieve a user's single FIDO2 Security Key Authentication Method object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationFido2MethodCount](Get-MgBetaUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationMethod](Get-MgBetaUserAuthenticationMethod.md)
-Retrieve the properties and relationships of an authenticationMethod object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserAuthenticationFido2MethodCount](Get-MgBetaUserAuthenticationFido2MethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationMethodCount](Get-MgBetaUserAuthenticationMethodCount.md)
 Get the number of the resource
@@ -837,24 +834,20 @@ Get the number of the resource
 ### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
 Get device from users
 
-### [Get-MgBetaUserAuthenticationPasswordMethod](Get-MgBetaUserAuthenticationPasswordMethod.md)
-Retrieve the properties and relationships of a password authentication method object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
+Get device from users
 
 ### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationPhoneMethod](Get-MgBetaUserAuthenticationPhoneMethod.md)
-Retrieve a single phoneAuthenticationMethod object.
-This method is available only for standard Azure AD and B2B users, but not B2C users.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationSoftwareOathMethod](Get-MgBetaUserAuthenticationSoftwareOathMethod.md)
-Retrieve a user's single Software OATH token authentication method object and its properties.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserAuthenticationSoftwareOathMethodCount](Get-MgBetaUserAuthenticationSoftwareOathMethodCount.md)
 Get the number of the resource
@@ -1701,12 +1694,8 @@ Delete navigation property operations for users
 Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 This API is available in the following national cloud deployments.
 
-### [Remove-MgBetaUserAuthenticationPhoneMethod](Remove-MgBetaUserAuthenticationPhoneMethod.md)
-Delete a user's phone authentication method.
-Remember that a user may not have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
-Have the user change their default authentication method, and then delete the number.
+### [Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
+Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaUserAuthenticationSoftwareOathMethod](Remove-MgBetaUserAuthenticationSoftwareOathMethod.md)

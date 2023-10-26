@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccessroleassignmentsubject
 schema: 2.0.0
@@ -16,27 +16,27 @@ Update the navigation property subject in privilegedAccess
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentSubject -GovernanceRoleAssignmentId <String>
  -PrivilegedAccessId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Email <String>]
- [-Id <String>] [-PrincipalName <String>] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-PrincipalName <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentSubject -GovernanceRoleAssignmentId <String>
- -PrivilegedAccessId <String> -BodyParameter <IMicrosoftGraphGovernanceSubject> [-Confirm] [-WhatIf]
+ -PrivilegedAccessId <String> -BodyParameter <IMicrosoftGraphGovernanceSubject> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaPrivilegedAccessRoleAssignmentSubject -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphGovernanceSubject> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPrivilegedAccessRoleAssignmentSubject -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
- [-PrincipalName <String>] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PrincipalName <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaPrivilegedAccessRoleAssignmentSubject -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphGovernanceSubject> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,14 +44,14 @@ Update the navigation property subject in privilegedAccess
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -64,7 +64,7 @@ Update the navigation property subject in privilegedAccess
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +80,7 @@ governanceSubject
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceSubject
+Type: IMicrosoftGraphGovernanceSubject
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 The display name of the subject.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -111,7 +111,7 @@ The email address of the user subject.
 If the subject is in other types, it's empty.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 The unique identifier of governanceRoleAssignment
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,8 +158,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -174,7 +174,7 @@ The principal name of the user subject.
 If the subject is in other types, it's empty.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,8 +189,8 @@ Accept wildcard characters: False
 The unique identifier of privilegedAccess
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -205,7 +205,7 @@ The type of the subject.
 The value can be User, Group, and ServicePrincipal.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -236,7 +236,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -253,13 +253,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceSubject
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceSubject
-
 ## NOTES
 
 ALIASES
@@ -377,4 +374,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

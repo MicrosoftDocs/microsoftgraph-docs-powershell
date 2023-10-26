@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateammember
 schema: 2.0.0
@@ -17,27 +17,27 @@ This API is available in the following national cloud deployments.
 ### AddExpanded (Default)
 ```
 Add-MgBetaTeamMember -TeamId <String> [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgBetaTeamMember -TeamId <String>
  -BodyParameter <IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgBetaTeamMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgBetaTeamMember -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### AddViaIdentityExpanded
-```
-Add-MgBetaTeamMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 ```
@@ -72,7 +72,7 @@ $params = @{
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 ```
@@ -97,7 +97,7 @@ $params = @{
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 
-### -------------------------- EXAMPLE 3 --------------------------
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 ```
@@ -128,7 +128,7 @@ Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Add, AddViaIdentity
 Aliases:
 
@@ -160,8 +160,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
-Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
 Aliases:
 
 Required: True
@@ -175,8 +175,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Add, AddExpanded
+Type: String
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember[]
+Type: IMicrosoftGraphConversationMember[]
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -222,7 +222,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -239,13 +239,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1E258D4TeamsTeamIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphActionResultPart
-
 ## NOTES
 
 ALIASES
@@ -310,4 +307,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionfilethreat
 schema: 2.0.0
@@ -18,14 +18,14 @@ New-MgBetaSecurityThreatSubmissionFileThreat [-AdditionalProperties <Hashtable>]
  [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>] [-Category <String>] [-ClientSource <String>]
  [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
  [-CreatedDateTime <DateTime>] [-FileName <String>] [-Id <String>]
- [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Source <String>] [-Status <String>]
- [-TenantId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Source <String>] [-Status <String>] [-TenantId <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityThreatSubmissionFileThreat -BodyParameter <IMicrosoftGraphSecurityFileThreatSubmission>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,14 +33,14 @@ Create new navigation property to fileThreats for security
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -53,7 +53,7 @@ Create new navigation property to fileThreats for security
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ submissionAdminReview
 To construct, see NOTES section for ADMINREVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubmissionAdminReview
+Type: IMicrosoftGraphSecuritySubmissionAdminReview
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +85,7 @@ fileThreatSubmission
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFileThreatSubmission
+Type: IMicrosoftGraphSecurityFileThreatSubmission
 Parameter Sets: Create
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 submissionCategory
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 submissionClientSource
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 submissionContentType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ submissionUserIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubmissionUserIdentity
+Type: IMicrosoftGraphSecuritySubmissionUserIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +162,7 @@ Specifies when the threat submission was created.
 Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 It specifies the file name to be submitted.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +193,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +209,7 @@ submissionResult
 To construct, see NOTES section for RESULT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubmissionResult
+Type: IMicrosoftGraphSecuritySubmissionResult
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 submissionSource
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 longRunningOperationStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -256,7 +256,7 @@ Not required when created using a POST operation.
 It's extracted from the token of the post API call.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -287,7 +287,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -304,11 +304,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFileThreatSubmission
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFileThreatSubmission
-
 ## NOTES
 
 ALIASES
@@ -372,4 +370,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserMailboxSetting <String>]`: userMailboxSetting
 
 ## RELATED LINKS
-

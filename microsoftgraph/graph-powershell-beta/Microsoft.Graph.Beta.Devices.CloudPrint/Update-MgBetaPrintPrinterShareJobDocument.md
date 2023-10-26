@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprintersharejobdocument
 schema: 2.0.0
@@ -14,23 +14,18 @@ Update the navigation property documents in print
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPrintPrinterShareJobDocument -PrintDocumentId <String> -PrinterShareId <String>
- -PrintJobId <String> [-AdditionalProperties <Hashtable>]
- [-Configuration <IMicrosoftGraphPrinterDocumentConfiguration>] [-ContentType <String>]
- [-DisplayName <String>] [-DownloadedDateTime <DateTime>] [-Id <String>] [-Size <Int64>]
- [-UploadedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaPrintPrinterShareJobDocument -PrintDocumentId <String> -PrintJobId <String>
+ -PrinterShareId <String> [-AdditionalProperties <Hashtable>]
+ [-Configuration <IMicrosoftGraphPrinterDocumentConfiguration>] [-ContentType <String>] [-DisplayName <String>]
+ [-DownloadedDateTime <DateTime>] [-Id <String>] [-Size <Int64>] [-UploadedDateTime <DateTime>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaPrintPrinterShareJobDocument -PrintDocumentId <String> -PrinterShareId <String>
- -PrintJobId <String> -BodyParameter <IMicrosoftGraphPrintDocument> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaPrintPrinterShareJobDocument -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintDocument> [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaPrintPrinterShareJobDocument -PrintDocumentId <String> -PrintJobId <String>
+ -PrinterShareId <String> -BodyParameter <IMicrosoftGraphPrintDocument> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,7 +33,13 @@ Update-MgBetaPrintPrinterShareJobDocument -InputObject <IDevicesCloudPrintIdenti
 Update-MgBetaPrintPrinterShareJobDocument -InputObject <IDevicesCloudPrintIdentity>
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]
  [-ContentType <String>] [-DisplayName <String>] [-DownloadedDateTime <DateTime>] [-Id <String>]
- [-Size <Int64>] [-UploadedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Size <Int64>] [-UploadedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaPrintPrinterShareJobDocument -InputObject <IDevicesCloudPrintIdentity>
+ -BodyParameter <IMicrosoftGraphPrintDocument> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,19 +47,15 @@ Update the navigation property documents in print
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -66,7 +63,7 @@ Update the navigation property documents in print
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -82,7 +79,7 @@ printDocument
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintDocument
+Type: IMicrosoftGraphPrintDocument
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -98,7 +95,7 @@ printerDocumentConfiguration
 To construct, see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrinterDocumentConfiguration
+Type: IMicrosoftGraphPrinterDocumentConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +111,7 @@ The document's content (MIME) type.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +127,7 @@ The document's name.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +158,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,8 +174,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDevicesCloudPrintIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -192,8 +189,8 @@ Accept wildcard characters: False
 The unique identifier of printDocument
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -207,8 +204,8 @@ Accept wildcard characters: False
 The unique identifier of printerShare
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -222,8 +219,8 @@ Accept wildcard characters: False
 The unique identifier of printJob
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -238,7 +235,7 @@ The document's size in bytes.
 Read-only.
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -253,7 +250,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -268,7 +265,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -284,7 +281,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -301,13 +298,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintDocument
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintDocument
-
 ## NOTES
 
 ALIASES
@@ -405,4 +399,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

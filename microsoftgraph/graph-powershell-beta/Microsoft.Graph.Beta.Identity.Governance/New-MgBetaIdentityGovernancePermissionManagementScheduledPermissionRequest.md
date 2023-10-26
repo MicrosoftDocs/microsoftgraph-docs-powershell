@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionmanagementscheduledpermissionrequest
 schema: 2.0.0
@@ -18,13 +18,13 @@ New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest [-Add
  [-CreatedDateTime <DateTime>] [-Id <String>] [-Justification <String>] [-Notes <String>]
  [-RequestedPermissions <IMicrosoftGraphPermissionsDefinition>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-StatusDetail <String>]
- [-TicketInfo <IMicrosoftGraphTicketInfo>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TicketInfo <IMicrosoftGraphTicketInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest
- -BodyParameter <IMicrosoftGraphScheduledPermissionsRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphScheduledPermissionsRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,19 +32,15 @@ Create new navigation property to scheduledPermissionsRequests for identityGover
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -52,7 +48,7 @@ Create new navigation property to scheduledPermissionsRequests for identityGover
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +64,7 @@ scheduledPermissionsRequest
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphScheduledPermissionsRequest
+Type: IMicrosoftGraphScheduledPermissionsRequest
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +79,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +95,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +110,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +125,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +141,7 @@ permissionsDefinition
 To construct, see NOTES section for REQUESTEDPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionsDefinition
+Type: IMicrosoftGraphPermissionsDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +157,7 @@ requestSchedule
 To construct, see NOTES section for SCHEDULEINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRequestSchedule
+Type: IMicrosoftGraphRequestSchedule
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +172,7 @@ Accept wildcard characters: False
 statusDetail
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,7 +188,7 @@ ticketInfo
 To construct, see NOTES section for TICKETINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTicketInfo
+Type: IMicrosoftGraphTicketInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -223,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,11 +236,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphScheduledPermissionsRequest
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphScheduledPermissionsRequest
-
 ## NOTES
 
 ALIASES
@@ -355,3 +349,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

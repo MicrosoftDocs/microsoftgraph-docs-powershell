@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadomain
 schema: 2.0.0
@@ -15,12 +15,12 @@ This API is available in the following national cloud deployments.
 
 ### Verify (Default)
 ```
-Confirm-MgBetaDomain -DomainId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
+Confirm-MgBetaDomain -DomainId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### VerifyViaIdentity
 ```
-Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Confirm] [-WhatIf]
+Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
@@ -43,7 +43,7 @@ Confirm-MgBetaDomain -DomainId $domainId
 The unique identifier of domain
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Verify
 Aliases:
 
@@ -59,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Type: IIdentityDirectoryManagementIdentity
 Parameter Sets: VerifyViaIdentity
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -90,7 +90,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -107,11 +107,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomain
-
 ## NOTES
 
 ALIASES
@@ -166,4 +164,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

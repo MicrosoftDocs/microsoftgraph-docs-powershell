@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementresourcerequestcatalogresourcescoperesourcerole
 schema: 2.0.0
@@ -18,55 +18,32 @@ Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
  -AccessPackageResourceRequestId <String> -AccessPackageResourceRoleId <String>
  -AccessPackageResourceScopeId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded
+```
+Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole -AccessPackageResourceId <String>
+ -AccessPackageResourceRequestId <String> -AccessPackageResourceRoleId <String>
+ -AccessPackageResourceScopeId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
- -AccessPackageResourceId <String> -AccessPackageResourceRequestId <String>
- -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole -AccessPackageResourceId <String>
+ -AccessPackageResourceRequestId <String> -AccessPackageResourceRoleId <String>
+ -AccessPackageResourceScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
  -AccessPackageResourceRequestId <String> -AccessPackageResourceRoleId <String>
- -AccessPackageResourceScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded
-```
-Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
- -AccessPackageResourceId <String> -AccessPackageResourceRequestId <String>
- -AccessPackageResourceRoleId <String> -AccessPackageResourceScopeId <String>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-OriginId <String>] [-OriginSystem <String>] [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -AccessPackageResourceScopeId <String> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -74,7 +51,29 @@ Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
 Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
- [-Resource <IMicrosoftGraphAccessPackageResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-OriginId <String>] [-OriginSystem <String>]
+ [-Resource <IMicrosoftGraphAccessPackageResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgEntitlementManagementResourceRequestCatalogResourceScopeResourceRole
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessPackageResourceRole> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -82,19 +81,15 @@ Update the navigation property roles in identityGovernance
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -102,8 +97,8 @@ Update the navigation property roles in identityGovernance
 The unique identifier of accessPackageResource
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -117,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceRequest
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateExpanded, Update, Update1
 Aliases:
 
 Required: True
@@ -132,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceRole
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateExpanded, Update, Update1
 Aliases:
 
 Required: True
@@ -147,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceScope
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateExpanded, Update, Update1
 Aliases:
 
 Required: True
@@ -162,8 +157,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -178,8 +173,8 @@ accessPackageResourceRole
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
-Parameter Sets: Update, Update1, UpdateViaIdentity, UpdateViaIdentity1
+Type: IMicrosoftGraphAccessPackageResourceRole
+Parameter Sets: Update, Update1, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -193,8 +188,8 @@ Accept wildcard characters: False
 A description for the resource role.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -208,8 +203,8 @@ Accept wildcard characters: False
 The display name of the resource role such as the role defined by the application.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -224,8 +219,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -240,8 +235,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentity1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -256,8 +251,8 @@ The unique identifier of the resource role in the origin system.
 For a SharePoint Online site, the originId will be the sequence number of the role in the site.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -271,8 +266,8 @@ Accept wildcard characters: False
 The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -287,8 +282,8 @@ accessPackageResource
 To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphAccessPackageResource
+Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -302,7 +297,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -318,7 +313,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -335,13 +330,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
-
 ## NOTES
 
 ALIASES
@@ -496,3 +488,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

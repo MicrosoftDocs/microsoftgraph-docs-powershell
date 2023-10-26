@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/hide-mgchatforuser
 schema: 2.0.0
@@ -16,27 +16,27 @@ This API is available in the following national cloud deployments.
 ### HideExpanded (Default)
 ```
 Hide-MgChatForUser -ChatId <String> [-AdditionalProperties <Hashtable>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Hide
 ```
 Hide-MgChatForUser -ChatId <String>
  -BodyParameter <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### HideViaIdentityExpanded
+```
+Hide-MgChatForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### HideViaIdentity
 ```
 Hide-MgChatForUser -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### HideViaIdentityExpanded
-```
-Hide-MgChatForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: HideExpanded, HideViaIdentityExpanded
 Aliases:
 
@@ -81,7 +77,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Hide, HideViaIdentity
 Aliases:
 
@@ -96,8 +92,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: System.String
-Parameter Sets: Hide, HideExpanded
+Type: String
+Parameter Sets: HideExpanded, Hide
 Aliases:
 
 Required: True
@@ -112,8 +108,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: HideViaIdentity, HideViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: HideViaIdentityExpanded, HideViaIdentity
 Aliases:
 
 Required: True
@@ -127,7 +123,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -143,7 +139,7 @@ teamworkUserIdentity
 To construct, see NOTES section for USER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkUserIdentity
+Type: IMicrosoftGraphTeamworkUserIdentity
 Parameter Sets: HideExpanded, HideViaIdentityExpanded
 Aliases:
 
@@ -158,7 +154,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +170,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,13 +187,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -256,4 +249,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
-

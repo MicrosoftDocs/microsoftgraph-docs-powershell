@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskdetection
 schema: 2.0.0
@@ -16,34 +16,34 @@ Update the navigation property riskDetections in identityProtection
 ```
 Update-MgRiskDetection -RiskDetectionId <String> [-Activity <String>] [-ActivityDateTime <DateTime>]
  [-AdditionalInfo <String>] [-AdditionalProperties <Hashtable>] [-CorrelationId <String>]
- [-DetectedDateTime <DateTime>] [-DetectionTimingType <String>] [-Id <String>] [-IPAddress <String>]
+ [-DetectedDateTime <DateTime>] [-DetectionTimingType <String>] [-IPAddress <String>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-Location <IMicrosoftGraphSignInLocation>] [-RequestId <String>]
  [-RiskDetail <String>] [-RiskEventType <String>] [-RiskLevel <String>] [-RiskState <String>]
  [-Source <String>] [-TokenIssuerType <String>] [-UserDisplayName <String>] [-UserId <String>]
- [-UserPrincipalName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgRiskDetection -RiskDetectionId <String> -BodyParameter <IMicrosoftGraphRiskDetection> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgRiskDetection -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphRiskDetection>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgRiskDetection -RiskDetectionId <String> -BodyParameter <IMicrosoftGraphRiskDetection> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgRiskDetection -InputObject <IIdentitySignInsIdentity> [-Activity <String>]
  [-ActivityDateTime <DateTime>] [-AdditionalInfo <String>] [-AdditionalProperties <Hashtable>]
- [-CorrelationId <String>] [-DetectedDateTime <DateTime>] [-DetectionTimingType <String>] [-Id <String>]
- [-IPAddress <String>] [-LastUpdatedDateTime <DateTime>] [-Location <IMicrosoftGraphSignInLocation>]
+ [-CorrelationId <String>] [-DetectedDateTime <DateTime>] [-DetectionTimingType <String>] [-IPAddress <String>]
+ [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-Location <IMicrosoftGraphSignInLocation>]
  [-RequestId <String>] [-RiskDetail <String>] [-RiskEventType <String>] [-RiskLevel <String>]
  [-RiskState <String>] [-Source <String>] [-TokenIssuerType <String>] [-UserDisplayName <String>]
- [-UserId <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgRiskDetection -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphRiskDetection>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,14 +51,14 @@ Update the navigation property riskDetections in identityProtection
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -71,7 +71,7 @@ Update the navigation property riskDetections in identityProtection
 activityType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -88,7 +88,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is look like this: 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +106,7 @@ Possible keys in the additionalInfo JSON string are: userAgent, alertUrl, relate
 For more information about riskReasons and possible values, see riskReasons values.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -137,7 +137,7 @@ riskDetection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskDetection
+Type: IMicrosoftGraphRiskDetection
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -153,7 +153,7 @@ Correlation ID of the sign-in associated with the risk detection.
 This property is null if the risk detection is not associated with a sign-in.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -170,7 +170,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 looks like this: 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 riskDetectionTimingType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -201,7 +201,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -217,8 +217,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 Provides the IP address of the client from where the risk occurred.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -249,7 +249,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is look like this: 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -265,7 +265,7 @@ signInLocation
 To construct, see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSignInLocation
+Type: IMicrosoftGraphSignInLocation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -281,7 +281,7 @@ Request ID of the sign-in associated with the risk detection.
 This property is null if the risk detection is not associated with a sign-in.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 riskDetail
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -311,8 +311,8 @@ Accept wildcard characters: False
 The unique identifier of riskDetection
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -329,7 +329,7 @@ If the risk detection is a premium detection, will show generic.
 For more information about each value, see riskEventType values.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 riskLevel
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -359,7 +359,7 @@ Accept wildcard characters: False
 riskState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -375,7 +375,7 @@ Source of the risk detection.
 For example, activeDirectory.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 tokenIssuerType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -405,7 +405,7 @@ Accept wildcard characters: False
 The user principal name (UPN) of the user.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -420,7 +420,7 @@ Accept wildcard characters: False
 Unique ID of the user.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -435,7 +435,7 @@ Accept wildcard characters: False
 The user principal name (UPN) of the user.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -466,7 +466,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -483,13 +483,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskDetection
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskDetection
-
 ## NOTES
 
 ALIASES
@@ -601,3 +598,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

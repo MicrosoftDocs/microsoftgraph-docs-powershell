@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoffrequest
 schema: 2.0.0
@@ -17,28 +17,27 @@ Create new navigation property to timeOffRequests for teams
 New-MgTeamScheduleTimeOffRequest -TeamId <String> [-AdditionalProperties <Hashtable>] [-AssignedTo <String>]
  [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ManagerActionMessage <String>] [-SenderMessage <String>] [-StartDateTime <DateTime>] [-State <String>]
- [-TimeOffReasonId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TimeOffReasonId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTeamScheduleTimeOffRequest -TeamId <String> -BodyParameter <IMicrosoftGraphTimeOffRequest> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOffRequest>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgTeamScheduleTimeOffRequest -TeamId <String> -BodyParameter <IMicrosoftGraphTimeOffRequest> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignedTo <String>] [-EndDateTime <DateTime>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>] [-SenderMessage <String>]
- [-StartDateTime <DateTime>] [-State <String>] [-TimeOffReasonId <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-AssignedTo <String>] [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-ManagerActionMessage <String>] [-SenderMessage <String>] [-StartDateTime <DateTime>] [-State <String>]
+ [-TimeOffReasonId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOffRequest>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,7 +45,7 @@ Create new navigation property to timeOffRequests for teams
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 ```
@@ -59,7 +58,7 @@ Get-MgTeamScheduleTimeOffRequest -TeamId $teamId
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +73,7 @@ Accept wildcard characters: False
 scheduleChangeRequestActor
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -90,7 +89,7 @@ timeOffRequest
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffRequest
+Type: IMicrosoftGraphTimeOffRequest
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -106,7 +105,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +121,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -138,8 +137,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -154,7 +153,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -169,7 +168,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +183,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +199,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +214,7 @@ Accept wildcard characters: False
 scheduleChangeState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -230,8 +229,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -245,7 +244,7 @@ Accept wildcard characters: False
 The reason for the time off.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -260,7 +259,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -276,7 +275,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -293,13 +292,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffRequest
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffRequest
-
 ## NOTES
 
 ALIASES
@@ -372,4 +368,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-

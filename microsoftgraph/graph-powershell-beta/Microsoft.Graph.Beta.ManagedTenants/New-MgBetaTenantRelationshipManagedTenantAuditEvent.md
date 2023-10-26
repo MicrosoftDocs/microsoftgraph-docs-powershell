@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantauditevent
 schema: 2.0.0
@@ -16,15 +16,15 @@ Create new navigation property to auditEvents for tenantRelationships
 ```
 New-MgBetaTenantRelationshipManagedTenantAuditEvent [-Activity <String>] [-ActivityDateTime <DateTime>]
  [-ActivityId <String>] [-AdditionalProperties <Hashtable>] [-Category <String>] [-HttpVerb <String>]
- [-Id <String>] [-InitiatedByAppId <String>] [-InitiatedByUpn <String>] [-InitiatedByUserId <String>]
- [-IPAddress <String>] [-RequestBody <String>] [-RequestUrl <String>] [-TenantIds <String>]
- [-TenantNames <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-IPAddress <String>] [-Id <String>] [-InitiatedByAppId <String>] [-InitiatedByUpn <String>]
+ [-InitiatedByUserId <String>] [-RequestBody <String>] [-RequestUrl <String>] [-TenantIds <String>]
+ [-TenantNames <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantAuditEvent -BodyParameter <IMicrosoftGraphManagedTenantsAuditEvent>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,14 +32,14 @@ Create new navigation property to auditEvents for tenantRelationships
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -54,7 +54,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +88,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ auditEvent
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAuditEvent
+Type: IMicrosoftGraphManagedTenantsAuditEvent
 Parameter Sets: Create
 Aliases:
 
@@ -136,7 +136,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -153,7 +153,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +169,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -186,7 +186,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +203,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -220,7 +220,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +238,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -254,7 +254,7 @@ The raw HTTP request body.
 Some sensitive information may be removed.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -271,7 +271,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -288,7 +288,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -305,7 +305,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -320,7 +320,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -336,7 +336,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -353,11 +353,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAuditEvent
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsAuditEvent
-
 ## NOTES
 
 ALIASES
@@ -385,4 +383,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantNames <String>]`: The collection of tenant names that were affected by a change, and is formatted as a list of comma-separated values. Required. Read-only.
 
 ## RELATED LINKS
-

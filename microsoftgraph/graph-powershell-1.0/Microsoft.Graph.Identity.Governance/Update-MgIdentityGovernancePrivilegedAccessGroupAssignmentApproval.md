@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentapproval
 schema: 2.0.0
@@ -15,27 +15,27 @@ Update the navigation property assignmentApprovals in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval -ApprovalId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Stages <IMicrosoftGraphApprovalStage[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Stages <IMicrosoftGraphApprovalStage[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval -ApprovalId <String>
- -BodyParameter <IMicrosoftGraphApproval> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphApproval> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphApproval> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Stages <IMicrosoftGraphApprovalStage[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Stages <IMicrosoftGraphApprovalStage[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphApproval> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,19 +43,15 @@ Update the navigation property assignmentApprovals in identityGovernance
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -63,7 +59,7 @@ Update the navigation property assignmentApprovals in identityGovernance
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -78,8 +74,8 @@ Accept wildcard characters: False
 The unique identifier of approval
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -94,7 +90,7 @@ approval
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApproval
+Type: IMicrosoftGraphApproval
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -110,7 +106,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,8 +122,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -142,7 +138,7 @@ A collection of stages in the approval decision.
 To construct, see NOTES section for STAGES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApprovalStage[]
+Type: IMicrosoftGraphApprovalStage[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +153,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +169,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,13 +186,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApproval
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApproval
-
 ## NOTES
 
 ALIASES
@@ -306,4 +299,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: The stage status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 
 ## RELATED LINKS
-

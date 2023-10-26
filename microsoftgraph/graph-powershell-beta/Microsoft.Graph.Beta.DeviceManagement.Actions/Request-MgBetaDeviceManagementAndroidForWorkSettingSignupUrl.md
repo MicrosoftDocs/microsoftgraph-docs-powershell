@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidforworksettingsignupurl
 schema: 2.0.0
@@ -15,14 +15,14 @@ Invoke action requestSignupUrl
 ### RequestExpanded (Default)
 ```
 Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl [-AdditionalProperties <Hashtable>]
- [-HostName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-HostName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Request
 ```
 Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl
  -BodyParameter <IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,14 +30,14 @@ Invoke action requestSignupUrl
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -50,7 +50,7 @@ Invoke action requestSignupUrl
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: RequestExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema
+Type: IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Request
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: RequestExpanded
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -148,4 +146,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostName <String>]`: 
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplate
 schema: 2.0.0
@@ -17,13 +17,13 @@ Update the navigation property templates in policies
 Update-MgBetaPolicyCrossTenantAccessPolicyTemplate [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-MultiTenantOrganizationIdentitySynchronization <IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate>]
  [-MultiTenantOrganizationPartnerConfiguration <IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaPolicyCrossTenantAccessPolicyTemplate -BodyParameter <IMicrosoftGraphPolicyTemplate> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgBetaPolicyCrossTenantAccessPolicyTemplate -BodyParameter <IMicrosoftGraphPolicyTemplate> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,19 +31,15 @@ Update the navigation property templates in policies
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -51,7 +47,7 @@ Update the navigation property templates in policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -67,7 +63,7 @@ policyTemplate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicyTemplate
+Type: IMicrosoftGraphPolicyTemplate
 Parameter Sets: Update
 Aliases:
 
@@ -83,7 +79,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,7 +95,7 @@ multiTenantOrganizationIdentitySyncPolicyTemplate
 To construct, see NOTES section for MULTITENANTORGANIZATIONIDENTITYSYNCHRONIZATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate
+Type: IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -115,7 +111,7 @@ multiTenantOrganizationPartnerConfigurationTemplate
 To construct, see NOTES section for MULTITENANTORGANIZATIONPARTNERCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate
+Type: IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -130,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -146,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -163,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicyTemplate
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicyTemplate
-
 ## NOTES
 
 ALIASES
@@ -248,4 +242,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[TemplateApplicationLevel <String>]`: templateApplicationLevel
 
 ## RELATED LINKS
-

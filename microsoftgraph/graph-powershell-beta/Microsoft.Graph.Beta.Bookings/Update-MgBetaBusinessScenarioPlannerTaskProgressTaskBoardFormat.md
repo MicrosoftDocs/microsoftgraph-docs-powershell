@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskprogresstaskboardformat
 schema: 2.0.0
@@ -16,28 +16,28 @@ Update the navigation property progressTaskBoardFormat in solutions
 ```
 Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat -BusinessScenarioId <String>
  -BusinessScenarioTaskId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-OrderHint <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-OrderHint <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat -BusinessScenarioId <String>
  -BusinessScenarioTaskId <String> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat -InputObject <IBookingsIdentity>
- -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat -InputObject <IBookingsIdentity>
- -IfMatch <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-OrderHint <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -IfMatch <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-OrderHint <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat -InputObject <IBookingsIdentity>
+ -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ Update the navigation property progressTaskBoardFormat in solutions
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ Update the navigation property progressTaskBoardFormat in solutions
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +77,7 @@ plannerProgressTaskBoardTaskFormat
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
+Type: IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -96,8 +92,8 @@ Accept wildcard characters: False
 The unique identifier of businessScenario
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -111,8 +107,8 @@ Accept wildcard characters: False
 The unique identifier of businessScenarioTask
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -127,7 +123,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +138,7 @@ Accept wildcard characters: False
 ETag value.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -158,8 +154,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IBookingsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -174,7 +170,7 @@ Hint value used to order the task on the progress view of the task board.
 For details about the supported format, see Using order hints in Planner.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +185,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +201,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,13 +218,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
-
 ## NOTES
 
 ALIASES
@@ -267,4 +260,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-

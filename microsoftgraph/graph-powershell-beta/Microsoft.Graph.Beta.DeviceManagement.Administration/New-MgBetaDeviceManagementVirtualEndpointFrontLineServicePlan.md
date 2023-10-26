@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan
 schema: 2.0.0
@@ -15,14 +15,14 @@ Create new navigation property to frontLineServicePlans for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-TotalCount <Int32>] [-UsedCount <Int32>] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-Id <String>] [-TotalCount <Int32>] [-UsedCount <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
- -BodyParameter <IMicrosoftGraphCloudPcFrontLineServicePlan> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcFrontLineServicePlan> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,19 +30,15 @@ Create new navigation property to frontLineServicePlans for deviceManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -50,7 +46,7 @@ Create new navigation property to frontLineServicePlans for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +62,7 @@ cloudPcFrontLineServicePlan
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcFrontLineServicePlan
+Type: IMicrosoftGraphCloudPcFrontLineServicePlan
 Parameter Sets: Create
 Aliases:
 
@@ -82,7 +78,7 @@ The display name of the front-line service plan.
 For example, 2vCPU/8GB/128GB Front-line or 4vCPU/16GB/256GB Front-line.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +94,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +109,7 @@ Accept wildcard characters: False
 The total number of front-line service plans purchased by the customer.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +124,7 @@ Accept wildcard characters: False
 The number of service plans that have been used for the account.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +139,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -159,7 +155,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -176,11 +172,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcFrontLineServicePlan
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcFrontLineServicePlan
-
 ## NOTES
 
 ALIASES
@@ -198,4 +192,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UsedCount <Int32?>]`: The number of service plans that have been used for the account.
 
 ## RELATED LINKS
-

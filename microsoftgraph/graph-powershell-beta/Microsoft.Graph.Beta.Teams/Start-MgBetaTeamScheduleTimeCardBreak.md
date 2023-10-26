@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/start-mgbetateamscheduletimecardbreak
 schema: 2.0.0
@@ -15,29 +15,28 @@ This API is available in the following national cloud deployments.
 
 ### StartExpanded (Default)
 ```
-Start-MgBetaTeamScheduleTimeCardBreak -TeamId <String> -TimeCardId <String>
- [-AdditionalProperties <Hashtable>] [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Start-MgBetaTeamScheduleTimeCardBreak -TeamId <String> -TimeCardId <String> [-AdditionalProperties <Hashtable>]
+ [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Start
 ```
 Start-MgBetaTeamScheduleTimeCardBreak -TeamId <String> -TimeCardId <String>
  -BodyParameter <IPaths1Ckmy1BTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphStartbreakPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### StartViaIdentityExpanded
+```
+Start-MgBetaTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaIdentity
 ```
 Start-MgBetaTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Ckmy1BTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphStartbreakPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### StartViaIdentityExpanded
-```
-Start-MgBetaTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,7 +45,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -59,15 +58,13 @@ $params = @{
 Start-MgBetaTeamScheduleTimeCardBreak -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: StartExpanded, StartViaIdentityExpanded
 Aliases:
 
@@ -82,7 +79,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: StartExpanded, StartViaIdentityExpanded
 Aliases:
 
@@ -98,7 +95,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ckmy1BTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphStartbreakPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Ckmy1BTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphStartbreakPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Start, StartViaIdentity
 Aliases:
 
@@ -114,8 +111,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
-Parameter Sets: StartViaIdentity, StartViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: StartViaIdentityExpanded, StartViaIdentity
 Aliases:
 
 Required: True
@@ -130,7 +127,7 @@ itemBody
 To construct, see NOTES section for NOTES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
+Type: IMicrosoftGraphItemBody
 Parameter Sets: StartExpanded, StartViaIdentityExpanded
 Aliases:
 
@@ -145,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Start, StartExpanded
+Type: String
+Parameter Sets: StartExpanded, Start
 Aliases:
 
 Required: True
@@ -160,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of timeCard
 
 ```yaml
-Type: System.String
-Parameter Sets: Start, StartExpanded
+Type: String
+Parameter Sets: StartExpanded, Start
 Aliases:
 
 Required: True
@@ -175,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ckmy1BTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphStartbreakPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeCard
-
 ## NOTES
 
 ALIASES
@@ -278,4 +272,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
-

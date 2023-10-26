@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementexchangeconnector
 schema: 2.0.0
@@ -14,18 +14,17 @@ Create new navigation property to exchangeConnectors for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceManagementExchangeConnector [-AdditionalProperties <Hashtable>]
- [-ConnectorServerName <String>] [-ExchangeAlias <String>]
- [-ExchangeConnectorType <DeviceManagementExchangeConnectorType>] [-ExchangeOrganization <String>]
- [-Id <String>] [-LastSyncDateTime <DateTime>] [-PrimarySmtpAddress <String>] [-ServerName <String>]
- [-Status <DeviceManagementExchangeConnectorStatus>] [-Version <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgBetaDeviceManagementExchangeConnector [-AdditionalProperties <Hashtable>] [-ConnectorServerName <String>]
+ [-ExchangeAlias <String>] [-ExchangeConnectorType <DeviceManagementExchangeConnectorType>]
+ [-ExchangeOrganization <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-PrimarySmtpAddress <String>]
+ [-ServerName <String>] [-Status <DeviceManagementExchangeConnectorStatus>] [-Version <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementExchangeConnector -BodyParameter <IMicrosoftGraphDeviceManagementExchangeConnector>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,14 +32,14 @@ Create new navigation property to exchangeConnectors for deviceManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -53,7 +52,7 @@ Create new navigation property to exchangeConnectors for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +68,7 @@ Entity which represents a connection to an Exchange environment.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
+Type: IMicrosoftGraphDeviceManagementExchangeConnector
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +83,7 @@ Accept wildcard characters: False
 The name of the server hosting the Exchange Connector.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +98,7 @@ Accept wildcard characters: False
 An alias assigned to the Exchange server
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +113,7 @@ Accept wildcard characters: False
 The type of Exchange Connector.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementExchangeConnectorType
+Type: DeviceManagementExchangeConnectorType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +128,7 @@ Accept wildcard characters: False
 Exchange Organization to the Exchange server
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +144,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +159,7 @@ Accept wildcard characters: False
 Last sync time for the Exchange Connector
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +174,7 @@ Accept wildcard characters: False
 Email address used to configure the Service To Service Exchange Connector.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +189,7 @@ Accept wildcard characters: False
 The name of the Exchange server.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -205,7 +204,7 @@ Accept wildcard characters: False
 The current status of the Exchange Connector.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementExchangeConnectorStatus
+Type: DeviceManagementExchangeConnectorStatus
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -220,7 +219,7 @@ Accept wildcard characters: False
 The version of the ExchangeConnectorAgent
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -235,7 +234,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -251,7 +250,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -268,11 +267,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
-
 ## NOTES
 
 ALIASES
@@ -296,4 +293,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
 ## RELATED LINKS
-

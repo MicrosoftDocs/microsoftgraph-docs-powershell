@@ -1,94 +1,73 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagerule
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagemention
 schema: 2.0.0
 ---
 
-# New-MgBetaUserMailFolderMessageRule
+# New-MgBetaUserMailFolderMessageMention
 
 ## SYNOPSIS
-Create a messageRule object by specifying a set of conditions and actions.
-Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
-This API is available in the following national cloud deployments.
+Create new navigation property to mentions for users
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserMailFolderMessageRule -MailFolderId <String> -UserId <String>
- [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
- [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
- [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
- [-Sequence <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaUserMailFolderMessageMention -MailFolderId <String> -MessageId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-Application <String>] [-ClientReference <String>]
+ [-CreatedBy <IMicrosoftGraphEmailAddress>] [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>]
+ [-MentionText <String>] [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserMailFolderMessageRule -MailFolderId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMessageRule> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessageRule>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaUserMailFolderMessageMention -MailFolderId <String> -MessageId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphMention> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity>
- [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
- [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
- [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
- [-Sequence <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
+ [-Application <String>] [-ClientReference <String>] [-CreatedBy <IMicrosoftGraphEmailAddress>]
+ [-CreatedDateTime <DateTime>] [-DeepLink <String>] [-Id <String>] [-MentionText <String>]
+ [-Mentioned <IMicrosoftGraphEmailAddress>] [-ServerCreatedDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMention>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a messageRule object by specifying a set of conditions and actions.
-Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
-This API is available in the following national cloud deployments.
+Create new navigation property to mentions for users
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Mail
+{{ Add code here }}
 ```
 
-$params = @{
-	displayName = "From partner"
-	sequence = 2
-	isEnabled = $true
-	conditions = @{
-		senderContains = @(
-			"adele"
-		)
-	}
-	actions = @{
-		forwardTo = @(
-			@{
-				emailAddress = @{
-					name = "Alex Wilbur"
-					address = "AlexW@contoso.onmicrosoft.com"
-				}
-			}
-		)
-		stopProcessingRules = $true
-	}
-}
+{{ Add output here }}
 
-# A UPN can also be used as -UserId.
-New-MgBetaUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
-### -Actions
-messageRuleActions
-To construct, see NOTES section for ACTIONS properties and create a hash table.
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRuleActions
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,11 +78,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -Application
+The name of the application where the mention is created.
+Optional.
+Not used and defaulted as null for message.
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,11 +96,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-messageRule
+mention
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRule
+Type: IMicrosoftGraphMention
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -130,12 +111,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Conditions
-messageRulePredicates
-To construct, see NOTES section for CONDITIONS properties and create a hash table.
+### -ClientReference
+A unique identifier that represents a parent of the resource instance.
+Optional.
+Not used and defaulted as null for message.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRulePredicates
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,11 +128,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisplayName
-The display name of the rule.
+### -CreatedBy
+emailAddress
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: System.String
+Type: IMicrosoftGraphEmailAddress
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -161,12 +144,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Exceptions
-messageRulePredicates
-To construct, see NOTES section for EXCEPTIONS properties and create a hash table.
+### -CreatedDateTime
+The date and time that the mention is created on the client.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRulePredicates
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,12 +159,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -HasError
-Indicates whether the rule is in an error condition.
-Read-only.
+### -DeepLink
+A deep web link to the context of the mention in the resource instance.
+Optional.
+Not used and defaulted as null for message.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +181,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -214,8 +197,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IMailIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -225,42 +208,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IsEnabled
-Indicates whether the rule is enabled to be applied to messages.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IsReadOnly
-Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -MailFolderId
 The unique identifier of mailFolder
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -270,11 +223,61 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Sequence
-Indicates the order in which the rule is executed, among other rules.
+### -Mentioned
+emailAddress
+To construct, see NOTES section for MENTIONED properties and create a hash table.
 
 ```yaml
-Type: System.Int32
+Type: IMicrosoftGraphEmailAddress
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MentionText
+Optional.
+Not used and defaulted as null for message.
+To get the mentions in a message, see the bodyPreview property of the message instead.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MessageId
+The unique identifier of message
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, Create
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServerCreatedDateTime
+The date and time that the mention is created on the server.
+Optional.
+Not used and defaulted as null for message.
+
+```yaml
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -289,8 +292,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -320,7 +323,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -337,13 +340,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
-
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRule
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRule
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMention
 ## NOTES
 
 ALIASES
@@ -353,165 +353,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`ACTIONS <IMicrosoftGraphMessageRuleActions>`: messageRuleActions
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AssignCategories <String[]>]`: A list of categories to be assigned to a message.
-  - `[CopyToFolder <String>]`: The ID of a folder that a message is to be copied to.
-  - `[Delete <Boolean?>]`: Indicates whether a message should be moved to the Deleted Items folder.
-  - `[ForwardAsAttachmentTo <IMicrosoftGraphRecipient[]>]`: The email addresses of the recipients to which a message should be forwarded as an attachment.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
-  - `[ForwardTo <IMicrosoftGraphRecipient[]>]`: The email addresses of the recipients to which a message should be forwarded.
-  - `[MarkAsRead <Boolean?>]`: Indicates whether a message should be marked as read.
-  - `[MarkImportance <String>]`: importance
-  - `[MoveToFolder <String>]`: The ID of the folder that a message will be moved to.
-  - `[PermanentDelete <Boolean?>]`: Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-  - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email address to which a message should be redirected.
-  - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
-
-`BODYPARAMETER <IMicrosoftGraphMessageRule>`: messageRule
+`BODYPARAMETER <IMicrosoftGraphMention>`: mention
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Actions <IMicrosoftGraphMessageRuleActions>]`: messageRuleActions
+  - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
+  - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
+  - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AssignCategories <String[]>]`: A list of categories to be assigned to a message.
-    - `[CopyToFolder <String>]`: The ID of a folder that a message is to be copied to.
-    - `[Delete <Boolean?>]`: Indicates whether a message should be moved to the Deleted Items folder.
-    - `[ForwardAsAttachmentTo <IMicrosoftGraphRecipient[]>]`: The email addresses of the recipients to which a message should be forwarded as an attachment.
-      - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Address <String>]`: The email address of an entity instance.
-        - `[Name <String>]`: The display name of an entity instance.
-    - `[ForwardTo <IMicrosoftGraphRecipient[]>]`: The email addresses of the recipients to which a message should be forwarded.
-    - `[MarkAsRead <Boolean?>]`: Indicates whether a message should be marked as read.
-    - `[MarkImportance <String>]`: importance
-    - `[MoveToFolder <String>]`: The ID of the folder that a message will be moved to.
-    - `[PermanentDelete <Boolean?>]`: Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-    - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email address to which a message should be redirected.
-    - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
-  - `[Conditions <IMicrosoftGraphMessageRulePredicates>]`: messageRulePredicates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
-    - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
-    - `[Categories <String[]>]`: Represents the categories that an incoming message should be labeled with in order for the condition or exception to apply.
-    - `[FromAddresses <IMicrosoftGraphRecipient[]>]`: Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply.
-    - `[HasAttachments <Boolean?>]`: Indicates whether an incoming message must have attachments in order for the condition or exception to apply.
-    - `[HeaderContains <String[]>]`: Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply.
-    - `[Importance <String>]`: importance
-    - `[IsApprovalRequest <Boolean?>]`: Indicates whether an incoming message must be an approval request in order for the condition or exception to apply.
-    - `[IsAutomaticForward <Boolean?>]`: Indicates whether an incoming message must be automatically forwarded in order for the condition or exception to apply.
-    - `[IsAutomaticReply <Boolean?>]`: Indicates whether an incoming message must be an auto reply in order for the condition or exception to apply.
-    - `[IsEncrypted <Boolean?>]`: Indicates whether an incoming message must be encrypted in order for the condition or exception to apply.
-    - `[IsMeetingRequest <Boolean?>]`: Indicates whether an incoming message must be a meeting request in order for the condition or exception to apply.
-    - `[IsMeetingResponse <Boolean?>]`: Indicates whether an incoming message must be a meeting response in order for the condition or exception to apply.
-    - `[IsNonDeliveryReport <Boolean?>]`: Indicates whether an incoming message must be a non-delivery report in order for the condition or exception to apply.
-    - `[IsPermissionControlled <Boolean?>]`: Indicates whether an incoming message must be permission controlled (RMS-protected) in order for the condition or exception to apply.
-    - `[IsReadReceipt <Boolean?>]`: Indicates whether an incoming message must be a read receipt in order for the condition or exception to apply.
-    - `[IsSigned <Boolean?>]`: Indicates whether an incoming message must be S/MIME-signed in order for the condition or exception to apply.
-    - `[IsVoicemail <Boolean?>]`: Indicates whether an incoming message must be a voice mail in order for the condition or exception to apply.
-    - `[MessageActionFlag <String>]`: messageActionFlag
-    - `[NotSentToMe <Boolean?>]`: Indicates whether the owner of the mailbox must not be a recipient of an incoming message in order for the condition or exception to apply.
-    - `[RecipientContains <String[]>]`: Represents the strings that appear in either the toRecipients or ccRecipients properties of an incoming message in order for the condition or exception to apply.
-    - `[SenderContains <String[]>]`: Represents the strings that appear in the from property of an incoming message in order for the condition or exception to apply.
-    - `[Sensitivity <String>]`: sensitivity
-    - `[SentCcMe <Boolean?>]`: Indicates whether the owner of the mailbox must be in the ccRecipients property of an incoming message in order for the condition or exception to apply.
-    - `[SentOnlyToMe <Boolean?>]`: Indicates whether the owner of the mailbox must be the only recipient in an incoming message in order for the condition or exception to apply.
-    - `[SentToAddresses <IMicrosoftGraphRecipient[]>]`: Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply.
-    - `[SentToMe <Boolean?>]`: Indicates whether the owner of the mailbox must be in the toRecipients property of an incoming message in order for the condition or exception to apply.
-    - `[SentToOrCcMe <Boolean?>]`: Indicates whether the owner of the mailbox must be in either a toRecipients or ccRecipients property of an incoming message in order for the condition or exception to apply.
-    - `[SubjectContains <String[]>]`: Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply.
-    - `[WithinSizeRange <IMicrosoftGraphSizeRange>]`: sizeRange
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
-      - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
-  - `[DisplayName <String>]`: The display name of the rule.
-  - `[Exceptions <IMicrosoftGraphMessageRulePredicates>]`: messageRulePredicates
-  - `[HasError <Boolean?>]`: Indicates whether the rule is in an error condition. Read-only.
-  - `[IsEnabled <Boolean?>]`: Indicates whether the rule is enabled to be applied to messages.
-  - `[IsReadOnly <Boolean?>]`: Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
-  - `[Sequence <Int32?>]`: Indicates the order in which the rule is executed, among other rules.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
+  - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
+  - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for message.
+  - `[MentionText <String>]`: Optional. Not used and defaulted as null for message. To get the mentions in a message, see the bodyPreview property of the message instead.
+  - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
+  - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
 
-`CONDITIONS <IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+`CREATEDBY <IMicrosoftGraphEmailAddress>`: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
-  - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
-  - `[Categories <String[]>]`: Represents the categories that an incoming message should be labeled with in order for the condition or exception to apply.
-  - `[FromAddresses <IMicrosoftGraphRecipient[]>]`: Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
-  - `[HasAttachments <Boolean?>]`: Indicates whether an incoming message must have attachments in order for the condition or exception to apply.
-  - `[HeaderContains <String[]>]`: Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply.
-  - `[Importance <String>]`: importance
-  - `[IsApprovalRequest <Boolean?>]`: Indicates whether an incoming message must be an approval request in order for the condition or exception to apply.
-  - `[IsAutomaticForward <Boolean?>]`: Indicates whether an incoming message must be automatically forwarded in order for the condition or exception to apply.
-  - `[IsAutomaticReply <Boolean?>]`: Indicates whether an incoming message must be an auto reply in order for the condition or exception to apply.
-  - `[IsEncrypted <Boolean?>]`: Indicates whether an incoming message must be encrypted in order for the condition or exception to apply.
-  - `[IsMeetingRequest <Boolean?>]`: Indicates whether an incoming message must be a meeting request in order for the condition or exception to apply.
-  - `[IsMeetingResponse <Boolean?>]`: Indicates whether an incoming message must be a meeting response in order for the condition or exception to apply.
-  - `[IsNonDeliveryReport <Boolean?>]`: Indicates whether an incoming message must be a non-delivery report in order for the condition or exception to apply.
-  - `[IsPermissionControlled <Boolean?>]`: Indicates whether an incoming message must be permission controlled (RMS-protected) in order for the condition or exception to apply.
-  - `[IsReadReceipt <Boolean?>]`: Indicates whether an incoming message must be a read receipt in order for the condition or exception to apply.
-  - `[IsSigned <Boolean?>]`: Indicates whether an incoming message must be S/MIME-signed in order for the condition or exception to apply.
-  - `[IsVoicemail <Boolean?>]`: Indicates whether an incoming message must be a voice mail in order for the condition or exception to apply.
-  - `[MessageActionFlag <String>]`: messageActionFlag
-  - `[NotSentToMe <Boolean?>]`: Indicates whether the owner of the mailbox must not be a recipient of an incoming message in order for the condition or exception to apply.
-  - `[RecipientContains <String[]>]`: Represents the strings that appear in either the toRecipients or ccRecipients properties of an incoming message in order for the condition or exception to apply.
-  - `[SenderContains <String[]>]`: Represents the strings that appear in the from property of an incoming message in order for the condition or exception to apply.
-  - `[Sensitivity <String>]`: sensitivity
-  - `[SentCcMe <Boolean?>]`: Indicates whether the owner of the mailbox must be in the ccRecipients property of an incoming message in order for the condition or exception to apply.
-  - `[SentOnlyToMe <Boolean?>]`: Indicates whether the owner of the mailbox must be the only recipient in an incoming message in order for the condition or exception to apply.
-  - `[SentToAddresses <IMicrosoftGraphRecipient[]>]`: Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply.
-  - `[SentToMe <Boolean?>]`: Indicates whether the owner of the mailbox must be in the toRecipients property of an incoming message in order for the condition or exception to apply.
-  - `[SentToOrCcMe <Boolean?>]`: Indicates whether the owner of the mailbox must be in either a toRecipients or ccRecipients property of an incoming message in order for the condition or exception to apply.
-  - `[SubjectContains <String[]>]`: Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply.
-  - `[WithinSizeRange <IMicrosoftGraphSizeRange>]`: sizeRange
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
-    - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
-
-`EXCEPTIONS <IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
-  - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
-  - `[Categories <String[]>]`: Represents the categories that an incoming message should be labeled with in order for the condition or exception to apply.
-  - `[FromAddresses <IMicrosoftGraphRecipient[]>]`: Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
-  - `[HasAttachments <Boolean?>]`: Indicates whether an incoming message must have attachments in order for the condition or exception to apply.
-  - `[HeaderContains <String[]>]`: Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply.
-  - `[Importance <String>]`: importance
-  - `[IsApprovalRequest <Boolean?>]`: Indicates whether an incoming message must be an approval request in order for the condition or exception to apply.
-  - `[IsAutomaticForward <Boolean?>]`: Indicates whether an incoming message must be automatically forwarded in order for the condition or exception to apply.
-  - `[IsAutomaticReply <Boolean?>]`: Indicates whether an incoming message must be an auto reply in order for the condition or exception to apply.
-  - `[IsEncrypted <Boolean?>]`: Indicates whether an incoming message must be encrypted in order for the condition or exception to apply.
-  - `[IsMeetingRequest <Boolean?>]`: Indicates whether an incoming message must be a meeting request in order for the condition or exception to apply.
-  - `[IsMeetingResponse <Boolean?>]`: Indicates whether an incoming message must be a meeting response in order for the condition or exception to apply.
-  - `[IsNonDeliveryReport <Boolean?>]`: Indicates whether an incoming message must be a non-delivery report in order for the condition or exception to apply.
-  - `[IsPermissionControlled <Boolean?>]`: Indicates whether an incoming message must be permission controlled (RMS-protected) in order for the condition or exception to apply.
-  - `[IsReadReceipt <Boolean?>]`: Indicates whether an incoming message must be a read receipt in order for the condition or exception to apply.
-  - `[IsSigned <Boolean?>]`: Indicates whether an incoming message must be S/MIME-signed in order for the condition or exception to apply.
-  - `[IsVoicemail <Boolean?>]`: Indicates whether an incoming message must be a voice mail in order for the condition or exception to apply.
-  - `[MessageActionFlag <String>]`: messageActionFlag
-  - `[NotSentToMe <Boolean?>]`: Indicates whether the owner of the mailbox must not be a recipient of an incoming message in order for the condition or exception to apply.
-  - `[RecipientContains <String[]>]`: Represents the strings that appear in either the toRecipients or ccRecipients properties of an incoming message in order for the condition or exception to apply.
-  - `[SenderContains <String[]>]`: Represents the strings that appear in the from property of an incoming message in order for the condition or exception to apply.
-  - `[Sensitivity <String>]`: sensitivity
-  - `[SentCcMe <Boolean?>]`: Indicates whether the owner of the mailbox must be in the ccRecipients property of an incoming message in order for the condition or exception to apply.
-  - `[SentOnlyToMe <Boolean?>]`: Indicates whether the owner of the mailbox must be the only recipient in an incoming message in order for the condition or exception to apply.
-  - `[SentToAddresses <IMicrosoftGraphRecipient[]>]`: Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply.
-  - `[SentToMe <Boolean?>]`: Indicates whether the owner of the mailbox must be in the toRecipients property of an incoming message in order for the condition or exception to apply.
-  - `[SentToOrCcMe <Boolean?>]`: Indicates whether the owner of the mailbox must be in either a toRecipients or ccRecipients property of an incoming message in order for the condition or exception to apply.
-  - `[SubjectContains <String[]>]`: Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply.
-  - `[WithinSizeRange <IMicrosoftGraphSizeRange>]`: sizeRange
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
-    - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
 `INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -525,5 +385,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
-## RELATED LINKS
+`MENTIONED <IMicrosoftGraphEmailAddress>`: emailAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
 
+## RELATED LINKS

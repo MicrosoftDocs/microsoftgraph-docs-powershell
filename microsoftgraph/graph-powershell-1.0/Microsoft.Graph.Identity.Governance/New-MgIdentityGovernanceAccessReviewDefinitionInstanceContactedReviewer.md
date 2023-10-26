@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinitioninstancecontactedreviewer
 schema: 2.0.0
@@ -16,30 +16,28 @@ Create new navigation property to contactedReviewers for identityGovernance
 ```
 New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer -AccessReviewInstanceId <String>
  -AccessReviewScheduleDefinitionId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer -AccessReviewInstanceId <String>
- -AccessReviewScheduleDefinitionId <String> -BodyParameter <IMicrosoftGraphAccessReviewReviewer> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessReviewReviewer> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -AccessReviewScheduleDefinitionId <String> -BodyParameter <IMicrosoftGraphAccessReviewReviewer> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessReviewReviewer> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +45,7 @@ Create new navigation property to contactedReviewers for identityGovernance
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 ```
@@ -60,8 +58,8 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer -AccessR
 The unique identifier of accessReviewInstance
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -75,8 +73,8 @@ Accept wildcard characters: False
 The unique identifier of accessReviewScheduleDefinition
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -90,7 +88,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +104,7 @@ accessReviewReviewer
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewReviewer
+Type: IMicrosoftGraphAccessReviewReviewer
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -121,7 +119,7 @@ Accept wildcard characters: False
 The date when the reviewer was added for the access review.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +134,7 @@ Accept wildcard characters: False
 Name of reviewer.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +150,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -168,8 +166,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -183,7 +181,7 @@ Accept wildcard characters: False
 User principal name of the reviewer.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -214,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -231,13 +229,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewReviewer
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewReviewer
-
 ## NOTES
 
 ALIASES
@@ -325,4 +320,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

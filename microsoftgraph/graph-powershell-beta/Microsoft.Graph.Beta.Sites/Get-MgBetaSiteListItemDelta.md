@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdelta
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke function delta
 ### Delta (Default)
 ```
 Get-MgBetaSiteListItemDelta -ListId <String> -SiteId <String> [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
- [-PageSize <Int32>] [<CommonParameters>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Delta1
 ```
 Get-MgBetaSiteListItemDelta -ListId <String> -SiteId <String> -Token <String> [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
- [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
-```
-
-### DeltaViaIdentity
-```
-Get-MgBetaSiteListItemDelta -InputObject <ISitesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity1
 ```
-Get-MgBetaSiteListItemDelta -InputObject <ISitesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgBetaSiteListItemDelta -InputObject <ISitesIdentity> [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
+```
+
+### DeltaViaIdentity
+```
+Get-MgBetaSiteListItemDelta -InputObject <ISitesIdentity> [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,37 +43,29 @@ Invoke function delta
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"  -OutFile $outFileId
 ```
 
-
-
-### -------------------------- EXAMPLE 3 --------------------------
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId
 ```
 
-
-
-### -------------------------- EXAMPLE 4 --------------------------
+### EXAMPLE 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka"
 ```
-
-
 
 ## PARAMETERS
 
@@ -81,7 +73,7 @@ Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd19
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -96,8 +88,8 @@ Accept wildcard characters: False
 Include count of items
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: DeltaViaIdentity, DeltaViaIdentity1
+Type: SwitchParameter
+Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
 Aliases:
 
 Required: False
@@ -112,7 +104,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases: CV
 
@@ -127,7 +119,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -143,8 +135,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-Parameter Sets: DeltaViaIdentity, DeltaViaIdentity1
+Type: ISitesIdentity
+Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -158,7 +150,7 @@ Accept wildcard characters: False
 The unique identifier of list
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -173,7 +165,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -188,7 +180,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -203,7 +195,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -218,7 +210,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -229,26 +221,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -263,7 +240,7 @@ Accept wildcard characters: False
 Usage: token='{token}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta1
 Aliases:
 
@@ -278,9 +255,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: (All)
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -295,11 +287,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphListItem
-
 ## NOTES
 
 ALIASES
@@ -360,4 +350,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewhistorydefinitioninstance
 schema: 2.0.0
@@ -18,30 +18,29 @@ Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance -AccessRevi
  -AccessReviewHistoryInstanceId <String> [-AdditionalProperties <Hashtable>] [-DownloadUri <String>]
  [-ExpirationDateTime <DateTime>] [-FulfilledDateTime <DateTime>] [-Id <String>]
  [-ReviewHistoryPeriodEndDateTime <DateTime>] [-ReviewHistoryPeriodStartDateTime <DateTime>]
- [-RunDateTime <DateTime>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RunDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance -AccessReviewHistoryDefinitionId <String>
- -AccessReviewHistoryInstanceId <String> -BodyParameter <IMicrosoftGraphAccessReviewHistoryInstance>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAccessReviewHistoryInstance>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -AccessReviewHistoryInstanceId <String> -BodyParameter <IMicrosoftGraphAccessReviewHistoryInstance> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-DownloadUri <String>]
- [-ExpirationDateTime <DateTime>] [-FulfilledDateTime <DateTime>] [-Id <String>]
- [-ReviewHistoryPeriodEndDateTime <DateTime>] [-ReviewHistoryPeriodStartDateTime <DateTime>]
- [-RunDateTime <DateTime>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-DownloadUri <String>] [-ExpirationDateTime <DateTime>]
+ [-FulfilledDateTime <DateTime>] [-Id <String>] [-ReviewHistoryPeriodEndDateTime <DateTime>]
+ [-ReviewHistoryPeriodStartDateTime <DateTime>] [-RunDateTime <DateTime>] [-Status <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessReviewHistoryInstance> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,14 +48,14 @@ Update the navigation property instances in identityGovernance
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -69,8 +68,8 @@ Update the navigation property instances in identityGovernance
 The unique identifier of accessReviewHistoryDefinition
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -84,8 +83,8 @@ Accept wildcard characters: False
 The unique identifier of accessReviewHistoryInstance
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -99,7 +98,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +114,7 @@ accessReviewHistoryInstance
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryInstance
+Type: IMicrosoftGraphAccessReviewHistoryInstance
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -132,7 +131,7 @@ This URI will be active for 24 hours after being generated.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +147,7 @@ Timestamp when this instance and associated data expires and the history is dele
 Required.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +164,7 @@ This will be set after this instance's status is set to done.
 Required.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,7 +180,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,8 +196,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -212,7 +211,7 @@ Accept wildcard characters: False
 Timestamp, reviews ending on or before this date are in the fetched history data.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +226,7 @@ Accept wildcard characters: False
 Timestamp, reviews starting on or after this date are in the fetched history data.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +241,7 @@ Accept wildcard characters: False
 Timestamp when the instance's history data is scheduled to be generated.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +256,7 @@ Accept wildcard characters: False
 accessReviewHistoryStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +271,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -288,7 +287,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -305,13 +304,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryInstance
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryInstance
-
 ## NOTES
 
 ALIASES
@@ -433,3 +429,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

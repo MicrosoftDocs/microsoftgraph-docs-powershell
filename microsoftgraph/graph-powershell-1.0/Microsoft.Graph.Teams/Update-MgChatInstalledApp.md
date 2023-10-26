@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatinstalledapp
 schema: 2.0.0
@@ -15,30 +15,30 @@ This API is available in the following national cloud deployments.
 
 ### UpgradeExpanded (Default)
 ```
-Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String>
- [-AdditionalProperties <Hashtable>] [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> [-AdditionalProperties <Hashtable>]
+ [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Upgrade
 ```
 Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String>
  -BodyParameter <IPaths1EgyctcChatsChatIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpgradeViaIdentityExpanded
+```
+Update-MgChatInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpgradeViaIdentity
 ```
 Update-MgChatInstalledApp -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1EgyctcChatsChatIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpgradeViaIdentityExpanded
-```
-Update-MgChatInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,14 +47,14 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 ```
 
 Update-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
 ```
@@ -82,7 +82,7 @@ Update-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInsta
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpgradeExpanded, UpgradeViaIdentityExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1EgyctcChatsChatIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema
+Type: IPaths1EgyctcChatsChatIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Upgrade, UpgradeViaIdentity
 Aliases:
 
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: System.String
-Parameter Sets: Upgrade, UpgradeExpanded
+Type: String
+Parameter Sets: UpgradeExpanded, Upgrade
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ teamsAppPermissionSet
 To construct, see NOTES section for CONSENTEDPERMISSIONSET properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppPermissionSet
+Type: IMicrosoftGraphTeamsAppPermissionSet
 Parameter Sets: UpgradeExpanded, UpgradeViaIdentityExpanded
 Aliases:
 
@@ -145,8 +145,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: UpgradeViaIdentity, UpgradeViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: UpgradeViaIdentityExpanded, UpgradeViaIdentity
 Aliases:
 
 Required: True
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -175,8 +175,8 @@ Accept wildcard characters: False
 The unique identifier of teamsAppInstallation
 
 ```yaml
-Type: System.String
-Parameter Sets: Upgrade, UpgradeExpanded
+Type: String
+Parameter Sets: UpgradeExpanded, Upgrade
 Aliases:
 
 Required: True
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +206,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -223,13 +223,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1EgyctcChatsChatIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -288,4 +285,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-

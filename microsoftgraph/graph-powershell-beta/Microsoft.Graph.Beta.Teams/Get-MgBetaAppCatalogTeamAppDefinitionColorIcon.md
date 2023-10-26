@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloricon
 schema: 2.0.0
@@ -31,21 +31,17 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
-
-
 
 ## PARAMETERS
 
@@ -53,7 +49,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsApp
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -69,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -84,7 +80,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -99,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of teamsAppDefinition
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -114,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of teamsApp
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -131,11 +127,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppIcon
-
 ## NOTES
 
 ALIASES
@@ -186,4 +180,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.SignIns
 Module Guid: ec45f17a-2894-403e-aca8-23b1e3dffcdd
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins
@@ -480,23 +480,20 @@ This API is available in the following national cloud deployments.
 ### [Get-MgServicePrincipalRiskDetectionCount](Get-MgServicePrincipalRiskDetectionCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationEmailMethod](Get-MgUserAuthenticationEmailMethod.md)
-Retrieve a user's single email authentication method object.
-This API is available in the following national cloud deployments.
+### [Get-MgServicePrincipalRiskDetectionCount](Get-MgServicePrincipalRiskDetectionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationEmailMethodCount](Get-MgUserAuthenticationEmailMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
-Retrieve a user's single FIDO2 Security Key Authentication Method object.
-This API is available in the following national cloud deployments.
+### [Get-MgUserAuthenticationEmailMethodCount](Get-MgUserAuthenticationEmailMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationMethod](Get-MgUserAuthenticationMethod.md)
-Retrieve the properties and relationships of an authenticationMethod object.
-This API is available in the following national cloud deployments.
+### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationMethodCount](Get-MgUserAuthenticationMethodCount.md)
 Get the number of the resource
@@ -522,25 +519,20 @@ This API is available in the following national cloud deployments.
 ### [Get-MgUserAuthenticationOperationCount](Get-MgUserAuthenticationOperationCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationPasswordMethod](Get-MgUserAuthenticationPasswordMethod.md)
-Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
-For security, the password itself will never be returned in the object and the password property is always null.
-This API is available in the following national cloud deployments.
+### [Get-MgUserAuthenticationOperationCount](Get-MgUserAuthenticationOperationCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationPasswordMethodCount](Get-MgUserAuthenticationPasswordMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationPhoneMethod](Get-MgUserAuthenticationPhoneMethod.md)
-Retrieve a single phoneAuthenticationMethod object for a user.
-This method is available only for standard Azure AD and B2B users, but not B2C users.
-This API is available in the following national cloud deployments.
+### [Get-MgUserAuthenticationPasswordMethodCount](Get-MgUserAuthenticationPasswordMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationPhoneMethodCount](Get-MgUserAuthenticationPhoneMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationSoftwareOathMethod](Get-MgUserAuthenticationSoftwareOathMethod.md)
-Retrieve a user's single Software OATH token authentication method object and its properties.
-This API is available in the following national cloud deployments.
+### [Get-MgUserAuthenticationPhoneMethodCount](Get-MgUserAuthenticationPhoneMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationSoftwareOathMethodCount](Get-MgUserAuthenticationSoftwareOathMethodCount.md)
 Get the number of the resource
@@ -1023,14 +1015,8 @@ This API is available in the following national cloud deployments.
 ### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
 Delete navigation property operations for users
 
-### [Remove-MgUserAuthenticationPhoneMethod](Remove-MgUserAuthenticationPhoneMethod.md)
-Delete a user's phone authentication method.
-This removes the phone number from the user and they'll no longer be able to use the number for authentication, whether via SMS or voice calls.
-A user can't have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it can't be deleted.
-Have the user change their default authentication method, and then delete the number.
-This API is available in the following national cloud deployments.
+### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
+Delete navigation property operations for users
 
 ### [Remove-MgUserAuthenticationSoftwareOathMethod](Remove-MgUserAuthenticationSoftwareOathMethod.md)
 Delete a user's Software OATH token authentication method object.

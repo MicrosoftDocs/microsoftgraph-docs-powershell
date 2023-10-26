@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcheckoutgroupdriveroot
 schema: 2.0.0
@@ -15,13 +15,13 @@ This API is supported in the following national cloud deployments.
 
 ### Checkout (Default)
 ```
-Invoke-MgCheckoutGroupDriveRoot -DriveId <String> -GroupId <String> [-PassThru] [-Confirm] [-WhatIf]
+Invoke-MgCheckoutGroupDriveRoot -DriveId <String> -GroupId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CheckoutViaIdentity
 ```
-Invoke-MgCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-PassThru] [-Confirm] [-WhatIf]
+Invoke-MgCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
 ```
@@ -44,7 +44,7 @@ Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
 The unique identifier of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Checkout
 Aliases:
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Checkout
 Aliases:
 
@@ -75,7 +75,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Type: IGroupsIdentity
 Parameter Sets: CheckoutViaIdentity
 Aliases:
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -121,7 +121,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -138,11 +138,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -190,4 +188,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

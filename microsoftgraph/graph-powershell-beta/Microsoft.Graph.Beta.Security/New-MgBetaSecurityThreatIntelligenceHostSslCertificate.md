@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostsslcertificate
 schema: 2.0.0
@@ -17,13 +17,13 @@ Create new navigation property to hostSslCertificates for security
 New-MgBetaSecurityThreatIntelligenceHostSslCertificate [-AdditionalProperties <Hashtable>]
  [-FirstSeenDateTime <DateTime>] [-Host1 <IMicrosoftGraphSecurityHost>] [-Id <String>]
  [-LastSeenDateTime <DateTime>] [-Ports <IMicrosoftGraphSecurityHostSslCertificatePort[]>]
- [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SslCertificate <IMicrosoftGraphSecuritySslCertificate>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaSecurityThreatIntelligenceHostSslCertificate
- -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityHostSslCertificate> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,19 +31,15 @@ Create new navigation property to hostSslCertificates for security
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -51,7 +47,7 @@ Create new navigation property to hostSslCertificates for security
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -67,7 +63,7 @@ hostSslCertificate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
+Type: IMicrosoftGraphSecurityHostSslCertificate
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +80,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +96,7 @@ host
 To construct, see NOTES section for HOST1 properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHost
+Type: IMicrosoftGraphSecurityHost
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +112,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +129,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +145,7 @@ The ports related with this hostSslCertificate.
 To construct, see NOTES section for PORTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificatePort[]
+Type: IMicrosoftGraphSecurityHostSslCertificatePort[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +161,7 @@ sslCertificate
 To construct, see NOTES section for SSLCERTIFICATE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySslCertificate
+Type: IMicrosoftGraphSecuritySslCertificate
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -196,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -213,11 +209,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHostSslCertificate
-
 ## NOTES
 
 ALIASES
@@ -759,3 +753,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

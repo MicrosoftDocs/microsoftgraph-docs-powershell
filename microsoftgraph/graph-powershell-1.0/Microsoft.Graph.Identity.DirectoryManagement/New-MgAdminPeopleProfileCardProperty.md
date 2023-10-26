@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty
 schema: 2.0.0
@@ -16,12 +16,12 @@ Create new navigation property to profileCardProperties for admin
 ```
 New-MgAdminPeopleProfileCardProperty [-AdditionalProperties <Hashtable>]
  [-Annotations <IMicrosoftGraphProfileCardAnnotation[]>] [-DirectoryPropertyName <String>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileCardProperty> [-Confirm] [-WhatIf]
+New-MgAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileCardProperty> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,19 +30,15 @@ Create new navigation property to profileCardProperties for admin
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -50,7 +46,7 @@ Create new navigation property to profileCardProperties for admin
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +62,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ANNOTATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileCardAnnotation[]
+Type: IMicrosoftGraphProfileCardAnnotation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +78,7 @@ profileCardProperty
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileCardProperty
+Type: IMicrosoftGraphProfileCardProperty
 Parameter Sets: Create
 Aliases:
 
@@ -97,7 +93,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +109,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +124,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -144,7 +140,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -161,11 +157,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileCardProperty
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileCardProperty
-
 ## NOTES
 
 ALIASES
@@ -192,4 +186,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[DirectoryPropertyName <String>]`: 
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdriveitemcontent
 schema: 2.0.0
@@ -14,8 +14,8 @@ The content stream, if the item represents a file.
 
 ### Get (Default)
 ```
-Get-MgBetaSiteListItemDriveItemContent -ListId <String> -ListItemId <String> -SiteId <String>
- -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaSiteListItemDriveItemContent -ListId <String> -ListItemId <String> -SiteId <String> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -29,14 +29,14 @@ The content stream, if the item represents a file.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -50,7 +50,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Type: ISitesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of list
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of listItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -142,11 +142,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -207,4 +205,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

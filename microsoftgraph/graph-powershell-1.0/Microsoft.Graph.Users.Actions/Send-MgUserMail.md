@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mgusermail
 schema: 2.0.0
@@ -20,27 +20,27 @@ This API is supported in the following national cloud deployments.
 ### SendExpanded (Default)
 ```
 Send-MgUserMail -UserId <String> [-AdditionalProperties <Hashtable>] [-Message <IMicrosoftGraphMessage>]
- [-SaveToSentItems] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SaveToSentItems] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Send
 ```
 Send-MgUserMail -UserId <String>
  -BodyParameter <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SendViaIdentityExpanded
+```
+Send-MgUserMail -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Message <IMicrosoftGraphMessage>] [-SaveToSentItems] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
 Send-MgUserMail -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### SendViaIdentityExpanded
-```
-Send-MgUserMail -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Message <IMicrosoftGraphMessage>] [-SaveToSentItems] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -84,9 +84,7 @@ $params = @{
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -117,9 +115,7 @@ $params = @{
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
 
-
-
-### -------------------------- EXAMPLE 3 --------------------------
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -152,15 +148,13 @@ $params = @{
 Send-MgUserMail -UserId $userId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -176,7 +170,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema
+Type: IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema
 Parameter Sets: Send, SendViaIdentity
 Aliases:
 
@@ -192,8 +186,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: SendViaIdentity, SendViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: SendViaIdentityExpanded, SendViaIdentity
 Aliases:
 
 Required: True
@@ -208,7 +202,7 @@ message
 To construct, see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
+Type: IMicrosoftGraphMessage
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -223,7 +217,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -238,7 +232,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -253,8 +247,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Send, SendExpanded
+Type: String
+Parameter Sets: SendExpanded, Send
 Aliases:
 
 Required: True
@@ -268,7 +262,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -284,7 +278,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -301,13 +295,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComponentsVsh1S1RequestbodiesSendmailrequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -486,3 +477,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

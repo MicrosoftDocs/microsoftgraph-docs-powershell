@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianindex
 schema: 2.0.0
@@ -15,39 +15,39 @@ Trigger an indexOperation This API is available in the following national cloud 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String>
- -EdiscoveryCustodianId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String>
  -BodyParameter <IPathsIs84XhSecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityUpdateindexPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### Update
 ```
-Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentity> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId <String>
+ -EdiscoveryCustodianId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentity>
  -BodyParameter <IPathsIs84XhSecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityUpdateindexPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentity
 ```
-Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,13 +55,11 @@ Trigger an indexOperation This API is available in the following national cloud 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
-
-
 
 ## PARAMETERS
 
@@ -69,7 +67,7 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscov
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsIs84XhSecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityUpdateindexPostRequestbodyContentApplicationJsonSchema
+Type: IPathsIs84XhSecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityUpdateindexPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -100,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update1, Update
 Aliases:
 
 Required: True
@@ -115,7 +113,7 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCustodian
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Update
 Aliases:
 
@@ -130,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,8 +144,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentity1, UpdateViaIdentityExpanded
+Type: ISecurityIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -161,7 +159,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -176,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,13 +207,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsIs84XhSecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityUpdateindexPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -308,4 +303,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-

@@ -1,60 +1,58 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserextension
 schema: 2.0.0
 ---
 
-# New-MgUserOutlookMasterCategory
+# New-MgUserExtension
 
 ## SYNOPSIS
-Create an outlookCategory object in the user's master list of categories.
-This API is available in the following national cloud deployments.
+Create new navigation property to extensions for users
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgUserOutlookMasterCategory -UserId <String> [-AdditionalProperties <Hashtable>] [-Color <String>]
- [-DisplayName <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgUserExtension -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserOutlookMasterCategory -UserId <String> -BodyParameter <IMicrosoftGraphOutlookCategory> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphOutlookCategory>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgUserExtension -UserId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-Color <String>] [-DisplayName <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgUserExtension -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create an outlookCategory object in the user's master list of categories.
-This API is available in the following national cloud deployments.
+Create new navigation property to extensions for users
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users
+{{ Add code here }}
 ```
 
-$params = @{
-	displayName = "Project expenses"
-	color = "preset9"
-}
+{{ Add output here }}
 
-# A UPN can also be used as -UserId.
-New-MgUserOutlookMasterCategory -UserId $userId -BodyParameter $params
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -62,7 +60,7 @@ New-MgUserOutlookMasterCategory -UserId $userId -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -74,11 +72,10 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-outlookCategory
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+extension
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookCategory
+Type: Hashtable
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -89,44 +86,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Color
-categoryColor
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayName
-A unique name that identifies a category in the user's mailbox.
-After a category is created, the name cannot be changed.
-Read-only.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Id
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,8 +107,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IUsersIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -157,8 +122,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -172,7 +137,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +153,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,14 +169,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookCategory
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
+### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookCategory
-
+### System.String
 ## NOTES
 
 ALIASES
@@ -220,12 +182,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphOutlookCategory>`: outlookCategory
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Color <String>]`: categoryColor
-  - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
 
 `INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
@@ -243,4 +199,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

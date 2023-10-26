@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksectiongroupsectionpagecontent
 schema: 2.0.0
@@ -15,8 +15,8 @@ The page's HTML content.
 ### Get (Default)
 ```
 Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent -GroupId <String> -NotebookId <String>
- -OnenotePageId <String> -OnenoteSectionId <String> -SectionGroupId <String> -SiteId <String>
- -OutFile <String> [-PassThru] [<CommonParameters>]
+ -OnenotePageId <String> -OnenoteSectionId <String> -SectionGroupId <String> -SiteId <String> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -30,19 +30,15 @@ The page's HTML content.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -50,7 +46,7 @@ The page's HTML content.
 The unique identifier of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -66,7 +62,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Type: ISitesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -81,7 +77,7 @@ Accept wildcard characters: False
 The unique identifier of notebook
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -96,7 +92,7 @@ Accept wildcard characters: False
 The unique identifier of onenotePage
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -111,7 +107,7 @@ Accept wildcard characters: False
 The unique identifier of onenoteSection
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -126,7 +122,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -141,7 +137,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -156,7 +152,7 @@ Accept wildcard characters: False
 The unique identifier of sectionGroup
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -171,7 +167,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -188,11 +184,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -253,4 +247,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysetting
 schema: 2.0.0
@@ -19,12 +19,12 @@ This API is available in the following national cloud deployments.
 ### CreateExpanded (Default)
 ```
 New-MgBetaDirectorySetting [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-TemplateId <String>] [-Values <IMicrosoftGraphSettingValue[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TemplateId <String>] [-Values <IMicrosoftGraphSettingValue[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDirectorySetting -BodyParameter <IMicrosoftGraphDirectorySetting> [-Confirm] [-WhatIf]
+New-MgBetaDirectorySetting -BodyParameter <IMicrosoftGraphDirectorySetting> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -64,15 +64,13 @@ $params = @{
 New-MgBetaDirectorySetting -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +86,7 @@ directorySetting
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySetting
+Type: IMicrosoftGraphDirectorySetting
 Parameter Sets: Create
 Aliases:
 
@@ -104,7 +102,7 @@ Display name of this group of settings, which comes from the associated template
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +118,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -136,7 +134,7 @@ Unique identifier for the template used to create this group of settings.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +150,7 @@ Collection of name-value pairs corresponding to the name and defaultValue proper
 To construct, see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSettingValue[]
+Type: IMicrosoftGraphSettingValue[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +165,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -183,7 +181,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -200,11 +198,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySetting
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySetting
-
 ## NOTES
 
 ALIASES
@@ -228,4 +224,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value of the setting.
 
 ## RELATED LINKS
-

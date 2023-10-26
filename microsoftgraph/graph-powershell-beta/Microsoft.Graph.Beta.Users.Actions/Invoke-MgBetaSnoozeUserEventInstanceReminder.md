@@ -1,66 +1,61 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasnoozeusereventinstancereminder
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetasignuserinformationprotectiondigest
 schema: 2.0.0
 ---
 
-# Invoke-MgBetaSnoozeUserEventInstanceReminder
+# Invoke-MgBetaSignUserInformationProtectionDigest
 
 ## SYNOPSIS
-Postpone a reminder for an event in a user calendar until a new time.
-This API is available in the following national cloud deployments.
+Invoke action signDigest
 
 ## SYNTAX
 
-### SnoozeExpanded (Default)
+### SignExpanded (Default)
 ```
-Invoke-MgBetaSnoozeUserEventInstanceReminder -EventId <String> -EventId1 <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### Snooze
-```
-Invoke-MgBetaSnoozeUserEventInstanceReminder -EventId <String> -EventId1 <String> -UserId <String>
- -BodyParameter <IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaSignUserInformationProtectionDigest -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentity
+### Sign
 ```
-Invoke-MgBetaSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaSignUserInformationProtectionDigest -UserId <String>
+ -Body <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentityExpanded
+### SignViaIdentityExpanded
 ```
-Invoke-MgBetaSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SignViaIdentity
+```
+Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Postpone a reminder for an event in a user calendar until a new time.
-This API is available in the following national cloud deployments.
+Invoke action signDigest
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
+{{ Add code here }}
 ```
 
-$params = @{
-	NewReminderTime = @{
-		DateTime = "dateTime-value"
-		TimeZone = "timeZone-value"
-	}
-}
+{{ Add output here }}
 
-# A UPN can also be used as -UserId.
-Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,8 +63,8 @@ Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyPara
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: SignExpanded, SignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -79,13 +74,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Snooze, SnoozeViaIdentity
+Type: IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Sign
 Aliases:
 
 Required: True
@@ -95,30 +90,31 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -EventId
-The unique identifier of event
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: System.String
-Parameter Sets: Snooze, SnoozeExpanded
+Type: IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: SignViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -EventId1
-The unique identifier of event
+### -DigestInputFile
+Input File for Digest (.)
 
 ```yaml
-Type: System.String
-Parameter Sets: Snooze, SnoozeExpanded
+Type: String
+Parameter Sets: SignExpanded, SignViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -130,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: SnoozeViaIdentity, SnoozeViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: SignViaIdentityExpanded, SignViaIdentity
 Aliases:
 
 Required: True
@@ -141,43 +137,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -NewReminderTime
-dateTimeTimeZone
-To construct, see NOTES section for NEWREMINDERTIME properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
-Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -UserId
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Snooze, SnoozeExpanded
+Type: String
+Parameter Sets: SignExpanded, Sign
 Aliases:
 
 Required: True
@@ -191,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -223,14 +188,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
-### System.Boolean
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSigningResult
 ## NOTES
 
 ALIASES
@@ -240,12 +202,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[NewReminderTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+  - `[Digest <Byte[]>]`: 
+
+`BODYPARAMETER <IPaths8U0Ks2UsersUserIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Digest <Byte[]>]`: 
 
 `INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
@@ -287,10 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-`NEWREMINDERTIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-
 ## RELATED LINKS
-

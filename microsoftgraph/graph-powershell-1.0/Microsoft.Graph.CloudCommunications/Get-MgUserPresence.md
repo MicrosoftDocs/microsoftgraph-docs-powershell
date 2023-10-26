@@ -1,63 +1,57 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingtranscriptmetadatacontent
 schema: 2.0.0
 ---
 
-# Get-MgUserPresence
+# Get-MgUserOnlineMeetingTranscriptMetadataContent
 
 ## SYNOPSIS
-Set a presence status message for a user.
-An optional expiration date and time can be supplied.
-This API is available in the following national cloud deployments.
+The time-aligned metadata of the utterances in the transcript.
+Read-only.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgUserPresence -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgUserOnlineMeetingTranscriptMetadataContent -CallTranscriptId <String> -OnlineMeetingId <String>
+ -UserId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUserOnlineMeetingTranscriptMetadataContent -InputObject <ICloudCommunicationsIdentity> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Set a presence status message for a user.
-An optional expiration date and time can be supplied.
-This API is available in the following national cloud deployments.
+The time-aligned metadata of the utterances in the transcript.
+Read-only.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Get-MgUserPresence -UserId $userId
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
+{{ Add code here }}
 ```
-
-Get-MgUserPresence -UserId $userId
 
 ## PARAMETERS
 
-### -ExpandProperty
-Expand related entities
+### -CallTranscriptId
+The unique identifier of callTranscript
 
 ```yaml
-Type: System.String[]
-Parameter Sets: (All)
-Aliases: Expand
+Type: String
+Parameter Sets: Get
+Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -69,7 +63,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Type: ICloudCommunicationsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -80,13 +74,43 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
+### -OnlineMeetingId
+The unique identifier of onlineMeeting
 
 ```yaml
-Type: System.String[]
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OutFile
+Path to write output file to
+
+```yaml
+Type: String
 Parameter Sets: (All)
-Aliases: Select
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
 
 Required: False
 Position: Named
@@ -99,7 +123,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -116,11 +140,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPresence
-
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -146,4 +168,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

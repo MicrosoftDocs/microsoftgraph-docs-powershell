@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantdetailedinformation
 schema: 2.0.0
@@ -17,21 +17,14 @@ Update the navigation property tenantsDetailedInformation in tenantRelationships
 Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -TenantDetailedInformationId <String>
  [-AdditionalProperties <Hashtable>] [-City <String>] [-CountryCode <String>] [-CountryName <String>]
  [-DefaultDomainName <String>] [-DisplayName <String>] [-Id <String>] [-IndustryName <String>]
- [-Region <String>] [-SegmentName <String>] [-TenantId <String>] [-VerticalName <String>] [-Confirm] [-WhatIf]
+ [-Region <String>] [-SegmentName <String>] [-TenantId <String>] [-VerticalName <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -TenantDetailedInformationId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,7 +33,14 @@ Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -InputObject <IM
 Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -InputObject <IManagedTenantsIdentity>
  [-AdditionalProperties <Hashtable>] [-City <String>] [-CountryCode <String>] [-CountryName <String>]
  [-DefaultDomainName <String>] [-DisplayName <String>] [-Id <String>] [-IndustryName <String>]
- [-Region <String>] [-SegmentName <String>] [-TenantId <String>] [-VerticalName <String>] [-Confirm] [-WhatIf]
+ [-Region <String>] [-SegmentName <String>] [-TenantId <String>] [-VerticalName <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaTenantRelationshipManagedTenantDetailedInformation -InputObject <IManagedTenantsIdentity>
+ -BodyParameter <IMicrosoftGraphManagedTenantsTenantDetailedInformation> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -49,14 +49,14 @@ Update the navigation property tenantsDetailedInformation in tenantRelationships
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -69,7 +69,7 @@ Update the navigation property tenantsDetailedInformation in tenantRelationships
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +85,7 @@ tenantDetailedInformation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantDetailedInformation
+Type: IMicrosoftGraphManagedTenantsTenantDetailedInformation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -102,7 +102,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +136,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,7 +153,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 The display name for the managed tenant.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +184,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -201,7 +201,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -217,8 +217,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IManagedTenantsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -234,7 +234,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -251,7 +251,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -266,8 +266,8 @@ Accept wildcard characters: False
 The unique identifier of tenantDetailedInformation
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 The Azure Active Directory tenant identifier for the managed tenant.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -298,7 +298,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -329,7 +329,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -346,13 +346,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantDetailedInformation
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenantDetailedInformation
-
 ## NOTES
 
 ALIASES
@@ -417,4 +414,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
 ## RELATED LINKS
-

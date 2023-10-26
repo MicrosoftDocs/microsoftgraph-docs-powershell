@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectionpolicylabelremoval
 schema: 2.0.0
@@ -17,28 +17,28 @@ Given contentInfo as an input, which includes existing content metadata key/valu
 ```
 Test-MgBetaSiteInformationProtectionPolicyLabelRemoval -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-ContentInfo <IMicrosoftGraphContentInfo>] [-DowngradeJustification <IMicrosoftGraphDowngradeJustification>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaSiteInformationProtectionPolicyLabelRemoval -SiteId <String>
  -BodyParameter <IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### EvaluateViaIdentity
-```
-Test-MgBetaSiteInformationProtectionPolicyLabelRemoval -InputObject <ISitesIdentity>
- -BodyParameter <IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentityExpanded
 ```
 Test-MgBetaSiteInformationProtectionPolicyLabelRemoval -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>]
- [-DowngradeJustification <IMicrosoftGraphDowngradeJustification>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DowngradeJustification <IMicrosoftGraphDowngradeJustification>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### EvaluateViaIdentity
+```
+Test-MgBetaSiteInformationProtectionPolicyLabelRemoval -InputObject <ISitesIdentity>
+ -BodyParameter <IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,19 +47,15 @@ Given contentInfo as an input, which includes existing content metadata key/valu
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -67,7 +63,7 @@ Given contentInfo as an input, which includes existing content metadata key/valu
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate, EvaluateViaIdentity
 Aliases:
 
@@ -99,7 +95,7 @@ contentInfo
 To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentInfo
+Type: IMicrosoftGraphContentInfo
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +111,7 @@ downgradeJustification
 To construct, see NOTES section for DOWNGRADEJUSTIFICATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDowngradeJustification
+Type: IMicrosoftGraphDowngradeJustification
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -131,8 +127,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-Parameter Sets: EvaluateViaIdentity, EvaluateViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: EvaluateViaIdentityExpanded, EvaluateViaIdentity
 Aliases:
 
 Required: True
@@ -146,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Evaluate, EvaluateExpanded
+Type: String
+Parameter Sets: EvaluateExpanded, Evaluate
 Aliases:
 
 Required: True
@@ -161,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -177,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,13 +190,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionAction
-
 ## NOTES
 
 ALIASES
@@ -290,4 +283,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

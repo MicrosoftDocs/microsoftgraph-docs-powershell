@@ -1,68 +1,59 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskattachment
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolistextension
 schema: 2.0.0
 ---
 
-# New-MgUserTodoListTaskAttachment
+# New-MgUserTodoListExtension
 
 ## SYNOPSIS
-Add a new taskFileAttachment object to a todoTask.
-This operation limits the size of the attachment you can add to under 3 MB.
-If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
-This API is available in the following national cloud deployments.
+Create new navigation property to extensions for users
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgUserTodoListTaskAttachment -TodoTaskId <String> -TodoTaskListId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Name <String>] [-Size <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgUserTodoListExtension -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserTodoListTaskAttachment -TodoTaskId <String> -TodoTaskListId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphAttachmentBase> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphAttachmentBase>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgUserTodoListExtension -TodoTaskListId <String> -UserId <String> -BodyParameter <Hashtable> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgUserTodoListExtension -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserTodoListExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Add a new taskFileAttachment object to a todoTask.
-This operation limits the size of the attachment you can add to under 3 MB.
-If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
-This API is available in the following national cloud deployments.
+Create new navigation property to extensions for users
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users
+{{ Add code here }}
 ```
 
-$params = @{
-	"@odata.type" = "#microsoft.graph.taskFileAttachment"
-	name = "smile"
-	contentBytes = "a0b1c76de9f7="
-	contentType = "image/gif"
-}
+{{ Add output here }}
 
-# A UPN can also be used as -UserId.
-New-MgUserTodoListTaskAttachment -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -70,7 +61,7 @@ New-MgUserTodoListTaskAttachment -UserId $userId -TodoTaskListId $todoTaskListId
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -82,11 +73,10 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-attachmentBase
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+extension
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentBase
+Type: Hashtable
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -97,27 +87,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ContentType
-The MIME type.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Id
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -133,8 +108,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IUsersIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -144,74 +119,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -LastModifiedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-
-```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Name
-The display name of the attachment.
-This doesn't need to be the actual file name.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Size
-The length of the attachment in bytes.
-
-```yaml
-Type: System.Int32
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TodoTaskId
-The unique identifier of todoTask
-
-```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -TodoTaskListId
 The unique identifier of todoTaskList
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -225,8 +138,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -240,7 +153,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -256,7 +169,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -272,14 +185,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentBase
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
+### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentBase
-
+### System.String
 ## NOTES
 
 ALIASES
@@ -288,14 +198,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IMicrosoftGraphAttachmentBase>`: attachmentBase
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ContentType <String>]`: The MIME type.
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Name <String>]`: The display name of the attachment. This doesn't need to be the actual file name.
-  - `[Size <Int32?>]`: The length of the attachment in bytes.
 
 `INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
@@ -313,4 +215,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

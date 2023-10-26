@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend
 schema: 2.0.0
@@ -18,13 +18,13 @@ New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend [-Addition
  [-CompliantDeviceCount <Int32>] [-ConfigManagerDeviceCount <Int32>] [-CountDateTime <String>]
  [-ErrorDeviceCount <Int32>] [-Id <String>] [-InGracePeriodDeviceCount <Int32>]
  [-NoncompliantDeviceCount <Int32>] [-TenantDisplayName <String>] [-TenantId <String>]
- [-UnknownDeviceCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UnknownDeviceCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend
- -BodyParameter <IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,14 +33,14 @@ Create new navigation property to managedDeviceComplianceTrends for tenantRelati
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -53,7 +53,7 @@ Create new navigation property to managedDeviceComplianceTrends for tenantRelati
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ managedDeviceComplianceTrend
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend
+Type: IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend
 Parameter Sets: Create
 Aliases:
 
@@ -86,7 +86,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +120,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +137,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -153,7 +153,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -170,7 +170,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -187,7 +187,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +204,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,7 +221,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +238,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -269,7 +269,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -286,11 +286,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagedDeviceComplianceTrend
-
 ## NOTES
 
 ALIASES
@@ -314,4 +312,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnknownDeviceCount <Int32?>]`: The number of devices in an unknown status. Required. Read-only.
 
 ## RELATED LINKS
-

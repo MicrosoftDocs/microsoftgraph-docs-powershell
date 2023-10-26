@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization
 schema: 2.0.0
@@ -33,20 +33,14 @@ Update-MgBetaOrganization -OrganizationId <String> [-AdditionalProperties <Hasht
  [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>] [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]
  [-SecurityComplianceNotificationMails <String[]>] [-SecurityComplianceNotificationPhones <String[]>]
  [-Settings <IMicrosoftGraphOrganizationSettings>] [-State <String>] [-Street <String>]
- [-TechnicalNotificationMails <String[]>] [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-TechnicalNotificationMails <String[]>] [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaOrganization -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganization> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphOrganization> [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaOrganization -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganization> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -67,8 +61,14 @@ Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
  [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>] [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]
  [-SecurityComplianceNotificationMails <String[]>] [-SecurityComplianceNotificationPhones <String[]>]
  [-Settings <IMicrosoftGraphOrganizationSettings>] [-State <String>] [-Street <String>]
- [-TechnicalNotificationMails <String[]>] [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-TechnicalNotificationMails <String[]>] [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphOrganization> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -79,7 +79,7 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
@@ -111,7 +111,7 @@ Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +128,7 @@ Not nullable.
 To construct, see NOTES section for ASSIGNEDPLANS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAssignedPlan[]
+Type: IMicrosoftGraphAssignedPlan[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ organization
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganization
+Type: IMicrosoftGraphOrganization
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -160,7 +160,7 @@ organizationalBranding
 To construct, see NOTES section for BRANDING properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationalBranding
+Type: IMicrosoftGraphOrganizationalBranding
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ Telephone number for the organization.
 Although this is a string collection, only one number can be set for this property.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +193,7 @@ Only a single instance of certificateBasedAuthConfiguration can be created in th
 To construct, see NOTES section for CERTIFICATEBASEDAUTHCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateBasedAuthConfiguration[]
+Type: IMicrosoftGraphCertificateBasedAuthConfiguration[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,7 +209,7 @@ Certificate connector settings.
 To construct, see NOTES section for CERTIFICATECONNECTORSETTING properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateConnectorSetting
+Type: IMicrosoftGraphCertificateConnectorSetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 City name of the address for the organization.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 Country/region name of the address for the organization.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 Country or region abbreviation for the organization in ISO 3166-2 format.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +273,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 Two-letter ISO 3166 country code indicating the default service usage location of an organization.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +304,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -320,7 +320,7 @@ directorySizeQuota
 To construct, see NOTES section for DIRECTORYSIZEQUOTA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySizeQuota
+Type: IMicrosoftGraphDirectorySizeQuota
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -335,7 +335,7 @@ Accept wildcard characters: False
 The display name for the tenant.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -352,7 +352,7 @@ Nullable.
 To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExtension[]
+Type: IMicrosoftGraphExtension[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -368,7 +368,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -384,8 +384,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -401,7 +401,7 @@ Read-only.
 For more information, see OneDrive Online Multi-Geo.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -416,7 +416,7 @@ Accept wildcard characters: False
 Not nullable.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -431,7 +431,7 @@ Accept wildcard characters: False
 Mobile device management authority.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.MdmAuthority
+Type: MdmAuthority
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -446,7 +446,7 @@ Accept wildcard characters: False
 The last time a password sync request was received for the tenant.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -463,7 +463,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -479,7 +479,7 @@ true if this object is synced from an on-premises directory; false if this objec
 null if this object has never been synced from an on-premises directory (default).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -494,8 +494,8 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -510,7 +510,7 @@ partnerInformation
 To construct, see NOTES section for PARTNERINFORMATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPartnerInformation
+Type: IMicrosoftGraphPartnerInformation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -525,7 +525,7 @@ Accept wildcard characters: False
 partnerTenantType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -540,7 +540,7 @@ Accept wildcard characters: False
 Postal code of the address for the organization.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -556,7 +556,7 @@ The preferred language for the organization.
 Should follow ISO 639-1 Code; for example en.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -572,7 +572,7 @@ privacyProfile
 To construct, see NOTES section for PRIVACYPROFILE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivacyProfile
+Type: IMicrosoftGraphPrivacyProfile
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -588,7 +588,7 @@ Not nullable.
 To construct, see NOTES section for PROVISIONEDPLANS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProvisionedPlan[]
+Type: IMicrosoftGraphProvisionedPlan[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -603,7 +603,7 @@ Accept wildcard characters: False
 Not nullable.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -618,7 +618,7 @@ Accept wildcard characters: False
 Not nullable.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -634,7 +634,7 @@ organizationSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationSettings
+Type: IMicrosoftGraphOrganizationSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -649,7 +649,7 @@ Accept wildcard characters: False
 State name of the address for the organization.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -664,7 +664,7 @@ Accept wildcard characters: False
 Street name of the address for organization.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -679,7 +679,7 @@ Accept wildcard characters: False
 Not nullable.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -696,7 +696,7 @@ Not nullable.
 To construct, see NOTES section for VERIFIEDDOMAINS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVerifiedDomain[]
+Type: IMicrosoftGraphVerifiedDomain[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -711,7 +711,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -727,7 +727,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -744,13 +744,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganization
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganization
-
 ## NOTES
 
 ALIASES
@@ -1143,3 +1140,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

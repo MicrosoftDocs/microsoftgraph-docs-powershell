@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetahasuserdeviceenrollmentconfigurationpayloadlink
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke action hasPayloadLinks
 ### LinkExpanded (Default)
 ```
 Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -UserId <String>
- [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Link
 ```
 Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -UserId <String>
  -Body <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### LinkViaIdentityExpanded
+```
+Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### LinkViaIdentity
 ```
 Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### LinkViaIdentityExpanded
-```
-Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,14 +43,14 @@ Invoke action hasPayloadLinks
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -63,7 +63,7 @@ Invoke action hasPayloadLinks
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: LinkExpanded, LinkViaIdentityExpanded
 Aliases:
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Link
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: LinkViaIdentity
 Aliases:
 
@@ -111,8 +111,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: LinkViaIdentity, LinkViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: LinkViaIdentityExpanded, LinkViaIdentity
 Aliases:
 
 Required: True
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: LinkExpanded, LinkViaIdentityExpanded
 Aliases:
 
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Link, LinkExpanded
+Type: String
+Parameter Sets: LinkExpanded, Link
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,13 +189,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHasPayloadLinkResultItem
-
 ## NOTES
 
 ALIASES
@@ -254,4 +251,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalauthorizationsystemdatacollectioninfo
 schema: 2.0.0
@@ -15,27 +15,27 @@ Update the navigation property dataCollectionInfo in external
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaExternalAuthorizationSystemDataCollectionInfo -AuthorizationSystemId <String>
- [-AdditionalProperties <Hashtable>] [-Entitlements <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-Entitlements <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaExternalAuthorizationSystemDataCollectionInfo -AuthorizationSystemId <String>
- -BodyParameter <IMicrosoftGraphDataCollectionInfo> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaExternalAuthorizationSystemDataCollectionInfo -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphDataCollectionInfo> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDataCollectionInfo> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaExternalAuthorizationSystemDataCollectionInfo -InputObject <ISearchIdentity>
- [-AdditionalProperties <Hashtable>] [-Entitlements <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-Entitlements <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaExternalAuthorizationSystemDataCollectionInfo -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphDataCollectionInfo> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,19 +43,15 @@ Update the navigation property dataCollectionInfo in external
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -63,7 +59,7 @@ Update the navigation property dataCollectionInfo in external
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -78,8 +74,8 @@ Accept wildcard characters: False
 The unique identifier of authorizationSystem
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -94,7 +90,7 @@ dataCollectionInfo
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataCollectionInfo
+Type: IMicrosoftGraphDataCollectionInfo
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -109,7 +105,7 @@ Accept wildcard characters: False
 entitlementsDataCollectionInfo
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -125,7 +121,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,8 +137,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ISearchIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -156,7 +152,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +168,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,13 +185,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataCollectionInfo
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataCollectionInfo
-
 ## NOTES
 
 ALIASES
@@ -233,4 +226,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-

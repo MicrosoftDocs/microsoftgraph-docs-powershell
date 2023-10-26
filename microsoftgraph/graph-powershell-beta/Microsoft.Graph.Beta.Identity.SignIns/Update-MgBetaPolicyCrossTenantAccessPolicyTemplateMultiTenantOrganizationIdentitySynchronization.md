@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization
 schema: 2.0.0
@@ -17,13 +17,13 @@ This API is available in the following national cloud deployments.
 ```
 Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-TemplateApplicationLevel <String>]
- [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization
- -BodyParameter <IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,19 +33,15 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -53,7 +49,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -69,7 +65,7 @@ multiTenantOrganizationIdentitySyncPolicyTemplate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate
+Type: IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate
 Parameter Sets: Update
 Aliases:
 
@@ -85,7 +81,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -100,7 +96,7 @@ Accept wildcard characters: False
 templateApplicationLevel
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -116,7 +112,7 @@ crossTenantUserSyncInbound
 To construct, see NOTES section for USERSYNCINBOUND properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantUserSyncInbound
+Type: IMicrosoftGraphCrossTenantUserSyncInbound
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -131,7 +127,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +143,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,11 +160,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiTenantOrganizationIdentitySyncPolicyTemplate
-
 ## NOTES
 
 ALIASES
@@ -191,4 +185,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsSyncAllowed <Boolean?>]`: Defines whether user objects should be synchronized from the partner tenant. false causes any current user synchronization from the source tenant to the target tenant to stop. This property has no impact on existing users who have already been synchronized.
 
 ## RELATED LINKS
-

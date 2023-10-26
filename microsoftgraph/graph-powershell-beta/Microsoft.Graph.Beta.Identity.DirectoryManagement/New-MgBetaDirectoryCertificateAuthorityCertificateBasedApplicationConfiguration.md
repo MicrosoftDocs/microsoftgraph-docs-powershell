@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration
 schema: 2.0.0
@@ -17,14 +17,14 @@ Create new navigation property to certificateBasedApplicationConfigurations for 
 New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>]
- [-TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>] [-Confirm] [-WhatIf]
+ [-TrustedCertificateAuthorities <IMicrosoftGraphCertificateAuthorityAsEntity[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
- -BodyParameter <IMicrosoftGraphCertificateBasedApplicationConfiguration> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphCertificateBasedApplicationConfiguration> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,19 +33,15 @@ Create new navigation property to certificateBasedApplicationConfigurations for 
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -53,7 +49,7 @@ Create new navigation property to certificateBasedApplicationConfigurations for 
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +65,7 @@ certificateBasedApplicationConfiguration
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateBasedApplicationConfiguration
+Type: IMicrosoftGraphCertificateBasedApplicationConfiguration
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +81,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +96,7 @@ Accept wildcard characters: False
 The description of the trusted certificate authorities.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +111,7 @@ Accept wildcard characters: False
 The display name of the trusted certificate authorities.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +127,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +143,7 @@ Collection of trusted certificate authorities.
 To construct, see NOTES section for TRUSTEDCERTIFICATEAUTHORITIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateAuthorityAsEntity[]
+Type: IMicrosoftGraphCertificateAuthorityAsEntity[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -178,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -195,11 +191,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateBasedApplicationConfiguration
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateBasedApplicationConfiguration
-
 ## NOTES
 
 ALIASES
@@ -230,4 +224,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of the trusted certificate.
 
 ## RELATED LINKS
-

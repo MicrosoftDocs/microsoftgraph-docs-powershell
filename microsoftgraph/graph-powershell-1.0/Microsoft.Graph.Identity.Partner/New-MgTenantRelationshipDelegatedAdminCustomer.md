@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadmincustomer
 schema: 2.0.0
@@ -16,13 +16,13 @@ Create new navigation property to delegatedAdminCustomers for tenantRelationship
 ```
 New-MgTenantRelationshipDelegatedAdminCustomer [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-ServiceManagementDetails <IMicrosoftGraphDelegatedAdminServiceManagementDetail[]>]
- [-TenantId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTenantRelationshipDelegatedAdminCustomer -BodyParameter <IMicrosoftGraphDelegatedAdminCustomer>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgTenantRelationshipDelegatedAdminCustomer -BodyParameter <IMicrosoftGraphDelegatedAdminCustomer> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,19 +30,15 @@ Create new navigation property to delegatedAdminCustomers for tenantRelationship
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -50,7 +46,7 @@ Create new navigation property to delegatedAdminCustomers for tenantRelationship
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +62,7 @@ delegatedAdminCustomer
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedAdminCustomer
+Type: IMicrosoftGraphDelegatedAdminCustomer
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +79,7 @@ Read-only.
 Supports $orderby.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +95,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +111,7 @@ Contains the management details of a service in the customer tenant that's manag
 To construct, see NOTES section for SERVICEMANAGEMENTDETAILS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedAdminServiceManagementDetail[]
+Type: IMicrosoftGraphDelegatedAdminServiceManagementDetail[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +127,7 @@ The Azure AD-assigned tenant ID of the customer.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,11 +175,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedAdminCustomer
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedAdminCustomer
-
 ## NOTES
 
 ALIASES
@@ -209,4 +203,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceName <String>]`: The name of a managed service. Read-only.
 
 ## RELATED LINKS
-

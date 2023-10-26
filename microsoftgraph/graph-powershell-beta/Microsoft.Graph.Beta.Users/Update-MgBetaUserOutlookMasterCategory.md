@@ -1,62 +1,63 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlookmastercategory
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausernotification
 schema: 2.0.0
 ---
 
-# Update-MgBetaUserOutlookMasterCategory
+# Update-MgBetaUserNotification
 
 ## SYNOPSIS
-Update the writable property, color, of the specified outlookCategory object.
-You can't modify the displayName property\nonce you have created the category.
-This API is available in the following national cloud deployments.
+Update the navigation property notifications in users
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserOutlookMasterCategory -OutlookCategoryId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Color <String>] [-DisplayName <String>] [-Id <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgBetaUserNotification -NotificationId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-DisplayTimeToLive <Int32>] [-ExpirationDateTime <DateTime>] [-GroupName <String>] [-Id <String>]
+ [-Payload <IMicrosoftGraphPayloadTypes>] [-Priority <String>] [-TargetHostName <String>]
+ [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaUserOutlookMasterCategory -OutlookCategoryId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphOutlookCategory> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphOutlookCategory> [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaUserNotification -NotificationId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphNotification> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-Color <String>] [-DisplayName <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaUserNotification -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+ [-DisplayTimeToLive <Int32>] [-ExpirationDateTime <DateTime>] [-GroupName <String>] [-Id <String>]
+ [-Payload <IMicrosoftGraphPayloadTypes>] [-Priority <String>] [-TargetHostName <String>]
+ [-TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphNotification>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the writable property, color, of the specified outlookCategory object.
-You can't modify the displayName property\nonce you have created the category.
-This API is available in the following national cloud deployments.
+Update the navigation property notifications in users
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Users
+{{ Add code here }}
 ```
 
-$params = @{
-	color = "preset15"
-}
+{{ Add output here }}
 
-# A UPN can also be used as -UserId.
-Update-MgBetaUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId -BodyParameter $params
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +65,7 @@ Update-MgBetaUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlo
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,11 +77,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-outlookCategory
+notification
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookCategory
+Type: IMicrosoftGraphNotification
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -91,11 +92,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Color
-categoryColor
+### -DisplayTimeToLive
+Sets how long (in seconds) this notification content stays in each platform's notification viewer.
+For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification stays in the user's Windows Action Center.
 
 ```yaml
-Type: System.String
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,13 +108,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisplayName
-A unique name that identifies a category in the user's mailbox.
-After a category is created, the name cannot be changed.
-Read-only.
+### -ExpirationDateTime
+Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z').
+When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history.
+Max value is 30 days.
 
 ```yaml
-Type: System.String
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GroupName
+The name of the group that this notification belongs to.
+It is set by the developer for grouping notifications together.
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +146,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +162,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IUsersIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -155,15 +173,78 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OutlookCategoryId
-The unique identifier of outlookCategory
+### -NotificationId
+The unique identifier of notification
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Payload
+payloadTypes
+To construct, see NOTES section for PAYLOAD properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPayloadTypes
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Priority
+priority
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TargetHostName
+Represents the host name of the app to which the calling service wants to post the notification, for the given user.
+If targeting web endpoints (see targetPolicy.platformTypes), ensure that targetHostName is the same as the name used when creating a subscription on the client side within the application JSON property.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TargetPolicy
+targetPolicyEndpoints
+To construct, see NOTES section for TARGETPOLICY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTargetPolicyEndpoints
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -174,8 +255,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -189,7 +270,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +286,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -221,14 +302,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookCategory
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotification
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookCategory
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNotification
 ## NOTES
 
 ALIASES
@@ -238,11 +316,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IMicrosoftGraphOutlookCategory>`: outlookCategory
+`BODYPARAMETER <IMicrosoftGraphNotification>`: notification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Color <String>]`: categoryColor
-  - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
+  - `[DisplayTimeToLive <Int32?>]`: Sets how long (in seconds) this notification content stays in each platform's notification viewer. For example, when the notification is delivered to a Windows device, the value of this property is passed on to ToastNotification.ExpirationTime, which determines how long the toast notification stays in the user's Windows Action Center.
+  - `[ExpirationDateTime <DateTime?>]`: Sets a UTC expiration date and time on a user notification using ISO 8601 format (for example, midnight UTC on Jan 1, 2019 would look like this: '2019-01-01T00:00:00Z'). When time is up, the notification is removed from the Microsoft Graph notification feed store completely and is no longer part of notification history. Max value is 30 days.
+  - `[GroupName <String>]`: The name of the group that this notification belongs to. It is set by the developer for grouping notifications together.
+  - `[Payload <IMicrosoftGraphPayloadTypes>]`: payloadTypes
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[RawContent <String>]`: The notification content of a raw user notification that will be delivered to and consumed by the app client on all supported platforms (Windows, iOS, Android or WebPush) receiving this notification. At least one of Payload.RawContent or Payload.VisualContent needs to be valid for a POST Notification request.
+    - `[VisualContent <IMicrosoftGraphVisualProperties>]`: visualProperties
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Body <String>]`: The body of a visual user notification. Body is optional.
+      - `[Title <String>]`: The title of a visual user notification. This field is required for visual notification payloads.
+  - `[Priority <String>]`: priority
+  - `[TargetHostName <String>]`: Represents the host name of the app to which the calling service wants to post the notification, for the given user. If targeting web endpoints (see targetPolicy.platformTypes), ensure that targetHostName is the same as the name used when creating a subscription on the client side within the application JSON property.
+  - `[TargetPolicy <IMicrosoftGraphTargetPolicyEndpoints>]`: targetPolicyEndpoints
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[PlatformTypes <String[]>]`: Use to filter the notification distribution to a specific platform or platforms. Valid values are Windows, iOS, Android and WebPush. By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
 
 `INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
@@ -268,5 +359,16 @@ To create the parameters described below, construct a hash table containing the 
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
 
-## RELATED LINKS
+`PAYLOAD <IMicrosoftGraphPayloadTypes>`: payloadTypes
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[RawContent <String>]`: The notification content of a raw user notification that will be delivered to and consumed by the app client on all supported platforms (Windows, iOS, Android or WebPush) receiving this notification. At least one of Payload.RawContent or Payload.VisualContent needs to be valid for a POST Notification request.
+  - `[VisualContent <IMicrosoftGraphVisualProperties>]`: visualProperties
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Body <String>]`: The body of a visual user notification. Body is optional.
+    - `[Title <String>]`: The title of a visual user notification. This field is required for visual notification payloads.
 
+`TARGETPOLICY <IMicrosoftGraphTargetPolicyEndpoints>`: targetPolicyEndpoints
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[PlatformTypes <String[]>]`: Use to filter the notification distribution to a specific platform or platforms. Valid values are Windows, iOS, Android and WebPush. By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
+
+## RELATED LINKS
