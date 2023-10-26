@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpostinreplyto
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
 This API is supported in the following national cloud deployments.
 
 ## SYNTAX
@@ -45,7 +45,7 @@ Invoke-MgForwardGroupConversationThreadPostInReplyTo -InputObject <IGroupsIdenti
 
 ## DESCRIPTION
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES

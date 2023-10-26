@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Sites
 Module Guid: 9c657dd1-e525-42de-ba5c-29c68e5741bf
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.sites
@@ -146,7 +146,7 @@ Get the number of the resource
 Get lastSevenDays from groups
 
 ### [Get-MgGroupSiteAnalyticTime](Get-MgGroupSiteAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is available in the following [national cloud deployments.
 
 ### [Get-MgGroupSiteColumn](Get-MgGroupSiteColumn.md)
@@ -974,7 +974,7 @@ The collection of the sub-sites under this site.
 Get the number of the resource
 
 ### [Get-MgSite](Get-MgSite.md)
-Retrieve properties and relationships for a [site][] resource.\nA site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a [site][] resource.A site resource represents a team site in SharePoint.
 
 ### [Get-MgSiteActivityByInterval](Get-MgSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -1004,7 +1004,7 @@ Get the number of the resource
 Get lastSevenDays from sites
 
 ### [Get-MgSiteAnalyticTime](Get-MgSiteAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is available in the following [national cloud deployments.
 
 ### [Get-MgSiteApplicableContentTypeForList](Get-MgSiteApplicableContentTypeForList.md)

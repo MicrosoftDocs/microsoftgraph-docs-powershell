@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Files
 Module Guid: 215c12ff-2eb9-4d9e-94f9-5ec8ad1793b3
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.files
@@ -121,7 +121,7 @@ Get the number of the resource
 Get lastSevenDays from drives
 
 ### [Get-MgDriveItemAnalyticTime](Get-MgDriveItemAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is supported in the following [national cloud deployments.
 
 ### [Get-MgDriveItemChild](Get-MgDriveItemChild.md)
@@ -248,7 +248,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgDriveItemPermission](Get-MgDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgDriveItemPermissionCount](Get-MgDriveItemPermissionCount.md)
@@ -429,7 +429,7 @@ The set of subscriptions on the list.
 Get the number of the resource
 
 ### [Get-MgDriveRoot](Get-MgDriveRoot.md)
-Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 This API is supported in the following national cloud deployments.
 
@@ -452,7 +452,7 @@ Get the number of the resource
 Get lastSevenDays from drives
 
 ### [Get-MgDriveRootAnalyticTime](Get-MgDriveRootAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is supported in the following [national cloud deployments.
 
 ### [Get-MgDriveRootChild](Get-MgDriveRootChild.md)
@@ -576,7 +576,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgDriveRootPermission](Get-MgDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgDriveRootPermissionCount](Get-MgDriveRootPermissionCount.md)
@@ -697,7 +697,7 @@ Get the number of the resource
 Get lastSevenDays from groups
 
 ### [Get-MgGroupDriveItemAnalyticTime](Get-MgGroupDriveItemAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is supported in the following [national cloud deployments.
 
 ### [Get-MgGroupDriveItemChild](Get-MgGroupDriveItemChild.md)
@@ -818,7 +818,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgGroupDriveItemPermission](Get-MgGroupDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgGroupDriveItemPermissionCount](Get-MgGroupDriveItemPermissionCount.md)
@@ -990,7 +990,7 @@ The set of subscriptions on the list.
 Get the number of the resource
 
 ### [Get-MgGroupDriveRoot](Get-MgGroupDriveRoot.md)
-Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 This API is supported in the following national cloud deployments.
 
@@ -1010,7 +1010,7 @@ Get the number of the resource
 Get lastSevenDays from groups
 
 ### [Get-MgGroupDriveRootAnalyticTime](Get-MgGroupDriveRootAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is supported in the following [national cloud deployments.
 
 ### [Get-MgGroupDriveRootChild](Get-MgGroupDriveRootChild.md)
@@ -1128,7 +1128,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgGroupDriveRootPermission](Get-MgGroupDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgGroupDriveRootPermissionCount](Get-MgGroupDriveRootPermissionCount.md)
@@ -1467,7 +1467,7 @@ Get the number of the resource
 Get lastSevenDays from users
 
 ### [Get-MgUserDriveItemAnalyticTime](Get-MgUserDriveItemAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is supported in the following [national cloud deployments.
 
 ### [Get-MgUserDriveItemChild](Get-MgUserDriveItemChild.md)
@@ -1588,7 +1588,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgUserDriveItemPermission](Get-MgUserDriveItemPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserDriveItemPermissionCount](Get-MgUserDriveItemPermissionCount.md)
@@ -1760,7 +1760,7 @@ The set of subscriptions on the list.
 Get the number of the resource
 
 ### [Get-MgUserDriveRoot](Get-MgUserDriveRoot.md)
-Retrieve the metadata for a driveItem in a drive by file system path or ID.\nitem-id is the ID of a driveItem.
+Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 This API is supported in the following national cloud deployments.
 
@@ -1780,7 +1780,7 @@ Get the number of the resource
 Get lastSevenDays from users
 
 ### [Get-MgUserDriveRootAnalyticTime](Get-MgUserDriveRootAnalyticTime.md)
-Get [itemAnalytics][] about the views that took place under this resource.\nThe itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.\nFor a custom time range or interval, use the getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is supported in the following [national cloud deployments.
 
 ### [Get-MgUserDriveRootChild](Get-MgUserDriveRootChild.md)
@@ -1898,7 +1898,7 @@ A collection of the fields and values for this version of the list item.
 ### [Get-MgUserDriveRootPermission](Get-MgUserDriveRootPermission.md)
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserDriveRootPermissionCount](Get-MgUserDriveRootPermissionCount.md)
@@ -1990,11 +1990,11 @@ This API is supported in the following national cloud deployments.
 Invoke function sharedWithMe
 
 ### [Invoke-MgInviteDriveItem](Invoke-MgInviteDriveItem.md)
-Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
+Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
 This API is supported in the following [national cloud deployments.
 
 ### [Invoke-MgInviteDriveRoot](Invoke-MgInviteDriveRoot.md)
-Sends a sharing invitation for a driveItem.\nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
+Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
 This API is supported in the following [national cloud deployments.
 
 ### [Invoke-MgPreviewDriveItem](Invoke-MgPreviewDriveItem.md)
@@ -2055,7 +2055,7 @@ Create new navigation property to children for drives
 
 ### [New-MgDriveItemLink](New-MgDriveItemLink.md)
 You can use createLink action to share a DriveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 This API is supported in the following national cloud deployments.
 
@@ -2120,7 +2120,7 @@ Create new navigation property to children for drives
 
 ### [New-MgDriveRootLink](New-MgDriveRootLink.md)
 You can use createLink action to share a DriveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 This API is supported in the following national cloud deployments.
 
@@ -2373,7 +2373,7 @@ Publishes a contentType][] present in the content type hub site.
 This API is supported in the following [national cloud deployments.
 
 ### [Remove-MgDriveItem](Remove-MgDriveItem.md)
-Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 This API is supported in the following national cloud deployments.
 
 ### [Remove-MgDriveItemAnalytic](Remove-MgDriveItemAnalytic.md)
@@ -2410,7 +2410,7 @@ Invoke action permanentDelete
 
 ### [Remove-MgDriveItemPermission](Remove-MgDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is supported in the following national cloud deployments.
 
 ### [Remove-MgDriveItemSubscription](Remove-MgDriveItemSubscription.md)
@@ -2501,7 +2501,7 @@ Invoke action permanentDelete
 
 ### [Remove-MgDriveRootPermission](Remove-MgDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is supported in the following national cloud deployments.
 
 ### [Remove-MgDriveRootSubscription](Remove-MgDriveRootSubscription.md)
@@ -2517,7 +2517,7 @@ Delete navigation property versions for drives
 Delete navigation property drives for groups
 
 ### [Remove-MgGroupDriveItem](Remove-MgGroupDriveItem.md)
-Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 This API is supported in the following national cloud deployments.
 
 ### [Remove-MgGroupDriveItemAnalytic](Remove-MgGroupDriveItemAnalytic.md)
@@ -2551,7 +2551,7 @@ Delete navigation property fields for groups
 
 ### [Remove-MgGroupDriveItemPermission](Remove-MgGroupDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is supported in the following national cloud deployments.
 
 ### [Remove-MgGroupDriveItemSubscription](Remove-MgGroupDriveItemSubscription.md)
@@ -2639,7 +2639,7 @@ Delete navigation property fields for groups
 
 ### [Remove-MgGroupDriveRootPermission](Remove-MgGroupDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is supported in the following national cloud deployments.
 
 ### [Remove-MgGroupDriveRootSubscription](Remove-MgGroupDriveRootSubscription.md)
@@ -2702,7 +2702,7 @@ Delete entity from shares
 Delete navigation property drives for users
 
 ### [Remove-MgUserDriveItem](Remove-MgUserDriveItem.md)
-Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
 This API is supported in the following national cloud deployments.
 
 ### [Remove-MgUserDriveItemAnalytic](Remove-MgUserDriveItemAnalytic.md)
@@ -2736,7 +2736,7 @@ Delete navigation property fields for users
 
 ### [Remove-MgUserDriveItemPermission](Remove-MgUserDriveItemPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is supported in the following national cloud deployments.
 
 ### [Remove-MgUserDriveItemSubscription](Remove-MgUserDriveItemSubscription.md)
@@ -2824,7 +2824,7 @@ Delete navigation property fields for users
 
 ### [Remove-MgUserDriveRootPermission](Remove-MgUserDriveRootPermission.md)
 Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.\nThe inheritedFrom property must be null.
+Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is supported in the following national cloud deployments.
 
 ### [Remove-MgUserDriveRootSubscription](Remove-MgUserDriveRootSubscription.md)
@@ -3056,7 +3056,7 @@ Update property mailboxSettings value.
 
 ### [Update-MgDriveItem](Update-MgDriveItem.md)
 To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 This API is supported in the following national cloud deployments.
 
@@ -3229,7 +3229,7 @@ Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveItem](Update-MgGroupDriveItem.md)
 To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 This API is supported in the following national cloud deployments.
 
@@ -3467,7 +3467,7 @@ Update property mailboxSettings value.
 
 ### [Update-MgUserDriveItem](Update-MgUserDriveItem.md)
 To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+This is a special case of the Update method.Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 This API is supported in the following national cloud deployments.
 

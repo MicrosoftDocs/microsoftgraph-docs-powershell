@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Sites
 Module Guid: a9ede8dd-dfb7-4963-b0a3-0245c1a285e8
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites
@@ -1180,7 +1180,7 @@ The collection of the sub-sites under this site.
 Get the number of the resource
 
 ### [Get-MgBetaSite](Get-MgBetaSite.md)
-Retrieve properties and relationships for a [site][] resource.\nA site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a [site][] resource.A site resource represents a team site in SharePoint.
 
 ### [Get-MgBetaSiteActivityByInterval](Get-MgBetaSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -2203,7 +2203,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaSiteListItemLink](New-MgBetaSiteListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 This API is available in the following national cloud deployments.
 

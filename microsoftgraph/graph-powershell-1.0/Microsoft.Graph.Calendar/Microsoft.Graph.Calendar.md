@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Calendar
 Module Guid: 4cb73b44-8cc6-49af-9348-b9ce70bdf042
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar
@@ -148,21 +148,21 @@ Read-only.
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
+To get expanded event instances, you can get the calendar view, or get the instances of an event.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgUserDefaultCalendarEvent](Get-MgUserDefaultCalendarEvent.md)
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
+To get expanded event instances, you can get the calendar view, or get the instances of an event.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgUserDefaultCalendarEvent](Get-MgUserDefaultCalendarEvent.md)
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
+To get expanded event instances, you can get the calendar view, or get the instances of an event.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgUserEventAttachmentCount](Get-MgUserEventAttachmentCount.md)

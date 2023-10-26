@@ -36,10 +36,10 @@ This API is available in the following national cloud deployments.
 
 ### [Clear-MgSecurityCaseEdiscoveryCaseSearchData](Clear-MgSecurityCaseEdiscoveryCaseSearchData.md)
 Delete Microsoft Teams messages contained in an eDiscovery search.
-You can collect and purge the following categories of Teams content:\n- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
-Teams 1:1 chats are also called *conversations*.\n- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
-Also called *1:N* chats or *group conversations*.\n- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.\n- Private channels - Message posts, replies, and attachments shared in a private Teams channel.\n- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:\n- eDiscovery solution series: Data spillage scenario - Search and purge\n- eDiscovery (Premium) workflow for content in Microsoft Teams  This API is available in the following national cloud deployments.
+You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
+Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
+Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
+For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams  This API is available in the following national cloud deployments.
 
 ### [Close-MgSecurityCaseEdiscoveryCase](Close-MgSecurityCaseEdiscoveryCase.md)
 Close an eDiscovery case.
@@ -486,8 +486,8 @@ When navigating to a hostTracker from a host, this should be assumed to be a ret
 
 ### [Get-MgSecurityThreatIntelligenceHostWhoi](Get-MgSecurityThreatIntelligenceHostWhoi.md)
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
-\n- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgSecurityThreatIntelligenceIntelProfile](Get-MgSecurityThreatIntelligenceIntelProfile.md)
@@ -581,8 +581,8 @@ The host associated to this WHOIS object.
 
 ### [Get-MgSecurityThreatIntelligenceWhoisRecord](Get-MgSecurityThreatIntelligenceWhoisRecord.md)
 Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:\n- Identify a host and get its current whoisRecord.
-\n- Specify an id value to get the corresponding whoisRecord.
+Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
+- Specify an id value to get the corresponding whoisRecord.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgSecurityThreatIntelligenceWhoisRecordCount](Get-MgSecurityThreatIntelligenceWhoisRecordCount.md)
@@ -688,7 +688,7 @@ Create a new ediscoveryCase object.
 This API is available in the following national cloud deployments.
 
 ### [New-MgSecurityCaseEdiscoveryCaseCustodian](New-MgSecurityCaseEdiscoveryCaseCustodian.md)
-Create a new ediscoveryCustodian object.\nAfter the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
+Create a new ediscoveryCustodian object.After the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
 This API is available in the following national cloud deployments.
 
 ### [New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource.md)

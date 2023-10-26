@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 
 ## SYNOPSIS
-In Azure AD entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
+In Azure AD entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -52,7 +52,7 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-In Azure AD entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
+In Azure AD entitlement management, retrieve the properties and relationships of an accessPackageAssignmentPolicy object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES

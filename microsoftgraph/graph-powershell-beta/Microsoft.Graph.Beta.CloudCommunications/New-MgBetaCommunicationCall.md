@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall
@@ -118,7 +118,7 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "\<Media Session Configuration\>"
+		blob = "<Media Session Configuration>"
 	}
 }
 
@@ -231,7 +231,7 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "\<Media Session Configuration\>"
+		blob = "<Media Session Configuration>"
 		removeFromDefaultAudioGroup = $false
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
@@ -344,7 +344,7 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "\<Media Session Configuration\>"
+		blob = "<Media Session Configuration>"
 	}
 	chatInfo = @{
 		"@odata.type" = "#microsoft.graph.chatInfo"
@@ -542,7 +542,7 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "\<Media Session Configuration\>"
+		blob = "<Media Session Configuration>"
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
