@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The channels those are either shared with this deleted team or created in this deleted team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -308,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannel?view=graph-powershell-1.0)

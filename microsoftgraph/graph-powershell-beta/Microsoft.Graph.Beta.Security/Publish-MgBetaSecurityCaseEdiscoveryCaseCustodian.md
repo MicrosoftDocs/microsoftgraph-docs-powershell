@@ -12,6 +12,9 @@ Release a custodian from a case.
 For details, see Release a custodian from a case.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Publish-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Release (Default)
@@ -230,3 +233,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Publish-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Publish-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-1.0)

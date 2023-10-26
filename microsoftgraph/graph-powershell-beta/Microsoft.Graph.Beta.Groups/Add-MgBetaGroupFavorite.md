@@ -13,6 +13,9 @@ Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupFavorite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Add (Default)
@@ -180,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Add-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupFavorite?view=graph-powershell-1.0)

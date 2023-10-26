@@ -11,6 +11,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 List of channels either hosted in or shared with the team (incoming channels).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAllGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllGroupTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -299,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaAllGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllGroupTeamChannel?view=graph-powershell-beta)

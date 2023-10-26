@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Sets a new value for the collection of alertComment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgSecurityIncidentAlertComment](/powershell/module/Microsoft.Graph.Security/Set-MgSecurityIncidentAlertComment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetViaIdentity (Default)
@@ -252,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Set-MgSecurityIncidentAlertComment](/powershell/module/Microsoft.Graph.Security/Set-MgSecurityIncidentAlertComment?view=graph-powershell-1.0)

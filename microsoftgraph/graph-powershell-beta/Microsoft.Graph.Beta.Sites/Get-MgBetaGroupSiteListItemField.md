@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The values of the columns set on this list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -220,3 +223,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemField?view=graph-powershell-1.0)

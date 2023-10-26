@@ -14,6 +14,9 @@ Retrieve the properties of a single delegated permission grant represented by an
 An oAuth2PermissionGrant represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgOauth2PermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -329,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgOauth2PermissionGrant?view=graph-powershell-1.0)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Deletes a domain from a tenant.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -195,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDomain?view=graph-powershell-1.0)

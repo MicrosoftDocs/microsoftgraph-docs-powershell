@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -305,5 +308,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: connectionState
 
 ## RELATED LINKS
+[Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)

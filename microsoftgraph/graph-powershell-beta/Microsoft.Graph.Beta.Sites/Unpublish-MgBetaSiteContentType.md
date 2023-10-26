@@ -11,6 +11,9 @@ schema: 2.0.0
 Unpublish a contentType][] from a content type hub site.
 This API is available in the following [national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Unpublish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unpublish (Default)
@@ -200,3 +203,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Unpublish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteContentType?view=graph-powershell-1.0)

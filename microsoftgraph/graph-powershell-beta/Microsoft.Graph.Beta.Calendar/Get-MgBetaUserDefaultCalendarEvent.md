@@ -15,6 +15,9 @@ The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, orget the instances of an event.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserDefaultCalendarEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -208,3 +211,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserDefaultCalendarEvent?view=graph-powershell-1.0)

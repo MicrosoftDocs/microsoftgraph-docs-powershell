@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property people in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeople?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -201,3 +204,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabledInOrganization <Boolean?>]`: true to enable pronouns in the organization, false otherwise. The default is false, and pronouns are disabled.
 
 ## RELATED LINKS
+[Update-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgAdminPeople?view=graph-powershell-1.0)

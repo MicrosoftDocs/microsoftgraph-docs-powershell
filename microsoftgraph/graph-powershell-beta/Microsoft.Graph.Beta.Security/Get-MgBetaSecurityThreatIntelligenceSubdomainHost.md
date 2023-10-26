@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The host of the subdomain.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSubdomainHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSubdomainHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -199,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceSubdomainHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSubdomainHost?view=graph-powershell-1.0)

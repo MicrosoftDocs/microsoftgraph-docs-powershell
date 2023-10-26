@@ -18,6 +18,9 @@ This allows you to maintain and synchronize a local store of events in the speci
 The following table lists the differences between the delta function on events and the delta function on a calendarView in a calendar.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupCalendarEventDelta](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCalendarEventDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -339,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupCalendarEventDelta](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCalendarEventDelta?view=graph-powershell-1.0)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new ediscoveryCase object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -25285,5 +25288,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)

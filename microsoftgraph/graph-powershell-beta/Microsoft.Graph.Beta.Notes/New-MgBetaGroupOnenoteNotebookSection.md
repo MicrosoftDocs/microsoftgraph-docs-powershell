@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new section in the specified notebook.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -739,5 +742,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
 
 ## RELATED LINKS
+[New-MgGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSection?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteNotebookSection?view=graph-powershell-1.0)

@@ -12,6 +12,9 @@ ms.prod: sites-and-lists
 Associate a content type][contentType] with a list of hub sites.
 This API is available in the following [national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Groups/Join-MgGroupDriveListContentTypeWithHubSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)
@@ -300,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Join-MgGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Groups/Join-MgGroupDriveListContentTypeWithHubSite?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get serviceProvisioningErrors property value
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -214,3 +217,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaDriveRootCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootCreatedByUserServiceProvisioningError?view=graph-powershell-beta)

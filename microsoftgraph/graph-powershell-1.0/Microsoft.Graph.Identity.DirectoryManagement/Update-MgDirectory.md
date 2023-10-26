@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update directory
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -394,5 +397,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
 ## RELATED LINKS
+[Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)

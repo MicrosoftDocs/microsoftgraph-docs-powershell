@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property hostPairs for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceHostPair?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -230,3 +233,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Remove-MgSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceHostPair?view=graph-powershell-1.0)

@@ -12,6 +12,9 @@ ms.prod: sites-and-lists
 Add a copy of a content type][contentType] from a [site][site] to a [list][list].
 This API is available in the following [national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteListContentTypeCopy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -263,3 +266,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Add-MgGroupSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteListContentTypeCopy?view=graph-powershell-1.0)
