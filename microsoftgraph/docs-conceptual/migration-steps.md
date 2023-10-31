@@ -3,7 +3,7 @@ title: "Migrate from Azure AD PowerShell to Microsoft Graph PowerShell."
 description: "Migrate your applications from Azure AD PowerShell to Microsoft Graph PowerShell."
 
 ms.topic: conceptual
-ms.date: 09/20/2022
+ms.date: 10/31/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
