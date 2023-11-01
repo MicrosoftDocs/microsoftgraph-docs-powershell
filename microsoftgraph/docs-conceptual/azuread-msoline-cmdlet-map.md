@@ -11,7 +11,7 @@ ms.author: eunicewaweru
 
 # Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell
 
-You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmdlets that you need in the  [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview). For more information about the new cmdlets, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
+You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmdlets that you need in the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview). For more information about the new cmdlets, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
 
 ## Azure AD to Microsoft Graph PowerShell by category
 
@@ -421,7 +421,8 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-MsolFederationProperty|[Get-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration)|
 |Get-MsolGroup|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup)|
 |Get-MsolGroupMember|[Get-MgGroupMember](/powershell/module/microsoft.graph.groups/get-mggroupmember)|
-|Get-MsolHasObjectsWithDirSyncProvisioningErrors||
+|Get-MsolHasObjectsWithDirSyncProvisioningErrors <sup>1</sup>|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser), [Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup), [Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact) > [!NOTE]
+> on property `onPremisesProvisioningErrors`|
 |Get-MsolPartnerContract|[Get-MgContract](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontract)|
 |Get-MsolPartnerInformation||
 |Get-MsolPasswordPolicy|[Get-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain)|
