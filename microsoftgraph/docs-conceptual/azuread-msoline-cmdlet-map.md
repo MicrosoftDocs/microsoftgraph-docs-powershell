@@ -421,8 +421,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-MsolFederationProperty|[Get-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration)|
 |Get-MsolGroup|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup)|
 |Get-MsolGroupMember|[Get-MgGroupMember](/powershell/module/microsoft.graph.groups/get-mggroupmember)|
-|Get-MsolHasObjectsWithDirSyncProvisioningErrors <sup>1</sup>|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser), [Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup), [Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact) > [!NOTE]
-> on property `onPremisesProvisioningErrors`|
+|Get-MsolHasObjectsWithDirSyncProvisioningErrors <sup>1</sup>|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser), [Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup), [Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact) > [!NOTE] on property `onPremisesProvisioningErrors`|
 |Get-MsolPartnerContract|[Get-MgContract](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontract)|
 |Get-MsolPartnerInformation||
 |Get-MsolPasswordPolicy|[Get-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain)|
