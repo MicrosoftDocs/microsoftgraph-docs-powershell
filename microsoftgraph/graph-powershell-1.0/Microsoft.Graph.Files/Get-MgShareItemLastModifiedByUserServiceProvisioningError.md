@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get serviceProvisioningErrors property value
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -237,3 +240,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a version of a document set in a list.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete1 (Default)
@@ -226,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)

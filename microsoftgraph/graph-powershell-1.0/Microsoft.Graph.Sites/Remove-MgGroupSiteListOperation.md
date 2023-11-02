@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property operations for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -241,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListOperation?view=graph-powershell-beta)

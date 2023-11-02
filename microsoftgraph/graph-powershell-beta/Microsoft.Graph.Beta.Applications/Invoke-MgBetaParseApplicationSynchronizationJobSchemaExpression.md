@@ -13,6 +13,9 @@ Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgParseApplicationSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseApplicationSynchronizationJobSchemaExpression?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ParseExpanded (Default)
@@ -365,5 +368,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Key <String>]`: Key.
 
 ## RELATED LINKS
+[Invoke-MgParseApplicationSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseApplicationSynchronizationJobSchemaExpression?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Invoke-MgParseApplicationSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseApplicationSynchronizationJobSchemaExpression?view=graph-powershell-1.0)

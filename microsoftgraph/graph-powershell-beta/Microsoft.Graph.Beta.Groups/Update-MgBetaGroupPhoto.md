@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property photo in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupPhoto](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupPhoto?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -267,6 +270,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgGroupPhoto](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupphoto)
 

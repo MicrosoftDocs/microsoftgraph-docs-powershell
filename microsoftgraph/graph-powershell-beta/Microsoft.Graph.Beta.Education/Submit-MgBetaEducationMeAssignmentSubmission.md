@@ -16,6 +16,9 @@ The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Submit-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Submit-MgEducationMeAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Submit (Default)
@@ -165,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Submit-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Submit-MgEducationMeAssignmentSubmission?view=graph-powershell-1.0)

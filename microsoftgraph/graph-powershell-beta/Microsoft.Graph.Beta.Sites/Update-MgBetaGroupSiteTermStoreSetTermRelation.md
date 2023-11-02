@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property relations in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetTermRelation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -541,5 +544,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
+[Update-MgGroupSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetTermRelation?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgGroupSiteTermStoreSetTermRelation](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetTermRelation?view=graph-powershell-1.0)

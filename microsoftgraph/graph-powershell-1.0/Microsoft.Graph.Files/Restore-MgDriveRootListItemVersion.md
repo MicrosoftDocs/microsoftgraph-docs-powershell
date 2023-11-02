@@ -12,6 +12,9 @@ Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -186,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)

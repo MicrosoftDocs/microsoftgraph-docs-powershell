@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 The collection of historical records associated to this WHOIS object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceWhoisRecordHistory](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceWhoisRecordHistory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -343,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceWhoisRecordHistory](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceWhoisRecordHistory?view=graph-powershell-1.0)

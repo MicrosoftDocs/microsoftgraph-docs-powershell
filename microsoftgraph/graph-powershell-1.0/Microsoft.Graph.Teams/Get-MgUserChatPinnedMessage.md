@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of all the pinned messages in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -328,3 +331,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)

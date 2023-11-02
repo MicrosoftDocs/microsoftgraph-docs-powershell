@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a column for a list][list] with a request that specifies a [columnDefinition][columnDefinition].
 This API is available in the following [national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1177,5 +1180,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[New-MgGroupSiteListColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListColumn?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgGroupSiteListColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListColumn?view=graph-powershell-1.0)

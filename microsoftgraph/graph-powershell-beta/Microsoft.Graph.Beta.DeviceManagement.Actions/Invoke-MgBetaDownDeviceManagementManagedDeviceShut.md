@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Shut down device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDownDeviceManagementManagedDeviceShut?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Down (Default)
@@ -194,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Invoke-MgDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDownDeviceManagementManagedDeviceShut?view=graph-powershell-1.0)

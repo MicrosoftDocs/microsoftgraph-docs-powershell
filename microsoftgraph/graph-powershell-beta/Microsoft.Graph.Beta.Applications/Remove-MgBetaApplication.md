@@ -13,6 +13,9 @@ When deleted, apps are moved to a temporary container and can be restored within
 After that time, they are permanently deleted.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplication](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplication?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -186,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgApplication](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplication?view=graph-powershell-1.0)

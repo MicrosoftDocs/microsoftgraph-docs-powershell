@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update attendeeReport for the navigation property onlineMeetings in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserOnlineMeetingAttendeeReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -204,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserOnlineMeetingAttendeeReport?view=graph-powershell-beta)

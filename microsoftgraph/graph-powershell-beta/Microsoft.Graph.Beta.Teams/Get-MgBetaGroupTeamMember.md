@@ -11,6 +11,9 @@ schema: 2.0.0
 Get a conversationMember from a team.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -306,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamMember?view=graph-powershell-1.0)

@@ -12,6 +12,9 @@ Delete an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentRubric?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -190,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentRubric?view=graph-powershell-1.0)
