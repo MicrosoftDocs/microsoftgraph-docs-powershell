@@ -38,13 +38,17 @@ This action can only be done by the teacher.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Invoke-MgBetaReturnEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+
+```
+This example shows how to use the Invoke-MgBetaReturnEducationClassAssignmentSubmission Cmdlet.
+
 
 ## PARAMETERS
 

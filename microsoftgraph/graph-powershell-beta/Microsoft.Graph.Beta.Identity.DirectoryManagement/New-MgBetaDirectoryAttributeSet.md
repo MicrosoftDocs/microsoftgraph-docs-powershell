@@ -33,8 +33,7 @@ Create a new attributeSet object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDirectoryAttributeSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -44,6 +43,8 @@ $params = @{
 }
 New-MgBetaDirectoryAttributeSet -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaDirectoryAttributeSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

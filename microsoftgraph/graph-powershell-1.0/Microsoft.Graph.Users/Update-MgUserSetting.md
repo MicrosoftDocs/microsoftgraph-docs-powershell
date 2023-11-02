@@ -45,8 +45,6 @@ Update-MgUserPhoto -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property photo in users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -35,20 +35,18 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+
+Import-Module Microsoft.Graph.Beta.Teams
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserTeamworkAssociatedTeam -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserTeamworkAssociatedTeam Cmdlet.
 
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

@@ -51,8 +51,7 @@ As part of the request validation for this method, a proof of possession of an e
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaApplicationKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -61,6 +60,8 @@ $params = @{
 }
 Remove-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
+This example shows how to use the Remove-MgBetaApplicationKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

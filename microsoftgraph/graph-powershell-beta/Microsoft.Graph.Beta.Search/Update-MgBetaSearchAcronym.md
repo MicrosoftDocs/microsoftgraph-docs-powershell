@@ -46,8 +46,7 @@ Update the properties of an acronym object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSearchAcronym Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{
@@ -55,6 +54,8 @@ $params = @{
 }
 Update-MgBetaSearchAcronym -AcronymId $acronymId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaSearchAcronym Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

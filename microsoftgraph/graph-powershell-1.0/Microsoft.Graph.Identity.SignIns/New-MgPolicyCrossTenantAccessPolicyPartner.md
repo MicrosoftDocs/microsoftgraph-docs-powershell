@@ -41,11 +41,10 @@ Create a new partner configuration in a cross-tenant access policy.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	tenantId = "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a"
@@ -74,6 +73,11 @@ $params = @{
 }
 
 New-MgPolicyCrossTenantAccessPolicyPartner -BodyParameter $params
+```
+This example shows how to use the New-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -33,11 +33,18 @@ Remove a user's manager.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-Remove-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
+Import-Module Microsoft.Graph.Users
+
+# A UPN can also be used as -UserId.
+Remove-MgUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId
 ```
+This example shows how to use the Remove-MgUserOutlookMasterCategory Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

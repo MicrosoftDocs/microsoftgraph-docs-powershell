@@ -51,11 +51,11 @@ Create a new ediscoveryReviewSetQuery object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "My Query 1"
@@ -63,6 +63,10 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
+
 
 ## PARAMETERS
 

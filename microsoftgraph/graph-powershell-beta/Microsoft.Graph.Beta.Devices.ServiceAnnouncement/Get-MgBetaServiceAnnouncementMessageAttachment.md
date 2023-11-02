@@ -42,13 +42,17 @@ Read the properties and relationships of a serviceAnnouncementAttachment object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get an attachment with message ID
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
+
+```
+This example will get an attachment with message id
+
 
 ## PARAMETERS
 

@@ -35,20 +35,18 @@ Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice
 Get device from users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserAuthenticationPasswordMethod -UserId $userId -PasswordAuthenticationMethodId $passwordAuthenticationMethodId
 ```
+This example shows how to use the Get-MgBetaUserAuthenticationPasswordMethod Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

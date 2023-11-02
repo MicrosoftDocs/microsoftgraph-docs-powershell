@@ -41,16 +41,6 @@ Get-MgBetaUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIde
 Retrieve a user's single Software OATH token authentication method object and its properties.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
-
-# A UPN can also be used as -UserId.
-Get-MgBetaUserAuthenticationSoftwareOathMethod -UserId $userId -SoftwareOathAuthenticationMethodId $softwareOathAuthenticationMethodId
-
 ## PARAMETERS
 
 ### -All

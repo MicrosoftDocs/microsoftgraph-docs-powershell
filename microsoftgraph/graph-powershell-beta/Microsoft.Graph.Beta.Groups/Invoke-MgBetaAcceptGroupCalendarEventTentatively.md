@@ -49,27 +49,33 @@ Grant users access to a link represented by a permission][].
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Files
-```
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
-	Recipients = @(
-		@{
-			Email = "john@contoso.com"
+	Comment = "I may not be able to make this week. How about next week?"
+	SendResponse = $true
+	ProposedNewTime = @{
+		Start = @{
+			DateTime = "2019-12-02T18:00:00"
+			TimeZone = "Pacific Standard Time"
 		}
-		@{
-			Email = "ryan@external.com"
+		End = @{
+			DateTime = "2019-12-02T19:00:00"
+			TimeZone = "Pacific Standard Time"
 		}
-	)
-	Roles = @(
-		"read"
-	)
+	}
 }
 
-Grant-MgBetaSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
+# A UPN can also be used as -UserId.
+Invoke-MgBetaAcceptUserEventTentatively -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaAcceptGroupCalendarEventTentatively Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

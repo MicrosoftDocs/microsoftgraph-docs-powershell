@@ -50,17 +50,21 @@ For details about how to identify a large gallery view participant in a roster s
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	clientContext = "785f4929-92ca-497b-863f-c778c77c9758"
 }
 
 Add-MgBetaCommunicationCallLargeGalleryView -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgBetaCommunicationCallLargeGalleryView Cmdlet.
+
 
 ## PARAMETERS
 

@@ -53,8 +53,7 @@ An attachment can be one of the following types: All these types of attachment r
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -67,8 +66,9 @@ $params = @{
 }
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
-### EXAMPLE 2
+This example shows how to use the Invoke-MgBetaReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Invoke-MgBetaReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -88,8 +88,9 @@ $params = @{
 }
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
-### EXAMPLE 3
+This example shows how to use the Invoke-MgBetaReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Invoke-MgBetaReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -112,8 +113,9 @@ $params = @{
 }
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
-### EXAMPLE 4
+This example shows how to use the Invoke-MgBetaReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the Invoke-MgBetaReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -136,6 +138,8 @@ $params = @{
 }
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

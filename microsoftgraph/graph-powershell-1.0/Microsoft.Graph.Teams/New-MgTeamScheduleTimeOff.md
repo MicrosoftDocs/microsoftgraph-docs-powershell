@@ -47,11 +47,11 @@ Create a new timeOff instance in a schedule.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	userId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 New-MgTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamScheduleTimeOff Cmdlet.
+
 
 ## PARAMETERS
 

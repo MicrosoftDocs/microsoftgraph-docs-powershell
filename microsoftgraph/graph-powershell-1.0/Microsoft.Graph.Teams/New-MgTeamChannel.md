@@ -60,11 +60,11 @@ If you're creating a private channel, you can add a maximum of 200 members.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Create a standard channel
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "Architecture Discussion"
@@ -74,10 +74,14 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Teams
 ```
+This example will create a standard channel
+
+### Example 2: Create private channel on behalf of user
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -97,10 +101,14 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Teams
 ```
+This example will create private channel on behalf of user
+
+### Example 3: Create a channel in migration mode
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@microsoft.graph.channelCreationMode" = "migration"
@@ -111,10 +119,14 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Teams
 ```
+This example will create a channel in migration mode
+
+### Example 4: Create private channel on behalf of user using user principal name
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@odata.type" = "#Microsoft.Graph.channel"
@@ -134,10 +146,14 @@ $params = @{
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
 
-### EXAMPLE 5
-```powershell
-Import-Module Microsoft.Graph.Teams
 ```
+This example will create private channel on behalf of user using user principal name
+
+### Example 5: Create a shared channel on behalf of a user
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	displayName = "My First Shared Channel"
@@ -155,6 +171,10 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
+
+```
+This example will create a shared channel on behalf of a user
+
 
 ## PARAMETERS
 

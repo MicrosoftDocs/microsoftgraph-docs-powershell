@@ -42,8 +42,7 @@ Add groups to be included in a mobile app management policy.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -51,6 +50,8 @@ $params = @{
 }
 New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -39,48 +39,72 @@ Get-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 Get teamsApps from appCatalogs
 
 ## EXAMPLES
+### Example 1: List all applications specific to the tenant
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
+
+Get-MgAppCatalogTeamApp -Filter "distributionMethod eq 'organization'" 
+
 ```
+This example will list all applications specific to the tenant
 
-Get-MgAppCatalogTeamApp -Filter "distributionMethod eq 'organization'"
+### Example 2: List applications with a given ID
 
-### EXAMPLE 2
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
+
+Get-MgAppCatalogTeamApp -Filter "id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'" 
+
 ```
+This example will list applications with a given id
 
-Get-MgAppCatalogTeamApp -Filter "id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'"
+### Example 3: Find application based on the Teams app manifest ID
 
-### EXAMPLE 3
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
+
+Get-MgAppCatalogTeamApp -Filter "externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'" 
+
 ```
+This example will find application based on the teams app manifest id
 
-Get-MgAppCatalogTeamApp -Filter "externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'"
+### Example 4: List applications with a given ID, and return the submission review state
 
-### EXAMPLE 4
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
+
+Get-MgAppCatalogTeamApp -Filter "id eq '876df28f-2e78-423b-94a5-44181bd0e225'" -ExpandProperty "appDefinitions" 
+
 ```
+This example will list applications with a given id, and return the submission review state
 
-Get-MgAppCatalogTeamApp -Filter "id eq '876df28f-2e78-423b-94a5-44181bd0e225'" -ExpandProperty "appDefinitions"
+### Example 5: List the details of only those apps in the catalog that contain a bot
 
-### EXAMPLE 5
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
+
+Get-MgAppCatalogTeamApp -ExpandProperty "appDefinitions(`$expand=bot)" -Filter "appDefinitions/any(a:a/bot ne null)" 
+
 ```
+This example will list the details of only those apps in the catalog that contain a bot
 
-Get-MgAppCatalogTeamApp -ExpandProperty "appDefinitions(`$expand=bot)" -Filter "appDefinitions/any(a:a/bot ne null)"
+### Example 7: List applications with a given ID and return only the resource specific permissions required by the app
 
-### EXAMPLE 6
 ```powershell
-Import-Module Microsoft.Graph.Teams
-```
 
-Get-MgAppCatalogTeamApp -Filter "id eq 'a5228c26-a9ae-4702-90e0-79a5246d2f7d'" -ExpandProperty "appDefinitions(`$select=id,authorization)"
+Import-Module Microsoft.Graph.Teams
+
+Get-MgAppCatalogTeamApp -Filter "id eq 'a5228c26-a9ae-4702-90e0-79a5246d2f7d'" -ExpandProperty "appDefinitions(`$select=id,authorization)" 
+
+```
+This example will list applications with a given id and return only the resource specific permissions required by the app
+
 
 ## PARAMETERS
 

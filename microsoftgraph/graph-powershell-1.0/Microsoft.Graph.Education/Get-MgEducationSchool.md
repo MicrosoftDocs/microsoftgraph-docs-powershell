@@ -42,13 +42,17 @@ Read the properties and relationships of an educationSchool object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationSchool
+
+```
+This example shows how to use the Get-MgEducationSchool Cmdlet.
+
 
 ## PARAMETERS
 

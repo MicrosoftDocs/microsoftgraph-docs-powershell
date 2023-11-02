@@ -39,48 +39,55 @@ Read the properties of an azureADDevice object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
-
-### EXAMPLE 2
+This example shows how to use the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
-
-### EXAMPLE 3
+This example shows how to use the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
-
-### EXAMPLE 4
+This example shows how to use the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-Get-MgBetaWindowsUpdatesUpdatableAsset -Filter "isof('microsoft.graph.windowsUpdates.azureADDevice')"
+Get-MgBetaWindowsUpdatesUpdatableAsset -Filter "isof('microsoft.graph.windowsUpdates.azureADDevice')" 
 ```
-
-### EXAMPLE 5
+This example shows how to use the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 5: Using the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesUpdatableAsset
 ```
-
-### EXAMPLE 6
+This example shows how to use the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 6: Using the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesUpdatableAsset -OutFile $outFileId
 ```
-
-### EXAMPLE 7
+This example shows how to use the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 7: Using the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
-Get-MgBetaWindowsUpdatesUpdatableAsset -Filter "isof('microsoft.graph.windowsUpdates.updatableAssetGroup')"
+Get-MgBetaWindowsUpdatesUpdatableAsset -Filter "isof('microsoft.graph.windowsUpdates.updatableAssetGroup')" 
 ```
+This example shows how to use the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

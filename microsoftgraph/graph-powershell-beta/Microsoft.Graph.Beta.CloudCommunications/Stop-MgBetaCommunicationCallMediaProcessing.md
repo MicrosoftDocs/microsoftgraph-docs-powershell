@@ -55,8 +55,7 @@ However, it will not cancel a ubscribeToTone operation because it operates indep
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Stop-MgBetaCommunicationCallMediaProcessing Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -64,6 +63,8 @@ $params = @{
 }
 Stop-MgBetaCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
 ```
+This example shows how to use the Stop-MgBetaCommunicationCallMediaProcessing Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -61,12 +61,11 @@ In Azure AD entitlement management, retrieve the properties and relationships of
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get all access package policy assignment policies
 
-### EXAMPLE 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy | Format-List
-```
 
 AccessPackage           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage
 AccessPackageCatalog    : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
@@ -86,6 +85,9 @@ Questions               : {}
 RequestApprovalSettings : Microsoft.Graph.PowerShell.Models.MicrosoftGraphApprovalSettings
 RequestorSettings       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestorSettings
 AdditionalProperties    : {}
+```
+
+This example gets a list of all the access package assignment policies.
 
 ## PARAMETERS
 

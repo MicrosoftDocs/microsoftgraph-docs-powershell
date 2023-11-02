@@ -51,13 +51,17 @@ In Microsoft Entra entitlement management, retrieve the properties and relations
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example scenarios for using query parameters
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignmentRequest
+
+```
+This example will### example scenarios for using query parameters
+
 
 ## PARAMETERS
 

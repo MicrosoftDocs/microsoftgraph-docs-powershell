@@ -73,15 +73,17 @@ Note: To create a team, first create a group then add a team to it, see create t
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Create a new group
 
-### EXAMPLE 1
 ```powershell
 New-MgBetaGroup -DisplayName 'Test Group' -MailEnabled:$False  -MailNickName 'testgroup' -SecurityEnabled
-```
 
 Id                                   DisplayName Description GroupTypes
 --                                   ----------- ----------- ----------
 15bb6c2c-ac32-41a1-b9ec-b6300b8b8e52 Test Group              {}
+```
+
+This example creates a new group.
 
 ## PARAMETERS
 

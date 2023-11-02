@@ -38,8 +38,7 @@ After making this request, the caller should create a programControl, to link th
  This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaAccessReview Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -81,6 +80,8 @@ $params = @{
 }
 New-MgBetaAccessReview -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaAccessReview Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

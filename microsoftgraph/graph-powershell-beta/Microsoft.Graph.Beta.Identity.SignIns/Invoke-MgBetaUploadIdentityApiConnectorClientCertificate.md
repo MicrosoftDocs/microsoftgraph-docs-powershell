@@ -54,8 +54,7 @@ This method returns an apiConnector.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaUploadIdentityApiConnectorClientCertificate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -64,6 +63,8 @@ $params = @{
 }
 Invoke-MgBetaUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaUploadIdentityApiConnectorClientCertificate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

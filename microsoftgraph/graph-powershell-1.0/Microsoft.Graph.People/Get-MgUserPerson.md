@@ -32,20 +32,18 @@ Get-MgUserLastSharedMethodInsight -InputObject <IPeopleIdentity> [-ExpandPropert
 Get lastSharedMethod from users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+
+Import-Module Microsoft.Graph.People
+
+# A UPN can also be used as -UserId.
+Get-MgUserPerson -UserId $userId
+
 ```
+This example shows how to use the Get-MgUserPerson Cmdlet.
 
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

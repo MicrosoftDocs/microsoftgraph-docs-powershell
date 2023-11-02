@@ -55,8 +55,7 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Stop-MgBetaUserEvent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -65,6 +64,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Stop-MgBetaUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
+This example shows how to use the Stop-MgBetaUserEvent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

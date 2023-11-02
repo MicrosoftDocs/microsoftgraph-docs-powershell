@@ -51,11 +51,11 @@ Create an instance of an offerShiftRequest.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	senderShiftId = "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleOfferShiftRequest -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTeamScheduleOfferShiftRequest Cmdlet.
+
 
 ## PARAMETERS
 

@@ -59,8 +59,7 @@ Update the properties of a bookingBusiness object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
@@ -75,6 +74,8 @@ $params = @{
 }
 Update-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaBookingBusiness Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

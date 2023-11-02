@@ -48,8 +48,7 @@ Update the properties of a cloudPcUserSetting object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
@@ -64,6 +63,8 @@ $params = @{
 }
 Update-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

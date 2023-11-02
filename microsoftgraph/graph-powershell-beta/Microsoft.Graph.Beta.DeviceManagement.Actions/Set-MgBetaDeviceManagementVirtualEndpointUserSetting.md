@@ -46,8 +46,7 @@ Assign a cloudPcUserSetting to user groups.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Set-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
@@ -63,6 +62,8 @@ $params = @{
 }
 Set-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
 ```
+This example shows how to use the Set-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

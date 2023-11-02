@@ -50,8 +50,7 @@ Update the properties of a personAnnotation object in a user's profile.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfileNote Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
@@ -59,6 +58,8 @@ $params = @{
 }
 Update-MgBetaUserProfileNote -UserId $userId -PersonAnnotationId $personAnnotationId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserProfileNote Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

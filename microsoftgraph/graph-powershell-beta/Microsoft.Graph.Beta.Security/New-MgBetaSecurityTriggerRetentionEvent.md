@@ -39,11 +39,11 @@ Create a new retentionEvent object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEvent"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 New-MgBetaSecurityTriggerRetentionEvent -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityTriggerRetentionEvent Cmdlet.
+
 
 ## PARAMETERS
 

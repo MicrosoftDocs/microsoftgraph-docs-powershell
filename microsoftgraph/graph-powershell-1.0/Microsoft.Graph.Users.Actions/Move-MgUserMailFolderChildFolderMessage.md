@@ -47,16 +47,22 @@ Move a mailfolder and its contents to another mailfolder.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
-	DestinationId = "destinationId-value"
+	DestinationId = "deleteditems"
 }
+
 # A UPN can also be used as -UserId.
-Move-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+Move-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+This example shows how to use the Move-MgUserMailFolderChildFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -53,8 +53,7 @@ To learn more about configuring naming policies, see Configure naming policy.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Test-MgDirectoryObjectProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
 $params = @{
@@ -65,6 +64,8 @@ $params = @{
 }
 Test-MgDirectoryObjectProperty -BodyParameter $params
 ```
+This example shows how to use the Test-MgDirectoryObjectProperty Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

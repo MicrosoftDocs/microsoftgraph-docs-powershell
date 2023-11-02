@@ -42,13 +42,17 @@ Read the properties and relationships of a userConsentRequest object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId $appConsentRequestId
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest Cmdlet.
+
 
 ## PARAMETERS
 

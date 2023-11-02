@@ -42,20 +42,28 @@ Read the properties and relationships of a partner-specific configuration.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: List all partner configurations within a cross-tenant access policy
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyCrossTenantAccessPolicyPartner
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
 ```
+This example will list all partner configurations within a cross-tenant access policy
 
-Get-MgPolicyCrossTenantAccessPolicyPartner -Property "tenantId" -ExpandProperty "identitySynchronization"
+### Example 2: List the user synchronization policy for all partner configurations
+
+```powershell
+
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgPolicyCrossTenantAccessPolicyPartner -Property "tenantId" -ExpandProperty "identitySynchronization" 
+
+```
+This example will list the user synchronization policy for all partner configurations
+
 
 ## PARAMETERS
 

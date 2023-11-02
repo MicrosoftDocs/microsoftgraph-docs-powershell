@@ -43,20 +43,28 @@ Get the user processing result of a user processing result of a run.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get a user processing result in a run report
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -WorkflowId $workflowId -RunId $runId -UserProcessingResultId $userProcessingResultId
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
 ```
+This example will get a user processing result in a run report
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -WorkflowId $workflowId -RunId $runId -UserProcessingResultId $userProcessingResultId -Property "id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,subject"
+### Example 2: Get a user processing results for a workflow run
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -WorkflowId $workflowId -RunId $runId -UserProcessingResultId $userProcessingResultId -Property "id,failedTasksCount,processingStatus,totalTasksCount,totalUnprocessedTasksCount,subject" 
+
+```
+This example will get a user processing results for a workflow run
+
 
 ## PARAMETERS
 

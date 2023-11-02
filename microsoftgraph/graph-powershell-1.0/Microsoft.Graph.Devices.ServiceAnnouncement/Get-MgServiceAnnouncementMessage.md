@@ -46,13 +46,17 @@ The operation returns an error if the message does not exist for the tenant.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementMessage
+
+```
+This example shows how to use the Get-MgServiceAnnouncementMessage Cmdlet.
+
 
 ## PARAMETERS
 

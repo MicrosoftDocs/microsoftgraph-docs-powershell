@@ -70,11 +70,10 @@ Update the properties of an organizationalBrandingLocalization object for a spec
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -82,11 +81,15 @@ $params = @{
 }
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+```
+This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Override a default branding value with a blank string
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	signInPageText = "Welcome to Contoso France."
@@ -94,6 +97,11 @@ $params = @{
 }
 
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
+```
+This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

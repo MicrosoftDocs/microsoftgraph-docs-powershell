@@ -39,11 +39,11 @@ For more details about sending notifications and the requirements for doing so, 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Notify multiple users about pending finance approval requests
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = @{
@@ -78,10 +78,14 @@ $params = @{
 
 Send-MgBetaTeamworkActivityNotificationToRecipient -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 ```
+This example will notify multiple users about pending finance approval requests
+
+### Example 2: Notify multiple users about an event using a custom topic
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	topic = @{
@@ -116,6 +120,10 @@ $params = @{
 }
 
 Send-MgBetaTeamworkActivityNotificationToRecipient -BodyParameter $params
+
+```
+This example will notify multiple users about an event using a custom topic
+
 
 ## PARAMETERS
 

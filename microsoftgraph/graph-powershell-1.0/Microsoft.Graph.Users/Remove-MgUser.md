@@ -38,16 +38,21 @@ To learn more, see deletedItems.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Remove a user
 
-### EXAMPLE 1
 ```powershell
 Remove-MgUser -UserId '5c442efb-5e66-484a-936a-91b6810bed14'
 ```
 
-### EXAMPLE 2
+This example removes a user.
+
+### Example 2: Remove a user with a confirmation
+
 ```powershell
 Remove-MgUser -UserId '3f80a75e-750b-49aa-a6b0-d9bf6df7b4c6' -Confirm
 ```
+
+This examples removes a user after the user is prompted for a confirmation.
 
 ## PARAMETERS
 

@@ -28,13 +28,17 @@ List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipa
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgServicePrincipalHomeRealmDiscoveryPolicy Cmdlet.
+
 
 ## PARAMETERS
 

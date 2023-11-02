@@ -55,8 +55,7 @@ However, it will not cancel a subscribeToTone operation because it operates inde
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Stop-MgCommunicationCallMediaProcessing Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -64,6 +63,8 @@ $params = @{
 }
 Stop-MgCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
 ```
+This example shows how to use the Stop-MgCommunicationCallMediaProcessing Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

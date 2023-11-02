@@ -46,11 +46,11 @@ Add a conversationMember to a chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -63,10 +63,14 @@ $params = @{
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Teams
 ```
+This example shows how to use the New-MgChatMember Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -79,10 +83,14 @@ $params = @{
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Teams
 ```
+This example shows how to use the New-MgChatMember Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -95,10 +103,14 @@ $params = @{
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Teams
 ```
+This example shows how to use the New-MgChatMember Cmdlet.
+
+### Example 4: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -110,10 +122,14 @@ $params = @{
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 5
-```powershell
-Import-Module Microsoft.Graph.Teams
 ```
+This example shows how to use the New-MgChatMember Cmdlet.
+
+### Example 5: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -125,6 +141,10 @@ $params = @{
 }
 
 New-MgChatMember -ChatId $chatId -BodyParameter $params
+
+```
+This example shows how to use the New-MgChatMember Cmdlet.
+
 
 ## PARAMETERS
 

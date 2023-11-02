@@ -39,11 +39,11 @@ Create a new externalConnection object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	id = "contosohr"
@@ -52,6 +52,10 @@ $params = @{
 }
 
 New-MgExternalConnection -BodyParameter $params
+
+```
+This example shows how to use the New-MgExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 

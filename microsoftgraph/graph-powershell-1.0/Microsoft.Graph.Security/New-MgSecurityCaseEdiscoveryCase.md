@@ -42,11 +42,11 @@ Create a new ediscoveryCase object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "CONTOSO LITIGATION-005"
@@ -55,6 +55,10 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCase -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityCaseEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

@@ -57,13 +57,17 @@ New-MgSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 Create new navigation property to contentTypes for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteListContentType -SiteId $siteId -ListId $listId
+```
+This example shows how to use the New-MgSiteListContentType Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

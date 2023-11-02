@@ -63,11 +63,10 @@ Update the properties of a partner-specific configuration.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Configure inbound trust settings
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	inboundTrust = @{
@@ -78,11 +77,15 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+```
+This example shows how to use the Update-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Configure automaticUserConsent settings
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	automaticUserConsentSettings = @{
@@ -92,6 +95,11 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+```
+This example shows how to use the Update-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

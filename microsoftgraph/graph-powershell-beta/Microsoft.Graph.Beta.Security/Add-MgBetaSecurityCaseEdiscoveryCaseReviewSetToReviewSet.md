@@ -54,8 +54,7 @@ The location provides a URL that will return a Add to review set operation.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
@@ -66,6 +65,8 @@ $params = @{
 }
 Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
 ```
+This example shows how to use the Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

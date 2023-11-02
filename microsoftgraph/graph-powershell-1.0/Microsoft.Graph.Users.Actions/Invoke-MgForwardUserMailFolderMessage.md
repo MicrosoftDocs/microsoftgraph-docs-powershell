@@ -54,24 +54,30 @@ This convenience is not available when forwarding from an Outlook.com account.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
+	Comment = "comment-value"
 	ToRecipients = @(
 		@{
 			EmailAddress = @{
-				Address = "danas@contoso.onmicrosoft.com"
-				Name = "Dana Swope"
+				Name = "name-value"
+				Address = "address-value"
 			}
 		}
 	)
-	Comment = "Dana, hope you can make this meeting."
 }
+
 # A UPN can also be used as -UserId.
-Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+Invoke-MgForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgForwardUserMailFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
