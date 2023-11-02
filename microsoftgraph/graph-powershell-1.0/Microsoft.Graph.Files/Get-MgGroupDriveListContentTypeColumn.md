@@ -41,22 +41,6 @@ Get-MgGroupDriveListContentTypeColumn -InputObject <IFilesIdentity> [-ExpandProp
 Retrieve the metadata for a site][], a [list][], or a [contentType][] [column][columnDefinition].
 This API is available in the following [national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -332,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListContentTypeColumn?view=graph-powershell-beta)
+

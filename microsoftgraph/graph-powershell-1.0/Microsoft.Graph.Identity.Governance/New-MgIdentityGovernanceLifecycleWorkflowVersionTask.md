@@ -50,18 +50,6 @@ New-MgIdentityGovernanceLifecycleWorkflowVersionTask -InputObject <IIdentityGove
 ## DESCRIPTION
 Create new navigation property to tasks for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -6221,3 +6209,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
+

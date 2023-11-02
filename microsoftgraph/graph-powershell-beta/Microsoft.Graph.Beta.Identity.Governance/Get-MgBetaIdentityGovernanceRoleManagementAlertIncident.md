@@ -39,18 +39,6 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertIncident -InputObject <IIdentityG
 Read the properties and relationships of an alert incident.
 The alert incident can be one of the following types that are derived from the unifiedRoleManagementAlertIncident object: This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -369,3 +357,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

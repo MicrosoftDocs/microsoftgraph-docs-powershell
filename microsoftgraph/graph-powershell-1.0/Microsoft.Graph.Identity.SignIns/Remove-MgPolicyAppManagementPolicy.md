@@ -32,18 +32,6 @@ Remove-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-IfM
 Delete an appManagementPolicy object.
 This API is supported in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppManagementPolicyId
@@ -215,3 +203,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
+

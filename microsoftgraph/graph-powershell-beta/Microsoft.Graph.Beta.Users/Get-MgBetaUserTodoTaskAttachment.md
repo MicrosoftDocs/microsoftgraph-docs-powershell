@@ -40,18 +40,6 @@ Get-MgBetaUserTodoTaskAttachment -InputObject <IUsersIdentity> [-Property <Strin
 Read the properties and relationships of a taskFileAttachment object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -295,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTodoTaskAttachment](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachment?view=graph-powershell-1.0)
+

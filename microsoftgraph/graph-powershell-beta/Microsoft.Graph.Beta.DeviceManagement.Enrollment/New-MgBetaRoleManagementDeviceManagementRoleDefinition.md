@@ -34,18 +34,6 @@ Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 The following RBAC providers are currently supported:n- Cloud PCn- device management (Intune)n- directory (Microsoft Entra ID) This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -375,3 +363,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS
+

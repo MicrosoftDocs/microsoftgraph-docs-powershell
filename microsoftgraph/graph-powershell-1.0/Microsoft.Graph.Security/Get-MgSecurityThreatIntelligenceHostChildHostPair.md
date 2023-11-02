@@ -38,18 +38,6 @@ Get-MgSecurityThreatIntelligenceHostChildHostPair -InputObject <ISecurityIdentit
 ## DESCRIPTION
 The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a cihldHost.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityThreatIntelligenceHostChildHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostChildHostPair?view=graph-powershell-beta)
+

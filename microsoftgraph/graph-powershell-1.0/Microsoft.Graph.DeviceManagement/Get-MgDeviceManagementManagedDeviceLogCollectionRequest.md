@@ -37,18 +37,6 @@ Get-MgDeviceManagementManagedDeviceLogCollectionRequest -InputObject <IDeviceMan
 ## DESCRIPTION
 List of log collection requests
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -324,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest?view=graph-powershell-beta)
+

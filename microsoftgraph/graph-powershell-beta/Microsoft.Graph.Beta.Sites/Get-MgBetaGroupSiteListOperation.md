@@ -37,22 +37,6 @@ Get-MgBetaGroupSiteListOperation -InputObject <ISitesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The collection of long-running operations on the list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -352,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteListOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListOperation?view=graph-powershell-1.0)
+

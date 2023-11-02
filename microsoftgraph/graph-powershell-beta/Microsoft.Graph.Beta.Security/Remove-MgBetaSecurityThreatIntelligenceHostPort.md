@@ -27,18 +27,6 @@ Remove-MgBetaSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Delete navigation property hostPorts for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HostPortId
@@ -230,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+

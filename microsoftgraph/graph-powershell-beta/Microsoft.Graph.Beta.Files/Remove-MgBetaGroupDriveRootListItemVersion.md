@@ -30,22 +30,6 @@ Remove-MgBetaGroupDriveRootListItemVersion -InputObject <IFilesIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property versions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -216,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootListItemVersion?view=graph-powershell-1.0)
+

@@ -50,18 +50,6 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -InputObject <IIden
 The various configurations of an alert for Azure AD roles.
 The configurations are predefined and can't be created or deleted, but some of the configurations can be modified.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -379,3 +367,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

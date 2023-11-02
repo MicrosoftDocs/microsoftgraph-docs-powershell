@@ -32,18 +32,6 @@ Remove-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySi
 Delete a certificateBasedAuthConfiguration object.
 This API is supported in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CertificateBasedAuthConfigurationId
@@ -230,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
+

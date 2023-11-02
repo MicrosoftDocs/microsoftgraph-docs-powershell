@@ -58,18 +58,6 @@ Get-MgBetaSiteTermStoreSetParentGroupSetChild -InputObject <ISitesIdentity> [-Ex
 ## DESCRIPTION
 Children terms of set in term [store].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -384,3 +372,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetChild?view=graph-powershell-1.0)
+

@@ -34,18 +34,6 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -199,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule?view=graph-powershell-beta)
+

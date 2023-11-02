@@ -31,18 +31,6 @@ Remove-MgBetaDeviceManagementDeviceConfigurationUserStatus -InputObject <IDevice
 ## DESCRIPTION
 Delete navigation property userStatuses for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceConfigurationId
@@ -316,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-1.0)
+

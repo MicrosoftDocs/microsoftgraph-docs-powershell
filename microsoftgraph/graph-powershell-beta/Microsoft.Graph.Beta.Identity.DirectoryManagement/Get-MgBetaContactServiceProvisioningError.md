@@ -26,18 +26,6 @@ Get-MgBetaContactServiceProvisioningError -OrgContactId <String> [-ExpandPropert
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an orgContact object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -220,3 +208,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgContactServiceProvisioningError](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactServiceProvisioningError?view=graph-powershell-1.0)
+

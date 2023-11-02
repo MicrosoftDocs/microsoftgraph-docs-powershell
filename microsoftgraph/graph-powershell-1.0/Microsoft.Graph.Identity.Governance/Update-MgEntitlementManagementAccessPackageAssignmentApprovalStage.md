@@ -46,22 +46,6 @@ Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject 
 Approve or deny an approvalStage object in an approval.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -411,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+

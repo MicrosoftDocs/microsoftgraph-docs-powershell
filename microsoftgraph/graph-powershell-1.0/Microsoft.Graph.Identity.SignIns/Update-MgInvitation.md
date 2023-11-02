@@ -48,18 +48,6 @@ Update-MgInvitation -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update entity in invitations
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -6189,3 +6177,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitation?view=graph-powershell-beta)
+

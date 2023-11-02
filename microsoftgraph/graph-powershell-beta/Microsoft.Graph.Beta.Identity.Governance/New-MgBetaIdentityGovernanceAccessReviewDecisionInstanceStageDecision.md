@@ -57,22 +57,6 @@ New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecision
 ## DESCRIPTION
 Create new navigation property to decisions for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -897,3 +881,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

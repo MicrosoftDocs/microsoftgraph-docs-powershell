@@ -32,22 +32,6 @@ Restore-MgBetaGroupDriveRootListItemDocumentSetVersion -InputObject <IGroupsIden
 Restore a document set version.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -220,3 +204,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
+

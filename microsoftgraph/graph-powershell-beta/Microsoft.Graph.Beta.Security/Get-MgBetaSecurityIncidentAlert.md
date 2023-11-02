@@ -39,22 +39,6 @@ Get-MgBetaSecurityIncidentAlert -InputObject <ISecurityIdentity> [-ExpandPropert
 The list of related alerts.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AlertId
@@ -352,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityIncidentAlert](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIncidentAlert?view=graph-powershell-1.0)
+

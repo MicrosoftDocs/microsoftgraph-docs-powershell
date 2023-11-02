@@ -31,18 +31,6 @@ Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentAppScope
 ## DESCRIPTION
 Delete navigation property appScope for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -256,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgRoleManagementEntitlementManagementRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEntitlementManagementRoleAssignmentAppScope?view=graph-powershell-1.0)
+

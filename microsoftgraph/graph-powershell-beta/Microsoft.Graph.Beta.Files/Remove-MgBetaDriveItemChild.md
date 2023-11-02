@@ -32,18 +32,6 @@ Remove-MgBetaDriveItemChild -InputObject <IFilesIdentity> [-IfMatch <String>] [-
 Remove an item from a bundle][].
 This API is available in the following [national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -214,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDriveItemChild](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemChild?view=graph-powershell-1.0)
+

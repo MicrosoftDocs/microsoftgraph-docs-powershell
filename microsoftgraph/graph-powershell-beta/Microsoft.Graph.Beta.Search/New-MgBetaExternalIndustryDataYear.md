@@ -30,18 +30,6 @@ New-MgBetaExternalIndustryDataYear -BodyParameter <IMicrosoftGraphIndustryDataYe
 Create a new yearTimePeriodDefinition object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -219,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
       - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
+

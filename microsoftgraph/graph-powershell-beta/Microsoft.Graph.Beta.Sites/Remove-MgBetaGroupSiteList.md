@@ -30,22 +30,6 @@ Remove-MgBetaGroupSiteList -InputObject <ISitesIdentity> [-IfMatch <String>] [-P
 ## DESCRIPTION
 Delete navigation property lists for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -240,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSiteList](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteList?view=graph-powershell-1.0)
+

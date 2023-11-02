@@ -50,22 +50,6 @@ Update-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property history in identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -524,3 +508,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgRiskyUserHistory?view=graph-powershell-1.0)
+

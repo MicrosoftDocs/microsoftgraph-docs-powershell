@@ -30,18 +30,6 @@ Remove-MgSecurityAttackSimulationTraining -InputObject <ISecurityIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property trainings for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -209,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationTraining?view=graph-powershell-beta)
+

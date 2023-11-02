@@ -53,18 +53,6 @@ If the same updatableAsset gets included in the exclusions and members collectio
 You can also use the method updateAudience to update the deploymentAudience.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddExclusions
@@ -288,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+

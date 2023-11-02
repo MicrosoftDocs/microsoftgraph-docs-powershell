@@ -34,18 +34,6 @@ Get-MgGroupDriveItemLastModifiedByUserServiceProvisioningError -DriveId <String>
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -273,3 +261,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupDriveItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
+

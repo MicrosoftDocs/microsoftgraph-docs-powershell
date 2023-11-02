@@ -22,18 +22,6 @@ Get-MgAdminPeople [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonPa
 ## DESCRIPTION
 Get people from admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaAdminPeople](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeople?view=graph-powershell-beta)
+

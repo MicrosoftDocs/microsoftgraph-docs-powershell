@@ -43,18 +43,6 @@ Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
 The work from anywhere metric devices.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -330,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice?view=graph-powershell-beta)
+

@@ -31,18 +31,6 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 ## DESCRIPTION
 Create new navigation property to certificateBasedApplicationConfigurations for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -224,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IssuerSubjectKeyIdentifier <String>]`: The subject key identifier of the trusted certificate.
 
 ## RELATED LINKS
+

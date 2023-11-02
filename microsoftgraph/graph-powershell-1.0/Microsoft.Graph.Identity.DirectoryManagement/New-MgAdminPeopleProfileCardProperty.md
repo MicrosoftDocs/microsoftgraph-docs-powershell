@@ -31,18 +31,6 @@ New-MgAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileCardP
 ## DESCRIPTION
 Create new navigation property to profileCardProperties for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -190,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
+

@@ -20,18 +20,6 @@ Remove-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartner
 ## DESCRIPTION
 Delete navigation property multiTenantOrganizationPartnerConfiguration for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -108,3 +96,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

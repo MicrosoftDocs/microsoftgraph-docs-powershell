@@ -30,18 +30,6 @@ Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [-C
 ## DESCRIPTION
 Retrieves the list of devices with failed apps
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -198,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserManagedDeviceWithAppFailure](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedDeviceWithAppFailure?view=graph-powershell-beta)
+

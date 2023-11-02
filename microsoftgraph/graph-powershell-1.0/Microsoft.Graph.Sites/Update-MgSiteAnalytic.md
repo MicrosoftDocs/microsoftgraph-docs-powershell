@@ -46,18 +46,6 @@ Update-MgSiteAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property analytics in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -11776,3 +11764,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteAnalytic?view=graph-powershell-beta)
+

@@ -30,22 +30,6 @@ Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -InputObject <IIdentityDi
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -233,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

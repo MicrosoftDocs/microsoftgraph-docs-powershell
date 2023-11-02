@@ -30,22 +30,6 @@ Get-MgUserMessageContent -InputObject <IMailIdentity> -OutFile <String> [-PassTh
 ## DESCRIPTION
 Get media content for the navigation property messages from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -154,3 +138,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageContent?view=graph-powershell-beta)
+

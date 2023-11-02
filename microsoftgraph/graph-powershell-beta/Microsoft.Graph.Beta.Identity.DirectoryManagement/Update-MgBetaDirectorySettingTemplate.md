@@ -42,22 +42,6 @@ Update-MgBetaDirectorySettingTemplate -InputObject <IIdentityDirectoryManagement
 ## DESCRIPTION
 Update entity in directorySettingTemplates
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -316,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the setting. Read-only.
 
 ## RELATED LINKS
+

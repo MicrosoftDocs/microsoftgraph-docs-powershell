@@ -27,18 +27,6 @@ Get-MgBetaExternalIndustryDataInboundFlowYear -InputObject <ISearchIdentity> [-E
 ## DESCRIPTION
 The year that the data brought in via this flow applies to.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -142,3 +130,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+

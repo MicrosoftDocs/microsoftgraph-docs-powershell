@@ -30,18 +30,6 @@ Remove-MgBetaVirtualEventSessionRegistrationCustomQuestion -InputObject <IBookin
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -208,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+

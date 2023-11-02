@@ -24,18 +24,6 @@ Get-MgGroupDriveCreatedByUserServiceProvisioningError -DriveId <String> -GroupId
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -233,3 +221,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupDriveCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+

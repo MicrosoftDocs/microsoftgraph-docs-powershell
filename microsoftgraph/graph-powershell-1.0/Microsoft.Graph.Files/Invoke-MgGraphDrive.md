@@ -30,22 +30,6 @@ Invoke-MgGraphDrive -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-
 ## DESCRIPTION
 Invoke function sharedWithMe
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -230,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaGraphDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaGraphDrive?view=graph-powershell-beta)
+

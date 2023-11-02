@@ -24,18 +24,6 @@ Get-MgPrintShareAllowedUserServiceProvisioningError -PrinterShareId <String> -Us
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -233,3 +221,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPrintShareAllowedUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedUserServiceProvisioningError?view=graph-powershell-beta)
+

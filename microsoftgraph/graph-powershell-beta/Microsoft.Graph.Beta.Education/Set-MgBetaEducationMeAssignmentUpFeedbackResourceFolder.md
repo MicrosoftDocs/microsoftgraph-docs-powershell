@@ -36,22 +36,6 @@ Only teachers can perform this operation.
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -155,3 +139,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgEducationMeAssignmentUpFeedbackResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationMeAssignmentUpFeedbackResourceFolder?view=graph-powershell-1.0)
+

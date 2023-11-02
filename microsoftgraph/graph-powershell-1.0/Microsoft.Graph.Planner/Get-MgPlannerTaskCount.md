@@ -22,18 +22,6 @@ Get-MgPlannerTaskCount [-Filter <String>] [-Search <String>] [<CommonParameters>
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPlannerTaskCount](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskCount?view=graph-powershell-beta)
+

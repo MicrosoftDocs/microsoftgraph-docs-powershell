@@ -51,18 +51,6 @@ By performing this operation the appropriate configurations will be made and pol
 As example when applying the require multifactor authentication for admins management action creates an Azure Active Directory conditional access policy that requires multifactor authentication for all users that have been assigned an administrative directory role.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -321,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

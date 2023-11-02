@@ -37,18 +37,6 @@ Get-MgBetaPolicyTokenLifetimePolicyApplyTo -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Get appliesTo from policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -346,3 +334,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyTokenLifetimePolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyTokenLifetimePolicyApplyTo?view=graph-powershell-1.0)
+

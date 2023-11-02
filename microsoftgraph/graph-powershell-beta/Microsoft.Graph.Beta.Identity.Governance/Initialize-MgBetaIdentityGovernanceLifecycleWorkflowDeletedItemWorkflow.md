@@ -55,22 +55,6 @@ Workflows created from the 'Real-time employee termination' template are run on-
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -10018,3 +10002,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-1.0)
+

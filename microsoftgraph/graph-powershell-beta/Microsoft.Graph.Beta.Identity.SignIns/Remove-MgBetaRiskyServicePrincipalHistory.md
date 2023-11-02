@@ -30,22 +30,6 @@ Remove-MgBetaRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Delete navigation property history for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -253,3 +237,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgRiskyServicePrincipalHistory?view=graph-powershell-1.0)
+

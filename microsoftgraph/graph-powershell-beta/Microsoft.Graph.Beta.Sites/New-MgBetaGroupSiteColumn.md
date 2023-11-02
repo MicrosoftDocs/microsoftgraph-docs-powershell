@@ -64,22 +64,6 @@ New-MgBetaGroupSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 Create a column for a site][site] by specifying a [columnDefinition][columnDefinition].
 This API is available in the following [national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1168,3 +1152,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupSiteColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteColumn?view=graph-powershell-1.0)
+

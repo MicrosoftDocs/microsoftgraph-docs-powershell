@@ -30,18 +30,6 @@ Remove-MgGroupSiteAnalytic -InputObject <ISitesIdentity> [-IfMatch <String>] [-P
 ## DESCRIPTION
 Delete navigation property analytics for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -211,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteAnalytic?view=graph-powershell-beta)
+

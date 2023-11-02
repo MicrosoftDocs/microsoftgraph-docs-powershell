@@ -23,18 +23,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleCount [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -81,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleCount?view=graph-powershell-1.0)
+

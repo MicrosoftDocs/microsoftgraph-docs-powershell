@@ -28,18 +28,6 @@ New-MgBetaExternalIndustryDataRoleGroup -BodyParameter <IMicrosoftGraphIndustryD
 ## DESCRIPTION
 Create new navigation property to roleGroups for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -194,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
+

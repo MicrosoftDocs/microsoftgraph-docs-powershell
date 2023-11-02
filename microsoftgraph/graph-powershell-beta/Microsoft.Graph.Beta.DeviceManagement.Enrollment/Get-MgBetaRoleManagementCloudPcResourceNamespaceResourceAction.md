@@ -40,18 +40,6 @@ Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction
 Read the properties and relationships of an unifiedRbacResourceAction object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -297,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+

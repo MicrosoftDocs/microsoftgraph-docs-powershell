@@ -25,18 +25,6 @@ Get-MgBetaAdminPeople [-ExpandProperty <String[]>] [-Property <String[]>] [<Comm
 Retrieve the properties and relationships of a peopleAdminSettings object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -83,3 +71,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeople?view=graph-powershell-1.0)
+

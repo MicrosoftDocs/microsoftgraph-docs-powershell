@@ -44,18 +44,6 @@ Set-MgIdentityB2XUserFlowPostAttributeCollectionByRef -InputObject <IIdentitySig
 ## DESCRIPTION
 Update the ref of navigation property postAttributeCollection in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -280,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaIdentityB2XUserFlowPostAttributeCollectionByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaIdentityB2XUserFlowPostAttributeCollectionByRef?view=graph-powershell-beta)
+

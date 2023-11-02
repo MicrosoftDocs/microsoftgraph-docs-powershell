@@ -47,22 +47,6 @@ Grant-MgDriveRootPermission -InputObject <IFilesIdentity>
 Grant users access to a link represented by a permission][].
 This API is available in the following [national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -264,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Grant-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaDriveRootPermission?view=graph-powershell-beta)
+

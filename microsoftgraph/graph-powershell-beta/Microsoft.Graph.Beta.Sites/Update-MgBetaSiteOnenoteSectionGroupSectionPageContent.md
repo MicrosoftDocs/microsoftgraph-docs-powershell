@@ -48,18 +48,6 @@ Update-MgBetaSiteOnenoteSectionGroupSectionPageContent -InputObject <ISitesIdent
 ## DESCRIPTION
 Invoke action onenotePatchContent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -316,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteOnenoteSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteOnenoteSectionGroupSectionPageContent?view=graph-powershell-1.0)
+

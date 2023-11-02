@@ -45,22 +45,6 @@ Update-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdent
 ## DESCRIPTION
 Update the navigation property settings in organization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -340,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions. Default is true. Optional.
 
 ## RELATED LINKS
+

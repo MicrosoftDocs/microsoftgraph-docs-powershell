@@ -66,22 +66,6 @@ Update-MgBetaGroupDriveListContentTypeColumn -InputObject <IFilesIdentity>
 Update a site][], [list][] or [content type][contentType] [column][columnDefinition].
 This API is available in the following [national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1176,3 +1160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
+

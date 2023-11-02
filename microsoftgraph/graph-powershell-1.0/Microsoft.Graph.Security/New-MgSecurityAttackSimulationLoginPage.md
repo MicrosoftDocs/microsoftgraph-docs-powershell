@@ -33,18 +33,6 @@ New-MgSecurityAttackSimulationLoginPage -BodyParameter <IMicrosoftGraphLoginPage
 ## DESCRIPTION
 Create new navigation property to loginPages for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -327,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationLoginPage?view=graph-powershell-beta)
+

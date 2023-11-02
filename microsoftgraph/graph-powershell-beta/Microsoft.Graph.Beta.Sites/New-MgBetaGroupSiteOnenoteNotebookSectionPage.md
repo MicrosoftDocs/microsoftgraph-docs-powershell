@@ -49,18 +49,6 @@ New-MgBetaGroupSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to pages for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -733,3 +721,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteNotebookSectionPage?view=graph-powershell-1.0)
+

@@ -56,22 +56,6 @@ In the default case an Azure Logic Apps system-assigned managed identity calls t
 For more information, see: Lifecycle Workflows extensibility approach.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -393,3 +377,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Resume-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Resume-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult?view=graph-powershell-1.0)
+

@@ -25,18 +25,6 @@ Get-MgGroupSiteListItemCreatedByUserServiceProvisioningError -GroupId <String> -
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -264,3 +252,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteListItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+

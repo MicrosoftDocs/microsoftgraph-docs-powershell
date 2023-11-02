@@ -37,18 +37,6 @@ Get-MgSecuritySubjectRightsRequestCollaborator -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Collection of users who can collaborate on the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -321,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecuritySubjectRightsRequestCollaborator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestCollaborator?view=graph-powershell-beta)
+

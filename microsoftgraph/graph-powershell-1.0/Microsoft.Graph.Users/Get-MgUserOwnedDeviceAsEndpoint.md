@@ -37,18 +37,6 @@ Get-MgUserOwnedDeviceAsEndpoint -InputObject <IUsersIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -299,3 +287,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserOwnedDeviceAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDeviceAsEndpoint?view=graph-powershell-beta)
+

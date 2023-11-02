@@ -30,18 +30,6 @@ Remove-MgBetaSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIde
 ## DESCRIPTION
 Delete navigation property sslCertificates for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -234,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
+

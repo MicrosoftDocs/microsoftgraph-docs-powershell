@@ -30,18 +30,6 @@ Get-MgBetaGroupSiteContentTypeCount -InputObject <ISitesIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -190,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteContentTypeCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteContentTypeCount?view=graph-powershell-1.0)
+

@@ -49,22 +49,6 @@ Including the $select query parameter triggers a Microsoft Entra audit of the op
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -347,3 +331,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKey?view=graph-powershell-1.0)
+

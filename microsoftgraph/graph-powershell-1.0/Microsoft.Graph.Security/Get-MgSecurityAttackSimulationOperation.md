@@ -37,18 +37,6 @@ Get-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-Expan
 ## DESCRIPTION
 Get operations from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -306,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
+

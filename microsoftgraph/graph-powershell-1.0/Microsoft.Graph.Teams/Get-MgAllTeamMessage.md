@@ -23,18 +23,6 @@ Get-MgAllTeamMessage [-Count] [-Filter <String>] [-Model <String>] [-Property <S
 ## DESCRIPTION
 Invoke function getAllMessages
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -173,3 +161,4 @@ Get-MgTeamMessage
 
 ## RELATED LINKS
 [Get-MgBetaAllTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllTeamMessage?view=graph-powershell-beta)
+

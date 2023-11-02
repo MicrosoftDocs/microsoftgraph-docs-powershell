@@ -23,18 +23,6 @@ Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest [-ExpandProperty 
 Get the status of a tenant joining a multi-tenant organization.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -80,3 +68,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

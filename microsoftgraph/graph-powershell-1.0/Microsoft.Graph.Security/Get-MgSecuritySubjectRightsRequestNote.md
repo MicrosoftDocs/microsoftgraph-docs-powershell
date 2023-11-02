@@ -38,18 +38,6 @@ Get-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [-Expand
 ## DESCRIPTION
 List of notes associated with the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
+

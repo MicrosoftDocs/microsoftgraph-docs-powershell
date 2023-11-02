@@ -30,22 +30,6 @@ Remove-MgBetaExternalConnectionOperation -InputObject <ISearchIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property operations for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConnectionOperationId
@@ -196,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionOperation?view=graph-powershell-1.0)
+
