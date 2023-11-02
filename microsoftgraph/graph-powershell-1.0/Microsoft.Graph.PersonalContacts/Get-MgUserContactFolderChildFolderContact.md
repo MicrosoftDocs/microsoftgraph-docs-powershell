@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontact
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgUserContactFolderChildFolderContact

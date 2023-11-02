@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicycompliancechange
 schema: 2.0.0
+ms.prod: w10
+ms.prod: w10
 ---
 
 # Get-MgBetaWindowsUpdatesPolicyComplianceChange
