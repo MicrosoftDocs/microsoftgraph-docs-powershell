@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethod
 schema: 2.0.0
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportAuthenticationMethod
 
 ## SYNOPSIS
-Container for navigation properties for Azure AD authentication methods resources.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-1.0)
+Container for navigation properties for Microsoft Entra authentication methods resources.
 
 ## SYNTAX
 
@@ -20,7 +17,23 @@ Get-MgBetaReportAuthenticationMethod [-ExpandProperty <String[]>] [-Property <St
 ```
 
 ## DESCRIPTION
-Container for navigation properties for Azure AD authentication methods resources.
+Container for navigation properties for Microsoft Entra authentication methods resources.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -28,7 +41,7 @@ Container for navigation properties for Azure AD authentication methods resource
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -62,10 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsRoot
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-1.0)
 

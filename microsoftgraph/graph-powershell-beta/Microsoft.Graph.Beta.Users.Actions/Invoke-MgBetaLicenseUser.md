@@ -1,46 +1,45 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalicenseuser
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Invoke-MgBetaLicenseUser
 
 ## SYNOPSIS
 Reprocess all group-based license assignments for the user.
-To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
-Also see Identify and resolve license assignment problems for a group in Azure Active Directory for more details.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgLicenseUser](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgLicenseUser?view=graph-powershell-1.0)
+To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
+Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### License (Default)
 ```
-Invoke-MgBetaLicenseUser -UserId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaLicenseUser -UserId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### LicenseViaIdentity
 ```
-Invoke-MgBetaLicenseUser -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaLicenseUser -InputObject <IUsersActionsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reprocess all group-based license assignments for the user.
-To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
-Also see Identify and resolve license assignment problems for a group in Azure Active Directory for more details.
+To learn more about group-based licensing, see What is group-based licensing in Microsoft Entra ID.
+Also see Identify and resolve license assignment problems for a group in Microsoft Entra ID for more details.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaLicenseUser Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 Invoke-MgBetaLicenseUser -UserId $userId
 ```
-This example shows how to use the Invoke-MgBetaLicenseUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -49,7 +48,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: LicenseViaIdentity
 Aliases:
 
@@ -64,7 +63,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: License
 Aliases:
 
@@ -79,7 +78,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -95,7 +94,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -112,9 +111,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUser
+
 ## NOTES
 
 ALIASES
@@ -136,7 +137,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
@@ -158,7 +158,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
@@ -167,4 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgLicenseUser](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgLicenseUser?view=graph-powershell-1.0)
+

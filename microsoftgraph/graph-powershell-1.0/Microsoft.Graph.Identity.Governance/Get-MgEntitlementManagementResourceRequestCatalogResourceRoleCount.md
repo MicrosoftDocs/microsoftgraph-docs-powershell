@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerequestcatalogresourcerolecount
 schema: 2.0.0
@@ -18,19 +18,19 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackag
  [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### Get2
-```
-Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackageResourceRequestId <String>
- -AccessPackageResourceId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
 ### Get1
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackageResourceRequestId <String>
  -AccessPackageResourceRoleId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### Get2
+```
+Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -AccessPackageResourceId <String>
+ -AccessPackageResourceRequestId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -InputObject <IIdentityGovernanceIdentity>
  [-Filter <String>] [-Search <String>] [<CommonParameters>]
@@ -42,7 +42,7 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -InputObject 
  [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
 ```
 Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -InputObject <IIdentityGovernanceIdentity>
  [-Filter <String>] [-Search <String>] [<CommonParameters>]
@@ -51,13 +51,29 @@ Get-MgEntitlementManagementResourceRequestCatalogResourceRoleCount -InputObject 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId
 The unique identifier of accessPackageResource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get2
 Aliases:
 
@@ -72,8 +88,8 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceRequest
 
 ```yaml
-Type: String
-Parameter Sets: Get, Get2, Get1
+Type: System.String
+Parameter Sets: Get, Get1, Get2
 Aliases:
 
 Required: True
@@ -87,7 +103,7 @@ Accept wildcard characters: False
 The unique identifier of accessPackageResourceRole
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -102,7 +118,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -118,8 +134,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -133,7 +149,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -150,9 +166,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
@@ -202,6 +220,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
+  - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
+  - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
+  - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
+  - `[PrivilegedAccessGroupEligibilityScheduleId <String>]`: The unique identifier of privilegedAccessGroupEligibilitySchedule
+  - `[PrivilegedAccessGroupEligibilityScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupEligibilityScheduleInstance
+  - `[PrivilegedAccessGroupEligibilityScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupEligibilityScheduleRequest
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition

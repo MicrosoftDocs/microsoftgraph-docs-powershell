@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagentgroupcount
 schema: 2.0.0
@@ -18,20 +18,20 @@ Get-MgBetaOnPremisePublishingProfileAgentGroupCount -OnPremisesPublishingProfile
  [-Search <String>] [<CommonParameters>]
 ```
 
-### Get2
-```
-Get-MgBetaOnPremisePublishingProfileAgentGroupCount -OnPremisesPublishingProfileId <String>
- -OnPremisesAgentId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
 ### Get1
 ```
-Get-MgBetaOnPremisePublishingProfileAgentGroupCount -OnPremisesPublishingProfileId <String>
- -OnPremisesAgentGroupId <String> -OnPremisesAgentId <String> [-Filter <String>] [-Search <String>]
+Get-MgBetaOnPremisePublishingProfileAgentGroupCount -OnPremisesAgentGroupId <String>
+ -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### Get2
+```
+Get-MgBetaOnPremisePublishingProfileAgentGroupCount -OnPremisesAgentId <String>
+ -OnPremisesPublishingProfileId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity
 ```
 Get-MgBetaOnPremisePublishingProfileAgentGroupCount -InputObject <IApplicationsIdentity> [-Filter <String>]
  [-Search <String>] [<CommonParameters>]
@@ -43,7 +43,7 @@ Get-MgBetaOnPremisePublishingProfileAgentGroupCount -InputObject <IApplicationsI
  [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
 ```
 Get-MgBetaOnPremisePublishingProfileAgentGroupCount -InputObject <IApplicationsIdentity> [-Filter <String>]
  [-Search <String>] [<CommonParameters>]
@@ -52,13 +52,29 @@ Get-MgBetaOnPremisePublishingProfileAgentGroupCount -InputObject <IApplicationsI
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -Filter
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -74,8 +90,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -89,7 +105,7 @@ Accept wildcard characters: False
 The unique identifier of onPremisesAgentGroup
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -104,8 +120,8 @@ Accept wildcard characters: False
 The unique identifier of onPremisesAgent
 
 ```yaml
-Type: String
-Parameter Sets: Get2, Get1
+Type: System.String
+Parameter Sets: Get1, Get2
 Aliases:
 
 Required: True
@@ -119,8 +135,8 @@ Accept wildcard characters: False
 The unique identifier of onPremisesPublishingProfile
 
 ```yaml
-Type: String
-Parameter Sets: Get, Get2, Get1
+Type: System.String
+Parameter Sets: Get, Get1, Get2
 Aliases:
 
 Required: True
@@ -134,7 +150,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -151,9 +167,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
@@ -190,6 +208,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UniqueName <String>]`: Alternate key of application

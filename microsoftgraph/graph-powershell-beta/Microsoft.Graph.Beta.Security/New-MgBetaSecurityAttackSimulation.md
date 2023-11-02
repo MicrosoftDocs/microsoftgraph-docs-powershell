@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation
 schema: 2.0.0
@@ -9,9 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create an attack simulation campaign for a tenant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-1.0)
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,17 +26,34 @@ New-MgBetaSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackT
  [-LastModifiedDateTime <DateTime>] [-LaunchDateTime <DateTime>] [-LoginPage <IMicrosoftGraphLoginPage>]
  [-OAuthConsentAppDetail <IMicrosoftGraphOAuthConsentAppDetail>] [-Payload <IMicrosoftGraphPayload>]
  [-PayloadDeliveryPlatform <String>] [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>]
- [-TrainingSetting <IMicrosoftGraphTrainingSetting>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TrainingSetting <IMicrosoftGraphTrainingSetting>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-WhatIf] [-Confirm]
+New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create an attack simulation campaign for a tenant.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -46,7 +61,7 @@ Create an attack simulation campaign for a tenant.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -61,7 +76,7 @@ Accept wildcard characters: False
 simulationAttackTechnique
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -76,7 +91,7 @@ Accept wildcard characters: False
 simulationAttackType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -91,7 +106,7 @@ Accept wildcard characters: False
 Unique identifier for the attack simulation automation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -107,7 +122,7 @@ simulation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
 Parameter Sets: Create
 Aliases:
 
@@ -123,7 +138,7 @@ Date and time of completion of the attack simulation and training campaign.
 Supports $filter and $orderby.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -139,7 +154,7 @@ emailIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -154,7 +169,7 @@ Accept wildcard characters: False
 Date and time of creation of the attack simulation and training campaign.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +184,7 @@ Accept wildcard characters: False
 Description of the attack simulation and training campaign.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -185,7 +200,7 @@ Display name of the attack simulation and training campaign.
 Supports $filter and $orderby.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -200,7 +215,7 @@ Accept wildcard characters: False
 Simulation duration in days.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -216,7 +231,7 @@ endUserNotificationSetting
 To construct, see NOTES section for ENDUSERNOTIFICATIONSETTING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEndUserNotificationSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndUserNotificationSetting
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -232,7 +247,7 @@ accountTargetContent
 To construct, see NOTES section for EXCLUDEDACCOUNTTARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccountTargetContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccountTargetContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -248,7 +263,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -264,7 +279,7 @@ accountTargetContent
 To construct, see NOTES section for INCLUDEDACCOUNTTARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccountTargetContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccountTargetContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -280,7 +295,7 @@ Flag that represents if the attack simulation and training campaign was created 
 Supports $filter and $orderby.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -296,7 +311,7 @@ landingPage
 To construct, see NOTES section for LANDINGPAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLandingPage
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLandingPage
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -312,7 +327,7 @@ emailIdentity
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -327,7 +342,7 @@ Accept wildcard characters: False
 Date and time of the most recent modification of the attack simulation and training campaign.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -343,7 +358,7 @@ Date and time of the launch/start of the attack simulation and training campaign
 Supports $filter and $orderby.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -359,7 +374,7 @@ loginPage
 To construct, see NOTES section for LOGINPAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLoginPage
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLoginPage
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -375,7 +390,7 @@ oAuthConsentAppDetail
 To construct, see NOTES section for OAUTHCONSENTAPPDETAIL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOAuthConsentAppDetail
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuthConsentAppDetail
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -391,7 +406,7 @@ payload
 To construct, see NOTES section for PAYLOAD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPayload
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPayload
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -406,7 +421,7 @@ Accept wildcard characters: False
 payloadDeliveryPlatform
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -422,7 +437,7 @@ simulationReport
 To construct, see NOTES section for REPORT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulationReport
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulationReport
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -437,7 +452,7 @@ Accept wildcard characters: False
 simulationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -453,7 +468,7 @@ trainingSetting
 To construct, see NOTES section for TRAININGSETTING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrainingSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrainingSetting
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -468,7 +483,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -484,7 +499,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -501,9 +516,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
+
 ## NOTES
 
 ALIASES
@@ -522,8 +539,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[CompletionDateTime <DateTime?>]`: Date and time of completion of the attack simulation and training campaign. Supports $filter and $orderby.
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: Email address of the user.
   - `[CreatedDateTime <DateTime?>]`: Date and time of creation of the attack simulation and training campaign.
   - `[Description <String>]`: Description of the attack simulation and training campaign.
@@ -534,28 +551,28 @@ To create the parameters described below, construct a hash table containing the 
     - `[NotificationPreference <String>]`: endUserNotificationPreference
     - `[PositiveReinforcement <IMicrosoftGraphPositiveReinforcementNotification>]`: positiveReinforcementNotification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DefaultLanguage <String>]`: 
+      - `[DefaultLanguage <String>]`: The default language for the end user notification.
       - `[EndUserNotification <IMicrosoftGraphEndUserNotification>]`: endUserNotification
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[Description <String>]`: 
+        - `[CreatedDateTime <DateTime?>]`: Date and time when the notification was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Description <String>]`: Description of the notification as defined by the user.
         - `[Details <IMicrosoftGraphEndUserNotificationDetail[]>]`: 
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
-          - `[EmailContent <String>]`: 
-          - `[IsDefaultLangauge <Boolean?>]`: 
-          - `[Language <String>]`: 
-          - `[Locale <String>]`: 
+          - `[EmailContent <String>]`: Email HTML content.
+          - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language is default.
+          - `[Language <String>]`: Notification language.
+          - `[Locale <String>]`: Notification locale.
           - `[SentFrom <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-          - `[Subject <String>]`: 
-        - `[DisplayName <String>]`: 
+          - `[Subject <String>]`: Mail subject.
+        - `[DisplayName <String>]`: Name of the notification as defined by the user.
         - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-        - `[LastModifiedDateTime <DateTime?>]`: 
+        - `[LastModifiedDateTime <DateTime?>]`: Date and time when the notification was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[NotificationType <String>]`: endUserNotificationType
         - `[Source <String>]`: simulationContentSource
         - `[Status <String>]`: simulationContentStatus
-        - `[SupportedLocales <String[]>]`: 
+        - `[SupportedLocales <String[]>]`: Supported locales for endUserNotification content.
       - `[DeliveryPreference <String>]`: notificationDeliveryPreference
     - `[SettingType <String>]`: endUserNotificationSettingType
   - `[ExcludedAccountTarget <IMicrosoftGraphAccountTargetContent>]`: accountTargetContent
@@ -567,41 +584,41 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: Date and time when the landing page was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Description <String>]`: Description of the landing page as defined by the user.
     - `[Details <IMicrosoftGraphLandingPageDetail[]>]`: 
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[Content <String>]`: 
-      - `[IsDefaultLangauge <Boolean?>]`: 
-      - `[Language <String>]`: 
-    - `[DisplayName <String>]`: 
+      - `[Content <String>]`: Landing page detail content.
+      - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language detail is default for the landing page.
+      - `[Language <String>]`: The content language for the landing page.
+    - `[DisplayName <String>]`: The display name of the landing page.
     - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[Locale <String>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: Date and time when the landing page was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Locale <String>]`: Content locale.
     - `[Source <String>]`: simulationContentSource
     - `[Status <String>]`: simulationContentStatus
-    - `[SupportedLocales <String[]>]`: 
+    - `[SupportedLocales <String[]>]`: Supported locales.
   - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
   - `[LastModifiedDateTime <DateTime?>]`: Date and time of the most recent modification of the attack simulation and training campaign.
   - `[LaunchDateTime <DateTime?>]`: Date and time of the launch/start of the attack simulation and training campaign. Supports $filter and $orderby.
   - `[LoginPage <IMicrosoftGraphLoginPage>]`: loginPage
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Content <String>]`: 
+    - `[Content <String>]`: The HTML content of the login page.
     - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[Language <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: Date and time when the login page was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Description <String>]`: Description about the login page.
+    - `[DisplayName <String>]`: Display name of the login page.
+    - `[Language <String>]`: The content language of the login page.
     - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: Date and time when the login page was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Source <String>]`: simulationContentSource
     - `[Status <String>]`: simulationContentStatus
   - `[OAuthConsentAppDetail <IMicrosoftGraphOAuthConsentAppDetail>]`: oAuthConsentAppDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AppScope <String>]`: oAuthAppScope
-    - `[DisplayLogo <String>]`: 
-    - `[DisplayName <String>]`: 
+    - `[DisplayLogo <String>]`: App display logo.
+    - `[DisplayName <String>]`: App name.
   - `[Payload <IMicrosoftGraphPayload>]`: payload
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -703,8 +720,8 @@ To create the parameters described below, construct a hash table containing the 
 
 `CREATEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
 `ENDUSERNOTIFICATIONSETTING <IMicrosoftGraphEndUserNotificationSetting>`: endUserNotificationSetting
@@ -712,32 +729,32 @@ To create the parameters described below, construct a hash table containing the 
   - `[NotificationPreference <String>]`: endUserNotificationPreference
   - `[PositiveReinforcement <IMicrosoftGraphPositiveReinforcementNotification>]`: positiveReinforcementNotification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DefaultLanguage <String>]`: 
+    - `[DefaultLanguage <String>]`: The default language for the end user notification.
     - `[EndUserNotification <IMicrosoftGraphEndUserNotification>]`: endUserNotification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
         - `[Email <String>]`: Email address of the user.
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[Description <String>]`: 
+      - `[CreatedDateTime <DateTime?>]`: Date and time when the notification was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Description <String>]`: Description of the notification as defined by the user.
       - `[Details <IMicrosoftGraphEndUserNotificationDetail[]>]`: 
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
-        - `[EmailContent <String>]`: 
-        - `[IsDefaultLangauge <Boolean?>]`: 
-        - `[Language <String>]`: 
-        - `[Locale <String>]`: 
+        - `[EmailContent <String>]`: Email HTML content.
+        - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language is default.
+        - `[Language <String>]`: Notification language.
+        - `[Locale <String>]`: Notification locale.
         - `[SentFrom <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-        - `[Subject <String>]`: 
-      - `[DisplayName <String>]`: 
+        - `[Subject <String>]`: Mail subject.
+      - `[DisplayName <String>]`: Name of the notification as defined by the user.
       - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-      - `[LastModifiedDateTime <DateTime?>]`: 
+      - `[LastModifiedDateTime <DateTime?>]`: Date and time when the notification was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[NotificationType <String>]`: endUserNotificationType
       - `[Source <String>]`: simulationContentSource
       - `[Status <String>]`: simulationContentStatus
-      - `[SupportedLocales <String[]>]`: 
+      - `[SupportedLocales <String[]>]`: Supported locales for endUserNotification content.
     - `[DeliveryPreference <String>]`: notificationDeliveryPreference
   - `[SettingType <String>]`: endUserNotificationSettingType
 
@@ -754,53 +771,53 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: Date and time when the landing page was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Description <String>]`: Description of the landing page as defined by the user.
   - `[Details <IMicrosoftGraphLandingPageDetail[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Content <String>]`: 
-    - `[IsDefaultLangauge <Boolean?>]`: 
-    - `[Language <String>]`: 
-  - `[DisplayName <String>]`: 
+    - `[Content <String>]`: Landing page detail content.
+    - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language detail is default for the landing page.
+    - `[Language <String>]`: The content language for the landing page.
+  - `[DisplayName <String>]`: The display name of the landing page.
   - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Locale <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the landing page was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Locale <String>]`: Content locale.
   - `[Source <String>]`: simulationContentSource
   - `[Status <String>]`: simulationContentStatus
-  - `[SupportedLocales <String[]>]`: 
+  - `[SupportedLocales <String[]>]`: Supported locales.
 
 `LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
 `LOGINPAGE <IMicrosoftGraphLoginPage>`: loginPage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Content <String>]`: 
+  - `[Content <String>]`: The HTML content of the login page.
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[Language <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: Date and time when the login page was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Description <String>]`: Description about the login page.
+  - `[DisplayName <String>]`: Display name of the login page.
+  - `[Language <String>]`: The content language of the login page.
   - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the login page was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Source <String>]`: simulationContentSource
   - `[Status <String>]`: simulationContentStatus
 
 `OAUTHCONSENTAPPDETAIL <IMicrosoftGraphOAuthConsentAppDetail>`: oAuthConsentAppDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppScope <String>]`: oAuthAppScope
-  - `[DisplayLogo <String>]`: 
-  - `[DisplayName <String>]`: 
+  - `[DisplayLogo <String>]`: App display logo.
+  - `[DisplayName <String>]`: App name.
 
 `PAYLOAD <IMicrosoftGraphPayload>`: payload
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -809,8 +826,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Complexity <String>]`: payloadComplexity
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: Email address of the user.
   - `[CreatedDateTime <DateTime?>]`: Date and time when the attack simulation and training campaign payload.
   - `[Description <String>]`: Description of the attack simulation and training campaign payload.
@@ -906,8 +923,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SettingType <String>]`: trainingSettingType
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-1.0)
 

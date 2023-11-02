@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcolumn
 schema: 2.0.0
@@ -8,10 +8,8 @@ schema: 2.0.0
 # New-MgDriveListColumn
 
 ## SYNOPSIS
-Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListColumn?view=graph-powershell-beta)
+Create a column for a list][list] with a request that specifies a [columnDefinition][columnDefinition].
+This API is available in the following [national cloud deployments.
 
 ## SYNTAX
 
@@ -28,13 +26,19 @@ New-MgDriveListColumn -DriveId <String> [-AdditionalProperties <Hashtable>] [-Bo
  [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition>]
  [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
- [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Validation <IMicrosoftGraphColumnValidation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDriveListColumn -DriveId <String> -BodyParameter <IMicrosoftGraphColumnDefinition> [-WhatIf] [-Confirm]
+New-MgDriveListColumn -DriveId <String> -BodyParameter <IMicrosoftGraphColumnDefinition> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphColumnDefinition>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -50,17 +54,28 @@ New-MgDriveListColumn -InputObject <IFilesIdentity> [-AdditionalProperties <Hash
  [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition>]
  [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
- [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphColumnDefinition> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Validation <IMicrosoftGraphColumnValidation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
+Create a column for a list][list] with a request that specifies a [columnDefinition][columnDefinition].
+This API is available in the following [national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -68,7 +83,7 @@ Create a column for a [list][list] with a request that specifies a [columnDefini
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +99,7 @@ columnDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -99,7 +114,7 @@ Accept wildcard characters: False
 booleanColumn
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +130,7 @@ calculatedColumn
 To construct, see NOTES section for CALCULATED properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalculatedColumn
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalculatedColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +146,7 @@ choiceColumn
 To construct, see NOTES section for CHOICE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChoiceColumn
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChoiceColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +162,7 @@ For site columns, the name of the group this column belongs to.
 Helps organize related columns.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +177,7 @@ Accept wildcard characters: False
 contentApprovalStatusColumn
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +193,7 @@ currencyColumn
 To construct, see NOTES section for CURRENCY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCurrencyColumn
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCurrencyColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -194,7 +209,7 @@ dateTimeColumn
 To construct, see NOTES section for DATETIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeColumn
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDateTimeColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -210,7 +225,7 @@ defaultColumnValue
 To construct, see NOTES section for DEFAULTVALUE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDefaultColumnValue
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultColumnValue
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -225,7 +240,7 @@ Accept wildcard characters: False
 The user-facing description of the column.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +255,7 @@ Accept wildcard characters: False
 The user-facing name of the column.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -255,8 +270,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -270,7 +285,7 @@ Accept wildcard characters: False
 If true, no two list items may have the same value for this column.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +300,7 @@ Accept wildcard characters: False
 geolocationColumn
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +315,7 @@ Accept wildcard characters: False
 Specifies whether the column is displayed in the user interface.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -316,7 +331,7 @@ hyperlinkOrPictureColumn
 To construct, see NOTES section for HYPERLINKORPICTURE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphHyperlinkOrPictureColumn
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHyperlinkOrPictureColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -332,7 +347,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -347,7 +362,7 @@ Accept wildcard characters: False
 Specifies whether the column values can be used for sorting and searching.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -363,8 +378,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -378,7 +393,7 @@ Accept wildcard characters: False
 Indicates whether this column can be deleted.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -394,7 +409,7 @@ Indicates whether values in the column can be reordered.
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -409,7 +424,7 @@ Accept wildcard characters: False
 Specifies whether the column can be changed.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -425,7 +440,7 @@ lookupColumn
 To construct, see NOTES section for LOOKUP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLookupColumn
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLookupColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -441,7 +456,7 @@ The API-facing name of the column as it appears in the [fields][] on a [listItem
 For the user-facing name, see displayName.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -457,7 +472,7 @@ numberColumn
 To construct, see NOTES section for NUMBER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNumberColumn
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNumberColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -473,7 +488,7 @@ personOrGroupColumn
 To construct, see NOTES section for PERSONORGROUP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonOrGroupColumn
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonOrGroupColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -488,7 +503,7 @@ Accept wildcard characters: False
 If 'true', changes to this column will be propagated to lists that implement the column.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -503,7 +518,7 @@ Accept wildcard characters: False
 Specifies whether the column values can be modified.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -518,7 +533,7 @@ Accept wildcard characters: False
 Specifies whether the column value isn't optional.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -534,7 +549,7 @@ columnDefinition
 To construct, see NOTES section for SOURCECOLUMN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -550,7 +565,7 @@ contentTypeInfo
 To construct, see NOTES section for SOURCECONTENTTYPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentTypeInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentTypeInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -566,7 +581,7 @@ termColumn
 To construct, see NOTES section for TERM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermColumn
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -582,7 +597,7 @@ textColumn
 To construct, see NOTES section for TEXT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTextColumn
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTextColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -597,7 +612,7 @@ Accept wildcard characters: False
 thumbnailColumn
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -612,7 +627,7 @@ Accept wildcard characters: False
 columnTypes
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -628,7 +643,7 @@ columnValidation
 To construct, see NOTES section for VALIDATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnValidation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnValidation
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -643,7 +658,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -659,7 +674,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -676,10 +691,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
+
 ## NOTES
 
 ALIASES
@@ -760,7 +778,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The name of the content type.
   - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
+    - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column allows more than one value.
     - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -972,7 +990,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The name of the content type.
   - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
+    - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column allows more than one value.
     - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -1043,7 +1061,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `TERM <IMicrosoftGraphTermColumn>`: termColumn
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value.
+  - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column allows more than one value.
   - `[ParentTerm <IMicrosoftGraphTermStoreTerm>]`: term
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -1107,8 +1125,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[New-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListColumn?view=graph-powershell-beta)
-
-## RELATED LINKS
-[New-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListColumn?view=graph-powershell-beta)
 

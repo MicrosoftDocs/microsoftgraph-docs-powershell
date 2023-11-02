@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryonpremisesynchronization
 schema: 2.0.0
@@ -10,27 +10,40 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to onPremisesSynchronization for directory
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryOnPremiseSynchronization?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDirectoryOnPremiseSynchronization [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]
- [-Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDirectoryOnPremiseSynchronization -BodyParameter <IMicrosoftGraphOnPremisesDirectorySynchronization>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to onPremisesSynchronization for directory
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -38,7 +51,7 @@ Create new navigation property to onPremisesSynchronization for directory
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +67,7 @@ onPremisesDirectorySynchronization
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesDirectorySynchronization
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization
 Parameter Sets: Create
 Aliases:
 
@@ -70,7 +83,7 @@ onPremisesDirectorySynchronizationConfiguration
 To construct, see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +99,7 @@ onPremisesDirectorySynchronizationFeature
 To construct, see NOTES section for FEATURES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesDirectorySynchronizationFeature
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronizationFeature
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +115,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +130,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -133,7 +146,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -150,9 +163,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization
+
 ## NOTES
 
 ALIASES
@@ -175,13 +190,13 @@ To create the parameters described below, construct a hash table containing the 
     - `[ApplicationId <String>]`: The identifier of the on-premises directory synchronization client application that is configured for the tenant.
     - `[CurrentExportData <IMicrosoftGraphOnPremisesCurrentExportData>]`: onPremisesCurrentExportData
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ClientMachineName <String>]`: The name of the onPremises client machine which ran the last export.
+      - `[ClientMachineName <String>]`: The name of the onPremises client machine that ran the last export.
       - `[PendingObjectsAddition <Int32?>]`: The count of pending adds from on-premises directory.
       - `[PendingObjectsDeletion <Int32?>]`: The count of pending deletes from on-premises directory.
       - `[PendingObjectsUpdate <Int32?>]`: The count of pending updates from on-premises directory.
-      - `[ServiceAccount <String>]`: The name of the dirsync service account which is configured to connect to the directory.
+      - `[ServiceAccount <String>]`: The name of the dirsync service account that is configured to connect to the directory.
       - `[SuccessfulLinksProvisioningCount <Int64?>]`: The count of updated links during the current directory sync export run.
-      - `[SuccessfulObjectsProvisioningCount <Int32?>]`: The count of objects which were successfully provisioned during the current directory sync export run.
+      - `[SuccessfulObjectsProvisioningCount <Int32?>]`: The count of objects that were successfully provisioned during the current directory sync export run.
       - `[TotalConnectorSpaceObjects <Int32?>]`: The total number of objects in the AAD Connector Space.
     - `[CustomerRequestedSynchronizationInterval <TimeSpan?>]`: Interval of time that the customer requested the sync client waits between sync cycles.
     - `[SynchronizationClientVersion <String>]`: Indicates the version of the on-premises directory synchronization application.
@@ -222,13 +237,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[ApplicationId <String>]`: The identifier of the on-premises directory synchronization client application that is configured for the tenant.
   - `[CurrentExportData <IMicrosoftGraphOnPremisesCurrentExportData>]`: onPremisesCurrentExportData
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ClientMachineName <String>]`: The name of the onPremises client machine which ran the last export.
+    - `[ClientMachineName <String>]`: The name of the onPremises client machine that ran the last export.
     - `[PendingObjectsAddition <Int32?>]`: The count of pending adds from on-premises directory.
     - `[PendingObjectsDeletion <Int32?>]`: The count of pending deletes from on-premises directory.
     - `[PendingObjectsUpdate <Int32?>]`: The count of pending updates from on-premises directory.
-    - `[ServiceAccount <String>]`: The name of the dirsync service account which is configured to connect to the directory.
+    - `[ServiceAccount <String>]`: The name of the dirsync service account that is configured to connect to the directory.
     - `[SuccessfulLinksProvisioningCount <Int64?>]`: The count of updated links during the current directory sync export run.
-    - `[SuccessfulObjectsProvisioningCount <Int32?>]`: The count of objects which were successfully provisioned during the current directory sync export run.
+    - `[SuccessfulObjectsProvisioningCount <Int32?>]`: The count of objects that were successfully provisioned during the current directory sync export run.
     - `[TotalConnectorSpaceObjects <Int32?>]`: The total number of objects in the AAD Connector Space.
   - `[CustomerRequestedSynchronizationInterval <TimeSpan?>]`: Interval of time that the customer requested the sync client waits between sync cycles.
   - `[SynchronizationClientVersion <String>]`: Indicates the version of the on-premises directory synchronization application.
@@ -261,8 +276,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
 ## RELATED LINKS
-[New-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryOnPremiseSynchronization?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[New-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryOnPremiseSynchronization?view=graph-powershell-1.0)
 

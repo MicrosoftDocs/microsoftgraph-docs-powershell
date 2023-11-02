@@ -1,108 +1,70 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeprovisionusermanageddevice
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadismissusereventinstancereminder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
-# Invoke-MgBetaDeprovisionUserManagedDevice
+# Invoke-MgBetaDismissUserEventInstanceReminder
 
 ## SYNOPSIS
-Invoke action deprovision
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventInstanceReminder?view=graph-powershell-1.0)
+Dismiss a reminder that has been triggered for an event in a user calendar.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
-### DeprovisionExpanded (Default)
+### Dismiss (Default)
 ```
-Invoke-MgBetaDeprovisionUserManagedDevice -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-DeprovisionReason <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Deprovision
-```
-Invoke-MgBetaDeprovisionUserManagedDevice -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IPaths1D6Atq8UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphDeprovisionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaDismissUserEventInstanceReminder -EventId <String> -EventId1 <String> -UserId <String>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeprovisionViaIdentityExpanded
+### DismissViaIdentity
 ```
-Invoke-MgBetaDeprovisionUserManagedDevice -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-DeprovisionReason <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### DeprovisionViaIdentity
-```
-Invoke-MgBetaDeprovisionUserManagedDevice -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1D6Atq8UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphDeprovisionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaDismissUserEventInstanceReminder -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action deprovision
+Dismiss a reminder that has been triggered for an event in a user calendar.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDismissUserEventReminder -UserId $userId -EventId $eventId
-```
-This example shows how to use the Invoke-MgBetaDismissUserEventInstanceReminder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -EventId
+The unique identifier of event
 
 ```yaml
-Type: Hashtable
-Parameter Sets: DeprovisionExpanded, DeprovisionViaIdentityExpanded
+Type: System.String
+Parameter Sets: Dismiss
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+### -EventId1
+The unique identifier of event
 
 ```yaml
-Type: IPaths1D6Atq8UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphDeprovisionPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Deprovision, DeprovisionViaIdentity
+Type: System.String
+Parameter Sets: Dismiss
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -DeprovisionReason
-.
-
-```yaml
-Type: String
-Parameter Sets: DeprovisionExpanded, DeprovisionViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -114,8 +76,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: DeprovisionViaIdentityExpanded, DeprovisionViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: DismissViaIdentity
 Aliases:
 
 Required: True
@@ -125,26 +87,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ManagedDeviceId
-The unique identifier of managedDevice
-
-```yaml
-Type: String
-Parameter Sets: DeprovisionExpanded, Deprovision
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -159,8 +106,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: DeprovisionExpanded, Deprovision
+Type: System.String
+Parameter Sets: Dismiss
 Aliases:
 
 Required: True
@@ -174,7 +121,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +137,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,11 +153,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths1D6Atq8UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphDeprovisionPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -219,10 +167,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IPaths1D6Atq8UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphDeprovisionPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeprovisionReason <String>]`: 
 
 `INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
@@ -236,7 +180,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
@@ -258,7 +201,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
@@ -267,4 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgDismissUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventInstanceReminder?view=graph-powershell-1.0)
+

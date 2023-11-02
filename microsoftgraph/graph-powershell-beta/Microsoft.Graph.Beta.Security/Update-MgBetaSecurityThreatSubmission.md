@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmission
 schema: 2.0.0
@@ -15,20 +15,36 @@ Update the navigation property threatSubmission in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityThreatSubmission [-AdditionalProperties <Hashtable>]
- [-EmailThreatSubmissionPolicies <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>]
  [-EmailThreats <IMicrosoftGraphSecurityEmailThreatSubmission[]>]
+ [-EmailThreatSubmissionPolicies <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>]
  [-FileThreats <IMicrosoftGraphSecurityFileThreatSubmission[]>] [-Id <String>]
- [-UrlThreats <IMicrosoftGraphSecurityUrlThreatSubmission[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UrlThreats <IMicrosoftGraphSecurityUrlThreatSubmission[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSecurityThreatSubmission -BodyParameter <IMicrosoftGraphSecurityThreatSubmissionRoot> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityThreatSubmission -BodyParameter <IMicrosoftGraphSecurityThreatSubmissionRoot> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property threatSubmission in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +52,7 @@ Update the navigation property threatSubmission in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,7 +68,7 @@ threatSubmissionRoot
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityThreatSubmissionRoot
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatSubmissionRoot
 Parameter Sets: Update
 Aliases:
 
@@ -68,7 +84,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for EMAILTHREATS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEmailThreatSubmission[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmission[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -84,7 +100,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for EMAILTHREATSUBMISSIONPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -100,7 +116,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for FILETHREATS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFileThreatSubmission[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFileThreatSubmission[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -116,7 +132,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -132,7 +148,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for URLTHREATS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityUrlThreatSubmission[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityUrlThreatSubmission[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -147,7 +163,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +179,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -180,9 +196,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatSubmissionRoot
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatSubmissionRoot
+
 ## NOTES
 
 ALIASES
@@ -198,17 +216,17 @@ To create the parameters described below, construct a hash table containing the 
   - `[EmailThreatSubmissionPolicies <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CustomizedNotificationSenderEmailAddress <String>]`: Specifies the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is null. Optional for creation.
-    - `[CustomizedReportRecipientEmailAddress <String>]`: Specifies the destination where the reported messages from end users will land whenever they report something as phish, junk or not junk. The default value is null. Optional for creation.
+    - `[CustomizedReportRecipientEmailAddress <String>]`: Specifies the destination where the reported messages from end users land whenever they report something as phish, junk or not junk. The default value is null. Optional for creation.
     - `[IsAlwaysReportEnabledForUsers <Boolean?>]`: Indicates whether end users can report a message as spam, phish or junk directly without a confirmation(popup). The default value is true.  Optional for creation.
     - `[IsAskMeEnabledForUsers <Boolean?>]`: Indicates whether end users can confirm using a popup before reporting messages as spam, phish or not junk. The default value is true.  Optional for creation.
-    - `[IsCustomizedMessageEnabled <Boolean?>]`: Indicates whether the email notifications sent to end users to inform them if an email is phish, spam or junk is customized or not. The default value is false. Optional for creation.
+    - `[IsCustomizedMessageEnabled <Boolean?>]`: Indicates whether the email notifications sent to end users to inform them if an email is a phish mail, spam or junk is customized or not. The default value is false. Optional for creation.
     - `[IsCustomizedMessageEnabledForPhishing <Boolean?>]`: If enabled, customized message only shows when email is reported as phishing. The default value is false. Optional for creation.
     - `[IsCustomizedNotificationSenderEnabled <Boolean?>]`: Indicates whether to use the sender email address set using customizedNotificationSenderEmailAddress for sending email notifications to end users. The default value is false. Optional for creation.
-    - `[IsNeverReportEnabledForUsers <Boolean?>]`: Indicates whether end users can simply move the message from one folder to another based on the action of spam, phish or not junk without actually reporting it. The default value is true. Optional for creation.
+    - `[IsNeverReportEnabledForUsers <Boolean?>]`: Indicates whether end users can move the message from one folder to another based on the action of spam, phish or not junk without actually reporting it. The default value is true. Optional for creation.
     - `[IsOrganizationBrandingEnabled <Boolean?>]`: Indicates whether the branding logo should be used in the email notifications sent to end users. The default value is false. Optional for creation.
     - `[IsReportFromQuarantineEnabled <Boolean?>]`: Indicates whether end users can submit from the quarantine page. The default value is true. Optional for creation.
-    - `[IsReportToCustomizedEmailAddressEnabled <Boolean?>]`: Indicates whether emails reported by end users should be send to the custom mailbox configured using customizedReportRecipientEmailAddress.  The default value is false. Optional for creation.
-    - `[IsReportToMicrosoftEnabled <Boolean?>]`: If enabled, the email will be sent to Microsoft for analysis. The default value is false. Required for creation.
+    - `[IsReportToCustomizedEmailAddressEnabled <Boolean?>]`: Indicates whether emails reported by end users should be sent to the custom mailbox configured using customizedReportRecipientEmailAddress.  The default value is false. Optional for creation.
+    - `[IsReportToMicrosoftEnabled <Boolean?>]`: If enabled, the email is sent to Microsoft for analysis. The default value is false. Required for creation.
     - `[IsReviewEmailNotificationEnabled <Boolean?>]`: Indicates whether an email notification is sent to the end user who reported the email when it has been reviewed by the admin. The default value is false. Optional for creation.
   - `[EmailThreats <IMicrosoftGraphSecurityEmailThreatSubmission[]>]`: 
     - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
@@ -221,8 +239,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[ContentType <String>]`: submissionContentType
     - `[CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]`: submissionUserIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
       - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
     - `[CreatedDateTime <DateTime?>]`: Specifies when the threat submission was created. Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
     - `[Result <IMicrosoftGraphSecuritySubmissionResult>]`: submissionResult
@@ -232,11 +250,11 @@ To create the parameters described below, construct a hash table containing the 
       - `[DetectedFiles <IMicrosoftGraphSecuritySubmissionDetectedFile[]>]`: Specifies the files detected by Microsoft in the submitted emails.
         - `[FileHash <String>]`: The file hash.
         - `[FileName <String>]`: The file name.
-      - `[DetectedUrls <String[]>]`: Specifes the URLs detected by Microsoft in the submitted email.
+      - `[DetectedUrls <String[]>]`: Specifies the URLs detected by Microsoft in the submitted email.
       - `[UserMailboxSetting <String>]`: userMailboxSetting
     - `[Source <String>]`: submissionSource
     - `[Status <String>]`: longRunningOperationStatus
-    - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
+    - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It's extracted from the token of the post API call.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>]`: attackSimulationInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -244,21 +262,21 @@ To create the parameters described below, construct a hash table containing the 
       - `[AttackSimDurationTime <TimeSpan?>]`: The duration (in time) for the attack simulation.
       - `[AttackSimId <String>]`: The activity ID for the attack simulation.
       - `[AttackSimUserId <String>]`: The unique identifier for the user who got the attack simulation email.
-    - `[InternetMessageId <String>]`: Specifies the internet message id of the email being submitted. This information is present in the email header.
+    - `[InternetMessageId <String>]`: Specifies the internet message ID of the email being submitted. This information is present in the email header.
     - `[OriginalCategory <String>]`: submissionCategory
     - `[ReceivedDateTime <DateTime?>]`: Specifies the date and time stamp when the email was received.
     - `[RecipientEmailAddress <String>]`: Specifies the email address (in smtp format) of the recipient who received the email.
     - `[Sender <String>]`: Specifies the email address of the sender.
     - `[SenderIP <String>]`: Specifies the IP address of the sender.
-    - `[Subject <String>]`: Specifies the subject of the email .
+    - `[Subject <String>]`: Specifies the subject of the email.
     - `[TenantAllowOrBlockListAction <IMicrosoftGraphSecurityTenantAllowOrBlockListAction>]`: tenantAllowOrBlockListAction
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Action <String>]`: tenantAllowBlockListAction
       - `[ExpirationDateTime <DateTime?>]`: Specifies when the tenant allow-block-list expires in date time.
-      - `[Note <String>]`: Specifies the note added to the tenant allow block list entry in the format of string.
+      - `[Note <String>]`: Specifies the note added to the tenant allow-or-block list entry in the format of string.
       - `[Results <IMicrosoftGraphSecurityTenantAllowBlockListEntryResult[]>]`: Contains the result of the submission that lead to the tenant allow-block-list entry creation.
         - `[EntryType <String>]`: tenantAllowBlockListEntryType
-        - `[ExpirationDateTime <DateTime?>]`: Specifies when will this entry expire in date time.
+        - `[ExpirationDateTime <DateTime?>]`: Specifies the date and time when the entry expires.
         - `[Identity <String>]`: Specifies the identity of the entry generated by the tenant allow block list system.
         - `[Status <String>]`: longRunningOperationStatus
         - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
@@ -272,7 +290,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Result <IMicrosoftGraphSecuritySubmissionResult>]`: submissionResult
     - `[Source <String>]`: submissionSource
     - `[Status <String>]`: longRunningOperationStatus
-    - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
+    - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It's extracted from the token of the post API call.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[FileName <String>]`: It specifies the file name to be submitted.
   - `[UrlThreats <IMicrosoftGraphSecurityUrlThreatSubmission[]>]`: 
@@ -285,7 +303,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Result <IMicrosoftGraphSecuritySubmissionResult>]`: submissionResult
     - `[Source <String>]`: submissionSource
     - `[Status <String>]`: longRunningOperationStatus
-    - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
+    - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It's extracted from the token of the post API call.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
@@ -300,8 +318,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: submissionContentType
   - `[CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]`: submissionUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
   - `[CreatedDateTime <DateTime?>]`: Specifies when the threat submission was created. Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
   - `[Result <IMicrosoftGraphSecuritySubmissionResult>]`: submissionResult
@@ -311,11 +329,11 @@ To create the parameters described below, construct a hash table containing the 
     - `[DetectedFiles <IMicrosoftGraphSecuritySubmissionDetectedFile[]>]`: Specifies the files detected by Microsoft in the submitted emails.
       - `[FileHash <String>]`: The file hash.
       - `[FileName <String>]`: The file name.
-    - `[DetectedUrls <String[]>]`: Specifes the URLs detected by Microsoft in the submitted email.
+    - `[DetectedUrls <String[]>]`: Specifies the URLs detected by Microsoft in the submitted email.
     - `[UserMailboxSetting <String>]`: userMailboxSetting
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
-  - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
+  - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It's extracted from the token of the post API call.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>]`: attackSimulationInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -323,21 +341,21 @@ To create the parameters described below, construct a hash table containing the 
     - `[AttackSimDurationTime <TimeSpan?>]`: The duration (in time) for the attack simulation.
     - `[AttackSimId <String>]`: The activity ID for the attack simulation.
     - `[AttackSimUserId <String>]`: The unique identifier for the user who got the attack simulation email.
-  - `[InternetMessageId <String>]`: Specifies the internet message id of the email being submitted. This information is present in the email header.
+  - `[InternetMessageId <String>]`: Specifies the internet message ID of the email being submitted. This information is present in the email header.
   - `[OriginalCategory <String>]`: submissionCategory
   - `[ReceivedDateTime <DateTime?>]`: Specifies the date and time stamp when the email was received.
   - `[RecipientEmailAddress <String>]`: Specifies the email address (in smtp format) of the recipient who received the email.
   - `[Sender <String>]`: Specifies the email address of the sender.
   - `[SenderIP <String>]`: Specifies the IP address of the sender.
-  - `[Subject <String>]`: Specifies the subject of the email .
+  - `[Subject <String>]`: Specifies the subject of the email.
   - `[TenantAllowOrBlockListAction <IMicrosoftGraphSecurityTenantAllowOrBlockListAction>]`: tenantAllowOrBlockListAction
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Action <String>]`: tenantAllowBlockListAction
     - `[ExpirationDateTime <DateTime?>]`: Specifies when the tenant allow-block-list expires in date time.
-    - `[Note <String>]`: Specifies the note added to the tenant allow block list entry in the format of string.
+    - `[Note <String>]`: Specifies the note added to the tenant allow-or-block list entry in the format of string.
     - `[Results <IMicrosoftGraphSecurityTenantAllowBlockListEntryResult[]>]`: Contains the result of the submission that lead to the tenant allow-block-list entry creation.
       - `[EntryType <String>]`: tenantAllowBlockListEntryType
-      - `[ExpirationDateTime <DateTime?>]`: Specifies when will this entry expire in date time.
+      - `[ExpirationDateTime <DateTime?>]`: Specifies the date and time when the entry expires.
       - `[Identity <String>]`: Specifies the identity of the entry generated by the tenant allow block list system.
       - `[Status <String>]`: longRunningOperationStatus
       - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
@@ -345,17 +363,17 @@ To create the parameters described below, construct a hash table containing the 
 `EMAILTHREATSUBMISSIONPOLICIES <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy[]>`: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CustomizedNotificationSenderEmailAddress <String>]`: Specifies the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is null. Optional for creation.
-  - `[CustomizedReportRecipientEmailAddress <String>]`: Specifies the destination where the reported messages from end users will land whenever they report something as phish, junk or not junk. The default value is null. Optional for creation.
+  - `[CustomizedReportRecipientEmailAddress <String>]`: Specifies the destination where the reported messages from end users land whenever they report something as phish, junk or not junk. The default value is null. Optional for creation.
   - `[IsAlwaysReportEnabledForUsers <Boolean?>]`: Indicates whether end users can report a message as spam, phish or junk directly without a confirmation(popup). The default value is true.  Optional for creation.
   - `[IsAskMeEnabledForUsers <Boolean?>]`: Indicates whether end users can confirm using a popup before reporting messages as spam, phish or not junk. The default value is true.  Optional for creation.
-  - `[IsCustomizedMessageEnabled <Boolean?>]`: Indicates whether the email notifications sent to end users to inform them if an email is phish, spam or junk is customized or not. The default value is false. Optional for creation.
+  - `[IsCustomizedMessageEnabled <Boolean?>]`: Indicates whether the email notifications sent to end users to inform them if an email is a phish mail, spam or junk is customized or not. The default value is false. Optional for creation.
   - `[IsCustomizedMessageEnabledForPhishing <Boolean?>]`: If enabled, customized message only shows when email is reported as phishing. The default value is false. Optional for creation.
   - `[IsCustomizedNotificationSenderEnabled <Boolean?>]`: Indicates whether to use the sender email address set using customizedNotificationSenderEmailAddress for sending email notifications to end users. The default value is false. Optional for creation.
-  - `[IsNeverReportEnabledForUsers <Boolean?>]`: Indicates whether end users can simply move the message from one folder to another based on the action of spam, phish or not junk without actually reporting it. The default value is true. Optional for creation.
+  - `[IsNeverReportEnabledForUsers <Boolean?>]`: Indicates whether end users can move the message from one folder to another based on the action of spam, phish or not junk without actually reporting it. The default value is true. Optional for creation.
   - `[IsOrganizationBrandingEnabled <Boolean?>]`: Indicates whether the branding logo should be used in the email notifications sent to end users. The default value is false. Optional for creation.
   - `[IsReportFromQuarantineEnabled <Boolean?>]`: Indicates whether end users can submit from the quarantine page. The default value is true. Optional for creation.
-  - `[IsReportToCustomizedEmailAddressEnabled <Boolean?>]`: Indicates whether emails reported by end users should be send to the custom mailbox configured using customizedReportRecipientEmailAddress.  The default value is false. Optional for creation.
-  - `[IsReportToMicrosoftEnabled <Boolean?>]`: If enabled, the email will be sent to Microsoft for analysis. The default value is false. Required for creation.
+  - `[IsReportToCustomizedEmailAddressEnabled <Boolean?>]`: Indicates whether emails reported by end users should be sent to the custom mailbox configured using customizedReportRecipientEmailAddress.  The default value is false. Optional for creation.
+  - `[IsReportToMicrosoftEnabled <Boolean?>]`: If enabled, the email is sent to Microsoft for analysis. The default value is false. Required for creation.
   - `[IsReviewEmailNotificationEnabled <Boolean?>]`: Indicates whether an email notification is sent to the end user who reported the email when it has been reviewed by the admin. The default value is false. Optional for creation.
 
 `FILETHREATS <IMicrosoftGraphSecurityFileThreatSubmission[]>`: .
@@ -369,8 +387,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: submissionContentType
   - `[CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]`: submissionUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
   - `[CreatedDateTime <DateTime?>]`: Specifies when the threat submission was created. Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
   - `[Result <IMicrosoftGraphSecuritySubmissionResult>]`: submissionResult
@@ -380,11 +398,11 @@ To create the parameters described below, construct a hash table containing the 
     - `[DetectedFiles <IMicrosoftGraphSecuritySubmissionDetectedFile[]>]`: Specifies the files detected by Microsoft in the submitted emails.
       - `[FileHash <String>]`: The file hash.
       - `[FileName <String>]`: The file name.
-    - `[DetectedUrls <String[]>]`: Specifes the URLs detected by Microsoft in the submitted email.
+    - `[DetectedUrls <String[]>]`: Specifies the URLs detected by Microsoft in the submitted email.
     - `[UserMailboxSetting <String>]`: userMailboxSetting
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
-  - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
+  - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It's extracted from the token of the post API call.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FileName <String>]`: It specifies the file name to be submitted.
 
@@ -399,8 +417,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: submissionContentType
   - `[CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]`: submissionUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
   - `[CreatedDateTime <DateTime?>]`: Specifies when the threat submission was created. Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
   - `[Result <IMicrosoftGraphSecuritySubmissionResult>]`: submissionResult
@@ -410,15 +428,13 @@ To create the parameters described below, construct a hash table containing the 
     - `[DetectedFiles <IMicrosoftGraphSecuritySubmissionDetectedFile[]>]`: Specifies the files detected by Microsoft in the submitted emails.
       - `[FileHash <String>]`: The file hash.
       - `[FileName <String>]`: The file name.
-    - `[DetectedUrls <String[]>]`: Specifes the URLs detected by Microsoft in the submitted email.
+    - `[DetectedUrls <String[]>]`: Specifies the URLs detected by Microsoft in the submitted email.
     - `[UserMailboxSetting <String>]`: userMailboxSetting
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
-  - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
+  - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It's extracted from the token of the post API call.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
-
-## RELATED LINKS
 
 ## RELATED LINKS
 
