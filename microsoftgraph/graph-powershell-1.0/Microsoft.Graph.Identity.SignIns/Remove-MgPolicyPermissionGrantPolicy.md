@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a permissionGrantPolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-I
 
 ## DESCRIPTION
 Delete a permissionGrantPolicy object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Remove a permission grant policy

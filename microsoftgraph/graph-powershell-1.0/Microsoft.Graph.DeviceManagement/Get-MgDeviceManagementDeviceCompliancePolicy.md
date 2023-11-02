@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicy
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Read properties and relationships of the macOSCompliancePolicy object.
+Read properties and relationships of the windows81CompliancePolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the macOSCompliancePolicy object.
+Read properties and relationships of the windows81CompliancePolicy object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -295,6 +297,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserExperienceAnalyticsDeviceScoresId <String>]`: The unique identifier of userExperienceAnalyticsDeviceScores
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupProcess
+  - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupProcessPerformance
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: The unique identifier of userExperienceAnalyticsMetricHistory
   - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of userExperienceAnalyticsMetric
   - `[UserExperienceAnalyticsModelScoresId <String>]`: The unique identifier of userExperienceAnalyticsModelScores

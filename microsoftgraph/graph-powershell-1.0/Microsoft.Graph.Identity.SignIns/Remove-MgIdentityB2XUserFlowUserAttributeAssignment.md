@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete an identityUserFlowAttributeAssignment object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
@@ -30,6 +31,7 @@ Remove-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Delete an identityUserFlowAttributeAssignment object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

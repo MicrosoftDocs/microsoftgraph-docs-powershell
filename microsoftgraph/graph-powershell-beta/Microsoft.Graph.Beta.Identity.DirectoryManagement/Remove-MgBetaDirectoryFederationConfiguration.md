@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a samlOrWsFedExternalDomainFederation object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryFederationConfiguration?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaDirectoryFederationConfiguration -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 Delete a samlOrWsFedExternalDomainFederation object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

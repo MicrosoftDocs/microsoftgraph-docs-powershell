@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermodesitelistsite
 schema: 2.0.0
+ms.prod: browser-management
+ms.prod: browser-management
 ---
 
 # Get-MgAdminEdgeInternetExplorerModeSiteListSite
 
 ## SYNOPSIS
 Get a browserSite that resides on a browserSiteList.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagementI
 
 ## DESCRIPTION
 Get a browserSite that resides on a browserSiteList.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -297,6 +301,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserExperienceAnalyticsDeviceScoresId <String>]`: The unique identifier of userExperienceAnalyticsDeviceScores
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupProcess
+  - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupProcessPerformance
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: The unique identifier of userExperienceAnalyticsMetricHistory
   - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of userExperienceAnalyticsMetric
   - `[UserExperienceAnalyticsModelScoresId <String>]`: The unique identifier of userExperienceAnalyticsModelScores

@@ -11,7 +11,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Azure AD directory roles)- entitlement management (Azure AD entitlement management)- Exchange Online
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Microsoft Entra directory roles)- entitlement management (Microsoft Entra entitlement management)- Exchange Online This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaRoleManagementDeviceManagementRoleDefinition -InputObject <IDeviceMana
 
 ## DESCRIPTION
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Azure AD directory roles)- entitlement management (Azure AD entitlement management)- Exchange Online
+The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Microsoft Entra directory roles)- entitlement management (Microsoft Entra entitlement management)- Exchange Online This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintconnector
 schema: 2.0.0
+ms.prod: cloud-printing
+ms.prod: cloud-printing
 ---
 
 # Get-MgPrintConnector
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a printConnector object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintConnector?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a printConnector object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

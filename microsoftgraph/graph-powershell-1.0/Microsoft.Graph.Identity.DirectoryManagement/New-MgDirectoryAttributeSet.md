@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new attributeSet object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ New-MgDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-WhatI
 
 ## DESCRIPTION
 Create a new attributeSet object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -10,6 +10,7 @@ ms.prod: search
 
 ## SYNOPSIS
 Get an externalGroup object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
@@ -37,6 +38,7 @@ Get-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Get an externalGroup object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -10,6 +10,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Get the list of groups that are included in a mobile app management policy.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -21,6 +22,7 @@ Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManageme
 
 ## DESCRIPTION
 Get the list of groups that are included in a mobile app management policy.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

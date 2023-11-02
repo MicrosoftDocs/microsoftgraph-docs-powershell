@@ -8,8 +8,9 @@ schema: 2.0.0
 # New-MgEducationClassAssignmentCategory
 
 ## SYNOPSIS
-Creates a new educationCategory on an educationClass.
+Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
@@ -66,8 +67,9 @@ New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Creates a new educationCategory on an educationClass.
+Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

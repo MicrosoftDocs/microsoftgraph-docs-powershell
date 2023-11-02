@@ -11,6 +11,7 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Get a tenant and its properties in the multi-tenant organization.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentit
 
 ## DESCRIPTION
 Get a tenant and its properties in the multi-tenant organization.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -289,6 +291,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupsitepermission
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Grant-MgGroupSitePermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a [permission][].
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Grant-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Groups/Grant-MgBetaGroupSitePermission?view=graph-powershell-beta)
@@ -43,7 +45,8 @@ Grant-MgGroupSitePermission -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a [permission][].
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

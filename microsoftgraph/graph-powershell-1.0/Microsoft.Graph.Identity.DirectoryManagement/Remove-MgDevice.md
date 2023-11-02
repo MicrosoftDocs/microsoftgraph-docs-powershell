@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a registered device.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDevice?view=graph-powershell-beta)
@@ -28,6 +29,7 @@ Remove-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete a registered device.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -173,6 +175,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku

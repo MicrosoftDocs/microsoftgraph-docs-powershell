@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyserviceprincipal
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Invoke-MgDismissRiskyServicePrincipal
@@ -11,6 +12,7 @@ schema: 2.0.0
 Dismiss the risk of one or more riskyServicePrincipal objects.
 This action sets the targeted service principal account's risk level to none.
 You can dismiss up to 60 service principal accounts in one request.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaDismissRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaDismissRiskyServicePrincipal?view=graph-powershell-beta)
@@ -34,6 +36,7 @@ Invoke-MgDismissRiskyServicePrincipal
 Dismiss the risk of one or more riskyServicePrincipal objects.
 This action sets the targeted service principal account's risk level to none.
 You can dismiss up to 60 service principal accounts in one request.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

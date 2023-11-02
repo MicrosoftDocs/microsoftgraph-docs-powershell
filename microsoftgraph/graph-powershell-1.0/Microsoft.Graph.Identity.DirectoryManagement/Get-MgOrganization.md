@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgOrganization
@@ -271,6 +273,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku

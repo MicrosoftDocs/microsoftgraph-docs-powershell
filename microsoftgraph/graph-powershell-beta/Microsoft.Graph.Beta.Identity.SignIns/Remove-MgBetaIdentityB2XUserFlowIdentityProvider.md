@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete an identity provider from a b2xIdentityUserFlow object.
-For self-service sign up user flows, the values can be Google-OAUTH or Facebook-OAUTH.
+For self-service sign-up user flows, the values can be Google-OAUTH or Facebook-OAUTH.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityB2XUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowIdentityProvider?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaIdentityB2XUserFlowIdentityProvider -InputObject <IIdentitySignInsI
 
 ## DESCRIPTION
 Delete an identity provider from a b2xIdentityUserFlow object.
-For self-service sign up user flows, the values can be Google-OAUTH or Facebook-OAUTH.
+For self-service sign-up user flows, the values can be Google-OAUTH or Facebook-OAUTH.
 
 ## PARAMETERS
 
@@ -210,6 +210,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

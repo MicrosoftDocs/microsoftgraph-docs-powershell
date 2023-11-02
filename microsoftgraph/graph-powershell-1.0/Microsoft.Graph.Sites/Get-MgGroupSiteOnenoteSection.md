@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesection
 schema: 2.0.0
+ms.prod: onenote
+ms.prod: onenote
 ---
 
 # Get-MgGroupSiteOnenoteSection
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a onenoteSection object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSection?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgGroupSiteOnenoteSection -InputObject <ISitesIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a onenoteSection object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicypermissiongrantpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
 Retrieve a single permissionGrantPolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-Expa
 
 ## DESCRIPTION
 Retrieve a single permissionGrantPolicy object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1:  List all permission grant policies

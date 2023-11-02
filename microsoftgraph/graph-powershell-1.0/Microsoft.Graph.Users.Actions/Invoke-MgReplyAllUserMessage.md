@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreplyallusermessage
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgReplyAllUserMessage
@@ -14,6 +15,7 @@ Specifying both will return an HTTP 400 Bad Request error.- If the original mess
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply-all to a message and send it later.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReplyAllUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyAllUserMessage?view=graph-powershell-beta)
@@ -53,6 +55,7 @@ Specifying both will return an HTTP 400 Bad Request error.- If the original mess
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply-all to a message and send it later.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgReplyAllUserMessage Cmdlet
@@ -336,7 +339,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

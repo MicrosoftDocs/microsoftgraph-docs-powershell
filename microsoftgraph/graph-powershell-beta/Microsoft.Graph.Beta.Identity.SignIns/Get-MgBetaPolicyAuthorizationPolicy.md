@@ -9,7 +9,7 @@ ms.prod: identity-and-sign-in
 # Get-MgBetaPolicyAuthorizationPolicy
 
 ## SYNOPSIS
-The policy that controls Azure AD authorization settings.
+The policy that controls Microsoft Entra authorization settings.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthorizationPolicy?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Get-MgBetaPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-The policy that controls Azure AD authorization settings.
+The policy that controls Microsoft Entra authorization settings.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -304,6 +304,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

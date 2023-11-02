@@ -9,8 +9,9 @@ ms.prod: applications
 # Clear-MgBetaApplicationVerifiedPublisher
 
 ## SYNOPSIS
-Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
+Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Clear-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Clear-MgApplicationVerifiedPublisher?view=graph-powershell-1.0)
@@ -30,8 +31,9 @@ Clear-MgBetaApplicationVerifiedPublisher -InputObject <IApplicationsIdentity> [-
 ```
 
 ## DESCRIPTION
-Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
+Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -170,6 +172,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UniqueName <String>]`: Alternate key of application

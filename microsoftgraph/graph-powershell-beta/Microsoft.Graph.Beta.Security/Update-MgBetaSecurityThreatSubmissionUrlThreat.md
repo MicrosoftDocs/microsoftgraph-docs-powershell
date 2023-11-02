@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ### -TenantId
 Indicates the tenant id of the submitter.
 Not required when created using a POST operation.
-It is extracted from the token of the post API call.
+It's extracted from the token of the post API call.
 
 ```yaml
 Type: String
@@ -366,8 +366,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: submissionContentType
   - `[CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]`: submissionUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
   - `[CreatedDateTime <DateTime?>]`: Specifies when the threat submission was created. Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
   - `[Result <IMicrosoftGraphSecuritySubmissionResult>]`: submissionResult
@@ -377,18 +377,18 @@ To create the parameters described below, construct a hash table containing the 
     - `[DetectedFiles <IMicrosoftGraphSecuritySubmissionDetectedFile[]>]`: Specifies the files detected by Microsoft in the submitted emails.
       - `[FileHash <String>]`: The file hash.
       - `[FileName <String>]`: The file name.
-    - `[DetectedUrls <String[]>]`: Specifes the URLs detected by Microsoft in the submitted email.
+    - `[DetectedUrls <String[]>]`: Specifies the URLs detected by Microsoft in the submitted email.
     - `[UserMailboxSetting <String>]`: userMailboxSetting
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
-  - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
+  - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It's extracted from the token of the post API call.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
 `CREATEDBY <IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
 
 `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
@@ -427,6 +427,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -475,7 +476,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DetectedFiles <IMicrosoftGraphSecuritySubmissionDetectedFile[]>]`: Specifies the files detected by Microsoft in the submitted emails.
     - `[FileHash <String>]`: The file hash.
     - `[FileName <String>]`: The file name.
-  - `[DetectedUrls <String[]>]`: Specifes the URLs detected by Microsoft in the submitted email.
+  - `[DetectedUrls <String[]>]`: Specifies the URLs detected by Microsoft in the submitted email.
   - `[UserMailboxSetting <String>]`: userMailboxSetting
 
 ## RELATED LINKS

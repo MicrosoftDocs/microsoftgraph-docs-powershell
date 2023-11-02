@@ -10,7 +10,11 @@ ms.prod: security
 # Get-MgBetaSecurityThreatIntelligenceSslCertificate
 
 ## SYNOPSIS
-Get sslCertificates from security
+Get the properties and relationships of an sslCertificate object.
+This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,7 +38,8 @@ Get-MgBetaSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdenti
 ```
 
 ## DESCRIPTION
-Get sslCertificates from security
+Get the properties and relationships of an sslCertificate object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -274,6 +279,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -316,4 +322,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
 

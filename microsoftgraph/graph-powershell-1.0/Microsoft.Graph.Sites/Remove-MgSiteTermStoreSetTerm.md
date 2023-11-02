@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a term object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSetTerm?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ Remove-MgSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-IfMatch <String>] 
 
 ## DESCRIPTION
 Delete a term object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

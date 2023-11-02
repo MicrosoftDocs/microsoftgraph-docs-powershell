@@ -10,7 +10,7 @@ ms.prod: governance
 
 ## SYNOPSIS
 The various configurations of an alert for Azure AD roles.
-The configurations are pre-defined and cannot be created or deleted, but some of the configurations can be modified.
+The configurations are predefined and can't be created or deleted, but some of the configurations can be modified.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -InputObject <IIden
 
 ## DESCRIPTION
 The various configurations of an alert for Azure AD roles.
-The configurations are pre-defined and cannot be created or deleted, but some of the configurations can be modified.
+The configurations are predefined and can't be created or deleted, but some of the configurations can be modified.
 
 ## PARAMETERS
 
@@ -319,6 +319,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[On <String>]`: Usage: on='{on}'
+  - `[PermissionsRequestChangeId <String>]`: The unique identifier of permissionsRequestChange
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
   - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

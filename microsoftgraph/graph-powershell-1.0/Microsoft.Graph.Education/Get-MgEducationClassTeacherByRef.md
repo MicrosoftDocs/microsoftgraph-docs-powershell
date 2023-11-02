@@ -3,13 +3,15 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassteacherbyref
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationClassTeacherByRef
 
 ## SYNOPSIS
-Retrieve a list teachers for a class.
+Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
@@ -23,8 +25,9 @@ Get-MgEducationClassTeacherByRef -EducationClassId <String> [-Filter <String>] [
 ```
 
 ## DESCRIPTION
-Retrieve a list teachers for a class.
+Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 

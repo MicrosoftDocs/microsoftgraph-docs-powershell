@@ -11,6 +11,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of an alertRule object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIde
 
 ## DESCRIPTION
 Read the properties and relationships of an alertRule object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

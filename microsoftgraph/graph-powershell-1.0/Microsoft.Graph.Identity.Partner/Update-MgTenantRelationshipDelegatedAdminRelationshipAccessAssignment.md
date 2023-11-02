@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a delegatedAdminAccessAssignment object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
@@ -49,6 +50,7 @@ Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObje
 
 ## DESCRIPTION
 Update the properties of a delegatedAdminAccessAssignment object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -276,7 +278,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `ACCESSCONTAINER <IMicrosoftGraphDelegatedAdminAccessContainer>`: delegatedAdminAccessContainer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AccessContainerId <String>]`: The identifier of the access container (for example, a security group). For 'securityGroup' access containers, this must be a valid ID of an Azure AD security group in the Microsoft partner's tenant.
+  - `[AccessContainerId <String>]`: The identifier of the access container (for example, a security group). For 'securityGroup' access containers, this must be a valid ID of a Microsoft Entra security group in the Microsoft partner's tenant.
   - `[AccessContainerType <String>]`: delegatedAdminAccessContainerType
 
 `ACCESSDETAILS <IMicrosoftGraphDelegatedAdminAccessDetails>`: delegatedAdminAccessDetails
@@ -289,7 +291,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccessContainer <IMicrosoftGraphDelegatedAdminAccessContainer>]`: delegatedAdminAccessContainer
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AccessContainerId <String>]`: The identifier of the access container (for example, a security group). For 'securityGroup' access containers, this must be a valid ID of an Azure AD security group in the Microsoft partner's tenant.
+    - `[AccessContainerId <String>]`: The identifier of the access container (for example, a security group). For 'securityGroup' access containers, this must be a valid ID of a Microsoft Entra security group in the Microsoft partner's tenant.
     - `[AccessContainerType <String>]`: delegatedAdminAccessContainerType
   - `[AccessDetails <IMicrosoftGraphDelegatedAdminAccessDetails>]`: delegatedAdminAccessDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

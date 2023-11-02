@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a bookingCustomer object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ Update-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> -BodyParameter
 
 ## DESCRIPTION
 Update the properties of a bookingCustomer object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

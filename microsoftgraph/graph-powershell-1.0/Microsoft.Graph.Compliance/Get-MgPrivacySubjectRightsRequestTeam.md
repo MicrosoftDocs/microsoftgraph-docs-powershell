@@ -114,6 +114,7 @@ To create the parameters described below, construct a hash table containing the 
 `INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaPrivacySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestTeam?view=graph-powershell-beta)

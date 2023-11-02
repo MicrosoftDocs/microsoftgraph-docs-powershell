@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a timeOff instance from a schedule.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Delete a timeOff instance from a schedule.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

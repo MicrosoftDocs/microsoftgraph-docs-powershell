@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete an existing history item for an existing user activity.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserActivityHistoryItem?view=graph-powershell-1.0)
@@ -47,6 +48,7 @@ Update-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdenti
 
 ## DESCRIPTION
 Delete an existing history item for an existing user activity.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

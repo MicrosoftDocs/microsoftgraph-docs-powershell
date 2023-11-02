@@ -11,6 +11,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Read the properties and relationships of an attributeSet object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAttributeSet?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdenti
 
 ## DESCRIPTION
 Read the properties and relationships of an attributeSet object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get all attribute sets

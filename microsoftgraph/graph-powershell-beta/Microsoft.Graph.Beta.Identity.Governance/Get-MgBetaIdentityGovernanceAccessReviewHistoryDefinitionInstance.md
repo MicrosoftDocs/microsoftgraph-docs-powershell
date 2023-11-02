@@ -10,7 +10,7 @@ ms.prod: governance
 
 ## SYNOPSIS
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
-A definition that does not recur will have exactly one instance.
+A definition that doesn't recur will have exactly one instance.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <
 
 ## DESCRIPTION
 If the accessReviewHistoryDefinition is a recurring definition, instances represent each recurrence.
-A definition that does not recur will have exactly one instance.
+A definition that doesn't recur will have exactly one instance.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -323,6 +323,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[On <String>]`: Usage: on='{on}'
+  - `[PermissionsRequestChangeId <String>]`: The unique identifier of permissionsRequestChange
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
   - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

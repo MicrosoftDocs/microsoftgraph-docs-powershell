@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add a new conversation member to a team.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamMember?view=graph-powershell-1.0)
@@ -43,6 +44,7 @@ New-MgBetaGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Add a new conversation member to a team.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

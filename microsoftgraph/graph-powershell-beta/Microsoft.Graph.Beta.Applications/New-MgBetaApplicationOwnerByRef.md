@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Use this API to add an owner to an application by posting to the owners collection.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-1.0)
@@ -41,6 +42,7 @@ New-MgBetaApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParame
 
 ## DESCRIPTION
 Use this API to add an owner to an application by posting to the owners collection.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Add an owner to an application
@@ -231,6 +233,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UniqueName <String>]`: Alternate key of application

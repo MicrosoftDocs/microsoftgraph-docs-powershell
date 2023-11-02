@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a partner-specific configuration.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
@@ -59,6 +60,7 @@ Update-MgPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIden
 
 ## DESCRIPTION
 Update the properties of a partner-specific configuration.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Configure inbound trust settings

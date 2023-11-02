@@ -11,6 +11,7 @@ ms.prod: governance
 ## SYNOPSIS
 Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
 To request to add or remove an accessPackageResource, use create accessPackageResourceRequest.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -23,6 +24,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -Access
 ## DESCRIPTION
 Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
 To request to add or remove an accessPackageResource, use create accessPackageResourceRequest.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get catalog resources by catalog id

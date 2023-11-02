@@ -16,6 +16,7 @@ We recommend that you send a request in shorter time intervals (every 15 minutes
 Make sure that these requests are successful to prevent the call from timing out and ending.
 Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgKeepCommunicationCallAlive?view=graph-powershell-1.0)
@@ -41,6 +42,7 @@ We recommend that you send a request in shorter time intervals (every 15 minutes
 Make sure that these requests are successful to prevent the call from timing out and ending.
 Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

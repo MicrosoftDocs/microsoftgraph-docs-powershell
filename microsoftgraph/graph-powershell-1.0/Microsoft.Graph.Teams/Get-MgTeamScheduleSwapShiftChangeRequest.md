@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a swapShiftsChangeRequest object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
@@ -36,6 +37,7 @@ Get-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a swapShiftsChangeRequest object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

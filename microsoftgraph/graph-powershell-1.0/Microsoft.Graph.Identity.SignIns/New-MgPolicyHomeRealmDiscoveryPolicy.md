@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new homeRealmDiscoveryPolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
@@ -30,6 +31,7 @@ New-MgPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-WhatIf] [-Conf
 
 ## DESCRIPTION
 Create a new homeRealmDiscoveryPolicy object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

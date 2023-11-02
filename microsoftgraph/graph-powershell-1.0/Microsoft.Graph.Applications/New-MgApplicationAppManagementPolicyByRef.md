@@ -11,6 +11,7 @@ schema: 2.0.0
 Assign an appManagementPolicy policy object to an application or service principal object.
 The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
 Only one policy object can be assigned to an application or service principal.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
@@ -45,6 +46,7 @@ New-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity>
 Assign an appManagementPolicy policy object to an application or service principal object.
 The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
 Only one policy object can be assigned to an application or service principal.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

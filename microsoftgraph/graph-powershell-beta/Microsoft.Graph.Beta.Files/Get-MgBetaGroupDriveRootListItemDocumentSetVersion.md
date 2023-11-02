@@ -11,6 +11,7 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 Read the properties and relationships of a documentSetVersion object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaGroupDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

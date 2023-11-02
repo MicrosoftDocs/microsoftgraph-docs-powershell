@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete an externalitem.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionItem?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <St
 
 ## DESCRIPTION
 Delete an externalitem.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -172,6 +174,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
+  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
   - `[ExternalActivityId <String>]`: The unique identifier of externalActivity

@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Unpin a message from a chat.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgUserChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Unpin a message from a chat.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

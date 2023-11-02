@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgBetaSubscription?view=graph-powershell-beta)
@@ -31,6 +32,7 @@ Remove-MgSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

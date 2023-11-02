@@ -11,6 +11,7 @@ schema: 2.0.0
 Create an identity provider object that is of the type specified in the request body.
 Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityProvider?view=graph-powershell-beta)
@@ -33,6 +34,7 @@ New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-Wh
 Create an identity provider object that is of the type specified in the request body.
 Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

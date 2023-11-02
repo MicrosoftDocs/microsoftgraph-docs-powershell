@@ -10,6 +10,7 @@ ms.prod: applications
 
 ## SYNOPSIS
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationAccessToken](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationAccessToken?view=graph-powershell-1.0)
@@ -46,6 +47,7 @@ Get-MgBetaServicePrincipalSynchronizationAccessToken -InputObject <IApplications
 
 ## DESCRIPTION
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -229,6 +231,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UniqueName <String>]`: Alternate key of application

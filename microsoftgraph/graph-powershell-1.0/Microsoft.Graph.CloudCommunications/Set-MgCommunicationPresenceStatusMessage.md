@@ -8,7 +8,9 @@ schema: 2.0.0
 # Set-MgCommunicationPresenceStatusMessage
 
 ## SYNOPSIS
-Invoke action setStatusMessage
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaCommunicationPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationPresenceStatusMessage?view=graph-powershell-beta)
@@ -43,7 +45,9 @@ Set-MgCommunicationPresenceStatusMessage -InputObject <ICloudCommunicationsIdent
 ```
 
 ## DESCRIPTION
-Invoke action setStatusMessage
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -202,13 +206,14 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
       - `[ContentType <String>]`: bodyType
-    - `[PublishedDateTime <DateTime?>]`: 
+    - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 `INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
@@ -228,7 +233,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[PublishedDateTime <DateTime?>]`: 
+  - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 ## RELATED LINKS
 [Set-MgBetaCommunicationPresenceStatusMessage](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationPresenceStatusMessage?view=graph-powershell-beta)

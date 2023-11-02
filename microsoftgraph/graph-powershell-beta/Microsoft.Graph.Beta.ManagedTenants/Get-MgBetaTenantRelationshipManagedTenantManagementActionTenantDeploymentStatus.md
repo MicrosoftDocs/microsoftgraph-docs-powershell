@@ -11,6 +11,7 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Read the properties and relationships of a managementActionTenantDeploymentStatus object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,6 +38,7 @@ Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
 
 ## DESCRIPTION
 Read the properties and relationships of a managementActionTenantDeploymentStatus object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

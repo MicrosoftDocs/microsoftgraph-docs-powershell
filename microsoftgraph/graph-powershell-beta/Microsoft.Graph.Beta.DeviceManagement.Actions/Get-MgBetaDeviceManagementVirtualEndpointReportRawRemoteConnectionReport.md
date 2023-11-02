@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportrawremoteconnectionreport
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportRawRemoteConnectionReport
 
 ## SYNOPSIS
-Invoke action getRawRemoteConnectionReports
+Get the raw real-time remote connection report for a Cloud PC without any calculation, such as roundTripTime or available bandwidth, which are aggregated hourly from the raw event data.
 
 ## SYNTAX
 
@@ -28,7 +29,7 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRawRemoteConnectionReport -OutFil
 ```
 
 ## DESCRIPTION
-Invoke action getRawRemoteConnectionReports
+Get the raw real-time remote connection report for a Cloud PC without any calculation, such as roundTripTime or available bandwidth, which are aggregated hourly from the raw event data.
 
 ## PARAMETERS
 

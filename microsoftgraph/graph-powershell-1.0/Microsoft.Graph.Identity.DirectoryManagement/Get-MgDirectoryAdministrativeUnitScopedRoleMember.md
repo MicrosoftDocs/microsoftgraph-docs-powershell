@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitscopedrolemember
 schema: 2.0.0
+ms.prod: directory-management
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
 Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirecto
 
 ## DESCRIPTION
 Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -286,6 +290,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku

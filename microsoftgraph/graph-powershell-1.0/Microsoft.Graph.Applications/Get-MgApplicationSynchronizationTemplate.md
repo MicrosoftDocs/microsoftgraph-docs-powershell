@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationtemplate
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgApplicationSynchronizationTemplate
 
 ## SYNOPSIS
-Pre-configured synchronization settings for a particular application.
+Preconfigured synchronization settings for a particular application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
@@ -35,7 +36,7 @@ Get-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity> [-
 ```
 
 ## DESCRIPTION
-Pre-configured synchronization settings for a particular application.
+Preconfigured synchronization settings for a particular application.
 
 ## PARAMETERS
 

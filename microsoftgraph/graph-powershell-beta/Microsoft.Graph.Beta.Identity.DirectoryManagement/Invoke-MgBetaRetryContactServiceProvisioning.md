@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaretrycontactserviceprovisioning
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Invoke-MgBetaRetryContactServiceProvisioning
 
 ## SYNOPSIS
-Invoke action retryServiceProvisioning
+Retry the orgContact service provisioning.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgRetryContactServiceProvisioning](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgRetryContactServiceProvisioning?view=graph-powershell-1.0)
@@ -28,7 +30,8 @@ Invoke-MgBetaRetryContactServiceProvisioning -InputObject <IIdentityDirectoryMan
 ```
 
 ## DESCRIPTION
-Invoke action retryServiceProvisioning
+Retry the orgContact service provisioning.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

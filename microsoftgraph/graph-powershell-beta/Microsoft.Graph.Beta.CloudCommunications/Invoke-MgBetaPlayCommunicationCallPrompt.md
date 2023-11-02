@@ -10,7 +10,7 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Play a prompt in the call.
-For more information about how to handle operations, see commsOperation
+For more information about how to handle operations, see commsOperation This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgPlayCommunicationCallPrompt?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ Invoke-MgBetaPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdent
 
 ## DESCRIPTION
 Play a prompt in the call.
-For more information about how to handle operations, see commsOperation
+For more information about how to handle operations, see commsOperation This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

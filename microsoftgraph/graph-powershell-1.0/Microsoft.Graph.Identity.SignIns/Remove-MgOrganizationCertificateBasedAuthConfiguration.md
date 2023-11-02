@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a certificateBasedAuthConfiguration object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySi
 
 ## DESCRIPTION
 Delete a certificateBasedAuthConfiguration object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

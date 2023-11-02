@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a tag object permanently.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamTag?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgGroupTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassTh
 
 ## DESCRIPTION
 Delete a tag object permanently.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a delegatedAdminAccessAssignment object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
@@ -50,6 +51,7 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 ## DESCRIPTION
 Update the properties of a delegatedAdminAccessAssignment object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

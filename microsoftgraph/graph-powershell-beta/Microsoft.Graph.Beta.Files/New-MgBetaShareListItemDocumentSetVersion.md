@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new version of a document set item in a list.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
@@ -81,6 +82,7 @@ New-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Create a new version of a document set item in a list.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

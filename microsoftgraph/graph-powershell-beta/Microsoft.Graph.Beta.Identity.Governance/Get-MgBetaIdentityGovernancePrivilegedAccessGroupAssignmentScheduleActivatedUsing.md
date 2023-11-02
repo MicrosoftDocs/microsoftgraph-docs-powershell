@@ -9,8 +9,11 @@ schema: 2.0.0
 
 ## SYNOPSIS
 When the request activates an ownership or membership assignment in PIM for groups, this object represents the eligibility relationship.
-Otherwise, it is null.
+Otherwise, it's null.
 Supports $expand.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,7 +33,7 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsin
 
 ## DESCRIPTION
 When the request activates an ownership or membership assignment in PIM for groups, this object represents the eligibility relationship.
-Otherwise, it is null.
+Otherwise, it's null.
 Supports $expand.
 
 ## PARAMETERS
@@ -166,6 +169,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[On <String>]`: Usage: on='{on}'
+  - `[PermissionsRequestChangeId <String>]`: The unique identifier of permissionsRequestChange
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
   - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
@@ -213,4 +217,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing?view=graph-powershell-1.0)
 

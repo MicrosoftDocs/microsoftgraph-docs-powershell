@@ -9,7 +9,7 @@ ms.prod: users
 # Get-MgBetaUserCreatedObject
 
 ## SYNOPSIS
-Directory objects that were created by the user.
+Directory objects that the user created.
 Read-only.
 Nullable.
 
@@ -38,7 +38,7 @@ Get-MgBetaUserCreatedObject -InputObject <IUsersIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Directory objects that were created by the user.
+Directory objects that the user created.
 Read-only.
 Nullable.
 

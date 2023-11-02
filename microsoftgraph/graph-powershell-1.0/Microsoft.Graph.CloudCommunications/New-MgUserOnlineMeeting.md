@@ -31,7 +31,7 @@ New-MgCommunicationPresence -BodyParameter <IMicrosoftGraphPresence> [-WhatIf] [
 Create new navigation property to presences for communications
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Create an online meeting with user token
 
 ```powershell
 
@@ -47,9 +47,9 @@ $params = @{
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgUserOnlineMeeting Cmdlet.
+This example will create an online meeting with user token
 
-### Example 2: Code snippet
+### Example 2: Create an online meeting that requires a passcode
 
 ```powershell
 
@@ -68,9 +68,9 @@ $params = @{
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgUserOnlineMeeting Cmdlet.
+This example will create an online meeting that requires a passcode
 
-### Example 3: Code snippet
+### Example 3: Create an online meeting that doesn't require a passcode
 
 ```powershell
 
@@ -89,7 +89,7 @@ $params = @{
 New-MgUserOnlineMeeting -UserId $userId -BodyParameter $params
 
 ```
-This example shows how to use the New-MgUserOnlineMeeting Cmdlet.
+This example will create an online meeting that doesn't require a passcode
 
 
 ## PARAMETERS
@@ -243,6 +243,29 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Activity <String>]`: The supplemental information to a user's availability. Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
   - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
+  - `[StatusMessage <IMicrosoftGraphPresenceStatusMessage>]`: presenceStatusMessage
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+    - `[Message <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
+    - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
+
+`STATUSMESSAGE <IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+  - `[Message <IMicrosoftGraphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+  - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 ## RELATED LINKS
 [New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)

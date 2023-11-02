@@ -9,7 +9,8 @@ ms.prod: sharepoint
 # Copy-MgBetaDriveItem
 
 ## SYNOPSIS
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+Asynchronously creates a copy of an driveItem][item-resource] (including any children), under a new parent item or with a new name.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveItem?view=graph-powershell-1.0)
@@ -43,7 +44,8 @@ Copy-MgBetaDriveItem -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+Asynchronously creates a copy of an driveItem][item-resource] (including any children), under a new parent item or with a new name.
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

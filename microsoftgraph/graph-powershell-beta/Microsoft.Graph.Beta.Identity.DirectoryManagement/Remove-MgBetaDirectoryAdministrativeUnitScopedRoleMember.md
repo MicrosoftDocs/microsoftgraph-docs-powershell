@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentity
 
 ## DESCRIPTION
 Remove an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a localized branding object.
 To delete the organizationalBrandingLocalization object, all images (Stream types) must first be removed from the object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationBrandingLocalization?view=graph-powershell-1.0)
@@ -32,6 +33,7 @@ Remove-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Delete a localized branding object.
 To delete the organizationalBrandingLocalization object, all images (Stream types) must first be removed from the object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

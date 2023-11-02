@@ -8,7 +8,8 @@ schema: 2.0.0
 # Unpublish-MgSiteContentType
 
 ## SYNOPSIS
-Unpublish a [contentType][] from a content type hub site.
+Unpublish a contentType][] from a content type hub site.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Unpublish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -27,7 +28,8 @@ Unpublish-MgSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] 
 ```
 
 ## DESCRIPTION
-Unpublish a [contentType][] from a content type hub site.
+Unpublish a contentType][] from a content type hub site.
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Unpublish-MgSiteContentType Cmdlet

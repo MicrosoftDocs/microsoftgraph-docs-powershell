@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete an existing trustFrameworkPolicy.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -26,6 +27,7 @@ Remove-MgBetaTrustFrameworkPolicy -InputObject <IIdentitySignInsIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete an existing trustFrameworkPolicy.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaTrustFrameworkPolicy Cmdlet
@@ -199,6 +201,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

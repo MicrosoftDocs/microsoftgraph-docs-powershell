@@ -10,6 +10,7 @@ ms.prod: service-communications
 
 ## SYNOPSIS
 Mark a list of serviceUpdateMessages as unread for the signed in user.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgMarkServiceAnnouncementMessageUnread](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageUnread?view=graph-powershell-1.0)
@@ -31,6 +32,7 @@ Invoke-MgBetaMarkServiceAnnouncementMessageUnread
 
 ## DESCRIPTION
 Mark a list of serviceUpdateMessages as unread for the signed in user.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

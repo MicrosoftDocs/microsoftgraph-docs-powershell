@@ -12,6 +12,7 @@ ms.prod: bookings
 ## SYNOPSIS
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
 The start and end properties are always returned in UTC.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessAppointment?view=graph-powershell-1.0)
@@ -40,6 +41,7 @@ Get-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandPr
 ## DESCRIPTION
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
 The start and end properties are always returned in UTC.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingBusinessAppointment Cmdlet

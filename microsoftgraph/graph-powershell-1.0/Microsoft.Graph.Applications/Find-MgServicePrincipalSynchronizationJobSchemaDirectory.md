@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgserviceprincipalsynchronizationjobschemadirectory
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Find-MgServicePrincipalSynchronizationJobSchemaDirectory
 
 ## SYNOPSIS
 Discover the latest schema definition for provisioning to an application.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
@@ -29,6 +31,7 @@ Find-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplicat
 
 ## DESCRIPTION
 Discover the latest schema definition for provisioning to an application.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

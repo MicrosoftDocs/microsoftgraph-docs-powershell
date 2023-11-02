@@ -1,14 +1,14 @@
 ---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingtranscript
 schema: 2.0.0
 ---
 
-# Update-MgUserPresence
+# Update-MgUserOnlineMeetingTranscript
 
 ## SYNOPSIS
-Update the navigation property presence in users
+Update the navigation property transcripts in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserPresence?view=graph-powershell-beta)
@@ -17,50 +17,72 @@ Update the navigation property presence in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserPresence -UserId <String> [-Activity <String>] [-AdditionalProperties <Hashtable>]
- [-Availability <String>] [-Id <String>] [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-MeetingId <String>] [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MetadataContentInputFile <String>]
+ [-TranscriptContentUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserPresence -UserId <String> -BodyParameter <IMicrosoftGraphPresence> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgUserOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphCallTranscript> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Availability <String>] [-Id <String>]
- [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-MeetingId <String>] [-MeetingOrganizer <IMicrosoftGraphIdentitySet>] [-MetadataContentInputFile <String>]
+ [-TranscriptContentUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserPresence -InputObject <ICloudCommunicationsIdentity> -BodyParameter <IMicrosoftGraphPresence>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphCallTranscript> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property presence in users
+Update the navigation property transcripts in users
+
+## EXAMPLES
+### Example 1: Get your own presence information
+
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Get-MgUserPresence -UserId $userId
+```
+This example shows how to use the Update-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get the presence information of another user
+
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgUserPresence -UserId $userId
+```
+This example shows how to use the Update-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get the presence information of another user
+
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgCommunicationPresence -PresenceId $presenceId
+```
+This example shows how to use the Update-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
-
-### -Activity
-The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -AdditionalProperties
 Additional Parameters
@@ -77,9 +99,40 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Availability
-The base presence information for a user.
-Possible values are Available, AvailableIdle, Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
+### -BodyParameter
+callTranscript
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCallTranscript
+Parameter Sets: Update, UpdateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CallTranscriptId
+The unique identifier of callTranscript
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContentInputFile
+Input File for Content (The content of the transcript.
+Read-only.)
 
 ```yaml
 Type: String
@@ -93,19 +146,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-presence
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+### -CreatedDateTime
+Date and time at which the transcript was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
 
 ```yaml
-Type: IMicrosoftGraphPresence
-Parameter Sets: Update, UpdateViaIdentity
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -141,12 +196,75 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -StatusMessage
-presenceStatusMessage
-To construct, see NOTES section for STATUSMESSAGE properties and create a hash table.
+### -MeetingId
+The unique identifier of the online meeting related to this transcript.
+Read-only.
 
 ```yaml
-Type: IMicrosoftGraphPresenceStatusMessage
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MeetingOrganizer
+identitySet
+To construct, see NOTES section for MEETINGORGANIZER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MetadataContentInputFile
+Input File for MetadataContent (The time-aligned metadata of the utterances in the transcript.
+Read-only.)
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OnlineMeetingId
+The unique identifier of onlineMeeting
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TranscriptContentUrl
+The URL that can be used to access the content of the transcript.
+Read-only.
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,66 +327,59 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPresence
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallTranscript
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPresence
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallTranscript
 ## NOTES
+
+ALIASES
+
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties.
-For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphPresence\>: presence
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
-Read-only.
-  \[Activity \<String\>\]: The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
-  \[Availability \<String\>\]: The base presence information for a user.
-Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
-  \[StatusMessage \<IMicrosoftGraphPresenceStatusMessage\>\]: presenceStatusMessage
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ExpiryDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
-See below for more possible values.
-    \[Message \<IMicrosoftGraphItemBody\>\]: itemBody
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Content \<String\>\]: The content of the item.
-      \[ContentType \<String\>\]: bodyType
-    \[PublishedDateTime \<DateTime?\>\]: 
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[UserId \<String\>\]: The unique identifier of user
+`BODYPARAMETER <IMicrosoftGraphCallTranscript>`: callTranscript
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Content <Byte[]>]`: The content of the transcript. Read-only.
+  - `[CreatedDateTime <DateTime?>]`: Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[MeetingId <String>]`: The unique identifier of the online meeting related to this transcript. Read-only.
+  - `[MeetingOrganizer <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[MetadataContent <Byte[]>]`: The time-aligned metadata of the utterances in the transcript. Read-only.
+  - `[TranscriptContentUrl <String>]`: The URL that can be used to access the content of the transcript. Read-only.
 
-STATUSMESSAGE \<IMicrosoftGraphPresenceStatusMessage\>: presenceStatusMessage
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ExpiryDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
-See below for more possible values.
-  \[Message \<IMicrosoftGraphItemBody\>\]: itemBody
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: The content of the item.
-    \[ContentType \<String\>\]: bodyType
-  \[PublishedDateTime \<DateTime?\>\]:
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[UserId <String>]`: The unique identifier of user
+
+`MEETINGORGANIZER <IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
 [Update-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserPresence?view=graph-powershell-beta)
-
-[https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence)
-

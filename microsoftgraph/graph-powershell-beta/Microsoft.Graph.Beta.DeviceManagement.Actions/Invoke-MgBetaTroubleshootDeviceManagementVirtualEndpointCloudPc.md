@@ -11,6 +11,7 @@ ms.prod: cloud-pc
 ## SYNOPSIS
 Troubleshoot a specific Cloud PC.
 Use this API to check the health status of the Cloud PC and the session host.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,6 +30,7 @@ Invoke-MgBetaTroubleshootDeviceManagementVirtualEndpointCloudPc -InputObject <ID
 ## DESCRIPTION
 Troubleshoot a specific Cloud PC.
 Use this API to check the health status of the Cloud PC and the session host.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaTroubleshootDeviceManagementVirtualEndpointCloudPc Cmdlet

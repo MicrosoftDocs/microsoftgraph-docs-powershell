@@ -11,6 +11,7 @@ ms.prod: people
 
 ## SYNOPSIS
 Read the properties and relationships of an itemAddress object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Read the properties and relationships of an itemAddress object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileAddress Cmdlet

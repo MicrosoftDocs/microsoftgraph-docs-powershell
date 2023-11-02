@@ -12,6 +12,7 @@ ms.prod: outlook
 This action allows the organizer or attendee of a meeting event to forward the nmeeting request to a new recipient.
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's ncopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgForwardUserEvent](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserEvent?view=graph-powershell-1.0)
@@ -50,6 +51,7 @@ Invoke-MgBetaForwardUserEvent -InputObject <IUsersActionsIdentity>
 This action allows the organizer or attendee of a meeting event to forward the nmeeting request to a new recipient.
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's ncopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaForwardUserEvent Cmdlet
@@ -268,7 +270,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
@@ -290,7 +291,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation

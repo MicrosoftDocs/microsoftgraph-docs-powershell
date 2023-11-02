@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgGroupSiteListContentTypeColumn
 
 ## SYNOPSIS
-Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
+Remove a column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListContentTypeColumn?view=graph-powershell-beta)
@@ -28,7 +29,8 @@ Remove-MgGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
+Remove a column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

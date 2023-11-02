@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveroot
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgGroupDriveRoot
@@ -10,6 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRoot?view=graph-powershell-beta)
@@ -31,6 +33,7 @@ Get-MgGroupDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

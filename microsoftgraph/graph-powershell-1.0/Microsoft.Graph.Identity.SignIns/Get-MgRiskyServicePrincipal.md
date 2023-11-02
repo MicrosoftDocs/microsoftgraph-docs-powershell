@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyserviceprincipal
 schema: 2.0.0
+ms.prod: identity-and-sign-in
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgRiskyServicePrincipal
 
 ## SYNOPSIS
 Read the properties and relationships of a riskyServicePrincipal object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-ExpandProp
 
 ## DESCRIPTION
 Read the properties and relationships of a riskyServicePrincipal object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

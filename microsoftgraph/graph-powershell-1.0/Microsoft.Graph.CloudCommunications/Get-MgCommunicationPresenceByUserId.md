@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationpresencebyuserid
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationPresenceByUserId
 
 ## SYNOPSIS
 Get the presence information for multiple users.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationPresenceByUserId?view=graph-powershell-beta)
@@ -30,6 +32,7 @@ Get-MgCommunicationPresenceByUserId
 
 ## DESCRIPTION
 Get the presence information for multiple users.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserInferenceClassification
 
 ## SYNOPSIS
-Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
+Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserInferenceClassification](/powershell/module/Microsoft.Graph.Mail/Get-MgUserInferenceClassification?view=graph-powershell-1.0)
@@ -26,7 +26,7 @@ Get-MgBetaUserInferenceClassification -InputObject <IMailIdentity> [-Property <S
 ```
 
 ## DESCRIPTION
-Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
+Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
 
 ## PARAMETERS
 

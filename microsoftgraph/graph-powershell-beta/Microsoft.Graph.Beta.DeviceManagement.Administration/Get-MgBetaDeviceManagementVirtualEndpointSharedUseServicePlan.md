@@ -11,6 +11,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of a cloudPcSharedUseServicePlan object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,6 +37,7 @@ Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcSharedUseServicePlan object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

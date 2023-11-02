@@ -11,6 +11,7 @@ ms.prod: browser-management
 
 ## SYNOPSIS
 Get a browserSite that resides on a browserSiteList.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagem
 
 ## DESCRIPTION
 Get a browserSite that resides on a browserSiteList.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

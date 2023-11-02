@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
@@ -44,6 +45,7 @@ Stop-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Stop-MgBookingBusinessAppointment Cmdlet

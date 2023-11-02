@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
@@ -32,6 +33,7 @@ New-MgPrintTaskDefinition -BodyParameter <IMicrosoftGraphPrintTaskDefinition> [-
 ## DESCRIPTION
 Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -206,7 +208,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AppId <String>]`: Refers to the Unique GUID representing Application Id in the Azure Active Directory.
-    - `[DisplayName <String>]`: Refers to the Application Name displayed in the Azure Portal.
+    - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
     - `[ServicePrincipalId <String>]`: Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.
     - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
   - `[DisplayName <String>]`: The name of the printTaskDefinition.
@@ -227,7 +229,7 @@ To create the parameters described below, construct a hash table containing the 
 `CREATEDBY <IMicrosoftGraphAppIdentity>`: appIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppId <String>]`: Refers to the Unique GUID representing Application Id in the Azure Active Directory.
-  - `[DisplayName <String>]`: Refers to the Application Name displayed in the Azure Portal.
+  - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
   - `[ServicePrincipalId <String>]`: Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.
   - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
 
@@ -239,7 +241,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AppId <String>]`: Refers to the Unique GUID representing Application Id in the Azure Active Directory.
-      - `[DisplayName <String>]`: Refers to the Application Name displayed in the Azure Portal.
+      - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
       - `[ServicePrincipalId <String>]`: Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.
       - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
     - `[DisplayName <String>]`: The name of the printTaskDefinition.

@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Modify sources and receivers of an audioRoutingGroup.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
@@ -43,6 +44,7 @@ Update-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicatio
 
 ## DESCRIPTION
 Modify sources and receivers of an audioRoutingGroup.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaCommunicationCallAudioRoutingGroup Cmdlet

@@ -12,6 +12,7 @@ ms.prod: groups
 Get a list of users or groups that are in the accepted-senders list for this group.
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
@@ -27,6 +28,7 @@ Get-MgBetaGroupAcceptedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <
 Get a list of users or groups that are in the accepted-senders list for this group.
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

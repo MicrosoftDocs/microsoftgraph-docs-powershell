@@ -16,6 +16,7 @@ As part of the response, this action returns an upload URL that you can use in s
 Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageAttachmentUploadSession?view=graph-powershell-beta)
@@ -59,6 +60,7 @@ As part of the response, this action returns an upload URL that you can use in s
 Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgUserMessageAttachmentUploadSession Cmdlet
@@ -242,10 +244,10 @@ To create the parameters described below, construct a hash table containing the 
 `ATTACHMENTITEM <IMicrosoftGraphAttachmentItem>`: attachmentItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentType <String>]`: attachmentType
-  - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
+  - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing for the in-line attachments using the <img src='cid:contentId'> tag in HTML messages. Optional.
   - `[ContentType <String>]`: The nature of the data in the attachment. Optional.
   - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false. Optional.
-  - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
+  - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and doesn't have to be the actual file name. Required.
   - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
 `BODYPARAMETER <IPaths1C56La0UsersUserIdMessagesMessageIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
@@ -253,10 +255,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttachmentType <String>]`: attachmentType
-    - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
+    - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing for the in-line attachments using the <img src='cid:contentId'> tag in HTML messages. Optional.
     - `[ContentType <String>]`: The nature of the data in the attachment. Optional.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false. Optional.
-    - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
+    - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and doesn't have to be the actual file name. Required.
     - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
 `INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
@@ -284,7 +286,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

@@ -10,6 +10,7 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Get the user synchronization policy of a partner-specific configuration.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-1.0)
@@ -31,6 +32,7 @@ Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObje
 
 ## DESCRIPTION
 Get the user synchronization policy of a partner-specific configuration.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -164,6 +166,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcheckoutgroupdriveroot
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgCheckoutGroupDriveRoot
 
 ## SYNOPSIS
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaDismissGroupCalendarEventReminder?view=graph-powershell-beta)
@@ -29,6 +31,7 @@ Invoke-MgCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-PassThru] [-Wha
 
 ## DESCRIPTION
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

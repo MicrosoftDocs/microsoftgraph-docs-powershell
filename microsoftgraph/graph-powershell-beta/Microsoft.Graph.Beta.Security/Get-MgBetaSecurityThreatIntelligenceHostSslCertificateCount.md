@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostSslCertificateCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSslCertificateCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -150,6 +153,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -192,4 +196,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostSslCertificateCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSslCertificateCount?view=graph-powershell-1.0)
 

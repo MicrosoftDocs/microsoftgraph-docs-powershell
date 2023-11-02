@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationflowpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyAuthenticationFlowPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of an authenticationFlowsPolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
@@ -21,6 +23,7 @@ Get-MgPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property <St
 
 ## DESCRIPTION
 Read the properties and relationships of an authenticationFlowsPolicy object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

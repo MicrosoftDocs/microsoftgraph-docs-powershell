@@ -11,6 +11,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Read the properties and relationships of an unifiedRbacResourceAction object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,6 +38,7 @@ Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction
 
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceAction object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

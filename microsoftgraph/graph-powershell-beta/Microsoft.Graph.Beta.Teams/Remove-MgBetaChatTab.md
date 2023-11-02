@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove (unpin) a tab from the specified chat.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatTab?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaChatTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThr
 
 ## DESCRIPTION
 Remove (unpin) a tab from the specified chat.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

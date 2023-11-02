@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new activityBasedTimeoutPolicy object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-1.0)
@@ -30,6 +31,7 @@ New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-WhatIf] 
 
 ## DESCRIPTION
 Create a new activityBasedTimeoutPolicy object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

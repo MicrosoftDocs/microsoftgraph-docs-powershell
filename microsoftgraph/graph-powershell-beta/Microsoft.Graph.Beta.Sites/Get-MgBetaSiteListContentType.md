@@ -9,7 +9,7 @@ ms.prod: sites-and-lists
 # Get-MgBetaSiteListContentType
 
 ## SYNOPSIS
-Get contentTypes from sites
+The collection of content types present in this list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListContentType?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Get-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get contentTypes from sites
+The collection of content types present in this list.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSiteListContentType Cmdlet
@@ -309,6 +309,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup

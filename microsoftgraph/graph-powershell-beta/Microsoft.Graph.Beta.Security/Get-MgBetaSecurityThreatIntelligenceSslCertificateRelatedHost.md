@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost
 
 ## SYNOPSIS
-Get relatedHosts from security
+The hosts related with this sslCertificate.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,7 +35,7 @@ Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost -InputObject <ISec
 ```
 
 ## DESCRIPTION
-Get relatedHosts from security
+The hosts related with this sslCertificate.
 
 ## PARAMETERS
 
@@ -287,6 +290,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -329,4 +333,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost?view=graph-powershell-1.0)
 

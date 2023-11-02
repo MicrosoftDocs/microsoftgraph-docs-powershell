@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadmincustomer
 schema: 2.0.0
+ms.prod: partner-customer-administration
+ms.prod: partner-customer-administration
 ---
 
 # Get-MgTenantRelationshipDelegatedAdminCustomer
 
 ## SYNOPSIS
 Read the properties of a delegatedAdminCustomer object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPartnerIde
 
 ## DESCRIPTION
 Read the properties of a delegatedAdminCustomer object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

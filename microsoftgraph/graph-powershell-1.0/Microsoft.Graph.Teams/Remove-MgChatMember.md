@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove a conversationMember from a chat.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatMember?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru
 
 ## DESCRIPTION
 Remove a conversationMember from a chat.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

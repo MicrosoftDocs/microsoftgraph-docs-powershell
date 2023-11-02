@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove a user's manager.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Remove-MgUserManagerByRef?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>] 
 
 ## DESCRIPTION
 Remove a user's manager.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -13,6 +13,7 @@ In some situations, it is appropriate for an application to remove a participant
 This action can be done before or after the participant answers the call.
 When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
 When an invited participant is removed, any outstanding add participant request is canceled.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallParticipant?view=graph-powershell-1.0)
@@ -37,6 +38,7 @@ In some situations, it is appropriate for an application to remove a participant
 This action can be done before or after the participant answers the call.
 When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
 When an invited participant is removed, any outstanding add participant request is canceled.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -11,6 +11,7 @@ ms.prod: applications
 ## SYNOPSIS
 List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenLifetimePolicy?view=graph-powershell-1.0)
@@ -26,6 +27,7 @@ Get-MgBetaApplicationTokenLifetimePolicy -ApplicationId <String> [-ExpandPropert
 ## DESCRIPTION
 List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

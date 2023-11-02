@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckoutdriveroot
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Invoke-MgCheckoutDriveRoot
 
 ## SYNOPSIS
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaCheckoutDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckoutDriveRoot?view=graph-powershell-beta)
@@ -27,6 +29,7 @@ Invoke-MgCheckoutDriveRoot -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [
 
 ## DESCRIPTION
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

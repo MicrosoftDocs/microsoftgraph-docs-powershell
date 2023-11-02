@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a servicePrincipal object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete a servicePrincipal object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

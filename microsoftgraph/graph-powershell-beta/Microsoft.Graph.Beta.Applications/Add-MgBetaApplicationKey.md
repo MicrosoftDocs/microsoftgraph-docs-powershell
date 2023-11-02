@@ -14,6 +14,7 @@ This method, along with removeKey, can be used by an application to automate rol
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationKey?view=graph-powershell-1.0)
@@ -54,6 +55,7 @@ This method, along with removeKey, can be used by an application to automate rol
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Add a new key credential to an application
@@ -312,6 +314,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UniqueName <String>]`: Alternate key of application

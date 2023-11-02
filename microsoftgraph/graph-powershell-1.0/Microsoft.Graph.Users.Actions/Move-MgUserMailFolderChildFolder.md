@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Move a mailfolder and its contents to another mailfolder.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Move-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
@@ -43,6 +44,7 @@ Move-MgUserMailFolder -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Move a mailfolder and its contents to another mailfolder.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -235,7 +237,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

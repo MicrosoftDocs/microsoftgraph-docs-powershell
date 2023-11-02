@@ -14,6 +14,7 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationMemberGroup?view=graph-powershell-1.0)
@@ -52,6 +53,7 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

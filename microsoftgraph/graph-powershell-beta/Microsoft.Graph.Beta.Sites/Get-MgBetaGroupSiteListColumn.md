@@ -9,7 +9,7 @@ ms.prod: sites-and-lists
 # Get-MgBetaGroupSiteListColumn
 
 ## SYNOPSIS
-Get columns from groups
+The collection of field definitions for this list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListColumn?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Get-MgBetaGroupSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get columns from groups
+The collection of field definitions for this list.
 
 ## EXAMPLES
 
@@ -317,6 +317,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup

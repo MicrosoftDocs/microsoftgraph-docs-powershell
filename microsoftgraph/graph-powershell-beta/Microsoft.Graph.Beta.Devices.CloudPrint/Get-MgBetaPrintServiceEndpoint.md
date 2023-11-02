@@ -11,6 +11,7 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a print service endpoint.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintServiceEndpoint?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-Expan
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a print service endpoint.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

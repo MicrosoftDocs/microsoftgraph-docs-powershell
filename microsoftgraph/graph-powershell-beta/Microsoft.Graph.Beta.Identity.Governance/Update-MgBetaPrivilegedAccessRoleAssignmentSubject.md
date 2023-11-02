@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -Email
 The email address of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
 
 ```yaml
 Type: String
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 
 ### -PrincipalName
 The principal name of the user subject.
-If the subject is in other types, it is empty.
+If the subject is in other types, it's empty.
 
 ```yaml
 Type: String
@@ -254,8 +254,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the subject.
-  - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
-  - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
+  - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it's empty.
+  - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it's empty.
   - `[Type <String>]`: The type of the subject. The value can be User, Group, and ServicePrincipal.
 
 `INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
@@ -310,6 +310,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[On <String>]`: Usage: on='{on}'
+  - `[PermissionsRequestChangeId <String>]`: The unique identifier of permissionsRequestChange
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
   - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

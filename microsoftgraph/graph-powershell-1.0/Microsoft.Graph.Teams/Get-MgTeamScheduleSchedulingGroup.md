@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a schedulingGroup by ID.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
@@ -35,6 +36,7 @@ Get-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-Property <Stri
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a schedulingGroup by ID.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

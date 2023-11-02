@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
@@ -33,6 +34,7 @@ New-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfigurat
 ## DESCRIPTION
 Create a new authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

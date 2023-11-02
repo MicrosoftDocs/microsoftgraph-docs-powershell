@@ -11,6 +11,7 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an eDiscovery reviewSetQuery object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdenti
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an eDiscovery reviewSetQuery object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseReviewSetQuery Cmdlet

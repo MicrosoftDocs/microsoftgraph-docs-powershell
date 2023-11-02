@@ -11,6 +11,7 @@ ms.prod: directory-management
 ## SYNOPSIS
 Postpone action on an impactedResource object to a specified future date and time by marking its status as postponed.
 On the specified date and time, Azure AD will automatically mark the status of the impactedResource object to active.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,6 +45,7 @@ Invoke-MgBetaPostponeDirectoryImpactedResource -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Postpone action on an impactedResource object to a specified future date and time by marking its status as postponed.
 On the specified date and time, Azure AD will automatically mark the status of the impactedResource object to active.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

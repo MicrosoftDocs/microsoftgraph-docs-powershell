@@ -12,7 +12,7 @@ Delete Microsoft Teams messages contained in a eDiscovery search.
 You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
 Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
 Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams
+For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams  This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Clear-MgSecurityCaseEdiscoveryCaseSearchData](/powershell/module/Microsoft.Graph.Security/Clear-MgSecurityCaseEdiscoveryCaseSearchData?view=graph-powershell-1.0)
@@ -52,7 +52,7 @@ Delete Microsoft Teams messages contained in a eDiscovery search.
 You can collect and purge the following categories of Teams content:- Teams 1:1 chats - Chat messages, posts, and attachments shared in a Teams conversation between two people.
 Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messages, posts, and attachments shared in a Teams conversation between three or more people.
 Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
-For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams
+For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams  This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData Cmdlet
@@ -278,6 +278,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker

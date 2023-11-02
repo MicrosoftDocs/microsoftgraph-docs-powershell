@@ -12,6 +12,7 @@ ms.prod: cloud-communications
 Clear a presence session of an application for a user.
 If it is the user's only presence session, a successful clearPresence changes the user's presence to Offline/Offline.
 Read more about presence sessions and their time-out and expiration.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Clear-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresence?view=graph-powershell-1.0)
@@ -48,6 +49,7 @@ Clear-MgBetaUserPresence -InputObject <IUsersActionsIdentity>
 Clear a presence session of an application for a user.
 If it is the user's only presence session, a successful clearPresence changes the user's presence to Offline/Offline.
 Read more about presence sessions and their time-out and expiration.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -226,7 +228,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
@@ -248,7 +249,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation

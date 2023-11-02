@@ -10,6 +10,7 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Get the identity providers in a b2cIdentityUserFlow object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -21,6 +22,7 @@ Get-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <Strin
 
 ## DESCRIPTION
 Get the identity providers in a b2cIdentityUserFlow object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcall
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCall
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a call object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCall?view=graph-powershell-beta)
@@ -29,6 +31,7 @@ Get-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-ExpandProp
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a call object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Getting a Peer-to-Peer call
@@ -140,6 +143,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport

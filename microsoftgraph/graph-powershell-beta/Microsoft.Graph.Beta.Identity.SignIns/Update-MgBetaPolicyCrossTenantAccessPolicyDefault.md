@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the default configuration of a cross-tenant access policy.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Update-MgBetaPolicyCrossTenantAccessPolicyDefault
 
 ## DESCRIPTION
 Update the default configuration of a cross-tenant access policy.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -382,9 +384,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
   - `[InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>]`: crossTenantAccessPolicyInboundTrust
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Azure AD organizations are trusted.
-    - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether hybrid Azure AD joined devices from external Azure AD organizations are trusted.
-    - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Azure AD organizations is trusted.
+    - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
+    - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
+    - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Microsoft Entra organizations is trusted.
+  - `[InvitationRedemptionIdentityProviderConfiguration <IMicrosoftGraphDefaultInvitationRedemptionIdentityProviderConfiguration>]`: defaultInvitationRedemptionIdentityProviderConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[FallbackIdentityProvider <String>]`: b2bIdentityProvidersType
+    - `[PrimaryIdentityProviderPrecedenceOrder <String[]>]`: 
   - `[IsServiceDefault <Boolean?>]`: If true, the default configuration is set to the system default configuration. If false, the default settings have been customized.
   - `[TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]`: crossTenantAccessPolicyTenantRestrictions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -397,9 +403,9 @@ To create the parameters described below, construct a hash table containing the 
 
 `INBOUNDTRUST <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenantAccessPolicyInboundTrust
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Azure AD organizations are trusted.
-  - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether hybrid Azure AD joined devices from external Azure AD organizations are trusted.
-  - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Azure AD organizations is trusted.
+  - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
+  - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
+  - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Microsoft Entra organizations is trusted.
 
 `TENANTRESTRICTIONS <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>`: crossTenantAccessPolicyTenantRestrictions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

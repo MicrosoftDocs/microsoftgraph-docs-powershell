@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementsetting
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementSetting
 
 ## SYNOPSIS
 Retrieve the properties of an entitlementManagementSettings object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)
@@ -21,6 +23,7 @@ Get-MgEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <Stri
 
 ## DESCRIPTION
 Retrieve the properties of an entitlementManagementSettings object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

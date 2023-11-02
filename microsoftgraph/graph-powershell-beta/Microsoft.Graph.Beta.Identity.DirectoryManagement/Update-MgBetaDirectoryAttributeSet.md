@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of an attributeSet object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryAttributeSet?view=graph-powershell-1.0)
@@ -43,6 +44,7 @@ Update-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIde
 
 ## DESCRIPTION
 Update the properties of an attributeSet object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaDirectoryAttributeSet Cmdlet

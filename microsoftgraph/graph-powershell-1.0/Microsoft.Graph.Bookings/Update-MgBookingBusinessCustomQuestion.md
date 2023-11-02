@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a bookingCustomQuestion object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
@@ -43,6 +44,7 @@ Update-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the properties of a bookingCustomQuestion object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPrintPrinter](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinter?view=graph-powershell-1.0)
@@ -34,6 +35,7 @@ New-MgBetaPrintPrinter
 ## DESCRIPTION
 Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

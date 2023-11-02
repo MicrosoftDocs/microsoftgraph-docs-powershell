@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Collection of pages with the default content to display in a user flow for a specified language.
-This collection does not allow any kind of modification.
+This collection doesn't allow any kind of modification.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsIdent
 
 ## DESCRIPTION
 Collection of pages with the default content to display in a user flow for a specified language.
-This collection does not allow any kind of modification.
+This collection doesn't allow any kind of modification.
 
 ## PARAMETERS
 

@@ -10,7 +10,8 @@ ms.prod: sites-and-lists
 # Get-MgBetaDriveListContentTypeColumn
 
 ## SYNOPSIS
-Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
+Retrieve the metadata for a site][], [list][] or [contentType][] [column][columnDefinition].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentTypeColumn?view=graph-powershell-1.0)
@@ -37,7 +38,8 @@ Get-MgBetaDriveListContentTypeColumn -InputObject <IFilesIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
+Retrieve the metadata for a site][], [list][] or [contentType][] [column][columnDefinition].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

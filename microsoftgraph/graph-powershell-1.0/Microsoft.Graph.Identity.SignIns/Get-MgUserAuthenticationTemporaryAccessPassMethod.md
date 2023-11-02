@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationtemporaryaccesspassmethod
 schema: 2.0.0
+ms.prod: identity-and-sign-in
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgUserAuthenticationTemporaryAccessPassMethod
 
 ## SYNOPSIS
 Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySignIns
 
 ## DESCRIPTION
 Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

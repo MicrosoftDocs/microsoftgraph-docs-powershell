@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the metadata for the location where the files of a channel are stored.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelFileFolder?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Get-MgBetaTeamChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Get the metadata for the location where the files of a channel are stored.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

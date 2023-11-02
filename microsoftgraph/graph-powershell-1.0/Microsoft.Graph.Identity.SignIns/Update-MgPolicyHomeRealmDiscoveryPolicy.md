@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a homeRealmDiscoveryPolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
@@ -45,6 +46,7 @@ Update-MgPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity> 
 
 ## DESCRIPTION
 Update the properties of a homeRealmDiscoveryPolicy object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

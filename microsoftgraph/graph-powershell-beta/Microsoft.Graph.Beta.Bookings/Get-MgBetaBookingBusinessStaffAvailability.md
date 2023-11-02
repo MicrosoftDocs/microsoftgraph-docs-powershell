@@ -10,6 +10,7 @@ ms.prod: bookings
 
 ## SYNOPSIS
 Get the availability information of staff members of a Microsoft Bookings calendar.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessStaffAvailability](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessStaffAvailability?view=graph-powershell-1.0)
@@ -46,6 +47,7 @@ Get-MgBetaBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Get the availability information of staff members of a Microsoft Bookings calendar.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

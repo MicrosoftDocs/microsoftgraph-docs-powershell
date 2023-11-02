@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplication
 schema: 2.0.0
+ms.prod: applications
+ms.prod: applications
 ---
 
 # Get-MgApplication
 
 ## SYNOPSIS
 Get the properties and relationships of an application object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplication?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgApplication -InputObject <IApplicationsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Get the properties and relationships of an application object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get a list of applications

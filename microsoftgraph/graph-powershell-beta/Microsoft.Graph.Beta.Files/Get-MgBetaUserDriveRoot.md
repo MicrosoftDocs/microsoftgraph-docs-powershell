@@ -10,6 +10,7 @@ ms.prod: files
 
 ## SYNOPSIS
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRoot?view=graph-powershell-1.0)
@@ -30,6 +31,7 @@ Get-MgBetaUserDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

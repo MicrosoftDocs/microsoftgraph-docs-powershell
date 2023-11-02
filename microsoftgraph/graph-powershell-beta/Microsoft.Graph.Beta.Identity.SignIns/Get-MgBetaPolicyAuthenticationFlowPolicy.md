@@ -10,6 +10,7 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Read the properties and relationships of an authenticationFlowsPolicy object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-1.0)
@@ -23,6 +24,7 @@ Get-MgBetaPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property
 
 ## DESCRIPTION
 Read the properties and relationships of an authenticationFlowsPolicy object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

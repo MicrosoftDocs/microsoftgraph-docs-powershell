@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitemdocumentsetversion
 schema: 2.0.0
+ms.prod: sites-and-lists
+ms.prod: sites-and-lists
 ---
 
 # Get-MgDriveListItemDocumentSetVersion
 
 ## SYNOPSIS
 Read the properties and relationships of a documentSetVersion object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-ExpandProp
 
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

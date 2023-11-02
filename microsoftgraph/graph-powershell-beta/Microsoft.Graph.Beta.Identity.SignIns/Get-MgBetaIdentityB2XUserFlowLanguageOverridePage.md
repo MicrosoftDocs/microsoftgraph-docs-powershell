@@ -10,7 +10,7 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Collection of pages with the overrides messages to display in a user flow for a specified language.
-This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
+This collection only allows to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-1.0)
@@ -40,7 +40,7 @@ Get-MgBetaIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySignIns
 
 ## DESCRIPTION
 Collection of pages with the overrides messages to display in a user flow for a specified language.
-This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
+This collection only allows to modify the content of the page, any other modification isn't allowed (creation or deletion of pages).
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -339,6 +339,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

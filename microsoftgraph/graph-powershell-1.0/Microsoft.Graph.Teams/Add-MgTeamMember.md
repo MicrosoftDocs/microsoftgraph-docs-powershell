@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteammember
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Add-MgTeamMember
@@ -10,6 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamMember?view=graph-powershell-beta)
@@ -45,6 +47,7 @@ Add-MgTeamMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Add members in bulk to a team

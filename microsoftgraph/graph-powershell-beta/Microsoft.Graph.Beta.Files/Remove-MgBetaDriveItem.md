@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaDriveItem
 
 ## SYNOPSIS
-Delete a DriveItem by using its ID or path.Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItem?view=graph-powershell-1.0)
@@ -28,7 +29,8 @@ Remove-MgBetaDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Delete a DriveItem by using its ID or path.Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
+Delete a DriveItem by using its ID or path.Deleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

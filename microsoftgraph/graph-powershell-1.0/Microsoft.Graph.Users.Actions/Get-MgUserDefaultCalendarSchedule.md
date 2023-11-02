@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguserdefaultcalendarschedule
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgUserDefaultCalendarSchedule
 
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserDefaultCalendarSchedule?view=graph-powershell-beta)
@@ -45,6 +47,7 @@ Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgUserDefaultCalendarSchedule Cmdlet
@@ -287,7 +290,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

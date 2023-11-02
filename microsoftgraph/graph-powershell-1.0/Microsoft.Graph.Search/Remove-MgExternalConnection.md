@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Deletes an externalConnection object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnection?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgExternalConnection -InputObject <ISearchIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Deletes an externalConnection object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

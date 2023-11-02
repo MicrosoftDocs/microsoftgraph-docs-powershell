@@ -12,6 +12,7 @@ ms.prod: bookings
 ## SYNOPSIS
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingCurrency?view=graph-powershell-1.0)
@@ -40,6 +41,7 @@ Get-MgBetaBookingCurrency -InputObject <IBookingsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingCurrency Cmdlet

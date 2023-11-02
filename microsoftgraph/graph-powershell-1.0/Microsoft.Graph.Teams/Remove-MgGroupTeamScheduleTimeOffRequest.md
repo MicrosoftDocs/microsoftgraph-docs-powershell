@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a timeOffRequest object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-IfMatch
 
 ## DESCRIPTION
 Delete a timeOffRequest object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

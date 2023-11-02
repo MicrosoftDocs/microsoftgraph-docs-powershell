@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotask
 schema: 2.0.0
+ms.prod: outlook
+ms.prod: outlook
 ---
 
 # Get-MgUserTodoTask
 
 ## SYNOPSIS
 Read the properties and relationships of a todoTask object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTask](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTask?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgUserTodoTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-
 
 ## DESCRIPTION
 Read the properties and relationships of a todoTask object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

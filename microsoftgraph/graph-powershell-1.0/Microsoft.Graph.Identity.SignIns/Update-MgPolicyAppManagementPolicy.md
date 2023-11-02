@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update an appManagementPolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
@@ -45,6 +46,7 @@ Update-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update an appManagementPolicy object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

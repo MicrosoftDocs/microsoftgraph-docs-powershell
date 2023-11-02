@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of oAuth2PermissionGrant object, representing a delegated permission grant.
 An oAuth2PermissionGrant can be updated to change which delegated permissions are granted, by adding or removing items from the list in scopes.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
@@ -45,6 +46,7 @@ Update-MgOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of oAuth2PermissionGrant object, representing a delegated permission grant.
 An oAuth2PermissionGrant can be updated to change which delegated permissions are granted, by adding or removing items from the list in scopes.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

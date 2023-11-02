@@ -14,6 +14,7 @@ Prior to calling forceDelete, you must update or remove any references to Exchan
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code.
 To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgForceDomainDelete](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgForceDomainDelete?view=graph-powershell-1.0)
@@ -53,6 +54,7 @@ Prior to calling forceDelete, you must update or remove any references to Exchan
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return a 404 HTTP response code.
 To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaForceDomainDelete Cmdlet

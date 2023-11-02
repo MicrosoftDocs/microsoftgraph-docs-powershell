@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportfrontlinereport
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport
 
 ## SYNOPSIS
-Invoke action getFrontlineReport
+Get the Windows 365 Frontline reports, such as real-time or historical data reports.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -28,7 +30,8 @@ Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport -OutFile <String>
 ```
 
 ## DESCRIPTION
-Invoke action getFrontlineReport
+Get the Windows 365 Frontline reports, such as real-time or historical data reports.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

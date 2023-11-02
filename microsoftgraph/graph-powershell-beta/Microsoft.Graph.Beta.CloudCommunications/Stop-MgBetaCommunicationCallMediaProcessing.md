@@ -13,6 +13,7 @@ Media operations refer to the IVR operations playPrompt and recordResponse, whic
 The cancelMediaProcessing method cancels any operation that is in-process as well as operations that are queued.
 For example, this API can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a ubscribeToTone operation because it operates independent of any operation queue.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Stop-MgCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.CloudCommunications/Stop-MgCommunicationCallMediaProcessing?view=graph-powershell-1.0)
@@ -51,6 +52,7 @@ Media operations refer to the IVR operations playPrompt and recordResponse, whic
 The cancelMediaProcessing method cancels any operation that is in-process as well as operations that are queued.
 For example, this API can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a ubscribeToTone operation because it operates independent of any operation queue.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Stop-MgBetaCommunicationCallMediaProcessing Cmdlet

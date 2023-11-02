@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a plannerTask object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTask?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgPlannerTask -InputObject <IPlannerIdentity> [-IfMatch <String>] [-PassT
 
 ## DESCRIPTION
 Delete a plannerTask object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

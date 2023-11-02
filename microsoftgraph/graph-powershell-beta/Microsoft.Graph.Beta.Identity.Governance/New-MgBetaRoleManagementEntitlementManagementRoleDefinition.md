@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:n- Cloud PCn- device management (Intune)n- directory (Azure AD)
+The following RBAC providers are currently supported:n- Cloud PCn- device management (Intune)n- directory (Azure AD) This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-1.0)
@@ -35,7 +35,7 @@ New-MgBetaRoleManagementEntitlementManagementRoleDefinition
 ## DESCRIPTION
 Create a new unifiedRoleDefinition object for an RBAC provider.
 This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:n- Cloud PCn- device management (Intune)n- directory (Azure AD)
+The following RBAC providers are currently supported:n- Cloud PCn- device management (Intune)n- directory (Azure AD) This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

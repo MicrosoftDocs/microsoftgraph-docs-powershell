@@ -10,6 +10,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Reupload a cloudPcDeviceImage object that failed to upload.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage -InputObject <ID
 
 ## DESCRIPTION
 Reupload a cloudPcDeviceImage object that failed to upload.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaReuploadDeviceManagementVirtualEndpointDeviceImage Cmdlet

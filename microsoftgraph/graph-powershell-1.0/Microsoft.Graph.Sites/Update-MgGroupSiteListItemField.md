@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgGroupSiteListItemField
 
 ## SYNOPSIS
-Update the properties on a [listItem][].
+Update the properties on a listItem][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemField?view=graph-powershell-beta)
@@ -40,7 +41,8 @@ Update-MgGroupSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Ha
 ```
 
 ## DESCRIPTION
-Update the properties on a [listItem][].
+Update the properties on a listItem][].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

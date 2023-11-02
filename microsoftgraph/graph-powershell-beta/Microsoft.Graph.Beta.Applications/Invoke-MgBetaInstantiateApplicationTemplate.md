@@ -12,6 +12,7 @@ ms.prod: applications
 Add an instance of an application from the Azure AD application gallery into your directory.
 You can also use this API to instantiate non-gallery apps.
 Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Invoke-MgInstantiateApplicationTemplate?view=graph-powershell-1.0)
@@ -48,6 +49,7 @@ Invoke-MgBetaInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
 Add an instance of an application from the Azure AD application gallery into your directory.
 You can also use this API to instantiate non-gallery apps.
 Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaInstantiateApplicationTemplate Cmdlet
@@ -221,6 +223,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UniqueName <String>]`: Alternate key of application

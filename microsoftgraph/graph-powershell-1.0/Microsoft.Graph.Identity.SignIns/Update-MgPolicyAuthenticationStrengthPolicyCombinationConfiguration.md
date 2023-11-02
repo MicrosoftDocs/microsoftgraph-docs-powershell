@@ -9,7 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of an authenticationCombinationConfiguration object.
-In use, only fido2combinationConfigurations may be updated as they are the only type of authenticationCombinationConfiguration that may be created.
+In use, only fido2combinationConfigurations may be updated as they're the only type of authenticationCombinationConfiguration that may be created.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
@@ -48,7 +49,8 @@ Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject
 
 ## DESCRIPTION
 Update the properties of an authenticationCombinationConfiguration object.
-In use, only fido2combinationConfigurations may be updated as they are the only type of authenticationCombinationConfiguration that may be created.
+In use, only fido2combinationConfigurations may be updated as they're the only type of authenticationCombinationConfiguration that may be created.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

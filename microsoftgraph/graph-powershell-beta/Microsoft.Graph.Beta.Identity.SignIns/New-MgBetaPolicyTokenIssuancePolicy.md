@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new tokenIssuancePolicy object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
@@ -30,6 +31,7 @@ New-MgBetaPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-WhatIf] [-Confi
 
 ## DESCRIPTION
 Create a new tokenIssuancePolicy object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

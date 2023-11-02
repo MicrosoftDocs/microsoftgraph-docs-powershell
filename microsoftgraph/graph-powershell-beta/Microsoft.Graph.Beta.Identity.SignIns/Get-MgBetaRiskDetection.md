@@ -10,7 +10,8 @@ ms.prod: identity-and-sign-in
 # Get-MgBetaRiskDetection
 
 ## SYNOPSIS
-Retrieve the properties of a riskDetection object.
+Retrieve the properties of a collection of riskDetection objects.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskDetection?view=graph-powershell-1.0)
@@ -37,7 +38,8 @@ Get-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a riskDetection object.
+Retrieve the properties of a collection of riskDetection objects.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get all riskDetections
@@ -355,6 +357,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a set object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
@@ -81,6 +82,7 @@ Update-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the properties of a set object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

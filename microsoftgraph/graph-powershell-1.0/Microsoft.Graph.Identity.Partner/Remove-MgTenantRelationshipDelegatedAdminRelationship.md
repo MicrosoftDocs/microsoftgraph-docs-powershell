@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a delegatedAdminRelationship object.
 A relationship can only be deleted if it's in the 'created' status.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
@@ -31,6 +32,7 @@ Remove-MgTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPar
 ## DESCRIPTION
 Delete a delegatedAdminRelationship object.
 A relationship can only be deleted if it's in the 'created' status.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

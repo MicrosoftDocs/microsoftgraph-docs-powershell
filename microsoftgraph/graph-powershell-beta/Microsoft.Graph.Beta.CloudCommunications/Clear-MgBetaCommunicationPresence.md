@@ -12,6 +12,7 @@ ms.prod: cloud-communications
 Clear a presence session of an application for a user.
 If it is the user's only presence session, a successful clearPresence changes the user's presence to Offline/Offline.
 Read more about presence sessions and their time-out and expiration.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Clear-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Clear-MgCommunicationPresence?view=graph-powershell-1.0)
@@ -49,6 +50,7 @@ Clear-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 Clear a presence session of an application for a user.
 If it is the user's only presence session, a successful clearPresence changes the user's presence to Offline/Offline.
 Read more about presence sessions and their time-out and expiration.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

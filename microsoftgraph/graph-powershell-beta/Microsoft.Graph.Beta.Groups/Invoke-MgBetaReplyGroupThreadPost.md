@@ -12,6 +12,7 @@ ms.prod: extensions
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-1.0)
@@ -49,6 +50,7 @@ Invoke-MgBetaReplyGroupThreadPost -InputObject <IGroupsIdentity>
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaReplyGroupThreadPost Cmdlet

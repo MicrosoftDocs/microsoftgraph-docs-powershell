@@ -11,6 +11,7 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Read the properties and relationships of a unifiedGroupSource object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ICom
 
 ## DESCRIPTION
 Read the properties and relationships of a unifiedGroupSource object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet

@@ -9,7 +9,8 @@ ms.prod: sharepoint
 # Grant-MgBetaUserDriveItemPermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a [permission][].
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Grant-MgUserDriveItemPermission](/powershell/module/Microsoft.Graph.Users.Actions/Grant-MgUserDriveItemPermission?view=graph-powershell-1.0)
@@ -45,7 +46,8 @@ Grant-MgBetaUserDriveItemPermission -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a [permission][].
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -284,7 +286,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
@@ -306,7 +307,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation

@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a document set version.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Restore-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-PassThr
 
 ## DESCRIPTION
 Restore a document set version.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Restore-MgSiteListItemDocumentSetVersion Cmdlet

@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallaudioroutinggroup
 schema: 2.0.0
+ms.prod: cloud-communications
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an audioRoutingGroup object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an audioRoutingGroup object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -272,6 +276,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport

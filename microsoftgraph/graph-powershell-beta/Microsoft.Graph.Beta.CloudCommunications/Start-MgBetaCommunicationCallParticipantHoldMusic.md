@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Put a participant on hold and play music in the background.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Start-MgCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.CloudCommunications/Start-MgCommunicationCallParticipantHoldMusic?view=graph-powershell-1.0)
@@ -45,6 +46,7 @@ Start-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicat
 
 ## DESCRIPTION
 Put a participant on hold and play music in the background.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Start-MgBetaCommunicationCallParticipantHoldMusic Cmdlet

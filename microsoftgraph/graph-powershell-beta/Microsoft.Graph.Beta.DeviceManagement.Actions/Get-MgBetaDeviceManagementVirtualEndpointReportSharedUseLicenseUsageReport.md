@@ -10,6 +10,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Get a usage report on shared-use licenses, such as servicePlanId, licenseCount, and claimedLicenseCount, for real-time, 7 days, or 28 days trend.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,6 +31,7 @@ Get-MgBetaDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport -OutF
 
 ## DESCRIPTION
 Get a usage report on shared-use licenses, such as servicePlanId, licenseCount, and claimedLicenseCount, for real-time, 7 days, or 28 days trend.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

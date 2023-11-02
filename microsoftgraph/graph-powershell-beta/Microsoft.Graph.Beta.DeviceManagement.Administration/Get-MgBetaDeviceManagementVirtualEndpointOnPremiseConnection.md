@@ -11,6 +11,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of the cloudPcOnPremisesConnection object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -36,6 +37,7 @@ Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## DESCRIPTION
 Read the properties and relationships of the cloudPcOnPremisesConnection object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

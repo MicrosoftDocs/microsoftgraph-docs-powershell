@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenlifetimepolicybyref
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgApplicationTokenLifetimePolicyByRef
@@ -10,6 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 List the tokenLifetimePolicy objects that are assigned to an application.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
@@ -25,6 +27,7 @@ Get-MgApplicationTokenLifetimePolicyByRef -ApplicationId <String> [-Filter <Stri
 ## DESCRIPTION
 List the tokenLifetimePolicy objects that are assigned to an application.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 

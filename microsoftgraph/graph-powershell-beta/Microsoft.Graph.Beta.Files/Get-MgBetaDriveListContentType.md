@@ -9,7 +9,7 @@ ms.prod: sites-and-lists
 # Get-MgBetaDriveListContentType
 
 ## SYNOPSIS
-Get contentTypes from drives
+The collection of content types present in this list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentType?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Get-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get contentTypes from drives
+The collection of content types present in this list.
 
 ## EXAMPLES
 

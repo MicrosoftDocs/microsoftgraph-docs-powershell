@@ -10,7 +10,8 @@ ms.prod: sharepoint
 # Get-MgBetaDriveListItem
 
 ## SYNOPSIS
-Returns the metadata for an [item][] in a [list][].
+Returns the metadata for an item][] in a [list][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItem?view=graph-powershell-1.0)
@@ -37,7 +38,8 @@ Get-MgBetaDriveListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Returns the metadata for an [item][] in a [list][].
+Returns the metadata for an item][] in a [list][].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

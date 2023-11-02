@@ -10,6 +10,7 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-1.0)
@@ -23,6 +24,7 @@ Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

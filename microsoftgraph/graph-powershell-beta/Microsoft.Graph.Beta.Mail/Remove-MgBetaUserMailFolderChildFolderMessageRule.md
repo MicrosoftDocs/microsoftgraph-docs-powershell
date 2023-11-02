@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete the specified messageRule object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
@@ -30,6 +31,7 @@ Remove-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [
 
 ## DESCRIPTION
 Delete the specified messageRule object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -13,6 +13,7 @@ A thread and post are created as specified.
 Use reply thread to further post nto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
@@ -55,6 +56,7 @@ A thread and post are created as specified.
 Use reply thread to further post nto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

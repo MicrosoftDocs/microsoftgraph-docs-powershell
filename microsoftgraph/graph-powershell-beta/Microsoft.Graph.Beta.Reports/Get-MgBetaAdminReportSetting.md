@@ -10,6 +10,7 @@ ms.prod: reports
 
 ## SYNOPSIS
 Get the tenant-level settings for Microsoft 365 reports.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -19,6 +20,7 @@ Get-MgBetaAdminReportSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 
 ## DESCRIPTION
 Get the tenant-level settings for Microsoft 365 reports.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

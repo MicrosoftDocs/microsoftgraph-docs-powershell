@@ -11,6 +11,7 @@ ms.prod: identity-and-access-reports
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaReportApplicationSignInDetailedSummary -InputObject <IReportsIdentity>
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet

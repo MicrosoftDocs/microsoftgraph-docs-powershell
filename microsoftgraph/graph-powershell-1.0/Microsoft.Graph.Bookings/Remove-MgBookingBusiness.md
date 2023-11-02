@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a bookingBusiness object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusiness?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgBookingBusiness -InputObject <IBookingsIdentity> [-IfMatch <String>] [-
 
 ## DESCRIPTION
 Delete a bookingBusiness object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -264,4 +267,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: attackSimulationOperationType
 
 ## RELATED LINKS
+[New-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationOperation?view=graph-powershell-1.0)
 

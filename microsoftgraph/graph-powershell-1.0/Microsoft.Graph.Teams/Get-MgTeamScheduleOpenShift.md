@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an openshift object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
@@ -36,6 +37,7 @@ Get-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an openshift object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

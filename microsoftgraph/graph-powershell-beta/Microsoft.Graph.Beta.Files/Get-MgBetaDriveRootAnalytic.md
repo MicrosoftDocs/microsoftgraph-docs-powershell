@@ -9,7 +9,8 @@ ms.prod: sharepoint
 # Get-MgBetaDriveRootAnalytic
 
 ## SYNOPSIS
-Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootAnalytic?view=graph-powershell-1.0)
@@ -29,7 +30,8 @@ Get-MgBetaDriveRootAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the [getActivitiesByInterval][] API.
+Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

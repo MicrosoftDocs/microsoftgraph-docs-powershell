@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete (unregister) a printConnector.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintConnector?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete (unregister) a printConnector.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

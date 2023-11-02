@@ -12,6 +12,7 @@ ms.prod: cloud-printing
 ## SYNOPSIS
 Retrieve a printer's usage summary for a particular time period.
 For descriptions of each of the endpoints, see printUsageByPrinter.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportDailyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByPrinter?view=graph-powershell-1.0)
@@ -40,6 +41,7 @@ Get-MgBetaReportDailyPrintUsageByPrinter -InputObject <IReportsIdentity> [-Expan
 ## DESCRIPTION
 Retrieve a printer's usage summary for a particular time period.
 For descriptions of each of the endpoints, see printUsageByPrinter.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

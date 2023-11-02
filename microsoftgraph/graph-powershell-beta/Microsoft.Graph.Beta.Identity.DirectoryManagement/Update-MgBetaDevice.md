@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-1.0)
@@ -71,6 +72,7 @@ Update-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyPar
 ## DESCRIPTION
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Update the accountEnabled property of a device
@@ -163,7 +165,7 @@ Accept wildcard characters: False
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
+Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderby.
 
 ```yaml
 Type: DateTime
@@ -353,7 +355,7 @@ Accept wildcard characters: False
 ### -DisplayName
 The display name for the device.
 Required.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
+Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
 
 ```yaml
 Type: String
@@ -602,8 +604,8 @@ Accept wildcard characters: False
 ```
 
 ### -Manufacturer
-Manufacturer of the device.
-Read-only.
+Manufacturer of device.
+Only returned if user signs in with a Microsoft account as part of Project Rome.
 
 ```yaml
 Type: String
@@ -654,8 +656,8 @@ Accept wildcard characters: False
 ```
 
 ### -Model
-Model of the device.
-Read-only.
+Model of device.
+Only returned if user signs in with a Microsoft account as part of Project Rome.
 
 ```yaml
 Type: String
@@ -1025,7 +1027,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[IdentityProvider <String>]`: For internal use only.
     - `[Key <Byte[]>]`: For internal use only.
     - `[Type <Int32?>]`: For internal use only.
-  - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
+  - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderby.
   - `[Commands <IMicrosoftGraphCommand[]>]`: Set of commands sent to this device.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AppServiceName <String>]`: 
@@ -1046,7 +1048,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceMetadata <String>]`: For internal use only. Set to null.
   - `[DeviceOwnership <String>]`: Ownership of the device. This property is set by Intune. Possible values are: unknown, company, personal.
   - `[DeviceVersion <Int32?>]`: For internal use only.
-  - `[DisplayName <String>]`: The display name for the device. Required. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
+  - `[DisplayName <String>]`: The display name for the device. Required. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
   - `[DomainName <String>]`: The on-premises domain name of Hybrid Azure AD joined devices. This property is set by Intune.
   - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device. For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name. This property is set by Intune.
   - `[EnrollmentType <String>]`: Enrollment type of the device. This property is set by Intune. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
@@ -1076,14 +1078,15 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken. This can only be updated by Intune.
   - `[Kind <String>]`: Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
   - `[ManagementType <String>]`: Management channel of the device.  This property is set by Intune. Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
-  - `[Manufacturer <String>]`: Manufacturer of the device. Read-only.
+  - `[Manufacturer <String>]`: Manufacturer of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
   - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter (eq, ne, not, startsWith).
   - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this device is a member of. Read-only. Nullable. Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Model <String>]`: Model of the device. Read-only.
+  - `[Model <String>]`: Model of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
   - `[Name <String>]`: Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome.
   - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only. Supports $filter (eq, ne, not, ge, le, in).
+  - `[OnPremisesSecurityIdentifier <String>]`: 
   - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
   - `[OperatingSystem <String>]`: The type of operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
   - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).

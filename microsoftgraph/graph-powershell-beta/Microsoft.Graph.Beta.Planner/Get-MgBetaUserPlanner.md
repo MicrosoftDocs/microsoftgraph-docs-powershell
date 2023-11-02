@@ -11,6 +11,7 @@ ms.prod: planner
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerUser object.
 The returned properties include the user's favorite plans and recently viewed plans.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlanner?view=graph-powershell-1.0)
@@ -50,6 +51,7 @@ Get-MgBetaUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerUser object.
 The returned properties include the user's favorite plans and recently viewed plans.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserPlanner Cmdlet

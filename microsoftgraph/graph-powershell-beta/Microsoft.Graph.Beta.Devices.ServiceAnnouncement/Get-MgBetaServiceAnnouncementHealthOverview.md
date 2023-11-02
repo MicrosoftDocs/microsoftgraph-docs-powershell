@@ -12,6 +12,7 @@ ms.prod: service-communications
 ## SYNOPSIS
 Retrieve the properties and relationships of a serviceHealth object.
 This operation provides the health information of a specified service for a tenant.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverview?view=graph-powershell-1.0)
@@ -40,6 +41,7 @@ Get-MgBetaServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnounc
 ## DESCRIPTION
 Retrieve the properties and relationships of a serviceHealth object.
 This operation provides the health information of a specified service for a tenant.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get the properties of a serviceHealth object

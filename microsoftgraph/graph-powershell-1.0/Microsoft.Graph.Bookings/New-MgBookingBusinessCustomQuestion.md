@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new bookingCustomQuestion object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
@@ -43,6 +44,7 @@ New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create a new bookingCustomQuestion object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

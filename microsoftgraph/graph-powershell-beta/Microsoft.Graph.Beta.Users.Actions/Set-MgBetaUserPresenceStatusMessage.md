@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresenceStatusMessage?view=graph-powershell-1.0)
@@ -45,6 +46,7 @@ Set-MgBetaUserPresenceStatusMessage -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -203,7 +205,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
       - `[ContentType <String>]`: bodyType
-    - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime is not available when requesting presence of another user.
+    - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 `INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
@@ -217,7 +219,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
@@ -239,7 +240,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
@@ -257,7 +257,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
-  - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime is not available when requesting presence of another user.
+  - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 ## RELATED LINKS
 [Set-MgUserPresenceStatusMessage](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresenceStatusMessage?view=graph-powershell-1.0)

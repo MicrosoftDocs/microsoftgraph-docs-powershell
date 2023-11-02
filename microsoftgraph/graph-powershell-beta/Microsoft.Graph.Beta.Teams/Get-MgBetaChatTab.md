@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified tab in a chat.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Get-MgChatTab?view=graph-powershell-1.0)
@@ -36,6 +37,7 @@ Get-MgBetaChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: List all the tabs in the chat along with associated Teams app

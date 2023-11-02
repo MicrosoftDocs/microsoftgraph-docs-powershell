@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Add or remove subscriptions for the user.
 You can also enable and disable specific plans associated with a subscription.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserLicense](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserLicense?view=graph-powershell-beta)
@@ -45,6 +46,7 @@ Set-MgUserLicense -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Add or remove subscriptions for the user.
 You can also enable and disable specific plans associated with a subscription.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Assign a license to a user
@@ -353,7 +355,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

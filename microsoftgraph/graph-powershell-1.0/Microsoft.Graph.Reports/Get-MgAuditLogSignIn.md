@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin
 schema: 2.0.0
+ms.prod: identity-and-access-reports
+ms.prod: identity-and-access-reports
 ---
 
 # Get-MgAuditLogSignIn
@@ -10,6 +12,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a specific Azure AD user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)
@@ -38,6 +41,7 @@ Get-MgAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve a specific Azure AD user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: List all sign-ins

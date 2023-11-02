@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete an ediscoveryReviewSetQuery object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
@@ -30,6 +31,7 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Delete an ediscoveryReviewSetQuery object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -222,6 +224,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker

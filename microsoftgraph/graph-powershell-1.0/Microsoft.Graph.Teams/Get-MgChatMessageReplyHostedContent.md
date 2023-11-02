@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereplyhostedcontent
 schema: 2.0.0
+ms.prod: microsoft-teams
+ms.prod: microsoft-teams
 ---
 
 # Get-MgChatMessageReplyHostedContent
 
 ## SYNOPSIS
 Retrieve the properties and relationships of chatMessageHostedContent object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)
@@ -49,6 +52,7 @@ Get-MgChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

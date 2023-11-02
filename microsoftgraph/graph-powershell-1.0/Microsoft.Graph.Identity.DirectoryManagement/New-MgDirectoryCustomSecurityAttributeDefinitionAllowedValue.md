@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new allowedValue object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-beta)
@@ -43,6 +44,7 @@ New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## DESCRIPTION
 Create a new allowedValue object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 
 ### -IsActive
 Indicates whether the predefined value is active or deactivated.
-If set to false, this predefined value cannot be assigned to any additional supported directory objects.
+If set to false, this predefined value can't be assigned to any other supported directory objects.
 
 ```yaml
 Type: SwitchParameter
@@ -193,7 +195,7 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphAllowedValue>`: allowedValue
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated. If set to false, this predefined value cannot be assigned to any additional supported directory objects.
+  - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated. If set to false, this predefined value can't be assigned to any other supported directory objects.
 
 `INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
@@ -214,6 +216,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku

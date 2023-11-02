@@ -11,6 +11,7 @@ ms.prod: education
 ## SYNOPSIS
 List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategoryByRef?view=graph-powershell-1.0)
@@ -26,6 +27,7 @@ Get-MgBetaEducationClassAssignmentCategoryByRef -EducationAssignmentId <String> 
 ## DESCRIPTION
 List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

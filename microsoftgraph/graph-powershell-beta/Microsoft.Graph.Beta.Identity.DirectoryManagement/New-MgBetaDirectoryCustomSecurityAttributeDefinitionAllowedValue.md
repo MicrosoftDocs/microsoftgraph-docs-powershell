@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new allowedValue object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-1.0)
@@ -43,6 +44,7 @@ New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## DESCRIPTION
 Create a new allowedValue object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet
@@ -139,7 +141,7 @@ Accept wildcard characters: False
 
 ### -IsActive
 Indicates whether the predefined value is active or deactivated.
-If set to false, this predefined value cannot be assigned to any additional supported directory objects.
+If set to false, this predefined value can't be assigned to any more supported directory objects.
 
 ```yaml
 Type: SwitchParameter
@@ -206,7 +208,7 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphAllowedValue>`: allowedValue
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated. If set to false, this predefined value cannot be assigned to any additional supported directory objects.
+  - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated. If set to false, this predefined value can't be assigned to any more supported directory objects.
 
 `INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit

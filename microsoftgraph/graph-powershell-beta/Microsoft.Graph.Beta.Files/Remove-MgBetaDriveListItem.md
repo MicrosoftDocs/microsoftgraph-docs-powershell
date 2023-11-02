@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaDriveListItem
 
 ## SYNOPSIS
-Removes an item from a [list][].
+Removes an item from a list][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDriveListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListItem?view=graph-powershell-1.0)
@@ -28,7 +29,8 @@ Remove-MgBetaDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-P
 ```
 
 ## DESCRIPTION
-Removes an item from a [list][].
+Removes an item from a list][].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

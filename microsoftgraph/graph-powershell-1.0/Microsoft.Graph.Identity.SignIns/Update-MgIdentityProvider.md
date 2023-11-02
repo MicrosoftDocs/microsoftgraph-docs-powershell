@@ -11,6 +11,7 @@ schema: 2.0.0
 Update the properties of the specified identity provider configured in the tenant.
 Among the types of providers derived from identityProviderBase, you can currently update a socialIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently update a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityProvider?view=graph-powershell-beta)
@@ -45,6 +46,7 @@ Update-MgIdentityProvider -InputObject <IIdentitySignInsIdentity>
 Update the properties of the specified identity provider configured in the tenant.
 Among the types of providers derived from identityProviderBase, you can currently update a socialIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently update a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Update a specific <strong>social identity provider</strong> (Azure AD or Azure AD B2C)

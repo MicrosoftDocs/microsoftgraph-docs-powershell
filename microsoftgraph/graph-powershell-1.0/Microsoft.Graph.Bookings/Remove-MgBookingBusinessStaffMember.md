@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a bookingStaffMember in the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete a bookingStaffMember in the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

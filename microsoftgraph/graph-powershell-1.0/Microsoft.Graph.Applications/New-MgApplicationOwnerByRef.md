@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add an owner to an application by posting to the owners collection.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Add an owner to an application by posting to the owners collection.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Add an owner to an application

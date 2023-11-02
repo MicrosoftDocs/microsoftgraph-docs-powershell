@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new bookingAppointment for the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessAppointment?view=graph-powershell-1.0)
@@ -63,6 +64,7 @@ New-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create a new bookingAppointment for the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaBookingBusinessAppointment Cmdlet

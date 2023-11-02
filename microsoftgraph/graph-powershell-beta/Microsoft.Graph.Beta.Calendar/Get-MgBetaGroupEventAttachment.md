@@ -11,6 +11,7 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get an event object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventAttachment?view=graph-powershell-1.0)
@@ -35,6 +36,7 @@ Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<C
 
 ## DESCRIPTION
 Get an event object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

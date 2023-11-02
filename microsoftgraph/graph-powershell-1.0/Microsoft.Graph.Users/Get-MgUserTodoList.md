@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference
 schema: 2.0.0
+ms.prod: outlook
+ms.prod: outlook
 ---
 
 # Get-MgUserSettingShiftPreference
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a shiftPreferences object by ID.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoList?view=graph-powershell-beta)
@@ -29,6 +32,7 @@ Get-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a shiftPreferences object by ID.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

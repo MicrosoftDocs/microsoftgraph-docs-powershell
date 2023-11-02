@@ -12,7 +12,7 @@ ms.prod: users
 Devices that are registered for the user.
 Read-only.
 Nullable.
-Supports $expand.
+Supports $expand and returns up to 100 objects.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserRegisteredDevice](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDevice?view=graph-powershell-1.0)
@@ -42,7 +42,7 @@ Get-MgBetaUserRegisteredDevice -InputObject <IUsersIdentity> [-ExpandProperty <S
 Devices that are registered for the user.
 Read-only.
 Nullable.
-Supports $expand.
+Supports $expand and returns up to 100 objects.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserRegisteredDevice Cmdlet

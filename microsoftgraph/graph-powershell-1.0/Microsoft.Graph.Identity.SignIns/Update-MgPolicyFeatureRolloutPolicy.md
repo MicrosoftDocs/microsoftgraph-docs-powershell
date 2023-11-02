@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of featureRolloutPolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
@@ -45,6 +46,7 @@ Update-MgPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update the properties of featureRolloutPolicy object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

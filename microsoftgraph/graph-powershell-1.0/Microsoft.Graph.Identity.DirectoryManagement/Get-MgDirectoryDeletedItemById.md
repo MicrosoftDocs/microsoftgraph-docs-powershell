@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditembyid
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgDirectoryDeletedItemById
@@ -10,7 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
-Some common uses for this function are to:
+Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemById?view=graph-powershell-beta)
@@ -33,7 +34,7 @@ Get-MgDirectoryDeletedItemById
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
-Some common uses for this function are to:
+Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

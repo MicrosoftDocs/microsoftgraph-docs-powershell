@@ -39,20 +39,28 @@ Get-MgBetaPolicyAppManagementPolicyApplyTo -InputObject <IIdentitySignInsIdentit
 Collection of application and service principals to which a policy is applied.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPolicyAppManagementPolicyApplyTo Cmdlet
+### Example 1: Get applications and service principal objects applied to an app management policy
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId
+
 ```
-This example shows how to use the Get-MgBetaPolicyAppManagementPolicyApplyTo Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaPolicyAppManagementPolicyApplyTo Cmdlet
+This example will get applications and service principal objects applied to an app management policy
+
+### Example 2: Get specific properties of applications and service principal objects applied to an app management policy using $select query option
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId -Property "id,appId,displayName,createdDateTime" 
+
 ```
-This example shows how to use the Get-MgBetaPolicyAppManagementPolicyApplyTo Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will get specific properties of applications and service principal objects applied to an app management policy using $select query option
+
 
 ## PARAMETERS
 
@@ -322,6 +330,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

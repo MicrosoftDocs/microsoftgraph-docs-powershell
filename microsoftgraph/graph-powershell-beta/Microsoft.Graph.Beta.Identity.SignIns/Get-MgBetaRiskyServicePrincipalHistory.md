@@ -9,7 +9,7 @@ ms.prod: identity-and-sign-in
 # Get-MgBetaRiskyServicePrincipalHistory
 
 ## SYNOPSIS
-Represents the risk history of Azure AD service principals.
+Represents the risk history of Microsoft Entra service principals.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyServicePrincipalHistory?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Get-MgBetaRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity> [
 ```
 
 ## DESCRIPTION
-Represents the risk history of Azure AD service principals.
+Represents the risk history of Microsoft Entra service principals.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -319,6 +319,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

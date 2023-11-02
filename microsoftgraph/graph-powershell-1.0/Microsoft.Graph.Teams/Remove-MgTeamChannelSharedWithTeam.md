@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a membershipType value of shared.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelSharedWithTeam?view=graph-powershell-beta)
@@ -31,6 +32,7 @@ Remove-MgTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a membershipType value of shared.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

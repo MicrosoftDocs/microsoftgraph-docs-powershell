@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrejectcommunicationcall
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgRejectCommunicationCall
@@ -15,6 +16,7 @@ The bot is expected to answer or reject the call before the call times out.
 The current timeout value is 15 seconds.
 This API does not end existing calls that have already been answered.
 Use delete call to end a call.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRejectCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRejectCommunicationCall?view=graph-powershell-beta)
@@ -56,6 +58,7 @@ The bot is expected to answer or reject the call before the call times out.
 The current timeout value is 15 seconds.
 This API does not end existing calls that have already been answered.
 Use delete call to end a call.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Reject an incoming call with 'Busy' reason
@@ -258,6 +261,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport

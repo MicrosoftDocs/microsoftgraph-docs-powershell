@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyFeatureRolloutPolicy
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a featureRolloutPolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> [-Expan
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a featureRolloutPolicy object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get a feature rollout policy

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Publish-MgSiteContentType
 
 ## SYNOPSIS
-Publishes a [contentType][] present in the content type hub site.
+Publishes a contentType][] present in the content type hub site.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -27,7 +28,8 @@ Publish-MgSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Publishes a [contentType][] present in the content type hub site.
+Publishes a contentType][] present in the content type hub site.
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Publish-MgSiteContentType Cmdlet

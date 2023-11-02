@@ -1,14 +1,14 @@
 ---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeetingtranscript
 schema: 2.0.0
 ---
 
-# Remove-MgUserPresence
+# Remove-MgUserOnlineMeetingTranscript
 
 ## SYNOPSIS
-Delete navigation property presence for users
+Delete navigation property transcripts for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserPresence?view=graph-powershell-beta)
@@ -17,20 +17,71 @@ Delete navigation property presence for users
 
 ### Delete (Default)
 ```
-Remove-MgUserPresence -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgUserOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeetingId <String> -UserId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property presence for users
+Delete navigation property transcripts for users
+
+## EXAMPLES
+### Example 1: Get your own presence information
+
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Get-MgUserPresence -UserId $userId
+```
+This example shows how to use the Remove-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get the presence information of another user
+
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgUserPresence -UserId $userId
+```
+This example shows how to use the Remove-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get the presence information of another user
+
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgCommunicationPresence -PresenceId $presenceId
+```
+This example shows how to use the Remove-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
+
+### -CallTranscriptId
+The unique identifier of callTranscript
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -63,6 +114,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -OnlineMeetingId
+The unique identifier of onlineMeeting
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PassThru
 Returns true when the command succeeds
 
@@ -73,7 +139,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -134,27 +200,28 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
+
+ALIASES
+
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties.
-For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[UserId \<String\>\]: The unique identifier of user
+
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Remove-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserPresence?view=graph-powershell-beta)
-
-[https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguserpresence)
-

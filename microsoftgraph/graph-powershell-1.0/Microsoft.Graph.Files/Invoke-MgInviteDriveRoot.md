@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveroot
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Invoke-MgInviteDriveRoot
 
 ## SYNOPSIS
-Sends a sharing invitation for a driveItem.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+Sends a sharing invitation for a driveItem.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaInviteDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaInviteDriveRoot?view=graph-powershell-beta)
@@ -45,7 +47,8 @@ Invoke-MgInviteDriveRoot -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Sends a sharing invitation for a driveItem.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+Sends a sharing invitation for a driveItem.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

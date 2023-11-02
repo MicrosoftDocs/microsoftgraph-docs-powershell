@@ -10,6 +10,7 @@ ms.prod: groups
 
 ## SYNOPSIS
 Retry the group service provisioning.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRetryGroupServiceProvisioning?view=graph-powershell-1.0)
@@ -30,6 +31,7 @@ Invoke-MgBetaRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-Pass
 
 ## DESCRIPTION
 Retry the group service provisioning.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

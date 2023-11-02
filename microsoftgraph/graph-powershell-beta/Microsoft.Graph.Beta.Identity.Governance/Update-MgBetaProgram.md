@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 In the Azure AD access reviews feature, update an existing program object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -40,6 +41,7 @@ Update-MgBetaProgram -InputObject <IIdentityGovernanceIdentity> -BodyParameter <
 
 ## DESCRIPTION
 In the Azure AD access reviews feature, update an existing program object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaProgram Cmdlet
@@ -334,6 +336,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[On <String>]`: Usage: on='{on}'
+  - `[PermissionsRequestChangeId <String>]`: The unique identifier of permissionsRequestChange
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
   - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

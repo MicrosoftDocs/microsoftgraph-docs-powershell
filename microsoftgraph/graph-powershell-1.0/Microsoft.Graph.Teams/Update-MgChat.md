@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a chat object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChat?view=graph-powershell-beta)
@@ -54,6 +55,7 @@ Update-MgChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat>
 
 ## DESCRIPTION
 Update the properties of a chat object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -474,7 +476,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
             - `[Id <String>]`: Unique identifier for the identity.
           - `[Device <IMicrosoftGraphIdentity>]`: identity
           - `[User <IMicrosoftGraphIdentity>]`: identity
@@ -535,7 +537,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
     - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
       - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-      - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
+      - `[ContentType <String>]`: Write only. Content type. such as image/png, image/jpg.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Importance <String>]`: chatMessageImportance
     - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
@@ -551,7 +553,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
           - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
     - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
@@ -590,7 +592,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
     - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
       - `[UserIdentityType <String>]`: teamworkUserIdentityType
   - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: A collection of permissions granted to apps for the chat.
@@ -679,7 +681,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
@@ -709,7 +711,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
@@ -750,13 +752,13 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
     - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-    - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
+    - `[ContentType <String>]`: Write only. Content type. such as image/png, image/jpg.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Importance <String>]`: chatMessageImportance
   - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
@@ -772,7 +774,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
         - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
   - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
@@ -812,7 +814,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[JoinWebUrl <String>]`: The URL that users click to join or uniquely identify the meeting.
   - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
     - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
@@ -856,13 +858,13 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
       - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-      - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
+      - `[ContentType <String>]`: Write only. Content type. such as image/png, image/jpg.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Importance <String>]`: chatMessageImportance
     - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
@@ -878,7 +880,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
           - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
     - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
@@ -940,7 +942,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[DisplayName <String>]`: The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity

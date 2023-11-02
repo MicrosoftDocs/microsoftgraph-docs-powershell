@@ -10,6 +10,7 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPlannerBucketTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucketTask?view=graph-powershell-1.0)
@@ -24,6 +25,7 @@ Get-MgBetaPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

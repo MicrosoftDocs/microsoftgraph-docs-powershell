@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Invoke-MgRecordCommunicationCallResponse
@@ -13,6 +14,7 @@ For further information on how to handle operations, please review commsOperatio
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRecordCommunicationCallResponse](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaRecordCommunicationCallResponse?view=graph-powershell-beta)
@@ -56,6 +58,7 @@ For further information on how to handle operations, please review commsOperatio
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -339,6 +342,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
