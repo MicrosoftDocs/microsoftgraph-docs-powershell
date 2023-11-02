@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage
@@ -84,7 +84,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "Hello World \<at id="0"\>Jane Smith\</at\>"
+		content = "Hello World <at id="0">Jane Smith</at>"
 	}
 	mentions = @(
 		@{
@@ -112,7 +112,7 @@ $params = @{
 	subject = $null
 	body = @{
 		contentType = "html"
-		content = "\<attachment id="74d20c7f34aa4a7fb74e2b30004247c5"\>\</attachment\>"
+		content = "<attachment id="74d20c7f34aa4a7fb74e2b30004247c5"></attachment>"
 	}
 	attachments = @(
 		@{
@@ -121,12 +121,12 @@ $params = @{
 			contentUrl = $null
 			content = '{
   "title": "This is an example of posting a card",
-  "subtitle": "\<h3\>This is the subtitle\</h3\>",
+  "subtitle": "<h3>This is the subtitle</h3>",
   "text": "Here is some body text.
 
-\r\nAnd a \<a href=\"http://microsoft.com/\"\>hyperlink\</a\>.
+rnAnd a <a href="http://microsoft.com/">hyperlink</a>.
 
-\r\nAnd below that is some buttons:",
+rnAnd below that is some buttons:",
   "buttons": [
     {
       "type": "messageBack",
@@ -154,7 +154,7 @@ $params = @{
 	body = @{
 		contentType = "html"
 		content = "Here's the latest budget.
-\<attachment id="153fa47d-18c9-4179-be08-9879815a9f90"\>\</attachment\>"
+<attachment id="153fa47d-18c9-4179-be08-9879815a9f90"></attachment>"
 	}
 	attachments = @(
 		@{
@@ -177,7 +177,7 @@ $params = @{
 	subject = $null
 	body = @{
 		contentType = "html"
-		content = "\<attachment id="74d20c7f34aa4a7fb74e2b30004247c5"\>\</attachment\>"
+		content = "<attachment id="74d20c7f34aa4a7fb74e2b30004247c5"></attachment>"
 	}
 	attachments = @(
 		@{
@@ -292,7 +292,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "\<div\>\<div\>\<at id="0"\>General\</at\>&nbsp;Hello there!\</div\>\</div\>"
+		content = "<div><div><at id="0">General</at>&nbsp;Hello there!</div></div>"
 	}
 	mentions = @(
 		@{
@@ -319,7 +319,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "\<div\>\<div\>\<at id="0"\>GraphTesting\</at\>&nbsp;Hello team\</div\>\</div\>"
+		content = "<div><div><at id="0">GraphTesting</at>&nbsp;Hello team</div></div>"
 	}
 	mentions = @(
 		@{
@@ -350,7 +350,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	body = @{
 		contentType = "html"
-		content = "\<div\>\<div\>\<at id="0"\>TestTag\</at\>&nbsp;Testing Tags\</div\>\</div\>"
+		content = "<div><div><at id="0">TestTag</at>&nbsp;Testing Tags</div></div>"
 	}
 	mentions = @(
 		@{
@@ -377,7 +377,7 @@ $params = @{
 	subject = $null
 	body = @{
 		contentType = "html"
-		content = "\<attachment id="74d20c7f34aa4a7fb74e2b30004247c5"\>\</attachment\>"
+		content = "<attachment id="74d20c7f34aa4a7fb74e2b30004247c5"></attachment>"
 	}
 	attachments = @(
 		@{
@@ -386,12 +386,12 @@ $params = @{
 			contentUrl = $null
 			content = '{
   "title": "This is an example of posting a card",
-  "subtitle": "\<h3\>This is the subtitle\</h3\>",
+  "subtitle": "<h3>This is the subtitle</h3>",
   "text": "Here is some body text.
 
-\r\nAnd a \<a href=\"http://microsoft.com/\"\>hyperlink\</a\>.
+rnAnd a <a href="http://microsoft.com/">hyperlink</a>.
 
-\r\nAnd below that is some buttons:",
+rnAnd below that is some buttons:",
   "buttons": [
     {
       "type": "messageBack",
@@ -420,7 +420,7 @@ $params = @{
 	subject = "Announcement Subheading"
 	body = @{
 		contentType = "text"
-		content = "\<attachment id="d7ddbf876ae340c3a03bada395ec7da7"\>\</attachment\>Announcement text"
+		content = "<attachment id="d7ddbf876ae340c3a03bada395ec7da7"></attachment>Announcement text"
 	}
 	attachments = @(
 		@{
@@ -1049,7 +1049,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1148,7 +1148,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 `MENTIONS <IMicrosoftGraphChatMessageMention[]>`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1249,7 +1249,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

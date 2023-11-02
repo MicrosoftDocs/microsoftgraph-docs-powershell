@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgRecordCommunicationCallResponse
 
 ## SYNOPSIS
-Records a short audio response from the caller.\nA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Records a short audio response from the caller.A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
@@ -49,7 +49,7 @@ Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdent
 ```
 
 ## DESCRIPTION
-Records a short audio response from the caller.\nA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Records a short audio response from the caller.A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.

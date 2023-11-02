@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthread
@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Add an attachment when creating a group post.
 This operation limits the size of the attachment you can add to under 3 MB.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
@@ -45,7 +45,7 @@ Invoke-MgBetaReplyGroupThread -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Add an attachment when creating a group post.
 This operation limits the size of the attachment you can add to under 3 MB.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES

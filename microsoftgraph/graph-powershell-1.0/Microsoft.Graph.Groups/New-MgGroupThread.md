@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthread
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.\nUse reply thread or reply post to further post to that thread.
+A new conversation, conversation thread, and post are created in the group.nUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 This API is available in the following national cloud deployments.
 
@@ -47,7 +47,7 @@ New-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.\nUse reply thread or reply post to further post to that thread.
+A new conversation, conversation thread, and post are created in the group.nUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 This API is available in the following national cloud deployments.
 

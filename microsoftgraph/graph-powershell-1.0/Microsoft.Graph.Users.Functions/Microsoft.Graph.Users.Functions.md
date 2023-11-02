@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Users.Functions
 Module Guid: a20c9cf1-c85f-4993-828a-79c1d9e3980f
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions
@@ -32,32 +32,32 @@ Invoke function delta
 
 ### [Get-MgUserContactDelta](Get-MgUserContactDelta.md)
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
-A delta function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
-This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
+A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
+This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
  This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserContactFolderChildFolderContactDelta](Get-MgUserContactFolderChildFolderContactDelta.md)
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
-A delta function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
-This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
+A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
+This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
  This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserContactFolderChildFolderDelta](Get-MgUserContactFolderChildFolderDelta.md)
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
-A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contact folders.
-This allows you to maintain and synchronize \na local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
+A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contact folders.
+This allows you to maintain and synchronize a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserContactFolderContactDelta](Get-MgUserContactFolderContactDelta.md)
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
-A delta function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
-This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
+A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
+This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
  This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserContactFolderDelta](Get-MgUserContactFolderDelta.md)
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
-A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contact folders.
-This allows you to maintain and synchronize \na local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
+A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contact folders.
+This allows you to maintain and synchronize a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserDelta](Get-MgUserDelta.md)
@@ -103,26 +103,26 @@ This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserMailFolderChildFolderDelta](Get-MgUserMailFolderChildFolderDelta.md)
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
-A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls,\nyou can query for incremental changes in the mail folders.
-This allows you to maintain and synchronize\na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
+A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls,you can query for incremental changes in the mail folders.
+This allows you to maintain and synchronizea local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserMailFolderChildFolderMessageDelta](Get-MgUserMailFolderChildFolderMessageDelta.md)
 Get a set of messages that have been added, deleted, or updated in a specified folder.
-A delta function call for messages in a folder is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\nthat folder](/graph/delta-query-messages).
-This allows you to maintain and synchronize a local store of a user's messages without\nhaving to fetch the entire set of messages from the server every time.
+A delta function call for messages in a folder is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls, you can [query for incremental changes in the messages inthat folder](/graph/delta-query-messages).
+This allows you to maintain and synchronize a local store of a user's messages withouthaving to fetch the entire set of messages from the server every time.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserMailFolderDelta](Get-MgUserMailFolderDelta.md)
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
-A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls,\nyou can query for incremental changes in the mail folders.
-This allows you to maintain and synchronize\na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
+A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls,you can query for incremental changes in the mail folders.
+This allows you to maintain and synchronizea local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserMailFolderMessageDelta](Get-MgUserMailFolderMessageDelta.md)
 Get a set of messages that have been added, deleted, or updated in a specified folder.
-A delta function call for messages in a folder is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\nthat folder](/graph/delta-query-messages).
-This allows you to maintain and synchronize a local store of a user's messages without\nhaving to fetch the entire set of messages from the server every time.
+A delta function call for messages in a folder is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls, you can [query for incremental changes in the messages inthat folder](/graph/delta-query-messages).
+This allows you to maintain and synchronize a local store of a user's messages withouthaving to fetch the entire set of messages from the server every time.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserManagedAppDiagnosticStatus](Get-MgUserManagedAppDiagnosticStatus.md)
@@ -136,8 +136,8 @@ Retrieves the list of devices with failed apps
 
 ### [Get-MgUserMessageDelta](Get-MgUserMessageDelta.md)
 Get a set of messages that have been added, deleted, or updated in a specified folder.
-A delta function call for messages in a folder is similar to a GET request, except that by appropriately\napplying state tokens in one or more of these calls, you can [query for incremental changes in the messages in\nthat folder](/graph/delta-query-messages).
-This allows you to maintain and synchronize a local store of a user's messages without\nhaving to fetch the entire set of messages from the server every time.
+A delta function call for messages in a folder is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls, you can [query for incremental changes in the messages inthat folder](/graph/delta-query-messages).
+This allows you to maintain and synchronize a local store of a user's messages withouthaving to fetch the entire set of messages from the server every time.
 This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserOnenoteRecentNotebook](Get-MgUserOnenoteRecentNotebook.md)
@@ -178,7 +178,7 @@ Invoke function recent
 ### [Invoke-MgSupportedUserOutlookLanguage](Invoke-MgSupportedUserOutlookLanguage.md)
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 When setting up an Outlook client, the user selects the preferred language from this supported list.
-You can subsequently get the preferred language by\ngetting the user's mailbox settings.
+You can subsequently get the preferred language bygetting the user's mailbox settings.
 This API is supported in the following national cloud deployments.
 
 ### [Invoke-MgTimeUserOutlook](Invoke-MgTimeUserOutlook.md)

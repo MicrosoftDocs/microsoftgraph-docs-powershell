@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Users.Actions
 Module Guid: 24ec862a-e03b-415b-bafb-8c5c13537394
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions
@@ -182,7 +182,7 @@ Locate a device
 ### [Find-MgBetaUserMeetingTime](Find-MgBetaUserMeetingTime.md)
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.
-\nBased on this value, you can better adjust the parameters and call findMeetingTimes again.
+Based on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 This API is available in the following national cloud deployments.
@@ -201,7 +201,7 @@ This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaUserMailTip](Get-MgBetaUserMailTip.md)
 Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a POST call to the getMailTips action, you can request specific types of MailTips to\nbe returned for more than one recipient at one time.
+Note that by making a POST call to the getMailTips action, you can request specific types of MailTips tobe returned for more than one recipient at one time.
 The requested MailTips are returned in a mailTips collection.
 This API is available in the following national cloud deployments.
 
@@ -376,35 +376,35 @@ Follow a driveItem.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaForwardUserEvent](Invoke-MgBetaForwardUserEvent.md)
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaForwardUserEvent](Invoke-MgBetaForwardUserEvent.md)
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaForwardUserEvent](Invoke-MgBetaForwardUserEvent.md)
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaForwardUserEvent](Invoke-MgBetaForwardUserEvent.md)
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaForwardUserMessage](Invoke-MgBetaForwardUserMessage.md)
 Forward a message using either JSON or MIME format.
-When using JSON format, you can:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+When using JSON format, you can:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
 Specifying both or specifying neither will return an HTTP 400 Bad Request error.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
 This API is available in the following national cloud deployments.
@@ -432,11 +432,11 @@ If this happens, the application will need to acquire a new refresh token by mak
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaInviteUserDriveItem](Invoke-MgBetaInviteUserDriveItem.md)
-Sends a sharing invitation for a DriveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaInviteUserDriveRoot](Invoke-MgBetaInviteUserDriveRoot.md)
-Sends a sharing invitation for a DriveItem.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaLicenseUser](Invoke-MgBetaLicenseUser.md)
@@ -526,36 +526,36 @@ Invoke action reenable
 
 ### [Invoke-MgBetaReplyAllUserMessage](Invoke-MgBetaReplyAllUserMessage.md)
 Reply to all recipients of a message using either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply-all to a message, and send it later.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaReplyAllUserMessage](Invoke-MgBetaReplyAllUserMessage.md)
 Reply to all recipients of a message using either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply-all to a message, and send it later.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaReplyAllUserMessage](Invoke-MgBetaReplyAllUserMessage.md)
 Reply to all recipients of a message using either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply-all to a message, and send it later.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaReplyUserMessage](Invoke-MgBetaReplyUserMessage.md)
 Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\n* Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n* If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:* Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.* If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to a message, and send it later.
 This API is available in the following national cloud deployments.
@@ -702,13 +702,13 @@ Invoke action createEnrollmentNotificationConfiguration
 
 ### [New-MgBetaUserDriveItemLink](New-MgBetaUserDriveItemLink.md)
 You can use createLink action to share a driveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserDriveItemListItemLink](New-MgBetaUserDriveItemListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 This API is available in the following national cloud deployments.
 
@@ -717,19 +717,19 @@ Invoke action createUploadSession
 
 ### [New-MgBetaUserDriveListItemLink](New-MgBetaUserDriveListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserDriveRootLink](New-MgBetaUserDriveRootLink.md)
 You can use createLink action to share a driveItem via a sharing link.
-The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The createLink action will create a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserDriveRootListItemLink](New-MgBetaUserDriveRootListItemLink.md)
 Create a sharing link for a listItem.
-The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 This API is available in the following national cloud deployments.
 
@@ -788,28 +788,28 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserMessageForward](New-MgBetaUserMessageForward.md)
 Create a draft to forward an existing message, in either JSON or MIME format.
-When using JSON format, you can:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
-Specifying both or specifying neither will return an HTTP 400 Bad Request error.\n- Update the draft later to add content to the body or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format, you can:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- Specify either the toRecipients parameter or the toRecipients property of the message parameter.
+Specifying both or specifying neither will return an HTTP 400 Bad Request error.- Update the draft later to add content to the body or change other message properties.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserMessageReply](New-MgBetaUserMessageReply.md)
 Create a draft to reply to the sender of a message in either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If replyTo is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in replyTo, and not the recipients in from.\n- You can update the draft later to add reply content to the body or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- If replyTo is specified in the original message, per Internet Message Format (RFC 2822), you should send the reply to the recipients in replyTo, and not the recipients in from.- You can update the draft later to add reply content to the body or change other message properties.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserMessageReplyAll](New-MgBetaUserMessageReplyAll.md)
 Create a draft to reply to the sender and all recipients of a message in either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), you should send the reply to the recipients in the replyTo and toRecipients properties, and not the recipients in the from and toRecipients properties.\n- You can update the draft message later.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
+When using JSON format:- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.- If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), you should send the reply to the recipients in the replyTo and toRecipients properties, and not the recipients in the from and toRecipients properties.- You can update the draft message later.
+When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 This API is available in the following national cloud deployments.
@@ -1114,17 +1114,17 @@ This API is available in the following national cloud deployments.
 ### [Stop-MgBetaUserEvent](Stop-MgBetaUserEvent.md)
 This action allows the organizer of a meeting to send a cancellation message and cancel the event.
 The action moves the event to the Deleted Items folder.
-The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
-An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
-You need to be an organizer to cancel a meeting.' This action differs from Delete in that Cancel is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
+The organizer can also cancel an occurrence of a recurring meeting by providing the occurrence event ID.
+An attendee calling this action gets an error (HTTP 400 Bad Request), with the followingerror message: 'Your request can't be completed.
+You need to be an organizer to cancel a meeting.' This action differs from Delete in that Cancel is available to only the organizer, and letsthe organizer send a custom message to the attendees about the cancellation.
 This API is available in the following national cloud deployments.
 
 ### [Stop-MgBetaUserEvent](Stop-MgBetaUserEvent.md)
 This action allows the organizer of a meeting to send a cancellation message and cancel the event.
 The action moves the event to the Deleted Items folder.
-The organizer can also cancel an occurrence of a recurring meeting \nby providing the occurrence event ID.
-An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
-You need to be an organizer to cancel a meeting.' This action differs from Delete in that Cancel is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
+The organizer can also cancel an occurrence of a recurring meeting by providing the occurrence event ID.
+An attendee calling this action gets an error (HTTP 400 Bad Request), with the followingerror message: 'Your request can't be completed.
+You need to be an organizer to cancel a meeting.' This action differs from Delete in that Cancel is available to only the organizer, and letsthe organizer send a custom message to the attendees about the cancellation.
 This API is available in the following national cloud deployments.
 
 ### [Stop-MgBetaUserPendingAccessReviewInstance](Stop-MgBetaUserPendingAccessReviewInstance.md)
@@ -1193,9 +1193,9 @@ This API is available in the following national cloud deployments.
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
 For validating properties of an existing group, use the validateProperties function for groups.
-The following validations are performed for the display name and mail nickname properties: \n1.
-Validate the prefix and suffix naming policy\n2.
-Validate the custom banned words policy\n3.
+The following validations are performed for the display name and mail nickname properties: 1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.

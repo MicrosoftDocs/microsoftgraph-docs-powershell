@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasite
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSite
 
 ## SYNOPSIS
-Retrieve properties and relationships for a [site][] resource.\nA site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a [site][] resource.A site resource represents a team site in SharePoint.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgBetaSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Retrieve properties and relationships for a [site][] resource.\nA site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a [site][] resource.A site resource represents a team site in SharePoint.
 
 ## EXAMPLES
 
