@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancerolemanagementalertconfiguration
 schema: 2.0.0
@@ -17,7 +17,7 @@ Update the navigation property alertConfigurations in identityGovernance
 Update-MgBetaIdentityGovernanceRoleManagementAlertConfiguration
  -UnifiedRoleManagementAlertConfigurationId <String> [-AdditionalProperties <Hashtable>]
  [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
- [-Id <String>] [-IsEnabled] [-ScopeId <String>] [-ScopeType <String>] [-Confirm] [-WhatIf]
+ [-Id <String>] [-IsEnabled] [-ScopeId <String>] [-ScopeType <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,14 +25,7 @@ Update-MgBetaIdentityGovernanceRoleManagementAlertConfiguration
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlertConfiguration
  -UnifiedRoleManagementAlertConfigurationId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,8 +33,15 @@ Update-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -InputObject <II
 ```
 Update-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>]
- [-AlertDefinitionId <String>] [-Id <String>] [-IsEnabled] [-ScopeId <String>] [-ScopeType <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AlertDefinitionId <String>] [-Id <String>] [-IsEnabled] [-ScopeId <String>] [-ScopeType <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,19 +49,15 @@ Update the navigation property alertConfigurations in identityGovernance
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -69,7 +65,7 @@ Update the navigation property alertConfigurations in identityGovernance
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +81,7 @@ unifiedRoleManagementAlertDefinition
 To construct, see NOTES section for ALERTDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
+Type: IMicrosoftGraphUnifiedRoleManagementAlertDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +97,7 @@ The identifier of an alert definition.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +113,7 @@ unifiedRoleManagementAlertConfiguration
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertConfiguration
+Type: IMicrosoftGraphUnifiedRoleManagementAlertConfiguration
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -133,7 +129,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,8 +145,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -165,7 +161,7 @@ true if the alert is enabled.
 Setting it to false disables PIM scanning the tenant to identify instances that trigger the alert.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,7 +178,7 @@ Only / is supported to represent the tenant scope.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +194,7 @@ The type of scope where the alert is created.
 DirectoryRole is the only currently supported scope type for Azure AD roles.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,8 +209,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleManagementAlertConfiguration
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -228,7 +224,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -244,7 +240,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -261,13 +257,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertConfiguration
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertConfiguration
-
 ## NOTES
 
 ALIASES
@@ -413,3 +406,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

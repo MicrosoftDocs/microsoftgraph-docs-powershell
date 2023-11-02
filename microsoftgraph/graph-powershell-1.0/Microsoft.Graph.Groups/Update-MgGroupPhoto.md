@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupphoto
@@ -41,6 +41,8 @@ Update-MgGroupPhoto -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Update the navigation property photo in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -248,5 +250,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupPhoto?view=graph-powershell-beta)
 

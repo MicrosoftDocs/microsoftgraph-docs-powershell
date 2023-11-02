@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Files
 Module Guid: 1c548edd-bc60-4757-9f75-7a370dc77a60
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files
@@ -19,7 +19,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Add-MgBetaShareListContentTypeCopy](Add-MgBetaShareListContentTypeCopy.md)
@@ -30,7 +30,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Copy-MgBetaDriveItem](Copy-MgBetaDriveItem.md)
@@ -1485,10 +1485,8 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaShareSite](Get-MgBetaShareSite.md)
 Used to access the underlying site
 
-### [Get-MgBetaUserDefaultDrive](Get-MgBetaUserDefaultDrive.md)
-Retrieve the properties and relationships of a Drive resource.
-A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaShareSite](Get-MgBetaShareSite.md)
+Used to access the underlying site
 
 ### [Get-MgBetaUserDrive](Get-MgBetaUserDrive.md)
 A collection of drives available for this user.
@@ -2296,8 +2294,8 @@ Invoke action createUploadSession
 ### [New-MgBetaDriveRootVersion](New-MgBetaDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgBetaGroupDrive](New-MgBetaGroupDrive.md)
-Create new navigation property to drives for groups
+### [New-MgBetaDriveRootVersion](New-MgBetaDriveRootVersion.md)
+Create new navigation property to versions for drives
 
 ### [New-MgBetaGroupDriveBundle](New-MgBetaGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -2420,8 +2418,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgBetaShareSharedDriveItemSharedDriveItem](New-MgBetaShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgBetaUserDrive](New-MgBetaUserDrive.md)
-Create new navigation property to drives for users
+### [New-MgBetaShareSharedDriveItemSharedDriveItem](New-MgBetaShareSharedDriveItemSharedDriveItem.md)
+Add new entity to shares
 
 ### [New-MgBetaUserDriveBundle](New-MgBetaUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -2518,8 +2516,9 @@ This API is available in the following [national cloud deployments.
 Publishes a contentType][] present in a content type hub site.
 This API is available in the following [national cloud deployments.
 
-### [Remove-MgBetaDrive](Remove-MgBetaDrive.md)
-Delete entity from drives
+### [Publish-MgBetaShareListContentType](Publish-MgBetaShareListContentType.md)
+Publishes a contentType][] present in a content type hub site.
+This API is available in the following [national cloud deployments.
 
 ### [Remove-MgBetaDriveItem](Remove-MgBetaDriveItem.md)
 Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
@@ -3228,8 +3227,9 @@ This API is available in the following [national cloud deployments.
 Unpublish a contentType][] from a content type hub site.
 This API is available in the following [national cloud deployments.
 
-### [Update-MgBetaDrive](Update-MgBetaDrive.md)
-Update entity in drives
+### [Unpublish-MgBetaShareListContentType](Unpublish-MgBetaShareListContentType.md)
+Unpublish a contentType][] from a content type hub site.
+This API is available in the following [national cloud deployments.
 
 ### [Update-MgBetaDriveCreatedByUserMailboxSetting](Update-MgBetaDriveCreatedByUserMailboxSetting.md)
 Update property mailboxSettings value.

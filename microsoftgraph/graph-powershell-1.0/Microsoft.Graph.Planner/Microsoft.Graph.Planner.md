@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Planner
 Module Guid: dc897314-a5e2-49c7-8009-a6700fd04ab6
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.planner
@@ -94,13 +94,13 @@ This API is supported in the following national cloud deployments.
 Entry-point to the Planner resource that might exist for a user.
 Read-only.
 
-### [Get-MgUserPlannerPlan](Get-MgUserPlannerPlan.md)
-Retrieve a list of plannerplan objects shared with a user object.
-This API is supported in the following national cloud deployments.
+### [Get-MgUserPlanner](Get-MgUserPlanner.md)
+Entry-point to the Planner resource that might exist for a user.
+Read-only.
 
-### [Get-MgUserPlannerTask](Get-MgUserPlannerTask.md)
-Retrieve a list of plannertask objects assigned to a User.
-This API is supported in the following national cloud deployments.
+### [Get-MgUserPlanner](Get-MgUserPlanner.md)
+Entry-point to the Planner resource that might exist for a user.
+Read-only.
 
 ### [New-MgPlannerBucket](New-MgPlannerBucket.md)
 Create a new plannerBucket object.

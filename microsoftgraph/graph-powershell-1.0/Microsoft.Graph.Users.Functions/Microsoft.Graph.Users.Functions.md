@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Functions
 Module Guid: a20c9cf1-c85f-4993-828a-79c1d9e3980f
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions
@@ -28,9 +28,6 @@ This API is supported in the following national cloud deployments.
 Invoke function delta
 
 ### [Get-MgUserChatMessageReplyDelta](Get-MgUserChatMessageReplyDelta.md)
-Invoke function delta
-
-### [Get-MgUserChatPermissionGrantDelta](Get-MgUserChatPermissionGrantDelta.md)
 Invoke function delta
 
 ### [Get-MgUserContactDelta](Get-MgUserContactDelta.md)

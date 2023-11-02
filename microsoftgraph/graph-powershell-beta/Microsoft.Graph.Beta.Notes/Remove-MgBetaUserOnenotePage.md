@@ -1,43 +1,47 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotepage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotenotebook
 schema: 2.0.0
 ---
 
-# Remove-MgBetaUserOnenotePage
+# Remove-MgBetaUserOnenoteNotebook
 
 ## SYNOPSIS
-Delete a OneNote page.
-This API is available in the following national cloud deployments.
+Delete navigation property notebooks for users
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaUserOnenotePage -OnenotePageId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgBetaUserOnenoteNotebook -NotebookId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaUserOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Remove-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete a OneNote page.
-This API is available in the following national cloud deployments.
+Delete navigation property notebooks for users
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Notes
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Remove-MgBetaUserOnenotePage -UserId $userId -OnenotePageId $onenotePageId
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -45,7 +49,7 @@ Remove-MgBetaUserOnenotePage -UserId $userId -OnenotePageId $onenotePageId
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -61,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
+Type: INotesIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -72,11 +76,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OnenotePageId
-The unique identifier of onenotePage
+### -NotebookId
+The unique identifier of notebook
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -91,7 +95,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -106,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -121,7 +125,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -137,7 +141,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -154,11 +158,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -180,4 +182,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Planner
 Module Guid: a47a1fac-50a3-4b99-94a5-efa273d2ac4b
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner
@@ -137,9 +137,8 @@ Returns the plannerPlans that the user marked as favorites.
 ### [Get-MgBetaUserPlannerFavoritePlanCount](Get-MgBetaUserPlannerFavoritePlanCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserPlannerPlan](Get-MgBetaUserPlannerPlan.md)
-Retrieve a list of plannerplan objects shared with a user object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserPlannerFavoritePlanCount](Get-MgBetaUserPlannerFavoritePlanCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserPlannerRecentPlan](Get-MgBetaUserPlannerRecentPlan.md)
 Read-only.
@@ -157,9 +156,8 @@ Returns the plannerPlans contained by the plannerRosters the user is a member.
 ### [Get-MgBetaUserPlannerRosterPlanCount](Get-MgBetaUserPlannerRosterPlanCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserPlannerTask](Get-MgBetaUserPlannerTask.md)
-Retrieve a list of plannertask objects assigned to a User.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserPlannerRosterPlanCount](Get-MgBetaUserPlannerRosterPlanCount.md)
+Get the number of the resource
 
 ### [New-MgBetaPlannerBucket](New-MgBetaPlannerBucket.md)
 Create a new plannerBucket object.

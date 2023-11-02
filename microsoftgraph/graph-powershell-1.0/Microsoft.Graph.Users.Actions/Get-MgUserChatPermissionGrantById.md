@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguserchatpermissiongrantbyid
@@ -47,6 +47,8 @@ Get-MgUserChatPermissionGrantById -InputObject <IUsersActionsIdentity>
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -245,5 +247,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserChatPermissionGrantById](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserChatPermissionGrantById?view=graph-powershell-beta)
 

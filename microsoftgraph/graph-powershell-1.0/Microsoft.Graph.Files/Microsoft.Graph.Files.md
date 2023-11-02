@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Files
 Module Guid: 4b6244e5-02ec-42bc-9daf-3b129120eea9
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.files
@@ -19,7 +19,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Add-MgShareListContentTypeCopy](Add-MgShareListContentTypeCopy.md)
@@ -30,7 +30,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Copy-MgDriveItem](Copy-MgDriveItem.md)
@@ -1394,14 +1394,11 @@ This API is available in the following national cloud deployments.
 ### [Get-MgShareSite](Get-MgShareSite.md)
 Used to access the underlying site
 
-### [Get-MgUserDefaultDrive](Get-MgUserDefaultDrive.md)
-Retrieve the properties and relationships of a Drive resource.
-A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
-This API is available in the following national cloud deployments.
+### [Get-MgShareSite](Get-MgShareSite.md)
+Used to access the underlying site
 
-### [Get-MgUserDrive](Get-MgUserDrive.md)
-A collection of drives available for this user.
-Read-only.
+### [Get-MgShareSite](Get-MgShareSite.md)
+Used to access the underlying site
 
 ### [Get-MgUserDriveBundle](Get-MgUserDriveBundle.md)
 Retrieve the metadata for a bundle][] based on the unique ID of the bundle.
@@ -2149,8 +2146,8 @@ Invoke action createUploadSession
 ### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgGroupDrive](New-MgGroupDrive.md)
-Create new navigation property to drives for groups
+### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
+Create new navigation property to versions for drives
 
 ### [New-MgGroupDriveBundle](New-MgGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -2273,8 +2270,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgUserDrive](New-MgUserDrive.md)
-Create new navigation property to drives for users
+### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
+Add new entity to shares
 
 ### [New-MgUserDriveBundle](New-MgUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -2371,8 +2368,9 @@ This API is available in the following [national cloud deployments.
 Publishes a contentType][] present in the content type hub site.
 This API is available in the following [national cloud deployments.
 
-### [Remove-MgDrive](Remove-MgDrive.md)
-Delete entity from drives
+### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
+Publishes a contentType][] present in the content type hub site.
+This API is available in the following [national cloud deployments.
 
 ### [Remove-MgDriveItem](Remove-MgDriveItem.md)
 Delete a DriveItem by using its ID or path.\nDeleting items using this method moves the items to the recycle bin instead of permanently deleting the item.
@@ -3049,8 +3047,9 @@ This API is available in the following [national cloud deployments.
 Unpublish a contentType][] from a content type hub site.
 This API is available in the following [national cloud deployments.
 
-### [Update-MgDrive](Update-MgDrive.md)
-Update entity in drives
+### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
+Unpublish a contentType][] from a content type hub site.
+This API is available in the following [national cloud deployments.
 
 ### [Update-MgDriveCreatedByUserMailboxSetting](Update-MgDriveCreatedByUserMailboxSetting.md)
 Update property mailboxSettings value.

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 Module Guid: 66c2c15e-d92c-4ef3-ad9d-aff89bd5b520
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences
@@ -195,9 +195,8 @@ This API is available in the following national cloud deployments.
 ### [New-MgBetaUserDeviceUsageRights](New-MgBetaUserDeviceUsageRights.md)
 Create new navigation property to usageRights for users
 
-### [Remove-MgBetaUserActivity](Remove-MgBetaUserActivity.md)
-Delete an existing user activity for your app.
-This API is available in the following national cloud deployments.
+### [New-MgBetaUserDeviceUsageRights](New-MgBetaUserDeviceUsageRights.md)
+Create new navigation property to usageRights for users
 
 ### [Remove-MgBetaUserActivityHistoryItem](Remove-MgBetaUserActivityHistoryItem.md)
 Delete navigation property historyItems for users

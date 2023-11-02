@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Notes
 Module Guid: f6357215-78c0-473a-9ae9-4f3087761440
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes
@@ -155,28 +155,22 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
-### [Get-MgBetaUserOnenoteNotebook](Get-MgBetaUserOnenoteNotebook.md)
-Retrieve the properties and relationships of a notebook object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaSiteOnenoteSectionPage](Get-MgBetaSiteOnenoteSectionPage.md)
+The collection of pages in the section.
+Read-only.
+Nullable.
 
 ### [Get-MgBetaUserOnenoteNotebookCount](Get-MgBetaUserOnenoteNotebookCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnenoteNotebookSection](Get-MgBetaUserOnenoteNotebookSection.md)
-Retrieve a list of section objects from the specified notebook.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserOnenoteNotebookCount](Get-MgBetaUserOnenoteNotebookCount.md)
+Get the number of the resource
 
-### [Get-MgBetaUserOnenoteNotebookSectionGroup](Get-MgBetaUserOnenoteNotebookSectionGroup.md)
-Retrieve a list of section groups from the specified notebook.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserOnenoteNotebookCount](Get-MgBetaUserOnenoteNotebookCount.md)
+Get the number of the resource
 
-### [Get-MgBetaUserOnenoteOperation](Get-MgBetaUserOnenoteOperation.md)
-Get the status of a long-running OneNote operation.
-The status applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
-  You can poll the Operation-Location endpoint until the status property returns completed or failed.
-If the status is completed, the resourceLocation property contains the resource endpoint URI.
-If the status is failed, the error and @api.diagnostics properties provide error information.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserOnenoteNotebookCount](Get-MgBetaUserOnenoteNotebookCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserOnenoteOperationCount](Get-MgBetaUserOnenoteOperationCount.md)
 Get the number of the resource
@@ -204,23 +198,20 @@ Get content for the navigation property resources from users
 ### [Get-MgBetaUserOnenoteResourceCount](Get-MgBetaUserOnenoteResourceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnenoteSection](Get-MgBetaUserOnenoteSection.md)
-Retrieve the properties and relationships of a section object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserOnenoteResourceCount](Get-MgBetaUserOnenoteResourceCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserOnenoteSectionCount](Get-MgBetaUserOnenoteSectionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnenoteSectionGroup](Get-MgBetaUserOnenoteSectionGroup.md)
-Retrieve the properties and relationships of a sectionGroup object.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserOnenoteSectionCount](Get-MgBetaUserOnenoteSectionCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserOnenoteSectionGroupCount](Get-MgBetaUserOnenoteSectionGroupCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnenoteSectionGroupSection](Get-MgBetaUserOnenoteSectionGroupSection.md)
-Retrieve a list of onenoteSection objects from the specified section group.
-This API is available in the following national cloud deployments.
+### [Get-MgBetaUserOnenoteSectionGroupCount](Get-MgBetaUserOnenoteSectionGroupCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserOnenoteSectionPage](Get-MgBetaUserOnenoteSectionPage.md)
 The collection of pages in the section.
@@ -242,11 +233,11 @@ This API is available in the following national cloud deployments.
 ### [New-MgBetaGroupOnenotePage](New-MgBetaGroupOnenotePage.md)
 Create new navigation property to pages for groups
 
-### [New-MgBetaGroupOnenoteSection](New-MgBetaGroupOnenoteSection.md)
-Create new navigation property to sections for groups
+### [New-MgBetaGroupOnenotePage](New-MgBetaGroupOnenotePage.md)
+Create new navigation property to pages for groups
 
-### [New-MgBetaGroupOnenoteSectionGroup](New-MgBetaGroupOnenoteSectionGroup.md)
-Create new navigation property to sectionGroups for groups
+### [New-MgBetaGroupOnenotePage](New-MgBetaGroupOnenotePage.md)
+Create new navigation property to pages for groups
 
 ### [New-MgBetaGroupOnenoteSectionGroupSection](New-MgBetaGroupOnenoteSectionGroupSection.md)
 Create a new section in the specified section group.
@@ -270,11 +261,11 @@ This API is available in the following national cloud deployments.
 ### [New-MgBetaSiteOnenotePage](New-MgBetaSiteOnenotePage.md)
 Create new navigation property to pages for sites
 
-### [New-MgBetaSiteOnenoteSection](New-MgBetaSiteOnenoteSection.md)
-Create new navigation property to sections for sites
+### [New-MgBetaSiteOnenotePage](New-MgBetaSiteOnenotePage.md)
+Create new navigation property to pages for sites
 
-### [New-MgBetaSiteOnenoteSectionGroup](New-MgBetaSiteOnenoteSectionGroup.md)
-Create new navigation property to sectionGroups for sites
+### [New-MgBetaSiteOnenotePage](New-MgBetaSiteOnenotePage.md)
+Create new navigation property to pages for sites
 
 ### [New-MgBetaSiteOnenoteSectionGroupSection](New-MgBetaSiteOnenoteSectionGroupSection.md)
 Create a new section in the specified section group.
@@ -283,30 +274,26 @@ This API is available in the following national cloud deployments.
 ### [New-MgBetaSiteOnenoteSectionPage](New-MgBetaSiteOnenoteSectionPage.md)
 Create new navigation property to pages for sites
 
-### [New-MgBetaUserOnenoteNotebook](New-MgBetaUserOnenoteNotebook.md)
-Create a new OneNote notebook.
-This API is available in the following national cloud deployments.
+### [New-MgBetaSiteOnenoteSectionPage](New-MgBetaSiteOnenoteSectionPage.md)
+Create new navigation property to pages for sites
 
-### [New-MgBetaUserOnenoteNotebookSection](New-MgBetaUserOnenoteNotebookSection.md)
-Create a new section in the specified notebook.
-This API is available in the following national cloud deployments.
+### [New-MgBetaSiteOnenoteSectionPage](New-MgBetaSiteOnenoteSectionPage.md)
+Create new navigation property to pages for sites
 
-### [New-MgBetaUserOnenoteNotebookSectionGroup](New-MgBetaUserOnenoteNotebookSectionGroup.md)
-Create a new section group in the specified notebook.
-This API is available in the following national cloud deployments.
+### [New-MgBetaSiteOnenoteSectionPage](New-MgBetaSiteOnenoteSectionPage.md)
+Create new navigation property to pages for sites
 
 ### [New-MgBetaUserOnenotePage](New-MgBetaUserOnenotePage.md)
 Create new navigation property to pages for users
 
-### [New-MgBetaUserOnenoteSection](New-MgBetaUserOnenoteSection.md)
-Create new navigation property to sections for users
+### [New-MgBetaUserOnenotePage](New-MgBetaUserOnenotePage.md)
+Create new navigation property to pages for users
 
-### [New-MgBetaUserOnenoteSectionGroup](New-MgBetaUserOnenoteSectionGroup.md)
-Create new navigation property to sectionGroups for users
+### [New-MgBetaUserOnenotePage](New-MgBetaUserOnenotePage.md)
+Create new navigation property to pages for users
 
-### [New-MgBetaUserOnenoteSectionGroupSection](New-MgBetaUserOnenoteSectionGroupSection.md)
-Create a new section in the specified section group.
-This API is available in the following national cloud deployments.
+### [New-MgBetaUserOnenotePage](New-MgBetaUserOnenotePage.md)
+Create new navigation property to pages for users
 
 ### [New-MgBetaUserOnenoteSectionPage](New-MgBetaUserOnenoteSectionPage.md)
 Create new navigation property to pages for users
@@ -340,9 +327,8 @@ Delete navigation property sectionGroups for sites
 ### [Remove-MgBetaUserOnenoteNotebook](Remove-MgBetaUserOnenoteNotebook.md)
 Delete navigation property notebooks for users
 
-### [Remove-MgBetaUserOnenotePage](Remove-MgBetaUserOnenotePage.md)
-Delete a OneNote page.
-This API is available in the following national cloud deployments.
+### [Remove-MgBetaUserOnenoteNotebook](Remove-MgBetaUserOnenoteNotebook.md)
+Delete navigation property notebooks for users
 
 ### [Remove-MgBetaUserOnenoteSection](Remove-MgBetaUserOnenoteSection.md)
 Delete navigation property sections for users

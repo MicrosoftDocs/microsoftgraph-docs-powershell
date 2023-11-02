@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloriconhostedcontent
 schema: 2.0.0
@@ -15,20 +15,14 @@ This API is available in the following national cloud deployments.
 
 ### Get (Default)
 ```
-Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppDefinitionId <String>
- -TeamsAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppDefinitionId <String> -TeamsAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppDefinitionId <String>
- -TeamsAppId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeamsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppDefinitionId <String> -TeamsAppId <String>
+ -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -37,19 +31,23 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeams
  [-PassThru] [<CommonParameters>]
 ```
 
+### GetViaIdentity
+```
+Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeamsIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Retrieve the hosted content in an app's icon.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
-
-
 
 ## PARAMETERS
 
@@ -57,7 +55,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppId $teamsAp
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: Get, GetViaIdentity
 Aliases: Expand
 
@@ -73,8 +71,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1
+Type: ITeamsIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -88,7 +86,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
@@ -103,7 +101,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
@@ -118,7 +116,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: Get, GetViaIdentity
 Aliases: Select
 
@@ -133,7 +131,7 @@ Accept wildcard characters: False
 The unique identifier of teamsAppDefinition
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -148,7 +146,7 @@ Accept wildcard characters: False
 The unique identifier of teamsApp
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -165,13 +163,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
-
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -222,4 +217,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-

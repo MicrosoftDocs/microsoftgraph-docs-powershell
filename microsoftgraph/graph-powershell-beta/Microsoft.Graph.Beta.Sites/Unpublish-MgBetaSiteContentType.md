@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetasitecontenttype
 schema: 2.0.0
@@ -15,13 +15,13 @@ This API is available in the following [national cloud deployments.
 
 ### Unpublish (Default)
 ```
-Unpublish-MgBetaSiteContentType -ContentTypeId <String> -SiteId <String> [-PassThru] [-Confirm] [-WhatIf]
+Unpublish-MgBetaSiteContentType -ContentTypeId <String> -SiteId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UnpublishViaIdentity
 ```
-Unpublish-MgBetaSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-Confirm] [-WhatIf]
+Unpublish-MgBetaSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -31,13 +31,11 @@ This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Unpublish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 ```
-
-
 
 ## PARAMETERS
 
@@ -45,7 +43,7 @@ Unpublish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 The unique identifier of contentType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Unpublish
 Aliases:
 
@@ -61,7 +59,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Type: ISitesIdentity
 Parameter Sets: UnpublishViaIdentity
 Aliases:
 
@@ -76,7 +74,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -91,7 +89,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Unpublish
 Aliases:
 
@@ -106,7 +104,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -122,7 +120,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -139,11 +137,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -204,4 +200,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

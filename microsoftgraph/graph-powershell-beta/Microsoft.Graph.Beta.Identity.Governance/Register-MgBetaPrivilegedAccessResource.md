@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/register-mgbetaprivilegedaccessresource
 schema: 2.0.0
@@ -15,28 +15,28 @@ Invoke action register
 ### RegisterExpanded (Default)
 ```
 Register-MgBetaPrivilegedAccessResource -PrivilegedAccessId <String> [-AdditionalProperties <Hashtable>]
- [-ExternalId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ExternalId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Register
 ```
 Register-MgBetaPrivilegedAccessResource -PrivilegedAccessId <String>
  -Body <IPaths1RoyfaoPrivilegedaccessIdResourcesMicrosoftGraphRegisterPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RegisterViaIdentityExpanded
+```
+Register-MgBetaPrivilegedAccessResource -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-ExternalId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### RegisterViaIdentity
 ```
 Register-MgBetaPrivilegedAccessResource -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths1RoyfaoPrivilegedaccessIdResourcesMicrosoftGraphRegisterPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### RegisterViaIdentityExpanded
-```
-Register-MgBetaPrivilegedAccessResource -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-ExternalId <String>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,14 +44,14 @@ Invoke action register
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -64,7 +64,7 @@ Invoke action register
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: RegisterExpanded, RegisterViaIdentityExpanded
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1RoyfaoPrivilegedaccessIdResourcesMicrosoftGraphRegisterPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1RoyfaoPrivilegedaccessIdResourcesMicrosoftGraphRegisterPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Register
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1RoyfaoPrivilegedaccessIdResourcesMicrosoftGraphRegisterPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1RoyfaoPrivilegedaccessIdResourcesMicrosoftGraphRegisterPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: RegisterViaIdentity
 Aliases:
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: RegisterExpanded, RegisterViaIdentityExpanded
 Aliases:
 
@@ -127,8 +127,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: RegisterViaIdentity, RegisterViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: RegisterViaIdentityExpanded, RegisterViaIdentity
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -157,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of privilegedAccess
 
 ```yaml
-Type: System.String
-Parameter Sets: Register, RegisterExpanded
+Type: String
+Parameter Sets: RegisterExpanded, Register
 Aliases:
 
 Required: True
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1RoyfaoPrivilegedaccessIdResourcesMicrosoftGraphRegisterPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -329,4 +326,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

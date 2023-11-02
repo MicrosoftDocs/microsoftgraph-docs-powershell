@@ -1,89 +1,78 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyusermailfoldermessage
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermessage
 schema: 2.0.0
 ---
 
-# Invoke-MgBetaReplyUserMailFolderMessage
+# Invoke-MgBetaReplyAllUserMessage
 
 ## SYNOPSIS
-Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\n* Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n* If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
+Reply to all recipients of a message using either JSON or MIME format.
+When using JSON format:\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
 When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
-Alternatively, create a draft to reply to a message, and send it later.
+Alternatively, create a draft to reply-all to a message, and send it later.
 This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
-### ReplyExpanded (Default)
+### ReplyExpanded1 (Default)
 ```
-Invoke-MgBetaReplyUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Reply
-```
-Invoke-MgBetaReplyUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
- -BodyParameter <IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaReplyAllUserMessage -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReplyViaIdentity
+### Reply1
 ```
-Invoke-MgBetaReplyUserMailFolderMessage -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaReplyAllUserMessage -MessageId <String> -UserId <String>
+ -BodyParameter <IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReplyViaIdentityExpanded
+### ReplyViaIdentityExpanded1
 ```
-Invoke-MgBetaReplyUserMailFolderMessage -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaReplyAllUserMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReplyViaIdentity1
+```
+Invoke-MgBetaReplyAllUserMessage -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\n* Specify either a comment or the body property of the message parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n* If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
+Reply to all recipients of a message using either JSON or MIME format.
+When using JSON format:\n- Specify either a comment or the body property of the message parameter.
+Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the replyTo property, per Internet Message Format (RFC 2822), send the reply to the recipients in replyTo and not the recipient in the from property.
 When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
-Alternatively, create a draft to reply to a message, and send it later.
+Alternatively, create a draft to reply-all to a message, and send it later.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
 $params = @{
 	Message = @{
-		ToRecipients = @(
+		Attachments = @(
 			@{
-				EmailAddress = @{
-					Address = "samanthab@contoso.onmicrosoft.com"
-					Name = "Samantha Booth"
-				}
-			}
-			@{
-				EmailAddress = @{
-					Address = "randiw@contoso.onmicrosoft.com"
-					Name = "Randi Welch"
-				}
+				"@odata.type" = "#microsoft.graph.fileAttachment"
+				Name = "guidelines.txt"
+				ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 			}
 		)
 	}
-	Comment = "Samantha, Randi, would you name the group please?"
+	Comment = "Please take a look at the attached guidelines before you decide on the name."
 }
-
 # A UPN can also be used as -UserId.
-Invoke-MgBetaReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+Invoke-MgBetaReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
 
 ## PARAMETERS
 
@@ -91,8 +80,8 @@ Invoke-MgBetaReplyUserMessage -UserId $userId -MessageId $messageId -BodyParamet
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -107,8 +96,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Reply, ReplyViaIdentity
+Type: IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Reply1, ReplyViaIdentity1
 Aliases:
 
 Required: True
@@ -122,8 +111,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
+Type: String
+Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -138,8 +127,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: ReplyViaIdentity, ReplyViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: ReplyViaIdentityExpanded1, ReplyViaIdentity1
 Aliases:
 
 Required: True
@@ -149,28 +138,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -MailFolderId
-The unique identifier of mailFolder
-
-```yaml
-Type: System.String
-Parameter Sets: Reply, ReplyExpanded
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Message
 message
 To construct, see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
-Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
+Type: IMicrosoftGraphMessage
+Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -184,8 +158,8 @@ Accept wildcard characters: False
 The unique identifier of message
 
 ```yaml
-Type: System.String
-Parameter Sets: Reply, ReplyExpanded
+Type: String
+Parameter Sets: ReplyExpanded1, Reply1
 Aliases:
 
 Required: True
@@ -199,7 +173,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -214,8 +188,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Reply, ReplyExpanded
+Type: String
+Parameter Sets: ReplyExpanded1, Reply1
 Aliases:
 
 Required: True
@@ -229,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -245,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -261,14 +235,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -278,7 +249,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths6Zjq1HUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[Message <IMicrosoftGraphMessage>]`: message
@@ -485,3 +456,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

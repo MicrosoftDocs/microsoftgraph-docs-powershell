@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrantmemberobject
@@ -49,6 +49,7 @@ This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -60,10 +61,10 @@ $params = @{
 
 Get-MgDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
 ```
+
 This example shows how to use the Get-MgGroupPermissionGrantMemberObject Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -251,4 +252,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantMemberObject?view=graph-powershell-beta)

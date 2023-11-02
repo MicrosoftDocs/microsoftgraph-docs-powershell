@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Reports
 Module Guid: 2d5828dd-8563-48fb-9cc8-15eb363df8a3
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports
@@ -426,7 +426,7 @@ A placeholder to allow for the desired URL path for SLA.
 ### [Get-MgBetaReportSlaAzureAdAuthentication](Get-MgBetaReportSlaAzureAdAuthentication.md)
 Read the properties and relationships of an azureADAuthentication object to find the level of Microsoft Entra authentication availability for your tenant.
 The Microsoft Entra service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Microsoft Entra SLA performance.
-This object provides you with your tenant’s actual performance against this commitment.
+This object provides you with your tenant's actual performance against this commitment.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaReportTeamActivityCount](Get-MgBetaReportTeamActivityCount.md)

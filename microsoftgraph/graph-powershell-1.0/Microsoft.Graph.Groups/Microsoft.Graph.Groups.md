@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
 Module Guid: 13d9d484-d676-4d11-8f2f-a59aed5e3194
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.groups
@@ -19,7 +19,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Add-MgGroupFavorite](Add-MgGroupFavorite.md)
@@ -38,7 +38,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Add-MgGroupSiteListContentTypeCopy](Add-MgGroupSiteListContentTypeCopy.md)
@@ -49,7 +49,7 @@ This API is available in the following [national cloud deployments.
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
 ### [Add-MgGroupToLifecyclePolicy](Add-MgGroupToLifecyclePolicy.md)
@@ -70,6 +70,22 @@ This API is available in the following national cloud deployments.
 
 ### [Confirm-MgGroupMemberObject](Confirm-MgGroupMemberObject.md)
 Invoke action checkMemberObjects
+
+### [Confirm-MgGroupPermissionGrantMemberGroup](Confirm-MgGroupPermissionGrantMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaGroupPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupPermissionGrantMemberGroup?view=graph-powershell-beta)
+
+### [Confirm-MgGroupPermissionGrantMemberObject](Confirm-MgGroupPermissionGrantMemberObject.md)
+Invoke action checkMemberObjects
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupPermissionGrantMemberObject?view=graph-powershell-beta)
 
 ### [Confirm-MgGroupSettingTemplateMemberGroup](Confirm-MgGroupSettingTemplateMemberGroup.md)
 Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
@@ -329,13 +345,8 @@ Get the number of the resource
 ### [Get-MgGroupMemberCountAsUser](Get-MgGroupMemberCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgGroupMemberGroup](Get-MgGroupMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
-This API returns up to 11,000 group IDs.
-If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
-As a workaround, use the List group transitive memberOf API.
-This API is available in the following national cloud deployments.
+### [Get-MgGroupMemberCountAsUser](Get-MgGroupMemberCountAsUser.md)
+Get the number of the resource
 
 ### [Get-MgGroupMemberObject](Get-MgGroupMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -408,10 +419,8 @@ Get the number of the resource
 ### [Get-MgGroupMemberWithLicenseErrorCountAsUser](Get-MgGroupMemberWithLicenseErrorCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgGroupOnenoteNotebookFromWebUrl](Get-MgGroupOnenoteNotebookFromWebUrl.md)
-Retrieve the properties and relationships of a notebook object by using its URL path.
-The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
-This API is available in the following national cloud deployments.
+### [Get-MgGroupMemberWithLicenseErrorCountAsUser](Get-MgGroupMemberWithLicenseErrorCountAsUser.md)
+Get the number of the resource
 
 ### [Get-MgGroupOnenoteRecentNotebook](Get-MgGroupOnenoteRecentNotebook.md)
 Invoke function getRecentNotebooks
@@ -476,8 +485,36 @@ Get the number of the resource
 ### [Get-MgGroupPermissionGrant](Get-MgGroupPermissionGrant.md)
 Get permissionGrants from groups
 
+### [Get-MgGroupPermissionGrantById](Get-MgGroupPermissionGrantById.md)
+Return the directory objects specified in a list of IDs.
+Only a subset of user properties are returned by default in v1.0.
+Some common uses for this function are to:
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrantById](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantById?view=graph-powershell-beta)
+
 ### [Get-MgGroupPermissionGrantCount](Get-MgGroupPermissionGrantCount.md)
 Get the number of the resource
+
+### [Get-MgGroupPermissionGrantDelta](Get-MgGroupPermissionGrantDelta.md)
+Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantDelta?view=graph-powershell-beta)
+
+### [Get-MgGroupPermissionGrantDelta](Get-MgGroupPermissionGrantDelta.md)
+Invoke function delta
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantMemberGroup?view=graph-powershell-beta)
+
+### [Get-MgGroupPermissionGrantMemberObject](Get-MgGroupPermissionGrantMemberObject.md)
+Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
+Note: Only users and role-enabled groups can be members of directory roles.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantMemberObject?view=graph-powershell-beta)
 
 ### [Get-MgGroupPhoto](Get-MgGroupPhoto.md)
 The group's profile photo
@@ -678,25 +715,21 @@ This API is available in the following [national cloud deployments.
 Grant users access to a link represented by a permission][].
 This API is available in the following [national cloud deployments.
 
-### [Invoke-MgAcceptGroupCalendarEvent](Invoke-MgAcceptGroupCalendarEvent.md)
-Accept the specified event in a user calendar.
-This API is available in the following national cloud deployments.
+### [Grant-MgGroupSitePermission](Grant-MgGroupSitePermission.md)
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
-### [Invoke-MgAcceptGroupCalendarEventTentatively](Invoke-MgAcceptGroupCalendarEventTentatively.md)
-Tentatively accept the specified event in a user calendar.
-If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
-For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
-This API is available in the following national cloud deployments.
+### [Grant-MgGroupSitePermission](Grant-MgGroupSitePermission.md)
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
-### [Invoke-MgAcceptGroupEvent](Invoke-MgAcceptGroupEvent.md)
-Accept the specified event in a user calendar.
-This API is available in the following national cloud deployments.
+### [Grant-MgGroupSitePermission](Grant-MgGroupSitePermission.md)
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
-### [Invoke-MgAcceptGroupEventTentatively](Invoke-MgAcceptGroupEventTentatively.md)
-Tentatively accept the specified event in a user calendar.
-If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
-For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
-This API is available in the following national cloud deployments.
+### [Grant-MgGroupSitePermission](Grant-MgGroupSitePermission.md)
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
 ### [Invoke-MgCalendarGroupCalendar](Invoke-MgCalendarGroupCalendar.md)
 Invoke function allowedCalendarSharingRoles
@@ -717,24 +750,20 @@ This API is available in the following national cloud deployments.
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 This API is available in the following national cloud deployments.
 
-### [Invoke-MgDeclineGroupCalendarEvent](Invoke-MgDeclineGroupCalendarEvent.md)
-Decline invitation to the specified event in a user calendar.
-If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
-For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
+Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 This API is available in the following national cloud deployments.
 
-### [Invoke-MgDeclineGroupEvent](Invoke-MgDeclineGroupEvent.md)
-Decline invitation to the specified event in a user calendar.
-If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the proposedNewTime parameter.
-For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
+### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
+Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 This API is available in the following national cloud deployments.
 
-### [Invoke-MgDismissGroupCalendarEventReminder](Invoke-MgDismissGroupCalendarEventReminder.md)
-Dismiss a reminder that has been triggered for an event in a user calendar.
+### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
+Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 This API is available in the following national cloud deployments.
 
-### [Invoke-MgDismissGroupEventReminder](Invoke-MgDismissGroupEventReminder.md)
-Dismiss a reminder that has been triggered for an event in a user calendar.
+### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
+Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgExtractGroupDriveItemSensitivityLabel](Invoke-MgExtractGroupDriveItemSensitivityLabel.md)
@@ -751,10 +780,8 @@ This API is available in the following national cloud deployments.
 Follow a driveItem.
 This API is available in the following national cloud deployments.
 
-### [Invoke-MgForwardGroupCalendarEvent](Invoke-MgForwardGroupCalendarEvent.md)
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
-This convenience is not available when forwarding from an Outlook.com account.
+### [Invoke-MgFollowGroupDriveRoot](Invoke-MgFollowGroupDriveRoot.md)
+Follow a driveItem.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgForwardGroupConversationThreadPost](Invoke-MgForwardGroupConversationThreadPost.md)
@@ -767,10 +794,9 @@ Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 This API is available in the following national cloud deployments.
 
-### [Invoke-MgForwardGroupEvent](Invoke-MgForwardGroupEvent.md)
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
-This convenience is not available when forwarding from an Outlook.com account.
+### [Invoke-MgForwardGroupConversationThreadPostInReplyTo](Invoke-MgForwardGroupConversationThreadPostInReplyTo.md)
+Forward a post to a recipient.
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 This API is available in the following national cloud deployments.
 
 ### [Invoke-MgForwardGroupThreadPost](Invoke-MgForwardGroupThreadPost.md)
@@ -869,13 +895,11 @@ This API is available in the following national cloud deployments.
 ### [Invoke-MgRetryGroupServiceProvisioning](Invoke-MgRetryGroupServiceProvisioning.md)
 Invoke action retryServiceProvisioning
 
-### [Invoke-MgSnoozeGroupCalendarEventReminder](Invoke-MgSnoozeGroupCalendarEventReminder.md)
-Postpone a reminder for an event in a user calendar until a new time.
-This API is available in the following national cloud deployments.
+### [Invoke-MgRetryGroupServiceProvisioning](Invoke-MgRetryGroupServiceProvisioning.md)
+Invoke action retryServiceProvisioning
 
-### [Invoke-MgSnoozeGroupEventReminder](Invoke-MgSnoozeGroupEventReminder.md)
-Postpone a reminder for an event in a user calendar until a new time.
-This API is available in the following national cloud deployments.
+### [Invoke-MgRetryGroupServiceProvisioning](Invoke-MgRetryGroupServiceProvisioning.md)
+Invoke action retryServiceProvisioning
 
 ### [Invoke-MgSubscribeGroupByMail](Invoke-MgSubscribeGroupByMail.md)
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
@@ -932,16 +956,8 @@ This API is available in the following national cloud deployments.
 ### [New-MgGroupConversationThreadPostAttachment](New-MgGroupConversationThreadPostAttachment.md)
 Create new navigation property to attachments for groups
 
-### [New-MgGroupConversationThreadPostAttachmentUploadSession](New-MgGroupConversationThreadPostAttachmentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
-The item can be a message or event.
-Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a POST operation on the attachments navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential PUT queries.
-Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
-This API is available in the following national cloud deployments.
+### [New-MgGroupConversationThreadPostAttachment](New-MgGroupConversationThreadPostAttachment.md)
+Create new navigation property to attachments for groups
 
 ### [New-MgGroupConversationThreadPostExtension](New-MgGroupConversationThreadPostExtension.md)
 Create new navigation property to extensions for groups
@@ -949,16 +965,8 @@ Create new navigation property to extensions for groups
 ### [New-MgGroupConversationThreadPostInReplyToAttachment](New-MgGroupConversationThreadPostInReplyToAttachment.md)
 Create new navigation property to attachments for groups
 
-### [New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession](New-MgGroupConversationThreadPostInReplyToAttachmentUploadSession.md)
-Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
-The item can be a message or event.
-Use this approach to attach a file if the file size is between 3 MB and 150 MB.
-To attach a file that's smaller than 3 MB, do a POST operation on the attachments navigation property of the Outlook item; see how to do this for a message or for an event.
-As part of the response, this action returns an upload URL that you can use in subsequent sequential PUT queries.
-Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
-This allows transfer to be resumed, in case the network connection is dropped during upload.
-The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
-This API is available in the following national cloud deployments.
+### [New-MgGroupConversationThreadPostInReplyToAttachment](New-MgGroupConversationThreadPostInReplyToAttachment.md)
+Create new navigation property to attachments for groups
 
 ### [New-MgGroupConversationThreadPostInReplyToExtension](New-MgGroupConversationThreadPostInReplyToExtension.md)
 Create new navigation property to extensions for groups
@@ -1290,6 +1298,21 @@ Invoke function isPublished
 ### [Test-MgGroupDriveRootPermission](Test-MgGroupDriveRootPermission.md)
 Invoke action validatePermission
 
+### [Test-MgGroupPermissionGrantProperty](Test-MgGroupPermissionGrantProperty.md)
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
+Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
+To validate the properties of an existing group, use the group: validateProperties function.
+The following policy validations are performed for the display name and mail nickname properties:1.
+Validate the prefix and suffix naming policy2.
+Validate the custom banned words policy3.
+Validate that the mail nickname is unique This API only returns the first validation failure that is encountered.
+If the properties fail multiple validations, only the first validation failure is returned.
+However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+To learn more about configuring naming policies, see Configure naming policy.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaGroupPermissionGrantProperty](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupPermissionGrantProperty?view=graph-powershell-beta)
+
 ### [Test-MgGroupProperty](Test-MgGroupProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to update a Microsoft 365 group.
@@ -1360,6 +1383,12 @@ Invoke action onenotePatchContent
 
 ### [Update-MgGroupPermissionGrant](Update-MgGroupPermissionGrant.md)
 Update the navigation property permissionGrants in groups
+
+### [Update-MgGroupPhoto](Update-MgGroupPhoto.md)
+Update the navigation property photo in groups
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupPhoto?view=graph-powershell-beta)
 
 ### [Update-MgGroupSetting](Update-MgGroupSetting.md)
 Update the properties of a groupSetting object for tenant-wide group settings or a specific group setting.
