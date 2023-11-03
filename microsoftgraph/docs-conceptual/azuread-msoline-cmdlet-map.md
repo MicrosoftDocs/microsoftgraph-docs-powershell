@@ -1,5 +1,5 @@
 ---
-title: "Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell"
+title: "Find Microsoft Entra ID and MSOnline cmdlets in Microsoft Graph PowerShell"
 description: "Use this map of the Azure AD PowerShell and MSOnline cmdlets to find their Microsoft Graph PowerShell equivalents."
 
 ms.topic: reference
@@ -9,13 +9,15 @@ manager: CelesteDG
 ms.author: eunicewaweru
 ---
 
-# Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell
+# Find Microsoft Entra ID and MSOnline cmdlets in Microsoft Graph PowerShell
 
 You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmdlets that you need in the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview). For more information about the new cmdlets, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
 
-## Azure AD to Microsoft Graph PowerShell by category
+<a name='azure-ad-to-microsoft-graph-powershell-by-category'></a>
 
-The following is the categorization of the Azure AD cmdlets. Select a category to use the cmdlets 
+## Microsoft Entra ID to Microsoft Graph PowerShell by category
+
+The following is the categorization of the Microsoft Entra cmdlets. Select a category to use the cmdlets 
 
 :::row:::
     :::column:::
@@ -23,7 +25,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
         - [Application proxy application management](#application-proxy-application-management)
         - [Application proxy connector management](#application-proxy-connector-management)
         - [Applications](#applications)
-        - [Azure AD](#azure-ad)
+        - [Microsoft Entra ID](#azure-ad)
         - [Certificate authorities](#certificate-authorities)
         - [Connect to your directory](#connect-to-your-directory)
         - [Contacts](#contacts)
@@ -47,7 +49,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Administrative units
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADMSAdministrativeUnitMember|[New-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitmemberbyref)|
 |Add-AzureADMSScopedRoleMembership|[New-MgDirectoryRoleScopedMember](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolescopedmember)|
@@ -62,7 +64,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Application proxy application management
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADApplicationProxyApplication||
 |Get-AzureADApplicationProxyApplicationConnectorGroup||
@@ -75,7 +77,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Application proxy connector management
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADApplicationProxyConnector||
 |Get-AzureADApplicationProxyConnectorGroup||
@@ -89,7 +91,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Applications
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADApplicationOwner|[New-MgApplicationOwnerByRef](/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref)|
 |Get-AzureADApplication|[Get-MgApplication](/powershell/module/microsoft.graph.applications/get-mgapplication)|
@@ -112,9 +114,11 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-AzureADApplication|[Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication)|
 |Set-AzureADApplicationLogo|[Set-MgApplicationLogo](/powershell/module/microsoft.graph.applications/set-mgapplicationlogo)|
 
-### Azure AD
+<a name='azure-ad'></a>
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+### Microsoft Entra ID
+
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADMSApplicationOwner|[New-MgApplicationOwnerByRef](/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref)|
 |Add-AzureADMSServicePrincipalDelegatedPermissionClassification|[New-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification)|
@@ -172,7 +176,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Certificate Authorities
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADTrustedCertificateAuthority|[Get-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/microsoft.graph.identity.signins/get-mgorganizationcertificatebasedauthconfiguration)|
 |New-AzureADTrustedCertificateAuthority||
@@ -181,14 +185,14 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Connect to your directory
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Connect-AzureAD|[Connect-MgGraph](authentication-commands.md#using-connect-mggraph)|
 |Disconnect-AzureAD|[Disconnect-MgGraph](authentication-commands.md#using-disconnect-mggraph)|
 
 ### Contacts
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADContact|[Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact)|
 |Get-AzureADContactDirectReport|[Get-MgContactDirectReport](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdirectreport)|
@@ -200,19 +204,19 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Contracts
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADContract|[Get-MgContract](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontract)|
 
 ### Deleted objects
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Restore-AzureADDeletedApplication|[Restore-MgDirectoryDeletedItem](/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem)|
 
 ### Devices
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADDeviceRegisteredOwner|[New-MgDeviceRegisteredOwnerByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregisteredownerbyref)|
 |Add-AzureADDeviceRegisteredUser||
@@ -228,7 +232,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Directory
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADSubscribedSku|[Get-MgSubscribedSku](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku)|
 |Get-AzureADTenantDetail|[Get-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization)|
@@ -236,13 +240,13 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Directory Objects
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADObjectByObjectId|[Get-MgDirectoryObjectById](/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectbyid)|
 
 ### Directory roles
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADDirectoryRoleMember|[New-MgDirectoryRoleMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolememberbyref)|
 |Enable-AzureADDirectoryRole|[New-MgDirectoryRoleTemplate](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryroletemplate)|
@@ -260,7 +264,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Domains
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Confirm-AzureADDomain|[Confirm-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain)|
 |Get-AzureADDomain|[Get-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain)|
@@ -273,13 +277,13 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Extension properties
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADExtensionProperty|[Get-MgDirectoryObjectAvailableExtensionProperty](/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty)|
 
 ### Groups
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADGroupMember|[New-MgGroupMember](/powershell/module/microsoft.graph.groups/new-mggroupmember)|
 |Add-AzureADGroupOwner|[New-MgGroupOwnerByRef](/powershell/module/microsoft.graph.groups/new-mggroupownerbyref)|
@@ -310,21 +314,21 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Oauth2
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADOAuth2PermissionGrant|[Get-MgOauth2PermissionGrant](/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrant)|
 |Remove-AzureADOAuth2PermissionGrant|[Remove-MgOauth2PermissionGrant](/powershell/module/microsoft.graph.identity.signins/remove-mgoauth2permissiongrant)|
 
 ### Policies
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADMSAuthorizationPolicy|[Get-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthorizationpolicy)|
 |Set-AzureADMSAuthorizationPolicy|[Update-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)|
 
 ### Service principals
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADServicePrincipalOwner|[New-MgServicePrincipalOwnerByRef](/powershell/module/microsoft.graph.applications/new-mgserviceprincipalownerbyref)|
 |Get-AzureADServiceAppRoleAssignedTo|[Get-MgServicePrincipalAppRoleAssignment](/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment)|
@@ -352,7 +356,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 ### Users
 
-|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
+|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADUser|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)|
 |Get-AzureADUserAppRoleAssignment|[Get-MgUserAppRoleAssignment](/powershell/module/microsoft.graph.applications/get-mguserapproleassignment)|

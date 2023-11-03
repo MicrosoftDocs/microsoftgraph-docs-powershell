@@ -24,7 +24,7 @@
       href: tutorial-entitlement-management.md
     - name: Privileged Identity Management (PIM)
       items:
-        - name: Assign Azure AD roles in PIM
+        - name: Assign Microsoft Entra roles in PIM
           href: tutorial-pim.md
         - name: Manage PIM policies
           href: how-to-manage-pim-policies.md

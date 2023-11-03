@@ -27,7 +27,7 @@ Before you can use app-only access with the Microsoft Graph PowerShell SDK, make
     1. Have an X.509 certificate installed in your user's trusted store on the machine where you'll run the script.
     1. Export the certificate's public key in .cer, .pem, or .crt format.
     1. Get the value of the certificate subject or its thumbprint.
-- [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Azure AD, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
+- [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Microsoft Entra ID, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
 
 ### Step 1: Register an application
 
@@ -55,7 +55,7 @@ You can register an application using the PowerShell SDK with delegated access b
 1. Review the rest of the PowerShell output for `Connect-MgGraph` command pre-filled with the values for your app registration.
 
     > [!TIP]
-    > If the script returns an error stating `New-MgServicePrincipal : Unable to find target address`, re-run the script with the additional `-TenantId` parameter. For details, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant).
+    > If the script returns an error stating `New-MgServicePrincipal : Unable to find target address`, re-run the script with the additional `-TenantId` parameter. For details, see [How to find your Microsoft Entra tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant).
 
 ---
 
@@ -65,7 +65,7 @@ Using that app registration in step 1, you can use the Microsoft Graph PowerShel
 
 You should have three pieces of information after completing the configuration steps above.
 
-- Certificate subject or thumbprint of the certificate uploaded to your Azure AD app registration.
+- Certificate subject or thumbprint of the certificate uploaded to your Microsoft Entra app registration.
 - Application ID for your app registration.
 - Your tenant ID.
 

@@ -1,6 +1,6 @@
 ---
-title: "Grant application permissions programmatically in Azure AD"
-description: "Learn how to grant and revoke app-only permissions programmatically in Azure AD using Microsoft Graph PowerShell"
+title: "Grant application permissions programmatically in Microsoft Entra ID"
+description: "Learn how to grant and revoke app-only permissions programmatically in Microsoft Entra ID using Microsoft Graph PowerShell"
 ms.topic: tutorial
 ms.date: 05/25/2023
 author: msewaweru
@@ -9,9 +9,9 @@ ms.author: eunicewaweru
 ms.reviewer: jawoods, phsignor 
 ---
 
-# Tutorial: Grant and revoke app roles in Azure AD
+# Tutorial: Grant and revoke app roles in Microsoft Entra ID
 
-When you grant API permissions to a client app in Azure AD, the permission grants are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
+When you grant API permissions to a client app in Microsoft Entra ID, the permission grants are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
 >[!Caution]
 >Be Careful! Permissions created programmatically are not subject to review or confirmation. They take effect immediately.
@@ -22,7 +22,7 @@ In this tutorial, you'll grant app roles that are exposed by an API to an app. A
 
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
-1. A working Azure AD tenant.
+1. A working Microsoft Entra tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
 1. Microsoft Graph PowerShell using a user with privileges to create applications in the tenant and the appropriate permissions. For this tutorial, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
 
@@ -70,9 +70,11 @@ AdditionalProperties : {}
 
 The first step in granting consent is to [create the service principal for the app that you'll grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
 
-### Register an application with Azure AD
+<a name='register-an-application-with-azure-ad'></a>
 
-If the application is not available, register an application with Azure AD.
+### Register an application with Microsoft Entra ID
+
+If the application is not available, register an application with Microsoft Entra ID.
 
 ```powershell
 New-MgApplication -DisplayName 'My application' | 
@@ -142,5 +144,5 @@ Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId '22c1770d-30df-49
 
 ## See also
 
-- [Tutorial: Grant delegated permissions programmatically in Azure AD](tutorial-grant-delegated-api-permissions.md)
+- [Tutorial: Grant delegated permissions programmatically in Microsoft Entra ID](tutorial-grant-delegated-api-permissions.md)
 - [Grant or revoke API permissions using Microsoft Graph](/graph/permissions-grant-via-msgraph?branch=pr-en-us-20614&tabs=http&pivots=grant-application-permissions)
