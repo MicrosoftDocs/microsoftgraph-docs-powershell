@@ -9,9 +9,10 @@ ms.prod: identity-and-access-reports
 # Confirm-MgBetaAuditLogSignInSafe
 
 ## SYNOPSIS
-Allow admins to mark an event in Azure AD sign in logs as safe.
-Admins can either mark the events flagged as risky by Azure AD Identity Protection as safe, or they can mark unflagged events as safe.
+Allow admins to mark an event in Microsoft Entra sign-in logs as safe.
+Admins can either mark the events flagged as risky by Microsoft Entra ID Protection as safe, or they can mark unflagged events as safe.
 For details about investigating Identity Protection risks, see How to investigate risk.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,9 +30,10 @@ Confirm-MgBetaAuditLogSignInSafe
 ```
 
 ## DESCRIPTION
-Allow admins to mark an event in Azure AD sign in logs as safe.
-Admins can either mark the events flagged as risky by Azure AD Identity Protection as safe, or they can mark unflagged events as safe.
+Allow admins to mark an event in Microsoft Entra sign-in logs as safe.
+Admins can either mark the events flagged as risky by Microsoft Entra ID Protection as safe, or they can mark unflagged events as safe.
 For details about investigating Identity Protection risks, see How to investigate risk.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Confirm-MgBetaAuditLogSignInSafe Cmdlet

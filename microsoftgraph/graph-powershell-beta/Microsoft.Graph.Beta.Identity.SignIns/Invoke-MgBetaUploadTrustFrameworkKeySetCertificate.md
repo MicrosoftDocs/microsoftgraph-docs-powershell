@@ -12,6 +12,7 @@ ms.prod: identity-and-sign-in
 Upload a certificate to a trustFrameworkKeyset.
 The input is a base-64 encoded value of the certificate contents.
 This method returns trustFrameworkKey.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -45,6 +46,7 @@ Invoke-MgBetaUploadTrustFrameworkKeySetCertificate -InputObject <IIdentitySignIn
 Upload a certificate to a trustFrameworkKeyset.
 The input is a base-64 encoded value of the certificate contents.
 This method returns trustFrameworkKey.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaUploadTrustFrameworkKeySetCertificate Cmdlet
@@ -242,6 +244,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotesection
 schema: 2.0.0
+ms.prod: onenote
+ms.prod: onenote
 ---
 
 # Get-MgGroupOnenoteSection
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a onenoteSection object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteSection?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgGroupOnenoteSection -InputObject <INotesIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a onenoteSection object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

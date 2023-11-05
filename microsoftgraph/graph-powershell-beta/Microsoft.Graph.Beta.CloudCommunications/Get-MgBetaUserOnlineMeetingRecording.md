@@ -9,8 +9,7 @@ ms.prod: cloud-communications
 # Get-MgBetaUserOnlineMeetingRecording
 
 ## SYNOPSIS
-The content stream of the recording of a Teams live event.
-Read-only.
+Get recording for the navigation property onlineMeetings from users
 
 ## SYNTAX
 
@@ -46,8 +45,7 @@ Get-MgBetaUserOnlineMeetingRecording -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-The content stream of the recording of a Teams live event.
-Read-only.
+Get recording for the navigation property onlineMeetings from users
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingRecording Cmdlet

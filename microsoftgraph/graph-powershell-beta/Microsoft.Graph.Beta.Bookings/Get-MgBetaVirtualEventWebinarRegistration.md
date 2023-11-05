@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistration
 schema: 2.0.0
+ms.prod: cloud-communications
+ms.prod: cloud-communications
 ---
 
 # Get-MgBetaVirtualEventWebinarRegistration
 
 ## SYNOPSIS
-Get registrations from solutions
+Get the properties and relationships of a virtualEventRegistration object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -32,7 +35,8 @@ Get-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get registrations from solutions
+Get the properties and relationships of a virtualEventRegistration object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

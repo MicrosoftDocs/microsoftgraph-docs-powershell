@@ -10,6 +10,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Complete an impactedResource object and update its status to completedByUser.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Complete-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDi
 
 ## DESCRIPTION
 Complete an impactedResource object and update its status to completedByUser.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

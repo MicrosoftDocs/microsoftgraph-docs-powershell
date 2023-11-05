@@ -11,6 +11,7 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Read the properties and relationships of a custodian object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity> [
 
 ## DESCRIPTION
 Read the properties and relationships of a custodian object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet

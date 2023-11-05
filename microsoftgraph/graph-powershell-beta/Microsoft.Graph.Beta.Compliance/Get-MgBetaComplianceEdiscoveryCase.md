@@ -11,6 +11,7 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a case object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a case object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCase Cmdlet

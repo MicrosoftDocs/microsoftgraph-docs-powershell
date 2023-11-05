@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension
 schema: 2.0.0
+ms.prod: extensions
+ms.prod: extensions
 ---
 
 # Get-MgSchemaExtension
 
 ## SYNOPSIS
-Get schemaExtension
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgBetaSchemaExtension?view=graph-powershell-beta)
@@ -35,7 +37,7 @@ Get-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get schemaExtension
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

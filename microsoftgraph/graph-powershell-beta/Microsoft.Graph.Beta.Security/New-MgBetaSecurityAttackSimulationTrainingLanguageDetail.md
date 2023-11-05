@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to languageDetails for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -79,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Content
-.
+Language specific content for the training.
 
 ```yaml
 Type: String
@@ -110,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+Date and time when the language details were created.
 
 ```yaml
 Type: DateTime
@@ -125,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Description as defined by the user.
 
 ```yaml
 Type: String
@@ -140,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Display name as defined by the user.
 
 ```yaml
 Type: String
@@ -187,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefaultLangauge
-.
+Indicates whether the training has a default language.
 
 ```yaml
 Type: SwitchParameter
@@ -218,7 +221,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+Date and time when the trainingLanguageDetail was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -233,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -Locale
-.
+Content locale for the training detail.
 
 ```yaml
 Type: String
@@ -315,24 +320,24 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphTrainingLanguageDetail>`: trainingLanguageDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Content <String>]`: 
+  - `[Content <String>]`: Language specific content for the training.
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[IsDefaultLangauge <Boolean?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: Date and time when the language details were created.
+  - `[Description <String>]`: Description as defined by the user.
+  - `[DisplayName <String>]`: Display name as defined by the user.
+  - `[IsDefaultLangauge <Boolean?>]`: Indicates whether the training has a default language.
   - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Locale <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the trainingLanguageDetail was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Locale <String>]`: Content locale for the training detail.
 
 `CREATEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
 `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
@@ -371,6 +376,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -414,9 +420,10 @@ To create the parameters described below, construct a hash table containing the 
 
 `LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+[New-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
 

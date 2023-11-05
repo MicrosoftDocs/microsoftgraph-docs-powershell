@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroupsetterm
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgGroupSiteTermStoreGroupSetTerm
 
 ## SYNOPSIS
 Read the properties and relationships of a term object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
@@ -56,6 +58,7 @@ Get-MgGroupSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Read the properties and relationships of a term object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

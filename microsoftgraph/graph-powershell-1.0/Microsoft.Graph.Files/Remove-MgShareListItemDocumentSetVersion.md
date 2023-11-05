@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a version of a document set in a list.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ Remove-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch
 
 ## DESCRIPTION
 Delete a version of a document set in a list.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

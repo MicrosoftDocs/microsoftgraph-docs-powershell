@@ -9,7 +9,7 @@ ms.prod: sites-and-lists
 # Get-MgBetaGroupDriveListColumn
 
 ## SYNOPSIS
-Get columns from groups
+The collection of field definitions for this list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListColumn?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Get-MgBetaGroupDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get columns from groups
+The collection of field definitions for this list.
 
 ## PARAMETERS
 

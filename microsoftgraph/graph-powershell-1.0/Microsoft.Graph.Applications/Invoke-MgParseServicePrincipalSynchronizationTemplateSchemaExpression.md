@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationtemplateschemaexpression
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression
@@ -10,6 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaParseServicePrincipalSynchronizationTemplateSchemaExpression?view=graph-powershell-beta)
@@ -50,6 +52,7 @@ Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression -InputObje
 ## DESCRIPTION
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

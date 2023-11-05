@@ -10,6 +10,7 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Read the properties and relationships of a term object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity> 
 
 ## DESCRIPTION
 Read the properties and relationships of a term object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -331,6 +333,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup

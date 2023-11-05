@@ -13,6 +13,7 @@ ms.prod: sharepoint
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
 Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootPermission?view=graph-powershell-1.0)
@@ -42,6 +43,7 @@ Get-MgBetaDriveRootPermission -InputObject <IFilesIdentity> [-ExpandProperty <St
 Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
 Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

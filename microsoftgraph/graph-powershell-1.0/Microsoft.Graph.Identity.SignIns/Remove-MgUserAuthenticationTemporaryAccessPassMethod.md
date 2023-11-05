@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a users's temporaryAccessPassAuthenticationMethod object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySign
 
 ## DESCRIPTION
 Delete a users's temporaryAccessPassAuthenticationMethod object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceHostSslCertificateHost
 
 ## SYNOPSIS
-Get host from security
+The host for this hostSslCertificate.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostSslCertificateHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSslCertificateHost?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,7 +28,7 @@ Get-MgBetaSecurityThreatIntelligenceHostSslCertificateHost -InputObject <ISecuri
 ```
 
 ## DESCRIPTION
-Get host from security
+The host for this hostSslCertificate.
 
 ## PARAMETERS
 
@@ -144,6 +147,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -186,4 +190,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostSslCertificateHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSslCertificateHost?view=graph-powershell-1.0)
 

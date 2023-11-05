@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a b2xIdentityUserFlow object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete a b2xIdentityUserFlow object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

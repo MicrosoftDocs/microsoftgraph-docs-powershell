@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Start-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Start-MgBetaPrintShareJob?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Start-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-WhatIf] [-Conf
 ## DESCRIPTION
 Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

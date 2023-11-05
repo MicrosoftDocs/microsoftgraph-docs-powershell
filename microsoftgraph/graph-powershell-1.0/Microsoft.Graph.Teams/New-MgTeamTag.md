@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a standard tag for members in a team.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTag?view=graph-powershell-beta)
@@ -43,6 +44,7 @@ New-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamw
 
 ## DESCRIPTION
 Create a standard tag for members in a team.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -103,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-The description of the tag as it will appear to the user in Microsoft Teams.
+The description of the tag as it appears to the user in Microsoft Teams.
 A teamworkTag can't have more than 200 teamworkTagMembers.
 
 ```yaml
@@ -119,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The name of the tag as it will appear to the user in Microsoft Teams.
+The name of the tag as it appears to the user in Microsoft Teams.
 
 ```yaml
 Type: String
@@ -306,8 +308,8 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphTeamworkTag>`: teamworkTag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Description <String>]`: The description of the tag as it will appear to the user in Microsoft Teams. A teamworkTag can't have more than 200 teamworkTagMembers.
-  - `[DisplayName <String>]`: The name of the tag as it will appear to the user in Microsoft Teams.
+  - `[Description <String>]`: The description of the tag as it appears to the user in Microsoft Teams. A teamworkTag can't have more than 200 teamworkTagMembers.
+  - `[DisplayName <String>]`: The name of the tag as it appears to the user in Microsoft Teams.
   - `[MemberCount <Int32?>]`: The number of users assigned to the tag.
   - `[Members <IMicrosoftGraphTeamworkTagMember[]>]`: Users assigned to the tag.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.

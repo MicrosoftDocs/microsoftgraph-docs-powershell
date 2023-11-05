@@ -11,6 +11,7 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a DriveItem.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemVersion?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaDriveItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a DriveItem.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get specified version of a file

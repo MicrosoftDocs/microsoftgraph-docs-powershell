@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationendusernotification
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgBetaSecurityAttackSimulationEndUserNotification
 
 ## SYNOPSIS
-Get endUserNotifications from security
+Represents an end user's notification for an attack simulation training.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,7 +36,7 @@ Get-MgBetaSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIde
 ```
 
 ## DESCRIPTION
-Get endUserNotifications from security
+Represents an end user's notification for an attack simulation training.
 
 ## PARAMETERS
 
@@ -272,6 +276,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -314,4 +319,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 

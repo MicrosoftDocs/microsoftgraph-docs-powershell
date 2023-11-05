@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Assign a tokenIssuancePolicy to an application.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ New-MgApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Assign a tokenIssuancePolicy to an application.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

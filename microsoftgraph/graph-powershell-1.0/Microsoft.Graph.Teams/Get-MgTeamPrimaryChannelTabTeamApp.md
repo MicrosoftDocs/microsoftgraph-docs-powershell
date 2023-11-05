@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The application that is linked to the tab.
-This cannot be changed after tab creation.
+This can't be changed after tab creation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelTabTeamApp?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgTeamPrimaryChannelTabTeamApp -InputObject <ITeamsIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 The application that is linked to the tab.
-This cannot be changed after tab creation.
+This can't be changed after tab creation.
 
 ## PARAMETERS
 

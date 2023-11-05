@@ -3,13 +3,15 @@ external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact
 schema: 2.0.0
+ms.prod: outlook
+ms.prod: outlook
 ---
 
 # Get-MgUserContact
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a contact object.
-There are two scenarios where an app can get a contact in another user's contact folder:
+There are two scenarios where an app can get a contact in another user's contact folder: This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContact?view=graph-powershell-beta)
@@ -37,7 +39,7 @@ Get-MgUserContact -InputObject <IPersonalContactsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a contact object.
-There are two scenarios where an app can get a contact in another user's contact folder:
+There are two scenarios where an app can get a contact in another user's contact folder: This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

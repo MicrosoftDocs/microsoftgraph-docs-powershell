@@ -44,6 +44,8 @@ Confirm-MgGroupPermissionGrantMemberObject -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -230,5 +232,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Confirm-MgBetaGroupPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupPermissionGrantMemberObject?view=graph-powershell-beta)
 

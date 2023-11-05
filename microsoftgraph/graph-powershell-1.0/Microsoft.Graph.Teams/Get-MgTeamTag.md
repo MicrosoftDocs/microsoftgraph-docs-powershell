@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Read the properties and relationships of a tag object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTag?view=graph-powershell-beta)
@@ -36,6 +37,7 @@ Get-MgTeamTag -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prope
 
 ## DESCRIPTION
 Read the properties and relationships of a tag object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

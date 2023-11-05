@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The registered device on which Microsoft Authenticator resides.
-This property is null if the device is not registered for passwordless Phone Sign-In.
+This property is null if the device isn't registered for passwordless Phone Sign-In.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice -InputObject <IIdenti
 
 ## DESCRIPTION
 The registered device on which Microsoft Authenticator resides.
-This property is null if the device is not registered for passwordless Phone Sign-In.
+This property is null if the device isn't registered for passwordless Phone Sign-In.
 
 ## PARAMETERS
 

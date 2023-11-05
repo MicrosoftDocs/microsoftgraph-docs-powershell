@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Assign a claimsMappingPolicy to a servicePrincipal.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ New-MgServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIdentit
 
 ## DESCRIPTION
 Assign a claimsMappingPolicy to a servicePrincipal.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

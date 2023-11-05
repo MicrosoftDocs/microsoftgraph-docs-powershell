@@ -12,6 +12,7 @@ Join a multi-tenant organization, after the owner of the multi-tenant organizati
 Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,11 +36,12 @@ Join a multi-tenant organization, after the owner of the multi-tenant organizati
 Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
 To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
 Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
 ### -AddedByTenantId
-Tenant ID of the Azure Active Directory tenant that added a tenant to the multi-tenant organization.
+Tenant ID of the Microsoft Entra tenant that added a tenant to the multi-tenant organization.
 To reset a failed join request, set addedByTenantId to 00000000-0000-0000-0000-000000000000.
 Required.
 
@@ -200,7 +202,7 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphMultiTenantOrganizationJoinRequestRecord>`: multiTenantOrganizationJoinRequestRecord
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AddedByTenantId <String>]`: Tenant ID of the Azure Active Directory tenant that added a tenant to the multi-tenant organization. To reset a failed join request, set addedByTenantId to 00000000-0000-0000-0000-000000000000. Required.
+  - `[AddedByTenantId <String>]`: Tenant ID of the Microsoft Entra tenant that added a tenant to the multi-tenant organization. To reset a failed join request, set addedByTenantId to 00000000-0000-0000-0000-000000000000. Required.
   - `[MemberState <String>]`: multiTenantOrganizationMemberState
   - `[Role <String>]`: multiTenantOrganizationMemberRole
   - `[TransitionDetails <IMicrosoftGraphMultiTenantOrganizationJoinRequestTransitionDetails>]`: multiTenantOrganizationJoinRequestTransitionDetails

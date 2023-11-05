@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of chatMessageHostedContent object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-1.0)
@@ -51,6 +52,7 @@ Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIde
 
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

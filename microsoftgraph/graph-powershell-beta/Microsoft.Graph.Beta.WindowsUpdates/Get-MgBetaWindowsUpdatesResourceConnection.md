@@ -11,6 +11,7 @@ ms.prod: w10
 
 ## SYNOPSIS
 Read the properties and relationships of an operationalInsightsConnection object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity
 
 ## DESCRIPTION
 Read the properties and relationships of an operationalInsightsConnection object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet

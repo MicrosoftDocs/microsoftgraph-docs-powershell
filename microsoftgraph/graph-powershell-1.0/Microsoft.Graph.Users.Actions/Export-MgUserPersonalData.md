@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Export-MgUserPersonalData
@@ -11,6 +12,7 @@ schema: 2.0.0
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 This data includes the user's data stored in OneDrive and their activity reports.
 For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Export-MgBetaUserPersonalData](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Export-MgBetaUserPersonalData?view=graph-powershell-beta)
@@ -47,6 +49,7 @@ Export-MgUserPersonalData -InputObject <IUsersActionsIdentity>
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 This data includes the user's data stored in OneDrive and their activity reports.
 For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Export-MgUserPersonalData Cmdlet
@@ -233,7 +236,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

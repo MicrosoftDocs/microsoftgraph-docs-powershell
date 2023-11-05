@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new section in the specified section group.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenoteSectionGroupSection?view=graph-powershell-1.0)
@@ -49,6 +50,7 @@ New-MgBetaGroupOnenoteSectionGroupSection -InputObject <INotesIdentity>
 
 ## DESCRIPTION
 Create a new section in the specified section group.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

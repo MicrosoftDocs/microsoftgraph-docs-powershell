@@ -11,6 +11,7 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
@@ -47,6 +48,7 @@ Add-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

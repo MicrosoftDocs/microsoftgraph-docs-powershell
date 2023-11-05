@@ -9,8 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a unifiedRoleDefinition object.
-You cannot delete built-in roles.
-This feature requires an Azure AD Premium P1 or P2 license.
+You can't delete built-in roles.
+This feature requires a Microsoft Entra ID P1 or P2 license.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
@@ -31,8 +32,9 @@ Remove-MgRoleManagementDirectoryRoleDefinition -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 Delete a unifiedRoleDefinition object.
-You cannot delete built-in roles.
-This feature requires an Azure AD Premium P1 or P2 license.
+You can't delete built-in roles.
+This feature requires a Microsoft Entra ID P1 or P2 license.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -186,6 +188,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
+  - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
+  - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
+  - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest
+  - `[PrivilegedAccessGroupEligibilityScheduleId <String>]`: The unique identifier of privilegedAccessGroupEligibilitySchedule
+  - `[PrivilegedAccessGroupEligibilityScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupEligibilityScheduleInstance
+  - `[PrivilegedAccessGroupEligibilityScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupEligibilityScheduleRequest
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition

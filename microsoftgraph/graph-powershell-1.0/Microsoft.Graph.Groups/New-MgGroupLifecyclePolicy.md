@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Creates a new groupLifecyclePolicy.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
@@ -56,6 +57,7 @@ New-MgGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> 
 
 ## DESCRIPTION
 Creates a new groupLifecyclePolicy.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a user from a school.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgEducationSchoolUserByRef -InputObject <IEducationIdentity> [-Id <String
 
 ## DESCRIPTION
 Delete a user from a school.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

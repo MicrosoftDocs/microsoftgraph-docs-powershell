@@ -10,7 +10,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
+Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-MgBetaAdministrativeUnitById
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
+Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

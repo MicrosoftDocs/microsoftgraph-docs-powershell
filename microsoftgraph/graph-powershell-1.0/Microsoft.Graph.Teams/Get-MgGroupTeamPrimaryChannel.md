@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the default channel, General, of a team.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannel?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Get-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Get the default channel, General, of a team.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendarevent
 schema: 2.0.0
+ms.prod: outlook
+ms.prod: outlook
 ---
 
 # Get-MgUserDefaultCalendarEvent
@@ -12,6 +14,7 @@ Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or get the instances of an event.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEvent?view=graph-powershell-beta)
@@ -29,6 +32,7 @@ Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or get the instances of an event.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

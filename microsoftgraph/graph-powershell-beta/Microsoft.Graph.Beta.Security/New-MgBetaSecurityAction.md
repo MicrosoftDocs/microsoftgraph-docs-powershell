@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new securityAction object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,6 +31,7 @@ New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-WhatIf
 
 ## DESCRIPTION
 Create a new securityAction object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaSecurityAction Cmdlet

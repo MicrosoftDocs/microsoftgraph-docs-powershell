@@ -10,6 +10,7 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -InputObject <IBo
 
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

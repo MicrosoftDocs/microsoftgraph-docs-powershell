@@ -10,6 +10,7 @@ ms.prod: search
 
 ## SYNOPSIS
 Read the properties and relationships of an externalItem object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItem?view=graph-powershell-beta)
@@ -37,6 +38,7 @@ Get-MgExternalConnectionItem -InputObject <ISearchIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Read the properties and relationships of an externalItem object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

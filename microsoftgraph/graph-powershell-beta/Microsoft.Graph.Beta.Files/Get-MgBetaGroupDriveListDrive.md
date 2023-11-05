@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaGroupDriveListDrive
 
 ## SYNOPSIS
+Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
-Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListDrive?view=graph-powershell-1.0)
@@ -29,8 +29,8 @@ Get-MgBetaGroupDriveListDrive -InputObject <IFilesIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
+Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
-Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ## PARAMETERS
 

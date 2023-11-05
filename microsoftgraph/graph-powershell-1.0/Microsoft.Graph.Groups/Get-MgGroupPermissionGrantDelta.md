@@ -31,6 +31,8 @@ Get-MgGroupPermissionGrantDelta -InputObject <IGroupsIdentity> [-Filter <String>
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -271,5 +273,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupPermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrantDelta?view=graph-powershell-beta)
 

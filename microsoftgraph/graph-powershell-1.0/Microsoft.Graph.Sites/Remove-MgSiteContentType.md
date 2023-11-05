@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgSiteContentType
 
 ## SYNOPSIS
-Remove a [content type][contentType] from a [list][] or a [site][].
+Remove a content type][contentType] from a [list][] or a [site][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
@@ -28,7 +29,8 @@ Remove-MgSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>] [-Pas
 ```
 
 ## DESCRIPTION
-Remove a [content type][contentType] from a [list][] or a [site][].
+Remove a content type][contentType] from a [list][] or a [site][].
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

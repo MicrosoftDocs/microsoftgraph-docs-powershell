@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete an externalGroup object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete an externalGroup object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

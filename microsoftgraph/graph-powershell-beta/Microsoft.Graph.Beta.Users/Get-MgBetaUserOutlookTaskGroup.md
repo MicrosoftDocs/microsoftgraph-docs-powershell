@@ -11,6 +11,7 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get the properties and relationships of the specified Outlook task group.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -33,6 +34,7 @@ Get-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> [-Property <String[
 
 ## DESCRIPTION
 Get the properties and relationships of the specified Outlook task group.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOutlookTaskGroup Cmdlet

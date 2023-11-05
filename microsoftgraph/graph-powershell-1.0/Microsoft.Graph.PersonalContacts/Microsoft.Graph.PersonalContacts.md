@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.PersonalContacts
-Module Guid: 325265df-8a62-4a40-930c-9014d12a8f35
+Module Guid: 2a5db35f-f5ea-492a-8b40-f8cbb1606005
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts
 Help Version: 1.0.0.0
 Locale: en-US
@@ -100,6 +100,7 @@ Create new navigation property to extensions for users
 
 ### [New-MgUserContactFolderChildFolderContact](New-MgUserContactFolderChildFolderContact.md)
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
+This API is supported in the following national cloud deployments.
 
 ### [New-MgUserContactFolderChildFolderContactExtension](New-MgUserContactFolderChildFolderContactExtension.md)
 Create new navigation property to extensions for users

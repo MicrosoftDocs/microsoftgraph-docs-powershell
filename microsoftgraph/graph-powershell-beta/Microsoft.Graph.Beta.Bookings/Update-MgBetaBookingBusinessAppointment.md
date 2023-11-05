@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessAppointment?view=graph-powershell-1.0)
@@ -63,6 +64,7 @@ Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaBookingBusinessAppointment Cmdlet

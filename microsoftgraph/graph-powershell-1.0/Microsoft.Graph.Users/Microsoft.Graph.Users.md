@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 736d006a-5d1e-49e4-8511-236d9bebb0fa
+Module Guid: c5fbb519-8b8b-4bfc-a15c-751776d7d208
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -76,10 +76,12 @@ Returned only on $select.
 ### [Get-MgUserManager](Get-MgUserManager.md)
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
+This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
+This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserMemberOf](Get-MgUserMemberOf.md)
 The groups and directory roles that the user is a member of.
@@ -173,12 +175,14 @@ Get the specified profilePhoto or its metadata (profilePhoto properties).
 The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,360x360, 432x432, 504x504, and 648x648.
 Photos can be any dimension if they are stored in Azure Active Directory.
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
+This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserPhoto](Get-MgUserPhoto.md)
 Get the specified profilePhoto or its metadata (profilePhoto properties).
 The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,360x360, 432x432, 504x504, and 648x648.
 Photos can be any dimension if they are stored in Azure Active Directory.
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
+This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserPhotoCount](Get-MgUserPhotoCount.md)
 Get the number of the resource
@@ -212,9 +216,11 @@ Get the number of the resource
 
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
 Retrieve the properties and relationships of a shiftPreferences object by ID.
+This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
 Retrieve the properties and relationships of a shiftPreferences object by ID.
+This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserTodoListCount](Get-MgUserTodoListCount.md)
 Get the number of the resource
@@ -228,9 +234,11 @@ Get the number of the resource
 
 ### [Get-MgUserTodoTask](Get-MgUserTodoTask.md)
 Read the properties and relationships of a todoTask object.
+This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserTodoTaskAttachment](Get-MgUserTodoTaskAttachment.md)
 Read the properties and relationships of a taskFileAttachment object.
+This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserTodoTaskAttachmentContent](Get-MgUserTodoTaskAttachmentContent.md)
 Get media content for the navigation property attachments from users
@@ -249,6 +257,7 @@ Get the number of the resource
 
 ### [Get-MgUserTodoTaskChecklistItem](Get-MgUserTodoTaskChecklistItem.md)
 Read the properties and relationships of a checklistItem object.
+This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserTodoTaskChecklistItemCount](Get-MgUserTodoTaskChecklistItemCount.md)
 Get the number of the resource
@@ -265,6 +274,7 @@ Get the number of the resource
 
 ### [Get-MgUserTodoTaskLinkedResource](Get-MgUserTodoTaskLinkedResource.md)
 Read the properties and relationships of a linkedResource object.
+This API is supported in the following national cloud deployments.
 
 ### [Get-MgUserTodoTaskLinkedResourceCount](Get-MgUserTodoTaskLinkedResourceCount.md)
 Get the number of the resource
@@ -325,7 +335,11 @@ Create new navigation property to extensions for users
 Create new navigation property to extensions for users
 
 ### [Remove-MgUser](Remove-MgUser.md)
-Deletes a user.
+Delete user.
+ When deleted, user resources are moved to a temporary container and can be restored within 30 days.
+After that time, they are permanently deleted.
+To learn more, see deletedItems.
+This API is supported in the following national cloud deployments.
 
 ### [Remove-MgUserExtension](Remove-MgUserExtension.md)
 Delete navigation property extensions for users
@@ -335,12 +349,15 @@ Delete navigation property licenseDetails for users
 
 ### [Remove-MgUserManager](Remove-MgUserManager.md)
 Remove a user's manager.
+This API is supported in the following national cloud deployments.
 
 ### [Remove-MgUserManagerByRef](Remove-MgUserManagerByRef.md)
 Remove a user's manager.
+This API is supported in the following national cloud deployments.
 
 ### [Remove-MgUserManagerByRef](Remove-MgUserManagerByRef.md)
 Remove a user's manager.
+This API is supported in the following national cloud deployments.
 
 ### [Remove-MgUserPhoto](Remove-MgUserPhoto.md)
 Delete navigation property photo for users
@@ -377,6 +394,7 @@ Delete navigation property extensions for users
 
 ### [Set-MgUserManagerByRef](Set-MgUserManagerByRef.md)
 Assign a user's manager.
+This API is supported in the following national cloud deployments.
 
 ### [Set-MgUserPhotoContent](Set-MgUserPhotoContent.md)
 Update media content for the navigation property photo in users
@@ -391,6 +409,7 @@ The content streams that are uploaded.
 Update the properties of a user object.
 Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles.
 Compare member and guest default permissions to see properties they can manage.
+This API is supported in the following national cloud deployments.
 
 ### [Update-MgUserExtension](Update-MgUserExtension.md)
 Update the navigation property extensions in users
@@ -407,14 +426,22 @@ Update property mailboxSettings value.
 ### [Update-MgUserPhoto](Update-MgUserPhoto.md)
 Update the navigation property photo in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserPhoto?view=graph-powershell-beta)
+
 ### [Update-MgUserPhoto](Update-MgUserPhoto.md)
 Update the navigation property photo in users
 
-### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
-Update the properties and relationships of a shiftPreferences object.
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserPhoto?view=graph-powershell-beta)
 
 ### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
 Update the properties and relationships of a shiftPreferences object.
+This API is supported in the following national cloud deployments.
+
+### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
+Update the properties and relationships of a shiftPreferences object.
+This API is supported in the following national cloud deployments.
 
 ### [Update-MgUserTodoListExtension](Update-MgUserTodoListExtension.md)
 Update the navigation property extensions in users

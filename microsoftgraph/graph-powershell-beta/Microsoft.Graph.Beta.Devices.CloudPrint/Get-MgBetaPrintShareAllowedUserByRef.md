@@ -10,6 +10,7 @@ ms.prod: cloud-printing
 
 ## SYNOPSIS
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedUserByRef?view=graph-powershell-1.0)
@@ -24,6 +25,7 @@ Get-MgBetaPrintShareAllowedUserByRef -PrinterShareId <String> [-Filter <String>]
 
 ## DESCRIPTION
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

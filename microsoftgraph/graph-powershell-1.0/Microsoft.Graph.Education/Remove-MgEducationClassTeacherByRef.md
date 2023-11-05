@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgEducationClassTeacherByRef
 
 ## SYNOPSIS
-Remove teacher from an educationClass.
+Remove a teacher from an educationClass.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
@@ -28,7 +29,8 @@ Remove-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> [-Id <Stri
 ```
 
 ## DESCRIPTION
-Remove teacher from an educationClass.
+Remove a teacher from an educationClass.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

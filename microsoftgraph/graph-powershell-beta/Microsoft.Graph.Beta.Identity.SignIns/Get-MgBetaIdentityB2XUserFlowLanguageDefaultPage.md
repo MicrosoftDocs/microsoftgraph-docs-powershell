@@ -10,7 +10,7 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Collection of pages with the default content to display in a user flow for a specified language.
-This collection does not allow any kind of modification.
+This collection doesn't allow any kind of modification.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-1.0)
@@ -40,7 +40,7 @@ Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsI
 
 ## DESCRIPTION
 Collection of pages with the default content to display in a user flow for a specified language.
-This collection does not allow any kind of modification.
+This collection doesn't allow any kind of modification.
 
 ## PARAMETERS
 
@@ -326,6 +326,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

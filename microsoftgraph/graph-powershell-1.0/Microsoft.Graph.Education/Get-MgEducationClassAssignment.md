@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignment
 schema: 2.0.0
+ms.prod: education
+ms.prod: education
 ---
 
 # Get-MgEducationClassAssignment
@@ -11,6 +13,7 @@ schema: 2.0.0
 Get the properties and relationships of an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignment?view=graph-powershell-beta)
@@ -40,6 +43,7 @@ Get-MgEducationClassAssignment -InputObject <IEducationIdentity> [-ExpandPropert
 Get the properties and relationships of an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get assignments

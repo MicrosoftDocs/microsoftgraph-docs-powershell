@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationUserAssignmentRubricByRef?view=graph-powershell-beta)
@@ -45,6 +46,7 @@ Set-MgEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity> -Body
 ## DESCRIPTION
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

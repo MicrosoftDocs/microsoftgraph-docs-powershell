@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a timeoffrequest object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
@@ -35,6 +36,7 @@ Get-MgBetaTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-Property <S
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeoffrequest object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

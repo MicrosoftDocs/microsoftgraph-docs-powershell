@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgSiteListDrive
 
 ## SYNOPSIS
+Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
-Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListDrive?view=graph-powershell-beta)
@@ -29,8 +29,8 @@ Get-MgSiteListDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
+Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
-Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ## PARAMETERS
 

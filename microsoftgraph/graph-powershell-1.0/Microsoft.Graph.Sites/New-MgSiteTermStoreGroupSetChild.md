@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new term object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreGroupSetChild?view=graph-powershell-beta)
@@ -145,6 +146,7 @@ New-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Create a new term object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

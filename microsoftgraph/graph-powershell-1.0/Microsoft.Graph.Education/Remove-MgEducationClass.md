@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClass?view=graph-powershell-beta)
@@ -31,6 +32,7 @@ Remove-MgEducationClass -InputObject <IEducationIdentity> [-IfMatch <String>] [-
 ## DESCRIPTION
 Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

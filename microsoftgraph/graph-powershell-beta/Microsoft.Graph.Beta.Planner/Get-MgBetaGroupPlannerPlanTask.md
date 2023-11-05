@@ -10,6 +10,7 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanTask?view=graph-powershell-1.0)
@@ -24,6 +25,7 @@ Get-MgBetaGroupPlannerPlanTask -GroupId <String> -PlannerPlanId <String> [-Expan
 
 ## DESCRIPTION
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

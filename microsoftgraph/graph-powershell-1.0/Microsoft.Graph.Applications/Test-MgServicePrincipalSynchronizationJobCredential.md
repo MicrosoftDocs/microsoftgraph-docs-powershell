@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Validate that the credentials are valid in the tenant.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaServicePrincipalSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaServicePrincipalSynchronizationJobCredential?view=graph-powershell-beta)
@@ -47,6 +48,7 @@ Test-MgServicePrincipalSynchronizationJobCredential -InputObject <IApplicationsI
 
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

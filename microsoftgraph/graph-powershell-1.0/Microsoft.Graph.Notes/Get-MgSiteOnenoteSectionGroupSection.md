@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectiongroupsection
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgSiteOnenoteSectionGroupSection
 
 ## SYNOPSIS
 Retrieve a list of onenoteSection objects from the specified section group.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
@@ -23,6 +25,7 @@ Get-MgSiteOnenoteSectionGroupSection -SectionGroupId <String> -SiteId <String> [
 
 ## DESCRIPTION
 Retrieve a list of onenoteSection objects from the specified section group.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

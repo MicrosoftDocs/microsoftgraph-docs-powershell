@@ -11,6 +11,7 @@ ms.prod: w10
 
 ## SYNOPSIS
 Read the properties and relationships of a complianceChange object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIden
 
 ## DESCRIPTION
 Read the properties and relationships of a complianceChange object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

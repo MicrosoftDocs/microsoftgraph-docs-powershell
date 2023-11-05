@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgIdentityUserFlowAttribute
 
 ## SYNOPSIS
-Create a new identityUserFlowAttribute object.
+Create a new custom identityUserFlowAttribute object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
@@ -29,7 +30,8 @@ New-MgIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserFlowA
 ```
 
 ## DESCRIPTION
-Create a new identityUserFlowAttribute object.
+Create a new custom identityUserFlowAttribute object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -115,6 +117,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The display name of the user flow attribute.
+Supports $filter (eq, ne).
 
 ```yaml
 Type: String
@@ -213,7 +216,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DataType <String>]`: identityUserFlowAttributeDataType
   - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
-  - `[DisplayName <String>]`: The display name of the user flow attribute.
+  - `[DisplayName <String>]`: The display name of the user flow attribute.  Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 
 ## RELATED LINKS

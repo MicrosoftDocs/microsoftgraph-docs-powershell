@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a shift from the schedule.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleShift?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete a shift from the schedule.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

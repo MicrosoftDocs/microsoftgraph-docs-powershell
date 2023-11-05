@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelSharedWithTeam?view=graph-powershell-1.0)
@@ -50,6 +51,7 @@ Get-MgBetaGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandP
 ## DESCRIPTION
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

@@ -11,6 +11,7 @@ ms.prod: onenote
 ## SYNOPSIS
 Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgGroupOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenoteSectionToNotebook?view=graph-powershell-1.0)
@@ -48,6 +49,7 @@ Copy-MgBetaGroupOnenoteSectionToNotebook -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

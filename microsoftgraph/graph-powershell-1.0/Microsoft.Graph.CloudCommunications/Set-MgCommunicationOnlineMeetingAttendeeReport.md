@@ -8,8 +8,7 @@ schema: 2.0.0
 # Set-MgCommunicationOnlineMeetingAttendeeReport
 
 ## SYNOPSIS
-The content stream of the attendee report of a Microsoft Teams live event.
-Read-only.
+Update attendeeReport for the navigation property onlineMeetings in communications
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-beta)
@@ -29,8 +28,7 @@ Set-MgCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunication
 ```
 
 ## DESCRIPTION
-The content stream of the attendee report of a Microsoft Teams live event.
-Read-only.
+Update attendeeReport for the navigation property onlineMeetings in communications
 
 ## PARAMETERS
 
@@ -167,6 +165,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport

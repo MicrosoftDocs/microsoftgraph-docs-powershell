@@ -9,7 +9,7 @@ ms.prod: mail
 # Get-MgUserInferenceClassification
 
 ## SYNOPSIS
-Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
+Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
@@ -27,7 +27,7 @@ Get-MgUserInferenceClassification -InputObject <IMailIdentity> [-Property <Strin
 ```
 
 ## DESCRIPTION
-Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
+Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
 
 ## EXAMPLES
 ### Example 1: Code snippet

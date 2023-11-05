@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleShift?view=graph-powershell-1.0)
@@ -47,6 +48,7 @@ New-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -194,7 +196,8 @@ Accept wildcard characters: False
 ```
 
 ### -SchedulingGroupId
-.
+ID of the scheduling group the shift is part of.
+Required.
 
 ```yaml
 Type: String
@@ -225,7 +228,8 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-.
+ID of the user assigned to the shift.
+Required.
 
 ```yaml
 Type: String
@@ -295,8 +299,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -316,16 +320,16 @@ To create the parameters described below, construct a hash table containing the 
     - `[DisplayName <String>]`: The shift label of the shiftItem.
     - `[Notes <String>]`: The shift notes for the shiftItem.
   - `[IsStagedForDeletion <Boolean?>]`: 
-  - `[SchedulingGroupId <String>]`: 
+  - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of. Required.
   - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
-  - `[UserId <String>]`: 
+  - `[UserId <String>]`: ID of the user assigned to the shift. Required.
 
 `CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -388,8 +392,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -407,6 +411,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[Theme <String>]`: scheduleEntityTheme
   - `[DisplayName <String>]`: The shift label of the shiftItem.
   - `[Notes <String>]`: The shift notes for the shiftItem.
+
+## RELATED LINKS
+[New-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleShift?view=graph-powershell-1.0)
 
 ## RELATED LINKS
 [New-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleShift?view=graph-powershell-1.0)

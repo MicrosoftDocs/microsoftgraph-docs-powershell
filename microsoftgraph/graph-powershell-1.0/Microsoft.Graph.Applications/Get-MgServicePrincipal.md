@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipal
 schema: 2.0.0
+ms.prod: applications
+ms.prod: applications
 ---
 
 # Get-MgServicePrincipal
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a servicePrincipal object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipal?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgServicePrincipal -InputObject <IApplicationsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a servicePrincipal object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get all service principals from the directory

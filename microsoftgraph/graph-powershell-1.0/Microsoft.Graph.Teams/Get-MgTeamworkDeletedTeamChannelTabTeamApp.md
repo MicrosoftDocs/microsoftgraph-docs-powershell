@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The application that is linked to the tab.
-This cannot be changed after tab creation.
+This can't be changed after tab creation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelTabTeamApp?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgTeamworkDeletedTeamChannelTabTeamApp -InputObject <ITeamsIdentity> [-Expan
 
 ## DESCRIPTION
 The application that is linked to the tab.
-This cannot be changed after tab creation.
+This can't be changed after tab creation.
 
 ## PARAMETERS
 

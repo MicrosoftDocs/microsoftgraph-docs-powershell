@@ -9,7 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Temporarily stop a running synchronization job.
-All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
+All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Suspend-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Suspend-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Suspend-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIden
 
 ## DESCRIPTION
 Temporarily stop a running synchronization job.
-All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
+All the progress, including job state, is persisted, and the job continues from where it left off when a start call is made.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Suspend-MgBetaServicePrincipalSynchronizationJob Cmdlet
@@ -180,6 +182,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UniqueName <String>]`: Alternate key of application

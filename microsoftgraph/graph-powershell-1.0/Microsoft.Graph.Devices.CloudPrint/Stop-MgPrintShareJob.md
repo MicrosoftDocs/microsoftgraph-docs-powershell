@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Stop-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Stop-MgBetaPrintShareJob?view=graph-powershell-beta)
@@ -31,6 +32,7 @@ Stop-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-PassThru] [-Wha
 ## DESCRIPTION
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

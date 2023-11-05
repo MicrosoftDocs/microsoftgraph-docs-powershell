@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 The host related to this component.
 This is a reverse navigation property.
-When navigating to components from a host, this should be assumed to be a return reference.
+When you navigate to components from a host, this should be assumed to be a return reference.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-1.0)
@@ -32,7 +32,7 @@ Get-MgBetaSecurityThreatIntelligenceHostComponentHost -InputObject <ISecurityIde
 ## DESCRIPTION
 The host related to this component.
 This is a reverse navigation property.
-When navigating to components from a host, this should be assumed to be a return reference.
+When you navigate to components from a host, this should be assumed to be a return reference.
 
 ## PARAMETERS
 
@@ -151,6 +151,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker

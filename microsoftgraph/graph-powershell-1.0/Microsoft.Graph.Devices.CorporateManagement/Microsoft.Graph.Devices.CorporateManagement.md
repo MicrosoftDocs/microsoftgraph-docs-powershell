@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: 3100ae1f-9c7b-4f61-abab-a1d2d47fea35
+Module Guid: d47d0881-af0f-4936-b18c-9482834ebfe5
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -72,7 +72,7 @@ Get the number of the resource
 Read properties and relationships of the managedAppPolicyDeploymentSummary object.
 
 ### [Get-MgDeviceAppManagementManagedAppPolicy](Get-MgDeviceAppManagementManagedAppPolicy.md)
-Read properties and relationships of the managedAppConfiguration object.
+Read properties and relationships of the managedAppProtection object.
 
 ### [Get-MgDeviceAppManagementManagedAppPolicyCount](Get-MgDeviceAppManagementManagedAppPolicyCount.md)
 Get the number of the resource
@@ -105,7 +105,7 @@ Get the number of the resource
 Invoke function getUserIdsWithFlaggedAppRegistration
 
 ### [Get-MgDeviceAppManagementManagedAppStatus](Get-MgDeviceAppManagementManagedAppStatus.md)
-Read properties and relationships of the managedAppStatus object.
+Read properties and relationships of the managedAppStatusRaw object.
 
 ### [Get-MgDeviceAppManagementManagedAppStatusCount](Get-MgDeviceAppManagementManagedAppStatusCount.md)
 Get the number of the resource
@@ -114,7 +114,7 @@ Get the number of the resource
 Read properties and relationships of the managedEBook object.
 
 ### [Get-MgDeviceAppManagementManagedEBookAssignment](Get-MgDeviceAppManagementManagedEBookAssignment.md)
-Read properties and relationships of the iosVppEBookAssignment object.
+Read properties and relationships of the managedEBookAssignment object.
 
 ### [Get-MgDeviceAppManagementManagedEBookAssignmentCount](Get-MgDeviceAppManagementManagedEBookAssignmentCount.md)
 Get the number of the resource
@@ -168,19 +168,61 @@ Another way to input protected apps through xml files
 Get the number of the resource
 
 ### [Get-MgDeviceAppManagementMobileApp](Get-MgDeviceAppManagementMobileApp.md)
-Read properties and relationships of the iosLobApp object.
+Read properties and relationships of the macOSOfficeSuiteApp object.
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidLobApp
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidStoreApp
+
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobApp](Get-MgDeviceAppManagementMobileAppAsiOSLobApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosLobApp
+
+### [Get-MgDeviceAppManagementMobileAppAsIoStoreApp](Get-MgDeviceAppManagementMobileAppAsIoStoreApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosStoreApp
+
+### [Get-MgDeviceAppManagementMobileAppAsIoVppApp](Get-MgDeviceAppManagementMobileAppAsIoVppApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosVppApp
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSDmgApp
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.macOSLobApp
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedAndroidLobApp
+
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedIOSLobApp
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedMobileLobApp
 
-### [Get-MgDeviceAppManagementMobileAppAsMobileLobApp](Get-MgDeviceAppManagementMobileAppAsMobileLobApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.mobileLobApp
+### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.microsoftStoreForBusinessApp
 
 ### [Get-MgDeviceAppManagementMobileAppAssignment](Get-MgDeviceAppManagementMobileAppAssignment.md)
 Read properties and relationships of the mobileAppAssignment object.
 
 ### [Get-MgDeviceAppManagementMobileAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAssignmentCount.md)
 Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobApp](Get-MgDeviceAppManagementMobileAppAsWin32LobApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.win32LobApp
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppX](Get-MgDeviceAppManagementMobileAppAsWindowsAppX.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsAppX
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsMobileMSI
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsUniversalAppX
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppAsWindowsWebApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.windowsWebApp
 
 ### [Get-MgDeviceAppManagementMobileAppCategory](Get-MgDeviceAppManagementMobileAppCategory.md)
 Read properties and relationships of the mobileAppCategory object.
@@ -189,7 +231,7 @@ Read properties and relationships of the mobileAppCategory object.
 Get the number of the resource
 
 ### [Get-MgDeviceAppManagementMobileAppConfiguration](Get-MgDeviceAppManagementMobileAppConfiguration.md)
-Read properties and relationships of the iosMobileAppConfiguration object.
+Read properties and relationships of the managedDeviceMobileAppConfiguration object.
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationAssignment](Get-MgDeviceAppManagementMobileAppConfigurationAssignment.md)
 Read properties and relationships of the managedDeviceMobileAppConfigurationAssignment object.
@@ -221,10 +263,52 @@ Read properties and relationships of the managedDeviceMobileAppConfigurationUser
 ### [Get-MgDeviceAppManagementMobileAppCount](Get-MgDeviceAppManagementMobileAppCount.md)
 Get the number of the resource
 
+### [Get-MgDeviceAppManagementMobileAppCountAsAndroidLobApp](Get-MgDeviceAppManagementMobileAppCountAsAndroidLobApp.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsAndroidStoreApp](Get-MgDeviceAppManagementMobileAppCountAsAndroidStoreApp.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsiOSLobApp](Get-MgDeviceAppManagementMobileAppCountAsiOSLobApp.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsIoStoreApp](Get-MgDeviceAppManagementMobileAppCountAsIoStoreApp.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsIoVppApp](Get-MgDeviceAppManagementMobileAppCountAsIoVppApp.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsMacOSDmgApp](Get-MgDeviceAppManagementMobileAppCountAsMacOSDmgApp.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsMacOSLobApp](Get-MgDeviceAppManagementMobileAppCountAsMacOSLobApp.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsManagedAndroidLobApp](Get-MgDeviceAppManagementMobileAppCountAsManagedAndroidLobApp.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsManagediOSLobApp](Get-MgDeviceAppManagementMobileAppCountAsManagediOSLobApp.md)
+Get the number of the resource
+
 ### [Get-MgDeviceAppManagementMobileAppCountAsManagedMobileLobApp](Get-MgDeviceAppManagementMobileAppCountAsManagedMobileLobApp.md)
 Get the number of the resource
 
-### [Get-MgDeviceAppManagementMobileAppCountAsMobileLobApp](Get-MgDeviceAppManagementMobileAppCountAsMobileLobApp.md)
+### [Get-MgDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp](Get-MgDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsWin32LobApp](Get-MgDeviceAppManagementMobileAppCountAsWin32LobApp.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsWindowsAppX](Get-MgDeviceAppManagementMobileAppCountAsWindowsAppX.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsWindowsMobileMsi](Get-MgDeviceAppManagementMobileAppCountAsWindowsMobileMsi.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsWindowsUniversalAppX](Get-MgDeviceAppManagementMobileAppCountAsWindowsUniversalAppX.md)
+Get the number of the resource
+
+### [Get-MgDeviceAppManagementMobileAppCountAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppCountAsWindowsWebApp.md)
 Get the number of the resource
 
 ### [Get-MgDeviceAppManagementTargetedManagedAppConfiguration](Get-MgDeviceAppManagementTargetedManagedAppConfiguration.md)
@@ -411,7 +495,7 @@ Create new navigation property to exemptAppLockerFiles for deviceAppManagement
 Create new navigation property to protectedAppLockerFiles for deviceAppManagement
 
 ### [New-MgDeviceAppManagementMobileApp](New-MgDeviceAppManagementMobileApp.md)
-Create a new macOSOfficeSuiteApp object.
+Create a new iosLobApp object.
 
 ### [New-MgDeviceAppManagementMobileAppAssignment](New-MgDeviceAppManagementMobileAppAssignment.md)
 Create a new mobileAppAssignment object.
@@ -555,7 +639,7 @@ Delete navigation property exemptAppLockerFiles for deviceAppManagement
 Delete navigation property protectedAppLockerFiles for deviceAppManagement
 
 ### [Remove-MgDeviceAppManagementMobileApp](Remove-MgDeviceAppManagementMobileApp.md)
-Deletes a webApp.
+Deletes a windowsMobileMSI.
 
 ### [Remove-MgDeviceAppManagementMobileAppAssignment](Remove-MgDeviceAppManagementMobileAppAssignment.md)
 Deletes a mobileAppAssignment.
@@ -735,7 +819,7 @@ Update the navigation property exemptAppLockerFiles in deviceAppManagement
 Update the navigation property protectedAppLockerFiles in deviceAppManagement
 
 ### [Update-MgDeviceAppManagementMobileApp](Update-MgDeviceAppManagementMobileApp.md)
-Update the properties of a windowsAppX object.
+Update the properties of a windowsMobileMSI object.
 
 ### [Update-MgDeviceAppManagementMobileAppAssignment](Update-MgDeviceAppManagementMobileAppAssignment.md)
 Update the properties of a mobileAppAssignment object.

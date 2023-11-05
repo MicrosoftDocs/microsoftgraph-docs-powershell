@@ -10,6 +10,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -30,6 +31,7 @@ Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionRe
 
 ## DESCRIPTION
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

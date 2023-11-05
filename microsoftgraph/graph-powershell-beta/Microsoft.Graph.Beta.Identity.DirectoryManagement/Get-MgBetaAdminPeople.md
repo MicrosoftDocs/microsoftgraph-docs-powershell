@@ -10,6 +10,10 @@ ms.prod: people
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a peopleAdminSettings object.
+This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeople?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -19,6 +23,7 @@ Get-MgBetaAdminPeople [-ExpandProperty <String[]>] [-Property <String[]>] [<Comm
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a peopleAdminSettings object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -65,4 +70,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeople?view=graph-powershell-1.0)
 

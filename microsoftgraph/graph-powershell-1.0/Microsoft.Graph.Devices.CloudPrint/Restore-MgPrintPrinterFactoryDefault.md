@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a printer's default settings to the values specified by the manufacturer.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaPrintPrinterFactoryDefault](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Restore-MgBetaPrintPrinterFactoryDefault?view=graph-powershell-beta)
@@ -28,6 +29,7 @@ Restore-MgPrintPrinterFactoryDefault -InputObject <IDevicesCloudPrintIdentity> [
 
 ## DESCRIPTION
 Restore a printer's default settings to the values specified by the manufacturer.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Restore-MgPrintPrinterFactoryDefault Cmdlet

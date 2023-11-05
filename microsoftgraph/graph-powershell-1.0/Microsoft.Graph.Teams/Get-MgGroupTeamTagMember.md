@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the properties and relationships of a member of a standard tag in a team.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
@@ -36,6 +37,7 @@ Get-MgGroupTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Get the properties and relationships of a member of a standard tag in a team.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

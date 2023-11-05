@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/confirm-mgapplicationmembergroup
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Confirm-MgApplicationMemberGroup
@@ -13,6 +14,7 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Confirm-MgBetaApplicationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaApplicationMemberGroup?view=graph-powershell-beta)
@@ -51,6 +53,7 @@ This function is transitive.
 You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 

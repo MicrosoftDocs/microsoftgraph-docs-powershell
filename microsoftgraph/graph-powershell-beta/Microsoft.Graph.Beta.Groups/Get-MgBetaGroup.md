@@ -12,9 +12,10 @@ ms.prod: groups
 ## SYNOPSIS
 Get the properties and relationships of a group object.
 This operation returns by default only a subset of all the available properties, as noted in the Properties section.
-To get properties that are not returned by default, specify them in a $select OData query option.
-The hasMembersWithLicenseErrors and isArchived properties are an exception and are not returned in the $select query.
+To get properties that aren't_ returned by default, specify them in a $select OData query option.
+The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
 Because the group resource supports extensions, you can also use the GET operation to get custom properties and extension data in a group instance.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgGroup?view=graph-powershell-1.0)
@@ -42,9 +43,10 @@ Get-MgBetaGroup -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Get the properties and relationships of a group object.
 This operation returns by default only a subset of all the available properties, as noted in the Properties section.
-To get properties that are not returned by default, specify them in a $select OData query option.
-The hasMembersWithLicenseErrors and isArchived properties are an exception and are not returned in the $select query.
+To get properties that aren't_ returned by default, specify them in a $select OData query option.
+The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
 Because the group resource supports extensions, you can also use the GET operation to get custom properties and extension data in a group instance.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get a list of groups

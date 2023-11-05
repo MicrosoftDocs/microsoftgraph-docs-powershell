@@ -10,6 +10,7 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Get the externalMeetingRegistration details associated with an onlineMeeting.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -46,6 +47,7 @@ Get-MgBetaVirtualEventSessionRegistration -InputObject <IBookingsIdentity> [-Exp
 
 ## DESCRIPTION
 Get the externalMeetingRegistration details associated with an onlineMeeting.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

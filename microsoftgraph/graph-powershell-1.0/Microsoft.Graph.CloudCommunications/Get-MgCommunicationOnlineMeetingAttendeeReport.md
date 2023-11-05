@@ -3,13 +3,13 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingattendeereport
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationOnlineMeetingAttendeeReport
 
 ## SYNOPSIS
-The content stream of the attendee report of a Microsoft Teams live event.
-Read-only.
+Get attendeeReport for the navigation property onlineMeetings from communications
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-beta)
@@ -29,8 +29,7 @@ Get-MgCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunication
 ```
 
 ## DESCRIPTION
-The content stream of the attendee report of a Microsoft Teams live event.
-Read-only.
+Get attendeeReport for the navigation property onlineMeetings from communications
 
 ## EXAMPLES
 
@@ -120,6 +119,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport

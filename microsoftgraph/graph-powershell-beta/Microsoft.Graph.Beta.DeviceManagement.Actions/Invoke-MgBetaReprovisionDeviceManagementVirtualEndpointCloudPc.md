@@ -10,6 +10,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Reprovision a specific Cloud PC.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -43,6 +44,7 @@ Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDe
 
 ## DESCRIPTION
 Reprovision a specific Cloud PC.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet

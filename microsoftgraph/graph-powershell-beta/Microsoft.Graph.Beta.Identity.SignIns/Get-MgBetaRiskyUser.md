@@ -9,7 +9,7 @@ ms.prod: identity-and-sign-in
 # Get-MgBetaRiskyUser
 
 ## SYNOPSIS
-Users that are flagged as at-risk by Azure AD Identity Protection.
+Users that are flagged as at-risk by Microsoft Entra ID Protection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Get-MgBetaRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Users that are flagged as at-risk by Azure AD Identity Protection.
+Users that are flagged as at-risk by Microsoft Entra ID Protection.
 
 ## EXAMPLES
 ### Example 1: List all risky users
@@ -322,6 +322,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

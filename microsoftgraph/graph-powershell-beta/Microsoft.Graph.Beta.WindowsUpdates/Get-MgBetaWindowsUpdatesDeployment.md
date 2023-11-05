@@ -11,6 +11,7 @@ ms.prod: w10
 
 ## SYNOPSIS
 Read the properties and relationships of a deployment object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-Expa
 
 ## DESCRIPTION
 Read the properties and relationships of a deployment object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaWindowsUpdatesDeployment Cmdlet

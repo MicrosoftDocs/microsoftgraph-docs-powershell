@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You will need to register the calling bot and go through the list of permissions needed.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-1.0)
@@ -42,6 +43,7 @@ New-MgBetaCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-WhatIf] [-Con
 ## DESCRIPTION
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You will need to register the calling bot and go through the list of permissions needed.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Create peer-to-peer VoIP call with service hosted media
@@ -1185,7 +1187,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[NonAnonymizedIdentity <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
   - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
-  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+  - `[Region <String>]`: The home region of the participant, and can be a country, a continent, or a larger geographic region. The region doesn't change based on the participant's current physical location, unlike countryCode. Read-only.
 
 `AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup[]>`: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -1213,7 +1215,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[NonAnonymizedIdentity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
     - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
-    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+    - `[Region <String>]`: The home region of the participant, and can be a country, a continent, or a larger geographic region. The region doesn't change based on the participant's current physical location, unlike countryCode. Read-only.
   - `[AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Receivers <String[]>]`: List of receiving participant ids.
@@ -1277,10 +1279,10 @@ To create the parameters described below, construct a hash table containing the 
       - `[Direction <String>]`: mediaDirection
       - `[Label <String>]`: The media stream label.
       - `[MediaType <String>]`: modality
-      - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
+      - `[ServerMuted <Boolean?>]`: Indicates whether the server has muted the media.
       - `[SourceId <String>]`: The source ID.
     - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
-    - `[PreferredDisplayName <String>]`: 
+    - `[PreferredDisplayName <String>]`: The participant's preferred display name that overrides the original display name.
     - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[InitiatedBy <IMicrosoftGraphParticipantInfo>]`: participantInfo
@@ -1405,7 +1407,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[NonAnonymizedIdentity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
     - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
-    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+    - `[Region <String>]`: The home region of the participant, and can be a country, a continent, or a larger geographic region. The region doesn't change based on the participant's current physical location, unlike countryCode. Read-only.
   - `[IsIdentityAnonymized <Boolean?>]`: 
   - `[IsInLobby <Boolean?>]`: true if the participant is in lobby.
   - `[IsMuted <Boolean?>]`: true if the participant is muted (client or server muted).
@@ -1413,10 +1415,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[Direction <String>]`: mediaDirection
     - `[Label <String>]`: The media stream label.
     - `[MediaType <String>]`: modality
-    - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
+    - `[ServerMuted <Boolean?>]`: Indicates whether the server has muted the media.
     - `[SourceId <String>]`: The source ID.
   - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
-  - `[PreferredDisplayName <String>]`: 
+  - `[PreferredDisplayName <String>]`: The participant's preferred display name that overrides the original display name.
   - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[InitiatedBy <IMicrosoftGraphParticipantInfo>]`: participantInfo
@@ -1453,7 +1455,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[NonAnonymizedIdentity <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
   - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
-  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+  - `[Region <String>]`: The home region of the participant, and can be a country, a continent, or a larger geographic region. The region doesn't change based on the participant's current physical location, unlike countryCode. Read-only.
 
 `TARGETS <IMicrosoftGraphInvitationParticipantInfo[]>`: .
   - `[EndpointType <String>]`: endpointType

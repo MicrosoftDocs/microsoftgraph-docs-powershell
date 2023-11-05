@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Soft-delete a chat.
 When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgChat](/powershell/module/Microsoft.Graph.Teams/Remove-MgChat?view=graph-powershell-1.0)
@@ -30,6 +31,7 @@ Remove-MgBetaChat -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] 
 ## DESCRIPTION
 Soft-delete a chat.
 When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

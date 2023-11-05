@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update an appManagementPolicy object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
@@ -45,6 +46,7 @@ Update-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update an appManagementPolicy object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -288,7 +290,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-      - `[CertificateBasedApplicationConfigurationIds <String[]>]`: 
+      - `[CertificateBasedApplicationConfigurationIds <String[]>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
       - `[MaxLifetime <TimeSpan?>]`: 
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date. For existing applications, the enforcement date would be back dated. To apply to all applications regardless of their creation date, this property would be null. Nullable.
       - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
@@ -348,6 +350,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
@@ -377,7 +380,7 @@ To create the parameters described below, construct a hash table containing the 
 `RESTRICTIONS <IMicrosoftGraphAppManagementConfiguration>`: appManagementConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
-    - `[CertificateBasedApplicationConfigurationIds <String[]>]`: 
+    - `[CertificateBasedApplicationConfigurationIds <String[]>]`: Collection of GUIDs that point to the certificateBasedApplicationConfiguration that contains the collection of allowed root and intermediate certificate authorities.
     - `[MaxLifetime <TimeSpan?>]`: 
     - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date. For existing applications, the enforcement date would be back dated. To apply to all applications regardless of their creation date, this property would be null. Nullable.
     - `[RestrictionType <String>]`: appKeyCredentialRestrictionType

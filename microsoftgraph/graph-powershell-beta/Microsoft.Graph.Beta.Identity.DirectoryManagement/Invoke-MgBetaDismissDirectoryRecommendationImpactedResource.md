@@ -10,6 +10,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Dismiss an impactedResources object and update its status to dismissed.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -43,6 +44,7 @@ Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -InputObject <IIdent
 
 ## DESCRIPTION
 Dismiss an impactedResources object and update its status to dismissed.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

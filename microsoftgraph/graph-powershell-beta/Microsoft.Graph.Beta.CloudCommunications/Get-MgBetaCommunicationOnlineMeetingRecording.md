@@ -9,8 +9,7 @@ ms.prod: cloud-communications
 # Get-MgBetaCommunicationOnlineMeetingRecording
 
 ## SYNOPSIS
-The content stream of the recording of a Teams live event.
-Read-only.
+Get recording for the navigation property onlineMeetings from communications
 
 ## SYNTAX
 
@@ -52,8 +51,7 @@ Get-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunications
 ```
 
 ## DESCRIPTION
-The content stream of the recording of a Teams live event.
-Read-only.
+Get recording for the navigation property onlineMeetings from communications
 
 ## PARAMETERS
 

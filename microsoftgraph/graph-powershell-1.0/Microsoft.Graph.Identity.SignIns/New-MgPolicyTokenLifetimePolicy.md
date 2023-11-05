@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new tokenLifetimePolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyTokenLifetimePolicy?view=graph-powershell-beta)
@@ -30,6 +31,7 @@ New-MgPolicyTokenLifetimePolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] 
 
 ## DESCRIPTION
 Create a new tokenLifetimePolicy object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

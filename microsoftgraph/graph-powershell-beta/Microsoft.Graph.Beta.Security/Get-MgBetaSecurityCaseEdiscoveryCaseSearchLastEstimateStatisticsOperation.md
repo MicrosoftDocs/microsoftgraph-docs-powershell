@@ -10,6 +10,7 @@ ms.prod: ediscovery
 
 ## SYNOPSIS
 Get the last ediscoveryEstimateOperation objects and their properties.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-1.0)
@@ -30,6 +31,7 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -Input
 
 ## DESCRIPTION
 Get the last ediscoveryEstimateOperation objects and their properties.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -176,6 +178,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker

@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupCalendarPermission?view=graph-powershell-1.0)
@@ -43,6 +44,7 @@ New-MgBetaGroupCalendarPermission -InputObject <ICalendarIdentity>
 
 ## DESCRIPTION
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -157,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsInsideOrganization
-True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
+True if the user in context (share recipient or delegate) is inside the same organization as the calendar owner.
 
 ```yaml
 Type: SwitchParameter
@@ -172,9 +174,9 @@ Accept wildcard characters: False
 ```
 
 ### -IsRemovable
-True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise.
+True if the user can be removed from the list of recipients or delegates for the specified calendar, false otherwise.
 The 'My organization' user determines the permissions other people within your organization have to the given calendar.
-You cannot remove 'My organization' as a sharee to a calendar.
+You can't remove 'My organization' as a recipient to a calendar.
 
 ```yaml
 Type: SwitchParameter
@@ -261,8 +263,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of an entity instance.
     - `[Name <String>]`: The display name of an entity instance.
-  - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
-  - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
+  - `[IsInsideOrganization <Boolean?>]`: True if the user in context (share recipient or delegate) is inside the same organization as the calendar owner.
+  - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of recipients or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You can't remove 'My organization' as a recipient to a calendar.
   - `[Role <String>]`: calendarRoleType
 
 `EMAILADDRESS <IMicrosoftGraphEmailAddress>`: emailAddress

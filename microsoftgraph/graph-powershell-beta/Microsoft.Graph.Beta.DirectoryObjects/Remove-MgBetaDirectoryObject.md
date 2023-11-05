@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a directory object, for example, a group, user, application, or service principal.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Remove-MgDirectoryObject?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete a directory object, for example, a group, user, application, or service principal.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

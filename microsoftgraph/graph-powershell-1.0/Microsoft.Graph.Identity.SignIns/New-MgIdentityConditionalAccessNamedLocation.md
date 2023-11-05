@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
@@ -32,6 +33,7 @@ New-MgIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphName
 ## DESCRIPTION
 Create a new namedLocation object.
 Named locations can be either ipNamedLocation or countryNamedLocation objects.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Create a country named location

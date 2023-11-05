@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new directory extension definition, represented by an extensionProperty object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
@@ -45,6 +46,7 @@ New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Create a new directory extension definition, represented by an extensionProperty object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

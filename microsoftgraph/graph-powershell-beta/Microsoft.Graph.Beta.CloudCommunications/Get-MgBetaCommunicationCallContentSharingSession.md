@@ -11,6 +11,7 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Retrieve the properties of a contentSharingSession object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallContentSharingSession?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaCommunicationCallContentSharingSession -InputObject <ICloudCommunicati
 
 ## DESCRIPTION
 Retrieve the properties of a contentSharingSession object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

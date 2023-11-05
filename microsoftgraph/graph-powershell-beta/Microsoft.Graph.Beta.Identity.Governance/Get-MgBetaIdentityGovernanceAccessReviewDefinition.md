@@ -13,8 +13,9 @@ ms.prod: governance
 Retrieve an accessReviewScheduleDefinition object by ID.
 This returns all properties of the scheduled access review series except for the associated accessReviewInstances.
 Each accessReviewScheduleDefinition has at least one instance.
-An instance represents a review for a specific resource (such as a particular group's members), during one occurrence (e.g., March 2021) of a recurring review.
+An instance represents a review for a specific resource (such as a particular group's members), during one occurrence (for example, March 2021) of a recurring review.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
@@ -44,8 +45,9 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovern
 Retrieve an accessReviewScheduleDefinition object by ID.
 This returns all properties of the scheduled access review series except for the associated accessReviewInstances.
 Each accessReviewScheduleDefinition has at least one instance.
-An instance represents a review for a specific resource (such as a particular group's members), during one occurrence (e.g., March 2021) of a recurring review.
+An instance represents a review for a specific resource (such as a particular group's members), during one occurrence (for example, March 2021) of a recurring review.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: List the first one hundred access review definitions
@@ -325,6 +327,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[On <String>]`: Usage: on='{on}'
+  - `[PermissionsRequestChangeId <String>]`: The unique identifier of permissionsRequestChange
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule
   - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleInstance
   - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: The unique identifier of privilegedAccessGroupAssignmentScheduleRequest

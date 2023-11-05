@@ -11,6 +11,7 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve a conversationMember from a chat.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgChatMember](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMember?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 Retrieve a conversationMember from a chat.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -11,6 +11,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of a specific cloudPC object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 
 ## DESCRIPTION
 Read the properties and relationships of a specific cloudPC object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

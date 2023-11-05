@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new bookingCustomer object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCustomer?view=graph-powershell-1.0)
@@ -43,6 +44,7 @@ New-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Create a new bookingCustomer object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaBookingBusinessCustomer Cmdlet

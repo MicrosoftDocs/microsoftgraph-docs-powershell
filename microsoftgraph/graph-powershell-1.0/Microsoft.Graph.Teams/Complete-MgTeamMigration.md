@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteammigration
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Complete-MgTeamMigration
@@ -10,8 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Complete the message migration process by removing migration mode from a team.
 Migration mode is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
-After a completeMigration request is made, you cannot import additional messages into the team.
+After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Complete-MgBetaTeamMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamMigration?view=graph-powershell-beta)
@@ -31,8 +33,9 @@ Complete-MgTeamMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-C
 ## DESCRIPTION
 Complete the message migration process by removing migration mode from a team.
 Migration mode is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
-After a completeMigration request is made, you cannot import additional messages into the team.
+After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

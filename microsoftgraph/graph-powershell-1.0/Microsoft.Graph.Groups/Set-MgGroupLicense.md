@@ -12,6 +12,7 @@ Add or remove licenses on the group.
 Licenses assigned to the group will be assigned to all users in the group.
 To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaGroupLicense](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupLicense?view=graph-powershell-beta)
@@ -49,6 +50,7 @@ Add or remove licenses on the group.
 Licenses assigned to the group will be assigned to all users in the group.
 To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Set-MgGroupLicense Cmdlet

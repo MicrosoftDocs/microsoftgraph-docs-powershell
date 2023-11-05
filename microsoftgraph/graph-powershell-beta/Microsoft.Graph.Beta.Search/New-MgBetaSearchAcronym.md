@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new acronym object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -26,6 +27,7 @@ New-MgBetaSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-WhatIf] 
 
 ## DESCRIPTION
 Create a new acronym object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaSearchAcronym Cmdlet
@@ -186,7 +188,7 @@ Accept wildcard characters: False
 
 ### -WebUrl
 Search answer URL link.
-When users click this search answer in search results, they will go to this URL.
+When users click this search answer in search results, they'll go to this URL.
 
 ```yaml
 Type: String
@@ -262,7 +264,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
-  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
+  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they'll go to this URL.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState

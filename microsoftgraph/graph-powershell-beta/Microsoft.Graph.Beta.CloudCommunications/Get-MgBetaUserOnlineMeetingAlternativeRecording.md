@@ -9,8 +9,7 @@ ms.prod: cloud-communications
 # Get-MgBetaUserOnlineMeetingAlternativeRecording
 
 ## SYNOPSIS
-The content stream of the alternative recording of a Microsoft Teams live event.
-Read-only.
+Get alternativeRecording for the navigation property onlineMeetings from users
 
 ## SYNTAX
 
@@ -27,8 +26,7 @@ Get-MgBetaUserOnlineMeetingAlternativeRecording -InputObject <ICloudCommunicatio
 ```
 
 ## DESCRIPTION
-The content stream of the alternative recording of a Microsoft Teams live event.
-Read-only.
+Get alternativeRecording for the navigation property onlineMeetings from users
 
 ## PARAMETERS
 

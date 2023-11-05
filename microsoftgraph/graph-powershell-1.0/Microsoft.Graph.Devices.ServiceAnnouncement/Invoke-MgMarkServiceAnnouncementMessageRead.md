@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageread
 schema: 2.0.0
+ms.prod: service-communications
 ---
 
 # Invoke-MgMarkServiceAnnouncementMessageRead
 
 ## SYNOPSIS
 Mark a list of serviceUpdateMessages as read for the signed in user.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaMarkServiceAnnouncementMessageRead?view=graph-powershell-beta)
@@ -30,6 +32,7 @@ Invoke-MgMarkServiceAnnouncementMessageRead
 
 ## DESCRIPTION
 Mark a list of serviceUpdateMessages as read for the signed in user.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

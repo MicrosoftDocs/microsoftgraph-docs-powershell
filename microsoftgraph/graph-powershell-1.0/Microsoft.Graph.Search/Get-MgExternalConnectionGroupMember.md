@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A member added to an externalGroup.
-You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
+You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 A member added to an externalGroup.
-You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
+You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
 
 ## EXAMPLES
 ### Example 1: Code snippet

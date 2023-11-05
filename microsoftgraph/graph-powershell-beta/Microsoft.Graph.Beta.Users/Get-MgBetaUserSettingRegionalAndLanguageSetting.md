@@ -10,6 +10,7 @@ ms.prod: users
 
 ## SYNOPSIS
 Retrieve the properties of a user's regionalAndLanguageSettings.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Get-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-
 
 ## DESCRIPTION
 Retrieve the properties of a user's regionalAndLanguageSettings.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet

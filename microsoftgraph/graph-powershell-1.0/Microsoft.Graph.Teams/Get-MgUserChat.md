@@ -11,6 +11,7 @@ schema: 2.0.0
 Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChat?view=graph-powershell-beta)
@@ -40,6 +41,7 @@ Get-MgUserChat -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prop
 Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get a user's one on one chat

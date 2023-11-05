@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuser
 schema: 2.0.0
+ms.prod: identity-and-sign-in
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgRiskyUser
 
 ## SYNOPSIS
 Read the properties and relationships of a riskyUser object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUser?view=graph-powershell-beta)
@@ -35,6 +38,7 @@ Get-MgRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Read the properties and relationships of a riskyUser object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

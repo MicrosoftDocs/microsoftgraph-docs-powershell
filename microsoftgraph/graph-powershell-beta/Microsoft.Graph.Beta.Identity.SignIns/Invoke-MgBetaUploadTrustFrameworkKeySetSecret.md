@@ -10,8 +10,9 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Upload a plain text secret to a trustFrameworkKeyset.
-Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider.
+Examples of secrets are application secrets in Microsoft Entra ID, Google, Facebook, or any other identity provider.
 his method returns trustFrameworkKey.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -45,8 +46,9 @@ Invoke-MgBetaUploadTrustFrameworkKeySetSecret -InputObject <IIdentitySignInsIden
 
 ## DESCRIPTION
 Upload a plain text secret to a trustFrameworkKeyset.
-Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider.
+Examples of secrets are application secrets in Microsoft Entra ID, Google, Facebook, or any other identity provider.
 his method returns trustFrameworkKey.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaUploadTrustFrameworkKeySetSecret Cmdlet
@@ -295,6 +297,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

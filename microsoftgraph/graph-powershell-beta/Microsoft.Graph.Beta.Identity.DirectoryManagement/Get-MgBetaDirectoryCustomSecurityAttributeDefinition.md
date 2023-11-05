@@ -11,6 +11,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Read the properties and relationships of a customSecurityAttributeDefinition object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDire
 
 ## DESCRIPTION
 Read the properties and relationships of a customSecurityAttributeDefinition object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get all custom security attributes

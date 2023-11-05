@@ -11,6 +11,7 @@ ms.prod: applications
 
 ## SYNOPSIS
 Retrieve the properties and relationships of an onPremisesAgent object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaOnPremisePublishingProfileAgent -InputObject <IApplicationsIdentity> [
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an onPremisesAgent object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfileAgent Cmdlet
@@ -296,6 +298,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UniqueName <String>]`: Alternate key of application

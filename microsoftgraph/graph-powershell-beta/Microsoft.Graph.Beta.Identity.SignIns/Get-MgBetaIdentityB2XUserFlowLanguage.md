@@ -10,8 +10,8 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 The languages supported for customization within the user flow.
-Language customization is enabled by default in self-service sign up user flow.
-You cannot create custom languages in self-service sign up user flows.
+Language customization is enabled by default in self-service sign-up user flow.
+You can't create custom languages in self-service sign-up user flows.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguage?view=graph-powershell-1.0)
@@ -39,8 +39,8 @@ Get-MgBetaIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity> [-
 
 ## DESCRIPTION
 The languages supported for customization within the user flow.
-Language customization is enabled by default in self-service sign up user flow.
-You cannot create custom languages in self-service sign up user flows.
+Language customization is enabled by default in self-service sign-up user flow.
+You can't create custom languages in self-service sign-up user flows.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -323,6 +323,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

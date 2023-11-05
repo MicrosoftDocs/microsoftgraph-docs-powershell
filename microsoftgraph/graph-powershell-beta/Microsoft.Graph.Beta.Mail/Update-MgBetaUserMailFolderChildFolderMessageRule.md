@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Change writable properties on a messageRule object and save the changes.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
@@ -48,6 +49,7 @@ Update-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 
 ## DESCRIPTION
 Change writable properties on a messageRule object and save the changes.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

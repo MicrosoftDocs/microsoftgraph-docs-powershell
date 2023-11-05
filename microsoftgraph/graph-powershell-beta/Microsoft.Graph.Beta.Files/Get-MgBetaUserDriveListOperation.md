@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserDriveListOperation
 
 ## SYNOPSIS
-The collection of long running operations for the list.
+The collection of long-running operations on the list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListOperation](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListOperation?view=graph-powershell-1.0)
@@ -35,7 +35,7 @@ Get-MgBetaUserDriveListOperation -InputObject <IFilesIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-The collection of long running operations for the list.
+The collection of long-running operations on the list.
 
 ## PARAMETERS
 

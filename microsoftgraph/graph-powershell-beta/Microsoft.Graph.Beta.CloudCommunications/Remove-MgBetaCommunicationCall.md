@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCall?view=graph-powershell-1.0)
@@ -31,6 +32,7 @@ Remove-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-IfM
 ## DESCRIPTION
 Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlert?view=graph-powershell-1.0)
@@ -77,6 +78,7 @@ Update-MgBetaSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Request without Prefer header
@@ -934,7 +936,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[IsAzureAdRegistered <Boolean?>]`: 
     - `[IsHybridAzureDomainJoined <Boolean?>]`: True if the host is domain joined to an on-premises Active Directory domain.
     - `[NetBiosName <String>]`: The local host name, without the DNS domain name.
-    - `[OS <String>]`: Host Operating System. (For example, Windows10, MacOS, RHEL, etc.).
+    - `[OS <String>]`: Host Operating System. (For example, Windows 10, macOS, RHEL, etc.).
     - `[PrivateIPAddress <String>]`: Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
     - `[PublicIPAddress <String>]`: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
     - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host.  Recommended value range of 0-1, which equates to a percentage.
@@ -946,7 +948,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: Time at which the alert entity was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[MalwareStates <IMicrosoftGraphMalwareState[]>]`: Threat Intelligence pertaining to malware related to this alert.
     - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
-    - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry', 'notpetya', etc.).
+    - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
     - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
     - `[Severity <String>]`: Provider-determined severity of this malware.
     - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
@@ -1080,7 +1082,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsAzureAdRegistered <Boolean?>]`: 
   - `[IsHybridAzureDomainJoined <Boolean?>]`: True if the host is domain joined to an on-premises Active Directory domain.
   - `[NetBiosName <String>]`: The local host name, without the DNS domain name.
-  - `[OS <String>]`: Host Operating System. (For example, Windows10, MacOS, RHEL, etc.).
+  - `[OS <String>]`: Host Operating System. (For example, Windows 10, macOS, RHEL, etc.).
   - `[PrivateIPAddress <String>]`: Private (not routable) IPv4 or IPv6 address (see RFC 1918) at the time of the alert.
   - `[PublicIPAddress <String>]`: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
   - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host.  Recommended value range of 0-1, which equates to a percentage.
@@ -1121,6 +1123,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -1168,7 +1171,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `MALWARESTATES <IMicrosoftGraphMalwareState[]>`: Threat Intelligence pertaining to malware related to this alert.
   - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
-  - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry', 'notpetya', etc.).
+  - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry,' 'notpetya,' etc.).
   - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
   - `[Severity <String>]`: Provider-determined severity of this malware.
   - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.

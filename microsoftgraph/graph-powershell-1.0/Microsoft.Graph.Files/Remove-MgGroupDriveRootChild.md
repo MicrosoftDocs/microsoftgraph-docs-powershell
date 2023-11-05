@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgGroupDriveRootChild
 
 ## SYNOPSIS
-Remove an item from a [bundle][].
+Remove an item from a bundle][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootChild?view=graph-powershell-beta)
@@ -28,7 +29,8 @@ Remove-MgGroupDriveRootChild -InputObject <IFilesIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Remove an item from a [bundle][].
+Remove an item from a bundle][].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

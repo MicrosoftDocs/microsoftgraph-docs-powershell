@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplatememberobject
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgGroupSettingTemplateMemberObject
@@ -11,6 +12,7 @@ schema: 2.0.0
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -44,6 +46,7 @@ Get-MgGroupSettingTemplateMemberObject -InputObject <IGroupsIdentity>
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

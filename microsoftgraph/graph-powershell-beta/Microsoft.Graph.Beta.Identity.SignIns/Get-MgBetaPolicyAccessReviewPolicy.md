@@ -10,6 +10,7 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of an accessReviewPolicy object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -19,6 +20,7 @@ Get-MgBetaPolicyAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <Stri
 
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewPolicy object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPolicyAccessReviewPolicy Cmdlet

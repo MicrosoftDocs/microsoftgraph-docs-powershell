@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
@@ -30,6 +31,7 @@ Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicatio
 
 ## DESCRIPTION
 Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

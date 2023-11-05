@@ -10,9 +10,14 @@ ms.prod: microsoft-teams
 # Get-MgBetaUserOnlineMeetingTranscript
 
 ## SYNOPSIS
-Retrieve a callTranscript object associated with an onlineMeeting.
+Retrieve a callTranscript object associated with a scheduled onlineMeeting.
+This API doesn't support getting call transcripts from channel meetings.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
+This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscript?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,9 +41,11 @@ Get-MgBetaUserOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity
 ```
 
 ## DESCRIPTION
-Retrieve a callTranscript object associated with an onlineMeeting.
+Retrieve a callTranscript object associated with a scheduled onlineMeeting.
+This API doesn't support getting call transcripts from channel meetings.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingTranscript Cmdlet
@@ -309,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscript?view=graph-powershell-1.0)

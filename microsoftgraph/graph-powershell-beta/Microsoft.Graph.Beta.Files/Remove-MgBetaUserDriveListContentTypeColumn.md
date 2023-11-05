@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaUserDriveListContentTypeColumn
 
 ## SYNOPSIS
-Remove a [column][columndefinition] from a [site][], [list][] or [content type][contentType].
+Remove a column][columndefinition] from a [site][], [list][] or [content type][contentType].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveListContentTypeColumn?view=graph-powershell-1.0)
@@ -28,7 +29,8 @@ Remove-MgBetaUserDriveListContentTypeColumn -InputObject <IFilesIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Remove a [column][columndefinition] from a [site][], [list][] or [content type][contentType].
+Remove a column][columndefinition] from a [site][], [list][] or [content type][contentType].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

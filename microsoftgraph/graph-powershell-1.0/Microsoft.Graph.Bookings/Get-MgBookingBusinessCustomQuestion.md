@@ -11,6 +11,7 @@ ms.prod: bookings
 
 ## SYNOPSIS
 Read the properties and relationships of a bookingCustomQuestion object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
@@ -38,6 +39,7 @@ Get-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Read the properties and relationships of a bookingCustomQuestion object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

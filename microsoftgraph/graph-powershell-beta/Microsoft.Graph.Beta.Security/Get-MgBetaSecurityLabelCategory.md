@@ -11,6 +11,7 @@ ms.prod: security
 
 ## SYNOPSIS
 Read the properties and relationships of a categoryTemplate object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaSecurityLabelCategory -InputObject <ISecurityIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Read the properties and relationships of a categoryTemplate object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -274,6 +276,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker

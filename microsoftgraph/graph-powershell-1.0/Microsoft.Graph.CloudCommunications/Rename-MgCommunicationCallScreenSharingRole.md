@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Allow applications to share screen content with the participants of a group call.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Rename-MgBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)
@@ -43,6 +44,7 @@ Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsId
 
 ## DESCRIPTION
 Allow applications to share screen content with the participants of a group call.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Rename-MgCommunicationCallScreenSharingRole Cmdlet
@@ -209,6 +211,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport

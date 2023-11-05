@@ -11,6 +11,7 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Read the properties and relationships of a managedDeviceCompliance object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance -InputObject <I
 
 ## DESCRIPTION
 Read the properties and relationships of a managedDeviceCompliance object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance Cmdlet

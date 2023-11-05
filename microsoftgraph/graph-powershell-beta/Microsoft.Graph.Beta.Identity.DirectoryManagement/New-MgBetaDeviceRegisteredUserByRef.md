@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add a registered user for the device.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDeviceRegisteredUserByRef?view=graph-powershell-1.0)
@@ -41,6 +42,7 @@ New-MgBetaDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementId
 
 ## DESCRIPTION
 Add a registered user for the device.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

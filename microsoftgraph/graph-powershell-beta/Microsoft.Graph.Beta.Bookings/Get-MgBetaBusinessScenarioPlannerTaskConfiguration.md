@@ -10,6 +10,7 @@ ms.prod: business-scenarios
 
 ## SYNOPSIS
 Read the properties and relationships of a plannerTaskConfiguration object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Get-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdenti
 
 ## DESCRIPTION
 Read the properties and relationships of a plannerTaskConfiguration object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

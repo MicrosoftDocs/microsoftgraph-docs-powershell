@@ -54,6 +54,8 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -250,5 +252,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Confirm-MgBetaUserChatPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Confirm-MgBetaUserChatPermissionGrantMemberGroup?view=graph-powershell-beta)
 
