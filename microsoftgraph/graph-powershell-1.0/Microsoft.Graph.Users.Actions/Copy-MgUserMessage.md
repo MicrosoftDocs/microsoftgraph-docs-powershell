@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Copy-MgUserMessage
@@ -48,6 +48,7 @@ Copy a message to a folder within the user's mailbox.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Copy-MgUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -57,6 +58,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the Copy-MgUserMessage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -240,4 +242,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Copy-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMessage?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyrolemanagementpolicyassignment
@@ -29,6 +29,8 @@ Remove-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIden
 
 ## DESCRIPTION
 Delete navigation property roleManagementPolicyAssignments for policies
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -200,5 +202,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
 

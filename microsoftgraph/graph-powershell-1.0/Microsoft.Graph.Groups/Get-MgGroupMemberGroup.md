@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmembercountasuser
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgGroupMemberCountAsUser
@@ -32,6 +32,7 @@ Get-MgGroupMemberCountAsUser -InputObject <IGroupsIdentity> [-Filter <String>] [
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Check group memberships for a directory object
 
 ```powershell
@@ -43,6 +44,7 @@ $params = @{
 
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
 ```
+
 This example shows how to use the Get-MgGroupMemberGroup Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -59,10 +61,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Get-MgGroupMemberGroup Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -199,4 +201,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberGroup?view=graph-powershell-beta)

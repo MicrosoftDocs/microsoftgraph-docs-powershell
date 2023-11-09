@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumnposition
@@ -36,6 +36,8 @@ Get-MgSiteContentTypeColumnPosition -InputObject <ISitesIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Column order information in a content type.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -310,5 +312,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeColumnPosition?view=graph-powershell-beta)
 

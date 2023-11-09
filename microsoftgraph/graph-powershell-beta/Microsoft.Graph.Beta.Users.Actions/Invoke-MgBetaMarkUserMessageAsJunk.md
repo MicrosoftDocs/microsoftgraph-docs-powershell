@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetamarkusermessageasjunk
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgBetaMarkUserMessageAsJunk
@@ -45,6 +45,8 @@ Invoke-MgBetaMarkUserMessageAsJunk -InputObject <IUsersActionsIdentity>
 Mark a message as junk.
 This API adds the sender to the list of blocked senders and moves the message to the Junk Email folder, when moveToJunk is true.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -235,4 +237,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteampermissiongrant
@@ -44,6 +44,8 @@ New-MgTeamPermissionGrant -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Create new navigation property to permissionGrants for teams
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -317,5 +319,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [New-MgBetaTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPermissionGrant?view=graph-powershell-beta)
 

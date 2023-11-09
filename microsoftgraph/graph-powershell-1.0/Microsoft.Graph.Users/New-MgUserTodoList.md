@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguserextension
@@ -42,6 +42,7 @@ New-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> [-W
 Create new navigation property to extensions for users
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -54,10 +55,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgUserTodoList -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the New-MgUserTodoList Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -204,4 +205,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoList?view=graph-powershell-beta)

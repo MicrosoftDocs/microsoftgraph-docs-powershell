@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupproperty
@@ -59,6 +59,7 @@ To learn more about configuring naming policies, see Configure naming policy.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Test-MgGroupProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -69,6 +70,7 @@ $params = @{
 }
 Test-MgGroupProperty -GroupId $groupId -BodyParameter $params
 ```
+
 This example shows how to use the Test-MgGroupProperty Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -290,4 +292,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Test-MgBetaGroupProperty](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupProperty?view=graph-powershell-beta)

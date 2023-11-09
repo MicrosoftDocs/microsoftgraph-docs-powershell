@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/send-mgteamworkactivitynotificationtorecipient
@@ -39,10 +39,10 @@ For more details about sending notifications and the requirements for doing so, 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -78,10 +78,9 @@ $params = @{
 }
 
 Send-MgTeamworkActivityNotificationToRecipient -BodyParameter $params
-
 ```
-This example shows how to use the Send-MgTeamworkActivityNotificationToRecipient Cmdlet.
 
+This example shows how to use the Send-MgTeamworkActivityNotificationToRecipient Cmdlet.
 
 ## PARAMETERS
 
@@ -323,4 +322,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
+
 [Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)

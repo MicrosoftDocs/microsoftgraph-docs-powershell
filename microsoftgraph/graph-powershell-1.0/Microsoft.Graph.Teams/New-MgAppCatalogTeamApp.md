@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp
@@ -37,31 +37,29 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = [Zip file containing a Teams app package]
 
 
 New-MgAppCatalogTeamApp -BodyParameter $params
-
 ```
+
 This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
 
 ### Example 2: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
-New-MgAppCatalogTeamApp -Requiresreview true 
-
+New-MgAppCatalogTeamApp -Requiresreview true
 ```
-This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
 
+This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
 
 ## PARAMETERS
 
@@ -285,4 +283,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+
 [New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)

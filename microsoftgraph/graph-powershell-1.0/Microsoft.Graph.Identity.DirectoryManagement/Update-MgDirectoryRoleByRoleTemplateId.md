@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrolebyroletemplateid
@@ -46,6 +46,8 @@ Update-MgDirectoryRoleByRoleTemplateId -InputObject <IIdentityDirectoryManagemen
 
 ## DESCRIPTION
 Update entity in directoryRoles by roleTemplateId
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -353,5 +355,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+
 [Update-MgBetaDirectoryRoleByRoleTemplateId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryRoleByRoleTemplateId?view=graph-powershell-beta)
 

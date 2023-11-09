@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootlistitemversionfield
@@ -29,6 +29,8 @@ Get-MgDriveRootListItemVersionField -InputObject <IFilesIdentity> [-ExpandProper
 
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +155,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootListItemVersionField?view=graph-powershell-beta)
 

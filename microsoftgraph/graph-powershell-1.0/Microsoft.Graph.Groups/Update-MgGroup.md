@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroup
@@ -99,6 +99,7 @@ Update the properties of a group object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Update the properties of a group
 
 ```powershell
@@ -16731,3 +16732,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroup?view=graph-powershell-beta)
+
+
+## RELATED LINKS

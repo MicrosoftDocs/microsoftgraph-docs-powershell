@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleoffershiftrequest
@@ -29,6 +29,8 @@ Remove-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete navigation property offerShiftRequests for teams
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -192,5 +194,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
 

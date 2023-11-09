@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistcolumn
@@ -63,6 +63,8 @@ New-MgUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a column for a list][list] with a request that specifies a [columnDefinition][columnDefinition].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1129,3 +1131,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
+## RELATED LINKS

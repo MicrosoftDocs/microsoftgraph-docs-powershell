@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttypecolumnlink
@@ -29,6 +29,8 @@ Remove-MgUserDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete navigation property columnLinks for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -214,5 +216,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListContentTypeColumnLink?view=graph-powershell-beta)
 

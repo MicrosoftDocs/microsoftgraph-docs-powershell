@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
+ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/add-mgteamprimarychannelmember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Add-MgTeamPrimaryChannelMember
@@ -230,4 +230,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
 ## RELATED LINKS
+
 [Add-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)

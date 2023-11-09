@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagecontent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserMailFolderMessageContent
@@ -30,6 +30,8 @@ Get-MgUserMailFolderMessageContent -InputObject <IMailIdentity> -OutFile <String
 
 ## DESCRIPTION
 Get media content for the navigation property messages from users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +155,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserMailFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessageContent?view=graph-powershell-beta)
 

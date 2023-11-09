@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmessagereply
@@ -907,3 +907,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessageReply?view=graph-powershell-beta)
+
+
+## RELATED LINKS

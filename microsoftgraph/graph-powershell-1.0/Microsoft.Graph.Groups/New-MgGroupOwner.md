@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupowner
@@ -36,6 +36,8 @@ New-MgGroupOwner -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Wha
 
 ## DESCRIPTION
 Add an owner to an Office 365 group or security group through the owners navigation property.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -192,4 +194,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

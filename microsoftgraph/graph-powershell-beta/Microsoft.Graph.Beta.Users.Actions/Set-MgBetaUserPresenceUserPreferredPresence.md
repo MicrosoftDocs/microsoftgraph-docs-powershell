@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresenceuserpreferredpresence
@@ -59,6 +59,7 @@ Read more about presence sessions and their time-out and expiration.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Set-MgBetaUserPresenceUserPreferredPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -69,6 +70,7 @@ $params = @{
 }
 Set-MgBetaUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Set-MgBetaUserPresenceUserPreferredPresence Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -293,4 +295,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresenceUserPreferredPresence?view=graph-powershell-1.0)

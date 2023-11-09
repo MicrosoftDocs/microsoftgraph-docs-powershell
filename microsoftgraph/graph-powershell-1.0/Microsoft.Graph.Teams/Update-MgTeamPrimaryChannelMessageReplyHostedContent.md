@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessagereplyhostedcontent
@@ -45,6 +45,8 @@ Update-MgTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentit
 
 ## DESCRIPTION
 Update the navigation property hostedContents in teams
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -288,5 +290,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-beta)
 

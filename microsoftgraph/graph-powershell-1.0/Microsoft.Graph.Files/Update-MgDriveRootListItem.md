@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitem
@@ -55,6 +55,8 @@ Update-MgDriveRootListItem -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update the navigation property listItem in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -14975,3 +14977,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItem?view=graph-powershell-beta)
 
+## RELATED LINKS

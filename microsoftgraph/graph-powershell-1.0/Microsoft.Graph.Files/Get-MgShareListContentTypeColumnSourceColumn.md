@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcontenttypecolumnsourcecolumn
@@ -29,6 +29,8 @@ Get-MgShareListContentTypeColumnSourceColumn -InputObject <IFilesIdentity> [-Exp
 
 ## DESCRIPTION
 The source column for the content type column.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -168,5 +170,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaShareListContentTypeColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListContentTypeColumnSourceColumn?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetchildrelationset
@@ -68,6 +68,8 @@ Get-MgGroupSiteTermStoreSetChildRelationSet -InputObject <ISitesIdentity> [-Expa
 
 ## DESCRIPTION
 The [set] in which the relation is relevant.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -281,5 +283,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteTermStoreSetChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetChildRelationSet?view=graph-powershell-beta)
 

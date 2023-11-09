@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemthumbnail
@@ -44,6 +44,8 @@ Update-MgDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Update the navigation property thumbnails in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -342,5 +344,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
+
 [Update-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatlastmessagepreview
@@ -43,6 +43,8 @@ Update-MgUserChatLastMessagePreview -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property lastMessagePreview in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -341,5 +343,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatLastMessagePreview?view=graph-powershell-beta)
 

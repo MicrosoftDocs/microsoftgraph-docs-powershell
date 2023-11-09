@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotenotebook
@@ -49,6 +49,8 @@ Update-MgUserOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the navigation property notebooks in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -696,3 +698,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 
+## RELATED LINKS

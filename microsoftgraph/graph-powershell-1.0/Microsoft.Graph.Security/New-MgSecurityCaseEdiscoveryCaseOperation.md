@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycaseoperation
@@ -45,6 +45,8 @@ New-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create new navigation property to operations for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -374,5 +376,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subcode <Int32?>]`: The result subcode.
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
 

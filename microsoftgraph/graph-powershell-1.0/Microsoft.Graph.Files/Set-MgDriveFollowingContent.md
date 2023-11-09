@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdrivefollowingcontent
@@ -29,6 +29,8 @@ Set-MgDriveFollowingContent -InputObject <IFilesIdentity> [-Data <Stream>] -InFi
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -187,5 +189,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaDriveFollowingContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveFollowingContent?view=graph-powershell-beta)
 

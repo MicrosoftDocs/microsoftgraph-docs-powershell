@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberof
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupTransitiveMemberOf
@@ -41,6 +41,7 @@ The groups that a group is a member of, either directly and through nested membe
 Nullable.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -48,10 +49,10 @@ Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupTransitiveMemberOf -GroupId $groupId
 ```
+
 This example shows how to use the Get-MgGroupTransitiveMemberOf Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -324,4 +325,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberOf?view=graph-powershell-beta)

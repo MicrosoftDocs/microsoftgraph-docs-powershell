@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehosttracker
@@ -44,6 +44,8 @@ Update-MgSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the navigation property hostTrackers in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -618,3 +620,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
 
+## RELATED LINKS

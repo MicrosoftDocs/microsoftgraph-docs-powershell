@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveroot
@@ -75,6 +75,8 @@ Update-MgUserDriveRoot -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the navigation property root in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -18812,3 +18814,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
+## RELATED LINKS

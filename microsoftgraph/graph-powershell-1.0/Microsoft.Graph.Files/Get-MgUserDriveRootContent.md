@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootcontent
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveRootContent
@@ -29,6 +29,8 @@ Get-MgUserDriveRootContent -InputObject <IFilesIdentity> -OutFile <String> [-Pas
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +155,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootContent?view=graph-powershell-beta)
 

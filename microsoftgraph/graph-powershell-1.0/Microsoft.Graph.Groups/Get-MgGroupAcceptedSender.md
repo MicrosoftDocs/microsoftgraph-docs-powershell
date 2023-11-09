@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupacceptedsender
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupAcceptedSender
@@ -27,17 +27,16 @@ Users in the accepted senders list can post to conversations of the group (ident
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupAcceptedSender -GroupId $groupId
-
 ```
-This example shows how to use the Get-MgGroupAcceptedSender Cmdlet.
 
+This example shows how to use the Get-MgGroupAcceptedSender Cmdlet.
 
 ## PARAMETERS
 
@@ -190,4 +189,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupAcceptedSender](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupAcceptedSender?view=graph-powershell-beta)

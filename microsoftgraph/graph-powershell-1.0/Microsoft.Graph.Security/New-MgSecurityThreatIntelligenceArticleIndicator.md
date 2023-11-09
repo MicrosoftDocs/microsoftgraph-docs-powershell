@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencearticleindicator
@@ -29,6 +29,8 @@ New-MgSecurityThreatIntelligenceArticleIndicator -BodyParameter <Hashtable> [-Wh
 
 ## DESCRIPTION
 Create new navigation property to articleIndicators for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +155,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
 

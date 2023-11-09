@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgContactManager
@@ -34,17 +34,16 @@ Get this organizational contact's manager.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContactManager -OrgContactId $orgContactId
-
 ```
-This example shows how to use the Get-MgContactManager Cmdlet.
 
+This example shows how to use the Get-MgContactManager Cmdlet.
 
 ## PARAMETERS
 
@@ -153,4 +152,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaContactManager](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactManager?view=graph-powershell-beta)

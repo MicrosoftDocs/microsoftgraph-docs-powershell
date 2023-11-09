@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamwork
@@ -21,6 +21,8 @@ Get-MgTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParam
 
 ## DESCRIPTION
 Get teamwork
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamwork?view=graph-powershell-beta)
 

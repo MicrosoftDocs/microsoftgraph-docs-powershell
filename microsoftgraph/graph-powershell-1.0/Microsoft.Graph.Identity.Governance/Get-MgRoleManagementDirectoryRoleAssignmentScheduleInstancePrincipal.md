@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleassignmentscheduleinstanceprincipal
@@ -30,6 +30,8 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstancePrincipal -InputObjec
 
 ## DESCRIPTION
 The principal that's getting a role assignment or role eligibility through the request.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -183,5 +185,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstancePrincipal?view=graph-powershell-beta)
 

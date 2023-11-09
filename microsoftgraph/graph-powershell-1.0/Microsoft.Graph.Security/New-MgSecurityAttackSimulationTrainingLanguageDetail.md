@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationtraininglanguagedetail
@@ -47,6 +47,8 @@ New-MgSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecurityIden
 
 ## DESCRIPTION
 Create new navigation property to languageDetails for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -398,5 +400,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-beta)
 

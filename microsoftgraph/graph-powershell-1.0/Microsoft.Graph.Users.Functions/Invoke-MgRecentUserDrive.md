@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuserdrive
@@ -30,6 +30,8 @@ Invoke-MgRecentUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-Filte
 
 ## DESCRIPTION
 Invoke function recent
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -231,5 +233,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaRecentUserDrive](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaRecentUserDrive?view=graph-powershell-beta)
 

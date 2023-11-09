@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemactivitybyinterval
@@ -45,6 +45,8 @@ Get-MgDriveItemListItemActivityByInterval -InputObject <IFilesIdentity> [-Count]
 
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -289,5 +291,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDriveItemListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemListItemActivityByInterval?view=graph-powershell-beta)
 

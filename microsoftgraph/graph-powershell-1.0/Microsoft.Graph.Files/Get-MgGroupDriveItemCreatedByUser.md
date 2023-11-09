@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemcreatedbyuser
@@ -31,6 +31,8 @@ Get-MgGroupDriveItemCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty
 ## DESCRIPTION
 Identity of the user who created the item.
 Read-only.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -170,5 +172,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemCreatedByUser?view=graph-powershell-beta)
 

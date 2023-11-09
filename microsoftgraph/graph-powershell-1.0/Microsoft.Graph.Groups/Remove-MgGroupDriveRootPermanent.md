@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupdriverootpermanent
@@ -29,6 +29,8 @@ Remove-MgGroupDriveRootPermanent -InputObject <IGroupsIdentity> [-PassThru] [-Wh
 
 ## DESCRIPTION
 Invoke action permanentDelete
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -180,5 +182,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupDriveRootPermanent](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupDriveRootPermanent?view=graph-powershell-beta)
 

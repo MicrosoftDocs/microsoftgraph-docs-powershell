@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopyfromcontenttypehub
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Add-MgDriveListContentTypeCopyFromContentTypeHub
@@ -215,4 +215,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Add-MgBetaDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgBetaDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsettingtemplategroupsettingtemplate
@@ -42,6 +42,8 @@ Update-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Update entity in groupSettingTemplates
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -292,4 +294,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the setting.
 
 ## RELATED LINKS
-

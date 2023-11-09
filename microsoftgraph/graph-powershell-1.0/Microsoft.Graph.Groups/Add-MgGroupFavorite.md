@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Add-MgGroupFavorite
@@ -34,17 +34,16 @@ Supported for Microsoft 365 groups only.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Groups
 
 Add-MgGroupFavorite -GroupId $groupId
-
 ```
-This example shows how to use the Add-MgGroupFavorite Cmdlet.
 
+This example shows how to use the Add-MgGroupFavorite Cmdlet.
 
 ## PARAMETERS
 
@@ -181,4 +180,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupFavorite?view=graph-powershell-beta)

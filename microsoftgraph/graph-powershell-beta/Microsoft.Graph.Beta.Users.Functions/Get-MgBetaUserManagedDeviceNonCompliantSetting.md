@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanageddevicenoncompliantsetting
@@ -26,6 +26,8 @@ Get-MgBetaUserManagedDeviceNonCompliantSetting -InputObject <IUsersFunctionsIden
 
 ## DESCRIPTION
 Invoke function getNonCompliantSettings
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -208,4 +210,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

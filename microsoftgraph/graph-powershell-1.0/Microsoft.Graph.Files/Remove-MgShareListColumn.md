@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistcolumn
@@ -29,6 +29,8 @@ Remove-MgShareListColumn -InputObject <IFilesIdentity> [-IfMatch <String>] [-Pas
 
 ## DESCRIPTION
 Delete navigation property columns for shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -184,5 +186,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListColumn?view=graph-powershell-beta)
 

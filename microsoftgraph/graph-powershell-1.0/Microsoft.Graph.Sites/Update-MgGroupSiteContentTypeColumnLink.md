@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecontenttypecolumnlink
@@ -42,6 +42,8 @@ Update-MgGroupSiteContentTypeColumnLink -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Update the navigation property columnLinks in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -279,5 +281,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentTypeColumnLink?view=graph-powershell-beta)
 

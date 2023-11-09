@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolderchildfoldermessage
@@ -69,6 +69,8 @@ Update-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> -BodyPara
 
 ## DESCRIPTION
 Update the navigation property messages in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -943,3 +945,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectionpage
@@ -51,10 +51,10 @@ Create a new page in the specified section.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Notes
 
 $params = @{
@@ -63,10 +63,9 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId -BodyParameter $params
-
 ```
-This example shows how to use the New-MgUserOnenoteNotebookSection Cmdlet.
 
+This example shows how to use the New-MgUserOnenoteNotebookSection Cmdlet.
 
 ## PARAMETERS
 
@@ -675,3 +674,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebookSection?view=graph-powershell-beta)
+
+
+## RELATED LINKS

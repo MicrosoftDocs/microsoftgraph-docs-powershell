@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivemember
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupTransitiveMember
@@ -41,6 +41,7 @@ The direct and transitive members of a group.
 Nullable.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -48,6 +49,7 @@ Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupTransitiveMember -GroupId $groupId
 ```
+
 This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -59,6 +61,7 @@ Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupTransitiveMemberAsGroup -GroupId $groupId -CountVariable CountVar -ConsistencyLevel eventual
 ```
+
 This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -70,6 +73,7 @@ Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Search '"displayName:tier"' -Property "displayName,id" -ConsistencyLevel eventual
 ```
+
 This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -81,10 +85,10 @@ Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupTransitiveMemberAsUser -GroupId $groupId -CountVariable CountVar -Sort "displayName" -Filter "startswith(displayName, 'a')" -ConsistencyLevel eventual
 ```
+
 This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -357,4 +361,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTransitiveMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMember?view=graph-powershell-beta)

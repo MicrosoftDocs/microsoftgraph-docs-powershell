@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitation
@@ -36,6 +36,8 @@ Get-MgInvitation -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Get entity from invitations by key
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -297,5 +299,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitation?view=graph-powershell-beta)
 

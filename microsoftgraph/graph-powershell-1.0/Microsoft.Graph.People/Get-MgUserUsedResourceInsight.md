@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedresourceinsight
@@ -30,6 +30,8 @@ Get-MgUserUsedResourceInsight -InputObject <IPeopleIdentity> [-ExpandProperty <S
 Used for navigating to the item that was used.
 For file attachments, the type is fileAttachment.
 For linked attachments, the type is driveItem.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -135,4 +137,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostcookie
@@ -30,6 +30,8 @@ New-MgSecurityThreatIntelligenceHostCookie -BodyParameter <IMicrosoftGraphSecuri
 
 ## DESCRIPTION
 Create new navigation property to hostCookies for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -518,3 +520,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
 
+## RELATED LINKS

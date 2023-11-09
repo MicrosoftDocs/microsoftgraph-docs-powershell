@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistdrive
@@ -31,6 +31,8 @@ Get-MgGroupSiteListDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -184,5 +186,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListDrive?view=graph-powershell-beta)
 

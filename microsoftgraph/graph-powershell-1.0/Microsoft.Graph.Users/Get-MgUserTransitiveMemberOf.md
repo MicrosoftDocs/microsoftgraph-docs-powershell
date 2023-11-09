@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
+ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberof
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserTransitiveMemberOf
@@ -41,6 +41,7 @@ The groups, including nested groups, and directory roles that a user is a member
 Nullable.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -48,10 +49,10 @@ Import-Module Microsoft.Graph.Users
 
 Get-MgUserTransitiveMemberOf -UserId $userId
 ```
+
 This example shows how to use the Get-MgUserTransitiveMemberOf Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -302,4 +303,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOf?view=graph-powershell-beta)

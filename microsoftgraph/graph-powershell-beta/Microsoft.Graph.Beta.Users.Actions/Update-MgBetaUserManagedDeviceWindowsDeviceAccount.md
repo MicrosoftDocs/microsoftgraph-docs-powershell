@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetausermanageddevicewindowsdeviceaccount
@@ -47,6 +47,8 @@ Update-MgBetaUserManagedDeviceWindowsDeviceAccount -InputObject <IUsersActionsId
 
 ## DESCRIPTION
 Invoke action updateWindowsDeviceAccount
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -273,5 +275,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[SessionInitiationProtocalAddress <String>]`: Not yet documented
 
 ## RELATED LINKS
+
 [Update-MgUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-1.0)
 

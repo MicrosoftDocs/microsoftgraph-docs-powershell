@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduser
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDeviceRegisteredUser
@@ -34,17 +34,16 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDeviceRegisteredUser -DeviceId $deviceId
-
 ```
-This example shows how to use the Get-MgDeviceRegisteredUser Cmdlet.
 
+This example shows how to use the Get-MgDeviceRegisteredUser Cmdlet.
 
 ## PARAMETERS
 
@@ -243,4 +242,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaDeviceRegisteredUser](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredUser?view=graph-powershell-beta)

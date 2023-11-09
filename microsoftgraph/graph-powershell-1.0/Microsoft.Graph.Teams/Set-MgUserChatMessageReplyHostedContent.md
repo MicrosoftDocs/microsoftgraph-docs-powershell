@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mguserchatmessagereplyhostedcontent
@@ -30,6 +30,8 @@ Set-MgUserChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-Data <St
 
 ## DESCRIPTION
 Update media content for the navigation property hostedContents in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -256,5 +258,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Set-MgBetaUserChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaUserChatMessageReplyHostedContent?view=graph-powershell-beta)
 

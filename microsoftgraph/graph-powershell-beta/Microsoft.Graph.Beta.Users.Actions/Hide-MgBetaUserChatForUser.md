@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
+ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Hide-MgBetaUserChatForUser
@@ -48,6 +48,8 @@ Hide-MgBetaUserChatForUser -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Hide a chat for a user.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -280,5 +282,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
+
 [Hide-MgUserChatForUser](/powershell/module/Microsoft.Graph.Users.Actions/Hide-MgUserChatForUser?view=graph-powershell-1.0)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdeviceextension
@@ -41,6 +41,8 @@ Update-MgDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity> -Bo
 
 ## DESCRIPTION
 Update the navigation property extensions in devices
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -212,5 +214,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceExtension?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostpair
@@ -31,6 +31,8 @@ New-MgSecurityThreatIntelligenceHostPair -BodyParameter <IMicrosoftGraphSecurity
 
 ## DESCRIPTION
 Create new navigation property to hostPairs for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -671,3 +673,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
 
+## RELATED LINKS

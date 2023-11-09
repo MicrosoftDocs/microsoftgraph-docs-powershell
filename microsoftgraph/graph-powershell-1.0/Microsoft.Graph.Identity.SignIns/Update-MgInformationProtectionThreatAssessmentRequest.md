@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotectionthreatassessmentrequest
@@ -47,6 +47,8 @@ Update-MgInformationProtectionThreatAssessmentRequest -InputObject <IIdentitySig
 
 ## DESCRIPTION
 Update the navigation property threatAssessmentRequests in informationProtection
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -399,5 +401,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResultType <String>]`: threatAssessmentResultType
 
 ## RELATED LINKS
+
 [Update-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 

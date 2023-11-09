@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroleassignment
@@ -49,6 +49,8 @@ Update-MgRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 Update the navigation property roleAssignments in roleManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -475,3 +477,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleAssignment?view=graph-powershell-beta)
 
+## RELATED LINKS

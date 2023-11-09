@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamphoto
@@ -38,17 +38,16 @@ You can get the metadata of the largest available photo, or specify a size to ge
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamPhoto -TeamId $teamId
-
 ```
-This example shows how to use the Get-MgTeamPhoto Cmdlet.
 
+This example shows how to use the Get-MgTeamPhoto Cmdlet.
 
 ## PARAMETERS
 
@@ -166,4 +165,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPhoto?view=graph-powershell-beta)

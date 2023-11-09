@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemlistitemfield
@@ -29,6 +29,8 @@ Remove-MgUserDriveItemListItemField -InputObject <IFilesIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete navigation property fields for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -199,5 +201,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserDriveItemListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemListItemField?view=graph-powershell-beta)
 

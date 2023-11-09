@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresetparentgroupsetchildrelation
@@ -68,6 +68,8 @@ Remove-MgSiteTermStoreSetParentGroupSetChildRelation -InputObject <ISitesIdentit
 
 ## DESCRIPTION
 Delete navigation property relations for sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -312,5 +314,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteTermStoreSetParentGroupSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSetParentGroupSetChildRelation?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotesectiongroup
@@ -51,6 +51,8 @@ Update-MgGroupOnenoteSectionGroup -InputObject <INotesIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Update the navigation property sectionGroups in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -813,3 +815,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaGroupOnenoteSectionGroup?view=graph-powershell-beta)
 
+## RELATED LINKS

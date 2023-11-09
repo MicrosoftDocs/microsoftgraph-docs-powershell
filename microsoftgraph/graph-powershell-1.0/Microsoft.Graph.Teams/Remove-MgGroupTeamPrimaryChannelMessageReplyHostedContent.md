@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamprimarychannelmessagereplyhostedcontent
@@ -30,6 +30,8 @@ Remove-MgGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsId
 
 ## DESCRIPTION
 Delete navigation property hostedContents for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -223,5 +225,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-beta)
 

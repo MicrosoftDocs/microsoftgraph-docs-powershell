@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolememberasapplication
@@ -36,6 +36,8 @@ Get-MgDirectoryRoleMemberAsApplication -InputObject <IIdentityDirectoryManagemen
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -296,5 +298,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDirectoryRoleMemberAsApplication](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleMemberAsApplication?view=graph-powershell-beta)
 

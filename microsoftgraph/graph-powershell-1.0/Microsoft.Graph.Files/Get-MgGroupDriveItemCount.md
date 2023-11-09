@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemcount
@@ -29,6 +29,8 @@ Get-MgGroupDriveItemCount -InputObject <IFilesIdentity> [-Filter <String>] [-Sea
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +155,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveItemCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemCount?view=graph-powershell-beta)
 

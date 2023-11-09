@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootthumbnail
@@ -45,6 +45,8 @@ Update-MgGroupDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Update the navigation property thumbnails in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -343,5 +345,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootThumbnail?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgchatmessagereplyreaction
@@ -44,6 +44,8 @@ Clear-MgChatMessageReplyReaction -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Invoke action unsetReaction
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -258,5 +260,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Clear-MgBetaChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaChatMessageReplyReaction?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcount
@@ -21,6 +21,8 @@ Get-MgGroupCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <String
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -83,5 +85,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCount?view=graph-powershell-beta)
 

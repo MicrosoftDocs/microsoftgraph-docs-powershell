@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasdevice
@@ -36,6 +36,8 @@ Get-MgGroupOwnerAsDevice -InputObject <IGroupsIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -308,5 +310,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupOwnerAsDevice](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerAsDevice?view=graph-powershell-beta)
 

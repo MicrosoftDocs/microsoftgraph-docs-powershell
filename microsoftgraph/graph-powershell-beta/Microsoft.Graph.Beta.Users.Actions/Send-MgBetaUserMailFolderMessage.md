@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermail
@@ -55,6 +55,7 @@ To learn more about the steps involved in the backend before a mail is delivered
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Send an existing draft message
 
 ```powershell
@@ -63,10 +64,10 @@ Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMessage -UserId $userId -MessageId $messageId
 ```
+
 This example shows how to use the Send-MgBetaUserMailFolderMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -438,3 +439,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMailFolderMessage?view=graph-powershell-1.0)
+
+
+## RELATED LINKS

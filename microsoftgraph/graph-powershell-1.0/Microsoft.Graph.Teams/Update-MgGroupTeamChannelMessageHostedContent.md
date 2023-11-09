@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelmessagehostedcontent
@@ -44,6 +44,8 @@ Update-MgGroupTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> -Bod
 
 ## DESCRIPTION
 Update the navigation property hostedContents in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -287,5 +289,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamChannelMessageHostedContent?view=graph-powershell-beta)
 

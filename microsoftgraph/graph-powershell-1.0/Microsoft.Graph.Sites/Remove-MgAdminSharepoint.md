@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgadminsharepoint
@@ -21,6 +21,8 @@ Remove-MgAdminSharepoint [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<
 
 ## DESCRIPTION
 Delete navigation property sharepoint for admin
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -98,5 +100,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Remove-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaAdminSharepoint?view=graph-powershell-beta)
 

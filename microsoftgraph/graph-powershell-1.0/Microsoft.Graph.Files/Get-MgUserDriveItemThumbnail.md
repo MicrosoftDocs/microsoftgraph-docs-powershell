@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemthumbnail
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveItemThumbnail
@@ -43,6 +43,8 @@ Collection containing [ThumbnailSet][] objects associated with the item.
 For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -318,5 +320,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemThumbnail?view=graph-powershell-beta)
 

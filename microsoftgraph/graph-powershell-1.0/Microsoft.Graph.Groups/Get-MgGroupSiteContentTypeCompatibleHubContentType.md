@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitecontenttypecompatiblehubcontenttype
@@ -31,6 +31,8 @@ Get-MgGroupSiteContentTypeCompatibleHubContentType -InputObject <IGroupsIdentity
 
 ## DESCRIPTION
 Invoke function getCompatibleHubContentTypes
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -241,5 +243,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 

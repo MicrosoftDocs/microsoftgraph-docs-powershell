@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestapprover
@@ -38,6 +38,8 @@ Get-MgSecuritySubjectRightsRequestApprover -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Collection of users who can approve the request.
 Currently only supported for requests of type delete.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -310,5 +312,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecuritySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestApprover?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmessagereplyhostedcontent
@@ -45,6 +45,8 @@ Update-MgChatMessageReplyHostedContent -InputObject <ITeamsIdentity> -BodyParame
 
 ## DESCRIPTION
 Update the navigation property hostedContents in chats
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -288,5 +290,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)
 

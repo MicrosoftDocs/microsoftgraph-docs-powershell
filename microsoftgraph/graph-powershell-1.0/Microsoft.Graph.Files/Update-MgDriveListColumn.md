@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcolumn
@@ -61,6 +61,8 @@ Update-MgDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Update the navigation property columns in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1127,3 +1129,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
 
+## RELATED LINKS

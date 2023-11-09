@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitem
@@ -55,6 +55,8 @@ Update-MgUserDriveItemListItem -InputObject <IFilesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the navigation property listItem in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -15005,3 +15007,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItem?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootpermission
@@ -53,6 +53,8 @@ New-MgUserDriveRootPermission -InputObject <IFilesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Create new navigation property to permissions for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -567,3 +569,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaUserDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootPermission?view=graph-powershell-beta)
 
+## RELATED LINKS

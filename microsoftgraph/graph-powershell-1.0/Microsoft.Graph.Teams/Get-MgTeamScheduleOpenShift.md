@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleopenshift
@@ -40,17 +40,16 @@ Retrieve the properties and relationships of an openshift object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleOpenShift -TeamId $teamId
-
 ```
-This example shows how to use the Get-MgTeamScheduleOpenShift Cmdlet.
 
+This example shows how to use the Get-MgTeamScheduleOpenShift Cmdlet.
 
 ## PARAMETERS
 
@@ -304,4 +303,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)

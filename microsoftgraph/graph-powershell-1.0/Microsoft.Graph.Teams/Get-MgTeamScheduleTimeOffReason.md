@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoffreason
@@ -39,17 +39,16 @@ Retrieve the properties and relationships of a timeOffReason object by ID.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleTimeOffReason -TeamId $teamId
-
 ```
-This example shows how to use the Get-MgTeamScheduleTimeOffReason Cmdlet.
 
+This example shows how to use the Get-MgTeamScheduleTimeOffReason Cmdlet.
 
 ## PARAMETERS
 
@@ -288,4 +287,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)

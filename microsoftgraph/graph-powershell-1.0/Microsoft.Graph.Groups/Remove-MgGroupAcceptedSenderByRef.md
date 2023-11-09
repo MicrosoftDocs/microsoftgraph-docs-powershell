@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupacceptedsenderbyref
@@ -29,6 +29,8 @@ Remove-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> [-Id <String>] 
 
 ## DESCRIPTION
 Remove acceptedSender
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -210,5 +212,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
 

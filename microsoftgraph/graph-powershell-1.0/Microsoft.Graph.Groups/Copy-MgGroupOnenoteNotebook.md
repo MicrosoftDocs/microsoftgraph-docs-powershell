@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotenotebook
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Copy-MgGroupOnenoteNotebook
@@ -313,4 +313,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Copy-MgBetaGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupOnenoteNotebook?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionoperation
@@ -29,6 +29,8 @@ Remove-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete navigation property operations for external
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -166,5 +168,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+
 [Remove-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 

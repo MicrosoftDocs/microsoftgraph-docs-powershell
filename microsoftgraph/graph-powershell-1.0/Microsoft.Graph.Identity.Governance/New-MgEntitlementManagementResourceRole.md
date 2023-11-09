@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresourcerole
@@ -41,6 +41,8 @@ New-MgEntitlementManagementResourceRole -InputObject <IIdentityGovernanceIdentit
 
 ## DESCRIPTION
 Create new navigation property to roles for identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -396,3 +398,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

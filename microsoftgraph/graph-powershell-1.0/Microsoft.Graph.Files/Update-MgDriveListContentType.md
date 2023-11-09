@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttype
@@ -55,6 +55,8 @@ Update-MgDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Update the navigation property contentTypes in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1543,3 +1545,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListContentType?view=graph-powershell-beta)
 
+## RELATED LINKS

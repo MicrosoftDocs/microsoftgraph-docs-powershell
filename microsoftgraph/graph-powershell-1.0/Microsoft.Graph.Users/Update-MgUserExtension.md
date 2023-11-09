@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserextension
@@ -41,6 +41,8 @@ Update-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> 
 
 ## DESCRIPTION
 Update the navigation property extensions in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -202,5 +204,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaUserExtension](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserExtension?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootsubscription
@@ -49,6 +49,8 @@ New-MgUserDriveRootSubscription -InputObject <IFilesIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create new navigation property to subscriptions for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -496,5 +498,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaUserDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootSubscription?view=graph-powershell-beta)
 

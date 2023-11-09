@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsite
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Add-MgGroupSite
@@ -44,6 +44,8 @@ Add-MgGroupSite -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Follow a user's site or multiple sites.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -5968,3 +5970,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Add-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSite?view=graph-powershell-beta)
 
+## RELATED LINKS

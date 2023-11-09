@@ -1,49 +1,65 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserphoto
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting
 schema: 2.0.0
 ---
 
-# Update-MgUserPhoto
+# Update-MgUserSetting
 
 ## SYNOPSIS
-Update the navigation property photo in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserPhoto?view=graph-powershell-beta)
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
+Update the properties of the userSettings object.
+\nUsers in the same organization can have different settings based on their preference or on the organization policies.
+\nTo get the user current settings, see current user settings.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserPhoto -UserId <String> [-AdditionalProperties <Hashtable>] [-Height <Int32>] [-Id <String>]
- [-Width <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserSetting -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
+ [-Id <String>] [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserPhoto -UserId <String> -BodyParameter <IMicrosoftGraphProfilePhoto> [-WhatIf] [-Confirm]
+Update-MgUserSetting -UserId <String> -BodyParameter <IMicrosoftGraphUserSettings> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserPhoto -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Height <Int32>]
- [-Id <String>] [-Width <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserSetting -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
+ [-Id <String>] [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserPhoto -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphProfilePhoto> [-WhatIf]
+Update-MgUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUserSettings> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property photo in users
+Update the properties of the userSettings object.
+\nUsers in the same organization can have different settings based on their preference or on the organization policies.
+\nTo get the user current settings, see current user settings.
+This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.Users
+```
+
+$params = @{
+	contributionToContentDiscoveryDisabled = $true
+}
+
+# A UPN can also be used as -UserId.
+Update-MgUserSetting -UserId $userId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -63,11 +79,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-profilePhoto
+userSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProfilePhoto
+Type: IMicrosoftGraphUserSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -78,18 +94,38 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Height
-The height of the photo.
-Read-only.
+### -ContributionToContentDiscoveryAsOrganizationDisabled
+Reflects the organization level setting controlling delegate access to the trending API.
+When set to true, the organization doesn't have access to Office Delve.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+This setting is read-only and can only be changed by administrators in the SharePoint admin center.
 
 ```yaml
-Type: Int32
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContributionToContentDiscoveryDisabled
+When set to true, the delegate access to the user's trending API is disabled.
+When set to true, documents in the user's Office Delve are disabled.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+Users can control this setting in Office Delve.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -126,6 +162,22 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ShiftPreferences
+shiftPreferences
+To construct, see NOTES section for SHIFTPREFERENCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphShiftPreferences
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -135,22 +187,6 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Width
-The width of the photo.
-Read-only.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -193,43 +229,149 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserSettings
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserSettings
 ## NOTES
-
-ALIASES
-
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties.
+For information on hash tables, run Get-Help about_Hash_Tables.
 
+BODYPARAMETER \<IMicrosoftGraphUserSettings\>: userSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[ContributionToContentDiscoveryAsOrganizationDisabled \<Boolean?\>\]: Reflects the organization level setting controlling delegate access to the trending API.
+When set to true, the organization doesn't have access to Office Delve.
+The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
+This setting is read-only and can only be changed by administrators in the SharePoint admin center.
+  \[ContributionToContentDiscoveryDisabled \<Boolean?\>\]: When set to true, the delegate access to the user's trending API is disabled.
+When set to true, documents in the user's Office Delve are disabled.
+When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
+Users can control this setting in Office Delve.
+  \[ShiftPreferences \<IMicrosoftGraphShiftPreferences\>\]: shiftPreferences
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[Availability \<IMicrosoftGraphShiftAvailability\[\]\>\]: Availability of the user to be scheduled for work and its recurrence pattern.
+      \[Recurrence \<IMicrosoftGraphPatternedRecurrence\>\]: patternedRecurrence
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Pattern \<IMicrosoftGraphRecurrencePattern\>\]: recurrencePattern
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[DayOfMonth \<Int32?\>\]: The day of the month on which the event occurs.
+Required if type is absoluteMonthly or absoluteYearly.
+          \[DaysOfWeek \<String\[\]\>\]: A collection of the days of the week on which the event occurs.
+The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
+Required if type is weekly, relativeMonthly, or relativeYearly.
+          \[FirstDayOfWeek \<String\>\]: dayOfWeek
+          \[Index \<String\>\]: weekIndex
+          \[Interval \<Int32?\>\]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+Required.
+          \[Month \<Int32?\>\]: The month in which the event occurs. 
+This is a number from 1 to 12.
+          \[Type \<String\>\]: recurrencePatternType
+        \[Range \<IMicrosoftGraphRecurrenceRange\>\]: recurrenceRange
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[EndDate \<DateTime?\>\]: The date to stop applying the recurrence pattern.
+Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
+Required if type is endDate.
+          \[NumberOfOccurrences \<Int32?\>\]: The number of times to repeat the event.
+Required and must be positive if type is numbered.
+          \[RecurrenceTimeZone \<String\>\]: Time zone for the startDate and endDate properties.
+Optional.
+If not specified, the time zone of the event is used.
+          \[StartDate \<DateTime?\>\]: The date to start applying the recurrence pattern.
+The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
+Must be the same value as the start property of the recurring event.
+Required.
+          \[Type \<String\>\]: recurrenceRangeType
+      \[TimeSlots \<IMicrosoftGraphTimeRange\[\]\>\]: The time slot(s) preferred by the user.
+        \[EndTime \<String\>\]: End time for the time range.
+        \[StartTime \<String\>\]: Start time for the time range.
+      \[TimeZone \<String\>\]: Specifies the time zone for the indicated time.
 
-`BODYPARAMETER <IMicrosoftGraphProfilePhoto>`: profilePhoto
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Height <Int32?>]`: The height of the photo. Read-only.
-  - `[Width <Int32?>]`: The width of the photo. Read-only.
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
-`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+SHIFTPREFERENCES \<IMicrosoftGraphShiftPreferences\>: shiftPreferences
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Availability \<IMicrosoftGraphShiftAvailability\[\]\>\]: Availability of the user to be scheduled for work and its recurrence pattern.
+    \[Recurrence \<IMicrosoftGraphPatternedRecurrence\>\]: patternedRecurrence
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Pattern \<IMicrosoftGraphRecurrencePattern\>\]: recurrencePattern
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DayOfMonth \<Int32?\>\]: The day of the month on which the event occurs.
+Required if type is absoluteMonthly or absoluteYearly.
+        \[DaysOfWeek \<String\[\]\>\]: A collection of the days of the week on which the event occurs.
+The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
+If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
+Required if type is weekly, relativeMonthly, or relativeYearly.
+        \[FirstDayOfWeek \<String\>\]: dayOfWeek
+        \[Index \<String\>\]: weekIndex
+        \[Interval \<Int32?\>\]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+Required.
+        \[Month \<Int32?\>\]: The month in which the event occurs. 
+This is a number from 1 to 12.
+        \[Type \<String\>\]: recurrencePatternType
+      \[Range \<IMicrosoftGraphRecurrenceRange\>\]: recurrenceRange
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[EndDate \<DateTime?\>\]: The date to stop applying the recurrence pattern.
+Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
+Required if type is endDate.
+        \[NumberOfOccurrences \<Int32?\>\]: The number of times to repeat the event.
+Required and must be positive if type is numbered.
+        \[RecurrenceTimeZone \<String\>\]: Time zone for the startDate and endDate properties.
+Optional.
+If not specified, the time zone of the event is used.
+        \[StartDate \<DateTime?\>\]: The date to start applying the recurrence pattern.
+The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
+Must be the same value as the start property of the recurring event.
+Required.
+        \[Type \<String\>\]: recurrenceRangeType
+    \[TimeSlots \<IMicrosoftGraphTimeRange\[\]\>\]: The time slot(s) preferred by the user.
+      \[EndTime \<String\>\]: End time for the time range.
+      \[StartTime \<String\>\]: Start time for the time range.
+    \[TimeZone \<String\>\]: Specifies the time zone for the indicated time.
 
 ## RELATED LINKS
-[Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
 
-[Update-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserPhoto?view=graph-powershell-beta)
+[https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting)
 

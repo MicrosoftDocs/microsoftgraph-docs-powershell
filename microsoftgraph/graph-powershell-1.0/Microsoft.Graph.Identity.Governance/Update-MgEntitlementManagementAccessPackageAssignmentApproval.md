@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapproval
@@ -43,6 +43,8 @@ Update-MgEntitlementManagementAccessPackageAssignmentApproval -InputObject <IIde
 
 ## DESCRIPTION
 Update the navigation property accessPackageAssignmentApprovals in identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -290,5 +292,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: The stage status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 
 ## RELATED LINKS
+
 [Update-MgBetaEntitlementManagementAccessPackageAssignmentApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAccessPackageAssignmentApproval?view=graph-powershell-beta)
 

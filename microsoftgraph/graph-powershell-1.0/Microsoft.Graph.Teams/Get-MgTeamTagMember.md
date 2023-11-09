@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtagmember
@@ -40,17 +40,16 @@ Get the properties and relationships of a member of a standard tag in a team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId
-
 ```
-This example shows how to use the Get-MgTeamTagMember Cmdlet.
 
+This example shows how to use the Get-MgTeamTagMember Cmdlet.
 
 ## PARAMETERS
 
@@ -319,4 +318,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTagMember?view=graph-powershell-beta)

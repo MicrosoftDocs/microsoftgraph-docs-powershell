@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritythreatintelligencehost
@@ -29,6 +29,8 @@ Remove-MgSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete navigation property hosts for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 

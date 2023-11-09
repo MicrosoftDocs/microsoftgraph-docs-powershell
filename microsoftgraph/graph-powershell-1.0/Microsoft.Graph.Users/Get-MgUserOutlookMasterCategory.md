@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroauth2permissiongrantcount
 schema: 2.0.0
-ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgUserOauth2PermissionGrantCount
@@ -33,18 +32,17 @@ Get-MgUserOauth2PermissionGrantCount -InputObject <IUsersIdentity> [-Filter <Str
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Get-MgUserOutlookMasterCategory -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserOutlookMasterCategory Cmdlet.
 
+This example shows how to use the Get-MgUserOutlookMasterCategory Cmdlet.
 
 ## PARAMETERS
 
@@ -143,4 +141,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)

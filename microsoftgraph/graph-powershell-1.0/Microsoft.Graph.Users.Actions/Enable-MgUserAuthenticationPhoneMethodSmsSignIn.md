@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/enable-mguserauthenticationphonemethodsmssignin
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Enable-MgUserAuthenticationPhoneMethodSmsSignIn
@@ -29,6 +29,8 @@ Enable-MgUserAuthenticationPhoneMethodSmsSignIn -InputObject <IUsersActionsIdent
 ## DESCRIPTION
 Enable SMS sign-in for an existing mobile phone number registered to a user.
 To be successfully enabled: This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -174,4 +176,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

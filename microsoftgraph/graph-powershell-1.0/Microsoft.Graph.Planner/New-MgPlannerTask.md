@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask
@@ -42,10 +42,10 @@ Create a new plannerTask.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Planner
 
 $params = @{
@@ -61,10 +61,9 @@ $params = @{
 }
 
 New-MgPlannerTask -BodyParameter $params
-
 ```
-This example shows how to use the New-MgPlannerTask Cmdlet.
 
+This example shows how to use the New-MgPlannerTask Cmdlet.
 
 ## PARAMETERS
 
@@ -673,3 +672,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
+
+
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupsitelistcontenttype
@@ -31,6 +31,8 @@ Publish-MgGroupSiteListContentType -InputObject <IGroupsIdentity> [-PassThru] [-
 ## DESCRIPTION
 Publishes a contentType][] present in the content type hub site.
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -212,5 +214,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Publish-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 

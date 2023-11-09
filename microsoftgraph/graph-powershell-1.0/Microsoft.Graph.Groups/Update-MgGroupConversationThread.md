@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthread
@@ -47,6 +47,8 @@ Update-MgGroupConversationThread -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Update the navigation property threads in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -498,3 +500,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
+## RELATED LINKS

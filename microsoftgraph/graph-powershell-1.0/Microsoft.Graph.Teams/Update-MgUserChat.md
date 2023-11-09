@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchat
@@ -55,6 +55,8 @@ Update-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 
 ## DESCRIPTION
 Update the navigation property chats in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -966,3 +968,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChat?view=graph-powershell-beta)
 
+## RELATED LINKS

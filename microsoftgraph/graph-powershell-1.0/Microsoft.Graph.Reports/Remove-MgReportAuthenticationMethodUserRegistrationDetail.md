@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportauthenticationmethoduserregistrationdetail
@@ -29,6 +29,8 @@ Remove-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReports
 
 ## DESCRIPTION
 Delete navigation property userRegistrationDetails for reports
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -165,5 +167,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 

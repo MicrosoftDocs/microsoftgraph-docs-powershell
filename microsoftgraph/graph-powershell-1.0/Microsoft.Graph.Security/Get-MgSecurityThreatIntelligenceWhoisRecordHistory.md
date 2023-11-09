@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
+ms.prod: security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecordhistory
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgSecurityThreatIntelligenceWhoisRecordHistory
@@ -37,6 +37,8 @@ Get-MgSecurityThreatIntelligenceWhoisRecordHistory -InputObject <ISecurityIdenti
 
 ## DESCRIPTION
 The collection of historical records associated to this WHOIS object.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -309,5 +311,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisRecordHistory?view=graph-powershell-beta)
 

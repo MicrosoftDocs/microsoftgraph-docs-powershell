@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusertodolisttaskattachmentcontent
@@ -30,6 +30,8 @@ Set-MgUserTodoListTaskAttachmentContent -InputObject <IUsersIdentity> [-Data <St
 
 ## DESCRIPTION
 Update media content for the navigation property attachments in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -222,5 +224,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaUserTodoListTaskAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserTodoListTaskAttachmentContent?view=graph-powershell-beta)
 

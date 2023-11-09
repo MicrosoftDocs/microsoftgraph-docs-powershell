@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
+ms.prod: planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplan
 schema: 2.0.0
-ms.prod: planner
-ms.prod: planner
 ---
 
 # Get-MgPlannerPlan
@@ -42,17 +41,16 @@ Retrieve the properties and relationships of a plannerplan object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerPlan
-
 ```
-This example shows how to use the Get-MgPlannerPlan Cmdlet.
 
+This example shows how to use the Get-MgPlannerPlan Cmdlet.
 
 ## PARAMETERS
 
@@ -264,4 +262,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlan?view=graph-powershell-beta)

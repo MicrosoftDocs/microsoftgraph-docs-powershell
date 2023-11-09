@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshiftchangerequest
@@ -45,6 +45,8 @@ Update-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property openShiftChangeRequests in teams
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -343,5 +345,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+
 [Update-MgBetaTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleOpenShiftChangeRequest?view=graph-powershell-beta)
 

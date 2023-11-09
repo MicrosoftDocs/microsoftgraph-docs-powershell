@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenotesectionpage
@@ -29,6 +29,8 @@ Remove-MgGroupSiteOnenoteSectionPage -InputObject <ISitesIdentity> [-IfMatch <St
 
 ## DESCRIPTION
 Delete navigation property pages for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -228,5 +230,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenoteSectionPage?view=graph-powershell-beta)
 

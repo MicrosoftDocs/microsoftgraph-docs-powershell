@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationlandingpagedetail
@@ -43,6 +43,8 @@ New-MgSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create new navigation property to details for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -280,5 +282,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationLandingPageDetail?view=graph-powershell-beta)
 

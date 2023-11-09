@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageresourcerolescope
@@ -46,6 +46,8 @@ Update-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIden
 
 ## DESCRIPTION
 Update the navigation property resourceRoleScopes in identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -432,3 +434,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
 
+## RELATED LINKS

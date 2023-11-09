@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryonpremisesynchronization
@@ -31,6 +31,8 @@ New-MgDirectoryOnPremiseSynchronization -BodyParameter <IMicrosoftGraphOnPremise
 
 ## DESCRIPTION
 Create new navigation property to onPremisesSynchronization for directory
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -223,5 +225,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
 ## RELATED LINKS
+
 [New-MgBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
 

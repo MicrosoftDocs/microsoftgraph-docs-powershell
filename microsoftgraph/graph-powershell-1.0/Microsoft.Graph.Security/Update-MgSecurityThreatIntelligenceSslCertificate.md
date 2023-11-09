@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencesslcertificate
@@ -49,6 +49,8 @@ Update-MgSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdentit
 
 ## DESCRIPTION
 Update the navigation property sslCertificates in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -737,3 +739,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
 
+## RELATED LINKS

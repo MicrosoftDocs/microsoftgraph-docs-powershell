@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitedrive
@@ -36,6 +36,8 @@ Get-MgGroupSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 
 ## DESCRIPTION
 The collection of drives (document libraries) under this site.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -310,5 +312,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteDrive?view=graph-powershell-beta)
 

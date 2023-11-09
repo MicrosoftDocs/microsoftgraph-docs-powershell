@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/invoke-mggraphreportauthenticationmethod
@@ -44,6 +44,8 @@ Invoke-MgGraphReportAuthenticationMethod -InputObject <IReportsIdentity> [<Commo
 
 ## DESCRIPTION
 Invoke function usersRegisteredByFeature
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -135,5 +137,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Invoke-MgBetaGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Invoke-MgBetaGraphReportAuthenticationMethod?view=graph-powershell-beta)
 

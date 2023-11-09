@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mguserscopedrolememberof
@@ -43,6 +43,8 @@ New-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdentity>
 
 ## DESCRIPTION
 Create new navigation property to scopedRoleMemberOf for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -261,5 +263,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+
 [New-MgBetaUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaUserScopedRoleMemberOf?view=graph-powershell-beta)
 

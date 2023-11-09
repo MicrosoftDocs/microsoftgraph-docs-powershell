@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguser
@@ -85,6 +85,7 @@ New-MgUser -BodyParameter <IMicrosoftGraphUser> [-WhatIf] [-Confirm] [<CommonPar
 Create a new user object.
 
 ## EXAMPLES
+
 ### Example 1: Create a new user
 
 ```powershell
@@ -99,7 +100,6 @@ Id                                   DisplayName Mail UserPrincipalName         
 ```
 
 This command first sets a value for the password profile variable and uses it to create a new user.
-
 
 ## PARAMETERS
 
@@ -27654,3 +27654,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUser?view=graph-powershell-beta)
+
+
+## RELATED LINKS

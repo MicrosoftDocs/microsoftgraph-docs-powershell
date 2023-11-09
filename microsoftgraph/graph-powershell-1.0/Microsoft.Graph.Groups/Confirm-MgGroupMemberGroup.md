@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupmembergroup
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Confirm-MgGroupMemberGroup
@@ -228,4 +228,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Confirm-MgBetaGroupMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupMemberGroup?view=graph-powershell-beta)

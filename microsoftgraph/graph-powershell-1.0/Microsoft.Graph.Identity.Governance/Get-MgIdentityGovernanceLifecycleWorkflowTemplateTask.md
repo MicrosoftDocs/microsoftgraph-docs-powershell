@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtemplatetask
@@ -38,6 +38,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask -InputObject <IIdentityGov
 ## DESCRIPTION
 Represents the configured tasks to execute and their execution sequence within a workflow.
 This relationship is expanded by default.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -327,5 +329,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTask?view=graph-powershell-beta)
 

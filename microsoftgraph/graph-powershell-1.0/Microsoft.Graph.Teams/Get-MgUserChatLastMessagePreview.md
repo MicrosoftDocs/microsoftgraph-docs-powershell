@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatlastmessagepreview
@@ -33,6 +33,8 @@ Get-MgUserChatLastMessagePreview -InputObject <ITeamsIdentity> [-ExpandProperty 
 Preview of the last message sent in the chat.
 Null if no messages have been sent in the chat.
 Currently, only the list chats operation supports this property.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -165,5 +167,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatLastMessagePreview?view=graph-powershell-beta)
 

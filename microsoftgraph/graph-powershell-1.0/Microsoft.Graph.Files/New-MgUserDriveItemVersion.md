@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemversion
@@ -45,6 +45,8 @@ New-MgUserDriveItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create new navigation property to versions for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -353,5 +355,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+
 [New-MgBetaUserDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemVersion?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamoperation
@@ -29,6 +29,8 @@ Remove-MgGroupTeamOperation -InputObject <ITeamsIdentity> [-IfMatch <String>] [-
 
 ## DESCRIPTION
 Delete navigation property operations for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -192,5 +194,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamOperation?view=graph-powershell-beta)
 

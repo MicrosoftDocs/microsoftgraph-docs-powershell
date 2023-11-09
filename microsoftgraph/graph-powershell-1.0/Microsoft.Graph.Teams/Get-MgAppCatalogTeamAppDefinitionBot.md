@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
+ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitionbot
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgAppCatalogTeamAppDefinitionBot
@@ -34,17 +34,16 @@ Get the bot associated with a specific definition of the  TeamsApp.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
-
 ```
-This example shows how to use the Get-MgAppCatalogTeamAppDefinitionBot Cmdlet.
 
+This example shows how to use the Get-MgAppCatalogTeamAppDefinitionBot Cmdlet.
 
 ## PARAMETERS
 
@@ -177,4 +176,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusermailfoldermessagedelta
@@ -39,12 +39,14 @@ This allows you to maintain and synchronize a local store of a user's messages w
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Get-MgUserMailFolderMessageDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Functions
 # A UPN can also be used as -UserId.
 Get-MgUserMailFolderMessageDelta -UserId $userId -MailFolderId $mailFolderId
 ```
+
 This example shows how to use the Get-MgUserMailFolderMessageDelta Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -294,4 +296,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserMailFolderMessageDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserMailFolderMessageDelta?view=graph-powershell-beta)

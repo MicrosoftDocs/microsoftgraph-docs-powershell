@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepermission
@@ -33,6 +33,7 @@ Delete a permission object on a site.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -40,10 +41,10 @@ Import-Module Microsoft.Graph.Sites
 
 Remove-MgSitePermission -SiteId $siteId -PermissionId $permissionId
 ```
+
 This example shows how to use the Remove-MgSitePermission Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -213,4 +214,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePermission?view=graph-powershell-beta)

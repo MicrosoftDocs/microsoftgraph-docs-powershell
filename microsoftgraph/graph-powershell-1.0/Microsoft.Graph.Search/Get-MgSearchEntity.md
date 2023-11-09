@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchentity
@@ -21,6 +21,8 @@ Get-MgSearchEntity [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonP
 
 ## DESCRIPTION
 Get search
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSearchEntity](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchEntity?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatinstalledapp
@@ -49,21 +49,20 @@ Upgrade an app installation within a chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Upgrade the teams app installed in chat
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Update-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
-
 ```
+
 This example will upgrade the teams app installed in chat
 
 ### Example 2: Upgrade app installed in a chat and consent to the resource specific permissions
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -82,10 +81,9 @@ $params = @{
 }
 
 Update-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId -BodyParameter $params
-
 ```
-This example will upgrade app installed in a chat and consent to the resource specific permissions
 
+This example will upgrade app installed in a chat and consent to the resource specific permissions
 
 ## PARAMETERS
 
@@ -296,4 +294,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatInstalledApp?view=graph-powershell-beta)

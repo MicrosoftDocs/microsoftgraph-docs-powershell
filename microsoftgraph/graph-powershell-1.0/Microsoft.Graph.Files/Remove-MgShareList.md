@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelist
@@ -29,6 +29,8 @@ Remove-MgShareList -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
 
 ## DESCRIPTION
 Delete navigation property list for shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -169,5 +171,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaShareList](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareList?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistsubscription
@@ -49,6 +49,8 @@ New-MgShareListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Create new navigation property to subscriptions for shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -481,5 +483,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListSubscription?view=graph-powershell-beta)
 

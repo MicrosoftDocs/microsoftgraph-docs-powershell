@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistsubscription
@@ -36,6 +36,8 @@ Get-MgUserDriveListSubscription -InputObject <IFilesIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 The set of subscriptions on the list.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -296,5 +298,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
 

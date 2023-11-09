@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcolumn
@@ -62,6 +62,8 @@ Update-MgGroupDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Update the navigation property columns in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1143,3 +1145,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListColumn?view=graph-powershell-beta)
 
+## RELATED LINKS

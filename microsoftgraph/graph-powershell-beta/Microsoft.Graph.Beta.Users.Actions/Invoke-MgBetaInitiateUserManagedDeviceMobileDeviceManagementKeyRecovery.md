@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainitiateusermanageddevicemobiledevicemanagementkeyrecovery
@@ -26,6 +26,8 @@ Invoke-MgBetaInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery -InputOb
 
 ## DESCRIPTION
 Perform MDM key recovery and TPM attestation
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -180,4 +182,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/set-mgsecurityincidentalertcomment
@@ -29,6 +29,8 @@ Set-MgSecurityIncidentAlertComment -AlertId <String> -IncidentId <String> [-IfMa
 
 ## DESCRIPTION
 Sets a new value for the collection of alertComment.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -218,5 +220,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Set-MgBetaSecurityIncidentAlertComment](/powershell/module/Microsoft.Graph.Beta.Security/Set-MgBetaSecurityIncidentAlertComment?view=graph-powershell-beta)
 

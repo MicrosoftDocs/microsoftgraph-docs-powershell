@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenotepagecontent
@@ -29,6 +29,8 @@ Set-MgGroupOnenotePageContent -InputObject <INotesIdentity> [-Data <Stream>] -In
 
 ## DESCRIPTION
 The page's HTML content.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -172,5 +174,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaGroupOnenotePageContent?view=graph-powershell-beta)
 

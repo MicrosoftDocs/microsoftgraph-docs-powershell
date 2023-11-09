@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecreatedbyuser
@@ -31,6 +31,8 @@ Get-MgGroupSiteCreatedByUser -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Identity of the user who created the item.
 Read-only.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -169,5 +171,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteCreatedByUser?view=graph-powershell-beta)
 

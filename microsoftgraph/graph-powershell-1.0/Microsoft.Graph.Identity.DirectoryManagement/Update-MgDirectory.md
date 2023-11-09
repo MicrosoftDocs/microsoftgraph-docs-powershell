@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
@@ -21,6 +21,7 @@ Update-MgDirectory [-AdditionalProperties <Hashtable>]
  [-AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>] [-AttributeSets <IMicrosoftGraphAttributeSet[]>]
  [-CustomSecurityAttributeDefinitions <IMicrosoftGraphCustomSecurityAttributeDefinition[]>]
  [-DeletedItems <IMicrosoftGraphDirectoryObject[]>]
+ [-DeviceLocalCredentials <IMicrosoftGraphDeviceLocalCredentialInfo[]>]
  [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <String>]
  [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -33,6 +34,8 @@ Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-WhatIf] [-Confirm
 
 ## DESCRIPTION
 Update directory
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -123,6 +126,22 @@ To construct, see NOTES section for DELETEDITEMS properties and create a hash ta
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceLocalCredentials
+The credentials of the device's local administrator account backed up to Microsoft Entra ID.
+To construct, see NOTES section for DEVICELOCALCREDENTIALS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeviceLocalCredentialInfo[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -386,3 +405,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
 
+## RELATED LINKS

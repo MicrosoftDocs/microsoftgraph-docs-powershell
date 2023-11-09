@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberwithlicenseerrorasuser
@@ -36,6 +36,8 @@ Get-MgGroupMemberWithLicenseErrorAsUser -InputObject <IGroupsIdentity> [-ExpandP
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -308,5 +310,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupMemberWithLicenseErrorAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberWithLicenseErrorAsUser?view=graph-powershell-beta)
 

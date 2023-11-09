@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritysubjectrightsrequestnote
@@ -29,6 +29,8 @@ Remove-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [-IfM
 
 ## DESCRIPTION
 Delete navigation property notes for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -211,5 +213,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
 

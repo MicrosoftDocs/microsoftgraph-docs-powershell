@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationfavicon
@@ -30,6 +30,8 @@ Set-MgOrganizationBrandingLocalizationFavicon -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -202,5 +204,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationFavicon?view=graph-powershell-beta)
 

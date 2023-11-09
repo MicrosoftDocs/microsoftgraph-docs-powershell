@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification
@@ -42,6 +42,8 @@ Update-MgUserInferenceClassification -InputObject <IMailIdentity>
 
 ## DESCRIPTION
 Update the navigation property inferenceClassification in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -221,5 +223,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
+
 [Update-MgBetaUserInferenceClassification](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserInferenceClassification?view=graph-powershell-beta)
 

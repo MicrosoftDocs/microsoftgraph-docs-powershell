@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowdriveroot
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgFollowDriveRoot
@@ -30,6 +30,8 @@ Invoke-MgFollowDriveRoot -InputObject <IFilesIdentity> [-WhatIf] [-Confirm] [<Co
 ## DESCRIPTION
 Follow a driveItem.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -140,5 +142,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaFollowDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaFollowDriveRoot?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistdrive
@@ -31,6 +31,8 @@ Get-MgUserDriveListDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -155,5 +157,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveListDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListDrive?view=graph-powershell-beta)
 

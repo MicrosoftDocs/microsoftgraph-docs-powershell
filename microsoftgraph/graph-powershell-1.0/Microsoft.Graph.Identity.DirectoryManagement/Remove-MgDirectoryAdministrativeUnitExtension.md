@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitextension
@@ -29,6 +29,8 @@ Remove-MgDirectoryAdministrativeUnitExtension -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 Delete navigation property extensions for directory
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -183,5 +185,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitExtension?view=graph-powershell-beta)
 

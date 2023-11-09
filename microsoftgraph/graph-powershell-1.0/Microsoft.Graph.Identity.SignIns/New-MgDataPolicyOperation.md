@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation
@@ -30,6 +30,8 @@ New-MgDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-
 
 ## DESCRIPTION
 Add new entity to dataPolicyOperations
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -233,5 +235,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The id for the user on whom the operation is performed.
 
 ## RELATED LINKS
+
 [New-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaDataPolicyOperation?view=graph-powershell-beta)
 

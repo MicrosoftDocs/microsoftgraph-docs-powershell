@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelemail
@@ -37,17 +37,16 @@ To remove the email address of a channel, use the removeEmail method.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 New-MgTeamChannelEmail -TeamId $teamId -ChannelId $channelId
-
 ```
-This example shows how to use the New-MgTeamChannelEmail Cmdlet.
 
+This example shows how to use the New-MgTeamChannelEmail Cmdlet.
 
 ## PARAMETERS
 
@@ -181,4 +180,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [New-MgBetaTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelEmail?view=graph-powershell-beta)

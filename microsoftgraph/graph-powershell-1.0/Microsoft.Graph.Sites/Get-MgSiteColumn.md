@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
+ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteColumn
@@ -39,6 +39,7 @@ Get-MgSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Pr
 The collection of column definitions reusable across lists under this site.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -46,10 +47,10 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteColumn -SiteId $siteId
 ```
+
 This example shows how to use the Get-MgSiteColumn Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -309,4 +310,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteColumn?view=graph-powershell-beta)

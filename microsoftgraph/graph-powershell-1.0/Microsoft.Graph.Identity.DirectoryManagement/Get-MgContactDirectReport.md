@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdirectreport
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgContactDirectReport
@@ -45,17 +45,16 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContactDirectReport -OrgContactId $orgContactId
-
 ```
-This example shows how to use the Get-MgContactDirectReport Cmdlet.
 
+This example shows how to use the Get-MgContactDirectReport Cmdlet.
 
 ## PARAMETERS
 
@@ -316,4 +315,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaContactDirectReport](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDirectReport?view=graph-powershell-beta)

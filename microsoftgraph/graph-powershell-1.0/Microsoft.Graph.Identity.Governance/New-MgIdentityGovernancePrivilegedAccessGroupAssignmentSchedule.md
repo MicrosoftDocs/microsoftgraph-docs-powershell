@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupassignmentschedule
@@ -35,6 +35,8 @@ New-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule
 
 ## DESCRIPTION
 Create new navigation property to assignmentSchedules for identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -9060,3 +9062,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule?view=graph-powershell-beta)
 
+## RELATED LINKS

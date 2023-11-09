@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteam
@@ -30,6 +30,7 @@ Remove-MgTeam -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] [-Wh
 Delete entity from teams
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -51,10 +52,10 @@ $params = @{
 
 Update-MgTeam -TeamId $teamId -BodyParameter $params
 ```
+
 This example shows how to use the Remove-MgTeam Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -203,4 +204,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeam?view=graph-powershell-beta)

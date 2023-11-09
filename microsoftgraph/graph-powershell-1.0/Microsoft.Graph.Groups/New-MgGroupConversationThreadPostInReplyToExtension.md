@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostinreplytoextension
@@ -42,6 +42,8 @@ New-MgGroupConversationThreadPostInReplyToExtension -InputObject <IGroupsIdentit
 
 ## DESCRIPTION
 Create new navigation property to extensions for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -255,5 +257,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [New-MgBetaGroupConversationThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThreadPostInReplyToExtension?view=graph-powershell-beta)
 

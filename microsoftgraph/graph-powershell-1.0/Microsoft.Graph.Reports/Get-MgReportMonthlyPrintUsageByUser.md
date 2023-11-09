@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
+ms.prod: cloud-printing
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyuser
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgReportMonthlyPrintUsageByUser
@@ -39,6 +39,7 @@ Get-MgReportMonthlyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandProp
 Retrieve a list of monthly print usage summaries, grouped by user.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -46,10 +47,10 @@ Import-Module Microsoft.Graph.Reports
 
 Get-MgReportMonthlyPrintUsageByUser
 ```
+
 This example shows how to use the Get-MgReportMonthlyPrintUsageByUser Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -276,4 +277,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportMonthlyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByUser?view=graph-powershell-beta)

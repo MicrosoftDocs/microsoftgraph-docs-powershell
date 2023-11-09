@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationautomation
@@ -49,6 +49,8 @@ Update-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the navigation property simulationAutomations in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -430,5 +432,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: simulationAutomationRunStatus
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)
 

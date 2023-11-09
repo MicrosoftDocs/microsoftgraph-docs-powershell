@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
+ms.prod: security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomationrun
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgSecurityAttackSimulationAutomationRun
@@ -39,17 +39,16 @@ Get-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity> [-E
 A collection of simulation automation runs.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId $simulationAutomationId
-
 ```
-This example shows how to use the Get-MgSecurityAttackSimulationAutomationRun Cmdlet.
 
+This example shows how to use the Get-MgSecurityAttackSimulationAutomationRun Cmdlet.
 
 ## PARAMETERS
 
@@ -322,4 +321,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)

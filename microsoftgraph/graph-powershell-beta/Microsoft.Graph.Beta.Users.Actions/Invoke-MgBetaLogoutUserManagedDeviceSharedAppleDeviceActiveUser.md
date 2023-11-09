@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetalogoutusermanageddevicesharedappledeviceactiveuser
@@ -29,6 +29,8 @@ Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser -InputObject <IU
 
 ## DESCRIPTION
 Logout shared Apple device active user
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -183,5 +185,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-1.0)
 

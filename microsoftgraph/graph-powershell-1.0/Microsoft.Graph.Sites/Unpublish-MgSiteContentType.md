@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitecontenttype
@@ -32,11 +32,13 @@ Unpublish a contentType][] from a content type hub site.
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Unpublish-MgSiteContentType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Unpublish-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 ```
+
 This example shows how to use the Unpublish-MgSiteContentType Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -193,4 +195,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Unpublish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteContentType?view=graph-powershell-beta)

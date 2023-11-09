@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentrequest
@@ -38,6 +38,7 @@ This operation is used to assign a user to an access package, update the assignm
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Admin requests a direct assignment for a user already in the directory
 
 ```powershell
@@ -54,6 +55,7 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 ```
+
 This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -72,6 +74,7 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 ```
+
 This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -90,6 +93,7 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 ```
+
 This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -129,6 +133,7 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 ```
+
 This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -168,10 +173,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 ```
+
 This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -9654,5 +9659,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

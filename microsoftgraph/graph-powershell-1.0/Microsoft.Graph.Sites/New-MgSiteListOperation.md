@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistoperation
@@ -47,6 +47,8 @@ New-MgSiteListOperation -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Create new navigation property to operations for sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -417,5 +419,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListOperation?view=graph-powershell-beta)
 

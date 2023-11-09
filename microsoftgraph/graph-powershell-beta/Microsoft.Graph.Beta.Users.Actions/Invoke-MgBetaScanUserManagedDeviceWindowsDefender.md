@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetascanusermanageddevicewindowsdefender
@@ -43,6 +43,8 @@ Invoke-MgBetaScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIde
 
 ## DESCRIPTION
 Invoke action windowsDefenderScan
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -248,5 +250,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgScanUserManagedDeviceWindowsDefender?view=graph-powershell-1.0)
 

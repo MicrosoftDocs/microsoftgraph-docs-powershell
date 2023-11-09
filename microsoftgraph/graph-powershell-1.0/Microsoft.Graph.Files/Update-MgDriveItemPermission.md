@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitempermission
@@ -59,6 +59,7 @@ Only the roles property can be modified this way.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -72,10 +73,10 @@ $params = @{
 
 Update-MgDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgDriveItemPermission Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -604,3 +605,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemPermission?view=graph-powershell-beta)
+
+
+## RELATED LINKS

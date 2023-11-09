@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleshift
@@ -33,17 +33,16 @@ Delete a shift from the schedule.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId
-
 ```
-This example shows how to use the Remove-MgTeamScheduleShift Cmdlet.
 
+This example shows how to use the Remove-MgTeamScheduleShift Cmdlet.
 
 ## PARAMETERS
 
@@ -207,4 +206,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleShift?view=graph-powershell-beta)

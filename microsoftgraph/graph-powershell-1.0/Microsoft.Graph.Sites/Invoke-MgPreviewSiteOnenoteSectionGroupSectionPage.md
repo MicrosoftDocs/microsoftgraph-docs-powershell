@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewsiteonenotesectiongroupsectionpage
@@ -28,6 +28,8 @@ Invoke-MgPreviewSiteOnenoteSectionGroupSectionPage -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Invoke function preview
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -166,5 +168,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaPreviewSiteOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaPreviewSiteOnenoteSectionGroupSectionPage?view=graph-powershell-beta)
 

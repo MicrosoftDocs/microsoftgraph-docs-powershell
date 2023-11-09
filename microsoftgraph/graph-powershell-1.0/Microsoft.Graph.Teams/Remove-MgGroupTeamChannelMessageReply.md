@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelmessagereply
@@ -29,6 +29,8 @@ Remove-MgGroupTeamChannelMessageReply -InputObject <ITeamsIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete navigation property replies for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -222,5 +224,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelMessageReply?view=graph-powershell-beta)
 

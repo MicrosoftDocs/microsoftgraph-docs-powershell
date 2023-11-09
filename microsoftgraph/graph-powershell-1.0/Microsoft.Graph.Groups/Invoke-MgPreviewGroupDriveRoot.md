@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgroupdriveroot
@@ -43,6 +43,8 @@ Invoke-MgPreviewGroupDriveRoot -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Invoke action preview
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -246,5 +248,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Invoke-MgBetaPreviewGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaPreviewGroupDriveRoot?view=graph-powershell-beta)
 

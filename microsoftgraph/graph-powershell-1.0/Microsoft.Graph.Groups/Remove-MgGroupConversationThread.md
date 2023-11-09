@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversationthread
@@ -29,6 +29,8 @@ Remove-MgGroupConversationThread -InputObject <IGroupsIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete navigation property threads for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -210,5 +212,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversationThread?view=graph-powershell-beta)
 

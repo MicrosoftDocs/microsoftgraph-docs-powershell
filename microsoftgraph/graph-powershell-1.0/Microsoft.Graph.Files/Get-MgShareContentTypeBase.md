@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecontenttypebase
@@ -29,6 +29,8 @@ Get-MgShareContentTypeBase -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +155,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaShareContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareContentTypeBase?view=graph-powershell-beta)
 

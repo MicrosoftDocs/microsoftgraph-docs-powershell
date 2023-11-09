@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttype
@@ -29,6 +29,8 @@ Remove-MgUserDriveListContentType -InputObject <IFilesIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete navigation property contentTypes for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -199,5 +201,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 

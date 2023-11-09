@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsite
@@ -66,6 +66,7 @@ Update-MgSite -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphSite>
 Update entity in sites
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -73,10 +74,10 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSite -SiteId $siteId
 ```
+
 This example shows how to use the Update-MgSite Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -27416,3 +27417,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSite?view=graph-powershell-beta)
+
+
+## RELATED LINKS

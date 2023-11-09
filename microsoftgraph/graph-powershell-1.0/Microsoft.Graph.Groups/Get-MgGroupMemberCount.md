@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmembercount
@@ -29,6 +29,8 @@ Get-MgGroupMemberCount -InputObject <IGroupsIdentity> [-Filter <String>] [-Searc
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -165,5 +167,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupMemberCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberCount?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootlistitemfield
@@ -29,6 +29,8 @@ Get-MgUserDriveRootListItemField -InputObject <IFilesIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 The values of the columns set on this list item.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +155,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootListItemField?view=graph-powershell-beta)
 

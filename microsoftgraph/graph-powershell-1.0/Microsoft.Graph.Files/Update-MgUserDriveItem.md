@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitem
@@ -80,6 +80,8 @@ Update-MgUserDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 Update the metadata for a driveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's parentReference property.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -18832,3 +18834,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItem?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessagereplyhostedcontent
@@ -45,6 +45,7 @@ New-MgChatMessageReplyHostedContent -InputObject <ITeamsIdentity> -BodyParameter
 Create new navigation property to hostedContents for chats
 
 ## EXAMPLES
+
 ### Example 1: List hosted content for a channel message
 
 ```powershell
@@ -52,6 +53,7 @@ Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 ```
+
 This example shows how to use the New-MgChatMessageReplyHostedContent Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -63,6 +65,7 @@ Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
 ```
+
 This example shows how to use the New-MgChatMessageReplyHostedContent Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -74,10 +77,10 @@ Import-Module Microsoft.Graph.Teams
 
 Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
 ```
+
 This example shows how to use the New-MgChatMessageReplyHostedContent Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -306,4 +309,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [New-MgBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootlistitem
@@ -33,6 +33,8 @@ Get-MgDriveRootListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 For drives in SharePoint, the associated document library list item.
 Read-only.
 Nullable.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -142,5 +144,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootListItem?view=graph-powershell-beta)
 

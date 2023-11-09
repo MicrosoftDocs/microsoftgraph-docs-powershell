@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroup
@@ -73,6 +73,8 @@ Update-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Update the navigation property groups in sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -451,5 +453,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
 ## RELATED LINKS
+
 [Update-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
 

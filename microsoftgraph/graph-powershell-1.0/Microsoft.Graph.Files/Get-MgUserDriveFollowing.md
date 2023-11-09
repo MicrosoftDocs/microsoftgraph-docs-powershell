@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivefollowing
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveFollowing
@@ -39,6 +39,8 @@ Get-MgUserDriveFollowing -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The list of items the user is following.
 Only in OneDrive for Business.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -299,5 +301,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveFollowing](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveFollowing?view=graph-powershell-beta)
 

@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
+ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuserhistory
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgRiskyUserHistory
@@ -39,6 +39,7 @@ Get-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandProperty 
 The activity related to user risk level change
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -46,10 +47,10 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgRiskyUserHistory -RiskyUserId $riskyUserId
 ```
+
 This example shows how to use the Get-MgRiskyUserHistory Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -326,4 +327,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUserHistory?view=graph-powershell-beta)

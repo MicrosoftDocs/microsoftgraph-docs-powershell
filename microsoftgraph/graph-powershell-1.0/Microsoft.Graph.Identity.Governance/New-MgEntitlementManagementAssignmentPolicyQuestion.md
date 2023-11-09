@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicyquestion
@@ -42,6 +42,8 @@ New-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGover
 
 ## DESCRIPTION
 Create new navigation property to questions for identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -335,4 +337,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Text <String>]`: The question in the specific language. Required.
 
 ## RELATED LINKS
-

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsetterm
@@ -81,6 +81,8 @@ New-MgSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create new navigation property to terms for sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -618,3 +620,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
 
+## RELATED LINKS

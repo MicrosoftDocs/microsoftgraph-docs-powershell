@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemuploadsession
@@ -44,6 +44,8 @@ New-MgGroupDriveItemUploadSession -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Invoke action createUploadSession
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -267,5 +269,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+
 [New-MgBetaGroupDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveItemUploadSession?view=graph-powershell-beta)
 

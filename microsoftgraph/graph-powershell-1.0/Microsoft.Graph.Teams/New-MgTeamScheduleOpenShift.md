@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshift
@@ -49,10 +49,10 @@ Create an instance of an openShift object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -90,10 +90,9 @@ $params = @{
 }
 
 New-MgTeamScheduleOpenShift -TeamId $teamId -BodyParameter $params
-
 ```
-This example shows how to use the New-MgTeamScheduleOpenShift Cmdlet.
 
+This example shows how to use the New-MgTeamScheduleOpenShift Cmdlet.
 
 ## PARAMETERS
 
@@ -393,4 +392,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
+
 [New-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)

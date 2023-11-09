@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfoldercontact
@@ -70,6 +70,8 @@ Update-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIden
 
 ## DESCRIPTION
 Update the navigation property contacts in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1000,5 +1002,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+
 [Update-MgBetaUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderChildFolderContact?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicelogcollectionrequest
@@ -42,6 +42,8 @@ New-MgBetaUserManagedDeviceLogCollectionRequest -InputObject <IUsersActionsIdent
 
 ## DESCRIPTION
 Invoke action createDeviceLogCollectionRequest
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -241,4 +243,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[TemplateType <DeviceLogCollectionTemplateType?>]`: Enum for the template type used for collecting logs
 
 ## RELATED LINKS
-

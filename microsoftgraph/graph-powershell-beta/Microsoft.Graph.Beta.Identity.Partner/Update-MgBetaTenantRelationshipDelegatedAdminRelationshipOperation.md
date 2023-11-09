@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipoperation
@@ -46,6 +46,8 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation -InputObject 
 
 ## DESCRIPTION
 Update the navigation property operations in tenantRelationships
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -288,5 +290,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
+
 [Update-MgTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-1.0)
 

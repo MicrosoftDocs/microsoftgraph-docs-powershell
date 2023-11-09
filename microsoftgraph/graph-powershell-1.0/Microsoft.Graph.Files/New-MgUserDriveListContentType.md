@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistcontenttype
@@ -55,6 +55,8 @@ New-MgUserDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Create new navigation property to contentTypes for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1543,3 +1545,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 
+## RELATED LINKS

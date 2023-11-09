@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroledefinitioninheritpermissionfrom
@@ -49,6 +49,8 @@ New-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom
 
 ## DESCRIPTION
 Create new navigation property to inheritsPermissionsFrom for roleManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -448,3 +450,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
 
+## RELATED LINKS

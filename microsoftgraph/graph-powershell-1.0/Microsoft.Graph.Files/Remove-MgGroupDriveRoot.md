@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveroot
@@ -29,6 +29,8 @@ Remove-MgGroupDriveRoot -InputObject <IFilesIdentity> [-IfMatch <String>] [-Pass
 
 ## DESCRIPTION
 Delete navigation property root for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -184,5 +186,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRoot?view=graph-powershell-beta)
 

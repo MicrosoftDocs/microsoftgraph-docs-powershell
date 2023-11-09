@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitempermission
@@ -57,6 +57,8 @@ Update-MgUserDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <I
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -601,3 +603,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
+## RELATED LINKS

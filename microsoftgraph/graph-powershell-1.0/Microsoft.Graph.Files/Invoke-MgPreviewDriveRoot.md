@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgpreviewdriveroot
@@ -43,6 +43,8 @@ Invoke-MgPreviewDriveRoot -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action preview
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -220,5 +222,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaPreviewDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaPreviewDriveRoot?view=graph-powershell-beta)
 

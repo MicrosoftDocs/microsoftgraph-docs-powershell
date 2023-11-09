@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycase
@@ -42,10 +42,10 @@ Create a new ediscoveryCase object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Security
 
 $params = @{
@@ -55,10 +55,9 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCase -BodyParameter $params
-
 ```
-This example shows how to use the New-MgSecurityCaseEdiscoveryCase Cmdlet.
 
+This example shows how to use the New-MgSecurityCaseEdiscoveryCase Cmdlet.
 
 ## PARAMETERS
 
@@ -6607,3 +6606,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
+
+
+## RELATED LINKS

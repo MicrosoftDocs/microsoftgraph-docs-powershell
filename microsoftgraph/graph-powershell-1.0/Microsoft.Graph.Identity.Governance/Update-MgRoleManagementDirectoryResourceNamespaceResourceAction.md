@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryresourcenamespaceresourceaction
@@ -46,6 +46,8 @@ Update-MgRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <II
 
 ## DESCRIPTION
 Update the navigation property resourceActions in roleManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -363,5 +365,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-beta)
 

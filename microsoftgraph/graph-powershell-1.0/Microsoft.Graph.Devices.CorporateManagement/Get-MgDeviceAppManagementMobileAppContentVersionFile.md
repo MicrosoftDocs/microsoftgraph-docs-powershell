@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcontentversionfile
 schema: 2.0.0
@@ -15,74 +15,12 @@ The list of files for this app content version.
 ### List (Default)
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### List (Default)
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
- -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
- -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### Get10
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
- -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### Get2
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
- -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### Get3
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
- -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### Get4
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
- -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### Get5
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
- -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### Get6
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
- -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### Get7
+### Get9
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
  -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
@@ -96,56 +34,140 @@ Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <St
  [<CommonParameters>]
 ```
 
-### Get9
+### Get7
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
  -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### Get6
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity10
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
+ -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### Get5
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity3
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
+ -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
-### GetViaIdentity4
+### Get4
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity5
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
+ -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
-### GetViaIdentity6
+### Get3
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
+ -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
-### GetViaIdentity7
+### Get2
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
+ -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get10
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
+ -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
+ -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentFileId <String>
+ -MobileAppContentId <String> -MobileAppId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### List9
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List8
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List7
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List6
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List5
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List4
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List3
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List2
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List10
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List1
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity9
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
@@ -157,80 +179,60 @@ Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorpo
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity9
+### GetViaIdentity7
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List1
+### GetViaIdentity6
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
-```
-
-### List10
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List2
+### GetViaIdentity5
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
-```
-
-### List3
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List4
+### GetViaIdentity4
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
-```
-
-### List5
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List6
+### GetViaIdentity3
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
-```
-
-### List7
-```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List8
+### GetViaIdentity2
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List9
+### GetViaIdentity10
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgDeviceAppManagementMobileAppContentVersionFile -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### List (Default)
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionFile -MobileAppContentId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -238,19 +240,15 @@ The list of files for this app content version.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -258,8 +256,8 @@ The list of files for this app content version.
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: List, List, List1, List10, List2, List3, List4, List5, List6, List7, List8, List9
+Type: SwitchParameter
+Parameter Sets: List, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1
 Aliases:
 
 Required: False
@@ -274,8 +272,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
-Parameter Sets: List, List, List1, List10, List2, List3, List4, List5, List6, List7, List8, List9
+Type: String
+Parameter Sets: List, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1
 Aliases: CV
 
 Required: False
@@ -289,8 +287,8 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
-Parameter Sets: (All)
+Type: String[]
+Parameter Sets: List, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get10, Get1, Get, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity10, GetViaIdentity1
 Aliases: Expand
 
 Required: False
@@ -304,8 +302,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
-Parameter Sets: List, List, List1, List10, List2, List3, List4, List5, List6, List7, List8, List9
+Type: String
+Parameter Sets: List, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1
 Aliases:
 
 Required: False
@@ -320,8 +318,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity10, GetViaIdentity2, GetViaIdentity3, GetViaIdentity4, GetViaIdentity5, GetViaIdentity6, GetViaIdentity7, GetViaIdentity8, GetViaIdentity9
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: List, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity10, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -335,8 +333,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppContentFile
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get1, Get10, Get2, Get3, Get4, Get5, Get6, Get7, Get8, Get9
+Type: String
+Parameter Sets: Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get10, Get1, Get
 Aliases:
 
 Required: True
@@ -350,8 +348,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppContent
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get1, Get10, Get2, Get3, Get4, Get5, Get6, Get7, Get8, Get9, List, List, List1, List10, List2, List3, List4, List5, List6, List7, List8, List9
+Type: String
+Parameter Sets: List, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get10, Get1, Get, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1
 Aliases:
 
 Required: True
@@ -365,8 +363,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get1, Get10, Get2, Get3, Get4, Get5, Get6, Get7, Get8, Get9, List, List, List1, List10, List2, List3, List4, List5, List6, List7, List8, List9
+Type: String
+Parameter Sets: List, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get10, Get1, Get, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1
 Aliases:
 
 Required: True
@@ -380,8 +378,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
-Parameter Sets: List, List, List1, List10, List2, List3, List4, List5, List6, List7, List8, List9
+Type: Int32
+Parameter Sets: List, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1
 Aliases:
 
 Required: False
@@ -395,8 +393,8 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
-Parameter Sets: (All)
+Type: String[]
+Parameter Sets: List, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get10, Get1, Get, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity10, GetViaIdentity1
 Aliases: Select
 
 Required: False
@@ -410,23 +408,8 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: List, List, List1, List10, List2, List3, List4, List5, List6, List7, List8, List9
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
-Parameter Sets: List, List, List1, List10, List2, List3, List4, List5, List6, List7, List8, List9
+Type: String
+Parameter Sets: List, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1
 Aliases:
 
 Required: False
@@ -440,8 +423,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
-Parameter Sets: List, List, List1, List10, List2, List3, List4, List5, List6, List7, List8, List9
+Type: String[]
+Parameter Sets: List, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1
 Aliases: OrderBy
 
 Required: False
@@ -455,9 +438,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
-Parameter Sets: List, List, List1, List10, List2, List3, List4, List5, List6, List7, List8, List9
+Type: Int32
+Parameter Sets: List, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List, List9, List8, List7, List6, List5, List4, List3, List2, List10, List1
+Aliases:
 
 Required: False
 Position: Named
@@ -472,11 +470,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppContentFile
-
 ## NOTES
 
 ALIASES
@@ -526,4 +522,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-

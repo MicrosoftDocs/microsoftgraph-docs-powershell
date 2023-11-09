@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
+ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroupsetrelation
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgGroupSiteTermStoreGroupSetRelation
@@ -58,6 +58,8 @@ Get-MgGroupSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity> [-ExpandP
 
 ## DESCRIPTION
 Indicates which terms have been pinned or reused directly under the set.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -377,5 +379,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteTermStoreGroupSetRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetRelation?view=graph-powershell-beta)
 

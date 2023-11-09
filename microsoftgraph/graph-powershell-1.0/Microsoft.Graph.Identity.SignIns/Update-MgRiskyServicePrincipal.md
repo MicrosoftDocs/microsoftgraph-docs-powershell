@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyserviceprincipal
@@ -47,6 +47,8 @@ Update-MgRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update the navigation property riskyServicePrincipals in identityProtection
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -444,3 +446,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 
+## RELATED LINKS

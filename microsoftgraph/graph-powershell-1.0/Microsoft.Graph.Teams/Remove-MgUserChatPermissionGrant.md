@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatpermissiongrant
@@ -29,6 +29,8 @@ Remove-MgUserChatPermissionGrant -InputObject <ITeamsIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Delete navigation property permissionGrants for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -207,5 +209,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatPermissionGrant?view=graph-powershell-beta)
 

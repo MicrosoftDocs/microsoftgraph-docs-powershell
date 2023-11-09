@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemanalytic
@@ -45,6 +45,8 @@ Update-MgDriveItemAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update the navigation property analytics in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -11766,3 +11768,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalytic?view=graph-powershell-beta)
 
+## RELATED LINKS

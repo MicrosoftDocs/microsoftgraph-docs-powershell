@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincidentalert
@@ -38,6 +38,8 @@ Get-MgSecurityIncidentAlert -InputObject <ISecurityIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 The list of related alerts.
 Supports $expand.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -310,5 +312,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityIncidentAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncidentAlert?view=graph-powershell-beta)
 

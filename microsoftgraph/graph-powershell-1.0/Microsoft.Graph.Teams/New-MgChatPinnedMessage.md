@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatpinnedmessage
@@ -47,10 +47,10 @@ This API cannot create a new chat; you must use the list chats method to retriev
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -58,10 +58,9 @@ $params = @{
 }
 
 New-MgChatPinnedMessage -ChatId $chatId -BodyParameter $params
-
 ```
-This example shows how to use the New-MgChatPinnedMessage Cmdlet.
 
+This example shows how to use the New-MgChatPinnedMessage Cmdlet.
 
 ## PARAMETERS
 
@@ -421,3 +420,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatPinnedMessage?view=graph-powershell-beta)
+
+
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemlistitem
@@ -55,6 +55,8 @@ Update-MgGroupDriveItemListItem -InputObject <IFilesIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Update the navigation property listItem in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -15005,3 +15007,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItem?view=graph-powershell-beta)
 
+## RELATED LINKS

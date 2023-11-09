@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappassignmentcount
 schema: 2.0.0
@@ -14,14 +14,206 @@ Get the number of the resource
 
 ### Get (Default)
 ```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get9
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get8
+```
 Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### Get7
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get6
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get5
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get4
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get3
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get2
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get16
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get15
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get14
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get13
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get12
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get11
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get10
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity9
 ```
 Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
  [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity8
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity7
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity6
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity5
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity4
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity3
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity16
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity15
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity14
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity13
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity12
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity11
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity10
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get (Default)
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get9
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,19 +221,15 @@ Get the number of the resource
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -49,8 +237,8 @@ Get the number of the resource
 Filter items by property values
 
 ```yaml
-Type: System.String
-Parameter Sets: (All)
+Type: String
+Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity16, GetViaIdentity15, GetViaIdentity14, GetViaIdentity13, GetViaIdentity12, GetViaIdentity11, GetViaIdentity10
 Aliases:
 
 Required: False
@@ -65,8 +253,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: Get, Get9, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity16, GetViaIdentity15, GetViaIdentity14, GetViaIdentity13, GetViaIdentity12, GetViaIdentity11, GetViaIdentity10
 Aliases:
 
 Required: True
@@ -80,8 +268,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: System.String
-Parameter Sets: Get
+Type: String
+Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1
 Aliases:
 
 Required: True
@@ -95,8 +283,8 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: (All)
+Type: String
+Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity16, GetViaIdentity15, GetViaIdentity14, GetViaIdentity13, GetViaIdentity12, GetViaIdentity11, GetViaIdentity10
 Aliases:
 
 Required: False
@@ -112,11 +300,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Int32
-
 ## NOTES
 
 ALIASES
@@ -163,4 +349,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-

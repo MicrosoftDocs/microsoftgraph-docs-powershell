@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat
@@ -44,17 +44,16 @@ To access a chat, at least one chat member must belong to the tenant the request
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Get a user's one on one chat
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgUserChat -UserId $userId -ChatId $chatId
-
 ```
-This example will get a user's one on one chat
 
+This example will get a user's one on one chat
 
 ## PARAMETERS
 
@@ -308,4 +307,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChat?view=graph-powershell-beta)

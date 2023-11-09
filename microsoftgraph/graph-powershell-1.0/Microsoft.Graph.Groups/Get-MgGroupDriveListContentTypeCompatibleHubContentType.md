@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdrivelistcontenttypecompatiblehubcontenttype
@@ -31,6 +31,8 @@ Get-MgGroupDriveListContentTypeCompatibleHubContentType -InputObject <IGroupsIde
 
 ## DESCRIPTION
 Invoke function getCompatibleHubContentTypes
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -241,5 +243,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 

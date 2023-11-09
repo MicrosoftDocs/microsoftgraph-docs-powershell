@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/confirm-mggroupgrantedpermissionforapp
@@ -27,6 +27,8 @@ Confirm-MgGroupGrantedPermissionForApp -InputObject <IGroupsIdentity> [-WhatIf] 
 
 ## DESCRIPTION
 Invoke action checkGrantedPermissionsForApp
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -148,5 +150,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Confirm-MgBetaGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupGrantedPermissionForApp?view=graph-powershell-beta)
 

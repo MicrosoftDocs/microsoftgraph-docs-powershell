@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainserviceconfigurationrecord
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDomainServiceConfigurationRecord
@@ -43,6 +43,7 @@ Read-only, Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -50,10 +51,10 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDomainServiceConfigurationRecord -DomainId $domainId
 ```
+
 This example shows how to use the Get-MgDomainServiceConfigurationRecord Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -298,4 +299,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)

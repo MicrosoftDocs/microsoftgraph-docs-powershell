@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident
@@ -33,6 +33,8 @@ New-MgSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident> [-WhatIf
 
 ## DESCRIPTION
 Create new navigation property to incidents for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -510,3 +512,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
 
+## RELATED LINKS

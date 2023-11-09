@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostextensioncount
@@ -28,6 +28,8 @@ Get-MgGroupThreadPostExtensionCount -InputObject <IGroupsIdentity> [-Filter <Str
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -163,5 +165,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupThreadPostExtensionCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPostExtensionCount?view=graph-powershell-beta)
 

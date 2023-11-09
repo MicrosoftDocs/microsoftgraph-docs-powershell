@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemchild
@@ -76,6 +76,8 @@ New-MgGroupDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create new navigation property to children for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -18828,3 +18830,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
 
+## RELATED LINKS

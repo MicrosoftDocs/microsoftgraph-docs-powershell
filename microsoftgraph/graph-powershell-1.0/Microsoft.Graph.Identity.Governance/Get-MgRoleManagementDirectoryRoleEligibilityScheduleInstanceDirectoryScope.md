@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleeligibilityscheduleinstancedirectoryscope
@@ -33,6 +33,8 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceDirectoryScope
 ## DESCRIPTION
 The directory object that is the scope of the assignment or role eligibility.
 Read-only.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -186,5 +188,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceDirectoryScope?view=graph-powershell-beta)
 

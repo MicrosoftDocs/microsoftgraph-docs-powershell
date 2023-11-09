@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessagecount
@@ -27,6 +27,8 @@ Get-MgUserMessageCount -InputObject <IMailIdentity> [-Filter <String>] [-Search 
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -120,5 +122,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserMessageCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageCount?view=graph-powershell-beta)
 

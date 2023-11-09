@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskextension
@@ -38,6 +38,8 @@ Get-MgUserTodoTaskExtension -InputObject <IUsersIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 The collection of open extensions defined for the task.
 Nullable.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -303,5 +305,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserTodoTaskExtension](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskExtension?view=graph-powershell-beta)
 

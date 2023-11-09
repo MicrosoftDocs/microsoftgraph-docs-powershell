@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemfield
@@ -31,6 +31,7 @@ Get-MgSiteListItemField -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 The values of the columns set on this list item.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -43,10 +44,10 @@ $params = @{
 
 Update-MgSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 ```
+
 This example shows how to use the Get-MgSiteListItemField Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -200,4 +201,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemField?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootanalytic
@@ -29,6 +29,8 @@ Get-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +155,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitedrive
@@ -38,11 +38,13 @@ Get-MgSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Pro
 The collection of drives (document libraries) under this site.
 
 ## EXAMPLES
+
 ### Example 1: Using the Get-MgSiteDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Get-MgSiteDrive -SiteId $siteId
 ```
+
 This example shows how to use the Get-MgSiteDrive Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -304,4 +306,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDrive?view=graph-powershell-beta)

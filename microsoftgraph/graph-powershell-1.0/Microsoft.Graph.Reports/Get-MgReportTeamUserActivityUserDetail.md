@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamuseractivityuserdetail
@@ -39,6 +39,8 @@ Get-MgReportTeamUserActivityUserDetail -InputObject <IReportsIdentity> -OutFile 
 
 ## DESCRIPTION
 Invoke function getTeamsUserActivityUserDetail
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -159,5 +161,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportTeamUserActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityUserDetail?view=graph-powershell-beta)
 

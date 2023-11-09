@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistoperation
@@ -29,6 +29,8 @@ Remove-MgUserDriveListOperation -InputObject <IFilesIdentity> [-IfMatch <String>
 
 ## DESCRIPTION
 Delete navigation property operations for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -199,5 +201,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListOperation?view=graph-powershell-beta)
 

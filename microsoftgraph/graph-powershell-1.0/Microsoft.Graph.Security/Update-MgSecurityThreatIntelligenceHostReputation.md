@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostreputation
@@ -44,6 +44,8 @@ Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentit
 
 ## DESCRIPTION
 Update the navigation property reputation in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -293,5 +295,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Severity <String>]`: hostReputationRuleSeverity
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostReputation?view=graph-powershell-beta)
 

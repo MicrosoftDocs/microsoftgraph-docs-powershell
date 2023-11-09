@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistcontenttypecolumn
@@ -65,6 +65,8 @@ Update-MgGroupSiteListContentTypeColumn -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update a site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1190,3 +1192,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListContentTypeColumn?view=graph-powershell-beta)
 
+## RELATED LINKS

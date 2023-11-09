@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mggraphuserdrive
@@ -30,6 +30,8 @@ Invoke-MgGraphUserDrive -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter
 
 ## DESCRIPTION
 Invoke function sharedWithMe
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -231,5 +233,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaGraphUserDrive](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaGraphUserDrive?view=graph-powershell-beta)
 

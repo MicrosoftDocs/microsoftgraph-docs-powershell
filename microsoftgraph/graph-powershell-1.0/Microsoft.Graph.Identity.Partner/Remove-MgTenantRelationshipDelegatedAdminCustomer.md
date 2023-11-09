@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/remove-mgtenantrelationshipdelegatedadmincustomer
@@ -29,6 +29,8 @@ Remove-MgTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPartner
 
 ## DESCRIPTION
 Delete navigation property delegatedAdminCustomers for tenantRelationships
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -151,5 +153,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
+
 [Remove-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowpostattributecollection
@@ -43,6 +43,8 @@ Update-MgIdentityB2XUserFlowPostAttributeCollection -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Update the navigation property postAttributeCollection in identity
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -285,5 +287,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Update-MgBetaIdentityB2XUserFlowPostAttributeCollection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowPostAttributeCollection?view=graph-powershell-beta)
 

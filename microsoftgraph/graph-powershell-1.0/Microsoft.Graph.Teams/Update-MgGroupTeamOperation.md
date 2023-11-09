@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamoperation
@@ -46,6 +46,8 @@ Update-MgGroupTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Update the navigation property operations in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -369,5 +371,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamOperation?view=graph-powershell-beta)
 

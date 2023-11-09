@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
+ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroupcount
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteSectionGroupCount
@@ -43,18 +43,17 @@ Get-MgUserOnenoteSectionGroupCount -InputObject <INotesIdentity> [-Filter <Strin
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Notes
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteSectionPage -UserId $userId -OnenoteSectionId $onenoteSectionId
-
 ```
-This example shows how to use the Get-MgUserOnenoteSectionPage Cmdlet.
 
+This example shows how to use the Get-MgUserOnenoteSectionPage Cmdlet.
 
 ## PARAMETERS
 
@@ -164,4 +163,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionPage?view=graph-powershell-beta)

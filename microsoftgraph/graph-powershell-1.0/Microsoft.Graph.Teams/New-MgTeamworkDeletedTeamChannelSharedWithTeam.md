@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelsharedwithteam
@@ -45,6 +45,8 @@ New-MgTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Create new navigation property to sharedWithTeams for teamwork
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -6063,3 +6065,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-beta)
 
+## RELATED LINKS

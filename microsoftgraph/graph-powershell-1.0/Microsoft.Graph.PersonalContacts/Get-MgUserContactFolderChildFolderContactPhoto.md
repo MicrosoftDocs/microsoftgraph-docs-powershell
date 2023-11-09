@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontactphoto
@@ -31,6 +31,8 @@ Get-MgUserContactFolderChildFolderContactPhoto -InputObject <IPersonalContactsId
 ## DESCRIPTION
 Optional contact picture.
 You can get or set a photo for a contact.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -151,5 +153,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserContactFolderChildFolderContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderChildFolderContactPhoto?view=graph-powershell-beta)
 

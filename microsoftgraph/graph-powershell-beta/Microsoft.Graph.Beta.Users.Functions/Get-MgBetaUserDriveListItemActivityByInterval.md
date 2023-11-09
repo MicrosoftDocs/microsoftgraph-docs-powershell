@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdrivelistitemactivitybyinterval
@@ -32,6 +32,8 @@ Get-MgBetaUserDriveListItemActivityByInterval -InputObject <IUsersFunctionsIdent
 
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -304,5 +306,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgUserDriveListItemActivityByInterval](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDriveListItemActivityByInterval?view=graph-powershell-1.0)
 

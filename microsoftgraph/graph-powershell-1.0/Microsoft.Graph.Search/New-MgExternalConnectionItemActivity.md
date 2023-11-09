@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitemactivity
@@ -43,6 +43,8 @@ New-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create new navigation property to activities for external
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -261,5 +263,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
+
 [New-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
 

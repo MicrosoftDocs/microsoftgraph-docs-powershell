@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Export-MgUserPersonalData
@@ -52,6 +52,7 @@ For more guidance about exporting data while complying with regulations, see Dat
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Export-MgUserPersonalData Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -60,6 +61,7 @@ $params = @{
 }
 Export-MgUserPersonalData -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Export-MgUserPersonalData Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -243,4 +245,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Export-MgBetaUserPersonalData](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Export-MgBetaUserPersonalData?view=graph-powershell-beta)

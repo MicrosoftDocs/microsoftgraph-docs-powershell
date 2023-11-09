@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontract
@@ -31,6 +31,7 @@ New-MgContract -BodyParameter <IMicrosoftGraphContract> [-WhatIf] [-Confirm] [<C
 Add new entity to contracts
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -38,10 +39,10 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContract
 ```
+
 This example shows how to use the New-MgContract Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -234,4 +235,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's display name changes.
 
 ## RELATED LINKS
+
 [New-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContract?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroupsetparentgroup
@@ -41,6 +41,8 @@ Remove-MgSiteTermStoreGroupSetParentGroup -InputObject <ISitesIdentity> [-IfMatc
 
 ## DESCRIPTION
 Delete navigation property parentGroup for sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -240,5 +242,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroupSetParentGroup?view=graph-powershell-beta)
 

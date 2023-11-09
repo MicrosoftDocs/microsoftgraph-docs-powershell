@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehost
@@ -23,7 +23,7 @@ New-MgSecurityThreatIntelligenceHost [-AdditionalProperties <Hashtable>]
  [-HostPairs <IMicrosoftGraphSecurityHostPair[]>] [-Id <String>] [-LastSeenDateTime <DateTime>]
  [-ParentHostPairs <IMicrosoftGraphSecurityHostPair[]>]
  [-PassiveDns <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
- [-PassiveDnsReverse <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
+ [-PassiveDnsReverse <IMicrosoftGraphSecurityPassiveDnsRecord[]>] [-Ports <IMicrosoftGraphSecurityHostPort[]>]
  [-Reputation <IMicrosoftGraphSecurityHostReputation>]
  [-SslCertificates <IMicrosoftGraphSecurityHostSslCertificate[]>]
  [-Subdomains <IMicrosoftGraphSecuritySubdomain[]>] [-Trackers <IMicrosoftGraphSecurityHostTracker[]>]
@@ -38,6 +38,8 @@ New-MgSecurityThreatIntelligenceHost -BodyParameter <IMicrosoftGraphSecurityHost
 
 ## DESCRIPTION
 Create new navigation property to hosts for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -224,6 +226,22 @@ To construct, see NOTES section for PASSIVEDNSREVERSE properties and create a ha
 
 ```yaml
 Type: IMicrosoftGraphSecurityPassiveDnsRecord[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Ports
+The hostPorts associated with a host.
+To construct, see NOTES section for PORTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityHostPort[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -2192,3 +2210,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 
+## RELATED LINKS

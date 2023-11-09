@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolistextension
@@ -29,6 +29,8 @@ Remove-MgUserTodoListExtension -InputObject <IUsersIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete navigation property extensions for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -188,5 +190,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListExtension?view=graph-powershell-beta)
 

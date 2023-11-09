@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistoperation
@@ -36,6 +36,8 @@ Get-MgUserDriveListOperation -InputObject <IFilesIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 The collection of long-running operations on the list.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -296,5 +298,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListOperation?view=graph-powershell-beta)
 

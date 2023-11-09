@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserproperty
@@ -50,6 +50,7 @@ However, you can validate both the mail nickname and the display name and receiv
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -64,10 +65,10 @@ $params = @{
 
 Test-MgBetaDirectoryObjectProperty -BodyParameter $params
 ```
+
 This example shows how to use the Test-MgBetaUserProperty Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -234,4 +235,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnBehalfOfUserId <String>]`: 
 
 ## RELATED LINKS
+
 [Test-MgUserProperty](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserProperty?view=graph-powershell-1.0)

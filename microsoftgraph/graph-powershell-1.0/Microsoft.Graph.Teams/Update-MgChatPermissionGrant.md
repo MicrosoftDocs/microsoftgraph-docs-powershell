@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatpermissiongrant
@@ -45,6 +45,8 @@ Update-MgChatPermissionGrant -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property permissionGrants in chats
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -333,5 +335,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatPermissionGrant?view=graph-powershell-beta)
 

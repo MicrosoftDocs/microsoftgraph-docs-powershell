@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfoldercontactphoto
@@ -43,6 +43,8 @@ Update-MgUserContactFolderContactPhoto -InputObject <IPersonalContactsIdentity>
 
 ## DESCRIPTION
 Update the navigation property photo in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -250,5 +252,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaUserContactFolderContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderContactPhoto?view=graph-powershell-beta)
 

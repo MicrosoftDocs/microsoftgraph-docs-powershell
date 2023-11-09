@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetchildrelationtoterm
@@ -68,6 +68,8 @@ Get-MgSiteTermStoreSetChildRelationToTerm -InputObject <ISitesIdentity> [-Expand
 ## DESCRIPTION
 The to [term] of the relation.
 The term to which the relationship is defined.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -266,5 +268,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteTermStoreSetChildRelationToTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetChildRelationToTerm?view=graph-powershell-beta)
 

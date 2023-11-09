@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationoperation
@@ -43,6 +43,8 @@ New-MgUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Create new navigation property to operations for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -320,5 +322,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [New-MgBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
 

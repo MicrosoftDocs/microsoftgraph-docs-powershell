@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteonenotepagecontent
@@ -29,6 +29,8 @@ Set-MgGroupSiteOnenotePageContent -InputObject <ISitesIdentity> [-Data <Stream>]
 
 ## DESCRIPTION
 The page's HTML content.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -216,5 +218,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaGroupSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaGroupSiteOnenotePageContent?view=graph-powershell-beta)
 

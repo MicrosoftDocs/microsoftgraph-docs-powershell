@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitemversionfield
@@ -29,6 +29,8 @@ Remove-MgGroupDriveListItemVersionField -InputObject <IFilesIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete navigation property fields for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -214,5 +216,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListItemVersionField?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryfederationconfiguration
@@ -42,6 +42,8 @@ Update-MgDirectoryFederationConfiguration -InputObject <IIdentityDirectoryManage
 
 ## DESCRIPTION
 Update the navigation property federationConfigurations in directory
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -219,5 +221,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
 

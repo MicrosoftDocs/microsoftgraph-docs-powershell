@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitemdocumentsetversion
@@ -49,6 +49,8 @@ Update-MgGroupDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update the navigation property documentSetVersions in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -443,5 +445,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
 

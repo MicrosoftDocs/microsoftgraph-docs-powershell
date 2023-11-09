@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevicecount
@@ -29,6 +29,8 @@ Get-MgUserOwnedDeviceCount -InputObject <IUsersIdentity> [-Filter <String>] [-Se
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -143,5 +145,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserOwnedDeviceCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedDeviceCount?view=graph-powershell-beta)
 

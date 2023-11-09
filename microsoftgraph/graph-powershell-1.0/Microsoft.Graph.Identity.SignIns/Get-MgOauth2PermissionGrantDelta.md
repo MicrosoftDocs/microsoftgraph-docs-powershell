@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta
@@ -24,11 +24,13 @@ Get-MgOauth2PermissionGrantDelta [-Filter <String>] [-Property <String[]>] [-Sea
 Invoke function delta
 
 ## EXAMPLES
+
 ### Example 1: Using the Get-MgOauth2PermissionGrantDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgOauth2PermissionGrantDelta
 ```
+
 This example shows how to use the Get-MgOauth2PermissionGrantDelta Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -183,4 +185,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaOauth2PermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaOauth2PermissionGrantDelta?view=graph-powershell-beta)

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskyuser
@@ -45,6 +45,8 @@ Update-MgRiskyUser -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the navigation property riskyUsers in identityProtection
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -420,5 +422,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Update-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyUser?view=graph-powershell-beta)
 

@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteanalytictime
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgGroupSiteAnalyticTime
@@ -32,6 +32,8 @@ Get-MgGroupSiteAnalyticTime -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Get [itemAnalytics][] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the getActivitiesByInterval][] API.
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -170,5 +172,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteAnalyticTime?view=graph-powershell-beta)
 

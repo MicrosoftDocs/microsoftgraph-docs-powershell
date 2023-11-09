@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriveitemsensitivitylabel
@@ -45,6 +45,8 @@ Set-MgDriveItemSensitivityLabel -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -268,5 +270,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemSensitivityLabel?view=graph-powershell-beta)
 

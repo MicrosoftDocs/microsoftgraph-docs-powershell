@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistcontenttype
@@ -55,6 +55,8 @@ Update-MgSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the navigation property contentTypes in sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1572,3 +1574,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentType?view=graph-powershell-beta)
 
+## RELATED LINKS

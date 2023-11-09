@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootanalytic
@@ -45,6 +45,8 @@ Update-MgDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update the navigation property analytics in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -11751,3 +11753,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
 
+## RELATED LINKS

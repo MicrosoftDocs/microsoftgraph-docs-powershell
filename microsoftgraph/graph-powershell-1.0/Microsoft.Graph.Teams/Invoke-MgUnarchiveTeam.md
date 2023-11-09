@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam
@@ -39,17 +39,16 @@ A team is unarchived once the async operation completes successfully, which may 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Invoke-MgUnarchiveTeam -TeamId $teamId
-
 ```
-This example shows how to use the Invoke-MgUnarchiveTeam Cmdlet.
 
+This example shows how to use the Invoke-MgUnarchiveTeam Cmdlet.
 
 ## PARAMETERS
 
@@ -183,4 +182,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Invoke-MgBetaUnarchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveTeam?view=graph-powershell-beta)

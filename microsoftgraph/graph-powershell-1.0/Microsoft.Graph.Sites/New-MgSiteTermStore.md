@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstore
@@ -40,6 +40,8 @@ New-MgSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGrap
 
 ## DESCRIPTION
 Create new navigation property to termStores for sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -408,3 +410,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

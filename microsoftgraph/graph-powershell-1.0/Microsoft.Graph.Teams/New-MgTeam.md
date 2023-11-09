@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam
@@ -42,27 +42,26 @@ Create a new team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 	displayName = "My Sample Team"
-	description = "My Sample Team’s Description"
+	description = "My Sample Team's Description"
 }
 
 New-MgTeam -BodyParameter $params
-
 ```
+
 This example shows how to use the New-MgTeam Cmdlet.
 
 ### Example 2: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -143,14 +142,13 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
-
 ```
+
 This example shows how to use the New-MgTeam Cmdlet.
 
 ### Example 3: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -159,14 +157,13 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
-
 ```
+
 This example shows how to use the New-MgTeam Cmdlet.
 
 ### Example 4: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -200,37 +197,35 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
-
 ```
+
 This example shows how to use the New-MgTeam Cmdlet.
 
 ### Example 5: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
 	displayName = "My Class Team"
-	description = "My Class Team’s Description"
+	description = "My Class Team's Description"
 }
 
 New-MgTeam -BodyParameter $params
-
 ```
+
 This example shows how to use the New-MgTeam Cmdlet.
 
 ### Example 6: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
 	displayName = "My Class Team"
-	description = "My Class Team’s Description"
+	description = "My Class Team's Description"
 	channels = @(
 		@{
 			displayName = "Class Announcements 📢"
@@ -259,20 +254,19 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
-
 ```
+
 This example shows how to use the New-MgTeam Cmdlet.
 
 ### Example 7: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
 	displayName = "My Sample Team"
-	description = "My Sample Team’s Description"
+	description = "My Sample Team's Description"
 	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -285,10 +279,9 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
-
 ```
-This example shows how to use the New-MgTeam Cmdlet.
 
+This example shows how to use the New-MgTeam Cmdlet.
 
 ## PARAMETERS
 
@@ -18316,3 +18309,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)
+
+
+## RELATED LINKS

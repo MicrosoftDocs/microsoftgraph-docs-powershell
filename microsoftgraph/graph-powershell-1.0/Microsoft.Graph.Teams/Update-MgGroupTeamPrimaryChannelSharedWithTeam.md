@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelsharedwithteam
@@ -45,6 +45,8 @@ Update-MgGroupTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property sharedWithTeams in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -6063,3 +6065,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)
 
+## RELATED LINKS

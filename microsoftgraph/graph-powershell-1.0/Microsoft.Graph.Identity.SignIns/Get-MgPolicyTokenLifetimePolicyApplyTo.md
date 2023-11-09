@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenlifetimepolicyapplyto
@@ -36,6 +36,8 @@ Get-MgPolicyTokenLifetimePolicyApplyTo -InputObject <IIdentitySignInsIdentity> [
 
 ## DESCRIPTION
 Get appliesTo from policies
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -312,5 +314,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaPolicyTokenLifetimePolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyTokenLifetimePolicyApplyTo?view=graph-powershell-beta)
 

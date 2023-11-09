@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootpermission
@@ -33,6 +33,8 @@ Remove-MgDriveRootPermission -InputObject <IFilesIdentity> [-IfMatch <String>] [
 Remove access to a DriveItem.
 Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -188,5 +190,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootPermission?view=graph-powershell-beta)
 

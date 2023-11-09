@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoffrequest
@@ -46,6 +46,8 @@ Update-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property timeOffRequests in teams
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -378,5 +380,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+
 [Update-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootlistitemversion
@@ -29,6 +29,8 @@ Remove-MgUserDriveRootListItemVersion -InputObject <IFilesIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Delete navigation property versions for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -199,5 +201,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItemVersion?view=graph-powershell-beta)
 

@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite
 schema: 2.0.0
-ms.prod: sharepoint
-ms.prod: sharepoint
 ---
 
 # Get-MgSite
@@ -39,6 +38,7 @@ Get-MgSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property
 Retrieve properties and relationships for a [site][] resource.A site resource represents a team site in SharePoint.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -46,10 +46,10 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSite -SiteId $siteId
 ```
+
 This example shows how to use the Get-MgSite Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -294,4 +294,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)

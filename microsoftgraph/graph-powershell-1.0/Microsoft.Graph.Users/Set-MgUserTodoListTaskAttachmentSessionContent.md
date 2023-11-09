@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusertodolisttaskattachmentsessioncontent
@@ -30,6 +30,8 @@ Set-MgUserTodoListTaskAttachmentSessionContent -InputObject <IUsersIdentity> [-D
 
 ## DESCRIPTION
 The content streams that are uploaded.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -207,5 +209,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserTodoListTaskAttachmentSessionContent?view=graph-powershell-beta)
 

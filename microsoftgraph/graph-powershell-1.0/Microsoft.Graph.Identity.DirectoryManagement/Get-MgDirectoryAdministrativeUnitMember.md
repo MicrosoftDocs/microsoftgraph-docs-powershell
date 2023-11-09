@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmember
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDirectoryAdministrativeUnitMember
@@ -28,17 +28,16 @@ Users and groups that are members of this administrative unit.
 Supports $expand.
 
 ## EXAMPLES
+
 ### Example 1: List member objects
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
-
 ```
-This example will list member objects
 
+This example will list member objects
 
 ## PARAMETERS
 
@@ -237,4 +236,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaDirectoryAdministrativeUnitMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMember?view=graph-powershell-beta)

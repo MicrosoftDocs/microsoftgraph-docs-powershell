@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgshareshareddriveitemshareddriveitem
@@ -57,6 +57,7 @@ Update-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity>
 Update entity in shares
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -64,6 +65,7 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
 ```
+
 This example shows how to use the Update-MgShareSharedDriveItemSharedDriveItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -75,6 +77,7 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
 ```
+
 This example shows how to use the Update-MgShareSharedDriveItemSharedDriveItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -86,10 +89,10 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
 ```
+
 This example shows how to use the Update-MgShareSharedDriveItemSharedDriveItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -26551,3 +26554,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+
+
+## RELATED LINKS

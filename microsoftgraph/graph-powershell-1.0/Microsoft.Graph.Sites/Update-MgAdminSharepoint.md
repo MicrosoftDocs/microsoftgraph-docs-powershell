@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepoint
@@ -28,6 +28,8 @@ Update-MgAdminSharepoint -BodyParameter <IMicrosoftGraphSharepoint> [-WhatIf] [-
 
 ## DESCRIPTION
 Update the navigation property sharepoint in admin
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -221,5 +223,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantDefaultTimezone <String>]`: The default timezone of a tenant for newly created sites. For a list of possible values, see SPRegionalSettings.TimeZones property.
 
 ## RELATED LINKS
+
 [Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepoint?view=graph-powershell-beta)
 

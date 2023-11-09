@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainverificationdnsrecord
@@ -29,6 +29,8 @@ Remove-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementI
 
 ## DESCRIPTION
 Delete navigation property verificationDnsRecords for domains
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -183,5 +185,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
 

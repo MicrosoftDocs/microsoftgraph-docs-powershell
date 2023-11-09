@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignmentscheduleinstance
@@ -36,6 +36,8 @@ New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance
 
 ## DESCRIPTION
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -508,3 +510,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 
+## RELATED LINKS

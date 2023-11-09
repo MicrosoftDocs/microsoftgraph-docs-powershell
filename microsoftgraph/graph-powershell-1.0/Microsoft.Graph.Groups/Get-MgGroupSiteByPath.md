@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitebypath
@@ -27,6 +27,8 @@ Get-MgGroupSiteByPath -InputObject <IGroupsIdentity> [<CommonParameters>]
 
 ## DESCRIPTION
 Invoke function getByPath
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -147,5 +149,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteByPath](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteByPath?view=graph-powershell-beta)
 

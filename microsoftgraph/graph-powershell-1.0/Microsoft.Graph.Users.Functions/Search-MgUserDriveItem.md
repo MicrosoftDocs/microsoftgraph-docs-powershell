@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/search-mguserdriveitem
@@ -31,6 +31,8 @@ Search-MgUserDriveItem -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter 
 
 ## DESCRIPTION
 Invoke function search
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -262,5 +264,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Search-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Search-MgBetaUserDriveItem?view=graph-powershell-beta)
 

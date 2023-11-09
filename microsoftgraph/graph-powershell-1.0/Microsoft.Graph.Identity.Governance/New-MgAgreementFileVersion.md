@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementfileversion
@@ -45,6 +45,8 @@ New-MgAgreementFileVersion -InputObject <IIdentityGovernanceIdentity> -BodyParam
 
 ## DESCRIPTION
 Create new navigation property to versions for agreements
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -382,5 +384,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [New-MgBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementFileVersion?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroupsetchild
@@ -147,6 +147,8 @@ Update-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> -BodyParameter
 
 ## DESCRIPTION
 Update the navigation property children in sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -714,3 +716,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreGroupSetChild?view=graph-powershell-beta)
 
+## RELATED LINKS

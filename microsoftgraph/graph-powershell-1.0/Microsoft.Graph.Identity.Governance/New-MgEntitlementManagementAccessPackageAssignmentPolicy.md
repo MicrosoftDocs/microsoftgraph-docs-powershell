@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignmentpolicy
@@ -39,6 +39,8 @@ New-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageId <Strin
 
 ## DESCRIPTION
 Create new navigation property to assignmentPolicies for identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -9548,3 +9550,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-beta)
 
+## RELATED LINKS

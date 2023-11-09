@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactextensioncount
 schema: 2.0.0
-ms.prod: outlook
-ms.prod: outlook
 ---
 
 # Get-MgUserContactExtensionCount
@@ -32,18 +31,17 @@ Get-MgUserContactExtensionCount -InputObject <IPersonalContactsIdentity> [-Filte
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.PersonalContacts
 
 # A UPN can also be used as -UserId.
 Get-MgUserContactFolder -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserContactFolder Cmdlet.
 
+This example shows how to use the Get-MgUserContactFolder Cmdlet.
 
 ## PARAMETERS
 
@@ -134,4 +132,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolder?view=graph-powershell-beta)

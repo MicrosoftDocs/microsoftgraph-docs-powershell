@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserextensioncount
@@ -28,6 +28,8 @@ Get-MgUserExtensionCount -InputObject <IUsersIdentity> [-Filter <String>] [-Sear
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -126,5 +128,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserExtensionCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserExtensionCount?view=graph-powershell-beta)
 

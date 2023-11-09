@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgadminsharepointsetting
@@ -21,6 +21,8 @@ Remove-MgAdminSharepointSetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Conf
 
 ## DESCRIPTION
 Delete navigation property settings for admin
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -98,5 +100,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Remove-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
 

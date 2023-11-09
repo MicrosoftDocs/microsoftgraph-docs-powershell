@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgsubscribegroupbymail
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgSubscribeGroupByMail
@@ -35,11 +35,13 @@ Supported for Microsoft 365 groups only.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Invoke-MgSubscribeGroupByMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Invoke-MgSubscribeGroupByMail -GroupId $groupId
 ```
+
 This example shows how to use the Invoke-MgSubscribeGroupByMail Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -178,4 +180,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Invoke-MgBetaSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSubscribeGroupByMail?view=graph-powershell-beta)

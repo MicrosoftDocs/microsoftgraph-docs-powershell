@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mginformationprotectionthreatassessmentrequestresult
@@ -29,6 +29,8 @@ Remove-MgInformationProtectionThreatAssessmentRequestResult -InputObject <IIdent
 
 ## DESCRIPTION
 Delete navigation property results for informationProtection
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -215,5 +217,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
 

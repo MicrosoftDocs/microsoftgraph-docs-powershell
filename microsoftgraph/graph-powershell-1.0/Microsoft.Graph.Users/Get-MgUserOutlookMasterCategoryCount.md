@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategorycount
@@ -27,6 +27,8 @@ Get-MgUserOutlookMasterCategoryCount -InputObject <IUsersIdentity> [-Filter <Str
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -110,5 +112,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserOutlookMasterCategoryCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategoryCount?view=graph-powershell-beta)
 

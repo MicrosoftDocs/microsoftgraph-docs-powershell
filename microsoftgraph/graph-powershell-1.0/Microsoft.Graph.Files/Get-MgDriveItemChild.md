@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemchild
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveItemChild
@@ -45,28 +45,26 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
-
 ```
+
 This example shows how to use the Get-MgDriveItemChild Cmdlet.
 
 ### Example 2: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
-
 ```
-This example shows how to use the Get-MgDriveItemChild Cmdlet.
 
+This example shows how to use the Get-MgDriveItemChild Cmdlet.
 
 ## PARAMETERS
 
@@ -327,4 +325,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemChild?view=graph-powershell-beta)

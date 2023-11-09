@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
+ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Confirm-MgRiskyUserCompromised
@@ -37,10 +37,10 @@ This action sets the targeted user's risk level to high.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
@@ -51,10 +51,9 @@ $params = @{
 }
 
 Confirm-MgRiskyUserCompromised -BodyParameter $params
-
 ```
-This example shows how to use the Confirm-MgRiskyUserCompromised Cmdlet.
 
+This example shows how to use the Confirm-MgRiskyUserCompromised Cmdlet.
 
 ## PARAMETERS
 
@@ -173,4 +172,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIds <String[]>]`: 
 
 ## RELATED LINKS
+
 [Confirm-MgBetaRiskyUserCompromised](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaRiskyUserCompromised?view=graph-powershell-beta)

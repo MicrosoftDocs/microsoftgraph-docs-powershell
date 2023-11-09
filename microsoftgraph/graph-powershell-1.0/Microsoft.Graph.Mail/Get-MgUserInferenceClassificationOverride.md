@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
+ms.prod: mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassification
 schema: 2.0.0
-ms.prod: mail
 ---
 
 # Get-MgUserInferenceClassification
@@ -30,18 +30,17 @@ Get-MgUserInferenceClassification -InputObject <IMailIdentity> [-Property <Strin
 Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Mail
 
 # A UPN can also be used as -UserId.
 Get-MgUserInferenceClassificationOverride -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserInferenceClassificationOverride Cmdlet.
 
+This example shows how to use the Get-MgUserInferenceClassificationOverride Cmdlet.
 
 ## PARAMETERS
 
@@ -120,4 +119,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)

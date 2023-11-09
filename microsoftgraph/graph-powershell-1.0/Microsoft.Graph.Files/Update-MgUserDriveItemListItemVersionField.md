@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitemversionfield
@@ -41,6 +41,8 @@ Update-MgUserDriveItemListItemVersionField -InputObject <IFilesIdentity> -BodyPa
 
 ## DESCRIPTION
 Update the navigation property fields in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -243,5 +245,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaUserDriveItemListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItemVersionField?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelist
@@ -59,6 +59,8 @@ New-MgGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create a new list][] in a [site][].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -15371,3 +15373,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteList?view=graph-powershell-beta)
 
+## RELATED LINKS

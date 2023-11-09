@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreementfilelocalization
@@ -48,6 +48,8 @@ Update-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <IId
 
 ## DESCRIPTION
 Update the navigation property localizations in identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -442,3 +444,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization?view=graph-powershell-beta)
 
+## RELATED LINKS

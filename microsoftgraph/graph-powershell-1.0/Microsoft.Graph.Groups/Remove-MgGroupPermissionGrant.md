@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggrouppermissiongrant
@@ -29,6 +29,8 @@ Remove-MgGroupPermissionGrant -InputObject <IGroupsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete navigation property permissionGrants for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -195,5 +197,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 

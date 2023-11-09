@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleswapshiftchangerequest
@@ -48,6 +48,8 @@ Update-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property swapShiftsChangeRequests in teams
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -394,5 +396,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+
 [Update-MgBetaTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
 

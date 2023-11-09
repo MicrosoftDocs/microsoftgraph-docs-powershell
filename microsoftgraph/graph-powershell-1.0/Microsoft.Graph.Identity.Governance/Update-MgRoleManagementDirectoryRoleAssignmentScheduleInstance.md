@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroleassignmentscheduleinstance
@@ -57,6 +57,8 @@ Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance -InputObject <IId
 
 ## DESCRIPTION
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -631,3 +633,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatpermissiongrant
@@ -45,6 +45,8 @@ New-MgUserChatPermissionGrant -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Create new navigation property to permissionGrants for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -333,5 +335,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [New-MgBetaUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatPermissionGrant?view=graph-powershell-beta)
 

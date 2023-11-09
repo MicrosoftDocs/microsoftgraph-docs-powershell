@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mgalluserdevicefrommanagement
@@ -28,6 +28,8 @@ Remove-MgAllUserDeviceFromManagement -InputObject <IUsersActionsIdentity> [-Pass
 
 ## DESCRIPTION
 Retire all devices from management for this user
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -160,5 +162,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaAllUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgBetaAllUserDeviceFromManagement?view=graph-powershell-beta)
 

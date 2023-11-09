@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfoldercontactextension
@@ -41,6 +41,8 @@ Update-MgUserContactFolderContactExtension -InputObject <IPersonalContactsIdenti
 
 ## DESCRIPTION
 Update the navigation property extensions in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -224,5 +226,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaUserContactFolderContactExtension](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderContactExtension?view=graph-powershell-beta)
 

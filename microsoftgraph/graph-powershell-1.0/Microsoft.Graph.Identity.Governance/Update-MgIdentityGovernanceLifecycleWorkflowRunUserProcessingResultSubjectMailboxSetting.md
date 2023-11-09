@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowrunuserprocessingresultsubjectmailboxsetting
@@ -51,6 +51,8 @@ Update-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectMailbo
 
 ## DESCRIPTION
 Update property mailboxSettings value.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -468,3 +470,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResultSubjectMailboxSetting?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyid
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgGroupById
@@ -156,4 +156,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupById](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupById?view=graph-powershell-beta)

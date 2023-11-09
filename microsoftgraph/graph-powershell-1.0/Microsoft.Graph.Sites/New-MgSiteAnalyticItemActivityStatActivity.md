@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsiteanalyticitemactivitystatactivity
@@ -43,6 +43,8 @@ New-MgSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Create new navigation property to activities for sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -6056,3 +6058,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
+## RELATED LINKS

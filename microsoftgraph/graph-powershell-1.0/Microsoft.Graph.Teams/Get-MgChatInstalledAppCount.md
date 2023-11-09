@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledappcount
@@ -28,6 +28,8 @@ Get-MgChatInstalledAppCount -InputObject <ITeamsIdentity> [-Filter <String>] [-S
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -145,5 +147,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaChatInstalledAppCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatInstalledAppCount?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectiongroupsectionpageparentnotebook
@@ -32,6 +32,8 @@ Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPageParentNotebook -InputObject
 ## DESCRIPTION
 The notebook that contains the page.
 Read-only.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -230,5 +232,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageParentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageParentNotebook?view=graph-powershell-beta)
 

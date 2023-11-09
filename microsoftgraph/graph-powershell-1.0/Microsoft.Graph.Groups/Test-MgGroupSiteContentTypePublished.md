@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupsitecontenttypepublished
@@ -28,6 +28,8 @@ Test-MgGroupSiteContentTypePublished -InputObject <IGroupsIdentity> [<CommonPara
 
 ## DESCRIPTION
 Invoke function isPublished
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -148,5 +150,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Test-MgBetaGroupSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupSiteContentTypePublished?view=graph-powershell-beta)
 

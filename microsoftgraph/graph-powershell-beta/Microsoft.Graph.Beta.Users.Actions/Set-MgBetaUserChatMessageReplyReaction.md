@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserchatmessagereplyreaction
@@ -45,6 +45,8 @@ Set-MgBetaUserChatMessageReplyReaction -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Invoke action setReaction
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -280,5 +282,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserChatMessageReplyReaction?view=graph-powershell-1.0)
 

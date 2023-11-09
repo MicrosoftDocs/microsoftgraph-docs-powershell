@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/unpublish-mggroupsitecontenttype
@@ -31,6 +31,8 @@ Unpublish-MgGroupSiteContentType -InputObject <IGroupsIdentity> [-PassThru] [-Wh
 ## DESCRIPTION
 Unpublish a contentType][] from a content type hub site.
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -197,5 +199,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Unpublish-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 

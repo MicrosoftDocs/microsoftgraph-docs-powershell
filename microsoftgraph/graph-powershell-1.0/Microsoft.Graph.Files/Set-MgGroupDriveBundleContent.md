@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdrivebundlecontent
@@ -29,6 +29,8 @@ Set-MgGroupDriveBundleContent -InputObject <IFilesIdentity> [-Data <Stream>] -In
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -202,5 +204,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaGroupDriveBundleContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaGroupDriveBundleContent?view=graph-powershell-beta)
 

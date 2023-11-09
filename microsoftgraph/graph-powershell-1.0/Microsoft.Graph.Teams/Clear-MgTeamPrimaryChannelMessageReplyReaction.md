@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/clear-mgteamprimarychannelmessagereplyreaction
@@ -46,6 +46,8 @@ Clear-MgTeamPrimaryChannelMessageReplyReaction -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Invoke action unsetReaction
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -260,5 +262,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Clear-MgBetaTeamPrimaryChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaTeamPrimaryChannelMessageReplyReaction?view=graph-powershell-beta)
 

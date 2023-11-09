@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccess
@@ -29,6 +29,8 @@ Update-MgIdentityGovernancePrivilegedAccess -BodyParameter <IMicrosoftGraphPrivi
 
 ## DESCRIPTION
 Update the navigation property privilegedAccess in identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -6139,3 +6141,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccess?view=graph-powershell-beta)
 
+## RELATED LINKS

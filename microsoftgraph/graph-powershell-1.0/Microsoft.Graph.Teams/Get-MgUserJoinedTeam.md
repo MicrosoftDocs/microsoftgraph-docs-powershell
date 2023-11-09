@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchattabteamapp
@@ -33,18 +33,17 @@ The application that is linked to the tab.
 This can't be changed after tab creation.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 # A UPN can also be used as -UserId.
 Get-MgUserJoinedTeam -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserJoinedTeam Cmdlet.
 
+This example shows how to use the Get-MgUserJoinedTeam Cmdlet.
 
 ## PARAMETERS
 
@@ -192,4 +191,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)

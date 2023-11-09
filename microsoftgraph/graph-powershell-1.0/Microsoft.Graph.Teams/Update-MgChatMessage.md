@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmessage
@@ -59,6 +59,8 @@ Update-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Update the navigation property messages in chats
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -889,3 +891,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMessage?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchanneltab
@@ -48,10 +48,10 @@ Update the properties of the specified tab.This can be used to configure the con
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -59,10 +59,9 @@ $params = @{
 }
 
 Update-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -TeamsTabId $teamsTabId -BodyParameter $params
-
 ```
-This example shows how to use the Update-MgTeamChannelTab Cmdlet.
 
+This example shows how to use the Update-MgTeamChannelTab Cmdlet.
 
 ## PARAMETERS
 
@@ -408,4 +407,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+
 [Update-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelTab?view=graph-powershell-beta)

@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
+ms.prod: insights
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusersharedcountinsight
 schema: 2.0.0
-ms.prod: insights
 ---
 
 # Get-MgUserSharedCountInsight
@@ -28,18 +28,17 @@ Get-MgUserSharedCountInsight -InputObject <IPeopleIdentity> [-Filter <String>] [
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.People
 
 # A UPN can also be used as -UserId.
 Get-MgUserSharedInsight -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserSharedInsight Cmdlet.
 
+This example shows how to use the Get-MgUserSharedInsight Cmdlet.
 
 ## PARAMETERS
 

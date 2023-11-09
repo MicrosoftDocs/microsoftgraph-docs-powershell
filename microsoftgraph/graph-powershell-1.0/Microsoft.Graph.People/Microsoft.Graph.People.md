@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.People
 Module Guid: 31f2e433-4ecd-413c-a583-d1c8a969960d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.people
@@ -17,8 +17,14 @@ Get lastSharedMethod from users
 ### [Get-MgUserLastSharedMethodInsight](Get-MgUserLastSharedMethodInsight.md)
 Get lastSharedMethod from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPerson](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPerson?view=graph-powershell-beta)
+
 ### [Get-MgUserPersonCount](Get-MgUserPersonCount.md)
 Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPersonCount](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPersonCount?view=graph-powershell-beta)
 
 ### [Get-MgUserSharedCountInsight](Get-MgUserSharedCountInsight.md)
 Get the number of the resource

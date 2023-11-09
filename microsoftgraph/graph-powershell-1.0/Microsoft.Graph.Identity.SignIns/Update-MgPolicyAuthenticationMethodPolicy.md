@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy
@@ -36,6 +36,7 @@ Update the properties of an authenticationMethodsPolicy object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -61,10 +62,10 @@ $params = @{
 
 Update-MgPolicyAuthenticationMethodPolicy -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgPolicyAuthenticationMethodPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -340,4 +341,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[State <String>]`: advancedConfigState
 
 ## RELATED LINKS
+
 [Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)

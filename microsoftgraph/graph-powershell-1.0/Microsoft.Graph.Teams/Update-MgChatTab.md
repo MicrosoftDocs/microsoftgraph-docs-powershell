@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchattab
@@ -49,10 +49,10 @@ This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Update the name of a tab in a chat
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -60,10 +60,9 @@ $params = @{
 }
 
 Update-MgChatTab -ChatId $chatId -TeamsTabId $teamsTabId -BodyParameter $params
-
 ```
-This example will update the name of a tab in a chat
 
+This example will update the name of a tab in a chat
 
 ## PARAMETERS
 
@@ -394,4 +393,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+
 [Update-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatTab?view=graph-powershell-beta)

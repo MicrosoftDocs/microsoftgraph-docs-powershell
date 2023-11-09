@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicyexclude
@@ -54,6 +54,7 @@ You do this by adding a permissionGrantConditionSet to the excludes collection o
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Create a permission grant policy exclude
 
 ```powershell
@@ -73,7 +74,6 @@ AdditionalProperties                        : {[@odata.context, https://graph.mi
 ```
 
 This command creates a new permission grant policy exclude configuration for the specified permission grant policy in Azure AD.
-
 
 ## PARAMETERS
 
@@ -406,4 +406,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [New-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)

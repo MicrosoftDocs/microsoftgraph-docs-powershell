@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainviteuserdriveroot
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaInviteUserDriveRoot
@@ -50,6 +50,8 @@ Invoke-MgBetaInviteUserDriveRoot -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Sends a sharing invitation for a DriveItem.nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -361,5 +363,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+
 [Invoke-MgInviteUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInviteUserDriveRoot?view=graph-powershell-1.0)
 

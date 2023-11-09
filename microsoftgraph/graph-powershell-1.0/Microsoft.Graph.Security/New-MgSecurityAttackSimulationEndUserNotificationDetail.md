@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationendusernotificationdetail
@@ -45,6 +45,8 @@ New-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecurityI
 
 ## DESCRIPTION
 Create new navigation property to details for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -341,5 +343,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
 

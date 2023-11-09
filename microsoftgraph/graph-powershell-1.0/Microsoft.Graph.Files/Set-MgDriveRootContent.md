@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriverootcontent
@@ -29,6 +29,8 @@ Set-MgDriveRootContent -InputObject <IFilesIdentity> [-Data <Stream>] -InFile <S
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -172,5 +174,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveRootContent?view=graph-powershell-beta)
 

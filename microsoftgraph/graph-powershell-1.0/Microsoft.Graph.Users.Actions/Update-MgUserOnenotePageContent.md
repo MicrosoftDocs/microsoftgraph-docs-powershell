@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguseronenotepagecontent
@@ -45,6 +45,8 @@ Update-MgUserOnenotePageContent -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Invoke action onenotePatchContent
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -252,5 +254,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaUserOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserOnenotePageContent?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistoperation
@@ -47,6 +47,8 @@ Update-MgGroupDriveListOperation -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update the navigation property operations in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -418,5 +420,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListOperation?view=graph-powershell-beta)
 

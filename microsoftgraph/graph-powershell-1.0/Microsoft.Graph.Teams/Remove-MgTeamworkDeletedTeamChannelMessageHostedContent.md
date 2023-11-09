@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchannelmessagehostedcontent
@@ -30,6 +30,8 @@ Remove-MgTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIden
 
 ## DESCRIPTION
 Delete navigation property hostedContents for teamwork
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -223,5 +225,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-beta)
 

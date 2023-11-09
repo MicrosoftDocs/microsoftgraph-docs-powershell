@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttypecolumnlink
@@ -41,6 +41,8 @@ New-MgSiteContentTypeColumnLink -InputObject <ISitesIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create new navigation property to columnLinks for sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -248,5 +250,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentTypeColumnLink?view=graph-powershell-beta)
 

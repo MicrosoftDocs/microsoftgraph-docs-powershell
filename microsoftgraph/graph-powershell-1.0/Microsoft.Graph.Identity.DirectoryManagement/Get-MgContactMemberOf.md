@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmemberof
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgContactMemberOf
@@ -45,17 +45,16 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContactMemberOf -OrgContactId $orgContactId
-
 ```
-This example shows how to use the Get-MgContactMemberOf Cmdlet.
 
+This example shows how to use the Get-MgContactMemberOf Cmdlet.
 
 ## PARAMETERS
 
@@ -316,4 +315,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaContactMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactMemberOf?view=graph-powershell-beta)

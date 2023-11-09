@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mginvitation
@@ -29,6 +29,8 @@ Remove-MgInvitation -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] 
 
 ## DESCRIPTION
 Delete entity from invitations
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -200,5 +202,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaInvitation?view=graph-powershell-beta)
 

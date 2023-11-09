@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest
@@ -50,10 +50,10 @@ Create an instance of an offerShiftRequest.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -63,10 +63,9 @@ $params = @{
 }
 
 New-MgTeamScheduleOfferShiftRequest -TeamId $teamId -BodyParameter $params
-
 ```
-This example shows how to use the New-MgTeamScheduleOfferShiftRequest Cmdlet.
 
+This example shows how to use the New-MgTeamScheduleOfferShiftRequest Cmdlet.
 
 ## PARAMETERS
 
@@ -382,4 +381,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+
 [New-MgBetaTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOfferShiftRequest?view=graph-powershell-beta)

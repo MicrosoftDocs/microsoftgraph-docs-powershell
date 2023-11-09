@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/skip-mgusermanageddeviceactivationlock
@@ -29,6 +29,8 @@ Skip-MgUserManagedDeviceActivationLock -InputObject <IUsersActionsIdentity> [-Pa
 
 ## DESCRIPTION
 Bypass activation lock
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -174,5 +176,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Skip-MgBetaUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Skip-MgBetaUserManagedDeviceActivationLock?view=graph-powershell-beta)
 

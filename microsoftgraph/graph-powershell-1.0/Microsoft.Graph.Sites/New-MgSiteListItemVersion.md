@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitemversion
@@ -47,6 +47,7 @@ New-MgSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 Create new navigation property to versions for sites
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -54,10 +55,10 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId
 ```
+
 This example shows how to use the New-MgSiteListItemVersion Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -366,4 +367,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+
 [New-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItemVersion?view=graph-powershell-beta)

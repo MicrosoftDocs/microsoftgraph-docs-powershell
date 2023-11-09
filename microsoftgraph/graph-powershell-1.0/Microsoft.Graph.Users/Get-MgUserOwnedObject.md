@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
+ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevicecountasendpoint
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserOwnedDeviceCountAsEndpoint
@@ -32,18 +32,17 @@ Get-MgUserOwnedDeviceCountAsEndpoint -InputObject <IUsersIdentity> [-Filter <Str
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Users
 
 # A UPN can also be used as -UserId.
 Get-MgUserOwnedObject -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserOwnedObject Cmdlet.
 
+This example shows how to use the Get-MgUserOwnedObject Cmdlet.
 
 ## PARAMETERS
 
@@ -158,4 +157,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserOwnedObject](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObject?view=graph-powershell-beta)

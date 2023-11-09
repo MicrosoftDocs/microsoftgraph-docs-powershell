@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistitemdocumentsetversion
@@ -31,6 +31,8 @@ Remove-MgDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch
 ## DESCRIPTION
 Delete a version of a document set in a list.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -201,5 +203,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveListItemDocumentSetVersion?view=graph-powershell-beta)
 

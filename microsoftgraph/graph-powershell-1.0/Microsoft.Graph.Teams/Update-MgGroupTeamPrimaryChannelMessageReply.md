@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamprimarychannelmessagereply
@@ -59,6 +59,8 @@ Update-MgGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Update the navigation property replies in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -892,3 +894,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
 
+## RELATED LINKS

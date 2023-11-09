@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
+ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteammigration
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Complete-MgTeamMigration
@@ -38,17 +38,16 @@ You can add members to the team after the request returns a successful response.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Complete-MgTeamMigration -TeamId $teamId
-
 ```
-This example shows how to use the Complete-MgTeamMigration Cmdlet.
 
+This example shows how to use the Complete-MgTeamMigration Cmdlet.
 
 ## PARAMETERS
 
@@ -182,4 +181,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Complete-MgBetaTeamMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamMigration?view=graph-powershell-beta)

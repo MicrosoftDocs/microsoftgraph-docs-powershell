@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmenttopfailure
@@ -34,6 +34,8 @@ Get-MgReportManagedDeviceEnrollmentTopFailure -InputObject <IReportsIdentity> -O
 
 ## DESCRIPTION
 Invoke function managedDeviceEnrollmentTopFailures
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -139,5 +141,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-beta)
 

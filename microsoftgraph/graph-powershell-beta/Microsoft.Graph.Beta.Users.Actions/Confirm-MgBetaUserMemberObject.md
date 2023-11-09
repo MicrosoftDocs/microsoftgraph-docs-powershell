@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetausermemberobject
@@ -45,6 +45,7 @@ Confirm-MgBetaUserMemberObject -InputObject <IUsersActionsIdentity>
 Invoke action checkMemberObjects
 
 ## EXAMPLES
+
 ### Example 1: Using the Confirm-MgBetaUserMemberObject Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -59,6 +60,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Confirm-MgBetaUserMemberObject -UserId $userId -BodyParameter $params
 ```
+
 This example shows how to use the Confirm-MgBetaUserMemberObject Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -236,4 +238,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Confirm-MgUserMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserMemberObject?view=graph-powershell-1.0)

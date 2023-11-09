@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/search-mggroupdriveitem
@@ -30,6 +30,8 @@ Search-MgGroupDriveItem -InputObject <IGroupsIdentity> [-Count] [-Filter <String
 
 ## DESCRIPTION
 Invoke function search
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -270,5 +272,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Search-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDriveItem?view=graph-powershell-beta)
 

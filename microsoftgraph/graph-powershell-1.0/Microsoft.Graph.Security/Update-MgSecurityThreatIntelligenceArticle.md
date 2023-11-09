@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencearticle
@@ -47,6 +47,8 @@ Update-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the navigation property articles in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -412,5 +414,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 

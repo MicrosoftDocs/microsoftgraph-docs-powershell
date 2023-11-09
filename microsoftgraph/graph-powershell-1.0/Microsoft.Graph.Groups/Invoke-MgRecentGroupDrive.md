@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrecentgroupdrive
@@ -30,6 +30,8 @@ Invoke-MgRecentGroupDrive -InputObject <IGroupsIdentity> [-Count] [-Filter <Stri
 
 ## DESCRIPTION
 Invoke function recent
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -240,5 +242,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Invoke-MgBetaRecentGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRecentGroupDrive?view=graph-powershell-beta)
 

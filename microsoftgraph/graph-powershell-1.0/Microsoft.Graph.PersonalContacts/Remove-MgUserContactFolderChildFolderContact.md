@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfolderchildfoldercontact
@@ -29,6 +29,8 @@ Remove-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIden
 
 ## DESCRIPTION
 Delete navigation property contacts for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -195,5 +197,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolderChildFolderContact?view=graph-powershell-beta)
 

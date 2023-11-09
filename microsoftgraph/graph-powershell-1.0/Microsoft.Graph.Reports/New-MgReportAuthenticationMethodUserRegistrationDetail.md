@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail
@@ -33,6 +33,8 @@ New-MgReportAuthenticationMethodUserRegistrationDetail -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create new navigation property to userRegistrationDetails for reports
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -397,5 +399,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: signInUserType
 
 ## RELATED LINKS
+
 [New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 

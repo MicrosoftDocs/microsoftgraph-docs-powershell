@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplancount
@@ -28,6 +28,8 @@ Get-MgGroupPlannerPlanCount -InputObject <IPlannerIdentity> [-Filter <String>] [
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -118,5 +120,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupPlannerPlanCount](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanCount?view=graph-powershell-beta)
 

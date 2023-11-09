@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished
@@ -29,11 +29,13 @@ Test-MgSiteContentTypePublished -InputObject <ISitesIdentity> [<CommonParameters
 Invoke function isPublished
 
 ## EXAMPLES
+
 ### Example 1: Using the Test-MgSiteContentTypePublished Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Test-MgSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeId
 ```
+
 This example shows how to use the Test-MgSiteContentTypePublished Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -144,4 +146,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Test-MgBetaSiteContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Sites/Test-MgBetaSiteContentTypePublished?view=graph-powershell-beta)

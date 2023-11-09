@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemdriveitem
@@ -29,6 +29,8 @@ Get-MgGroupDriveListItemDriveItem -InputObject <IFilesIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -168,5 +170,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemDriveItem?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
@@ -30,6 +30,8 @@ Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtect
 
 ## DESCRIPTION
 Update informationProtection
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -211,5 +213,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: threatAssessmentStatus
 
 ## RELATED LINKS
+
 [Update-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtection?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryresourcenamespace
@@ -43,6 +43,8 @@ Update-MgRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGoverna
 
 ## DESCRIPTION
 Update the navigation property resourceNamespaces in roleManagement
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -298,5 +300,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceScopeId <String>]`: 
 
 ## RELATED LINKS
+
 [Update-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
 

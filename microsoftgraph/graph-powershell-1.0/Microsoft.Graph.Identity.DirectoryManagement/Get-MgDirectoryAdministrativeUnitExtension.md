@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitextension
@@ -38,6 +38,8 @@ Get-MgDirectoryAdministrativeUnitExtension -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 The collection of open extensions defined for this administrative unit.
 Nullable.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -283,5 +285,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitExtension?view=graph-powershell-beta)
 

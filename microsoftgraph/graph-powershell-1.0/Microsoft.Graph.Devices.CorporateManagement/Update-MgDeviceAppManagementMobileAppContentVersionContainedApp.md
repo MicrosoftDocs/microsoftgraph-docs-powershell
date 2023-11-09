@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappcontentversioncontainedapp
 schema: 2.0.0
@@ -15,309 +15,329 @@ Update the navigation property containedApps in deviceAppManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateExpanded (Default)
+### UpdateExpanded9
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update1
+### UpdateExpanded8
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update10
+### UpdateExpanded7
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update2
+### UpdateExpanded6
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update3
+### UpdateExpanded5
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update4
+### UpdateExpanded4
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update5
+### UpdateExpanded3
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update6
+### UpdateExpanded2
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded10
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded1
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Update9
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update8
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update7
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update8
+### Update6
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update9
+### Update5
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update9
+### Update4
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateExpanded1
+### Update3
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### UpdateExpanded1
+### Update2
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### UpdateExpanded10
+### Update10
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### UpdateExpanded10
+### Update1
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### UpdateExpanded2
+### Update
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded2
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded3
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded3
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded4
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded4
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded5
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded5
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded6
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded6
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded7
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded7
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded8
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded8
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded9
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateExpanded9
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded10
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded2
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded3
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded4
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded5
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded6
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded7
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded8
-```
-Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -MobileAppId <String> -MobileContainedAppId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded9
 ```
 Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
  -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded8
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded7
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded6
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded5
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded4
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded3
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded2
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded10
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded (Default)
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded9
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded8
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded7
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded6
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded5
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded4
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded3
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded2
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded10
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded1
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Update9
+```
+Update-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -325,19 +345,15 @@ Update the navigation property containedApps in deviceAppManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -345,8 +361,8 @@ Update the navigation property containedApps in deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded, UpdateExpanded, UpdateExpanded1, UpdateExpanded1, UpdateExpanded10, UpdateExpanded10, UpdateExpanded2, UpdateExpanded2, UpdateExpanded3, UpdateExpanded3, UpdateExpanded4, UpdateExpanded4, UpdateExpanded5, UpdateExpanded5, UpdateExpanded6, UpdateExpanded6, UpdateExpanded7, UpdateExpanded7, UpdateExpanded8, UpdateExpanded8, UpdateExpanded9, UpdateExpanded9, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded10, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded4, UpdateViaIdentityExpanded5, UpdateViaIdentityExpanded6, UpdateViaIdentityExpanded7, UpdateViaIdentityExpanded8, UpdateViaIdentityExpanded9
+Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded10, UpdateExpanded1, UpdateViaIdentityExpanded9, UpdateViaIdentityExpanded8, UpdateViaIdentityExpanded7, UpdateViaIdentityExpanded6, UpdateViaIdentityExpanded5, UpdateViaIdentityExpanded4, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded10, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -360,8 +376,8 @@ Accept wildcard characters: False
 An abstract class that represents a contained app in a mobileApp acting as a package.
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: Update, Update1, Update10, Update2, Update3, Update4, Update5, Update6, Update7, Update8, Update9, Update9
+Type: Hashtable
+Parameter Sets: UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update10, Update1, Update
 Aliases:
 
 Required: True
@@ -376,8 +392,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateExpanded, UpdateExpanded1, UpdateExpanded1, UpdateExpanded10, UpdateExpanded10, UpdateExpanded2, UpdateExpanded2, UpdateExpanded3, UpdateExpanded3, UpdateExpanded4, UpdateExpanded4, UpdateExpanded5, UpdateExpanded5, UpdateExpanded6, UpdateExpanded6, UpdateExpanded7, UpdateExpanded7, UpdateExpanded8, UpdateExpanded8, UpdateExpanded9, UpdateExpanded9, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded10, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded4, UpdateViaIdentityExpanded5, UpdateViaIdentityExpanded6, UpdateViaIdentityExpanded7, UpdateViaIdentityExpanded8, UpdateViaIdentityExpanded9
+Type: String
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded10, UpdateExpanded1, UpdateViaIdentityExpanded9, UpdateViaIdentityExpanded8, UpdateViaIdentityExpanded7, UpdateViaIdentityExpanded6, UpdateViaIdentityExpanded5, UpdateViaIdentityExpanded4, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded10, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -392,8 +408,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded10, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded4, UpdateViaIdentityExpanded5, UpdateViaIdentityExpanded6, UpdateViaIdentityExpanded7, UpdateViaIdentityExpanded8, UpdateViaIdentityExpanded9
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded10, UpdateExpanded1, Update9, UpdateViaIdentityExpanded9, UpdateViaIdentityExpanded8, UpdateViaIdentityExpanded7, UpdateViaIdentityExpanded6, UpdateViaIdentityExpanded5, UpdateViaIdentityExpanded4, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded10, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -407,8 +423,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppContent
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, Update10, Update2, Update3, Update4, Update5, Update6, Update7, Update8, Update9, Update9, UpdateExpanded, UpdateExpanded, UpdateExpanded1, UpdateExpanded1, UpdateExpanded10, UpdateExpanded10, UpdateExpanded2, UpdateExpanded2, UpdateExpanded3, UpdateExpanded3, UpdateExpanded4, UpdateExpanded4, UpdateExpanded5, UpdateExpanded5, UpdateExpanded6, UpdateExpanded6, UpdateExpanded7, UpdateExpanded7, UpdateExpanded8, UpdateExpanded8, UpdateExpanded9, UpdateExpanded9
+Type: String
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update10, Update1, Update
 Aliases:
 
 Required: True
@@ -422,8 +438,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, Update10, Update2, Update3, Update4, Update5, Update6, Update7, Update8, Update9, Update9, UpdateExpanded, UpdateExpanded, UpdateExpanded1, UpdateExpanded1, UpdateExpanded10, UpdateExpanded10, UpdateExpanded2, UpdateExpanded2, UpdateExpanded3, UpdateExpanded3, UpdateExpanded4, UpdateExpanded4, UpdateExpanded5, UpdateExpanded5, UpdateExpanded6, UpdateExpanded6, UpdateExpanded7, UpdateExpanded7, UpdateExpanded8, UpdateExpanded8, UpdateExpanded9, UpdateExpanded9
+Type: String
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update10, Update1, Update
 Aliases:
 
 Required: True
@@ -437,8 +453,8 @@ Accept wildcard characters: False
 The unique identifier of mobileContainedApp
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, Update10, Update2, Update3, Update4, Update5, Update6, Update7, Update8, Update9, Update9, UpdateExpanded, UpdateExpanded, UpdateExpanded1, UpdateExpanded1, UpdateExpanded10, UpdateExpanded10, UpdateExpanded2, UpdateExpanded2, UpdateExpanded3, UpdateExpanded3, UpdateExpanded4, UpdateExpanded4, UpdateExpanded5, UpdateExpanded5, UpdateExpanded6, UpdateExpanded6, UpdateExpanded7, UpdateExpanded7, UpdateExpanded8, UpdateExpanded8, UpdateExpanded9, UpdateExpanded9
+Type: String
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update10, Update1, Update
 Aliases:
 
 Required: True
@@ -452,8 +468,8 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update10, Update1, Update, UpdateViaIdentityExpanded9, UpdateViaIdentityExpanded8, UpdateViaIdentityExpanded7, UpdateViaIdentityExpanded6, UpdateViaIdentityExpanded5, UpdateViaIdentityExpanded4, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded10, UpdateViaIdentityExpanded1
 Aliases: cf
 
 Required: False
@@ -468,8 +484,8 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update10, Update1, Update, UpdateViaIdentityExpanded9, UpdateViaIdentityExpanded8, UpdateViaIdentityExpanded7, UpdateViaIdentityExpanded6, UpdateViaIdentityExpanded5, UpdateViaIdentityExpanded4, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded10, UpdateViaIdentityExpanded1
 Aliases: wi
 
 Required: False
@@ -485,13 +501,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -541,4 +554,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-

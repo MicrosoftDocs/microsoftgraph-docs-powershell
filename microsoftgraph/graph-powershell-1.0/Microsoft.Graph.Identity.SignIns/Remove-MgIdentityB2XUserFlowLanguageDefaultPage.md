@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityb2xuserflowlanguagedefaultpage
@@ -30,6 +30,8 @@ Remove-MgIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsId
 
 ## DESCRIPTION
 Delete navigation property defaultPages for identity
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -231,5 +233,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-beta)
 

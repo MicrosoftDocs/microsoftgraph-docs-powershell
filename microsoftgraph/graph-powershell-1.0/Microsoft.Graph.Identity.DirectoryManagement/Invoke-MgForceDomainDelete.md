@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgforcedomaindelete
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Invoke-MgForceDomainDelete
@@ -55,6 +55,7 @@ To verify deletion of a domain, you can perform a get domain operation.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Invoke-MgForceDomainDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
@@ -63,6 +64,7 @@ $params = @{
 }
 Invoke-MgForceDomainDelete -DomainId $domainId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgForceDomainDelete Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -240,4 +242,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaForceDomainDelete](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaForceDomainDelete?view=graph-powershell-beta)

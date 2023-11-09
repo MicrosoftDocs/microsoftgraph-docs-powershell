@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupthreadpostextension
@@ -41,6 +41,8 @@ New-MgGroupThreadPostExtension -InputObject <IGroupsIdentity> -BodyParameter <Ha
 
 ## DESCRIPTION
 Create new navigation property to extensions for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -239,5 +241,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [New-MgBetaGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupThreadPostExtension?view=graph-powershell-beta)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementresourceenvironmentresourcescoperesource
@@ -29,6 +29,8 @@ Remove-MgEntitlementManagementResourceEnvironmentResourceScopeResource
 
 ## DESCRIPTION
 Delete navigation property resource for identityGovernance
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -243,4 +245,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

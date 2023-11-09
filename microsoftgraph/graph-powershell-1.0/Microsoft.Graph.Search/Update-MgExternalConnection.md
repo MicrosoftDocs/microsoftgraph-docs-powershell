@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection
@@ -20,8 +20,8 @@ This API is available in the following national cloud deployments.
 ```
 Update-MgExternalConnection -ExternalConnectionId <String>
  [-ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>] [-AdditionalProperties <Hashtable>]
- [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-Description <String>]
- [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>]
+ [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-ConnectorId <String>]
+ [-Description <String>] [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>]
  [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
@@ -39,8 +39,8 @@ Update-MgExternalConnection -ExternalConnectionId <String>
 ```
 Update-MgExternalConnection -InputObject <ISearchIdentity>
  [-ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>] [-AdditionalProperties <Hashtable>]
- [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-Description <String>]
- [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>]
+ [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-ConnectorId <String>]
+ [-Description <String>] [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>]
  [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
@@ -59,6 +59,7 @@ Update the properties of an externalConnection object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
@@ -71,10 +72,10 @@ $params = @{
 
 Update-MgExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params
 ```
+
 This example shows how to use the Update-MgExternalConnection Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -131,6 +132,22 @@ To construct, see NOTES section for CONFIGURATION properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsConfiguration
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ConnectorId
+The Teams app ID.
+Optional.
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -544,3 +561,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
+
+
+## RELATED LINKS

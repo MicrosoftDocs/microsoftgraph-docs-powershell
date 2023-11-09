@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserlicensedetail
@@ -29,6 +29,8 @@ Remove-MgUserLicenseDetail -InputObject <IUsersIdentity> [-IfMatch <String>] [-P
 
 ## DESCRIPTION
 Delete navigation property licenseDetails for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -173,5 +175,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 

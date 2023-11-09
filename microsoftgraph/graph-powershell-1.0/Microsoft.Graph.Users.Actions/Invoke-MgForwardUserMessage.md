@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Invoke-MgForwardUserMessage
@@ -62,6 +62,7 @@ Alternatively, create a draft to forward a message, and send it later.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Using the Invoke-MgForwardUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -79,6 +80,7 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+
 This example shows how to use the Invoke-MgForwardUserMessage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -451,3 +453,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaForwardUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaForwardUserMessage?view=graph-powershell-beta)
+
+
+## RELATED LINKS

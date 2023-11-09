@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotenotebooksectiongroupsectionpage
@@ -51,6 +51,8 @@ Update-MgGroupSiteOnenoteNotebookSectionGroupSectionPage -InputObject <ISitesIde
 
 ## DESCRIPTION
 Update the navigation property pages in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -749,3 +751,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
 
+## RELATED LINKS

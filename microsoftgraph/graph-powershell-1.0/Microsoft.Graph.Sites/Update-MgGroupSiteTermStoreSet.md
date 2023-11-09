@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoreset
@@ -83,6 +83,8 @@ Update-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the properties of a set object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -655,3 +657,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 
+## RELATED LINKS

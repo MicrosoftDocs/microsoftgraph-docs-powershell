@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivebundle
@@ -75,6 +75,8 @@ New-MgUserDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Create new navigation property to bundles for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -18812,3 +18814,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaUserDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveBundle?view=graph-powershell-beta)
 
+## RELATED LINKS

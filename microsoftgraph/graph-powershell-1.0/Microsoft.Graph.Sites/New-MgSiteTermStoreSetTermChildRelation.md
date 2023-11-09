@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresettermchildrelation
@@ -73,6 +73,8 @@ New-MgSiteTermStoreSetTermChildRelation -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Create new navigation property to relations for sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -549,3 +551,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSiteTermStoreSetTermChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetTermChildRelation?view=graph-powershell-beta)
 
+## RELATED LINKS

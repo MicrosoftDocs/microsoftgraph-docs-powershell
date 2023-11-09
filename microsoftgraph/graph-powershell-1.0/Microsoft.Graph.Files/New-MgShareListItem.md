@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitem
@@ -57,6 +57,8 @@ New-MgShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create a new listItem][] in a [list][].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -14977,3 +14979,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItem?view=graph-powershell-beta)
 
+## RELATED LINKS

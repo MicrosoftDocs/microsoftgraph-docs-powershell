@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserinformationprotectiondatalosspreventionpolicy
@@ -44,6 +44,8 @@ Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IUser
 
 ## DESCRIPTION
 Invoke action evaluate
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -285,4 +287,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Author <String>]`: 
 
 ## RELATED LINKS
-

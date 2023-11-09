@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberasdevice
@@ -36,6 +36,8 @@ Get-MgDirectoryAdministrativeUnitMemberAsDevice -InputObject <IIdentityDirectory
 
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -296,5 +298,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDirectoryAdministrativeUnitMemberAsDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMemberAsDevice?view=graph-powershell-beta)
 

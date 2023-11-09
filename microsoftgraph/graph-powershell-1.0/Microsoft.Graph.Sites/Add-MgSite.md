@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/add-mgsite
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Add-MgSite
@@ -30,6 +30,8 @@ Add-MgSite -BodyParameter <IPathsV2U0Z1SitesMicrosoftGraphAddPostRequestbodyCont
 
 ## DESCRIPTION
 Follow a user's site or multiple sites.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -5885,3 +5887,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSite?view=graph-powershell-beta)
 
+## RELATED LINKS

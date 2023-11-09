@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistsubscription
@@ -49,6 +49,8 @@ Update-MgGroupDriveListSubscription -InputObject <IFilesIdentity> -BodyParameter
 
 ## DESCRIPTION
 Update the navigation property subscriptions in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -511,5 +513,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListSubscription?view=graph-powershell-beta)
 

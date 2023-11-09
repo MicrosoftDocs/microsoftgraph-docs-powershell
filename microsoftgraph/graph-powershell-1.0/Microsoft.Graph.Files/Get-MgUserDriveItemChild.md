@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemchild
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveItemChild
@@ -43,6 +43,8 @@ Collection containing Item objects for the immediate children of Item.
 Only items representing folders have children.
 Read-only.
 Nullable.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -318,5 +320,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemChild?view=graph-powershell-beta)
 

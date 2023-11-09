@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroupdrive
@@ -29,6 +29,8 @@ Invoke-MgGraphGroupDrive -InputObject <IGroupsIdentity> [-Count] [-Filter <Strin
 
 ## DESCRIPTION
 Invoke function sharedWithMe
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -239,5 +241,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Invoke-MgBetaGraphGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroupDrive?view=graph-powershell-beta)
 

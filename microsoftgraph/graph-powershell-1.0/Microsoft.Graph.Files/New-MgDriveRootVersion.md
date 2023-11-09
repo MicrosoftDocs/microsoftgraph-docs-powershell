@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootversion
@@ -44,6 +44,8 @@ New-MgDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Create new navigation property to versions for drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -322,5 +324,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+
 [New-MgBetaDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootVersion?view=graph-powershell-beta)
 

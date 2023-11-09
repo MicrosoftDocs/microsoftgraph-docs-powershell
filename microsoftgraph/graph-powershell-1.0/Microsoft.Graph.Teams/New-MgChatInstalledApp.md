@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatinstalledapp
@@ -49,10 +49,10 @@ Install a teamsApp to the specified chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -60,10 +60,9 @@ $params = @{
 }
 
 New-MgChatInstalledApp -ChatId $chatId -BodyParameter $params
-
 ```
-This example shows how to use the New-MgChatInstalledApp Cmdlet.
 
+This example shows how to use the New-MgChatInstalledApp Cmdlet.
 
 ## PARAMETERS
 
@@ -390,3 +389,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatInstalledApp?view=graph-powershell-beta)
+
+
+## RELATED LINKS

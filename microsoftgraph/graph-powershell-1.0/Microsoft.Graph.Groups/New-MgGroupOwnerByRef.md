@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupownerbyref
@@ -47,6 +47,7 @@ The owners are a set of users or service principals who are allowed to modify th
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Add an owner to a group
 
 ```powershell
@@ -246,4 +247,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [New-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupOwnerByRef?view=graph-powershell-beta)

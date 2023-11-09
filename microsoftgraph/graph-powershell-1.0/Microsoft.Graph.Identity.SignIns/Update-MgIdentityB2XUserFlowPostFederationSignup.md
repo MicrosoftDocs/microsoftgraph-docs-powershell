@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowpostfederationsignup
@@ -43,6 +43,8 @@ Update-MgIdentityB2XUserFlowPostFederationSignup -InputObject <IIdentitySignInsI
 
 ## DESCRIPTION
 Update the navigation property postFederationSignup in identity
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -285,5 +287,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Update-MgBetaIdentityB2XUserFlowPostFederationSignup](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowPostFederationSignup?view=graph-powershell-beta)
 

@@ -1,9 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
+ms.prod: governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourceenvironment
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementResourceEnvironment
@@ -58,6 +58,8 @@ Get-MgEntitlementManagementResourceEnvironment -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 A reference to the geolocation environments in which a resource is located.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -347,4 +349,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

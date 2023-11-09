@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsettingtemplategroupsettingtemplate
@@ -27,6 +27,8 @@ New-MgGroupSettingTemplateGroupSettingTemplate -BodyParameter <IMicrosoftGraphGr
 
 ## DESCRIPTION
 Add new entity to groupSettingTemplates
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -208,4 +210,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the setting.
 
 ## RELATED LINKS
-

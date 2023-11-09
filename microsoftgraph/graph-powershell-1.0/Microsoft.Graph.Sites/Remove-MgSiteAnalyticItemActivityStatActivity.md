@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsiteanalyticitemactivitystatactivity
@@ -29,6 +29,8 @@ Remove-MgSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity> [-If
 
 ## DESCRIPTION
 Delete navigation property activities for sites
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -213,5 +215,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 

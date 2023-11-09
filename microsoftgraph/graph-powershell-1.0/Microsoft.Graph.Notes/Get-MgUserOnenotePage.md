@@ -1,10 +1,9 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
+ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenoteoperationcount
 schema: 2.0.0
-ms.prod: onenote
-ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteOperationCount
@@ -32,18 +31,17 @@ Get-MgUserOnenoteOperationCount -InputObject <INotesIdentity> [-Filter <String>]
 Get the number of the resource
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Notes
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenotePage -UserId $userId
-
 ```
-This example shows how to use the Get-MgUserOnenotePage Cmdlet.
 
+This example shows how to use the Get-MgUserOnenotePage Cmdlet.
 
 ## PARAMETERS
 
@@ -138,4 +136,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePage?view=graph-powershell-beta)

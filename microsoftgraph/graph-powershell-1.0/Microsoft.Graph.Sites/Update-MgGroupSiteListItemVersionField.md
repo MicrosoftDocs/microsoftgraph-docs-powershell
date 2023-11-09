@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemversionfield
@@ -43,6 +43,8 @@ Update-MgGroupSiteListItemVersionField -InputObject <ISitesIdentity> -BodyParame
 
 ## DESCRIPTION
 Update the navigation property fields in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -274,5 +276,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupSiteListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemVersionField?view=graph-powershell-beta)
 

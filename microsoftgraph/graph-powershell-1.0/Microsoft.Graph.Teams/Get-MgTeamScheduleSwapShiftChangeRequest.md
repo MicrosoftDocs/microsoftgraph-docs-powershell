@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleswapshiftchangerequest
@@ -40,17 +40,16 @@ Retrieve the properties and relationships of a swapShiftsChangeRequest object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+
 ### Example 1: Code snippet
 
 ```powershell
-
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleSwapShiftChangeRequest -TeamId $teamId
-
 ```
-This example shows how to use the Get-MgTeamScheduleSwapShiftChangeRequest Cmdlet.
 
+This example shows how to use the Get-MgTeamScheduleSwapShiftChangeRequest Cmdlet.
 
 ## PARAMETERS
 
@@ -304,4 +303,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
