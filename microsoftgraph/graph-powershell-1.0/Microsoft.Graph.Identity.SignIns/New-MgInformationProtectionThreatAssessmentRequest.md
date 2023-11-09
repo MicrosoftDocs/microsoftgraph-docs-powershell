@@ -36,7 +36,6 @@ Create a new threat assessment request.
 A threat assessment request can be one of the following types: This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Create a mail assessment request
 
 ```powershell
@@ -52,7 +51,6 @@ $params = @{
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
 ```
-
 This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -72,7 +70,6 @@ $params = @{
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
 ```
-
 This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -92,7 +89,6 @@ $params = @{
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
 ```
-
 This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -111,10 +107,10 @@ $params = @{
 
 New-MgInformationProtectionThreatAssessmentRequest -BodyParameter $params
 ```
-
 This example shows how to use the New-MgInformationProtectionThreatAssessmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

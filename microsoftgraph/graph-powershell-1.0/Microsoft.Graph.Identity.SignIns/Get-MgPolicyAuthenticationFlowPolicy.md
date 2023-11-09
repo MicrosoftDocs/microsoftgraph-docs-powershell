@@ -27,16 +27,17 @@ Read the properties and relationships of an authenticationFlowsPolicy object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyAuthenticationFlowPolicy
-```
 
+```
 This example shows how to use the Get-MgPolicyAuthenticationFlowPolicy Cmdlet.
+
 
 ## PARAMETERS
 

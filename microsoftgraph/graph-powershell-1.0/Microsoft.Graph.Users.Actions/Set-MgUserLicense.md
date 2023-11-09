@@ -52,7 +52,6 @@ You can also enable and disable specific plans associated with a subscription.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Assign a license to a user
 
 ```powershell

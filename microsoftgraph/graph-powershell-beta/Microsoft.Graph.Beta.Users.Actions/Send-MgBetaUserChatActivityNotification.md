@@ -56,7 +56,6 @@ For more information, see sending Teams activity notifications.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Notify a user about a task created in a chat
 
 ```powershell
@@ -85,7 +84,6 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -118,7 +116,6 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -151,7 +148,6 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -185,10 +181,10 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

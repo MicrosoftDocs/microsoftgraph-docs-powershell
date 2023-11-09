@@ -33,7 +33,6 @@ Delete an internalDomainFederation object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Remove federation settigs for a federated domain
 
 ```powershell

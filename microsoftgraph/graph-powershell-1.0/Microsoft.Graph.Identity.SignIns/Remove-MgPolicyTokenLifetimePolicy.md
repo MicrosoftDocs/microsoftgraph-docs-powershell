@@ -33,7 +33,6 @@ Delete a tokenLifetimePolicy object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -41,10 +40,10 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgPolicyTokenLifetimePolicy -TokenLifetimePolicyId $tokenLifetimePolicyId
 ```
-
 This example shows how to use the Remove-MgPolicyTokenLifetimePolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

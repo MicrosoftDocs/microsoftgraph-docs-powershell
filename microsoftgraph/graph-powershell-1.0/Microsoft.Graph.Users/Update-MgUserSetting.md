@@ -47,20 +47,6 @@ Users in the same organization can have different settings based on their prefer
 To get the user current settings, see current user settings.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users
-```
-
-$params = @{
-	contributionToContentDiscoveryDisabled = $true
-}
-
-# A UPN can also be used as -UserId.
-Update-MgUserSetting -UserId $userId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties

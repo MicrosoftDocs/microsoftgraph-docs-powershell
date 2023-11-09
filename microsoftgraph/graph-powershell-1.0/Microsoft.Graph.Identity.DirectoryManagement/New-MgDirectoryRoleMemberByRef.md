@@ -51,7 +51,6 @@ For details, see Role template IDs.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Add a member to a diretory role
 
 ```powershell

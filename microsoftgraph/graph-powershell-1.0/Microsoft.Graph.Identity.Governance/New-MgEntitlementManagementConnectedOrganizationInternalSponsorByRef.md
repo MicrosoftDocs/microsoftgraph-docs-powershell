@@ -47,7 +47,6 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -59,10 +58,10 @@ $params = @{
 
 New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

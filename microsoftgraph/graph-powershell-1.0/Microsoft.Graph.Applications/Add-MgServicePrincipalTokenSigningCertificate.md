@@ -63,11 +63,11 @@ The endDateTime can be up to three years after the certificate is created.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	displayName = "CN=customDisplayName"
@@ -75,6 +75,10 @@ $params = @{
 }
 
 Add-MgServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgServicePrincipalTokenSigningCertificate Cmdlet.
+
 
 ## PARAMETERS
 

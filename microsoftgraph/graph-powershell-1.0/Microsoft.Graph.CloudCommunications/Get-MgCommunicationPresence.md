@@ -41,13 +41,17 @@ Get a user's presence information.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get the presence information of another user
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationPresence -PresenceId $presenceId
+
+```
+This example will get the presence information of another user
+
 
 ## PARAMETERS
 

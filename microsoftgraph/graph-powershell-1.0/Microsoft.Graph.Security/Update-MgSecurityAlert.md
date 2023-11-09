@@ -81,7 +81,6 @@ This method updates any solution that has a record of the referenced alert ID.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Request without Prefer header
 
 ```powershell
@@ -106,7 +105,6 @@ $params = @{
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgSecurityAlert Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -135,10 +133,10 @@ $params = @{
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgSecurityAlert Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

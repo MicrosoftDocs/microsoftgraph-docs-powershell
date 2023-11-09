@@ -32,8 +32,6 @@ Remove-MgUserChatTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThr
 Remove (unpin) a tab from the specified chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChatId

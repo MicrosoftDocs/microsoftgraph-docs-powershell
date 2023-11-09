@@ -43,7 +43,6 @@ To retrieve Stream types of the default branding, for example, bannerLogo and ba
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -51,7 +50,6 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBranding -OrganizationId $organizationId
 ```
-
 This example shows how to use the Get-MgOrganizationBranding Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -63,7 +61,6 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBranding -OrganizationId $organizationId
 ```
-
 This example shows how to use the Get-MgOrganizationBranding Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -75,10 +72,10 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBranding -OrganizationId $organizationId
 ```
-
 This example shows how to use the Get-MgOrganizationBranding Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

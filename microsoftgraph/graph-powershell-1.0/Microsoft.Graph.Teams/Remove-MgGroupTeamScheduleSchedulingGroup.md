@@ -34,8 +34,6 @@ Mark a schedulingGroup as inactive by setting its isActive property.This method 
 Existing shift instances assigned to the scheduling group remain part of the group.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

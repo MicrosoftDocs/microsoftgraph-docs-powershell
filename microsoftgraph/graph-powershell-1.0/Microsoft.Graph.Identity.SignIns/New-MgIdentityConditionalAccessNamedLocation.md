@@ -36,7 +36,6 @@ Named locations can be either ipNamedLocation or countryNamedLocation objects.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Create a country named location
 
 ```powershell

@@ -37,7 +37,6 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -53,10 +52,10 @@ $params = @{
 
 New-MgIdentityProvider -BodyParameter $params
 ```
-
 This example shows how to use the New-MgIdentityProvider Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

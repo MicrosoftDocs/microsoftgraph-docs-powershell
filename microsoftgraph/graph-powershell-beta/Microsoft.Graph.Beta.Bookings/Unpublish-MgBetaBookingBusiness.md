@@ -35,12 +35,13 @@ Set the isPublished property to false, and publicUrl property to null.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Unpublish-MgBetaBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Unpublish-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
+This example shows how to use the Unpublish-MgBetaBookingBusiness Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

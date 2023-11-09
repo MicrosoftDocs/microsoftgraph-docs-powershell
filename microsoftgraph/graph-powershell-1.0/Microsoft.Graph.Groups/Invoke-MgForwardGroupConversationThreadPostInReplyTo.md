@@ -54,7 +54,6 @@ You can specify both the parent conversation and thread in the request, nor, you
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -74,10 +73,10 @@ $params = @{
 
 Invoke-MgForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgForwardGroupConversationThreadPostInReplyTo Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

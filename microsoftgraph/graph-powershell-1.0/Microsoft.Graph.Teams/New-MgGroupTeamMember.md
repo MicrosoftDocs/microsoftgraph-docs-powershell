@@ -46,8 +46,6 @@ New-MgGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Add a new conversationMember to a team.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

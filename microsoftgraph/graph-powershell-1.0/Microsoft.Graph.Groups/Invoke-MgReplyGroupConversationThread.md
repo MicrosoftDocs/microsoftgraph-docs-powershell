@@ -52,7 +52,6 @@ You can specify the parent conversation in the request, or, you can specify just
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Include a file attachment
 
 ```powershell
@@ -76,7 +75,6 @@ $params = @{
 
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgReplyGroupConversationThread Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -107,7 +105,6 @@ $params = @{
 
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgReplyGroupConversationThread Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -138,10 +135,10 @@ $params = @{
 
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgReplyGroupConversationThread Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

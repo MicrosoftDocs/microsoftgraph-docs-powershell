@@ -32,8 +32,6 @@ Remove-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch <Str
 Delete an openShift object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

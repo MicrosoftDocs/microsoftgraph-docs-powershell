@@ -97,8 +97,6 @@ Get-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Children terms of set in term [store].
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

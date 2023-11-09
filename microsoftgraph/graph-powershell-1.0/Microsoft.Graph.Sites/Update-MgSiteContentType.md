@@ -59,7 +59,6 @@ Update a content type][contentType].
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -110,10 +109,10 @@ $params = @{
 
 Update-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgSiteContentType Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

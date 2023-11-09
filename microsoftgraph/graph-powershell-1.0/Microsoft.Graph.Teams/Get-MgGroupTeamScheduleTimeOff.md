@@ -38,8 +38,6 @@ Get-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-Property <String[
 Retrieve the properties and relationships of a timeOff object by ID.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

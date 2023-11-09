@@ -55,11 +55,11 @@ If the file doesn't exist or is not in that folder, the POST request will fail.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationFeedbackResourceOutcome"
@@ -70,6 +70,10 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionOutcome Cmdlet.
+
 
 ## PARAMETERS
 

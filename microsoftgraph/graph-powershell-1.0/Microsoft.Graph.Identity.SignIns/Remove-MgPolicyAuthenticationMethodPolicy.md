@@ -24,7 +24,6 @@ Remove-MgPolicyAuthenticationMethodPolicy [-IfMatch <String>] [-PassThru] [-What
 Delete navigation property authenticationMethodsPolicy for policies
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -50,10 +49,10 @@ $params = @{
 
 Update-MgPolicyAuthenticationMethodPolicy -BodyParameter $params
 ```
-
 This example shows how to use the Remove-MgPolicyAuthenticationMethodPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

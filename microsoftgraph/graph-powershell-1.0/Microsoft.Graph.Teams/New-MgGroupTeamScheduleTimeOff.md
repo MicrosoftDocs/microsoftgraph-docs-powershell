@@ -46,8 +46,6 @@ New-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMi
 Create a new timeOff instance in a schedule.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

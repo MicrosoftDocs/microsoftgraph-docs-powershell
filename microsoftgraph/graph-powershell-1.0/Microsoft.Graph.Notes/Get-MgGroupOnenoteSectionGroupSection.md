@@ -28,8 +28,6 @@ Get-MgGroupOnenoteSectionGroupSection -GroupId <String> -SectionGroupId <String>
 Retrieve a list of onenoteSection objects from the specified section group.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -42,8 +42,6 @@ Get-MgDriveListContentType -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 The collection of content types present in this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

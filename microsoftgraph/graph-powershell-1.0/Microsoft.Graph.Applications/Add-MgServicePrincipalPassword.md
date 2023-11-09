@@ -45,11 +45,11 @@ Add a strong password or secret to a servicePrincipal object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	passwordCredential = @{
@@ -58,6 +58,10 @@ $params = @{
 }
 
 Add-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgServicePrincipalPassword Cmdlet.
+
 
 ## PARAMETERS
 

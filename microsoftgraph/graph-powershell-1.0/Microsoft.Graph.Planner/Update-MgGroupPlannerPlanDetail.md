@@ -44,8 +44,6 @@ Update-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String
 ## DESCRIPTION
 Update the navigation property details in groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

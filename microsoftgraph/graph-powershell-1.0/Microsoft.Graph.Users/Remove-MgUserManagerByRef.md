@@ -33,7 +33,6 @@ Remove a user's manager.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Remove the manager of a user
 
 ```powershell

@@ -52,7 +52,6 @@ Postpone a reminder for an event in a user calendar until a new time.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaSnoozeUserEventReminder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -65,7 +64,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaSnoozeUserEventReminder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

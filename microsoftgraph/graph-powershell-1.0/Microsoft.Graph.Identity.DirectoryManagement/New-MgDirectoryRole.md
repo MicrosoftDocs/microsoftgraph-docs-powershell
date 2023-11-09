@@ -40,7 +40,6 @@ To access and assign members to other directory roles, you must first activate i
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -52,10 +51,10 @@ $params = @{
 
 New-MgDirectoryRole -BodyParameter $params
 ```
-
 This example shows how to use the New-MgDirectoryRole Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

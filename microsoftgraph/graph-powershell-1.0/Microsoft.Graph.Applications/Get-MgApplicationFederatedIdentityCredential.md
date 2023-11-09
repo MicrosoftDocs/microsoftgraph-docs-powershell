@@ -42,13 +42,17 @@ Read the properties and relationships of a federatedIdentityCredential object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId
+
+```
+This example shows how to use the Get-MgApplicationFederatedIdentityCredential Cmdlet.
+
 
 ## PARAMETERS
 

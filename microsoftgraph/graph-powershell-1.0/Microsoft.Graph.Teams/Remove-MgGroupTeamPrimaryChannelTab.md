@@ -32,8 +32,6 @@ Remove-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-IfMatch <Str
 Removes (unpins) a tab from the specified channel within a team.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

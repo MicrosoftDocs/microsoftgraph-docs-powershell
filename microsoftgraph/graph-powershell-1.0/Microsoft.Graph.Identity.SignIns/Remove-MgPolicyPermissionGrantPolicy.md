@@ -33,7 +33,6 @@ Delete a permissionGrantPolicy object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Remove a permission grant policy
 
 ```powershell

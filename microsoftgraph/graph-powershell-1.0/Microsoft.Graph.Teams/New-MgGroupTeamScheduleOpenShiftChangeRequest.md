@@ -48,8 +48,6 @@ New-MgGroupTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 Create instance of an openShiftChangeRequest object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

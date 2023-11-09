@@ -42,8 +42,6 @@ Get-MgUserContact -InputObject <IPersonalContactsIdentity> [-ExpandProperty <Str
 Retrieve the properties and relationships of a contact object.
 There are two scenarios where an app can get a contact in another user's contact folder: This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

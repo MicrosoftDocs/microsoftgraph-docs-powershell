@@ -36,7 +36,6 @@ Optionally, you can expand the manager's chain up to the root node.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Get a user's manager
 
 ```powershell

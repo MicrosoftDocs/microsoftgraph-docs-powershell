@@ -44,26 +44,28 @@ Only a user who is a member of the shared channel can retrieve channel informati
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: List all channels
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannel -TeamId $teamId
-```
 
+```
 This example will list all channels
 
 ### Example 2: List all shared channels
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
-Get-MgTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
-```
+Get-MgTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
 
+```
 This example will list all shared channels
+
 
 ## PARAMETERS
 

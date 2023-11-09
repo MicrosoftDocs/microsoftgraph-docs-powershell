@@ -49,7 +49,6 @@ In Azure AD B2C, this operation can currently update a socialIdentityProvider, o
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Update a specific <strong>social identity provider</strong> (Azure AD or Azure AD B2C)
 
 ```powershell
@@ -62,7 +61,6 @@ $params = @{
 
 Update-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgIdentityProvider Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -79,10 +77,10 @@ $params = @{
 
 Update-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgIdentityProvider Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

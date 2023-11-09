@@ -52,7 +52,6 @@ Copy a mail folder and its contents to another mail folder.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Copy-MgBetaUserMailFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -62,7 +61,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
-
 This example shows how to use the Copy-MgBetaUserMailFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

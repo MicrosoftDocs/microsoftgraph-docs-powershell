@@ -32,8 +32,6 @@ Remove-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <String>
 Delete a shift from the schedule.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

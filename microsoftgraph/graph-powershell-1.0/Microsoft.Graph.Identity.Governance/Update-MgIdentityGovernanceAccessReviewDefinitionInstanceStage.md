@@ -59,7 +59,6 @@ To update an accessReviewStage, its status must be NotStarted, Initializing, or 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -87,10 +86,10 @@ $params = @{
 
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

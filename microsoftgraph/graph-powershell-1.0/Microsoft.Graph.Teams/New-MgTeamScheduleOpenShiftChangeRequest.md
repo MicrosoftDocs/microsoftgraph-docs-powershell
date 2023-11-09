@@ -49,10 +49,10 @@ Create instance of an openShiftChangeRequest object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -61,9 +61,10 @@ $params = @{
 }
 
 New-MgTeamScheduleOpenShiftChangeRequest -TeamId $teamId -BodyParameter $params
-```
 
+```
 This example shows how to use the New-MgTeamScheduleOpenShiftChangeRequest Cmdlet.
+
 
 ## PARAMETERS
 

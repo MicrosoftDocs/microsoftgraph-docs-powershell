@@ -47,7 +47,6 @@ Update-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMi
 Update the properties of an openShift object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -77,10 +76,10 @@ $params = @{
 
 Update-MgTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgTeamScheduleOpenShift Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

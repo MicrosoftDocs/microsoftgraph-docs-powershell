@@ -42,8 +42,6 @@ Get-MgGroupSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 Retrieve the metadata for a content type][contentType] in a [site][] or a [list][].
 This API is available in the following [national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -39,7 +39,6 @@ After creating the permission grant policy, you can add include condition sets t
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Create a permission grant policy
 
 ```powershell
@@ -56,6 +55,7 @@ AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metad
 ```
 
 This command creates a new permission grant policy in Azure AD.  Specific include and exclude configurations can be created using the `New-MgPolicyPermissionGrantPolicyInclude` and `New-MgPolicyPermissionGrantPolicyExclude` cmdlets.
+
 
 ## PARAMETERS
 

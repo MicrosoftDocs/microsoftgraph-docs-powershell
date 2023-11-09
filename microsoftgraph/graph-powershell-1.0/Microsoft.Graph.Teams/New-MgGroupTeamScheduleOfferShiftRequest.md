@@ -50,8 +50,6 @@ New-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 Create an instance of an offerShiftRequest.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

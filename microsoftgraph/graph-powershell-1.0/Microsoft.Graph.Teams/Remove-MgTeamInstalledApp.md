@@ -33,16 +33,17 @@ Uninstalls an app from the specified team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
-```
 
+```
 This example shows how to use the Remove-MgTeamInstalledApp Cmdlet.
+
 
 ## PARAMETERS
 

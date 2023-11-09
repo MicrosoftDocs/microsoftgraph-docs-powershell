@@ -42,8 +42,7 @@ Get the properties and relationships of an organizational contact.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### Example 1: Retrieve contact objects in the directory
+### Example 1: Retrieve contact objects in the directory 
 
 ```powershell
 Get-MgContact | Format-List Id, DisplayName, Mail, MailNickname

@@ -47,8 +47,6 @@ Update-MgGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Update the properties of a tag object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

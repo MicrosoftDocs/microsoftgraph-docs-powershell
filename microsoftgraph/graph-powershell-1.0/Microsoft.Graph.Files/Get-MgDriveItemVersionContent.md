@@ -34,8 +34,6 @@ Get-MgDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String> [-
 ## DESCRIPTION
 The content stream for this version of the item.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DriveId

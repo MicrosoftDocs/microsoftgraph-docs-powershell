@@ -32,8 +32,6 @@ Remove-MgGroupTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassTh
 Delete a tag object permanently.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

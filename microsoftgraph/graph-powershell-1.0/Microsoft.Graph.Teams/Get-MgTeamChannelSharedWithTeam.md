@@ -54,16 +54,17 @@ This operation is allowed only for channels with a membershipType value of share
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
-```
 
+```
 This example shows how to use the Get-MgTeamChannelSharedWithTeam Cmdlet.
+
 
 ## PARAMETERS
 

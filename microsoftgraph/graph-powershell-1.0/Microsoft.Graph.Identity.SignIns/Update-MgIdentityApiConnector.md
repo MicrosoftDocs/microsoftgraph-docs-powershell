@@ -47,7 +47,6 @@ Update the properties of an identityApiConnector object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Changing display name, targetUrl, and username &amp; password used for basic authentication
 
 ```powershell
@@ -65,7 +64,6 @@ $params = @{
 
 Update-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgIdentityApiConnector Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -85,10 +83,10 @@ $params = @{
 
 Update-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgIdentityApiConnector Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

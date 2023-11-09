@@ -43,16 +43,17 @@ Get an attack simulation automation for a tenant.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityAttackSimulationAutomation
-```
 
+```
 This example shows how to use the Get-MgSecurityAttackSimulationAutomation Cmdlet.
+
 
 ## PARAMETERS
 

@@ -32,17 +32,18 @@ Get-MgUserOnenoteNotebookCount -InputObject <INotesIdentity> [-Filter <String>] 
 Get the number of the resource
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Notes
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId
-```
 
+```
 This example shows how to use the Get-MgUserOnenoteNotebookSectionGroup Cmdlet.
+
 
 ## PARAMETERS
 

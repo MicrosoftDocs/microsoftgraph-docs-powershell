@@ -38,16 +38,17 @@ Retrieve the properties and relationships of a shift object by ID.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId
-```
 
+```
 This example shows how to use the Get-MgTeamScheduleShift Cmdlet.
+
 
 ## PARAMETERS
 

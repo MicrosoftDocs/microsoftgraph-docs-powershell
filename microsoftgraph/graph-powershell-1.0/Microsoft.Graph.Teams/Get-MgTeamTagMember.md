@@ -40,16 +40,17 @@ Get the properties and relationships of a member of a standard tag in a team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId
-```
 
+```
 This example shows how to use the Get-MgTeamTagMember Cmdlet.
+
 
 ## PARAMETERS
 

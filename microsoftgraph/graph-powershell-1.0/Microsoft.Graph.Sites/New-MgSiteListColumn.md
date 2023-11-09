@@ -65,7 +65,6 @@ Create a column for a list][list] with a request that specifies a [columnDefinit
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -87,10 +86,10 @@ $params = @{
 
 New-MgSiteListColumn -SiteId $siteId -ListId $listId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgSiteListColumn Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

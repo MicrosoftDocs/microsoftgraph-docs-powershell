@@ -42,7 +42,6 @@ A collection of this user's license details.
 Read-only.
 
 ## EXAMPLES
-
 ### Example 1: Get a user's license details
 
 ```powershell

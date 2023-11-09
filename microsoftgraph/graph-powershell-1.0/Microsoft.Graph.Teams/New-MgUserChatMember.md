@@ -46,8 +46,6 @@ New-MgUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 Add a conversationMember to a chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

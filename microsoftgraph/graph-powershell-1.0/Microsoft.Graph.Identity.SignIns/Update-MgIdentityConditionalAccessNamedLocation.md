@@ -47,7 +47,6 @@ Update the properties of a countryNamedLocation object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Update a country named location by adding to the list of countries
 
 ```powershell

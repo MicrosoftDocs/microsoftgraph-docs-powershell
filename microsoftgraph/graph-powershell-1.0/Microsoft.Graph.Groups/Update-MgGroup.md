@@ -99,7 +99,6 @@ Update the properties of a group object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Update the properties of a group
 
 ```powershell

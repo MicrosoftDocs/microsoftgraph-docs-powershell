@@ -39,16 +39,17 @@ You can add members to the team after the request returns a successful response.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 Complete-MgTeamMigration -TeamId $teamId
-```
 
+```
 This example shows how to use the Complete-MgTeamMigration Cmdlet.
+
 
 ## PARAMETERS
 

@@ -32,8 +32,6 @@ Update-MgTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings>
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

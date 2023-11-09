@@ -42,8 +42,6 @@ Get-MgGroupOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <Strin
 Retrieve the properties and relationships of a notebook object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

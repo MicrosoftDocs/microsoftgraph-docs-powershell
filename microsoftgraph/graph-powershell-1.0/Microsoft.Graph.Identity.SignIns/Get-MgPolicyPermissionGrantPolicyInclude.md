@@ -42,8 +42,7 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ## EXAMPLES
-
-### Example 1: Get a permission grant policy include by ID
+### Example 1: Get a permission grant policy include by ID 
 
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant" 
@@ -63,6 +62,7 @@ AdditionalProperties                        : {[scopeSensitivityLabels, System.C
 ```
 
 This command retrieves a specified permission grant policy include configuration in Azure AD.
+
 
 ## PARAMETERS
 

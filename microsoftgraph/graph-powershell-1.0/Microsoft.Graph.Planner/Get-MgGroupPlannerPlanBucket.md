@@ -28,8 +28,6 @@ Get-MgGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-ExpandP
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 This API is supported in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -58,7 +58,6 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Assign a license to a user
 
 ```powershell

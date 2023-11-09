@@ -54,8 +54,7 @@ You do this by adding a permissionGrantConditionSet to the includes collection o
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
-### Example 1: Create a permission grant policy include
+### Example 1: Create a permission grant policy include 
 
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
@@ -74,6 +73,7 @@ AdditionalProperties                        : {[@odata.context, https://graph.mi
 ```
 
 This command creates a new permission grant policy include configuration for the specified permission grant policy in Azure AD.
+
 
 ## PARAMETERS
 

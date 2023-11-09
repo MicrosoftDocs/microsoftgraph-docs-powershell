@@ -158,7 +158,6 @@ Compare member and guest default permissions to see properties they can manage.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Update a user's display name
 
 ```powershell

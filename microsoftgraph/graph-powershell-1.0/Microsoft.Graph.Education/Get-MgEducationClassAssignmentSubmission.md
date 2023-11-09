@@ -58,20 +58,28 @@ Students will not see the grade or feedback until the assignment has been releas
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Get submissions
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Education
 ```
+This example will get submissions
 
-Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes"
+### Example 2: Get submissions with $expand options
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes" 
+
+```
+This example will get submissions with $expand options
+
 
 ## PARAMETERS
 

@@ -49,7 +49,6 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -92,7 +91,6 @@ $params = @{
 }
 Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

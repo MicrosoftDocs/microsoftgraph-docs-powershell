@@ -42,8 +42,6 @@ Get-MgSiteListContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty <
 Retrieve the metadata for a site][], a [list][], or a [contentType][] [column][columnDefinition].
 This API is available in the following [national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

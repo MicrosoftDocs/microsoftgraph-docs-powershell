@@ -49,10 +49,10 @@ Install an app to the specified team.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -60,13 +60,14 @@ $params = @{
 }
 
 New-MgTeamInstalledApp -TeamId $teamId -BodyParameter $params
-```
 
+```
 This example shows how to use the New-MgTeamInstalledApp Cmdlet.
 
 ### Example 2: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -86,9 +87,10 @@ $params = @{
 }
 
 New-MgTeamInstalledApp -TeamId $teamId -BodyParameter $params
-```
 
+```
 This example shows how to use the New-MgTeamInstalledApp Cmdlet.
+
 
 ## PARAMETERS
 

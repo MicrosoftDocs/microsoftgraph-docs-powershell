@@ -55,7 +55,6 @@ For details, see Tag documents in a review set in eDiscovery.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
@@ -68,7 +67,6 @@ $params = @{
 }
 Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

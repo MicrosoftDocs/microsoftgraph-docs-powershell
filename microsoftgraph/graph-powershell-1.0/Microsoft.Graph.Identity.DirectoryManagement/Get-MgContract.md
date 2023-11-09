@@ -42,16 +42,17 @@ Retrieve the properties and relationships of contract object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContract
-```
 
+```
 This example shows how to use the Get-MgContract Cmdlet.
+
 
 ## PARAMETERS
 

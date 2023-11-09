@@ -43,16 +43,17 @@ Get the properties of a certificateBasedAuthConfiguration object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgOrganizationCertificateBasedAuthConfiguration -OrganizationId $organizationId
-```
 
+```
 This example shows how to use the Get-MgOrganizationCertificateBasedAuthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

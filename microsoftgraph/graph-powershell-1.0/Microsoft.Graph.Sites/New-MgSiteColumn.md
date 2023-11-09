@@ -65,7 +65,6 @@ Create a column for a site][site] with a request that specifies a [columnDefinit
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -87,10 +86,10 @@ $params = @{
 
 New-MgSiteColumn -SiteId $siteId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgSiteColumn Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

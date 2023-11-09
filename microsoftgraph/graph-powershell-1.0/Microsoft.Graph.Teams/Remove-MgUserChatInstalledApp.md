@@ -32,8 +32,6 @@ Remove-MgUserChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] 
 Uninstall an app installed within a chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChatId

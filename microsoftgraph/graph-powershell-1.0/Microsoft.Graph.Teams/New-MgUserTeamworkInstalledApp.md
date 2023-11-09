@@ -49,10 +49,10 @@ Install an app in the personal scope of the specified user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -60,9 +60,10 @@ $params = @{
 }
 
 New-MgUserTeamworkInstalledApp -UserId $userId -BodyParameter $params
-```
 
+```
 This example shows how to use the New-MgUserTeamworkInstalledApp Cmdlet.
+
 
 ## PARAMETERS
 

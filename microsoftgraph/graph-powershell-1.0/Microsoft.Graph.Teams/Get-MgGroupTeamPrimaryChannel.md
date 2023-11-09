@@ -32,8 +32,6 @@ Get-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 Get the default channel, General, of a team.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty

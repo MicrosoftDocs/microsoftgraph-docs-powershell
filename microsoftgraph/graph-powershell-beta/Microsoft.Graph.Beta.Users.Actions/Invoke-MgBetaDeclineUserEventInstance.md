@@ -58,7 +58,6 @@ For more information on how to propose a time, and how to receive and accept a n
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -82,10 +81,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaDeclineUserEventInstance Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

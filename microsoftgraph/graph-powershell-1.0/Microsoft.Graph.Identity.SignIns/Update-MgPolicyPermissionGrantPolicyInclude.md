@@ -52,7 +52,6 @@ Update-MgPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdenti
 Update the navigation property includes in policies
 
 ## EXAMPLES
-
 ### Example 1: Update a permission grant policy include
 
 ```powershell

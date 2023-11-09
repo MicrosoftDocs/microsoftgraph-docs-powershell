@@ -51,8 +51,6 @@ Get-MgTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> [-Exp
 Retrieve the properties and relationships of chatMessageHostedContent object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

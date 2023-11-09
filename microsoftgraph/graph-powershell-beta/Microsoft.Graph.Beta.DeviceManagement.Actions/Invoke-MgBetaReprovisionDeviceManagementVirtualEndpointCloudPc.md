@@ -47,8 +47,7 @@ Reprovision a specific Cloud PC.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
@@ -57,6 +56,8 @@ $params = @{
 }
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

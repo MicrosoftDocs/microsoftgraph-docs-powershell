@@ -33,17 +33,18 @@ Get-MgUserOnenoteOperationCount -InputObject <INotesIdentity> [-Filter <String>]
 Get the number of the resource
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Notes
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenotePage -UserId $userId
-```
 
+```
 This example shows how to use the Get-MgUserOnenotePage Cmdlet.
+
 
 ## PARAMETERS
 

@@ -63,7 +63,6 @@ Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
 Update the navigation property tasks in planner
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -84,10 +83,10 @@ $params = @{
 
 Update-MgPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
-
 This example shows how to use the Update-MgPlannerTask Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

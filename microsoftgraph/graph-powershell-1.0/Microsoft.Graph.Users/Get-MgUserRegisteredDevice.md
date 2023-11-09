@@ -41,16 +41,6 @@ Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Users
-```
-
-# A UPN can also be used as -UserId.
-Get-MgUserRegisteredDevice -UserId $userId
-
 ## PARAMETERS
 
 ### -All

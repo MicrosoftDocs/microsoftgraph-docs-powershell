@@ -53,8 +53,6 @@ Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -34,8 +34,6 @@ Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 This API is supported in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -InputObject

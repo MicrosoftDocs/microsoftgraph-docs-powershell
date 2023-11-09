@@ -58,16 +58,17 @@ Retrieve the properties and relationships of an accessPackageCatalog object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementCatalog
-```
 
+```
 This example shows how to use the Get-MgEntitlementManagementCatalog Cmdlet.
+
 
 ## PARAMETERS
 

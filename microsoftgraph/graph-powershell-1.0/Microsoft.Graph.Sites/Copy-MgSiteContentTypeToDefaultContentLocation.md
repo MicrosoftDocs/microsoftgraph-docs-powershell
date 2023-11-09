@@ -53,10 +53,10 @@ The file can then be added as a default file or template via a POST operation.
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
@@ -70,9 +70,10 @@ $params = @{
 }
 
 Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-```
 
+```
 This example shows how to use the Copy-MgSiteContentTypeToDefaultContentLocation Cmdlet.
+
 
 ## PARAMETERS
 

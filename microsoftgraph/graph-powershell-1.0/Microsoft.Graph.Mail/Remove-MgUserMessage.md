@@ -35,7 +35,6 @@ For the list of resources that support open extensions, see the table in the Per
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -44,10 +43,10 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Remove-MgUserMessage -UserId $userId -MessageId $messageId
 ```
-
 This example shows how to use the Remove-MgUserMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

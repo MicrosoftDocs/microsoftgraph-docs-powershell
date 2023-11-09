@@ -38,16 +38,17 @@ Clear the preferred availability and activity status for a user.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
 Clear-MgBetaUserPresenceUserPreferredPresence -UserId $userId
-```
 
+```
 This example shows how to use the Clear-MgBetaUserPresenceUserPreferredPresence Cmdlet.
+
 
 ## PARAMETERS
 

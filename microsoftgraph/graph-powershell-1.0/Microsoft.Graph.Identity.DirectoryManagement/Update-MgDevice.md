@@ -67,7 +67,6 @@ Only certain properties of a device can be updated through approved Mobile Devic
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Update the accountEnabled property of a device
 
 ```powershell
@@ -79,7 +78,6 @@ $params = @{
 
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgDevice Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -94,10 +92,10 @@ $params = @{
 
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgDevice Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

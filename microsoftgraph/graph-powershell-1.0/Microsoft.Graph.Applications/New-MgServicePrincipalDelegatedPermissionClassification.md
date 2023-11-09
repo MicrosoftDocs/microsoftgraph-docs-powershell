@@ -47,11 +47,10 @@ Classify a delegated permission by adding a delegatedPermissionClassification to
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	permissionId = "e1fe6dd8-ba31-4d61-89e7-88639da4683d"
@@ -60,6 +59,11 @@ $params = @{
 }
 
 New-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -BodyParameter $params
+```
+This example shows how to use the New-MgServicePrincipalDelegatedPermissionClassification Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

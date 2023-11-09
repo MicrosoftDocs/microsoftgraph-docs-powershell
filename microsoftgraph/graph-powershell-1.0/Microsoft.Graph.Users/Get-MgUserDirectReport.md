@@ -46,7 +46,6 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Get a user's direct reports
 
 ```powershell

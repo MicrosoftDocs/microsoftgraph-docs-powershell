@@ -51,22 +51,22 @@ You can identify the room or roomList by specifying the id or emailAddress prope
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
-	"@odata.type" = "microsoft.graph.room"
-	nickname = "Conf Room"
-	building = "1"
-	label = "100"
-	capacity = 
-	isWheelChairAccessible = $false
+	name = "name-value"
 }
 
-Update-MgPlace -PlaceId $placeId -BodyParameter $params
+# A UPN can also be used as -UserId.
+Update-MgUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserCalendarGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

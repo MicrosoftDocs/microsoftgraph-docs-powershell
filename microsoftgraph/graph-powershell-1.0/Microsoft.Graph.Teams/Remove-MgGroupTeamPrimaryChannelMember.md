@@ -34,8 +34,6 @@ Delete a conversationMember from a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ConversationMemberId

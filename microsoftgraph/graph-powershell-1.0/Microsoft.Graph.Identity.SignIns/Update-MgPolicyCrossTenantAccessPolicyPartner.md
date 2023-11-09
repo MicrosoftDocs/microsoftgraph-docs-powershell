@@ -63,7 +63,6 @@ Update the properties of a partner-specific configuration.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Configure inbound trust settings
 
 ```powershell
@@ -79,7 +78,6 @@ $params = @{
 
 Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -98,10 +96,10 @@ $params = @{
 
 Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

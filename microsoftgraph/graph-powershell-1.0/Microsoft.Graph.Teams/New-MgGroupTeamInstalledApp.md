@@ -48,8 +48,6 @@ New-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 Install an app to the specified team.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

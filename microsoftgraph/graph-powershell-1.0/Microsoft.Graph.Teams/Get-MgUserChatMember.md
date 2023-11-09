@@ -39,8 +39,6 @@ Get-MgUserChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 Retrieve a conversationMember from a chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

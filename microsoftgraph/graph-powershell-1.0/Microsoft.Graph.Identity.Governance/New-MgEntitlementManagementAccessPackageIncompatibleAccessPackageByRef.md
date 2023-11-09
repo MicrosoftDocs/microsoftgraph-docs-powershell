@@ -47,7 +47,6 @@ Add an accessPackage to the list of access packages that have been marked as inc
  This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -59,10 +58,10 @@ $params = @{
 
 New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPackageId $accessPackageId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

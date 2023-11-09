@@ -41,16 +41,17 @@ Retrieve the properties and relationships of conversation object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupConversation -GroupId $groupId
-```
 
+```
 This example shows how to use the Get-MgGroupConversation Cmdlet.
+
 
 ## PARAMETERS
 

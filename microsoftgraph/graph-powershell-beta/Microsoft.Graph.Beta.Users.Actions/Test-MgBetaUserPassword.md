@@ -33,7 +33,6 @@ Use this action to provide real-time feedback on password strength while the use
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Test-MgBetaUserPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -42,7 +41,6 @@ $params = @{
 }
 Test-MgBetaUserPassword -BodyParameter $params
 ```
-
 This example shows how to use the Test-MgBetaUserPassword Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

@@ -47,7 +47,6 @@ Update a user's email address represented by an emailAuthenticationMethod object
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -59,10 +58,10 @@ $params = @{
 
 Update-MgUserAuthenticationEmailMethod -UserId $userId -EmailAuthenticationMethodId $emailAuthenticationMethodId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgUserAuthenticationEmailMethod Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

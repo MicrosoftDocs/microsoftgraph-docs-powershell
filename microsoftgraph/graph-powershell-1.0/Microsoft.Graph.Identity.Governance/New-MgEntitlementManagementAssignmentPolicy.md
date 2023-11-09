@@ -41,7 +41,6 @@ The request will include a reference to the accessPackage that will contain this
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -82,7 +81,6 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -208,7 +206,6 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -241,7 +238,6 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -335,7 +331,7 @@ $params = @{
 				}
 			)
 			isSingleLineQuestion = "false"
-			regexPattern = "[a-zA-Z]+[a-zA-Zs]*"
+			regexPattern = "[a-zA-Z]+[a-zA-Z\s]*"
 		}
 	)
 	accessPackage = @{
@@ -345,10 +341,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

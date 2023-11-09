@@ -33,16 +33,6 @@ Delete navigation property telecomExpenseManagementPartners for deviceManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch

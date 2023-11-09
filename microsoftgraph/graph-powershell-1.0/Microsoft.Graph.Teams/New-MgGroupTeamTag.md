@@ -46,8 +46,6 @@ New-MgGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraph
 Create a standard tag for members in a team.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

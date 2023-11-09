@@ -39,8 +39,6 @@ Get-MgUserChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 Get an app installed in a chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

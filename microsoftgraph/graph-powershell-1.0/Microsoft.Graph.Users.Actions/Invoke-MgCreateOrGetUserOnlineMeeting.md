@@ -58,7 +58,6 @@ If the external ID already exists, this API will return the onlineMeeting object
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -83,7 +82,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

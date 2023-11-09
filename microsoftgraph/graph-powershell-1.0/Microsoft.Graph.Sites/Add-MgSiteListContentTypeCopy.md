@@ -49,10 +49,10 @@ Add a copy of a content type][contentType] from a [site][site] to a [list][list]
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
@@ -60,9 +60,10 @@ $params = @{
 }
 
 Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
-```
 
+```
 This example shows how to use the Add-MgSiteListContentTypeCopy Cmdlet.
+
 
 ## PARAMETERS
 

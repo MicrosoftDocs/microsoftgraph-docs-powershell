@@ -32,8 +32,6 @@ Remove-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pa
 Delete the channel.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId

@@ -47,8 +47,7 @@ Reincorporate a participant previously put on hold to the call.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Stop-MgCommunicationCallParticipantHoldMusic Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -56,6 +55,8 @@ $params = @{
 }
 Stop-MgCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
 ```
+This example shows how to use the Stop-MgCommunicationCallParticipantHoldMusic Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

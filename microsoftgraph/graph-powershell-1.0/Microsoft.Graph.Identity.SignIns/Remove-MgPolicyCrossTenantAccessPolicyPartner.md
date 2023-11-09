@@ -35,7 +35,6 @@ If a configuration includes a user synchronization policy, you must first delete
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -43,10 +42,10 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
 ```
-
 This example shows how to use the Remove-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -35,16 +35,17 @@ Retrieve the properties and relationships of a plannerPlanDetails object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId
-```
 
+```
 This example shows how to use the Get-MgPlannerPlanDetail Cmdlet.
+
 
 ## PARAMETERS
 

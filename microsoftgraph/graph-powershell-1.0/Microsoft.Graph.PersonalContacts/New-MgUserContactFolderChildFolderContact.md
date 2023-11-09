@@ -72,8 +72,6 @@ New-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIdentit
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 This API is supported in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

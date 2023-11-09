@@ -38,7 +38,6 @@ Get-MgDirectoryFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -46,10 +45,10 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgDirectoryFederationConfiguration -IdentityProviderBaseId $identityProviderBaseId
 ```
-
 This example shows how to use the Get-MgDirectoryFederationConfiguration Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

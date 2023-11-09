@@ -57,7 +57,6 @@ Update an editable secureScoreControlProfile object within any integrated soluti
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Request without Prefer header
 
 ```powershell
@@ -77,7 +76,6 @@ $params = @{
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -101,10 +99,10 @@ $params = @{
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

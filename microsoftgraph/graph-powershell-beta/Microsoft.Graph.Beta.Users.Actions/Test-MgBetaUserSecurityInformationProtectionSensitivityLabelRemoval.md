@@ -48,7 +48,6 @@ Indicate to the consuming application what actions it should take to remove the 
 Given contentInfo as an input, which includes existing content metadata key-value pairs, the API returns an informationProtectionAction that contains some combination of one or more of the following:  This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -99,7 +98,6 @@ $params = @{
 }
 Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

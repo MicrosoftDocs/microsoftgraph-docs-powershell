@@ -46,8 +46,6 @@ Update-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 Update the role of a conversationMember in a team or channel.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

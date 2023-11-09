@@ -43,8 +43,7 @@ You can include other information such as business address, web site address, an
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
@@ -64,6 +63,8 @@ $params = @{
 }
 New-MgBetaBookingBusiness -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaBookingBusiness Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

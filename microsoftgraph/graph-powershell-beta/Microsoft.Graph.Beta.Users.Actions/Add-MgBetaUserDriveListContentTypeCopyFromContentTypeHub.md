@@ -57,8 +57,6 @@ The method allows users to pull content types directly from the content type hub
 For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

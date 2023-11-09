@@ -85,7 +85,6 @@ New-MgUser -BodyParameter <IMicrosoftGraphUser> [-WhatIf] [-Confirm] [<CommonPar
 Create a new user object.
 
 ## EXAMPLES
-
 ### Example 1: Create a new user
 
 ```powershell
@@ -100,6 +99,7 @@ Id                                   DisplayName Mail UserPrincipalName         
 ```
 
 This command first sets a value for the password profile variable and uses it to create a new user.
+
 
 ## PARAMETERS
 

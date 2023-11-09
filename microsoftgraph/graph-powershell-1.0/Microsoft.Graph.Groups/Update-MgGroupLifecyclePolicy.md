@@ -73,7 +73,6 @@ Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource typ
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -87,10 +86,10 @@ $params = @{
 
 Update-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgGroupLifecyclePolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

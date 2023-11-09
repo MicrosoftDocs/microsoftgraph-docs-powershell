@@ -33,16 +33,17 @@ Delete a shift from the schedule.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId
-```
 
+```
 This example shows how to use the Remove-MgTeamScheduleShift Cmdlet.
+
 
 ## PARAMETERS
 

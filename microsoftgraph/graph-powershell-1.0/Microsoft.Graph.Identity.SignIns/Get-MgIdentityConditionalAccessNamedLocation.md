@@ -43,7 +43,6 @@ Retrieve the properties and relationships of an ipNamedLocation object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Get a list of all named locations
 
 ```powershell

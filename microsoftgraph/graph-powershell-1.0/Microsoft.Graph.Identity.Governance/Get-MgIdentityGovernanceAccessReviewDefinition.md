@@ -45,7 +45,6 @@ To retrieve the instances of the access review series, use the list accessReview
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -53,10 +52,10 @@ Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
 ```
-
 This example shows how to use the Get-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

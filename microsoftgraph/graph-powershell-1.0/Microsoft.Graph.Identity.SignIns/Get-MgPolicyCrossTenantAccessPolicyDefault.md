@@ -30,16 +30,17 @@ This default configuration may be the service default assigned by Azure AD (isSe
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyCrossTenantAccessPolicyDefault
-```
 
+```
 This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
+
 
 ## PARAMETERS
 

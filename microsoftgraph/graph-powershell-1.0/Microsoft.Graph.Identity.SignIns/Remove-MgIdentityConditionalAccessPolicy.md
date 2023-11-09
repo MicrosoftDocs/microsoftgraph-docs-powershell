@@ -33,7 +33,6 @@ Delete a conditionalAccessPolicy object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Remove a conditional access policy
 
 ```powershell
