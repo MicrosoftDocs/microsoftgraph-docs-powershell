@@ -15,6 +15,9 @@ Used to access the underlying listItem
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -297,6 +300,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItem?view=graph-powershell-beta)
 
 [Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItem?view=graph-powershell-beta)
 

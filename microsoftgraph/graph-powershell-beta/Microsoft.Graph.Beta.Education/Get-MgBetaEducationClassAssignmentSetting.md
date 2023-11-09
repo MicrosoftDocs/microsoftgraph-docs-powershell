@@ -13,6 +13,9 @@ Read the properties and relationships of an educationAssignmentSettings object.
 Only teachers can perform this operation.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -146,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSetting?view=graph-powershell-1.0)

@@ -13,6 +13,9 @@ Parent contentType from which this content type is derived.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveContentTypeBase?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveContentTypeBase?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -170,6 +173,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveContentTypeBase?view=graph-powershell-beta)
 
 [Get-MgBetaUserDriveContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveContentTypeBase?view=graph-powershell-beta)
 

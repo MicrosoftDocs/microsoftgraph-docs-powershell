@@ -13,6 +13,9 @@ Update the navigation property list in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -15353,8 +15356,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveList?view=graph-powershell-beta)
-
-## RELATED LINKS
 [Update-MgBetaGroupDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveList?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveList?view=graph-powershell-beta)
+[Update-MgBetaGroupDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveList?view=graph-powershell-beta)
+
+## RELATED LINKS
+[Update-MgBetaGroupDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveList?view=graph-powershell-beta)

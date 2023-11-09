@@ -13,6 +13,9 @@ Delete navigation property columns for shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -186,6 +189,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListColumn?view=graph-powershell-beta)
 
 [Remove-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListColumn?view=graph-powershell-beta)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A request to remove the active TeamViewer connector
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Disconnect-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Disconnect (Default)
@@ -194,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Disconnect-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-1.0)

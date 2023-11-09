@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppCountAsiOSLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsiOSLobApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -78,3 +81,4 @@ ALIASES
 Get-MgDeviceAppMgtMobileAppCountAsiOSLobApp
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppManagementMobileAppCountAsiOSLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsiOSLobApp?view=graph-powershell-beta)

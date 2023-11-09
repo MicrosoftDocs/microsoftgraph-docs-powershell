@@ -16,6 +16,9 @@ This API is available in the following [national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaInviteUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveRoot?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaInviteUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### InviteExpanded (Default)
@@ -355,6 +358,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Invoke-MgBetaInviteUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveRoot?view=graph-powershell-beta)
 
 [Invoke-MgBetaInviteUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveRoot?view=graph-powershell-beta)
 

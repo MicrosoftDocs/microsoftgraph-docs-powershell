@@ -13,6 +13,9 @@ Update the navigation property columns in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1141,8 +1144,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListColumn?view=graph-powershell-beta)
-
-## RELATED LINKS
 [Update-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListColumn?view=graph-powershell-beta)
+[Update-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListColumn?view=graph-powershell-beta)
+
+## RELATED LINKS
+[Update-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListColumn?view=graph-powershell-beta)

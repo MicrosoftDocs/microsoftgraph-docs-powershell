@@ -13,6 +13,9 @@ Invoke action validatePermission
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Test-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserDriveRootPermission?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserDriveRootPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -266,6 +269,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserDriveRootPermission?view=graph-powershell-1.0)
 
 [Test-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserDriveRootPermission?view=graph-powershell-1.0)
 

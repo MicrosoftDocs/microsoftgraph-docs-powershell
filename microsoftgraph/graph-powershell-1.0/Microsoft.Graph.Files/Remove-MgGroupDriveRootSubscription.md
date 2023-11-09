@@ -13,6 +13,9 @@ Delete navigation property subscriptions for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -201,6 +204,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
 
 [Remove-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
 

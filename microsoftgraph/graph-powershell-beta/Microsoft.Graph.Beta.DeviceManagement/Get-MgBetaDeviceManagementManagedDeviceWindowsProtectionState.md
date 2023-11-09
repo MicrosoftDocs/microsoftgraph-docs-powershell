@@ -11,6 +11,9 @@ schema: 2.0.0
 The device protection status.
 This property is read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -264,5 +267,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-1.0)

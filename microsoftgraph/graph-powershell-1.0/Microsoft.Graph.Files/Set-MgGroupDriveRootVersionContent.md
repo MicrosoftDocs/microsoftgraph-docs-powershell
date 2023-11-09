@@ -13,6 +13,9 @@ The content stream for this version of the item.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -204,6 +207,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)
 
 [Set-MgBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)
 

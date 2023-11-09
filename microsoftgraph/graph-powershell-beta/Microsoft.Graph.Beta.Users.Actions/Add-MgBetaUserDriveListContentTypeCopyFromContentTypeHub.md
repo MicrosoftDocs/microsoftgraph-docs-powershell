@@ -19,6 +19,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgUserDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgUserDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -245,5 +248,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Add-MgUserDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-1.0)
 
 [Add-MgUserDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-1.0)

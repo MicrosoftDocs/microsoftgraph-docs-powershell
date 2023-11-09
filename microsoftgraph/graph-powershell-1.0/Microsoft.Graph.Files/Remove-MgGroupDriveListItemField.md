@@ -13,6 +13,9 @@ Delete navigation property fields for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -201,6 +204,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 
 [Remove-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 

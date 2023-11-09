@@ -18,6 +18,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenoteNotebook?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenoteNotebook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -323,5 +326,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Copy-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenoteNotebook?view=graph-powershell-1.0)
 
 [Copy-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenoteNotebook?view=graph-powershell-1.0)

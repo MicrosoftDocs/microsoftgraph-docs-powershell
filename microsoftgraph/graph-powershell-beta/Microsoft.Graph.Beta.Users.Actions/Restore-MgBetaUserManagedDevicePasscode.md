@@ -13,6 +13,9 @@ Recover passcode
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Restore-MgUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserManagedDevicePasscode?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserManagedDevicePasscode?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Recover (Default)
@@ -185,6 +188,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserManagedDevicePasscode?view=graph-powershell-1.0)
 
 [Restore-MgUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserManagedDevicePasscode?view=graph-powershell-1.0)
 

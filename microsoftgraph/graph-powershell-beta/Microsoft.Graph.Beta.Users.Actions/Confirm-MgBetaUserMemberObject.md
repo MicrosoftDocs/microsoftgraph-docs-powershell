@@ -13,6 +13,9 @@ Invoke action checkMemberObjects
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Confirm-MgUserMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserMemberObject?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgUserMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserMemberObject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)
@@ -238,5 +241,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Confirm-MgUserMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserMemberObject?view=graph-powershell-1.0)
 
 [Confirm-MgUserMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserMemberObject?view=graph-powershell-1.0)

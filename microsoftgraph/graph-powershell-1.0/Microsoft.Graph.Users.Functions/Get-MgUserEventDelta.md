@@ -17,6 +17,9 @@ This API is supported in the following national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserEventDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserEventDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEventDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserEventDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -305,6 +308,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserEventDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserEventDelta?view=graph-powershell-beta)
 
 [Get-MgBetaUserEventDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserEventDelta?view=graph-powershell-beta)
 
