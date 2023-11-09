@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Search
 Module Guid: 82624b61-d42d-4f6f-9ac3-197b7f54c1a4
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.search

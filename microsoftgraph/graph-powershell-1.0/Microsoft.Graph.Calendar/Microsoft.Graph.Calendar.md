@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Calendar
 Module Guid: 8b297e8a-2233-442e-b184-d386df40ee56
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar
@@ -148,21 +148,21 @@ Read-only.
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
+To get expanded event instances, you can get the calendar view, or get the instances of an event.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgUserDefaultCalendarEvent](Get-MgUserDefaultCalendarEvent.md)
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
+To get expanded event instances, you can get the calendar view, or get the instances of an event.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgUserDefaultCalendarEvent](Get-MgUserDefaultCalendarEvent.md)
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
+To get expanded event instances, you can get the calendar view, or get the instances of an event.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgUserEventAttachmentCount](Get-MgUserEventAttachmentCount.md)
@@ -229,7 +229,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgGroupEventAttachment](New-MgGroupEventAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgGroupEventExtension](New-MgGroupEventExtension.md)
@@ -240,7 +240,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgGroupEventInstanceAttachment](New-MgGroupEventInstanceAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
@@ -300,7 +300,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgUserEventInstanceAttachment](New-MgUserEventInstanceAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgUserEventInstanceExtension](New-MgUserEventInstanceExtension.md)

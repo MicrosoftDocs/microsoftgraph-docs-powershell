@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy
@@ -335,7 +335,7 @@ $params = @{
 				}
 			)
 			isSingleLineQuestion = "false"
-			regexPattern = "[a-zA-Z]+[a-zA-Z\s]*"
+			regexPattern = "[a-zA-Z]+[a-zA-Zs]*"
 		}
 	)
 	accessPackage = @{

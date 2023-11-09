@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Teams
 Module Guid: e9a4fde5-f784-4302-a9e2-a04cf00f1557
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.teams
