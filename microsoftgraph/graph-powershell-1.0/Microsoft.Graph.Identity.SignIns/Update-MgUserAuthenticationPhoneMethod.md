@@ -12,6 +12,7 @@ Update a user's phone number associated with a phone authentication method objec
 You can't change a phone's type.
 To change a phone's type, add a new number of the desired type and then delete the object with the original type.
 If a user is enabled by policy to use SMS to sign in and the mobile number is changed, the system will attempt to register the number for use in that system.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
@@ -49,6 +50,7 @@ Update a user's phone number associated with a phone authentication method objec
 You can't change a phone's type.
 To change a phone's type, add a new number of the desired type and then delete the object with the original type.
 If a user is enabled by policy to use SMS to sign in and the mobile number is changed, the system will attempt to register the number for use in that system.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -152,7 +154,7 @@ Accept wildcard characters: False
 The phone number to text or call for authentication.
 Phone numbers use the format +{country code} {number}x{extension}, with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
-Numbers are rejected when creating or updating if they do not match the required format.
+Numbers are rejected when creating or updating if they don't match the required format.
 
 ```yaml
 Type: String
@@ -264,7 +266,7 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphPhoneAuthenticationMethod>`: phoneAuthenticationMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format +{country code} {number}x{extension}, with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating or updating if they do not match the required format.
+  - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format +{country code} {number}x{extension}, with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating or updating if they don't match the required format.
   - `[PhoneType <String>]`: authenticationPhoneType
   - `[SmsSignInState <String>]`: authenticationMethodSignInState
 

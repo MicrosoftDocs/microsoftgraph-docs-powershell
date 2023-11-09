@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Removes (unpins) a tab from the specified channel within a team.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Removes (unpins) a tab from the specified channel within a team.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

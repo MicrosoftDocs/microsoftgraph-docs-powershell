@@ -10,6 +10,7 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a call object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCall?view=graph-powershell-1.0)
@@ -30,6 +31,7 @@ Get-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-Expand
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a call object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Getting a Peer-to-Peer call

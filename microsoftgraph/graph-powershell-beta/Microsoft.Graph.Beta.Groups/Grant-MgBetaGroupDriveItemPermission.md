@@ -9,7 +9,8 @@ ms.prod: sharepoint
 # Grant-MgBetaGroupDriveItemPermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a [permission][].
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Grant-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveItemPermission?view=graph-powershell-1.0)
@@ -45,7 +46,8 @@ Grant-MgBetaGroupDriveItemPermission -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a [permission][].
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

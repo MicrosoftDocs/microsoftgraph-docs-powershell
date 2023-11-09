@@ -9,8 +9,9 @@ ms.prod: sites-and-lists
 # Copy-MgBetaSiteContentTypeToDefaultContentLocation
 
 ## SYNOPSIS
-Copy a file to a default content location in a [content type][contentType].
+Copy a file to a default content location in a content type][contentType].
 The file can then be added as a default file or template via a POST operation.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
@@ -46,8 +47,9 @@ Copy-MgBetaSiteContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Copy a file to a default content location in a [content type][contentType].
+Copy a file to a default content location in a content type][contentType].
 The file can then be added as a default file or template via a POST operation.
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -299,6 +301,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup

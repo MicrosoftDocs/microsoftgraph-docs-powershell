@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizesharelistsubscription
 schema: 2.0.0
+ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeShareListSubscription
 
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaReauthorizeShareListSubscription?view=graph-powershell-beta)
@@ -29,6 +31,7 @@ Invoke-MgReauthorizeShareListSubscription -InputObject <IFilesIdentity> [-PassTh
 
 ## DESCRIPTION
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

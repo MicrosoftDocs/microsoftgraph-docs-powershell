@@ -3,13 +3,15 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroup
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Invoke-MgGraphGroup
 
 ## SYNOPSIS
-Calling this method will prevent the current user from receiving email notifications for this group about new posts, events, and files in that group.
+Calling this method prevents the current user from receiving email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaGraphGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroup?view=graph-powershell-beta)
@@ -27,8 +29,9 @@ Invoke-MgGraphGroup -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confi
 ```
 
 ## DESCRIPTION
-Calling this method will prevent the current user from receiving email notifications for this group about new posts, events, and files in that group.
+Calling this method prevents the current user from receiving email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgGraphGroup Cmdlet

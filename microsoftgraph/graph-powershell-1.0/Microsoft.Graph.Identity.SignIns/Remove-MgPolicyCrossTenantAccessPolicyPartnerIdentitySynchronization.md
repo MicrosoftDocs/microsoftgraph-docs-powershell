@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete the user synchronization policy for a partner-specific configuration.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
@@ -30,6 +31,7 @@ Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObjec
 
 ## DESCRIPTION
 Delete the user synchronization policy for a partner-specific configuration.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

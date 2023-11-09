@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new identityApiConnector object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityApiConnector?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ New-MgIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector> 
 
 ## DESCRIPTION
 Create a new identityApiConnector object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Create an API connector with basic authentication

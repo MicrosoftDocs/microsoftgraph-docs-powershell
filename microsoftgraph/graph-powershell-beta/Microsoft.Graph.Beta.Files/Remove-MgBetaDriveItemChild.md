@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaDriveItemChild
 
 ## SYNOPSIS
-Remove an item from a [bundle][].
+Remove an item from a bundle][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDriveItemChild](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemChild?view=graph-powershell-1.0)
@@ -28,7 +29,8 @@ Remove-MgBetaDriveItemChild -InputObject <IFilesIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Remove an item from a [bundle][].
+Remove an item from a bundle][].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

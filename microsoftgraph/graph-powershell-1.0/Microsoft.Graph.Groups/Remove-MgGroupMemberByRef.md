@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupMemberByRef?view=graph-powershell-beta)
@@ -31,6 +32,7 @@ Remove-MgGroupMemberByRef -InputObject <IGroupsIdentity> [-Id <String>] [-IfMatc
 ## DESCRIPTION
 Remove a member from a group via the members navigation property.
 You can't remove a member from groups with dynamic memberships.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

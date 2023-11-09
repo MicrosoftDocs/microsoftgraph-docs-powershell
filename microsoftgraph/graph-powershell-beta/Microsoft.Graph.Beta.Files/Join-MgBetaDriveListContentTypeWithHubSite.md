@@ -9,7 +9,8 @@ ms.prod: sites-and-lists
 # Join-MgBetaDriveListContentTypeWithHubSite
 
 ## SYNOPSIS
-Associate a [content type][contentType] with a list of hub sites.
+Associate a content type][contentType] with a list of hub sites.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Join-MgDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Files/Join-MgDriveListContentTypeWithHubSite?view=graph-powershell-1.0)
@@ -44,7 +45,8 @@ Join-MgBetaDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Associate a [content type][contentType] with a list of hub sites.
+Associate a content type][contentType] with a list of hub sites.
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

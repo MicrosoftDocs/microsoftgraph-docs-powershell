@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgGroupDriveRootListItemField
 
 ## SYNOPSIS
-Update the properties on a [listItem][].
+Update the properties on a listItem][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootListItemField?view=graph-powershell-beta)
@@ -40,7 +41,8 @@ Update-MgGroupDriveRootListItemField -InputObject <IFilesIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Update the properties on a [listItem][].
+Update the properties on a listItem][].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

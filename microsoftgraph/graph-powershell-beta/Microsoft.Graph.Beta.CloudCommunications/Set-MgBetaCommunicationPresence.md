@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Set the availability and activity status in a presence session of an application for a user.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationPresence?view=graph-powershell-1.0)
@@ -45,6 +46,7 @@ Set-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Set the availability and activity status in a presence session of an application for a user.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

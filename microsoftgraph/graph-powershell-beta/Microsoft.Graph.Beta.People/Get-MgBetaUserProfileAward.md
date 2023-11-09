@@ -11,6 +11,7 @@ ms.prod: people
 
 ## SYNOPSIS
 Read the properties and relationships of a personAward object from a user's profile.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaUserProfileAward -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Read the properties and relationships of a personAward object from a user's profile.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileAward Cmdlet

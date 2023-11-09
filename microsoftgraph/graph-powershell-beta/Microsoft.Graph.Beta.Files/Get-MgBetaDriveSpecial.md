@@ -14,6 +14,7 @@ Special folders provide simple aliases to access well-known folders in OneDrive 
 If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecial?view=graph-powershell-1.0)
@@ -45,6 +46,7 @@ Special folders provide simple aliases to access well-known folders in OneDrive 
 If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

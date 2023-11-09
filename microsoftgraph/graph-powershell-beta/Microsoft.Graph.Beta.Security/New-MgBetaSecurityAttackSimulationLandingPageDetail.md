@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to details for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLandingPageDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Content
-.
+Landing page detail content.
 
 ```yaml
 Type: String
@@ -122,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefaultLangauge
-.
+Indicates whether this language detail is default for the landing page.
 
 ```yaml
 Type: SwitchParameter
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Language
-.
+The content language for the landing page.
 
 ```yaml
 Type: String
@@ -219,9 +222,9 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphLandingPageDetail>`: landingPageDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Content <String>]`: 
-  - `[IsDefaultLangauge <Boolean?>]`: 
-  - `[Language <String>]`: 
+  - `[Content <String>]`: Landing page detail content.
+  - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language detail is default for the landing page.
+  - `[Language <String>]`: The content language for the landing page.
 
 `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
@@ -259,6 +262,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -301,4 +305,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[New-MgSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLandingPageDetail?view=graph-powershell-1.0)
 

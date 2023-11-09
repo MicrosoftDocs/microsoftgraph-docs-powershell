@@ -11,6 +11,7 @@ schema: 2.0.0
 Create a SharePoint folder to upload feedback files for a given educationSubmission.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the feedback resources folder of a submission.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaEducationUserAssignmentUpFeedbackResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationUserAssignmentUpFeedbackResourceFolder?view=graph-powershell-beta)
@@ -33,6 +34,7 @@ Set-MgEducationUserAssignmentUpFeedbackResourceFolder -InputObject <IEducationId
 Create a SharePoint folder to upload feedback files for a given educationSubmission.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the feedback resources folder of a submission.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

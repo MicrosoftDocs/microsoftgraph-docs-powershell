@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaDriveItemListItemField
 
 ## SYNOPSIS
-Update the properties on a [listItem][].
+Update the properties on a listItem][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDriveItemListItemField](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemListItemField?view=graph-powershell-1.0)
@@ -40,7 +41,8 @@ Update-MgBetaDriveItemListItemField -InputObject <IFilesIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the properties on a [listItem][].
+Update the properties on a listItem][].
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

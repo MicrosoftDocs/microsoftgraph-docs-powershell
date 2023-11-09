@@ -11,6 +11,7 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Read the properties and relationships of a tenantGroup object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsIden
 
 ## DESCRIPTION
 Read the properties and relationships of a tenantGroup object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantGroup Cmdlet

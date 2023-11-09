@@ -10,6 +10,10 @@ ms.prod: security
 
 ## SYNOPSIS
 Get an attack simulation operation to track a long-running operation request for a tenant.
+This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,6 +38,7 @@ Get-MgBetaSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-E
 
 ## DESCRIPTION
 Get an attack simulation operation to track a long-running operation request for a tenant.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -273,6 +278,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -315,4 +321,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationOperation?view=graph-powershell-1.0)
 

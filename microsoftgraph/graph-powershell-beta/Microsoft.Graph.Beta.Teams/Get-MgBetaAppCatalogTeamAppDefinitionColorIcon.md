@@ -10,6 +10,7 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Retrieve a Teams app icon associated with a specific definition of an app.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity> [-E
 
 ## DESCRIPTION
 Retrieve a Teams app icon associated with a specific definition of an app.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet

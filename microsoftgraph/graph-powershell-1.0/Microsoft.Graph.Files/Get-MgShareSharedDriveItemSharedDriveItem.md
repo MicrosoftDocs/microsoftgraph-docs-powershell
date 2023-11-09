@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareshareddriveitemshareddriveitem
 schema: 2.0.0
+ms.prod: files
 ---
 
 # Get-MgShareSharedDriveItemSharedDriveItem
@@ -10,6 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
@@ -38,6 +40,7 @@ Get-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-Expand
 ## DESCRIPTION
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

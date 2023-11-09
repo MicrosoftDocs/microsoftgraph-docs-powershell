@@ -11,6 +11,7 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -37,6 +38,7 @@ Get-MgBetaVirtualEventSessionRegistrationCustomQuestion -InputObject <IBookingsI
 
 ## DESCRIPTION
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

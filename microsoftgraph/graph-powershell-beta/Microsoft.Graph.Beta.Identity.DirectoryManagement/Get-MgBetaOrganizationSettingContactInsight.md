@@ -10,6 +10,7 @@ ms.prod: insights
 
 ## SYNOPSIS
 Get the properties of an insightsSettings object for displaying or returning contact insights in an organization.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Get-MgBetaOrganizationSettingContactInsight -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Get the properties of an insightsSettings object for displaying or returning contact insights in an organization.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOrganizationSettingContactInsight Cmdlet

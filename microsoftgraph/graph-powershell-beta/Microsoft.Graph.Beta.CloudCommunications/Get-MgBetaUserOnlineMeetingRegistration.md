@@ -10,6 +10,7 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Get the externalMeetingRegistration details associated with an onlineMeeting.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Get-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdenti
 
 ## DESCRIPTION
 Get the externalMeetingRegistration details associated with an onlineMeeting.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingRegistration Cmdlet

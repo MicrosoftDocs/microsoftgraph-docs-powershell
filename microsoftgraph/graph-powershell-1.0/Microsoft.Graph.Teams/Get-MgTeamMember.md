@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a conversationMember from a team.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamMember?view=graph-powershell-beta)
@@ -36,6 +37,7 @@ Get-MgTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pr
 
 ## DESCRIPTION
 Get a conversationMember from a team.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get list of members in team

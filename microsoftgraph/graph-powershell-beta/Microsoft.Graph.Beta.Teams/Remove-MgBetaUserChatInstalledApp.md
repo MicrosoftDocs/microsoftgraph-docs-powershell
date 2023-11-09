@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Uninstall an app installed within a chat.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatInstalledApp?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaUserChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Uninstall an app installed within a chat.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

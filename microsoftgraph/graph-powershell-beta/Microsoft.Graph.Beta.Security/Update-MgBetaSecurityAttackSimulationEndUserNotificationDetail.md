@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property details in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -78,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -EmailContent
-.
+Email HTML content.
 
 ```yaml
 Type: String
@@ -155,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefaultLangauge
-.
+Indicates whether this language is default.
 
 ```yaml
 Type: SwitchParameter
@@ -170,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -Language
-.
+Notification language.
 
 ```yaml
 Type: String
@@ -185,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Locale
-.
+Notification locale.
 
 ```yaml
 Type: String
@@ -216,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subject
-.
+Mail subject.
 
 ```yaml
 Type: String
@@ -283,16 +286,16 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphEndUserNotificationDetail>`: endUserNotificationDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[EmailContent <String>]`: 
-  - `[IsDefaultLangauge <Boolean?>]`: 
-  - `[Language <String>]`: 
-  - `[Locale <String>]`: 
+  - `[EmailContent <String>]`: Email HTML content.
+  - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language is default.
+  - `[Language <String>]`: Notification language.
+  - `[Locale <String>]`: Notification locale.
   - `[SentFrom <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: Email address of the user.
-  - `[Subject <String>]`: 
+  - `[Subject <String>]`: Mail subject.
 
 `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
@@ -330,6 +333,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -373,9 +377,10 @@ To create the parameters described below, construct a hash table containing the 
 
 `SENTFROM <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+[Update-MgSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-1.0)
 

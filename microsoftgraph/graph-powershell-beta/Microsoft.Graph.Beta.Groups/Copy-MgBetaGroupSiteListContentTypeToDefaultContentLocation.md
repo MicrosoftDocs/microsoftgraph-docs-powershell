@@ -9,8 +9,9 @@ ms.prod: sites-and-lists
 # Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation
 
 ## SYNOPSIS
-Copy a file to a default content location in a [content type][contentType].
+Copy a file to a default content location in a content type][contentType].
 The file can then be added as a default file or template via a POST operation.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgGroupSiteListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupSiteListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
@@ -47,8 +48,9 @@ Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -InputObject <IGroup
 ```
 
 ## DESCRIPTION
-Copy a file to a default content location in a [content type][contentType].
+Copy a file to a default content location in a content type][contentType].
 The file can then be added as a default file or template via a POST operation.
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 

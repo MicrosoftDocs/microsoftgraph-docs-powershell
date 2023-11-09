@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/copy-mgdriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Copy-MgDriveItem
 
 ## SYNOPSIS
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+Asynchronously creates a copy of an driveItem][item-resource] (including any children), under a new parent item or with a new name.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Copy-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgBetaDriveItem?view=graph-powershell-beta)
@@ -42,7 +44,8 @@ Copy-MgDriveItem -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+Asynchronously creates a copy of an driveItem][item-resource] (including any children), under a new parent item or with a new name.
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

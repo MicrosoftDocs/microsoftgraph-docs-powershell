@@ -10,6 +10,7 @@ ms.prod: governance
 
 ## SYNOPSIS
 Read the properties and relationships of an adminConsentRequestPolicy object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAdminConsentRequestPolicy?view=graph-powershell-1.0)
@@ -23,6 +24,7 @@ Get-MgBetaPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Propert
 
 ## DESCRIPTION
 Read the properties and relationships of an adminConsentRequestPolicy object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

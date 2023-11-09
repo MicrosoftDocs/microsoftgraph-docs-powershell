@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of chatMessageHostedContent object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessageHostedContent?view=graph-powershell-beta)
@@ -49,6 +50,7 @@ Get-MgTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandProp
 
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: List hosted content for a channel message

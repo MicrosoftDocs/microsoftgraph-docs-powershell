@@ -10,6 +10,7 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get the specified permissions object of a user or group calendar that has been shared.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarPermission?view=graph-powershell-1.0)
@@ -53,6 +54,7 @@ Get-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <St
 
 ## DESCRIPTION
 Get the specified permissions object of a user or group calendar that has been shared.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

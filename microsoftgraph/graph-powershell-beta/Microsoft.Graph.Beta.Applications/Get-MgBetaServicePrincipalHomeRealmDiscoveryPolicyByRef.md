@@ -10,6 +10,7 @@ ms.prod: applications
 
 ## SYNOPSIS
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-1.0)
@@ -24,6 +25,7 @@ Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <Str
 
 ## DESCRIPTION
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

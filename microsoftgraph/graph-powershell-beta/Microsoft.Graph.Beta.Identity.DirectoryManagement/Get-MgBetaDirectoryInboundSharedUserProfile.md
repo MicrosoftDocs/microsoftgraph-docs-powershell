@@ -11,6 +11,7 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Read the properties of an inboundSharedUserProfile.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaDirectoryInboundSharedUserProfile -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Read the properties of an inboundSharedUserProfile.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -9,7 +9,7 @@ ms.prod: sites-and-lists
 # Get-MgBetaShareListColumn
 
 ## SYNOPSIS
-Get columns from shares
+The collection of field definitions for this list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgShareListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgShareListColumn?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Get-MgBetaShareListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get columns from shares
+The collection of field definitions for this list.
 
 ## EXAMPLES
 ### Example 1: Code snippet

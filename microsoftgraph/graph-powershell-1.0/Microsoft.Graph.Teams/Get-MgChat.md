@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchat
 schema: 2.0.0
+ms.prod: microsoft-teams
+ms.prod: microsoft-teams
 ---
 
 # Get-MgChat
@@ -11,6 +13,7 @@ schema: 2.0.0
 Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChat?view=graph-powershell-beta)
@@ -39,6 +42,7 @@ Get-MgChat -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property
 Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get a group chat

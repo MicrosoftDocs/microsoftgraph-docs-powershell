@@ -8,8 +8,7 @@ schema: 2.0.0
 # Set-MgBetaCommunicationOnlineMeetingAttendeeReport
 
 ## SYNOPSIS
-The content stream of the attendee report of a Teams live event.
-Read-only.
+Update attendeeReport for the navigation property onlineMeetings in communications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-1.0)
@@ -29,8 +28,7 @@ Set-MgBetaCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunica
 ```
 
 ## DESCRIPTION
-The content stream of the attendee report of a Teams live event.
-Read-only.
+Update attendeeReport for the navigation property onlineMeetings in communications
 
 ## PARAMETERS
 

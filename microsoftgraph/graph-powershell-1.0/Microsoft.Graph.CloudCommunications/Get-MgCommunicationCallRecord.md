@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationCallRecord
@@ -11,6 +12,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of a callRecord object.
 There are two ways to get the id of a callRecord: You can use the $expand query parameter to optionally include session and segment details, as shown in the Get full details example.
 When you expand session details, the maximum page size is 60 sessions.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecord?view=graph-powershell-beta)
@@ -33,6 +35,7 @@ Get-MgCommunicationCallRecord -InputObject <ICloudCommunicationsIdentity> [-Expa
 Retrieve the properties and relationships of a callRecord object.
 There are two ways to get the id of a callRecord: You can use the $expand query parameter to optionally include session and segment details, as shown in the Get full details example.
 When you expand session details, the maximum page size is 60 sessions.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get basic details
@@ -144,6 +147,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport

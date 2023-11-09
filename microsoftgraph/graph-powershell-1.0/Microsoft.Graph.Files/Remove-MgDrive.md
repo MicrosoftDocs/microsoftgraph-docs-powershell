@@ -8,7 +8,8 @@ schema: 2.0.0
 # Publish-MgShareListContentType
 
 ## SYNOPSIS
-Publishes a [contentType][] present in the content type hub site.
+Publishes a contentType][] present in the content type hub site.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDrive?view=graph-powershell-beta)
@@ -28,7 +29,8 @@ Publish-MgShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-WhatI
 ```
 
 ## DESCRIPTION
-Publishes a [contentType][] present in the content type hub site.
+Publishes a contentType][] present in the content type hub site.
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

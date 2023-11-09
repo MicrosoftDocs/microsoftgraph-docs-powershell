@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Validate that the credentials are valid in the tenant.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Test-MgServicePrincipalSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgServicePrincipalSynchronizationJobCredential?view=graph-powershell-1.0)
@@ -48,6 +49,7 @@ Test-MgBetaServicePrincipalSynchronizationJobCredential -InputObject <IApplicati
 
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -294,6 +296,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UniqueName <String>]`: Alternate key of application

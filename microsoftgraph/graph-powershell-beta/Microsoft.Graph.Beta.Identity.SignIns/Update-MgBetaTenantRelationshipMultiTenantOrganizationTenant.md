@@ -50,7 +50,7 @@ Update the navigation property tenants in tenantRelationships
 ## PARAMETERS
 
 ### -AddedByTenantId
-Tenant ID of the tenant that added the tenant to the multi-tenant organization.
+Tenant ID of the tenant that added the tenant to the multitenant organization.
 Read-only.
 
 ```yaml
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -AddedDateTime
-Date and time when the tenant was added to the multi-tenant organization.
+Date and time when the tenant was added to the multitenant organization.
 Read-only.
 
 ```yaml
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the tenant added to the multi-tenant organization.
+Display name of the tenant added to the multitenant organization.
 
 ```yaml
 Type: String
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -JoinedDateTime
-Date and time when the tenant joined the multi-tenant organization.
+Date and time when the tenant joined the multitenant organization.
 Read-only.
 
 ```yaml
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -TenantId
-Tenant ID of the Azure Active Directory tenant added to the multi-tenant organization.
+Tenant ID of the Microsoft Entra tenant added to the multitenant organization.
 Set at the time tenant is added.Supports $filter.
 Key.
 
@@ -323,13 +323,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AddedByTenantId <String>]`: Tenant ID of the tenant that added the tenant to the multi-tenant organization. Read-only.
-  - `[AddedDateTime <DateTime?>]`: Date and time when the tenant was added to the multi-tenant organization. Read-only.
-  - `[DisplayName <String>]`: Display name of the tenant added to the multi-tenant organization.
-  - `[JoinedDateTime <DateTime?>]`: Date and time when the tenant joined the multi-tenant organization. Read-only.
+  - `[AddedByTenantId <String>]`: Tenant ID of the tenant that added the tenant to the multitenant organization. Read-only.
+  - `[AddedDateTime <DateTime?>]`: Date and time when the tenant was added to the multitenant organization. Read-only.
+  - `[DisplayName <String>]`: Display name of the tenant added to the multitenant organization.
+  - `[JoinedDateTime <DateTime?>]`: Date and time when the tenant joined the multitenant organization. Read-only.
   - `[Role <String>]`: multiTenantOrganizationMemberRole
   - `[State <String>]`: multiTenantOrganizationMemberState
-  - `[TenantId <String>]`: Tenant ID of the Azure Active Directory tenant added to the multi-tenant organization. Set at the time tenant is added.Supports $filter. Key.
+  - `[TenantId <String>]`: Tenant ID of the Microsoft Entra tenant added to the multitenant organization. Set at the time tenant is added.Supports $filter. Key.
   - `[TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>]`: multiTenantOrganizationMemberTransitionDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DesiredRole <String>]`: multiTenantOrganizationMemberRole
@@ -388,6 +388,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

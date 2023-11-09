@@ -9,7 +9,8 @@ ms.prod: sharepoint
 # Get-MgBetaGroupDriveItem
 
 ## SYNOPSIS
-Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
+Retrieve the metadata for a bundle][] based on the unique ID of the bundle.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItem?view=graph-powershell-1.0)
@@ -36,7 +37,8 @@ Get-MgBetaGroupDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
+Retrieve the metadata for a bundle][] based on the unique ID of the bundle.
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

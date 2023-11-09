@@ -11,6 +11,7 @@ ms.prod: bookings
 
 ## SYNOPSIS
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessService?view=graph-powershell-beta)
@@ -38,6 +39,7 @@ Get-MgBookingBusinessService -InputObject <IBookingsIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

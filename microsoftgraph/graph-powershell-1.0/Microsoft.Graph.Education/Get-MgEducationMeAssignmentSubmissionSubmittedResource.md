@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentsubmissionsubmittedresource
 schema: 2.0.0
+ms.prod: education
+ms.prod: education
 ---
 
 # Get-MgEducationMeAssignmentSubmissionSubmittedResource
@@ -11,7 +13,8 @@ schema: 2.0.0
 Retrieve a submitted resource.
 Only teachers, students, and applications with application permissions can perform this operation.
 Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
-Note that teachers can leave notes in some resources.
+Teachers can leave notes in some resources.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
@@ -43,7 +46,8 @@ Get-MgEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducationI
 Retrieve a submitted resource.
 Only teachers, students, and applications with application permissions can perform this operation.
 Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
-Note that teachers can leave notes in some resources.
+Teachers can leave notes in some resources.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 

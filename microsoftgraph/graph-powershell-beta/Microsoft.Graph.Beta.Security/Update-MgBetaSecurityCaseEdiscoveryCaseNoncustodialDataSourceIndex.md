@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex
 
 ## SYNOPSIS
-Trigger an indexOperation
+Trigger an indexOperation This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex?view=graph-powershell-1.0)
@@ -54,7 +54,7 @@ Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -InputObject 
 ```
 
 ## DESCRIPTION
-Trigger an indexOperation
+Trigger an indexOperation This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex Cmdlet
@@ -224,6 +224,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
+`BODYPARAMETER <IPathsHofq63SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityUpdateindexPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Ids <String[]>]`: 
+
 `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
@@ -260,6 +264,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker

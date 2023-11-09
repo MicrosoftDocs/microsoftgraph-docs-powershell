@@ -11,6 +11,7 @@ schema: 2.0.0
 Delete an identity provider resource that is of the type specified by the id in the request.
 Among the types of providers derived from identityProviderBase, you can currently delete a socialIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently delete a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityProvider?view=graph-powershell-beta)
@@ -33,6 +34,7 @@ Remove-MgIdentityProvider -InputObject <IIdentitySignInsIdentity> [-IfMatch <Str
 Delete an identity provider resource that is of the type specified by the id in the request.
 Among the types of providers derived from identityProviderBase, you can currently delete a socialIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently delete a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

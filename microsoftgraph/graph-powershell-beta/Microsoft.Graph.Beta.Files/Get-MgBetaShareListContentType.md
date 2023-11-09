@@ -9,7 +9,7 @@ ms.prod: sites-and-lists
 # Get-MgBetaShareListContentType
 
 ## SYNOPSIS
-Get contentTypes from shares
+The collection of content types present in this list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Get-MgShareListContentType?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Get-MgBetaShareListContentType -InputObject <IFilesIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get contentTypes from shares
+The collection of content types present in this list.
 
 ## EXAMPLES
 ### Example 1: Code snippet

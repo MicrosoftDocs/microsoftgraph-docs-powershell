@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 In the Azure AD access reviews feature, create a new program object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -25,6 +26,7 @@ New-MgBetaProgram -BodyParameter <IMicrosoftGraphProgram> [-WhatIf] [-Confirm] [
 
 ## DESCRIPTION
 In the Azure AD access reviews feature, create a new program object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaProgram Cmdlet

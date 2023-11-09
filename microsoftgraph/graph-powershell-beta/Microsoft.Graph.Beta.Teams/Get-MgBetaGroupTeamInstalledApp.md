@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the app installed in the specified team.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamInstalledApp?view=graph-powershell-1.0)
@@ -36,6 +37,7 @@ Get-MgBetaGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Retrieve the app installed in the specified team.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

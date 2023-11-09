@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
 Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
@@ -31,6 +32,7 @@ Remove-MgGroupOwnerByRef -InputObject <IGroupsIdentity> [-Id <String>] [-IfMatch
 ## DESCRIPTION
 Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
 Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

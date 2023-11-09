@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicy
 schema: 2.0.0
+ms.prod: identity-and-sign-in
+ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyAppManagementPolicy
 
 ## SYNOPSIS
 Read the properties of an appManagementPolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Expand
 
 ## DESCRIPTION
 Read the properties of an appManagementPolicy object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

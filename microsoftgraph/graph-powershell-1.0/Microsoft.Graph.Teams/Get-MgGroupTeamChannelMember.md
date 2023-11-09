@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get a conversationMember from a channel.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelMember?view=graph-powershell-beta)
@@ -36,6 +37,7 @@ Get-MgGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Get a conversationMember from a channel.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

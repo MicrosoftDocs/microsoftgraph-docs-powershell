@@ -10,8 +10,7 @@ ms.prod: cloud-communications
 # Get-MgBetaUserOnlineMeetingAlternativeRecording
 
 ## SYNOPSIS
-The content stream of the alternative recording of a Microsoft Teams live event.
-Read-only.
+Get alternativeRecording for the navigation property onlineMeetings from users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendanceReport?view=graph-powershell-1.0)
@@ -31,8 +30,7 @@ Get-MgBetaUserOnlineMeetingAlternativeRecording -InputObject <ICloudCommunicatio
 ```
 
 ## DESCRIPTION
-The content stream of the alternative recording of a Microsoft Teams live event.
-Read-only.
+Get alternativeRecording for the navigation property onlineMeetings from users
 
 ## EXAMPLES
 ### Example 1: List attendance reports for an online meeting

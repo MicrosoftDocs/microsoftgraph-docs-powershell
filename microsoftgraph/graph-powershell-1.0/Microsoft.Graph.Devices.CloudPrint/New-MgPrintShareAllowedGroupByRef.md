@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Grant the specified group access to submit print jobs to the associated printerShare.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ New-MgPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> -Bod
 
 ## DESCRIPTION
 Grant the specified group access to submit print jobs to the associated printerShare.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

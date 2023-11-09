@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the metadata for the location where the files of a channel are stored.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelFileFolder?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Get-MgBetaTeamworkDeletedTeamChannelFileFolder -InputObject <ITeamsIdentity> [-E
 
 ## DESCRIPTION
 Get the metadata for the location where the files of a channel are stored.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

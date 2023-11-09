@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresenceuserpreferredpresence
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Clear-MgCommunicationPresenceUserPreferredPresence
 
 ## SYNOPSIS
 Clear the preferred availability and activity status for a user.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaCommunicationPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresenceUserPreferredPresence?view=graph-powershell-beta)
@@ -29,6 +31,7 @@ Clear-MgCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommunica
 
 ## DESCRIPTION
 Clear the preferred availability and activity status for a user.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -134,6 +137,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
   - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
   - `[CommsOperationId <String>]`: The unique identifier of commsOperation
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport

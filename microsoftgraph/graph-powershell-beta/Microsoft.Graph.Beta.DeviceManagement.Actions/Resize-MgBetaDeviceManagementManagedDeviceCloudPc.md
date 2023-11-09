@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -41,6 +42,7 @@ Resize-MgBetaDeviceManagementManagedDeviceCloudPc -InputObject <IDeviceManagemen
 
 ## DESCRIPTION
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Resize-MgBetaDeviceManagementManagedDeviceCloudPc Cmdlet

@@ -11,6 +11,7 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve the properties and relationships of plannerTask object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTask?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaPlannerTask -InputObject <IPlannerIdentity> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerTask object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

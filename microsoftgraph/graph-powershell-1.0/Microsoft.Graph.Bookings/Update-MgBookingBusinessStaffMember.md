@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ Update-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParame
 
 ## DESCRIPTION
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

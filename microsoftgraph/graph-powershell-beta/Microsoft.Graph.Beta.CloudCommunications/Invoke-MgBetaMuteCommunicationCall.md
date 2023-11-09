@@ -11,7 +11,7 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Allows the application to mute itself.
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
-For more details about how to handle mute operations, see muteParticipantOperation
+For more details about how to handle mute operations, see muteParticipantOperation This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgMuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCall?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ Invoke-MgBetaMuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Allows the application to mute itself.
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
-For more details about how to handle mute operations, see muteParticipantOperation
+For more details about how to handle mute operations, see muteParticipantOperation This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

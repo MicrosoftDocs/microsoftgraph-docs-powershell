@@ -10,6 +10,7 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Read the properties and relationships of a contactMergeSuggestions object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Get-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-Expa
 
 ## DESCRIPTION
 Read the properties and relationships of a contactMergeSuggestions object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserSettingContactMergeSuggestion Cmdlet

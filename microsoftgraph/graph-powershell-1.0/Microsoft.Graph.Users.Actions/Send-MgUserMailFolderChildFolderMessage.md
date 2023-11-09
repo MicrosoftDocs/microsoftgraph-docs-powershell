@@ -9,11 +9,11 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Send the message specified in the request body using either JSON or MIME format.
-When using JSON format you can include a file attachment in the same sendMail action call.
-When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
-This method saves the message in the Sent Items folder.
+When using JSON format, you can include a file attachment in the same sendMail action call.
+When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
@@ -48,11 +48,11 @@ Send-MgUserMail -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Send the message specified in the request body using either JSON or MIME format.
-When using JSON format you can include a file attachment in the same sendMail action call.
-When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
-This method saves the message in the Sent Items folder.
+When using JSON format, you can include a file attachment in the same sendMail action call.
+When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Send an existing draft message
@@ -322,7 +322,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TodoTaskId <String>]`: The unique identifier of todoTask

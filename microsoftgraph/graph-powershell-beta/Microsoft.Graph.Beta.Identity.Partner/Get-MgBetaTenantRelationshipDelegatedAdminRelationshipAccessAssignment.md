@@ -3,14 +3,15 @@ external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment
 schema: 2.0.0
-ms.prod: customer-relationship-management
-ms.prod: customer-relationship-management
+ms.prod: partner-customer-administration
+ms.prod: partner-customer-administration
 ---
 
 # Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 ## SYNOPSIS
 Read the properties of a delegatedAdminAccessAssignment object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
@@ -39,6 +40,7 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObj
 
 ## DESCRIPTION
 Read the properties of a delegatedAdminAccessAssignment object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

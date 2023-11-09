@@ -11,6 +11,7 @@ schema: 2.0.0
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEventInstanceExtension?view=graph-powershell-1.0)
@@ -45,6 +46,7 @@ New-MgBetaGroupEventInstanceExtension -InputObject <ICalendarIdentity> -BodyPara
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

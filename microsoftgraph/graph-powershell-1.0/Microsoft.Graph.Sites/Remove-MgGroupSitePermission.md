@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a permission object on a site.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSitePermission?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgGroupSitePermission -InputObject <ISitesIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Delete a permission object on a site.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

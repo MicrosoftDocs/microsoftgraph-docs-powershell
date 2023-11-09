@@ -50,6 +50,8 @@ Return all IDs for the groups, administrative units, and directory roles that a 
 This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -246,5 +248,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserChatPermissionGrantMemberObject?view=graph-powershell-beta)
 

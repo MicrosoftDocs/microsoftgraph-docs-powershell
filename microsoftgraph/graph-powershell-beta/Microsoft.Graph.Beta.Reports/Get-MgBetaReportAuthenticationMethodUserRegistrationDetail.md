@@ -11,6 +11,7 @@ ms.prod: identity-and-access-reports
 
 ## SYNOPSIS
 Read the properties and relationships of a userRegistrationDetails object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaReportAuthenticationMethodUserRegistrationDetail -InputObject <IReport
 
 ## DESCRIPTION
 Read the properties and relationships of a userRegistrationDetails object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

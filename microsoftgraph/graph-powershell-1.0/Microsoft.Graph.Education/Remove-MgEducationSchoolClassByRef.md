@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a class from a school.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> [-Id <Strin
 
 ## DESCRIPTION
 Delete a class from a school.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

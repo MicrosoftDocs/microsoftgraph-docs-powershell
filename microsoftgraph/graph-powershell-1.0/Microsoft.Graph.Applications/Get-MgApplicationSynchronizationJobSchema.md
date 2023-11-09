@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjobschema
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgApplicationSynchronizationJobSchema
 
 ## SYNOPSIS
 Retrieve the schema for a given synchronization job or template.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJobSchema?view=graph-powershell-beta)
@@ -29,6 +31,7 @@ Get-MgApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity> [
 
 ## DESCRIPTION
 Retrieve the schema for a given synchronization job or template.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

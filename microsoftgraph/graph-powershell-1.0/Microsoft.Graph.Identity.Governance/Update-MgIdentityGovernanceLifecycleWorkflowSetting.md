@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a lifecycleManagementSettings object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-beta)
@@ -31,6 +32,7 @@ Update-MgIdentityGovernanceLifecycleWorkflowSetting
 
 ## DESCRIPTION
 Update the properties of a lifecycleManagementSettings object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

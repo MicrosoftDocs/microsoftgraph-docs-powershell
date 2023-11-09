@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove a tokenLifetimePolicy from an application.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Remove-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity
 
 ## DESCRIPTION
 Remove a tokenLifetimePolicy from an application.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

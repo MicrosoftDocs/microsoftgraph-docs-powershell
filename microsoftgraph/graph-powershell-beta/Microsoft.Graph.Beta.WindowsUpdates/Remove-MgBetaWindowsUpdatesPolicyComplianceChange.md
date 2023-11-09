@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaWindowsUpdatesPolicyComplianceChange
 
 ## SYNOPSIS
-Delete a complianceChange object.
+Delete a contentApproval object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesI
 ```
 
 ## DESCRIPTION
-Delete a complianceChange object.
+Delete a contentApproval object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

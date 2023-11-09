@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a standard tag for members in the team.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamTag?view=graph-powershell-1.0)
@@ -44,6 +45,7 @@ New-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Create a standard tag for members in the team.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Tag description as it will appear to the user in Microsoft Teams.
+Tag description as it appears to the user in Microsoft Teams.
 A teamworkTag can't have more than 200 teamworkTagMembers.
 
 ```yaml
@@ -97,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Tag name as it will appear to the user in Microsoft Teams.
+Tag name as it appears to the user in Microsoft Teams.
 
 ```yaml
 Type: String
@@ -272,8 +274,8 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphTeamworkTag>`: teamworkTag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Description <String>]`: Tag description as it will appear to the user in Microsoft Teams. A teamworkTag can't have more than 200 teamworkTagMembers.
-  - `[DisplayName <String>]`: Tag name as it will appear to the user in Microsoft Teams.
+  - `[Description <String>]`: Tag description as it appears to the user in Microsoft Teams. A teamworkTag can't have more than 200 teamworkTagMembers.
+  - `[DisplayName <String>]`: Tag name as it appears to the user in Microsoft Teams.
   - `[MemberCount <Int32?>]`: The number of users assigned to the tag.
   - `[Members <IMicrosoftGraphTeamworkTagMember[]>]`: Users assigned to the tag.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.

@@ -11,6 +11,7 @@ ms.prod: industry-data-etl
 
 ## SYNOPSIS
 Read the properties and relationships of an inboundFlow object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Expan
 
 ## DESCRIPTION
 Read the properties and relationships of an inboundFlow object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -240,6 +242,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
+  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
   - `[ExternalActivityId <String>]`: The unique identifier of externalActivity

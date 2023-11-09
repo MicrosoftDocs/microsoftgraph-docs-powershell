@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a OneNote page.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSiteOnenotePage](/powershell/module/Microsoft.Graph.Notes/Remove-MgSiteOnenotePage?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaSiteOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Delete a OneNote page.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

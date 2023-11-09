@@ -12,6 +12,7 @@ ms.prod: cloud-communications
 ## SYNOPSIS
 Get the meetingAttendanceReport for an onlineMeeting.
 Each time an online meeting ends, an attendance report will be generated for that session.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -39,6 +40,7 @@ Get-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsIden
 ## DESCRIPTION
 Get the meetingAttendanceReport for an onlineMeeting.
 Each time an online meeting ends, an attendance report will be generated for that session.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -10,6 +10,7 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCalendarSchedule?view=graph-powershell-1.0)
@@ -46,6 +47,7 @@ Get-MgBetaGroupCalendarSchedule -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

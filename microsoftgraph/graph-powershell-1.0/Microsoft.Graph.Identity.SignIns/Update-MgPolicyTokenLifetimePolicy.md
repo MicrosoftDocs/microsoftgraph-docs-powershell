@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a tokenLifetimePolicy object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyTokenLifetimePolicy?view=graph-powershell-beta)
@@ -45,6 +46,7 @@ Update-MgPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> -Body
 
 ## DESCRIPTION
 Update the properties of a tokenLifetimePolicy object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -46,6 +46,8 @@ Confirm-MgUserChatPermissionGrantMemberObject -InputObject <IUsersActionsIdentit
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -242,5 +244,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Confirm-MgBetaUserChatPermissionGrantMemberObject](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Confirm-MgBetaUserChatPermissionGrantMemberObject?view=graph-powershell-beta)
 

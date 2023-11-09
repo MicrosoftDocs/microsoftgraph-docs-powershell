@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
@@ -31,6 +32,7 @@ Remove-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> [-Id <String
 ## DESCRIPTION
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

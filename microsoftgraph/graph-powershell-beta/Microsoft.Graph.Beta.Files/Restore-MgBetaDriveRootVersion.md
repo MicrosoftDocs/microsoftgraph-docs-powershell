@@ -10,6 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Restore-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRootVersion?view=graph-powershell-1.0)
@@ -31,6 +32,7 @@ Restore-MgBetaDriveRootVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatI
 ## DESCRIPTION
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

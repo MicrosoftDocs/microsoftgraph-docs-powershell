@@ -11,6 +11,7 @@ ms.prod: people
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a workPosition object in a user's profile.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a workPosition object in a user's profile.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfilePosition Cmdlet

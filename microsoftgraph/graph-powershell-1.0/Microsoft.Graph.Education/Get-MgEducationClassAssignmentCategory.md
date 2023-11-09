@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategory
 schema: 2.0.0
+ms.prod: education
+ms.prod: education
 ---
 
 # Get-MgEducationClassAssignmentCategory
@@ -10,6 +12,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve an educationCategory object.
 Only teachers, students, and applications with application permissions can perform this operation.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
@@ -45,6 +48,7 @@ Get-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-Expan
 ## DESCRIPTION
 Retrieve an educationCategory object.
 Only teachers, students, and applications with application permissions can perform this operation.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

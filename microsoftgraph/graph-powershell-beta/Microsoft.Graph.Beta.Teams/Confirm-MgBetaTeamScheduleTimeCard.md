@@ -10,6 +10,7 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Confirm a specific timeCard.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -26,6 +27,7 @@ Confirm-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-WhatIf] [-Con
 
 ## DESCRIPTION
 Confirm a specific timeCard.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Confirm-MgBetaTeamScheduleTimeCard Cmdlet

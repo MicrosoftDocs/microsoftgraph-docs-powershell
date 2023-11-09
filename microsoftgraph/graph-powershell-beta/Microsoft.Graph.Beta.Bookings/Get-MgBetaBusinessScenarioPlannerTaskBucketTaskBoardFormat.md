@@ -10,6 +10,7 @@ ms.prod: planner
 
 ## SYNOPSIS
 Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat -InputObject <IBookin
 
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

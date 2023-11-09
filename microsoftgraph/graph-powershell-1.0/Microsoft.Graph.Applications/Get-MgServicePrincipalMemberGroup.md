@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmembergroup
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgServicePrincipalMemberGroup
@@ -13,6 +14,7 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberGroup?view=graph-powershell-beta)
@@ -51,6 +53,7 @@ This function is transitive.
 This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 

@@ -12,6 +12,7 @@ ms.prod: extensions
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessageExtension?view=graph-powershell-1.0)
@@ -43,6 +44,7 @@ Get-MgBetaUserMailFolderChildFolderMessageExtension -InputObject <IMailIdentity>
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

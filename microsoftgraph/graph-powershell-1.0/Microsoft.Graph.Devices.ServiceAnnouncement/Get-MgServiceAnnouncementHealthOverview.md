@@ -3,6 +3,8 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverview
 schema: 2.0.0
+ms.prod: service-communications
+ms.prod: service-communications
 ---
 
 # Get-MgServiceAnnouncementHealthOverview
@@ -10,6 +12,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a serviceHealth object.
 This operation provides the health information of a specified service for a tenant.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementHealthOverview?view=graph-powershell-beta)
@@ -38,6 +41,7 @@ Get-MgServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnouncemen
 ## DESCRIPTION
 Retrieve the properties and relationships of a serviceHealth object.
 This operation provides the health information of a specified service for a tenant.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get serviceHealth resources

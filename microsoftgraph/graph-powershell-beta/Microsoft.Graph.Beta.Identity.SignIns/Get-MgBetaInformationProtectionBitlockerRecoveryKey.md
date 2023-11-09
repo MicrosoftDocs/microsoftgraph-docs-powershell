@@ -13,8 +13,9 @@ ms.prod: directory-management
 Retrieve the properties and relationships of a bitlockerRecoveryKey object.
 By default, this operation does not return the key property that represents the actual recovery key.
 To include the key property in the response, use the $select OData query parameter.
-Including the $select query parameter triggers an Azure AD audit of the operation and generates an audit log.
-You can find the log in Azure AD audit logs under the KeyManagement category.
+Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
+You can find the log in Microsoft Entra audit logs under the KeyManagement category.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKey?view=graph-powershell-1.0)
@@ -44,8 +45,9 @@ Get-MgBetaInformationProtectionBitlockerRecoveryKey -InputObject <IIdentitySignI
 Retrieve the properties and relationships of a bitlockerRecoveryKey object.
 By default, this operation does not return the key property that represents the actual recovery key.
 To include the key property in the response, use the $select OData query parameter.
-Including the $select query parameter triggers an Azure AD audit of the operation and generates an audit log.
-You can find the log in Azure AD audit logs under the KeyManagement category.
+Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
+You can find the log in Microsoft Entra audit logs under the KeyManagement category.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -300,6 +302,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

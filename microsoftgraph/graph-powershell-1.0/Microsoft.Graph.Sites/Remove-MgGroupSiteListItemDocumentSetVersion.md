@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a version of a document set in a list.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -30,6 +31,7 @@ Remove-MgGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-IfM
 
 ## DESCRIPTION
 Delete a version of a document set in a list.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

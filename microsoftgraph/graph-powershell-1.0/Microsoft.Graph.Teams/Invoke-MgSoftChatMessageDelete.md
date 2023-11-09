@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a single chatMessage or a chat message reply in a channel or a chat.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaSoftChatMessageDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaSoftChatMessageDelete?view=graph-powershell-beta)
@@ -29,6 +30,7 @@ Invoke-MgSoftChatMessageDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatI
 
 ## DESCRIPTION
 Delete a single chatMessage or a chat message reply in a channel or a chat.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

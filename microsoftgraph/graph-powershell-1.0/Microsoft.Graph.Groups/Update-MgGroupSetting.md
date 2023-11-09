@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a groupSetting object for tenant-wide group settings or a specific group setting.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupSetting?view=graph-powershell-beta)
@@ -69,6 +70,7 @@ Update-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the properties of a groupSetting object for tenant-wide group settings or a specific group setting.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

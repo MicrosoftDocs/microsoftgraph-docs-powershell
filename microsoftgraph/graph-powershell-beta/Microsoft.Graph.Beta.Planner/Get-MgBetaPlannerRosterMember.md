@@ -11,6 +11,7 @@ ms.prod: planner
 
 ## SYNOPSIS
 Read the properties and relationships of a plannerRosterMember object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Read the properties and relationships of a plannerRosterMember object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPlannerRosterMember Cmdlet

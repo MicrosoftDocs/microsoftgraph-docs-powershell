@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a bookmark object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -50,6 +51,7 @@ Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Update the properties of a bookmark object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaSearchBookmark Cmdlet
@@ -385,7 +387,7 @@ Accept wildcard characters: False
 
 ### -WebUrl
 Search answer URL link.
-When users click this search answer in search results, they will go to this URL.
+When users click this search answer in search results, they'll go to this URL.
 
 ```yaml
 Type: String
@@ -462,7 +464,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
-  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
+  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they'll go to this URL.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
   - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
@@ -487,6 +489,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
+  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
   - `[ExternalActivityId <String>]`: The unique identifier of externalActivity

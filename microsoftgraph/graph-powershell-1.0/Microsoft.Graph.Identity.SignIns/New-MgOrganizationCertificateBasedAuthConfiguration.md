@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new certificateBasedAuthConfiguration object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
@@ -43,6 +44,7 @@ New-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Create a new certificateBasedAuthConfiguration object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

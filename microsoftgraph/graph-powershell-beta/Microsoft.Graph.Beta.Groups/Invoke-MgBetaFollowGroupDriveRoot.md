@@ -10,6 +10,7 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Follow a driveItem.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFollowGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgFollowGroupDriveRoot?view=graph-powershell-1.0)
@@ -28,6 +29,7 @@ Invoke-MgBetaFollowGroupDriveRoot -InputObject <IGroupsIdentity> [-WhatIf] [-Con
 
 ## DESCRIPTION
 Follow a driveItem.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -11,6 +11,7 @@ ms.prod: bookings
 
 ## SYNOPSIS
 Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
@@ -38,6 +39,7 @@ Get-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

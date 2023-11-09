@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new teamworkTagMember object in a team.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
@@ -43,6 +44,7 @@ New-MgGroupTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create a new teamworkTagMember object in a team.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 

@@ -10,7 +10,7 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
+Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserCalendarSchedule?view=graph-powershell-1.0)
@@ -32,7 +32,7 @@ Get-MgBetaUserById
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
+Some common uses for this function are to: This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

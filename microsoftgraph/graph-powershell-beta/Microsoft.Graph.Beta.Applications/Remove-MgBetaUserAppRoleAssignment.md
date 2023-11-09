@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete an appRoleAssignment that has been granted to a user.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgUserAppRoleAssignment?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatc
 
 ## DESCRIPTION
 Delete an appRoleAssignment that has been granted to a user.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Remove a user's application role assignment
@@ -195,6 +197,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
   - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UniqueName <String>]`: Alternate key of application

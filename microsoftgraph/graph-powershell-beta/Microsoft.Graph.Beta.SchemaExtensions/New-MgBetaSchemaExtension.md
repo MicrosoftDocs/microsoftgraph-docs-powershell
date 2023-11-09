@@ -13,6 +13,7 @@ Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
 Depending on the nstate of the extension, the owner app, and only the owner app, may update or delete the extension.
 See examples of how to define a schema extension that describes a training course, nuse the schema extension definition to create a new group with training course data, and nadd training course data to an existing group.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/New-MgSchemaExtension?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
 Depending on the nstate of the extension, the owner app, and only the owner app, may update or delete the extension.
 See examples of how to define a schema extension that describes a training course, nuse the schema extension definition to create a new group with training course data, and nadd training course data to an existing group.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Creating a schema extension using a verified domain

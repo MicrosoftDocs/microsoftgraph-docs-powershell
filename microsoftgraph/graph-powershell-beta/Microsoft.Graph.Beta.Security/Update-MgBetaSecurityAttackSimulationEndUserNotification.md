@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property endUserNotifications in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -97,7 +100,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+Date and time when the notification was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -112,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Description of the notification as defined by the user.
 
 ```yaml
 Type: String
@@ -143,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Name of the notification as defined by the user.
 
 ```yaml
 Type: String
@@ -221,7 +226,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+Date and time when the notification was last modified.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -281,7 +288,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedLocales
-.
+Supported locales for endUserNotification content.
 
 ```yaml
 Type: String[]
@@ -350,45 +357,45 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: Date and time when the notification was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Description <String>]`: Description of the notification as defined by the user.
   - `[Details <IMicrosoftGraphEndUserNotificationDetail[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[EmailContent <String>]`: 
-    - `[IsDefaultLangauge <Boolean?>]`: 
-    - `[Language <String>]`: 
-    - `[Locale <String>]`: 
+    - `[EmailContent <String>]`: Email HTML content.
+    - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language is default.
+    - `[Language <String>]`: Notification language.
+    - `[Locale <String>]`: Notification locale.
     - `[SentFrom <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[Subject <String>]`: 
-  - `[DisplayName <String>]`: 
+    - `[Subject <String>]`: Mail subject.
+  - `[DisplayName <String>]`: Name of the notification as defined by the user.
   - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the notification was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[NotificationType <String>]`: endUserNotificationType
   - `[Source <String>]`: simulationContentSource
   - `[Status <String>]`: simulationContentStatus
-  - `[SupportedLocales <String[]>]`: 
+  - `[SupportedLocales <String[]>]`: Supported locales for endUserNotification content.
 
 `CREATEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
 `DETAILS <IMicrosoftGraphEndUserNotificationDetail[]>`: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[EmailContent <String>]`: 
-  - `[IsDefaultLangauge <Boolean?>]`: 
-  - `[Language <String>]`: 
-  - `[Locale <String>]`: 
+  - `[EmailContent <String>]`: Email HTML content.
+  - `[IsDefaultLangauge <Boolean?>]`: Indicates whether this language is default.
+  - `[Language <String>]`: Notification language.
+  - `[Locale <String>]`: Notification locale.
   - `[SentFrom <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[Email <String>]`: Email address of the user.
-  - `[Subject <String>]`: 
+  - `[Subject <String>]`: Mail subject.
 
 `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
@@ -426,6 +433,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
   - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
   - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
   - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
   - `[HostTrackerId <String>]`: The unique identifier of hostTracker
@@ -469,9 +477,13 @@ To create the parameters described below, construct a hash table containing the 
 
 `LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+[Update-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
+
+## RELATED LINKS
+[Update-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 

@@ -10,6 +10,7 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Unfollow a driveItem.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgUnfollowUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnfollowUserDriveItem?view=graph-powershell-1.0)
@@ -30,6 +31,7 @@ Invoke-MgBetaUnfollowUserDriveItem -InputObject <IUsersActionsIdentity> [-PassTh
 
 ## DESCRIPTION
 Unfollow a driveItem.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 
@@ -170,7 +172,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: The unique identifier of device
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
@@ -192,7 +193,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation

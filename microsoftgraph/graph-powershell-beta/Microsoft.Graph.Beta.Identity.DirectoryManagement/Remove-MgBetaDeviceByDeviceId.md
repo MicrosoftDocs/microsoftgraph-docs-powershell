@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a registered device.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDeviceByDeviceId](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceByDeviceId?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity
 
 ## DESCRIPTION
 Delete a registered device.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

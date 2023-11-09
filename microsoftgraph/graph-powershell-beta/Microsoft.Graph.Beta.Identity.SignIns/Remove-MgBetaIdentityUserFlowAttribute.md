@@ -8,8 +8,8 @@ schema: 2.0.0
 # Remove-MgBetaIdentityUserFlowAttribute
 
 ## SYNOPSIS
-Delete an identityUserFlowAttribute.
-Only custom user flow attributes can be deleted.
+Delete a custom identityUserFlowAttribute.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
@@ -29,8 +29,8 @@ Remove-MgBetaIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity> [
 ```
 
 ## DESCRIPTION
-Delete an identityUserFlowAttribute.
-Only custom user flow attributes can be deleted.
+Delete a custom identityUserFlowAttribute.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -208,6 +208,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[PlatformCredentialAuthenticationMethodId <String>]`: The unique identifier of platformCredentialAuthenticationMethod
   - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
   - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
   - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal

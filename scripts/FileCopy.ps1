@@ -63,7 +63,7 @@ function Copy-Files{
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
         [ValidateNotNullOrEmpty()]
-        [string] $Module = "Users",
+        [string] $ModuleName = "Users",
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
 		[ValidateNotNullOrEmpty()]

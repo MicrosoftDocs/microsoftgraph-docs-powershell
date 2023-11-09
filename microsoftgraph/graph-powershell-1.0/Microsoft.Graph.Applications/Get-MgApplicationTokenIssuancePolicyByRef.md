@@ -3,12 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenissuancepolicybyref
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgApplicationTokenIssuancePolicyByRef
 
 ## SYNOPSIS
 List the tokenIssuancePolicy objects that are assigned to an application.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
@@ -23,6 +25,7 @@ Get-MgApplicationTokenIssuancePolicyByRef -ApplicationId <String> [-Filter <Stri
 
 ## DESCRIPTION
 List the tokenIssuancePolicy objects that are assigned to an application.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 

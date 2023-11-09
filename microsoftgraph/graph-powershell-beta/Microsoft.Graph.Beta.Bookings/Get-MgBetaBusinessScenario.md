@@ -11,6 +11,7 @@ ms.prod: business-scenarios
 
 ## SYNOPSIS
 Read the properties and relationships of a businessScenario object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaBusinessScenario -InputObject <IBookingsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Read the properties and relationships of a businessScenario object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

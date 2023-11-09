@@ -10,7 +10,8 @@ ms.prod: sites-and-lists
 # Get-MgBetaGroupSiteContentType
 
 ## SYNOPSIS
-Retrieve the metadata for a [content type][contentType] in a [site][] or a [list][].
+Retrieve the metadata for a content type][contentType] in a [site][] or a [list][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteContentType?view=graph-powershell-1.0)
@@ -37,7 +38,8 @@ Get-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a [content type][contentType] in a [site][] or a [list][].
+Retrieve the metadata for a content type][contentType] in a [site][] or a [list][].
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 
@@ -303,6 +305,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup

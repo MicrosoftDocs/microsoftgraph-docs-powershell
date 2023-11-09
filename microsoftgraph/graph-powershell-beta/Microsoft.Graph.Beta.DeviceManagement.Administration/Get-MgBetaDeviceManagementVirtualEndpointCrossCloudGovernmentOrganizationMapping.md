@@ -10,6 +10,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -20,6 +21,7 @@ Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

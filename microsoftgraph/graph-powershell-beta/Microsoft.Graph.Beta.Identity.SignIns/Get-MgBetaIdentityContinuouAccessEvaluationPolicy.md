@@ -10,6 +10,7 @@ ms.prod: identity-and-sign-in
 
 ## SYNOPSIS
 Read the properties and relationships of a continuousAccessEvaluationPolicy object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -20,6 +21,7 @@ Get-MgBetaIdentityContinuouAccessEvaluationPolicy [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Read the properties and relationships of a continuousAccessEvaluationPolicy object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet

@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Restore a document set version.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaShareListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ Restore-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-PassTh
 
 ## DESCRIPTION
 Restore a document set version.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -11,6 +11,7 @@ schema: 2.0.0
 Delete an application object.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplication?view=graph-powershell-beta)
@@ -33,6 +34,7 @@ Remove-MgApplication -InputObject <IApplicationsIdentity> [-IfMatch <String>] [-
 Delete an application object.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Delete an application

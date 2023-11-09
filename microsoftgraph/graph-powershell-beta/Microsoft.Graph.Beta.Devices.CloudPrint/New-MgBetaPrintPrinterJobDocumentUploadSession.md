@@ -12,6 +12,7 @@ Create an upload session that allows an app to iteratively upload ranges of a bi
 As part of the response, this action returns an upload URL that can be used in subsequent sequential PUT queries.
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJobDocumentUploadSession?view=graph-powershell-1.0)
@@ -52,6 +53,7 @@ Create an upload session that allows an app to iteratively upload ranges of a bi
 As part of the response, this action returns an upload URL that can be used in subsequent sequential PUT queries.
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

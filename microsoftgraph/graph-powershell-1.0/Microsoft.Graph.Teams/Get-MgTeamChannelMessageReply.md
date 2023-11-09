@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessageReply?view=graph-powershell-beta)
@@ -36,6 +37,7 @@ Get-MgTeamChannelMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Get reply to a message in a channel

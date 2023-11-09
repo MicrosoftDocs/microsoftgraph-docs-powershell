@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Remove a user as a registered user of the device.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceRegisteredUserByRef?view=graph-powershell-1.0)
@@ -29,6 +30,7 @@ Remove-MgBetaDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagemen
 
 ## DESCRIPTION
 Remove a user as a registered user of the device.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

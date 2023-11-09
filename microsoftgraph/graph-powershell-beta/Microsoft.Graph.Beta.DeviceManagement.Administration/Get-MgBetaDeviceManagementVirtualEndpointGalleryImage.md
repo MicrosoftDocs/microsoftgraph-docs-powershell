@@ -11,6 +11,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of a specific cloudPcGalleryImage object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManag
 
 ## DESCRIPTION
 Read the properties and relationships of a specific cloudPcGalleryImage object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet

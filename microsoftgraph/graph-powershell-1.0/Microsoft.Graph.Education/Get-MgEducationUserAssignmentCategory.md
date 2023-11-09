@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentcategory
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationUserAssignmentCategory
@@ -10,6 +11,7 @@ schema: 2.0.0
 ## SYNOPSIS
 List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentCategory?view=graph-powershell-beta)
@@ -25,6 +27,7 @@ Get-MgEducationUserAssignmentCategory -EducationAssignmentId <String> -Education
 ## DESCRIPTION
 List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

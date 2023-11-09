@@ -9,7 +9,8 @@ ms.prod: outlook
 # Grant-MgBetaGroupSitePermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a [permission][].
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptGroupCalendarEventTentatively](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupCalendarEventTentatively?view=graph-powershell-1.0)
@@ -44,7 +45,8 @@ Grant-MgBetaGroupSitePermission -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a [permission][].
+Grant users access to a link represented by a permission][].
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

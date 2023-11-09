@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyrolemanagementpolicyassignment
 schema: 2.0.0
+ms.prod: governance
+ms.prod: governance
 ---
 
 # Get-MgPolicyRoleManagementPolicyAssignment
 
 ## SYNOPSIS
 Get the details of a role management policy assignment including the policy and rules associated with the Azure AD role.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIdentit
 
 ## DESCRIPTION
 Get the details of a role management policy assignment including the policy and rules associated with the Azure AD role.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Retrieve a role management policy assignment

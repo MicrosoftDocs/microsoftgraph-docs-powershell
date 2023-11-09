@@ -11,6 +11,7 @@ ms.prod: cloud-pc
 
 ## SYNOPSIS
 Read the properties and relationships of a cloudPcUserSetting object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManage
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcUserSetting object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet

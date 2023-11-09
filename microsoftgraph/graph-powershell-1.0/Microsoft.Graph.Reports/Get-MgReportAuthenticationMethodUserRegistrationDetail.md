@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportauthenticationmethoduserregistrationdetail
 schema: 2.0.0
+ms.prod: identity-and-access-reports
+ms.prod: identity-and-access-reports
 ---
 
 # Get-MgReportAuthenticationMethodUserRegistrationDetail
 
 ## SYNOPSIS
 Read the properties and relationships of a userRegistrationDetails object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReportsIde
 
 ## DESCRIPTION
 Read the properties and relationships of a userRegistrationDetails object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

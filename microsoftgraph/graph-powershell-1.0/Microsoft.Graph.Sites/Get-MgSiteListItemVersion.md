@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemversion
 schema: 2.0.0
+ms.prod: sharepoint
+ms.prod: sharepoint
 ---
 
 # Get-MgSiteListItemVersion
 
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a ListItem.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemVersion?view=graph-powershell-beta)
@@ -36,6 +39,7 @@ Get-MgSiteListItemVersion -InputObject <ISitesIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -10,6 +10,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a directoryObject object.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObject?view=graph-powershell-1.0)
@@ -37,6 +38,7 @@ Get-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a directoryObject object.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

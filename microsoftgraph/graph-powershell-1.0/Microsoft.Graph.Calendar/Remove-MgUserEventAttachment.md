@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete calendarPermission.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventAttachment?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <Stri
 
 ## DESCRIPTION
 Delete calendarPermission.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

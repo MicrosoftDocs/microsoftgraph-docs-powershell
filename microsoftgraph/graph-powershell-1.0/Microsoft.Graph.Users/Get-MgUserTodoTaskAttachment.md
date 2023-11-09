@@ -3,12 +3,15 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachment
 schema: 2.0.0
+ms.prod: outlook
+ms.prod: outlook
 ---
 
 # Get-MgUserTodoTaskAttachment
 
 ## SYNOPSIS
 Read the properties and relationships of a taskFileAttachment object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachment?view=graph-powershell-beta)
@@ -35,6 +38,7 @@ Get-MgUserTodoTaskAttachment -InputObject <IUsersIdentity> [-Property <String[]>
 
 ## DESCRIPTION
 Read the properties and relationships of a taskFileAttachment object.
+This API is supported in the following national cloud deployments.
 
 ## PARAMETERS
 

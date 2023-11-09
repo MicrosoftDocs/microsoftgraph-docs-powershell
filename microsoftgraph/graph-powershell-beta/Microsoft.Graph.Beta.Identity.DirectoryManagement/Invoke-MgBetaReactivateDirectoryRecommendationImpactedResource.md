@@ -12,6 +12,7 @@ ms.prod: directory-management
 Reactivate an accidentally dismissed, completed, or postponed impactedResource object.
 This action updates the status of the resource to active.
 This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -31,6 +32,7 @@ Invoke-MgBetaReactivateDirectoryRecommendationImpactedResource
 Reactivate an accidentally dismissed, completed, or postponed impactedResource object.
 This action updates the status of the resource to active.
 This method is relevant only if the status of the impactedResource object is dismissed, postponed, or completedByUser.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

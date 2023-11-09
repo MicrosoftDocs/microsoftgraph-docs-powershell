@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a groupLifecyclePolicy.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ Remove-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a groupLifecyclePolicy.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

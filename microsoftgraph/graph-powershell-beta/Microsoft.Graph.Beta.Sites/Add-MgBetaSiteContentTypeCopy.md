@@ -9,7 +9,8 @@ ms.prod: sites-and-lists
 # Add-MgBetaSiteContentTypeCopy
 
 ## SYNOPSIS
-Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
+Add a copy of a content type][contentType] from a [site][site] to a [list][list].
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteContentTypeCopy?view=graph-powershell-1.0)
@@ -43,7 +44,8 @@ Add-MgBetaSiteContentTypeCopy -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
+Add a copy of a content type][contentType] from a [site][site] to a [list][list].
+This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
 
@@ -210,6 +212,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup

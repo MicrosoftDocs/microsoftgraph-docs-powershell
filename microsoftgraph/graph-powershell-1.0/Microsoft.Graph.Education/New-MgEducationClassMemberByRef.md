@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add an educationUser member to an educationClass.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
@@ -41,6 +42,7 @@ New-MgEducationClassMemberByRef -InputObject <IEducationIdentity> -BodyParameter
 
 ## DESCRIPTION
 Add an educationUser member to an educationClass.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet

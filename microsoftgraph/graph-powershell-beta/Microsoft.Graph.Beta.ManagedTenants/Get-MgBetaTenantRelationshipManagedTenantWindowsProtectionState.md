@@ -11,6 +11,7 @@ ms.prod: multi-tenant-management
 
 ## SYNOPSIS
 Read the properties and relationships of a windowsProtectionState object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -35,6 +36,7 @@ Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject <IM
 
 ## DESCRIPTION
 Read the properties and relationships of a windowsProtectionState object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

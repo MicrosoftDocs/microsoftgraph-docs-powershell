@@ -16,6 +16,7 @@ The bot is expected to answer or reject the call before the call times out.
 The current timeout value is 15 seconds.
 This API does not end existing calls that have already been answered.
 Use delete call to end a call.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgRejectCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRejectCommunicationCall?view=graph-powershell-1.0)
@@ -57,6 +58,7 @@ The bot is expected to answer or reject the call before the call times out.
 The current timeout value is 15 seconds.
 This API does not end existing calls that have already been answered.
 Use delete call to end a call.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Reject an incoming call with 'Busy' reason

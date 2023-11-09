@@ -10,6 +10,7 @@ ms.prod: cloud-communications
 
 ## SYNOPSIS
 Read the properties and relationships of a virtualEventWebinar object.
+This API is available in the following national cloud deployments.
 
 ## SYNTAX
 
@@ -34,6 +35,7 @@ Get-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinar object.
+This API is available in the following national cloud deployments.
 
 ## PARAMETERS
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the navigation property photo in users
 
 > [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserPhoto?view=graph-powershell-beta)
+
+> [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
 
 ## SYNTAX
@@ -41,24 +44,6 @@ Update-MgUserPhoto -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Update the navigation property photo in users
-
-## EXAMPLES
-### Example 1: Code snippet
-
-```powershell
-Import-Module Microsoft.Graph.Users
-
-$params = @{
-	contributionToContentDiscoveryDisabled = $true
-}
-
-# A UPN can also be used as -UserId.
-Update-MgUserSetting -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -245,3 +230,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
+
+[Update-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserPhoto?view=graph-powershell-beta)
+

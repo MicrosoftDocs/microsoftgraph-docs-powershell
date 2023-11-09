@@ -8,8 +8,8 @@ schema: 2.0.0
 # Update-MgIdentityUserFlowAttribute
 
 ## SYNOPSIS
-Update the properties of a identityUserFlowAttribute object.
-Only custom user flow attributes can be updated.
+Update the properties of a custom identityUserFlowAttribute object.
+This API is supported in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
@@ -43,8 +43,8 @@ Update-MgIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a identityUserFlowAttribute object.
-Only custom user flow attributes can be updated.
+Update the properties of a custom identityUserFlowAttribute object.
+This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -128,6 +128,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The display name of the user flow attribute.
+Supports $filter (eq, ne).
 
 ```yaml
 Type: String
@@ -258,7 +259,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DataType <String>]`: identityUserFlowAttributeDataType
   - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
-  - `[DisplayName <String>]`: The display name of the user flow attribute.
+  - `[DisplayName <String>]`: The display name of the user flow attribute.  Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 
 `INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter

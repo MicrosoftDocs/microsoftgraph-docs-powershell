@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteListOperation
 
 ## SYNOPSIS
-The collection of long running operations for the list.
+The collection of long-running operations on the list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListOperation?view=graph-powershell-1.0)
@@ -35,7 +35,7 @@ Get-MgBetaGroupSiteListOperation -InputObject <ISitesIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-The collection of long running operations for the list.
+The collection of long-running operations on the list.
 
 ## PARAMETERS
 
@@ -314,6 +314,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
   - `[SectionGroupId <String>]`: The unique identifier of sectionGroup

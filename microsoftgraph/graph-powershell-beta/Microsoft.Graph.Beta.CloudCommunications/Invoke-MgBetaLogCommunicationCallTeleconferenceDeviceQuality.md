@@ -16,6 +16,7 @@ One media leg is between the CVI bot and Teams infrastructure, such as Teams con
 The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality?view=graph-powershell-1.0)
@@ -43,6 +44,7 @@ One media leg is between the CVI bot and Teams infrastructure, such as Teams con
 The other media leg is between the CVI bot and the VTC device.
 The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
 This method is only for the CVI partners to provide their media quality data.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality Cmdlet

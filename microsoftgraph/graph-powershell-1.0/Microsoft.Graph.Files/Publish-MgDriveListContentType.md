@@ -8,7 +8,8 @@ schema: 2.0.0
 # Publish-MgDriveListContentType
 
 ## SYNOPSIS
-Publishes a [contentType][] present in the content type hub site.
+Publishes a contentType][] present in the content type hub site.
+This API is available in the following [national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Publish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Publish-MgBetaDriveListContentType?view=graph-powershell-beta)
@@ -28,7 +29,8 @@ Publish-MgDriveListContentType -InputObject <IFilesIdentity> [-PassThru] [-WhatI
 ```
 
 ## DESCRIPTION
-Publishes a [contentType][] present in the content type hub site.
+Publishes a contentType][] present in the content type hub site.
+This API is available in the following [national cloud deployments.
 
 ## PARAMETERS
 

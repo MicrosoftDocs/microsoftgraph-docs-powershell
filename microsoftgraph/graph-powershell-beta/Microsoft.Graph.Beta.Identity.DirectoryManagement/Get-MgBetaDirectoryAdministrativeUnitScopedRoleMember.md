@@ -11,6 +11,7 @@ ms.prod: directory-management
 
 ## SYNOPSIS
 Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-1.0)
@@ -38,6 +39,7 @@ Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDir
 
 ## DESCRIPTION
 Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 ### Example 1: Code snippet
