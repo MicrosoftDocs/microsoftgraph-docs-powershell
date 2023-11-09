@@ -22,18 +22,6 @@ Get-MgDeviceAppManagementMobileAppCountAsIoVppApp [-Filter <String>] [-Search <S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -82,3 +70,4 @@ Get-MgDeviceAppMgtMobileAppCountAsIoVppApp
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMobileAppCountAsIoVppApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsIoVppApp?view=graph-powershell-beta)
+

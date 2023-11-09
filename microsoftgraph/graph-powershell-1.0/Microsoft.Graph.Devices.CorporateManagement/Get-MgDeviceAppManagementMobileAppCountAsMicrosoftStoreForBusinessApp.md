@@ -23,18 +23,6 @@ Get-MgDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -83,3 +71,4 @@ Get-MgDeviceAppMgtMobileAppCountAsMicrosoftStoreGraphFPreBusinessApp
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMicrosoftStoreForBusinessApp?view=graph-powershell-beta)
+

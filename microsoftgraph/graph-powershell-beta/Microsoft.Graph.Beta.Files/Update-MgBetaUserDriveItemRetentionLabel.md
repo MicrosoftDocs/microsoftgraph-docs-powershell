@@ -49,18 +49,6 @@ For information about retention labels from an administrator's perspective, see 
 For information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,3 +360,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsRecordLocked <Boolean?>]`: Specifies whether the item is locked. Read-write.
 
 ## RELATED LINKS
+

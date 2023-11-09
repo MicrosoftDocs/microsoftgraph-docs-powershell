@@ -27,18 +27,6 @@ Remove-MgDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Delete navigation property deviceLocalCredentials for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceLocalCredentialInfoId
@@ -177,4 +165,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydevicelocalcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydevicelocalcredential)
+
 

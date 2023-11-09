@@ -28,18 +28,6 @@ Get-MgBetaVirtualEventWebinarByUserRole -InputObject <IBookingsIdentity> [-Count
 ## DESCRIPTION
 Invoke function getByUserRole
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -222,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+

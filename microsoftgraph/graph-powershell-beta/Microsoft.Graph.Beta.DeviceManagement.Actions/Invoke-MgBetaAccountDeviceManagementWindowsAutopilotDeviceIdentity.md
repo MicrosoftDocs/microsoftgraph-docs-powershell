@@ -27,18 +27,6 @@ Invoke-MgBetaAccountDeviceManagementWindowsAutopilotDeviceIdentity
 ## DESCRIPTION
 Unassigns the resource account from an Autopilot device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -190,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

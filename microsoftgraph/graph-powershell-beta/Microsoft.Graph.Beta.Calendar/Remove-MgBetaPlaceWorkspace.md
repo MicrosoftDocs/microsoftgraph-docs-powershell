@@ -27,18 +27,6 @@ Remove-MgBetaPlaceWorkspace -InputObject <ICalendarIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property workspaces for places
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -182,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
+

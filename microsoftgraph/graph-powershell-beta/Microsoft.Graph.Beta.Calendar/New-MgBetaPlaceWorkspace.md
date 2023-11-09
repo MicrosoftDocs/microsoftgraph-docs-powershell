@@ -47,18 +47,6 @@ New-MgBetaPlaceWorkspace -InputObject <ICalendarIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to workspaces for places
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -451,3 +439,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
+

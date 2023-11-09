@@ -23,18 +23,6 @@ Get-MgBetaDeviceAppManagementMobileAppCountAsIoStoreApp [-Filter <String>] [-Sea
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -83,3 +71,4 @@ Get-MgBetaDeviceAppMgtMobileAppCountAsIoStoreApp
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementMobileAppCountAsIoStoreApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppCountAsIoStoreApp?view=graph-powershell-1.0)
+

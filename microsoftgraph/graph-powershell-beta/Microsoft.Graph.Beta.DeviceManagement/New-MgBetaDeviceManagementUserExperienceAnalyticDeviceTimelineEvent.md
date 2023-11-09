@@ -29,18 +29,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -243,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EventSource <String>]`: The source of the event. Examples include: Intune, Sccm.
 
 ## RELATED LINKS
+

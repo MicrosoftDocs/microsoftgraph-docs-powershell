@@ -22,22 +22,6 @@ Get-MgPrint [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParamete
 ## DESCRIPTION
 Get print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrint?view=graph-powershell-beta)
+

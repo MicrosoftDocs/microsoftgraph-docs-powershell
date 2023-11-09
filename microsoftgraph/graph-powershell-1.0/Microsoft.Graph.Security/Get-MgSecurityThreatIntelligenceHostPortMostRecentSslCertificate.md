@@ -27,18 +27,6 @@ Get-MgSecurityThreatIntelligenceHostPortMostRecentSslCertificate -InputObject <I
 ## DESCRIPTION
 The most recent sslCertificate used to communicate on the port.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -174,4 +162,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostportmostrecentsslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostportmostrecentsslcertificate)
+
 

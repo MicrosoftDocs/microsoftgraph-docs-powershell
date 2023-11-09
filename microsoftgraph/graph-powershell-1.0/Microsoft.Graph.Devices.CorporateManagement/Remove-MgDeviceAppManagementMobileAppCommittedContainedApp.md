@@ -27,18 +27,6 @@ Remove-MgDeviceAppManagementMobileAppCommittedContainedApp -InputObject <IDevice
 ## DESCRIPTION
 Delete navigation property committedContainedApps for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -206,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+

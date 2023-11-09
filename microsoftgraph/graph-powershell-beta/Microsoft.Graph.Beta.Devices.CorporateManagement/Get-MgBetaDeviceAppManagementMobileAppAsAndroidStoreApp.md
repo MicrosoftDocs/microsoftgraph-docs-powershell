@@ -37,18 +37,6 @@ Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreApp -InputObject <IDevicesCo
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidStoreApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -321,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp?view=graph-powershell-1.0)
+

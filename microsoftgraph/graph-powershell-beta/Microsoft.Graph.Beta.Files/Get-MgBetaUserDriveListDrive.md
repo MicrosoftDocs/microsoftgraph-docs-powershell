@@ -32,22 +32,6 @@ Get-MgBetaUserDriveListDrive -InputObject <IFilesIdentity> [-ExpandProperty <Str
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -172,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDriveListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListDrive?view=graph-powershell-1.0)
+
