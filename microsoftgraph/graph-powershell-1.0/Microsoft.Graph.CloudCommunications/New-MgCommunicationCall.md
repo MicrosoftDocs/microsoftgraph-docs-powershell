@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
 schema: 2.0.0
@@ -12,16 +12,13 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You will need to register the calling bot and go through the list of permissions needed as mentioned below.
 This API is available in the following national cloud deployments.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgCommunicationCall [-AdditionalProperties <Hashtable>]
- [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>] [-CallChainId <String>]
- [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>] [-CallbackUri <String>]
+ [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>] [-CallbackUri <String>] [-CallChainId <String>]
+ [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>]
  [-ChatInfo <IMicrosoftGraphChatInfo>] [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>]
  [-Direction <String>] [-Id <String>] [-IncomingContext <IMicrosoftGraphIncomingContext>]
  [-MediaConfig <Hashtable>] [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingInfo <Hashtable>]
@@ -29,13 +26,13 @@ New-MgCommunicationCall [-AdditionalProperties <Hashtable>]
  [-Participants <IMicrosoftGraphParticipant[]>] [-RequestedModalities <String[]>]
  [-ResultInfo <IMicrosoftGraphResultInfo>] [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>]
  [-Subject <String>] [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-TenantId <String>]
- [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,11 +41,11 @@ You will need to register the calling bot and go through the list of permissions
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Create peer-to-peer VoIP call with service hosted media
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -80,14 +77,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create peer-to-peer voip call with service hosted media
-
-### Example 2: Create peer-to-peer VoIP call with application hosted media
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -123,20 +116,16 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		blob = "\<Media Session Configuration\>"
 	}
 }
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create peer-to-peer voip call with application hosted media
-
-### Example 3: Create a group call with service hosted media
-
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -189,14 +178,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create a group call with service hosted media
-
-### Example 4: Create a group call with application hosted media
-
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -249,14 +234,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create a group call with application hosted media
-
-### Example 5: Join scheduled meeting with service hosted media
-
+### -------------------------- EXAMPLE 5 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -292,14 +273,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will join scheduled meeting with service hosted media
-
-### Example 6: Join scheduled meeting with application hosted media
-
+### -------------------------- EXAMPLE 6 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -334,14 +311,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will join scheduled meeting with application hosted media
-
-### Example 7: Join a scheduled meeting with joinMeetingId and passcode
-
+### -------------------------- EXAMPLE 7 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -364,14 +337,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will join a scheduled meeting with joinmeetingid and passcode
-
-### Example 8: Join a scheduled meeting with joinMeetingId
-
+### -------------------------- EXAMPLE 8 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -394,14 +363,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will join a scheduled meeting with joinmeetingid
-
-### Example 9: Create peer-to-peer PSTN call with service hosted media
-
+### -------------------------- EXAMPLE 9 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -444,14 +409,10 @@ $params = @{
 
 New-MgCommunicationCall -BodyParameter $params
 
-```
-This example will create peer-to-peer pstn call with service hosted media
-
-### Example 10: Create peer-to-peer PSTN call with application hosted media
-
+### -------------------------- EXAMPLE 10 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -488,16 +449,12 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
-		blob = "<Media Session Configuration>"
+		blob = "\<Media Session Configuration\>"
 	}
 	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgCommunicationCall -BodyParameter $params
-
-```
-This example will### example 10: create peer-to-peer pstn call with application hosted media
-
 
 ## PARAMETERS
 
@@ -505,7 +462,7 @@ This example will### example 10: create peer-to-peer pstn call with application 
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -521,7 +478,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAudioRoutingGroup[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -537,7 +494,7 @@ call
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCall
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
 Parameter Sets: Create
 Aliases:
 
@@ -553,7 +510,7 @@ The callback URL on which callbacks will be delivered.
 Must be https.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -569,7 +526,7 @@ A unique identifier for all the participant calls in a conference or a unique id
 This needs to be copied over from Microsoft.Graph.Call.CallChainId.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -585,7 +542,7 @@ callOptions
 To construct, see NOTES section for CALLOPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallOptions
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallOptions
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -602,7 +559,7 @@ Read-only.
 To construct, see NOTES section for CALLROUTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRoute[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRoute[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -618,7 +575,7 @@ chatInfo
 To construct, see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -634,7 +591,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentSharingSession[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentSharingSession[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -649,7 +606,7 @@ Accept wildcard characters: False
 callDirection
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -665,7 +622,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -681,7 +638,7 @@ incomingContext
 To construct, see NOTES section for INCOMINGCONTEXT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIncomingContext
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIncomingContext
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -696,7 +653,7 @@ Accept wildcard characters: False
 mediaConfig
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -712,7 +669,7 @@ callMediaState
 To construct, see NOTES section for MEDIASTATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallMediaState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallMediaState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -727,7 +684,7 @@ Accept wildcard characters: False
 meetingInfo
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -742,7 +699,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -758,7 +715,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommsOperation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommsOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -774,7 +731,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipant[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -790,7 +747,7 @@ The list of requested modalities.
 Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -806,7 +763,7 @@ resultInfo
 To construct, see NOTES section for RESULTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResultInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResultInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -822,7 +779,7 @@ participantInfo
 To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipantInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipantInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -837,7 +794,7 @@ Accept wildcard characters: False
 callState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -852,7 +809,7 @@ Accept wildcard characters: False
 The subject of the conversation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -869,7 +826,7 @@ Required information for creating peer to peer call.
 To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvitationParticipantInfo[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInvitationParticipantInfo[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -884,7 +841,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -900,7 +857,7 @@ toneInfo
 To construct, see NOTES section for TONEINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphToneInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphToneInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -916,7 +873,7 @@ callTranscriptionInfo
 To construct, see NOTES section for TRANSCRIPTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallTranscriptionInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallTranscriptionInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -931,7 +888,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -947,7 +904,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -964,9 +921,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
+
 ## NOTES
 
 ALIASES
@@ -1222,7 +1181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: callTranscriptionState
 
 ## RELATED LINKS
-[New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
 
-## RELATED LINKS
-[New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/resume-mgbetaeducationsynchronizationprofile
 schema: 2.0.0
@@ -15,14 +15,14 @@ This API is available in the following national cloud deployments.
 
 ### Resume (Default)
 ```
-Resume-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Resume-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId <String> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ResumeViaIdentity
 ```
-Resume-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Resume-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,13 +30,14 @@ Resume the sync of a specific school data synchronization profile in the tenant.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Resume-MgBetaEducationSynchronizationProfile Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Resume-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
-This example shows how to use the Resume-MgBetaEducationSynchronizationProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -44,7 +45,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationSynchronizationProfile
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Resume
 Aliases:
 
@@ -60,7 +61,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: ResumeViaIdentity
 Aliases:
 
@@ -75,7 +76,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -90,7 +91,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -106,7 +107,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -123,9 +124,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -155,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+

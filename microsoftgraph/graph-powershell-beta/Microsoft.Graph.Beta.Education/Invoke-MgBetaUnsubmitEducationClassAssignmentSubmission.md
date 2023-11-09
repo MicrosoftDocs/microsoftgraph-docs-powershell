@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunsubmiteducationclassassignmentsubmission
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission
@@ -17,20 +16,17 @@ The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 This API is available in the following national cloud deployments.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnsubmitEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationClassAssignmentSubmission?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Unsubmit (Default)
 ```
 Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission -EducationAssignmentId <String>
- -EducationClassId <String> -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -EducationClassId <String> -EducationSubmissionId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UnsubmitViaIdentity
 ```
-Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -44,17 +40,13 @@ A teacher can also unsubmit a student's assignment on their behalf.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
-```
-This example shows how to use the Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission Cmdlet.
-
 
 ## PARAMETERS
 
@@ -62,7 +54,7 @@ This example shows how to use the Invoke-MgBetaUnsubmitEducationClassAssignmentS
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unsubmit
 Aliases:
 
@@ -77,7 +69,7 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unsubmit
 Aliases:
 
@@ -92,7 +84,7 @@ Accept wildcard characters: False
 The unique identifier of educationSubmission
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unsubmit
 Aliases:
 
@@ -108,7 +100,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: UnsubmitViaIdentity
 Aliases:
 
@@ -123,7 +115,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -139,7 +131,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -156,9 +148,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission
+
 ## NOTES
 
 ALIASES
@@ -188,4 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgUnsubmitEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationClassAssignmentSubmission?view=graph-powershell-1.0)
+

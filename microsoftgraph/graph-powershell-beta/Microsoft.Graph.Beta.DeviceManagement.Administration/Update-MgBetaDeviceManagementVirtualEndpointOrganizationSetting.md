@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting
 schema: 2.0.0
@@ -17,13 +17,13 @@ This API is available in the following national cloud deployments.
 ```
 Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting [-AdditionalProperties <Hashtable>]
  [-EnableMemAutoEnroll] [-EnableSingleSignOn] [-Id <String>] [-OSVersion <String>] [-UserAccountType <String>]
- [-WindowsSettings <IMicrosoftGraphCloudPcWindowsSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WindowsSettings <IMicrosoftGraphCloudPcWindowsSettings>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
- -BodyParameter <IMicrosoftGraphCloudPcOrganizationSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcOrganizationSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,7 +31,8 @@ Update the properties of the cloudPcOrganizationSettings object in a tenant.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
@@ -45,8 +46,8 @@ $params = @{
 }
 Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -54,7 +55,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -70,7 +71,7 @@ cloudPcOrganizationSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcOrganizationSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcOrganizationSettings
 Parameter Sets: Update
 Aliases:
 
@@ -86,7 +87,7 @@ Specifies whether new Cloud PCs will be automatically enrolled in Microsoft Endp
 The default value is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -105,7 +106,7 @@ Windows 365 users can use single sign-on to authenticate to Azure Active Directo
 Optional.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -121,7 +122,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -136,7 +137,7 @@ Accept wildcard characters: False
 cloudPcOperatingSystem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -151,7 +152,7 @@ Accept wildcard characters: False
 cloudPcUserAccountType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -167,7 +168,7 @@ cloudPcWindowsSettings
 To construct, see NOTES section for WINDOWSSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcWindowsSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcWindowsSettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -182,7 +183,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -198,7 +199,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -215,9 +216,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcOrganizationSettings
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcOrganizationSettings
+
 ## NOTES
 
 ALIASES
@@ -243,3 +246,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Language <String>]`: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC. The default value is en-US, which corresponds to English (United States).
 
 ## RELATED LINKS
+

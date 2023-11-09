@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprinttaskdefinition
 schema: 2.0.0
@@ -12,21 +12,18 @@ Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 This API is supported in the following national cloud deployments.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgPrintTaskDefinition [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphAppIdentity>]
- [-DisplayName <String>] [-Id <String>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-WhatIf] [-Confirm]
+ [-DisplayName <String>] [-Id <String>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPrintTaskDefinition -BodyParameter <IMicrosoftGraphPrintTaskDefinition> [-WhatIf] [-Confirm]
+New-MgPrintTaskDefinition -BodyParameter <IMicrosoftGraphPrintTaskDefinition> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -36,11 +33,11 @@ For details about how to use this API to add pull printing support to Universal 
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Devices.CloudPrint
+```
 
 $params = @{
 	displayName = "Test TaskDefinitionName"
@@ -51,17 +48,13 @@ $params = @{
 
 New-MgPrintTaskDefinition -BodyParameter $params
 
-```
-This example shows how to use the New-MgPrintTaskDefinition Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -77,7 +70,7 @@ printTaskDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -93,7 +86,7 @@ appIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -108,7 +101,7 @@ Accept wildcard characters: False
 The name of the printTaskDefinition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +117,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +135,7 @@ Read-only.
 To construct, see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTask[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTask[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +150,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +166,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,9 +183,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
+
 ## NOTES
 
 ALIASES
@@ -258,4 +253,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[New-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
+

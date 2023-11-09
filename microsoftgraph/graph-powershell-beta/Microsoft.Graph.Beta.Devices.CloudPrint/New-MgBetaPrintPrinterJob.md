@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjob
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to jobs for print
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintPrinterJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJob?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,14 +19,20 @@ New-MgBetaPrintPrinterJob -PrinterId <String> [-AcknowledgedDateTime <DateTime>]
  [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-CreatedBy <IMicrosoftGraphUserIdentity>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Documents <IMicrosoftGraphPrintDocument[]>]
  [-ErrorCode <Int32>] [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
- [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-WhatIf] [-Confirm]
+ [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPrintPrinterJob -PrinterId <String> -BodyParameter <IMicrosoftGraphPrintJob> [-WhatIf] [-Confirm]
+New-MgBetaPrintPrinterJob -PrinterId <String> -BodyParameter <IMicrosoftGraphPrintJob> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrintJob>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -39,18 +42,28 @@ New-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-Acknowledg
  [-Configuration <IMicrosoftGraphPrintJobConfiguration>] [-CreatedBy <IMicrosoftGraphUserIdentity>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Documents <IMicrosoftGraphPrintDocument[]>]
  [-ErrorCode <Int32>] [-Id <String>] [-IsFetchable] [-RedirectedFrom <String>] [-RedirectedTo <String>]
- [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-WhatIf] [-Confirm]
+ [-Status <IMicrosoftGraphPrintJobStatus>] [-Tasks <IMicrosoftGraphPrintTask[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrintJob>
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to jobs for print
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -58,7 +71,7 @@ Create new navigation property to jobs for print
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -73,7 +86,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +102,7 @@ printJob
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintJob
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintJob
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -104,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -120,7 +133,7 @@ printJobConfiguration
 To construct, see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintJobConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintJobConfiguration
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +149,7 @@ userIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserIdentity
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +165,7 @@ The DateTimeOffset when the job was created.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +180,7 @@ Accept wildcard characters: False
 The name of the print job.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -183,7 +196,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DOCUMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintDocument[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintDocument[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +211,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +227,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -230,8 +243,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -245,7 +258,7 @@ Accept wildcard characters: False
 If true, document can be fetched by printer.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -260,8 +273,8 @@ Accept wildcard characters: False
 The unique identifier of printer
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -275,7 +288,7 @@ Accept wildcard characters: False
 Contains the source job URL, if the job has been redirected from another printer.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -290,7 +303,7 @@ Accept wildcard characters: False
 Contains the destination job URL, if the job has been redirected to another printer.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -306,7 +319,7 @@ printJobStatus
 To construct, see NOTES section for STATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintJobStatus
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintJobStatus
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -322,7 +335,7 @@ A list of printTasks that were triggered by this print job.
 To construct, see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTask[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintTask[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -337,7 +350,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -353,7 +366,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -370,10 +383,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintJob
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintJob
+
 ## NOTES
 
 ALIASES
@@ -619,8 +635,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[New-MgPrintPrinterJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJob?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[New-MgPrintPrinterJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJob?view=graph-powershell-1.0)
 

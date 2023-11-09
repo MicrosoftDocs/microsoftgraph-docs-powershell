@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementremoteactionaudit
 schema: 2.0.0
@@ -17,18 +17,34 @@ Create new navigation property to remoteActionAudits for deviceManagement
 New-MgBetaDeviceManagementRemoteActionAudit [-Action <RemoteAction>] [-ActionState <String>]
  [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
  [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
- [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-WhatIf] [-Confirm]
+ [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementRemoteActionAudit -BodyParameter <IMicrosoftGraphRemoteActionAudit> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementRemoteActionAudit -BodyParameter <IMicrosoftGraphRemoteActionAudit> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to remoteActionAudits for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +52,7 @@ Create new navigation property to remoteActionAudits for deviceManagement
 Remote actions Intune supports.
 
 ```yaml
-Type: RemoteAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.RemoteAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +67,7 @@ Accept wildcard characters: False
 actionState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +82,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +98,7 @@ Report of remote actions initiated on the devices belonging to a certain tenant.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRemoteActionAudit
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
 Parameter Sets: Create
 Aliases:
 
@@ -97,7 +113,7 @@ Accept wildcard characters: False
 Intune device name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +128,7 @@ Accept wildcard characters: False
 IMEI of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +143,7 @@ Accept wildcard characters: False
 Upn of the device owner.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +159,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,7 +174,7 @@ Accept wildcard characters: False
 User who initiated the device action, format is UPN.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -173,7 +189,7 @@ Accept wildcard characters: False
 Action target.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +204,7 @@ Accept wildcard characters: False
 Time when the action was issued, given in UTC.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +219,7 @@ Accept wildcard characters: False
 [deprecated] Please use InitiatedByUserPrincipalName instead.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +234,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -234,7 +250,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -251,9 +267,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
+
 ## NOTES
 
 ALIASES

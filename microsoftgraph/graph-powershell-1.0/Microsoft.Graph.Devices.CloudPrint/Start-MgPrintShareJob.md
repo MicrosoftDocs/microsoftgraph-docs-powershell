@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/start-mgprintsharejob
 schema: 2.0.0
@@ -12,25 +12,38 @@ Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
 This API is supported in the following national cloud deployments.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Start-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Start-MgBetaPrintShareJob?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Start (Default)
 ```
-Start-MgPrintShareJob -PrintJobId <String> -PrinterShareId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Start-MgPrintShareJob -PrinterShareId <String> -PrintJobId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### StartViaIdentity
 ```
-Start-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Start-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
 This API is supported in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -39,7 +52,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 Parameter Sets: StartViaIdentity
 Aliases:
 
@@ -54,7 +67,7 @@ Accept wildcard characters: False
 The unique identifier of printerShare
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Start
 Aliases:
 
@@ -69,7 +82,7 @@ Accept wildcard characters: False
 The unique identifier of printJob
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Start
 Aliases:
 
@@ -84,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -100,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -117,9 +130,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintJobStatus
+
 ## NOTES
 
 ALIASES
@@ -145,5 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Start-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Start-MgBetaPrintShareJob?view=graph-powershell-beta)
 

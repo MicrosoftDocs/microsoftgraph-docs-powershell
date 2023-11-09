@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementwindowsqualityupdateprofile
 schema: 2.0.0
@@ -19,13 +19,19 @@ Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -WindowsQualityUpdatePr
  [-CreatedDateTime <DateTime>] [-DeployableContentDisplayName <String>] [-Description <String>]
  [-DisplayName <String>] [-ExpeditedUpdateSettings <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-ReleaseDateDisplayName <String>]
- [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -WindowsQualityUpdateProfileId <String>
- -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,17 +41,27 @@ Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -InputObject <IDeviceMa
  [-CreatedDateTime <DateTime>] [-DeployableContentDisplayName <String>] [-Description <String>]
  [-DisplayName <String>] [-ExpeditedUpdateSettings <IMicrosoftGraphExpeditedWindowsQualityUpdateSettings>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-ReleaseDateDisplayName <String>]
- [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementWindowsQualityUpdateProfile -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsQualityUpdateProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property windowsQualityUpdateProfiles in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -53,7 +69,7 @@ Update the navigation property windowsQualityUpdateProfiles in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +85,7 @@ The list of group assignments of the profile.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsQualityUpdateProfileAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsQualityUpdateProfileAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +101,7 @@ Windows Quality Update Profile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsQualityUpdateProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsQualityUpdateProfile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -100,7 +116,7 @@ Accept wildcard characters: False
 The date time that the profile was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +131,7 @@ Accept wildcard characters: False
 Friendly display name of the quality update profile deployable content
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +146,7 @@ Accept wildcard characters: False
 The description of the profile which is specified by the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +161,7 @@ Accept wildcard characters: False
 The display name for the profile.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +177,7 @@ A complex type to store the expedited quality update settings such as release da
 To construct, see NOTES section for EXPEDITEDUPDATESETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExpeditedWindowsQualityUpdateSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExpeditedWindowsQualityUpdateSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +193,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,8 +209,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -208,7 +224,7 @@ Accept wildcard characters: False
 The date time that the profile was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +239,7 @@ Accept wildcard characters: False
 Friendly release date to display for a Quality Update release
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -238,7 +254,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Quality Update entity.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -253,8 +269,8 @@ Accept wildcard characters: False
 The unique identifier of windowsQualityUpdateProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -268,7 +284,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -284,7 +300,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -301,10 +317,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsQualityUpdateProfile
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsQualityUpdateProfile
+
 ## NOTES
 
 ALIASES
@@ -487,8 +506,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

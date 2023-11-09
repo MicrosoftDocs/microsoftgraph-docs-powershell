@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/update-mgbetaserviceannouncementhealthoverview
 schema: 2.0.0
@@ -10,39 +10,52 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property healthOverviews in admin
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementHealthOverview?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Issues <IMicrosoftGraphServiceHealthIssue[]>] [-Service <String>] [-Status <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId <String>
- -BodyParameter <IMicrosoftGraphServiceHealth> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServiceHealth> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnouncementIdentity>
+ -BodyParameter <IMicrosoftGraphServiceHealth> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnouncementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Issues <IMicrosoftGraphServiceHealthIssue[]>]
- [-Service <String>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnouncementIdentity>
- -BodyParameter <IMicrosoftGraphServiceHealth> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Service <String>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property healthOverviews in admin
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +63,7 @@ Update the navigation property healthOverviews in admin
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +79,7 @@ serviceHealth
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealth
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceHealth
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,7 +95,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -98,8 +111,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesServiceAnnouncementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -114,7 +127,7 @@ A collection of issues that happened on the service, with detailed information f
 To construct, see NOTES section for ISSUES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealthIssue[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceHealthIssue[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +143,7 @@ The service name.
 Use the list healthOverviews operation to get exact string names for services subscribed by the tenant.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,8 +158,8 @@ Accept wildcard characters: False
 The unique identifier of serviceHealth
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -160,7 +173,7 @@ Accept wildcard characters: False
 serviceHealthStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,10 +221,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceHealth
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceHealth
+
 ## NOTES
 
 ALIASES
@@ -283,5 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: serviceHealthStatus
 
 ## RELATED LINKS
-[Update-MgServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementHealthOverview?view=graph-powershell-1.0)
 

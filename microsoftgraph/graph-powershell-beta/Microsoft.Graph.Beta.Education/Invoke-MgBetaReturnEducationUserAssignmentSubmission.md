@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareturneducationuserassignmentsubmission
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Invoke-MgBetaReturnEducationUserAssignmentSubmission
@@ -14,20 +13,17 @@ This will change the status of the submission from 'submitted' to 'returned' and
 This action can only be done by the teacher.
 This API is available in the following national cloud deployments.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReturnEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationUserAssignmentSubmission?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Return (Default)
 ```
 Invoke-MgBetaReturnEducationUserAssignmentSubmission -EducationAssignmentId <String>
- -EducationSubmissionId <String> -EducationUserId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -EducationSubmissionId <String> -EducationUserId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReturnViaIdentity
 ```
-Invoke-MgBetaReturnEducationUserAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Invoke-MgBetaReturnEducationUserAssignmentSubmission -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -39,13 +35,27 @@ This API is available in the following national cloud deployments.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Return
 Aliases:
 
@@ -60,7 +70,7 @@ Accept wildcard characters: False
 The unique identifier of educationSubmission
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Return
 Aliases:
 
@@ -75,7 +85,7 @@ Accept wildcard characters: False
 The unique identifier of educationUser
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Return
 Aliases:
 
@@ -91,7 +101,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: ReturnViaIdentity
 Aliases:
 
@@ -106,7 +116,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -122,7 +132,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -139,9 +149,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission
+
 ## NOTES
 
 ALIASES
@@ -171,4 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgReturnEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationUserAssignmentSubmission?view=graph-powershell-1.0)
+

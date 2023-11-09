@@ -195,8 +195,9 @@ This API is available in the following national cloud deployments.
 ### [New-MgBetaUserDeviceUsageRights](New-MgBetaUserDeviceUsageRights.md)
 Create new navigation property to usageRights for users
 
-### [New-MgBetaUserDeviceUsageRights](New-MgBetaUserDeviceUsageRights.md)
-Create new navigation property to usageRights for users
+### [Remove-MgBetaUserActivity](Remove-MgBetaUserActivity.md)
+Delete an existing user activity for your app.
+This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaUserActivityHistoryItem](Remove-MgBetaUserActivityHistoryItem.md)
 Delete navigation property historyItems for users

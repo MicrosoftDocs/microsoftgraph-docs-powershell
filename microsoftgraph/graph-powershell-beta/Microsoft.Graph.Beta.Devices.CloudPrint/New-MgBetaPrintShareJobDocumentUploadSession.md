@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejobdocumentuploadsession
 schema: 2.0.0
@@ -14,38 +14,35 @@ Request headers for each PUT operation can be used to specify the exact range of
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 This API is available in the following national cloud deployments.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintShareJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareJobDocumentUploadSession?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaPrintShareJobDocumentUploadSession -PrintDocumentId <String> -PrintJobId <String>
- -PrinterShareId <String> [-AdditionalProperties <Hashtable>]
- [-Properties <IMicrosoftGraphPrintDocumentUploadProperties>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPrintShareJobDocumentUploadSession -PrintDocumentId <String> -PrinterShareId <String>
+ -PrintJobId <String> [-AdditionalProperties <Hashtable>]
+ [-Properties <IMicrosoftGraphPrintDocumentUploadProperties>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPrintShareJobDocumentUploadSession -PrintDocumentId <String> -PrintJobId <String>
- -PrinterShareId <String>
+New-MgBetaPrintShareJobDocumentUploadSession -PrintDocumentId <String> -PrinterShareId <String>
+ -PrintJobId <String>
  -BodyParameter <IPathsCv1Pi3PrintSharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaPrintShareJobDocumentUploadSession -InputObject <IDevicesCloudPrintIdentity>
- [-AdditionalProperties <Hashtable>] [-Properties <IMicrosoftGraphPrintDocumentUploadProperties>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaPrintShareJobDocumentUploadSession -InputObject <IDevicesCloudPrintIdentity>
  -BodyParameter <IPathsCv1Pi3PrintSharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaPrintShareJobDocumentUploadSession -InputObject <IDevicesCloudPrintIdentity>
+ [-AdditionalProperties <Hashtable>] [-Properties <IMicrosoftGraphPrintDocumentUploadProperties>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,13 +52,29 @@ Request headers for each PUT operation can be used to specify the exact range of
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -77,7 +90,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsCv1Pi3PrintSharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsCv1Pi3PrintSharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -93,8 +106,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -108,8 +121,8 @@ Accept wildcard characters: False
 The unique identifier of printDocument
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -123,8 +136,8 @@ Accept wildcard characters: False
 The unique identifier of printerShare
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -138,8 +151,8 @@ Accept wildcard characters: False
 The unique identifier of printJob
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -154,7 +167,7 @@ printDocumentUploadProperties
 To construct, see NOTES section for PROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintDocumentUploadProperties
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintDocumentUploadProperties
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -169,7 +182,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -185,7 +198,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -202,10 +215,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsCv1Pi3PrintSharesPrintershareIdJobsPrintjobIdDocumentsPrintdocumentIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUploadSession
+
 ## NOTES
 
 ALIASES
@@ -245,5 +261,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Size <Int64?>]`: The document's size in bytes.
 
 ## RELATED LINKS
-[New-MgPrintShareJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareJobDocumentUploadSession?view=graph-powershell-1.0)
 

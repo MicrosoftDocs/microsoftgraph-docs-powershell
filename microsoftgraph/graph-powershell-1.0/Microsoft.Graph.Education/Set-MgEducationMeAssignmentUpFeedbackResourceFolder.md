@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationmeassignmentupfeedbackresourcefolder
 schema: 2.0.0
@@ -13,20 +13,17 @@ Only teachers can perform this operation.
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 This API is supported in the following national cloud deployments.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaEducationMeAssignmentUpFeedbackResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationMeAssignmentUpFeedbackResourceFolder?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
 ```
-Set-MgEducationMeAssignmentUpFeedbackResourceFolder -EducationAssignmentId <String> [-WhatIf] [-Confirm]
+Set-MgEducationMeAssignmentUpFeedbackResourceFolder -EducationAssignmentId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgEducationMeAssignmentUpFeedbackResourceFolder -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Set-MgEducationMeAssignmentUpFeedbackResourceFolder -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -36,13 +33,29 @@ Only teachers can perform this operation.
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 This API is supported in the following national cloud deployments.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -58,7 +71,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -73,7 +86,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -89,7 +102,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -106,9 +119,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
+
 ## NOTES
 
 ALIASES
@@ -131,5 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Set-MgBetaEducationMeAssignmentUpFeedbackResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationMeAssignmentUpFeedbackResourceFolder?view=graph-powershell-beta)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationconflictsummary
 schema: 2.0.0
@@ -16,32 +16,48 @@ Update the navigation property deviceConfigurationConflictSummary in deviceManag
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationConflictSummary -DeviceConfigurationConflictSummaryId <String>
  [-AdditionalProperties <Hashtable>] [-ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource[]>]
- [-ContributingSettings <String[]>] [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-ContributingSettings <String[]>] [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationConflictSummary -DeviceConfigurationConflictSummaryId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationConflictSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationConflictSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementDeviceConfigurationConflictSummary -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationConflictSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationConflictSummary -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource[]>]
- [-ContributingSettings <String[]>] [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-ContributingSettings <String[]>] [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementDeviceConfigurationConflictSummary -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationConflictSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceConfigurationConflictSummary in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Update the navigation property deviceConfigurationConflictSummary in deviceManag
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +81,7 @@ Conflict summary for a set of device configuration policies.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationConflictSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -81,7 +97,7 @@ The set of policies in conflict with the given setting
 To construct, see NOTES section for CONFLICTINGDEVICECONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSettingSource[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSettingSource[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +112,7 @@ Accept wildcard characters: False
 The set of settings in conflict with the given policies
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -111,7 +127,7 @@ Accept wildcard characters: False
 The count of checkins impacted by the conflicting policies and settings
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of deviceConfigurationConflictSummary
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -142,7 +158,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,8 +174,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -173,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +222,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
+
 ## NOTES
 
 ALIASES
@@ -374,8 +393,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
   - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

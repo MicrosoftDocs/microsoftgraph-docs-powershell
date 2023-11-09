@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a appLogCollectionRequest object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,7 +17,7 @@ Update the properties of a appLogCollectionRequest object.
 Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
  -AppLogCollectionRequestId <String> -MobileAppTroubleshootingEventId <String>
  [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-CustomLogFolders <String[]>]
- [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>] [-WhatIf] [-Confirm]
+ [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -28,26 +25,42 @@ Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
  -AppLogCollectionRequestId <String> -MobileAppTroubleshootingEventId <String>
- -BodyParameter <IMicrosoftGraphAppLogCollectionRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppLogCollectionRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
+ -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphAppLogCollectionRequest> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>]
- [-CustomLogFolders <String[]>] [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
- -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphAppLogCollectionRequest> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CustomLogFolders <String[]>] [-ErrorMessage <String>] [-Id <String>] [-Status <AppLogUploadState>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a appLogCollectionRequest object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -55,7 +68,7 @@ Update the properties of a appLogCollectionRequest object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,8 +83,8 @@ Accept wildcard characters: False
 The unique identifier of appLogCollectionRequest
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -86,7 +99,7 @@ Entity for AppLogCollectionRequest contains all logs values.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppLogCollectionRequest
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,7 +114,7 @@ Accept wildcard characters: False
 Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +129,7 @@ Accept wildcard characters: False
 List of log folders.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +144,7 @@ Accept wildcard characters: False
 Indicates error message if any during the upload process.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +160,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,8 +176,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -178,8 +191,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppTroubleshootingEvent
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -193,7 +206,7 @@ Accept wildcard characters: False
 AppLogUploadStatus
 
 ```yaml
-Type: AppLogUploadState
+Type: Microsoft.Graph.PowerShell.Support.AppLogUploadState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +221,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +237,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -241,10 +254,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
+
 ## NOTES
 
 ALIASES
@@ -319,5 +335,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
 

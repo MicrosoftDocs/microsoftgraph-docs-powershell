@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingvirtualappointmentjoinweburl
 schema: 2.0.0
@@ -10,14 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getVirtualAppointmentJoinWebUrl
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl -OnlineMeetingId <String> [<CommonParameters>]
+Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl -OnlineMeetingId <String>
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -29,6 +27,22 @@ Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <I
 ## DESCRIPTION
 Invoke function getVirtualAppointmentJoinWebUrl
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -InputObject
@@ -36,7 +50,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of onlineMeeting
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -68,9 +82,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -101,5 +117,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-1.0)
 

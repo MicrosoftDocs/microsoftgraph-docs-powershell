@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroup
 schema: 2.0.0
@@ -18,15 +18,21 @@ This API is available in the following national cloud deployments.
 Update-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String>
  -OnPremisesPublishingProfileId <String> [-AdditionalProperties <Hashtable>]
  [-Agents <IMicrosoftGraphOnPremisesAgent[]>] [-DisplayName <String>] [-Id <String>] [-IsDefault]
- [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-PublishingType <String>] [-WhatIf] [-Confirm]
+ [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-PublishingType <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <String>
- -OnPremisesPublishingProfileId <String> -BodyParameter <IMicrosoftGraphOnPremisesAgentGroup> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -OnPremisesPublishingProfileId <String> -BodyParameter <IMicrosoftGraphOnPremisesAgentGroup> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphOnPremisesAgentGroup> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,13 +40,7 @@ Update-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesAgentGroupId <Strin
 Update-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Agents <IMicrosoftGraphOnPremisesAgent[]>] [-DisplayName <String>]
  [-Id <String>] [-IsDefault] [-PublishedResources <IMicrosoftGraphPublishedResource[]>]
- [-PublishingType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnPremisesAgentGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PublishingType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,7 +48,8 @@ Update the properties of an onPremisesAgentGroup object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -56,8 +57,8 @@ $params = @{
 }
 Update-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentGroupId $onPremisesAgentGroupId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -65,7 +66,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +84,7 @@ Nullable.
 To construct, see NOTES section for AGENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesAgent[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesAgent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +100,7 @@ onPremisesAgentGroup
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesAgentGroup
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -114,7 +115,7 @@ Accept wildcard characters: False
 Display name of the onPremisesAgentGroup.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +131,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,8 +147,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -162,7 +163,7 @@ Indicates if the onPremisesAgentGroup is the default agent group.
 Only a single agent group can be the default onPremisesAgentGroup and is set by the system.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,8 +178,8 @@ Accept wildcard characters: False
 The unique identifier of onPremisesAgentGroup
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -192,8 +193,8 @@ Accept wildcard characters: False
 The unique identifier of onPremisesPublishingProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -210,7 +211,7 @@ Nullable.
 To construct, see NOTES section for PUBLISHEDRESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPublishedResource[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublishedResource[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -225,7 +226,7 @@ Accept wildcard characters: False
 onPremisesPublishingType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +241,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -256,7 +257,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -273,10 +274,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
+
 ## NOTES
 
 ALIASES
@@ -378,3 +382,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceName <String>]`: Name of the publishedResource.
 
 ## RELATED LINKS
+

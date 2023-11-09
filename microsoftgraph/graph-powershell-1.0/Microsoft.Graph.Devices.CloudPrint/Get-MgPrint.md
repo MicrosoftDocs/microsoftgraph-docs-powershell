@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprint
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get print
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrint?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,13 +19,29 @@ Get-MgPrint [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParamete
 ## DESCRIPTION
 Get print
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -62,10 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrint
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrint?view=graph-powershell-beta)
 

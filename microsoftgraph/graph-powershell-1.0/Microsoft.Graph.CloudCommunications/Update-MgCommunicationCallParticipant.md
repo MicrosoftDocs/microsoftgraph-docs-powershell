@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property participants in communications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,13 +18,19 @@ Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>] [-IsInLobby]
  [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
  [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
- [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
- -BodyParameter <IMicrosoftGraphParticipant> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphParticipant> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphParticipant> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,17 +39,27 @@ Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>] [-IsInLobby]
  [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
  [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
- [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphParticipant> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property participants in communications
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Update the navigation property participants in communications
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ participant
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipant
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -85,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -101,7 +114,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +130,7 @@ participantInfo
 To construct, see NOTES section for INFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipantInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipantInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,8 +146,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -148,7 +161,7 @@ Accept wildcard characters: False
 true if the participant is in lobby.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +176,7 @@ Accept wildcard characters: False
 true if the participant is muted (client or server muted).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +192,7 @@ The list of media streams.
 To construct, see NOTES section for MEDIASTREAMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMediaStream[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMediaStream[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -194,7 +207,7 @@ Accept wildcard characters: False
 A blob of data provided by the participant in the roster.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,8 +222,8 @@ Accept wildcard characters: False
 The unique identifier of participant
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -225,7 +238,7 @@ recordingInfo
 To construct, see NOTES section for RECORDINGINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecordingInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecordingInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -241,7 +254,7 @@ onlineMeetingRestricted
 To construct, see NOTES section for RESTRICTEDEXPERIENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnlineMeetingRestricted
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeetingRestricted
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +269,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -272,7 +285,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -289,10 +302,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant
+
 ## NOTES
 
 ALIASES
@@ -394,5 +410,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
 
 ## RELATED LINKS
-[Update-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentrubric
 schema: 2.0.0
@@ -12,9 +12,6 @@ Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 This API is supported in the following national cloud deployments.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentRubric?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -23,13 +20,19 @@ Update-MgEducationClassAssignmentRubric -EducationAssignmentId <String> -Educati
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Description <IMicrosoftGraphEducationItemBody>] [-DisplayName <String>] [-Grading <Hashtable>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Levels <IMicrosoftGraphRubricLevel[]>]
- [-Qualities <IMicrosoftGraphRubricQuality[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Qualities <IMicrosoftGraphRubricQuality[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEducationClassAssignmentRubric -EducationAssignmentId <String> -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationRubric> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationRubric> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgEducationClassAssignmentRubric -InputObject <IEducationIdentity>
+ -BodyParameter <IMicrosoftGraphEducationRubric> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,14 +40,8 @@ Update-MgEducationClassAssignmentRubric -EducationAssignmentId <String> -Educati
 Update-MgEducationClassAssignmentRubric -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <IMicrosoftGraphEducationItemBody>]
  [-DisplayName <String>] [-Grading <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-Levels <IMicrosoftGraphRubricLevel[]>] [-Qualities <IMicrosoftGraphRubricQuality[]>] [-WhatIf] [-Confirm]
+ [-Levels <IMicrosoftGraphRubricLevel[]>] [-Qualities <IMicrosoftGraphRubricQuality[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgEducationClassAssignmentRubric -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationRubric> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,13 +51,27 @@ This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,7 +87,7 @@ educationRubric
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationRubric
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRubric
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -92,7 +103,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -108,7 +119,7 @@ educationItemBody
 To construct, see NOTES section for DESCRIPTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationItemBody
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationItemBody
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +134,7 @@ Accept wildcard characters: False
 The name of this rubric.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -138,8 +149,8 @@ Accept wildcard characters: False
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -153,8 +164,8 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -168,7 +179,7 @@ Accept wildcard characters: False
 educationAssignmentGradeType
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +195,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,8 +211,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -216,7 +227,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -232,7 +243,7 @@ The collection of levels making up this rubric.
 To construct, see NOTES section for LEVELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRubricLevel[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRubricLevel[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -248,7 +259,7 @@ The collection of qualities making up this rubric.
 To construct, see NOTES section for QUALITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRubricQuality[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRubricQuality[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -263,7 +274,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -279,7 +290,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -296,10 +307,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRubric
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRubric
+
 ## NOTES
 
 ALIASES
@@ -398,4 +412,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
 ## RELATED LINKS
-[Update-MgBetaEducationClassAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentRubric?view=graph-powershell-beta)
+

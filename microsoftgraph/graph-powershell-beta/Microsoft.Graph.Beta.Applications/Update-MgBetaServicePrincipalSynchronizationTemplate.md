@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationtemplate
 schema: 2.0.0
@@ -11,9 +11,6 @@ schema: 2.0.0
 Update (override) the synchronization template associated with a given application.
 This API is available in the following national cloud deployments.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -22,14 +19,20 @@ Update-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId <String
  -SynchronizationTemplateId <String> [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-Default]
  [-Description <String>] [-Discoverable] [-FactoryTag <String>] [-Id <String>]
  [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId <String>
- -SynchronizationTemplateId <String> -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -SynchronizationTemplateId <String> -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,18 +41,28 @@ Update-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplications
  [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-Default] [-Description <String>]
  [-Discoverable] [-FactoryTag <String>] [-Id <String>]
  [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update (override) the synchronization template associated with a given application.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -57,7 +70,7 @@ This API is available in the following national cloud deployments.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +85,7 @@ Accept wildcard characters: False
 Identifier of the application this template belongs to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -88,7 +101,7 @@ synchronizationTemplate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationTemplate
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -103,7 +116,7 @@ Accept wildcard characters: False
 true if this template is recommended to be the default for the application.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +131,7 @@ Accept wildcard characters: False
 Description of the template.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +146,7 @@ Accept wildcard characters: False
 true if this template should appear in the collection of templates available for the application instance (service principal).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +162,7 @@ One of the well-known factory tags supported by the synchronization engine.
 The factoryTag tells the synchronization engine which implementation to use when processing jobs based on this template.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +178,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,8 +194,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -198,7 +211,7 @@ Unless mentioned explicitly, metadata values shouldn't be changed.
 To construct, see NOTES section for METADATA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationMetadataEntry[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationMetadataEntry[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +227,7 @@ synchronizationSchema
 To construct, see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,8 +242,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -244,8 +257,8 @@ Accept wildcard characters: False
 The unique identifier of synchronizationTemplate
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -259,7 +272,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -275,7 +288,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -292,10 +305,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
+
 ## NOTES
 
 ALIASES
@@ -528,8 +544,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
-[Update-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[Update-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
 

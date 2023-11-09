@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/remove-mgbetadevicemanagementgrouppolicyuploadeddefinitionfilelanguagefile
 schema: 2.0.0
@@ -16,8 +16,8 @@ Invoke action removeLanguageFiles
 ```
 Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
  -GroupPolicyUploadedDefinitionFileId <String> [-AdditionalProperties <Hashtable>]
- [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Remove
@@ -25,15 +25,7 @@ Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
 Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
  -GroupPolicyUploadedDefinitionFileId <String>
  -BodyParameter <IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RemoveViaIdentityExpanded
-```
-Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
@@ -41,11 +33,35 @@ Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
 Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RemoveViaIdentityExpanded
+```
+Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action removeLanguageFiles
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53,7 +69,7 @@ Invoke action removeLanguageFiles
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -69,7 +85,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Remove, RemoveViaIdentity
 Aliases:
 
@@ -84,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of groupPolicyUploadedDefinitionFile
 
 ```yaml
-Type: String
-Parameter Sets: RemoveExpanded, Remove
+Type: System.String
+Parameter Sets: Remove, RemoveExpanded
 Aliases:
 
 Required: True
@@ -100,7 +116,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for GROUPPOLICYUPLOADEDLANGUAGEFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyUploadedLanguageFile[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedLanguageFile[]
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -116,8 +132,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: RemoveViaIdentity, RemoveViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -131,7 +147,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -146,7 +162,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +178,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,10 +195,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsCyujbsDevicemanagementGrouppolicyuploadeddefinitionfilesGrouppolicyuploadeddefinitionfileIdMicrosoftGraphRemovelanguagefilesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebook
 schema: 2.0.0
@@ -10,26 +10,29 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a iosVppEBook object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceAppManagementManagedEBook -ManagedEBookId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphManagedEBookAssignment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>] [-DisplayName <String>] [-Id <String>]
- [-InformationUrl <String>] [-InstallSummary <IMicrosoftGraphEBookInstallSummary>]
+ [-Assignments <IMicrosoftGraphManagedEBookAssignment[]>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>] [-DisplayName <String>]
+ [-Id <String>] [-InformationUrl <String>] [-InstallSummary <IMicrosoftGraphEBookInstallSummary>]
  [-LargeCover <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>]
  [-PrivacyInformationUrl <String>] [-PublishedDateTime <DateTime>] [-Publisher <String>]
- [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceAppManagementManagedEBook -ManagedEBookId <String> -BodyParameter <IMicrosoftGraphManagedEBook>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphManagedEBook> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,18 +43,28 @@ Update-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManageme
  [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>]
  [-InstallSummary <IMicrosoftGraphEBookInstallSummary>] [-LargeCover <IMicrosoftGraphMimeContent>]
  [-LastModifiedDateTime <DateTime>] [-PrivacyInformationUrl <String>] [-PublishedDateTime <DateTime>]
- [-Publisher <String>] [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-WhatIf] [-Confirm]
+ [-Publisher <String>] [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedEBook> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a iosVppEBook object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -59,7 +72,7 @@ Update the properties of a iosVppEBook object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -75,7 +88,7 @@ The list of assignments for this eBook.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedEBookAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedEBookAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -91,7 +104,7 @@ An abstract class containing the base properties for Managed eBook.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedEBook
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedEBook
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -106,7 +119,7 @@ Accept wildcard characters: False
 The date and time when the eBook file was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -121,7 +134,7 @@ Accept wildcard characters: False
 Description.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -137,7 +150,7 @@ The list of installation states for this eBook.
 To construct, see NOTES section for DEVICESTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceInstallState[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceInstallState[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +165,7 @@ Accept wildcard characters: False
 Name of the eBook.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +181,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -183,7 +196,7 @@ Accept wildcard characters: False
 The more information Url.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,8 +212,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -215,7 +228,7 @@ Contains properties for the installation summary of a book for a device.
 To construct, see NOTES section for INSTALLSUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEBookInstallSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEBookInstallSummary
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,7 +244,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for LARGECOVER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMimeContent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMimeContent
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -246,7 +259,7 @@ Accept wildcard characters: False
 The date and time when the eBook was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -261,8 +274,8 @@ Accept wildcard characters: False
 The unique identifier of managedEBook
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -276,7 +289,7 @@ Accept wildcard characters: False
 The privacy statement Url.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -291,7 +304,7 @@ Accept wildcard characters: False
 The date and time when the eBook was published.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -306,7 +319,7 @@ Accept wildcard characters: False
 Publisher.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -322,7 +335,7 @@ The list of installation states for this eBook.
 To construct, see NOTES section for USERSTATESUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserInstallStateSummary[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserInstallStateSummary[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -337,7 +350,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -353,7 +366,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -370,10 +383,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedEBook
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedEBook
+
 ## NOTES
 
 ALIASES
@@ -516,8 +532,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserName <String>]`: User name.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
 

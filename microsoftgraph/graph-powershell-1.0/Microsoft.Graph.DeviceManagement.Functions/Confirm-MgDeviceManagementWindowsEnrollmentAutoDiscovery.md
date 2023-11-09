@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/confirm-mgdevicemanagementwindowsenrollmentautodiscovery
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function verifyWindowsEnrollmentAutoDiscovery
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,13 +26,29 @@ Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery -InputObject <IDeviceMa
 ## DESCRIPTION
 Invoke function verifyWindowsEnrollmentAutoDiscovery
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -DomainName
 Usage: domainName='{domainName}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Verify
 Aliases:
 
@@ -51,7 +64,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: VerifyViaIdentity
 Aliases:
 
@@ -68,9 +81,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -89,5 +104,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
 
 ## RELATED LINKS
-[Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery?view=graph-powershell-beta)
 

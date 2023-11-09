@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting
 schema: 2.0.0
@@ -17,13 +17,13 @@ This API is available in the following national cloud deployments.
 ```
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting [-AdditionalProperties <Hashtable>]
  [-EnableConnection] [-Id <String>] [-LastSyncDateTime <DateTime>] [-PartnerId <String>] [-Status <String>]
- [-StatusDetails <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StatusDetails <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
- -BodyParameter <IMicrosoftGraphCloudPcExternalPartnerSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcExternalPartnerSetting> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,7 +31,8 @@ Create a new cloudPcExternalPartnerSetting object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
@@ -41,8 +42,8 @@ $params = @{
 }
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -50,7 +51,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +67,7 @@ cloudPcExternalPartnerSetting
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcExternalPartnerSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExternalPartnerSetting
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +85,7 @@ Required.
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +101,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +118,7 @@ The Timestamp type represents the date and time information using ISO 8601 forma
 For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +133,7 @@ Accept wildcard characters: False
 The external partner ID.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +148,7 @@ Accept wildcard characters: False
 cloudPcExternalPartnerStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +163,7 @@ Accept wildcard characters: False
 Status details message.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +178,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -193,7 +194,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -210,9 +211,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExternalPartnerSetting
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExternalPartnerSetting
+
 ## NOTES
 
 ALIASES
@@ -232,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StatusDetails <String>]`: Status details message.
 
 ## RELATED LINKS
+

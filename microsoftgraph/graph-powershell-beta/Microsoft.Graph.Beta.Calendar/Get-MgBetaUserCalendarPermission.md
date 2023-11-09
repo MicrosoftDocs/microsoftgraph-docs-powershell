@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarpermission
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgBetaUserCalendarPermission
@@ -12,21 +11,12 @@ ms.prod: outlook
 Get the specified permissions object of a user or group calendar that has been shared.
 This API is available in the following national cloud deployments.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarPermission?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBetaUserCalendarPermission -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgBetaUserCalendarPermission -CalendarPermissionId <String> -UserId <String> -CalendarId <String>
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserCalendarPermission -UserId <String> [-Filter <String>] [-Property <String[]>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
@@ -35,16 +25,10 @@ Get-MgBetaUserCalendarPermission -CalendarPermissionId <String> -UserId <String>
  [<CommonParameters>]
 ```
 
-### List1
+### Get1
 ```
-Get-MgBetaUserCalendarPermission -UserId <String> -CalendarId <String> [-Property <String[]>]
- [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserCalendarPermission -CalendarId <String> -CalendarPermissionId <String> -UserId <String>
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -52,22 +36,30 @@ Get-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <St
 Get-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
+### GetViaIdentity1
+```
+Get-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <String[]>] [<CommonParameters>]
+```
+
+### List1
+```
+Get-MgBetaUserCalendarPermission -CalendarId <String> -UserId <String> [-Filter <String>]
+ [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
+ [-PageSize <Int32>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Get the specified permissions object of a user or group calendar that has been shared.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 Get-MgBetaUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
-```
-This example shows how to use the Get-MgBetaUserCalendarPermission Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -75,7 +67,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List, List1
 Aliases:
 
@@ -90,7 +82,7 @@ Accept wildcard characters: False
 The unique identifier of calendar
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1, List1
 Aliases:
 
@@ -105,8 +97,8 @@ Accept wildcard characters: False
 The unique identifier of calendarPermission
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get
+Type: System.String
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -121,7 +113,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List, List1
 Aliases: CV
 
@@ -136,7 +128,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List, List1
 Aliases:
 
@@ -152,8 +144,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -167,7 +159,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List, List1
 Aliases:
 
@@ -182,9 +174,24 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List, List1
+Aliases:
 
 Required: False
 Position: Named
@@ -197,7 +204,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List, List1
 Aliases: OrderBy
 
@@ -212,7 +219,7 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List, List1
 Aliases: Limit
 
@@ -227,26 +234,11 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: List, Get1, Get, List1
+Type: System.String
+Parameter Sets: Get, Get1, List, List1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List, List1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -259,9 +251,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCalendarPermission
+
 ## NOTES
 
 ALIASES
@@ -285,4 +279,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarPermission?view=graph-powershell-1.0)
+

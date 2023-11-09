@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetamutecommunicationcallparticipant
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Invoke-MgBetaMuteCommunicationCallParticipant
@@ -14,35 +13,32 @@ This is a server mute, meaning that the server will drop all audio packets for t
 For more information about how to handle mute operations, see muteParticipantOperation.
 This API is available in the following national cloud deployments.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMuteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCallParticipant?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### MuteExpanded (Default)
 ```
 Invoke-MgBetaMuteCommunicationCallParticipant -CallId <String> -ParticipantId <String>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Mute
 ```
 Invoke-MgBetaMuteCommunicationCallParticipant -CallId <String> -ParticipantId <String>
  -BodyParameter <IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MuteViaIdentityExpanded
-```
-Invoke-MgBetaMuteCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### MuteViaIdentity
 ```
 Invoke-MgBetaMuteCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### MuteViaIdentityExpanded
+```
+Invoke-MgBetaMuteCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,11 +48,11 @@ For more information about how to handle mute operations, see muteParticipantOpe
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	clientContext = "d45324c1-fcb5-430a-902c-f20af696537c"
@@ -64,17 +60,13 @@ $params = @{
 
 Invoke-MgBetaMuteCommunicationCallParticipant -CallId $callId -ParticipantId $participantId -BodyParameter $params
 
-```
-This example shows how to use the Invoke-MgBetaMuteCommunicationCallParticipant Cmdlet.
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: MuteExpanded, MuteViaIdentityExpanded
 Aliases:
 
@@ -90,7 +82,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Mute, MuteViaIdentity
 Aliases:
 
@@ -105,8 +97,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: MuteExpanded, Mute
+Type: System.String
+Parameter Sets: Mute, MuteExpanded
 Aliases:
 
 Required: True
@@ -120,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: MuteExpanded, MuteViaIdentityExpanded
 Aliases:
 
@@ -136,8 +128,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: MuteViaIdentityExpanded, MuteViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: MuteViaIdentity, MuteViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -151,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of participant
 
 ```yaml
-Type: String
-Parameter Sets: MuteExpanded, Mute
+Type: System.String
+Parameter Sets: Mute, MuteExpanded
 Aliases:
 
 Required: True
@@ -166,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -182,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -199,10 +191,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMuteParticipantOperation
+
 ## NOTES
 
 ALIASES
@@ -237,4 +232,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgMuteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCallParticipant?view=graph-powershell-1.0)
+

@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveroot
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaFollowDriveRoot
@@ -12,24 +11,37 @@ ms.prod: sharepoint
 Follow a driveItem.
 This API is available in the following national cloud deployments.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgFollowDriveRoot?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Follow (Default)
 ```
-Invoke-MgBetaFollowDriveRoot -DriveId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaFollowDriveRoot -DriveId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### FollowViaIdentity
 ```
-Invoke-MgBetaFollowDriveRoot -InputObject <IFilesIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaFollowDriveRoot -InputObject <IFilesIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Follow a driveItem.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +49,7 @@ This API is available in the following national cloud deployments.
 The unique identifier of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Follow
 Aliases:
 
@@ -53,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 Parameter Sets: FollowViaIdentity
 Aliases:
 
@@ -68,7 +80,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -84,7 +96,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -101,9 +113,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
+
 ## NOTES
 
 ALIASES
@@ -140,5 +154,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgFollowDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgFollowDriveRoot?view=graph-powershell-1.0)
 

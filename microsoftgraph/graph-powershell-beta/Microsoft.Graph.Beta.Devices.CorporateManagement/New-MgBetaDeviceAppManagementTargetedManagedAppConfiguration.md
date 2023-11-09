@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtargetedmanagedappconfiguration
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to targetedManagedAppConfigurations for deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,18 +21,34 @@ New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration [-AdditionalPropert
  [-DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsAssigned] [-LastModifiedDateTime <DateTime>]
  [-RoleScopeTagIds <String[]>] [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
- [-TargetedAppManagementLevels <AppManagementLevel>] [-Version <String>] [-WhatIf] [-Confirm]
+ [-TargetedAppManagementLevels <AppManagementLevel>] [-Version <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration
- -BodyParameter <IMicrosoftGraphTargetedManagedAppConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTargetedManagedAppConfiguration> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to targetedManagedAppConfigurations for deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -43,7 +56,7 @@ Create new navigation property to targetedManagedAppConfigurations for deviceApp
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -58,7 +71,7 @@ Accept wildcard characters: False
 Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
 
 ```yaml
-Type: TargetedManagedAppGroupType
+Type: Microsoft.Graph.Beta.PowerShell.Support.TargetedManagedAppGroupType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -74,7 +87,7 @@ List of apps to which the policy is deployed.
 To construct, see NOTES section for APPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedMobileApp[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedMobileApp[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -90,7 +103,7 @@ Navigation property to list of inclusion and exclusion groups to which the polic
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTargetedManagedAppPolicyAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTargetedManagedAppPolicyAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -106,7 +119,7 @@ Configuration used to deliver a set of custom settings as-is to all users in the
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTargetedManagedAppConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTargetedManagedAppConfiguration
 Parameter Sets: Create
 Aliases:
 
@@ -121,7 +134,7 @@ Accept wildcard characters: False
 The date and time the policy was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +150,7 @@ A set of string key and string value pairs to be sent to apps for users to whom 
 To construct, see NOTES section for CUSTOMSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +165,7 @@ Accept wildcard characters: False
 Count of apps to which the current policy is deployed.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -168,7 +181,7 @@ The ManagedAppEntity is the base entity type for all other entity types under ap
 To construct, see NOTES section for DEPLOYMENTSUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppPolicyDeploymentSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppPolicyDeploymentSummary
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -183,7 +196,7 @@ Accept wildcard characters: False
 The policy's description.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -198,7 +211,7 @@ Accept wildcard characters: False
 Policy display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -214,7 +227,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -229,7 +242,7 @@ Accept wildcard characters: False
 Indicates if the policy is deployed to any inclusion groups or not.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -244,7 +257,7 @@ Accept wildcard characters: False
 Last time the policy was modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -259,7 +272,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -275,7 +288,7 @@ List of settings contained in this App Configuration policy
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSetting[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -290,7 +303,7 @@ Accept wildcard characters: False
 Management levels for apps
 
 ```yaml
-Type: AppManagementLevel
+Type: Microsoft.Graph.Beta.PowerShell.Support.AppManagementLevel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -305,7 +318,7 @@ Accept wildcard characters: False
 Version of the entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -320,7 +333,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -336,7 +349,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -353,9 +366,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTargetedManagedAppConfiguration
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTargetedManagedAppConfiguration
+
 ## NOTES
 
 ALIASES
@@ -514,8 +529,4 @@ To create the parameters described below, construct a hash table containing the 
       - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-1.0)
-
-## RELATED LINKS
-[New-MgDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-1.0)
 
