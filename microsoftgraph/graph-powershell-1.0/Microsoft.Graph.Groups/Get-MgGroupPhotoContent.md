@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from groups
+Get the profilePhoto media content.
+By default, original size of the photo is returned. Other available sizes are: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupPhotoContent](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhotoContent?view=graph-powershell-beta)
@@ -37,7 +38,24 @@ Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassT
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from groups
+Get the profilePhoto media content.
+By default, original size of the photo is returned. Other available sizes are: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648.
+
+## EXAMPLES
+### Example 1: Get a group's photo
+
+```powershell
+Get-MgGroupPhotoContent -GroupId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe' -OutFile $outFileId
+```
+
+This example retrieves the profile photo properties for the specified group.
+
+### Example 2: Get a specific size of a group's photo
+
+```powershell
+Get-MgGroupPhotoContent -GroupId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe' -ProfilePhotoId 360x360 -OutFile $outFileId
+```
+
 
 ## PARAMETERS
 

@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserPhoto
 
 ## SYNOPSIS
-The user's profile photo.
-Read-only.
+Get the profilePhoto metadata.
+By default, original size of the photo is returned. Other available sizes are: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Get-MgUserPhoto?view=graph-powershell-1.0)
@@ -43,8 +43,8 @@ Get-MgBetaUserPhoto -InputObject <IUsersIdentity> [-Property <String[]>] [<Commo
 ```
 
 ## DESCRIPTION
-The user's profile photo.
-Read-only.
+Get the profilePhoto metadata.
+By default, original size of the photo is returned. Other available sizes are: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504, and 648x648.
 
 ## EXAMPLES
 ### Example 1: Get a user's photo properties
@@ -54,10 +54,22 @@ Get-MgBetaUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
 
 Id      Height Width
 --      ------ -----
-240X240 240    240
+default 240    240
 ```
 
 This example retrieves the profile photo properties for the specified user.
+
+### Example 2: Get properties of a specific size of a user's photo
+
+```powershell
+Get-MgBetaUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe' -ProfilePhotoId 360x360
+
+Id      Height Width
+--      ------ -----
+360x360 360    360
+```
+
+This example retrieves the properties of a specific photo size for the specified user.
 
 ## PARAMETERS
 
