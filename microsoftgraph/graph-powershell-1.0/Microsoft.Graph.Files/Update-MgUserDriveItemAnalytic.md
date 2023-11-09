@@ -13,6 +13,9 @@ Update the navigation property analytics in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -45,6 +48,8 @@ Update-MgUserDriveItemAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the navigation property analytics in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -11777,7 +11782,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
+[Update-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
+[Update-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
 
+## RELATED LINKS
+[Update-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)

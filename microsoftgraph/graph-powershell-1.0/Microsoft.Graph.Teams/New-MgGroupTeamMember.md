@@ -46,8 +46,6 @@ New-MgGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Add a new conversationMember to a team.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -270,4 +268,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [New-MgBetaGroupTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamMember?view=graph-powershell-beta)

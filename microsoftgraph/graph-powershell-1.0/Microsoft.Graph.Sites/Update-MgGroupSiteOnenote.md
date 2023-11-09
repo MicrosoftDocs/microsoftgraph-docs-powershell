@@ -48,6 +48,8 @@ Update-MgGroupSiteOnenote -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property onenote in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -769,3 +771,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenote?view=graph-powershell-beta)
 
+## RELATED LINKS

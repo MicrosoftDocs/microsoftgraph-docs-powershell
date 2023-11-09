@@ -30,6 +30,8 @@ Get-MgSecuritySubjectRightsRequestFinalAttachment -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Invoke function getFinalAttachment
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -165,5 +167,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecuritySubjectRightsRequestFinalAttachment](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestFinalAttachment?view=graph-powershell-beta)
 

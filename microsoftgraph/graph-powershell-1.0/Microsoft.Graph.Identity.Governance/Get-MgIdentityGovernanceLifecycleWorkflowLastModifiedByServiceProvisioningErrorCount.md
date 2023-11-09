@@ -30,6 +30,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorC
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -182,5 +184,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByServiceProvisioningErrorCount?view=graph-powershell-beta)
 

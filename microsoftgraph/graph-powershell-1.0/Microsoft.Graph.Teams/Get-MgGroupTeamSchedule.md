@@ -40,8 +40,6 @@ If the provisioning failed, clients can get additional information from the prov
 Clients can also inspect the configuration of the schedule.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -158,4 +156,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamSchedule?view=graph-powershell-beta)

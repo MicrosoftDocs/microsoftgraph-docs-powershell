@@ -44,6 +44,8 @@ New-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create new navigation property to activities for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -261,5 +263,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
+
 [New-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
 

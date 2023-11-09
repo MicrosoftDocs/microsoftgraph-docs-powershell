@@ -69,6 +69,8 @@ Remove-MgSiteTermStoreGroupSetChildRelation -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property relations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -312,5 +314,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteTermStoreGroupSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroupSetChildRelation?view=graph-powershell-beta)
 

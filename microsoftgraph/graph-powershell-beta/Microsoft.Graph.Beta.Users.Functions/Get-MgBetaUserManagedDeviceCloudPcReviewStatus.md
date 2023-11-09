@@ -25,6 +25,8 @@ Get-MgBetaUserManagedDeviceCloudPcReviewStatus -InputObject <IUsersFunctionsIden
 ## DESCRIPTION
 Invoke function getCloudPcReviewStatus
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -131,4 +133,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

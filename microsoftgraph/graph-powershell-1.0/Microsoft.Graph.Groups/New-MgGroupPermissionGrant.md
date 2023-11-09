@@ -45,6 +45,8 @@ New-MgGroupPermissionGrant -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Create new navigation property to permissionGrants for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -320,5 +322,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [New-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 

@@ -43,6 +43,8 @@ Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic -InputObject <IUsersActionsI
 ## DESCRIPTION
 Invoke action downloadAppDiagnostics
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -279,4 +281,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[PowerliftId <String>]`: The unique id for the request
 
 ## RELATED LINKS
-

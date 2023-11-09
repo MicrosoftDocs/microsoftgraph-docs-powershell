@@ -19,40 +19,386 @@ Read properties and relationships of the mobileAppCategory object.
 
 ### List (Default)
 ```
-Get-MgDeviceAppManagementMobileAppCategory [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get9
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get8
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get7
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get6
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get5
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get4
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get3
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get2
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get17
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get16
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get15
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get14
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get13
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get12
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get11
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get10
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### Get1
 ```
 Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
-### List1
+### List9
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List8
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List7
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List6
 ```
 Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### List5
 ```
-Get-MgDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### List4
 ```
-Get-MgDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List3
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List2
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List17
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List16
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List15
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List14
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List13
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List (Default)
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get9
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get8
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get7
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get6
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get5
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get4
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get3
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get2
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get17
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get16
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get15
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get14
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get13
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get12
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get11
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get10
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### List9
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List8
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### List7
+```
+Get-MgDeviceAppManagementMobileAppCategory -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,7 +411,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List, List1
+Parameter Sets: List, Get9, Get8, Get7, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases:
 
 Required: False
@@ -81,7 +427,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List, Get9, Get8, Get7, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases: CV
 
 Required: False
@@ -96,7 +442,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get17, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, Get, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases: Expand
 
 Required: False
@@ -111,7 +457,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List, Get9, Get8, Get7, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases:
 
 Required: False
@@ -127,7 +473,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: Get6, Get5, Get4, Get3, Get2, Get17, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, Get, List9, List8, List7
 Aliases:
 
 Required: True
@@ -142,7 +488,7 @@ The unique identifier of mobileAppCategory
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get17, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, Get
 Aliases:
 
 Required: True
@@ -157,7 +503,7 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: Get1, List1
+Parameter Sets: List, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get17, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases:
 
 Required: True
@@ -172,7 +518,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List, Get9, Get8, Get7, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases:
 
 Required: False
@@ -187,7 +533,7 @@ Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get17, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, Get, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases: Select
 
 Required: False
@@ -202,7 +548,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List, Get9, Get8, Get7, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases:
 
 Required: False
@@ -217,7 +563,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List, List1
+Parameter Sets: List, Get9, Get8, Get7, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases: OrderBy
 
 Required: False
@@ -232,7 +578,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List, Get9, Get8, Get7, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases: Limit
 
 Required: False
@@ -247,7 +593,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List, Get9, Get8, Get7, List9, List8, List7, List6, List5, List4, List3, List2, List17, List16, List15, List14, List13
 Aliases:
 
 Required: False

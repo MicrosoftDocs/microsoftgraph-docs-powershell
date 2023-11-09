@@ -52,6 +52,8 @@ Update-MgUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property childFolders in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -803,3 +805,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
+## RELATED LINKS

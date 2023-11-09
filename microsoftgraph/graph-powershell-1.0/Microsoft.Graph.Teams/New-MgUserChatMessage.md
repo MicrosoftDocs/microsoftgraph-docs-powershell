@@ -64,8 +64,6 @@ Send a new chatMessage in the specified chat.
 This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -894,3 +892,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessage?view=graph-powershell-beta)
+
+
+## RELATED LINKS

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
+ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyserviceprincipalcompromised
 schema: 2.0.0
 ms.prod: identity-and-sign-in
@@ -35,6 +36,8 @@ Confirm-MgRiskyServicePrincipalCompromised
 Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to high.
 This API is supported in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +156,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalIds <String[]>]`: 
 
 ## RELATED LINKS
+
 [Confirm-MgBetaRiskyServicePrincipalCompromised](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaRiskyServicePrincipalCompromised?view=graph-powershell-beta)
 

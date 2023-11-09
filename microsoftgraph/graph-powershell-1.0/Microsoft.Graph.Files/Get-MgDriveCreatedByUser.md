@@ -14,6 +14,9 @@ Read-only.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveCreatedByUser?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveCreatedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -31,6 +34,8 @@ Get-MgDriveCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Identity of the user who created the item.
 Read-only.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -140,5 +145,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveCreatedByUser?view=graph-powershell-beta)
+
 [Get-MgBetaDriveCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveCreatedByUser?view=graph-powershell-beta)
 

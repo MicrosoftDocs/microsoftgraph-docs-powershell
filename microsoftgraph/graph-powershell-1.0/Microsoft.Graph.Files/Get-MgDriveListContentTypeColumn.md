@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttypecolumn
 schema: 2.0.0
 ms.prod: sites-and-lists
@@ -12,6 +13,9 @@ ms.prod: sites-and-lists
 ## SYNOPSIS
 Retrieve the metadata for a site][], a [list][], or a [contentType][] [column][columnDefinition].
 This API is available in the following [national cloud deployments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
@@ -40,6 +44,8 @@ Get-MgDriveListContentTypeColumn -InputObject <IFilesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the metadata for a site][], a [list][], or a [contentType][] [column][columnDefinition].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -300,5 +306,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
+
 [Get-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
 

@@ -15,6 +15,9 @@ Nullable.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -32,6 +35,8 @@ Get-MgDriveList -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 For drives in SharePoint, the underlying document library list.
 Read-only.
 Nullable.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -141,5 +146,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveList?view=graph-powershell-beta)
+
 [Get-MgBetaDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveList?view=graph-powershell-beta)
 

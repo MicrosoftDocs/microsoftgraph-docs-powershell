@@ -13,6 +13,9 @@ Get serviceProvisioningErrors property value
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -24,6 +27,8 @@ Get-MgGroupDriveItemListItemCreatedByUserServiceProvisioningError -DriveId <Stri
 
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -236,5 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 [Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 

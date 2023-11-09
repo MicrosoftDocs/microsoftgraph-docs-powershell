@@ -13,6 +13,9 @@ Update property mailboxSettings value.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -49,6 +52,8 @@ Update-MgGroupDriveItemListItemLastModifiedByUserMailboxSetting -InputObject <IF
 
 ## DESCRIPTION
 Update property mailboxSettings value.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -417,5 +422,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+
 [Update-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItemLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
 

@@ -32,6 +32,8 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal
 ## DESCRIPTION
 The principal that's getting a role assignment or role eligibility through the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -184,5 +186,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal?view=graph-powershell-beta)
 

@@ -50,6 +50,8 @@ Update-MgGroupSiteListSubscription -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property subscriptions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -540,5 +542,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListSubscription?view=graph-powershell-beta)
 

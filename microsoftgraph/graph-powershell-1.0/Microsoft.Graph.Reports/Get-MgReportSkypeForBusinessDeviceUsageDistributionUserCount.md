@@ -30,6 +30,8 @@ Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -InputObject <IRepo
 ## DESCRIPTION
 Invoke function getSkypeForBusinessDeviceUsageDistributionUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -134,5 +136,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSkypeForBusinessDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageDistributionUserCount?view=graph-powershell-beta)
 

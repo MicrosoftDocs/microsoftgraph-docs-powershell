@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mginviteuserdriveitem
 schema: 2.0.0
 ms.prod: sharepoint
@@ -11,6 +12,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Sends a sharing invitation for a driveItem.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
 This API is available in the following [national cloud deployments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaInviteUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveItem?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaInviteUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveItem?view=graph-powershell-beta)
@@ -50,6 +54,8 @@ Invoke-MgInviteUserDriveItem -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Sends a sharing invitation for a driveItem.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -367,5 +373,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Invoke-MgBetaInviteUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveItem?view=graph-powershell-beta)
+
 [Invoke-MgBetaInviteUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveItem?view=graph-powershell-beta)
 

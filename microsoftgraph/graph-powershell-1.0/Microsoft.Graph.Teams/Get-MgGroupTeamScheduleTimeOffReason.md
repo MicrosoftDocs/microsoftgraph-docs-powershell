@@ -38,8 +38,6 @@ Get-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-Property <S
 Retrieve the properties and relationships of a timeOffReason object by ID.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -277,4 +275,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)

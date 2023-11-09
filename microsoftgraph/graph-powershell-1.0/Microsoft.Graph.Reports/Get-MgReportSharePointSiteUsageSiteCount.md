@@ -29,6 +29,8 @@ Get-MgReportSharePointSiteUsageSiteCount -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageSiteCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSharePointSiteUsageSiteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageSiteCount?view=graph-powershell-beta)
 

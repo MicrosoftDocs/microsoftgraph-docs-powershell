@@ -13,6 +13,9 @@ Delete navigation property fields for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItemField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,8 @@ Remove-MgUserDriveRootListItemField -InputObject <IFilesIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete navigation property fields for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -184,5 +189,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItemField?view=graph-powershell-beta)
+
 [Remove-MgBetaUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootListItemField?view=graph-powershell-beta)
 

@@ -22,6 +22,8 @@ Get-MgIdentityB2XUserFlowCount [-Filter <String>] [-Search <String>] [<CommonPar
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityB2XUserFlowCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowCount?view=graph-powershell-beta)
 

@@ -13,6 +13,9 @@ Invoke action extractSensitivityLabels
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaExtractUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaExtractUserDriveItemSensitivityLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaExtractUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaExtractUserDriveItemSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Extract (Default)
@@ -29,6 +32,8 @@ Invoke-MgExtractUserDriveItemSensitivityLabel -InputObject <IUsersActionsIdentit
 
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -174,5 +179,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaExtractUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaExtractUserDriveItemSensitivityLabel?view=graph-powershell-beta)
+
 [Invoke-MgBetaExtractUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaExtractUserDriveItemSensitivityLabel?view=graph-powershell-beta)
 

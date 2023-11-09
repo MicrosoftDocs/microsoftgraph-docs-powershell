@@ -651,3 +651,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaContact?view=graph-powershell-beta)
+
+
+## RELATED LINKS

@@ -30,6 +30,8 @@ Remove-MgUserMailFolderMessageAttachment -InputObject <IMailIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property attachments for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentId
@@ -198,5 +200,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolderMessageAttachment?view=graph-powershell-beta)
 

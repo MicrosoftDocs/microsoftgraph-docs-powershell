@@ -48,6 +48,8 @@ Update-MgPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity> 
 Update the properties of a homeRealmDiscoveryPolicy object.
 This API is supported in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -337,5 +339,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Update-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
 

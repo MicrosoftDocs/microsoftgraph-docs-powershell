@@ -51,6 +51,8 @@ The createLink action creates a new sharing link if the specified link type does
 listItem resources inherit sharing permissions from the list the item resides in.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -345,4 +347,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-

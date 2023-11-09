@@ -32,6 +32,8 @@ Restore-MgGroupDriveItemListItemDocumentSetVersion -InputObject <IGroupsIdentity
 Restore a document set version.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -212,5 +214,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Restore-MgBetaGroupDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
 

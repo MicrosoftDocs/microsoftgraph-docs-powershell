@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
+ms.prod: security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesubdomain
 schema: 2.0.0
 ms.prod: security
@@ -39,6 +40,8 @@ Get-MgSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Read the properties and relationships of a subdomain object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -296,5 +299,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSubdomain?view=graph-powershell-beta)
 

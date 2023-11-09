@@ -24,6 +24,8 @@ Get-MgInvitationInvitedUserServiceProvisioningError -InvitationId <String> [-Exp
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -205,5 +207,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaInvitationInvitedUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserServiceProvisioningError?view=graph-powershell-beta)
 

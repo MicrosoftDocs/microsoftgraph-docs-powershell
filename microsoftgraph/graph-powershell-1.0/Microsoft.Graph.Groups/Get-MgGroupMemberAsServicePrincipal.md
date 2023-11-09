@@ -37,6 +37,8 @@ Get-MgGroupMemberAsServicePrincipal -InputObject <IGroupsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -308,5 +310,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupMemberAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberAsServicePrincipal?view=graph-powershell-beta)
 

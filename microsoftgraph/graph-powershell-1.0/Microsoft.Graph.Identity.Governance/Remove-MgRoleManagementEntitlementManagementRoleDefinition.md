@@ -36,6 +36,8 @@ You can't delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -219,5 +221,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
 

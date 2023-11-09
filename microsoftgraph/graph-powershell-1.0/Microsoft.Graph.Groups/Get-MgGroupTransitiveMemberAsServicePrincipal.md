@@ -37,6 +37,8 @@ Get-MgGroupTransitiveMemberAsServicePrincipal -InputObject <IGroupsIdentity> [-E
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -308,5 +310,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTransitiveMemberAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberAsServicePrincipal?view=graph-powershell-beta)
 

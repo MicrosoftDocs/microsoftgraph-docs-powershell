@@ -30,6 +30,8 @@ Invoke-MgHaveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-TenantId
 ## DESCRIPTION
 Invoke function doesUserHaveAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -176,5 +178,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Invoke-MgBetaHaveTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaHaveTeamworkDeletedTeamChannel?view=graph-powershell-beta)
 

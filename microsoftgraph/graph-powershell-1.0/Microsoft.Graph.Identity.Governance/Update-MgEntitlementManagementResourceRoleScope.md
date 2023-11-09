@@ -43,6 +43,8 @@ Update-MgEntitlementManagementResourceRoleScope -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Update the navigation property resourceRoleScopes in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleScopeId
@@ -411,3 +413,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

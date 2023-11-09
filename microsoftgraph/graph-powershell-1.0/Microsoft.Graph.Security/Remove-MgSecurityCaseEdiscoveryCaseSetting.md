@@ -30,6 +30,8 @@ Remove-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property settings for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
 

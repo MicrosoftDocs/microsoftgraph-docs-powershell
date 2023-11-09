@@ -30,6 +30,8 @@ Get-MgGroupOnenoteRecentNotebook -InputObject <IGroupsIdentity> [-Count] [-Filte
 ## DESCRIPTION
 Invoke function getRecentNotebooks
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -209,5 +211,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOnenoteRecentNotebook?view=graph-powershell-beta)
 

@@ -44,6 +44,8 @@ Remove-MgGroupSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-IfMatch <Stri
 Delete a term object.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -257,5 +259,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSetTerm?view=graph-powershell-beta)
 

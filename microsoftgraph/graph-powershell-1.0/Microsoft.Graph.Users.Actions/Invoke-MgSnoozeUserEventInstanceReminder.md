@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgscanusermanageddevicewindowsdefender
 schema: 2.0.0
 ms.prod: outlook
@@ -10,6 +11,9 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Not yet documented
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSnoozeUserEventInstanceReminder?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSnoozeUserEventInstanceReminder?view=graph-powershell-beta)
@@ -261,4 +265,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSnoozeUserEventInstanceReminder?view=graph-powershell-beta)
+
 [Invoke-MgBetaSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSnoozeUserEventInstanceReminder?view=graph-powershell-beta)

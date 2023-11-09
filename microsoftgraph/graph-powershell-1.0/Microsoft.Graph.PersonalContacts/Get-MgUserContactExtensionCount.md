@@ -29,6 +29,8 @@ Get-MgUserContactExtensionCount -InputObject <IPersonalContactsIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactId
@@ -118,5 +120,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserContactExtensionCount](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactExtensionCount?view=graph-powershell-beta)
 

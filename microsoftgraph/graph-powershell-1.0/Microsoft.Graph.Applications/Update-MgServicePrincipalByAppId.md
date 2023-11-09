@@ -36,7 +36,9 @@ Update-MgServicePrincipalByAppId -AppId <String> [-AccountEnabled] [-AddIns <IMi
  [-Oauth2PermissionScopes <IMicrosoftGraphPermissionScope[]>]
  [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>] [-PreferredSingleSignOnMode <String>]
- [-PreferredTokenSigningKeyThumbprint <String>] [-ReplyUrls <String[]>]
+ [-PreferredTokenSigningKeyThumbprint <String>]
+ [-RemoteDesktopSecurityConfiguration <IMicrosoftGraphRemoteDesktopSecurityConfiguration>]
+ [-ReplyUrls <String[]>]
  [-ResourceSpecificApplicationPermissions <IMicrosoftGraphResourceSpecificPermission[]>]
  [-SamlSingleSignOnSettings <IMicrosoftGraphSamlSingleSignOnSettings>] [-ServicePrincipalNames <String[]>]
  [-ServicePrincipalType <String>] [-SignInAudience <String>]
@@ -68,7 +70,9 @@ Update-MgServicePrincipalByAppId [-AppId <String>] -InputObject <IApplicationsId
  [-Oauth2PermissionScopes <IMicrosoftGraphPermissionScope[]>]
  [-OwnedObjects <IMicrosoftGraphDirectoryObject[]>] [-Owners <IMicrosoftGraphDirectoryObject[]>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>] [-PreferredSingleSignOnMode <String>]
- [-PreferredTokenSigningKeyThumbprint <String>] [-ReplyUrls <String[]>]
+ [-PreferredTokenSigningKeyThumbprint <String>]
+ [-RemoteDesktopSecurityConfiguration <IMicrosoftGraphRemoteDesktopSecurityConfiguration>]
+ [-ReplyUrls <String[]>]
  [-ResourceSpecificApplicationPermissions <IMicrosoftGraphResourceSpecificPermission[]>]
  [-SamlSingleSignOnSettings <IMicrosoftGraphSamlSingleSignOnSettings>] [-ServicePrincipalNames <String[]>]
  [-ServicePrincipalType <String>] [-SignInAudience <String>]
@@ -834,6 +838,22 @@ For applications that are not SAML, do not write or otherwise rely on this prope
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RemoteDesktopSecurityConfiguration
+remoteDesktopSecurityConfiguration
+To construct, see NOTES section for REMOTEDESKTOPSECURITYCONFIGURATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRemoteDesktopSecurityConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

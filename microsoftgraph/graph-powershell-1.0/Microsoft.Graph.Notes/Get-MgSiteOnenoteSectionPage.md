@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
+ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpage
 schema: 2.0.0
 ms.prod: onenote
@@ -26,8 +27,6 @@ Get-MgSiteOnenoteSectionPage -OnenoteSectionId <String> -SiteId <String> [-Expan
 ## DESCRIPTION
 Retrieve a list of page objects from the specified section.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -225,4 +224,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteSectionPage?view=graph-powershell-beta)

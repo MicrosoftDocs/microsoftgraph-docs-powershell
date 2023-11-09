@@ -221,4 +221,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabled <Boolean?>]`: If set to true, Azure Active Directory security defaults are enabled for the tenant.
 
 ## RELATED LINKS
+
 [Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-beta)

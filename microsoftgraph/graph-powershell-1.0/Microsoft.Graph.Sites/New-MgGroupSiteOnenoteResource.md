@@ -44,6 +44,8 @@ New-MgGroupSiteOnenoteResource -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to resources for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -283,5 +285,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteResource?view=graph-powershell-beta)
 

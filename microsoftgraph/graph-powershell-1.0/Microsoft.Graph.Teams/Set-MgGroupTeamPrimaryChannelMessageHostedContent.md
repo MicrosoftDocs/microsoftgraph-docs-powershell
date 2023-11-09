@@ -30,6 +30,8 @@ Set-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 Update media content for the navigation property hostedContents in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatMessageHostedContentId
@@ -225,5 +227,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Set-MgBetaGroupTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPrimaryChannelMessageHostedContent?view=graph-powershell-beta)
 

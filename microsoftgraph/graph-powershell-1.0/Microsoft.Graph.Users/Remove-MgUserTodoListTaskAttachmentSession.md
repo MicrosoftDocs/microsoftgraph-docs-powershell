@@ -31,6 +31,8 @@ Remove-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property attachmentSessions for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentSessionId
@@ -204,5 +206,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskAttachmentSession?view=graph-powershell-beta)
 

@@ -30,6 +30,8 @@ Get-MgSecurityCaseEdiscoveryCaseSearchCount -InputObject <ISecurityIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -165,5 +167,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityCaseEdiscoveryCaseSearchCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchCount?view=graph-powershell-beta)
 

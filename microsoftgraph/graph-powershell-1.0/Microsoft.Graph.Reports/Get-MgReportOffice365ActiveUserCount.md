@@ -29,6 +29,8 @@ Get-MgReportOffice365ActiveUserCount -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Invoke function getOffice365ActiveUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportOffice365ActiveUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActiveUserCount?view=graph-powershell-beta)
 

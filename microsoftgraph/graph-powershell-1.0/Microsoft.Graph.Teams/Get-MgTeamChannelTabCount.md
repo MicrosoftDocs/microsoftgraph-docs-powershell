@@ -30,6 +30,8 @@ Get-MgTeamChannelTabCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Sea
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -161,5 +163,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamChannelTabCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelTabCount?view=graph-powershell-beta)
 

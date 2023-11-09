@@ -28,6 +28,8 @@ Get-MgReportTeamCount -InputObject <IReportsIdentity> -OutFile <String> [-PassTh
 ## DESCRIPTION
 Invoke function getTeamsTeamCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -132,5 +134,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportTeamCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamCount?view=graph-powershell-beta)
 

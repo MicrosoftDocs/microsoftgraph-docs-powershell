@@ -45,6 +45,8 @@ Invoke-MgPreviewGroupDriveItem -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -262,5 +264,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Invoke-MgBetaPreviewGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaPreviewGroupDriveItem?view=graph-powershell-beta)
 

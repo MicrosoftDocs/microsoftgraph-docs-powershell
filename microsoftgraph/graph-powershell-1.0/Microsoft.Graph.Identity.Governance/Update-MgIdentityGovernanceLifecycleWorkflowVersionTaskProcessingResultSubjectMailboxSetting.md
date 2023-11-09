@@ -53,6 +53,8 @@ Update-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMa
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -484,3 +486,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting?view=graph-powershell-beta)
 
+## RELATED LINKS

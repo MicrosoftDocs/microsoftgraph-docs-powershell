@@ -30,6 +30,8 @@ Remove-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property messages for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -207,5 +209,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelMessage?view=graph-powershell-beta)
 

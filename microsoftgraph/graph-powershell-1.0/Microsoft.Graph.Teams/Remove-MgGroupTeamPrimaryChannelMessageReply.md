@@ -30,6 +30,8 @@ Remove-MgGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property replies for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatMessageId
@@ -207,5 +209,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
 

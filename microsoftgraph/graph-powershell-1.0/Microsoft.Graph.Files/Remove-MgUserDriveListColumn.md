@@ -13,6 +13,9 @@ Delete navigation property columns for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,8 @@ Remove-MgUserDriveListColumn -InputObject <IFilesIdentity> [-IfMatch <String>] [
 
 ## DESCRIPTION
 Delete navigation property columns for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -199,5 +204,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListColumn?view=graph-powershell-beta)
+
 [Remove-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListColumn?view=graph-powershell-beta)
 

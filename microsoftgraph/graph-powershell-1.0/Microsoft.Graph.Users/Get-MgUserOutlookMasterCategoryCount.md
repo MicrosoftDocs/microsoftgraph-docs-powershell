@@ -28,6 +28,8 @@ Get-MgUserOutlookMasterCategoryCount -InputObject <IUsersIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -110,5 +112,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserOutlookMasterCategoryCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategoryCount?view=graph-powershell-beta)
 

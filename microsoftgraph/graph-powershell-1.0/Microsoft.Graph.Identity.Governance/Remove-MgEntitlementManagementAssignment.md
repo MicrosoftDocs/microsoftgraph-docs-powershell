@@ -27,6 +27,8 @@ Remove-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 Delete navigation property assignments for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentId
@@ -210,4 +212,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

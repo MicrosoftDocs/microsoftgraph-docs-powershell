@@ -32,6 +32,8 @@ New-MgSecurityThreatIntelligenceHostSslCertificate -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to hostSslCertificates for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -676,3 +678,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-beta)
 
+## RELATED LINKS

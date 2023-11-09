@@ -58,6 +58,8 @@ Update-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Update an existing accessReviewScheduleDefinition object to change one or more of its properties.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
@@ -766,3 +768,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
+## RELATED LINKS

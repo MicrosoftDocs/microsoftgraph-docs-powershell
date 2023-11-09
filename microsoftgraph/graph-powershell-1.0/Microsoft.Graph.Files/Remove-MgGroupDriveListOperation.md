@@ -13,6 +13,9 @@ Delete navigation property operations for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,8 @@ Remove-MgGroupDriveListOperation -InputObject <IFilesIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Delete navigation property operations for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -199,5 +204,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListOperation?view=graph-powershell-beta)
+
 [Remove-MgBetaGroupDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListOperation?view=graph-powershell-beta)
 

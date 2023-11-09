@@ -50,6 +50,8 @@ Update-MgGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property swapShiftsChangeRequests in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -395,5 +397,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
 

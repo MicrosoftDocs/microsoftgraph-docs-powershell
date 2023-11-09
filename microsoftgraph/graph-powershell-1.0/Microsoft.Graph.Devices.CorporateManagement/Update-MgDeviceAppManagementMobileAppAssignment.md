@@ -18,27 +18,519 @@ Update the properties of a mobileAppAssignment object.
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
  [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### UpdateExpanded9
 ```
 Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
  [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateExpanded8
 ```
-Update-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded7
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded6
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded5
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded4
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded3
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded2
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded16
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded15
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded14
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded13
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded12
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded11
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded10
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded1
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Update9
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update8
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update7
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update6
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update5
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update4
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update3
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update2
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update16
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update15
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update14
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update13
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update12
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update11
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update10
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded (Default)
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded9
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded8
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded7
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded6
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded5
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded4
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded3
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded2
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded16
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded15
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded14
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded13
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded12
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded11
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded10
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded1
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Update9
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update8
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update7
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update6
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update5
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update4
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update3
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update2
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update16
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update15
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update14
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update13
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update12
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update11
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update10
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded (Default)
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded9
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded8
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded7
+```
+Update-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +543,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded16, UpdateExpanded15, UpdateExpanded14, UpdateExpanded13, UpdateExpanded12, UpdateExpanded11, UpdateExpanded10, UpdateExpanded1, Update9, Update8
 Aliases:
 
 Required: False
@@ -67,7 +559,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphMobileAppAssignment
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update16, Update15, Update14, Update13, Update12, Update11, Update10
 Aliases:
 
 Required: True
@@ -83,7 +575,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded16, UpdateExpanded15, UpdateExpanded14, UpdateExpanded13, UpdateExpanded12, UpdateExpanded11, UpdateExpanded10, UpdateExpanded1, Update9, Update8
 Aliases:
 
 Required: False
@@ -99,7 +591,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded16, UpdateExpanded15, UpdateExpanded14, UpdateExpanded13, UpdateExpanded12, UpdateExpanded11, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update16, Update15, Update14, Update13, Update12, Update11, Update10
 Aliases:
 
 Required: True
@@ -114,7 +606,7 @@ Possible values for the install intent chosen by the admin.
 
 ```yaml
 Type: InstallIntent
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded16, UpdateExpanded15, UpdateExpanded14, UpdateExpanded13, UpdateExpanded12, UpdateExpanded11, UpdateExpanded10, UpdateExpanded1, Update9, Update8
 Aliases:
 
 Required: False
@@ -129,7 +621,7 @@ The unique identifier of mobileAppAssignment
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded16, UpdateExpanded15, UpdateExpanded14, UpdateExpanded13, UpdateExpanded12, UpdateExpanded11, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update16, Update15, Update14, Update13, Update12, Update11, Update10
 Aliases:
 
 Required: True
@@ -144,7 +636,7 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded16, UpdateExpanded15, UpdateExpanded14, UpdateExpanded13, UpdateExpanded12, UpdateExpanded11, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update16, Update15, Update14, Update13, Update12, Update11, Update10
 Aliases:
 
 Required: True
@@ -159,7 +651,7 @@ Abstract class to contain properties used to assign a mobile app to a group.
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded16, UpdateExpanded15, UpdateExpanded14, UpdateExpanded13, UpdateExpanded12, UpdateExpanded11, UpdateExpanded10, UpdateExpanded1, Update9, Update8
 Aliases:
 
 Required: False
@@ -174,7 +666,7 @@ Base type for assignment targets.
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded16, UpdateExpanded15, UpdateExpanded14, UpdateExpanded13, UpdateExpanded12, UpdateExpanded11, UpdateExpanded10, UpdateExpanded1, Update9, Update8
 Aliases:
 
 Required: False
@@ -189,7 +681,7 @@ Prompts you for confirmation before running the cmdlet.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded16, UpdateExpanded15, UpdateExpanded14, UpdateExpanded13, UpdateExpanded12, UpdateExpanded11, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update16, Update15, Update14, Update13, Update12, Update11, Update10
 Aliases: cf
 
 Required: False
@@ -205,7 +697,7 @@ The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateExpanded9, UpdateExpanded8, UpdateExpanded7, UpdateExpanded6, UpdateExpanded5, UpdateExpanded4, UpdateExpanded3, UpdateExpanded2, UpdateExpanded16, UpdateExpanded15, UpdateExpanded14, UpdateExpanded13, UpdateExpanded12, UpdateExpanded11, UpdateExpanded10, UpdateExpanded1, Update9, Update8, Update7, Update6, Update5, Update4, Update3, Update2, Update16, Update15, Update14, Update13, Update12, Update11, Update10
 Aliases: wi
 
 Required: False

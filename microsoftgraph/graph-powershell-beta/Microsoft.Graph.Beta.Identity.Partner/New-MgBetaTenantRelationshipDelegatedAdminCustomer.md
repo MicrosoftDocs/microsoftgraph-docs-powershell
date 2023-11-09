@@ -13,6 +13,9 @@ Create new navigation property to delegatedAdminCustomers for tenantRelationship
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -30,6 +33,8 @@ New-MgBetaTenantRelationshipDelegatedAdminCustomer -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create new navigation property to delegatedAdminCustomers for tenantRelationships
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -194,5 +199,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceName <String>]`: The name of a managed service. Read-only.
 
 ## RELATED LINKS
+[New-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-1.0)
+
 [New-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-1.0)
 

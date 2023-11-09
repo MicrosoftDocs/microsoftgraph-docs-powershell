@@ -45,6 +45,8 @@ Update-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property hostComponents in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -633,3 +635,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostComponent?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -29,6 +29,8 @@ Invoke-MgRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-PassThru
 ## DESCRIPTION
 Invoke action retryServiceProvisioning
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -164,5 +166,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Invoke-MgBetaRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRetryGroupServiceProvisioning?view=graph-powershell-beta)
 

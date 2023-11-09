@@ -13,6 +13,9 @@ Add new entity to drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -35,6 +38,8 @@ New-MgDrive -BodyParameter <IMicrosoftGraphDrive> [-WhatIf] [-Confirm] [<CommonP
 
 ## DESCRIPTION
 Add new entity to drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -26425,7 +26430,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
+[New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
+[New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)
 
+## RELATED LINKS
+[New-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDrive?view=graph-powershell-beta)

@@ -30,6 +30,8 @@ Remove-MgIdentityB2XUserFlowPostFederationSignup -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Delete navigation property postFederationSignup for identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -200,5 +202,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaIdentityB2XUserFlowPostFederationSignup](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowPostFederationSignup?view=graph-powershell-beta)
 

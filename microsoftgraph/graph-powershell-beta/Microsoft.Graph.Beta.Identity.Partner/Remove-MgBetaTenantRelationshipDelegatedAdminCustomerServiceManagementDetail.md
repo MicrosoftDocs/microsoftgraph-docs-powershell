@@ -13,6 +13,9 @@ Delete navigation property serviceManagementDetails for tenantRelationships
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -31,6 +34,8 @@ Remove-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 
 ## DESCRIPTION
 Delete navigation property serviceManagementDetails for tenantRelationships
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -168,5 +173,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
+[Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
+
 [Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-1.0)
 

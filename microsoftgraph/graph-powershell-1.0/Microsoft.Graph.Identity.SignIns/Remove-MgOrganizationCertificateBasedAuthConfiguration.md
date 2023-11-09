@@ -32,6 +32,8 @@ Remove-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySi
 Delete a certificateBasedAuthConfiguration object.
 This API is supported in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CertificateBasedAuthConfigurationId
@@ -217,5 +219,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
 

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
+ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectionpage
 schema: 2.0.0
 ms.prod: onenote
@@ -43,6 +44,8 @@ Get-MgGroupSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity> [-Expand
 The collection of pages in the section.
 Read-only.
 Nullable.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -347,5 +350,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookSectionPage?view=graph-powershell-beta)
 

@@ -30,6 +30,8 @@ Get-MgSecuritySubjectRightsRequestTeam -InputObject <ISecurityIdentity> [-Expand
 ## DESCRIPTION
 Information about the Microsoft Teams team that was created for the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -165,5 +167,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecuritySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestTeam?view=graph-powershell-beta)
 

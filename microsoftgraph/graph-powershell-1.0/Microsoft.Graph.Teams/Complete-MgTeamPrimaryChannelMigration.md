@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
+ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamprimarychannelmigration
 schema: 2.0.0
 ms.prod: microsoft-teams
@@ -37,8 +38,6 @@ Migration mode is a special state that prevents certain operations, like sending
 After a completeMigration request is made, you can't import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -172,4 +171,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Complete-MgBetaTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamPrimaryChannelMigration?view=graph-powershell-beta)

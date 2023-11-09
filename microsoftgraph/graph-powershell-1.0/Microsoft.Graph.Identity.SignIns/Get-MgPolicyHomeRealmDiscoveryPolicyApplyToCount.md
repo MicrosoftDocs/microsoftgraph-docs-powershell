@@ -30,6 +30,8 @@ Get-MgPolicyHomeRealmDiscoveryPolicyApplyToCount -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -169,5 +171,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyToCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyToCount?view=graph-powershell-beta)
 

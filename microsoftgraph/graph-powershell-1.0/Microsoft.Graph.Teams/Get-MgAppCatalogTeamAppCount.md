@@ -22,6 +22,8 @@ Get-MgAppCatalogTeamAppCount [-Filter <String>] [-Search <String>] [<CommonParam
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaAppCatalogTeamAppCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppCount?view=graph-powershell-beta)
 

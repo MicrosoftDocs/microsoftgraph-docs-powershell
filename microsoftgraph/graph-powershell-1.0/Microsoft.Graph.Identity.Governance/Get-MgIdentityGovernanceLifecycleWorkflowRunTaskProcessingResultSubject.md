@@ -32,6 +32,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubject
 ## DESCRIPTION
 The unique identifier of the Microsoft Entra user targeted for the task execution.Supports $filter(eq, ne) and $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -214,5 +216,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubject?view=graph-powershell-beta)
 

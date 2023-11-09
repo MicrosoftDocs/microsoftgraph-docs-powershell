@@ -13,6 +13,9 @@ Used to access the underlying list
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareList?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -29,6 +32,8 @@ Get-MgShareList -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 
 ## DESCRIPTION
 Used to access the underlying list
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -138,5 +143,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaShareList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareList?view=graph-powershell-beta)
+
 [Get-MgBetaShareList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareList?view=graph-powershell-beta)
 

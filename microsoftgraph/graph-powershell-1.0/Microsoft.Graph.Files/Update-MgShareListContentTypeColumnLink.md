@@ -13,6 +13,9 @@ Update the navigation property columnLinks in shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -43,6 +46,8 @@ Update-MgShareListContentTypeColumnLink -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update the navigation property columnLinks in shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -251,5 +256,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
+
 [Update-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
 

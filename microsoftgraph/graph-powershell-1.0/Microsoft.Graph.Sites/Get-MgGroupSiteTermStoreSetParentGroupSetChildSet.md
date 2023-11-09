@@ -69,6 +69,8 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildSet -InputObject <ISitesIdentity> 
 ## DESCRIPTION
 The [set] in which the term is created.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -281,5 +283,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildSet?view=graph-powershell-beta)
 

@@ -15,6 +15,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)
@@ -47,6 +50,8 @@ Restore-MgUserDriveRoot -InputObject <IUsersActionsIdentity>
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -281,5 +286,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+[Restore-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRoot?view=graph-powershell-beta)
+
 [Restore-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRoot?view=graph-powershell-beta)
 

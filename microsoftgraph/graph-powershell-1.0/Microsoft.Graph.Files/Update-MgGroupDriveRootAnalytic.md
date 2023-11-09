@@ -13,6 +13,9 @@ Update the navigation property analytics in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -45,6 +48,8 @@ Update-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Update the navigation property analytics in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -11762,7 +11767,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
+[Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
+[Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)
 
+## RELATED LINKS
+[Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootAnalytic?view=graph-powershell-beta)

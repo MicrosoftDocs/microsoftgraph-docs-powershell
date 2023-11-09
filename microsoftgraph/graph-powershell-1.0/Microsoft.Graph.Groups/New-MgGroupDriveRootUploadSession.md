@@ -44,6 +44,8 @@ New-MgGroupDriveRootUploadSession -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action createUploadSession
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -251,5 +253,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+
 [New-MgBetaGroupDriveRootUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveRootUploadSession?view=graph-powershell-beta)
 

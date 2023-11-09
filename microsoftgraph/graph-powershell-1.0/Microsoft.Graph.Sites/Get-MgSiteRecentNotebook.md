@@ -30,6 +30,8 @@ Get-MgSiteRecentNotebook -InputObject <ISitesIdentity> [-Count] [-Filter <String
 ## DESCRIPTION
 Invoke function getRecentNotebooks
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -212,5 +214,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteRecentNotebook?view=graph-powershell-beta)
 

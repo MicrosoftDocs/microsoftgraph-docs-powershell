@@ -49,6 +49,8 @@ Use this API to set the review status of a Cloud PC to in review if you consider
 After the review is completed, use this API again to set the Cloud PC back to a normal state.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -276,4 +278,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
 
 ## RELATED LINKS
-

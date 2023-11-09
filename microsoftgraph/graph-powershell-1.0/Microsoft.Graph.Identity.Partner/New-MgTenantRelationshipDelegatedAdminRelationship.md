@@ -14,6 +14,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,7 +24,7 @@ This API is available in the following national cloud deployments.
 New-MgTenantRelationshipDelegatedAdminRelationship
  [-AccessAssignments <IMicrosoftGraphDelegatedAdminAccessAssignment[]>]
  [-AccessDetails <IMicrosoftGraphDelegatedAdminAccessDetails>] [-ActivatedDateTime <DateTime>]
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-AdditionalProperties <Hashtable>] [-AutoExtendDuration <TimeSpan>] [-CreatedDateTime <DateTime>]
  [-Customer <IMicrosoftGraphDelegatedAdminRelationshipCustomerParticipant>] [-DisplayName <String>]
  [-Duration <TimeSpan>] [-EndDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Operations <IMicrosoftGraphDelegatedAdminRelationshipOperation[]>]
@@ -38,6 +41,8 @@ New-MgTenantRelationshipDelegatedAdminRelationship -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create a new delegatedAdminRelationship object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -94,6 +99,24 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AutoExtendDuration
+The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format.
+Supported values are: P0D, PT0S, P180D.
+The default value is PT0S.
+PT0S indicates that the relationship expires when the endDateTime is reached and it isn't automatically extended.
+
+```yaml
+Type: TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -413,5 +436,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: delegatedAdminRelationshipRequestStatus
 
 ## RELATED LINKS
+[New-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
+
 [New-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
 

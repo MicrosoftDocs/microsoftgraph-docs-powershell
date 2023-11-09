@@ -30,6 +30,8 @@ Remove-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecuri
 ## DESCRIPTION
 Delete navigation property details for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EndUserNotificationDetailId
@@ -211,5 +213,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
 

@@ -30,6 +30,8 @@ Invoke-MgCalendarGroupCalendar -InputObject <IGroupsIdentity> [-Count] [-Filter 
 ## DESCRIPTION
 Invoke function allowedCalendarSharingRoles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -209,5 +211,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Invoke-MgBetaCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaCalendarGroupCalendar?view=graph-powershell-beta)
 

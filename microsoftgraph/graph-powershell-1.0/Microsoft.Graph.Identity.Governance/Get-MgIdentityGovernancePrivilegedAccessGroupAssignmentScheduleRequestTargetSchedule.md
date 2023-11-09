@@ -34,6 +34,8 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestTargetSche
 Schedule created by this request.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -186,5 +188,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestTargetSchedule?view=graph-powershell-beta)
 

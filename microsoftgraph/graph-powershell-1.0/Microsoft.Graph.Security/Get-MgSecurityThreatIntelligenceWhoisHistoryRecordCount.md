@@ -23,6 +23,8 @@ Get-MgSecurityThreatIntelligenceWhoisHistoryRecordCount [-Filter <String>] [-Sea
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -68,5 +70,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecordCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecordCount?view=graph-powershell-beta)
 

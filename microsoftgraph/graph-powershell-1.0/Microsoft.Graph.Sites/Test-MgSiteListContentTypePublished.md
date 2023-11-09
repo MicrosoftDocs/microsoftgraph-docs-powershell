@@ -29,6 +29,8 @@ Test-MgSiteListContentTypePublished -InputObject <ISitesIdentity> [<CommonParame
 ## DESCRIPTION
 Invoke function isPublished
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -151,5 +153,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Test-MgBetaSiteListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Sites/Test-MgBetaSiteListContentTypePublished?view=graph-powershell-beta)
 

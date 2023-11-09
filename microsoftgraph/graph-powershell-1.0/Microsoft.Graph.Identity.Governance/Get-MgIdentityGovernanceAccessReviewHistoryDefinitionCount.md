@@ -23,6 +23,8 @@ Get-MgIdentityGovernanceAccessReviewHistoryDefinitionCount [-Filter <String>] [-
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -68,5 +70,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionCount?view=graph-powershell-beta)
 

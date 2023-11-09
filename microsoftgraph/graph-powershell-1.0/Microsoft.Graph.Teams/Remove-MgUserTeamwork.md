@@ -30,6 +30,8 @@ Remove-MgUserTeamwork -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassTh
 ## DESCRIPTION
 Delete navigation property teamwork for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -177,5 +179,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserTeamwork?view=graph-powershell-beta)
 

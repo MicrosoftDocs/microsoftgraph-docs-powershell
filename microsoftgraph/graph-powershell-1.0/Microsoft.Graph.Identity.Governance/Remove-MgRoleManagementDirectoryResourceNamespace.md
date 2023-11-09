@@ -30,6 +30,8 @@ Remove-MgRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Delete navigation property resourceNamespaces for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -213,5 +215,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Remove-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
 

@@ -24,6 +24,8 @@ Get-MgSiteListItemCreatedByUserServiceProvisioningError -ListId <String> -ListIt
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -235,5 +237,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteListItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 

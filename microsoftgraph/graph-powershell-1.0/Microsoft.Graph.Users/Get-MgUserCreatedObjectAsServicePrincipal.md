@@ -37,6 +37,8 @@ Get-MgUserCreatedObjectAsServicePrincipal -InputObject <IUsersIdentity> [-Expand
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -270,5 +272,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserCreatedObjectAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserCreatedObjectAsServicePrincipal?view=graph-powershell-beta)
 

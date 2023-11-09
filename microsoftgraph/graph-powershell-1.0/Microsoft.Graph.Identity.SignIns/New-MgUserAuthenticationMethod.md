@@ -42,6 +42,8 @@ New-MgUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity> -BodyPara
 ## DESCRIPTION
 Create new navigation property to methods for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -229,5 +231,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [New-MgBetaUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaUserAuthenticationMethod?view=graph-powershell-beta)
 

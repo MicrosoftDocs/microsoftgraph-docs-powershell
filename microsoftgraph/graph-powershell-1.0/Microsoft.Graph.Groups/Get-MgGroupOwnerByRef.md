@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerbyref
 schema: 2.0.0
 ms.prod: groups
@@ -217,4 +218,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerByRef?view=graph-powershell-beta)

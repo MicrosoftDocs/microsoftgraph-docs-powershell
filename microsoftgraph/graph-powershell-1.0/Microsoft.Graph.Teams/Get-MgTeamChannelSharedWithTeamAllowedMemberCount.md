@@ -30,6 +30,8 @@ Get-MgTeamChannelSharedWithTeamAllowedMemberCount -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -176,5 +178,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamChannelSharedWithTeamAllowedMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelSharedWithTeamAllowedMemberCount?view=graph-powershell-beta)
 

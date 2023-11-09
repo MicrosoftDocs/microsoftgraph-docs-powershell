@@ -13,6 +13,9 @@ Invoke function delta
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoTaskDelta?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoTaskDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -30,6 +33,8 @@ Get-MgBetaUserTodoTaskDelta -InputObject <IUsersFunctionsIdentity> [-Filter <Str
 
 ## DESCRIPTION
 Invoke function delta
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -288,5 +293,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoTaskDelta?view=graph-powershell-1.0)
+
 [Get-MgUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserTodoTaskDelta?view=graph-powershell-1.0)
 

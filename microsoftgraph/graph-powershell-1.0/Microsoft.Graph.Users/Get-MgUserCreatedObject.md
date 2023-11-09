@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
+ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobject
 schema: 2.0.0
 ms.prod: users
@@ -290,4 +291,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserCreatedObject](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserCreatedObject?view=graph-powershell-beta)

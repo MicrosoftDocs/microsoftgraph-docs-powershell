@@ -13,6 +13,9 @@ Invoke action retryServiceProvisioning
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetryUserServiceProvisioning?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetryUserServiceProvisioning?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Retry (Default)
@@ -28,6 +31,8 @@ Invoke-MgRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity> [-Pas
 
 ## DESCRIPTION
 Invoke action retryServiceProvisioning
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -158,5 +163,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetryUserServiceProvisioning?view=graph-powershell-beta)
+
 [Invoke-MgBetaRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetryUserServiceProvisioning?view=graph-powershell-beta)
 

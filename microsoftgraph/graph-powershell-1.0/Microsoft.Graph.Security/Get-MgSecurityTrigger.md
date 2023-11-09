@@ -22,6 +22,8 @@ Get-MgSecurityTrigger [-ExpandProperty <String[]>] [-Property <String[]>] [<Comm
 ## DESCRIPTION
 Get triggers from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTrigger?view=graph-powershell-beta)
 

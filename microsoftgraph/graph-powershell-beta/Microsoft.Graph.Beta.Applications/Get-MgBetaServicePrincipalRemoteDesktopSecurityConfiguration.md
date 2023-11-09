@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfiguration
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration
 
 ## SYNOPSIS
 Get remoteDesktopSecurityConfiguration from servicePrincipals
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -142,4 +146,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-1.0)
 

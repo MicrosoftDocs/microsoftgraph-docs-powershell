@@ -30,6 +30,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowCreatedBy -InputObject <IIdentityGovern
 ## DESCRIPTION
 The user who created the workflow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -182,5 +184,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedBy?view=graph-powershell-beta)
 

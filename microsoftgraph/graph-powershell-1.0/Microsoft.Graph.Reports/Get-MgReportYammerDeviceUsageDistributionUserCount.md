@@ -30,6 +30,8 @@ Get-MgReportYammerDeviceUsageDistributionUserCount -InputObject <IReportsIdentit
 ## DESCRIPTION
 Invoke function getYammerDeviceUsageDistributionUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -134,5 +136,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportYammerDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerDeviceUsageDistributionUserCount?view=graph-powershell-beta)
 

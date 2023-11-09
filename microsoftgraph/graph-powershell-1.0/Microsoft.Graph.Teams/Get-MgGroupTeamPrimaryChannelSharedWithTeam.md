@@ -53,8 +53,6 @@ Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -308,4 +306,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)

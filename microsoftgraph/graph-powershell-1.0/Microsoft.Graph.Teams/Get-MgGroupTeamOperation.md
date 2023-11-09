@@ -37,6 +37,8 @@ Get-MgGroupTeamOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 The async operations that ran or are running on this team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -289,5 +291,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamOperation?view=graph-powershell-beta)
 

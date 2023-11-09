@@ -30,6 +30,8 @@ Remove-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property shiftPreferences for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -158,5 +160,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
 

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
+ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/confirm-mgriskyusercompromised
 schema: 2.0.0
 ms.prod: identity-and-sign-in
@@ -173,4 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIds <String[]>]`: 
 
 ## RELATED LINKS
+
 [Confirm-MgBetaRiskyUserCompromised](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgBetaRiskyUserCompromised?view=graph-powershell-beta)

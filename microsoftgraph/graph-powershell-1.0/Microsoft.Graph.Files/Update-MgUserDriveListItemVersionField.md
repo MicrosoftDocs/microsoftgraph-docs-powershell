@@ -13,6 +13,9 @@ Update the navigation property fields in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemVersionField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -41,6 +44,8 @@ Update-MgUserDriveListItemVersionField -InputObject <IFilesIdentity> -BodyParame
 
 ## DESCRIPTION
 Update the navigation property fields in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -243,5 +248,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemVersionField?view=graph-powershell-beta)
+
 [Update-MgBetaUserDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemVersionField?view=graph-powershell-beta)
 

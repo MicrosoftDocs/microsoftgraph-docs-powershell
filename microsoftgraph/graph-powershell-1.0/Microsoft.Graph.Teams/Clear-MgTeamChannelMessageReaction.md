@@ -45,6 +45,8 @@ Clear-MgTeamChannelMessageReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action unsetReaction
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -258,5 +260,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Clear-MgBetaTeamChannelMessageReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaTeamChannelMessageReaction?view=graph-powershell-beta)
 

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
+ms.prod: security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehost
 schema: 2.0.0
 ms.prod: security
@@ -41,6 +42,8 @@ Get-MgSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-ExpandPr
 Read the properties and relationships of a host object.
 The host resource is the abstract base type that returns an implementation.
 A host can be of one of the following types: This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -298,5 +301,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 

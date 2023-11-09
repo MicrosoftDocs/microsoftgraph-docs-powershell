@@ -58,6 +58,8 @@ Set-MgTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property schedule in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -797,3 +799,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Set-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamSchedule?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -37,6 +37,8 @@ Get-MgSecurityCaseEdiscoveryCaseTagChildTag -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Returns the tags that are a child of a tag.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -323,5 +325,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag?view=graph-powershell-beta)
 

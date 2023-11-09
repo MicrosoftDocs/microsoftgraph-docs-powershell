@@ -14,6 +14,9 @@ This API is available in the following [national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -65,6 +68,8 @@ Update-MgShareListContentTypeColumn -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update a site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1142,7 +1147,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
+[Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
+[Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
 
+## RELATED LINKS
+[Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)

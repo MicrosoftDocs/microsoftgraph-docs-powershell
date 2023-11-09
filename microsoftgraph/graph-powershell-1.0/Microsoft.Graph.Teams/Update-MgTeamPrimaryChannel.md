@@ -21,8 +21,9 @@ Update-MgTeamPrimaryChannel -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-DisplayName <String>] [-Email <String>] [-FilesFolder <IMicrosoftGraphDriveItem>]
  [-Id <String>] [-IsFavoriteByDefault] [-Members <IMicrosoftGraphConversationMember[]>]
  [-MembershipType <String>] [-Messages <IMicrosoftGraphChatMessage[]>]
- [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
- [-TenantId <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>] [-Summary <IMicrosoftGraphChannelSummary>]
+ [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -38,8 +39,8 @@ Update-MgTeamPrimaryChannel -InputObject <ITeamsIdentity> [-AdditionalProperties
  [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>] [-IsFavoriteByDefault]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
  [-Messages <IMicrosoftGraphChatMessage[]>] [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>]
- [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Summary <IMicrosoftGraphChannelSummary>] [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>]
+ [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -280,6 +281,22 @@ To construct, see NOTES section for SHAREDWITHTEAMS properties and create a hash
 
 ```yaml
 Type: IMicrosoftGraphSharedWithChannelTeamInfo[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Summary
+channelSummary
+To construct, see NOTES section for SUMMARY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphChannelSummary
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -9201,3 +9218,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
+
+
+## RELATED LINKS

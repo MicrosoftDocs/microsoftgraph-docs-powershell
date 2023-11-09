@@ -36,6 +36,8 @@ New-MgRoleManagementEntitlementManagementRoleAssignmentSchedule
 ## DESCRIPTION
 Create new navigation property to roleAssignmentSchedules for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivatedUsing
@@ -603,3 +605,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule?view=graph-powershell-beta)
 
+## RELATED LINKS

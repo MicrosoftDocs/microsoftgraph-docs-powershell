@@ -30,6 +30,8 @@ Remove-MgDirectoryRoleByRoleTemplateId -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Delete entity from directoryRoles by roleTemplateId
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -168,5 +170,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaDirectoryRoleByRoleTemplateId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryRoleByRoleTemplateId?view=graph-powershell-beta)
 

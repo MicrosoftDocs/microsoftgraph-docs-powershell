@@ -30,6 +30,8 @@ Remove-MgOrganizationExtension -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Delete navigation property extensions for organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExtensionId
@@ -183,5 +185,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaOrganizationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationExtension?view=graph-powershell-beta)
 

@@ -46,8 +46,6 @@ New-MgGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 Create a new schedulingGroup.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -284,4 +282,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+
 [New-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)

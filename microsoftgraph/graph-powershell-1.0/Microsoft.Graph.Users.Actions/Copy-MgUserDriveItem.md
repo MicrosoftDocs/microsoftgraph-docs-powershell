@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguserdriveitem
 schema: 2.0.0
 ms.prod: sharepoint
@@ -11,6 +12,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Asynchronously creates a copy of an driveItem][item-resource] (including any children), under a new parent item or with a new name.
 This API is available in the following [national cloud deployments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserDriveItem?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Copy-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserDriveItem?view=graph-powershell-beta)
@@ -47,6 +51,8 @@ Copy-MgUserDriveItem -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Asynchronously creates a copy of an driveItem][item-resource] (including any children), under a new parent item or with a new name.
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -296,5 +302,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+[Copy-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserDriveItem?view=graph-powershell-beta)
+
 [Copy-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserDriveItem?view=graph-powershell-beta)
 

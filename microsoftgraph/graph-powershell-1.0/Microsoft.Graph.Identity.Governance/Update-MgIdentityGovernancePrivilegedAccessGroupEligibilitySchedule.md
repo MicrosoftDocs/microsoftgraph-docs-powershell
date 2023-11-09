@@ -53,6 +53,8 @@ Update-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule -InputObject
 ## DESCRIPTION
 Update the navigation property eligibilitySchedules in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessId
@@ -6238,3 +6240,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule?view=graph-powershell-beta)
 
+## RELATED LINKS

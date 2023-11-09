@@ -13,6 +13,9 @@ Create new navigation property to permissions for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -53,6 +56,8 @@ New-MgDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create new navigation property to permissions for drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -563,7 +568,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemPermission?view=graph-powershell-beta)
+[New-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [New-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemPermission?view=graph-powershell-beta)
+[New-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
+## RELATED LINKS
+[New-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemPermission?view=graph-powershell-beta)

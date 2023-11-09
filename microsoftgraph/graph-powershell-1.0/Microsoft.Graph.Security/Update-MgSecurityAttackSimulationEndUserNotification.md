@@ -50,6 +50,8 @@ Update-MgSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIden
 ## DESCRIPTION
 Update the navigation property endUserNotifications in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -453,5 +455,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationEndUserNotification?view=graph-powershell-beta)
 

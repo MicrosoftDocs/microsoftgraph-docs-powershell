@@ -84,6 +84,8 @@ Update-MgSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> -BodyParameter 
 Update the properties of a term object.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -635,3 +637,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
 
+## RELATED LINKS

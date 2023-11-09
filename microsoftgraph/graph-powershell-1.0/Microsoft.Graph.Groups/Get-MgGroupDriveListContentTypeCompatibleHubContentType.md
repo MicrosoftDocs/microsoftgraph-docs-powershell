@@ -32,6 +32,8 @@ Get-MgGroupDriveListContentTypeCompatibleHubContentType -InputObject <IGroupsIde
 ## DESCRIPTION
 Invoke function getCompatibleHubContentTypes
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -241,5 +243,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 

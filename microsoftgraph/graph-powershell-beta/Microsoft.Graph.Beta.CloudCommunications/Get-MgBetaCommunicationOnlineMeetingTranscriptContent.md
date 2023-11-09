@@ -33,6 +33,8 @@ Get-MgBetaCommunicationOnlineMeetingTranscriptContent -InputObject <ICloudCommun
 The content of the transcript.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallTranscriptId
@@ -151,4 +153,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingTranscriptContent?view=graph-powershell-1.0)
-

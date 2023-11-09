@@ -44,6 +44,8 @@ Get-MgGroupSiteLastModifiedByUser -InputObject <ISitesIdentity> [-ExpandProperty
 Identity of the user who last modified the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteLastModifiedByUser?view=graph-powershell-beta)
 

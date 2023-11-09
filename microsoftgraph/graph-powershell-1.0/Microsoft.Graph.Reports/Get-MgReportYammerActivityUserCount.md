@@ -29,6 +29,8 @@ Get-MgReportYammerActivityUserCount -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Invoke function getYammerActivityUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportYammerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityUserCount?view=graph-powershell-beta)
 

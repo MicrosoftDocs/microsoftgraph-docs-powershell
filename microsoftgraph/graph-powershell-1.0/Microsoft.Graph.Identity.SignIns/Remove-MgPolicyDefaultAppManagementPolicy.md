@@ -23,6 +23,8 @@ Remove-MgPolicyDefaultAppManagementPolicy [-IfMatch <String>] [-PassThru] [-What
 ## DESCRIPTION
 Delete navigation property defaultAppManagementPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -99,5 +101,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Remove-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
 

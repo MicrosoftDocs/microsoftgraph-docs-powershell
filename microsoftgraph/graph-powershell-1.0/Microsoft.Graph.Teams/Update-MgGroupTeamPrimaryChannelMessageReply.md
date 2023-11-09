@@ -60,6 +60,8 @@ Update-MgGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property replies in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -892,3 +894,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
 
+## RELATED LINKS

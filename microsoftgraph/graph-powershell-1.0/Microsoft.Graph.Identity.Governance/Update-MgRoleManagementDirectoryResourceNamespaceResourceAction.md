@@ -47,6 +47,8 @@ Update-MgRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <II
 ## DESCRIPTION
 Update the navigation property resourceActions in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionVerb
@@ -363,5 +365,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction?view=graph-powershell-beta)
 

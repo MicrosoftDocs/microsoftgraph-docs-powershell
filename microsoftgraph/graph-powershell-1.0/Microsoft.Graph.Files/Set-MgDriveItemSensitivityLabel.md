@@ -13,6 +13,9 @@ Invoke action assignSensitivityLabel
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemSensitivityLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -45,6 +48,8 @@ Set-MgDriveItemSensitivityLabel -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -268,5 +273,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemSensitivityLabel?view=graph-powershell-beta)
+
 [Set-MgBetaDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemSensitivityLabel?view=graph-powershell-beta)
 

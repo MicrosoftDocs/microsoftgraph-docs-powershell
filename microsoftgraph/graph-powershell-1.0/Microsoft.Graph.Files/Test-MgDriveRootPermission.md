@@ -13,6 +13,9 @@ Invoke action validatePermission
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -43,6 +46,8 @@ Test-MgDriveRootPermission -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action validatePermission
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -235,5 +240,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveRootPermission?view=graph-powershell-beta)
+
 [Test-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveRootPermission?view=graph-powershell-beta)
 

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
+ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermembergroup
 schema: 2.0.0
 ms.prod: directory-management
@@ -15,6 +16,9 @@ This API returns up to 11,000 group IDs.
 If more than 11,000 results are available, it returns a 400 Bad Request error with the Directory_ResultSizeLimitExceeded error code.
 As a workaround, use the List group transitive memberOf API.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMemberGroup?view=graph-powershell-1.0)
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMemberGroup?view=graph-powershell-1.0)
@@ -242,4 +246,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMemberGroup?view=graph-powershell-1.0)
+
 [Get-MgUserMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMemberGroup?view=graph-powershell-1.0)

@@ -13,6 +13,9 @@ Get serviceProvisioningErrors property value
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -23,6 +26,8 @@ Get-MgShareCreatedByUserServiceProvisioningError -SharedDriveItemId <String> [-E
 
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -205,5 +210,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaShareCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 [Get-MgBetaShareCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 

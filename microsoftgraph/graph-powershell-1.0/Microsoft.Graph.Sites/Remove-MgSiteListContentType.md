@@ -30,6 +30,8 @@ Remove-MgSiteListContentType -InputObject <ISitesIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property contentTypes for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -213,5 +215,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListContentType?view=graph-powershell-beta)
 

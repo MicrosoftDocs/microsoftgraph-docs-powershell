@@ -37,6 +37,8 @@ Get-MgDirectoryAdministrativeUnitMemberAsUser -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -296,5 +298,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDirectoryAdministrativeUnitMemberAsUser](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitMemberAsUser?view=graph-powershell-beta)
 

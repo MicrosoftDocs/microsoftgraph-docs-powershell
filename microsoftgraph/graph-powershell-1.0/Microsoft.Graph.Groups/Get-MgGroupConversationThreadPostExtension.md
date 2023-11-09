@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: extensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostextension
 schema: 2.0.0
 ms.prod: extensions
@@ -45,8 +46,6 @@ Get an open extension (openTypeExtension object) identified by name or fully qua
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -334,4 +333,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupConversationThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPostExtension?view=graph-powershell-beta)

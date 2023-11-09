@@ -13,6 +13,9 @@ The content stream, if the item represents a file.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -29,6 +32,8 @@ Set-MgUserDriveItemContent -InputObject <IFilesIdentity> [-Data <Stream>] -InFil
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -202,5 +207,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaUserDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemContent?view=graph-powershell-beta)
+
 [Set-MgBetaUserDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveItemContent?view=graph-powershell-beta)
 

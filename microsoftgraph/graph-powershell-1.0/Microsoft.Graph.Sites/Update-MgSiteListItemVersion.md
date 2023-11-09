@@ -46,6 +46,8 @@ Update-MgSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property versions in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -368,5 +370,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+
 [Update-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItemVersion?view=graph-powershell-beta)
 

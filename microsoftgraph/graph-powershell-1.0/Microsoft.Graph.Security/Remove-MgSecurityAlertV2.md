@@ -30,6 +30,8 @@ Remove-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-IfMatch <String>] [-
 ## DESCRIPTION
 Delete navigation property alerts_v2 for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 

@@ -37,6 +37,8 @@ Get-MgGroupSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-ExpandPr
 ## DESCRIPTION
 Get itemActivityStats from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -310,5 +312,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 

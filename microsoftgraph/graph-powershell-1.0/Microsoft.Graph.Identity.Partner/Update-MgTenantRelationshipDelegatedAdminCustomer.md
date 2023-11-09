@@ -13,6 +13,9 @@ Update the navigation property delegatedAdminCustomers in tenantRelationships
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -45,6 +48,8 @@ Update-MgTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPartner
 
 ## DESCRIPTION
 Update the navigation property delegatedAdminCustomers in tenantRelationships
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -249,5 +254,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceName <String>]`: The name of a managed service. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
+
 [Update-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
 

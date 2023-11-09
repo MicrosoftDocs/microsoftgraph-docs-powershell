@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mginvitegroupdriveitem
 schema: 2.0.0
 ms.prod: sharepoint
@@ -50,6 +51,8 @@ Invoke-MgInviteGroupDriveItem -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Sends a sharing invitation for a driveItem.nA sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link][].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -373,5 +376,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+
 [Invoke-MgBetaInviteGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaInviteGroupDriveItem?view=graph-powershell-beta)
 

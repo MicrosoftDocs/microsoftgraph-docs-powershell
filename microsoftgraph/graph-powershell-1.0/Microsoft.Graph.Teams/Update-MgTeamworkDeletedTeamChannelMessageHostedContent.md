@@ -46,6 +46,8 @@ Update-MgTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIden
 ## DESCRIPTION
 Update the navigation property hostedContents in teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,5 +290,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-beta)
 

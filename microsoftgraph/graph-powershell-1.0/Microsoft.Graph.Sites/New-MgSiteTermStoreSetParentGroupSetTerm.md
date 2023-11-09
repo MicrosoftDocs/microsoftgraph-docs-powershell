@@ -82,6 +82,8 @@ New-MgSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to terms for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -618,3 +620,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-beta)
 
+## RELATED LINKS

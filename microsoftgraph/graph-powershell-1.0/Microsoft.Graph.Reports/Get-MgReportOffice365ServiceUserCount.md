@@ -29,6 +29,8 @@ Get-MgReportOffice365ServiceUserCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Invoke function getOffice365ServicesUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportOffice365ServiceUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ServiceUserCount?view=graph-powershell-beta)
 

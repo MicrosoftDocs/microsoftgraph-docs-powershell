@@ -23,6 +23,8 @@ Get-MgReportSecurityAttackSimulationUserCoverage [-Count] [-Filter <String>] [-S
 ## DESCRIPTION
 Invoke function getAttackSimulationSimulationUserCoverage
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -113,5 +115,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSecurityAttackSimulationUserCoverage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurityAttackSimulationUserCoverage?view=graph-powershell-beta)
 

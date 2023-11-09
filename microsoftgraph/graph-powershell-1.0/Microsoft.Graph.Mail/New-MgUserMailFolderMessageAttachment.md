@@ -52,8 +52,6 @@ You can add an attachment to an existing message by posting to its attachments c
 This operation limits the size of the attachment you can add to under 3 MB.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -310,4 +308,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageAttachment?view=graph-powershell-beta)

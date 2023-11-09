@@ -41,6 +41,8 @@ The collection of open extensions defined for the contact.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -267,5 +269,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserContactExtension](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactExtension?view=graph-powershell-beta)
 

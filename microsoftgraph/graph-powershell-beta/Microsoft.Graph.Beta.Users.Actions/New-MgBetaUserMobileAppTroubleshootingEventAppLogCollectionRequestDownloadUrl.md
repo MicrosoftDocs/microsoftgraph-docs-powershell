@@ -28,6 +28,8 @@ New-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl
 ## DESCRIPTION
 Invoke action createDownloadUrl
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppLogCollectionRequestId
@@ -181,4 +183,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

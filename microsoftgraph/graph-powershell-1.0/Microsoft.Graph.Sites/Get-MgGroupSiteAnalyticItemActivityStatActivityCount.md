@@ -30,6 +30,8 @@ Get-MgGroupSiteAnalyticItemActivityStatActivityCount -InputObject <ISitesIdentit
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -182,5 +184,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteAnalyticItemActivityStatActivityCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteAnalyticItemActivityStatActivityCount?view=graph-powershell-beta)
 

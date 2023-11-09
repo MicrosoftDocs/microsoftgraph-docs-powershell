@@ -13,6 +13,9 @@ Update the navigation property permission in shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -53,6 +56,8 @@ Update-MgSharePermission -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Update the navigation property permission in shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -548,7 +553,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)
+[Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)
+[Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)
 
+## RELATED LINKS
+[Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)

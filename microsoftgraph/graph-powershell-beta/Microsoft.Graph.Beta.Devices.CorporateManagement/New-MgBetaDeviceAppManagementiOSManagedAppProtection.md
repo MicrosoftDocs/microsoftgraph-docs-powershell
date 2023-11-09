@@ -43,17 +43,19 @@ New-MgBetaDeviceAppManagementiOSManagedAppProtection [-AdditionalProperties <Has
  [-ManagedBrowserToOpenLinksRequired] [-ManagedUniversalLinks <String[]>]
  [-MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel>] [-MaximumPinRetries <Int32>]
  [-MaximumRequiredOSVersion <String>] [-MaximumWarningOSVersion <String>] [-MaximumWipeOSVersion <String>]
- [-MinimumPinLength <Int32>] [-MinimumRequiredAppVersion <String>] [-MinimumRequiredOSVersion <String>]
- [-MinimumRequiredSdkVersion <String>] [-MinimumWarningAppVersion <String>] [-MinimumWarningOSVersion <String>]
- [-MinimumWarningSdkVersion <String>] [-MinimumWipeAppVersion <String>] [-MinimumWipeOSVersion <String>]
- [-MinimumWipeSdkVersion <String>] [-MobileThreatDefensePartnerPriority <MobileThreatDefensePartnerPriority>]
+ [-MessagingRedirectAppUrlScheme <String>] [-MinimumPinLength <Int32>] [-MinimumRequiredAppVersion <String>]
+ [-MinimumRequiredOSVersion <String>] [-MinimumRequiredSdkVersion <String>]
+ [-MinimumWarningAppVersion <String>] [-MinimumWarningOSVersion <String>] [-MinimumWarningSdkVersion <String>]
+ [-MinimumWipeAppVersion <String>] [-MinimumWipeOSVersion <String>] [-MinimumWipeSdkVersion <String>]
+ [-MobileThreatDefensePartnerPriority <MobileThreatDefensePartnerPriority>]
  [-MobileThreatDefenseRemediationAction <ManagedAppRemediationAction>]
  [-NotificationRestriction <ManagedAppNotificationRestriction>] [-OrganizationalCredentialsRequired]
  [-PeriodBeforePinReset <TimeSpan>] [-PeriodOfflineBeforeAccessCheck <TimeSpan>]
  [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>] [-PeriodOnlineBeforeAccessCheck <TimeSpan>]
  [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
  [-PinRequiredInsteadOfBiometricTimeout <TimeSpan>] [-PreviousPinBlockCount <Int32>] [-PrintBlocked]
- [-ProtectInboundDataFromUnknownSources] [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-SimplePinBlocked]
+ [-ProtectInboundDataFromUnknownSources] [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>]
+ [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-SimplePinBlocked]
  [-TargetedAppManagementLevels <AppManagementLevel>] [-ThirdPartyKeyboardsBlocked] [-Version <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -799,6 +801,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MessagingRedirectAppUrlScheme
+When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app url redirect schemes which are allowed to be used.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -MinimumPinLength
 Minimum pin length required for an app-level pin if PinRequired is set to True
 
@@ -1134,6 +1151,22 @@ Indicates whether printing is allowed from managed apps.
 
 ```yaml
 Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProtectedMessagingRedirectAppType
+Defines how app messaging redirection is protected by an App Protection Policy.
+Default is anyApp.
+
+```yaml
+Type: MessagingRedirectAppType
 Parameter Sets: CreateExpanded
 Aliases:
 

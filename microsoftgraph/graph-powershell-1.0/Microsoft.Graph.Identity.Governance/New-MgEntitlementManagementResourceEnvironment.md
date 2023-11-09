@@ -29,6 +29,8 @@ New-MgEntitlementManagementResourceEnvironment -BodyParameter <IMicrosoftGraphAc
 ## DESCRIPTION
 Create new navigation property to resourceEnvironments for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -326,4 +328,3 @@ To create the parameters described below, construct a hash table containing the 
     - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
 
 ## RELATED LINKS
-

@@ -48,6 +48,8 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityId
 ## DESCRIPTION
 Update the navigation property userSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -396,5 +398,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
 

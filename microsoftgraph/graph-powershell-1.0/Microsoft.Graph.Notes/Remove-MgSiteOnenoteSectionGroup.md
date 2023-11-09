@@ -30,6 +30,8 @@ Remove-MgSiteOnenoteSectionGroup -InputObject <INotesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property sectionGroups for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -169,5 +171,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaSiteOnenoteSectionGroup?view=graph-powershell-beta)
 

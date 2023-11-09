@@ -44,6 +44,8 @@ Update-MgIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Update the navigation property overridesPages in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -261,5 +263,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Update-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
 

@@ -494,6 +494,15 @@ Get the number of the resource
 ### [Get-MgServicePrincipalOwnerCountAsUser](Get-MgServicePrincipalOwnerCountAsUser.md)
 Get the number of the resource
 
+### [Get-MgServicePrincipalRemoteDesktopSecurityConfiguration](Get-MgServicePrincipalRemoteDesktopSecurityConfiguration.md)
+Get remoteDesktopSecurityConfiguration from servicePrincipals
+
+### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
+Get targetDeviceGroups from servicePrincipals
+
+### [Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroupCount](Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroupCount.md)
+Get the number of the resource
+
 ### [Get-MgServicePrincipalSynchronization](Get-MgServicePrincipalSynchronization.md)
 Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
@@ -725,6 +734,9 @@ Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
 This API is supported in the following national cloud deployments.
 
+### [New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](New-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
+Create new navigation property to targetDeviceGroups for servicePrincipals
+
 ### [New-MgServicePrincipalSynchronizationJob](New-MgServicePrincipalSynchronizationJob.md)
 Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
@@ -877,6 +889,12 @@ This API is supported in the following national cloud deployments.
 ### [Remove-MgServicePrincipalPassword](Remove-MgServicePrincipalPassword.md)
 Remove a password from a servicePrincipal object.
 This API is supported in the following national cloud deployments.
+
+### [Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration](Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration.md)
+Delete navigation property remoteDesktopSecurityConfiguration for servicePrincipals
+
+### [Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
+Delete navigation property targetDeviceGroups for servicePrincipals
 
 ### [Remove-MgServicePrincipalSynchronization](Remove-MgServicePrincipalSynchronization.md)
 Delete navigation property synchronization for servicePrincipals
@@ -1053,6 +1071,12 @@ Update the navigation property delegatedPermissionClassifications in servicePrin
 
 ### [Update-MgServicePrincipalEndpoint](Update-MgServicePrincipalEndpoint.md)
 Update the navigation property endpoints in servicePrincipals
+
+### [Update-MgServicePrincipalRemoteDesktopSecurityConfiguration](Update-MgServicePrincipalRemoteDesktopSecurityConfiguration.md)
+Update the navigation property remoteDesktopSecurityConfiguration in servicePrincipals
+
+### [Update-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](Update-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup.md)
+Update the navigation property targetDeviceGroups in servicePrincipals
 
 ### [Update-MgServicePrincipalSynchronizationJob](Update-MgServicePrincipalSynchronizationJob.md)
 Update the navigation property jobs in servicePrincipals

@@ -44,6 +44,8 @@ New-MgSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to activities for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Access
@@ -6056,3 +6058,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
+## RELATED LINKS

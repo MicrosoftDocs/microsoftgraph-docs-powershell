@@ -46,8 +46,6 @@ Pin a chat message in the specified chat.
 This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -421,3 +419,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
+
+
+## RELATED LINKS

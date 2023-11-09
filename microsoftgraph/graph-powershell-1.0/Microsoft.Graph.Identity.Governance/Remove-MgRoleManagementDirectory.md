@@ -22,6 +22,8 @@ Remove-MgRoleManagementDirectory [-IfMatch <String>] [-PassThru] [-WhatIf] [-Con
 ## DESCRIPTION
 Delete navigation property directory for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -98,5 +100,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Remove-MgBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectory?view=graph-powershell-beta)
 

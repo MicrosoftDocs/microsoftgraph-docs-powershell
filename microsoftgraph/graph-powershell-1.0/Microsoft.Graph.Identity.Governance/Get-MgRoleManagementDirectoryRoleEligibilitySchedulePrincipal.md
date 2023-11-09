@@ -30,6 +30,8 @@ Get-MgRoleManagementDirectoryRoleEligibilitySchedulePrincipal -InputObject <IIde
 ## DESCRIPTION
 The principal that's getting a role assignment or that's eligible for a role through the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -182,5 +184,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedulePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedulePrincipal?view=graph-powershell-beta)
 

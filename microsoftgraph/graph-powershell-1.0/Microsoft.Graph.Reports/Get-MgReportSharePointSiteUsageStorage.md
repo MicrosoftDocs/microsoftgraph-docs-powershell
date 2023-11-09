@@ -29,6 +29,8 @@ Get-MgReportSharePointSiteUsageStorage -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageStorage
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSharePointSiteUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageStorage?view=graph-powershell-beta)
 

@@ -30,6 +30,8 @@ Invoke-MgGraphGroupDrive -InputObject <IGroupsIdentity> [-Count] [-Filter <Strin
 ## DESCRIPTION
 Invoke function sharedWithMe
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -239,5 +241,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Invoke-MgBetaGraphGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroupDrive?view=graph-powershell-beta)
 

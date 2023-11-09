@@ -37,6 +37,8 @@ Get-MgPolicyTokenIssuancePolicyApplyTo -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Get appliesTo from policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -312,5 +314,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaPolicyTokenIssuancePolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyTokenIssuancePolicyApplyTo?view=graph-powershell-beta)
 

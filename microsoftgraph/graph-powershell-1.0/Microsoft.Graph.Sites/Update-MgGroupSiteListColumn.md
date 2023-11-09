@@ -63,6 +63,8 @@ Update-MgGroupSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property columns in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1172,3 +1174,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListColumn?view=graph-powershell-beta)
 
+## RELATED LINKS

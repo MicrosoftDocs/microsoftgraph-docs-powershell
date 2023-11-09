@@ -82,6 +82,8 @@ New-MgGroupSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to terms for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -633,3 +635,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
 
+## RELATED LINKS

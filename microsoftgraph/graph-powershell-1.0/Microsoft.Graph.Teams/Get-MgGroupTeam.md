@@ -29,6 +29,8 @@ Get-MgGroupTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 The team associated with this group.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -145,5 +147,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeam?view=graph-powershell-beta)
 

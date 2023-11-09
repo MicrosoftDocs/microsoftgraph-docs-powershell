@@ -13,6 +13,9 @@ Invoke function getCompatibleHubContentTypes
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -31,6 +34,8 @@ Get-MgDriveListContentTypeCompatibleHubContentType -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke function getCompatibleHubContentTypes
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -215,5 +220,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
+
 [Get-MgBetaDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 

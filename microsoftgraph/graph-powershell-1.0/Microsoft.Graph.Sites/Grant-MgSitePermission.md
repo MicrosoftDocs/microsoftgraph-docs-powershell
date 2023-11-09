@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/grant-mgsitepermission
 schema: 2.0.0
 ms.prod: sharepoint
@@ -288,4 +289,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+
 [Grant-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Grant-MgBetaSitePermission?view=graph-powershell-beta)

@@ -44,6 +44,8 @@ Update-MgUserPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property planner in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -508,3 +510,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaUserPlanner?view=graph-powershell-beta)
 
+## RELATED LINKS

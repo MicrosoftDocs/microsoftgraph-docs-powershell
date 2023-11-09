@@ -41,6 +41,8 @@ New-MgDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity> -BodyP
 ## DESCRIPTION
 Create new navigation property to extensions for devices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaDeviceExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDeviceExtension?view=graph-powershell-beta)
 

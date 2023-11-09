@@ -48,6 +48,8 @@ Update-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property offerShiftRequests in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -377,5 +379,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
 

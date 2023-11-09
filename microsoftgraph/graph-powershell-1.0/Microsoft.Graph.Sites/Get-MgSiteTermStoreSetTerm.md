@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
+ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetterm
 schema: 2.0.0
 ms.prod: sites-and-lists
@@ -58,6 +59,8 @@ Get-MgSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Read the properties and relationships of a term object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -347,5 +350,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetTerm?view=graph-powershell-beta)
 

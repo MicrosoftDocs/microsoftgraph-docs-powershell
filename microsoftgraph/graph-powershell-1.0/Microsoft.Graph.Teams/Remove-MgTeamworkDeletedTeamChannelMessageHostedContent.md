@@ -31,6 +31,8 @@ Remove-MgTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIden
 ## DESCRIPTION
 Delete navigation property hostedContents for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -223,5 +225,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-beta)
 

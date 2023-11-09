@@ -48,6 +48,8 @@ Update-MgIdentityGovernanceTermsOfUseAgreementFileVersion -InputObject <IIdentit
 ## DESCRIPTION
 Update the navigation property versions in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -399,5 +401,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Update-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceTermsOfUseAgreementFileVersion?view=graph-powershell-beta)
 

@@ -46,6 +46,8 @@ Update-MgTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> -Bod
 ## DESCRIPTION
 Update the navigation property hostedContents in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -303,5 +305,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 

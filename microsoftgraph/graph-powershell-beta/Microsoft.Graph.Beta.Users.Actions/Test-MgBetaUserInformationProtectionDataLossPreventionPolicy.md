@@ -45,6 +45,8 @@ Test-MgBetaUserInformationProtectionDataLossPreventionPolicy -InputObject <IUser
 ## DESCRIPTION
 Invoke action evaluate
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -285,4 +287,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Author <String>]`: 
 
 ## RELATED LINKS
-

@@ -45,6 +45,8 @@ Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting
 ## DESCRIPTION
 Update the navigation property customExtensionStageSettings in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -322,4 +324,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

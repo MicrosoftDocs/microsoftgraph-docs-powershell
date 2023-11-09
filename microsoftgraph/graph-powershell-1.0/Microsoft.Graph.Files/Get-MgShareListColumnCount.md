@@ -13,6 +13,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareListColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListColumnCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListColumnCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -29,6 +32,8 @@ Get-MgShareListColumnCount -InputObject <IFilesIdentity> [-Filter <String>] [-Se
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -138,5 +143,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaShareListColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListColumnCount?view=graph-powershell-beta)
+
 [Get-MgBetaShareListColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListColumnCount?view=graph-powershell-beta)
 

@@ -38,6 +38,8 @@ New-MgSecurityThreatIntelligenceWhoisRecord -BodyParameter <IMicrosoftGraphSecur
 ## DESCRIPTION
 Create new navigation property to whoisRecords for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Abuse
@@ -1172,3 +1174,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-beta)
 
+## RELATED LINKS

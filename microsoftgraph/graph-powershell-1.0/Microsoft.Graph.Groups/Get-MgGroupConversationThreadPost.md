@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpost
 schema: 2.0.0
 ms.prod: groups
@@ -49,8 +50,6 @@ Get-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ExpandPropert
 
 ## DESCRIPTION
 Get posts from groups
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -322,4 +321,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPost?view=graph-powershell-beta)

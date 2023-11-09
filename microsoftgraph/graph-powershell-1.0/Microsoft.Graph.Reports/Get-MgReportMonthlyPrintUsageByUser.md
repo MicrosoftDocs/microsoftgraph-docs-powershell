@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
+ms.prod: cloud-printing
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyuser
 schema: 2.0.0
 ms.prod: cloud-printing
@@ -276,4 +277,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportMonthlyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByUser?view=graph-powershell-beta)

@@ -13,6 +13,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveItemCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -27,6 +30,8 @@ Get-MgDriveItemCount -InputObject <IFilesIdentity> [-Filter <String>] [-Search <
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -136,5 +141,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveItemCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemCount?view=graph-powershell-beta)
+
 [Get-MgBetaDriveItemCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemCount?view=graph-powershell-beta)
 

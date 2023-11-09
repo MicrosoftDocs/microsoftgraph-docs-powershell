@@ -30,6 +30,8 @@ Get-MgGroupTeamChannelMessageReplyCount -InputObject <ITeamsIdentity> [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -176,5 +178,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamChannelMessageReplyCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelMessageReplyCount?view=graph-powershell-beta)
 

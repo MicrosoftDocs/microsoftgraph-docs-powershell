@@ -30,6 +30,8 @@ Get-MgUserContactFolderChildFolderCount -InputObject <IPersonalContactsIdentity>
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId
@@ -119,5 +121,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserContactFolderChildFolderCount](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderChildFolderCount?view=graph-powershell-beta)
 

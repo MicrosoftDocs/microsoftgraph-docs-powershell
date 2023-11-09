@@ -31,6 +31,8 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsightCount
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -213,5 +215,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsightCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecisionInsightCount?view=graph-powershell-beta)
 

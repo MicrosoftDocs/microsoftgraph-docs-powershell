@@ -29,6 +29,8 @@ Get-MgReportSharePointActivityFileCount -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Invoke function getSharePointActivityFileCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSharePointActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityFileCount?view=graph-powershell-beta)
 

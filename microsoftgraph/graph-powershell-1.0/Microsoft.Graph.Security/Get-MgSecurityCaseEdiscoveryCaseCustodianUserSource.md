@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
+ms.prod: ediscovery
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianusersource
 schema: 2.0.0
 ms.prod: ediscovery
@@ -339,4 +340,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)

@@ -30,6 +30,8 @@ Remove-MgRiskyUser -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property riskyUsers for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -200,5 +202,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaRiskyUser?view=graph-powershell-beta)
 

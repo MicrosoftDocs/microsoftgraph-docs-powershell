@@ -50,6 +50,8 @@ New-MgRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Create new navigation property to history for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity
@@ -466,5 +468,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [New-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
 

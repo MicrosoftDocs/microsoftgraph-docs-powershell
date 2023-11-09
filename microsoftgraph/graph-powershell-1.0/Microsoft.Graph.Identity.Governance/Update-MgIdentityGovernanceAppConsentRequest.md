@@ -46,6 +46,8 @@ Update-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceId
 ## DESCRIPTION
 Update the navigation property appConsentRequests in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -388,3 +390,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
 
+## RELATED LINKS

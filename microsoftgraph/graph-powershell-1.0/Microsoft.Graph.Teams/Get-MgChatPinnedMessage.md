@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
+ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpinnedmessage
 schema: 2.0.0
 ms.prod: microsoft-teams
@@ -329,4 +330,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPinnedMessage?view=graph-powershell-beta)

@@ -132,6 +132,8 @@ Update-MgSiteTermStoreSetChildRelation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property relations in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -622,3 +624,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSetChildRelation?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -29,6 +29,8 @@ Remove-MgUserPhoto -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru]
 ## DESCRIPTION
 Delete navigation property photo for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -157,5 +159,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserPhoto?view=graph-powershell-beta)
 

@@ -13,6 +13,9 @@ Invoke function getActivitiesByInterval
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootListItemActivityByInterval?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootListItemActivityByInterval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -45,6 +48,8 @@ Get-MgUserDriveRootListItemActivityByInterval -InputObject <IUsersFunctionsIdent
 
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -291,5 +296,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveRootListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootListItemActivityByInterval?view=graph-powershell-beta)
+
 [Get-MgBetaUserDriveRootListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootListItemActivityByInterval?view=graph-powershell-beta)
 

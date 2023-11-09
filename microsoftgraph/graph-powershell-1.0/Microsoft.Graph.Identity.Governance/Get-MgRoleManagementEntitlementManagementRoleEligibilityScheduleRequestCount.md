@@ -23,6 +23,8 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestCount [-F
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -68,5 +70,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestCount?view=graph-powershell-beta)
 

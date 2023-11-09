@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
+ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationsquarelogo
 schema: 2.0.0
 ms.prod: identity-and-sign-in
@@ -34,8 +35,6 @@ Get-MgOrganizationBrandingLocalizationSquareLogo -InputObject <IIdentityDirector
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
 Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -159,4 +158,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaOrganizationBrandingLocalizationSquareLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationSquareLogo?view=graph-powershell-beta)

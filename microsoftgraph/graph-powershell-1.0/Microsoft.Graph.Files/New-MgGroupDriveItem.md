@@ -13,6 +13,9 @@ Create new navigation property to items for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -75,6 +78,8 @@ New-MgGroupDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create new navigation property to items for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -18808,7 +18813,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
+[New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
+[New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)
 
+## RELATED LINKS
+[New-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItem?view=graph-powershell-beta)

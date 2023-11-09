@@ -45,6 +45,8 @@ Update-MgEntitlementManagementResourceEnvironment -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Update the navigation property resourceEnvironments in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId
@@ -447,3 +449,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

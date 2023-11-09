@@ -32,6 +32,8 @@ Get-MgChatTabTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 The application that is linked to the tab.
 This can't be changed after tab creation.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -163,5 +165,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaChatTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTabTeamApp?view=graph-powershell-beta)
 

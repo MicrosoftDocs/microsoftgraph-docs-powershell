@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
+ms.prod: partner-customer-administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationshipoperation
 schema: 2.0.0
 ms.prod: partner-customer-administration
@@ -12,6 +13,9 @@ ms.prod: partner-customer-administration
 ## SYNOPSIS
 Read the properties of a delegatedAdminRelationshipOperation object.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-1.0)
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-1.0)
@@ -41,6 +45,8 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <II
 ## DESCRIPTION
 Read the properties of a delegatedAdminRelationshipOperation object.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -268,5 +274,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
+[Get-MgTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-1.0)
+
 [Get-MgTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-1.0)
 

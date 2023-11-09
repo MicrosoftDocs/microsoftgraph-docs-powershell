@@ -37,6 +37,8 @@ Get-MgGroupSiteContentTypeColumnLink -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 The collection of columns that are required by this content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -325,5 +327,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteContentTypeColumnLink?view=graph-powershell-beta)
 

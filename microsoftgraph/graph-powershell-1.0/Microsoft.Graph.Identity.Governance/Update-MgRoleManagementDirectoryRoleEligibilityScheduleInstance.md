@@ -54,6 +54,8 @@ Update-MgRoleManagementDirectoryRoleEligibilityScheduleInstance -InputObject <II
 ## DESCRIPTION
 Update the navigation property roleEligibilityScheduleInstances in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -525,3 +527,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-beta)
 
+## RELATED LINKS

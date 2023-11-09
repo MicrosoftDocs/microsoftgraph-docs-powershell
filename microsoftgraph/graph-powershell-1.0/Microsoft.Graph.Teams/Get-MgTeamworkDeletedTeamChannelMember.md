@@ -39,6 +39,8 @@ Get-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandPro
 Get a conversationMember from a channel.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -306,5 +308,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
 

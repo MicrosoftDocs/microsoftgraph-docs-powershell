@@ -37,6 +37,8 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval -InputObject <II
 ## DESCRIPTION
 Get assignmentApprovals from identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -310,5 +312,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval?view=graph-powershell-beta)
 

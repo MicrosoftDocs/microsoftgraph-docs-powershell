@@ -56,6 +56,8 @@ New-MgGroupSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to contentTypes for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1572,3 +1574,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaGroupSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListContentType?view=graph-powershell-beta)
 
+## RELATED LINKS

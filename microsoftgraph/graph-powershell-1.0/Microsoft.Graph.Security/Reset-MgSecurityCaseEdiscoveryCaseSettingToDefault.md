@@ -192,4 +192,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Beta.Security/Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-beta)

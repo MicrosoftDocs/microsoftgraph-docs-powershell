@@ -36,6 +36,8 @@ Get-MgSecurityThreatIntelligenceHostSslCertificateCount -InputObject <ISecurityI
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -171,5 +173,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityThreatIntelligenceHostSslCertificateCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostSslCertificateCount?view=graph-powershell-beta)
 

@@ -360,4 +360,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The user ID of the member.
 
 ## RELATED LINKS
+
 [New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTag?view=graph-powershell-beta)

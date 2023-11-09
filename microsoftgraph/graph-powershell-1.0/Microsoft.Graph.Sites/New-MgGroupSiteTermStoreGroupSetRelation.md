@@ -74,6 +74,8 @@ New-MgGroupSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to relations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -549,3 +551,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaGroupSiteTermStoreGroupSetRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreGroupSetRelation?view=graph-powershell-beta)
 
+## RELATED LINKS

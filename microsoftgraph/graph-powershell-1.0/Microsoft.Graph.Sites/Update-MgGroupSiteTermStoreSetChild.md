@@ -148,6 +148,8 @@ Update-MgGroupSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property children in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -714,3 +716,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSetChild?view=graph-powershell-beta)
 
+## RELATED LINKS

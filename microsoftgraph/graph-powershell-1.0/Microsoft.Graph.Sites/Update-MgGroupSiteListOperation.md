@@ -49,6 +49,8 @@ Update-MgGroupSiteListOperation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -448,5 +450,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListOperation?view=graph-powershell-beta)
 

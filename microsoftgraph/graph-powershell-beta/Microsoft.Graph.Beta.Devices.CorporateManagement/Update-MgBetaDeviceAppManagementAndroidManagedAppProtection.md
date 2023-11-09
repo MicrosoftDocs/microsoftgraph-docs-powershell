@@ -54,7 +54,8 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppPr
  [-KeyboardsRestricted] [-LastModifiedDateTime <DateTime>] [-ManagedBrowser <ManagedBrowserType>]
  [-ManagedBrowserToOpenLinksRequired] [-MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel>]
  [-MaximumPinRetries <Int32>] [-MaximumRequiredOSVersion <String>] [-MaximumWarningOSVersion <String>]
- [-MaximumWipeOSVersion <String>] [-MinimumPinLength <Int32>] [-MinimumRequiredAppVersion <String>]
+ [-MaximumWipeOSVersion <String>] [-MessagingRedirectAppDisplayName <String>]
+ [-MessagingRedirectAppPackageId <String>] [-MinimumPinLength <Int32>] [-MinimumRequiredAppVersion <String>]
  [-MinimumRequiredCompanyPortalVersion <String>] [-MinimumRequiredOSVersion <String>]
  [-MinimumRequiredPatchVersion <String>] [-MinimumWarningAppVersion <String>]
  [-MinimumWarningCompanyPortalVersion <String>] [-MinimumWarningOSVersion <String>]
@@ -67,7 +68,8 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppPr
  [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>] [-PeriodOnlineBeforeAccessCheck <TimeSpan>]
  [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
  [-PinRequiredInsteadOfBiometricTimeout <TimeSpan>] [-PreviousPinBlockCount <Int32>] [-PrintBlocked]
- [-RequireClass3Biometrics] [-RequirePinAfterBiometricChange]
+ [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>] [-RequireClass3Biometrics]
+ [-RequirePinAfterBiometricChange]
  [-RequiredAndroidSafetyNetAppsVerificationType <AndroidManagedAppSafetyNetAppsVerificationType>]
  [-RequiredAndroidSafetyNetDeviceAttestationType <AndroidManagedAppSafetyNetDeviceAttestationType>]
  [-RequiredAndroidSafetyNetEvaluationType <AndroidManagedAppSafetyNetEvaluationType>]
@@ -122,7 +124,8 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevic
  [-KeyboardsRestricted] [-LastModifiedDateTime <DateTime>] [-ManagedBrowser <ManagedBrowserType>]
  [-ManagedBrowserToOpenLinksRequired] [-MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel>]
  [-MaximumPinRetries <Int32>] [-MaximumRequiredOSVersion <String>] [-MaximumWarningOSVersion <String>]
- [-MaximumWipeOSVersion <String>] [-MinimumPinLength <Int32>] [-MinimumRequiredAppVersion <String>]
+ [-MaximumWipeOSVersion <String>] [-MessagingRedirectAppDisplayName <String>]
+ [-MessagingRedirectAppPackageId <String>] [-MinimumPinLength <Int32>] [-MinimumRequiredAppVersion <String>]
  [-MinimumRequiredCompanyPortalVersion <String>] [-MinimumRequiredOSVersion <String>]
  [-MinimumRequiredPatchVersion <String>] [-MinimumWarningAppVersion <String>]
  [-MinimumWarningCompanyPortalVersion <String>] [-MinimumWarningOSVersion <String>]
@@ -135,7 +138,8 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevic
  [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>] [-PeriodOnlineBeforeAccessCheck <TimeSpan>]
  [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
  [-PinRequiredInsteadOfBiometricTimeout <TimeSpan>] [-PreviousPinBlockCount <Int32>] [-PrintBlocked]
- [-RequireClass3Biometrics] [-RequirePinAfterBiometricChange]
+ [-ProtectedMessagingRedirectAppType <MessagingRedirectAppType>] [-RequireClass3Biometrics]
+ [-RequirePinAfterBiometricChange]
  [-RequiredAndroidSafetyNetAppsVerificationType <AndroidManagedAppSafetyNetAppsVerificationType>]
  [-RequiredAndroidSafetyNetDeviceAttestationType <AndroidManagedAppSafetyNetDeviceAttestationType>]
  [-RequiredAndroidSafetyNetEvaluationType <AndroidManagedAppSafetyNetEvaluationType>]
@@ -1145,6 +1149,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MessagingRedirectAppDisplayName
+When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app name which is allowed to be used.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MessagingRedirectAppPackageId
+When a specific app redirection is enforced by protectedMessagingRedirectAppType in an App Protection Policy, this value defines the app package id which is allowed to be used.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -MinimumPinLength
 Minimum pin length required for an app-level pin if PinRequired is set to True
 
@@ -1525,6 +1559,22 @@ Indicates whether printing is allowed from managed apps.
 
 ```yaml
 Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProtectedMessagingRedirectAppType
+Defines how app messaging redirection is protected by an App Protection Policy.
+Default is anyApp.
+
+```yaml
+Type: MessagingRedirectAppType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

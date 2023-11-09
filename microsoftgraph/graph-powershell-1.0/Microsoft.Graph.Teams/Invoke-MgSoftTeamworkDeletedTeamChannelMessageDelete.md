@@ -32,6 +32,8 @@ Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete -InputObject <ITeamsIdentit
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -194,5 +196,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Invoke-MgBetaSoftTeamworkDeletedTeamChannelMessageDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaSoftTeamworkDeletedTeamChannelMessageDelete?view=graph-powershell-beta)
 

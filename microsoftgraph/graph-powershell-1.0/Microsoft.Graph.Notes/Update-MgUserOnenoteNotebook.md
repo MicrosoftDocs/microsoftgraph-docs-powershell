@@ -50,6 +50,8 @@ Update-MgUserOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property notebooks in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -696,3 +698,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 
+## RELATED LINKS

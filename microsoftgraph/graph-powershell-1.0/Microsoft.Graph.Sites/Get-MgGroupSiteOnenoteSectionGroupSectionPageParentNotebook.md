@@ -33,6 +33,8 @@ Get-MgGroupSiteOnenoteSectionGroupSectionPageParentNotebook -InputObject <ISites
 The notebook that contains the page.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -215,5 +217,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageParentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageParentNotebook?view=graph-powershell-beta)
 

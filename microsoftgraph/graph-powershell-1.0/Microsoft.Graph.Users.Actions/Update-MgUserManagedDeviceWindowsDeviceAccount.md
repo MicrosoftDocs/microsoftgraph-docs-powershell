@@ -13,6 +13,9 @@ Not yet documented
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -47,6 +50,8 @@ Update-MgUserManagedDeviceWindowsDeviceAccount -InputObject <IUsersActionsIdenti
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -264,5 +269,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SessionInitiationProtocalAddress <String>]`: Not yet documented
 
 ## RELATED LINKS
+[Update-MgBetaUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
+
 [Update-MgBetaUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
 

@@ -37,6 +37,8 @@ Get-MgUserChatPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 A collection of permissions granted to apps for the chat.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -304,5 +306,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatPermissionGrant?view=graph-powershell-beta)
 

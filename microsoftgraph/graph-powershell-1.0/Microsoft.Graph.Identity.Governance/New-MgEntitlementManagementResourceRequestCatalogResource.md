@@ -47,6 +47,8 @@ New-MgEntitlementManagementResourceRequestCatalogResource -InputObject <IIdentit
 ## DESCRIPTION
 Create new navigation property to resources for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId
@@ -541,3 +543,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

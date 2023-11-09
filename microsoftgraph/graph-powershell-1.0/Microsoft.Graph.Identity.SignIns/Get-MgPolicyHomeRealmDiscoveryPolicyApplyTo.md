@@ -37,6 +37,8 @@ Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Get appliesTo from policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -312,5 +314,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo?view=graph-powershell-beta)
 

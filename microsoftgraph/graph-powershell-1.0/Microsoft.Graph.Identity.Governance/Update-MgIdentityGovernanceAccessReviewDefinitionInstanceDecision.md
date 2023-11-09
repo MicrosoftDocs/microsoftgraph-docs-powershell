@@ -55,6 +55,8 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <
 ## DESCRIPTION
 Update the navigation property decisions in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -592,3 +594,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
 
+## RELATED LINKS

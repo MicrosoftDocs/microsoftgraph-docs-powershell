@@ -24,10 +24,10 @@ New-MgSecurityAlertV2 [-ActorDisplayName <String>] [-AdditionalData <Hashtable>]
  [-Determination <String>] [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>]
  [-FirstActivityDateTime <DateTime>] [-Id <String>] [-IncidentId <String>] [-IncidentWebUrl <String>]
  [-LastActivityDateTime <DateTime>] [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>]
- [-ProviderAlertId <String>] [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>]
- [-ServiceSource <String>] [-Severity <String>] [-Status <String>] [-TenantId <String>]
- [-ThreatDisplayName <String>] [-ThreatFamilyName <String>] [-Title <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ProductName <String>] [-ProviderAlertId <String>] [-RecommendedActions <String>]
+ [-ResolvedDateTime <DateTime>] [-ServiceSource <String>] [-Severity <String>] [-Status <String>]
+ [-TenantId <String>] [-ThreatDisplayName <String>] [-ThreatFamilyName <String>] [-Title <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -37,6 +37,8 @@ New-MgSecurityAlertV2 -BodyParameter <IMicrosoftGraphSecurityAlert> [-WhatIf] [-
 
 ## DESCRIPTION
 Create new navigation property to alerts_v2 for security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -390,6 +392,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ProductName
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProviderAlertId
 The ID of the alert as it appears in the security provider product that generated the alert.
 
@@ -649,5 +666,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Verdict <String>]`: evidenceVerdict
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 

@@ -30,6 +30,8 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -197,5 +199,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount?view=graph-powershell-beta)
 

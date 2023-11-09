@@ -31,6 +31,8 @@ Remove-MgUserManager -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThr
 Remove a user's manager.
 This API is supported in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -159,5 +161,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserManager?view=graph-powershell-beta)
 

@@ -22,6 +22,8 @@ Get-MgIdentityConditionalAccessNamedLocationCount [-Filter <String>] [-Search <S
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityConditionalAccessNamedLocationCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessNamedLocationCount?view=graph-powershell-beta)
 

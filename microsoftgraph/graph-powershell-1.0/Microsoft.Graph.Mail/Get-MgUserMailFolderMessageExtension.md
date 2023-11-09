@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
+ms.prod: extensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextension
 schema: 2.0.0
 ms.prod: extensions
@@ -43,6 +44,8 @@ Get an open extension (openTypeExtension object) identified by name or fully qua
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -288,5 +291,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserMailFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessageExtension?view=graph-powershell-beta)
 

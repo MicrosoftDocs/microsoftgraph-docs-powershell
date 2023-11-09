@@ -14,22 +14,34 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSchemaExtension](Get-MgSchemaExtension.md)
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgBetaSchemaExtension?view=graph-powershell-beta)
+
 ### [Get-MgSchemaExtensionCount](Get-MgSchemaExtensionCount.md)
 Get the number of the resource
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSchemaExtensionCount](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgBetaSchemaExtensionCount?view=graph-powershell-beta)
 
 ### [New-MgSchemaExtension](New-MgSchemaExtension.md)
 Create a new schemaExtension definition and its associated schema extension property to extend a supporting resource type.
 Schema extensions let you add strongly-typed custom data to a resource.
 The app that creates a schema extension is the owner app.
-Depending on the state of the extension, the owner app, and only the owner app, may update or delete the extension.
-See examples of how to define a schema extension that describes a training course, use the schema extension definition to create a new group with training course data, and add training course data to an existing group.
+Depending on the nstate of the extension, the owner app, and only the owner app, may update or delete the extension.
+See examples of how to define a schema extension that describes a training course, nuse the schema extension definition to create a new group with training course data, and nadd training course data to an existing group.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 ### [Remove-MgSchemaExtension](Remove-MgSchemaExtension.md)
 Delete the definition of a schema extension.
 Only the app that created the schema extension (owner app) can delete the schema extension definition, and only when the extension is in the InDevelopment state.
 Deleting a schema extension definition does not affect accessing custom data that has been added to resource instances based on that definition.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Remove-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 ### [Update-MgSchemaExtension](Update-MgSchemaExtension.md)
 Update properties in the definition of the specified schemaExtension.
@@ -42,4 +54,7 @@ That application can be the one that initially created the extension, or some ot
 This criteria for the owner property allows a signed-in user to make updates through other applications they don't own, such as Microsoft Graph Explorer.
 When using Graph Explorer to update a schemaExtension resource, include the owner property in the PATCH request body.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Update-MgBetaSchemaExtension?view=graph-powershell-beta)
 

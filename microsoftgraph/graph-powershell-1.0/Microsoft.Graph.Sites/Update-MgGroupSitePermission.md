@@ -56,6 +56,8 @@ Update-MgGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicr
 Update an application permission object on a site.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -598,3 +600,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
+## RELATED LINKS

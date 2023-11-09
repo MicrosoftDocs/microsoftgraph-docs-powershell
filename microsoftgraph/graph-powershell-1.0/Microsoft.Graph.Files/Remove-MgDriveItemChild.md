@@ -14,6 +14,9 @@ This API is available in the following [national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemChild?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -31,6 +34,8 @@ Remove-MgDriveItemChild -InputObject <IFilesIdentity> [-IfMatch <String>] [-Pass
 ## DESCRIPTION
 Remove an item from a bundle][].
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -201,5 +206,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemChild?view=graph-powershell-beta)
+
 [Remove-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemChild?view=graph-powershell-beta)
 

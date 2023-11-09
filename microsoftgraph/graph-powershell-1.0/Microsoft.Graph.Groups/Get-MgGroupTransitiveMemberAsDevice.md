@@ -37,6 +37,8 @@ Get-MgGroupTransitiveMemberAsDevice -InputObject <IGroupsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -308,5 +310,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTransitiveMemberAsDevice](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberAsDevice?view=graph-powershell-beta)
 

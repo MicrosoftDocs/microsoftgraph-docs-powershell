@@ -32,8 +32,6 @@ Get-MgTeamPrimaryChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandPropert
 Get the metadata for the location where the files of a channel are stored.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -150,4 +148,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamPrimaryChannelFileFolder](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelFileFolder?view=graph-powershell-beta)

@@ -246,6 +246,12 @@ Read-only.
 Read the properties and relationships of a virtualEventWebinar object.
 This API is available in the following national cloud deployments.
 
+### [Get-MgBetaVirtualEventWebinarByUserIdAndRole](Get-MgBetaVirtualEventWebinarByUserIdAndRole.md)
+Invoke function getByUserIdAndRole
+
+### [Get-MgBetaVirtualEventWebinarByUserRole](Get-MgBetaVirtualEventWebinarByUserRole.md)
+Invoke function getByUserRole
+
 ### [Get-MgBetaVirtualEventWebinarCount](Get-MgBetaVirtualEventWebinarCount.md)
 Get the number of the resource
 

@@ -35,6 +35,8 @@ Update-MgPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantA
 Update the properties of a tenantAppManagementPolicy object.
 This API is supported in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -271,5 +273,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
+
 [Update-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
 

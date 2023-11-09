@@ -13,6 +13,9 @@ Update the navigation property analytics in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -45,6 +48,8 @@ Update-MgDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update the navigation property analytics in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -11747,7 +11752,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
+[Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
+[Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
 
+## RELATED LINKS
+[Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)

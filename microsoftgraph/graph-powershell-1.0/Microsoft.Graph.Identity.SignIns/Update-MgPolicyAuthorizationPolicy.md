@@ -36,6 +36,8 @@ Update-MgPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorizationP
 Update the properties of an authorizationPolicy object.
 This API is supported in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -340,5 +342,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[PermissionGrantPoliciesAssigned <String[]>]`: Indicates if user consent to apps is allowed, and if it is, which permission to grant consent and which app consent policy (permissionGrantPolicy) govern the permission for users to grant consent. Value should be in the format managePermissionGrantsForSelf.{id}, where {id} is the id of a built-in or custom app consent policy. An empty list indicates user consent to apps is disabled.
 
 ## RELATED LINKS
+
 [Update-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
 

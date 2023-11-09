@@ -29,6 +29,8 @@ Test-MgGroupDriveListContentTypePublished -InputObject <IGroupsIdentity> [<Commo
 ## DESCRIPTION
 Invoke function isPublished
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -148,5 +150,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Test-MgBetaGroupDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupDriveListContentTypePublished?view=graph-powershell-beta)
 

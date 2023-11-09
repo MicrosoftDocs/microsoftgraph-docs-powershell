@@ -22,6 +22,8 @@ Get-MgExternal [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParam
 ## DESCRIPTION
 Get external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternal?view=graph-powershell-beta)
 

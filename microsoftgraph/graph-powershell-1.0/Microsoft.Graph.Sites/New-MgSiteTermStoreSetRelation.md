@@ -531,3 +531,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteTermStoreSetRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetRelation?view=graph-powershell-beta)
+
+
+## RELATED LINKS

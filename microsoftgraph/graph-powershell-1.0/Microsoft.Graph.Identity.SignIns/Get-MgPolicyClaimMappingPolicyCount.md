@@ -22,6 +22,8 @@ Get-MgPolicyClaimMappingPolicyCount [-Filter <String>] [-Search <String>] [<Comm
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaPolicyClaimMappingPolicyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyClaimMappingPolicyCount?view=graph-powershell-beta)
 

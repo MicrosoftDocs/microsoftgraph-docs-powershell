@@ -278,4 +278,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Order <String[]>]`: A list of identityUserFlowAttribute object identifiers that determine the order in which attributes should be collected within a user flow.
 
 ## RELATED LINKS
+
 [Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder?view=graph-powershell-beta)

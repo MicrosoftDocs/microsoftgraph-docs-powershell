@@ -32,6 +32,8 @@ New-MgDirectoryOnPremiseSynchronization -BodyParameter <IMicrosoftGraphOnPremise
 ## DESCRIPTION
 Create new navigation property to onPremisesSynchronization for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -223,5 +225,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
 ## RELATED LINKS
+
 [New-MgBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
 

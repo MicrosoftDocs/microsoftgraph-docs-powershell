@@ -34,8 +34,6 @@ Delete a conversationMember from a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -213,4 +211,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelMember?view=graph-powershell-beta)

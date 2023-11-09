@@ -48,6 +48,8 @@ Update-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 Update an appManagementPolicy object.
 This API is supported in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -367,5 +369,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
+
 [Update-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
 

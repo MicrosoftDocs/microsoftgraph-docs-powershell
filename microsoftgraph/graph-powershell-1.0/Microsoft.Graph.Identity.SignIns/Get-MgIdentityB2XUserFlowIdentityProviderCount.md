@@ -42,6 +42,8 @@ Get-MgIdentityB2XUserFlowIdentityProviderCount -InputObject <IIdentitySignInsIde
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -181,5 +183,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityB2XUserFlowIdentityProviderCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowIdentityProviderCount?view=graph-powershell-beta)
 

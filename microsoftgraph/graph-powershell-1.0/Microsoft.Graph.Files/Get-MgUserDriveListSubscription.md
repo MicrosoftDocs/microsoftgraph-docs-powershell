@@ -13,6 +13,9 @@ The set of subscriptions on the list.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,8 @@ Get-MgUserDriveListSubscription -InputObject <IFilesIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 The set of subscriptions on the list.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -296,5 +301,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
+
 [Get-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
 

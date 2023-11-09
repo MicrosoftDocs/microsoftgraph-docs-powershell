@@ -13,6 +13,9 @@ For document libraries, the driveItem relationship exposes the listItem as a [dr
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -29,6 +32,8 @@ Get-MgGroupDriveItemListItemDriveItem -InputObject <IFilesIdentity> [-ExpandProp
 
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -168,5 +173,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveItemListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemDriveItem?view=graph-powershell-beta)
+
 [Get-MgBetaGroupDriveItemListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemDriveItem?view=graph-powershell-beta)
 

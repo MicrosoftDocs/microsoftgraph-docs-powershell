@@ -30,6 +30,8 @@ Remove-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property offerShiftRequests for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -192,5 +194,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
 

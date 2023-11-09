@@ -46,6 +46,8 @@ Update-MgSecurityThreatIntelligenceHostPair -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property hostPairs in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -770,3 +772,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
 
+## RELATED LINKS

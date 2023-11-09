@@ -23,6 +23,8 @@ Get-MgSecurityAttackSimulationEndUserNotificationCount [-Filter <String>] [-Sear
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -68,5 +70,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityAttackSimulationEndUserNotificationCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationEndUserNotificationCount?view=graph-powershell-beta)
 

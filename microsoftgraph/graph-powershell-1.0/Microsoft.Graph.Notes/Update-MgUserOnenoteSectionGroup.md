@@ -52,6 +52,8 @@ Update-MgUserOnenoteSectionGroup -InputObject <INotesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property sectionGroups in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -813,3 +815,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteSectionGroup?view=graph-powershell-beta)
 
+## RELATED LINKS

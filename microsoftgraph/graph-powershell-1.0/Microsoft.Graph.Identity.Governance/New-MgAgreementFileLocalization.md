@@ -46,6 +46,8 @@ New-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Create new navigation property to localizations for agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -424,3 +426,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
 
+## RELATED LINKS

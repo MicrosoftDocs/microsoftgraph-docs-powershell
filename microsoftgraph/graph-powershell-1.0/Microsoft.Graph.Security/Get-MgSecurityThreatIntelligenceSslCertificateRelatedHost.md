@@ -37,6 +37,8 @@ Get-MgSecurityThreatIntelligenceSslCertificateRelatedHost -InputObject <ISecurit
 ## DESCRIPTION
 The hosts related with this sslCertificate.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -308,5 +310,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost?view=graph-powershell-beta)
 

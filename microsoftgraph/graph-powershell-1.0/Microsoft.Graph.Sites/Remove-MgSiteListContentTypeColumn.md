@@ -32,6 +32,8 @@ Remove-MgSiteListContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch <Stri
 Remove a column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 This API is available in the following [national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -230,5 +232,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListContentTypeColumn?view=graph-powershell-beta)
 

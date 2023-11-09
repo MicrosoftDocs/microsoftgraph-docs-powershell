@@ -62,8 +62,6 @@ New-MgGroupTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMic
 Send a new chatMessage in the specified channel.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -880,3 +878,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannelMessage?view=graph-powershell-beta)
+
+
+## RELATED LINKS

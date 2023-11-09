@@ -27,6 +27,8 @@ Remove-MgEntitlementManagementCatalogResource -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Delete navigation property resources for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -225,4 +227,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

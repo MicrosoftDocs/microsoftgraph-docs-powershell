@@ -28,6 +28,8 @@ Get-MgGroupThreadCount -InputObject <IGroupsIdentity> [-Filter <String>] [<Commo
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -132,5 +134,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupThreadCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadCount?view=graph-powershell-beta)
 

@@ -36,6 +36,8 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it's null.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -188,5 +190,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsing?view=graph-powershell-beta)
 

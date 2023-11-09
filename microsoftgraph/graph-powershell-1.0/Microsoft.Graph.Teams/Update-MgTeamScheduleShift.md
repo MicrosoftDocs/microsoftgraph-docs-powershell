@@ -50,6 +50,8 @@ Replace an existing shift.
 If the specified shift doesn't exist, this method returns 404 Not found.
 The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -378,5 +380,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Notes <String>]`: The shift notes for the shiftItem.
 
 ## RELATED LINKS
+
 [Update-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleShift?view=graph-powershell-beta)
 

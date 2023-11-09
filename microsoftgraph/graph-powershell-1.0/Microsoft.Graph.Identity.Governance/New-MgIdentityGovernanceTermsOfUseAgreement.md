@@ -35,6 +35,8 @@ New-MgIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphAgree
 Create a new agreement object.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Acceptances
@@ -405,3 +407,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
 
+## RELATED LINKS

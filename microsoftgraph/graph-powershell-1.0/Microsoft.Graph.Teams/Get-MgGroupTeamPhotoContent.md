@@ -28,8 +28,6 @@ Get-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> -OutFile <String> [-Pa
 ## DESCRIPTION
 Get media content for the navigation property photo from groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -146,4 +144,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPhotoContent?view=graph-powershell-beta)

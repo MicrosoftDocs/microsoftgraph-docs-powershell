@@ -50,6 +50,8 @@ New-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
 Create a new ediscoveryReviewTag object.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -404,5 +406,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
 

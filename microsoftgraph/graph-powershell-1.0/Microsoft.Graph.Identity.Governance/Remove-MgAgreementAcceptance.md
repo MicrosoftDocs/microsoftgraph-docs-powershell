@@ -30,6 +30,8 @@ Remove-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property acceptances for agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId
@@ -228,5 +230,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Remove-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 

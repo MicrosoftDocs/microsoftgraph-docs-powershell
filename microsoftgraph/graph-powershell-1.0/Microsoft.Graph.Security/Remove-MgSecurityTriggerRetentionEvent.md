@@ -32,6 +32,8 @@ Remove-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-IfMatc
 Delete a retentionEvent object.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -198,5 +200,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
 

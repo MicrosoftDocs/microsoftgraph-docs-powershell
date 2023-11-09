@@ -43,6 +43,8 @@ Get-MgSiteActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Filter <St
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -285,5 +287,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteActivityByInterval?view=graph-powershell-beta)
 

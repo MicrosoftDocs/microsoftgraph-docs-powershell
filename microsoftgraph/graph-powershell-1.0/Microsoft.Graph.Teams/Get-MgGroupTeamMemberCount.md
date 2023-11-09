@@ -29,6 +29,8 @@ Get-MgGroupTeamMemberCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -145,5 +147,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamMemberCount?view=graph-powershell-beta)
 

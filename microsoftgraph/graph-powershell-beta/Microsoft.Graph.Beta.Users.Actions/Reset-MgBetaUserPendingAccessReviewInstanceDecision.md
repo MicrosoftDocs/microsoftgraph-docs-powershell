@@ -29,6 +29,8 @@ Reset-MgBetaUserPendingAccessReviewInstanceDecision -InputObject <IUsersActionsI
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to notReviewed.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -182,4 +184,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

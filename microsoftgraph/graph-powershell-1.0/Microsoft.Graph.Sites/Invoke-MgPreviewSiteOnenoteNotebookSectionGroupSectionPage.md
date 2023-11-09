@@ -29,6 +29,8 @@ Invoke-MgPreviewSiteOnenoteNotebookSectionGroupSectionPage -InputObject <ISitesI
 ## DESCRIPTION
 Invoke function preview
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -181,5 +183,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Invoke-MgBetaPreviewSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaPreviewSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
 

@@ -42,6 +42,8 @@ Get-MgReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIdentity
 ## DESCRIPTION
 Invoke function getSkypeForBusinessDeviceUsageUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
@@ -161,5 +163,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail?view=graph-powershell-beta)
 

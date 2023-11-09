@@ -30,6 +30,8 @@ Set-MgSiteOnenotePageContent -InputObject <INotesIdentity> [-Data <Stream>] -InF
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Data
@@ -172,5 +174,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaSiteOnenotePageContent?view=graph-powershell-beta)
 

@@ -34,6 +34,8 @@ New-MgSecurityAttackSimulationAutomation -BodyParameter <IMicrosoftGraphSimulati
 ## DESCRIPTION
 Create new navigation property to simulationAutomations for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -329,5 +331,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: simulationAutomationRunStatus
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)
 

@@ -84,6 +84,8 @@ New-MgGroupSiteTermStoreGroupSetTermChild -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to children for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -650,3 +652,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaGroupSiteTermStoreGroupSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreGroupSetTermChild?view=graph-powershell-beta)
 
+## RELATED LINKS

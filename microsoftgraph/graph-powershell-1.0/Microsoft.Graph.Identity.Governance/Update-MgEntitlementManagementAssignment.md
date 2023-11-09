@@ -67,6 +67,8 @@ The state of the access package assignment must be Delivered for the administrat
 Only admins with the Access Package Assignment Manager role, or higher, in Microsoft Entra entitlement management can perform this action.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackage
@@ -9559,3 +9561,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
+ms.prod: cloud-pc
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkrestoreusermanageddevicecloudpc
 schema: 2.0.0
 ms.prod: cloud-pc
@@ -45,6 +46,8 @@ Invoke-MgBetaBulkRestoreUserManagedDeviceCloudPc -InputObject <IUsersActionsIden
 ## DESCRIPTION
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -252,4 +255,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -39,8 +39,6 @@ Get-MgGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-Property 
 Retrieve the properties and relationships of a schedulingGroup by ID.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -278,4 +276,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)

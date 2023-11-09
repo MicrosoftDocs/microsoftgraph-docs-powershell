@@ -39,8 +39,6 @@ Get-MgGroupTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 Get a conversationMember from a team.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -293,4 +291,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamMember?view=graph-powershell-beta)

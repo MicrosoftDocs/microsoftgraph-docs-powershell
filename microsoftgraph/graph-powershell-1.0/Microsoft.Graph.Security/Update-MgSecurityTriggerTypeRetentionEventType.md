@@ -46,6 +46,8 @@ Update-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property retentionEventTypes in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -357,5 +359,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
 

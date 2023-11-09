@@ -49,6 +49,8 @@ Update-MgInvitationInvitedUserMailboxSetting -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Update property mailboxSettings value.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -422,3 +424,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)
 
+## RELATED LINKS

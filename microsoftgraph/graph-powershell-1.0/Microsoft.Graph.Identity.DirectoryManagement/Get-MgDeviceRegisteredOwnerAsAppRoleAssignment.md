@@ -34,6 +34,8 @@ Get-MgDeviceRegisteredOwnerAsAppRoleAssignment -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -293,4 +295,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

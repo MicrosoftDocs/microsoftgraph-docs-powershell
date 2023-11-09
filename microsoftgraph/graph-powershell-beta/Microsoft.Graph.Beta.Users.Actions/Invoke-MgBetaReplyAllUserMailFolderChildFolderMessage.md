@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareenableusermanageddevice
 schema: 2.0.0
 ms.prod: outlook
@@ -10,6 +11,9 @@ ms.prod: outlook
 
 ## SYNOPSIS
 Invoke action reenable
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
@@ -202,4 +206,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
+
 [Invoke-MgReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-1.0)

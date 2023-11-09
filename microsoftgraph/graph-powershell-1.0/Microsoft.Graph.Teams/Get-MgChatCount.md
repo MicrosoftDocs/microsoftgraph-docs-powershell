@@ -22,6 +22,8 @@ Get-MgChatCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaChatCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatCount?view=graph-powershell-beta)
 

@@ -22,6 +22,8 @@ Get-MgSecuritySecureScoreControlProfileCount [-Filter <String>] [-Search <String
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSecuritySecureScoreControlProfileCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScoreControlProfileCount?view=graph-powershell-beta)
 

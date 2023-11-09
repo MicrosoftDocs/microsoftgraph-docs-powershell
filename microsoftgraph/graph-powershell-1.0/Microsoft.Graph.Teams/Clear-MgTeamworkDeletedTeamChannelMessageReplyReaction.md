@@ -47,6 +47,8 @@ Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction -InputObject <ITeamsIdent
 ## DESCRIPTION
 Invoke action unsetReaction
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -275,5 +277,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Clear-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Clear-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction?view=graph-powershell-beta)
 

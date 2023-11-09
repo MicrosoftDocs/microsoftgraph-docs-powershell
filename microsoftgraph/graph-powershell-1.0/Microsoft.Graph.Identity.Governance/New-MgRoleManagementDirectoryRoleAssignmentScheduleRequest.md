@@ -42,6 +42,8 @@ In PIM, carry out the following operations through the unifiedRoleAssignmentSche
 See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action
@@ -839,3 +841,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
 
+## RELATED LINKS

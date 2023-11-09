@@ -23,6 +23,8 @@ Get-MgSecurityThreatIntelligenceProfileIndicatorCount [-Filter <String>] [-Searc
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -68,5 +70,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityThreatIntelligenceProfileIndicatorCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceProfileIndicatorCount?view=graph-powershell-beta)
 

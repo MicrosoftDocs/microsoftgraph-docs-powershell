@@ -13,6 +13,9 @@ Update the navigation property subscriptions in groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -49,6 +52,8 @@ Update-MgGroupDriveRootSubscription -InputObject <IFilesIdentity> -BodyParameter
 
 ## DESCRIPTION
 Update the navigation property subscriptions in groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -511,5 +516,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
+
 [Update-MgBetaGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootSubscription?view=graph-powershell-beta)
 

@@ -13,6 +13,9 @@ Get lastSevenDays from groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -29,6 +32,8 @@ Get-MgGroupDriveRootAnalyticLastSevenDay -InputObject <IFilesIdentity> [-ExpandP
 
 ## DESCRIPTION
 Get lastSevenDays from groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +158,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
+
 [Get-MgBetaGroupDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootAnalyticLastSevenDay?view=graph-powershell-beta)
 

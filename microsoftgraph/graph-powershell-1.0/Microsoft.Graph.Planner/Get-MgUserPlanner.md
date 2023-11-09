@@ -31,6 +31,8 @@ Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 Entry-point to the Planner resource that might exist for a user.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -120,5 +122,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlanner?view=graph-powershell-beta)
 

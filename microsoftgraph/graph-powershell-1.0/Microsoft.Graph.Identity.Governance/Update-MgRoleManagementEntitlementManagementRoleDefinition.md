@@ -54,6 +54,8 @@ You cannot update built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -452,3 +454,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
 
+## RELATED LINKS

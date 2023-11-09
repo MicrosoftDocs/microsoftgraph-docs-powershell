@@ -30,6 +30,8 @@ Stop-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Invoke action stop
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
@@ -198,5 +200,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Stop-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 

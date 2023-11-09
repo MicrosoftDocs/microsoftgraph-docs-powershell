@@ -30,6 +30,8 @@ Get-MgGroupTransitiveMemberCount -InputObject <IGroupsIdentity> [-Filter <String
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -165,5 +167,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTransitiveMemberCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupTransitiveMemberCount?view=graph-powershell-beta)
 

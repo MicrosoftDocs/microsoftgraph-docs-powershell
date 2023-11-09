@@ -30,6 +30,8 @@ Get-MgGroupTeamPermissionGrantCount -InputObject <ITeamsIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -146,5 +148,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamPermissionGrantCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPermissionGrantCount?view=graph-powershell-beta)
 

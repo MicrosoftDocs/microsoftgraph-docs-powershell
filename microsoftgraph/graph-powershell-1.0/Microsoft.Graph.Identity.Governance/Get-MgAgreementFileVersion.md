@@ -39,6 +39,8 @@ Get-MgAgreementFileVersion -InputObject <IIdentityGovernanceIdentity> [-ExpandPr
 Read-only.
 Customized versions of the terms of use agreement in the Microsoft Entra tenant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId
@@ -342,5 +344,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileVersion?view=graph-powershell-beta)
 

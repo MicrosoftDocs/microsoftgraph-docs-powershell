@@ -968,3 +968,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChat?view=graph-powershell-beta)
+
+
+## RELATED LINKS

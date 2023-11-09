@@ -32,8 +32,6 @@ Remove-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <String>
 Delete a shift from the schedule.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -196,4 +194,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleShift?view=graph-powershell-beta)

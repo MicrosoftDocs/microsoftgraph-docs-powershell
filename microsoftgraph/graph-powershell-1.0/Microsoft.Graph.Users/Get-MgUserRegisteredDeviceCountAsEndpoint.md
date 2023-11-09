@@ -30,6 +30,8 @@ Get-MgUserRegisteredDeviceCountAsEndpoint -InputObject <IUsersIdentity> [-Filter
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -143,5 +145,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserRegisteredDeviceCountAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserRegisteredDeviceCountAsEndpoint?view=graph-powershell-beta)
 

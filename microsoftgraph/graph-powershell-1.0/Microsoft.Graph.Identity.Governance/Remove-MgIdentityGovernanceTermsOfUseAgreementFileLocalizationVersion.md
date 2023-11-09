@@ -32,6 +32,8 @@ Remove-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion
 ## DESCRIPTION
 Delete navigation property versions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId
@@ -245,5 +247,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Remove-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion?view=graph-powershell-beta)
 

@@ -42,6 +42,8 @@ New-MgOrganizationExtension -InputObject <IIdentityDirectoryManagementIdentity> 
 ## DESCRIPTION
 Create new navigation property to extensions for organization
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -197,5 +199,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaOrganizationExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganizationExtension?view=graph-powershell-beta)
 

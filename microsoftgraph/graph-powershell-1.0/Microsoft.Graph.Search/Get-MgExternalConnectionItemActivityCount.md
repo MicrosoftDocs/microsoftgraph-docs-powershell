@@ -30,6 +30,8 @@ Get-MgExternalConnectionItemActivityCount -InputObject <ISearchIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExternalConnectionId
@@ -135,5 +137,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+
 [Get-MgBetaExternalConnectionItemActivityCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivityCount?view=graph-powershell-beta)
 

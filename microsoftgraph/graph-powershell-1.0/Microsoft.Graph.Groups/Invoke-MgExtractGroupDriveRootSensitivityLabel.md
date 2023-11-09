@@ -30,6 +30,8 @@ Invoke-MgExtractGroupDriveRootSensitivityLabel -InputObject <IGroupsIdentity> [-
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId
@@ -165,5 +167,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Invoke-MgBetaExtractGroupDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaExtractGroupDriveRootSensitivityLabel?view=graph-powershell-beta)
 

@@ -17,14 +17,206 @@ Get the number of the resource
 
 ### Get (Default)
 ```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get9
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get8
+```
 Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### Get7
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get6
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get5
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get4
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get3
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get2
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get16
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get15
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get14
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get13
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get12
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get11
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get10
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity9
 ```
 Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
  [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity8
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity7
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity6
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity5
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity4
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity3
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity16
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity15
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity14
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity13
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity12
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity11
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity10
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
+ [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get (Default)
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get9
+```
+Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +229,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity16, GetViaIdentity15, GetViaIdentity14, GetViaIdentity13, GetViaIdentity12, GetViaIdentity11, GetViaIdentity10
 Aliases:
 
 Required: False
@@ -53,7 +245,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: Get, Get9, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity16, GetViaIdentity15, GetViaIdentity14, GetViaIdentity13, GetViaIdentity12, GetViaIdentity11, GetViaIdentity10
 Aliases:
 
 Required: True
@@ -68,7 +260,7 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1
 Aliases:
 
 Required: True
@@ -83,7 +275,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get16, Get15, Get14, Get13, Get12, Get11, Get10, Get1, GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity16, GetViaIdentity15, GetViaIdentity14, GetViaIdentity13, GetViaIdentity12, GetViaIdentity11, GetViaIdentity10
 Aliases:
 
 Required: False

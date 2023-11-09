@@ -32,6 +32,8 @@ Restore-MgGroupSiteListItemDocumentSetVersion -InputObject <IGroupsIdentity> [-P
 Restore a document set version.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -227,5 +229,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Restore-MgBetaGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupSiteListItemDocumentSetVersion?view=graph-powershell-beta)
 

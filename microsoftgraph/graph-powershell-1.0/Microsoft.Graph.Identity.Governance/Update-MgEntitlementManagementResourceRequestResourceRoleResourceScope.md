@@ -46,6 +46,8 @@ Update-MgEntitlementManagementResourceRequestResourceRoleResourceScope
 ## DESCRIPTION
 Update the navigation property scopes in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId
@@ -444,3 +446,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

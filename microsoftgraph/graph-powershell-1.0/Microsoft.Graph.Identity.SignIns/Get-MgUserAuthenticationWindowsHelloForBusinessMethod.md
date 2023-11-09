@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
+ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationwindowshelloforbusinessmethod
 schema: 2.0.0
 ms.prod: identity-and-sign-in
@@ -41,6 +42,8 @@ Get-MgUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIdentitySig
 ## DESCRIPTION
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
 This API is supported in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -317,5 +320,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-beta)
 

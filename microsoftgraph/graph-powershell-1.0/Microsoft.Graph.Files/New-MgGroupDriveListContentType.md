@@ -13,6 +13,9 @@ Create new navigation property to contentTypes for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -55,6 +58,8 @@ New-MgGroupDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create new navigation property to contentTypes for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1539,7 +1544,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+[New-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+[New-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
+## RELATED LINKS
+[New-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListContentType?view=graph-powershell-beta)

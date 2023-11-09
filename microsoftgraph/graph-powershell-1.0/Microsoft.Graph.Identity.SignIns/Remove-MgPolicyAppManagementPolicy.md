@@ -32,6 +32,8 @@ Remove-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-IfM
 Delete an appManagementPolicy object.
 This API is supported in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppManagementPolicyId
@@ -202,5 +204,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
 

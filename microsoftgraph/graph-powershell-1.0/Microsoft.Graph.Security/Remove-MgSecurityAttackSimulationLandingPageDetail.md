@@ -30,6 +30,8 @@ Remove-MgSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Delete navigation property details for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -211,5 +213,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationLandingPageDetail?view=graph-powershell-beta)
 

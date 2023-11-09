@@ -60,6 +60,8 @@ Update-MgSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property whoisRecords in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Abuse
@@ -1279,3 +1281,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-beta)
 
+## RELATED LINKS

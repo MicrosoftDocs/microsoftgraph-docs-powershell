@@ -30,6 +30,8 @@ Set-MgSiteListItemDriveItemContent -InputObject <ISitesIdentity> [-Data <Stream>
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Data
@@ -216,5 +218,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaSiteListItemDriveItemContent?view=graph-powershell-beta)
 

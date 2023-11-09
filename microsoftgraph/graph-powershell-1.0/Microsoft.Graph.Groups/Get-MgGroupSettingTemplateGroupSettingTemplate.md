@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsettingtemplategroupsettingtemplate
 schema: 2.0.0
 ms.prod: groups
@@ -39,6 +40,8 @@ Get-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity> [-
 A group setting template represents a template of settings from which settings may be created within a tenant.
 This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -280,4 +283,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

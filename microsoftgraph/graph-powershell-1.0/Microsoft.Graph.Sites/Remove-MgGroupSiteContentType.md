@@ -32,6 +32,8 @@ Remove-MgGroupSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>] 
 Remove a content type][contentType] from a [list][] or a [site][].
 This API is available in the following [national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -215,5 +217,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 

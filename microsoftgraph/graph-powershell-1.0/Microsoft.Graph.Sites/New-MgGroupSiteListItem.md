@@ -58,6 +58,8 @@ New-MgGroupSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 Create a new listItem][] in a [list][].
 This API is available in the following [national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15021,3 +15023,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListItem?view=graph-powershell-beta)
 
+## RELATED LINKS

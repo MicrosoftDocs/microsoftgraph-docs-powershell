@@ -31,6 +31,8 @@ Get-MgChatMessageDelta -InputObject <ITeamsIdentity> [-Filter <String>] [-Proper
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -268,5 +270,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaChatMessageDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageDelta?view=graph-powershell-beta)
 

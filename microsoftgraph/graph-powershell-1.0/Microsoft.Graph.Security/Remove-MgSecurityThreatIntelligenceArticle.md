@@ -30,6 +30,8 @@ Remove-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property articles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ArticleId
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 

@@ -37,6 +37,8 @@ Get-MgPolicyActivityBasedTimeoutPolicyApplyTo -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Get appliesTo from policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityBasedTimeoutPolicyId
@@ -312,5 +314,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo?view=graph-powershell-beta)
 

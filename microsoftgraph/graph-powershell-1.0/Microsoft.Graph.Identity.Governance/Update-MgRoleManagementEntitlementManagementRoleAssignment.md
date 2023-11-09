@@ -50,6 +50,8 @@ Update-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property roleAssignments in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -475,3 +477,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-beta)
 
+## RELATED LINKS

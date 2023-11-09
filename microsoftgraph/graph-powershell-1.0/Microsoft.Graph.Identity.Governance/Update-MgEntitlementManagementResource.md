@@ -46,6 +46,8 @@ Update-MgEntitlementManagementResource -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 Update the navigation property resources in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceId
@@ -540,3 +542,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

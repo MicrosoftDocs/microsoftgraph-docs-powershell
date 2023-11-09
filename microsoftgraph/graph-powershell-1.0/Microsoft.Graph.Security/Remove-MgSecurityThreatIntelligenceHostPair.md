@@ -30,6 +30,8 @@ Remove-MgSecurityThreatIntelligenceHostPair -InputObject <ISecurityIdentity> [-I
 ## DESCRIPTION
 Delete navigation property hostPairs for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -HostPairId
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
 

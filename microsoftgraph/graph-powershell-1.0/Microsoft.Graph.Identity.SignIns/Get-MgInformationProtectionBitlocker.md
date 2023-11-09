@@ -22,6 +22,8 @@ Get-MgInformationProtectionBitlocker [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Get bitlocker from informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaInformationProtectionBitlocker](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlocker?view=graph-powershell-beta)
 

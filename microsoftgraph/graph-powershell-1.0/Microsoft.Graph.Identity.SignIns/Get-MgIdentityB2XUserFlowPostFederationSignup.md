@@ -30,6 +30,8 @@ Get-MgIdentityB2XUserFlowPostFederationSignup -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Get postFederationSignup from identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -169,5 +171,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityB2XUserFlowPostFederationSignup](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowPostFederationSignup?view=graph-powershell-beta)
 

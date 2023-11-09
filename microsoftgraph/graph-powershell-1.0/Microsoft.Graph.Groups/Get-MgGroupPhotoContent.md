@@ -39,6 +39,8 @@ Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassT
 ## DESCRIPTION
 Get media content for the navigation property photo from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -173,5 +175,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupPhotoContent](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhotoContent?view=graph-powershell-beta)
 

@@ -30,6 +30,8 @@ Remove-MgSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property payloads for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationPayload?view=graph-powershell-beta)
 

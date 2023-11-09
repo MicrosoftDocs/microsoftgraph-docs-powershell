@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsetting
 schema: 2.0.0
 ms.prod: groups
@@ -61,6 +62,8 @@ Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [
 Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -317,5 +320,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSetting?view=graph-powershell-beta)
 

@@ -22,6 +22,8 @@ Get-MgGroupLifecyclePolicyCount [-Filter <String>] [-Search <String>] [<CommonPa
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupLifecyclePolicyCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupLifecyclePolicyCount?view=graph-powershell-beta)
 

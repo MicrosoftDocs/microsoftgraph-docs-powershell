@@ -13,6 +13,9 @@ Invoke action unsetReaction
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserChatMessageReplyReaction?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserChatMessageReplyReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UnsetExpanded (Default)
@@ -45,6 +48,8 @@ Clear-MgUserChatMessageReplyReaction -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Invoke action unsetReaction
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -271,5 +276,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Clear-MgBetaUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserChatMessageReplyReaction?view=graph-powershell-beta)
+
 [Clear-MgBetaUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserChatMessageReplyReaction?view=graph-powershell-beta)
 

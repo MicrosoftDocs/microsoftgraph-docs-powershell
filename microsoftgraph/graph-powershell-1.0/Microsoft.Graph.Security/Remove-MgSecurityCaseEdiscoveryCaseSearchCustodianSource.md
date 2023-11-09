@@ -30,6 +30,8 @@ Remove-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurity
 ## DESCRIPTION
 Remove a dataSource object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DataSourceId
@@ -226,5 +228,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource?view=graph-powershell-beta)
 

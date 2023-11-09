@@ -47,6 +47,8 @@ Update-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 Update the role of a conversationMember in a team or channel.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -299,5 +301,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
 

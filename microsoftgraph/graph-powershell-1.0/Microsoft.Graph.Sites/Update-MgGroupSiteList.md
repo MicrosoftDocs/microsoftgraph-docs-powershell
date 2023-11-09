@@ -58,6 +58,8 @@ Update-MgGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property lists in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15384,3 +15386,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteList?view=graph-powershell-beta)
 
+## RELATED LINKS

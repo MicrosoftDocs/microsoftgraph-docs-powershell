@@ -37,6 +37,8 @@ Get-MgSiteListContentTypeColumnPosition -InputObject <ISitesIdentity> [-ExpandPr
 ## DESCRIPTION
 Column order information in a content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -325,5 +327,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListContentTypeColumnPosition?view=graph-powershell-beta)
 

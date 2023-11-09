@@ -37,6 +37,8 @@ Get-MgGroupTeamPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 A collection of permissions granted to apps to access the team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -289,5 +291,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPermissionGrant?view=graph-powershell-beta)
 

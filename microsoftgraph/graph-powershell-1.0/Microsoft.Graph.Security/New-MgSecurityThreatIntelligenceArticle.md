@@ -33,6 +33,8 @@ New-MgSecurityThreatIntelligenceArticle -BodyParameter <IMicrosoftGraphSecurityA
 ## DESCRIPTION
 Create new navigation property to articles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -312,5 +314,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 

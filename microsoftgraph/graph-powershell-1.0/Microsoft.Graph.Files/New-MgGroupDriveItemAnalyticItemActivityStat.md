@@ -13,6 +13,9 @@ Create new navigation property to itemActivityStats for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -49,6 +52,8 @@ New-MgGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -6175,7 +6180,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+[New-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+[New-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
+## RELATED LINKS
+[New-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)

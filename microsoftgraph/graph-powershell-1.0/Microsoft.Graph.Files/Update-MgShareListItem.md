@@ -13,6 +13,9 @@ Update the navigation property listItem in shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -93,6 +96,8 @@ Update-MgShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the navigation property listItem in shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -15024,7 +15029,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
+[Update-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
+[Update-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
 
+## RELATED LINKS
+[Update-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)

@@ -33,6 +33,8 @@ A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -149,5 +151,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamwork?view=graph-powershell-beta)
 

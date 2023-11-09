@@ -30,6 +30,8 @@ Remove-MgUserLicenseDetail -InputObject <IUsersIdentity> [-IfMatch <String>] [-P
 ## DESCRIPTION
 Delete navigation property licenseDetails for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -173,5 +175,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 

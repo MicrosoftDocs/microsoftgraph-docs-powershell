@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: extensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpostinreplyto
 schema: 2.0.0
 ms.prod: extensions
@@ -417,3 +418,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaReplyGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupThreadPostInReplyTo?view=graph-powershell-beta)
+
+
+## RELATED LINKS

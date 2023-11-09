@@ -43,6 +43,8 @@ Remove-MgSiteTermStoreSetParentGroupSetTermChild -InputObject <ISitesIdentity> [
 ## DESCRIPTION
 Delete navigation property children for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -271,5 +273,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteTermStoreSetParentGroupSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSetParentGroupSetTermChild?view=graph-powershell-beta)
 

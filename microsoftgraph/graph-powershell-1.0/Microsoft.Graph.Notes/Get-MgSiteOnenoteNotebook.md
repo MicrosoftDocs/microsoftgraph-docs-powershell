@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
+ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotenotebook
 schema: 2.0.0
 ms.prod: onenote
@@ -40,8 +41,6 @@ Get-MgSiteOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -272,4 +271,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteNotebook?view=graph-powershell-beta)

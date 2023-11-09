@@ -50,8 +50,6 @@ Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -365,4 +363,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Notes <String>]`: The shift notes for the shiftItem.
 
 ## RELATED LINKS
+
 [New-MgBetaGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleShift?view=graph-powershell-beta)

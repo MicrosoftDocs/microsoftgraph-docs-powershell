@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread
 schema: 2.0.0
 ms.prod: groups
@@ -438,3 +439,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaReplyGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThread?view=graph-powershell-beta)
+
+
+## RELATED LINKS

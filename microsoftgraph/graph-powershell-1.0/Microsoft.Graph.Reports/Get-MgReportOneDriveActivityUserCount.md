@@ -29,6 +29,8 @@ Get-MgReportOneDriveActivityUserCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Invoke function getOneDriveActivityUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportOneDriveActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveActivityUserCount?view=graph-powershell-beta)
 

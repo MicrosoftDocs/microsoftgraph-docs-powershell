@@ -40,6 +40,8 @@ Get-MgReportYammerActivityUserDetail -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Invoke function getYammerActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
@@ -159,5 +161,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportYammerActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityUserDetail?view=graph-powershell-beta)
 

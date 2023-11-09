@@ -39,6 +39,8 @@ New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 Create a new privilegedAccessGroupEligibilityScheduleRequest object.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessId
@@ -9160,3 +9162,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-beta)
 
+## RELATED LINKS

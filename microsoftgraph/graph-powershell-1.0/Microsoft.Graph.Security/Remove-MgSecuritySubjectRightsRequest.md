@@ -30,6 +30,8 @@ Remove-MgSecuritySubjectRightsRequest -InputObject <ISecurityIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property subjectRightsRequests for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySubjectRightsRequest?view=graph-powershell-beta)
 

@@ -47,6 +47,8 @@ Update-MgGroupSiteOnenoteOperation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -374,5 +376,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenoteOperation?view=graph-powershell-beta)
 

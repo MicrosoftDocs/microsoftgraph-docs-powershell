@@ -31,6 +31,8 @@ New-MgSecurityThreatIntelligencePassiveDnsRecord -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create new navigation property to passiveDnsRecords for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -535,3 +537,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)
 
+## RELATED LINKS

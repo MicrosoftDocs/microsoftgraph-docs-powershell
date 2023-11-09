@@ -13,6 +13,9 @@ Delete navigation property itemActivityStats for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,8 @@ Remove-MgDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete navigation property itemActivityStats for drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -199,5 +204,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+
 [Remove-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 

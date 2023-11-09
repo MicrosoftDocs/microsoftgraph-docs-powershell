@@ -39,8 +39,6 @@ Get-MgGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 Get a conversationMember from a channel.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -308,4 +306,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelMember?view=graph-powershell-beta)

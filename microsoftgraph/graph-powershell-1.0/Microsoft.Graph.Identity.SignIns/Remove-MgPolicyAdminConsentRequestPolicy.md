@@ -23,6 +23,8 @@ Remove-MgPolicyAdminConsentRequestPolicy [-IfMatch <String>] [-PassThru] [-WhatI
 ## DESCRIPTION
 Delete navigation property adminConsentRequestPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -99,5 +101,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Remove-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
 

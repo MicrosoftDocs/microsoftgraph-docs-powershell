@@ -100,6 +100,8 @@ Get-MgGroupSiteTermStoreSetChildRelation -InputObject <ISitesIdentity> [-ExpandP
 ## DESCRIPTION
 To indicate which terms are related to the current term as either pinned or reused.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -433,5 +435,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetChildRelation?view=graph-powershell-beta)
 

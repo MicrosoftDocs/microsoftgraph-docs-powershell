@@ -50,6 +50,8 @@ Update-MgUserOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property sections in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -740,3 +742,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteSection?view=graph-powershell-beta)
 
+## RELATED LINKS

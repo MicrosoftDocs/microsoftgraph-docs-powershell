@@ -13,6 +13,9 @@ Invoke function getActivitiesByInterval
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootActivityByInterval?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootActivityByInterval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -44,6 +47,8 @@ Get-MgDriveRootActivityByInterval -InputObject <IFilesIdentity> [-Count] [-Filte
 
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -273,5 +278,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootActivityByInterval?view=graph-powershell-beta)
+
 [Get-MgBetaDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootActivityByInterval?view=graph-powershell-beta)
 

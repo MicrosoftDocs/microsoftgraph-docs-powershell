@@ -32,6 +32,8 @@ Get-MgGroupSiteApplicableContentTypeForList -InputObject <IGroupsIdentity> [-Cou
 ## DESCRIPTION
 Invoke function getApplicableContentTypesForList
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -256,5 +258,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteApplicableContentTypeForList?view=graph-powershell-beta)
 

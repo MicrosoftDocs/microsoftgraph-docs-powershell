@@ -65,6 +65,8 @@ New-MgSiteListContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IM
 Add a column to a content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 This API is available in the following [national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1159,3 +1161,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListContentTypeColumn?view=graph-powershell-beta)
 
+## RELATED LINKS

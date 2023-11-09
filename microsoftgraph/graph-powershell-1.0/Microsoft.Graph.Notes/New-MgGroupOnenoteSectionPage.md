@@ -50,6 +50,8 @@ New-MgGroupOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <IMic
 Create a new page in the specified section.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -658,3 +660,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaGroupOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteSectionPage?view=graph-powershell-beta)
 
+## RELATED LINKS

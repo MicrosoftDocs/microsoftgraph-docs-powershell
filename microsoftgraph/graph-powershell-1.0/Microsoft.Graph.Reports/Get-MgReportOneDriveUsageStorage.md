@@ -29,6 +29,8 @@ Get-MgReportOneDriveUsageStorage -InputObject <IReportsIdentity> -OutFile <Strin
 ## DESCRIPTION
 Invoke function getOneDriveUsageStorage
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportOneDriveUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageStorage?view=graph-powershell-beta)
 

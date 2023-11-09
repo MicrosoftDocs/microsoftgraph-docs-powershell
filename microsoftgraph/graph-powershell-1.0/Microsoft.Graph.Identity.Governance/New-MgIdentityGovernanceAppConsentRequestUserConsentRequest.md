@@ -448,3 +448,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-beta)
+
+
+## RELATED LINKS

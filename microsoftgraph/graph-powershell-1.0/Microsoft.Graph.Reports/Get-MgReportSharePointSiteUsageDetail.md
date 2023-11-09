@@ -40,6 +40,8 @@ Get-MgReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
@@ -159,5 +161,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSharePointSiteUsageDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageDetail?view=graph-powershell-beta)
 

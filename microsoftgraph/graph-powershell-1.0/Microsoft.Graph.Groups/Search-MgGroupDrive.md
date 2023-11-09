@@ -31,6 +31,8 @@ Search-MgGroupDrive -InputObject <IGroupsIdentity> [-Count] [-Filter <String>] [
 ## DESCRIPTION
 Invoke function search
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -255,5 +257,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Search-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDrive?view=graph-powershell-beta)
 

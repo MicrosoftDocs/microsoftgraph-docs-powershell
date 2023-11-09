@@ -37,6 +37,8 @@ Get-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Get scopedRoleMemberOf from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -280,5 +282,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaUserScopedRoleMemberOf?view=graph-powershell-beta)
 

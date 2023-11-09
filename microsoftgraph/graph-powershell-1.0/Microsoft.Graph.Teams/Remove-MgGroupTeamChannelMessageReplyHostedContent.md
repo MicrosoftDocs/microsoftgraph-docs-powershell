@@ -31,6 +31,8 @@ Remove-MgGroupTeamChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Delete navigation property hostedContents for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -238,5 +240,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 

@@ -30,6 +30,8 @@ Remove-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property secureScoreControlProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
 

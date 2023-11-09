@@ -30,6 +30,8 @@ Remove-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property associatedTeams for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AssociatedTeamInfoId
@@ -192,5 +194,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
 

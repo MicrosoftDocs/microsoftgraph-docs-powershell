@@ -30,6 +30,8 @@ Remove-MgRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property riskyServicePrincipals for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -200,5 +202,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 

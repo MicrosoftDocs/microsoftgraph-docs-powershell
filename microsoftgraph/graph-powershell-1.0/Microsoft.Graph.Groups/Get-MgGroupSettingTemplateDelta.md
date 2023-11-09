@@ -20,6 +20,8 @@ Get-MgGroupSettingTemplateDelta [-Filter <String>] [-Property <String[]>] [-Sear
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -171,4 +173,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-

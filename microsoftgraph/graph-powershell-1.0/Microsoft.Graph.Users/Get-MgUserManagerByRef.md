@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
+ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanagerbyref
 schema: 2.0.0
 ms.prod: users
@@ -32,8 +33,6 @@ Get-MgUserManagerByRef -InputObject <IUsersIdentity> [<CommonParameters>]
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 This API is supported in the following national cloud deployments.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -102,4 +101,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManagerByRef?view=graph-powershell-beta)

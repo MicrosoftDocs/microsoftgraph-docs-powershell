@@ -44,6 +44,8 @@ Remove-MgGroupSite -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Unfollow a user's site or multiple sites.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -5967,3 +5969,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Remove-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSite?view=graph-powershell-beta)
 
+## RELATED LINKS

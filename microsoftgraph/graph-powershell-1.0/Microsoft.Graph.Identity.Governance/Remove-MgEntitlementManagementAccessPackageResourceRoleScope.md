@@ -33,6 +33,8 @@ Remove-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIden
 Remove a accessPackageResourceRoleScope from an accessPackage list of resource role scopes.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -231,5 +233,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Remove-MgBetaEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-beta)
 

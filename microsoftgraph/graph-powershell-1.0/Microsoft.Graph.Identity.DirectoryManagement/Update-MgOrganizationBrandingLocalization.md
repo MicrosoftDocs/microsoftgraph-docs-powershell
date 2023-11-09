@@ -777,4 +777,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[HideTermsOfUse <Boolean?>]`: Option to hide the 'Terms of Use' hyperlink in the footer.
 
 ## RELATED LINKS
+
 [Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)

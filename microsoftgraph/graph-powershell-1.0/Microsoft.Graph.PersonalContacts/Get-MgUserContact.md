@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact
 schema: 2.0.0
 ms.prod: outlook
@@ -263,6 +264,7 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact)

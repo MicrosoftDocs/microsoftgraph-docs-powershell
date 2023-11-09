@@ -43,8 +43,6 @@ This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -297,4 +295,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannel?view=graph-powershell-beta)

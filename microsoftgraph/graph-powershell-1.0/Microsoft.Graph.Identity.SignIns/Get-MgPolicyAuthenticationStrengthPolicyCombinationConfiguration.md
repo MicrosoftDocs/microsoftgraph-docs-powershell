@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
+ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationstrengthpolicycombinationconfiguration
 schema: 2.0.0
 ms.prod: identity-and-sign-in
@@ -41,6 +42,8 @@ Get-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <I
 ## DESCRIPTION
 Read the properties and relationships of an authenticationCombinationConfiguration object.
 This API is supported in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -317,5 +320,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
 

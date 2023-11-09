@@ -29,6 +29,8 @@ Get-MgReportSharePointSiteUsageFileCount -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Invoke function getSharePointSiteUsageFileCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSharePointSiteUsageFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageFileCount?view=graph-powershell-beta)
 

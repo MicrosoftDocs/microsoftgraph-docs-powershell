@@ -44,6 +44,8 @@ Update-MgUserTeamwork -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property teamwork in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -6175,3 +6177,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserTeamwork?view=graph-powershell-beta)
 
+## RELATED LINKS

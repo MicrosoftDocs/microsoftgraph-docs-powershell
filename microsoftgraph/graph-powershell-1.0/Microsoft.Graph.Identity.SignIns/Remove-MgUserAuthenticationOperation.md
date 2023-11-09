@@ -30,6 +30,8 @@ Remove-MgUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity> [-I
 ## DESCRIPTION
 Delete navigation property operations for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -215,5 +217,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
 

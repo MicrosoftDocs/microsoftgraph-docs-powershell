@@ -37,6 +37,8 @@ Get-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecurityI
 ## DESCRIPTION
 Get details from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -308,5 +310,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
 

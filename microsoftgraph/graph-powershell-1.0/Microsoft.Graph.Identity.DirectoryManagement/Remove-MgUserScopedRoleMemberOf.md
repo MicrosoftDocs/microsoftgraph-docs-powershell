@@ -30,6 +30,8 @@ Remove-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Delete navigation property scopedRoleMemberOf for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -183,5 +185,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaUserScopedRoleMemberOf?view=graph-powershell-beta)
 

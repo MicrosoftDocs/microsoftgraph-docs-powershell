@@ -560,3 +560,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
+
+
+## RELATED LINKS

@@ -28,6 +28,8 @@ Confirm-MgGroupGrantedPermissionForApp -InputObject <IGroupsIdentity> [-WhatIf] 
 ## DESCRIPTION
 Invoke action checkGrantedPermissionsForApp
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -148,5 +150,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Confirm-MgBetaGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupGrantedPermissionForApp?view=graph-powershell-beta)
 

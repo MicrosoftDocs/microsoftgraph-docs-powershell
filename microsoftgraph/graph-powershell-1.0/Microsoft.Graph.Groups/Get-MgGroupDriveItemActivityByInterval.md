@@ -47,6 +47,8 @@ Get-MgGroupDriveItemActivityByInterval -InputObject <IGroupsIdentity> [-Count] [
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -316,5 +318,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveItemActivityByInterval?view=graph-powershell-beta)
 

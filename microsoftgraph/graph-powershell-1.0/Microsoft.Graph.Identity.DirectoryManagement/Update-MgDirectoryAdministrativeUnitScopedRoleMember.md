@@ -46,6 +46,8 @@ Update-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDire
 ## DESCRIPTION
 Update the navigation property scopedRoleMembers in directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -290,5 +292,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+
 [Update-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
 

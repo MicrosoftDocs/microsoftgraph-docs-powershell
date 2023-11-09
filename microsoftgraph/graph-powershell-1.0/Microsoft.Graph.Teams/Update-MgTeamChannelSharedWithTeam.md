@@ -45,6 +45,8 @@ Update-MgTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property sharedWithTeams in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -6077,3 +6079,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamChannelSharedWithTeam?view=graph-powershell-beta)
 
+## RELATED LINKS

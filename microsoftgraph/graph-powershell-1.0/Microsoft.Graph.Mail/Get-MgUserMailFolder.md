@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassificationoverridecount
 schema: 2.0.0
 ms.prod: outlook
@@ -134,4 +135,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolder?view=graph-powershell-beta)

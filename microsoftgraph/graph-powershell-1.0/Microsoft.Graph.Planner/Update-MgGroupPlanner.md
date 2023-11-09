@@ -42,6 +42,8 @@ Update-MgGroupPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property planner in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -431,3 +433,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaGroupPlanner?view=graph-powershell-beta)
 
+## RELATED LINKS

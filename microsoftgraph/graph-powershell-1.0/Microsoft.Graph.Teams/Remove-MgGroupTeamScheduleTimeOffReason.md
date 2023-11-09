@@ -38,8 +38,6 @@ This method doesn't remove the specified timeOffReason instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId
@@ -202,4 +200,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)

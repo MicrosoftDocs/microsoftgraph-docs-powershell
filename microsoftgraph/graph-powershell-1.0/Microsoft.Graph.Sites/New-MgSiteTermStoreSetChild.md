@@ -706,3 +706,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetChild?view=graph-powershell-beta)
+
+
+## RELATED LINKS

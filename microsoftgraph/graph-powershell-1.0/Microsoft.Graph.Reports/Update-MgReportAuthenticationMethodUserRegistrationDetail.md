@@ -52,6 +52,8 @@ Update-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReports
 ## DESCRIPTION
 Update the navigation property userRegistrationDetails in reports
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -469,5 +471,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Update-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 

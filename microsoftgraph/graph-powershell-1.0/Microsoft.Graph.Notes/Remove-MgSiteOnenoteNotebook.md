@@ -30,6 +30,8 @@ Remove-MgSiteOnenoteNotebook -InputObject <INotesIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property notebooks for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -169,5 +171,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaSiteOnenoteNotebook?view=graph-powershell-beta)
 

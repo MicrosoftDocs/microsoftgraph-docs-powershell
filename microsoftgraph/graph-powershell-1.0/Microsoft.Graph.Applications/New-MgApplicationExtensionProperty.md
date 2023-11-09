@@ -19,7 +19,7 @@ This API is supported in the following national cloud deployments.
 ### CreateExpanded (Default)
 ```
 New-MgApplicationExtensionProperty -ApplicationId <String> [-AdditionalProperties <Hashtable>]
- [-AppDisplayName <String>] [-DataType <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
+ [-AppDisplayName <String>] [-DataType <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued]
  [-IsSyncedFromOnPremises] [-Name <String>] [-TargetObjects <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -33,7 +33,7 @@ New-MgApplicationExtensionProperty -ApplicationId <String> -BodyParameter <IMicr
 ### CreateViaIdentityExpanded
 ```
 New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-AppDisplayName <String>] [-DataType <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
+ [-AppDisplayName <String>] [-DataType <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued]
  [-IsSyncedFromOnPremises] [-Name <String>] [-TargetObjects <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -197,6 +197,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsMultiValued
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

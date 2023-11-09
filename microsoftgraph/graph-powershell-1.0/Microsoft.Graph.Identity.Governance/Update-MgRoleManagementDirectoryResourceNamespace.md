@@ -44,6 +44,8 @@ Update-MgRoleManagementDirectoryResourceNamespace -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Update the navigation property resourceNamespaces in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -298,5 +300,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceScopeId <String>]`: 
 
 ## RELATED LINKS
+
 [Update-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
 

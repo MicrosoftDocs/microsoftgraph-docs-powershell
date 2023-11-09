@@ -30,6 +30,8 @@ Remove-MgIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentity
 ## DESCRIPTION
 Delete navigation property historyDefinitions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewHistoryDefinitionId
@@ -213,5 +215,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Remove-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 

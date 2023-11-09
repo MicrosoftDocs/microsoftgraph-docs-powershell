@@ -47,6 +47,8 @@ After a Windows 365 Frontline Cloud PC is powered on, it is allocated to a user,
 Only IT admin users can perform this action.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcId
@@ -200,4 +202,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

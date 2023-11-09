@@ -40,6 +40,8 @@ Get-MgReportEmailAppUsageUserDetail -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Invoke function getEmailAppUsageUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
@@ -159,5 +161,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportEmailAppUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageUserDetail?view=graph-powershell-beta)
 

@@ -49,6 +49,8 @@ Update-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property history in identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity
@@ -479,5 +481,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Update-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskyUserHistory?view=graph-powershell-beta)
 

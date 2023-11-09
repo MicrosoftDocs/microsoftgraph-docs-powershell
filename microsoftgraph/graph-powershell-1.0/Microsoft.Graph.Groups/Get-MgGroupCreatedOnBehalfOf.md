@@ -34,6 +34,8 @@ The user (or application) that created the group.
 NOTE: This is not set if the user is an administrator.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -153,5 +155,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCreatedOnBehalfOf?view=graph-powershell-beta)
 

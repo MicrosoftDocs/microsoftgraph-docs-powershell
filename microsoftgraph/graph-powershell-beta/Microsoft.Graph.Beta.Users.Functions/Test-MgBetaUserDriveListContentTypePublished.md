@@ -13,6 +13,9 @@ Invoke function isPublished
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Test-MgUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Users.Functions/Test-MgUserDriveListContentTypePublished?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Users.Functions/Test-MgUserDriveListContentTypePublished?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Is (Default)
@@ -28,6 +31,8 @@ Test-MgBetaUserDriveListContentTypePublished -InputObject <IUsersFunctionsIdenti
 
 ## DESCRIPTION
 Invoke function isPublished
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -150,5 +155,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Users.Functions/Test-MgUserDriveListContentTypePublished?view=graph-powershell-1.0)
+
 [Test-MgUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Users.Functions/Test-MgUserDriveListContentTypePublished?view=graph-powershell-1.0)
 

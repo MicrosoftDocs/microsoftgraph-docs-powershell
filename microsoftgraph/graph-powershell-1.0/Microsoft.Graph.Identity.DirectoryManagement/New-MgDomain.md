@@ -552,3 +552,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomain?view=graph-powershell-beta)
+
+
+## RELATED LINKS

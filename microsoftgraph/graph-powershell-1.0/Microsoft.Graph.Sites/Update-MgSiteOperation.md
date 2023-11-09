@@ -48,6 +48,8 @@ Update-MgSiteOperation -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property operations in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -417,5 +419,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteOperation?view=graph-powershell-beta)
 

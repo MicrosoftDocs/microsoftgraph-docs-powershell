@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupconversationthreadpostinreplyto
 schema: 2.0.0
 ms.prod: outlook
@@ -336,4 +337,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
+
 [Invoke-MgBetaForwardGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupEvent?view=graph-powershell-beta)

@@ -32,6 +32,8 @@ Get-MgTeamChannelTabTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 The application that is linked to the tab.
 This can't be changed after tab creation.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -178,5 +180,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamChannelTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelTabTeamApp?view=graph-powershell-beta)
 

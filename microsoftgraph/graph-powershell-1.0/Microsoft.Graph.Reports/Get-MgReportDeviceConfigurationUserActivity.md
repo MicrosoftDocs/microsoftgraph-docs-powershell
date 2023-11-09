@@ -22,6 +22,8 @@ Get-MgReportDeviceConfigurationUserActivity -OutFile <String> [-PassThru] [<Comm
 ## DESCRIPTION
 Metadata for the device configuration user activity report
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -OutFile
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaReportDeviceConfigurationUserActivity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDeviceConfigurationUserActivity?view=graph-powershell-beta)
 

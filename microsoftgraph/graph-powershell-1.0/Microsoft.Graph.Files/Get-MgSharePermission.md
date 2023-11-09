@@ -13,6 +13,9 @@ Used to access the permission representing the underlying sharing link
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaSharePermission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaSharePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -29,6 +32,8 @@ Get-MgSharePermission -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 Used to access the permission representing the underlying sharing link
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -138,5 +143,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaSharePermission?view=graph-powershell-beta)
+
 [Get-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaSharePermission?view=graph-powershell-beta)
 

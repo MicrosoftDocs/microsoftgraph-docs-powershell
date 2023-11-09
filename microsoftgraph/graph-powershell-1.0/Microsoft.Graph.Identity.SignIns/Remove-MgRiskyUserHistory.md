@@ -30,6 +30,8 @@ Remove-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property history for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -215,5 +217,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaRiskyUserHistory?view=graph-powershell-beta)
 

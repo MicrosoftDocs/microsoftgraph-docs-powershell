@@ -42,6 +42,8 @@ Set-MgGroupPhotoContent -InputObject <IGroupsIdentity> [-Data <Stream>] -InFile 
 ## DESCRIPTION
 Update media content for the navigation property photo in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Data
@@ -225,5 +227,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Set-MgBetaGroupPhotoContent](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupPhotoContent?view=graph-powershell-beta)
 
