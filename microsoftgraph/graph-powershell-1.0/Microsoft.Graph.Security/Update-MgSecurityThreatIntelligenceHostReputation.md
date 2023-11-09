@@ -45,6 +45,8 @@ Update-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Update the navigation property reputation in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -293,5 +295,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Severity <String>]`: hostReputationRuleSeverity
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostReputation?view=graph-powershell-beta)
 

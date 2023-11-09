@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: intune
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdownusermanageddeviceshut
 schema: 2.0.0
 ms.prod: intune
@@ -10,6 +11,9 @@ ms.prod: intune
 
 ## SYNOPSIS
 Shut down device
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDownUserManagedDeviceShut?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDownUserManagedDeviceShut?view=graph-powershell-beta)
@@ -30,6 +34,8 @@ Invoke-MgDownUserManagedDeviceShut -InputObject <IUsersActionsIdentity> [-PassTh
 
 ## DESCRIPTION
 Shut down device
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -175,5 +181,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDownUserManagedDeviceShut?view=graph-powershell-beta)
+
 [Invoke-MgBetaDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDownUserManagedDeviceShut?view=graph-powershell-beta)
 

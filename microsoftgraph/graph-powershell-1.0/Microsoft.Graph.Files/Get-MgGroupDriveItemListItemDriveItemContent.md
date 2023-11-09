@@ -13,6 +13,9 @@ The content stream, if the item represents a file.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemDriveItemContent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemDriveItemContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -29,6 +32,8 @@ Get-MgGroupDriveItemListItemDriveItemContent -InputObject <IFilesIdentity> -OutF
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -168,5 +173,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveItemListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemDriveItemContent?view=graph-powershell-beta)
+
 [Get-MgBetaGroupDriveItemListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemListItemDriveItemContent?view=graph-powershell-beta)
 

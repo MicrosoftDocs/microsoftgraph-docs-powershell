@@ -42,6 +42,8 @@ Update-MgGroupExtension -InputObject <IGroupsIdentity> -BodyParameter <Hashtable
 ## DESCRIPTION
 Update the navigation property extensions in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -224,5 +226,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupExtension?view=graph-powershell-beta)
 

@@ -34,6 +34,8 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope
 The directory object that is the scope of the role eligibility or assignment.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -186,5 +188,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope?view=graph-powershell-beta)
 

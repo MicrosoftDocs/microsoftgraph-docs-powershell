@@ -27,6 +27,8 @@ Get-MgDeviceRegisteredUserCountAsAppRoleAssignment -InputObject <IIdentityDirect
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -150,4 +152,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

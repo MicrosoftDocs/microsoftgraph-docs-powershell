@@ -32,6 +32,8 @@ Unpublish-MgGroupDriveListContentType -InputObject <IGroupsIdentity> [-PassThru]
 Unpublish a contentType][] from a content type hub site.
 This API is available in the following [national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -197,5 +199,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Unpublish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 

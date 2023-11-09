@@ -39,8 +39,6 @@ Get-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ExpandP
 Retrieve the properties and relationships of an offerShiftRequest object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -293,4 +291,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)

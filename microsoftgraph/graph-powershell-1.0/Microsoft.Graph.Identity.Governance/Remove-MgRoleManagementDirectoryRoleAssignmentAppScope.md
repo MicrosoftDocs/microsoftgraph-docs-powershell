@@ -30,6 +30,8 @@ Remove-MgRoleManagementDirectoryRoleAssignmentAppScope -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete navigation property appScope for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -213,5 +215,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Remove-MgBetaRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-beta)
 

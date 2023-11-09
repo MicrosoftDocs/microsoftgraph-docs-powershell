@@ -32,6 +32,8 @@ Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUse
 ## DESCRIPTION
 Invoke function filterByCurrentUser
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppConsentRequestId
@@ -274,5 +276,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser?view=graph-powershell-beta)
 

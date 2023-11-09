@@ -23,6 +23,8 @@ Get-MgAllTeamworkDeletedTeamMessage [-Count] [-Filter <String>] [-Model <String>
 ## DESCRIPTION
 Invoke function getAllMessages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -160,5 +162,6 @@ ALIASES
 Get-MgTeamworkDeletedTeamMessage
 
 ## RELATED LINKS
+
 [Get-MgBetaAllTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAllTeamworkDeletedTeamMessage?view=graph-powershell-beta)
 

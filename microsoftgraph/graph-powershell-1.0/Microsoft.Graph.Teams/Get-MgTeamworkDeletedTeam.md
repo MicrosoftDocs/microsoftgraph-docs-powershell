@@ -37,6 +37,8 @@ Get-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 The deleted team.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -274,5 +276,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
 

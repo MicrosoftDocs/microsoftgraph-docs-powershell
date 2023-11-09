@@ -255,4 +255,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: propertyType
 
 ## RELATED LINKS
+
 [Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)

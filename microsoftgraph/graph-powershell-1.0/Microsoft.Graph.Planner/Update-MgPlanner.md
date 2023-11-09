@@ -30,6 +30,8 @@ Update-MgPlanner -BodyParameter <IMicrosoftGraphPlanner> [-WhatIf] [-Confirm] [<
 ## DESCRIPTION
 Update planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -520,3 +522,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlanner?view=graph-powershell-beta)
 
+## RELATED LINKS

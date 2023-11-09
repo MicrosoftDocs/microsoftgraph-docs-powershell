@@ -49,6 +49,8 @@ To remove a resource from a catalog, set the requestType to be adminRemove, and 
 The resource object can be retrieved using list resources.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -6309,3 +6311,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -13,6 +13,9 @@ Get serviceProvisioningErrors property value
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -24,6 +27,8 @@ Get-MgUserDriveItemCreatedByUserServiceProvisioningError -DriveId <String> -Driv
 
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -236,5 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 [Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 

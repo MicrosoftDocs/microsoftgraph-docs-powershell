@@ -46,6 +46,8 @@ Update-MgGroupOnenotePageContent -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action onenotePatchContent
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -258,5 +260,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupOnenotePageContent?view=graph-powershell-beta)
 

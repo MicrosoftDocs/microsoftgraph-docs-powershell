@@ -43,6 +43,8 @@ New-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage -InputObjec
 ## DESCRIPTION
 Create new navigation property to stages for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -377,4 +379,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
-

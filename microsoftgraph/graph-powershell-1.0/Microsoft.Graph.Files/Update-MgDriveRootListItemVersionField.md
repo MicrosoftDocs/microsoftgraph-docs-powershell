@@ -13,6 +13,9 @@ Update the navigation property fields in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemVersionField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -41,6 +44,8 @@ Update-MgDriveRootListItemVersionField -InputObject <IFilesIdentity> -BodyParame
 
 ## DESCRIPTION
 Update the navigation property fields in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -213,5 +218,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemVersionField?view=graph-powershell-beta)
+
 [Update-MgBetaDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemVersionField?view=graph-powershell-beta)
 

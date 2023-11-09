@@ -34,6 +34,8 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule
 The schedule for a role eligibility that is referenced through the targetScheduleId property.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -186,5 +188,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule?view=graph-powershell-beta)
 

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckindriveitem
 schema: 2.0.0
 ms.prod: sharepoint
@@ -11,6 +12,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckinDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckinDriveItem?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaCheckinDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckinDriveItem?view=graph-powershell-beta)
@@ -286,4 +290,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaCheckinDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckinDriveItem?view=graph-powershell-beta)
+
 [Invoke-MgBetaCheckinDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckinDriveItem?view=graph-powershell-beta)

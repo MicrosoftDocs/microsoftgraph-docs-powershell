@@ -30,6 +30,8 @@ Set-MgSecurityAlert -InputObject <ISecurityIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Sets a new value for the collection of alertComment.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AlertId
@@ -203,5 +205,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Set-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Set-MgBetaSecurityAlert?view=graph-powershell-beta)
 

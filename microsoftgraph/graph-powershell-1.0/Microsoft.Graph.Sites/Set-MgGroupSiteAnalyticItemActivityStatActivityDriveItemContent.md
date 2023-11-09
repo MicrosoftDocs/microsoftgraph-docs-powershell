@@ -31,6 +31,8 @@ Set-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject <IS
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Data
@@ -232,5 +234,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent?view=graph-powershell-beta)
 

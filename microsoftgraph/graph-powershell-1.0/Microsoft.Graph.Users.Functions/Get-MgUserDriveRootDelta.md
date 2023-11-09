@@ -13,6 +13,9 @@ Invoke function delta
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootDelta?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -43,6 +46,8 @@ Get-MgUserDriveRootDelta -InputObject <IUsersFunctionsIdentity> [-Filter <String
 
 ## DESCRIPTION
 Invoke function delta
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -305,5 +310,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveRootDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootDelta?view=graph-powershell-beta)
+
 [Get-MgBetaUserDriveRootDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootDelta?view=graph-powershell-beta)
 

@@ -22,6 +22,8 @@ Get-MgPlannerPlanCount [-Filter <String>] [-Search <String>] [<CommonParameters>
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaPlannerPlanCount](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanCount?view=graph-powershell-beta)
 

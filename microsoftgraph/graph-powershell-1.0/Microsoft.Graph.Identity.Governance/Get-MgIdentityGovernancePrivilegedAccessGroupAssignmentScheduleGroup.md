@@ -33,6 +33,8 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup -InputObjec
 References the group that is the scope of the membership or ownership assignment through PIM for groups.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -185,5 +187,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup?view=graph-powershell-beta)
 

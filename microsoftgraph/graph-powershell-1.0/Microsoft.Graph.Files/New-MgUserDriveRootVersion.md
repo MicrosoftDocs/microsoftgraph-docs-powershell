@@ -13,6 +13,9 @@ Create new navigation property to versions for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -45,6 +48,8 @@ New-MgUserDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create new navigation property to versions for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -338,5 +343,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
+
 [New-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
 

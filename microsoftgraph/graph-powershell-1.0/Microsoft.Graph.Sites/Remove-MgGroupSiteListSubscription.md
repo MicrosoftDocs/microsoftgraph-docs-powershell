@@ -30,6 +30,8 @@ Remove-MgGroupSiteListSubscription -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property subscriptions for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -228,5 +230,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListSubscription?view=graph-powershell-beta)
 

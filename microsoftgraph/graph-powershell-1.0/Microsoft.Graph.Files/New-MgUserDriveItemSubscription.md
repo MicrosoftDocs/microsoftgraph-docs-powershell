@@ -13,6 +13,9 @@ Create new navigation property to subscriptions for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -49,6 +52,8 @@ New-MgUserDriveItemSubscription -InputObject <IFilesIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Create new navigation property to subscriptions for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -511,5 +516,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemSubscription?view=graph-powershell-beta)
+
 [New-MgBetaUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemSubscription?view=graph-powershell-beta)
 

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: intune
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mglogoutusermanageddevicesharedappledeviceactiveuser
 schema: 2.0.0
 ms.prod: intune
@@ -10,6 +11,9 @@ ms.prod: intune
 
 ## SYNOPSIS
 Logout shared Apple device active user
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
@@ -30,6 +34,8 @@ Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser -InputObject <IUsers
 
 ## DESCRIPTION
 Logout shared Apple device active user
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -175,5 +181,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
+
 [Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaLogoutUserManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
 

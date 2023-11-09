@@ -30,6 +30,8 @@ Get-MgReportOffice365GroupActivityGroupCount -InputObject <IReportsIdentity> -Ou
 ## DESCRIPTION
 Invoke function getOffice365GroupsActivityGroupCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -134,5 +136,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportOffice365GroupActivityGroupCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityGroupCount?view=graph-powershell-beta)
 

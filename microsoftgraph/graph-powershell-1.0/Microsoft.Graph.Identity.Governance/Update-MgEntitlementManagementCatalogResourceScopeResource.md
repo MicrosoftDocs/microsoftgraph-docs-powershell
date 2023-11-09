@@ -81,6 +81,8 @@ Update-MgEntitlementManagementCatalogResourceScopeResource -InputObject <IIdenti
 ## DESCRIPTION
 Update the navigation property resource in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -605,3 +607,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -48,6 +48,8 @@ New-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <IIdent
 ## DESCRIPTION
 Create new navigation property to localizations for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -426,3 +428,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -78,6 +78,8 @@ Update-MgGroupSiteTermStoreSetParentGroupSetTermRelation -InputObject <ISitesIde
 ## DESCRIPTION
 Update the navigation property relations in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -583,3 +585,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermRelation?view=graph-powershell-beta)
 
+## RELATED LINKS

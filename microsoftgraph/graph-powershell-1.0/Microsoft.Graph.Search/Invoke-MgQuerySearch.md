@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
+ms.prod: search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch
 schema: 2.0.0
 ms.prod: search
@@ -286,3 +287,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
+
+
+## RELATED LINKS

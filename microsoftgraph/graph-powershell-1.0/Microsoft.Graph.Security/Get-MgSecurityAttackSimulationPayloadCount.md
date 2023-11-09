@@ -22,6 +22,8 @@ Get-MgSecurityAttackSimulationPayloadCount [-Filter <String>] [-Search <String>]
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityAttackSimulationPayloadCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationPayloadCount?view=graph-powershell-beta)
 

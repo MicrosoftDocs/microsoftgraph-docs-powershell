@@ -42,6 +42,8 @@ New-MgDirectoryAdministrativeUnitExtension -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Create new navigation property to extensions for directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -197,5 +199,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnitExtension?view=graph-powershell-beta)
 

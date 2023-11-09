@@ -30,6 +30,8 @@ Get-MgGroupSiteOnenoteResourceContent -InputObject <ISitesIdentity> -OutFile <St
 ## DESCRIPTION
 The content stream
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -182,5 +184,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteResourceContent?view=graph-powershell-beta)
 

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
+ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationheaderlogo
 schema: 2.0.0
 ms.prod: identity-and-sign-in
@@ -34,6 +35,8 @@ Get-MgOrganizationBrandingLocalizationHeaderLogo -InputObject <IIdentityDirector
 A company logo that appears in the header of the sign-in page.
 The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -157,5 +160,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaOrganizationBrandingLocalizationHeaderLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationHeaderLogo?view=graph-powershell-beta)
 

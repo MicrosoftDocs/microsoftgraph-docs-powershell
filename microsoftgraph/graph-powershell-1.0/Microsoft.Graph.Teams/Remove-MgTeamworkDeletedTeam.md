@@ -30,6 +30,8 @@ Remove-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property deletedTeams for teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeletedTeamId
@@ -177,5 +179,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
 

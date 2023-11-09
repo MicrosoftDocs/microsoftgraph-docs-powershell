@@ -27,6 +27,8 @@ Remove-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete navigation property questions for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -225,4 +227,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

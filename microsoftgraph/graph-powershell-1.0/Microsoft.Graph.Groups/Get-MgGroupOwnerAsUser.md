@@ -37,6 +37,8 @@ Get-MgGroupOwnerAsUser -InputObject <IGroupsIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -308,5 +310,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupOwnerAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerAsUser?view=graph-powershell-beta)
 

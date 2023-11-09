@@ -27,6 +27,8 @@ Invoke-MgBetaPendingUserApp -InputObject <IUsersFunctionsIdentity> [-Count] [-Fi
 ## DESCRIPTION
 Retrieves the list of devices with failed or pending apps
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -193,4 +195,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

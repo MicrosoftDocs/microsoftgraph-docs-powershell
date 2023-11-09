@@ -39,6 +39,8 @@ Get-MgGroupMemberWithLicenseError -InputObject <IGroupsIdentity> [-ExpandPropert
 A list of group members with license errors from this group-based license assignment.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -310,5 +312,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupMemberWithLicenseError](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberWithLicenseError?view=graph-powershell-beta)
 

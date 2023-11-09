@@ -52,6 +52,8 @@ Update-MgIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentity
 ## DESCRIPTION
 Update the navigation property historyDefinitions in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewHistoryDefinitionId
@@ -508,3 +510,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 
+## RELATED LINKS

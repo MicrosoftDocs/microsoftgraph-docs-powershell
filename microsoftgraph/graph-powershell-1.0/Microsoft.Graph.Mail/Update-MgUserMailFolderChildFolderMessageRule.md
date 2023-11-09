@@ -51,6 +51,8 @@ Update-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 Change writable properties on a messageRule object and save the changes.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Actions
@@ -526,3 +528,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 
+## RELATED LINKS

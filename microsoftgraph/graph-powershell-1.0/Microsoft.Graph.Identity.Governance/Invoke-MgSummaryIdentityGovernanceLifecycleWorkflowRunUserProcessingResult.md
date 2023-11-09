@@ -30,6 +30,8 @@ Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult
 ## DESCRIPTION
 Invoke function summary
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EndDateTime
@@ -197,5 +199,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowRunUserProcessingResult?view=graph-powershell-beta)
 

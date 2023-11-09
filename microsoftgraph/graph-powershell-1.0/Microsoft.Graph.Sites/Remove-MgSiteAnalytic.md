@@ -30,6 +30,8 @@ Remove-MgSiteAnalytic -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassTh
 ## DESCRIPTION
 Delete navigation property analytics for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -183,5 +185,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteAnalytic?view=graph-powershell-beta)
 

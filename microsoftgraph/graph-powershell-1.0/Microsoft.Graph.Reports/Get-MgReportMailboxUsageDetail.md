@@ -29,6 +29,8 @@ Get-MgReportMailboxUsageDetail -InputObject <IReportsIdentity> -OutFile <String>
 ## DESCRIPTION
 Invoke function getMailboxUsageDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportMailboxUsageDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageDetail?view=graph-powershell-beta)
 

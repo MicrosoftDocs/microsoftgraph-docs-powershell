@@ -50,6 +50,8 @@ New-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom
 ## DESCRIPTION
 Create new navigation property to inheritsPermissionsFrom for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -448,3 +450,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
 
+## RELATED LINKS

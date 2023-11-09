@@ -48,6 +48,8 @@ New-MgSiteListOperation -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to operations for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -417,5 +419,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [New-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListOperation?view=graph-powershell-beta)
 

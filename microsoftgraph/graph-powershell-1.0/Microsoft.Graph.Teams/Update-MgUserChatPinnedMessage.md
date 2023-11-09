@@ -43,6 +43,8 @@ Update-MgUserChatPinnedMessage -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property pinnedMessages in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -432,3 +434,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
 
+## RELATED LINKS

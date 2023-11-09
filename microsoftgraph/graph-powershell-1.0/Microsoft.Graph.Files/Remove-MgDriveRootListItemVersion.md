@@ -13,6 +13,9 @@ Delete navigation property versions for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,8 @@ Remove-MgDriveRootListItemVersion -InputObject <IFilesIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete navigation property versions for drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -184,5 +189,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
+
 [Remove-MgBetaDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootListItemVersion?view=graph-powershell-beta)
 

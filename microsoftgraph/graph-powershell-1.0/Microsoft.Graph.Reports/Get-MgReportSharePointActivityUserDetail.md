@@ -40,6 +40,8 @@ Get-MgReportSharePointActivityUserDetail -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Invoke function getSharePointActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
@@ -159,5 +161,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSharePointActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityUserDetail?view=graph-powershell-beta)
 

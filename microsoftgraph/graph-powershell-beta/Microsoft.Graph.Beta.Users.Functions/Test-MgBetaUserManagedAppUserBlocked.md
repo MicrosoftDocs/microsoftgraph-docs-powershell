@@ -25,6 +25,8 @@ Test-MgBetaUserManagedAppUserBlocked -InputObject <IUsersFunctionsIdentity> [<Co
 ## DESCRIPTION
 Gets the blocked state of a managed app user.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -116,4 +118,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

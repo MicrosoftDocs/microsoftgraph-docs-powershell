@@ -13,6 +13,9 @@ Create new navigation property to columnLinks for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumnLink?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -41,6 +44,8 @@ New-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity> -BodyParamete
 
 ## DESCRIPTION
 Create new navigation property to columnLinks for drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -234,5 +239,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumnLink?view=graph-powershell-beta)
+
 [New-MgBetaDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListContentTypeColumnLink?view=graph-powershell-beta)
 

@@ -27,6 +27,8 @@ Get-MgEntitlementManagementCatalogCustomWorkflowExtensionCount -InputObject <IId
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -179,4 +181,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

@@ -23,6 +23,8 @@ Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItem [-IfMatch <String>] [-Pa
 ## DESCRIPTION
 Delete navigation property deletedItems for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -99,5 +101,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem?view=graph-powershell-beta)
 

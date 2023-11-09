@@ -30,6 +30,8 @@ Get-MgGroupSiteContentTypeColumnSourceColumn -InputObject <ISitesIdentity> [-Exp
 ## DESCRIPTION
 The source column for the content type column.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -197,5 +199,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteContentTypeColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteContentTypeColumnSourceColumn?view=graph-powershell-beta)
 

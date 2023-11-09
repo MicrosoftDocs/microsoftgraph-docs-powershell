@@ -13,6 +13,9 @@ Create new navigation property to permissions for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -53,6 +56,8 @@ New-MgGroupDriveRootPermission -InputObject <IFilesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Create new navigation property to permissions for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -563,7 +568,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
+[New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
+[New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 
+## RELATED LINKS
+[New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)

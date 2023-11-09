@@ -30,6 +30,8 @@ Remove-MgTeamOperation -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassT
 ## DESCRIPTION
 Delete navigation property operations for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -192,5 +194,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamOperation?view=graph-powershell-beta)
 

@@ -22,6 +22,8 @@ Remove-MgAdminSharepoint [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<
 ## DESCRIPTION
 Delete navigation property sharepoint for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -98,5 +100,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Remove-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaAdminSharepoint?view=graph-powershell-beta)
 

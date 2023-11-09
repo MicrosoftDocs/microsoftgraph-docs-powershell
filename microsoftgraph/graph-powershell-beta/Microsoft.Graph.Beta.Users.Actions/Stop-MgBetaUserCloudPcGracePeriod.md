@@ -35,6 +35,8 @@ It allows users to access Cloud PCs for up to seven days before deprovisioning o
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CloudPcId
@@ -188,4 +190,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -30,6 +30,8 @@ Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount -InputObject <IReportsI
 ## DESCRIPTION
 Invoke function getSkypeForBusinessOrganizerActivityMinuteCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -134,5 +136,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSkypeForBusinessOrganizerActivityMinuteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessOrganizerActivityMinuteCount?view=graph-powershell-beta)
 

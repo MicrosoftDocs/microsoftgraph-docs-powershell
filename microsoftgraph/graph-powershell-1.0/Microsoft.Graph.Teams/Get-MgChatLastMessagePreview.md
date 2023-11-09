@@ -34,6 +34,8 @@ Preview of the last message sent in the chat.
 Null if no messages have been sent in the chat.
 Currently, only the list chats operation supports this property.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -150,5 +152,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatLastMessagePreview?view=graph-powershell-beta)
 

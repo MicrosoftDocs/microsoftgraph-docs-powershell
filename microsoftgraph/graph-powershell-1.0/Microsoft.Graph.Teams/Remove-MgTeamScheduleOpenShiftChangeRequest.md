@@ -30,6 +30,8 @@ Remove-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property openShiftChangeRequests for teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -192,5 +194,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleOpenShiftChangeRequest?view=graph-powershell-beta)
 

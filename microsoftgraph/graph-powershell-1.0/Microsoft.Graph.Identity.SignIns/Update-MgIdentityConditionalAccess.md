@@ -33,6 +33,8 @@ Update-MgIdentityConditionalAccess -BodyParameter <IMicrosoftGraphConditionalAcc
 ## DESCRIPTION
 Update the navigation property conditionalAccess in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -576,3 +578,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
 
+## RELATED LINKS

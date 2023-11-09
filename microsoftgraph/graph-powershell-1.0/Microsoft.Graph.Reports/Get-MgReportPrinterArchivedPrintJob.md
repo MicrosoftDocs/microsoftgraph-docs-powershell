@@ -30,6 +30,8 @@ Get-MgReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-F
 ## DESCRIPTION
 Invoke function getPrinterArchivedPrintJobs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -209,5 +211,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportPrinterArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPrinterArchivedPrintJob?view=graph-powershell-beta)
 

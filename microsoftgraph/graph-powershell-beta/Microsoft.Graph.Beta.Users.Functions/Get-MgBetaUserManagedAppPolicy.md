@@ -13,6 +13,9 @@ Gets app restrictions for a given user.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppPolicy?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -30,6 +33,8 @@ Get-MgBetaUserManagedAppPolicy -InputObject <IUsersFunctionsIdentity> [-Count] [
 
 ## DESCRIPTION
 Gets app restrictions for a given user.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -227,5 +232,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppPolicy?view=graph-powershell-1.0)
+
 [Get-MgUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppPolicy?view=graph-powershell-1.0)
 

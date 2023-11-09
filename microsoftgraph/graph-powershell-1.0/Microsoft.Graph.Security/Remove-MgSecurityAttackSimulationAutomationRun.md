@@ -30,6 +30,8 @@ Remove-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property runs for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -211,5 +213,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)
 

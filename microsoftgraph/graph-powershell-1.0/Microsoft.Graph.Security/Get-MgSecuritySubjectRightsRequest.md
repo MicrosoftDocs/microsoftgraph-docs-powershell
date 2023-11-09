@@ -37,6 +37,8 @@ Get-MgSecuritySubjectRightsRequest -InputObject <ISecurityIdentity> [-ExpandProp
 ## DESCRIPTION
 Get subjectRightsRequests from security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -293,5 +295,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecuritySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequest?view=graph-powershell-beta)
 

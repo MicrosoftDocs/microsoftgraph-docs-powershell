@@ -38,8 +38,6 @@ Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember -InputObject <ITeamsIdentity
 ## DESCRIPTION
 A collection of team members who have access to the shared channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -307,4 +305,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamPrimaryChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelSharedWithTeamAllowedMember?view=graph-powershell-beta)

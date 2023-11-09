@@ -14,6 +14,9 @@ Only supported on the root of a drive.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -38,6 +41,8 @@ Get-MgGroupDriveItemSubscription -InputObject <IFilesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 The set of subscriptions on the item.
 Only supported on the root of a drive.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -313,5 +318,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
+
 [Get-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
 

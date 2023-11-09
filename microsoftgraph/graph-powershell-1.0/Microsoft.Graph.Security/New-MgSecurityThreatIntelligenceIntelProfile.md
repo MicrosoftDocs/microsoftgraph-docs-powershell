@@ -34,6 +34,8 @@ New-MgSecurityThreatIntelligenceIntelProfile -BodyParameter <IMicrosoftGraphSecu
 ## DESCRIPTION
 Create new navigation property to intelProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -344,5 +346,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceIntelProfile?view=graph-powershell-beta)
 

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyusermessage
 schema: 2.0.0
 ms.prod: outlook
@@ -16,6 +17,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to a message, and send it later.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-1.0)
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-1.0)
@@ -468,6 +472,12 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-1.0)
+[Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-1.0)
+
+## RELATED LINKS
+[Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-1.0)
+[Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-1.0)
+
 
 ## RELATED LINKS
 [Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-1.0)

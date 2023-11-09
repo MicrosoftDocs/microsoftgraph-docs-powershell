@@ -43,6 +43,8 @@ Update-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Update entity in groupSettingTemplates
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -292,4 +294,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the setting.
 
 ## RELATED LINKS
-

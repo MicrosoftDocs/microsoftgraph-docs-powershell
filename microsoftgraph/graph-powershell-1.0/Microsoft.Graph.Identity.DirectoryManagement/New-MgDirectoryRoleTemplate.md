@@ -30,11 +30,6 @@ New-MgDirectoryRoleTemplate -BodyParameter <IMicrosoftGraphDirectoryRoleTemplate
 ## DESCRIPTION
 Add new entity to directoryRoleTemplates
 
-## EXAMPLES
-
-
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -189,4 +184,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display name to set for the directory role. Read-only.
 
 ## RELATED LINKS
+
 [New-MgBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)

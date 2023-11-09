@@ -13,6 +13,9 @@ Invoke action assignSensitivityLabel
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveRootSensitivityLabel?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveRootSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -45,6 +48,8 @@ Set-MgDriveRootSensitivityLabel -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -253,5 +258,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveRootSensitivityLabel?view=graph-powershell-beta)
+
 [Set-MgBetaDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveRootSensitivityLabel?view=graph-powershell-beta)
 

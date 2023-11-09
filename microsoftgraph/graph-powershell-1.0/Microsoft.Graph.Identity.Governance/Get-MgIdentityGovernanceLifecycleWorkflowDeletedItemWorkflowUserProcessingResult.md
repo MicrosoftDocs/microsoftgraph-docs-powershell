@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
+ms.prod: governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowdeleteditemworkflowuserprocessingresult
 schema: 2.0.0
 ms.prod: governance
@@ -39,6 +40,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult
 
 ## DESCRIPTION
 Per-user workflow execution results.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -328,5 +331,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult?view=graph-powershell-beta)
 

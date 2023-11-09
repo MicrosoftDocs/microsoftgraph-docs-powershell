@@ -42,6 +42,8 @@ Update-MgUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity> -BodyP
 ## DESCRIPTION
 Update the navigation property methods in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -244,5 +246,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Update-MgBetaUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationMethod?view=graph-powershell-beta)
 

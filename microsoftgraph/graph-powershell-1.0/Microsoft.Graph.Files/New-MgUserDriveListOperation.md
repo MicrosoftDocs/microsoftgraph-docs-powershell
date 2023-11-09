@@ -13,6 +13,9 @@ Create new navigation property to operations for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListOperation?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -47,6 +50,8 @@ New-MgUserDriveListOperation -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Create new navigation property to operations for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -403,5 +408,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaUserDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListOperation?view=graph-powershell-beta)
+
 [New-MgBetaUserDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListOperation?view=graph-powershell-beta)
 

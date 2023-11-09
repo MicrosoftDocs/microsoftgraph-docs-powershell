@@ -30,6 +30,8 @@ Get-MgTeamworkDeletedTeamChannelCount -InputObject <ITeamsIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DeletedTeamId
@@ -146,5 +148,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamworkDeletedTeamChannelCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelCount?view=graph-powershell-beta)
 

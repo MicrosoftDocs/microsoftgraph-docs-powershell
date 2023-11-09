@@ -16,11 +16,12 @@ Update the navigation property userExperienceAnalyticsBatteryHealthDevicePerform
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  -UserExperienceAnalyticsBatteryHealthDevicePerformanceId <String> [-AdditionalProperties <Hashtable>]
- [-BatteryAgeInDays <Int32>] [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>]
- [-DeviceId <String>] [-DeviceName <String>] [-EstimatedRuntimeInMinutes <Int32>]
- [-FullBatteryDrainCount <Int32>] [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>]
- [-Manufacturer <String>] [-MaxCapacityPercentage <Int32>] [-Model <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-BatteryAgeInDays <Int32>]
+ [-DeviceBatteriesDetails <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail[]>]
+ [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceId <String>] [-DeviceName <String>]
+ [-EstimatedRuntimeInMinutes <Int32>] [-FullBatteryDrainCount <Int32>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
+ [-MaxCapacityPercentage <Int32>] [-Model <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,6 +36,7 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformanc
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-BatteryAgeInDays <Int32>]
+ [-DeviceBatteriesDetails <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail[]>]
  [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceId <String>] [-DeviceName <String>]
  [-EstimatedRuntimeInMinutes <Int32>] [-FullBatteryDrainCount <Int32>]
  [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
@@ -99,6 +101,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DeviceBatteriesDetails
+Properties (maxCapacity and cycleCount) related to all batteries of the device.
+To construct, see NOTES section for DEVICEBATTERIESDETAILS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

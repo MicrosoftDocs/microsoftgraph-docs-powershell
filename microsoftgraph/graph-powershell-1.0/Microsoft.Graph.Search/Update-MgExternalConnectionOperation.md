@@ -46,6 +46,8 @@ Update-MgExternalConnectionOperation -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the navigation property operations in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -267,5 +269,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+
 [Update-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 

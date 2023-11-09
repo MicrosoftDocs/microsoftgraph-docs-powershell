@@ -63,6 +63,8 @@ Update-MgSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property columns in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1157,3 +1159,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListColumn?view=graph-powershell-beta)
 
+## RELATED LINKS

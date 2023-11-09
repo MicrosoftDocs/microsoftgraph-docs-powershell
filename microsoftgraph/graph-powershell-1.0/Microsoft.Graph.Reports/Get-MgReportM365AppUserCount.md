@@ -28,6 +28,8 @@ Get-MgReportM365AppUserCount -InputObject <IReportsIdentity> -OutFile <String> [
 ## DESCRIPTION
 Invoke function getM365AppUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -132,5 +134,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportM365AppUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserCount?view=graph-powershell-beta)
 

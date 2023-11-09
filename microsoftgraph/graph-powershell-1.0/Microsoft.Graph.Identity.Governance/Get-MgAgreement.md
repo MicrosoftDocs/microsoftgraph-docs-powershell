@@ -34,6 +34,8 @@ Get-MgAgreement -InputObject <IIdentityGovernanceIdentity> [-Property <String[]>
 ## DESCRIPTION
 Get entity from agreements by key
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementId
@@ -232,5 +234,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreement?view=graph-powershell-beta)
 

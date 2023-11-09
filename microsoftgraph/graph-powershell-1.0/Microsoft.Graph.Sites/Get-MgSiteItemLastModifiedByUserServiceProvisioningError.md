@@ -24,6 +24,8 @@ Get-MgSiteItemLastModifiedByUserServiceProvisioningError -ListId <String> -ListI
 ## DESCRIPTION
 Get serviceProvisioningErrors property value
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -235,5 +237,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
 

@@ -59,6 +59,8 @@ Get-MgSiteTermStoreSetParentGroupSetTermChild -InputObject <ISitesIdentity> [-Ex
 ## DESCRIPTION
 Children of current term.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -377,5 +379,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteTermStoreSetParentGroupSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetTermChild?view=graph-powershell-beta)
 

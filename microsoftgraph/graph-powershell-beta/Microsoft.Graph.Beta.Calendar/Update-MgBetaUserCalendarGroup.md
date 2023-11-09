@@ -1,16 +1,14 @@
 ---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplace
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceworkspace
 schema: 2.0.0
 ---
 
-# Update-MgBetaPlace
+# Update-MgBetaPlaceWorkspace
 
 ## SYNOPSIS
-Update the properties of place object, which can be a room, workspace, or roomList.
-You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
-This API is available in the following national cloud deployments.
+Update the navigation property workspaces in places
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserCalendarGroup?view=graph-powershell-1.0)
@@ -19,36 +17,38 @@ This API is available in the following national cloud deployments.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaPlace -PlaceId <String> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-WhatIf] [-Confirm]
+Update-MgBetaPlaceWorkspace -PlaceId <String> -WorkspaceId <String> [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>] [-Capacity <Int32>] [-DisplayName <String>]
+ [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
+ [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaPlace -PlaceId <String> -BodyParameter <IMicrosoftGraphPlace> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaPlaceWorkspace -PlaceId <String> -WorkspaceId <String> -BodyParameter <IMicrosoftGraphWorkspace>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaPlace -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-WhatIf] [-Confirm]
+Update-MgBetaPlaceWorkspace -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>] [-Capacity <Int32>] [-DisplayName <String>]
+ [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
+ [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgBetaPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphPlace> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaPlaceWorkspace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphWorkspace>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the properties of place object, which can be a room, workspace, or roomList.
-You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
-This API is available in the following national cloud deployments.
+Update the navigation property workspaces in places
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -102,11 +102,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-place
+workspace
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlace
+Type: IMicrosoftGraphWorkspace
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -117,11 +117,86 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Building
+Specifies the building name or building number that the workspace is in.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Capacity
+Specifies the capacity of the workspace.
+
+```yaml
+Type: Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 The name associated with the place.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EmailAddress
+Email address of the workspace.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FloorLabel
+Specifies a descriptive label for the floor, for example, P.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FloorNumber
+Specifies the floor number that the workspace is on.
+
+```yaml
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -180,6 +255,51 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -IsWheelChairAccessible
+Specifies whether the workspace is wheelchair accessible.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Label
+Specifies a descriptive label for the workspace, for example, a number or name.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nickname
+Specifies a nickname for the workspace, for example, 'quiet workspace'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Phone
 The phone number of the place.
 
@@ -197,6 +317,36 @@ Accept wildcard characters: False
 
 ### -PlaceId
 The unique identifier of place
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tags
+Specifies additional features of the workspace, for example, details like the type of view or furniture type.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkspaceId
+The unique identifier of workspace
 
 ```yaml
 Type: String
@@ -247,10 +397,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlace
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWorkspace
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlace
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWorkspace
 ## NOTES
 
 ALIASES
@@ -270,9 +420,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-`BODYPARAMETER <IMicrosoftGraphPlace>`: place
+`BODYPARAMETER <IMicrosoftGraphWorkspace>`: workspace
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -291,6 +440,16 @@ To create the parameters described below, construct a hash table containing the 
     - `[Latitude <Double?>]`: The latitude of the location.
     - `[Longitude <Double?>]`: The longitude of the location.
   - `[Phone <String>]`: The phone number of the place.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Building <String>]`: Specifies the building name or building number that the workspace is in.
+  - `[Capacity <Int32?>]`: Specifies the capacity of the workspace.
+  - `[EmailAddress <String>]`: Email address of the workspace.
+  - `[FloorLabel <String>]`: Specifies a descriptive label for the floor, for example, P.
+  - `[FloorNumber <Int32?>]`: Specifies the floor number that the workspace is on.
+  - `[IsWheelChairAccessible <Boolean?>]`: Specifies whether the workspace is wheelchair accessible.
+  - `[Label <String>]`: Specifies a descriptive label for the workspace, for example, a number or name.
+  - `[Nickname <String>]`: Specifies a nickname for the workspace, for example, 'quiet workspace'.
+  - `[Tags <String[]>]`: Specifies additional features of the workspace, for example, details like the type of view or furniture type.
 
 `GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -311,7 +470,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlaceId <String>]`: The unique identifier of place
+  - `[RoomId <String>]`: The unique identifier of room
   - `[UserId <String>]`: The unique identifier of user
+  - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
 [Update-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserCalendarGroup?view=graph-powershell-1.0)

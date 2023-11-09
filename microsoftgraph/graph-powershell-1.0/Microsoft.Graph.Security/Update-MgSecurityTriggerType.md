@@ -30,6 +30,8 @@ Update-MgSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypes
 ## DESCRIPTION
 Update the navigation property triggerTypes in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -180,5 +182,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityTriggerType?view=graph-powershell-beta)
 

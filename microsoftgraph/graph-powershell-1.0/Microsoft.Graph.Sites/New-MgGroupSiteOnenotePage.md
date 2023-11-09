@@ -56,6 +56,8 @@ Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages opera
 If you're targeting other notebooks, you can create pages in a specified section.
  This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -693,3 +695,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
 
+## RELATED LINKS

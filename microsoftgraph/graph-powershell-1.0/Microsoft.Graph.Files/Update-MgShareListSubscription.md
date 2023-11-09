@@ -13,6 +13,9 @@ Update the navigation property subscriptions in shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListSubscription?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -49,6 +52,8 @@ Update-MgShareListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the navigation property subscriptions in shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -496,5 +501,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListSubscription?view=graph-powershell-beta)
+
 [Update-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListSubscription?view=graph-powershell-beta)
 

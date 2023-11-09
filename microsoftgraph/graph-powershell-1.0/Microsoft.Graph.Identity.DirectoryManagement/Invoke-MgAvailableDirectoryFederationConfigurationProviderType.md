@@ -23,6 +23,8 @@ Invoke-MgAvailableDirectoryFederationConfigurationProviderType [-Count] [-Filter
 ## DESCRIPTION
 Invoke function availableProviderTypes
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -113,5 +115,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-beta)
 

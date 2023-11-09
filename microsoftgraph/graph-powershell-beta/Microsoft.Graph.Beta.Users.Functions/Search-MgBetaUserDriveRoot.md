@@ -13,6 +13,9 @@ Invoke function search
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Search-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Functions/Search-MgUserDriveRoot?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Search-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Functions/Search-MgUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Search (Default)
@@ -31,6 +34,8 @@ Search-MgBetaUserDriveRoot -InputObject <IUsersFunctionsIdentity> [-Count] [-Fil
 
 ## DESCRIPTION
 Invoke function search
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -258,5 +263,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Search-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Functions/Search-MgUserDriveRoot?view=graph-powershell-1.0)
+
 [Search-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Functions/Search-MgUserDriveRoot?view=graph-powershell-1.0)
 

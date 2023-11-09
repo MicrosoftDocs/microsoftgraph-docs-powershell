@@ -13,6 +13,9 @@ Delete navigation property columnLinks for shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,8 @@ Remove-MgShareListContentTypeColumnLink -InputObject <IFilesIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete navigation property columnLinks for shares
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -199,5 +204,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
+
 [Remove-MgBetaShareListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListContentTypeColumnLink?view=graph-powershell-beta)
 

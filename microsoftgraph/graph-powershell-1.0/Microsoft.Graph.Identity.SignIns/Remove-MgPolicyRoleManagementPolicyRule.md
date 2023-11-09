@@ -31,6 +31,8 @@ Remove-MgPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Delete navigation property rules for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -216,5 +218,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyRoleManagementPolicyRule?view=graph-powershell-beta)
 

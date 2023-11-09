@@ -30,6 +30,8 @@ Get-MgTeamScheduleSwapShiftChangeRequestCount -InputObject <ITeamsIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -146,5 +148,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamScheduleSwapShiftChangeRequestCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleSwapShiftChangeRequestCount?view=graph-powershell-beta)
 

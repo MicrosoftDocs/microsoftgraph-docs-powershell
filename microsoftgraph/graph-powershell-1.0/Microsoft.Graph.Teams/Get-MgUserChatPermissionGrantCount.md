@@ -30,6 +30,8 @@ Get-MgUserChatPermissionGrantCount -InputObject <ITeamsIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -161,5 +163,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaUserChatPermissionGrantCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatPermissionGrantCount?view=graph-powershell-beta)
 

@@ -31,6 +31,8 @@ Remove-MgGroupSiteListItemVersionField -InputObject <ISitesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property fields for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -244,5 +246,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupSiteListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItemVersionField?view=graph-powershell-beta)
 

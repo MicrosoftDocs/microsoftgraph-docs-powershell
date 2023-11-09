@@ -30,6 +30,8 @@ Get-MgUserTodoTaskAttachmentSessionContent -InputObject <IUsersIdentity> -OutFil
 ## DESCRIPTION
 The content streams that are uploaded.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttachmentSessionId
@@ -172,5 +174,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentSessionContent?view=graph-powershell-beta)
 

@@ -30,6 +30,8 @@ Invoke-MgHaveTeamChannel -InputObject <ITeamsIdentity> [-TenantId <String>] [-Us
 ## DESCRIPTION
 Invoke function doesUserHaveAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -176,5 +178,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Invoke-MgBetaHaveTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaHaveTeamChannel?view=graph-powershell-beta)
 

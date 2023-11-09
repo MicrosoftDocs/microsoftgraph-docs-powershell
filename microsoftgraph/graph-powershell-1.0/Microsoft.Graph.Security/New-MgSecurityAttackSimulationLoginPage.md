@@ -33,6 +33,8 @@ New-MgSecurityAttackSimulationLoginPage -BodyParameter <IMicrosoftGraphLoginPage
 ## DESCRIPTION
 Create new navigation property to loginPages for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -314,5 +316,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationLoginPage?view=graph-powershell-beta)
 

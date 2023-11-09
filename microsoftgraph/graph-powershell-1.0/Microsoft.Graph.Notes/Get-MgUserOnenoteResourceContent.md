@@ -30,6 +30,8 @@ Get-MgUserOnenoteResourceContent -InputObject <INotesIdentity> -OutFile <String>
 ## DESCRIPTION
 The content stream
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -138,5 +140,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteResourceContent?view=graph-powershell-beta)
 

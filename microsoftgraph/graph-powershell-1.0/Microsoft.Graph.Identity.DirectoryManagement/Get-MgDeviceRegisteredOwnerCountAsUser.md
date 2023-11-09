@@ -30,6 +30,8 @@ Get-MgDeviceRegisteredOwnerCountAsUser -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -153,5 +155,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDeviceRegisteredOwnerCountAsUser](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwnerCountAsUser?view=graph-powershell-beta)
 

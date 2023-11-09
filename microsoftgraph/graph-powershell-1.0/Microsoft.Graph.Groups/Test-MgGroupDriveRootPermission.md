@@ -44,6 +44,8 @@ Test-MgGroupDriveRootPermission -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action validatePermission
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -261,5 +263,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Test-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 

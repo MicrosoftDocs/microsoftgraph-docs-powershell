@@ -22,6 +22,8 @@ Remove-MgPolicyAuthorizationPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-C
 ## DESCRIPTION
 Delete navigation property authorizationPolicy for policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -98,5 +100,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Remove-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
 

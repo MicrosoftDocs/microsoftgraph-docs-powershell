@@ -37,6 +37,8 @@ Get-MgSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get itemActivityStats from sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -295,5 +297,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 

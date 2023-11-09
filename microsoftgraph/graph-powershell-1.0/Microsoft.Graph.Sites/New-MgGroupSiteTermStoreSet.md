@@ -84,6 +84,8 @@ New-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMicro
 Create a new set object.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -640,3 +642,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 
+## RELATED LINKS

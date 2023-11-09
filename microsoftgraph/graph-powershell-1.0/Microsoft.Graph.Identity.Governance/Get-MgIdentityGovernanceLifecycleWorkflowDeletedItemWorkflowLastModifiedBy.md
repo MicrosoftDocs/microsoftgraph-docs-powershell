@@ -31,6 +31,8 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy
 ## DESCRIPTION
 The unique identifier of the Microsoft Entra identity that last modified the workflow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -183,5 +185,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy?view=graph-powershell-beta)
 

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttype
 schema: 2.0.0
 ms.prod: sites-and-lists
@@ -10,6 +11,9 @@ ms.prod: sites-and-lists
 
 ## SYNOPSIS
 The collection of content types present in this list.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentType?view=graph-powershell-beta)
@@ -37,8 +41,6 @@ Get-MgDriveListContentType -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 The collection of content types present in this list.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -284,4 +286,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentType?view=graph-powershell-beta)
+
 [Get-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentType?view=graph-powershell-beta)

@@ -30,6 +30,8 @@ Get-MgGroupSiteListContentTypeColumnLinkCount -InputObject <ISitesIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -197,5 +199,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteListContentTypeColumnLinkCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListContentTypeColumnLinkCount?view=graph-powershell-beta)
 

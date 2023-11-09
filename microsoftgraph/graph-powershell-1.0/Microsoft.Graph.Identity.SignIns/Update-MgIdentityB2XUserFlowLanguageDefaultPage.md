@@ -44,6 +44,8 @@ Update-MgIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Update the navigation property defaultPages in identity
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -261,5 +263,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Update-MgBetaIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-beta)
 

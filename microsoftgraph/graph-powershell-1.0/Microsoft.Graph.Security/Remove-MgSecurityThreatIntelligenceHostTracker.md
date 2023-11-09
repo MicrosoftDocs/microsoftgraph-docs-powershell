@@ -30,6 +30,8 @@ Remove-MgSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property hostTrackers for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -HostTrackerId
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
 

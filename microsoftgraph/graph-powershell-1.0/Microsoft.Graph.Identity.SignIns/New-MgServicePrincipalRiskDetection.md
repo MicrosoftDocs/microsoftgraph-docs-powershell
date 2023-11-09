@@ -35,6 +35,8 @@ New-MgServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePrinci
 ## DESCRIPTION
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Activity
@@ -490,5 +492,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
+
 [New-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
 

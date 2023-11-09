@@ -30,6 +30,8 @@ Remove-MgGroupRejectedSenderByRef -InputObject <IGroupsIdentity> [-Id <String>] 
 ## DESCRIPTION
 Remove rejectedSender
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -210,5 +212,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
 

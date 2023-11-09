@@ -51,6 +51,8 @@ Update-MgEntitlementManagementResourceEnvironmentResourceRoleResource
 ## DESCRIPTION
 Update the navigation property resource in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId
@@ -575,3 +577,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

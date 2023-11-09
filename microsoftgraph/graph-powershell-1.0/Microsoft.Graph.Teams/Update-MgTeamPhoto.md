@@ -42,6 +42,8 @@ Update-MgTeamPhoto -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the navigation property photo in teams
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -245,5 +247,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaTeamPhoto](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPhoto?view=graph-powershell-beta)
 

@@ -31,6 +31,8 @@ Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute -InputObject <IIde
 ## DESCRIPTION
 The user attribute that you want to add to your user flow.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -185,5 +187,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentUserAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentUserAttribute?view=graph-powershell-beta)
 

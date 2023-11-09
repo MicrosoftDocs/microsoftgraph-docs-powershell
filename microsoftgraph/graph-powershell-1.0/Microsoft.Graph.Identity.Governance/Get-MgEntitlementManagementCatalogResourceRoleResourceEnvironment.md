@@ -42,6 +42,8 @@ Get-MgEntitlementManagementCatalogResourceRoleResourceEnvironment -InputObject <
 Contains the environment information for the resource.
 This can be set using either the @odata.bind annotation or the environment's originId.Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -224,4 +226,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

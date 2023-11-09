@@ -30,6 +30,8 @@ Remove-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-I
 ## DESCRIPTION
 Delete navigation property simulationAutomations for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -196,5 +198,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Remove-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)
 

@@ -47,6 +47,8 @@ Update-MgEntitlementManagementResourceRoleScopeRoleResource -InputObject <IIdent
 ## DESCRIPTION
 Update the navigation property resource in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceRoleScopeId
@@ -541,3 +543,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -37,6 +37,8 @@ Get-MgSiteListOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 The collection of long-running operations on the list.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -310,5 +312,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListOperation?view=graph-powershell-beta)
 

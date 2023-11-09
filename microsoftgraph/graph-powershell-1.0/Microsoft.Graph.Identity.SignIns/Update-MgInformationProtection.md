@@ -31,6 +31,8 @@ Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtect
 ## DESCRIPTION
 Update informationProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -211,5 +213,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: threatAssessmentStatus
 
 ## RELATED LINKS
+
 [Update-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtection?view=graph-powershell-beta)
 

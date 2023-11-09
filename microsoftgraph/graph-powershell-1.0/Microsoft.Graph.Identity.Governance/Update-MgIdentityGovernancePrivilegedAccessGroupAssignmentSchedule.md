@@ -56,6 +56,8 @@ Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedule -InputObject 
 ## DESCRIPTION
 Update the navigation property assignmentSchedules in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessId
@@ -9182,3 +9184,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule?view=graph-powershell-beta)
 
+## RELATED LINKS

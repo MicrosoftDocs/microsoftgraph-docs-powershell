@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckoutuserdriveitem
 schema: 2.0.0
 ms.prod: sharepoint
@@ -11,6 +12,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckoutUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckoutUserDriveItem?view=graph-powershell-1.0)
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgCheckoutUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckoutUserDriveItem?view=graph-powershell-1.0)
@@ -214,4 +218,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgCheckoutUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckoutUserDriveItem?view=graph-powershell-1.0)
+
 [Invoke-MgCheckoutUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckoutUserDriveItem?view=graph-powershell-1.0)

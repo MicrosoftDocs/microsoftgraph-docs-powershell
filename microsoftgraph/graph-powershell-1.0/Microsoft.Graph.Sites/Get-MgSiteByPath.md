@@ -28,6 +28,8 @@ Get-MgSiteByPath -InputObject <ISitesIdentity> [<CommonParameters>]
 ## DESCRIPTION
 Invoke function getByPath
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -135,5 +137,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteByPath?view=graph-powershell-beta)
 

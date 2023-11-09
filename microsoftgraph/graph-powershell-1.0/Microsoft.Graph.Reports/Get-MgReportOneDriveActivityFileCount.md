@@ -29,6 +29,8 @@ Get-MgReportOneDriveActivityFileCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Invoke function getOneDriveActivityFileCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportOneDriveActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveActivityFileCount?view=graph-powershell-beta)
 

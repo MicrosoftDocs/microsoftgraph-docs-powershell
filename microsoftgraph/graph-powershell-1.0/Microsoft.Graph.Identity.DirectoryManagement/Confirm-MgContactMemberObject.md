@@ -44,6 +44,8 @@ Confirm-MgContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -203,5 +205,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Confirm-MgBetaContactMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaContactMemberObject?view=graph-powershell-beta)
 

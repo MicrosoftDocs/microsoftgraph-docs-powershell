@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
+ms.prod: governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequestuserconsentrequestapprovalstage
 schema: 2.0.0
 ms.prod: governance
@@ -42,8 +43,6 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage
 Retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
 
 ## PARAMETERS
 

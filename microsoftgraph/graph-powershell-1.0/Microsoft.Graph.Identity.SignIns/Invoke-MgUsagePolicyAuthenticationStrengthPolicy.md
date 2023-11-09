@@ -28,6 +28,8 @@ Invoke-MgUsagePolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Invoke function usage
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationStrengthPolicyId
@@ -137,5 +139,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUsagePolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
 

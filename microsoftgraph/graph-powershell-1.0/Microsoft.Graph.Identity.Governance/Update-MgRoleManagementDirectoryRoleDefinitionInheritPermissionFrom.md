@@ -50,6 +50,8 @@ Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom -InputObject
 ## DESCRIPTION
 Update the navigation property inheritsPermissionsFrom in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -463,3 +465,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
 
+## RELATED LINKS

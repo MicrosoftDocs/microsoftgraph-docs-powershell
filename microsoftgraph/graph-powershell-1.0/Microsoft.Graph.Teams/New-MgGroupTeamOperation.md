@@ -46,6 +46,8 @@ New-MgGroupTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to operations for groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -353,5 +355,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [New-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamOperation?view=graph-powershell-beta)
 

@@ -31,6 +31,7 @@ New-MgBetaDeviceManagementManagedDevice [-AdditionalProperties <Hashtable>]
  [-DeviceEnrollmentType <DeviceEnrollmentType>] [-DeviceFirmwareConfigurationInterfaceManaged]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]
  [-DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]
+ [-DeviceIdentityAttestationDetail <IMicrosoftGraphDeviceIdentityAttestationDetail>]
  [-DeviceRegistrationState <DeviceRegistrationState>] [-DeviceType <DeviceType>]
  [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
  [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
@@ -341,6 +342,22 @@ To construct, see NOTES section for DEVICEHEALTHSCRIPTSTATES properties and crea
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealthScriptPolicyState[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceIdentityAttestationDetail
+Indicates the attestation status of the managed device
+To construct, see NOTES section for DEVICEIDENTITYATTESTATIONDETAIL properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeviceIdentityAttestationDetail
 Parameter Sets: CreateExpanded
 Aliases:
 

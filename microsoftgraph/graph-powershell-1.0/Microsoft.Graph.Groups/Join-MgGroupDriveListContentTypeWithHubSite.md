@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/join-mggroupdrivelistcontenttypewithhubsite
 schema: 2.0.0
 ms.prod: sites-and-lists
@@ -47,6 +48,8 @@ Join-MgGroupDriveListContentTypeWithHubSite -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Associate a published content type][contentType] present in a content type hub with a list of hub sites.
 This API is available in the following [national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -280,5 +283,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Join-MgBetaGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Groups/Join-MgBetaGroupDriveListContentTypeWithHubSite?view=graph-powershell-beta)
 

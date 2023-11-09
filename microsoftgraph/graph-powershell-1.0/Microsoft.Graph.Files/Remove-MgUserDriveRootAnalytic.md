@@ -13,6 +13,9 @@ Delete navigation property analytics for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootAnalytic?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,8 @@ Remove-MgUserDriveRootAnalytic -InputObject <IFilesIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete navigation property analytics for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -184,5 +189,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootAnalytic?view=graph-powershell-beta)
+
 [Remove-MgBetaUserDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootAnalytic?view=graph-powershell-beta)
 

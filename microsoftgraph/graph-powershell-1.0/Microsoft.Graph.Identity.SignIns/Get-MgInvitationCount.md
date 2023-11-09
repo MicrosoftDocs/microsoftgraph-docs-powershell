@@ -22,6 +22,8 @@ Get-MgInvitationCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaInvitationCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationCount?view=graph-powershell-beta)
 

@@ -57,6 +57,8 @@ Get-MgGroupSiteContentTypeBaseType -InputObject <ISitesIdentity> [-ExpandPropert
 ## DESCRIPTION
 The collection of content types that are ancestors of this content type.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -360,5 +362,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteContentTypeBaseType?view=graph-powershell-beta)
 

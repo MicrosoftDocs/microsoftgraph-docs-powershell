@@ -29,6 +29,8 @@ Get-MgReportSharePointActivityPage -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Invoke function getSharePointActivityPages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSharePointActivityPage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityPage?view=graph-powershell-beta)
 

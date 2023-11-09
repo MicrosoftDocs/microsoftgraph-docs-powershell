@@ -32,6 +32,8 @@ New-MgSecurityAttackSimulationOperation -BodyParameter <IMicrosoftGraphAttackSim
 ## DESCRIPTION
 Create new navigation property to operations for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -267,5 +269,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: attackSimulationOperationType
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
 

@@ -39,6 +39,8 @@ Get-MgGroupSiteItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 Used to address any item contained in this site.
 This collection can't be enumerated.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -312,5 +314,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteItem?view=graph-powershell-beta)
 

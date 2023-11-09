@@ -236,4 +236,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnBehalfOfUserId <String>]`: 
 
 ## RELATED LINKS
+
 [Test-MgBetaOrganizationProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgBetaOrganizationProperty?view=graph-powershell-beta)

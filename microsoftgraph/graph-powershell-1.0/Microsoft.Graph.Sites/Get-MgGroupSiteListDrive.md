@@ -32,6 +32,8 @@ Get-MgGroupSiteListDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -184,5 +186,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListDrive?view=graph-powershell-beta)
 

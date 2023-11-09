@@ -185,4 +185,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalUserLifecycleAction <String>]`: accessPackageExternalUserLifecycleAction
 
 ## RELATED LINKS
+
 [Update-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)

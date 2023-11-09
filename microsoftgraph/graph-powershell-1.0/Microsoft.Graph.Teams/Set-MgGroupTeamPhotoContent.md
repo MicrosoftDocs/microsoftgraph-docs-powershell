@@ -30,6 +30,8 @@ Set-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-Data <Stream>] -InFi
 ## DESCRIPTION
 Update media content for the navigation property photo in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Data
@@ -195,5 +197,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Set-MgBetaGroupTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPhotoContent?view=graph-powershell-beta)
 

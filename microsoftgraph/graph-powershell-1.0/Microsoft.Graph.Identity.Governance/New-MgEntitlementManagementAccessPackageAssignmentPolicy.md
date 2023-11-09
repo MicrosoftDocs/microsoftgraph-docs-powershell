@@ -40,6 +40,8 @@ New-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageId <Strin
 ## DESCRIPTION
 Create new navigation property to assignmentPolicies for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackage
@@ -9548,3 +9550,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-beta)
 
+## RELATED LINKS

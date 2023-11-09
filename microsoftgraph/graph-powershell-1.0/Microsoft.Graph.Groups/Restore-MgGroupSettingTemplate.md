@@ -35,6 +35,8 @@ A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupSettingTemplateId
@@ -155,4 +157,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-

@@ -13,6 +13,9 @@ Create new navigation property to children for users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootChild?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -75,6 +78,8 @@ New-MgUserDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create new navigation property to children for users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -18808,7 +18813,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootChild?view=graph-powershell-beta)
+[New-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootChild?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [New-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootChild?view=graph-powershell-beta)
+[New-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootChild?view=graph-powershell-beta)
 
+## RELATED LINKS
+[New-MgBetaUserDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveRootChild?view=graph-powershell-beta)

@@ -46,6 +46,8 @@ New-MgEntitlementManagementCatalogResourceScopeResourceRoleResourceScope
 ## DESCRIPTION
 Create new navigation property to scopes for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -444,3 +446,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

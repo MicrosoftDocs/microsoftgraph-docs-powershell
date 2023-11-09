@@ -32,6 +32,8 @@ Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser -InputObject <IId
 ## DESCRIPTION
 Invoke function filterByCurrentUser
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -259,5 +261,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser?view=graph-powershell-beta)
 

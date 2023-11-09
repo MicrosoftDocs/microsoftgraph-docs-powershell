@@ -29,6 +29,8 @@ Get-MgReportEmailActivityUserCount -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Invoke function getEmailActivityUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportEmailActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityUserCount?view=graph-powershell-beta)
 

@@ -27,6 +27,8 @@ Invoke-MgBetaRotateUserManagedDeviceLocalAdminPassword -InputObject <IUsersActio
 ## DESCRIPTION
 Initiates a manual rotation for the local admin password on the device
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -180,4 +182,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -56,6 +56,8 @@ Update-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 ## DESCRIPTION
 Update the navigation property chats in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -966,3 +968,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChat?view=graph-powershell-beta)
 
+## RELATED LINKS

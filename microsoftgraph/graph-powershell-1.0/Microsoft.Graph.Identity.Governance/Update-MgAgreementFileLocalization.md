@@ -48,6 +48,8 @@ Update-MgAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update the navigation property localizations in agreements
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -441,3 +443,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
 
+## RELATED LINKS

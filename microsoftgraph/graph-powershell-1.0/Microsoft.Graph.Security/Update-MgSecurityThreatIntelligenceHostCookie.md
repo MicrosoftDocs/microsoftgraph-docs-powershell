@@ -45,6 +45,8 @@ Update-MgSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property hostCookies in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -617,3 +619,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
 
+## RELATED LINKS

@@ -13,6 +13,9 @@ Invoke action permanentDelete
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveItemPermanent](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserDriveItemPermanent?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveItemPermanent](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserDriveItemPermanent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,8 @@ Remove-MgBetaUserDriveItemPermanent -InputObject <IUsersActionsIdentity> [-PassT
 
 ## DESCRIPTION
 Invoke action permanentDelete
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -198,5 +203,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserDriveItemPermanent](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserDriveItemPermanent?view=graph-powershell-1.0)
+
 [Remove-MgUserDriveItemPermanent](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserDriveItemPermanent?view=graph-powershell-1.0)
 

@@ -37,6 +37,8 @@ Get-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity> [-ExpandProperty
 ## DESCRIPTION
 The details for each version of the app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -289,5 +291,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
 

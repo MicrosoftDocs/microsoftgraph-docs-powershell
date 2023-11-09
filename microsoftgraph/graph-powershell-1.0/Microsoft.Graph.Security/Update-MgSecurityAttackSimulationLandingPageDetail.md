@@ -44,6 +44,8 @@ Update-MgSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Update the navigation property details in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -295,5 +297,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationLandingPageDetail?view=graph-powershell-beta)
 

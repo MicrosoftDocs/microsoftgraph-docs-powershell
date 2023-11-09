@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
+ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecolumn
 schema: 2.0.0
 ms.prod: sites-and-lists
@@ -37,8 +38,6 @@ Get-MgGroupSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
-
-## EXAMPLES
 
 ## PARAMETERS
 
@@ -313,4 +312,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteColumn?view=graph-powershell-beta)

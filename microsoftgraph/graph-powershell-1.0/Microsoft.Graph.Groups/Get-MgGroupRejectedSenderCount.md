@@ -28,6 +28,8 @@ Get-MgGroupRejectedSenderCount -InputObject <IGroupsIdentity> [-Filter <String>]
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -132,5 +134,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupRejectedSenderCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSenderCount?view=graph-powershell-beta)
 

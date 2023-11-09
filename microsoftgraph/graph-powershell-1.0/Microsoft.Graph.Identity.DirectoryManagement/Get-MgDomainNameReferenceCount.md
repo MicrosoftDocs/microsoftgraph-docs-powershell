@@ -29,6 +29,8 @@ Get-MgDomainNameReferenceCount -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DomainId
@@ -136,5 +138,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDomainNameReferenceCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainNameReferenceCount?view=graph-powershell-beta)
 

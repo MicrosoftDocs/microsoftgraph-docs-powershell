@@ -47,6 +47,8 @@ Update-MgSecurityAttackSimulationEndUserNotificationDetail -InputObject <ISecuri
 ## DESCRIPTION
 Update the navigation property details in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -357,5 +359,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationEndUserNotificationDetail?view=graph-powershell-beta)
 

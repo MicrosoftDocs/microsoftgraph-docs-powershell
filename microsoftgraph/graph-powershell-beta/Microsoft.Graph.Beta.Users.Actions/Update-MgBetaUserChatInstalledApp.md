@@ -14,6 +14,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserChatInstalledApp?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserChatInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpgradeExpanded (Default)
@@ -291,4 +294,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserChatInstalledApp?view=graph-powershell-1.0)
+
 [Update-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserChatInstalledApp?view=graph-powershell-1.0)

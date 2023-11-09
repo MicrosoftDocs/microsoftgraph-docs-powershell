@@ -30,6 +30,8 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval -InputObject
 ## DESCRIPTION
 Approval decisions associated with a request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AppConsentRequestId
@@ -197,5 +199,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval?view=graph-powershell-beta)
 

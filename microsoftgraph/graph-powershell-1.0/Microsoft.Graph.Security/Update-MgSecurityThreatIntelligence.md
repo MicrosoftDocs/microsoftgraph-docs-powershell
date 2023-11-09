@@ -21,6 +21,7 @@ Update-MgSecurityThreatIntelligence [-AdditionalProperties <Hashtable>]
  [-ArticleIndicators <IMicrosoftGraphSecurityArticleIndicator[]>]
  [-Articles <IMicrosoftGraphSecurityArticle[]>] [-HostComponents <IMicrosoftGraphSecurityHostComponent[]>]
  [-HostCookies <IMicrosoftGraphSecurityHostCookie[]>] [-HostPairs <IMicrosoftGraphSecurityHostPair[]>]
+ [-HostPorts <IMicrosoftGraphSecurityHostPort[]>]
  [-HostSslCertificates <IMicrosoftGraphSecurityHostSslCertificate[]>]
  [-HostTrackers <IMicrosoftGraphSecurityHostTracker[]>] [-Hosts <IMicrosoftGraphSecurityHost[]>] [-Id <String>]
  [-IntelProfiles <IMicrosoftGraphSecurityIntelligenceProfile[]>]
@@ -40,6 +41,8 @@ Update-MgSecurityThreatIntelligence -BodyParameter <IMicrosoftGraphSecurityThrea
 
 ## DESCRIPTION
 Update the navigation property threatIntelligence in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -144,6 +147,22 @@ To construct, see NOTES section for HOSTPAIRS properties and create a hash table
 
 ```yaml
 Type: IMicrosoftGraphSecurityHostPair[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HostPorts
+Retrieve details about hostPort objects.Note: List retrieval is not yet supported.
+To construct, see NOTES section for HOSTPORTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityHostPort[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -2394,3 +2413,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
 
+## RELATED LINKS

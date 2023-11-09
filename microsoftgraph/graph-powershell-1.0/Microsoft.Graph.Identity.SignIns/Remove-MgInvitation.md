@@ -30,6 +30,8 @@ Remove-MgInvitation -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Delete entity from invitations
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -200,5 +202,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaInvitation?view=graph-powershell-beta)
 

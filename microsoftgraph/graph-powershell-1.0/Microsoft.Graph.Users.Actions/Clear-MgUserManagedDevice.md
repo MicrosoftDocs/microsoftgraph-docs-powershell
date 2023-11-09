@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: intune
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mgusermanageddevice
 schema: 2.0.0
 ms.prod: intune
@@ -10,6 +11,9 @@ ms.prod: intune
 
 ## SYNOPSIS
 Wipe a device
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)
@@ -46,6 +50,8 @@ Clear-MgUserManagedDevice -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Wipe a device
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -290,5 +296,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)
+
 [Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)
 

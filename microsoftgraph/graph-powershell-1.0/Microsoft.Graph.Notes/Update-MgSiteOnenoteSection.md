@@ -50,6 +50,8 @@ Update-MgSiteOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property sections in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -740,3 +742,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaSiteOnenoteSection?view=graph-powershell-beta)
 
+## RELATED LINKS

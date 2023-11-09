@@ -43,6 +43,8 @@ Update-MgChatPinnedMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property pinnedMessages in chats
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -417,3 +419,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatPinnedMessage?view=graph-powershell-beta)
 
+## RELATED LINKS

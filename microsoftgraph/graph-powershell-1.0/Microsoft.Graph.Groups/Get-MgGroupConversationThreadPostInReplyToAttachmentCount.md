@@ -30,6 +30,8 @@ Get-MgGroupConversationThreadPostInReplyToAttachmentCount -InputObject <IGroupsI
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConversationId
@@ -179,5 +181,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupConversationThreadPostInReplyToAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPostInReplyToAttachmentCount?view=graph-powershell-beta)
 

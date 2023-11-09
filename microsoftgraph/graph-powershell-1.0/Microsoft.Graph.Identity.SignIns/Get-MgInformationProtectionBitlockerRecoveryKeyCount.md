@@ -22,6 +22,8 @@ Get-MgInformationProtectionBitlockerRecoveryKeyCount [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaInformationProtectionBitlockerRecoveryKeyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKeyCount?view=graph-powershell-beta)
 

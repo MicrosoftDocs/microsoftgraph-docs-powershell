@@ -13,6 +13,9 @@ Update the navigation property root in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRoot?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -75,6 +78,8 @@ Update-MgDriveRoot -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Update the navigation property root in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -18793,7 +18798,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRoot?view=graph-powershell-beta)
+[Update-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRoot?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRoot?view=graph-powershell-beta)
+[Update-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRoot?view=graph-powershell-beta)
 
+## RELATED LINKS
+[Update-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRoot?view=graph-powershell-beta)

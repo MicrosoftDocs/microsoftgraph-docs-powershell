@@ -30,6 +30,8 @@ Remove-MgUserChatMessage -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pas
 ## DESCRIPTION
 Delete navigation property messages for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -207,5 +209,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessage?view=graph-powershell-beta)
 

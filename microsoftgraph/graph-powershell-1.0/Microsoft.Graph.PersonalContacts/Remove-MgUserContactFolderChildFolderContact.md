@@ -30,6 +30,8 @@ Remove-MgUserContactFolderChildFolderContact -InputObject <IPersonalContactsIden
 ## DESCRIPTION
 Delete navigation property contacts for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContactFolderId
@@ -195,5 +197,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolderChildFolderContact?view=graph-powershell-beta)
 

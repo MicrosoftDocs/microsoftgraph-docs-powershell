@@ -45,6 +45,8 @@ Update-MgUserContactFolderChildFolderContactPhoto -InputObject <IPersonalContact
 ## DESCRIPTION
 Update the navigation property photo in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -266,5 +268,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaUserContactFolderChildFolderContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderChildFolderContactPhoto?view=graph-powershell-beta)
 

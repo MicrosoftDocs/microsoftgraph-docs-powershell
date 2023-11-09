@@ -42,6 +42,8 @@ Get-MgGroupSiteContentTypeBase -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Parent contentType from which this content type is derived.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -209,5 +211,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteContentTypeBase](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteContentTypeBase?view=graph-powershell-beta)
 

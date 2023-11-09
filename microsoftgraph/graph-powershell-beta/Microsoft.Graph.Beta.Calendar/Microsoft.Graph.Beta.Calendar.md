@@ -189,6 +189,18 @@ Get the number of the resource
 ### [Get-MgBetaPlaceCountAsRoomList](Get-MgBetaPlaceCountAsRoomList.md)
 Get the number of the resource
 
+### [Get-MgBetaPlaceRoom](Get-MgBetaPlaceRoom.md)
+Get rooms from places
+
+### [Get-MgBetaPlaceRoomCount](Get-MgBetaPlaceRoomCount.md)
+Get the number of the resource
+
+### [Get-MgBetaPlaceWorkspace](Get-MgBetaPlaceWorkspace.md)
+Get workspaces from places
+
+### [Get-MgBetaPlaceWorkspaceCount](Get-MgBetaPlaceWorkspaceCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaUserCalendar](Get-MgBetaUserCalendar.md)
 The user's calendars.
 Read-only.
@@ -456,29 +468,23 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 This API is available in the following national cloud deployments.
 
-### [New-MgBetaGroupEventInstanceExtension](New-MgBetaGroupEventInstanceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+### [New-MgBetaPlaceRoom](New-MgBetaPlaceRoom.md)
+Create new navigation property to rooms for places
 
-### [New-MgBetaGroupEventInstanceExtension](New-MgBetaGroupEventInstanceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+### [New-MgBetaPlaceWorkspace](New-MgBetaPlaceWorkspace.md)
+Create new navigation property to workspaces for places
 
-### [New-MgBetaGroupEventInstanceExtension](New-MgBetaGroupEventInstanceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+### [New-MgBetaPlaceWorkspace](New-MgBetaPlaceWorkspace.md)
+Create new navigation property to workspaces for places
 
-### [New-MgBetaGroupEventInstanceExtension](New-MgBetaGroupEventInstanceExtension.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+### [New-MgBetaPlaceWorkspace](New-MgBetaPlaceWorkspace.md)
+Create new navigation property to workspaces for places
+
+### [New-MgBetaPlaceWorkspace](New-MgBetaPlaceWorkspace.md)
+Create new navigation property to workspaces for places
+
+### [New-MgBetaPlaceWorkspace](New-MgBetaPlaceWorkspace.md)
+Create new navigation property to workspaces for places
 
 ### [New-MgBetaUserCalendarPermission](New-MgBetaUserCalendarPermission.md)
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
@@ -598,8 +604,14 @@ Delete navigation property extensions for groups
 ### [Remove-MgBetaPlace](Remove-MgBetaPlace.md)
 Delete entity from places
 
-### [Remove-MgBetaPlace](Remove-MgBetaPlace.md)
-Delete entity from places
+### [Remove-MgBetaPlaceRoom](Remove-MgBetaPlaceRoom.md)
+Delete navigation property rooms for places
+
+### [Remove-MgBetaPlaceWorkspace](Remove-MgBetaPlaceWorkspace.md)
+Delete navigation property workspaces for places
+
+### [Remove-MgBetaPlaceWorkspace](Remove-MgBetaPlaceWorkspace.md)
+Delete navigation property workspaces for places
 
 ### [Remove-MgBetaUserCalendarPermission](Remove-MgBetaUserCalendarPermission.md)
 Delete calendarPermission.
@@ -675,10 +687,14 @@ Update the properties of place object, which can be a room, workspace, or roomLi
 You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
 This API is available in the following national cloud deployments.
 
-### [Update-MgBetaPlace](Update-MgBetaPlace.md)
-Update the properties of place object, which can be a room, workspace, or roomList.
-You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
-This API is available in the following national cloud deployments.
+### [Update-MgBetaPlaceRoom](Update-MgBetaPlaceRoom.md)
+Update the navigation property rooms in places
+
+### [Update-MgBetaPlaceWorkspace](Update-MgBetaPlaceWorkspace.md)
+Update the navigation property workspaces in places
+
+### [Update-MgBetaPlaceWorkspace](Update-MgBetaPlaceWorkspace.md)
+Update the navigation property workspaces in places
 
 ### [Update-MgBetaUserCalendarPermission](Update-MgBetaUserCalendarPermission.md)
 Update the permissions assigned to an existing share recipient or delegate, through the corresponding calendarPermission object for a calendar.

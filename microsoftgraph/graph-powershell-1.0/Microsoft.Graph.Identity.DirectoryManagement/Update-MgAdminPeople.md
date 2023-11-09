@@ -30,6 +30,8 @@ Update-MgAdminPeople -BodyParameter <IMicrosoftGraphPeopleAdminSettings> [-WhatI
 ## DESCRIPTION
 Update the navigation property people in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -166,5 +168,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[DirectoryPropertyName <String>]`: 
 
 ## RELATED LINKS
+
 [Update-MgBetaAdminPeople](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeople?view=graph-powershell-beta)
 

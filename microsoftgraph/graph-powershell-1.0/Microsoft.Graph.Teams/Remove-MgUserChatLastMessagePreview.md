@@ -30,6 +30,8 @@ Remove-MgUserChatLastMessagePreview -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property lastMessagePreview for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -192,5 +194,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatLastMessagePreview?view=graph-powershell-beta)
 

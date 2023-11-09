@@ -30,6 +30,8 @@ Get-MgDirectoryAdministrativeUnitExtensionCount -InputObject <IIdentityDirectory
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -137,5 +139,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaDirectoryAdministrativeUnitExtensionCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnitExtensionCount?view=graph-powershell-beta)
 

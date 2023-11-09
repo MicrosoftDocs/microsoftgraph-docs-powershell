@@ -30,6 +30,8 @@ Get-MgUserChatInstalledAppTeamAppDefinition -InputObject <ITeamsIdentity> [-Expa
 ## DESCRIPTION
 The details of this version of the app.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -176,5 +178,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaUserChatInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatInstalledAppTeamAppDefinition?view=graph-powershell-beta)
 

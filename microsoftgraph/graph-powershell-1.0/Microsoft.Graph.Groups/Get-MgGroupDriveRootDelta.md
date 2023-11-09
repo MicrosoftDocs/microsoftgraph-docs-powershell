@@ -44,6 +44,8 @@ Get-MgGroupDriveRootDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Pr
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -314,5 +316,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupDriveRootDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveRootDelta?view=graph-powershell-beta)
 

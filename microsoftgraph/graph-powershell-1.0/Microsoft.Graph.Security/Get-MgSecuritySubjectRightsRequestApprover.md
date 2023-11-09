@@ -39,6 +39,8 @@ Get-MgSecuritySubjectRightsRequestApprover -InputObject <ISecurityIdentity> [-Ex
 Collection of users who can approve the request.
 Currently only supported for requests of type delete.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -310,5 +312,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecuritySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestApprover?view=graph-powershell-beta)
 

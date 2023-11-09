@@ -74,6 +74,8 @@ The from [term] of the relation.
 The term from which the relationship is defined.
 A null value would indicate the relation is directly with the [set].
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -301,5 +303,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildRelationFromTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildRelationFromTerm?view=graph-powershell-beta)
 

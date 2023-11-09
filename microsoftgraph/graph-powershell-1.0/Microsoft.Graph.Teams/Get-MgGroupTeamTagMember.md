@@ -39,8 +39,6 @@ Get-MgGroupTeamTagMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 Get the properties and relationships of a member of a standard tag in a team.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
@@ -308,4 +306,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTagMember?view=graph-powershell-beta)

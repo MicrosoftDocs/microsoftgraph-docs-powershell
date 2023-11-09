@@ -30,6 +30,8 @@ New-MgEntitlementManagementResource -BodyParameter <IMicrosoftGraphAccessPackage
 ## DESCRIPTION
 Create new navigation property to resources for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -422,3 +424,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

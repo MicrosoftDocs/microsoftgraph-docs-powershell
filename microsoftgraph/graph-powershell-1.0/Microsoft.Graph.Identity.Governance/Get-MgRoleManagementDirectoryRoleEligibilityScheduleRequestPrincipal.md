@@ -33,6 +33,8 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipal -InputObjec
 The principal that's getting a role eligibility through the request.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -185,5 +187,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipal?view=graph-powershell-beta)
 

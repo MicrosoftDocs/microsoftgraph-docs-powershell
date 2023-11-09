@@ -30,6 +30,8 @@ Remove-MgSiteContentTypeColumnLink -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property columnLinks for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnLinkId
@@ -213,5 +215,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Remove-MgBetaSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentTypeColumnLink?view=graph-powershell-beta)
 

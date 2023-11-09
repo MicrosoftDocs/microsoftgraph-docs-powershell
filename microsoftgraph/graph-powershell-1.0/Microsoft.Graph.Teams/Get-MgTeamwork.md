@@ -22,6 +22,8 @@ Get-MgTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParam
 ## DESCRIPTION
 Get teamwork
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamwork?view=graph-powershell-beta)
 

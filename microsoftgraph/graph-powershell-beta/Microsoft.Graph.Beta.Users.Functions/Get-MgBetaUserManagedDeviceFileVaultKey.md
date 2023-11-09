@@ -25,6 +25,8 @@ Get-MgBetaUserManagedDeviceFileVaultKey -InputObject <IUsersFunctionsIdentity> [
 ## DESCRIPTION
 Invoke function getFileVaultKey
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -131,4 +133,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

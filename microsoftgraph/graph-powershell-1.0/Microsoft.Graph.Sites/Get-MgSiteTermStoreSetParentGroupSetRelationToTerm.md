@@ -44,6 +44,8 @@ Get-MgSiteTermStoreSetParentGroupSetRelationToTerm -InputObject <ISitesIdentity>
 The to [term] of the relation.
 The term to which the relationship is defined.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -226,5 +228,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteTermStoreSetParentGroupSetRelationToTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetRelationToTerm?view=graph-powershell-beta)
 

@@ -44,6 +44,8 @@ Set-MgChatMessageReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action setReaction
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -242,5 +244,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Set-MgBetaChatMessageReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaChatMessageReaction?view=graph-powershell-beta)
 

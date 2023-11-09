@@ -56,6 +56,8 @@ Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance -InputObject <IIdentityGov
 ## DESCRIPTION
 Represents the current status of a user's response to a company's customizable terms of use agreement.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId
@@ -344,5 +346,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+
 [Get-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-beta)
 

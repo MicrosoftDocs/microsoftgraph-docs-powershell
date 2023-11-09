@@ -29,6 +29,8 @@ Get-MgUserChatTabCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -160,5 +162,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaUserChatTabCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatTabCount?view=graph-powershell-beta)
 

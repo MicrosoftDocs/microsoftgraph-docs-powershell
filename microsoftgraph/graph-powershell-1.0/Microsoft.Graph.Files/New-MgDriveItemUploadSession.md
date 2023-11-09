@@ -13,6 +13,9 @@ Invoke action createUploadSession
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemUploadSession?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemUploadSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -43,6 +46,8 @@ New-MgDriveItemUploadSession -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action createUploadSession
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -240,5 +245,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+[New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemUploadSession?view=graph-powershell-beta)
+
 [New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemUploadSession?view=graph-powershell-beta)
 

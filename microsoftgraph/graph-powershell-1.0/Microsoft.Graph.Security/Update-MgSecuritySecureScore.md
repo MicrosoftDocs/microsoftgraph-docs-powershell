@@ -50,6 +50,8 @@ Update-MgSecuritySecureScore -InputObject <ISecurityIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property secureScores in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveUserCount
@@ -429,5 +431,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
+
 [Update-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScore?view=graph-powershell-beta)
 

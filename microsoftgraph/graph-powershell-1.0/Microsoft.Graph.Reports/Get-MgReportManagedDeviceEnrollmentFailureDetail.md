@@ -35,6 +35,8 @@ Get-MgReportManagedDeviceEnrollmentFailureDetail -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Invoke function managedDeviceEnrollmentFailureDetails
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -184,5 +186,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportManagedDeviceEnrollmentFailureDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentFailureDetail?view=graph-powershell-beta)
 

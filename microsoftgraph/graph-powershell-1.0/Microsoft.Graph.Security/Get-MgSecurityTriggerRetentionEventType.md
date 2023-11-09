@@ -30,6 +30,8 @@ Get-MgSecurityTriggerRetentionEventType -InputObject <ISecurityIdentity> [-Expan
 ## DESCRIPTION
 Specifies the event that will start the retention period for labels that use this event type when an event is created.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -165,5 +167,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityTriggerRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEventType?view=graph-powershell-beta)
 

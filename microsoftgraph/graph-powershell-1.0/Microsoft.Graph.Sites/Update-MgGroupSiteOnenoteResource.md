@@ -44,6 +44,8 @@ Update-MgGroupSiteOnenoteResource -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property resources in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -298,5 +300,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenoteResource?view=graph-powershell-beta)
 

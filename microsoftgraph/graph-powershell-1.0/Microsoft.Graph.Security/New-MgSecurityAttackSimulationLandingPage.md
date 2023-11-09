@@ -33,6 +33,8 @@ New-MgSecurityAttackSimulationLandingPage -BodyParameter <IMicrosoftGraphLanding
 ## DESCRIPTION
 Create new navigation property to landingPages for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -341,5 +343,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationLandingPage?view=graph-powershell-beta)
 

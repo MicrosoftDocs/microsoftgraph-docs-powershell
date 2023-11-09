@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgsharepermission
 schema: 2.0.0
 ms.prod: sharepoint
@@ -11,6 +12,9 @@ ms.prod: sharepoint
 ## SYNOPSIS
 Grant users access to a link represented by a permission][].
 This API is available in the following [national cloud deployments.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Grant-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaSharePermission?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Grant-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaSharePermission?view=graph-powershell-beta)
@@ -254,4 +258,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Grant-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaSharePermission?view=graph-powershell-beta)
+
 [Grant-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaSharePermission?view=graph-powershell-beta)

@@ -29,6 +29,8 @@ Get-MgBetaUserOnlineMeetingRecordingDelta -InputObject <IUsersFunctionsIdentity>
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -286,4 +288,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

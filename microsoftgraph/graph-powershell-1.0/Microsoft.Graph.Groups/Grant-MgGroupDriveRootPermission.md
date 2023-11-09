@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/grant-mggroupdriverootpermission
 schema: 2.0.0
 ms.prod: sharepoint
@@ -301,4 +302,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+
 [Grant-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Groups/Grant-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)

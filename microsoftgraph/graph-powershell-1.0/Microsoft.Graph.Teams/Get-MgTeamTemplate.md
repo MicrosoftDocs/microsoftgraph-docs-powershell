@@ -31,6 +31,8 @@ Get-MgTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 The template this team was created from.
 See available templates.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -147,5 +149,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaTeamTemplate](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTemplate?view=graph-powershell-beta)
 

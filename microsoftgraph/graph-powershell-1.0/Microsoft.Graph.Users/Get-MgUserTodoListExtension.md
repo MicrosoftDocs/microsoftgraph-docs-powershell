@@ -39,6 +39,8 @@ Get-MgUserTodoListExtension -InputObject <IUsersIdentity> [-ExpandProperty <Stri
 The collection of open extensions defined for the task list.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -288,5 +290,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoListExtension?view=graph-powershell-beta)
 

@@ -30,6 +30,8 @@ Remove-MgUserChatMessageReply -InputObject <ITeamsIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Delete navigation property replies for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -222,5 +224,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaUserChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessageReply?view=graph-powershell-beta)
 

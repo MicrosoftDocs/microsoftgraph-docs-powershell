@@ -31,6 +31,8 @@ Set-MgUserChatMessageHostedContent -InputObject <ITeamsIdentity> [-Data <Stream>
 ## DESCRIPTION
 Update media content for the navigation property hostedContents in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChatId
@@ -241,5 +243,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Set-MgBetaUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaUserChatMessageHostedContent?view=graph-powershell-beta)
 

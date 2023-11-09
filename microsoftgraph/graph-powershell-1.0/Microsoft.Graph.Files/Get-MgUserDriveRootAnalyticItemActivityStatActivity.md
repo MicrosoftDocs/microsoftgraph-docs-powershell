@@ -13,6 +13,9 @@ Exposes the itemActivities represented in this itemActivityStat resource.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -24,6 +27,8 @@ Get-MgUserDriveRootAnalyticItemActivityStatActivity -DriveId <String> -ItemActiv
 
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -236,5 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+
 [Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 

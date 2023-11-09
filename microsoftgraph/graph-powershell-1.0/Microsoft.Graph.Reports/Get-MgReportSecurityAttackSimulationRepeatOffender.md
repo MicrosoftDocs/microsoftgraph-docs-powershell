@@ -23,6 +23,8 @@ Get-MgReportSecurityAttackSimulationRepeatOffender [-Count] [-Filter <String>] [
 ## DESCRIPTION
 Invoke function getAttackSimulationRepeatOffenders
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -113,5 +115,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-beta)
 

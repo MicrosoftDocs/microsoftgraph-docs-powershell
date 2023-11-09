@@ -88,6 +88,8 @@ Update-MgGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity>
 Update the properties of a term object.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -654,3 +656,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-beta)
 
+## RELATED LINKS

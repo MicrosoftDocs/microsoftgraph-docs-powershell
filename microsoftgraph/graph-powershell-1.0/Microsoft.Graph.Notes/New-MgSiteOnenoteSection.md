@@ -662,3 +662,6 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSection?view=graph-powershell-beta)
+
+
+## RELATED LINKS

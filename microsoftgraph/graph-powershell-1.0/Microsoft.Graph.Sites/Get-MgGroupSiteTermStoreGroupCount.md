@@ -42,6 +42,8 @@ Get-MgGroupSiteTermStoreGroupCount -InputObject <ISitesIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -194,5 +196,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteTermStoreGroupCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupCount?view=graph-powershell-beta)
 

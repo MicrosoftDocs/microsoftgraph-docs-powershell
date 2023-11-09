@@ -41,6 +41,8 @@ The collection of open extensions defined for the group.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -297,5 +299,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupExtension?view=graph-powershell-beta)
 

@@ -1,17 +1,14 @@
 ---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventinstanceextension
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetaplaceworkspace
 schema: 2.0.0
 ---
 
-# New-MgBetaGroupEventInstanceExtension
+# New-MgBetaPlaceWorkspace
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+Create new navigation property to workspaces for places
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarEvent?view=graph-powershell-1.0)
@@ -20,33 +17,38 @@ This API is available in the following national cloud deployments.
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaGroupEventInstanceExtension -EventId <String> -EventId1 <String> -GroupId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPlaceWorkspace -PlaceId <String> [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>] [-Capacity <Int32>] [-DisplayName <String>]
+ [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
+ [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaGroupEventInstanceExtension -EventId <String> -EventId1 <String> -GroupId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPlaceWorkspace -PlaceId <String> -BodyParameter <IMicrosoftGraphWorkspace> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaGroupEventInstanceExtension -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPlaceWorkspace -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>] [-Capacity <Int32>] [-DisplayName <String>]
+ [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
+ [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgBetaGroupEventInstanceExtension -InputObject <ICalendarIdentity> -BodyParameter <Hashtable> [-WhatIf]
+New-MgBetaPlaceWorkspace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphWorkspace> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
-This API is available in the following national cloud deployments.
+Create new navigation property to workspaces for places
 
 ## EXAMPLES
 ### Example 1: Create an event in a specific calendar
@@ -150,11 +152,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-extension
+### -Address
+physicalAddress
+To construct, see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
-Type: Hashtable
+Type: IMicrosoftGraphPhysicalAddress
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+workspace
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWorkspace
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -165,45 +184,106 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -EventId
-The unique identifier of event
+### -Building
+Specifies the building name or building number that the workspace is in.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EventId1
-The unique identifier of event
+### -Capacity
+Specifies the capacity of the workspace.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: Int32
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -GroupId
-The unique identifier of group
+### -DisplayName
+The name associated with the place.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EmailAddress
+Email address of the workspace.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FloorLabel
+Specifies a descriptive label for the floor, for example, P.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FloorNumber
+Specifies the floor number that the workspace is on.
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GeoCoordinates
+outlookGeoCoordinates
+To construct, see NOTES section for GEOCOORDINATES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphOutlookGeoCoordinates
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -239,6 +319,96 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsWheelChairAccessible
+Specifies whether the workspace is wheelchair accessible.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Label
+Specifies a descriptive label for the workspace, for example, a number or name.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Nickname
+Specifies a nickname for the workspace, for example, 'quiet workspace'.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Phone
+The phone number of the place.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PlaceId
+The unique identifier of place
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, Create
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Tags
+Specifies additional features of the workspace, for example, details like the type of view or furniture type.
+
+```yaml
+Type: String[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -279,10 +449,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
-### System.Collections.Hashtable
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWorkspace
 ## OUTPUTS
 
-### System.String
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWorkspace
 ## NOTES
 
 ALIASES
@@ -291,6 +461,55 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+`ADDRESS <IMicrosoftGraphPhysicalAddress>`: physicalAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[City <String>]`: The city.
+  - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
+  - `[PostOfficeBox <String>]`: The post office box number.
+  - `[PostalCode <String>]`: The postal code.
+  - `[State <String>]`: The state.
+  - `[Street <String>]`: The street.
+  - `[Type <String>]`: physicalAddressType
+
+`BODYPARAMETER <IMicrosoftGraphWorkspace>`: workspace
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[City <String>]`: The city.
+    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
+    - `[PostOfficeBox <String>]`: The post office box number.
+    - `[PostalCode <String>]`: The postal code.
+    - `[State <String>]`: The state.
+    - `[Street <String>]`: The street.
+    - `[Type <String>]`: physicalAddressType
+  - `[DisplayName <String>]`: The name associated with the place.
+  - `[GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
+    - `[Altitude <Double?>]`: The altitude of the location.
+    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
+    - `[Latitude <Double?>]`: The latitude of the location.
+    - `[Longitude <Double?>]`: The longitude of the location.
+  - `[Phone <String>]`: The phone number of the place.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Building <String>]`: Specifies the building name or building number that the workspace is in.
+  - `[Capacity <Int32?>]`: Specifies the capacity of the workspace.
+  - `[EmailAddress <String>]`: Email address of the workspace.
+  - `[FloorLabel <String>]`: Specifies a descriptive label for the floor, for example, P.
+  - `[FloorNumber <Int32?>]`: Specifies the floor number that the workspace is on.
+  - `[IsWheelChairAccessible <Boolean?>]`: Specifies whether the workspace is wheelchair accessible.
+  - `[Label <String>]`: Specifies a descriptive label for the workspace, for example, a number or name.
+  - `[Nickname <String>]`: Specifies a nickname for the workspace, for example, 'quiet workspace'.
+  - `[Tags <String[]>]`: Specifies additional features of the workspace, for example, details like the type of view or furniture type.
+
+`GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
+  - `[Altitude <Double?>]`: The altitude of the location.
+  - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
+  - `[Latitude <Double?>]`: The latitude of the location.
+  - `[Longitude <Double?>]`: The longitude of the location.
 
 `INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -303,7 +522,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlaceId <String>]`: The unique identifier of place
+  - `[RoomId <String>]`: The unique identifier of room
   - `[UserId <String>]`: The unique identifier of user
+  - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
 [New-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarEvent?view=graph-powershell-1.0)

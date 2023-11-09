@@ -13,6 +13,9 @@ Invoke function sharedWithMe
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaGraphDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaGraphDrive?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaGraphDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Graph (Default)
@@ -29,6 +32,8 @@ Invoke-MgGraphDrive -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-
 
 ## DESCRIPTION
 Invoke function sharedWithMe
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -213,5 +218,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaGraphDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaGraphDrive?view=graph-powershell-beta)
+
 [Invoke-MgBetaGraphDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaGraphDrive?view=graph-powershell-beta)
 

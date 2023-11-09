@@ -13,6 +13,9 @@ Update the navigation property items in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -55,6 +58,8 @@ Update-MgDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the navigation property items in drives
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -14986,7 +14991,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItem?view=graph-powershell-beta)
+[Update-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItem?view=graph-powershell-beta)
+[Update-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItem?view=graph-powershell-beta)
 
+## RELATED LINKS
+[Update-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItem?view=graph-powershell-beta)

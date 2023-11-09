@@ -16,6 +16,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderChildFolderDelta?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderChildFolderDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -37,6 +40,8 @@ Get a set of mail folders that have been added, deleted, or removed from the use
 A delta function call for mail folders in a mailbox is similar to a GET request, except that by appropriatelyapplying state tokens in one or more of these calls,you can query for incremental changes in the mail folders.
 This allows you to maintain and synchronizea local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -295,5 +300,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserMailFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderChildFolderDelta?view=graph-powershell-1.0)
+
 [Get-MgUserMailFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderChildFolderDelta?view=graph-powershell-1.0)
 

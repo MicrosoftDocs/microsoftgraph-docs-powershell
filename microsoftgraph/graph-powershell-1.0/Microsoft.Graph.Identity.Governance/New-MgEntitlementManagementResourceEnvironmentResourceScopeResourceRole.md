@@ -47,6 +47,8 @@ New-MgEntitlementManagementResourceEnvironmentResourceScopeResourceRole
 ## DESCRIPTION
 Create new navigation property to roles for identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageResourceEnvironmentId
@@ -431,3 +433,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

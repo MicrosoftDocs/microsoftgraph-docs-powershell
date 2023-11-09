@@ -31,6 +31,8 @@ Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal> [-W
 ## DESCRIPTION
 Update external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -297,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
 
+## RELATED LINKS

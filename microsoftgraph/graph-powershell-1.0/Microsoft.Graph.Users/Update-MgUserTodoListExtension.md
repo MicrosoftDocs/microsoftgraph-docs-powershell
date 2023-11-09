@@ -42,6 +42,8 @@ Update-MgUserTodoListExtension -InputObject <IUsersIdentity> -BodyParameter <Has
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -217,5 +219,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Update-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListExtension?view=graph-powershell-beta)
 

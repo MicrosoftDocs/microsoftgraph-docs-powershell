@@ -35,6 +35,8 @@ New-MgRoleManagementDirectoryRoleEligibilitySchedule
 ## DESCRIPTION
 Create new navigation property to roleEligibilitySchedules for roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -488,3 +490,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-beta)
 
+## RELATED LINKS

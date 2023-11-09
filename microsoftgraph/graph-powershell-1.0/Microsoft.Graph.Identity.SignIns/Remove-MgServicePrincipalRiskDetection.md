@@ -30,6 +30,8 @@ Remove-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete navigation property servicePrincipalRiskDetections for identityProtection
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -200,5 +202,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+
 [Remove-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
 

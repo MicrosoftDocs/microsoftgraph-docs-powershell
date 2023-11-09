@@ -22,6 +22,8 @@ Get-MgSecuritySecureScoreCount [-Filter <String>] [-Search <String>] [<CommonPar
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSecuritySecureScoreCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScoreCount?view=graph-powershell-beta)
 

@@ -22,6 +22,8 @@ Get-MgSecurityTriggerTypeRetentionEventTypeCount [-Filter <String>] [-Search <St
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityTriggerTypeRetentionEventTypeCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerTypeRetentionEventTypeCount?view=graph-powershell-beta)
 

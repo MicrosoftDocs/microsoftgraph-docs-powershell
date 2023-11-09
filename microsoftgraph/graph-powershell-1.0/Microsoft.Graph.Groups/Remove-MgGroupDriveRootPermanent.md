@@ -30,6 +30,8 @@ Remove-MgGroupDriveRootPermanent -InputObject <IGroupsIdentity> [-PassThru] [-Wh
 ## DESCRIPTION
 Invoke action permanentDelete
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId
@@ -180,5 +182,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupDriveRootPermanent](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupDriveRootPermanent?view=graph-powershell-beta)
 

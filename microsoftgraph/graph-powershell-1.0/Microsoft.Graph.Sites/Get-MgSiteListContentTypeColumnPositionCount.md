@@ -30,6 +30,8 @@ Get-MgSiteListContentTypeColumnPositionCount -InputObject <ISitesIdentity> [-Fil
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -182,5 +184,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteListContentTypeColumnPositionCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListContentTypeColumnPositionCount?view=graph-powershell-beta)
 

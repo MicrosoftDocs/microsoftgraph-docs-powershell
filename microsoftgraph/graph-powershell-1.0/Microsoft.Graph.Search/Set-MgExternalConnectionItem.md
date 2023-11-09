@@ -47,6 +47,8 @@ Set-MgExternalConnectionItem -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the navigation property items in external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Acl
@@ -308,5 +310,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
+
 [Set-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Set-MgBetaExternalConnectionItem?view=graph-powershell-beta)
 

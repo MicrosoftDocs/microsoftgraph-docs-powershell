@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitem
 schema: 2.0.0
 ms.prod: sharepoint
@@ -10,6 +11,9 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 Used to access the underlying listItem
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItem?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItem?view=graph-powershell-beta)
@@ -49,6 +53,8 @@ Get-MgShareListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Used to access the underlying listItem
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -294,5 +300,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItem?view=graph-powershell-beta)
+
 [Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItem?view=graph-powershell-beta)
 

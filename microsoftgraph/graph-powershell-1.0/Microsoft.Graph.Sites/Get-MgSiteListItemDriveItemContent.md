@@ -30,6 +30,8 @@ Get-MgSiteListItemDriveItemContent -InputObject <ISitesIdentity> -OutFile <Strin
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -182,5 +184,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemDriveItemContent?view=graph-powershell-beta)
 

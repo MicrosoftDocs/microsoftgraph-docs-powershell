@@ -50,6 +50,8 @@ Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask -InputObject
 ## DESCRIPTION
 Update the navigation property tasks in identityGovernance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -6210,3 +6212,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask?view=graph-powershell-beta)
 
+## RELATED LINKS

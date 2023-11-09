@@ -30,6 +30,8 @@ Get-MgSiteListItemAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -182,5 +184,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteListItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemAnalytic?view=graph-powershell-beta)
 

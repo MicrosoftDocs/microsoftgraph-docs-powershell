@@ -160,6 +160,9 @@ Nullable.
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation](Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation.md)
 Get the item of type microsoft.graph.ediscovery.caseOperation as microsoft.graph.ediscovery.caseExportOperation
 
+### [Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperationReviewSet](Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperationReviewSet.md)
+The review set the content is being exported from.
+
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationCount](Get-MgBetaComplianceEdiscoveryCaseOperationCount.md)
 Get the number of the resource
 

@@ -234,4 +234,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's display name changes.
 
 ## RELATED LINKS
+
 [New-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContract?view=graph-powershell-beta)

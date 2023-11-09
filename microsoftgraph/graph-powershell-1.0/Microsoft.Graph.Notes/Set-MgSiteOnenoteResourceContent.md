@@ -30,6 +30,8 @@ Set-MgSiteOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Stream>] 
 ## DESCRIPTION
 The content stream
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Data
@@ -172,5 +174,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Set-MgBetaSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaSiteOnenoteResourceContent?view=graph-powershell-beta)
 

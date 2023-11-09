@@ -42,6 +42,8 @@ Get-MgSiteTermStoreGroupSetParentGroup -InputObject <ISitesIdentity> [-ExpandPro
 ## DESCRIPTION
 The parent [group] that contains the set.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -209,5 +211,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetParentGroup?view=graph-powershell-beta)
 

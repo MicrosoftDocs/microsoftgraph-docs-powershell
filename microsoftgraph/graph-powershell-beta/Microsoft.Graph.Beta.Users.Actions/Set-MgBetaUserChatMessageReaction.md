@@ -13,6 +13,9 @@ Invoke action setReaction
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgUserChatMessageReaction](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserChatMessageReaction?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserChatMessageReaction](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserChatMessageReaction?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -44,6 +47,8 @@ Set-MgBetaUserChatMessageReaction -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Invoke action setReaction
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -264,5 +269,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserChatMessageReaction](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserChatMessageReaction?view=graph-powershell-1.0)
+
 [Set-MgUserChatMessageReaction](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserChatMessageReaction?view=graph-powershell-1.0)
 

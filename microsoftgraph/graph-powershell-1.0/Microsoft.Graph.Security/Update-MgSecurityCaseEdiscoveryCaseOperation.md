@@ -47,6 +47,8 @@ Update-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property operations in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Action
@@ -390,5 +392,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subcode <Int32?>]`: The result subcode.
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
 

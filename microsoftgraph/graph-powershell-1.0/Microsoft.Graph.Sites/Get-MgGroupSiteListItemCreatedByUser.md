@@ -32,6 +32,8 @@ Get-MgGroupSiteListItemCreatedByUser -InputObject <ISitesIdentity> [-ExpandPrope
 Identity of the user who created the item.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -199,5 +201,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemCreatedByUser?view=graph-powershell-beta)
 

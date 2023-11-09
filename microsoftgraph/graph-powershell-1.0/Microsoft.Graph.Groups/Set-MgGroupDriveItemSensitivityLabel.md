@@ -46,6 +46,8 @@ Set-MgGroupDriveItemSensitivityLabel -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,5 +296,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Set-MgBetaGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
 

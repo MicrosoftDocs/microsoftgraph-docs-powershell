@@ -44,6 +44,8 @@ Confirm-MgDirectoryRoleMemberObject -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -203,5 +205,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Confirm-MgBetaDirectoryRoleMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaDirectoryRoleMemberObject?view=graph-powershell-beta)
 

@@ -13,6 +13,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumnCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumnCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -29,6 +32,8 @@ Get-MgDriveListContentTypeColumnCount -InputObject <IFilesIdentity> [-Filter <St
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +158,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveListContentTypeColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumnCount?view=graph-powershell-beta)
+
 [Get-MgBetaDriveListContentTypeColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumnCount?view=graph-powershell-beta)
 

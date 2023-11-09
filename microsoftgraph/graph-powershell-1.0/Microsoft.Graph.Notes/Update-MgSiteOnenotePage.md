@@ -48,6 +48,8 @@ Update-MgSiteOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property pages in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -656,3 +658,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaSiteOnenotePage?view=graph-powershell-beta)
 
+## RELATED LINKS

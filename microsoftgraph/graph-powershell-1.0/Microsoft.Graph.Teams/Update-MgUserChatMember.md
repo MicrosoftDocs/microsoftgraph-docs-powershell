@@ -44,6 +44,8 @@ Update-MgUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property members in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -296,5 +298,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Update-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatMember?view=graph-powershell-beta)
 

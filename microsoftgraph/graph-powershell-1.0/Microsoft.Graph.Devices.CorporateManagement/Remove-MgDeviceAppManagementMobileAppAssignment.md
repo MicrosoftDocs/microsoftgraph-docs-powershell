@@ -18,13 +18,209 @@ Deletes a mobileAppAssignment.
 ### Delete (Default)
 ```
 Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Delete9
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Delete8
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### Delete7
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete6
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete5
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete4
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete3
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete2
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete16
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete15
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete14
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete13
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete12
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete11
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete10
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity9
 ```
 Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity8
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity7
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity6
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity5
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity4
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity3
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity2
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity16
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity15
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity14
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity13
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity12
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity11
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity10
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete (Default)
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Delete9
+```
+Remove-MgDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +233,7 @@ ETag
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Delete, Delete9, Delete8, Delete7, Delete6, Delete5, Delete4, Delete3, Delete2, Delete16, Delete15, Delete14, Delete13, Delete12, Delete11, Delete10, Delete1, DeleteViaIdentity9, DeleteViaIdentity8, DeleteViaIdentity7, DeleteViaIdentity6, DeleteViaIdentity5, DeleteViaIdentity4, DeleteViaIdentity3, DeleteViaIdentity2, DeleteViaIdentity16, DeleteViaIdentity15, DeleteViaIdentity14, DeleteViaIdentity13, DeleteViaIdentity12, DeleteViaIdentity11, DeleteViaIdentity10
 Aliases:
 
 Required: False
@@ -53,7 +249,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: Delete, Delete9, DeleteViaIdentity9, DeleteViaIdentity8, DeleteViaIdentity7, DeleteViaIdentity6, DeleteViaIdentity5, DeleteViaIdentity4, DeleteViaIdentity3, DeleteViaIdentity2, DeleteViaIdentity16, DeleteViaIdentity15, DeleteViaIdentity14, DeleteViaIdentity13, DeleteViaIdentity12, DeleteViaIdentity11, DeleteViaIdentity10
 Aliases:
 
 Required: True
@@ -68,7 +264,7 @@ The unique identifier of mobileAppAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete9, Delete8, Delete7, Delete6, Delete5, Delete4, Delete3, Delete2, Delete16, Delete15, Delete14, Delete13, Delete12, Delete11, Delete10, Delete1
 Aliases:
 
 Required: True
@@ -83,7 +279,7 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete9, Delete8, Delete7, Delete6, Delete5, Delete4, Delete3, Delete2, Delete16, Delete15, Delete14, Delete13, Delete12, Delete11, Delete10, Delete1
 Aliases:
 
 Required: True
@@ -98,7 +294,7 @@ Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: Delete, Delete9, Delete8, Delete7, Delete6, Delete5, Delete4, Delete3, Delete2, Delete16, Delete15, Delete14, Delete13, Delete12, Delete11, Delete10, Delete1, DeleteViaIdentity9, DeleteViaIdentity8, DeleteViaIdentity7, DeleteViaIdentity6, DeleteViaIdentity5, DeleteViaIdentity4, DeleteViaIdentity3, DeleteViaIdentity2, DeleteViaIdentity16, DeleteViaIdentity15, DeleteViaIdentity14, DeleteViaIdentity13, DeleteViaIdentity12, DeleteViaIdentity11, DeleteViaIdentity10
 Aliases:
 
 Required: False
@@ -113,7 +309,7 @@ Prompts you for confirmation before running the cmdlet.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: Delete, Delete9, Delete8, Delete7, Delete6, Delete5, Delete4, Delete3, Delete2, Delete16, Delete15, Delete14, Delete13, Delete12, Delete11, Delete10, Delete1, DeleteViaIdentity9, DeleteViaIdentity8, DeleteViaIdentity7, DeleteViaIdentity6, DeleteViaIdentity5, DeleteViaIdentity4, DeleteViaIdentity3, DeleteViaIdentity2, DeleteViaIdentity16, DeleteViaIdentity15, DeleteViaIdentity14, DeleteViaIdentity13, DeleteViaIdentity12, DeleteViaIdentity11, DeleteViaIdentity10
 Aliases: cf
 
 Required: False
@@ -129,7 +325,7 @@ The cmdlet is not run.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: Delete, Delete9, Delete8, Delete7, Delete6, Delete5, Delete4, Delete3, Delete2, Delete16, Delete15, Delete14, Delete13, Delete12, Delete11, Delete10, Delete1, DeleteViaIdentity9, DeleteViaIdentity8, DeleteViaIdentity7, DeleteViaIdentity6, DeleteViaIdentity5, DeleteViaIdentity4, DeleteViaIdentity3, DeleteViaIdentity2, DeleteViaIdentity16, DeleteViaIdentity15, DeleteViaIdentity14, DeleteViaIdentity13, DeleteViaIdentity12, DeleteViaIdentity11, DeleteViaIdentity10
 Aliases: wi
 
 Required: False

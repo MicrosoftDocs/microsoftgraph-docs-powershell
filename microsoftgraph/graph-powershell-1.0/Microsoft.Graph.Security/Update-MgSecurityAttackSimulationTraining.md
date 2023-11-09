@@ -50,6 +50,8 @@ Update-MgSecurityAttackSimulationTraining -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property trainings in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -507,5 +509,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+
 [Update-MgBetaSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationTraining?view=graph-powershell-beta)
 

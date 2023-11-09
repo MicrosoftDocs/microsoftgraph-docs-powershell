@@ -13,6 +13,9 @@ Update the navigation property drives in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDrive?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -57,6 +60,8 @@ Update-MgUserDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Update the navigation property drives in users
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -26520,7 +26525,11 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDrive?view=graph-powershell-beta)
+[Update-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDrive?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDrive?view=graph-powershell-beta)
+[Update-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDrive?view=graph-powershell-beta)
 
+## RELATED LINKS
+[Update-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDrive?view=graph-powershell-beta)

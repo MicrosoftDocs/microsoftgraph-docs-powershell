@@ -29,6 +29,8 @@ Get-MgReportSharePointSiteUsagePage -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Invoke function getSharePointSiteUsagePages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -133,5 +135,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+
 [Get-MgBetaReportSharePointSiteUsagePage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsagePage?view=graph-powershell-beta)
 

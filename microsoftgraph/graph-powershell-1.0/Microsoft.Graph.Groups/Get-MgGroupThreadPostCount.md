@@ -29,6 +29,8 @@ Get-MgGroupThreadPostCount -InputObject <IGroupsIdentity> [-Filter <String>] [<C
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ConversationThreadId
@@ -148,5 +150,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupThreadPostCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPostCount?view=graph-powershell-beta)
 

@@ -30,8 +30,6 @@ Get-MgGroupTeamChannelFileFolderContent -InputObject <ITeamsIdentity> -OutFile <
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -163,4 +161,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelFileFolderContent?view=graph-powershell-beta)

@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
+ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadismissusereventreminder
 schema: 2.0.0
 ms.prod: outlook
@@ -11,6 +12,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Dismiss a reminder that has been triggered for an event in a user calendar.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissUserEventReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventReminder?view=graph-powershell-1.0)
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgDismissUserEventReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventReminder?view=graph-powershell-1.0)
@@ -196,4 +200,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgDismissUserEventReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventReminder?view=graph-powershell-1.0)
+
 [Invoke-MgDismissUserEventReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDismissUserEventReminder?view=graph-powershell-1.0)

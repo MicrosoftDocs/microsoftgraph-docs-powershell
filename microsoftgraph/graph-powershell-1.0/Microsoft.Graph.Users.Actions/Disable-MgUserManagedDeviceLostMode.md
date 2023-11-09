@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
+ms.prod: intune
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/disable-mgusermanageddevicelostmode
 schema: 2.0.0
 ms.prod: intune
@@ -10,6 +11,9 @@ ms.prod: intune
 
 ## SYNOPSIS
 Disable lost mode
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Disable-MgBetaUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Disable-MgBetaUserManagedDeviceLostMode?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Disable-MgBetaUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Disable-MgBetaUserManagedDeviceLostMode?view=graph-powershell-beta)
@@ -30,6 +34,8 @@ Disable-MgUserManagedDeviceLostMode -InputObject <IUsersActionsIdentity> [-PassT
 
 ## DESCRIPTION
 Disable lost mode
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -175,5 +181,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Disable-MgBetaUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Disable-MgBetaUserManagedDeviceLostMode?view=graph-powershell-beta)
+
 [Disable-MgBetaUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Disable-MgBetaUserManagedDeviceLostMode?view=graph-powershell-beta)
 

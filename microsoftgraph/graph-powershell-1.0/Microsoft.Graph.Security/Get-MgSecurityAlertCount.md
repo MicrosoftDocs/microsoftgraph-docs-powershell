@@ -22,6 +22,8 @@ Get-MgSecurityAlertCount [-Filter <String>] [-Search <String>] [<CommonParameter
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Filter
@@ -67,5 +69,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [Get-MgBetaSecurityAlertCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlertCount?view=graph-powershell-beta)
 

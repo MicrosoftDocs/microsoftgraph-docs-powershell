@@ -42,6 +42,8 @@ Get-MgSiteContentTypeBaseTypeCount -InputObject <ISitesIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -194,5 +196,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaSiteContentTypeBaseTypeCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeBaseTypeCount?view=graph-powershell-beta)
 

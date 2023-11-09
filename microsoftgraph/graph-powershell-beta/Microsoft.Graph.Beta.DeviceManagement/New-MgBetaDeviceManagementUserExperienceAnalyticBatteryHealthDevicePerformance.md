@@ -15,8 +15,9 @@ Create new navigation property to userExperienceAnalyticsBatteryHealthDevicePerf
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
- [-AdditionalProperties <Hashtable>] [-BatteryAgeInDays <Int32>] [-DeviceBatteryCount <Int32>]
- [-DeviceBatteryHealthScore <Int32>] [-DeviceId <String>] [-DeviceName <String>]
+ [-AdditionalProperties <Hashtable>] [-BatteryAgeInDays <Int32>]
+ [-DeviceBatteriesDetails <IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail[]>]
+ [-DeviceBatteryCount <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceId <String>] [-DeviceName <String>]
  [-EstimatedRuntimeInMinutes <Int32>] [-FullBatteryDrainCount <Int32>]
  [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
  [-MaxCapacityPercentage <Int32>] [-Model <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -79,6 +80,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DeviceBatteriesDetails
+Properties (maxCapacity and cycleCount) related to all batteries of the device.
+To construct, see NOTES section for DEVICEBATTERIESDETAILS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUserExperienceAnalyticsDeviceBatteryDetail[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

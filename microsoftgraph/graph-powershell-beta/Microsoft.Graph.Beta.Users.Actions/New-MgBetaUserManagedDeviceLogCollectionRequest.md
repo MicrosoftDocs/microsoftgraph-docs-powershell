@@ -43,6 +43,8 @@ New-MgBetaUserManagedDeviceLogCollectionRequest -InputObject <IUsersActionsIdent
 ## DESCRIPTION
 Invoke action createDeviceLogCollectionRequest
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -241,4 +243,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[TemplateType <DeviceLogCollectionTemplateType?>]`: Enum for the template type used for collecting logs
 
 ## RELATED LINKS
-

@@ -13,6 +13,9 @@ Delete navigation property fields for groups
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootListItemVersionField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootListItemVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,8 @@ Remove-MgGroupDriveRootListItemVersionField -InputObject <IFilesIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete navigation property fields for groups
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -199,5 +204,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootListItemVersionField?view=graph-powershell-beta)
+
 [Remove-MgBetaGroupDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveRootListItemVersionField?view=graph-powershell-beta)
 

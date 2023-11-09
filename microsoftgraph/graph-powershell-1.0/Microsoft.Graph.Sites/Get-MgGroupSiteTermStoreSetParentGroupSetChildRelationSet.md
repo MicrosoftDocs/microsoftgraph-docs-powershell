@@ -70,6 +70,8 @@ Get-MgGroupSiteTermStoreSetParentGroupSetChildRelationSet -InputObject <ISitesId
 ## DESCRIPTION
 The [set] in which the relation is relevant.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -297,5 +299,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
 [Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSetChildRelationSet?view=graph-powershell-beta)
 

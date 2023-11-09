@@ -34,6 +34,8 @@ New-MgSecurityAttackSimulationTraining -BodyParameter <IMicrosoftGraphTraining> 
 ## DESCRIPTION
 Create new navigation property to trainings for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -406,5 +408,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationTraining?view=graph-powershell-beta)
 

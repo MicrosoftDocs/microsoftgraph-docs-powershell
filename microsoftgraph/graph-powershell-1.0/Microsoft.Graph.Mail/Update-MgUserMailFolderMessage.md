@@ -70,6 +70,8 @@ Update-MgUserMailFolderMessage -InputObject <IMailIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property messages in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -928,3 +930,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
+## RELATED LINKS

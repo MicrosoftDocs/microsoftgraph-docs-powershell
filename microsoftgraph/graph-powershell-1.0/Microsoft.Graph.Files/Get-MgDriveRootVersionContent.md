@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootversioncontent
 schema: 2.0.0
 ms.prod: sharepoint
@@ -10,6 +11,9 @@ ms.prod: sharepoint
 
 ## SYNOPSIS
 The content stream for this version of the item.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
@@ -29,6 +33,8 @@ Get-MgDriveRootVersionContent -InputObject <IFilesIdentity> -OutFile <String> [-
 
 ## DESCRIPTION
 The content stream for this version of the item.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -153,5 +159,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
+
 [Get-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
 

@@ -32,6 +32,8 @@ Remove-MgGroupTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-
 Delete a member from a standard tag in a team.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -209,5 +211,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+
 [Remove-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
 

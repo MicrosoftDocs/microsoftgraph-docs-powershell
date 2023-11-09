@@ -30,6 +30,8 @@ New-MgSecurityThreatIntelligenceArticleIndicator -BodyParameter <Hashtable> [-Wh
 ## DESCRIPTION
 Create new navigation property to articleIndicators for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -153,5 +155,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
 [New-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
 

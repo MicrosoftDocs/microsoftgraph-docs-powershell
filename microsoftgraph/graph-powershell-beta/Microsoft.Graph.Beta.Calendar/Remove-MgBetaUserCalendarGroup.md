@@ -1,14 +1,14 @@
 ---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplace
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetaplaceworkspace
 schema: 2.0.0
 ---
 
-# Remove-MgBetaPlace
+# Remove-MgBetaPlaceWorkspace
 
 ## SYNOPSIS
-Delete entity from places
+Delete navigation property workspaces for places
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserCalendarGroup?view=graph-powershell-1.0)
@@ -17,17 +17,18 @@ Delete entity from places
 
 ### Delete (Default)
 ```
-Remove-MgBetaPlace -PlaceId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaPlaceWorkspace -PlaceId <String> -WorkspaceId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaPlace -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaPlaceWorkspace -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete entity from places
+Delete navigation property workspaces for places
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -106,6 +107,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WorkspaceId
+The unique identifier of workspace
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -166,7 +182,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlaceId <String>]`: The unique identifier of place
+  - `[RoomId <String>]`: The unique identifier of room
   - `[UserId <String>]`: The unique identifier of user
+  - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
 [Remove-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserCalendarGroup?view=graph-powershell-1.0)

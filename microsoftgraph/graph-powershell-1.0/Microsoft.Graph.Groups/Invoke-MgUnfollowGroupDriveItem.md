@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
+ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgunfollowgroupdriveitem
 schema: 2.0.0
 ms.prod: sharepoint
@@ -32,6 +33,8 @@ Invoke-MgUnfollowGroupDriveItem -InputObject <IGroupsIdentity> [-PassThru] [-Wha
 ## DESCRIPTION
 Unfollow a driveItem.
 This API is available in the following national cloud deployments.
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -198,5 +201,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+
 [Invoke-MgBetaUnfollowGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaUnfollowGroupDriveItem?view=graph-powershell-beta)
 

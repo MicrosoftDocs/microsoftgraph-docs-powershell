@@ -30,6 +30,8 @@ New-MgSecurityThreatIntelligenceSubdomain -BodyParameter <IMicrosoftGraphSecurit
 ## DESCRIPTION
 Create new navigation property to subdomains for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -470,3 +472,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceSubdomain?view=graph-powershell-beta)
 
+## RELATED LINKS

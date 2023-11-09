@@ -52,6 +52,8 @@ Update-MgRoleManagementEntitlementManagementRoleEligibilitySchedule -InputObject
 ## DESCRIPTION
 Update the navigation property roleEligibilitySchedules in roleManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -607,3 +609,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-beta)
 
+## RELATED LINKS
