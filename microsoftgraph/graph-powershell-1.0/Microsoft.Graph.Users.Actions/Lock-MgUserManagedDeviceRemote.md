@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 ms.prod: intune
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/lock-mgusermanageddeviceremote
 schema: 2.0.0
+ms.prod: intune
 ---
 
 # Lock-MgUserManagedDeviceRemote

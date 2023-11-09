@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcheckingroupdriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Invoke-MgCheckinGroupDriveItem

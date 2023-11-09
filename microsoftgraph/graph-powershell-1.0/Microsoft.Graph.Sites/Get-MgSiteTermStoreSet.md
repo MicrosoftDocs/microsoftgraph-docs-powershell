@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoreset
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteTermStoreSet

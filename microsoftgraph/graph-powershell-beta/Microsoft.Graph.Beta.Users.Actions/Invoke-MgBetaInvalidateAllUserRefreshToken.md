@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Invoke-MgBetaInvalidateAllUserRefreshToken

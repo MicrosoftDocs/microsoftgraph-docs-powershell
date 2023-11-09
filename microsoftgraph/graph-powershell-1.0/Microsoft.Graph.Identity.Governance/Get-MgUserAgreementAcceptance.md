@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.Governance
 ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleeligibilityscheduleroledefinition
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition

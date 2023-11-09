@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Mail
 ms.prod: mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassification
 schema: 2.0.0
+ms.prod: mail
 ---
 
 # Get-MgUserInferenceClassification

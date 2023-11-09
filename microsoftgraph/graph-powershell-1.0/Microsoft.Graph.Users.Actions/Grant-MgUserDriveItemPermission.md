@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/grant-mguserdriveitempermission
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Grant-MgUserDriveItemPermission

@@ -4,6 +4,8 @@ Module Name: Microsoft.Graph.Identity.Governance
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroledefinition
 schema: 2.0.0
+ms.prod: directory-management
+ms.prod: directory-management
 ---
 
 # Get-MgRoleManagementEntitlementManagementRoleDefinition

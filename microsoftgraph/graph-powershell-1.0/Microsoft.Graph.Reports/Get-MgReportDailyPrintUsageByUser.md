@@ -4,6 +4,8 @@ Module Name: Microsoft.Graph.Reports
 ms.prod: cloud-printing
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyuser
 schema: 2.0.0
+ms.prod: cloud-printing
+ms.prod: cloud-printing
 ---
 
 # Get-MgReportDailyPrintUsageByUser

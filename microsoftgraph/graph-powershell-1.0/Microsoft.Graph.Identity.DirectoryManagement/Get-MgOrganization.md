@@ -4,6 +4,8 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 ms.prod: intune
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization
 schema: 2.0.0
+ms.prod: directory-management
+ms.prod: intune
 ---
 
 # Get-MgOrganization

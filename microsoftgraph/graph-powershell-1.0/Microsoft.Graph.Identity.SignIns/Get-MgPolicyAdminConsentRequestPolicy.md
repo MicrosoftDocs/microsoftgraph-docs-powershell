@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.SignIns
 ms.prod: governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgPolicyAdminConsentRequestPolicy

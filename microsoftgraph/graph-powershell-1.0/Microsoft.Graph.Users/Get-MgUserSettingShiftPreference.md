@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingshiftpreference
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgUserSettingShiftPreference
