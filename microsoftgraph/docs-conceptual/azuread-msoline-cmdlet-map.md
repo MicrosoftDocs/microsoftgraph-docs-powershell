@@ -282,7 +282,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 ### Groups
 
-|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADGroupMember|[New-MgGroupMember](/powershell/module/microsoft.graph.groups/new-mggroupmember)|
 |Add-AzureADGroupOwner|[New-MgGroupOwnerByRef](/powershell/module/microsoft.graph.groups/new-mggroupownerbyref)|
