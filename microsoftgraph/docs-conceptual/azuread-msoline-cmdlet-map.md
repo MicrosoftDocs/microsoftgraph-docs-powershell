@@ -184,7 +184,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 ### Connect to your directory
 
-|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Connect-AzureAD|[Connect-MgGraph](authentication-commands.md#using-connect-mggraph)|
 |Disconnect-AzureAD|[Disconnect-MgGraph](authentication-commands.md#using-disconnect-mggraph)|
