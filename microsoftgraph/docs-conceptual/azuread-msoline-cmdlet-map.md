@@ -355,7 +355,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 ### Users
 
-|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADUser|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)|
 |Get-AzureADUserAppRoleAssignment|[Get-MgUserAppRoleAssignment](/powershell/module/microsoft.graph.applications/get-mguserapproleassignment)|
