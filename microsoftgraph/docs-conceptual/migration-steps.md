@@ -12,7 +12,7 @@ ms.reviewer: maisarissi, ianfarr
 
 # Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell
 
-Microsoft Entra ID, Microsoft Entra ID Preview and MSOnline PowerShell modules are planned for deprecation. Microsoft Graph PowerShell is the PowerShell module to use for interacting with Microsoft Entra ID and other Microsoft services.
+Azure AD, Azure AD Preview and MSOnline PowerShell modules are planned for deprecation. Microsoft Graph PowerShell is the PowerShell module to use for interacting with Microsoft Entra ID and other Microsoft services.
 
 Use the information in this article to plan the migration of your applications to Microsoft Graph PowerShell.
 
