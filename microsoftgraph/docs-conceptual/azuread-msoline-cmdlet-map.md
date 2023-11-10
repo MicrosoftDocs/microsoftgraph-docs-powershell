@@ -117,7 +117,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 ### Microsoft Entra ID
 
-|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADMSApplicationOwner|[New-MgApplicationOwnerByRef](/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref)|
 |Add-AzureADMSServicePrincipalDelegatedPermissionClassification|[New-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification)|
