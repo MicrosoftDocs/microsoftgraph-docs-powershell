@@ -15,7 +15,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 <a name='azure-ad-to-microsoft-graph-powershell-by-category'></a>
 
-## Microsoft Entra ID to Microsoft Graph PowerShell by category
+## Azure AD to Microsoft Graph PowerShell by category
 
 The following is the categorization of the Microsoft Entra cmdlets. Select a category to use the cmdlets 
 
