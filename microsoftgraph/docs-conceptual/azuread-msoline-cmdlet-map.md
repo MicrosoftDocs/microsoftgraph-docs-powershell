@@ -13,7 +13,6 @@ ms.author: eunicewaweru
 
 You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmdlets that you need in the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview). For more information about the new cmdlets, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
 
-<a name='azure-ad-to-microsoft-graph-powershell-by-category'></a>
 
 ## Azure AD to Microsoft Graph PowerShell by category
 
