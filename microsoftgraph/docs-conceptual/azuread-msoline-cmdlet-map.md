@@ -320,7 +320,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 ### Policies
 
-|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADMSAuthorizationPolicy|[Get-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthorizationpolicy)|
 |Set-AzureADMSAuthorizationPolicy|[Update-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)|
