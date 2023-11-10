@@ -63,7 +63,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 ### Application proxy application management
 
-|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADApplicationProxyApplication||
 |Get-AzureADApplicationProxyApplicationConnectorGroup||
