@@ -1,5 +1,5 @@
 ---
-title: "Find Microsoft Entra ID and MSOnline cmdlets in Microsoft Graph PowerShell"
+title: "Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell"
 description: "Use this map of the Azure AD PowerShell and MSOnline cmdlets to find their Microsoft Graph PowerShell equivalents."
 
 ms.topic: reference
