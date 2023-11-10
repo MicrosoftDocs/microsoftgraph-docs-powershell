@@ -215,7 +215,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 ### Devices
 
-|Microsoft Entra cmdlets | Microsoft Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADDeviceRegisteredOwner|[New-MgDeviceRegisteredOwnerByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregisteredownerbyref)|
 |Add-AzureADDeviceRegisteredUser||
