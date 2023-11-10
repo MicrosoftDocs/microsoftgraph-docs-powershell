@@ -24,7 +24,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
         - [Application proxy application management](#application-proxy-application-management)
         - [Application proxy connector management](#application-proxy-connector-management)
         - [Applications](#applications)
-        - [Microsoft Entra ID](#azure-ad)
+        - [Azure AD](#azure-ad)
         - [Certificate authorities](#certificate-authorities)
         - [Connect to your directory](#connect-to-your-directory)
         - [Contacts](#contacts)
