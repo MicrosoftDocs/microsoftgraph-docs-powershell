@@ -12,7 +12,7 @@ ms.reviewer: maisarissi, ianfarr
 
 # Upgrade from Azure AD PowerShell to Microsoft Graph PowerShell
 
-Azure AD, Azure AD Preview and MSOnline PowerShell modules are planned for deprecation. Microsoft Graph PowerShell is the PowerShell module to use for interacting with Azure AD and other Microsoft services.
+Azure AD, Azure AD Preview and MSOnline PowerShell modules are planned for deprecation. Microsoft Graph PowerShell is the PowerShell module to use for interacting with Microsoft Entra ID and other Microsoft services.
 
 Use the information in this article to plan the migration of your applications to Microsoft Graph PowerShell.
 
@@ -20,11 +20,11 @@ Use the information in this article to plan the migration of your applications t
 
 The following list summarizes the key advantages of using the Microsoft Graph PowerShell SDK.
 
-- **Access to all Microsoft Graph APIs**: Microsoft Graph PowerShell is based on Microsoft Graph API. The Microsoft Graph API includes, in addition to Azure AD, APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
+- **Access to all Microsoft Graph APIs**: Microsoft Graph PowerShell is based on Microsoft Graph API. The Microsoft Graph API includes, in addition to Microsoft Entra ID, APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
 - **Supports PowerShell 7**: Microsoft Graph PowerShell module works with PowerShell 7 and later. It's also compatible with Windows PowerShell 5.1.
 - **Cross-platform support**: Microsoft Graph PowerShell module works on all platforms including Windows, macOS, and Linux.
 - **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security. For example, you can use Passwordless sign-in experiences.
-- **Supports external identities**: Users from other Azure AD tenants can authenticate to services in your tenant with Microsoft Graph PowerShell.
+- **Supports external identities**: Users from other Microsoft Entra tenants can authenticate to services in your tenant with Microsoft Graph PowerShell.
 - **Uses least privilege**: Microsoft Graph PowerShell permissions are NOT pre-authorized and users must perform one-time request for app permissions depending on their needs.
 - **Advanced queries**: Microsoft Graph PowerShell supports rich, advanced queries via eventual consistency. For example, you can get a near-instant count of all users using advanced queries.
 - **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.

@@ -1,6 +1,6 @@
 ---
-title: "Manage access to resources in Azure AD entitlement management using Microsoft Graph PowerShell"
-description: "Learn how to manage access to resources in Azure Active Directory (Azure AD) entitlement management using Microsoft Graph PowerShell."
+title: "Manage access to resources in Microsoft Entra entitlement management using Microsoft Graph PowerShell"
+description: "Learn how to manage access to resources in Microsoft Entra entitlement management using Microsoft Graph PowerShell."
 
 ms.topic: tutorial
 ms.date: 05/19/2023
@@ -9,9 +9,9 @@ manager: CelesteDG
 author: msewaweru
 ---
 
-# Tutorial: Manage access to resources in Azure AD entitlement management using Microsoft Graph PowerShell
+# Tutorial: Manage access to resources in Microsoft Entra entitlement management using Microsoft Graph PowerShell
 
-Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it's no longer needed. [Azure Active Directory (Azure AD) entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph PowerShell enables you to manage this type of access.
+Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it's no longer needed. [Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph PowerShell enables you to manage this type of access.
 
 In this tutorial, you'll create a package of resources for a marketing campaign that internal users can use for self-service requests. Requests don't require approval and users' access expires after 30 days. Here, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
 
@@ -20,8 +20,8 @@ In this tutorial, you'll create a package of resources for a marketing campaign 
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
 1. Microsoft Graph PowerShell SDK is installed. Follow the [installation guide](installation.md) for more info on how to do this.  
-1. To use the Azure AD entitlement management, you must have one of the following licenses:
-    - Azure AD Premium P2
+1. To use the Microsoft Entra entitlement management, you must have one of the following licenses:
+    - Microsoft Entra ID P2
     - Enterprise Mobility + Security (EMS) E5 license
 1. Entitlement management is available in the beta module of Microsoft Graph PowerShell. Ensure that you have both Microsoft.Graph and Microsoft.Graph.Beta modules installed.
 
@@ -41,7 +41,7 @@ In this step, you'll create a group named **Marketing resources** in the directo
 
 Create a user account that you'll use later to request access to the resources in the access package.
 
-When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure AD overview page. Record the value of the returned `Id` property to use later.
+When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page. Record the value of the returned `Id` property to use later.
 
 ```powershell
 $passwordProfile =@{
