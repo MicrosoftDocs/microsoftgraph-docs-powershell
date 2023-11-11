@@ -13,9 +13,10 @@ ms.author: eunicewaweru
 
 You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmdlets that you need in the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview). For more information about the new cmdlets, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
 
+
 ## Azure AD to Microsoft Graph PowerShell by category
 
-The following is the categorization of the Azure AD cmdlets. Select a category to use the cmdlets 
+The following is the categorization of the Microsoft Entra cmdlets. Select a category to use the cmdlets 
 
 :::row:::
     :::column:::
@@ -23,7 +24,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
         - [Application proxy application management](#application-proxy-application-management)
         - [Application proxy connector management](#application-proxy-connector-management)
         - [Applications](#applications)
-        - [Azure AD](#azure-ad)
+        - [Azure AD](#azure-ad)
         - [Certificate authorities](#certificate-authorities)
         - [Connect to your directory](#connect-to-your-directory)
         - [Contacts](#contacts)
@@ -112,7 +113,9 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-AzureADApplication|[Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication)|
 |Set-AzureADApplicationLogo|[Set-MgApplicationLogo](/powershell/module/microsoft.graph.applications/set-mgapplicationlogo)|
 
-### Azure AD
+<a name='azure-ad'></a>
+
+### Microsoft Entra ID
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|

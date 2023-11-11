@@ -1,6 +1,6 @@
 ---
-title: "Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell"
-description: "Learn how to create eligible and active role assignments in Azure AD Privileged Identity Management using Microsoft Graph PowerShell"
+title: "Assign Microsoft Entra roles in Privileged Identity Management using Microsoft Graph PowerShell"
+description: "Learn how to create eligible and active role assignments in Microsoft Entra Privileged Identity Management using Microsoft Graph PowerShell"
 
 ms.topic: tutorial
 ms.date: 3/30/2023
@@ -10,11 +10,11 @@ ms.author: eunicewaweru
 ms.reviewer: mandardalvi
 ---
 
-# Tutorial: Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell
+# Tutorial: Assign Microsoft Entra roles in Privileged Identity Management using Microsoft Graph PowerShell
 
-In Azure Active Directory (Azure AD), a Global Administrator can make permanent Azure AD admin role assignments.
+In Microsoft Entra ID, a Global Administrator can make permanent Microsoft Entra admin role assignments.
 
-The Azure AD Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Additionally, privileged role administrators can make users eligible for Azure AD admin roles. An eligible administrator can activate the role when they need the role, and the permissions expire once the eligible administrator is done.
+The Microsoft Entra Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Additionally, privileged role administrators can make users eligible for Microsoft Entra admin roles. An eligible administrator can activate the role when they need the role, and the permissions expire once the eligible administrator is done.
 
 In this tutorial, you'll create, extend, activate, deactivate, and remove eligible role assignments.
 
@@ -23,8 +23,8 @@ In this tutorial, you'll create, extend, activate, deactivate, and remove eligib
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.  
-1. To use the Azure AD Privileged Identity Management, you must have one of the following licenses:
-    - Azure AD Premium P2
+1. To use the Microsoft Entra Privileged Identity Management, you must have one of the following licenses:
+    - Microsoft Entra ID P2
     - Enterprise Mobility + Security (EMS) E5 license
 1. Microsoft Graph PowerShell using a Global Administrator role and the appropriate permissions. For this tutorial, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
 
@@ -36,7 +36,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 ## Step 1: Create a user account
 
-In this step, you'll create a user who will be the target of the admin assignments. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure AD overview page.
+In this step, you'll create a user who will be the target of the admin assignments. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page.
 
 ```powershell
 $passwordProfile =@{

@@ -11,7 +11,7 @@ ms.author: eunicewaweru
 
 # Manage PIM policies in Microsoft Graph PowerShell
 
-The Azure AD Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Each role has a group of settings that manage it. For example, activation and assignment settings. These role settings are called policies. Each policy has a set of rules.
+The Microsoft Entra Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Each role has a group of settings that manage it. For example, activation and assignment settings. These role settings are called policies. Each policy has a set of rules.
 
 In this how-to guide, you'll list policies, policy assignments and rules, and update policy rules.
 
@@ -20,8 +20,8 @@ In this how-to guide, you'll list policies, policy assignments and rules, and up
 To successfully complete this guide, make sure you have the required prerequisites:
 
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.  
-1. To use the Azure AD Privileged Identity Management, you must have one of the following licenses:
-    - Azure AD Premium P2
+1. To use the Microsoft Entra Privileged Identity Management, you must have one of the following licenses:
+    - Microsoft Entra ID P2
     - Enterprise Mobility + Security (EMS) E5 license
 1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this how-to guide, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
 
@@ -214,4 +214,4 @@ AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metad
 
 ## Next steps
 
-[Assign Azure AD roles in PIM](tutorial-pim.md)
+[Assign Microsoft Entra roles in PIM](tutorial-pim.md)

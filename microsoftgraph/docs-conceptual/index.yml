@@ -61,7 +61,7 @@ landingContent:
             url: app-only.md
           - text: Manage access to resources
             url: tutorial-entitlement-management.md
-          - text: Assign Azure AD roles in PIM
+          - text: Assign Microsoft Entra roles in PIM
             url: tutorial-pim.md
           - text: Manage PIM policies  
             url: how-to-manage-pim-policies.md  
@@ -94,4 +94,3 @@ landingContent:
             url: https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0
           - text: Microsoft Q&A
             url: https://docs.microsoft.com/en-us/answers/index.html    
-

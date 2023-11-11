@@ -184,7 +184,7 @@ f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani
 
 We recommend that you use `-Property` to limit the properties returned by a query to those properties needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 
- Some Azure AD resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Property` to return properties outside of the default set.  
+ Some Microsoft Entra resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Property` to return properties outside of the default set.  
 
 ## Top parameter
 
@@ -228,4 +228,4 @@ Query parameters specified in a request might fail silently. This can be true fo
 
 ## See also
 
-- [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
+- [Advanced query capabilities on Microsoft Entra directory objects](/graph/aad-advanced-queries)

@@ -105,7 +105,7 @@ Connect-MgGraph -TenantId "Tenant_Id" -ClientSecretCredential $ClientSecretCrede
 
 #### Using managed identity
 
-A common challenge when writing automation scripts is the management of secrets, credentials, certificates, and keys used to secure communication between services. Eliminate the need to manage credentials by allowing the module to obtain access tokens for Azure resources that are protected by Azure AD. The identity is managed by the Azure platform and does not require you to provision or rotate any secrets.
+A common challenge when writing automation scripts is the management of secrets, credentials, certificates, and keys used to secure communication between services. Eliminate the need to manage credentials by allowing the module to obtain access tokens for Azure resources that are protected by Microsoft Entra ID. The identity is managed by the Azure platform and does not require you to provision or rotate any secrets.
 
 - System-assigned managed identity:
 
@@ -149,7 +149,7 @@ Microsoft Graph PowerShell supports the following passwordless authentication me
 >[!NOTE]
 > FIDO2 security keys option is only supported on PowerShell 7 and above.
 
-For more information, see [Passwordless authentication options for Azure AD](/azure/active-directory/authentication/concept-authentication-passwordless) and [Azure AD certificate-based authentication](/azure/active-directory/authentication/concept-certificate-based-authentication).
+For more information, see [Passwordless authentication options for Microsoft Entra ID](/azure/active-directory/authentication/concept-authentication-passwordless) and [Microsoft Entra certificate-based authentication](/azure/active-directory/authentication/concept-certificate-based-authentication).
 
 ## Using Disconnect-MgGraph
 
