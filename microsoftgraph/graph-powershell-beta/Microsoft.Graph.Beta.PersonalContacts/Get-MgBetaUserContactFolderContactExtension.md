@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of open extensions defined for the contact.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderContactExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -274,6 +277,7 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserContactFolderContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderContactExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfoldercontactextension)
 

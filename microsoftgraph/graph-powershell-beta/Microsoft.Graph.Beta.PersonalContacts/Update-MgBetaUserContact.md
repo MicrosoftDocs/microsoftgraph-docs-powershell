@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of contact object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1052,6 +1055,7 @@ WEBSITES \<IMicrosoftGraphWebsite\[\]\>: .
   \[Type \<String\>\]: websiteType
 
 ## RELATED LINKS
+[Update-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontact)
 

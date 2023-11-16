@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property sections for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/Remove-MgSiteOnenoteSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -163,6 +166,7 @@ INPUTOBJECT \<INotesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/Remove-MgSiteOnenoteSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasiteonenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasiteonenotesection)
 

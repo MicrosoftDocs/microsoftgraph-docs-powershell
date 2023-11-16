@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property contacts in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1035,6 +1038,7 @@ WEBSITES \<IMicrosoftGraphWebsite\[\]\>: .
   \[Type \<String\>\]: websiteType
 
 ## RELATED LINKS
+[Update-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve a list of section objects from the specified notebook.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteNotebookSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -231,6 +234,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteNotebookSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebooksection)
 

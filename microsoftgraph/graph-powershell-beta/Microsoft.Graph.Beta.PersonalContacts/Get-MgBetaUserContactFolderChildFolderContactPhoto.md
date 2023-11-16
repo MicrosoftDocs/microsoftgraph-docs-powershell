@@ -11,6 +11,9 @@ schema: 2.0.0
 Optional contact picture.
 You can get or set a photo for a contact.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderContactPhoto](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderContactPhoto?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -145,6 +148,7 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserContactFolderChildFolderContactPhoto](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderContactPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontactphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontactphoto)
 
