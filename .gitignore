@@ -407,4 +407,11 @@ FodyWeavers.xsd
 *.sln.iml
 
 #Missing external url docs report Folder
+
 missingexternaldocsurl/
+microsoftgraph/EscapeDisallowedHtmlTags.ps1
+microsoftgraph/UpdateHelp.ps1
+scripts/RemoveBoilerPlateCode.ps1
+scripts/RepairDescriptions.ps1
+scripts/RepairExamplesDescriptionsAndTitle.ps1
+microsoftgraph/configs/ModulesMapping.jsonc

@@ -27,18 +27,6 @@ Remove-MgBetaUserAuthenticationPlatformCredentialMethod -InputObject <IIdentityS
 ## DESCRIPTION
 Delete navigation property platformCredentialMethods for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -244,4 +232,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationplatformcredentialmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationplatformcredentialmethod)
+
 

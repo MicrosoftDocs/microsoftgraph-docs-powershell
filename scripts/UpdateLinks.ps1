@@ -9,7 +9,7 @@ Param(
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    $graphMapping.Add("v1.0", "v1.0")
+    #$graphMapping.Add("v1.0", "v1.0")
     $graphMapping.Add("beta", "beta")
    
     return $graphMapping
@@ -30,10 +30,10 @@ function Start-Update {
         Get-FilesByProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate -GraphProfile $GraphProfile
     }
     
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add .
-    git commit -m "Updated metadata parameters" 
+    # git config --global user.email "timwamalwa@gmail.com"
+    # git config --global user.name "Timothy Wamalwa"
+    # git add .
+    # git commit -m "Updated metadata parameters" 
 
 }
 
@@ -164,8 +164,8 @@ function Add-Link {
             $LinkOnEndOfDoc = "## RELATED LINKS`r`n[$CommandRename]($BaseUrl/$FullModuleName$View)"
             $Folder = $View.Split("=")[1]
             $ConfirmFile = Join-Path $WorkLoadDocsPath "$Folder" "$ModuleName" "$CommandRename.md"
-            $ConfirmCommandAvailability = Find-MgGraphCommand -Command $CommandRename
-            if ($ConfirmCommandAvailability -and (Test-Path $ConfirmFile)) {
+            #$ConfirmCommandAvailability = Find-MgGraphCommand -Command $CommandRename
+            if (Test-Path $ConfirmFile) {
                 (Get-Content $File) | 
                 Foreach-Object { $_ -replace '## SYNTAX', $Link -replace '## RELATED LINKS', $LinkOnEndOfDoc }  | 
                 Out-File $File
@@ -189,18 +189,18 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_$date"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}
-else {
-    Write-Host "Branch already exists"
-    git checkout $proposedBranch
-}
-Set-Location ..\microsoftgraph-docs-powershell
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "weekly_v2_docs_update_$date"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }
+# else {
+#     Write-Host "Branch already exists"
+#     git checkout $proposedBranch
+# }
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Update -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

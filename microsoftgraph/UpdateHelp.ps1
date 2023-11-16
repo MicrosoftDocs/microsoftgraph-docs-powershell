@@ -8,7 +8,7 @@ Param(
 
 function Get-GraphMapping {
     $graphMapping = @{}
-    $graphMapping.Add("v1.0", "graph-powershell-1.0")
+    # $graphMapping.Add("v1.0", "graph-powershell-1.0")
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
@@ -18,26 +18,26 @@ function Update-Help {
         [ValidateNotNullOrEmpty()]
         [string] $ModuleDocsPath,
         [ValidateNotNullOrEmpty()]
-        [string] $LogsPath = (Join-Path $PSScriptRoot ".\logs\DocsGenerationLogs.txt")
+        [string] $LogsPath = (Join-Path $PSScriptRoot ".\logs\DocsGenerationLogs.txt"),
+        [ValidateNotNullOrEmpty()]
+        [string] $ModuleName
     )
     $generationParams = @{
-        RefreshModulePage     = $true
+        Module                = $ModuleName
+        OutputFolder          = $ModuleDocsPath
         AlphabeticParamsOrder = $true
-        UpdateInputOutput     = $true
+        WithModulePage        = $true
         ExcludeDontShow       = $true
-        Force                 = $true # Remove Files that no longer exist within session
-        Path                  = $ModuleDocsPath
-        LogPath               = $LogsPath
         Encoding              = [System.Text.Encoding]::UTF8
     }
-    Update-MarkdownHelpModule @generationParams
+    New-MarkdownHelp @generationParams
 }
 
 function Update-GraphHelp {
     Param(
         $ModulesToGenerate = @()
     )
-    Import-Module Microsoft.Graph.Authentication -Global
+    #Import-Module Microsoft.Graph.Authentication -Global
 
     $ModulePrefix = "Microsoft.Graph"
     $GraphMapping = Get-GraphMapping 
@@ -45,10 +45,10 @@ function Update-GraphHelp {
         $graphProfile = $_
         Update-GraphHelpByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add .
-    git commit -m "Updated markdown help" 
+    # git config --global user.email "timwamalwa@gmail.com"
+    # git config --global user.name "Timothy Wamalwa"
+    # git add .
+    # git commit -m "Updated markdown help" 
 }
 
 function Update-GraphHelpByProfile {
@@ -89,8 +89,8 @@ function Update-GraphModuleHelp {
     $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$Path"
     $logsPath = Join-Path $PSScriptRoot ".\logs\$moduleImportName-$GraphProfile.txt"
 
-    Import-Module $moduleImportName -Force -Global
-    Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
+    #Import-Module $moduleImportName -Force -Global
+    Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath -ModuleName $moduleImportName
 }
 
 # Install PlatyPS
@@ -104,20 +104,20 @@ $LASTEXITCODE = $null
 if ($PSEdition -ne 'Core') {
     Write-Error 'This script requires PowerShell Core to execute. [Note] Generated cmdlets will work in both PowerShell Core or Windows PowerShell.'
 }
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_$date"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-    $currentBranch = git rev-parse --abbrev-ref HEAD
-     if($currentBranch -ne $proposedBranch){
-        git checkout $proposedBranch
-     }
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "weekly_v2_docs_update_$date"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#     $currentBranch = git rev-parse --abbrev-ref HEAD
+#      if($currentBranch -ne $proposedBranch){
+#         git checkout $proposedBranch
+#      }
      
-}
+# }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }

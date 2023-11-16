@@ -39,22 +39,6 @@ Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy -InputOb
 ## DESCRIPTION
 Invoke function usage
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthenticationStrengthPolicyId
@@ -184,4 +168,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausageidentityconditionalaccessauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausageidentityconditionalaccessauthenticationstrengthpolicy)
+
 

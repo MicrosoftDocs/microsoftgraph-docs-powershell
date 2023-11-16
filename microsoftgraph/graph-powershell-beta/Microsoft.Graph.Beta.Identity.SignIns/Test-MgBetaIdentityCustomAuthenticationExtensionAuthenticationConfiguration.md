@@ -43,22 +43,6 @@ Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -288,4 +272,5 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentitycustomauthenticationextensionauthenticationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentitycustomauthenticationextensionauthenticationconfiguration)
+
 
