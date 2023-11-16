@@ -40,13 +40,17 @@ Retrieve a conversationMember from a chat.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
+
+```
+This example shows how to use the Get-MgBetaChatMember Cmdlet.
+
 
 ## PARAMETERS
 

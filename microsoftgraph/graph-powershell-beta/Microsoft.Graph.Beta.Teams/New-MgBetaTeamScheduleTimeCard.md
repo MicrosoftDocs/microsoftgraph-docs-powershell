@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduletimecard
@@ -50,9 +50,8 @@ Create a timeCard instance in a schedule.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaTeamScheduleTimeCard Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	OnBehalfOfUserId = "a3601044-a1b5-438e-b742-f78d01d68a67"
@@ -88,6 +87,8 @@ $params = @{
 }
 New-MgBetaTeamScheduleTimeCard -TeamId $teamId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaTeamScheduleTimeCard Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

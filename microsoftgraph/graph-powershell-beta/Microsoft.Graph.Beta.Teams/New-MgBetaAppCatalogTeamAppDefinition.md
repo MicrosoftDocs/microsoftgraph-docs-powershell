@@ -59,16 +59,20 @@ This API specifically updates an app published to your organization's app catalo
  This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = app.zip
 
 
 New-MgBetaAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaAppCatalogTeamAppDefinition Cmdlet.
+
 
 ## PARAMETERS
 

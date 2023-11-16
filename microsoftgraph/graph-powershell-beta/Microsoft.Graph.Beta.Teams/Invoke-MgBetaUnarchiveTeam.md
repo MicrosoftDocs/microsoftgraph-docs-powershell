@@ -37,13 +37,17 @@ A team is unarchived once the async operation completes successfully, which may 
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Invoke-MgBetaUnarchiveTeam -TeamId $teamId
+
+```
+This example shows how to use the Invoke-MgBetaUnarchiveTeam Cmdlet.
+
 
 ## PARAMETERS
 

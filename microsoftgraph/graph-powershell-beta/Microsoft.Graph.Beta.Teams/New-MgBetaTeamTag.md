@@ -47,11 +47,11 @@ Create a standard tag for members in the team.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "Finance"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 New-MgBetaTeamTag -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTeamTag Cmdlet.
+
 
 ## PARAMETERS
 
