@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 This API is supported in the following national cloud deployments.
 
 ## SYNTAX
@@ -44,7 +44,7 @@ New-MgBetaChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 
 ## DESCRIPTION
 Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+The corresponding app must already be installed in the chat.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
