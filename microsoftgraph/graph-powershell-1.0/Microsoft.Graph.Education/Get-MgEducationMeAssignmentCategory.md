@@ -29,22 +29,6 @@ List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 This API is supported in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -227,3 +211,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentCategory?view=graph-powershell-beta)
+

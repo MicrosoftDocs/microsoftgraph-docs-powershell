@@ -30,22 +30,6 @@ Set-MgBetaCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunica
 ## DESCRIPTION
 Update attendeeReport for the navigation property onlineMeetings in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-1.0)
+

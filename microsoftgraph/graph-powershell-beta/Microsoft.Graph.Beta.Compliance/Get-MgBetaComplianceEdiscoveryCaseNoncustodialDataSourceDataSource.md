@@ -27,18 +27,6 @@ Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceDataSource -InputObject 
 ## DESCRIPTION
 User source or SharePoint site data source as noncustodial data source.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CaseId
@@ -155,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+

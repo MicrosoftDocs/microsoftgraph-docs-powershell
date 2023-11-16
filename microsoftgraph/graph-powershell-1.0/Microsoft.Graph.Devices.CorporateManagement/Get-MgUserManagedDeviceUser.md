@@ -25,22 +25,6 @@ Get-MgUserManagedDeviceUser -ManagedDeviceId <String> -UserId <String> [-ExpandP
 ## DESCRIPTION
 List properties and relationships of the user objects.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -238,3 +222,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserManagedDeviceUser](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceUser?view=graph-powershell-beta)
+

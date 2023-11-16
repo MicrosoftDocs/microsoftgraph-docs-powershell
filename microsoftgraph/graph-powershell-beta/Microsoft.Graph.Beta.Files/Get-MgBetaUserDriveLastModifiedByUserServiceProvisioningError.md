@@ -26,18 +26,6 @@ Get-MgBetaUserDriveLastModifiedByUserServiceProvisioningError -DriveId <String> 
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -235,3 +223,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserDriveLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveLastModifiedByUserServiceProvisioningError?view=graph-powershell-1.0)
+

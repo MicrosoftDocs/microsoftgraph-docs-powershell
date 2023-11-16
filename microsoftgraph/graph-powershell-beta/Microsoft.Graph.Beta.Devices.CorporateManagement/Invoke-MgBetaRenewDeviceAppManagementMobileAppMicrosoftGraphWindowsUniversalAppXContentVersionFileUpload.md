@@ -31,18 +31,6 @@ Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppX
 ## DESCRIPTION
 Renews the SAS URI for an application file upload.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -242,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload?view=graph-powershell-1.0)
+

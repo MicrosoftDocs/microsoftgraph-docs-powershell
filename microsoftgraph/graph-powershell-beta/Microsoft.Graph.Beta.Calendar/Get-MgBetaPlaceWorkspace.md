@@ -34,18 +34,6 @@ Get-MgBetaPlaceWorkspace -InputObject <ICalendarIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Get workspaces from places
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -279,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
+

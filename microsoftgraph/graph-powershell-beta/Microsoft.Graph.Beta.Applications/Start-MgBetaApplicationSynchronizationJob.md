@@ -40,22 +40,6 @@ Don't create scripts to call the start job continuously while it's running becau
 Use the start job only when the job is currently paused or in quarantine.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -203,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Start-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Start-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
+

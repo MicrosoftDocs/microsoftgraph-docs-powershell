@@ -30,18 +30,6 @@ New-MgBetaDeviceManagementDerivedCredential
 ## DESCRIPTION
 Create new navigation property to derivedCredentials for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -225,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RenewalThresholdPercentage <Int32?>]`: The nominal percentage of time before certificate renewal is initiated by the client.
 
 ## RELATED LINKS
+

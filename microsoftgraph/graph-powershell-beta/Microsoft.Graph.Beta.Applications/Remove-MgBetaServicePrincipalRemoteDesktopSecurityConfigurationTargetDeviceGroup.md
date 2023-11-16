@@ -30,18 +30,6 @@ Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
 ## DESCRIPTION
 Delete navigation property targetDeviceGroups for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -204,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup?view=graph-powershell-1.0)
+

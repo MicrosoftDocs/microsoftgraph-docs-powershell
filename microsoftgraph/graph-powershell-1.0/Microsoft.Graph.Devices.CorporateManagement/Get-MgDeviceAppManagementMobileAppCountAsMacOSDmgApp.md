@@ -22,18 +22,6 @@ Get-MgDeviceAppManagementMobileAppCountAsMacOSDmgApp [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -82,3 +70,4 @@ Get-MgDeviceAppMgtMobileAppCountAsMacOSDmgApp
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSDmgApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMacOSDmgApp?view=graph-powershell-beta)
+

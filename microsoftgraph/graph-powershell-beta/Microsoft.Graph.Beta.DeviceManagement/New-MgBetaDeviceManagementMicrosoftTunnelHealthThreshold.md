@@ -28,22 +28,6 @@ New-MgBetaDeviceManagementMicrosoftTunnelHealthThreshold
 ## DESCRIPTION
 Create new navigation property to microsoftTunnelHealthThresholds for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -213,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnhealthyThreshold <Int64?>]`: The threshold for being unhealthy based on default health status metrics: CPU usage unhealthy > 75%, Memory usage unhealthy > 75%, Disk space < 3GB, Latency Unhealthy > 20ms, health metrics can be customized.
 
 ## RELATED LINKS
+

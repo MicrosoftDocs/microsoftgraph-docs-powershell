@@ -23,18 +23,6 @@ Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -81,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistoryCount?view=graph-powershell-beta)
+

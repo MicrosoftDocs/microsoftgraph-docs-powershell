@@ -52,22 +52,6 @@ The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -272,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJobOnDemand?view=graph-powershell-1.0)
+

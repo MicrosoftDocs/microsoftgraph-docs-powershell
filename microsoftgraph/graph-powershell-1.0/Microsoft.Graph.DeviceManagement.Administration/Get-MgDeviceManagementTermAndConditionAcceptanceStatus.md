@@ -39,18 +39,6 @@ Get-MgDeviceManagementTermAndConditionAcceptanceStatus -InputObject <IDeviceMana
 ## DESCRIPTION
 Read properties and relationships of the termsAndConditionsAcceptanceStatus object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -287,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
+

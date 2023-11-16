@@ -32,18 +32,6 @@ Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 Deletes a appLogCollectionRequest.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppLogCollectionRequestId
@@ -229,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
+

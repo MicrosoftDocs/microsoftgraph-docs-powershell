@@ -34,18 +34,6 @@ Remove an appManagementPolicy policy object from an application or service princ
 When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppManagementPolicyId
@@ -208,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalAppManagementPolicy?view=graph-powershell-1.0)
+

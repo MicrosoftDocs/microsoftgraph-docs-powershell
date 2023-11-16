@@ -37,18 +37,6 @@ Get-MgDeviceAppManagementMobileAppAsIoVppApp -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.iosVppApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -289,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp?view=graph-powershell-beta)
+

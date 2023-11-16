@@ -46,18 +46,6 @@ Update-MgCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunications
 ## DESCRIPTION
 Update the navigation property transcripts in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -344,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaCommunicationOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationOnlineMeetingTranscript?view=graph-powershell-beta)
+

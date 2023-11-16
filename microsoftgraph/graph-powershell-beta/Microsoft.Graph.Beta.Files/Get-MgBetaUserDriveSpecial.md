@@ -48,22 +48,6 @@ Special folders are automatically created the first time an application attempts
 If a user deletes one, it is recreated when written to again.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -324,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveSpecial?view=graph-powershell-1.0)
+

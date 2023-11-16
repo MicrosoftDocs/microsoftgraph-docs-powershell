@@ -30,18 +30,6 @@ Get-MgBetaPrivacySubjectRightsRequestTeam -InputObject <IComplianceIdentity> [-E
 ## DESCRIPTION
 Information about the Microsoft Teams team that was created for the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -144,3 +132,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivacySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestTeam?view=graph-powershell-1.0)
+

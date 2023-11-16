@@ -34,18 +34,6 @@ Get-MgDeviceAppManagementMobileAppCommittedContainedApp -InputObject <IDevicesCo
 ## DESCRIPTION
 The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -304,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+

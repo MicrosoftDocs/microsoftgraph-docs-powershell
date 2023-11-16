@@ -104,18 +104,6 @@ Update-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 Update the properties of servicePrincipal object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -2034,3 +2022,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalByAppId?view=graph-powershell-1.0)
+

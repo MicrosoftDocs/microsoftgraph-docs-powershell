@@ -52,18 +52,6 @@ Request headers for each PUT operation can be used to specify the exact range of
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -254,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Size <Int64?>]`: The document's size in bytes.
 
 ## RELATED LINKS
+

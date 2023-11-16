@@ -33,18 +33,6 @@ Get-MgBetaApplicationByAppId -InputObject <IApplicationsIdentity> [-ExpandProper
 Get the properties and relationships of an application object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -176,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgApplicationByAppId](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationByAppId?view=graph-powershell-1.0)
+

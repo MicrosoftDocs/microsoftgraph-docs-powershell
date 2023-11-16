@@ -31,22 +31,6 @@ Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject
 ## DESCRIPTION
 Delete navigation property attendanceRecords for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttendanceRecordId
@@ -206,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-beta)
+

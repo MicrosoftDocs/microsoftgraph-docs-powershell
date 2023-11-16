@@ -46,18 +46,6 @@ New-MgBetaPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Create new navigation property to documents for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -386,3 +374,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJobDocument?view=graph-powershell-1.0)
+

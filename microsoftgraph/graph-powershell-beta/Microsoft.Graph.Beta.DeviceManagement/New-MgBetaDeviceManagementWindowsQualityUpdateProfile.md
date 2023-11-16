@@ -31,18 +31,6 @@ New-MgBetaDeviceManagementWindowsQualityUpdateProfile
 ## DESCRIPTION
 Create new navigation property to windowsQualityUpdateProfiles for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -312,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[QualityUpdateRelease <String>]`: The release date to identify a quality update.
 
 ## RELATED LINKS
+

@@ -50,18 +50,6 @@ Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppCon
 ## DESCRIPTION
 Commits a file of a given app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -298,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphManagedAndroidLobAppContentVersionFile?view=graph-powershell-beta)
+

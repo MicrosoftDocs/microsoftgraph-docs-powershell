@@ -44,18 +44,6 @@ Update-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Update the navigation property notes in privacy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -280,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
+

@@ -50,22 +50,6 @@ Update-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdenti
 Delete an existing history item for an existing user activity.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActiveDurationSeconds
@@ -455,3 +439,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserActivityHistoryItem?view=graph-powershell-1.0)
+

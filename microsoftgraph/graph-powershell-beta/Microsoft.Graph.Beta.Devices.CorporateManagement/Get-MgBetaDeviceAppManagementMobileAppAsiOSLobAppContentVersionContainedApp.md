@@ -37,18 +37,6 @@ Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp
 ## DESCRIPTION
 The collection of contained apps in a MobileLobApp acting as a package.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -355,3 +343,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+

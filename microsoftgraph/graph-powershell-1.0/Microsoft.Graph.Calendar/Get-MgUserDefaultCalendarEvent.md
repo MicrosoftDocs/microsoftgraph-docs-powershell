@@ -33,18 +33,6 @@ The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or get the instances of an event.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -212,3 +200,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendarEvent?view=graph-powershell-beta)
+
