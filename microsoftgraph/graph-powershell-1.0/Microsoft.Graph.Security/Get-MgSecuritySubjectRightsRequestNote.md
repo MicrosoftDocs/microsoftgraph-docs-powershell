@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 ms.prod: compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestnote
 schema: 2.0.0
+ms.prod: compliance
 ---
 
 # Get-MgSecuritySubjectRightsRequestNote

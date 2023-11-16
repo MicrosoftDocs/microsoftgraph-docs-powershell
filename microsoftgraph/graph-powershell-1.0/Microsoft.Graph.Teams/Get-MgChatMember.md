@@ -4,6 +4,8 @@ Module Name: Microsoft.Graph.Teams
 ms.prod: microsoft-teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmember
 schema: 2.0.0
+ms.prod: microsoft-teams
+ms.prod: microsoft-teams
 ---
 
 # Get-MgChatMember

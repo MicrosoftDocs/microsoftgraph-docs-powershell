@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/export-mgbetauserpersonaldata
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Export-MgBetaUserPersonalData

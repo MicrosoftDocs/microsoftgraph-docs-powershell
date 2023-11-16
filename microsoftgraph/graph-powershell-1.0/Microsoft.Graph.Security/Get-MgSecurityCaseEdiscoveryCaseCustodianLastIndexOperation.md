@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Security
 ms.prod: ediscovery
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodianlastindexoperation
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation

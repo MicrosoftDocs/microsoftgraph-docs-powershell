@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotepagetosection
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Copy-MgUserOnenotePageToSection

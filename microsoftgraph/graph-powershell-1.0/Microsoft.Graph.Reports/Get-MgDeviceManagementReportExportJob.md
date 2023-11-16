@@ -4,6 +4,8 @@ Module Name: Microsoft.Graph.Reports
 ms.prod: intune
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportexportjob
 schema: 2.0.0
+ms.prod: intune
+ms.prod: intune
 ---
 
 # Get-MgDeviceManagementReportExportJob

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users
 ms.prod: users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobject
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Get-MgUserCreatedObject

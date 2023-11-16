@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserpendingaccessreviewinstancedecision
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Add-MgBetaUserPendingAccessReviewInstanceDecision

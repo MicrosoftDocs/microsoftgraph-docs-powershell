@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: change-notifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareauthorizeuserdrivelistsubscription
 schema: 2.0.0
+ms.prod: change-notifications
 ---
 
 # Invoke-MgBetaReauthorizeUserDriveListSubscription

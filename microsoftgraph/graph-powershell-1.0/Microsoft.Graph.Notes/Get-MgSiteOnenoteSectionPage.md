@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Notes
 ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpage
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgSiteOnenoteSectionPage

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Mail
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassificationoverridecount
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Get-MgUserInferenceClassificationOverrideCount

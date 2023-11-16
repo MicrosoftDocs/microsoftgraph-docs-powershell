@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Files
 ms.prod: change-notifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgreauthorizedrivelistsubscription
 schema: 2.0.0
+ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeDriveListSubscription

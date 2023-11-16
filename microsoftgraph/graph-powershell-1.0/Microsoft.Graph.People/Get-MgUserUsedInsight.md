@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.People
 ms.prod: insights
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedcountinsight
 schema: 2.0.0
+ms.prod: insights
 ---
 
 # Get-MgUserUsedCountInsight

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Mail
 ms.prod: extensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessagecount
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Get-MgUserMessageCount

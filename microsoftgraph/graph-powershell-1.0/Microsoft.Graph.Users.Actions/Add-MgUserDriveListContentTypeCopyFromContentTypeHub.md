@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserdrivelistcontenttypecopyfromcontenttypehub
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Add-MgUserDriveListContentTypeCopyFromContentTypeHub

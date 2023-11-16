@@ -4,6 +4,8 @@ Module Name: Microsoft.Graph.Files
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootversion
 schema: 2.0.0
+ms.prod: sharepoint
+ms.prod: sharepoint
 ---
 
 # Get-MgUserDriveRootVersion

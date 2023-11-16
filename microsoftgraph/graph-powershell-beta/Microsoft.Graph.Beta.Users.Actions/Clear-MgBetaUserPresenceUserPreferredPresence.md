@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: cloud-communications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetauserpresenceuserpreferredpresence
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Clear-MgBetaUserPresenceUserPreferredPresence

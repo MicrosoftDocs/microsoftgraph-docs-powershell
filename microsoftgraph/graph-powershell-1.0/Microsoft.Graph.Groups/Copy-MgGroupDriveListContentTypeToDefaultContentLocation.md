@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggroupdrivelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Copy-MgGroupDriveListContentTypeToDefaultContentLocation

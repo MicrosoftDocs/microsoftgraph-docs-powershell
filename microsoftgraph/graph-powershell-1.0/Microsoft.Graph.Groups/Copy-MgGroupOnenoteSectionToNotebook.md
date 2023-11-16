@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 ms.prod: onenote
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotesectiontonotebook
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Copy-MgGroupOnenoteSectionToNotebook

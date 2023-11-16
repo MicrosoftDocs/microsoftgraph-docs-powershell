@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 ms.prod: extensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpostinreplyto
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Invoke-MgReplyGroupThreadPostInReplyTo

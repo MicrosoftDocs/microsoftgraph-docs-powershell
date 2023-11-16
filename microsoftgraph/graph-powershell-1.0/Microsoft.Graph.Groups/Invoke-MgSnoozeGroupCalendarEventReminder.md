@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Groups
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Invoke-MgRetryGroupServiceProvisioning

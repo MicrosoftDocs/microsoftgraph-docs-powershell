@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 ms.prod: identity-and-sign-in
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/disable-mguserauthenticationphonemethodsmssignin
 schema: 2.0.0
+ms.prod: identity-and-sign-in
 ---
 
 # Disable-MgUserAuthenticationPhoneMethodSmsSignIn

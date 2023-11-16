@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: sharepoint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdriveroot
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Copy-MgBetaUserDriveRoot

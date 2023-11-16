@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Files
 ms.prod: sites-and-lists
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mgsharelistcontenttypewithhubsite
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Join-MgShareListContentTypeWithHubSite

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Identity.DirectoryManagement
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpromotedomain
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Invoke-MgPromoteDomain

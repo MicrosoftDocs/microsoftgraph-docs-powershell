@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Sites
 ms.prod: files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepointsetting
 schema: 2.0.0
+ms.prod: files
 ---
 
 # Get-MgAdminSharepointSetting

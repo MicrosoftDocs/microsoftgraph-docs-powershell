@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Files
 ms.prod: files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitem
 schema: 2.0.0
+ms.prod: files
 ---
 
 # Get-MgShareDriveItem

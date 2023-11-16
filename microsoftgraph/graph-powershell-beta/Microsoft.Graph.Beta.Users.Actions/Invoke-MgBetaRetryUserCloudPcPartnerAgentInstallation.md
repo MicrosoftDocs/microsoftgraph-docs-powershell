@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: cloud-pc
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryusercloudpcpartneragentinstallation
 schema: 2.0.0
+ms.prod: cloud-pc
 ---
 
 # Invoke-MgBetaRetryUserCloudPcPartnerAgentInstallation

@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Users.Actions
 ms.prod: directory-management
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermembergroup
 schema: 2.0.0
+ms.prod: directory-management
 ---
 
 # Get-MgUserMemberGroup

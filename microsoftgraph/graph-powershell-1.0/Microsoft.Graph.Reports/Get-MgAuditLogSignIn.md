@@ -4,6 +4,8 @@ Module Name: Microsoft.Graph.Reports
 ms.prod: identity-and-access-reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin
 schema: 2.0.0
+ms.prod: identity-and-access-reports
+ms.prod: identity-and-access-reports
 ---
 
 # Get-MgAuditLogSignIn

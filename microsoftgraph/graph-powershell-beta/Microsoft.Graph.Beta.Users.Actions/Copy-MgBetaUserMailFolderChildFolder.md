@@ -4,6 +4,7 @@ Module Name: Microsoft.Graph.Beta.Users.Actions
 ms.prod: outlook
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermailfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Copy-MgBetaUserMailFolder
