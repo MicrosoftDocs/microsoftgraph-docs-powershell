@@ -41,20 +41,28 @@ Microsoft 365 Defender correlates alerts with the same attack techniques or the 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: List all incidents
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityIncident
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Security
-```
+This example will list all incidents
 
-Get-MgBetaSecurityIncident -ExpandProperty "alerts"
+### Example 2: List all incidents with their alerts
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+Get-MgBetaSecurityIncident -ExpandProperty "alerts" 
+
+```
+This example will list all incidents with their alerts
+
 
 ## PARAMETERS
 

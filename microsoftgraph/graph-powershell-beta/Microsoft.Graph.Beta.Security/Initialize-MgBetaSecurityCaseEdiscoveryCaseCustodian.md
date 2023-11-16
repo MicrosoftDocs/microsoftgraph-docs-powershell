@@ -32,12 +32,13 @@ For details, see Manage custodians in an eDiscovery (Premium) case.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
+This example shows how to use the Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

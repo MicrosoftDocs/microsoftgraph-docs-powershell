@@ -51,9 +51,8 @@ For details, see Export documents from a review set in eDiscovery (Premium).
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	OutputName = "Export reviewset query via API"
@@ -63,6 +62,8 @@ $params = @{
 }
 Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId -BodyParameter $params
 ```
+This example shows how to use the Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
