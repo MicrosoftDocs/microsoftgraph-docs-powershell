@@ -11,6 +11,9 @@ schema: 2.0.0
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -294,6 +297,7 @@ NEWASSIGNMENTORDER \<IMicrosoftGraphAssignmentOrder\>: assignmentOrder
   \[Order \<String\[\]\>\]: A list of identityUserFlowAttribute IDs provided to determine the order in which attributes should be collected within a user flow.
 
 ## RELATED LINKS
+[Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowuserattributeassignmentorder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowuserattributeassignmentorder)
 

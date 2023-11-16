@@ -12,6 +12,9 @@ Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgRiskyUserCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyUserCompromised?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)
@@ -155,6 +158,7 @@ BODYPARAMETER \<IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmco
   \[UserIds \<String\[\]\>\]:
 
 ## RELATED LINKS
+[Confirm-MgRiskyUserCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyUserCompromised?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusercompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusercompromised)
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessage
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Use this API to create a new Message in a mailfolder.
 This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1083,6 +1086,7 @@ UNIQUEBODY \<IMicrosoftGraphItemBody\>: itemBody
   \[ContentType \<String\>\]: bodyType
 
 ## RELATED LINKS
+[New-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessage)
 

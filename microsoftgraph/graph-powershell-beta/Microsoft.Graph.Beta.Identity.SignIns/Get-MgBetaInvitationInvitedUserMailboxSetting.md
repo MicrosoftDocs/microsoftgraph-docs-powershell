@@ -13,6 +13,9 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitationInvitedUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -190,6 +193,7 @@ INPUTOBJECT \<IIdentitySignInsIdentity\>: Identity Parameter
   \[WindowsHelloForBusinessAuthenticationMethodId \<String\>\]: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitationInvitedUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinvitedusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinvitedusermailboxsetting)
 

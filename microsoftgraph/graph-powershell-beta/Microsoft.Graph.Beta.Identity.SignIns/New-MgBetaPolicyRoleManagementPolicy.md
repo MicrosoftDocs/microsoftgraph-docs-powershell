@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicy
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to roleManagementPolicies for policies
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyRoleManagementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -388,6 +391,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyRoleManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyrolemanagementpolicy)
 

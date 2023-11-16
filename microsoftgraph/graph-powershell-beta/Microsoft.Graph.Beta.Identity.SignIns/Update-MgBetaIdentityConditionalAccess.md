@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property conditionalAccess in identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccess?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -794,6 +797,7 @@ Possible values: AND, OR.
   \[Scenarios \<String\>\]: templateScenarios
 
 ## RELATED LINKS
+[Update-MgIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccess?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccess)
 

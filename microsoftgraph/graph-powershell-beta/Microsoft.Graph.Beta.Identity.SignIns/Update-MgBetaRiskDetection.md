@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property riskDetections in identityProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgRiskDetection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -659,6 +662,7 @@ Writable on OneDrive Personal.
 This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
+[Update-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgRiskDetection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetariskdetection)
 

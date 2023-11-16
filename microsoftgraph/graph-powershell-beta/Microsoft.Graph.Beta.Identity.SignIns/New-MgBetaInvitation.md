@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainvitation
@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new invitation.
 The invitation adds an external user to the organization.
 The following options are available for creating an invitation: This API is available in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInvitation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -15108,6 +15111,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInvitation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainvitation)
 
