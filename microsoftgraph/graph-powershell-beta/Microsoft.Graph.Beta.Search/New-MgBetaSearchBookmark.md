@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchbookmark
@@ -36,9 +36,8 @@ Create a new bookmark object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaSearchBookmark Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	DisplayName = "Contoso Install Site"
@@ -70,6 +69,8 @@ $params = @{
 }
 New-MgBetaSearchBookmark -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSearchBookmark Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

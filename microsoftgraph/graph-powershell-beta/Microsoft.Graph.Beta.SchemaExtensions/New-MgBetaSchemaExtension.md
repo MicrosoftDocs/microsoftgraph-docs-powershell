@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension
@@ -39,11 +39,11 @@ See examples of how to define a schema extension that describes a training cours
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Creating a schema extension using a verified domain
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
-```
 
 $params = @{
 	id = "graphlearn_courses"
@@ -69,10 +69,14 @@ $params = @{
 
 New-MgBetaSchemaExtension -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows creating a schema extension using a verified domain
+
+### Example 2: Creating a schema extension using just a name
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
-```
 
 $params = @{
 	id = "courses"
@@ -98,10 +102,14 @@ $params = @{
 
 New-MgBetaSchemaExtension -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example shows creating a schema extension using just a name
+
+### Example 3: Creating a schema extension setting the owner
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
-```
 
 $params = @{
 	id = "courses"
@@ -127,6 +135,10 @@ $params = @{
 }
 
 New-MgBetaSchemaExtension -BodyParameter $params
+
+```
+This example shows creating a schema extension setting the owner
+
 
 ## PARAMETERS
 

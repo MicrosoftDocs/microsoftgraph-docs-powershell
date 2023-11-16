@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch
@@ -33,11 +33,11 @@ Search results are provided in the response.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	requests = @(
@@ -62,6 +62,10 @@ $params = @{
 }
 
 Invoke-MgBetaQuerySearch -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaQuerySearch Cmdlet.
+
 
 ## PARAMETERS
 

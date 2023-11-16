@@ -24,14 +24,18 @@ Retrieve a list of plannerplan objects shared with a user object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerPlan -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

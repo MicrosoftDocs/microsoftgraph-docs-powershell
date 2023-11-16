@@ -37,18 +37,20 @@ Read the properties and relationships of a bookmark object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaSearchBookmark Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchBookmark -BookmarkId $bookmarkId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaSearchBookmark Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaSearchBookmark Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchBookmark
 ```
+This example shows how to use the Get-MgBetaSearchBookmark Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

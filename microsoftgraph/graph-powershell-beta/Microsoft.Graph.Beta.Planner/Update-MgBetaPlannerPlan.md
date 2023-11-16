@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerplan
@@ -50,17 +50,21 @@ Update the properties of a plannerPlan object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	title = "title-value"
 }
 
 Update-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaPlannerPlan Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
