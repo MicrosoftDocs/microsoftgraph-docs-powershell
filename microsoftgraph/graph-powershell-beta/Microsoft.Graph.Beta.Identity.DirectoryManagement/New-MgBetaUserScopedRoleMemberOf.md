@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to scopedRoleMemberOf for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgUserScopedRoleMemberOf?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -279,6 +282,7 @@ For example, if a user changes their display name, the API might show the new va
   \[Id \<String\>\]: Unique identifier for the identity.
 
 ## RELATED LINKS
+[New-MgUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgUserScopedRoleMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetauserscopedrolememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetauserscopedrolememberof)
 

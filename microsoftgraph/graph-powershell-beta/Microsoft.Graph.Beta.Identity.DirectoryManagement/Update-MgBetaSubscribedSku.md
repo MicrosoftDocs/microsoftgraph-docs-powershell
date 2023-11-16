@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetasubscribedsku
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update entity in subscribedSkus
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgSubscribedSku?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -436,6 +439,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   \[ServicePlanName \<String\>\]: The name of the service plan.
 
 ## RELATED LINKS
+[Update-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgSubscribedSku?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetasubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetasubscribedsku)
 
