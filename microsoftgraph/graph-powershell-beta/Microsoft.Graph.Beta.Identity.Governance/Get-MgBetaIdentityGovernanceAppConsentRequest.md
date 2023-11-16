@@ -38,20 +38,28 @@ Get-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceI
 Read the properties and relationships of an appConsentRequest object.
 
 ## EXAMPLES
+### Example 1: List all appConsentRequests
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceAppConsentRequest
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
+This example will list all appconsentrequests
 
-Get-MgBetaIdentityGovernanceAppConsentRequest -Filter "userConsentRequests/any (u:u/status eq 'InProgress')"
+### Example 2: List all appConsentRequests with at least one userConsentRequest whose status is InProgress
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceAppConsentRequest -Filter "userConsentRequests/any (u:u/status eq 'InProgress')" 
+
+```
+This example will list all appconsentrequests with at least one userconsentrequest whose status is inprogress
+
 
 ## PARAMETERS
 

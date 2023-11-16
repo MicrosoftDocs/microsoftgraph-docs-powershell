@@ -42,12 +42,11 @@ The access package will be added to an existing accessPackageCatalog.
 After the access package is created, you can then create accessPackageAssignmentPolicies which specify how users are assigned to the access package.
 
 ## EXAMPLES
+### Example 1: Create an access package
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 New-MgBetaEntitlementManagementAccessPackage -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b'  -DisplayName 'Marketing Campaign' | Format-list
-```
 
 AccessPackageAssignmentPolicies :
 AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
@@ -65,7 +64,10 @@ IsHidden                        : False
 IsRoleScopesVisible             : False
 ModifiedBy                      : admin@M365x814237.onmicrosoft.com
 ModifiedDateTime                : 10/13/2021 9:08:02 AM
-AdditionalProperties            : {\[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity\]}
+AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity]}
+```
+
+This example creates an access package with he defined display name under the specified catalog. The $allowedRequestors variable should contain the **id** of the requestor.
 
 ## PARAMETERS
 

@@ -46,20 +46,28 @@ An instance represents a review for a specific resource (such as a particular gr
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
 ## EXAMPLES
+### Example 1: List the first one hundred access review definitions
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Get-MgBetaIdentityGovernanceAccessReviewDefinition -Top 100 -Skip 0
+Get-MgBetaIdentityGovernanceAccessReviewDefinition -Top 100 -Skip 0 
 
-### EXAMPLE 2
 ```
+This example will list the first one hundred access review definitions
+
+### Example 2: Retrieve all access review definitions scoped to all Microsoft 365 groups in a tenant
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
-Get-MgBetaIdentityGovernanceAccessReviewDefinition -Filter "contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')"
+Get-MgBetaIdentityGovernanceAccessReviewDefinition -Filter "contains(scope/microsoft.graph.accessReviewQueryScope/query, './members')" 
+
+```
+This example will retrieve all access review definitions scoped to all microsoft 365 groups in a tenant
+
 
 ## PARAMETERS
 

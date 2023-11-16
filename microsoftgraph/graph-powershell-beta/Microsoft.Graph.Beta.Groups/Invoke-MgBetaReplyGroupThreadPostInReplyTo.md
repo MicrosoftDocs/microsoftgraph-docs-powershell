@@ -50,11 +50,10 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	Post = @{
@@ -62,7 +61,7 @@ $params = @{
 			ContentType = ""
 			Content = "content-value"
 		}
-		ReceivedDateTime = \[System.DateTime\]::Parse("datetime-value")
+		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
 		HasAttachments = $true
 		From = @{
 			EmailAddress = @{
@@ -86,8 +85,8 @@ $params = @{
 			}
 		)
 		ConversationId = "conversationId-value"
-		CreatedDateTime = \[System.DateTime\]::Parse("datetime-value")
-		LastModifiedDateTime = \[System.DateTime\]::Parse("datetime-value")
+		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
+		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
 		ChangeKey = "changeKey-value"
 		Categories = @(
 			"categories-value"
@@ -98,7 +97,7 @@ $params = @{
 		Attachments = @(
 			@{
 				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = \[System.DateTime\]::Parse("datetime-value")
+				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
 				Name = "name-value"
 				ContentType = "contentType-value"
 				Size = 99
@@ -110,6 +109,11 @@ $params = @{
 }
 
 Invoke-MgBetaReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaReplyGroupThreadPostInReplyTo Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

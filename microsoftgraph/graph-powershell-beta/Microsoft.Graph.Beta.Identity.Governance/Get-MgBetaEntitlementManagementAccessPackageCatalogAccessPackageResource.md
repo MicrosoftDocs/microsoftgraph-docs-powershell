@@ -24,12 +24,11 @@ Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
 To request to add or remove an accessPackageResource, use create accessPackageResourceRequest.
 
 ## EXAMPLES
+### Example 1: Get catalog resources by catalog id
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' | Format-List
-```
 
 AccessPackageResourceEnvironment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceEnvironment
 AccessPackageResourceRoles       :
@@ -62,12 +61,15 @@ OriginSystem                     : AadGroup
 ResourceType                     : Security Group
 Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=c41e321d-2907-4183-8224-b4cec9c9381b
 AdditionalProperties             : {}
-
-### EXAMPLE 2
 ```
+
+This example returns all access package catalog resources for the specified catalog.
+
+### Example 2: Use -Filter to get all catalog resources with the display name 'Marketing resources'
+
+```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "DisplayName eq 'Marketing resources'" | Format-List
-```
 
 AccessPackageResourceEnvironment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceEnvironment
 AccessPackageResourceRoles       :
@@ -84,6 +86,9 @@ OriginSystem                     : AadGroup
 ResourceType                     : Security Group
 Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
 AdditionalProperties             : {}
+```
+
+This example returns the resources in the specified catalog whose display name is `marketing resources`.
 
 ## PARAMETERS
 

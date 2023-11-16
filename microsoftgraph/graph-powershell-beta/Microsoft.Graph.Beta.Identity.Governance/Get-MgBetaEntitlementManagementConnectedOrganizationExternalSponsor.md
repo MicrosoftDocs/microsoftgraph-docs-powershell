@@ -27,13 +27,17 @@ Retrieve a list of a connectedOrganization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor -ConnectedOrganizationId $connectedOrganizationId
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor Cmdlet.
+
 
 ## PARAMETERS
 
