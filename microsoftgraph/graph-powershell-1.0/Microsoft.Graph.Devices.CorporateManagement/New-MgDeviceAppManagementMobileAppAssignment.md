@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappassignment
 schema: 2.0.0
@@ -10,531 +10,52 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new mobileAppAssignment object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppAssignment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
+New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### Create
+```
 New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
+ -BodyParameter <IMicrosoftGraphMobileAppAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMobileAppAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded9
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded8
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded7
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded6
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded5
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded4
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded3
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded2
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded16
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded15
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded14
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded13
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded12
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded11
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded10
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded1
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Create9
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create8
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create7
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create6
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create5
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create4
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create3
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create2
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create16
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create15
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create14
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create13
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create12
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create11
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create10
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded (Default)
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded9
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded8
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded7
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded6
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded5
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded4
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded3
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded2
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded16
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded15
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded14
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded13
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded12
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded11
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded10
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded1
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Create9
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create8
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create7
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create6
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create5
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create4
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create3
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create2
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create16
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create15
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create14
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create13
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create12
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create11
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create10
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded (Default)
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded9
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded8
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded7
-```
-New-MgDeviceAppManagementMobileAppAssignment -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppAssignment>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Intent <InstallIntent>] [-Settings <Hashtable>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Target <Hashtable>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new mobileAppAssignment object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -542,8 +63,8 @@ Create a new mobileAppAssignment object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded16, CreateExpanded15, CreateExpanded14, CreateExpanded13, CreateExpanded12, CreateExpanded11, CreateExpanded10, CreateExpanded1, Create9, Create8
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -558,8 +79,8 @@ A class containing the properties used for Group Assignment of a Mobile App.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppAssignment
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create16, Create15, Create14, Create13, Create12, Create11, Create10
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppAssignment
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -574,8 +95,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded16, CreateExpanded15, CreateExpanded14, CreateExpanded13, CreateExpanded12, CreateExpanded11, CreateExpanded10, CreateExpanded1, Create9, Create8
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -590,8 +111,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded16, CreateExpanded15, CreateExpanded14, CreateExpanded13, CreateExpanded12, CreateExpanded11, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create16, Create15, Create14, Create13, Create12, Create11, Create10
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -605,8 +126,8 @@ Accept wildcard characters: False
 Possible values for the install intent chosen by the admin.
 
 ```yaml
-Type: InstallIntent
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded16, CreateExpanded15, CreateExpanded14, CreateExpanded13, CreateExpanded12, CreateExpanded11, CreateExpanded10, CreateExpanded1, Create9, Create8
+Type: Microsoft.Graph.PowerShell.Support.InstallIntent
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -620,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded16, CreateExpanded15, CreateExpanded14, CreateExpanded13, CreateExpanded12, CreateExpanded11, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create16, Create15, Create14, Create13, Create12, Create11, Create10
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -635,8 +156,8 @@ Accept wildcard characters: False
 Abstract class to contain properties used to assign a mobile app to a group.
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded16, CreateExpanded15, CreateExpanded14, CreateExpanded13, CreateExpanded12, CreateExpanded11, CreateExpanded10, CreateExpanded1, Create9, Create8
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -650,8 +171,8 @@ Accept wildcard characters: False
 Base type for assignment targets.
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded16, CreateExpanded15, CreateExpanded14, CreateExpanded13, CreateExpanded12, CreateExpanded11, CreateExpanded10, CreateExpanded1, Create9, Create8
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -665,8 +186,8 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded16, CreateExpanded15, CreateExpanded14, CreateExpanded13, CreateExpanded12, CreateExpanded11, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create16, Create15, Create14, Create13, Create12, Create11, Create10
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases: cf
 
 Required: False
@@ -681,8 +202,8 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded16, CreateExpanded15, CreateExpanded14, CreateExpanded13, CreateExpanded12, CreateExpanded11, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create16, Create15, Create14, Create13, Create12, Create11, Create10
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases: wi
 
 Required: False
@@ -698,10 +219,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppAssignment
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppAssignment
+
 ## NOTES
 
 ALIASES
@@ -757,5 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementMobileAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppAssignment?view=graph-powershell-beta)
 

@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/initialize-mgbetaeducationmeassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Initialize-MgBetaEducationMeAssignment
@@ -17,13 +16,13 @@ This API is available in the following national cloud deployments.
 
 ### Activate (Default)
 ```
-Initialize-MgBetaEducationMeAssignment -EducationAssignmentId <String> [-WhatIf] [-Confirm]
+Initialize-MgBetaEducationMeAssignment -EducationAssignmentId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
-Initialize-MgBetaEducationMeAssignment -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Initialize-MgBetaEducationMeAssignment -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,13 +31,29 @@ Activate an inactive educationAssignment to signal that the assignment has furth
 This action can only be performed by a teacher on currently inactive assignments.
 This API is available in the following national cloud deployments.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Activate
 Aliases:
 
@@ -54,7 +69,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: ActivateViaIdentity
 Aliases:
 
@@ -69,7 +84,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -85,7 +100,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -102,9 +117,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignment
+
 ## NOTES
 
 ALIASES

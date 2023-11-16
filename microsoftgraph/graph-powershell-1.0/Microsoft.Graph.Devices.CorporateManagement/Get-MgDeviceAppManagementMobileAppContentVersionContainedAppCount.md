@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcontentversioncontainedappcount
 schema: 2.0.0
@@ -10,66 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppContentVersionContainedAppCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppContentVersionContainedAppCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
- -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get9
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
- -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get8
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
- -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get7
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
- -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get6
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
- -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get5
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
- -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get4
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
- -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get3
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
- -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get2
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
- -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### Get10
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
  -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
@@ -81,55 +24,61 @@ Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppCont
  -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity9
+### Get10
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity8
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
+ -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity7
+### Get2
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity6
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
+ -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity5
+### Get3
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity4
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
+ -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### Get4
 ```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity2
-```
-Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
- -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
+ -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity10
+### Get5
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
+ -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get6
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
+ -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get7
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
+ -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get8
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
+ -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### Get9
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount -MobileAppContentId <String>
+ -MobileAppId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
  -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
@@ -141,7 +90,55 @@ Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
  -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity10
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity3
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity4
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity5
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity6
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity7
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity8
+```
+Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
+ -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+### GetViaIdentity9
 ```
 Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
  -InputObject <IDevicesCorporateManagementIdentity> [-Filter <String>] [-Search <String>] [<CommonParameters>]
@@ -150,13 +147,29 @@ Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -Filter
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -172,8 +185,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity9, GetViaIdentity8, GetViaIdentity7, GetViaIdentity6, GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2, GetViaIdentity10, GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1, GetViaIdentity10, GetViaIdentity2, GetViaIdentity3, GetViaIdentity4, GetViaIdentity5, GetViaIdentity6, GetViaIdentity7, GetViaIdentity8, GetViaIdentity9
 Aliases:
 
 Required: True
@@ -187,8 +200,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppContent
 
 ```yaml
-Type: String
-Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get10, Get1
+Type: System.String
+Parameter Sets: Get, Get1, Get10, Get2, Get3, Get4, Get5, Get6, Get7, Get8, Get9
 Aliases:
 
 Required: True
@@ -202,8 +215,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: String
-Parameter Sets: Get, Get9, Get8, Get7, Get6, Get5, Get4, Get3, Get2, Get10, Get1
+Type: System.String
+Parameter Sets: Get, Get1, Get10, Get2, Get3, Get4, Get5, Get6, Get7, Get8, Get9
 Aliases:
 
 Required: True
@@ -217,7 +230,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -234,9 +247,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
@@ -286,5 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementMobileAppContentVersionContainedAppCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppContentVersionContainedAppCount?view=graph-powershell-beta)
 

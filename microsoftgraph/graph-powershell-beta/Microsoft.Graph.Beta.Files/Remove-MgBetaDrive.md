@@ -1,106 +1,95 @@
 ---
-external help file: Microsoft.Graph.Beta.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Files
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetasharelistcontenttype
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadrive
 schema: 2.0.0
 ---
 
-# Publish-MgBetaShareListContentType
+# Remove-MgBetaDrive
 
 ## SYNOPSIS
-Publishes a contentType][] present in a content type hub site.
-This API is available in the following [national cloud deployments.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDrive](/powershell/module/Microsoft.Graph.Files/Remove-MgDrive?view=graph-powershell-1.0)
+Delete entity from drives
 
 ## SYNTAX
 
-### Publish (Default)
+### Delete (Default)
 ```
-Publish-MgBetaShareListContentType -ContentTypeId <String> -SharedDriveItemId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaDrive -DriveId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### PublishViaIdentity
+### DeleteViaIdentity
 ```
-Publish-MgBetaShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Publishes a contentType][] present in a content type hub site.
-This API is available in the following [national cloud deployments.
+Delete entity from drives
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserDefaultDrive -UserId $userId
-```
-This example shows how to use the Remove-MgBetaDrive Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaUserDefaultDrive -UserId $userId
-```
-This example shows how to use the Remove-MgBetaDrive Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaGroupDefaultDrive -GroupId $groupId
-```
-This example shows how to use the Remove-MgBetaDrive Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
-
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 Get-MgBetaSiteDefaultDrive -SiteId $siteId
-```
-This example shows how to use the Remove-MgBetaDrive Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Code snippet
-
+### -------------------------- EXAMPLE 5 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaDrive -DriveId $driveId
-```
-This example shows how to use the Remove-MgBetaDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
-### -ContentTypeId
-The unique identifier of contentType
+### -DriveId
+The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: Publish
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -112,8 +101,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: PublishViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -127,7 +116,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -138,26 +127,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SharedDriveItemId
-The unique identifier of sharedDriveItem
-
-```yaml
-Type: String
-Parameter Sets: Publish
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +147,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,9 +164,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -229,4 +205,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgDrive](/powershell/module/Microsoft.Graph.Files/Remove-MgDrive?view=graph-powershell-1.0)
+

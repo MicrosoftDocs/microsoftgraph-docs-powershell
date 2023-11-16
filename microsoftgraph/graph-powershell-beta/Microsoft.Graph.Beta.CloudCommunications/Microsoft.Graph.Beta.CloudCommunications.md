@@ -186,17 +186,20 @@ This API is available in the following national cloud deployments.
 ### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
-Get the number of the resource
+### [Get-MgBetaUserOnlineMeeting](Get-MgBetaUserOnlineMeeting.md)
+Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
 
 ### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
 Get alternativeRecording for the navigation property onlineMeetings from users
 
-### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
-Get alternativeRecording for the navigation property onlineMeetings from users
+### [Get-MgBetaUserOnlineMeetingAttendanceReport](Get-MgBetaUserOnlineMeetingAttendanceReport.md)
+Get the meetingAttendanceReport for an onlineMeeting.
+Each time an online meeting ends, an attendance report will be generated for that session.
+This API is available in the following national cloud deployments.
 
-### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
-Get alternativeRecording for the navigation property onlineMeetings from users
+### [Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
+Read-only.
 
 ### [Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecordCount](Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecordCount.md)
 Get the number of the resource
@@ -204,8 +207,8 @@ Get the number of the resource
 ### [Get-MgBetaUserOnlineMeetingAttendanceReportCount](Get-MgBetaUserOnlineMeetingAttendanceReportCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnlineMeetingAttendanceReportCount](Get-MgBetaUserOnlineMeetingAttendanceReportCount.md)
-Get the number of the resource
+### [Get-MgBetaUserOnlineMeetingAttendeeReport](Get-MgBetaUserOnlineMeetingAttendeeReport.md)
+Get attendeeReport for the navigation property onlineMeetings from users
 
 ### [Get-MgBetaUserOnlineMeetingBroadcastRecording](Get-MgBetaUserOnlineMeetingBroadcastRecording.md)
 Get broadcastRecording for the navigation property onlineMeetings from users
@@ -258,9 +261,10 @@ Get the number of the resource
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
-### [Get-MgBetaUserOnlineMeetingTranscriptMetadataContent](Get-MgBetaUserOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+### [Get-MgBetaUserPresence](Get-MgBetaUserPresence.md)
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
+This API is available in the following national cloud deployments.
 
 ### [Invoke-MgBetaAnswerCommunicationCall](Invoke-MgBetaAnswerCommunicationCall.md)
 Enable a bot to answer an incoming call.
@@ -389,8 +393,8 @@ Create new navigation property to participants for communications
 ### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
 Create new navigation property to sessions for communications
 
-### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
-Create new navigation property to sessions for communications
+### [New-MgBetaCommunicationOnlineMeeting](New-MgBetaCommunicationOnlineMeeting.md)
+Create new navigation property to onlineMeetings for communications
 
 ### [New-MgBetaCommunicationOnlineMeetingAttendanceReport](New-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for communications
@@ -414,8 +418,9 @@ Create new navigation property to transcripts for communications
 ### [New-MgBetaCommunicationPresence](New-MgBetaCommunicationPresence.md)
 Create new navigation property to presences for communications
 
-### [New-MgBetaCommunicationPresence](New-MgBetaCommunicationPresence.md)
-Create new navigation property to presences for communications
+### [New-MgBetaUserOnlineMeeting](New-MgBetaUserOnlineMeeting.md)
+Create an online meeting on behalf of a user.
+This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserOnlineMeetingAttendanceReport](New-MgBetaUserOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for users
@@ -491,8 +496,9 @@ Delete navigation property transcripts for communications
 ### [Remove-MgBetaCommunicationPresence](Remove-MgBetaCommunicationPresence.md)
 Delete navigation property presences for communications
 
-### [Remove-MgBetaCommunicationPresence](Remove-MgBetaCommunicationPresence.md)
-Delete navigation property presences for communications
+### [Remove-MgBetaUserOnlineMeeting](Remove-MgBetaUserOnlineMeeting.md)
+Delete an onlineMeeting object.
+This API is available in the following national cloud deployments.
 
 ### [Remove-MgBetaUserOnlineMeetingAttendanceReport](Remove-MgBetaUserOnlineMeetingAttendanceReport.md)
 Delete navigation property attendanceReports for users
@@ -517,8 +523,8 @@ Delete navigation property registrants for users
 ### [Remove-MgBetaUserOnlineMeetingTranscript](Remove-MgBetaUserOnlineMeetingTranscript.md)
 Delete navigation property transcripts for users
 
-### [Remove-MgBetaUserOnlineMeetingTranscript](Remove-MgBetaUserOnlineMeetingTranscript.md)
-Delete navigation property transcripts for users
+### [Remove-MgBetaUserPresence](Remove-MgBetaUserPresence.md)
+Delete navigation property presence for users
 
 ### [Rename-MgBetaCommunicationCallScreenSharingRole](Rename-MgBetaCommunicationCallScreenSharingRole.md)
 Allow applications to share screen content with the participants of a group call.
@@ -656,8 +662,10 @@ Update the navigation property transcripts in communications
 ### [Update-MgBetaCommunicationPresence](Update-MgBetaCommunicationPresence.md)
 Update the navigation property presences in communications
 
-### [Update-MgBetaCommunicationPresence](Update-MgBetaCommunicationPresence.md)
-Update the navigation property presences in communications
+### [Update-MgBetaUserOnlineMeeting](Update-MgBetaUserOnlineMeeting.md)
+Update the properties of the specified onlineMeeting object.
+Please see Request body section for the list of properties that support updating.
+This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaUserOnlineMeetingAttendanceReport](Update-MgBetaUserOnlineMeetingAttendanceReport.md)
 Update the navigation property attendanceReports in users
@@ -682,6 +690,6 @@ Update the navigation property registrants in users
 ### [Update-MgBetaUserOnlineMeetingTranscript](Update-MgBetaUserOnlineMeetingTranscript.md)
 Update the navigation property transcripts in users
 
-### [Update-MgBetaUserOnlineMeetingTranscript](Update-MgBetaUserOnlineMeetingTranscript.md)
-Update the navigation property transcripts in users
+### [Update-MgBetaUserPresence](Update-MgBetaUserPresence.md)
+Update the navigation property presence in users
 

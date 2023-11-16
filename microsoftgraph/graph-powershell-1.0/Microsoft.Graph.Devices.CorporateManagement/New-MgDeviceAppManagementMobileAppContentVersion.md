@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcontentversion
 schema: 2.0.0
@@ -14,326 +14,318 @@ Create new navigation property to contentVersions for deviceAppManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
  [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded9
+### CreateExpanded (Default)
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded8
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded7
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded6
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded5
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded4
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded3
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded2
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded10
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded1
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create9
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Create8
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create7
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create6
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create5
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create4
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create3
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create2
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create10
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded9
+### Create1
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded8
-```
-New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded7
+### Create10
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded6
-```
-New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded5
+### Create2
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded4
-```
-New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded3
+### Create3
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded2
-```
-New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded10
+### Create4
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create5
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create6
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create7
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create8
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create9
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create9
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
+ -BodyParameter <IMicrosoftGraphMobileAppContent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded1
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded1
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded10
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded10
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded2
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded2
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded3
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded3
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded4
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded4
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded5
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded5
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded6
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded6
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded7
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded7
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded8
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded8
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded9
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded9
+```
+New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String> [-AdditionalProperties <Hashtable>]
+ [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded (Default)
+### CreateViaIdentityExpanded10
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>] [-Files <IMicrosoftGraphMobileAppContentFile[]>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded9
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
+New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded8
+### CreateViaIdentityExpanded2
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
+New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded7
+### CreateViaIdentityExpanded3
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
+New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded6
+### CreateViaIdentityExpanded4
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
+New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded5
+### CreateViaIdentityExpanded5
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
+New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded4
+### CreateViaIdentityExpanded6
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
+New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded3
+### CreateViaIdentityExpanded7
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
+New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded2
+### CreateViaIdentityExpanded8
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
+New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded10
+### CreateViaIdentityExpanded9
 ```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
+New-MgDeviceAppManagementMobileAppContentVersion -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded1
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent>
- [-AdditionalProperties <Hashtable>] [-ContainedApps <IMicrosoftGraphMobileContainedApp[]>]
- [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create9
-```
-New-MgDeviceAppManagementMobileAppContentVersion -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <IMicrosoftGraphMobileAppContent> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Files <IMicrosoftGraphMobileAppContentFile[]>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to contentVersions for deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -341,8 +333,8 @@ Create new navigation property to contentVersions for deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateExpanded, CreateExpanded1, CreateExpanded1, CreateExpanded10, CreateExpanded10, CreateExpanded2, CreateExpanded2, CreateExpanded3, CreateExpanded3, CreateExpanded4, CreateExpanded4, CreateExpanded5, CreateExpanded5, CreateExpanded6, CreateExpanded6, CreateExpanded7, CreateExpanded7, CreateExpanded8, CreateExpanded8, CreateExpanded9, CreateExpanded9, CreateViaIdentityExpanded1, CreateViaIdentityExpanded10, CreateViaIdentityExpanded2, CreateViaIdentityExpanded3, CreateViaIdentityExpanded4, CreateViaIdentityExpanded5, CreateViaIdentityExpanded6, CreateViaIdentityExpanded7, CreateViaIdentityExpanded8, CreateViaIdentityExpanded9
 Aliases:
 
 Required: False
@@ -358,8 +350,8 @@ Each mobileAppContent can have multiple mobileAppContentFile.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppContent
-Parameter Sets: CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create10, Create1, Create
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppContent
+Parameter Sets: Create, Create1, Create10, Create2, Create3, Create4, Create5, Create6, Create7, Create8, Create9, Create9
 Aliases:
 
 Required: True
@@ -374,8 +366,8 @@ The collection of contained apps in a MobileLobApp acting as a package.
 To construct, see NOTES section for CONTAINEDAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileContainedApp[]
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileContainedApp[]
+Parameter Sets: CreateExpanded, CreateExpanded, CreateExpanded1, CreateExpanded1, CreateExpanded10, CreateExpanded10, CreateExpanded2, CreateExpanded2, CreateExpanded3, CreateExpanded3, CreateExpanded4, CreateExpanded4, CreateExpanded5, CreateExpanded5, CreateExpanded6, CreateExpanded6, CreateExpanded7, CreateExpanded7, CreateExpanded8, CreateExpanded8, CreateExpanded9, CreateExpanded9, CreateViaIdentityExpanded1, CreateViaIdentityExpanded10, CreateViaIdentityExpanded2, CreateViaIdentityExpanded3, CreateViaIdentityExpanded4, CreateViaIdentityExpanded5, CreateViaIdentityExpanded6, CreateViaIdentityExpanded7, CreateViaIdentityExpanded8, CreateViaIdentityExpanded9
 Aliases:
 
 Required: False
@@ -390,8 +382,8 @@ The list of files for this app content version.
 To construct, see NOTES section for FILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppContentFile[]
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppContentFile[]
+Parameter Sets: CreateExpanded, CreateExpanded, CreateExpanded1, CreateExpanded1, CreateExpanded10, CreateExpanded10, CreateExpanded2, CreateExpanded2, CreateExpanded3, CreateExpanded3, CreateExpanded4, CreateExpanded4, CreateExpanded5, CreateExpanded5, CreateExpanded6, CreateExpanded6, CreateExpanded7, CreateExpanded7, CreateExpanded8, CreateExpanded8, CreateExpanded9, CreateExpanded9, CreateViaIdentityExpanded1, CreateViaIdentityExpanded10, CreateViaIdentityExpanded2, CreateViaIdentityExpanded3, CreateViaIdentityExpanded4, CreateViaIdentityExpanded5, CreateViaIdentityExpanded6, CreateViaIdentityExpanded7, CreateViaIdentityExpanded8, CreateViaIdentityExpanded9
 Aliases:
 
 Required: False
@@ -406,8 +398,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded, CreateExpanded1, CreateExpanded1, CreateExpanded10, CreateExpanded10, CreateExpanded2, CreateExpanded2, CreateExpanded3, CreateExpanded3, CreateExpanded4, CreateExpanded4, CreateExpanded5, CreateExpanded5, CreateExpanded6, CreateExpanded6, CreateExpanded7, CreateExpanded7, CreateExpanded8, CreateExpanded8, CreateExpanded9, CreateExpanded9, CreateViaIdentityExpanded1, CreateViaIdentityExpanded10, CreateViaIdentityExpanded2, CreateViaIdentityExpanded3, CreateViaIdentityExpanded4, CreateViaIdentityExpanded5, CreateViaIdentityExpanded6, CreateViaIdentityExpanded7, CreateViaIdentityExpanded8, CreateViaIdentityExpanded9
 Aliases:
 
 Required: False
@@ -422,8 +414,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentityExpanded10, CreateViaIdentityExpanded2, CreateViaIdentityExpanded3, CreateViaIdentityExpanded4, CreateViaIdentityExpanded5, CreateViaIdentityExpanded6, CreateViaIdentityExpanded7, CreateViaIdentityExpanded8, CreateViaIdentityExpanded9
 Aliases:
 
 Required: True
@@ -437,8 +429,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create10, Create1, Create
+Type: System.String
+Parameter Sets: Create, Create1, Create10, Create2, Create3, Create4, Create5, Create6, Create7, Create8, Create9, Create9, CreateExpanded, CreateExpanded, CreateExpanded1, CreateExpanded1, CreateExpanded10, CreateExpanded10, CreateExpanded2, CreateExpanded2, CreateExpanded3, CreateExpanded3, CreateExpanded4, CreateExpanded4, CreateExpanded5, CreateExpanded5, CreateExpanded6, CreateExpanded6, CreateExpanded7, CreateExpanded7, CreateExpanded8, CreateExpanded8, CreateExpanded9, CreateExpanded9
 Aliases:
 
 Required: True
@@ -452,8 +444,8 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create10, Create1, Create, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases: cf
 
 Required: False
@@ -468,8 +460,8 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create10, Create1, Create, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases: wi
 
 Required: False
@@ -485,10 +477,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppContent
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppContent
+
 ## NOTES
 
 ALIASES

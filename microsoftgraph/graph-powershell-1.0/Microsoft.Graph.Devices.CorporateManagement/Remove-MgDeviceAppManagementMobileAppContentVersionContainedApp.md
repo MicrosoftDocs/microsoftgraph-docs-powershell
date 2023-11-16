@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappcontentversioncontainedapp
 schema: 2.0.0
@@ -15,159 +15,175 @@ Delete navigation property containedApps for deviceAppManagement
 ### Delete (Default)
 ```
 Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete9
-```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete8
-```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete7
-```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete6
-```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete5
-```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete4
-```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete3
-```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete2
-```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete10
-```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Delete1
 ```
 Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
- -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity9
+### Delete10
 ```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity8
+### Delete2
 ```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity7
+### Delete3
 ```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity6
+### Delete4
 ```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity5
+### Delete5
 ```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity4
+### Delete6
 ```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity3
+### Delete7
 ```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity2
+### Delete8
 ```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity10
+### Delete9
 ```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -MobileContainedAppId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity10
+```
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity2
+```
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity3
+```
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity4
+```
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity5
+```
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity6
+```
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity7
+```
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity8
+```
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### DeleteViaIdentity9
+```
+Remove-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property containedApps for deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -175,7 +191,7 @@ Delete navigation property containedApps for deviceAppManagement
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -191,8 +207,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: DeleteViaIdentity9, DeleteViaIdentity8, DeleteViaIdentity7, DeleteViaIdentity6, DeleteViaIdentity5, DeleteViaIdentity4, DeleteViaIdentity3, DeleteViaIdentity2, DeleteViaIdentity10, DeleteViaIdentity1, DeleteViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: DeleteViaIdentity, DeleteViaIdentity1, DeleteViaIdentity10, DeleteViaIdentity2, DeleteViaIdentity3, DeleteViaIdentity4, DeleteViaIdentity5, DeleteViaIdentity6, DeleteViaIdentity7, DeleteViaIdentity8, DeleteViaIdentity9
 Aliases:
 
 Required: True
@@ -206,8 +222,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppContent
 
 ```yaml
-Type: String
-Parameter Sets: Delete, Delete9, Delete8, Delete7, Delete6, Delete5, Delete4, Delete3, Delete2, Delete10, Delete1
+Type: System.String
+Parameter Sets: Delete, Delete1, Delete10, Delete2, Delete3, Delete4, Delete5, Delete6, Delete7, Delete8, Delete9
 Aliases:
 
 Required: True
@@ -221,8 +237,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: String
-Parameter Sets: Delete, Delete9, Delete8, Delete7, Delete6, Delete5, Delete4, Delete3, Delete2, Delete10, Delete1
+Type: System.String
+Parameter Sets: Delete, Delete1, Delete10, Delete2, Delete3, Delete4, Delete5, Delete6, Delete7, Delete8, Delete9
 Aliases:
 
 Required: True
@@ -236,8 +252,8 @@ Accept wildcard characters: False
 The unique identifier of mobileContainedApp
 
 ```yaml
-Type: String
-Parameter Sets: Delete, Delete9, Delete8, Delete7, Delete6, Delete5, Delete4, Delete3, Delete2, Delete10, Delete1
+Type: System.String
+Parameter Sets: Delete, Delete1, Delete10, Delete2, Delete3, Delete4, Delete5, Delete6, Delete7, Delete8, Delete9
 Aliases:
 
 Required: True
@@ -251,7 +267,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -266,7 +282,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -282,7 +298,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -299,9 +315,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

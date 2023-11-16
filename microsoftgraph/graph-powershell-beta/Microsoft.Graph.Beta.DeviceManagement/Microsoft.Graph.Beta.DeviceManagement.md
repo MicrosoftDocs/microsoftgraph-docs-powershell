@@ -2335,9 +2335,8 @@ This API is available in the following national cloud deployments.
 Update the properties of a browserSite object.
 This API is available in the following national cloud deployments.
 
-### [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
-Update the properties of a browserSite object.
-This API is available in the following national cloud deployments.
+### [Update-MgBetaDeviceManagement](Update-MgBetaDeviceManagement.md)
+Update deviceManagement
 
 ### [Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
 Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement

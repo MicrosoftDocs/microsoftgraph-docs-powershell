@@ -138,14 +138,20 @@ This API is available in the following national cloud deployments.
 ### [Get-MgCommunicationPresenceCount](Get-MgCommunicationPresenceCount.md)
 Get the number of the resource
 
-### [Get-MgCommunicationPresenceCount](Get-MgCommunicationPresenceCount.md)
-Get the number of the resource
+### [Get-MgUserOnlineMeeting](Get-MgUserOnlineMeeting.md)
+Retrieve the properties and relationships of an onlineMeeting object.
+For example, you can: Teams live event attendee report (deprecated) is an online meeting artifact.
+For details, see Online meeting artifacts and permissions.
+This API is available in the following national cloud deployments.
 
-### [Get-MgCommunicationPresenceCount](Get-MgCommunicationPresenceCount.md)
-Get the number of the resource
+### [Get-MgUserOnlineMeetingAttendanceReport](Get-MgUserOnlineMeetingAttendanceReport.md)
+Get the meetingAttendanceReport for an onlineMeeting.
+Each time an online meeting ends, an attendance report will be generated for that session.
+This API is available in the following national cloud deployments.
 
-### [Get-MgCommunicationPresenceCount](Get-MgCommunicationPresenceCount.md)
-Get the number of the resource
+### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount.md)
 Get the number of the resource
@@ -153,8 +159,8 @@ Get the number of the resource
 ### [Get-MgUserOnlineMeetingAttendanceReportCount](Get-MgUserOnlineMeetingAttendanceReportCount.md)
 Get the number of the resource
 
-### [Get-MgUserOnlineMeetingAttendanceReportCount](Get-MgUserOnlineMeetingAttendanceReportCount.md)
-Get the number of the resource
+### [Get-MgUserOnlineMeetingAttendeeReport](Get-MgUserOnlineMeetingAttendeeReport.md)
+Get attendeeReport for the navigation property onlineMeetings from users
 
 ### [Get-MgUserOnlineMeetingCount](Get-MgUserOnlineMeetingCount.md)
 Get the number of the resource
@@ -177,9 +183,10 @@ Get the number of the resource
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
-### [Get-MgUserOnlineMeetingTranscriptMetadataContent](Get-MgUserOnlineMeetingTranscriptMetadataContent.md)
-The time-aligned metadata of the utterances in the transcript.
-Read-only.
+### [Get-MgUserPresence](Get-MgUserPresence.md)
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
+This API is available in the following national cloud deployments.
 
 ### [Invoke-MgAnswerCommunicationCall](Invoke-MgAnswerCommunicationCall.md)
 Enable a bot to answer an incoming call.
@@ -238,7 +245,7 @@ Play a prompt in the call.
 For more information about how to handle operations, see commsOperation This API is available in the following national cloud deployments.
 
 ### [Invoke-MgRecordCommunicationCallResponse](Invoke-MgRecordCommunicationCallResponse.md)
-Records a short audio response from the caller.A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Records a short audio response from the caller.\nA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
@@ -299,8 +306,8 @@ Create new navigation property to participants for communications
 ### [New-MgCommunicationCallRecordSession](New-MgCommunicationCallRecordSession.md)
 Create new navigation property to sessions for communications
 
-### [New-MgCommunicationCallRecordSession](New-MgCommunicationCallRecordSession.md)
-Create new navigation property to sessions for communications
+### [New-MgCommunicationOnlineMeeting](New-MgCommunicationOnlineMeeting.md)
+Create new navigation property to onlineMeetings for communications
 
 ### [New-MgCommunicationOnlineMeetingAttendanceReport](New-MgCommunicationOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for communications
@@ -314,8 +321,9 @@ Create new navigation property to transcripts for communications
 ### [New-MgCommunicationPresence](New-MgCommunicationPresence.md)
 Create new navigation property to presences for communications
 
-### [New-MgCommunicationPresence](New-MgCommunicationPresence.md)
-Create new navigation property to presences for communications
+### [New-MgUserOnlineMeeting](New-MgUserOnlineMeeting.md)
+Create an online meeting on behalf of a user.
+This API is available in the following national cloud deployments.
 
 ### [New-MgUserOnlineMeetingAttendanceReport](New-MgUserOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for users
@@ -367,8 +375,9 @@ Delete navigation property transcripts for communications
 ### [Remove-MgCommunicationPresence](Remove-MgCommunicationPresence.md)
 Delete navigation property presences for communications
 
-### [Remove-MgCommunicationPresence](Remove-MgCommunicationPresence.md)
-Delete navigation property presences for communications
+### [Remove-MgUserOnlineMeeting](Remove-MgUserOnlineMeeting.md)
+Delete an onlineMeeting object.
+This API is available in the following national cloud deployments.
 
 ### [Remove-MgUserOnlineMeetingAttendanceReport](Remove-MgUserOnlineMeetingAttendanceReport.md)
 Delete navigation property attendanceReports for users
@@ -379,8 +388,8 @@ Delete navigation property attendanceRecords for users
 ### [Remove-MgUserOnlineMeetingTranscript](Remove-MgUserOnlineMeetingTranscript.md)
 Delete navigation property transcripts for users
 
-### [Remove-MgUserOnlineMeetingTranscript](Remove-MgUserOnlineMeetingTranscript.md)
-Delete navigation property transcripts for users
+### [Remove-MgUserPresence](Remove-MgUserPresence.md)
+Delete navigation property presence for users
 
 ### [Rename-MgCommunicationCallScreenSharingRole](Rename-MgCommunicationCallScreenSharingRole.md)
 Allow applications to share screen content with the participants of a group call.
@@ -478,8 +487,10 @@ Update the navigation property transcripts in communications
 ### [Update-MgCommunicationPresence](Update-MgCommunicationPresence.md)
 Update the navigation property presences in communications
 
-### [Update-MgCommunicationPresence](Update-MgCommunicationPresence.md)
-Update the navigation property presences in communications
+### [Update-MgUserOnlineMeeting](Update-MgUserOnlineMeeting.md)
+Update the properties of the specified onlineMeeting object.
+Please see Request body section for the list of properties that support updating.
+This API is available in the following national cloud deployments.
 
 ### [Update-MgUserOnlineMeetingAttendanceReport](Update-MgUserOnlineMeetingAttendanceReport.md)
 Update the navigation property attendanceReports in users
@@ -490,6 +501,6 @@ Update the navigation property attendanceRecords in users
 ### [Update-MgUserOnlineMeetingTranscript](Update-MgUserOnlineMeetingTranscript.md)
 Update the navigation property transcripts in users
 
-### [Update-MgUserOnlineMeetingTranscript](Update-MgUserOnlineMeetingTranscript.md)
-Update the navigation property transcripts in users
+### [Update-MgUserPresence](Update-MgUserPresence.md)
+Update the navigation property presence in users
 

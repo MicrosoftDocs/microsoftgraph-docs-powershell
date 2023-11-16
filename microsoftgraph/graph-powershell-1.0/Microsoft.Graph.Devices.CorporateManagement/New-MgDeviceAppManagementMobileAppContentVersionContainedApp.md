@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcontentversioncontainedapp
 schema: 2.0.0
@@ -14,294 +14,318 @@ Create new navigation property to containedApps for deviceAppManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded9
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded8
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded7
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded6
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded5
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded4
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded3
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded2
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded10
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded1
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create9
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### Create8
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create7
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create6
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create5
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create4
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create3
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create2
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create10
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded9
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded8
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded7
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded6
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded5
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded4
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded3
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded2
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded10
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
-### CreateExpanded9
+### Create
 ```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded8
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded7
+### Create1
 ```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded6
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded5
+### Create10
 ```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded4
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded3
+### Create2
 ```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded2
-```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded10
+### Create3
 ```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateExpanded1
+### Create4
 ```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create5
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create6
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create7
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create8
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create9
 ```
-New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String> -MobileAppId <String>
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create9
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded1
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateExpanded1
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded10
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded10
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded2
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded2
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded3
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded3
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded4
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded4
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded5
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded5
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded6
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded6
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded7
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded7
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded8
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded8
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded9
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded9
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp -MobileAppContentId <String>
+ -MobileAppId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded10
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded2
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded3
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded4
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded5
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded6
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded7
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded8
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded9
+```
+New-MgDeviceAppManagementMobileAppContentVersionContainedApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to containedApps for deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -309,8 +333,8 @@ Create new navigation property to containedApps for deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateExpanded, CreateExpanded1, CreateExpanded1, CreateExpanded10, CreateExpanded10, CreateExpanded2, CreateExpanded2, CreateExpanded3, CreateExpanded3, CreateExpanded4, CreateExpanded4, CreateExpanded5, CreateExpanded5, CreateExpanded6, CreateExpanded6, CreateExpanded7, CreateExpanded7, CreateExpanded8, CreateExpanded8, CreateExpanded9, CreateExpanded9, CreateViaIdentityExpanded1, CreateViaIdentityExpanded10, CreateViaIdentityExpanded2, CreateViaIdentityExpanded3, CreateViaIdentityExpanded4, CreateViaIdentityExpanded5, CreateViaIdentityExpanded6, CreateViaIdentityExpanded7, CreateViaIdentityExpanded8, CreateViaIdentityExpanded9
 Aliases:
 
 Required: False
@@ -324,8 +348,8 @@ Accept wildcard characters: False
 An abstract class that represents a contained app in a mobileApp acting as a package.
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create10, Create1, Create
+Type: System.Collections.Hashtable
+Parameter Sets: Create, Create1, Create10, Create2, Create3, Create4, Create5, Create6, Create7, Create8, Create9, Create9
 Aliases:
 
 Required: True
@@ -340,8 +364,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded, CreateExpanded1, CreateExpanded1, CreateExpanded10, CreateExpanded10, CreateExpanded2, CreateExpanded2, CreateExpanded3, CreateExpanded3, CreateExpanded4, CreateExpanded4, CreateExpanded5, CreateExpanded5, CreateExpanded6, CreateExpanded6, CreateExpanded7, CreateExpanded7, CreateExpanded8, CreateExpanded8, CreateExpanded9, CreateExpanded9, CreateViaIdentityExpanded1, CreateViaIdentityExpanded10, CreateViaIdentityExpanded2, CreateViaIdentityExpanded3, CreateViaIdentityExpanded4, CreateViaIdentityExpanded5, CreateViaIdentityExpanded6, CreateViaIdentityExpanded7, CreateViaIdentityExpanded8, CreateViaIdentityExpanded9
 Aliases:
 
 Required: False
@@ -356,8 +380,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentityExpanded10, CreateViaIdentityExpanded2, CreateViaIdentityExpanded3, CreateViaIdentityExpanded4, CreateViaIdentityExpanded5, CreateViaIdentityExpanded6, CreateViaIdentityExpanded7, CreateViaIdentityExpanded8, CreateViaIdentityExpanded9
 Aliases:
 
 Required: True
@@ -371,8 +395,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppContent
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create10, Create1, Create
+Type: System.String
+Parameter Sets: Create, Create1, Create10, Create2, Create3, Create4, Create5, Create6, Create7, Create8, Create9, Create9, CreateExpanded, CreateExpanded, CreateExpanded1, CreateExpanded1, CreateExpanded10, CreateExpanded10, CreateExpanded2, CreateExpanded2, CreateExpanded3, CreateExpanded3, CreateExpanded4, CreateExpanded4, CreateExpanded5, CreateExpanded5, CreateExpanded6, CreateExpanded6, CreateExpanded7, CreateExpanded7, CreateExpanded8, CreateExpanded8, CreateExpanded9, CreateExpanded9
 Aliases:
 
 Required: True
@@ -386,8 +410,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create10, Create1, Create
+Type: System.String
+Parameter Sets: Create, Create1, Create10, Create2, Create3, Create4, Create5, Create6, Create7, Create8, Create9, Create9, CreateExpanded, CreateExpanded, CreateExpanded1, CreateExpanded1, CreateExpanded10, CreateExpanded10, CreateExpanded2, CreateExpanded2, CreateExpanded3, CreateExpanded3, CreateExpanded4, CreateExpanded4, CreateExpanded5, CreateExpanded5, CreateExpanded6, CreateExpanded6, CreateExpanded7, CreateExpanded7, CreateExpanded8, CreateExpanded8, CreateExpanded9, CreateExpanded9
 Aliases:
 
 Required: True
@@ -401,8 +425,8 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create10, Create1, Create, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases: cf
 
 Required: False
@@ -417,8 +441,8 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateExpanded9, CreateExpanded8, CreateExpanded7, CreateExpanded6, CreateExpanded5, CreateExpanded4, CreateExpanded3, CreateExpanded2, CreateExpanded10, CreateExpanded1, Create9, Create8, Create7, Create6, Create5, Create4, Create3, Create2, Create10, Create1, Create, CreateViaIdentityExpanded9, CreateViaIdentityExpanded8, CreateViaIdentityExpanded7, CreateViaIdentityExpanded6, CreateViaIdentityExpanded5, CreateViaIdentityExpanded4, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentityExpanded10, CreateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
 Aliases: wi
 
 Required: False
@@ -434,10 +458,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
