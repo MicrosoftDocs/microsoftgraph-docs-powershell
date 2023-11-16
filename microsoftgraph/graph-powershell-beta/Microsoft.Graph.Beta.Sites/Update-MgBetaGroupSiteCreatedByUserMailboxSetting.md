@@ -47,18 +47,6 @@ Update-MgBetaGroupSiteCreatedByUserMailboxSetting -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -462,4 +450,5 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitecreatedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitecreatedbyusermailboxsetting)
+
 

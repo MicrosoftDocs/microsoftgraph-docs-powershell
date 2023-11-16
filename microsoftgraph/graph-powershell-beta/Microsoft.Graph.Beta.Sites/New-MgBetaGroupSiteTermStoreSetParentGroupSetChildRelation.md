@@ -75,18 +75,6 @@ New-MgBetaGroupSiteTermStoreSetParentGroupSetChildRelation -InputObject <ISitesI
 ## DESCRIPTION
 Create new navigation property to relations for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -613,4 +601,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoresetparentgroupsetchildrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoresetparentgroupsetchildrelation)
+
 

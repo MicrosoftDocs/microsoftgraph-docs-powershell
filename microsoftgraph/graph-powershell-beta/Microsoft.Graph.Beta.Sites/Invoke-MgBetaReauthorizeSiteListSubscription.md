@@ -29,22 +29,6 @@ Invoke-MgBetaReauthorizeSiteListSubscription -InputObject <ISitesIdentity> [-Pas
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -222,4 +206,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetareauthorizesitelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetareauthorizesitelistsubscription)
+
 

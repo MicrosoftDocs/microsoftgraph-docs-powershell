@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequest
@@ -36,22 +36,6 @@ New-MgBetaSecuritySubjectRightsRequest -BodyParameter <IMicrosoftGraphSubjectRig
 
 ## DESCRIPTION
 Create new navigation property to subjectRightsRequests for security
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -30236,4 +30220,5 @@ This URL should be treated as an opaque blob, and not parsed.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysubjectrightsrequest)
+
 

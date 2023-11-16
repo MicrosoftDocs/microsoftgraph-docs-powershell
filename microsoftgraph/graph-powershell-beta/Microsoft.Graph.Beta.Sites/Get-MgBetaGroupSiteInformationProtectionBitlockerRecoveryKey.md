@@ -44,18 +44,6 @@ Including the $select query parameter triggers a Microsoft Entra audit of the op
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -338,4 +326,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionbitlockerrecoverykey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionbitlockerrecoverykey)
+
 

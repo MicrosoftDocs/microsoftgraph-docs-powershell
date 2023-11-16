@@ -53,18 +53,6 @@ If the same updatableAsset gets included in the exclusions and members collectio
 You can also use the method updateAudience to update the deploymentAudience.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddExclusions
@@ -285,4 +273,5 @@ INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudiencebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/update-mgbetawindowsupdatespolicyaudiencebyid)
+
 

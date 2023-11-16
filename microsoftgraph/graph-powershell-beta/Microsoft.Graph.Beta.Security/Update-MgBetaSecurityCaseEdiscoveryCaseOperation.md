@@ -44,22 +44,6 @@ Update-MgBetaSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property operations in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Action
@@ -432,4 +416,5 @@ RESULTINFO \<IMicrosoftGraphResultInfo\>: resultInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycaseoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycaseoperation)
+
 

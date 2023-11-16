@@ -45,18 +45,6 @@ Export-MgBetaSecurityCaseEdiscoveryCaseSearchReport -InputObject <ISecurityIdent
 ## DESCRIPTION
 Invoke action exportReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalOptions
@@ -362,4 +350,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasesearchreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasesearchreport)
+
 

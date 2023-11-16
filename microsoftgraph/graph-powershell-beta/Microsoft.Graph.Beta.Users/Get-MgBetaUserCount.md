@@ -19,18 +19,6 @@ Get-MgBetaUserCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <Str
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -92,4 +80,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausercount)
+
 

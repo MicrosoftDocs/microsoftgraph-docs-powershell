@@ -36,18 +36,6 @@ Get-MgBetaUserTodoTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>
 Read the properties and relationships of a todoTask object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -304,4 +292,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask)
+
 

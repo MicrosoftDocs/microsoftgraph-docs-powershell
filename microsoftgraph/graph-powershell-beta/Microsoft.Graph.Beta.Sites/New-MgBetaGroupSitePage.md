@@ -51,22 +51,6 @@ New-MgBetaGroupSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 Create a new sitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
 This API is available in the following \[national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -22648,4 +22632,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepage)
+
 

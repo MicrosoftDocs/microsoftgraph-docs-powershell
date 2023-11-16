@@ -27,18 +27,6 @@ Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact -InputObject <ISecu
 ## DESCRIPTION
 The artifact related to this passiveDnsRecord entry.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -198,4 +186,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencepassivednsrecordartifact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencepassivednsrecordartifact)
+
 

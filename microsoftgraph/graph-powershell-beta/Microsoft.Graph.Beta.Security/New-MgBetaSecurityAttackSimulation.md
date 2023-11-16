@@ -39,22 +39,6 @@ New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-
 Create an attack simulation campaign for a tenant.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -987,4 +971,5 @@ TRAININGSETTING \<IMicrosoftGraphTrainingSetting\>: trainingSetting
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation)
+
 

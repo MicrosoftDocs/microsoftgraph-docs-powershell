@@ -28,18 +28,6 @@ New-MgBetaSecurityThreatIntelligenceHostTracker -BodyParameter <IMicrosoftGraphS
 ## DESCRIPTION
 Create new navigation property to hostTrackers for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -776,4 +764,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehosttracker](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehosttracker)
+
 

@@ -34,18 +34,6 @@ Get-MgBetaWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdenti
 ## DESCRIPTION
 Specifies the assets to include in the audience.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -272,4 +260,5 @@ INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicyaudiencemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicyaudiencemember)
+
 

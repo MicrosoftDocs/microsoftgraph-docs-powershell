@@ -36,18 +36,6 @@ Get-MgBetaWindowsUpdatesPolicy -InputObject <IWindowsUpdatesIdentity> [-ExpandPr
 Read the properties and relationships of an updatePolicy object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -258,4 +246,5 @@ INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicy)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile
@@ -31,22 +31,6 @@ New-MgBetaSecurityFileSecurityProfile -BodyParameter <IMicrosoftGraphFileSecurit
 
 ## DESCRIPTION
 Create new navigation property to fileSecurityProfiles for security
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -453,4 +437,5 @@ VULNERABILITYSTATES \<IMicrosoftGraphVulnerabilityState\[\]\>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile)
+
 

@@ -27,18 +27,6 @@ Get-MgBetaWindowsUpdatesPolicyComplianceChangeUpdatePolicy -InputObject <IWindow
 ## DESCRIPTION
 The policy this compliance change is a member of.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ComplianceChangeId
@@ -143,4 +131,5 @@ INPUTOBJECT \<IWindowsUpdatesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicycompliancechangeupdatepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicycompliancechangeupdatepolicy)
+
 

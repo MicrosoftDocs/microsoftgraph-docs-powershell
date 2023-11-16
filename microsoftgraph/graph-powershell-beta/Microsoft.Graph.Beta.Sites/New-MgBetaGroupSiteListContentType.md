@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistcontenttype
@@ -52,22 +52,6 @@ New-MgBetaGroupSiteListContentType -InputObject <ISitesIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Create new navigation property to contentTypes for groups
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -1816,4 +1800,5 @@ ORDER \<IMicrosoftGraphContentTypeOrder\>: contentTypeOrder
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelistcontenttype)
+
 

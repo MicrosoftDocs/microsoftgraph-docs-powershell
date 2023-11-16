@@ -34,18 +34,6 @@ Get-MgBetaSecurityLabelCategorySubCategory -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a subCategoryTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -341,4 +329,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepermission
@@ -52,22 +52,6 @@ New-MgBetaGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create a new permission object on a site.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -662,4 +646,5 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepermission)
+
 

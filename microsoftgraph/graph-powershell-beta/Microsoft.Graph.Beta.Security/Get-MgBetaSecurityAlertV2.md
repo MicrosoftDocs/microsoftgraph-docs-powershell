@@ -36,18 +36,6 @@ Get-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 Get the properties and relationships of an alert in an organization based on the specified alert id property.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertId
@@ -328,4 +316,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalertv2)
+
 

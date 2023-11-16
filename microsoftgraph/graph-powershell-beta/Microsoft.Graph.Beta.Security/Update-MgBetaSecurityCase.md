@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycase
@@ -27,22 +27,6 @@ Update-MgBetaSecurityCase -BodyParameter <IMicrosoftGraphSecurityCasesRoot> [-Wh
 
 ## DESCRIPTION
 Update the navigation property cases in security
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -15354,4 +15338,5 @@ To learn more, see Maximum number of themes.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycase)
+
 

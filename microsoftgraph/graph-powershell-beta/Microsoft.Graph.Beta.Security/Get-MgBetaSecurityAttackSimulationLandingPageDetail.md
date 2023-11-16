@@ -34,18 +34,6 @@ Get-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityIdent
 ## DESCRIPTION
 The detail information for a landing page associated with a simulation during its creation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -341,4 +329,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationlandingpagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationlandingpagedetail)
+
 

@@ -29,22 +29,6 @@ Get-MgBetaSiteApplicableContentTypeForList -InputObject <ISitesIdentity> [-Count
 ## DESCRIPTION
 Invoke function getApplicableContentTypesForList
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -266,4 +250,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteapplicablecontenttypeforlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteapplicablecontenttypeforlist)
+
 

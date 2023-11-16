@@ -35,18 +35,6 @@ Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator -InputObject <ISecurit
 ## DESCRIPTION
 Includes an assemblage of high-fidelity network indicators of compromise.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -342,4 +330,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceintelprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceintelprofileindicator)
+
 

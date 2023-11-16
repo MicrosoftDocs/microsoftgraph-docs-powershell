@@ -27,18 +27,6 @@ Remove-MgBetaSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityI
 ## DESCRIPTION
 Delete navigation property articleIndicators for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ArticleIndicatorId
@@ -229,4 +217,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencearticleindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligencearticleindicator)
+
 

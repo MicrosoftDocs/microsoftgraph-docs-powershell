@@ -20,18 +20,6 @@ Get-MgBetaAllSite [-Count] [-Filter <String>] [-Property <String[]>] [-Search <S
 ## DESCRIPTION
 Invoke function getAllSites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -152,4 +140,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite)
+
 

@@ -27,18 +27,6 @@ Get-MgBetaSiteListColumnSourceColumn -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 The source column for content type column.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -200,4 +188,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcolumnsourcecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcolumnsourcecolumn)
+
 

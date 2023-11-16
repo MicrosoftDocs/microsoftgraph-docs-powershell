@@ -28,22 +28,6 @@ Set-MgBetaUserTodoListTaskAttachmentContent -InputObject <IUsersIdentity> [-Data
 ## DESCRIPTION
 Update media content for the navigation property attachments in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttachmentBaseId
@@ -243,4 +227,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausertodolisttaskattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausertodolisttaskattachmentcontent)
+
 

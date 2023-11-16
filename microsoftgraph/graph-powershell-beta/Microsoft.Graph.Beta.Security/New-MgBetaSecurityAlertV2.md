@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2
@@ -35,18 +35,6 @@ New-MgBetaSecurityAlertV2 -BodyParameter <IMicrosoftGraphSecurityAlert> [-WhatIf
 
 ## DESCRIPTION
 Create new navigation property to alerts_v2 for security
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -698,4 +686,5 @@ Values are free-form.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2)
+
 

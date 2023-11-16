@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2
@@ -59,18 +59,6 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the properties of an alert object in an organization based on the specified alert id property.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -832,4 +820,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2)
+
 

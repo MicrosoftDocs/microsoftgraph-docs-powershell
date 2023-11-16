@@ -29,18 +29,6 @@ Remove-MgBetaUserManager -InputObject <IUsersIdentity> [-IfMatch <String>] [-Pas
 Remove a user's manager.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -177,4 +165,5 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausermanager](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausermanager)
+
 

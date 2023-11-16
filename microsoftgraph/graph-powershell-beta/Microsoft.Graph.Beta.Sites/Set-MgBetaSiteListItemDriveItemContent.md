@@ -27,22 +27,6 @@ Set-MgBetaSiteListItemDriveItemContent -InputObject <ISitesIdentity> [-Data <Str
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -238,4 +222,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetasitelistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetasitelistitemdriveitemcontent)
+
 

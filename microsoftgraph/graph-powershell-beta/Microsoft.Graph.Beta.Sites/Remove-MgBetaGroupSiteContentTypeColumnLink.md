@@ -27,22 +27,6 @@ Remove-MgBetaGroupSiteContentTypeColumnLink -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property columnLinks for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnLinkId
@@ -250,4 +234,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontenttypecolumnlink)
+
 

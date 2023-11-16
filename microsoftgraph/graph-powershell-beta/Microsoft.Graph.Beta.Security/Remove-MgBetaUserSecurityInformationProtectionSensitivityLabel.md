@@ -27,18 +27,6 @@ Remove-MgBetaUserSecurityInformationProtectionSensitivityLabel -InputObject <ISe
 ## DESCRIPTION
 Delete navigation property sensitivityLabels for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -244,4 +232,5 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetausersecurityinformationprotectionsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetausersecurityinformationprotectionsensitivitylabel)
+
 
