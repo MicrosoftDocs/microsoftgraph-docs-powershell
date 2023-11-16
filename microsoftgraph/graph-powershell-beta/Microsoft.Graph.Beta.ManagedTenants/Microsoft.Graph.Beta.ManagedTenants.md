@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 Module Guid: e5ddb308-d7d6-4bb1-82ed-cc467c794955
 Download Help Link: {{ Update Download Link }}
