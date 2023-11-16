@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The principal that's getting a role assignment or that's eligible for a role through the request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentSchedulePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentSchedulePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -216,6 +219,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryRoleAssignmentSchedulePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentSchedulePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignmentscheduleprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignmentscheduleprincipal)
 

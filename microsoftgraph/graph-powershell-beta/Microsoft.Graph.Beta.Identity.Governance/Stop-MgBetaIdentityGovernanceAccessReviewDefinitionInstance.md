@@ -13,6 +13,9 @@ After the access review instance stops, the instance status will be Completed, t
 Stopping an instance will not effect future instances.
 To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Stop (Default)
@@ -249,6 +252,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Stop-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewdefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaidentitygovernanceaccessreviewdefinitioninstance)
 

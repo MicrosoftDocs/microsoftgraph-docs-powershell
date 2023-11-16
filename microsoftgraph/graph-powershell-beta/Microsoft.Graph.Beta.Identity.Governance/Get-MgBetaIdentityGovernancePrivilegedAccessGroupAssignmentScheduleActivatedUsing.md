@@ -12,6 +12,9 @@ When the request activates an ownership or membership assignment in PIM for grou
 Otherwise, it is null.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -222,6 +225,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentscheduleactivatedusing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentscheduleactivatedusing)
 

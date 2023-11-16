@@ -11,6 +11,9 @@ schema: 2.0.0
 The schedule for a role eligibility that is referenced through the targetScheduleId property.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -220,6 +223,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleeligibilityschedulerequesttargetschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleeligibilityschedulerequesttargetschedule)
 

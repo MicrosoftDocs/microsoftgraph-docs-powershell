@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroup
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a group object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroup](/powershell/module/Microsoft.Graph.Groups/Update-MgGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39787,6 +39790,7 @@ Azure AD security groups can be written back as universalSecurityGroup.
 If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property isn't explicitly configured: Microsoft 365 groups are written back as universalDistributionGroup by defaultSecurity groups are written back as universalSecurityGroup by default
 
 ## RELATED LINKS
+[Update-MgGroup](/powershell/module/Microsoft.Graph.Groups/Update-MgGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroup)
 

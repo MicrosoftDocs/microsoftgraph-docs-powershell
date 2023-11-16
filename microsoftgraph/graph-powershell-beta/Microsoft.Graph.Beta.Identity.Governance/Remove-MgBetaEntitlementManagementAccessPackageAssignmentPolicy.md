@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In Azure AD entitlement management, delete an accessPackageAssignmentPolicy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -243,6 +246,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
 

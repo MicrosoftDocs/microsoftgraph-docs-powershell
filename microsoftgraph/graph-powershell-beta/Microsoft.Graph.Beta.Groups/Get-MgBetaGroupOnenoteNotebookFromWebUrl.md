@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOnenoteNotebookFromWebUrl?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -231,6 +234,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOnenoteNotebookFromWebUrl?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenotenotebookfromweburl)
 

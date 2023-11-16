@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleEligibilityScheduleInstances for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -482,6 +485,7 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementroleeligibilityscheduleinstance)
 

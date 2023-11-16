@@ -14,6 +14,9 @@ Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupMemberByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -210,6 +213,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgGroupMemberByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberbyref)
 

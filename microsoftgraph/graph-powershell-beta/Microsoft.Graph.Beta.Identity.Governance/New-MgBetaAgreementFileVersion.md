@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to versions for agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFileVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -418,6 +421,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[New-MgAgreementFileVersion](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFileVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfileversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaagreementfileversion)
 

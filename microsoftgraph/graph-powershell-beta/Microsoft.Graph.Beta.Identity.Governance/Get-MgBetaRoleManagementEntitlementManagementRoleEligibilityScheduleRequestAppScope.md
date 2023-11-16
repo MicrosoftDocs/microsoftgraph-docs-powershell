@@ -12,6 +12,9 @@ Read-only property with details of the app-specific scope when the role eligibil
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -222,6 +225,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScope?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleeligibilityschedulerequestappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleeligibilityschedulerequestappscope)
 

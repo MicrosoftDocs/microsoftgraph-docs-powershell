@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to eligibilityScheduleInstances for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -14867,6 +14870,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance)
 

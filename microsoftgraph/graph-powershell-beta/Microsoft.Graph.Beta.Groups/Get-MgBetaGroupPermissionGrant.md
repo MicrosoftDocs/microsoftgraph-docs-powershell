@@ -11,6 +11,9 @@ schema: 2.0.0
 The permissions that have been granted for a group to a specific application.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -302,6 +305,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupPermissionGrant](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant)
 

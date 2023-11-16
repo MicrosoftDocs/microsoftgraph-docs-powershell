@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only collection of role definitions that the given role definition inherits from.
 Only Azure AD built-in roles support this attribute.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -361,6 +364,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroledefinitioninheritpermissionfrom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroledefinitioninheritpermissionfrom)
 

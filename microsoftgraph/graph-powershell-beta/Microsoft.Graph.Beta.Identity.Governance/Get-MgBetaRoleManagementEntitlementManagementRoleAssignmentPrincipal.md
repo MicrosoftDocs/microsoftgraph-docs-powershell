@@ -13,6 +13,9 @@ Provided so that callers can get the principal using $expand at the same time as
 Read-only.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -222,6 +225,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentprincipal)
 

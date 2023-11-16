@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Publishes a \[contentType\]\[\] present in a content type hub site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupSiteListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -226,6 +229,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Publish-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupSiteListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitelistcontenttype)
 

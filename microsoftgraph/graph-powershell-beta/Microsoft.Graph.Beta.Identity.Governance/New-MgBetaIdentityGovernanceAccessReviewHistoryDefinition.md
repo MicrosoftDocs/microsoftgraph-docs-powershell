@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new accessReviewHistoryDefinition object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -511,6 +514,7 @@ Note: Only years, months, and days ISO 8601 properties are supported.
 Required.
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition)
 

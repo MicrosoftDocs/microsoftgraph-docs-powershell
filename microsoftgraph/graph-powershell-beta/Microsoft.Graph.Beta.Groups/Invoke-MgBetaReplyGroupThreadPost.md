@@ -12,6 +12,9 @@ Create an open extension (openTypeExtension object) and add custom properties in
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)
@@ -523,6 +526,7 @@ Read-only.
     \[Value \<String\>\]: A property value.
 
 ## RELATED LINKS
+[Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthreadpost)
 

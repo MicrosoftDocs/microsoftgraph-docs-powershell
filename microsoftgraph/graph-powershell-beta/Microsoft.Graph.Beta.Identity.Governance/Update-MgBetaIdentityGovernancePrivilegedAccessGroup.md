@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroup
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property group in identityGovernance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -51686,6 +51689,7 @@ Required.
 Required.
 
 ## RELATED LINKS
+[Update-MgIdentityGovernancePrivilegedAccessGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernancePrivilegedAccessGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroup)
 

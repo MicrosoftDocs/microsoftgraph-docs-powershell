@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReauthorizeGroupDriveRootSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reauthorize (Default)
@@ -211,6 +214,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgReauthorizeGroupDriveRootSubscription](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReauthorizeGroupDriveRootSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareauthorizegroupdriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareauthorizegroupdriverootsubscription)
 

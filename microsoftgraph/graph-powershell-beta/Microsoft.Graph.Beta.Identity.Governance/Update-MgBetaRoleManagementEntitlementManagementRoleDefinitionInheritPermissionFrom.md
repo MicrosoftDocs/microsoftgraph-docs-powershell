@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroledefinitioninheritpermissionfrom
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property inheritsPermissionsFrom in roleManagement
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -586,6 +589,7 @@ Not supported for custom roles.
   \[ExcludedResourceActions \<String\[\]\>\]:
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroledefinitioninheritpermissionfrom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementroledefinitioninheritpermissionfrom)
 

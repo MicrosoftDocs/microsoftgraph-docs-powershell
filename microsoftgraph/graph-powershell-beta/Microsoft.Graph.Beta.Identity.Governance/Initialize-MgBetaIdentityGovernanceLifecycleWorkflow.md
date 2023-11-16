@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflow
@@ -12,6 +12,9 @@ Run a workflow object on-demand.
 You can run any workflow on-demand, including scheduled workflows.
 Workflows created from the 'Real-time employee termination' template are run on-demand only.
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -14871,6 +14874,7 @@ Read-only.
     \[UserId \<String\>\]: UserId associated with this device registration record.
 
 ## RELATED LINKS
+[Initialize-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/initialize-mgbetaidentitygovernancelifecycleworkflow)
 

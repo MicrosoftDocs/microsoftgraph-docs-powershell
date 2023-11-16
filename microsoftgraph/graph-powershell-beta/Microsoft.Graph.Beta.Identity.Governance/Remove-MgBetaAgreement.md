@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgAgreement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -251,6 +254,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgAgreement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaagreement)
 

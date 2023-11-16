@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property appScope in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -324,6 +327,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentappscope)
 

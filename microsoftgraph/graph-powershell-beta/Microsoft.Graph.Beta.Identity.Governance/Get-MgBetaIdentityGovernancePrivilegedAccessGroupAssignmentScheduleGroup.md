@@ -11,6 +11,9 @@ schema: 2.0.0
 References the group that is the scope of the membership or ownership assignment through PIM for groups.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -220,6 +223,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulegroup)
 

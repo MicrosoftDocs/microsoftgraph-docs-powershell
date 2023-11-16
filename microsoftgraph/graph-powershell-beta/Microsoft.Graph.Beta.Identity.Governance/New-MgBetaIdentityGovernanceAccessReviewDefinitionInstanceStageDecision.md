@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to decisions for identityGovernance
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1257,6 +1260,7 @@ For example, if a user changes their display name, the API might show the new va
   \[UserPrincipalName \<String\>\]: The userPrincipalName attribute of the user.
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstancestagedecision)
 

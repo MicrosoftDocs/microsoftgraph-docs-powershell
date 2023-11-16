@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Associate a \[content type\]\[contentType\] with a list of hub sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgGroupSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Groups/Join-MgGroupSiteListContentTypeWithHubSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)
@@ -310,6 +313,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Join-MgGroupSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Groups/Join-MgGroupSiteListContentTypeWithHubSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/join-mgbetagroupsitelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/join-mgbetagroupsitelistcontenttypewithhubsite)
 

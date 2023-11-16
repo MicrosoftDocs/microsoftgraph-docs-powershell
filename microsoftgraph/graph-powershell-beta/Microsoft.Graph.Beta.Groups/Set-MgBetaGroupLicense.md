@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense
@@ -12,6 +12,9 @@ Add or remove licenses on the group.
 Licenses assigned to the group will be assigned to all users in the group.
 To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupLicense](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupLicense?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -285,6 +288,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgGroupLicense](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupLicense?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagrouplicense)
 

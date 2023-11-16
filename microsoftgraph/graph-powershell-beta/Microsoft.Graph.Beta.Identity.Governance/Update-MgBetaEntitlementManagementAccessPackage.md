@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackage
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45614,6 +45617,7 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
   \[WorkflowVersionNumber \<Int32?\>\]: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Update-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackage)
 

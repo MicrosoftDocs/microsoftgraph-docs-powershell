@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property photo in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupPhotoContent](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupPhotoContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -241,6 +244,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgGroupPhotoContent](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupPhotoContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagroupphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagroupphotocontent)
 

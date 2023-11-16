@@ -14,6 +14,9 @@ After that time, they are permanently deleted.
 This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroup](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -194,6 +197,7 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgGroup](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroup)
 
