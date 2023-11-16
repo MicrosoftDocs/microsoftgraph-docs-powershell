@@ -19,6 +19,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckinExpanded (Default)
@@ -317,6 +320,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveItem?view=graph-powershell-beta)
 
 [Invoke-MgBetaCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckinUserDriveItem?view=graph-powershell-beta)
 

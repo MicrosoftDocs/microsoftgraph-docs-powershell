@@ -13,6 +13,9 @@ Only teachers in the class can remove a resource.
 After an assignment has been published to students, teachers can't remove resources that are marked as 'distributeToStudents'.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -205,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentResource?view=graph-powershell-1.0)

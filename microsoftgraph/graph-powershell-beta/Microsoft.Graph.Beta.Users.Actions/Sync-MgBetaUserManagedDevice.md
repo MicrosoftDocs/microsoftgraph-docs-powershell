@@ -16,6 +16,9 @@ Invoke action syncDevice
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Sync-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Sync-MgUserManagedDevice?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Sync-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Sync-MgUserManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Sync (Default)
@@ -188,6 +191,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Sync-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Sync-MgUserManagedDevice?view=graph-powershell-1.0)
 
 [Sync-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Sync-MgUserManagedDevice?view=graph-powershell-1.0)
 

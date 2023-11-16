@@ -15,6 +15,9 @@ For example, this method can be used to clean up the IVR operation queue for a n
 However, it will not cancel a subscribeToTone operation because it operates independent of any operation queue.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallMediaProcessing?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)
@@ -211,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Stop-MgBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallMediaProcessing?view=graph-powershell-beta)

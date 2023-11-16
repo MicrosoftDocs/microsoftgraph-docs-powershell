@@ -12,6 +12,9 @@ ms.prod: files
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -146,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRoot?view=graph-powershell-1.0)

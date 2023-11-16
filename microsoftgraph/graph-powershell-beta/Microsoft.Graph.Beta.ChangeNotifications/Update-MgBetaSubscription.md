@@ -15,6 +15,9 @@ In order to avoid missing change notifications, an app should renew its subscrip
 See subscription for maximum length of a subscription for each resource type.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Update-MgSubscription?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -499,3 +502,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS
+[Update-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Update-MgSubscription?view=graph-powershell-1.0)

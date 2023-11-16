@@ -16,6 +16,9 @@ Create new navigation property to items for drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -18799,13 +18802,17 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
 [New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
+[New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
 [New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
 [New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
+[New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)

@@ -23,6 +23,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -480,6 +483,13 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
 [New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
+[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
+
+## RELATED LINKS
+[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
+[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
+[New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
+
 
 ## RELATED LINKS
 [New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
@@ -488,6 +498,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageForward?view=graph-powershell-1.0)
-
-
-## RELATED LINKS

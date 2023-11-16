@@ -16,6 +16,9 @@ Invoke action createUploadSession
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderMessageForward?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderMessageForward?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -263,6 +266,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+[New-MgBetaUserMailFolderMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderMessageForward?view=graph-powershell-beta)
 
 [New-MgBetaUserMailFolderMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderMessageForward?view=graph-powershell-beta)
 

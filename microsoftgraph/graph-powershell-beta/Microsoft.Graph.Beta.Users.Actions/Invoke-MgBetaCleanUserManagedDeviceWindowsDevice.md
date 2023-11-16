@@ -16,6 +16,9 @@ Clean Windows device
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgCleanUserManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCleanUserManagedDeviceWindowsDevice?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCleanUserManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCleanUserManagedDeviceWindowsDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CleanExpanded (Default)
@@ -253,6 +256,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgCleanUserManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCleanUserManagedDeviceWindowsDevice?view=graph-powershell-1.0)
 
 [Invoke-MgCleanUserManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCleanUserManagedDeviceWindowsDevice?view=graph-powershell-1.0)
 

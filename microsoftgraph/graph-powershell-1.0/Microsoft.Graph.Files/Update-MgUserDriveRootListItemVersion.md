@@ -16,6 +16,9 @@ Update the navigation property versions in users
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItemVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -344,6 +347,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItemVersion?view=graph-powershell-beta)
 
 [Update-MgBetaUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRootListItemVersion?view=graph-powershell-beta)
 

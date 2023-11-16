@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to transcripts for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgUserOnlineMeetingTranscript?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -368,3 +371,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgUserOnlineMeetingTranscript?view=graph-powershell-1.0)

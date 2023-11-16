@@ -13,6 +13,9 @@ The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJobOnDemand?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ProvisionExpanded (Default)
@@ -344,3 +347,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[ObjectTypeName <String>]`: The type of the object to which a synchronizationJob is to be applied. Can be one of the following: user for synchronizing between Active Directory and Azure AD.User for synchronizing a user between Azure AD and a third-party application. Worker for synchronization a user between Workday and either Active Directory or Azure AD.Group for synchronizing a group between Azure AD and a third-party application.
 
 ## RELATED LINKS
+[New-MgServicePrincipalSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJobOnDemand?view=graph-powershell-1.0)

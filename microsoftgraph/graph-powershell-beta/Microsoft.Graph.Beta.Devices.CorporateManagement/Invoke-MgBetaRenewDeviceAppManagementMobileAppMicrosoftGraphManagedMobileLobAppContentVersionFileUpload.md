@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Renews the SAS URI for an application file upload.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Renew (Default)
@@ -238,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphManagedMobileLobAppContentVersionFileUpload?view=graph-powershell-1.0)

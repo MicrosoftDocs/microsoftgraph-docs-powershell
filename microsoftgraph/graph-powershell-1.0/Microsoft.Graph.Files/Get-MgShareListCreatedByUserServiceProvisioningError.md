@@ -16,6 +16,9 @@ Get serviceProvisioningErrors property value
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareListCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -210,6 +213,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaShareListCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 
 [Get-MgBetaShareListCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 

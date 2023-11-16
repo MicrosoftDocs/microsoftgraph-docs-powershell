@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -144,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronization?view=graph-powershell-beta)

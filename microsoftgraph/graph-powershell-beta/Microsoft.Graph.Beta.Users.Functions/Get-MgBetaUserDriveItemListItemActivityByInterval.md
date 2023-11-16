@@ -16,6 +16,9 @@ Invoke function getActivitiesByInterval
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemListItemActivityByInterval](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDriveItemListItemActivityByInterval?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemListItemActivityByInterval](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDriveItemListItemActivityByInterval?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -308,6 +311,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveItemListItemActivityByInterval](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDriveItemListItemActivityByInterval?view=graph-powershell-1.0)
 
 [Get-MgUserDriveItemListItemActivityByInterval](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDriveItemListItemActivityByInterval?view=graph-powershell-1.0)
 

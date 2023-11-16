@@ -19,6 +19,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventInstance?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AcceptExpanded (Default)
@@ -291,6 +294,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgAcceptUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventInstance?view=graph-powershell-1.0)
 
 [Invoke-MgAcceptUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventInstance?view=graph-powershell-1.0)
 

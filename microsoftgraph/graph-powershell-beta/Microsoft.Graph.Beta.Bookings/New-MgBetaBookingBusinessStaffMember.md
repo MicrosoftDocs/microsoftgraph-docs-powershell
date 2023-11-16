@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new staff member in the specified bookingBusiness.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -467,3 +470,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Start <String>]`: The time of the day when work starts. For example, 08:00:00.0000000.
 
 ## RELATED LINKS
+[New-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessStaffMember?view=graph-powershell-1.0)

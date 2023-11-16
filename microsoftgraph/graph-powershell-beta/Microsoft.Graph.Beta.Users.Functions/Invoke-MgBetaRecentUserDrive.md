@@ -16,6 +16,9 @@ Invoke function recent
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgRecentUserDrive](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgRecentUserDrive?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentUserDrive](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgRecentUserDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Recent (Default)
@@ -248,6 +251,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgRecentUserDrive](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgRecentUserDrive?view=graph-powershell-1.0)
 
 [Invoke-MgRecentUserDrive](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgRecentUserDrive?view=graph-powershell-1.0)
 

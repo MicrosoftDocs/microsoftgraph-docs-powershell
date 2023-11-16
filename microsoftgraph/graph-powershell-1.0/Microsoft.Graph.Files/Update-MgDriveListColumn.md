@@ -16,6 +16,9 @@ Update the navigation property columns in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1129,13 +1132,17 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
 [Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
+[Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
 [Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
 [Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
+[Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)

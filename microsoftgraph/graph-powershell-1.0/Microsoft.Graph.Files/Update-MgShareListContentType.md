@@ -16,6 +16,9 @@ Update the navigation property contentTypes in shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1545,13 +1548,17 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
 [Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
+[Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
 [Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
 [Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
+[Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)
 
 
 ## RELATED LINKS
+[Update-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListContentType?view=graph-powershell-beta)

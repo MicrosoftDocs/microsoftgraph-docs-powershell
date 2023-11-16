@@ -19,6 +19,9 @@ This allows you to maintain and synchronize a local store of a user's contacts w
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderContactDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderChildFolderContactDelta?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderContactDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderChildFolderContactDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -315,6 +318,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserContactFolderChildFolderContactDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderChildFolderContactDelta?view=graph-powershell-1.0)
 
 [Get-MgUserContactFolderChildFolderContactDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderChildFolderContactDelta?view=graph-powershell-1.0)
 

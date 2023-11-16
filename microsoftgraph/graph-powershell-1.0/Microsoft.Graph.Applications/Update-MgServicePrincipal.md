@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in servicePrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1875,5 +1878,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
 
 ## RELATED LINKS
+[Update-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)

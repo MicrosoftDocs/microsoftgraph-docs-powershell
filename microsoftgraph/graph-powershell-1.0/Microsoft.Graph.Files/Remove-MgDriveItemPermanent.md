@@ -16,6 +16,9 @@ Invoke action permanentDelete
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemPermanent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemPermanent?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemPermanent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemPermanent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -173,6 +176,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaDriveItemPermanent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemPermanent?view=graph-powershell-beta)
 
 [Remove-MgBetaDriveItemPermanent](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemPermanent?view=graph-powershell-beta)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -277,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)

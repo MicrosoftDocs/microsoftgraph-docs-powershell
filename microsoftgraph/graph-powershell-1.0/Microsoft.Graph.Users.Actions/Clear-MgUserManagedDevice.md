@@ -18,6 +18,9 @@ Wipe a device
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### WipeExpanded (Default)
@@ -296,6 +299,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 [Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)
 

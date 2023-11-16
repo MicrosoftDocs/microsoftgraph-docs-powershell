@@ -16,6 +16,9 @@ The values of the columns set on this list item.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -173,6 +176,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 
 [Get-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 

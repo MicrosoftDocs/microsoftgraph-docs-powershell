@@ -16,6 +16,9 @@ Invoke action setReaction
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaUserChatMessageReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserChatMessageReaction?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserChatMessageReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserChatMessageReaction?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -260,6 +263,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaUserChatMessageReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserChatMessageReaction?view=graph-powershell-beta)
 
 [Set-MgBetaUserChatMessageReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserChatMessageReaction?view=graph-powershell-beta)
 

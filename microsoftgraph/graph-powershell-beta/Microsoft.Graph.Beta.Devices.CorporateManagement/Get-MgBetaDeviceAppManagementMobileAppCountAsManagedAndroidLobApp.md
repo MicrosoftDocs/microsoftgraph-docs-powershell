@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppCountAsManagedAndroidLobApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppCountAsManagedAndroidLobApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -79,3 +82,4 @@ ALIASES
 Get-MgBetaDeviceAppMgtMobileAppCountAsManagedAndroidLobApp
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementMobileAppCountAsManagedAndroidLobApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppCountAsManagedAndroidLobApp?view=graph-powershell-1.0)

@@ -18,6 +18,9 @@ Invoke action reenable
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reenable (Default)
@@ -207,6 +210,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 
 [Invoke-MgReplyAllUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
 

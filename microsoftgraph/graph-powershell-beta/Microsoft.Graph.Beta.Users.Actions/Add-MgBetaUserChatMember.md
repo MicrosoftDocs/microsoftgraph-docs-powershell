@@ -20,6 +20,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgUserChatMember](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserChatMember?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgUserChatMember](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserChatMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -255,6 +258,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
 ## RELATED LINKS
+[Add-MgUserChatMember](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserChatMember?view=graph-powershell-1.0)
 
 [Add-MgUserChatMember](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserChatMember?view=graph-powershell-1.0)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Sync-MgBetaDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgBetaDeviceAppManagementVppTokenLicense?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Sync (Default)
@@ -157,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
+[Sync-MgBetaDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgBetaDeviceAppManagementVppTokenLicense?view=graph-powershell-beta)
