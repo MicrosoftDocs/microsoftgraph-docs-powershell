@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property triggerTypes for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTriggerType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -93,6 +96,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Remove-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTriggerType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggertype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggertype)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the list of richLongRunningOperations associated with a list.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -316,6 +319,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitelist)
 

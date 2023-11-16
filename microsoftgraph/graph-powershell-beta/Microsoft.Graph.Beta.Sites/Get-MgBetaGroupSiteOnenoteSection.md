@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the properties and relationships of a section object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -316,6 +319,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesection)
 

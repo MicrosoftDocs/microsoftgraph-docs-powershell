@@ -12,6 +12,9 @@ Close an eDiscovery case.
 For details, see Close a case.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Close-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Close-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Close (Default)
@@ -213,6 +216,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Close-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Close-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/close-mgbetasecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/close-mgbetasecuritycaseediscoverycase)
 

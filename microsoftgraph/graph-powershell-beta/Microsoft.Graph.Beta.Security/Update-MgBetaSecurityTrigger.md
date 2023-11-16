@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property triggers in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTrigger?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -257,6 +260,7 @@ Read-only.
     \[LastModifiedDateTime \<DateTime?\>\]: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+[Update-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTrigger?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytrigger)
 

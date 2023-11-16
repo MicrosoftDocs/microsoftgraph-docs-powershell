@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to alerts_v2 for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAlertV2?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -684,6 +687,7 @@ Values are free-form.
   \[Verdict \<String\>\]: evidenceVerdict
 
 ## RELATED LINKS
+[New-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAlertV2?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2)
 

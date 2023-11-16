@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property reputation in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -314,6 +317,7 @@ RULES \<IMicrosoftGraphSecurityHostReputationRule\[\]\>: A collection of rules t
   \[Severity \<String\>\]: hostReputationRuleSeverity
 
 ## RELATED LINKS
+[Update-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostreputation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostreputation)
 

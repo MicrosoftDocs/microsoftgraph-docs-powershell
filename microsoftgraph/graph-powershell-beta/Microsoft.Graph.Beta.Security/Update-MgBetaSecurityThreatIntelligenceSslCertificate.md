@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property sslCertificates in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1011,6 +1014,7 @@ It's a free-format string value, for example, 'United States'.
   \[Surname \<String\>\]: If the entity is a person, this is the person's surname (last name).
 
 ## RELATED LINKS
+[Update-MgSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceSslCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencesslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencesslcertificate)
 

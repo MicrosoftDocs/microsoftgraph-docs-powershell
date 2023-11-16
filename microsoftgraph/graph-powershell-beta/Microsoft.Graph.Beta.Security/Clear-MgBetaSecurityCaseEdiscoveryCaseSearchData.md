@@ -14,6 +14,9 @@ Teams 1:1 chats are also called *conversations*.- Teams group chats - Chat messa
 Also called *1:N* chats or *group conversations*.- Teams channels - Chat messages, posts, replies, and attachments shared in a standard Teams channel.- Private channels - Message posts, replies, and attachments shared in a private Teams channel.- Shared channels - Message posts, replies, and attachments shared in a shared Teams channel.
 For more information about purging Teams messages, see:- eDiscovery solution series: Data spillage scenario - Search and purge- eDiscovery (Premium) workflow for content in Microsoft Teams  This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgSecurityCaseEdiscoveryCaseSearchData](/powershell/module/Microsoft.Graph.Security/Clear-MgSecurityCaseEdiscoveryCaseSearchData?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### PurgeExpanded (Default)
@@ -315,6 +318,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Clear-MgSecurityCaseEdiscoveryCaseSearchData](/powershell/module/Microsoft.Graph.Security/Clear-MgSecurityCaseEdiscoveryCaseSearchData?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/clear-mgbetasecuritycaseediscoverycasesearchdata](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/clear-mgbetasecuritycaseediscoverycasesearchdata)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The values of the columns set on this list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -204,6 +207,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemfield)
 

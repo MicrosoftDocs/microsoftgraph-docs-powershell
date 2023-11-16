@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Indicates that a cookie of this name and domain was found related to this host.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostCookieHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostCookieHost?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -184,6 +187,7 @@ INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
   \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostCookieHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostCookieHost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostcookiehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostcookiehost)
 
