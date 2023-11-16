@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 Module Guid: 25f27404-c493-44fc-9523-af74c27aaf0c
 Download Help Link: {{ Update Download Link }}
