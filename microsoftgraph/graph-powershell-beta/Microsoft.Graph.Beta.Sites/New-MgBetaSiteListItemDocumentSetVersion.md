@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new version of a document set item in a list.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -499,6 +502,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemdocumentsetversion)
 

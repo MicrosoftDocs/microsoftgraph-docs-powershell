@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new term object.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetParentGroupSetChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -651,6 +654,7 @@ Read-only.
   \[Terms \<IMicrosoftGraphTermStoreTerm\[\]\>\]: All the terms under the set.
 
 ## RELATED LINKS
+[New-MgSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetParentGroupSetChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupsetchild)
 

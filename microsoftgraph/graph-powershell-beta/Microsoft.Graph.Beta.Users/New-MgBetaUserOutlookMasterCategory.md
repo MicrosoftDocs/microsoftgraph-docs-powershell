@@ -11,6 +11,9 @@ schema: 2.0.0
 Create an outlookCategory object in the user's master list of categories.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -253,6 +256,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlookmastercategory)
 

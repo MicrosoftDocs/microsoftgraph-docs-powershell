@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property resources in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteOnenoteResourceContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -220,6 +223,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgGroupSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteOnenoteResourceContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenoteresourcecontent)
 

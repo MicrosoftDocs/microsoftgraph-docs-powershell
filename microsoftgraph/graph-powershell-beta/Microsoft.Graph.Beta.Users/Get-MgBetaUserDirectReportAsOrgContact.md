@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDirectReportAsOrgContact](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReportAsOrgContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -289,6 +292,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDirectReportAsOrgContact](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReportAsOrgContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreportasorgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserdirectreportasorgcontact)
 

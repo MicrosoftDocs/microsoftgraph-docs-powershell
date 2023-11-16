@@ -11,6 +11,9 @@ schema: 2.0.0
 Assign a user's manager.
 This API is available in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Set-MgUserManagerByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -244,6 +247,7 @@ INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Set-MgUserManagerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref)
 

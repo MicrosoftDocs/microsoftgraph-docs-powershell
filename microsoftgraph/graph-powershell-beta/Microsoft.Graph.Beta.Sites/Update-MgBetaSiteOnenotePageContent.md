@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action onenotePatchContent
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteOnenotePageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### PatchExpanded (Default)
@@ -269,6 +272,7 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
   \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteOnenotePageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteonenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteonenotepagecontent)
 
