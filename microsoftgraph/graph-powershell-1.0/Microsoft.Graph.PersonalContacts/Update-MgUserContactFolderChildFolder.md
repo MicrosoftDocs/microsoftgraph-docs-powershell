@@ -536,3 +536,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderChildFolder?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

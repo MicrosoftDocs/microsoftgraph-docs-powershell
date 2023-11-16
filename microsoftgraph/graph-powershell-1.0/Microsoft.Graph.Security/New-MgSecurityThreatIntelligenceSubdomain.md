@@ -473,3 +473,6 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgBetaSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceSubdomain?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

@@ -552,3 +552,6 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgBetaSiteTermStoreSetTermChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetTermChildRelation?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

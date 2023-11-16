@@ -16,6 +16,9 @@ Update the navigation property itemActivityStats in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -6181,10 +6184,17 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 [Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+[Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 [Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+[Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+
+## RELATED LINKS
+[Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+[Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+
 
 ## RELATED LINKS
 [Update-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)

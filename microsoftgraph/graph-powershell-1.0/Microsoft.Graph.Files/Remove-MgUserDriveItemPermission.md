@@ -18,6 +18,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -223,6 +226,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
+
 [Remove-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
 [Remove-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemPermission?view=graph-powershell-beta)

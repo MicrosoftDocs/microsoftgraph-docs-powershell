@@ -16,6 +16,9 @@ Update the navigation property versions in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItemVersion?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -344,6 +347,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItemVersion?view=graph-powershell-beta)
+
 [Update-MgBetaDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItemVersion?view=graph-powershell-beta)
 
 [Update-MgBetaDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItemVersion?view=graph-powershell-beta)

@@ -949,6 +949,12 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItemMemberObject?view=graph-powershell-beta)
 
+### [Get-MgDirectoryDeviceLocalCredential](Get-MgDirectoryDeviceLocalCredential.md)
+Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
+
+### [Get-MgDirectoryDeviceLocalCredentialCount](Get-MgDirectoryDeviceLocalCredentialCount.md)
+Get the number of the resource
+
 ### [Get-MgDirectoryFederationConfiguration](Get-MgDirectoryFederationConfiguration.md)
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
 
@@ -1582,6 +1588,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-beta)
 
+### [New-MgDirectoryDeviceLocalCredential](New-MgDirectoryDeviceLocalCredential.md)
+Create new navigation property to deviceLocalCredentials for directory
+
 ### [New-MgDirectoryFederationConfiguration](New-MgDirectoryFederationConfiguration.md)
 Create new navigation property to federationConfigurations for directory
 
@@ -1796,6 +1805,9 @@ After an item is permanently deleted, it cannot be restored.
 Administrative units cannot be permanently deleted by using the deletedItems API.
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 This API is available in the following national cloud deployments.
+
+### [Remove-MgDirectoryDeviceLocalCredential](Remove-MgDirectoryDeviceLocalCredential.md)
+Delete navigation property deviceLocalCredentials for directory
 
 ### [Remove-MgDirectoryFederationConfiguration](Remove-MgDirectoryFederationConfiguration.md)
 Delete a samlOrWsFedExternalDomainFederation object.
@@ -2236,6 +2248,9 @@ This API is available in the following national cloud deployments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-beta)
+
+### [Update-MgDirectoryDeviceLocalCredential](Update-MgDirectoryDeviceLocalCredential.md)
+Update the navigation property deviceLocalCredentials in directory
 
 ### [Update-MgDirectoryFederationConfiguration](Update-MgDirectoryFederationConfiguration.md)
 Update the navigation property federationConfigurations in directory

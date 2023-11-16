@@ -592,3 +592,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskDetection?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

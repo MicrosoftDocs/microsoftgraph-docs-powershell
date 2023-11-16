@@ -16,6 +16,9 @@ Shut down device
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDownUserManagedDeviceShut?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDownUserManagedDeviceShut?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Down (Default)
@@ -188,6 +191,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDownUserManagedDeviceShut?view=graph-powershell-1.0)
+
 [Invoke-MgDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDownUserManagedDeviceShut?view=graph-powershell-1.0)
 
 [Invoke-MgDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDownUserManagedDeviceShut?view=graph-powershell-1.0)

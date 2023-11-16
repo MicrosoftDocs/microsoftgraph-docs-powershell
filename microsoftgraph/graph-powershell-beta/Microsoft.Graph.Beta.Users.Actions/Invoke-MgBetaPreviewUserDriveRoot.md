@@ -16,6 +16,9 @@ Invoke action preview
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgPreviewUserDriveRoot?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgPreviewUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### PreviewExpanded (Default)
@@ -304,6 +307,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgPreviewUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgPreviewUserDriveRoot?view=graph-powershell-1.0)
+
 [Invoke-MgPreviewUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgPreviewUserDriveRoot?view=graph-powershell-1.0)
 
 [Invoke-MgPreviewUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgPreviewUserDriveRoot?view=graph-powershell-1.0)

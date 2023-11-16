@@ -27,6 +27,8 @@ Get-MgSecurityThreatIntelligenceHostPortMostRecentSslCertificate -InputObject <I
 ## DESCRIPTION
 The most recent sslCertificate used to communicate on the port.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty

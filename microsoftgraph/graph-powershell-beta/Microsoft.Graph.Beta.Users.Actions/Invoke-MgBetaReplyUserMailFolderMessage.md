@@ -24,6 +24,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMailFolderMessage?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMailFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ReplyExpanded1 (Default)
@@ -478,6 +481,13 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Invoke-MgReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMailFolderMessage?view=graph-powershell-1.0)
 [Invoke-MgReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMailFolderMessage?view=graph-powershell-1.0)
+[Invoke-MgReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMailFolderMessage?view=graph-powershell-1.0)
+
+## RELATED LINKS
+[Invoke-MgReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMailFolderMessage?view=graph-powershell-1.0)
+[Invoke-MgReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMailFolderMessage?view=graph-powershell-1.0)
+[Invoke-MgReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMailFolderMessage?view=graph-powershell-1.0)
+
 
 ## RELATED LINKS
 [Invoke-MgReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMailFolderMessage?view=graph-powershell-1.0)

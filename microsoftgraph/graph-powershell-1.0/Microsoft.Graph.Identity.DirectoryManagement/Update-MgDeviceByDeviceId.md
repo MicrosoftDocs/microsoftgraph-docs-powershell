@@ -810,3 +810,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaDeviceByDeviceId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDeviceByDeviceId?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

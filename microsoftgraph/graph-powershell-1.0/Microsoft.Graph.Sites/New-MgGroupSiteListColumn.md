@@ -1162,3 +1162,6 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgBetaGroupSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

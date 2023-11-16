@@ -572,3 +572,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceSubdomain?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

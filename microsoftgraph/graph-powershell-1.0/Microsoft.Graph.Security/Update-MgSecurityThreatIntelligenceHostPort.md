@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostport
@@ -47,6 +47,8 @@ Update-MgSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the navigation property hostPorts in security
+
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -1525,3 +1527,4 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostport](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostport)
 
 
+## RELATED LINKS

@@ -17,6 +17,9 @@ This API is available in the following national cloud deployments.
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Move-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Move-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### MoveExpanded (Default)
@@ -256,6 +259,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Move-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderMessage?view=graph-powershell-1.0)
+
 [Move-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 [Move-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderMessage?view=graph-powershell-1.0)

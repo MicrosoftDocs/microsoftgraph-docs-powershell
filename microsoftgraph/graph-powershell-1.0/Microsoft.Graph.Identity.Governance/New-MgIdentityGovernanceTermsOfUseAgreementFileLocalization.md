@@ -429,3 +429,6 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

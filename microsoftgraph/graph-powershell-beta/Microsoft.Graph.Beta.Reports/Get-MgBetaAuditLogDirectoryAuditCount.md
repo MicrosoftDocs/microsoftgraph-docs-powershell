@@ -1,0 +1,72 @@
+---
+external help file: Microsoft.Graph.Beta.Reports-help.xml
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogdirectoryauditcount
+schema: 2.0.0
+---
+
+# Get-MgBetaAuditLogDirectoryAuditCount
+
+## SYNOPSIS
+Get the number of the resource
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogDirectoryAuditCount](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogDirectoryAuditCount?view=graph-powershell-1.0)
+
+## SYNTAX
+
+```
+Get-MgBetaAuditLogDirectoryAuditCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Get the number of the resource
+
+## PARAMETERS
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+## OUTPUTS
+
+### System.Int32
+## NOTES
+
+## RELATED LINKS
+[Get-MgAuditLogDirectoryAuditCount](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogDirectoryAuditCount?view=graph-powershell-1.0)
+
+[https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogdirectoryauditcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogdirectoryauditcount)
+
+

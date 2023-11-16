@@ -16,6 +16,9 @@ Get the number of the resource
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveSpecialCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveSpecialCount?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveSpecialCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveSpecialCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -142,6 +145,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveSpecialCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveSpecialCount?view=graph-powershell-beta)
+
 [Get-MgBetaDriveSpecialCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveSpecialCount?view=graph-powershell-beta)
 
 [Get-MgBetaDriveSpecialCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveSpecialCount?view=graph-powershell-beta)

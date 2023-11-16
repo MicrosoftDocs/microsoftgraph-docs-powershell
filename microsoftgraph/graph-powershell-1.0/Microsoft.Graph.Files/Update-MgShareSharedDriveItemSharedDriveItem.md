@@ -16,6 +16,9 @@ Update entity in shares
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -26552,6 +26555,13 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 [Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+[Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+
+## RELATED LINKS
+[Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+[Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+[Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+
 
 ## RELATED LINKS
 [Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)

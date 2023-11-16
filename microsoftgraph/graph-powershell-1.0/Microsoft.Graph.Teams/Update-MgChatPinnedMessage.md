@@ -420,3 +420,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatPinnedMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

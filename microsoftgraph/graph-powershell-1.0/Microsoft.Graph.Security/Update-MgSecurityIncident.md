@@ -618,3 +618,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

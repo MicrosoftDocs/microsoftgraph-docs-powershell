@@ -16,6 +16,9 @@ Gets app restrictions for a given user.
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppPolicy?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -221,6 +224,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppPolicy?view=graph-powershell-beta)
+
 [Get-MgBetaUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppPolicy?view=graph-powershell-beta)
 
 [Get-MgBetaUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserManagedAppPolicy?view=graph-powershell-beta)

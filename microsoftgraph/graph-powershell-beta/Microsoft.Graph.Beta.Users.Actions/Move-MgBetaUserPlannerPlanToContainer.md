@@ -42,6 +42,8 @@ Move-MgBetaUserPlannerPlanToContainer -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action moveToContainer
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties

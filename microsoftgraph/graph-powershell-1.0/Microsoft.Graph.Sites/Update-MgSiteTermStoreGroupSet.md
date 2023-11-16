@@ -656,3 +656,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreGroupSet?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

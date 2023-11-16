@@ -16,6 +16,9 @@ Update the navigation property itemActivityStats in drives
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -6166,10 +6169,17 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
 [Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+[Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## RELATED LINKS
 [Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
 [Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+[Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+
+## RELATED LINKS
+[Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+[Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+
 
 ## RELATED LINKS
 [Update-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)

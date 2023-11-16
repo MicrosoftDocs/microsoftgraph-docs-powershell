@@ -910,3 +910,6 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

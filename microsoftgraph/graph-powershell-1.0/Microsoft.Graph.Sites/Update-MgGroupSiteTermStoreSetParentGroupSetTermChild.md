@@ -670,3 +670,6 @@ To create the parameters described below, construct a hash table containing the 
 [Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSetParentGroupSetTermChild?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS

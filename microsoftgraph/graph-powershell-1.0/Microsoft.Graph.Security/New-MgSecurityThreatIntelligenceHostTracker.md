@@ -522,3 +522,6 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
 
 ## RELATED LINKS
+
+
+## RELATED LINKS
