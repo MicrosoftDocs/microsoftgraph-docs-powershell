@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileposition
@@ -52,9 +52,8 @@ Use this API to create a new workPosition in a user's profile.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserProfilePosition Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Detail = @{
@@ -79,6 +78,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfilePosition -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserProfilePosition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
