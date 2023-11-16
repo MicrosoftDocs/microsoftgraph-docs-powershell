@@ -43,7 +43,6 @@ Retrieve a single permissionGrantPolicy object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1:  List all permission grant policies
 
 ```powershell
@@ -90,6 +89,7 @@ AdditionalProperties : {[@odata.context, https://graph.microsoft.com/beta/$metad
 ```
 
 This command retrieves a specified permission grant policy in Azure AD.
+
 
 ## PARAMETERS
 

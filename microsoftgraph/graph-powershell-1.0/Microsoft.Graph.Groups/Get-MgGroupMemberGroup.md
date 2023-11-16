@@ -33,7 +33,6 @@ Get-MgGroupMemberCountAsUser -InputObject <IGroupsIdentity> [-Filter <String>] [
 Get the number of the resource
 
 ## EXAMPLES
-
 ### Example 1: Check group memberships for a directory object
 
 ```powershell
@@ -45,7 +44,6 @@ $params = @{
 
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
 ```
-
 This example shows how to use the Get-MgGroupMemberGroup Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -62,10 +60,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Get-MgGroupMemberGroup Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

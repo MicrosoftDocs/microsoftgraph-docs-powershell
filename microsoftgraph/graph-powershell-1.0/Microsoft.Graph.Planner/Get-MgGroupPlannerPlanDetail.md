@@ -34,8 +34,6 @@ Get-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> [-ExpandProperty <S
 Retrieve the properties and relationships of a plannerPlanDetails object.
 This API is supported in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty

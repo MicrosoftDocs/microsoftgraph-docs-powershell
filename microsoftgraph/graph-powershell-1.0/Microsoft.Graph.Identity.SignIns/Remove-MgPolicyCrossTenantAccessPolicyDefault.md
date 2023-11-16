@@ -24,7 +24,6 @@ Remove-MgPolicyCrossTenantAccessPolicyDefault [-IfMatch <String>] [-PassThru] [-
 Delete navigation property default for policies
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -55,10 +54,10 @@ $params = @{
 
 Update-MgPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
 ```
-
 This example shows how to use the Remove-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

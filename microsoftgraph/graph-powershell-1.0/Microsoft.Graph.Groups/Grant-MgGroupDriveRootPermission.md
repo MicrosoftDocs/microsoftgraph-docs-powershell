@@ -50,7 +50,6 @@ Grant users access to a link represented by a permission][].
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -72,10 +71,10 @@ $params = @{
 
 Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
 ```
-
 This example shows how to use the Grant-MgGroupDriveRootPermission Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

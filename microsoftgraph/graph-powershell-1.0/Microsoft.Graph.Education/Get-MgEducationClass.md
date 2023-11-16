@@ -48,13 +48,17 @@ If you're using the delegated token, the user will only see classes in which the
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClass
+
+```
+This example shows how to use the Get-MgEducationClass Cmdlet.
+
 
 ## PARAMETERS
 

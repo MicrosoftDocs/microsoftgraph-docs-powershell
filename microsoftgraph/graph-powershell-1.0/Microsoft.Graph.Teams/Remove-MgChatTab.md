@@ -33,16 +33,17 @@ Remove (unpin) a tab from the specified chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgChatTab -ChatId $chatId -TeamsTabId $teamsTabId
-```
 
+```
 This example shows how to use the Remove-MgChatTab Cmdlet.
+
 
 ## PARAMETERS
 

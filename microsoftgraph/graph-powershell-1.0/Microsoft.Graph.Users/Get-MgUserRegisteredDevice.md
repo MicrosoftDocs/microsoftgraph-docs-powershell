@@ -42,8 +42,6 @@ Read-only.
 Nullable.
 Supports $expand and returns up to 100 objects.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

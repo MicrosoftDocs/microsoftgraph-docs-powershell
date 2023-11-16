@@ -55,7 +55,6 @@ Copy a mail folder and its contents to another mail folder.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -68,10 +67,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-
 This example shows how to use the Copy-MgBetaUserMailFolderChildFolderMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

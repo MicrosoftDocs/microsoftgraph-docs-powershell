@@ -43,16 +43,17 @@ Retrieve the properties and relationships of an administrativeUnit object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryAdministrativeUnit
-```
 
+```
 This example shows how to use the Get-MgDirectoryAdministrativeUnit Cmdlet.
+
 
 ## PARAMETERS
 

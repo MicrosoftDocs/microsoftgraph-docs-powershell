@@ -31,7 +31,6 @@ Remove-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-If
 Delete navigation property progressTaskBoardFormat for planner
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -43,10 +42,10 @@ $params = @{
 
 Update-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
-
 This example shows how to use the Remove-MgPlannerTaskProgressTaskBoardFormat Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

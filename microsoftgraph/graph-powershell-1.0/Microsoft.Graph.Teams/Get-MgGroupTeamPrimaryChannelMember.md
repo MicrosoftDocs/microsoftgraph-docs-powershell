@@ -39,8 +39,6 @@ Get-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ExpandProper
 Get a conversationMember from a channel.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

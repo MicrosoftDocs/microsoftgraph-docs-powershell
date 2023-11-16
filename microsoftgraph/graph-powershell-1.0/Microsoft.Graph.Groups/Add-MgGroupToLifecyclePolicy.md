@@ -51,10 +51,10 @@ This action limits the group lifecycle policy to a set of groups only if the man
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
@@ -62,9 +62,10 @@ $params = @{
 }
 
 Add-MgGroupToLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
-```
 
+```
 This example shows how to use the Add-MgGroupToLifecyclePolicy Cmdlet.
+
 
 ## PARAMETERS
 

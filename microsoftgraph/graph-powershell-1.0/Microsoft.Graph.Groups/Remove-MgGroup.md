@@ -40,7 +40,6 @@ To learn more, see deletedItems.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Remove a group
 
 ```powershell

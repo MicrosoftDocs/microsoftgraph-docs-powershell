@@ -59,7 +59,6 @@ For details about presences sessions, see presence: setPresence.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Clear-MgUserPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -68,7 +67,6 @@ $params = @{
 }
 Clear-MgUserPresence -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Clear-MgUserPresence Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

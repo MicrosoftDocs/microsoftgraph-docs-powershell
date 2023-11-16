@@ -65,7 +65,6 @@ Read more about presence sessions and their time-out and expiration.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgBetaUserPresenceUserPreferredPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -76,7 +75,6 @@ $params = @{
 }
 Set-MgBetaUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaUserPresenceUserPreferredPresence Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

@@ -38,7 +38,6 @@ This action sets the targeted user's risk level to none.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgDismissRiskyUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -50,7 +49,6 @@ $params = @{
 }
 Invoke-MgDismissRiskyUser -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgDismissRiskyUser Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

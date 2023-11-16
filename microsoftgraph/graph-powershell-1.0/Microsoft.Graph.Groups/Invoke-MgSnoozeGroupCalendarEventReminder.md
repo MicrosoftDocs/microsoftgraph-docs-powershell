@@ -32,7 +32,6 @@ Invoke-MgRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-PassThru
 Invoke action retryServiceProvisioning
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -48,10 +47,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgSnoozeGroupCalendarEventReminder Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

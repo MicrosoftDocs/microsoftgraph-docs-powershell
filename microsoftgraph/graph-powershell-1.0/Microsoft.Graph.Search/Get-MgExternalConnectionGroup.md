@@ -42,16 +42,17 @@ Get an externalGroup object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Search
 
 Get-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId
-```
 
+```
 This example shows how to use the Get-MgExternalConnectionGroup Cmdlet.
+
 
 ## PARAMETERS
 

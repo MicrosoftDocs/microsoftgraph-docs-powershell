@@ -53,7 +53,6 @@ This will create a new version with the contents of the previous version, but pr
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -61,10 +60,10 @@ Import-Module Microsoft.Graph.Sites
 
 Restore-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
 ```
-
 This example shows how to use the Restore-MgShareListItemVersion Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -57,10 +57,10 @@ If you're targeting other notebooks, you can create pages in a specified section
  This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Notes
 
 $params = @{
@@ -69,9 +69,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId -BodyParameter $params
-```
 
+```
 This example shows how to use the New-MgUserOnenoteSectionGroupSection Cmdlet.
+
 
 ## PARAMETERS
 

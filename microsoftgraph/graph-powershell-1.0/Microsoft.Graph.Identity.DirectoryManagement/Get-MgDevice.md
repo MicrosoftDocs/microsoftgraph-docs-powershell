@@ -42,16 +42,17 @@ Get the properties and relationships of a device object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Get a device
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDevice -DeviceId $deviceId
-```
 
+```
 This example will get a device
+
 
 ## PARAMETERS
 

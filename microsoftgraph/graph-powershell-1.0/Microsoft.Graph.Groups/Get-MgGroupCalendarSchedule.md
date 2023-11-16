@@ -50,8 +50,6 @@ Get-MgGroupCalendarSchedule -InputObject <IGroupsIdentity>
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

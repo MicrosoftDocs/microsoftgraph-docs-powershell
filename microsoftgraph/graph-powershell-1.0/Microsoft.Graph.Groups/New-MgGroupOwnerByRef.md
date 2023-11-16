@@ -47,7 +47,6 @@ The owners are a set of users or service principals who are allowed to modify th
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Add an owner to a group
 
 ```powershell

@@ -35,13 +35,11 @@ When a group is renewed, the group expiration is extended by the number of days 
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgRenewGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Invoke-MgRenewGroup -GroupId $groupId
 ```
-
 This example shows how to use the Invoke-MgRenewGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

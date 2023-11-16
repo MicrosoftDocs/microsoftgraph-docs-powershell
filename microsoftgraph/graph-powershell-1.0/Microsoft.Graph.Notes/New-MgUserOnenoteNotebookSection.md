@@ -51,10 +51,10 @@ Create a new page in the specified section.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Notes
 
 $params = @{
@@ -63,9 +63,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId -BodyParameter $params
-```
 
+```
 This example shows how to use the New-MgUserOnenoteNotebookSection Cmdlet.
+
 
 ## PARAMETERS
 

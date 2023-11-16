@@ -43,8 +43,6 @@ This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

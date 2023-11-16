@@ -56,7 +56,6 @@ Create a new internalDomainFederation object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Configure federation settings for a federated domain
 
 ```powershell
@@ -76,7 +75,7 @@ PromptLoginBehavior                   :
 SignOutUri                            : https://sts.deverett.info/adfs/ls/ 
 SigningCertificate                    : MIIC3jCCAcagAwIBAgIQFsO0R8deG4h 
 SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphSigningCertificateUpdateStatus 
-AdditionalProperties                  : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains('contoso.com')/federationConfiguration/$entity]}
+AdditionalProperties                  : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains('contoso.com')/federationConfiguration/$entity]} 
 ```
 
 This examples creates new federation settings for the specified domain.

@@ -29,16 +29,17 @@ Users and groups that are members of this administrative unit.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: List member objects
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
-```
 
+```
 This example will list member objects
+
 
 ## PARAMETERS
 

@@ -29,17 +29,18 @@ Get-MgUserTrendingCountInsight -InputObject <IPeopleIdentity> [-Filter <String>]
 Get the number of the resource
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.People
 
 # A UPN can also be used as -UserId.
 Get-MgUserTrendingInsight -UserId $userId
-```
 
+```
 This example shows how to use the Get-MgUserTrendingInsight Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,10 +51,10 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -96,9 +96,10 @@ $params = @{
 }
 
 New-MgTeamScheduleShift -TeamId $teamId -BodyParameter $params
-```
 
+```
 This example shows how to use the New-MgTeamScheduleShift Cmdlet.
+
 
 ## PARAMETERS
 

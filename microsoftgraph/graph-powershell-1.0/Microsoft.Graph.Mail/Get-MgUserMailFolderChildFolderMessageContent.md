@@ -32,8 +32,6 @@ Get-MgUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> -OutF
 ## DESCRIPTION
 Get media content for the navigation property messages from users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -InputObject

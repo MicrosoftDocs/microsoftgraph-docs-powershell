@@ -50,10 +50,10 @@ Create a new unifiedGroupSource object associated with an eDiscovery custodian.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Create unifiedGroupSource with group SMTP address
 
 ```powershell
+
 Import-Module Microsoft.Graph.Security
 
 $params = @{
@@ -64,13 +64,14 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
-```
 
+```
 This example will create unifiedgroupsource with group smtp address
 
 ### Example 2: Create unifiedGroupSource with group@odata.bind
 
 ```powershell
+
 Import-Module Microsoft.Graph.Security
 
 $params = @{
@@ -79,9 +80,10 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
-```
 
+```
 This example will create unifiedgroupsource with group@odata.bind
+
 
 ## PARAMETERS
 

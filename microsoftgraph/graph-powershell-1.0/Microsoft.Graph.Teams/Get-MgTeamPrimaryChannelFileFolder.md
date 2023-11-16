@@ -32,8 +32,6 @@ Get-MgTeamPrimaryChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandPropert
 Get the metadata for the location where the files of a channel are stored.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty

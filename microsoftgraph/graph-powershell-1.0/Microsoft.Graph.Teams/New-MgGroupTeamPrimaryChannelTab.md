@@ -48,8 +48,6 @@ Adds (pins) a tab to the specified channel within a team.
 The corresponding app must already be installed in the team.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

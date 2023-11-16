@@ -55,7 +55,6 @@ This creates a new copy of the message in the destination folder and removes the
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Using the Move-MgBetaUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -65,7 +64,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Move-MgBetaUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-
 This example shows how to use the Move-MgBetaUserMessage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 

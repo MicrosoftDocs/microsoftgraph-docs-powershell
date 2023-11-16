@@ -28,8 +28,6 @@ Get-MgGroupPlannerPlanTask -GroupId <String> -PlannerPlanId <String> [-ExpandPro
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
 This API is supported in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

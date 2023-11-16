@@ -31,8 +31,6 @@ Get-MgUserOnenotePageContent -InputObject <INotesIdentity> -OutFile <String> [-P
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -InputObject

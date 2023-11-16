@@ -48,8 +48,6 @@ Add (pin) a tab to the specified chat.
 The corresponding app must already be installed in the chat.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

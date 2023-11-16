@@ -37,8 +37,6 @@ Get-MgDriveBundleContent -InputObject <IFilesIdentity> -OutFile <String> [-PassT
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DriveId

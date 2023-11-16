@@ -35,7 +35,6 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Get member from directory roles
 
 ```powershell

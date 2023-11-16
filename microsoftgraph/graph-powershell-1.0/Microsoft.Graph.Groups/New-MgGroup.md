@@ -64,7 +64,6 @@ To get properties that are not returned by default, do a GET operation and speci
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Create a new group
 
 ```powershell

@@ -61,7 +61,6 @@ Update access decisions, known as accessReviewInstanceDecisionItems, for which t
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Update a decision on an accessReviewInstance
 
 ```powershell
@@ -74,7 +73,6 @@ $params = @{
 
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -91,10 +89,10 @@ $params = @{
 
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

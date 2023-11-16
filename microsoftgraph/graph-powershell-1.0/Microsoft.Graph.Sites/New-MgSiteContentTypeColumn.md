@@ -65,7 +65,6 @@ Add a column to a content type][contentType] in a site, or a list with a request
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -77,10 +76,10 @@ $params = @{
 
 New-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgSiteContentTypeColumn Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

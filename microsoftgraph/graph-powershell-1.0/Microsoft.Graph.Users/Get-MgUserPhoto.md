@@ -55,7 +55,6 @@ You can get the metadata of the largest available photo, or specify a size to ge
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Get a user's photo properties
 
 ```powershell

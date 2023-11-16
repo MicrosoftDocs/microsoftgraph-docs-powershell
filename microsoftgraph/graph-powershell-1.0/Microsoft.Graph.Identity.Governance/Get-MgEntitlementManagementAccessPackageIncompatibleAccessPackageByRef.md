@@ -28,8 +28,6 @@ Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPa
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
  This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AccessPackageId

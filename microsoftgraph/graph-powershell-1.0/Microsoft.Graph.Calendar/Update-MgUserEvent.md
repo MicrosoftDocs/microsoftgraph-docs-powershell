@@ -75,17 +75,36 @@ Update the permissions assigned to an existing share recipient or delegate, thro
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
-	role = "write"
+	originalStartTimeZone = "originalStartTimeZone-value"
+	originalEndTimeZone = "originalEndTimeZone-value"
+	responseStatus = @{
+		response = ""
+		time = [System.DateTime]::Parse("datetime-value")
+	}
+	recurrence = $null
+	reminderMinutesBeforeStart = 99
+	isOnlineMeeting = $true
+	onlineMeetingProvider = "teamsForBusiness"
+	isReminderOn = $true
+	hideAttendees = $false
+	categories = @(
+		"Red category"
+	)
 }
 
-Update-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId -BodyParameter $params
+# A UPN can also be used as -UserId.
+Update-MgUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

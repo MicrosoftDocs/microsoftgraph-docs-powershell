@@ -44,7 +44,6 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Get a list of directory objects that were created by a user
 
 ```powershell

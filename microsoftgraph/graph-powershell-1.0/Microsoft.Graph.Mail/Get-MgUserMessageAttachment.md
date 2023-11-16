@@ -33,7 +33,6 @@ Get-MgUserMailFolderMessageRuleCount -InputObject <IMailIdentity> [-Filter <Stri
 Get the number of the resource
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -42,7 +41,6 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
 ```
-
 This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -55,7 +53,6 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
 ```
-
 This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -68,7 +65,6 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId -ExpandProperty "microsoft.graph.itemattachment/item"
 ```
-
 This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -81,7 +77,6 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId -ExpandProperty "microsoft.graph.itemattachment/item"
 ```
-
 This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -94,10 +89,10 @@ Import-Module Microsoft.Graph.Mail
 # A UPN can also be used as -UserId.
 Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
 ```
-
 This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

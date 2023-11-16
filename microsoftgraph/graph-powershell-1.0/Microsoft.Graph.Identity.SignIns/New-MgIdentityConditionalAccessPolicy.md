@@ -37,7 +37,6 @@ Create a new conditionalAccessPolicy.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
 ```powershell
@@ -80,7 +79,6 @@ $params = @{
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 ```
-
 This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -123,7 +121,6 @@ $params = @{
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 ```
-
 This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -235,7 +232,6 @@ $params = @{
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 ```
-
 This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -270,10 +266,10 @@ $params = @{
 
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 ```
-
 This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -38,7 +38,6 @@ This operation is used to assign a user to an access package, update the assignm
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Admin requests a direct assignment for a user already in the directory
 
 ```powershell
@@ -55,7 +54,6 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -74,7 +72,6 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -93,7 +90,6 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -133,7 +129,6 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -173,10 +168,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 ```
-
 This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -53,7 +53,6 @@ If a user is enabled by policy to use SMS to sign in and the mobile number is ch
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -66,10 +65,10 @@ $params = @{
 
 Update-MgUserAuthenticationPhoneMethod -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgUserAuthenticationPhoneMethod Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

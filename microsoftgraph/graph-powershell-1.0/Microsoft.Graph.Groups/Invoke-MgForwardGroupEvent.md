@@ -54,7 +54,6 @@ You can specify both the parent conversation and thread in the request, nor, you
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -75,10 +74,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgForwardGroupEvent Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -34,7 +34,6 @@ Create a new claimsMappingPolicy object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -49,10 +48,10 @@ $params = @{
 
 New-MgPolicyClaimMappingPolicy -BodyParameter $params
 ```
-
 This example shows how to use the New-MgPolicyClaimMappingPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

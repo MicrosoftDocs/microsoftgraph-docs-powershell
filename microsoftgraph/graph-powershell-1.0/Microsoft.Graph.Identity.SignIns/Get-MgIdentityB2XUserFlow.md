@@ -43,26 +43,28 @@ Retrieve the properties and relationships of a b2xIdentityUserFlow object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: List all b2xIdentityUserFlow objects
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityB2XUserFlow
-```
 
+```
 This example will list all b2xidentityuserflow objects
 
 ### Example 2: List all b2xIdentityUserFlow objects and expand identityProviders
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgIdentityB2XUserFlow -ExpandProperty "identityProviders"
-```
+Get-MgIdentityB2XUserFlow -ExpandProperty "identityProviders" 
 
+```
 This example will list all b2xidentityuserflow objects and expand identityproviders
+
 
 ## PARAMETERS
 

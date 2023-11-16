@@ -31,16 +31,18 @@ Remove-MgBetaPlaceWorkspace -InputObject <ICalendarIdentity> [-IfMatch <String>]
 Delete navigation property workspaces for places
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Beta.Calendar
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+# A UPN can also be used as -UserId.
+Remove-MgBetaUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId
 ```
+This example shows how to use the Remove-MgBetaUserCalendarGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

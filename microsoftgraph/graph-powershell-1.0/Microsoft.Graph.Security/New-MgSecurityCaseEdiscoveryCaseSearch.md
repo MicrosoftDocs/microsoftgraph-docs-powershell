@@ -61,10 +61,10 @@ Create a new ediscoverySearch object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Security
 
 $params = @{
@@ -82,9 +82,10 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-```
 
+```
 This example shows how to use the New-MgSecurityCaseEdiscoveryCaseSearch Cmdlet.
+
 
 ## PARAMETERS
 

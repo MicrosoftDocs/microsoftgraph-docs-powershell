@@ -39,8 +39,6 @@ Get-MgGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ExpandP
 Retrieve the properties and relationships of an offerShiftRequest object.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

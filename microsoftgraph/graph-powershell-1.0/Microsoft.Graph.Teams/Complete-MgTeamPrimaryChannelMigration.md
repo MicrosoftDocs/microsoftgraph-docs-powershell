@@ -39,8 +39,6 @@ After a completeMigration request is made, you can't import additional messages 
 You can add members to the team after the request returns a successful response.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -InputObject

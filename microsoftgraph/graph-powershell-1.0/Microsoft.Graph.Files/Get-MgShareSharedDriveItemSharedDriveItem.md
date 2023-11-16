@@ -50,7 +50,6 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -58,10 +57,10 @@ Import-Module Microsoft.Graph.Files
 
 Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
 ```
-
 This example shows how to use the Get-MgShareSharedDriveItemSharedDriveItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

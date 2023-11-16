@@ -45,8 +45,6 @@ Get-MgDriveListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 The collection of field definitions for this list.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

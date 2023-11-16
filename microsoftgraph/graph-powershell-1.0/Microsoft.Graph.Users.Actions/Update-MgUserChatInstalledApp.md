@@ -55,7 +55,6 @@ Upgrade an app installation within a chat.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -63,10 +62,10 @@ Import-Module Microsoft.Graph.Teams
 
 Update-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 ```
-
 This example shows how to use the Update-MgUserChatInstalledApp Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -52,8 +52,6 @@ You can add an attachment to an existing message by posting to its attachments c
 This operation limits the size of the attachment you can add to under 3 MB.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

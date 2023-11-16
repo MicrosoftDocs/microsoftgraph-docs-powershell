@@ -38,7 +38,6 @@ To learn more, see deletedItems.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Remove a user
 
 ```powershell

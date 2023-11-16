@@ -39,7 +39,6 @@ Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
-
 ### Example 1: Get an owner of a group
 
 ```powershell

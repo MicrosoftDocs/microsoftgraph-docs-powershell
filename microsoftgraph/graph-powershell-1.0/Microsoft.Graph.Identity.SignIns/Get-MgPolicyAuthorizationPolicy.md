@@ -27,16 +27,17 @@ Retrieve the properties of an authorizationPolicy object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyAuthorizationPolicy
-```
 
+```
 This example shows how to use the Get-MgPolicyAuthorizationPolicy Cmdlet.
+
 
 ## PARAMETERS
 

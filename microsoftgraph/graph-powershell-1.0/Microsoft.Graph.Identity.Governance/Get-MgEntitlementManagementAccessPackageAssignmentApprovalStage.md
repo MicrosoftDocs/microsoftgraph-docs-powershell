@@ -42,16 +42,17 @@ An approval stage is contained within an approval object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId $approvalId
-```
 
+```
 This example shows how to use the Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage Cmdlet.
+
 
 ## PARAMETERS
 

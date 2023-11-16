@@ -35,7 +35,6 @@ Retrieve the properties of a recently deleted application, group, servicePrincip
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Retrieve a list of recently deleted items
 
 ```powershell

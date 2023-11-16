@@ -47,8 +47,6 @@ Users in the same organization can have different settings based on their prefer
 To get the user current settings, see current user settings.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

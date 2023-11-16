@@ -41,7 +41,6 @@ Create a new partner configuration in a cross-tenant access policy.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -75,10 +74,10 @@ $params = @{
 
 New-MgPolicyCrossTenantAccessPolicyPartner -BodyParameter $params
 ```
-
 This example shows how to use the New-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

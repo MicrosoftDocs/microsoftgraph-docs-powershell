@@ -42,8 +42,6 @@ Get-MgGroupSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 Returns the metadata for a list][].
 This API is available in the following [national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

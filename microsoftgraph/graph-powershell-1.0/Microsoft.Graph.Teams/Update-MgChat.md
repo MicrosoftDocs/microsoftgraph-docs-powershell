@@ -58,10 +58,10 @@ Update the properties of a chat object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -69,9 +69,10 @@ $params = @{
 }
 
 Update-MgChat -ChatId $chatId -BodyParameter $params
-```
 
+```
 This example shows how to use the Update-MgChat Cmdlet.
+
 
 ## PARAMETERS
 

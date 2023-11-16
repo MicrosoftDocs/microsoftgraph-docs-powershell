@@ -42,7 +42,6 @@ Create and register a new device in the organization.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -64,10 +63,10 @@ $params = @{
 
 New-MgDevice -BodyParameter $params
 ```
-
 This example shows how to use the New-MgDevice Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

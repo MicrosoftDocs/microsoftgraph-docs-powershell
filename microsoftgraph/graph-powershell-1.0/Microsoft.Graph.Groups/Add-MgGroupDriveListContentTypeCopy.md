@@ -48,8 +48,6 @@ Add-MgGroupDriveListContentTypeCopy -InputObject <IGroupsIdentity>
 Add a copy of a content type][contentType] from a [site][site] to a [list][list].
 This API is available in the following [national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

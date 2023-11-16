@@ -44,13 +44,17 @@ Use the id property, which is the currency code, to specify the currency.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgBookingCurrency
+
+```
+This example shows how to use the Get-MgBookingCurrency Cmdlet.
+
 
 ## PARAMETERS
 

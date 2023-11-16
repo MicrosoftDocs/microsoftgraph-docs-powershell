@@ -51,10 +51,10 @@ The response provides details about which memberships could and couldn't be crea
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Add members in bulk to a team
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -76,13 +76,14 @@ $params = @{
 }
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
-```
 
+```
 This example will add members in bulk to a team
 
 ### Example 2: Add members in bulk and encounter partial failure
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -104,13 +105,14 @@ $params = @{
 }
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
-```
 
+```
 This example will add members in bulk and encounter partial failure
 
 ### Example 3: Add members in bulk to a team using user principal name
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -132,9 +134,10 @@ $params = @{
 }
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
-```
 
+```
 This example will add members in bulk to a team using user principal name
+
 
 ## PARAMETERS
 

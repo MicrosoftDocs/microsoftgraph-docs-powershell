@@ -45,16 +45,17 @@ For descriptions of each of the endpoints, see printUsageByPrinter.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportDailyPrintUsageByPrinter
-```
 
+```
 This example shows how to use the Get-MgReportDailyPrintUsageByPrinter Cmdlet.
+
 
 ## PARAMETERS
 

@@ -63,10 +63,10 @@ Create a new reply to a chatMessage in a specified channel.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -77,9 +77,10 @@ $params = @{
 }
 
 New-MgTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-```
 
+```
 This example shows how to use the New-MgTeamChannelMessageReply Cmdlet.
+
 
 ## PARAMETERS
 

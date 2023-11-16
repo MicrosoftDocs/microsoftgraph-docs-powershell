@@ -46,8 +46,6 @@ Update-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter
 Update the properties of the specified tab.This can be used to configure the content of the tab.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -37,10 +37,10 @@ Search results are provided in the response.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Basic call to perform a search request
 
 ```powershell
+
 Import-Module Microsoft.Graph.Search
 
 $params = @{
@@ -66,13 +66,14 @@ $params = @{
 }
 
 Invoke-MgQuerySearch -BodyParameter $params
-```
 
+```
 This example will basic call to perform a search request
 
 ### Example 2: Basic call to use queryTemplate
 
 ```powershell
+
 Import-Module Microsoft.Graph.Search
 
 $params = @{
@@ -92,9 +93,10 @@ $params = @{
 }
 
 Invoke-MgQuerySearch -BodyParameter $params
-```
 
+```
 This example will basic call to use querytemplate
+
 
 ## PARAMETERS
 

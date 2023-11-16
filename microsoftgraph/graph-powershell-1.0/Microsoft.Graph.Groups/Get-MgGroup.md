@@ -48,7 +48,6 @@ The hasMembersWithLicenseErrors and isArchived properties are an exception and a
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Get a list of groups
 
 ```powershell

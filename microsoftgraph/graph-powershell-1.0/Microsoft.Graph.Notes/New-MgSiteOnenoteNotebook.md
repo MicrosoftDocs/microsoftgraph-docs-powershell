@@ -52,8 +52,6 @@ New-MgSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicroso
 Create a new OneNote notebook.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

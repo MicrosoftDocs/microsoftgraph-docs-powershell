@@ -57,7 +57,6 @@ Additionally, if a user is enabled by policy to use SMS sign-in and a mobile num
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -70,10 +69,10 @@ $params = @{
 
 New-MgUserAuthenticationPhoneMethod -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgUserAuthenticationPhoneMethod Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

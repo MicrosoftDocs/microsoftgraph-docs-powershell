@@ -47,7 +47,6 @@ New-MgSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 Create new navigation property to versions for sites
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -55,10 +54,10 @@ Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId
 ```
-
 This example shows how to use the New-MgSiteListItemVersion Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

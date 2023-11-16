@@ -42,7 +42,6 @@ Condition sets which are excluded in this permission grant policy.
 Automatically expanded on GET.
 
 ## EXAMPLES
-
 ### Example 1: Get a permission grant policy exclude by ID
 
 ```powershell

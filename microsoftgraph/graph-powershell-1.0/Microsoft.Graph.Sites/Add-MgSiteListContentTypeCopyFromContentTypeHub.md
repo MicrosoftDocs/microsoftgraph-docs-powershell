@@ -55,10 +55,10 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Synchronous pull
 
 ```powershell
+
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
@@ -66,13 +66,14 @@ $params = @{
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
-```
 
+```
 This example synchronous pull
 
 ### Example 2: Asynchronous pull
 
 ```powershell
+
 Import-Module Microsoft.Graph.Sites
 
 $params = @{
@@ -80,9 +81,10 @@ $params = @{
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
-```
 
+```
 This example asynchronous pull
+
 
 ## PARAMETERS
 

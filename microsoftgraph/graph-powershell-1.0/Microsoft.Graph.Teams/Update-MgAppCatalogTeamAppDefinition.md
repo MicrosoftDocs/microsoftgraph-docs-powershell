@@ -54,8 +54,6 @@ The requiresReview property allows any user to submit an app for review by an ad
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

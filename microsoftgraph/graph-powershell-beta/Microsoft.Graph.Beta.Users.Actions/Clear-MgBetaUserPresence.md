@@ -59,10 +59,10 @@ Read more about presence sessions and their time-out and expiration.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
@@ -70,9 +70,10 @@ $params = @{
 }
 
 Clear-MgBetaUserPresence -UserId $userId -BodyParameter $params
-```
 
+```
 This example shows how to use the Clear-MgBetaUserPresence Cmdlet.
+
 
 ## PARAMETERS
 

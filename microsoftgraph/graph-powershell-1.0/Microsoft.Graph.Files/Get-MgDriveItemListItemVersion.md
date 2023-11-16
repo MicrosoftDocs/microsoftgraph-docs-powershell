@@ -48,8 +48,6 @@ Get-MgDriveItemListItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <S
 Retrieve the metadata for a specific version of a ListItem.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

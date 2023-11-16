@@ -41,10 +41,10 @@ See examples of how to define a schema extension that describes a training cours
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Creating a schema extension using a verified domain
 
 ```powershell
+
 Import-Module Microsoft.Graph.SchemaExtensions
 
 $params = @{
@@ -70,13 +70,14 @@ $params = @{
 }
 
 New-MgSchemaExtension -BodyParameter $params
-```
 
+```
 This example shows creating a schema extension using a verified domain
 
 ### Example 2: Creating a schema extension using just a name
 
 ```powershell
+
 Import-Module Microsoft.Graph.SchemaExtensions
 
 $params = @{
@@ -102,13 +103,14 @@ $params = @{
 }
 
 New-MgSchemaExtension -BodyParameter $params
-```
 
+```
 This example shows creating a schema extension using just a name
 
 ### Example 3: Creating a schema extension setting the owner
 
 ```powershell
+
 Import-Module Microsoft.Graph.SchemaExtensions
 
 $params = @{
@@ -135,9 +137,10 @@ $params = @{
 }
 
 New-MgSchemaExtension -BodyParameter $params
-```
 
+```
 This example shows creating a schema extension setting the owner
+
 
 ## PARAMETERS
 

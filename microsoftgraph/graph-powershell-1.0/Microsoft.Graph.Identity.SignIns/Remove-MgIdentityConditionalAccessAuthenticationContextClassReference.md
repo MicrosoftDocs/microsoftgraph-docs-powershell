@@ -34,7 +34,6 @@ Delete an authenticationContextClassReference object that's not published or use
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -42,10 +41,10 @@ Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId
 ```
-
 This example shows how to use the Remove-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

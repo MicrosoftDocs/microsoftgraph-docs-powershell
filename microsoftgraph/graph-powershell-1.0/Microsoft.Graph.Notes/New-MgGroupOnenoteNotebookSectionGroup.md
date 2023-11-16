@@ -54,8 +54,6 @@ New-MgGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity>
 Create a new section group in the specified notebook.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

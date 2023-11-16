@@ -40,7 +40,6 @@ Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property
 Read properties and relationships of the user object.
 
 ## EXAMPLES
-
 ### Example 1: Get the list of all the users
 
 ```powershell

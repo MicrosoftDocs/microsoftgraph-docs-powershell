@@ -33,8 +33,6 @@ Get-MgIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentitySign
 ## DESCRIPTION
 Get media content for the navigation property overridesPages from identity
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

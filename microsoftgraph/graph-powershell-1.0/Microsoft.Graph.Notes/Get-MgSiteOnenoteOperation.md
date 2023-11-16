@@ -42,8 +42,6 @@ If the status is completed, the resourceLocation property contains the resource 
 If the status is failed, the error and @api.diagnostics properties provide error information.
 This API is available in the following national cloud deployments.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty

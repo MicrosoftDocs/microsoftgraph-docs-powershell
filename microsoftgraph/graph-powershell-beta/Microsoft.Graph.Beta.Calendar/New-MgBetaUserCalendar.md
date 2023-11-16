@@ -51,16 +51,22 @@ New-MgBetaPlaceWorkspace -InputObject <ICalendarIdentity> -BodyParameter <IMicro
 Create new navigation property to workspaces for places
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Beta.Calendar
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
+$params = @{
+	name = "Volunteer"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserCalendar -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserCalendar Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

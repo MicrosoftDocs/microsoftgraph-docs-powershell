@@ -53,7 +53,6 @@ Update the properties of a conditionalAccessPolicy object.
 This API is supported in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Add sign in risk levels to an existing conditional access policy
 
 ```powershell

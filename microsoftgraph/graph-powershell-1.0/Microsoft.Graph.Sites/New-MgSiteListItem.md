@@ -59,7 +59,6 @@ Create a new listItem][] in a [list][].
 This API is available in the following [national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -75,10 +74,10 @@ $params = @{
 
 New-MgSiteListItem -SiteId $siteId -ListId $listId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgSiteListItem Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

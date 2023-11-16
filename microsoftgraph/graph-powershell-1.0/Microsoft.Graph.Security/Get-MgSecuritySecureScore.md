@@ -43,16 +43,17 @@ Retrieve the properties and relationships of a secureScore object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Security
 
-Get-MgSecuritySecureScore -Top 1
-```
+Get-MgSecuritySecureScore -Top 1 
 
+```
 This example shows how to use the Get-MgSecuritySecureScore Cmdlet.
+
 
 ## PARAMETERS
 

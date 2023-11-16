@@ -47,10 +47,10 @@ Update the role of a conversationMember in a team or channel.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
+
 Import-Module Microsoft.Graph.Teams
 
 $params = @{
@@ -61,9 +61,10 @@ $params = @{
 }
 
 Update-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId -BodyParameter $params
-```
 
+```
 This example shows how to use the Update-MgTeamChannelMember Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,7 +33,6 @@ Remove a group from the list of groups that have been marked as incompatible on 
  This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -41,10 +40,10 @@ Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -GroupId $groupId
 ```
-
 This example shows how to use the Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

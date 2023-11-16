@@ -60,7 +60,6 @@ Set-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernanceIde
 Update the navigation property assignmentPolicies in identityGovernance
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
 
 ```powershell
@@ -68,10 +67,10 @@ Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId
 ```
-
 This example shows how to use the Set-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
