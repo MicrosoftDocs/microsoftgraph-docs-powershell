@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 ms.prod: extensions

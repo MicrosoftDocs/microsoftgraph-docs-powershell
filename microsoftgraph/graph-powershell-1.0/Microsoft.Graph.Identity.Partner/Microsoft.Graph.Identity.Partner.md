@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Identity.Partner
 Module Guid: 8e0bd735-7113-472c-9bcf-f024a2afec41
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner

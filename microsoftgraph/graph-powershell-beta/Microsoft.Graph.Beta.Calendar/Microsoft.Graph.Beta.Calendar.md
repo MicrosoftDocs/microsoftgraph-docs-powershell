@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Calendar
 Module Guid: bf7d57d4-bbb9-4ecb-a2b4-24d66cf29155
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar
@@ -243,21 +243,21 @@ Read-only.
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+To get expanded event instances, you can get the calendar view, orget the instances of an event.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaUserDefaultCalendarEvent](Get-MgBetaUserDefaultCalendarEvent.md)
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+To get expanded event instances, you can get the calendar view, orget the instances of an event.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaUserDefaultCalendarEvent](Get-MgBetaUserDefaultCalendarEvent.md)
 Retrieve a list of events in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+To get expanded event instances, you can get the calendar view, orget the instances of an event.
 This API is available in the following national cloud deployments.
 
 ### [Get-MgBetaUserEventAttachmentCount](Get-MgBetaUserEventAttachmentCount.md)
@@ -415,12 +415,12 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaGroupEventAttachment](New-MgBetaGroupEventAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaGroupEventExceptionOccurrenceAttachment](New-MgBetaGroupEventExceptionOccurrenceAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaGroupEventExceptionOccurrenceExtension](New-MgBetaGroupEventExceptionOccurrenceExtension.md)
@@ -431,7 +431,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaGroupEventExceptionOccurrenceInstanceAttachment](New-MgBetaGroupEventExceptionOccurrenceInstanceAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaGroupEventExceptionOccurrenceInstanceExtension](New-MgBetaGroupEventExceptionOccurrenceInstanceExtension.md)
@@ -448,12 +448,12 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaGroupEventInstanceAttachment](New-MgBetaGroupEventInstanceAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaGroupEventInstanceExceptionOccurrenceAttachment](New-MgBetaGroupEventInstanceExceptionOccurrenceAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaGroupEventInstanceExceptionOccurrenceExtension](New-MgBetaGroupEventInstanceExceptionOccurrenceExtension.md)
@@ -507,7 +507,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserEventExceptionOccurrenceAttachment](New-MgBetaUserEventExceptionOccurrenceAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserEventExceptionOccurrenceExtension](New-MgBetaUserEventExceptionOccurrenceExtension.md)
@@ -518,7 +518,7 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserEventExceptionOccurrenceInstanceAttachment](New-MgBetaUserEventExceptionOccurrenceInstanceAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserEventExceptionOccurrenceInstanceExtension](New-MgBetaUserEventExceptionOccurrenceInstanceExtension.md)
@@ -535,12 +535,12 @@ This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserEventInstanceAttachment](New-MgBetaUserEventInstanceAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserEventInstanceExceptionOccurrenceAttachment](New-MgBetaUserEventInstanceExceptionOccurrenceAttachment.md)
 Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 This API is available in the following national cloud deployments.
 
 ### [New-MgBetaUserEventInstanceExceptionOccurrenceExtension](New-MgBetaUserEventInstanceExceptionOccurrenceExtension.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Bookings
 Module Guid: e314868a-80ef-463c-8935-f66ac7e8f8a5
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings
@@ -730,7 +730,7 @@ This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaBookingBusinessService](Update-MgBetaBookingBusinessService.md)
 Update the properties of a bookingService object in the specified bookingBusiness.
-The following are some examples you can customize for a service:\n- Price\n- Typical length of an appointment\n- Reminders\n- Any, time buffer to set up before or finish up after the service\n- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
+The following are some examples you can customize for a service:- Price- Typical length of an appointment- Reminders- Any, time buffer to set up before or finish up after the service- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
 This API is available in the following national cloud deployments.
 
 ### [Update-MgBetaBookingBusinessStaffMember](Update-MgBetaBookingBusinessStaffMember.md)

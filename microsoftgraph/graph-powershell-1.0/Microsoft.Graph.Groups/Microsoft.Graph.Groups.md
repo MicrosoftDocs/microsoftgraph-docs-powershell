@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Groups
 Module Guid: 13d9d484-d676-4d11-8f2f-a59aed5e3194
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.groups

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamchannelmessage
@@ -259,8 +259,8 @@ $params = @{
     },
     {
       "type": "imback",
-      "title": "&i am back& <>= \"",
-      "value": "&i am back& <>= \""
+      "title": "&i am back& <>= "",
+      "value": "&i am back& <>= ""
     },
     {
       "type": "openUrl",
@@ -288,9 +288,9 @@ $params = @{
   "buttons": [
     {
       "type": "messageBack",
-      "title": "&message back& <>= \"",
-      "text": "text = &message back& <>= \"",
-      "displayText": "displayText = &message back& <>= \"",
+      "title": "&message back& <>= "",
+      "text": "text = &message back& <>= "",
+      "displayText": "displayText = &message back& <>= "",
       "value": {
         "text": "some text 2"
       }
@@ -362,8 +362,8 @@ $params = @{
     },
     {
       "type": "imback",
-      "title": "&i am back& <>= \"",
-      "value": "&i am back& <>= \""
+      "title": "&i am back& <>= "",
+      "value": "&i am back& <>= ""
     },
     {
       "type": "openUrl",
@@ -391,9 +391,9 @@ $params = @{
   "buttons": [
     {
       "type": "messageBack",
-      "title": "&message back& <>= \"",
-      "text": "text = &message back& <>= \"",
-      "displayText": "displayText = &message back& <>= \"",
+      "title": "&message back& <>= "",
+      "text": "text = &message back& <>= "",
+      "displayText": "displayText = &message back& <>= "",
       "value": {
         "text": "some text 2"
       }
