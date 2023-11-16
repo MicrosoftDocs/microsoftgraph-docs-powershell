@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to tabs for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -470,6 +473,7 @@ This property is read-only.
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+[New-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchanneltab)
 

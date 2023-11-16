@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachat
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a chat object.
 This API is supported in the following national cloud deployments.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgChat](/powershell/module/Microsoft.Graph.Teams/Update-MgChat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1275,6 +1278,7 @@ VIEWPOINT \<IMicrosoftGraphChatViewpoint\>: chatViewpoint
   \[LastMessageReadDateTime \<DateTime?\>\]: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
+[Update-MgChat](/powershell/module/Microsoft.Graph.Teams/Update-MgChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachat)
 

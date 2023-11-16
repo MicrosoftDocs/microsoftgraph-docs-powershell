@@ -13,6 +13,9 @@ To update an app, the distributionMethod property for the app must be set to org
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
  This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -557,6 +560,7 @@ Content type, such as image/png, image/jpg.
   \[WebUrl \<String\>\]: The web URL that can be used for downloading the image.
 
 ## RELATED LINKS
+[New-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetaappcatalogteamappdefinition)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Send a new reply to a chatMessage in a specified channel.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMessageReply?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1030,6 +1033,7 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[New-MgGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMessageReply?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamchannelmessagereply)
 

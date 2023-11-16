@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an openShift object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -472,6 +475,7 @@ Required.
   \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
+[Update-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleopenshift)
 

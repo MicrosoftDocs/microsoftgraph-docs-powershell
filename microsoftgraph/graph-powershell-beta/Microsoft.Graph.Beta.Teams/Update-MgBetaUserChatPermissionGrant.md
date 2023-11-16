@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property permissionGrants in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatPermissionGrant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -357,6 +360,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserchatpermissiongrant)
 

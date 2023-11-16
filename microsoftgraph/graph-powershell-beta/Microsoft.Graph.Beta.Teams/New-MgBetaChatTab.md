@@ -12,6 +12,9 @@ Add (pin) a tab to the specified chat.
 The corresponding app must already be installed in the chat.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgChatTab](/powershell/module/Microsoft.Graph.Teams/New-MgChatTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -478,6 +481,7 @@ This property is read-only.
   \[ExternalId \<String\>\]: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+[New-MgChatTab](/powershell/module/Microsoft.Graph.Teams/New-MgChatTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachattab)
 

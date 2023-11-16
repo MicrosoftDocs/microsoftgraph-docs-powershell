@@ -11,6 +11,9 @@ schema: 2.0.0
 Create instance of an openShiftChangeRequest object.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -363,6 +366,7 @@ This property is read-only.
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
+[New-MgGroupTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleopenshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleopenshiftchangerequest)
 

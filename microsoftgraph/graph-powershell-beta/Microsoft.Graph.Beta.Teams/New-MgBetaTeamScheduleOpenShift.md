@@ -11,6 +11,9 @@ schema: 2.0.0
 Create an instance of an openshift object.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -471,6 +474,7 @@ Required.
   \[OpenSlotCount \<Int32?\>\]: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
+[New-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshift)
 

@@ -15,6 +15,9 @@ If the provisioning failed, clients can get additional information from the prov
 Clients can also inspect the configuration of the schedule.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamSchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -165,6 +168,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamschedule)
 

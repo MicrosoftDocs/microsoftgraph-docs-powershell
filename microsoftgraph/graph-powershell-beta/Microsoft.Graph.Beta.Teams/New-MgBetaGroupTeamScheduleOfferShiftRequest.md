@@ -11,6 +11,9 @@ schema: 2.0.0
 Create an instance of an offerShiftRequest.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -397,6 +400,7 @@ This property is read-only.
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
+[New-MgGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleoffershiftrequest)
 

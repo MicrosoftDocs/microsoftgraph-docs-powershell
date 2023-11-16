@@ -11,6 +11,9 @@ schema: 2.0.0
 Replace an existing schedulingGroup.
 If the specified schedulingGroup doesn't exist, this method returns 404 Not found.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -333,6 +336,7 @@ This property is read-only.
   \[User \<IMicrosoftGraphIdentity\>\]: identity
 
 ## RELATED LINKS
+[Update-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleschedulinggroup)
 

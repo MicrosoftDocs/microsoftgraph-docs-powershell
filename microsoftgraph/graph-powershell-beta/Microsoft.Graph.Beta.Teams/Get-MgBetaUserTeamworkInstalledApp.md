@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the app installed in the personal scope of the specified user.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -314,6 +317,7 @@ INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
   \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledapp)
 

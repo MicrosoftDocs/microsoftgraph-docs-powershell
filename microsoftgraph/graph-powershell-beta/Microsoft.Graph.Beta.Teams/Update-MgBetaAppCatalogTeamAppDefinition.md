@@ -13,6 +13,9 @@ The requiresReview property allows any user to submit an app for review by an ad
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 This API is supported in the following national cloud deployments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Update-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -560,6 +563,7 @@ Content type, such as image/png, image/jpg.
   \[WebUrl \<String\>\]: The web URL that can be used for downloading the image.
 
 ## RELATED LINKS
+[Update-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Update-MgAppCatalogTeamAppDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinition)
 
