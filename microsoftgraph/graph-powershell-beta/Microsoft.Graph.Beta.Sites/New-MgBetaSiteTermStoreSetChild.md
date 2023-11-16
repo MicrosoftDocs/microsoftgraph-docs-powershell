@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetchild
@@ -82,11 +82,10 @@ Create a new term object.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	labels = @(
@@ -99,6 +98,11 @@ $params = @{
 }
 
 New-MgBetaSiteTermStoreSetChild -SiteId $siteId -SetId $setId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaSiteTermStoreSetChild Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

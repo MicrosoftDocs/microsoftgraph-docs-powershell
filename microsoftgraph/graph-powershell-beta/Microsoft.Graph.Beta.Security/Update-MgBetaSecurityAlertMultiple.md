@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple
@@ -31,9 +31,8 @@ Update multiple alerts in one request instead of multiple requests.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaSecurityAlertMultiple Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Value = @(
@@ -62,6 +61,8 @@ $params = @{
 }
 Update-MgBetaSecurityAlertMultiple -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaSecurityAlertMultiple Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

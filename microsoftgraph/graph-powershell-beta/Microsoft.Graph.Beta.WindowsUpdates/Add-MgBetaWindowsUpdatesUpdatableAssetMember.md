@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/add-mgbetawindowsupdatesupdatableassetmember
@@ -52,9 +52,8 @@ You can also use the method addMembersById to add members.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Add-MgBetaWindowsUpdatesUpdatableAssetMember Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
 	Assets = @(
@@ -66,6 +65,8 @@ $params = @{
 }
 Add-MgBetaWindowsUpdatesUpdatableAssetMember -UpdatableAssetId $updatableAssetId -BodyParameter $params
 ```
+This example shows how to use the Add-MgBetaWindowsUpdatesUpdatableAssetMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaenrollwindowsupdatesupdatableasset
@@ -30,9 +30,8 @@ Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset
 Invoke action enrollAssets
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
 	UpdateCategory = "String"
@@ -45,6 +44,8 @@ $params = @{
 }
 Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -35,13 +35,17 @@ Get-MgBetaSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity> [-ExpandPr
 Indicates which terms have been pinned or reused directly under the set.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteTermStoreSetRelation -SiteId $siteId -SetId $setId
+```
+This example shows how to use the Get-MgBetaSiteTermStoreGroupSetRelation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -54,13 +54,17 @@ Get-MgBetaSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-ExpandPrope
 Children terms of set in term \[store\].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteTermStoreSetChild -SiteId $siteId -SetId $setId
+```
+This example shows how to use the Get-MgBetaSiteTermStoreGroupSetChild Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

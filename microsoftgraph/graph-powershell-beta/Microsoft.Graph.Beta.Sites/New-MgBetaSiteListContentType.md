@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistcontenttype
@@ -54,13 +54,17 @@ New-MgBetaSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMic
 Create new navigation property to contentTypes for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteListContentType -SiteId $siteId -ListId $listId
+```
+This example shows how to use the New-MgBetaBetaSiteListContentType Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabel
@@ -39,9 +39,8 @@ To create a disposition review stage, include the actionAfterRetentionPeriod pro
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaSecurityLabelRetentionLabel Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionLabel"
@@ -63,6 +62,8 @@ $params = @{
 }
 New-MgBetaSecurityLabelRetentionLabel -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSecurityLabelRetentionLabel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

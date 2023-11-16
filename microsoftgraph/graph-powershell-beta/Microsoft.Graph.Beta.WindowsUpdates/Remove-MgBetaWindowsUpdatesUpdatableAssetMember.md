@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.Beta.WindowsUpdates
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesupdatableassetmember
@@ -48,9 +48,8 @@ You can also use the method removeMembersById to remove members.
 This API is available in the following national cloud deployments.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Remove-MgBetaWindowsUpdatesUpdatableAssetMember Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
 	Assets = @(
@@ -62,6 +61,8 @@ $params = @{
 }
 Remove-MgBetaWindowsUpdatesUpdatableAssetMember -UpdatableAssetId $updatableAssetId -BodyParameter $params
 ```
+This example shows how to use the Remove-MgBetaWindowsUpdatesUpdatableAssetMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
