@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryoutboundshareduserprofile
@@ -40,22 +40,6 @@ Update-MgBetaDirectoryOutboundSharedUserProfile -InputObject <IIdentityDirectory
 
 ## DESCRIPTION
 Update the navigation property outboundSharedUserProfiles in directory
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -264,4 +248,5 @@ Key.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryoutboundshareduserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryoutboundshareduserprofile)
+
 

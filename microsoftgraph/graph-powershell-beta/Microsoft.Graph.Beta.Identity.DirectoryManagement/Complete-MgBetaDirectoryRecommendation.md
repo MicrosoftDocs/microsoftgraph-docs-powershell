@@ -26,22 +26,6 @@ Complete-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Complete a recommendation object and update its status to completedByUser.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -168,4 +152,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendation)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty
@@ -40,18 +40,6 @@ Update-MgBetaAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -283,4 +271,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleprofilecardproperty)
+
 

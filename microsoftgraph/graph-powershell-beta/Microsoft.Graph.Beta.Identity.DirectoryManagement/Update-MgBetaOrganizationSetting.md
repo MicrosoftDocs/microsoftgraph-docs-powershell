@@ -45,22 +45,6 @@ Update-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdent
 ## DESCRIPTION
 Update the navigation property settings in organization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,4 +356,5 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsetting)
+
 

@@ -28,22 +28,6 @@ Set-MgBetaOrganizationBrandingLocalizationFavicon -InputObject <IIdentityDirecto
 ## DESCRIPTION
 A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -233,4 +217,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationfavicon](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationfavicon)
+
 

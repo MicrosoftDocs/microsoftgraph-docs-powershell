@@ -30,18 +30,6 @@ Rename-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStat
 ## DESCRIPTION
 Invoke action changeDeploymentStatus
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -223,4 +211,5 @@ BODYPARAMETER \<IPathsNmcreiTenantrelationshipsManagedtenantsManagementactionten
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/rename-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/rename-mgbetatenantrelationshipmanagedtenantmanagementactiontenantdeploymentstatus)
+
 

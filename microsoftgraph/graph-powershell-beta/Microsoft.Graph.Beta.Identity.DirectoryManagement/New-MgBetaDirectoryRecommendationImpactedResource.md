@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendationimpactedresource
@@ -46,22 +46,6 @@ New-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDirecto
 
 ## DESCRIPTION
 Create new navigation property to impactedResources for directory
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -491,4 +475,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendationimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrecommendationimpactedresource)
+
 

@@ -35,18 +35,6 @@ Get-MgBetaAdministrativeUnitMemberAsServicePrincipal -InputObject <IIdentityDire
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -324,4 +312,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitmemberasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitmemberasserviceprincipal)
+
 

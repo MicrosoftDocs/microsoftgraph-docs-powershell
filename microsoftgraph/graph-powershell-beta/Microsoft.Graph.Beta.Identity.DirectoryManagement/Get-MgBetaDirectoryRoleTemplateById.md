@@ -30,18 +30,6 @@ Get-MgBetaDirectoryRoleTemplateById
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -159,4 +147,5 @@ BODYPARAMETER \<IPaths6Ovq2LDirectoryroletemplatesMicrosoftGraphGetbyidsPostRequ
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplatebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplatebyid)
+
 

@@ -30,22 +30,6 @@ Get-MgBetaDirectoryAdministrativeUnitUserOwnedObject
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -163,4 +147,5 @@ BODYPARAMETER \<IPaths1LemjnvDirectoryAdministrativeunitsMicrosoftGraphGetuserow
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunituserownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunituserownedobject)
+
 

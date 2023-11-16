@@ -27,22 +27,6 @@ Remove-MgBetaOrganizationExtension -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Delete navigation property extensions for organization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExtensionId
@@ -214,4 +198,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaorganizationextension)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty
@@ -31,18 +31,6 @@ New-MgBetaAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileC
 Create a new profileCardProperty for an organization.
 The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or delete custom attributes on a profile card using the profile card API.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
 
 ## PARAMETERS
 
@@ -198,4 +186,5 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaadminpeopleprofilecardproperty)
+
 

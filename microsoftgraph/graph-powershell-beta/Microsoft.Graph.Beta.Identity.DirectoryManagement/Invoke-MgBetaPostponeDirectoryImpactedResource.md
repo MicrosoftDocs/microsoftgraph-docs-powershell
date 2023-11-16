@@ -44,22 +44,6 @@ Invoke-MgBetaPostponeDirectoryImpactedResource -InputObject <IIdentityDirectoryM
 Postpone action on an impactedResource object to a specified future date and time by marking its status as postponed.
 On the specified date and time, Azure AD will automatically mark the status of the impactedResource object to active.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -237,4 +221,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapostponedirectoryimpactedresource)
+
 

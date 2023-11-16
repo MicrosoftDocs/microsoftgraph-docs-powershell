@@ -27,22 +27,6 @@ Complete-MgBetaDirectoryRecommendationImpactedResource -InputObject <IIdentityDi
 ## DESCRIPTION
 Complete an impactedResource object and update its status to completedByUser.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ImpactedResourceId
@@ -184,4 +168,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendationimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendationimpactedresource)
+
 

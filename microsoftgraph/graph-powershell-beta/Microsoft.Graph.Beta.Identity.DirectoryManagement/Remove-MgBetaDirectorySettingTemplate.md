@@ -27,22 +27,6 @@ Remove-MgBetaDirectorySettingTemplate -InputObject <IIdentityDirectoryManagement
 ## DESCRIPTION
 Delete entity from directorySettingTemplates
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DirectorySettingTemplateId
@@ -199,4 +183,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysettingtemplate)
+
 

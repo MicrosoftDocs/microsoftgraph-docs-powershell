@@ -27,18 +27,6 @@ Remove-MgBetaDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Delete a registered device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -195,4 +183,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadevicebydeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadevicebydeviceid)
+
 

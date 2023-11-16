@@ -27,18 +27,6 @@ Remove-MgBetaDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Delete navigation property onPremisesSynchronization for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -195,4 +183,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryonpremisesynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryonpremisesynchronization)
+
 

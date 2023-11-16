@@ -45,22 +45,6 @@ Get-MgBetaDirectoryFeatureRolloutPolicyApplyToById -InputObject <IIdentityDirect
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -254,4 +238,5 @@ INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryfeaturerolloutpolicyapplytobyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryfeaturerolloutpolicyapplytobyid)
+
 
