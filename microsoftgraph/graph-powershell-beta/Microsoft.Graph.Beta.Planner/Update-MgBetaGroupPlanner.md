@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplanner
@@ -38,22 +38,6 @@ Update-MgBetaGroupPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
 
 ## DESCRIPTION
 Update the navigation property planner in groups
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -716,4 +700,5 @@ Title of the plan.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplanner)
+
 

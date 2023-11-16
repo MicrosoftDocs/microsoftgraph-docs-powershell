@@ -31,22 +31,6 @@ Selective Planner services available to the group.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -138,4 +122,5 @@ INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplanner)
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal
@@ -28,22 +28,6 @@ Update-MgBetaExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal>
 
 ## DESCRIPTION
 Update external
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -739,4 +723,5 @@ Maximum supported length is 100 characters.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal)
+
 

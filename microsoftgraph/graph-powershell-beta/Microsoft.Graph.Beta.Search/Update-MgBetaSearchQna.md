@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna
@@ -52,22 +52,6 @@ Update-MgBetaSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the properties of a qna object.
 This API is available in the following national cloud deployments.
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -516,4 +500,5 @@ When users click this answer variation in search results, they will go to this U
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna)
+
 

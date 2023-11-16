@@ -19,18 +19,6 @@ Get-MgBetaReportSla [-ExpandProperty <String[]>] [-Property <String[]>] [<Common
 ## DESCRIPTION
 A placeholder to allow for the desired URL path for SLA.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -76,4 +64,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsla](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsla)
+
 

@@ -19,22 +19,6 @@ Get-MgBetaReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [<C
 ## DESCRIPTION
 Provides the ability to launch a realistically simulated phishing attack that organizations can learn from.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -80,4 +64,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurity)
+
 

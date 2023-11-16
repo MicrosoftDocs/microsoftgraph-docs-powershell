@@ -30,18 +30,6 @@ Get-MgBetaExternalIndustryDataRunStatistics -InputObject <ISearchIdentity> [<Com
 ## DESCRIPTION
 Invoke function getStatistics
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IndustryDataRunId
@@ -114,4 +102,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarunstatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarunstatistics)
+
 

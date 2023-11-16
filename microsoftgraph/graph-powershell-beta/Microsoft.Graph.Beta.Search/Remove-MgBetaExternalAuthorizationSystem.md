@@ -27,18 +27,6 @@ Remove-MgBetaExternalAuthorizationSystem -InputObject <ISearchIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property authorizationSystems for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthorizationSystemId
@@ -172,4 +160,5 @@ INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalauthorizationsystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalauthorizationsystem)
+
 
