@@ -27,22 +27,6 @@ Remove-MgBetaPrivilegedApprovalRoleInfo -InputObject <IIdentityGovernanceIdentit
 ## DESCRIPTION
 Delete navigation property roleInfo for privilegedApproval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -253,4 +237,5 @@ INPUTOBJECT \<IIdentityGovernanceIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedapprovalroleinfo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedapprovalroleinfo)
+
 

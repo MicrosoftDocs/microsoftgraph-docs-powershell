@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/select-mgbetaentitlementmanagementaccesspackageassignmentpolicy
@@ -20,22 +20,6 @@ Select-MgBetaEntitlementManagementAccessPackageAssignmentPolicy
 
 ## DESCRIPTION
 Select matching entitlement management accessPackageAssignmentPolicy
-
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 
@@ -7672,4 +7656,5 @@ Read-only.
 ## RELATED LINKS
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/select-mgbetaentitlementmanagementaccesspackageassignmentpolicy](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/select-mgbetaentitlementmanagementaccesspackageassignmentpolicy)
+
 

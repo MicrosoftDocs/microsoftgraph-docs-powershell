@@ -48,18 +48,6 @@ Copy-MgBetaGroupOnenoteSectionToSectionGroup -InputObject <IGroupsIdentity>
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -328,4 +316,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Copy-MgGroupOnenoteSectionToSectionGroup](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenoteSectionToSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotesectiontosectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagrouponenotesectiontosectiongroup)
+
 

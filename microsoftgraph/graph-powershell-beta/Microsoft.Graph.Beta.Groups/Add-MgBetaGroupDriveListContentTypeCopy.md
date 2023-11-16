@@ -44,18 +44,6 @@ Add-MgBetaGroupDriveListContentTypeCopy -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -248,4 +236,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Add-MgGroupDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupDriveListContentTypeCopy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupdrivelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupdrivelistcontenttypecopy)
+
 

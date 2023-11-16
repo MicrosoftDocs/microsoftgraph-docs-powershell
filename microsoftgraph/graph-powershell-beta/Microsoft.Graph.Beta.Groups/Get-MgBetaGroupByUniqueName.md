@@ -35,18 +35,6 @@ To get properties that are not returned by default, specify them in a $select OD
 The hasMembersWithLicenseErrors and isArchived properties are an exception and are not returned in the $select query.
 Because the group resource supports extensions, you can also use the GET operation to get custom properties and extension data in a group instance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -171,4 +159,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyuniquename)
+
 

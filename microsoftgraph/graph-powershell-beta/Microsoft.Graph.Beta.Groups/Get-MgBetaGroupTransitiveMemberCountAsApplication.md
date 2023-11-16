@@ -30,18 +30,6 @@ Get-MgBetaGroupTransitiveMemberCountAsApplication -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -183,4 +171,5 @@ INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
 [Get-MgGroupTransitiveMemberCountAsApplication](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberCountAsApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemembercountasapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivemembercountasapplication)
+
 
